@@ -15,7 +15,7 @@ from pathlib import Path
 import re
 import shutil
 import unicodedata
-from urllib.parse import quote, unquote, unquote_to_bytes
+from urllib.parse import quote, unquote, unquote_to_bytes, urlsplit
 
 
 DATA_URI = re.compile(
@@ -35,9 +35,9 @@ JAVASCRIPT_TYPES = {"", "text/javascript", "application/javascript", "module"}
 
 
 class Assets:
-    def __init__(self, output, base_path):
+    def __init__(self, output, base_path, asset_base_url=None):
         self.directory = output / "_pages-assets"
-        self.url_prefix = base_path.rstrip("/") + "/_pages-assets/"
+        self.url_prefix = (asset_base_url or base_path).rstrip("/") + "/_pages-assets/"
         self.created = 0
         self.references = 0
 
@@ -243,15 +243,19 @@ def remove_unreferenced_book_images(output):
     return len(unused), removed_bytes
 
 
-def prepare(output, base_path="/", max_bytes=1_000_000_000):
+def prepare(output, base_path="/", max_bytes=1_000_000_000, asset_base_url=None):
     output = Path(output).resolve()
     if not output.is_dir() or not (output / "index.html").is_file():
         raise ValueError("Expected a rendered website containing index.html: " + str(output))
     if not base_path.startswith("/") or ".." in base_path or "?" in base_path or "#" in base_path:
         raise ValueError("base-path must be an absolute site path, for example / or /cv/")
+    if asset_base_url:
+        url = urlsplit(asset_base_url)
+        if url.scheme not in {"https", "http"} or not url.netloc or url.query or url.fragment or url.username or url.password:
+            raise ValueError("asset-base-url must be a public HTTP(S) site URL without credentials, query or fragment")
     before = output_size(output)
     removed = remove_nested_book_outputs(output)
-    assets = Assets(output, base_path)
+    assets = Assets(output, base_path, asset_base_url)
     changed = 0
     for number, path in enumerate(sorted(output.rglob("*.html")), start=1):
         if assets.directory in path.parents:
@@ -283,6 +287,7 @@ if __name__ == "__main__":
     argument_parser = argparse.ArgumentParser(description=__doc__)
     argument_parser.add_argument("output", type=Path)
     argument_parser.add_argument("--base-path", default="/")
+    argument_parser.add_argument("--asset-base-url", help="Canonical Pages URL; its redirects keep assets working when a custom domain is attached")
     argument_parser.add_argument("--max-bytes", type=int, default=1_000_000_000)
     options = argument_parser.parse_args()
-    prepare(options.output, options.base_path, options.max_bytes)
+    prepare(options.output, options.base_path, options.max_bytes, options.asset_base_url)

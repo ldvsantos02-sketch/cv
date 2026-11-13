@@ -143,7 +143,7 @@ jobs:
       - name: Deduplicate published resources and check Pages size
         run: |
           python -m unittest discover -s scripts -p test_prepare_pages.py
-          python scripts/prepare_pages.py _site --base-path '${{ steps.pages.outputs.base_path }}/'
+          python scripts/prepare_pages.py _site --base-path '${{ steps.pages.outputs.base_path }}/' --asset-base-url '${{ steps.pages.outputs.base_url }}'
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -84,6 +84,18 @@ class PreparePagesTests(unittest.TestCase):
         self.assertEqual(next(directory.glob("*.woff2")).read_bytes(), font)
         self.assertIn("/_pages-assets/", next(directory.glob("*.css")).read_text())
 
+    def test_supports_canonical_pages_url_for_domain_transition(self):
+        font = base64.b64encode(b"font bytes").decode()
+        css = '@font-face{src:url(data:font/woff2;base64,' + font + ')}'
+        source = self.write("index.html", '<link href="data:text/css,' + quote(css, safe="") + '" rel="stylesheet">')
+        base = "https://example.github.io/cv"
+        self.run_prepare(base_path="/cv/", asset_base_url=base)
+        self.assertIn(base + "/_pages-assets/", source.read_text())
+        self.assertIn(base + "/_pages-assets/", next((self.site / "_pages-assets").glob("*.css")).read_text())
+        for invalid in ("//example.org/", "https://example.org/?token=x", "https://user:password@example.org/"):
+            with self.assertRaisesRegex(ValueError, "asset-base-url"):
+                self.run_prepare(asset_base_url=invalid)
+
     def test_only_removes_nested_book_output_after_flattening(self):
         self.write("index.html", "site")
         self.write("books/flat/index.html", "book")

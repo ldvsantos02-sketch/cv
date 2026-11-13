@@ -18,7 +18,7 @@ $$
 
 onde $Z$ é o valor crítico da distribuição normal para o nível de confiança desejado (1,96 para 95%), $p$ é a proporção esperada de classificação correta (tipicamente 0,5 para maximizar o tamanho amostral, caso conservador) e $e$ é a margem de erro tolerada (por exemplo, 0,05 para ±5%). Para $p = 0,5$ e $e = 0,05$ com 95% de confiança, $n = 385$ amostras no total.
 
-Na amostragem estratificada, o esforço amostral é alocado proporcionalmente à área de cada classe (alocação proporcional) ou de forma otimizada para reduzir a variância das estimativas de acurácia do produtor e do usuário (alocação ótima de Neyman). Congalton e Green [-@congalton2019] recomendam um mínimo de 25–30 amostras por classe para estimativas estáveis das métricas por classe, e 50 amostras por classe quando a heterogeneidade intraclasse é elevada.
+Na amostragem estratificada, o esforço amostral é alocado proporcionalmente à área de cada classe (alocação proporcional) ou de forma otimizada para reduzir a variância das estimativas de acurácia do produtor e do usuário (alocação ótima de Neyman). Congalton e Green [-@congalton2019] recomendam um mínimo de 25-30 amostras por classe para estimativas estáveis das métricas por classe, e 50 amostras por classe quando a heterogeneidade intraclasse é elevada.
 
 ::: {.callout-important}
 ## Independência amostral
@@ -62,7 +62,7 @@ $$
 \kappa = \frac{OA - P_e}{1 - P_e}
 $$
 
-onde $P_e$ é a concordância esperada sob classificação aleatória (calculada a partir dos totais marginais da matriz de confusão). A escala qualitativa de Landis e Koch classifica Kappa < 0,20 como pobre, 0,21–0,40 como razoável, 0,41–0,60 como moderada, 0,61–0,80 como substancial e > 0,80 como excelente.
+onde $P_e$ é a concordância esperada sob classificação aleatória (calculada a partir dos totais marginais da matriz de confusão). A escala qualitativa de Landis e Koch classifica Kappa < 0,20 como pobre, 0,21-0,40 como razoável, 0,41-0,60 como moderada, 0,61-0,80 como substancial e > 0,80 como excelente.
 
 Apesar de sua ampla utilização, o Kappa recebeu críticas substanciais. Pontius e Millones [-@pontius2011] demonstraram que o Kappa é redundante com a OA (ambos contêm a mesma informação), mistura dois tipos de erro qualitativamente distintos (quantidade e alocação) e depende da prevalência das classes (um mapa dominado por uma única classe pode ter Kappa artificialmente elevado). Como alternativa, esses autores propuseram duas métricas mais informativas: o Quantity Disagreement (diferença entre as proporções de cada classe no mapa e na referência) e o Allocation Disagreement (erros de posicionamento uma vez igualadas as proporções).
 

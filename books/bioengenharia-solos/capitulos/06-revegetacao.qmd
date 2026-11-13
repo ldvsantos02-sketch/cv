@@ -6,9 +6,35 @@ A revegetação é a técnica fundamental e mais antiga da bioengenharia de solo
 
 O sistema radicular é o componente-chave dessa proteção. A @fig-vetiver-raizes apresenta o sistema radicular do vetiver (*Vetiveria zizanioides*), considerado o padrão de referência em bioengenharia tropical, cujas raízes podem ultrapassar 3 m de profundidade em solos bem drenados.
 
-![Sistema radicular de vetiver — raízes profundas que conferem coesão e ancoragem ao solo, mecanismo fundamental da revegetação em bioengenharia.](../img/vetiver_1.png){#fig-vetiver-raizes fig-alt="Sistema radicular de vetiver" width="60%"}
+![Sistema radicular de vetiver - raízes profundas que conferem coesão e ancoragem ao solo, mecanismo fundamental da revegetação em bioengenharia.](../img/vetiver_1.png){#fig-vetiver-raizes fig-alt="Sistema radicular de vetiver" width="60%"}
 
-Conforme ilustrado na @fig-vetiver-raizes, a densidade e a profundidade das raízes do vetiver criam uma malha tridimensional que reforça mecanicamente o solo. As plantas protegem o solo por seis mecanismos simultâneos e complementares. A interceptação da energia cinética das gotas de chuva pela copa e pelas folhas reduz em até 90% o impacto direto sobre a superfície, eliminando o efeito *splash* (desprendimento por impacto). A proteção superficial pelo acúmulo de serrapilheira (folhas mortas, restos vegetais) cria uma camada amortecedora que reduz a velocidade do escoamento e protege os agregados do solo contra desagregação. O reforço radicular aumenta a coesão do solo em 5–40 kPa, conforme demonstrado pelo modelo de Wu-Waldron discutido no @sec-solos-tropicais, sendo o incremento proporcional à densidade e à resistência à tração das raízes. A drenagem biológica por evapotranspiração remove água do solo, reduzindo a poropressão e aumentando a tensão efetiva, o que estabiliza encostas suscetíveis a deslizamentos. A criação de macroporos pelo crescimento e pela decomposição das raízes eleva a permeabilidade do solo em 2 a 10 vezes, favorecendo a infiltração (que reduz o escoamento superficial) e melhorando a drenagem interna. Por fim, as raízes pivotantes ancoram camadas superficiais instáveis a substratos estáveis em profundidade, funcionando como tirantes naturais.
+Conforme ilustrado na @fig-vetiver-raizes, a densidade e a profundidade das raízes do vetiver criam uma malha tridimensional que reforça mecanicamente o solo. As plantas protegem o solo por seis mecanismos simultâneos e complementares. A interceptação da energia cinética das gotas de chuva pela copa e pelas folhas reduz em até 90% o impacto direto sobre a superfície, eliminando o efeito *splash* (desprendimento por impacto). A proteção superficial pelo acúmulo de serrapilheira (folhas mortas, restos vegetais) cria uma camada amortecedora que reduz a velocidade do escoamento e protege os agregados do solo contra desagregação. O reforço radicular aumenta a coesão do solo em 5-40 kPa, conforme demonstrado pelo modelo de Wu-Waldron discutido no @sec-solos-tropicais, sendo o incremento proporcional à densidade e à resistência à tração das raízes. A drenagem biológica por evapotranspiração remove água do solo, reduzindo a poropressão e aumentando a tensão efetiva, o que estabiliza encostas suscetíveis a deslizamentos. A criação de macroporos pelo crescimento e pela decomposição das raízes eleva a permeabilidade do solo em 2 a 10 vezes, favorecendo a infiltração (que reduz o escoamento superficial) e melhorando a drenagem interna. Por fim, as raízes pivotantes ancoram camadas superficiais instáveis a substratos estáveis em profundidade, funcionando como tirantes naturais.
+
+Conhecidas as funções ecológicas, o reforço mecânico proporcionado pelo sistema radicular pode ser quantificado na envoltória de ruptura de **Mohr-Coulomb** acrescida do termo de coesão radicular ($\Delta c_r$) de Wu e Waldron (@fig-mohr-coulomb-bs):
+
+![Envoltória de ruptura de Mohr-Coulomb com ganho biotécnico de coesão ($\Delta c_r$) e lei alométrica da resistência à tração radicular ($\sigma_r = a \cdot d^{-b}$) em função do diâmetro da raiz.](../img/bs_mohr_coulomb_coesao_radicular.png){#fig-mohr-coulomb-bs fig-alt="Envoltória de Mohr-Coulomb e relação alométrica diâmetro versus resistência à tração radicular" width="92%"}
+
+A resistência à tração das raízes ($\sigma_r$, em MPa) segue uma relação alométrica inversa com o diâmetro ($d$, em mm), expressa por $\sigma_r = a \cdot d^{-b}$ (onde $a$ representa a resistência de uma raiz de $1\text{ mm}$ e o expoente $b > 0$ expressa o declínio relativo com o espessamento). Na prática, **raízes finas ($d < 2\text{ mm}$)** possuem proporção muito maior de celulose estrutural por unidade de seção transversal e altíssima resistência específica à tração (frequentemente $40\text{ a }150\text{ MPa}$ no vetiver), atuando diretamente no incremento de coesão aparente ($\Delta c_r$) na camada superficial. Já **raízes grossas ($d > 5\text{ mm}$)** rompem a tensões menores por área, mas trabalham prioritariamente à **flexão e ao cisalhamento**, exercendo efeito de estaca e ancoragem profunda através do plano potencial de ruptura.
+
+Para verificar numericamente o ganho de estabilidade de uma encosta após a revegetação, aplica-se o modelo de equilíbrio limite de **talude infinito** com inclinação $\beta$ e profundidade potencial de ruptura $z$:
+
+$$
+FS = \frac{c' + \Delta c_r + (\gamma\,z\cos^2\beta - u)\tan\phi'}{\gamma\,z\sin\beta\cos\beta}
+$$ {#eq-fs-talude-cap6}
+
+::: {.callout-tip}
+## Exemplo resolvido: ganho no Fator de Segurança ($FS$) com capim-vetiver
+Considere um talude com $\beta = 32^\circ$, solo com $c' = 4{,}0\text{ kPa}$, $\phi' = 24^\circ$, peso específico natural $\gamma = 18{,}5\text{ kN m}^{-3}$, plano de deslizamento a $z = 1{,}2\text{ m}$ e condição saturada parcial com poropressão $u = 4{,}5\text{ kPa}$.
+
+1. **Sem cobertura radicular ($\Delta c_r = 0$):**
+   - Força solicitante no denominador: $\gamma z \sin 32^\circ \cos 32^\circ = 18{,}5 \times 1{,}2 \times 0{,}5299 \times 0{,}8480 = 9{,}98\text{ kPa}$;
+   - Tensão normal efetiva: $\sigma' = 18{,}5 \times 1{,}2 \times \cos^2 32^\circ - 4{,}5 = 15{,}97 - 4{,}5 = 11{,}47\text{ kPa}$;
+   - Resistência disponível: $4{,}0 + 11{,}47 \times \tan 24^\circ = 4{,}0 + 5{,}11 = 9{,}11\text{ kPa}$;
+   - **$FS_{\mathrm{sem}} = 9{,}11 / 9{,}98 = 0{,}91 < 1{,}0$ (talude instável — ruptura iminente!)**.
+2. **Com barreira de vetiver estabelecida ($\Delta c_r = 8{,}0\text{ kPa}$):**
+   - Nova resistência disponível: $4{,}0 + 8{,}0 + 5{,}11 = 17{,}11\text{ kPa}$;
+   - **$FS_{\mathrm{com}} = 17{,}11 / 9{,}98 = 1{,}71 > 1{,}5$ (talude estável com margem de segurança geotécnica)**.
+:::
 
 ## Seleção de Espécies
 
@@ -16,7 +42,7 @@ A seleção de espécies para bioengenharia é uma decisão de engenharia, não 
 
 ### Critérios Técnicos
 
-Do ponto de vista técnico, cinco critérios devem ser avaliados simultaneamente. O sistema radicular é o mais importante e deve ser compatível com a função desejada (fasciculado para reforço da camada superficial 0–50 cm, ou pivotante para ancoragem profunda > 1 m). A velocidade de estabelecimento determina o tempo de exposição do solo à erosão desprotegida; espécies que cobrem mais de 80% da superfície em 60–90 dias (como braquiária e vetiver) são preferidas para proteção emergencial. A tolerância a estresses (déficit hídrico, encharcamento temporário, solos ácidos com pH 4–5, baixa fertilidade) é fundamental em solos tropicais degradados, onde as condições raramente são favoráveis. A capacidade de regeneração após corte, pastejo ou dano mecânico (por enxurrada, por exemplo) determina a resiliência da cobertura ao longo do tempo. A produção de biomassa para ciclagem de nutrientes e formação de cobertura morta é especialmente importante em solos com baixa CTC, que dependem da matéria orgânica para reter nutrientes.
+Do ponto de vista técnico, cinco critérios devem ser avaliados simultaneamente. O sistema radicular é o mais importante e deve ser compatível com a função desejada (fasciculado para reforço da camada superficial 0-50 cm, ou pivotante para ancoragem profunda > 1 m). A velocidade de estabelecimento determina o tempo de exposição do solo à erosão desprotegida; espécies que cobrem mais de 80% da superfície em 60-90 dias (como braquiária e vetiver) são preferidas para proteção emergencial. A tolerância a estresses (déficit hídrico, encharcamento temporário, solos ácidos com pH 4-5, baixa fertilidade) é fundamental em solos tropicais degradados, onde as condições raramente são favoráveis. A capacidade de regeneração após corte, pastejo ou dano mecânico (por enxurrada, por exemplo) determina a resiliência da cobertura ao longo do tempo. A produção de biomassa para ciclagem de nutrientes e formação de cobertura morta é especialmente importante em solos com baixa CTC, que dependem da matéria orgânica para reter nutrientes.
 
 ### Critérios Ecológicos
 
@@ -30,7 +56,7 @@ A @tbl-gramineas apresenta as principais espécies herbáceas utilizadas em proj
 
 | Espécie | Nome popular | Sistema radicular | Uso principal |
 |---------|-------------|-------------------|---------------|
-| *Vetiveria zizanioides* | Vetiver | Fasciculado profundo (3–4 m) | Barreiras vivas, taludes |
+| *Vetiveria zizanioides* | Vetiver | Fasciculado profundo (3-4 m) | Barreiras vivas, taludes |
 | *Paspalum notatum* | Grama batatais | Fasciculado/estolonífero | Cobertura geral |
 | *Brachiaria decumbens* | Braquiária | Fasciculado denso | Cobertura rápida |
 | *Stylosanthes guianensis* | Estilosantes | Pivotante + fixação N₂ | Recuperação de fertilidade |
@@ -41,7 +67,7 @@ A @tbl-gramineas apresenta as principais espécies herbáceas utilizadas em proj
 
 ::: {.callout-tip}
 ## Destaque: Vetiver
-O vetiver (*Vetiveria zizanioides*) é considerado a planta ideal para bioengenharia tropical. Suas raízes podem atingir 4 m de profundidade, com resistência à tração de 40–120 MPa (comparável a fios de aço fino). A planta tolera pH entre 3 e 11, suporta tanto seca prolongada quanto encharcamento temporário, e suas barreiras vivas reduzem a velocidade do escoamento em 60–70%. Por não produzir sementes viáveis fora do seu centro de origem (Índia), não apresenta risco de invasão biológica.
+O vetiver (*Vetiveria zizanioides*) é considerado a planta ideal para bioengenharia tropical. Suas raízes podem atingir 4 m de profundidade, com resistência à tração de 40-120 MPa (comparável a fios de aço fino). A planta tolera pH entre 3 e 11, suporta tanto seca prolongada quanto encharcamento temporário, e suas barreiras vivas reduzem a velocidade do escoamento em 60-70%. Por não produzir sementes viáveis fora do seu centro de origem (Índia), não apresenta risco de invasão biológica.
 :::
 
 ### Espécies Arbóreas e Arbustivas
@@ -64,11 +90,11 @@ Além de seu papel direto na proteção do solo, as plantas tropicais fornecem f
 
 | Espécie | Fibra | Resistência à tração (MPa) | Aplicação |
 |---------|-------|---------------------------|-----------|
-| *Agave sisalana* | Sisal | 400–700 | Geotêxteis, cordas |
-| *Cocos nucifera* | Coco | 95–230 | Biomantas, fibras |
-| *Typha domingensis* | Taboa | 60–120 | Geotêxteis, Bio-SAP |
-| *Boehmeria nivea* | Rami | 400–938 | Reforço de geocompostos |
-| *Musa* spp. | Bananeira | 54–136 | Geodrenos |
+| *Agave sisalana* | Sisal | 400-700 | Geotêxteis, cordas |
+| *Cocos nucifera* | Coco | 95-230 | Biomantas, fibras |
+| *Typha domingensis* | Taboa | 60-120 | Geotêxteis, Bio-SAP |
+| *Boehmeria nivea* | Rami | 400-938 | Reforço de geocompostos |
+| *Musa* spp. | Bananeira | 54-136 | Geodrenos |
 
 : Fibras vegetais tropicais e suas propriedades mecânicas. {#tbl-fibras .striped .hover}
 
@@ -88,7 +114,7 @@ O transplante de mudas produzidas em viveiro é o método indicado para espécie
 
 ### Estacas Vivas
 
-A inserção de estacas vivas consiste em cortar segmentos de ramos de espécies com alta capacidade de enraizamento vegetativo (sabiá, gliricídia, salgueiro, ingá) e inseri-los diretamente no solo úmido, onde emitem raízes e brotações em 2–4 semanas. É um método versátil e econômico (R$ 1.500 a R$ 4.000/ha), indicado para encostas e taludes (onde as estacas são inseridas em ângulo de 45° para ancoragem), margens fluviais (estacas de salgueiro na zona de flutuação do nível d'água) e combinação com estruturas de bioengenharia (estacas inseridas em gabiões vivos, paredes Krainer e paliçadas). As estacas devem ter diâmetro entre 3 e 8 cm, comprimento de 50–100 cm, e ser inseridas com no mínimo 2/3 do comprimento enterrado. O corte deve ser feito durante o período de dormência (estação seca) para maximizar as reservas de carboidratos.
+A inserção de estacas vivas consiste em cortar segmentos de ramos de espécies com alta capacidade de enraizamento vegetativo (sabiá, gliricídia, salgueiro, ingá) e inseri-los diretamente no solo úmido, onde emitem raízes e brotações em 2-4 semanas. É um método versátil e econômico (R$ 1.500 a R$ 4.000/ha), indicado para encostas e taludes (onde as estacas são inseridas em ângulo de 45° para ancoragem), margens fluviais (estacas de salgueiro na zona de flutuação do nível d'água) e combinação com estruturas de bioengenharia (estacas inseridas em gabiões vivos, paredes Krainer e paliçadas). As estacas devem ter diâmetro entre 3 e 8 cm, comprimento de 50-100 cm, e ser inseridas com no mínimo 2/3 do comprimento enterrado. O corte deve ser feito durante o período de dormência (estação seca) para maximizar as reservas de carboidratos.
 
 ### Hidrossemeadura
 

@@ -46,7 +46,7 @@ graph LR
 
 % === Eixo principal ===
 \draw[green!50!black, line width=1.2pt]
-  (0,0) -- (14,0);
+  (0,0) - (14,0);
 
 % Marcas de fase (barras coloridas atrás do eixo)
 \fill[green!80!black, opacity=0.08, rounded corners=3pt]
@@ -92,27 +92,27 @@ graph LR
   2\textsuperscript{a} edi\c{c}\~{a}o};
 
 % === Linhas de conexão (rótulo → nó) ===
-\draw[gray!50, thin] (L1.south) -- (y39.north);
-\draw[gray!50, thin] (L3.south) -- (y81.north);
-\draw[gray!50, thin] (L5.south) -- (y86.north);
-\draw[gray!50, thin] (L7.south) -- (y02.north);
+\draw[gray!50, thin] (L1.south) - (y39.north);
+\draw[gray!50, thin] (L3.south) - (y81.north);
+\draw[gray!50, thin] (L5.south) - (y86.north);
+\draw[gray!50, thin] (L7.south) - (y02.north);
 
-\draw[gray!50, thin] (L2.north) -- (y69.south);
-\draw[gray!50, thin] (L4.north) -- (y84.south);
-\draw[gray!50, thin] (L6.north) -- (y95.south);
-\draw[gray!50, thin] (L8.north) -- (y15.south);
+\draw[gray!50, thin] (L2.north) - (y69.south);
+\draw[gray!50, thin] (L4.north) - (y84.south);
+\draw[gray!50, thin] (L6.north) - (y95.south);
+\draw[gray!50, thin] (L8.north) - (y15.south);
 
 % === Setas direcionais no eixo ===
 \foreach \a/\b in {y39/y69, y69/y81, y81/y84, y84/y86, y86/y95, y95/y02, y02/y15}
   \draw[-stealth, green!50!black, line width=0.5pt]
-    ([xshift=3.5mm]\a.east) -- ([xshift=-3.5mm]\b.west);
+    ([xshift=3.5mm]\a.east) - ([xshift=-3.5mm]\b.west);
 
 \end{tikzpicture}
 ```
 
 :::
 
-A @fig-evolucao-conceito revela uma trajetória de quase oito décadas que pode ser lida em três fases. Na fase fundacional (1939–1981), geógrafos da Europa Central como Troll [-@troll1939], Neef [-@neef1967] e Schmithüsen [-@schmithusen1976] desenvolveram os alicerces teóricos, enfatizando a paisagem como unidade integradora de processos naturais e culturais [@naveh2000]. O impulso para a formalização (1984–1995) veio da América do Norte, quando o workshop de Allerton Park consolidou a ecologia da paisagem como disciplina autônoma com vocabulário, métodos e questões de pesquisa próprios [@risser1984], culminando nas obras de Forman e Godron [-@forman1986] e Forman [-@forman1995]. Desde 2002, a fase quantitativa trouxe métricas espaciais padronizadas (FRAGSTATS), integração com SIG e sensoriamento remoto e sínteses abrangentes como Turner e Gardner [-@turner2015], que estabelecem o cânone contemporâneo [@wu2004].
+A @fig-evolucao-conceito revela uma trajetória de quase oito décadas que pode ser lida em três fases. Na fase fundacional (1939-1981), geógrafos da Europa Central como Troll [-@troll1939], Neef [-@neef1967] e Schmithüsen [-@schmithusen1976] desenvolveram os alicerces teóricos, enfatizando a paisagem como unidade integradora de processos naturais e culturais [@naveh2000]. O impulso para a formalização (1984-1995) veio da América do Norte, quando o workshop de Allerton Park consolidou a ecologia da paisagem como disciplina autônoma com vocabulário, métodos e questões de pesquisa próprios [@risser1984], culminando nas obras de Forman e Godron [-@forman1986] e Forman [-@forman1995]. Desde 2002, a fase quantitativa trouxe métricas espaciais padronizadas (FRAGSTATS), integração com SIG e sensoriamento remoto e sínteses abrangentes como Turner e Gardner [-@turner2015], que estabelecem o cânone contemporâneo [@wu2004].
 
 ## Paisagem como sistema
 
@@ -130,21 +130,21 @@ Na escala da paisagem, processos como dispersão de espécies entre fragmentos, 
 
 ### A raiz sistêmica: Bertalanffy e a Teoria Geral dos Sistemas
 
-Tratar a paisagem como sistema pressupõe um arcabouço teórico que não nasceu na Geografia. A formulação mais influente veio do biólogo austríaco Ludwig von Bertalanffy (1901–1972), que em 1950 propôs a Teoria Geral dos Sistemas (TGS) como tentativa de encontrar princípios organizacionais válidos para qualquer sistema — biológico, físico ou social [@bertalanffy1968]. A premissa central da TGS é que o todo não se reduz à soma das partes: um organismo não é a coleção de suas células, assim como uma paisagem não é a justaposição de suas manchas. A totalidade possui propriedades emergentes que só existem no nível do sistema e que desaparecem quando se decompõe a análise em elementos isolados.
+Tratar a paisagem como sistema pressupõe um arcabouço teórico que não nasceu na Geografia. A formulação mais influente veio do biólogo austríaco Ludwig von Bertalanffy (1901-1972), que em 1950 propôs a Teoria Geral dos Sistemas (TGS) como tentativa de encontrar princípios organizacionais válidos para qualquer sistema - biológico, físico ou social [@bertalanffy1968]. A premissa central da TGS é que o todo não se reduz à soma das partes: um organismo não é a coleção de suas células, assim como uma paisagem não é a justaposição de suas manchas. A totalidade possui propriedades emergentes que só existem no nível do sistema e que desaparecem quando se decompõe a análise em elementos isolados.
 
-Cinco conceitos da TGS são particularmente relevantes para a ciência da paisagem. A *totalidade* afirma que as propriedades do sistema derivam das relações entre seus componentes, não de seus atributos individuais — é o que permite que a configuração espacial de uma paisagem explique mais sobre os processos ecológicos do que a soma das áreas de cada tipo de cobertura. O *isomorfismo* reconhece que leis estruturais semelhantes operam em sistemas de natureza distinta, o que fundamenta a transposição de modelos ecológicos para sistemas socioambientais. A *equifinalidade* admite que estados finais semelhantes podem ser alcançados a partir de condições iniciais diferentes — duas bacias hidrográficas com histórias de uso distintas podem convergir para o mesmo padrão de mosaico. A *homeostase* descreve a tendência do sistema a manter-se em equilíbrio dinâmico por meio de mecanismos de retroalimentação negativa, como a regeneração natural de bordas florestais que atenua o efeito de borda. E a *hierarquia* reconhece que sistemas contêm subsistemas organizados em níveis aninhados — do geótopo à zona climática, na formulação de Bertrand [-@bertrand2007].
+Cinco conceitos da TGS são particularmente relevantes para a ciência da paisagem. A *totalidade* afirma que as propriedades do sistema derivam das relações entre seus componentes, não de seus atributos individuais - é o que permite que a configuração espacial de uma paisagem explique mais sobre os processos ecológicos do que a soma das áreas de cada tipo de cobertura. O *isomorfismo* reconhece que leis estruturais semelhantes operam em sistemas de natureza distinta, o que fundamenta a transposição de modelos ecológicos para sistemas socioambientais. A *equifinalidade* admite que estados finais semelhantes podem ser alcançados a partir de condições iniciais diferentes - duas bacias hidrográficas com histórias de uso distintas podem convergir para o mesmo padrão de mosaico. A *homeostase* descreve a tendência do sistema a manter-se em equilíbrio dinâmico por meio de mecanismos de retroalimentação negativa, como a regeneração natural de bordas florestais que atenua o efeito de borda. E a *hierarquia* reconhece que sistemas contêm subsistemas organizados em níveis aninhados - do geótopo à zona climática, na formulação de Bertrand [-@bertrand2007].
 
 A TGS ofereceu à Geografia uma linguagem transdisciplinar que permitiu integrar o que antes era estudado separadamente: climatologia, geomorfologia, hidrologia, biogeografia, e a interface entre natureza e sociedade. Foi essa linguagem que habilitou Sochava [-@sochava1977] a propor, em 1963, o conceito de geossistema na escola soviética, e Bertrand [-@bertrand2007] a reformulá-lo, em 1968, como unidade de análise que integra potencial ecológico, exploração biológica e ação antrópica. Sem a TGS, a ideia de paisagem como totalidade funcional teria permanecido uma metáfora, não um programa de pesquisa.
 
 ### Da ordem ao caos: a contribuição de Prigogine
 
-Se Bertalanffy explicou como sistemas funcionam, o físico-químico Ilya Prigogine (1917–2003) explicou por que mudam de estado. Laureado com o Nobel de Química em 1977 por seus trabalhos sobre estruturas dissipativas, Prigogine propôs que sistemas abertos longe do equilíbrio termodinâmico podem criar ordem espontaneamente a partir do fluxo contínuo de energia e matéria [@prigogine1977]. Essa formulação, aprofundada em *O Fim das Certezas* [-@prigogine1996], representa uma extensão crítica da TGS: enquanto Bertalanffy enfatizava o equilíbrio dinâmico e a retroalimentação estável, Prigogine mostrou que os fenômenos mais interessantes ocorrem justamente longe do equilíbrio, onde o sistema perde previsibilidade e novas formas de organização emergem.
+Se Bertalanffy explicou como sistemas funcionam, o físico-químico Ilya Prigogine (1917-2003) explicou por que mudam de estado. Laureado com o Nobel de Química em 1977 por seus trabalhos sobre estruturas dissipativas, Prigogine propôs que sistemas abertos longe do equilíbrio termodinâmico podem criar ordem espontaneamente a partir do fluxo contínuo de energia e matéria [@prigogine1977]. Essa formulação, aprofundada em *O Fim das Certezas* [-@prigogine1996], representa uma extensão crítica da TGS: enquanto Bertalanffy enfatizava o equilíbrio dinâmico e a retroalimentação estável, Prigogine mostrou que os fenômenos mais interessantes ocorrem justamente longe do equilíbrio, onde o sistema perde previsibilidade e novas formas de organização emergem.
 
 Quatro conceitos de Prigogine são diretamente aplicáveis à análise da paisagem. As *estruturas dissipativas* explicam por que a paisagem mantém organização espacial: ela é um sistema aberto que dissipa continuamente energia solar e precipitação, e a heterogeneidade do mosaico é, em certa medida, uma forma de ordem sustentada por esse fluxo. A *irreversibilidade* introduz a seta do tempo nos processos paisagísticos: uma voçoroca não retorna espontaneamente a uma encosta estável, e a sequência desmatamento → erosão → assoreamento não pode ser revertida simplesmente pelo replantio, porque o solo perdido, o banco de sementes destruído e a rede de drenagem alterada são transformações com memória.
 
-As *bifurcações* (ou limiares) descrevem os pontos críticos em que o sistema "escolhe" um novo estado de organização; na ecologia da paisagem, o exemplo mais estudado é o limiar de percolação, abaixo do qual a conectividade entre fragmentos de habitat colapsa abruptamente quando a cobertura vegetal cai para menos de aproximadamente 30% da paisagem [@stauffer1994]. A *auto-organização* reconhece que padrões espaciais — como a distribuição de manchas de caatinga conforme topografia e disponibilidade hídrica, ou a estruturação de mosaicos agroflorestais sem planejamento centralizado — emergem de interações locais entre componentes do sistema sem a necessidade de um controle externo.
+As *bifurcações* (ou limiares) descrevem os pontos críticos em que o sistema "escolhe" um novo estado de organização; na ecologia da paisagem, o exemplo mais estudado é o limiar de percolação, abaixo do qual a conectividade entre fragmentos de habitat colapsa abruptamente quando a cobertura vegetal cai para menos de aproximadamente 30% da paisagem [@stauffer1994]. A *auto-organização* reconhece que padrões espaciais - como a distribuição de manchas de caatinga conforme topografia e disponibilidade hídrica, ou a estruturação de mosaicos agroflorestais sem planejamento centralizado - emergem de interações locais entre componentes do sistema sem a necessidade de um controle externo.
 
-A transição de Bertalanffy a Prigogine pode ser sintetizada como a passagem de uma visão de sistemas em equilíbrio para uma visão de sistemas em transformação. Na prática da análise da paisagem, quando identificamos limiares de fragmentação, avaliamos a resiliência de mosaicos a perturbações ou diagnosticamos trajetórias irreversíveis de degradação, estamos operando, implicitamente, no arcabouço conceitual de Prigogine. Essa cadeia de pensamento sistêmico — TGS (Bertalanffy, 1950) → Geossistema soviético (Sochava, 1963) → Geossistema francês (Bertrand, 1968) → Complexidade e irreversibilidade (Prigogine, 1977/1996) → Análise da paisagem contemporânea — constitui o alicerce epistemológico sobre o qual se erguem os métodos e as métricas abordados nos capítulos seguintes.
+A transição de Bertalanffy a Prigogine pode ser sintetizada como a passagem de uma visão de sistemas em equilíbrio para uma visão de sistemas em transformação. Na prática da análise da paisagem, quando identificamos limiares de fragmentação, avaliamos a resiliência de mosaicos a perturbações ou diagnosticamos trajetórias irreversíveis de degradação, estamos operando, implicitamente, no arcabouço conceitual de Prigogine. Essa cadeia de pensamento sistêmico - TGS (Bertalanffy, 1950) → Geossistema soviético (Sochava, 1963) → Geossistema francês (Bertrand, 1968) → Complexidade e irreversibilidade (Prigogine, 1977/1996) → Análise da paisagem contemporânea - constitui o alicerce epistemológico sobre o qual se erguem os métodos e as métricas abordados nos capítulos seguintes.
 
 ## As tradições formadoras
 
@@ -194,11 +194,11 @@ Essa progressão, de Patinir a Friedrich, não é apenas história da arte. Ela 
 
 ### O empirismo raciocinado de Humboldt
 
-A passagem da paisagem estética para a paisagem científica tem um marco decisivo em Alexander von Humboldt (1769–1859). Naturalista, geógrafo e viajante incansável (Fig. @fig-humboldt-retrato), Humboldt recusou a especialização disciplinar numa época em que ela começava a se impor, e dedicou a vida a buscar conexões entre fenômenos que outros tratavam separadamente.
+A passagem da paisagem estética para a paisagem científica tem um marco decisivo em Alexander von Humboldt (1769-1859). Naturalista, geógrafo e viajante incansável (Fig. @fig-humboldt-retrato), Humboldt recusou a especialização disciplinar numa época em que ela começava a se impor, e dedicou a vida a buscar conexões entre fenômenos que outros tratavam separadamente.
 
 ![Retrato de Alexander von Humboldt, o naturalista-viajante que lançou as bases da ciência da paisagem.](../img/humboldt_retrato.jpg){#fig-humboldt-retrato width="45%"}
 
-Em suas expedições pelas Américas (1799–1804), Humboldt desenvolveu o que chamou de *empirismo raciocinado* (*raisonnierter Empirismus*), uma abordagem que integrava observação sistemática de fenômenos naturais com a busca por conexões causais entre eles [@humboldt1807]. A expedição ao Chimborazo (Fig. @fig-humboldt-chimborazo), realizada ao lado de Aimé Bonpland, tornou-se o laboratório dessa abordagem, pois Humboldt registrou, vertente acima, como vegetação, temperatura, pressão e umidade mudavam em conjunto, e não isoladamente.
+Em suas expedições pelas Américas (1799-1804), Humboldt desenvolveu o que chamou de *empirismo raciocinado* (*raisonnierter Empirismus*), uma abordagem que integrava observação sistemática de fenômenos naturais com a busca por conexões causais entre eles [@humboldt1807]. A expedição ao Chimborazo (Fig. @fig-humboldt-chimborazo), realizada ao lado de Aimé Bonpland, tornou-se o laboratório dessa abordagem, pois Humboldt registrou, vertente acima, como vegetação, temperatura, pressão e umidade mudavam em conjunto, e não isoladamente.
 
 ![Humboldt e Bonpland ao pé do vulcão Chimborazo. A expedição que originou as primeiras representações integradas da paisagem tropical.](../img/humboldt_bonpland_chimborazo.jpg){#fig-humboldt-chimborazo width="68%"}
 
@@ -269,7 +269,7 @@ Essas distinções não são meramente semânticas, pois cada categoria abre um 
 
 ## Por que a análise da paisagem importa nos trópicos?
 
-Em paisagens tropicais, a análise da paisagem adquire relevância particular por razões que se reforçam mutuamente. A elevada biodiversidade dessas regiões implica que a fragmentação de habitats afeta um número proporcionalmente maior de espécies, muitas das quais endêmicas e com distribuição restrita [@fahrig2003]. Espécies tropicais tendem a ser mais vulneráveis à perda de habitat do que suas congêneres temperadas, em razão de áreas de vida maiores (para grandes mamíferos), menor capacidade de cruzar matrizes hostis (para aves de sub-bosque) e dependência de interações mutualísticas que se degradam em fragmentos pequenos (polinização, dispersão de sementes) [@fahrig2017; @haddad2015]. Essa vulnerabilidade é agravada pela dinâmica acelerada de uso do solo, com taxas de desmatamento e conversão agrícola que alteram a estrutura da paisagem em escalas temporais de poucos anos a décadas [@soares-filho2006]. No Cerrado brasileiro, por exemplo, a fronteira agrícola converteu centenas de milhares de hectares de vegetação nativa por ano nas décadas de 2000–2020, exigindo métodos de monitoramento capazes de detectar mudanças em tempo quase real.
+Em paisagens tropicais, a análise da paisagem adquire relevância particular por razões que se reforçam mutuamente. A elevada biodiversidade dessas regiões implica que a fragmentação de habitats afeta um número proporcionalmente maior de espécies, muitas das quais endêmicas e com distribuição restrita [@fahrig2003]. Espécies tropicais tendem a ser mais vulneráveis à perda de habitat do que suas congêneres temperadas, em razão de áreas de vida maiores (para grandes mamíferos), menor capacidade de cruzar matrizes hostis (para aves de sub-bosque) e dependência de interações mutualísticas que se degradam em fragmentos pequenos (polinização, dispersão de sementes) [@fahrig2017; @haddad2015]. Essa vulnerabilidade é agravada pela dinâmica acelerada de uso do solo, com taxas de desmatamento e conversão agrícola que alteram a estrutura da paisagem em escalas temporais de poucos anos a décadas [@soares-filho2006]. No Cerrado brasileiro, por exemplo, a fronteira agrícola converteu centenas de milhares de hectares de vegetação nativa por ano nas décadas de 2000-2020, exigindo métodos de monitoramento capazes de detectar mudanças em tempo quase real.
 
 Soma-se a essa dinâmica de conversão a sazonalidade pluviométrica característica dos trópicos, que condiciona processos hidrológicos e erosivos cuja intensidade varia conforme a configuração da cobertura do solo na bacia hidrográfica. Em bacias com alta proporção de solo exposto ou pastagem degradada, a concentração de chuvas no período úmido gera escoamento superficial intenso, erosão acelerada e assoreamento de cursos d'água, processos cuja magnitude depende diretamente da presença, posição e conectividade das manchas de vegetação remanescente na paisagem [@taylor1993; @metzger2006].
 

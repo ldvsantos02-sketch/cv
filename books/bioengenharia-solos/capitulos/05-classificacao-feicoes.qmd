@@ -6,7 +6,7 @@ A classificação precisa das feições erosivas é o primeiro passo para o dime
 
 O mapeamento das feições erosivas pode ser realizado por diferentes métodos, desde o reconhecimento visual em campo até o uso de tecnologias de sensoriamento remoto. A @fig-foto-aerea demonstra a capacidade dos sistemas RPAS (Remotely Piloted Aircraft Systems, popularmente chamados drones) para identificar e mapear feições erosivas com resolução espacial centimétrica.
 
-![Visão aérea de feições erosivas — o mapeamento por RPAS permite identificar e classificar ravinas com precisão espacial centimétrica.](../img/foto_aerea.jpg){#fig-foto-aerea fig-alt="Foto aérea de feições erosivas" width="85%"}
+![Visão aérea de feições erosivas - o mapeamento por RPAS permite identificar e classificar ravinas com precisão espacial centimétrica.](../img/foto_aerea.jpg){#fig-foto-aerea fig-alt="Foto aérea de feições erosivas" width="85%"}
 
 A partir de imagens como a da @fig-foto-aerea, é possível extrair informações geométricas detalhadas (largura, profundidade, comprimento, área da seção transversal) que alimentam os sistemas de classificação e orientam a seleção de técnicas de bioengenharia.
 
@@ -24,7 +24,7 @@ Para classificar uma feição erosiva pelo EGC, é necessário medir seis parâm
 | Profundidade | $D$ | Distância vertical da borda ao fundo (m) | Mira topográfica ou diferença altimétrica do MDS |
 | Comprimento | $L$ | Extensão longitudinal (m) | Trena ou polyline sobre ortomosaico |
 | Área da seção | $A_s$ | Área da seção transversal (m²) | Cálculo por integração do perfil |
-| Razão W/D | — | Indicador da forma da seção (V, U ou trapezoidal) | Divisão de W por D |
+| Razão W/D | - | Indicador da forma da seção (V, U ou trapezoidal) | Divisão de W por D |
 | Declividade do fundo | $S_f$ | Gradiente longitudinal (%) | Nível óptico ou perfil longitudinal do MDT |
 
 : Parâmetros geométricos para classificação de feições erosivas. {#tbl-parametros .striped}
@@ -38,9 +38,9 @@ A @tbl-dimensoes apresenta os critérios dimensionais para cada classe de feiç�
 | Classe | Profundidade | Largura | Área de seção | Processo dominante |
 |--------|-------------|---------|---------------|-------------------|
 | Sulco | < 0,3 m | < 0,3 m | < 0,09 m² | Escoamento difuso concentrado |
-| Ravina pequena | 0,3–1,0 m | 0,3–1,0 m | 0,09–1,0 m² | Escoamento concentrado com incisão |
-| Ravina média | 1,0–3,0 m | 1,0–5,0 m | 1,0–15 m² | Escoamento concentrado + solapamento |
-| Ravina grande | 3,0–5,0 m | 5,0–15 m | 15–75 m² | Múltiplos processos superficiais |
+| Ravina pequena | 0,3-1,0 m | 0,3-1,0 m | 0,09-1,0 m² | Escoamento concentrado com incisão |
+| Ravina média | 1,0-3,0 m | 1,0-5,0 m | 1,0-15 m² | Escoamento concentrado + solapamento |
+| Ravina grande | 3,0-5,0 m | 5,0-15 m | 15-75 m² | Múltiplos processos superficiais |
 | Voçoroca | > 5,0 m | > 15 m | > 75 m² | Superficial + subsuperficial + gravitacional |
 
 : Classificação de feições erosivas por dimensões e processo dominante. {#tbl-dimensoes .striped .hover}
@@ -52,14 +52,14 @@ O uso de Veículos Aéreos Não Tripulados (VANT/drone) revolucionou o levantame
 As imagens a seguir ilustram dois aspectos complementares do levantamento. A @fig-ravina-detalhe mostra o detalhe de uma ravina em resolução que permite medir os parâmetros geométricos da @tbl-parametros diretamente no modelo digital, enquanto a @fig-perfil-feicoes revela os horizontes do solo expostos pela erosão, informação essencial para dimensionar a profundidade de ancoragem das estruturas de bioengenharia.
 
 ::: {layout-ncol=2}
-![Detalhe de ravina — parâmetros geométricos podem ser medidos em campo ou pelo modelo digital gerado por drone.](../img/ravina_detalhe.jpg){#fig-ravina-detalhe fig-alt="Detalhe de ravina em solo tropical"}
+![Detalhe de ravina - parâmetros geométricos podem ser medidos em campo ou pelo modelo digital gerado por drone.](../img/ravina_detalhe.jpg){#fig-ravina-detalhe fig-alt="Detalhe de ravina em solo tropical"}
 
 ![Perfil exposto pela erosão com os horizontes A, AB, BAc e Bt delimitados e a escala métrica ao lado, leitura que fornece a profundidade de cada camada e orienta o dimensionamento da ancoragem das estruturas.](../img/perfil_horizontes_feicao.jpg){#fig-perfil-feicoes fig-alt="Perfil de solo exposto por erosão"}
 :::
 
 ### Fluxo de Trabalho com VANT
 
-O levantamento com VANT segue uma sequência operacional padronizada em cinco etapas. A primeira etapa é o planejamento de voo, no qual se define a área de cobertura, a altitude de voo (tipicamente 50–100 m acima do terreno, resultando em resolução de 1–3 cm/pixel) e a sobreposição entre imagens (mínimo de 80% frontal e 60% lateral para garantir a reconstrução tridimensional). A segunda etapa é a distribuição de pontos de controle (GCPs, *Ground Control Points*), que são alvos georreferenciados com GNSS RTK (precisão centimétrica) distribuídos pela área de interesse para garantir a acurácia posicional do modelo.
+O levantamento com VANT segue uma sequência operacional padronizada em cinco etapas. A primeira etapa é o planejamento de voo, no qual se define a área de cobertura, a altitude de voo (tipicamente 50-100 m acima do terreno, resultando em resolução de 1-3 cm/pixel) e a sobreposição entre imagens (mínimo de 80% frontal e 60% lateral para garantir a reconstrução tridimensional). A segunda etapa é a distribuição de pontos de controle (GCPs, *Ground Control Points*), que são alvos georreferenciados com GNSS RTK (precisão centimétrica) distribuídos pela área de interesse para garantir a acurácia posicional do modelo.
 
 A terceira etapa é o processamento fotogramétrico, realizado por softwares de *Structure from Motion* (SfM) como Agisoft Metashape, OpenDroneMap ou Pix4D, que reconstroem a geometria tridimensional da cena a partir da sobreposição das centenas de fotografias obtidas pelo drone. O resultado é uma nuvem densa de pontos tridimensionais com milhões de coordenadas XYZ. A quarta etapa é a geração de produtos cartográficos, incluindo o ortomosaico (imagem georreferenciada em projeção ortogonal), o MDS (Modelo Digital de Superfície, que inclui a vegetação), o MDT (Modelo Digital do Terreno, obtido pela filtragem da vegetação) e as curvas de nível. Por fim, a quinta etapa é a análise geomorfológica, na qual se extraem seções transversais das feições, calculam-se volumes de perda ou deposição de solo por diferença de MDTs multitemporais e se quantificam taxas de recuo de cabeceira e de alargamento lateral.
 
@@ -112,11 +112,11 @@ A @tbl-iot sintetiza os sensores recomendados para um sistema de monitoramento I
 
 ### LiDAR Terrestre e Aerotransportado
 
-O LiDAR (*Light Detection and Ranging*) complementa a fotogrametria SfM com a capacidade de penetrar a cobertura vegetal, gerando modelos digitais de terreno (MDT) sob dosséis florestais fechados, situação em que a fotogrametria óptica é incapaz de reconstruir a superfície do solo. Em feições erosivas sob regeneração vegetal avançada, o LiDAR aerotransportado por drone (resolução de 5–20 pontos/m²) permite quantificar volumes de preenchimento e deposição que seriam invisíveis por fotogrametria, sendo particularmente útil no monitoramento de médio e longo prazo (anos 3–10 após a intervenção). O LiDAR terrestre (TLS, *Terrestrial Laser Scanner*), com resolução milimétrica (> 1.000 pontos/m²), é a ferramenta de maior precisão para quantificar taxas de recuo de cabeceira e evolução de seções transversais, funcionando como referência para calibração dos demais métodos.
+O LiDAR (*Light Detection and Ranging*) complementa a fotogrametria SfM com a capacidade de penetrar a cobertura vegetal, gerando modelos digitais de terreno (MDT) sob dosséis florestais fechados, situação em que a fotogrametria óptica é incapaz de reconstruir a superfície do solo. Em feições erosivas sob regeneração vegetal avançada, o LiDAR aerotransportado por drone (resolução de 5-20 pontos/m²) permite quantificar volumes de preenchimento e deposição que seriam invisíveis por fotogrametria, sendo particularmente útil no monitoramento de médio e longo prazo (anos 3-10 após a intervenção). O LiDAR terrestre (TLS, *Terrestrial Laser Scanner*), com resolução milimétrica (> 1.000 pontos/m²), é a ferramenta de maior precisão para quantificar taxas de recuo de cabeceira e evolução de seções transversais, funcionando como referência para calibração dos demais métodos.
 
 ### Sensoriamento Distribuído por Fibra Óptica
 
-A tecnologia de sensoriamento distribuído por fibra óptica (DFOS, *Distributed Fiber Optic Sensing*) permite monitorar deformações, temperatura e umidade ao longo de cabos de fibra óptica enterrados no maciço de solo, com resolução espacial de 0,5–1,0 m e extensão de até 10 km por canal. Em estruturas de bioengenharia de grande porte (gabiões vivos, paredes Krainer), a fibra óptica instalada durante a construção funciona como um "sistema nervoso" da estrutura, detectando deformações diferenciais, variações de temperatura associadas a fluxo preferencial de água (piping) e mudanças de umidade que indicam saturação localizada. Embora o custo atual do sistema de aquisição (interrogador óptico, R$ 80.000–200.000) limite sua aplicação a obras de grande responsabilidade (barragens, encostas urbanas), a tendência de redução de custos torna essa tecnologia cada vez mais acessível para projetos de pesquisa e monitoramento de referência.
+A tecnologia de sensoriamento distribuído por fibra óptica (DFOS, *Distributed Fiber Optic Sensing*) permite monitorar deformações, temperatura e umidade ao longo de cabos de fibra óptica enterrados no maciço de solo, com resolução espacial de 0,5-1,0 m e extensão de até 10 km por canal. Em estruturas de bioengenharia de grande porte (gabiões vivos, paredes Krainer), a fibra óptica instalada durante a construção funciona como um "sistema nervoso" da estrutura, detectando deformações diferenciais, variações de temperatura associadas a fluxo preferencial de água (piping) e mudanças de umidade que indicam saturação localizada. Embora o custo atual do sistema de aquisição (interrogador óptico, R$ 80.000-200.000) limite sua aplicação a obras de grande responsabilidade (barragens, encostas urbanas), a tendência de redução de custos torna essa tecnologia cada vez mais acessível para projetos de pesquisa e monitoramento de referência.
 
 ::: {.callout-note}
 ## Integração de dados

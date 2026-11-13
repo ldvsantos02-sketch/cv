@@ -37,7 +37,7 @@ A @tbl-validacao-espacial resume os protocolos de validação e seus vieses.
 
 O crescente uso de modelos de aprendizado de máquina de alta complexidade (deep learning, gradient boosting, ensemble stacking) nas geociências levantou preocupações legítimas sobre interpretabilidade e confiança nas previsões. Modelos caixa-preta (black box) produzem previsões acuradas sem revelar quais variáveis e mecanismos os conduzem, dificultando a identificação de erros, a comunicação com gestores e a integração com o conhecimento do domínio.
 
-A IA Explicável (Explainable AI, XAI) aborda essa lacuna por duas famílias de métodos. Métodos intrínsecos utilizam arquiteturas inerentemente interpretáveis (regressão linear, árvore de decisão, modelos aditivos generalizados — GAM). Métodos post-hoc explicam modelos complexos já treinados, atribuindo importância a cada variável preditora para cada previsão individual.
+A IA Explicável (Explainable AI, XAI) aborda essa lacuna por duas famílias de métodos. Métodos intrínsecos utilizam arquiteturas inerentemente interpretáveis (regressão linear, árvore de decisão, modelos aditivos generalizados - GAM). Métodos post-hoc explicam modelos complexos já treinados, atribuindo importância a cada variável preditora para cada previsão individual.
 
 O SHAP (SHapley Additive exPlanations), proposto por Lundberg e Lee [-@lundberg2017] e fundamentado na teoria de jogos cooperativos de Shapley, decompõe a previsão $f(x)$ de cada instância $x$ em contribuições individuais de cada feature $j$:
 
@@ -45,7 +45,7 @@ $$
 f(x) = \phi_0 + \sum_{j=1}^{M} \phi_j
 $$
 
-onde $\phi_0$ é o valor base (previsão média sobre o conjunto de treinamento) e $\phi_j$ é o valor de Shapley da $j$-ésima feature. Os valores de Shapley possuem propriedades axiomáticas desejáveis (eficiência, simetria, monotonia, linearidade) e fornecem importância local (por previsão) e global (por agregação). Em aplicações geoespaciais, SHAP maps — mapas onde cada pixel recebe o valor de Shapley de cada feature — revelam a contribuição espacialmente variável de cada variável preditora, conectando previsões do modelo com mecanismos geomorfológicos ou hidrológicos interpretativos.
+onde $\phi_0$ é o valor base (previsão média sobre o conjunto de treinamento) e $\phi_j$ é o valor de Shapley da $j$-ésima feature. Os valores de Shapley possuem propriedades axiomáticas desejáveis (eficiência, simetria, monotonia, linearidade) e fornecem importância local (por previsão) e global (por agregação). Em aplicações geoespaciais, SHAP maps - mapas onde cada pixel recebe o valor de Shapley de cada feature - revelam a contribuição espacialmente variável de cada variável preditora, conectando previsões do modelo com mecanismos geomorfológicos ou hidrológicos interpretativos.
 
 O LIME (Local Interpretable Model-agnostic Explanations), proposto por Ribeiro et al. [-@ribeiro2016], gera explicações locais ajustando um modelo linear interpretável na vizinhança de cada instância de interesse, ponderando as observações vizinhas por distância. LIME é computacionalmente mais barato que SHAP mas carece de suas propriedades axiomáticas.
 

@@ -37,10 +37,10 @@ A dimensão perceptiva e vivencial da paisagem foi sistematizada por três autor
 
 ::: {.callout-note}
 ## Paisagem cultural e patrimônio
-A dimensão perceptiva e cultural da paisagem é reconhecida institucionalmente por organismos como o IPHAN (Instituto do Patrimônio Histórico e Artístico Nacional), a UNESCO (com a categoria "Paisagem Cultural da Humanidade") e a Convenção Europeia da Paisagem (Florença, 2000). A Chancela da Paisagem Cultural Brasileira, instituída pelo IPHAN em 2009, protege porções do território nacional nas quais a inter-relação entre natureza, cultura e processos dinâmicos de ocupação é considerada de valor excepcional. Exemplos brasileiros reconhecidos ou candidatos incluem a Cabruca do sul da Bahia, o Sistema Faxinal do sul do Brasil e os territórios de Fundo de Pasto do semiárido baiano — todos casos em que a paisagem é ao mesmo tempo resultado de práticas tradicionais e condição de reprodução dessas práticas.
+A dimensão perceptiva e cultural da paisagem é reconhecida institucionalmente por organismos como o IPHAN (Instituto do Patrimônio Histórico e Artístico Nacional), a UNESCO (com a categoria "Paisagem Cultural da Humanidade") e a Convenção Europeia da Paisagem (Florença, 2000). A Chancela da Paisagem Cultural Brasileira, instituída pelo IPHAN em 2009, protege porções do território nacional nas quais a inter-relação entre natureza, cultura e processos dinâmicos de ocupação é considerada de valor excepcional. Exemplos brasileiros reconhecidos ou candidatos incluem a Cabruca do sul da Bahia, o Sistema Faxinal do sul do Brasil e os territórios de Fundo de Pasto do semiárido baiano - todos casos em que a paisagem é ao mesmo tempo resultado de práticas tradicionais e condição de reprodução dessas práticas.
 :::
 
-![Sistema Faxinal de Sete Saltos, Ponta Grossa – PR: agrossilvopastoril comunitário com araucárias, reconhecido pelo IPHAN como exemplo de paisagem cultural em que a estrutura ecológica e as práticas tradicionais são mutuamente condicionantes.](../img/faxinal_sete_saltos.jpg){#fig-faxinal-paisagem-cultural fig-align="center" width="85%"}
+![Sistema Faxinal de Sete Saltos, Ponta Grossa - PR: agrossilvopastoril comunitário com araucárias, reconhecido pelo IPHAN como exemplo de paisagem cultural em que a estrutura ecológica e as práticas tradicionais são mutuamente condicionantes.](../img/faxinal_sete_saltos.jpg){#fig-faxinal-paisagem-cultural fig-align="center" width="85%"}
 
 A percepção da paisagem é condicionada pelo ponto de observação e pela escala de análise. A visão panorâmica de um mosaico paisagístico (Fig. @fig-perspectiva-paisagem) evidencia como a mudança de perspectiva transforma a leitura do território, revelando padrões de uso, limites entre elementos e relações de vizinhança que não são perceptíveis ao nível do solo.
 
@@ -67,21 +67,21 @@ digraph {
     C [label="VANT / Drone", fillcolor="#E3F2FD", color="#1565C0"]
     D [label="Ortofoto\n< 10 cm", fillcolor="#BBDEFB", color="#1565C0"]
     E [label="Alta resolução\nPlanet, WorldView", fillcolor="#FFF3E0", color="#E65100"]
-    F [label="Imagem\n0.3–5 m", fillcolor="#FFE0B2", color="#E65100"]
+    F [label="Imagem\n0.3-5 m", fillcolor="#FFE0B2", color="#E65100"]
     G [label="Média resolução\nSentinel, Landsat", fillcolor="#FCE4EC", color="#AD1457"]
-    H [label="Imagem\n10–30 m", fillcolor="#F8BBD0", color="#AD1457"]
+    H [label="Imagem\n10-30 m", fillcolor="#F8BBD0", color="#AD1457"]
     I [label="Baixa resolução\nMODIS", fillcolor="#E1BEE7", color="#6A1B9A"]
-    J [label="Imagem\n250–1000 m", fillcolor="#CE93D8", color="#6A1B9A"]
+    J [label="Imagem\n250-1000 m", fillcolor="#CE93D8", color="#6A1B9A"]
 
     A -> B [label="Escala local\n< 10 ha"]
-    C -> D [label="Escala detalhe\n10–100 ha"]
-    E -> F [label="Escala local\n$10^2$–$10^3$ ha"]
-    G -> H [label="Escala regional\n$10^3$–$10^5$ ha"]
+    C -> D [label="Escala detalhe\n10-100 ha"]
+    E -> F [label="Escala local\n$10^2$-$10^3$ ha"]
+    G -> H [label="Escala regional\n$10^3$-$10^5$ ha"]
     I -> J [label="Escala continental\n> $10^5$ ha"]
 }
 ```
 
-A @fig-fontes-dados evidencia que não existe uma fonte de dados universalmente adequada para todas as análises de paisagem. A escolha depende da extensão da área de estudo, do processo ecológico de interesse e da resolução mínima necessária para detectar os elementos da paisagem relevantes. Para estudos de conectividade em escala de bacia hidrográfica ($10^3$–$10^4$ ha), imagens Sentinel-2 (10 m) ou Landsat (30 m) são tipicamente adequadas, pois detectam fragmentos a partir de 0,01 ha e 0,09 ha, respectivamente. Para monitoramento de APP e restauração em escala de propriedade rural ($10^1$–$10^2$ ha), imagens de alta resolução (Planet, 3–5 m) ou levantamentos por VANT (resolução sub-decimétrica) são necessários para mapear a largura real da faixa ripária e avaliar o estágio de regeneração. Para detecção de desmatamento em escala amazônica ($10^6$–$10^8$ ha), dados MODIS (250 m) permitem alertas diários, enquanto a confirmação e quantificação exigem Landsat ou Sentinel.
+A @fig-fontes-dados evidencia que não existe uma fonte de dados universalmente adequada para todas as análises de paisagem. A escolha depende da extensão da área de estudo, do processo ecológico de interesse e da resolução mínima necessária para detectar os elementos da paisagem relevantes. Para estudos de conectividade em escala de bacia hidrográfica ($10^3$-$10^4$ ha), imagens Sentinel-2 (10 m) ou Landsat (30 m) são tipicamente adequadas, pois detectam fragmentos a partir de 0,01 ha e 0,09 ha, respectivamente. Para monitoramento de APP e restauração em escala de propriedade rural ($10^1$-$10^2$ ha), imagens de alta resolução (Planet, 3-5 m) ou levantamentos por VANT (resolução sub-decimétrica) são necessários para mapear a largura real da faixa ripária e avaliar o estágio de regeneração. Para detecção de desmatamento em escala amazônica ($10^6$-$10^8$ ha), dados MODIS (250 m) permitem alertas diários, enquanto a confirmação e quantificação exigem Landsat ou Sentinel.
 
 A passagem de uma escala a outra não é trivial. Dados de alta resolução contêm variabilidade intra-fragmento (clareiras, sub-bosque, trilhas) que pode ser confundida com fragmentação real se a classificação não for adequadamente generalizada. Dados de baixa resolução, inversamente, homogeneízam a paisagem e suprimem elementos menores que seu grão (corredores estreitos, pequenos fragmentos), subestimando a diversidade estrutural. A calibração entre escalas é um problema ativo na Ciência da Paisagem e será retomado no @sec-escalas.
 
@@ -129,17 +129,17 @@ A consolidação de plataformas abertas de distribuição de dados espaciais na 
 
 | Base / Plataforma | Dado principal | Resolução | Acesso |
 |:------------------|:--------------|:---------:|:------:|
-| **MapBiomas** | Uso e cobertura da terra, série 1985–atual | 30 m | mapbiomas.org |
+| **MapBiomas** | Uso e cobertura da terra, série 1985-atual | 30 m | mapbiomas.org |
 | **TOPODATA (INPE)** | Modelo Digital de Elevação, declividade, aspecto | 30 m | topodata.inpe.br |
 | **IBGE** | Bases cartográficas, censos, malha de setores | 1:250.000 | ibge.gov.br/geociencias |
 | **ANA / SNIRH** | Bacias hidrográficas, rede de drenagem, outorgas | 1:1.000.000 | snirh.gov.br |
 | **SICAR** | Cadastro Ambiental Rural (APP, RL) | Variável | car.gov.br |
-| **ICMBio** | Limites de unidades de conservação | — | icmbio.gov.br |
+| **ICMBio** | Limites de unidades de conservação | - | icmbio.gov.br |
 | **CPRM** | Geologia, hidrogeologia, unidades litológicas | 1:1.000.000 | geosgb.cprm.gov.br |
 | **EMBRAPA Solos** | Classes de solos, aptidão agrícola | 1:250.000 | embrapa.br/solos |
 | **PRODES / TerraBrasilis** | Desmatamento na Amazônia, alertas anuais | 30 m | terrabrasilis.inpe.br |
 | **Google Earth Engine** | Processamento de imagens em escala planetária | Variável | earthengine.google.com |
-| **Copernicus Browser** | Imagens Sentinel-1 (SAR) e Sentinel-2 (óptico) | 10–20 m | browser.dataspace.copernicus.eu |
+| **Copernicus Browser** | Imagens Sentinel-1 (SAR) e Sentinel-2 (óptico) | 10-20 m | browser.dataspace.copernicus.eu |
 
 : Principais bases públicas de dados espaciais para análise da paisagem no Brasil. {#tbl-bases-publicas .striped .hover}
 

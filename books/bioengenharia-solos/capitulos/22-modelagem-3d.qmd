@@ -2,13 +2,13 @@
 
 ## Introdução à Fotogrametria Aplicada a Raízes
 
-A quantificação da contribuição mecânica das raízes na estabilidade de taludes é um dos pilares da bioengenharia de solos. Conforme discutido nos capítulos anteriores, os modelos de Wu (@sec-solos-tropicais) e Waldron dependem fundamentalmente de dois parâmetros: a resistência à tração das raízes ($\overline{t_R}$) e a razão de área radicular (*Root Area Ratio* — RAR). Tradicionalmente, o RAR é estimado por métodos bidimensionais — análise de perfis expostos em trincheiras ou contagem de raízes em quadrículas —, que subestimam o volume radicular em 20–40% por não capturarem a distribuição tridimensional das raízes.
+A quantificação da contribuição mecânica das raízes na estabilidade de taludes é um dos pilares da bioengenharia de solos. Conforme discutido nos capítulos anteriores, os modelos de Wu (@sec-solos-tropicais) e Waldron dependem fundamentalmente de dois parâmetros: a resistência à tração das raízes ($\overline{t_R}$) e a razão de área radicular (*Root Area Ratio* - RAR). Tradicionalmente, o RAR é estimado por métodos bidimensionais - análise de perfis expostos em trincheiras ou contagem de raízes em quadrículas -, que subestimam o volume radicular em 20-40% por não capturarem a distribuição tridimensional das raízes.
 
 A fotogrametria digital *Structure from Motion* (SfM) representa uma alternativa acessível e precisa para superação dessas limitações [@westoby2012]. A técnica permite reconstruir a geometria 3D completa de objetos a partir de múltiplas fotografias tomadas de ângulos diferentes, utilizando algoritmos de correspondência de pontos homólogos e triangulação. O encadeamento completo do protocolo, da captura fotográfica à extração de parâmetros geotécnicos, aparece sintetizado na @fig-fluxo-sfm.
 
 ![Fluxograma do protocolo de fotogrametria SfM para modelagem de sistemas radiculares, da captura fotográfica ao cálculo do fator de segurança.](../img/fig_fluxo_sfm.png){#fig-fluxo-sfm fig-alt="Fluxograma do protocolo de fotogrametria SfM para modelagem de sistemas radiculares, da captura fotográfica ao cálculo do fator de segurança" width="90%"}
 
-As vantagens da SfM para aplicação em bioengenharia incluem baixo custo (câmera de celular com ≥ 12 MP), portabilidade (uso direto em campo), disponibilidade de software livre (Meshroom, CloudCompare) e resolução submilimétrica (0,1–1,0 mm), suficiente para detectar raízes finas de gramíneas como o vetiver.
+As vantagens da SfM para aplicação em bioengenharia incluem baixo custo (câmera de celular com ≥ 12 MP), portabilidade (uso direto em campo), disponibilidade de software livre (Meshroom, CloudCompare) e resolução submilimétrica (0,1-1,0 mm), suficiente para detectar raízes finas de gramíneas como o vetiver.
 
 ## Preparação do Sítio Experimental
 
@@ -18,11 +18,11 @@ A seleção do sítio experimental deve considerar três critérios principais: 
 
 ### Abertura da Trincheira e Exposição das Raízes
 
-A área de exposição é demarcada com estacas, formando um retângulo de no mínimo 50 × 50 cm ao redor da touceira selecionada. A escavação deve ser cuidadosa, mantendo as raízes íntegras, e aprofundada até a máxima extensão visível — tipicamente 60–100 cm para vetiver com mais de 12 meses. O jato de água a baixa pressão é utilizado para remover o solo aderido sem romper raízes finas.
+A área de exposição é demarcada com estacas, formando um retângulo de no mínimo 50 × 50 cm ao redor da touceira selecionada. A escavação deve ser cuidadosa, mantendo as raízes íntegras, e aprofundada até a máxima extensão visível - tipicamente 60-100 cm para vetiver com mais de 12 meses. O jato de água a baixa pressão é utilizado para remover o solo aderido sem romper raízes finas.
 
 ::: {.callout-tip}
 ## Dica de Campo
-Após a lavagem com jato d'água, aguarde 5–10 minutos para que as raízes sequem superficialmente antes de fotografar. Raízes secas apresentam melhor contraste com o solo, mas uma leve borrifada de água imediatamente antes da captura melhora a textura visual nas fotos.
+Após a lavagem com jato d'água, aguarde 5-10 minutos para que as raízes sequem superficialmente antes de fotografar. Raízes secas apresentam melhor contraste com o solo, mas uma leve borrifada de água imediatamente antes da captura melhora a textura visual nas fotos.
 :::
 
 ### Montagem da Cena
@@ -33,7 +33,7 @@ A preparação da cena para fotogrametria requer: (a) posicionamento de escala m
 
 ### Configuração da Câmera
 
-A câmera deve ser configurada em modo manual (M) ou prioridade de abertura (Av), com ISO 100–400, abertura f/5.6 a f/8 (para máxima profundidade de campo), velocidade ≥ 1/125 s, foco manual fixo e flash desligado. A captura deve ser realizada sob iluminação difusa (céu nublado) ou com sol baixo, evitando sombras projetadas sobre as raízes.
+A câmera deve ser configurada em modo manual (M) ou prioridade de abertura (Av), com ISO 100-400, abertura f/5.6 a f/8 (para máxima profundidade de campo), velocidade ≥ 1/125 s, foco manual fixo e flash desligado. A captura deve ser realizada sob iluminação difusa (céu nublado) ou com sol baixo, evitando sombras projetadas sobre as raízes.
 
 ### Protocolo de Captura Orbital
 
@@ -41,13 +41,13 @@ O protocolo de captura segue um padrão de órbitas concêntricas ao redor do si
 
 | Órbita | Distância (m) | Ângulo entre fotos | Nº de fotos | Objetivo |
 |:------:|:-------------:|:-------------------:|:-----------:|----------|
-| 1 — Contexto | 1,0–1,5 | 10–15° | 24–36 | Cobertura 360°, visão geral |
-| 2 — Média | 0,5–0,8 | 10° | 36 | Detalhamento intermediário |
-| 3 — Detalhe | 0,3–0,5 | Livre | ≥ 20 | Close-ups de zonas densas |
+| 1 - Contexto | 1,0-1,5 | 10-15° | 24-36 | Cobertura 360°, visão geral |
+| 2 - Média | 0,5-0,8 | 10° | 36 | Detalhamento intermediário |
+| 3 - Detalhe | 0,3-0,5 | Livre | ≥ 20 | Close-ups de zonas densas |
 
 : Protocolo de captura fotográfica orbital para fotogrametria SfM de raízes. {#tbl-orbitas .striped .hover}
 
-O total mínimo é de 80 fotos (recomendado: 100–120), com sobreposição ≥ 70% entre consecutivas. Cada ponto do objeto deve ser visível em pelo menos 3 fotos de ângulos distintos, e a escala métrica deve aparecer em ≥ 50% das imagens.
+O total mínimo é de 80 fotos (recomendado: 100-120), com sobreposição ≥ 70% entre consecutivas. Cada ponto do objeto deve ser visível em pelo menos 3 fotos de ângulos distintos, e a escala métrica deve aparecer em ≥ 50% das imagens.
 
 ### Resolução Espacial (GSD)
 
@@ -55,7 +55,7 @@ A viabilidade da detecção de raízes finas depende da resolução espacial das
 
 $$GSD = \frac{d \times p}{f}$$ {#eq-gsd-cap22}
 
-onde $d$ é a distância câmera-objeto (m), $p$ é o tamanho do pixel no sensor (mm) e $f$ é a distância focal (mm). O critério adotado é $GSD \leq d_{min}/2$, onde $d_{min}$ é o diâmetro da menor raiz a detectar. Para raízes de vetiver (diâmetro ≈ 0,5 mm), o GSD deve ser ≤ 0,25 mm/pixel — facilmente alcançável com câmeras de 12 MP a 0,5 m de distância.
+onde $d$ é a distância câmera-objeto (m), $p$ é o tamanho do pixel no sensor (mm) e $f$ é a distância focal (mm). O critério adotado é $GSD \leq d_{min}/2$, onde $d_{min}$ é o diâmetro da menor raiz a detectar. Para raízes de vetiver (diâmetro ≈ 0,5 mm), o GSD deve ser ≤ 0,25 mm/pixel - facilmente alcançável com câmeras de 12 MP a 0,5 m de distância.
 
 ## Processamento Fotogramétrico
 
@@ -95,7 +95,7 @@ Os produtos do processamento são a nuvem de pontos densa (formato `.ply`, com c
 
 ### Limpeza da Nuvem de Pontos
 
-O CloudCompare é o software utilizado para análise tridimensional. Após importação do arquivo `.ply`, a limpeza compreende três etapas: remoção manual de pontos do solo e fundo por segmentação poligonal (Edit → Segment), remoção estatística de outliers pelo *Statistical Outlier Removal* (SOR Filter, com 6 vizinhos e multiplicador 1,0–2,0), e subamostragem por espaçamento mínimo de 0,5–1,0 mm quando necessário.
+O CloudCompare é o software utilizado para análise tridimensional. Após importação do arquivo `.ply`, a limpeza compreende três etapas: remoção manual de pontos do solo e fundo por segmentação poligonal (Edit → Segment), remoção estatística de outliers pelo *Statistical Outlier Removal* (SOR Filter, com 6 vizinhos e multiplicador 1,0-2,0), e subamostragem por espaçamento mínimo de 0,5-1,0 mm quando necessário.
 
 ### Calibração de Escala
 
@@ -123,13 +123,13 @@ onde $n_{raiz}$ é o número de células ocupadas por raízes e $n_{total}$ é o
 
 A @tbl-rar-exemplo apresenta valores típicos de RAR para vetiver estabelecido há 18 meses em talude rodoviário com solo argiloso tropical, obtidos por este protocolo.
 
-| Camada (cm) | $A_{raiz}$ (cm²) | $A_{total}$ (cm²) | RAR (%) | $\Delta c_r$ — Wu (kPa) |
+| Camada (cm) | $A_{raiz}$ (cm²) | $A_{total}$ (cm²) | RAR (%) | $\Delta c_r$ - Wu (kPa) |
 |:-----------:|:-----------------:|:------------------:|:-------:|:-----------------------:|
-| 0–10 | 10,0 | 2500 | 0,40 | 7,2 |
-| 10–20 | 7,5 | 2500 | 0,30 | 5,4 |
-| 20–30 | 5,0 | 2500 | 0,20 | 3,6 |
-| 30–50 | 3,0 | 2500 | 0,12 | 2,2 |
-| 50–100 | 1,25 | 2500 | 0,05 | 0,9 |
+| 0-10 | 10,0 | 2500 | 0,40 | 7,2 |
+| 10-20 | 7,5 | 2500 | 0,30 | 5,4 |
+| 20-30 | 5,0 | 2500 | 0,20 | 3,6 |
+| 30-50 | 3,0 | 2500 | 0,12 | 2,2 |
+| 50-100 | 1,25 | 2500 | 0,05 | 0,9 |
 
 : RAR e acréscimo de coesão por camada de profundidade para vetiver com 18 meses. {#tbl-rar-exemplo .striped .hover}
 
@@ -147,7 +147,7 @@ onde $\overline{t_R}$ é a resistência média à tração das raízes e o fator
 
 ::: {.callout-important}
 ## Limitação do Modelo de Wu
-O modelo de Wu assume que todas as raízes rompem simultaneamente, o que na prática não ocorre. Estudos de @pollen2005 demonstraram superestimação de 50–100% em relação a medições de campo. O modelo é adequado para triagem preliminar, mas projetos executivos devem utilizar o modelo de Waldron ou o modelo de fibras progressivas (FBM).
+O modelo de Wu assume que todas as raízes rompem simultaneamente, o que na prática não ocorre. Estudos de @pollen2005 demonstraram superestimação de 50-100% em relação a medições de campo. O modelo é adequado para triagem preliminar, mas projetos executivos devem utilizar o modelo de Waldron ou o modelo de fibras progressivas (FBM).
 :::
 
 ### Modelo de Waldron (1977)
@@ -158,7 +158,7 @@ $$\Delta S = T_r \times \frac{A_r}{A_s} \times (\sin\theta + \cos\theta \tan\phi
 
 onde $\phi'$ é o ângulo de atrito efetivo do solo. A @tbl-comparativo-modelos compara os dois modelos para os dados da @tbl-rar-exemplo.
 
-| Modelo | $\Delta c_r$ médio (0–30 cm) | Observação |
+| Modelo | $\Delta c_r$ médio (0-30 cm) | Observação |
 |--------|:----------------------------:|------------|
 | Wu (1979) | 5,4 kPa | Limite superior (superestima) |
 | Waldron (1977) | 3,8 kPa | Mais realista ($\theta$ = 55°, $\phi'$ = 25°) |
@@ -202,11 +202,11 @@ A @tbl-tecnicas-3d compara a fotogrametria SfM com outras técnicas de imagem 3D
 
 | Técnica | Resolução | Custo | Portabilidade | Ideal para |
 |---------|:---------:|:-----:|:-------------:|:-----------|
-| **Fotogrametria SfM** | 0,1–1 mm | Baixo | Campo | Raízes expostas em taludes |
-| LiDAR terrestre | 1–5 mm | Alto | Pesado | Estruturas > 1 m |
-| Tomografia (CT) | 10–50 µm | Muito alto | Laboratório | Raízes finas in-situ |
-| Ressonância (MRI) | 50–200 µm | Muito alto | Laboratório | Dinâmica de água |
-| Scanner 3D estruturado | 0,05–0,5 mm | Médio | Lab/campo | Amostras em bancada |
+| **Fotogrametria SfM** | 0,1-1 mm | Baixo | Campo | Raízes expostas em taludes |
+| LiDAR terrestre | 1-5 mm | Alto | Pesado | Estruturas > 1 m |
+| Tomografia (CT) | 10-50 µm | Muito alto | Laboratório | Raízes finas in-situ |
+| Ressonância (MRI) | 50-200 µm | Muito alto | Laboratório | Dinâmica de água |
+| Scanner 3D estruturado | 0,05-0,5 mm | Médio | Lab/campo | Amostras em bancada |
 
 : Comparativo de técnicas de imagem 3D para sistemas radiculares. {#tbl-tecnicas-3d .striped .hover}
 
@@ -214,5 +214,5 @@ A fotogrametria SfM é a única técnica que combina portabilidade de campo, res
 
 ::: {.callout-tip}
 ## Aplicação Prática
-O protocolo descrito neste capítulo pode ser aplicado a qualquer espécie vegetal de interesse para bioengenharia. Para espécies com raízes mais finas que o vetiver (como gramíneas nativas do Cerrado), reduza a distância de captura na Órbita 3 para 0,2–0,3 m e utilize câmera com resolução ≥ 20 MP para garantir GSD ≤ 0,15 mm/pixel.
+O protocolo descrito neste capítulo pode ser aplicado a qualquer espécie vegetal de interesse para bioengenharia. Para espécies com raízes mais finas que o vetiver (como gramíneas nativas do Cerrado), reduza a distância de captura na Órbita 3 para 0,2-0,3 m e utilize câmera com resolução ≥ 20 MP para garantir GSD ≤ 0,15 mm/pixel.
 :::

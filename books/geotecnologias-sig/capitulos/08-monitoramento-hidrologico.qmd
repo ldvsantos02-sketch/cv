@@ -4,15 +4,15 @@
 
 A rede hidrométrica convencional brasileira, operada pela Agência Nacional de Águas (ANA) em parceria com estados e entidades delegatárias, constitui a infraestrutura fundamental para medição de variáveis hidrológicas. As estações fluviométricas medem nível d'água (réguas linimétricas, limnígrafos de boia ou pressão) e vazão (molinetes hidrométricos, ADCPs acústicos), enquanto as estações pluviométricas medem precipitação (pluviômetros Ville de Paris, pluviógrafos automáticos).
 
-O problema inverso da hidrologia (inferir variáveis distribuídas no espaço a partir de observações pontuais esparsas) é particularmente agudo em regiões tropicais com precipitação convectiva, onde células de chuva com diâmetro de 5–15 km podem gerar volumes de água que passam despercebidos por estações separadas por 50–100 km. A recomendação da WMO (2008) de uma estação pluviométrica por 250 km² (terreno plano) ou 25 km² (terreno montanhoso) está longe de ser atendida em grande parte do semiárido brasileiro, onde a densidade média da rede é inferior a uma estação por 1.000 km².
+O problema inverso da hidrologia (inferir variáveis distribuídas no espaço a partir de observações pontuais esparsas) é particularmente agudo em regiões tropicais com precipitação convectiva, onde células de chuva com diâmetro de 5-15 km podem gerar volumes de água que passam despercebidos por estações separadas por 50-100 km. A recomendação da WMO (2008) de uma estação pluviométrica por 250 km² (terreno plano) ou 25 km² (terreno montanhoso) está longe de ser atendida em grande parte do semiárido brasileiro, onde a densidade média da rede é inferior a uma estação por 1.000 km².
 
 ## Telemetria e IoT hidrológica
 
 A transição do monitoramento manual para o automatizado e telemétrico transformou a capacidade de resposta a eventos hidrológicos extremos. A premissa operacional dos sistemas de alerta é que a latência (tempo entre a medição e a disponibilidade do dado) deve ser inferior ao tempo de concentração da bacia, permitindo que alertas sejam emitidos antes da chegada da onda de cheia.
 
-Os sensores modernos de nível d'água incluem transdutores de pressão submersos (resolução milimétrica, aquisição a cada 5–15 min), sensores ultrassônicos (sem contato com a água) e sensores LiDAR (operação em condições de forte turbulência). Os pluviômetros automáticos de báscula registram cada basculada (0,2 ou 0,25 mm), permitindo a reconstrução da hietograma com resolução sub-horária.
+Os sensores modernos de nível d'água incluem transdutores de pressão submersos (resolução milimétrica, aquisição a cada 5-15 min), sensores ultrassônicos (sem contato com a água) e sensores LiDAR (operação em condições de forte turbulência). Os pluviômetros automáticos de báscula registram cada basculada (0,2 ou 0,25 mm), permitindo a reconstrução da hietograma com resolução sub-horária.
 
-A transmissão de dados em tempo real utiliza protocolos de IoT (Internet of Things) dimensionados para o ambiente rural: LoRaWAN (alcance de 5–15 km em campo aberto, baixo consumo energético), redes celulares (4G/5G, em áreas com cobertura) e comunicação satelital (Iridium, GOES, para estações remotas). A convergência desses protocolos permite construir redes de monitoramento com latência inferior a 15 minutos a custos cada vez mais acessíveis.
+A transmissão de dados em tempo real utiliza protocolos de IoT (Internet of Things) dimensionados para o ambiente rural: LoRaWAN (alcance de 5-15 km em campo aberto, baixo consumo energético), redes celulares (4G/5G, em áreas com cobertura) e comunicação satelital (Iridium, GOES, para estações remotas). A convergência desses protocolos permite construir redes de monitoramento com latência inferior a 15 minutos a custos cada vez mais acessíveis.
 
 ::: {.callout-note}
 ## Latência e alerta
@@ -41,7 +41,7 @@ A fusão de dados orbitais (alta cobertura espacial, baixa frequência temporal)
 
 O GPM (Global Precipitation Measurement), lançado em 2014, combina radar de dupla frequência (Ku e Ka) com radiômetro de micro-ondas para estimar precipitação com resolução espaço-temporal de ~10 km e 30 minutos (produto IMERG). O CHIRPS (Climate Hazards Group InfraRed Precipitation with Station data) combina dados de infravermelho térmico de satélites geoestacionários com estações terrestres para produzir séries de precipitação com resolução de 0,05° (~5 km) e passo diário, desde 1981, sendo amplamente utilizado em regiões com baixa densidade de estações, como o Sahel e o semiárido brasileiro.
 
-A umidade volumétrica do solo na camada superficial (0–5 cm) é estimada pela missão SMAP (Soil Moisture Active Passive, NASA) utilizando radiometria em Banda L (1,4 GHz), que penetra a cobertura vegetal moderada e é sensível ao conteúdo de água no solo. A resolução espacial do radiômetro SMAP é de ~40 km (downscaling para 9 km com dados auxiliares), e a resolução temporal é de 2–3 dias, permitindo monitoramento quase contínuo da disponibilidade hídrica no solo para aplicações agrícolas e hidrológicas.
+A umidade volumétrica do solo na camada superficial (0-5 cm) é estimada pela missão SMAP (Soil Moisture Active Passive, NASA) utilizando radiometria em Banda L (1,4 GHz), que penetra a cobertura vegetal moderada e é sensível ao conteúdo de água no solo. A resolução espacial do radiômetro SMAP é de ~40 km (downscaling para 9 km com dados auxiliares), e a resolução temporal é de 2-3 dias, permitindo monitoramento quase contínuo da disponibilidade hídrica no solo para aplicações agrícolas e hidrológicas.
 
 ## Evapotranspiração e bacias virtuais
 

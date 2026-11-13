@@ -44,7 +44,7 @@ O modelo matricial (raster) discretiza o espaço em uma grade regular de célula
 
 O trade-off fundamental do modelo raster é a relação inversa entre resolução e volume de dados. Uma imagem que cobre 100 × 100 km com pixels de 10 m contém $10^8$ (cem milhões) de células por banda espectral. Para um satélite como o Sentinel-2 com 13 bandas, isso equivale a 1,3 bilhão de valores por cena. Essa escala de dados exige infraestrutura computacional robusta e motiva o uso de plataformas de processamento em nuvem como o Google Earth Engine [@gorelick2017].
 
-Cada pixel de uma imagem raster pode armazenar diferentes tipos de dados: inteiros sem sinal (0–255 para imagens de 8 bits), inteiros com sinal, ponto flutuante (para dados contínuos como temperatura ou elevação) ou valores categóricos (para mapas de uso do solo). A profundidade radiométrica (número de bits por pixel) determina a quantidade de níveis de cinza distinguíveis: uma imagem de 8 bits resolve 256 níveis, enquanto uma de 12 bits (como as do Sentinel-2) resolve 4.096 níveis, permitindo diferenciar variações sutis de reflectância que uma imagem de 8 bits não captaria.
+Cada pixel de uma imagem raster pode armazenar diferentes tipos de dados: inteiros sem sinal (0-255 para imagens de 8 bits), inteiros com sinal, ponto flutuante (para dados contínuos como temperatura ou elevação) ou valores categóricos (para mapas de uso do solo). A profundidade radiométrica (número de bits por pixel) determina a quantidade de níveis de cinza distinguíveis: uma imagem de 8 bits resolve 256 níveis, enquanto uma de 12 bits (como as do Sentinel-2) resolve 4.096 níveis, permitindo diferenciar variações sutis de reflectância que uma imagem de 8 bits não captaria.
 
 ## Referenciamento espacial
 

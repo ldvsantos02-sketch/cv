@@ -53,16 +53,16 @@ A incorporação da dimensão temporal à classificação amplia significativame
 |:---|:---:|:---:|
 | Soja | Média, confunde com milho | Pico em fev, senescência abrupta em abr |
 | Milho | Média, confunde com soja | Pico em jan, senescência em mar |
-| Cana-de-açúcar | Alta, confunde com floresta | Pico em mar–mai, corte abrupto (queda para 0,2) |
-| Pastagem | Baixa a média | Amplitude sazonal moderada (0,3–0,6) |
-| Floresta | Alta e estável (0,7–0,9) | Sem variação sazonal significativa |
+| Cana-de-açúcar | Alta, confunde com floresta | Pico em mar-mai, corte abrupto (queda para 0,2) |
+| Pastagem | Baixa a média | Amplitude sazonal moderada (0,3-0,6) |
+| Floresta | Alta e estável (0,7-0,9) | Sem variação sazonal significativa |
 | Solo exposto | Baixa e estável (< 0,2) | Sem variação sazonal |
 
 : Separabilidade de classes de uso e cobertura por resposta espectral estática vs. assinatura temporal de NDVI. A coluna "estática" indica o grau de confusão numa única data, enquanto a coluna "temporal" mostra como o perfil fenológico permite discriminação. {#tbl-separabilidade .striped .hover}
 
 A @tbl-separabilidade evidencia que a informação temporal resolve ambiguidades que a informação espectral estática não consegue resolver. Soja e milho, indistinguíveis numa única imagem, separam-se pelo deslocamento temporal do pico de NDVI (janeiro vs. fevereiro). Cana-de-açúcar e floresta, ambas com NDVI alto numa data qualquer, distinguem-se pelo evento de corte (queda abrupta de NDVI para valores inferiores a 0,2), que é ausente na floresta. Pastagem e vegetação campestre nativa, confusas em imagens estáticas, podem ser separadas pelo regime de manejo (a pastagem manejada mostra flutuações irregulares associadas a pastejo e roçagem, enquanto a vegetação nativa segue um ciclo sazonal regular).
 
-O projeto MapBiomas utiliza classificação multitemporal em plataforma Google Earth Engine para gerar mapas anuais de uso e cobertura de todo o Brasil (1985–presente) com resolução de 30 m (Landsat). A metodologia emprega mosaicos médios anuais, séries temporais de NDVI, EVI e outras métricas fenológicas, e classificadores Random Forest treinados com amostras específicas para cada bioma, atingindo acurácias globais que variam entre 82% e 92% conforme o bioma e a classe.
+O projeto MapBiomas utiliza classificação multitemporal em plataforma Google Earth Engine para gerar mapas anuais de uso e cobertura de todo o Brasil (1985-presente) com resolução de 30 m (Landsat). A metodologia emprega mosaicos médios anuais, séries temporais de NDVI, EVI e outras métricas fenológicas, e classificadores Random Forest treinados com amostras específicas para cada bioma, atingindo acurácias globais que variam entre 82% e 92% conforme o bioma e a classe.
 
 ## Validação
 
@@ -86,6 +86,6 @@ Um erro de classificação de 10% que converta sistematicamente "capoeira" em "p
 
 ## Desafios em paisagens tropicais
 
-A classificação de paisagens tropicais enfrenta desafios específicos que limitam a acurácia e a resolução temática dos mapeamentos. A nebulosidade persistente limita a disponibilidade de cenas ópticas livres de nuvens, especialmente durante a estação chuvosa (4–6 meses na Amazônia, 3–5 meses na Zona da Mata), e pode inviabilizar a obtenção de imagens utilizáveis justamente no período de maior atividade vegetativa. A diversidade de fitofisionomias (no Cerrado, por exemplo, a transição contínua entre campo limpo, campo sujo, cerrado ralo, cerrado típico, cerrado denso e cerradão) dificulta a definição de limites de classe e reduz a separabilidade espectral entre formações adjacentes no gradiente. A dinâmica agrícola acelerada (dupla safra, safrinha, sistemas integrados lavoura-pecuária-floresta, ILPF) exige classificações multitemporais de alta frequência para capturar ciclos curtos que podem ser confundidos com mudanças de cobertura.
+A classificação de paisagens tropicais enfrenta desafios específicos que limitam a acurácia e a resolução temática dos mapeamentos. A nebulosidade persistente limita a disponibilidade de cenas ópticas livres de nuvens, especialmente durante a estação chuvosa (4-6 meses na Amazônia, 3-5 meses na Zona da Mata), e pode inviabilizar a obtenção de imagens utilizáveis justamente no período de maior atividade vegetativa. A diversidade de fitofisionomias (no Cerrado, por exemplo, a transição contínua entre campo limpo, campo sujo, cerrado ralo, cerrado típico, cerrado denso e cerradão) dificulta a definição de limites de classe e reduz a separabilidade espectral entre formações adjacentes no gradiente. A dinâmica agrícola acelerada (dupla safra, safrinha, sistemas integrados lavoura-pecuária-floresta, ILPF) exige classificações multitemporais de alta frequência para capturar ciclos curtos que podem ser confundidos com mudanças de cobertura.
 
 Estratégias para lidar com esses desafios incluem a integração de dados ópticos e SAR (radar penetra nuvens), a utilização de séries temporais densas com composição de melhores pixels (mediana, quantis), a adoção de sistemas de legenda hierárquicos (classificação em níveis progressivos de detalhe, nos quais classes incertas em níveis detalhados são agregadas em classes confiáveis em níveis superiores) e a validação em campo com georreferenciamento por GNSS de precisão.

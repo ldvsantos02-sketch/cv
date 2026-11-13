@@ -23,7 +23,7 @@ digraph {
     edge [color="#555555", penwidth=1.0]
 
     P [label="Precipitação", fillcolor="#1565C0", fontcolor="white", color="#0D47A1", penwidth=1.5]
-    I [label="Interceptação\n(10–25% em florestas)", fillcolor="#C8E6C9", color="#2E7D32"]
+    I [label="Interceptação\n(10-25% em florestas)", fillcolor="#C8E6C9", color="#2E7D32"]
     S [label="Água que atinge\no solo", fillcolor="#BBDEFB", color="#1565C0"]
     ET1 [label="Evaporação da\ninterceptação", fillcolor="#E8F5E9", color="#2E7D32"]
     INF [label="Infiltração\n(função de cobertura,\nsolo, umidade)", fillcolor="#E3F2FD", color="#1565C0"]
@@ -60,14 +60,14 @@ Nesta formulação cinemática, $Q$ é a vazão máxima de pico gerada (em m³/s
 
 | Cobertura do solo | Coeficiente $C$ (adimensional) | Infiltração relativa |
 |:---|:---:|:---:|
-| Floresta nativa densa | 0.05 – 0.15 | Muito alta |
-| Cerrado nativo | 0.10 – 0.20 | Alta |
-| Pastagem bem manejada | 0.20 – 0.35 | Moderada |
-| Pastagem degradada | 0.35 – 0.55 | Baixa |
-| Cultivo com plantio direto | 0.25 – 0.40 | Moderada |
-| Cultivo convencional (solo exposto) | 0.40 – 0.65 | Baixa |
-| Área urbana com jardins | 0.50 – 0.70 | Baixa a muito baixa |
-| Área urbana impermeabilizada | 0.75 – 0.95 | Muito baixa |
+| Floresta nativa densa | 0.05 - 0.15 | Muito alta |
+| Cerrado nativo | 0.10 - 0.20 | Alta |
+| Pastagem bem manejada | 0.20 - 0.35 | Moderada |
+| Pastagem degradada | 0.35 - 0.55 | Baixa |
+| Cultivo com plantio direto | 0.25 - 0.40 | Moderada |
+| Cultivo convencional (solo exposto) | 0.40 - 0.65 | Baixa |
+| Área urbana com jardins | 0.50 - 0.70 | Baixa a muito baixa |
+| Área urbana impermeabilizada | 0.75 - 0.95 | Muito baixa |
 
 : Coeficientes termodinâmicos de escoamento ($C$) típicos para componentes de paisagem no domínio tropical. {#tbl-coeficientes .striped .hover}
 

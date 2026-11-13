@@ -81,7 +81,7 @@ A série de estabilidade de Goldich (inversa da série de cristalização de Bow
 | Olivina | Quartzo |
 | Piroxênio | Muscovita |
 | Anfibólio | Feldspato potássico |
-| Biotita | — |
+| Biotita | - |
 
 : Série de estabilidade de Goldich, onde minerais formados em altas temperaturas (esquerda) são os primeiros a intemperizar. {#tbl-goldich .striped}
 
@@ -100,9 +100,9 @@ O CIA mede a proporção de alumínio (que permanece no solo como argilas e hidr
 | CIA | Grau de intemperismo | Exemplo |
 |-----|---------------------|---------|
 | 50 | Rocha fresca | Granito inalterado |
-| 60–70 | Moderado | Solos de zona temperada |
-| 75–85 | Avançado | Argissolos tropicais |
-| 85–100 | Extremo | Latossolos, bauxitas |
+| 60-70 | Moderado | Solos de zona temperada |
+| 75-85 | Avançado | Argissolos tropicais |
+| 85-100 | Extremo | Latossolos, bauxitas |
 
 : Interpretação do CIA para diferentes graus de intemperismo. {#tbl-cia .striped}
 
@@ -116,7 +116,7 @@ A caulinita é uma argila do tipo 1:1 (uma lâmina tetraédrica de sílica ligad
 
 ![Estrutura 1:1 da caulinita: **(a)** lâmina tetraédrica de sílica; **(b)** lâmina octaédrica de alumina; **(c)** espaço interlamelar fixado por ligações de hidrogênio, que impede a entrada de água; **(d)** hábito em plaqueta hexagonal.](../img/caulinita.jpg){#fig-caulinita fig-alt="Estrutura em camadas da caulinita e bloqueio do espaço interlamelar" width="85%"}
 
-Para a bioengenharia, as propriedades da caulinita têm implicações diretas. Sua baixa capacidade de troca catiônica (CTC ≈ 3–15 cmolc/kg, contra 80–150 cmolc/kg em argilas montmoriloníticas) significa que solos cauliníticos retêm poucos nutrientes, exigindo adição de matéria orgânica para sustentar o crescimento vegetal. Sua baixa expansibilidade (não incha nem contrai com variações de umidade, diferentemente das argilas 2:1) confere estabilidade volumétrica ao solo, o que é vantajoso para estruturas construídas sobre ele. Sua coesão moderada explica a estabilidade aparente dos solos tropicais secos, mas a perda rápida de resistência quando saturados.
+Para a bioengenharia, as propriedades da caulinita têm implicações diretas. Sua baixa capacidade de troca catiônica (CTC ≈ 3-15 cmolc/kg, contra 80-150 cmolc/kg em argilas montmoriloníticas) significa que solos cauliníticos retêm poucos nutrientes, exigindo adição de matéria orgânica para sustentar o crescimento vegetal. Sua baixa expansibilidade (não incha nem contrai com variações de umidade, diferentemente das argilas 2:1) confere estabilidade volumétrica ao solo, o que é vantajoso para estruturas construídas sobre ele. Sua coesão moderada explica a estabilidade aparente dos solos tropicais secos, mas a perda rápida de resistência quando saturados.
 
 ### Goethita (FeOOH)
 
@@ -128,7 +128,7 @@ A hematita é o óxido de ferro que confere a cor vermelha intensa aos solos tro
 
 ![Óxidos de ferro em solos tropicais: **(a)** agregado granular revestido; **(b)** ponte de óxido cimentando partículas; **(c)** hábitos cristalinos contrastantes.](../img/hematita.jpg){#fig-hematita fig-alt="Agregado de solo, ponte cimentante de óxido e hábitos cristalinos de óxidos de ferro" width="85%"}
 
-A hematita possui papel fundamental na microagregação dos solos tropicais (Latossolos). Ela atua como agente cimentante entre partículas de caulinita, formando microagregados esféricos de 0,1–1,0 mm de diâmetro que conferem ao solo uma estrutura granular extremamente estável e, paradoxalmente, fazem com que solos com 60–80% de argila se comportem hidraulicamente como areias (alta permeabilidade, baixa plasticidade). Essa microagregação é benéfica para a bioengenharia por facilitar a infiltração e o enraizamento, mas é destruída por compactação ou erosão superficial intensa.
+A hematita possui papel fundamental na microagregação dos solos tropicais (Latossolos). Ela atua como agente cimentante entre partículas de caulinita, formando microagregados esféricos de 0,1-1,0 mm de diâmetro que conferem ao solo uma estrutura granular extremamente estável e, paradoxalmente, fazem com que solos com 60-80% de argila se comportem hidraulicamente como areias (alta permeabilidade, baixa plasticidade). Essa microagregação é benéfica para a bioengenharia por facilitar a infiltração e o enraizamento, mas é destruída por compactação ou erosão superficial intensa.
 
 ### Gibbsita (Al(OH)₃)
 
@@ -144,3 +144,18 @@ Solos extremamente intemperizados (CIA > 85) apresentam um conjunto de proprieda
 :::
 
 Essas propriedades influenciam diretamente a seleção de técnicas. A baixa CTC demanda técnicas que agreguem matéria orgânica (mulch, biomantas, hidrossemeadura com compostos orgânicos), enquanto a coesão aparente torna essencial a drenagem superficial e subsuperficial para evitar saturação e colapso. Por outro lado, a microagregação facilita a penetração radicular, favorecendo técnicas vegetativas que se beneficiam da estrutura granular do solo. Em resumo, cada decisão de projeto de bioengenharia em solos tropicais deve ser fundamentada no conhecimento do grau de intemperismo e da mineralogia dominante do perfil.
+
+## Arquitetura do Manto de Alteração Tropical e Descontinuidades Hidráulicas
+
+Do ponto de vista geotécnico e hidrogeológico, o intemperismo profundo nos trópicos não produz um meio homogêneo, mas sim um **manto de alteração estratificado** composto por três domínios mecânicos distintos (@fig-perfil-intemperismo-bs):
+
+1. **Solum (horizontes $O$, $A$ e $Bw$ ou $Bt$):** camada superficial e subsuperficial pedogenizada, onde a estrutura original da rocha foi totalmente apagada e substituída por agregados de argila, matéria orgânica e óxidos;
+2. **Saprolito (horizonte $Cr$):** zona de transição entre o solo maduro e a rocha, que já sofreu alteração química intensa (baixa resistência mecânica quando saturado), mas **preserva a estrutura reliquiar da rocha matriz**, incluindo planos de foliação, xistosidade e fraturas herdadas;
+3. **Rocha alterada/fraturada e rocha sã ($R$):** embasamento cristalino basal praticamente impermeável ($K_s \approx 0$), onde o fluxo hídrico ocorre apenas por diáclases.
+
+![Arquitetura do manto de alteração tropical (*solum*, saprolito e rocha sã) e contraste de condutividade hidráulica saturada ($K_s$) como gatilho de poropressão positiva ($+u$) e ruptura translacional.](../img/bs_perfil_intemperismo_ruptura.png){#fig-perfil-intemperismo-bs fig-alt="Perfil de intemperismo tropical e contraste de condutividade hidráulica" width="92%"}
+
+A leitura conjunta do perfil e da curva de $K_s$ explica os dois principais mecanismos de colapso em encostas tropicais:
+
+- **Ruptura translacional por impedância hidráulica:** em Latossolos profundos com horizonte $Bw$ microgranular, a água infiltra verticalmente sem formar barreiras súbitas. Já em Argissolos, Planossolos e Plintossolos, a transição abrupta entre um horizonte superficial permeável ($K_s \approx 30\text{--}80\text{ mm h}^{-1}$) e um horizonte $Bt$ ou plíntico adensado ($K_s < 2\text{ mm h}^{-1}$) freia a frente de umedecimento. A água acumula-se sobre o topo do $Bt$, gera escoamento lateral (*throughflow*) e desenvolve **poropressão positiva ($+u$)**. Pela equação de Mohr-Coulomb ($\tau_f = c' + (\sigma - u)\tan\phi'$), o aumento de $u$ reduz diretamente a tensão normal efetiva ($\sigma - u$) e derruba o atrito entre as partículas, deflagrando escorregamentos translacionais rasos justamente na interface $A/Bt$.
+- **Erosão interna (*piping*) no saprolito:** quando cortes de estrada, ravinas ou voçorocas expõem o horizonte $Cr$, a água que percola pelas fraturas reliquiares carreia as partículas silto-arenosas pouco coesas do saprolito. Formam-se túneis subterrâneos que progridem de jusante para montante, provocando o solapamento e o desabamento em blocos da cabeceira. Nesses locais, a simples revegetação superficial falha; é indispensável instalar **drenos verdes subsuperficiais** (para aliviar $+u$) e **paliçadas ou enrocamentos de base** (para conter o avanço regressivo do talude).

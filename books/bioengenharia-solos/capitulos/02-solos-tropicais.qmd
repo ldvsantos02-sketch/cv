@@ -35,7 +35,7 @@ Para entender por que os solos tropicais são tão diferentes dos solos de regi�
 
 Neste reator, quatro processos fundamentais operam simultaneamente. O processo de adição incorpora matéria orgânica pela deposição de serrapilheira, poeira atmosférica e solutos trazidos pela chuva. O processo de remoção retira material por lixiviação (percolação de água que dissolve e carrega íons), erosão superficial e extração por colheitas agrícolas. A transformação converte minerais primários em minerais secundários (argilas e óxidos) por reações de hidrólise, oxidação e redução, além de decompor matéria orgânica em húmus. Por fim, a translocação redistribui materiais internamente, movendo argilas de horizontes superiores para inferiores (fenômeno chamado eluviação/iluviação) e revolvendo o solo por atividade de organismos (bioturbação por minhocas, cupins e formigas).
 
-Em regiões tropicais, as taxas de transformação são significativamente maiores devido à temperatura e umidade elevadas. Cada aumento de 10 °C na temperatura aproximadamente duplica a velocidade das reações químicas (Lei de Arrhenius). Isso resulta em três consequências fundamentais para a bioengenharia: a decomposição rápida da matéria orgânica (meia-vida inferior a 5 anos, contra 15–25 anos em zonas temperadas), a alta taxa de neoformação de argilas cauliníticas (minerais de baixa atividade) e a concentração residual de óxidos de ferro e alumínio pelo processo de laterização (que confere as cores vermelhas e amarelas características).
+Em regiões tropicais, as taxas de transformação são significativamente maiores devido à temperatura e umidade elevadas. Cada aumento de 10 °C na temperatura aproximadamente duplica a velocidade das reações químicas (Lei de Arrhenius). Isso resulta em três consequências fundamentais para a bioengenharia: a decomposição rápida da matéria orgânica (meia-vida inferior a 5 anos, contra 15-25 anos em zonas temperadas), a alta taxa de neoformação de argilas cauliníticas (minerais de baixa atividade) e a concentração residual de óxidos de ferro e alumínio pelo processo de laterização (que confere as cores vermelhas e amarelas características).
 
 ## Perfil do Solo Tropical
 
@@ -53,10 +53,10 @@ O perfil típico de um solo tropical bem drenado apresenta a sequência descrita
 
 | Horizonte | Profundidade típica | Características |
 |-----------|-------------------|----------------|
-| O | 0–5 cm | Serrapilheira em decomposição; protege contra o impacto direto das gotas de chuva |
-| A | 5–30 cm | Matéria orgânica humificada, cor escura; zona de maior atividade biológica e radicular |
-| B | 30–200+ cm | Argilas cauliníticas, óxidos de Fe/Al, cor amarela a vermelha; horizonte diagnóstico |
-| C | 200–1000+ cm | Saprolito (rocha parcialmente intemperizada); preserva estrutura da rocha original |
+| O | 0-5 cm | Serrapilheira em decomposição; protege contra o impacto direto das gotas de chuva |
+| A | 5-30 cm | Matéria orgânica humificada, cor escura; zona de maior atividade biológica e radicular |
+| B | 30-200+ cm | Argilas cauliníticas, óxidos de Fe/Al, cor amarela a vermelha; horizonte diagnóstico |
+| C | 200-1000+ cm | Saprolito (rocha parcialmente intemperizada); preserva estrutura da rocha original |
 | R | > 10 m | Rocha-mãe inalterada |
 
 : Perfil esquemático de um solo tropical profundo (Latossolo). {#tbl-perfil .striped}
@@ -83,9 +83,9 @@ $$
 K = 2{,}1 \times 10^{-4} \cdot M^{1{,}14} \cdot (12 - a) + 3{,}25 \cdot (b - 2) + 2{,}5 \cdot (c - 3) \div 100
 $$
 
-onde $M$ representa o produto $(\% \text{silte} + \% \text{areia fina}) \times (100 - \% \text{argila})$, $a$ corresponde ao teor de matéria orgânica (%), $b$ indica a classe de estrutura do solo (1–4, sendo 1 = granular muito fina e 4 = blocos, laminar ou maciça) e $c$ refere-se à classe de permeabilidade (1–6, sendo 1 = rápida e 6 = muito lenta).
+onde $M$ representa o produto $(\% \text{silte} + \% \text{areia fina}) \times (100 - \% \text{argila})$, $a$ corresponde ao teor de matéria orgânica (%), $b$ indica a classe de estrutura do solo (1-4, sendo 1 = granular muito fina e 4 = blocos, laminar ou maciça) e $c$ refere-se à classe de permeabilidade (1-6, sendo 1 = rápida e 6 = muito lenta).
 
-Em termos práticos, solos com alto teor de silte e areia fina (elevado $M$) e baixo teor de matéria orgânica (baixo $a$) resultam em valores de $K$ elevados (alta erodibilidade), o que demanda maior proteção superficial pelas técnicas de bioengenharia. Solos tropicais laterizados tendem a apresentar $K$ moderado (0,02–0,04 t h MJ⁻¹ mm⁻¹) graças à microagregação conferida pelos óxidos de ferro, apesar do altíssimo teor de argila.
+Em termos práticos, solos com alto teor de silte e areia fina (elevado $M$) e baixo teor de matéria orgânica (baixo $a$) resultam em valores de $K$ elevados (alta erodibilidade), o que demanda maior proteção superficial pelas técnicas de bioengenharia. Solos tropicais laterizados tendem a apresentar $K$ moderado (0,02-0,04 t h MJ⁻¹ mm⁻¹) graças à microagregação conferida pelos óxidos de ferro, apesar do altíssimo teor de argila.
 
 ### Resistência ao Cisalhamento
 
@@ -118,13 +118,13 @@ A @tbl-ks apresenta valores típicos de $K_s$ para as principais classes de solo
 
 | Classe de solo | $K_s$ típico (mm/h) | Comportamento hidráulico | Implicação para bioengenharia |
 |---------------|---------------------|--------------------------|-------------------------------|
-| Latossolo argiloso (microagregado) | 50–200 | Rápida infiltração apesar do alto teor de argila | Drenagem natural eficiente, risco de erosão interna em descontinuidades |
-| Latossolo arenoso | 100–500 | Muito permeável | Risco de percolação sob paliçadas, exige vedação de base |
-| Argissolo (horizonte Bt) | 1–15 | Baixa permeabilidade no horizonte Bt | Gera lençol suspenso, essencial drenar a interface A/Bt |
-| Plintossolo (petroplintita) | 0,1–5 | Quase impermeável quando endurecido | Exige drenagem superficial agressiva, limita enraizamento |
-| Cambissolo | 10–80 | Variável conforme maturidade | Investigação local obrigatória |
-| Gleissolo (saturado) | 0,5–10 | Saturação permanente | Exige espécies tolerantes a anaerobiose |
-| Neossolo Quartzarênico | 200–800 | Extremamente permeável | Baixa retenção hídrica, Bio-SAP recomendado (@sec-biopolimeros) |
+| Latossolo argiloso (microagregado) | 50-200 | Rápida infiltração apesar do alto teor de argila | Drenagem natural eficiente, risco de erosão interna em descontinuidades |
+| Latossolo arenoso | 100-500 | Muito permeável | Risco de percolação sob paliçadas, exige vedação de base |
+| Argissolo (horizonte Bt) | 1-15 | Baixa permeabilidade no horizonte Bt | Gera lençol suspenso, essencial drenar a interface A/Bt |
+| Plintossolo (petroplintita) | 0,1-5 | Quase impermeável quando endurecido | Exige drenagem superficial agressiva, limita enraizamento |
+| Cambissolo | 10-80 | Variável conforme maturidade | Investigação local obrigatória |
+| Gleissolo (saturado) | 0,5-10 | Saturação permanente | Exige espécies tolerantes a anaerobiose |
+| Neossolo Quartzarênico | 200-800 | Extremamente permeável | Baixa retenção hídrica, Bio-SAP recomendado (@sec-biopolimeros) |
 
 : Condutividade hidráulica saturada típica para solos tropicais brasileiros e implicações para bioengenharia. {#tbl-ks .striped .hover}
 
@@ -153,4 +153,47 @@ A @tbl-classes sintetiza as seis principais classes de solos tropicais e suas im
 
 : Principais classes de solos tropicais e sua relevância para projetos de bioengenharia. {#tbl-classes .striped .hover}
 
-![Mapa pedológico — distribuição espacial das classes de solo em uma área de projeto, ferramenta essencial para o planejamento de intervenções de bioengenharia diferenciadas por tipo de solo.](../img/mapa_pedologico.jpg){#fig-mapa-pedologico fig-alt="Mapa pedológico com distribuição das classes de solo" width="80%"}
+![Mapa pedológico - distribuição espacial das classes de solo em uma área de projeto, ferramenta essencial para o planejamento de intervenções de bioengenharia diferenciadas por tipo de solo.](../img/mapa_pedologico.jpg){#fig-mapa-pedologico fig-alt="Mapa pedológico com distribuição das classes de solo" width="80%"}
+
+## Qualidade Física, Mecânica e Dinâmica da Água no Solo
+
+Além da classificação taxonômica no SiBCS, o projeto de manejo e conservação do solo e da água exige a quantificação de indicadores físicos, mecânicos e hídricos que distinguem um **substrato apto ao enraizamento** de um **material estrutural compactado** (@fig-indicadores-fisicos-bs). Na engenharia aplicada ao solo, essa dualidade é central: enquanto na superfície agrícola ou na berma revegetada o solo precisa ser poroso e friável para que as raízes explorem água e nutrientes, no núcleo de um dique de terraço ou de uma barraginha o mesmo solo precisa ser compactado mecanicamente para resistir à pressão hidrostática e impedir vazamentos.
+
+![Dualidade agronômica versus geotécnica da compactação do solo (curva de Proctor normal e limiar crítico ao enraizamento) e estados de consistência segundo os limites de Atterberg.](../img/bs_indicadores_fisicos_compactacao.png){#fig-indicadores-fisicos-bs fig-alt="Curva de compactação de Proctor e limites de consistência de Atterberg" width="92%"}
+
+### Relações massa-volume, compactação e limites de consistência
+
+A partir de amostras indeformadas coletadas em campo com anel volumétrico de Kopecky (volume conhecido $V_t$, tipicamente $50\text{ a }100\text{ cm}^3$), secas em estufa a $105^\circ\text{C}$ até massa constante ($M_s$), determinam-se a **densidade do solo ($D_s$)** e a **porosidade total ($P_t$)**:
+
+$$
+D_s = \frac{M_s}{V_t} \qquad P_t = \left(1 - \frac{D_s}{D_p}\right) \times 100 \qquad P_{\mathrm{macro}} = P_t - P_{\mathrm{micro}}
+$$ {#eq-massa-volume}
+
+onde $D_p$ é a densidade de partículas (próxima de $2{,}65\text{ g cm}^{-3}$ em solos minerais quartzosos/cauliníticos). Por exemplo, se um anel de $100\text{ cm}^3$ coletado em camada compactada apresenta $M_s = 158\text{ g}$, tem-se $D_s = 1{,}58\text{ g cm}^{-3}$ e $P_t = (1 - 1{,}58/2{,}65) \times 100 = 40{,}4\%$. Se a microporosidade retida à tensão de $6\text{ kPa}$ for $33{,}5\%$, restam apenas **$P_{\mathrm{macro}} = 6{,}9\%$** de macroporos — valor abaixo do **limiar crítico de $10\%$ ($0{,}10\text{ m}^3\text{ m}^{-3}$)** necessário para difusão de oxigênio e infiltração rápida. Quando essa restrição se combina a leituras de **resistência mecânica à penetração ($RP$) superiores a $2{,}0\text{ MPa}$** no penetrômetro de impacto (Stolf), o crescimento de raízes de gramíneas e estacas vivas é severamente bloqueado, tornando obrigatória a escarificação ou subsolagem prévia na linha de plantio.
+
+Por outro lado, quando o solo é utilizado como **material de construção** (aterros armados, diques de terraços e septos de barraginhas), utiliza-se o **ensaio de Proctor Normal** para identificar a umidade ótima ($w_{\mathrm{ot}}$) na qual a energia mecânica de compactação expulsa o ar dos poros sem expulsar água, alcançando a densidade máxima seca ($D_{s,\max}$). Na execução da obra, exige-se controle de campo para atingir Grau de Compactação $\text{GC} = 100\,(D_{s,\mathrm{campo}}/D_{s,\max}) \ge 90\text{ a }95\%$, trabalhando dentro do **Estado Plástico** definido pelos **Limites de Atterberg** ($\text{LP} < w < \text{LL}$, onde o Índice de Plasticidade $\text{IP} = \text{LL} - \text{LP}$ indica a amplitude da faixa moldável sem fissuramento nem liquefação).
+
+### Estabilidade de agregados, dispersão e solos afetados por sais no Semiárido
+
+A resistência da superfície do solo ao impacto das gotas de chuva (*splash*) e ao selamento superficial é auditada pela **estabilidade de agregados em água** (método de tamisamento úmido de Yoder), expressa pelo Diâmetro Médio Ponderado ($\text{DMP}$) e pelo Diâmetro Médio Geométrico ($\text{DMG}$), bem como pelo **Grau de Floculação ($\text{GF}$)**:
+
+$$
+\text{GF}(\%) = \left(\frac{\text{Argila Total} - \text{ADA}}{\text{Argila Total}}\right) \times 100
+$$ {#eq-floculacao}
+
+onde $\text{ADA}$ é a fração de Argila Dispersa em Água sem dispersante químico. Valores baixos de $\text{GF}$ denunciam dispersão coloidal espontânea: as argilas soltam-se durante a chuva, migram para baixo e entopem os poros superficiais, reduzindo drasticamente a infiltração. No Semiárido brasileiro, esse diagnóstico separa dois cenários opostos:
+
+- **Solos salinos** ($\text{CE}_{es} \ge 4{,}0\text{ dS m}^{-1}$ e Percentagem de Sódio Trocável $\text{PST} < 15\%$): o excesso de sais solúveis mantém a dupla camada difusa comprimida e os coloides **floculados**; o manejo baseia-se em drenagem e lixiviação com água de boa qualidade.
+- **Solos sódicos ou salino-sódicos** ($\text{PST} \ge 15\%$): o íon sódio ($\text{Na}^+$), altamente hidratado e monovalente, expande a dupla camada difusa e **dispersa completamente as argilas**, destruindo a estrutura, levando $K_s \to 0$ e deflagrando erosão tubular interna (*piping*) em barraginhas e taludes. A recuperação exige a aplicação de **gesso agrícola ($\text{CaSO}_4\cdot 2\text{H}_2\text{O}$)** antes da lavagem, para que o $\text{Ca}^{2+}$ desloque o $\text{Na}^+$ do complexo de troca e reflocule o solo.
+
+### Dinâmica da água no solo e modelos de infiltração
+
+A água movimenta-se no solo do ponto de maior para o de menor **potencial total ($\Psi_t = \Psi_m + \Psi_g + \Psi_o + \Psi_p$)**. Em solos não saturados, o potencial gravitacional ($\Psi_g$) drena rapidamente a água contida nos macroporos logo após a chuva, deixando o perfil na **Capacidade de Campo ($\text{CC}$, $\Psi_m \approx -10\text{ a }-33\text{ kPa}$)**. A água disponível às plantas estende-se da CC até o **Ponto de Murcha Permanente ($\text{PMP}$, $\Psi_m \approx -1.500\text{ kPa}$)**.
+
+Para prever quando uma chuva gerará enxurrada, mede-se em campo a curva de infiltração com infiltrômetro de anéis concêntricos, ajustada classicamente pelos modelos de **Horton** ou de **Kostiakov**:
+
+$$
+f(t) = f_c + (f_0 - f_c)e^{-kt} \qquad F(t) = a\,t^b \implies f(t) = a\,b\,t^{b-1}
+$$ {#eq-infiltracao}
+
+Na equação de Horton, a taxa inicial de infiltração ($f_0$, elevada no solo seco e poroso) decai exponencialmente com a constante $k$ até estabilizar na **velocidade de infiltração básica ($\text{VIB} = f_c$)**. Sempre que a intensidade da chuva supera a taxa de infiltração instantânea ($i > f(t)$), ocorre o empoçamento superficial e inicia-se o escoamento superficial hortoniano que alimenta a erosão hídrica.

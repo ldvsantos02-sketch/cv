@@ -28,7 +28,7 @@ $$
 CIA = \frac{Al_2O_3}{Al_2O_3 + CaO^* + Na_2O + K_2O} \times 100
 $$
 
-onde $CaO^*$ representa apenas o cálcio dos silicatos (excluído o dos carbonatos). Valores de CIA próximos de 50 indicam rochas frescas (feldspatos intactos), enquanto valores de 95–100 indicam intemperismo extremo (somente caulinita e óxidos), condição típica de Latossolos tropicais com mais de $10^6$ anos de pedogênese.
+onde $CaO^*$ representa apenas o cálcio dos silicatos (excluído o dos carbonatos). Valores de CIA próximos de 50 indicam rochas frescas (feldspatos intactos), enquanto valores de 95-100 indicam intemperismo extremo (somente caulinita e óxidos), condição típica de Latossolos tropicais com mais de $10^6$ anos de pedogênese.
 
 ### Balanço de massa (Brimhall-Chadwick)
 
@@ -60,7 +60,7 @@ onde $A$ é a perda média anual de solo (t ha⁻¹ ano⁻¹), $R$ é a erosivid
 
 O fator $R$ é calculado a partir do índice de erosividade $EI_{30}$, que combina a energia cinética total da chuva com a intensidade máxima em 30 minutos. No semiárido brasileiro, a erosividade pode exceder 7.000 MJ mm ha⁻¹ h⁻¹ ano⁻¹, concentrada em poucos meses da estação chuvosa, quando eventos convectivos de alta intensidade geram a maior parte da perda de solo anual.
 
-O fator $K$ reflete a susceptibilidade intrínseca do solo à erosão, determinada por textura, estrutura, permeabilidade e teor de matéria orgânica. Neossolos Litólicos e Cambissolos rasos apresentam os maiores valores de $K$ (0,04–0,06 t h MJ⁻¹ mm⁻¹), enquanto Latossolos bem estruturados apresentam valores intermediários (0,01–0,03).
+O fator $K$ reflete a susceptibilidade intrínseca do solo à erosão, determinada por textura, estrutura, permeabilidade e teor de matéria orgânica. Neossolos Litólicos e Cambissolos rasos apresentam os maiores valores de $K$ (0,04-0,06 t h MJ⁻¹ mm⁻¹), enquanto Latossolos bem estruturados apresentam valores intermediários (0,01-0,03).
 
 O fator $LS$ pode ser calculado a partir de MDTs utilizando o algoritmo D-infinity [@tarboton1997], que distribui o fluxo proporcionalmente entre as células vizinhas de descida, evitando artefatos do algoritmo D8 em vertentes planas. A integração do fator $LS$ derivado de MDT com os demais fatores da RUSLE (obtidos de mapas temáticos) permite a espacialização da perda de solo em escala de bacia hidrográfica.
 

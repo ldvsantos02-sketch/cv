@@ -43,16 +43,16 @@ $$
 VCI = \frac{NDVI - NDVI_{min}}{NDVI_{max} - NDVI_{min}} \times 100
 $$
 
-onde $NDVI_{min}$ e $NDVI_{max}$ são os valores extremos da série histórica (tipicamente 20–30 anos) para aquele pixel e período do ano. Valores de VCI < 35% indicam estresse hídrico severo. A normalização histórica permite comparar a condição da vegetação entre regiões com coberturas vegetais distintas (floresta, cerrado, caatinga, cultivo) e detectar anomalias em relação à climatologia local.
+onde $NDVI_{min}$ e $NDVI_{max}$ são os valores extremos da série histórica (tipicamente 20-30 anos) para aquele pixel e período do ano. Valores de VCI < 35% indicam estresse hídrico severo. A normalização histórica permite comparar a condição da vegetação entre regiões com coberturas vegetais distintas (floresta, cerrado, caatinga, cultivo) e detectar anomalias em relação à climatologia local.
 
 A @tbl-indices-seca compara os principais índices de seca e suas aplicações.
 
 | Índice | Base de dados | Escala temporal | Tipo de seca detectada |
 |:-------|:-------------|:---------------|:----------------------|
-| SPI | Precipitação | 1–24 meses | Meteorológica, hidrológica |
-| SPEI | Precipitação + ETP | 1–24 meses | Meteorológica + efeito térmico |
-| VCI | NDVI (satélite) | 8–16 dias | Agrícola |
-| TCI | Temperatura de superfície | 8–16 dias | Agrícola (estresse térmico) |
+| SPI | Precipitação | 1-24 meses | Meteorológica, hidrológica |
+| SPEI | Precipitação + ETP | 1-24 meses | Meteorológica + efeito térmico |
+| VCI | NDVI (satélite) | 8-16 dias | Agrícola |
+| TCI | Temperatura de superfície | 8-16 dias | Agrícola (estresse térmico) |
 | ESI | ET real vs. potencial | Semanal | Agrícola (flash droughts) |
 | GRACE-DSI | Anomalia de TWS | Mensal | Hidrológica profunda |
 

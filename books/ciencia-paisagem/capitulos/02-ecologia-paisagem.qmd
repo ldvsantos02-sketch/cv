@@ -43,11 +43,11 @@ No âmbito dessa tradição, Georges Bertrand [-@bertrand1971] propôs um sistem
 
 | Nível | Unidade | Escala | Exemplo brasileiro |
 |:-----:|:--------|:------:|:------------------|
-| I | Zona | $10^7$–$10^8$ ha | Zona tropical |
-| II | Domínio | $10^6$–$10^7$ ha | Domínio das caatingas |
-| III | Região natural | $10^5$–$10^6$ ha | Depressão sertaneja |
-| IV | **Geossistema** | $10^3$–$10^5$ ha | Pediplano cristalino com caatinga arbórea |
-| V | Geofácies | $10^1$–$10^3$ ha | Vertente com solo raso e vegetação aberta |
+| I | Zona | $10^7$-$10^8$ ha | Zona tropical |
+| II | Domínio | $10^6$-$10^7$ ha | Domínio das caatingas |
+| III | Região natural | $10^5$-$10^6$ ha | Depressão sertaneja |
+| IV | **Geossistema** | $10^3$-$10^5$ ha | Pediplano cristalino com caatinga arbórea |
+| V | Geofácies | $10^1$-$10^3$ ha | Vertente com solo raso e vegetação aberta |
 | VI | Geótopo | < $10^1$ ha | Afloramento rochoso com liquens |
 
 : Taxonomia hierárquica de Bertrand (1971). O geossistema (nível IV) é compatível com bacias hidrográficas de 3ª a 5ª ordem e constitui a escala na qual a interação entre componentes é diretamente perceptível pela ação humana. {#tbl-bertrand-taxon .striped .hover}
@@ -67,43 +67,43 @@ No âmbito dessa tradição, Georges Bertrand [-@bertrand1971] propôs um sistem
   arr/.style={-stealth, draw=gray!50, line width=0.6pt}
 ]
 
-% Nível I — Zona
+% Nível I - Zona
 \node[box, fill=blue!6, draw=blue!25, minimum width=13cm] (z) at (0,0)
   {\textbf{I. Zona} \enspace {\footnotesize($10^{7}$--$10^{8}$ ha)}\\[-2pt]
    {\scriptsize\itshape Zona tropical}};
 
-% Nível II — Domínio
+% Nível II - Domínio
 \node[box, fill=blue!10, draw=blue!30, minimum width=11cm] (d) at (0,-1.5)
   {\textbf{II. Dom\'{i}nio} \enspace {\footnotesize($10^{6}$--$10^{7}$ ha)}\\[-2pt]
    {\scriptsize\itshape Dom\'{i}nio das caatingas}};
 
-% Nível III — Região natural
+% Nível III - Região natural
 \node[box, fill=blue!14, draw=blue!35, minimum width=9.5cm] (r) at (0,-3.0)
   {\textbf{III. Regi\~{a}o natural} \enspace {\footnotesize($10^{5}$--$10^{6}$ ha)}\\[-2pt]
    {\scriptsize\itshape Depress\~{a}o sertaneja}};
 
-% Nível IV — Geossistema (destacado)
+% Nível IV - Geossistema (destacado)
 \node[box, fill=green!15, draw=green!50!black, line width=0.8pt, minimum width=8cm] (g) at (0,-4.5)
   {\textbf{IV. Geossistema} \enspace {\footnotesize($10^{3}$--$10^{5}$ ha)}\\[-2pt]
    {\scriptsize\itshape Pediplano cristalino com caatinga arb\'{o}rea}};
 
-% Nível V — Geofácies
+% Nível V - Geofácies
 \node[box, fill=blue!6, draw=blue!25, minimum width=6.5cm] (gf) at (0,-6.0)
   {\textbf{V. Geof\'{a}cies} \enspace {\footnotesize($10^{1}$--$10^{3}$ ha)}\\[-2pt]
    {\scriptsize\itshape Vertente com solo raso e vegeta\c{c}\~{a}o aberta}};
 
-% Nível VI — Geótopo
+% Nível VI - Geótopo
 \node[box, fill=blue!4, draw=blue!20, minimum width=5cm] (gt) at (0,-7.5)
   {\textbf{VI. Ge\'{o}topo} \enspace {\footnotesize($<\!10^{1}$ ha)}\\[-2pt]
    {\scriptsize\itshape Afloramento rochoso com liquens}};
 
 % Setas entre níveis
 \foreach \i/\j in {z/d, d/r, r/g, g/gf, gf/gt}
-  \draw[arr] (\i.south) -- (\j.north);
+  \draw[arr] (\i.south) - (\j.north);
 
-% Anotação lateral — escala operacional
+% Anotação lateral - escala operacional
 \draw[green!50!black, thick, decorate, decoration={brace, amplitude=5pt, mirror}]
-  ([xshift=3mm]g.north east) -- ([xshift=3mm]g.south east)
+  ([xshift=3mm]g.north east) - ([xshift=3mm]g.south east)
   node[midway, right=8pt, font=\scriptsize\itshape, text=green!40!black, align=left]
   {Escala operacional\\[-1pt]de an\'{a}lise};
 
@@ -127,7 +127,7 @@ O geossistema opera como um tripé funcional cujos três componentes se articula
 | **Exploração biológica** | Vegetação, solo, fauna | Transformação: metaboliza energia e matéria | Transforma o potencial ecológico e é alvo da ação antrópica |
 | **Ação antrópica** | Uso da terra, manejo, infraestrutura | Impacto: modifica fluxos e estrutura | Degrada ou potencializa os dois componentes anteriores |
 
-: O tripé funcional do geossistema: suporte–transformação–impacto. {#tbl-tripe-geossistema .striped .hover}
+: O tripé funcional do geossistema: suporte-transformação-impacto. {#tbl-tripe-geossistema .striped .hover}
 
 No contexto brasileiro, Carlos Augusto de Figueiredo Monteiro [-@monteiro2000] avançou nessa direção ao formular o conceito de *derivações antropogênicas*, que descreve como as ações humanas produzem desvios progressivos na dinâmica natural da paisagem. A @tbl-derivacoes-monteiro apresenta os três tipos de derivação e exemplos no semiárido nordestino.
 
@@ -219,9 +219,9 @@ Em revisão posterior ao sistema original de 1968, Bertrand [-@bertrand2007] pro
 %%| fig-cap: "A trilogia GTP de Bertrand: três entradas complementares para a leitura da paisagem."
 %%| fig-width: 6
 graph LR
-    G["GEOSSISTEMA<br>Source → Ressource<br>(processos biofísicos)"] --- T["TERRITÓRIO<br>Ressource → Ressourcement<br>(gestão socioeconômica)"]
-    T --- P["PAISAGEM<br>Ressourcement → Identité<br>(percepção e cultura)"]
-    P --- G
+    G["GEOSSISTEMA<br>Source → Ressource<br>(processos biofísicos)"] - T["TERRITÓRIO<br>Ressource → Ressourcement<br>(gestão socioeconômica)"]
+    T - P["PAISAGEM<br>Ressourcement → Identité<br>(percepção e cultura)"]
+    P - G
     style G fill:#C8E6C9,stroke:#2E7D32,color:#000
     style T fill:#FFE0B2,stroke:#E65100,color:#000
     style P fill:#E1BEE7,stroke:#6A1B9A,color:#000
@@ -253,7 +253,7 @@ A *multiescalaridade* é, portanto, não apenas uma propriedade da paisagem, mas
 
 A convergência entre as duas tradições (geográfica e ecológica) intensificou-se na última década, impulsionada pelo reconhecimento de que mudanças de uso da terra são simultaneamente um processo social e ecológico, e que nenhuma das tradições isoladamente oferece os instrumentos necessários para compreendê-lo. Wu [-@wu2013] propôs o conceito de *Landscape Sustainability Science*, no qual a paisagem constitui a escala em que as decisões sobre uso da terra, conservação e bem-estar humano produzem seus efeitos mais diretos, necessitando tanto da quantificação espacial rigorosa (tradição ecológica) quanto do entendimento das forças socioeconômicas e culturais (tradição geográfica).
 
-No Brasil, a pesquisa em ecologia da paisagem incorpora essa integração de forma crescente. Estudos sobre a Mata Atlântica [@metzger2009; @ribeiro2009] combinam métricas espaciais quantitativas (proporção de habitat, conectividade, área nuclear) com análises de forças motrizes (expansão urbana, legislação ambiental, mercado de commodities), demonstrando que a fragmentação florestal remanescente (8–12% da cobertura original) não é compreensível sem a articulação entre padrão espacial e contexto sociopolítico. A concentração de remanescentes em áreas íngremes e de baixo valor agrícola, por exemplo, é simultaneamente um resultado de forças socioeconômicas (abandono de terras marginais) e um condicionante ecológico (enviesamento ambiental do habitat remanescente).
+No Brasil, a pesquisa em ecologia da paisagem incorpora essa integração de forma crescente. Estudos sobre a Mata Atlântica [@metzger2009; @ribeiro2009] combinam métricas espaciais quantitativas (proporção de habitat, conectividade, área nuclear) com análises de forças motrizes (expansão urbana, legislação ambiental, mercado de commodities), demonstrando que a fragmentação florestal remanescente (8-12% da cobertura original) não é compreensível sem a articulação entre padrão espacial e contexto sociopolítico. A concentração de remanescentes em áreas íngremes e de baixo valor agrícola, por exemplo, é simultaneamente um resultado de forças socioeconômicas (abandono de terras marginais) e um condicionante ecológico (enviesamento ambiental do habitat remanescente).
 
 ::: {.callout-tip}
 ## Integração na prática

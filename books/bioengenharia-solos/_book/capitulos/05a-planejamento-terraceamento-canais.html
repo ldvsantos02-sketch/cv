@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Livro-texto sobre soluções baseadas na natureza aplicadas à bioengenharia de água e solo em regiões tropicais e no semiárido, com ancoragem nas bacias do São Francisco e do Vaza-Barris, integrando fundamentos pedológicos e hidrossedimentológicos, protocolos de dimensionamento parametrizados em campo, técnicas de estabilização biológica e inovação em biomateriais de fibras do sertão para conservação e recuperação de áreas degradadas.">
+
+<title>7&nbsp; Planejamento Conservacionista, Terraceamento e Canais Escoadouros – Soluções Baseadas na Natureza para Bioengenharia de Água e Solo</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/06-revegetacao.html" rel="next">
+<link href="../capitulos/05-classificacao-feicoes.html" rel="prev">
+<link href="../img/capa_bioengenharia_de_solos.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-12f6d87c9cc8cd23abdf3d99f8b9f8fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/02-solos-tropicais.html">Parte II — Fundamentos: Solo, Água e Erosão nos Trópicos</a></li><li class="breadcrumb-item"><a href="../capitulos/05a-planejamento-terraceamento-canais.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Planejamento Conservacionista, Terraceamento e Canais Escoadouros</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Soluções Baseadas na Natureza para Bioengenharia de Água e Solo</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../Soluções-Baseadas-na-Natureza-para-Bioengenharia-de-Água-e-Solo.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sobre este livro</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../prefacio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefácio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte I — Enquadramento: Soluções Baseadas na Natureza</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-introducao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução à Bioengenharia de Água e Solo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01a-nbs-enquadramento.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Soluções Baseadas na Natureza para Água e Solo</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte II — Fundamentos: Solo, Água e Erosão nos Trópicos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-solos-tropicais.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Solos Tropicais: Formação e Propriedades</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-intemperismo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Intemperismo e Transformação do Solo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-erosao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Erosão do Solo: Tipos e Processos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-classificacao-feicoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classificação de Feições Erosivas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05a-planejamento-terraceamento-canais.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Planejamento Conservacionista, Terraceamento e Canais Escoadouros</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte III — Técnicas de Bioengenharia de Água e Solo</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-revegetacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Revegetação e Espécies para Bioengenharia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-palicadas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Paliçadas Permeáveis: Princípios e Materiais</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07a-palicadas-protocolo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Protocolo Hidrogeotécnico para Dimensionamento de Paliçadas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07b-palicadas-execucao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Paliçadas: Execução, Estruturas Vivas e Monitoramento</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-bacias-captacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Bacias de Captação e Barraginhas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-feixes-drenos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Feixes Vivos e Drenos Verdes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-hidrossemeadura.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Hidrossemeadura</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-biomantas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Biomantas e Geossintéticos Biodegradáveis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-enrocamento.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Enrocamento Vegetado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-cordoes-fascinas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Cordões Vegetativos e Fascinas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-gabiao-vivo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Gabião Vivo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-parede-krainer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Parede Krainer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-canaleta-verde.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Canaleta Verde</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte IV — Geotêxteis, Biotêxteis e Biomateriais</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-geotexteis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Geotêxteis no Controle de Erosão</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/18-biotexteis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Biotêxteis de Fibras Vegetais</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/19-biopolimeros.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Biopolímeros Superabsorventes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte V — Escala de Bacia e Projeto Integrador</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/23-bioengenharia-agua.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Bioengenharia de Água na Escala da Bacia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/21-projeto-integrador.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Projeto Integrador</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte VI — Monitoramento, Viabilidade e Governança</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/22-modelagem-3d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Modelagem 3D de Sistemas Radiculares</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/20-nbs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Viabilidade, Clima e Governança das NBS</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referências</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#objetivos-de-aprendizagem" id="toc-objetivos-de-aprendizagem" class="nav-link active" data-scroll-target="#objetivos-de-aprendizagem"><span class="header-section-number">7.1</span> Objetivos de aprendizagem</a></li>
+  <li><a href="#clinometria-e-levantamento-altimétrico-em-campo" id="toc-clinometria-e-levantamento-altimétrico-em-campo" class="nav-link" data-scroll-target="#clinometria-e-levantamento-altimétrico-em-campo"><span class="header-section-number">7.2</span> Clinometria e levantamento altimétrico em campo</a></li>
+  <li><a href="#capacidade-de-uso-das-terras-e-planejamento-em-microbacias" id="toc-capacidade-de-uso-das-terras-e-planejamento-em-microbacias" class="nav-link" data-scroll-target="#capacidade-de-uso-das-terras-e-planejamento-em-microbacias"><span class="header-section-number">7.3</span> Capacidade de uso das terras e planejamento em microbacias</a></li>
+  <li><a href="#práticas-edáficas-e-vegetativas-na-base-do-sistema" id="toc-práticas-edáficas-e-vegetativas-na-base-do-sistema" class="nav-link" data-scroll-target="#práticas-edáficas-e-vegetativas-na-base-do-sistema"><span class="header-section-number">7.4</span> Práticas edáficas e vegetativas na base do sistema</a></li>
+  <li><a href="#terraceamento-agrícola-tipos-espaçamento-e-seção" id="toc-terraceamento-agrícola-tipos-espaçamento-e-seção" class="nav-link" data-scroll-target="#terraceamento-agrícola-tipos-espaçamento-e-seção"><span class="header-section-number">7.5</span> Terraceamento agrícola: tipos, espaçamento e seção</a>
+  <ul class="collapse">
+  <li><a href="#seleção-do-tipo-de-terraço" id="toc-seleção-do-tipo-de-terraço" class="nav-link" data-scroll-target="#seleção-do-tipo-de-terraço"><span class="header-section-number">7.5.1</span> Seleção do tipo de terraço</a></li>
+  <li><a href="#cálculo-do-espaçamento-entre-terraços" id="toc-cálculo-do-espaçamento-entre-terraços" class="nav-link" data-scroll-target="#cálculo-do-espaçamento-entre-terraços"><span class="header-section-number">7.5.2</span> Cálculo do espaçamento entre terraços</a></li>
+  </ul></li>
+  <li><a href="#canais-escoadouros-vegetados-dimensionamento-por-manning" id="toc-canais-escoadouros-vegetados-dimensionamento-por-manning" class="nav-link" data-scroll-target="#canais-escoadouros-vegetados-dimensionamento-por-manning"><span class="header-section-number">7.6</span> Canais escoadouros vegetados: dimensionamento por Manning</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/02-solos-tropicais.html">Parte II — Fundamentos: Solo, Água e Erosão nos Trópicos</a></li><li class="breadcrumb-item"><a href="../capitulos/05a-planejamento-terraceamento-canais.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Planejamento Conservacionista, Terraceamento e Canais Escoadouros</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-planejamento-terraceamento" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Planejamento Conservacionista, Terraceamento e Canais Escoadouros</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="objetivos-de-aprendizagem" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="objetivos-de-aprendizagem"><span class="header-section-number">7.1</span> Objetivos de aprendizagem</h2>
+<p>Ao final deste capítulo, o leitor deverá ser capaz de:</p>
+<ol type="1">
+<li>Medir desníveis e distâncias em campo, calcular a declividade média ponderada de encostas heterogêneas e conferir o fechamento de levantamentos altimétricos;</li>
+<li>Enquadrar glebas rurais no Sistema de Capacidade de Uso das Terras (Classes I a VIII) utilizando a microbacia hidrográfica como unidade de planejamento;</li>
+<li>Integrar práticas edáficas, vegetativas (Sistema Plantio Direto, adubação verde, cobertura morta e rotação de culturas) e mecânicas antes de dimensionar obras de terra;</li>
+<li>Dimensionar o espaçamento vertical (<span class="math inline">\(EV\)</span>) e horizontal (<span class="math inline">\(EH\)</span>) e a seção transversal de terraços em nível e em gradiente;</li>
+<li>Dimensionar canais escoadouros vegetados pela equação de Manning, verificando velocidade e tensão trativa admissíveis passo a passo.</li>
+</ol>
+</section>
+<section id="clinometria-e-levantamento-altimétrico-em-campo" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="clinometria-e-levantamento-altimétrico-em-campo"><span class="header-section-number">7.2</span> Clinometria e levantamento altimétrico em campo</h2>
+<p>Todo projeto de manejo e conservação do solo e da água começa pela medição rigorosa do relevo. Em campo, é comum confundir a <strong>declividade em porcentagem (<span class="math inline">\(D\%\)</span>)</strong> com o <strong>ângulo de inclinação (<span class="math inline">\(\theta\)</span>)</strong> em graus. Embora ambas descrevam a inclinação da superfície em relação à horizontal, suas escalas numéricas são completamente distintas:</p>
+<p><span id="eq-declividade"><span class="math display">\[
+D(\%) = 100\,\frac{\Delta z}{L_h} \qquad \theta = \arctan\!\left(\frac{\Delta z}{L_h}\right)
+\tag{7.1}\]</span></span></p>
+<p>Na <a href="#eq-declividade" class="quarto-xref">Equação&nbsp;<span>7.1</span></a>, <span class="math inline">\(\Delta z\)</span> representa o desnível vertical entre dois pontos e <span class="math inline">\(L_h\)</span> representa a distância horizontal medida entre eles, expressas na mesma unidade de comprimento (metros com metros, ou centímetros com centímetros). Uma encosta em que se sobe <span class="math inline">\(100\text{ m}\)</span> na vertical ao longo de <span class="math inline">\(100\text{ m}\)</span> horizontais apresenta <span class="math inline">\(\theta = 45^\circ\)</span>, mas sua declividade é <span class="math inline">\(D = 100\%\)</span>, e não <span class="math inline">\(45\%\)</span>. Quando uma rampa de <span class="math inline">\(100\text{ m}\)</span> apresenta <span class="math inline">\(8\text{ m}\)</span> de desnível, tem-se <span class="math inline">\(D = 8\%\)</span> e <span class="math inline">\(\theta = \arctan(0{,}08) \approx 4{,}57^\circ\)</span>.</p>
+<p>Em terrenos agrícolas reais, a inclinação raramente é uniforme do topo ao sopé. Um erro frequente consiste em medir três ou quatro segmentos de encosta de comprimentos diferentes e calcular a média aritmética simples das porcentagens. O procedimento fisicamente correto consiste em ponderar cada segmento pelo seu comprimento horizontal, dividindo o desnível acumulado pela distância horizontal total:</p>
+<p><span id="eq-declividade-media"><span class="math display">\[
+D_{\mathrm{média}}(\%) = 100\,\frac{\sum_{i=1}^{n} \Delta z_i}{\sum_{i=1}^{n} L_{h,i}}
+\tag{7.2}\]</span></span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo resolvido 1: Declividade média e cálculo de campo com nível de mangueira
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Um levantamento com <strong>nível de mangueira</strong> foi executado em quatro lances consecutivos descendo uma vertente, registrando-se as leituras nas réguas de montante (<span class="math inline">\(L_{\mathrm{mont}}\)</span>) e de jusante (<span class="math inline">\(L_{\mathrm{jus}}\)</span>) e as respectivas distâncias horizontais (<span class="math inline">\(L_{h,i}\)</span>):</p>
+<ul>
+<li>Lance 1 (<span class="math inline">\(L_{h,1} = 12\text{ m}\)</span>): <span class="math inline">\(L_1 = 32{,}0\text{ cm}\)</span>, <span class="math inline">\(L_2 = 23{,}0\text{ cm} \implies \Delta z_1 = 32{,}0 - 23{,}0 = 9{,}0\text{ cm}\)</span>;</li>
+<li>Lance 2 (<span class="math inline">\(L_{h,2} = 8\text{ m}\)</span>): <span class="math inline">\(L_3 = 38{,}0\text{ cm}\)</span>, <span class="math inline">\(L_4 = 21{,}0\text{ cm} \implies \Delta z_2 = 38{,}0 - 21{,}0 = 17{,}0\text{ cm}\)</span>;</li>
+<li>Lance 3 (<span class="math inline">\(L_{h,3} = 11\text{ m}\)</span>): <span class="math inline">\(L_5 = 28{,}0\text{ cm}\)</span>, <span class="math inline">\(L_6 = 19{,}8\text{ cm} \implies \Delta z_3 = 28{,}0 - 19{,}8 = 8{,}2\text{ cm}\)</span>;</li>
+<li>Lance 4 (<span class="math inline">\(L_{h,4} = 15\text{ m}\)</span>): <span class="math inline">\(L_7 = 25{,}9\text{ cm}\)</span>, <span class="math inline">\(L_8 = 22{,}3\text{ cm} \implies \Delta z_4 = 25{,}9 - 22{,}3 = 3{,}6\text{ cm}\)</span>.</li>
+</ul>
+<p>Somando os desníveis no mesmo sentido, obtém-se <span class="math inline">\(\sum \Delta z_i = 9{,}0 + 17{,}0 + 8{,}2 + 3{,}6 = 37{,}8\text{ cm} = 0{,}378\text{ m}\)</span>. A distância horizontal total é <span class="math inline">\(\sum L_{h,i} = 12 + 8 + 11 + 15 = 46{,}0\text{ m}\)</span>. Aplicando a <a href="#eq-declividade-media" class="quarto-xref">Equação&nbsp;<span>7.2</span></a>:</p>
+<p><span class="math display">\[
+D_{\mathrm{média}} = 100 \times \frac{0{,}378}{46{,}0} = 0{,}822\%
+\]</span></p>
+<p>Caso o mesmo levantamento tivesse sido feito com um <strong>pé-de-galinha</strong> de abertura fixa igual a <span class="math inline">\(3{,}0\text{ m}\)</span> em seis lances consecutivos, registrando desníveis individuais de <span class="math inline">\(4, 8, 5, 10, 8\)</span> e <span class="math inline">\(7\text{ cm}\)</span>, teríamos <span class="math inline">\(\sum \Delta z_i = 42\text{ cm} = 0{,}42\text{ m}\)</span> em <span class="math inline">\(L_h = 6 \times 3{,}0 = 18{,}0\text{ m}\)</span>, resultando em <span class="math inline">\(D = 100 \times (0{,}42/18{,}0) = 2{,}33\%\)</span>.</p>
+</div>
+</div>
+<p>A escolha do instrumento depende diretamente da tolerância do projeto (<a href="#tbl-instrumentos-topografia" class="quarto-xref">Tabela&nbsp;<span>7.1</span></a>). Pequenos erros de leitura que são aceitáveis ao locar uma faixa de capim-vetiver em nível podem inviabilizar um <strong>terraço em gradiente</strong> de <span class="math inline">\(0{,}3\%\)</span>, invertendo a declividade do canal e causando acúmulo localizado de água seguido de rompimento do camalhão.</p>
+<div id="tbl-instrumentos-topografia" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-instrumentos-topografia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;7.1: Seleção de equipamentos topográficos conforme a finalidade conservacionista.
+</figcaption>
+<div aria-describedby="tbl-instrumentos-topografia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Equipamento</th>
+<th style="text-align: left;">Aplicação Principal</th>
+<th style="text-align: left;">Cuidado Crítico de Calibração e Operação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Pé-de-galinha (nível tipo A)</strong></td>
+<td style="text-align: left;">Locação de curvas em nível e cordões vegetativos</td>
+<td style="text-align: left;">Calibrar por inversão dos apoios nos mesmos dois pontos; a referência real de nível é o ponto médio entre as duas marcas</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Nível de mangueira</strong></td>
+<td style="text-align: left;">Transferência de cotas e declividades suaves em campo</td>
+<td style="text-align: left;">Eliminar completamente bolhas de ar, evitar dobras e aguardar a estabilização dos meniscos antes da leitura</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Clinômetro</strong></td>
+<td style="text-align: left;">Reconhecimento expedito da declividade de encostas</td>
+<td style="text-align: left;">Manter visada paralela ao terreno usando alvo na mesma altura do olho do observador</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Nível óptico ou laser</strong></td>
+<td style="text-align: left;">Locação de terraços em gradiente (<span class="math inline">\(0{,}2\text{--}0{,}5\%\)</span>) e canais escoadouros</td>
+<td style="text-align: left;">Verificar nivelamento da bolha e executar contranivelamento de fechamento ao retornar ao ponto de partida</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Estação total / GNSS-RTK</strong></td>
+<td style="text-align: left;">Levantamento planialtimétrico completo de microbacias e projetos executivos</td>
+<td style="text-align: left;">Garantir amarração a marcos de referência e correção diferencial adequada</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="capacidade-de-uso-das-terras-e-planejamento-em-microbacias" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="capacidade-de-uso-das-terras-e-planejamento-em-microbacias"><span class="header-section-number">7.3</span> Capacidade de uso das terras e planejamento em microbacias</h2>
+<p>Na Engenharia Agronômica, não se projeta a conservação do solo talhão por talhão de forma isolada. A unidade territorial correta de planejamento é a <strong>microbacia hidrográfica</strong>, pois a água da chuva desconhece divisas de cercas e carreadores: o escoamento gerado em uma estrada rural mal drenada no terço superior da bacia destrói terraços e abre voçorocas nas lavouras situadas a jusante.</p>
+<p>Dentro da microbacia, cada gleba deve ser enquadrada segundo o <strong>Sistema de Capacidade de Uso das Terras</strong> (Classes I a VIII), que hierarquiza os solos conforme suas limitações permanentes de declividade, profundidade efetiva, drenagem, pedregosidade e susceptibilidade à erosão (<a href="#tbl-capacidade-uso" class="quarto-xref">Tabela&nbsp;<span>7.2</span></a>). O princípio fundamental é ajustar a intensidade de uso à capacidade natural de sustentação do terreno, evitando exigir de um solo raso ou muito declivoso um cultivo anual intensivo que o degradará em poucos ciclos.</p>
+<div id="tbl-capacidade-uso" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-capacidade-uso-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;7.2: Enquadramento de terras no Sistema de Capacidade de Uso (Classes I–VIII) e diretrizes conservacionistas.
+</figcaption>
+<div aria-describedby="tbl-capacidade-uso-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Grupo</th>
+<th style="text-align: left;">Classes</th>
+<th style="text-align: left;">Características e Limitações Dominantes</th>
+<th style="text-align: left;">Práticas Conservacionistas Indicadas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>A</strong></td>
+<td style="text-align: left;"><strong>I e II</strong></td>
+<td style="text-align: left;">Solos profundos, bem drenados, relevo plano a suave ondulado (<span class="math inline">\(D &lt; 6\%\)</span>), baixa erodibilidade</td>
+<td style="text-align: left;">Práticas edáficas e vegetativas (SPD, rotação de culturas, adubação verde, cultivo em contorno)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>A</strong></td>
+<td style="text-align: left;"><strong>III e IV</strong></td>
+<td style="text-align: left;">Declividade moderada a forte (<span class="math inline">\(6\text{--}20\%\)</span>), gradiente textural (<span class="math inline">\(A/Bt\)</span>) ou risco erosivo elevado</td>
+<td style="text-align: left;">Associação obrigatória de SPD + <strong>terraceamento e canais escoadouros vegetados</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>B</strong></td>
+<td style="text-align: left;"><strong>V, VI e VII</strong></td>
+<td style="text-align: left;">Limitações severas de declividade (<span class="math inline">\(&gt; 20\%\)</span>), pedregosidade, afloramentos ou drenagem restrita</td>
+<td style="text-align: left;">Pastagens permanentes bem manejadas, silvicultura, sistemas agroflorestais, <strong>cordões vegetativos</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>C</strong></td>
+<td style="text-align: left;"><strong>VIII</strong></td>
+<td style="text-align: left;">Escarpas, solos muito rasos, várzeas alagáveis e Áreas de Preservação Permanente (APPs)</td>
+<td style="text-align: left;">Preservação integral da vegetação nativa, <strong>PRAD e estabilização biotécnica</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="práticas-edáficas-e-vegetativas-na-base-do-sistema" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="práticas-edáficas-e-vegetativas-na-base-do-sistema"><span class="header-section-number">7.4</span> Práticas edáficas e vegetativas na base do sistema</h2>
+<p>Um erro recorrente em projetos conservacionistas consiste em iniciar o planejamento pelas obras de terra (práticas mecânicas) e negligenciar a superfície do solo. Terraços e canais escoadouros atuam sobre o <strong>escoamento superficial já formado</strong>; eles não impedem o impacto direto da gota de chuva (<em>splash</em>), que destrói os agregados superficiais, entope os poros e reduz a taxa de infiltração. Por isso, as práticas mecânicas devem sempre atuar em conjunto com duas linhas de defesa prévias:</p>
+<ol type="1">
+<li><strong>Práticas edáficas:</strong> conjunto de intervenções que melhoram a estrutura, a estabilidade de agregados e a fertilidade do perfil. A <strong>calagem</strong> eleva o pH e fornece <span class="math inline">\(\text{Ca}^{2+}\)</span> e <span class="math inline">\(\text{Mg}^{2+}\)</span>, favorecendo o crescimento radicular e a atividade microbiana; a <strong>gessagem</strong> (<span class="math inline">\(\text{CaSO}_4\cdot 2\text{H}_2\text{O}\)</span>) leva cálcio em profundidade para neutralizar alumínio tóxico e flocular argilas dispersas (especialmente em solos sódicos do Semiárido); a <strong>adubação orgânica</strong> fornece carbono lábil para cimentação biológica dos agregados; e a <strong>descompactação mecânica</strong> (escarificação ou subsolagem em condição friável) rompe camadas adensadas diagnosticadas (<span class="math inline">\(RP &gt; 2{,}0\text{ MPa}\)</span>), sendo sempre seguida pelo plantio de espécies de raízes agressivas (<em>bioporing</em>) para estabilizar os novos poros.</li>
+<li><strong>Práticas vegetativas:</strong> conjunto de estratégias que mantêm o solo permanentemente coberto por dossel vivo ou palhada. O <strong>Sistema Plantio Direto (SPD)</strong> — apoiado no não revolvimento do solo, na rotação de culturas e na manutenção de cobertura morta (<span class="math inline">\(\ge 70\%\)</span> da superfície) — intercepta a energia cinética das gotas de chuva antes que atinjam o solo e reduz o fator <span class="math inline">\(C\)</span> da RUSLE em mais de <span class="math inline">\(90\%\)</span>. Associam-se ao SPD a <strong>adubação verde</strong> (consórcio de leguminosas fixadoras de nitrogênio com gramíneas de alta relação C/N para persistência da palhada), o <strong>cultivo em contorno</strong> (preparo e semeadura seguindo as curvas de nível), as <strong>faixas de retenção</strong> e os <strong>quebra-ventos</strong> contra a erosão eólica.</li>
+</ol>
+</section>
+<section id="terraceamento-agrícola-tipos-espaçamento-e-seção" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="terraceamento-agrícola-tipos-espaçamento-e-seção"><span class="header-section-number">7.5</span> Terraceamento agrícola: tipos, espaçamento e seção</h2>
+<p>Quando a intensidade das chuvas tropicais excede a capacidade de infiltração mesmo sob manejo conservacionista da superfície, torna-se necessário implantar <strong>terraços</strong>. Um terraço agrícola é uma estrutura formada por um <strong>canal (corte)</strong> e um <strong>camalhão ou dique (aterro)</strong> construídos transversalmente ao declive da encosta, cuja função primordial é <strong>fragmentar o comprimento de rampa (<span class="math inline">\(L\)</span>)</strong> (<a href="#fig-terraceamento-bs" class="quarto-xref">Figura&nbsp;<span>7.1</span></a>). Ao interromper o percurso livre da enxurrada em intervalos regulares, o terraço impede que a lâmina escoada ganhe profundidade e velocidade suficientes para ultrapassar a tensão cisalhante crítica do solo (<span class="math inline">\(\tau_c\)</span>) e abrir sulcos.</p>
+<div id="fig-terraceamento-bs" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Esquema de espaçamento vertical e horizontal e seção transversal de terraço agrícola">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-terraceamento-bs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/bs_terraceamento_secoes_espacamento.png" class="img-fluid figure-img" style="width:94.0%" alt="Esquema de espaçamento vertical e horizontal e seção transversal de terraço agrícola">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-terraceamento-bs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;7.1: Fragmentação do comprimento de rampa (<span class="math inline">\(L\)</span>) por terraços e elementos geométricos da seção transversal (canal de corte, camalhão compactado e borda livre).
+</figcaption>
+</figure>
+</div>
+<section id="seleção-do-tipo-de-terraço" class="level3" data-number="7.5.1">
+<h3 data-number="7.5.1" class="anchored" data-anchor-id="seleção-do-tipo-de-terraço"><span class="header-section-number">7.5.1</span> Seleção do tipo de terraço</h3>
+<p>Quanto ao destino hidráulico da água interceptada, distinguem-se dois tipos principais:</p>
+<ul>
+<li><strong>Terraços em nível (de absorção ou retenção):</strong> construídos com cota zero ao longo do eixo longitudinal e extremidades bloqueadas. Retêm todo o volume de enxurrada gerado na faixa a montante para que infiltre gradualmente no canal. São indicados para solos profundos e de alta permeabilidade (como Latossolos bem estruturados), contribuindo diretamente para a recarga hídrica no Semiárido e no Cerrado.</li>
+<li><strong>Terraços em gradiente (de drenagem ou escoamento):</strong> construídos com declividade longitudinal controlada de <span class="math inline">\(0{,}2\%\)</span> a <span class="math inline">\(0{,}5\%\)</span> em direção a uma extremidade aberta conectada a um <strong>canal escoadouro vegetado</strong>. São obrigatórios em solos com baixa permeabilidade subsuperficial, horizonte <span class="math inline">\(Bt\)</span> adensado ou mudança textural abrupta (como Argissolos, Planossolos e Luvissolos) e em regiões de chuvas muito concentradas, onde o armazenamento em nível provocaria saturação, perda de coesão e ruptura do camalhão.</li>
+</ul>
+</section>
+<section id="cálculo-do-espaçamento-entre-terraços" class="level3" data-number="7.5.2">
+<h3 data-number="7.5.2" class="anchored" data-anchor-id="cálculo-do-espaçamento-entre-terraços"><span class="header-section-number">7.5.2</span> Cálculo do espaçamento entre terraços</h3>
+<p>O <strong>espaçamento vertical (<span class="math inline">\(EV\)</span>)</strong> é o desnível, em metros, entre dois terraços consecutivos; o <strong>espaçamento horizontal (<span class="math inline">\(EH\)</span>)</strong> é a distância medida em planta entre eles. Pela equação clássica de Bentley/IAC, amplamente empregada no Brasil:</p>
+<p><span id="eq-espacamento-terracos"><span class="math display">\[
+EV = \left(\frac{D}{X} + 2\right) \times 0{,}305 \qquad EH = \frac{EV \times 100}{D}
+\tag{7.3}\]</span></span></p>
+<p>onde <span class="math inline">\(D\)</span> é a declividade média do terreno (<span class="math inline">\(\%\)</span>) e <span class="math inline">\(X\)</span> é um fator adimensional que reflete a resistência do solo à erosão e o nível de proteção conferido pelo manejo (variando de <span class="math inline">\(2{,}0\)</span> para solos muito erodíveis e preparo convencional até <span class="math inline">\(4{,}0\text{--}4{,}5\)</span> para solos profundos sob plantio direto). Métodos hidrodinâmicos mais recentes, como o de Pruski (UFV), determinam <span class="math inline">\(EH\)</span> igualando a tensão ou energia do escoamento ao limite crítico de incisão em sulcos do solo local.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo resolvido 2: Espaçamento e verificação de armazenamento de terraço
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Considere uma rampa agrícola com comprimento total de <span class="math inline">\(200\text{ m}\)</span> e declividade uniforme <span class="math inline">\(D = 10\%\)</span>, em solo de média resistência sob preparo conservacionista (<span class="math inline">\(X = 3{,}5\)</span>).</p>
+<ol type="1">
+<li><strong>Espaçamento vertical e horizontal:</strong> <span class="math display">\[EV = \left(\frac{10}{3{,}5} + 2\right) \times 0{,}305 = (2{,}857 + 2) \times 0{,}305 = 1{,}48\text{ m}\]</span> <span class="math display">\[EH = \frac{1{,}48 \times 100}{10} = 14{,}8\text{ m}\]</span></li>
+<li><strong>Número de terraços na rampa:</strong> <span class="math inline">\(N = 200 / 14{,}8 \approx 13{,}5 \implies\)</span> adotam-se <strong>14 terraços</strong> ao longo da encosta, locados a partir do ponto mais alto do terreno.</li>
+<li><strong>Verificação da seção em nível:</strong> se a lâmina máxima de escoamento gerada pela chuva de projeto (via NRCS-CN) for <span class="math inline">\(P_e = 35\text{ mm}\)</span> (<span class="math inline">\(0{,}035\text{ m}\)</span>), o volume gerado por metro linear de terraço é <span class="math inline">\(V_{\mathrm{m}} = P_e \times EH = 0{,}035 \times 14{,}8 = 0{,}518\text{ m}^3\text{ m}^{-1}\)</span>. Logo, a área útil da seção transversal do canal do terraço deve ser <span class="math inline">\(A_{\mathrm{útil}} \ge 0{,}52\text{ m}^2\)</span>, mantendo-se uma <strong>borda livre mínima (<span class="math inline">\(f \ge 0{,}15\text{ m}\)</span>)</strong> acima do nível máximo d’água após o recalque do aterro.</li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="canais-escoadouros-vegetados-dimensionamento-por-manning" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="canais-escoadouros-vegetados-dimensionamento-por-manning"><span class="header-section-number">7.6</span> Canais escoadouros vegetados: dimensionamento por Manning</h2>
+<p>Os <strong>canais escoadouros vegetados</strong> são canais rasos e largos, revestidos com gramíneas estoloníferas ou rizomatosas densas (como grama-batatais <em>Paspalum notatum</em>, capim-estrela <em>Cynodon</em> spp. ou quicuio <em>Pennisetum clandestinum</em>), projetados para receber a água descarregada pelos terraços em gradiente e conduzi-la com segurança até um talvegue estável. À medida que o canal avança encosta abaixo e intercepta sucessivos terraços, a vazão acumulada cresce progressivamente (<span class="math inline">\(Q_i = \sum C I A_i / 360\)</span>), exigindo que a largura da base menor (<span class="math inline">\(b_i\)</span>) da seção trapezoidal aumente de montante para jusante (<a href="#fig-canal-escoadouro-bs" class="quarto-xref">Figura&nbsp;<span>7.2</span></a>).</p>
+<div id="fig-canal-escoadouro-bs" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Seção trapezoidal de canal escoadouro e gráfico de escalonamento de vazão">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-canal-escoadouro-bs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/bs_canal_escoadouro_trapezoidal_manning.png" class="img-fluid figure-img" style="width:94.0%" alt="Seção trapezoidal de canal escoadouro e gráfico de escalonamento de vazão">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-canal-escoadouro-bs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;7.2: Geometria hidráulica da seção trapezoidal vegetada e escalonamento progressivo de vazão e largura de base ao longo de um canal escoadouro.
+</figcaption>
+</figure>
+</div>
+<p>Para uma seção trapezoidal com base menor <span class="math inline">\(b\)</span> (<span class="math inline">\(\text{m}\)</span>), lâmina d’água <span class="math inline">\(h\)</span> (<span class="math inline">\(\text{m}\)</span>) e inclinação dos taludes <span class="math inline">\(Z:1\)</span> (<span class="math inline">\(Z\)</span> metros na horizontal para <span class="math inline">\(1\text{ m}\)</span> na vertical; usualmente <span class="math inline">\(Z \ge 2\)</span> para facilitar o trânsito de máquinas e a estabilidade lateral), os parâmetros geométricos são:</p>
+<p><span id="eq-geometria-canal"><span class="math display">\[
+A_h = (b + Z h)h \qquad P_m = b + 2h\sqrt{1 + Z^2} \qquad R_h = \frac{A_h}{P_m}
+\tag{7.4}\]</span></span></p>
+<p>onde <span class="math inline">\(A_h\)</span> é a área molhada (<span class="math inline">\(\text{m}^2\)</span>), <span class="math inline">\(P_m\)</span> é o perímetro molhado (<span class="math inline">\(\text{m}\)</span>) e <span class="math inline">\(R_h\)</span> é o raio hidráulico (<span class="math inline">\(\text{m}\)</span>). Pela equação da continuidade (<span class="math inline">\(Q = A_h V\)</span>) e pela equação de Manning, a velocidade média de escoamento (<span class="math inline">\(V\)</span>) e a tensão trativa média exercida pela água sobre o leito (<span class="math inline">\(\tau_0\)</span>) devem atender simultaneamente aos limites admissíveis do revestimento vivo:</p>
+<p><span id="eq-manning-tensao"><span class="math display">\[
+V = \frac{1}{n} R_h^{2/3} S_f^{1/2} \le V_{\mathrm{adm}} \qquad \tau_0 = \rho g R_h S_f \le \tau_{\mathrm{adm}}
+\tag{7.5}\]</span></span></p>
+<p>onde <span class="math inline">\(n\)</span> é o coeficiente de rugosidade de Manning (tabelado por classe de retardância da vegetação no USDA-NRCS; tipicamente <span class="math inline">\(0{,}04\)</span> a <span class="math inline">\(0{,}10\)</span>), <span class="math inline">\(S_f\)</span> é a declividade longitudinal do canal (<span class="math inline">\(\text{m m}^{-1}\)</span>), <span class="math inline">\(\rho = 1000\text{ kg m}^{-3}\)</span> é a massa específica da água e <span class="math inline">\(g = 9{,}81\text{ m s}^{-2}\)</span>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo resolvido 3: Verificação hidráulica completa em Planossolo (8 ha)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Considere um talhão de <span class="math inline">\(400 \times 200\text{ m}\)</span> (<span class="math inline">\(A = 8{,}0\text{ ha}\)</span>) cultivado com milho em sucessão com feijão sobre <strong>Planossolo Háplico Eutrófico vértico</strong> (<span class="math inline">\(71\%\)</span> de silte na camada superficial e horizonte <span class="math inline">\(Bt\)</span> adensado), declividade do terreno <span class="math inline">\(D = 8\%\)</span>, chuva de projeto <span class="math inline">\(I = 190\text{ mm h}^{-1}\)</span> (<span class="math inline">\(TR = 5\text{ anos}\)</span>) e coeficiente de escoamento <span class="math inline">\(C = 0{,}58\)</span>. O canal escoadouro acompanha um trecho com declividade <span class="math inline">\(S_f = 6\% = 0{,}06\text{ m m}^{-1}\)</span> e será revestido com gramíneas de densidade média (<span class="math inline">\(V_{\mathrm{adm}} = 1{,}35\text{ m s}^{-1}\)</span>; <span class="math inline">\(n = 0{,}08\)</span> em estande estabelecido).</p>
+<ol type="1">
+<li><strong>Vazão de projeto na saída do canal (Método Racional):</strong> <span class="math display">\[Q_p = \frac{C \cdot I \cdot A}{360} = \frac{0{,}58 \times 190 \times 8{,}0}{360} = 2{,}45\text{ m}^3\text{ s}^{-1}\]</span></li>
+<li><strong>Pré-dimensionamento pela velocidade admissível:</strong> <span class="math display">\[A_{\min} = \frac{Q_p}{V_{\mathrm{adm}}} = \frac{2{,}45}{1{,}35} = 1{,}81\text{ m}^2\]</span></li>
+<li><strong>Teste de uma seção trapezoidal inicial (<span class="math inline">\(b = 4{,}0\text{ m}\)</span>, <span class="math inline">\(h = 0{,}65\text{ m}\)</span>, <span class="math inline">\(Z = 2\)</span>):</strong>
+<ul>
+<li><span class="math inline">\(A_h = (4{,}0 + 2 \times 0{,}65) \times 0{,}65 = 3{,}445\text{ m}^2\)</span>;</li>
+<li><span class="math inline">\(P_m = 4{,}0 + 2 \times 0{,}65 \times \sqrt{1 + 2^2} = 4{,}0 + 1{,}30 \times 2{,}236 = 6{,}907\text{ m}\)</span>;</li>
+<li><span class="math inline">\(R_h = 3{,}445 / 6{,}907 = 0{,}499\text{ m}\)</span>. Aplicando a equação de Manning (<a href="#eq-manning-tensao" class="quarto-xref">Equação&nbsp;<span>7.5</span></a>): <span class="math display">\[V = \frac{1}{0{,}08} (0{,}499)^{2/3} (0{,}06)^{1/2} = 12{,}5 \times 0{,}629 \times 0{,}2449 = 1{,}93\text{ m s}^{-1}\]</span> E a tensão trativa no leito será: <span class="math display">\[\tau_0 = 1000 \times 9{,}81 \times 0{,}499 \times 0{,}06 = 293{,}7\text{ Pa}\]</span> <strong>Diagnóstico crítico:</strong> <span class="math inline">\(V = 1{,}93\text{ m s}^{-1} &gt; V_{\mathrm{adm}} = 1{,}35\text{ m s}^{-1}\)</span> (e <span class="math inline">\(\tau_0 \approx 294\text{ Pa}\)</span> excede a resistência de gramíneas em solo siltoso!). A seção <strong>não atende</strong> com declividade de <span class="math inline">\(6\%\)</span> e lâmina de <span class="math inline">\(0{,}65\text{ m}\)</span>, pois o canal entraria em erosão severa.</li>
+</ul></li>
+<li><strong>Soluções de engenharia para adequar o projeto:</strong>
+<ul>
+<li><strong>Alternativa A (Alargar a base e reduzir a lâmina):</strong> mantendo <span class="math inline">\(S_f = 6\%\)</span>, ao adotar seção muito rasa e larga (<span class="math inline">\(b = 8{,}5\text{ m}\)</span>, <span class="math inline">\(h = 0{,}25\text{ m}\)</span>, <span class="math inline">\(Z = 2\)</span>), tem-se <span class="math inline">\(A_h = 2{,}25\text{ m}^2\)</span>, <span class="math inline">\(P_m = 9{,}62\text{ m}\)</span> e <span class="math inline">\(R_h = 0{,}234\text{ m}\)</span>, reduzindo a velocidade para <span class="math inline">\(V = \frac{1}{0{,}10}(0{,}234)^{2/3}(0{,}06)^{1/2} = 0{,}93\text{ m s}^{-1} &lt; 1{,}35\text{ m s}^{-1}\)</span> (com revestimento denso <span class="math inline">\(n = 0{,}10\)</span>);</li>
+<li><strong>Alternativa B (Escalonamento com soleiras dissipadoras):</strong> reduzir a declividade efetiva entre trechos de <span class="math inline">\(S_f = 6\%\)</span> para <span class="math inline">\(S_f = 1\%\text{ a }1{,}5\%\)</span> por meio de <strong>degraus ou soleiras de pedra/madeira</strong> espaçadas ao longo do canal, abatendo simultaneamente <span class="math inline">\(V\)</span> e <span class="math inline">\(\tau_0\)</span> sem exigir faixas excessivamente largas no terreno.</li>
+<li>Em qualquer alternativa, adiciona-se <strong>borda livre de <span class="math inline">\(0{,}20\text{ m}\)</span></strong> (<span class="math inline">\(H_{\mathrm{total}} = h + 0{,}20\text{ m}\)</span>) e só se conectam os terraços ao canal <strong>após o pleno fechamento do tapete de gramíneas</strong>.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Questões para estudo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Por que o uso de terraços em nível é contraindicado em Planossolos e Argissolos com mudança textural abrupta, mesmo em declividades moderadas?</li>
+<li>Calcule o espaçamento vertical (<span class="math inline">\(EV\)</span>) e horizontal (<span class="math inline">\(EH\)</span>) pelo método de Bentley/IAC para uma encosta com <span class="math inline">\(D = 12\%\)</span> e fator <span class="math inline">\(X = 3{,}0\)</span>. Quantos terraços são necessários em uma rampa de <span class="math inline">\(250\text{ m}\)</span>?</li>
+<li>No Exemplo Resolvido 3, demonstre numericamente qual seria a nova velocidade média (<span class="math inline">\(V\)</span>) e a nova tensão trativa (<span class="math inline">\(\tau_0\)</span>) caso a declividade do canal (<span class="math inline">\(b = 4{,}0\text{ m}\)</span>, <span class="math inline">\(h = 0{,}65\text{ m}\)</span>, <span class="math inline">\(Z = 2\)</span>, <span class="math inline">\(n = 0{,}08\)</span>) fosse reduzida de <span class="math inline">\(6\%\)</span> para <span class="math inline">\(1\%\)</span> por meio de soleiras dissipadoras.</li>
+</ol>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/bioengenharia-solos\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/05-classificacao-feicoes.html" class="pagination-link" aria-label="Classificação de Feições Erosivas">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classificação de Feições Erosivas</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/06-revegetacao.html" class="pagination-link" aria-label="Revegetação e Espécies para Bioengenharia">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Revegetação e Espécies para Bioengenharia</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Luiz Diego Vidal Santos, Emersson Guedes da Silva e Renisson Neponuceno de Araújo Filho. Todos os direitos reservados.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -8,7 +8,7 @@ O monitoramento remoto de empreendimentos minerários opera em quatro escalas co
 
 ## InSAR e monitoramento de deformação
 
-A interferometria de radar de abertura sintética (InSAR/DInSAR), baseada na comparação de fases entre aquisições sucessivas do Sentinel-1, permite detectar deformações da superfície topográfica com precisão milimétrica (tipicamente 1–5 mm por ciclo de revisita de 6–12 dias). Essa capacidade é particularmente relevante para o monitoramento de estabilidade de taludes de cava, pilhas de estéril e barragens de rejeito, onde deformações precursoras podem anteceder rupturas catastróficas.
+A interferometria de radar de abertura sintética (InSAR/DInSAR), baseada na comparação de fases entre aquisições sucessivas do Sentinel-1, permite detectar deformações da superfície topográfica com precisão milimétrica (tipicamente 1-5 mm por ciclo de revisita de 6-12 dias). Essa capacidade é particularmente relevante para o monitoramento de estabilidade de taludes de cava, pilhas de estéril e barragens de rejeito, onde deformações precursoras podem anteceder rupturas catastróficas.
 
 A técnica de Persistent Scatterers InSAR (PS-InSAR) identifica alvos coerentes (refletores naturais estáveis, como afloramentos rochosos e estruturas construídas) cuja fase interferométrica é rastreada ao longo de séries temporais de dezenas a centenas de imagens, gerando séries de deslocamento para cada ponto com acurácia submilimétrica. A análise SBAS (Small Baseline Subset) é preferida em áreas vegetadas onde refletores permanentes são escassos, combinando pares interferométricos de curta baseline temporal e espacial para maximizar a coerência.
 
@@ -21,10 +21,10 @@ A @tbl-insar-barragens resume as capacidades de monitoramento InSAR por tipo de 
 
 | Estrutura | Técnica preferida | Resolução típica | Precisão | Período de detecção |
 |:----------|:-----------------|:-----------------|:---------|:-------------------|
-| Barragem de rejeito (aterro) | PS-InSAR | 20 m | 1–2 mm/ano | 6–12 dias |
-| Pilha de estéril | SBAS | 20 m | 3–5 mm/ciclo | 12–24 dias |
+| Barragem de rejeito (aterro) | PS-InSAR | 20 m | 1-2 mm/ano | 6-12 dias |
+| Pilha de estéril | SBAS | 20 m | 3-5 mm/ciclo | 12-24 dias |
 | Talude de cava | PS-InSAR + corner reflectors | 5 m (TerraSAR-X) | < 1 mm/ano | 11 dias |
-| Terreno circundante vegetado | SBAS (banda L) | 25 m | 5–10 mm/ciclo | 14–46 dias |
+| Terreno circundante vegetado | SBAS (banda L) | 25 m | 5-10 mm/ciclo | 14-46 dias |
 
 : Técnicas de InSAR e capacidades de monitoramento por tipo de estrutura minerária. {#tbl-insar-barragens .striped .hover}
 
@@ -38,15 +38,15 @@ $$
 \Delta V = \sum_{i=1}^{n} (Z_{t_2}(i) - Z_{t_1}(i)) \cdot \Delta x \cdot \Delta y
 $$
 
-onde $Z_{t_1}(i)$ e $Z_{t_2}(i)$ são as elevações do pixel $i$ nos tempos $t_1$ e $t_2$, $\Delta x$ e $\Delta y$ são as dimensões do pixel, e $n$ é o número total de pixels na área de interesse. A propagação de incerteza considera o erro vertical de cada MDS ($\sigma_{Z}$), resultando em um limite de detecção mínimo de $\pm 2\sigma_{Z}$ para mudanças significativas. Para LiDAR-ALS, $\sigma_{Z}$ típico é de 5–15 cm; para SfM-VANT, 2–10 cm dependendo da altitude de voo e da densidade de pontos de controle (GCP).
+onde $Z_{t_1}(i)$ e $Z_{t_2}(i)$ são as elevações do pixel $i$ nos tempos $t_1$ e $t_2$, $\Delta x$ e $\Delta y$ são as dimensões do pixel, e $n$ é o número total de pixels na área de interesse. A propagação de incerteza considera o erro vertical de cada MDS ($\sigma_{Z}$), resultando em um limite de detecção mínimo de $\pm 2\sigma_{Z}$ para mudanças significativas. Para LiDAR-ALS, $\sigma_{Z}$ típico é de 5-15 cm; para SfM-VANT, 2-10 cm dependendo da altitude de voo e da densidade de pontos de controle (GCP).
 
 ## Recuperação ambiental e histerese vegetacional
 
-A recuperação de áreas degradadas por mineração é monitorada por séries temporais de NDVI, cuja trajetória temporal revela a resiliência do ecossistema. Em regiões de Cerrado e Mata Atlântica, a recuperação do NDVI após revegetação de taludes e pilhas de estéril exibe um padrão de histerese caracterizado por três fases. A fase inicial (0–2 anos) apresenta aumento rápido do NDVI associado ao estabelecimento de espécies herbáceas de cobertura rápida (gramíneas, leguminosas rasteiras), com valores típicos de NDVI de 0,3–0,5. A fase intermediária (2–5 anos) exibe plateau ou ligeira redução do NDVI, associada à competição interespecífica e à transição de comunidade herbácea para arbustiva, com mortalidade diferencial. A fase de maturação (5–15 anos) mostra incremento gradual até valores próximos da vegetação nativa circundante (NDVI 0,6–0,8), representando o estabelecimento de espécies arbóreas e a estratificação do dossel.
+A recuperação de áreas degradadas por mineração é monitorada por séries temporais de NDVI, cuja trajetória temporal revela a resiliência do ecossistema. Em regiões de Cerrado e Mata Atlântica, a recuperação do NDVI após revegetação de taludes e pilhas de estéril exibe um padrão de histerese caracterizado por três fases. A fase inicial (0-2 anos) apresenta aumento rápido do NDVI associado ao estabelecimento de espécies herbáceas de cobertura rápida (gramíneas, leguminosas rasteiras), com valores típicos de NDVI de 0,3-0,5. A fase intermediária (2-5 anos) exibe plateau ou ligeira redução do NDVI, associada à competição interespecífica e à transição de comunidade herbácea para arbustiva, com mortalidade diferencial. A fase de maturação (5-15 anos) mostra incremento gradual até valores próximos da vegetação nativa circundante (NDVI 0,6-0,8), representando o estabelecimento de espécies arbóreas e a estratificação do dossel.
 
 ::: {.callout-note}
 ## Histerese e resiliência
-O conceito de histerese implica que a trajetória de recuperação não segue o caminho inverso da degradação. Áreas que foram completamente desmatadas e tiveram o solo removido até o saprolito requerem intervenções de reconstrução de solo (adição de substrato, inoculação microbiana, adubação verde) muito mais intensas do que áreas com solo superficial preservado, e a recuperação até níveis equivalentes de NDVI e biomassa pode exigir prazos significativamente mais longos (10–20 anos vs. 3–5 anos).
+O conceito de histerese implica que a trajetória de recuperação não segue o caminho inverso da degradação. Áreas que foram completamente desmatadas e tiveram o solo removido até o saprolito requerem intervenções de reconstrução de solo (adição de substrato, inoculação microbiana, adubação verde) muito mais intensas do que áreas com solo superficial preservado, e a recuperação até níveis equivalentes de NDVI e biomassa pode exigir prazos significativamente mais longos (10-20 anos vs. 3-5 anos).
 :::
 
 ## Transporte de sedimentos e qualidade da água
@@ -65,17 +65,17 @@ A @tbl-monitoramento-agua apresenta os parâmetros monitorados e as fontes de da
 
 | Parâmetro | Sensor/Método | Frequência | Resolução espacial |
 |:----------|:-------------|:-----------|:-------------------|
-| SST (turbidez) | Sentinel-2 (B4/B8A) | 5 dias | 10–20 m |
+| SST (turbidez) | Sentinel-2 (B4/B8A) | 5 dias | 10-20 m |
 | Clorofila-a | Sentinel-2 (B4/B5) | 5 dias | 20 m |
 | Metais pesados | Coleta in situ (ICP-OES) | Mensal | Pontual |
 | Nível d'água | Sentinel-3 (altimetria) | 27 dias | 300 m (ao longo da órbita) |
-| Extensão da pluma | Landsat/Sentinel-2 (RGB+NIR) | 5–16 dias | 10–30 m |
+| Extensão da pluma | Landsat/Sentinel-2 (RGB+NIR) | 5-16 dias | 10-30 m |
 
 : Parâmetros de qualidade de água e fontes de dados para monitoramento em áreas de mineração. {#tbl-monitoramento-agua .striped .hover}
 
 ## Gestão de risco e governança ambiental
 
-A avaliação integrada de risco ambiental em áreas de mineração utiliza modelos multicritério em ambiente SIG. A lógica fuzzy, apresentada no @sec-algebra-geoestatistica no contexto da álgebra de mapas, é aplicada para transformar variáveis heterogêneas (distância à barragem, declividade, permeabilidade, proximidade de cursos d'água, ocupação do vale a jusante) em graus de pertinência (0–1) e combiná-las pelo operador Fuzzy Gamma:
+A avaliação integrada de risco ambiental em áreas de mineração utiliza modelos multicritério em ambiente SIG. A lógica fuzzy, apresentada no @sec-algebra-geoestatistica no contexto da álgebra de mapas, é aplicada para transformar variáveis heterogêneas (distância à barragem, declividade, permeabilidade, proximidade de cursos d'água, ocupação do vale a jusante) em graus de pertinência (0-1) e combiná-las pelo operador Fuzzy Gamma:
 
 $$
 \mu_{gamma} = (\mu_{soma})^\gamma \cdot (\mu_{produto})^{1-\gamma}

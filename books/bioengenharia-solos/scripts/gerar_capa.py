@@ -173,12 +173,12 @@ font_org = get_font("calibri", 44, bold=True)
 font_lbl = get_font("calibri", 28)
 
 draw.line([(W//2 - 350, 1375), (W//2 + 350, 1375)], fill=c_light_green+(120,), width=2)
-draw_spaced(draw, "ORGANIZADORES", W//2, 1400, font_lbl, c_light_green, 5)
-center_t(draw, "Luiz Diego Vidal Santos", 1455, font_org, WHITE)
-center_t(draw, "Francisco Sandro Rodrigues Holanda", 1512, font_org, WHITE)
-center_t(draw, "Emersson Guedes da Silva", 1569, font_org, WHITE)
-center_t(draw, "UEFS  •  UFS", 1640, font_i, SUBTLE)
-center_t(draw, "2026  •  CC BY-NC-SA 4.0", 1700, font_s, SUBTLE)
+draw_spaced(draw, "AUTORES", W//2, 1392, font_lbl, c_light_green, 5)
+center_t(draw, "Luiz Diego Vidal Santos", 1444, font_org, WHITE)
+center_t(draw, "Emersson Guedes da Silva", 1498, font_org, WHITE)
+center_t(draw, "Renisson Neponuceno de Araújo Filho", 1552, font_org, WHITE)
+center_t(draw, "UEFS  •  UFS  •  UFRPE", 1618, font_i, SUBTLE)
+center_t(draw, "2026", 1672, font_s, SUBTLE)
 
 # Salvar
 out = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "img", "capa_bioengenharia_de_solos.png"))

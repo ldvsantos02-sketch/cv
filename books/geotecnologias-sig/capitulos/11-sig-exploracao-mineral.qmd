@@ -14,7 +14,7 @@ O levantamento aeromagnético mede as variações do campo magnético terrestre 
 
 ### Gamaespectrometria
 
-A gamaespectrometria aérea mede a radiação gama natural emitida por isótopos de potássio ($^{40}$K), urânio ($^{238}$U, medido pelo filho $^{214}$Bi) e tório ($^{232}$Th, medido pelo filho $^{208}$Tl) nos 30–45 cm superficiais do solo e rocha. A razão Th/K discrimina unidades geológicas com assinaturas distintas (granitos peraluminosos apresentam alto K e moderado Th, enquanto quartzitos mostram baixo K e alto Th). A razão U/Th identifica anomalias redox associadas a mineralizações uraníferas e hidrotermais. A integração de K, eU, eTh na composição ternária RGB produz mapas de domínios radiométricos que auxiliam no mapeamento litológico e na identificação de zonas de alteração hidrotermal.
+A gamaespectrometria aérea mede a radiação gama natural emitida por isótopos de potássio ($^{40}$K), urânio ($^{238}$U, medido pelo filho $^{214}$Bi) e tório ($^{232}$Th, medido pelo filho $^{208}$Tl) nos 30-45 cm superficiais do solo e rocha. A razão Th/K discrimina unidades geológicas com assinaturas distintas (granitos peraluminosos apresentam alto K e moderado Th, enquanto quartzitos mostram baixo K e alto Th). A razão U/Th identifica anomalias redox associadas a mineralizações uraníferas e hidrotermais. A integração de K, eU, eTh na composição ternária RGB produz mapas de domínios radiométricos que auxiliam no mapeamento litológico e na identificação de zonas de alteração hidrotermal.
 
 ::: {.callout-tip}
 ## Dados públicos no Brasil
@@ -62,7 +62,7 @@ $$
 CR = \frac{CI}{RI_n}
 $$
 
-onde $\lambda_{max}$ é o autovalor principal da matriz, $n$ o número de critérios e $RI_n$ o índice de consistência aleatório (tabelado para cada $n$). Matrizes com $CR > 0,10$ são consideradas inconsistentes e devem ser revisadas. Uma vez obtidos os pesos, os mapas-critério (já reclassificados para uma escala comum, por exemplo, fuzzy 0–1) são combinados pela soma ponderada:
+onde $\lambda_{max}$ é o autovalor principal da matriz, $n$ o número de critérios e $RI_n$ o índice de consistência aleatório (tabelado para cada $n$). Matrizes com $CR > 0,10$ são consideradas inconsistentes e devem ser revisadas. Uma vez obtidos os pesos, os mapas-critério (já reclassificados para uma escala comum, por exemplo, fuzzy 0-1) são combinados pela soma ponderada:
 
 $$
 FP = \sum_{i=1}^{n} w_i \cdot \mu_i

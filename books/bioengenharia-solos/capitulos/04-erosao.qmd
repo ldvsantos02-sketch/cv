@@ -37,7 +37,7 @@ Os fatores $C$ e $P$ são os diretamente manipuláveis pela bioengenharia. Uma c
 
 ## Método SCS-CN para Estimativa de Escoamento
 
-Além da RUSLE, que estima a perda de solo por erosão laminar, o projetista de bioengenharia necessita estimar o volume e o pico de escoamento superficial gerado por eventos de chuva, informação essencial para dimensionar paliçadas (ver @sec-palicadas), bacias de captação (ver @sec-bacias-captacao) e canaletas verdes (ver @sec-canaleta-verde). O método SCS-CN (*Soil Conservation Service — Curve Number*), desenvolvido pelo USDA, é a ferramenta mais amplamente utilizada para essa finalidade.
+Além da RUSLE, que estima a perda de solo por erosão laminar, o projetista de bioengenharia necessita estimar o volume e o pico de escoamento superficial gerado por eventos de chuva, informação essencial para dimensionar paliçadas (ver @sec-palicadas), bacias de captação (ver @sec-bacias-captacao) e canaletas verdes (ver @sec-canaleta-verde). O método SCS-CN (*Soil Conservation Service - Curve Number*), desenvolvido pelo USDA, é a ferramenta mais amplamente utilizada para essa finalidade.
 
 O escoamento superficial direto ($Q$, em mm) gerado por uma precipitação total ($P$, em mm) é estimado por
 
@@ -51,7 +51,7 @@ $$
 S = \frac{25400}{CN} - 254
 $$
 
-O $CN$ é um parâmetro adimensional (0–100) que integra os efeitos do tipo hidrológico do solo, da cobertura vegetal e da condição de umidade antecedente. A @tbl-cn apresenta valores de $CN$ para condições típicas em projetos de bioengenharia no Brasil tropical.
+O $CN$ é um parâmetro adimensional (0-100) que integra os efeitos do tipo hidrológico do solo, da cobertura vegetal e da condição de umidade antecedente. A @tbl-cn apresenta valores de $CN$ para condições típicas em projetos de bioengenharia no Brasil tropical.
 
 | Uso do solo / cobertura | Solo tipo A | Solo tipo B | Solo tipo C | Solo tipo D |
 |--------------------------|------------|------------|------------|------------|
@@ -85,7 +85,7 @@ A erosão hídrica se manifesta em diferentes formas, que representam um contín
 
 ### Erosão Laminar (*Sheet Erosion*)
 
-A erosão laminar consiste na remoção uniforme de uma fina camada de solo pela ação do escoamento superficial difuso (uma lâmina d'água rasa que escoa uniformemente sobre a superfície). É a forma mais insidiosa de erosão por ser visualmente imperceptível; o agricultor perde solo progressivamente sem notar, até que a exposição dos horizontes subsuperficiais (mais claros, mais compactos) revele a gravidade da situação. Em regiões tropicais, a erosão laminar sob chuvas intensas pode remover 1–3 mm de solo por evento, o que equivale a 15–45 t/ha. A proteção da superfície por cobertura vegetal viva, morta (mulch) ou artificial (biomantas) é a estratégia primária de controle.
+A erosão laminar consiste na remoção uniforme de uma fina camada de solo pela ação do escoamento superficial difuso (uma lâmina d'água rasa que escoa uniformemente sobre a superfície). É a forma mais insidiosa de erosão por ser visualmente imperceptível; o agricultor perde solo progressivamente sem notar, até que a exposição dos horizontes subsuperficiais (mais claros, mais compactos) revele a gravidade da situação. Em regiões tropicais, a erosão laminar sob chuvas intensas pode remover 1-3 mm de solo por evento, o que equivale a 15-45 t/ha. A proteção da superfície por cobertura vegetal viva, morta (mulch) ou artificial (biomantas) é a estratégia primária de controle.
 
 ### Erosão em Sulcos (*Rill Erosion*)
 
@@ -149,14 +149,14 @@ A erosão nas regiões tropicais apresenta particularidades que a distinguem dos
 
 Mapas como o da @fig-mapa-erosao são construídos a partir do cruzamento de informações topográficas (modelo digital de elevação), pedológicas (classes de solo e erodibilidade), climáticas (erosividade da chuva) e de uso do solo (cobertura vegetal), e permitem identificar as áreas prioritárias para intervenção (hotspots erosivos) e dimensionar as técnicas mais adequadas para cada zona.
 
-![Mapa de uso e cobertura do solo — classificação das categorias de uso da terra que alimenta o fator $C$ da RUSLE e o parâmetro $CN$ do método SCS, essenciais para o dimensionamento de intervenções de bioengenharia.](../img/mapa_uso_solo.png){#fig-mapa-uso-solo fig-alt="Mapa de uso e cobertura do solo" width="85%"}
+![Mapa de uso e cobertura do solo - classificação das categorias de uso da terra que alimenta o fator $C$ da RUSLE e o parâmetro $CN$ do método SCS, essenciais para o dimensionamento de intervenções de bioengenharia.](../img/mapa_uso_solo.png){#fig-mapa-uso-solo fig-alt="Mapa de uso e cobertura do solo" width="85%"}
 
 ::: {.callout-important}
 ## Particularidades tropicais
-Nas regiões tropicais, quatro fatores condicionam a intensidade e a dinâmica dos processos erosivos. Primeiro, a elevada erosividade das chuvas, com $EI_{30}$ superior a 10.000 MJ mm ha⁻¹ h⁻¹ ano⁻¹ (contra 1.000–3.000 em zonas temperadas), concentrada em poucos meses da estação chuvosa. Segundo, os solos com coesão aparente, que se mostram estáveis quando secos mas colapsam quando saturados, gerando rupturas súbitas e imprevisíveis. Terceiro, a ocorrência frequente de erosão subsuperficial (*piping*), especialmente em solos com gradiente textural (Argissolos) ou com camadas de impedimento (Plintossolos), que gera túneis subterrâneos cujo colapso forma ravinas e voçorocas. Quarto, os ciclos repetitivos de umedecimento e secagem, que causam fissuração superficial, criando caminhos preferenciais para infiltração concentrada e acelerando a desagregação do solo.
+Nas regiões tropicais, quatro fatores condicionam a intensidade e a dinâmica dos processos erosivos. Primeiro, a elevada erosividade das chuvas, com $EI_{30}$ superior a 10.000 MJ mm ha⁻¹ h⁻¹ ano⁻¹ (contra 1.000-3.000 em zonas temperadas), concentrada em poucos meses da estação chuvosa. Segundo, os solos com coesão aparente, que se mostram estáveis quando secos mas colapsam quando saturados, gerando rupturas súbitas e imprevisíveis. Terceiro, a ocorrência frequente de erosão subsuperficial (*piping*), especialmente em solos com gradiente textural (Argissolos) ou com camadas de impedimento (Plintossolos), que gera túneis subterrâneos cujo colapso forma ravinas e voçorocas. Quarto, os ciclos repetitivos de umedecimento e secagem, que causam fissuração superficial, criando caminhos preferenciais para infiltração concentrada e acelerando a desagregação do solo.
 :::
 
-![Eventos climáticos extremos e erosão — a intensificação de chuvas convectivas tropicais aumenta a erosividade e a frequência de rupturas em encostas e margens fluviais.](../img/eventos_extremos.png){#fig-eventos-extremos fig-alt="Relação entre eventos climáticos extremos e processos erosivos" width="80%"}
+![Eventos climáticos extremos e erosão - a intensificação de chuvas convectivas tropicais aumenta a erosividade e a frequência de rupturas em encostas e margens fluviais.](../img/eventos_extremos.png){#fig-eventos-extremos fig-alt="Relação entre eventos climáticos extremos e processos erosivos" width="80%"}
 
 ## Erosão Marginal
 
@@ -170,10 +170,48 @@ A tolerância de perda de solo ($T$) é um conceito fundamental para justificar 
 
 | Classe de solo | T (t ha⁻¹ ano⁻¹) | Justificativa |
 |---------------|-------------------|---------------|
-| Solos profundos (Latossolos) | 9–12 | Manto espesso permite maior perda sem comprometer a raiz |
-| Solos moderadamente profundos | 5–9 | Equilíbrio entre profundidade e taxa de formação |
-| Solos rasos (Neossolos) | 2–5 | Qualquer perda compromete rapidamente a capacidade produtiva |
+| Solos profundos (Latossolos) | 9-12 | Manto espesso permite maior perda sem comprometer a raiz |
+| Solos moderadamente profundos | 5-9 | Equilíbrio entre profundidade e taxa de formação |
+| Solos rasos (Neossolos) | 2-5 | Qualquer perda compromete rapidamente a capacidade produtiva |
 
 : Tolerância de perda de solo para classes de solos tropicais [@bertoni2017]. {#tbl-tolerancia .striped}
 
 Quando a perda atual ($A$, calculada pela RUSLE ou medida em parcelas experimentais) excede a tolerância ($T$), intervenções de bioengenharia são necessárias para evitar a degradação irreversível do recurso solo. Essa relação $A > T$ é o critério técnico que fundamenta a recomendação de intervenção e orienta o dimensionamento das técnicas de controle, cuja intensidade deve ser proporcional ao excedente $A - T$.
+
+## Hidrologia de Superfície para Vazão de Pico: Kirpich, IDF e Método Racional
+
+Enquanto o método SCS-CN fornece a lâmina e o volume total escoado por evento (variável-chave para dimensionar o reservatório de barraginhas e terraços em nível), o dimensionamento hidráulico de **terraços em gradiente, canais escoadouros vegetados e canaletas verdes** exige estimar a **vazão máxima de pico ($Q_{\max}$)** que atravessará a seção crítica durante a chuva de projeto. Para pequenas bacias rurais ($A \le 200\text{ ha}$), o cálculo encadeia três etapas narradas a seguir:
+
+1. **Tempo de concentração ($t_c$ — Equação de Kirpich):** tempo que a gota de chuva que cai no ponto hidraulicamente mais distante da bacia leva para atingir a seção de saída. Quanto menor $t_c$, mais rápido toda a bacia contribui simultaneamente e maior é o pico de vazão:
+   $$
+   t_c = 0{,}0195\,L_m^{0{,}77}\,S_m^{-0{,}385}
+   $$ {#eq-kirpich-cap4}
+   onde $t_c$ resulta em minutos, $L_m$ é o comprimento do talvegue principal em metros e $S_m = H/L_m$ é a declividade média do talvegue ($\text{m m}^{-1}$).
+2. **Intensidade máxima de precipitação ($I$, em $\text{mm h}^{-1}$):** adota-se a duração da chuva crítica igual ao tempo de concentração ($d = t_c$), pois chuvas mais curtas não mobilizam toda a bacia e chuvas mais longas possuem intensidade média menor. Entra-se na **curva Intensidade-Duração-Frequência (IDF)** local para o período de retorno ($TR$) escolhido ($5\text{ a }10\text{ anos}$ para obras agrícolas; $10\text{ a }25\text{ anos}$ para obras fluviais):
+   $$
+   I = \frac{K_{\mathrm{IDF}} \cdot TR^a}{(t_c + b)^c}
+   $$ {#eq-idf-cap4}
+3. **Método Racional:** converte a intensidade de chuva ($I$) e a área de contribuição ($A$, em hectares) em vazão de pico ($Q_{\max}$, em $\text{m}^3\text{ s}^{-1}$), ponderada pelo coeficiente de escoamento superficial ($C$, fração da chuva que efetivamente vira enxurrada, entre $0$ e $1$):
+   $$
+   Q_{\max} = \frac{C \cdot I \cdot A}{360}
+   $$ {#eq-racional-cap4}
+   *(O divisor $360$ resulta da conversão direta de $\text{mm h}^{-1} \times \text{ha}$ para $\text{m}^3\text{ s}^{-1}$, pois $1\text{ ha} = 10^4\text{ m}^2$, $1\text{ mm} = 10^{-3}\text{ m}$ e $1\text{ h} = 3600\text{ s}$, logo $10^4 \times 10^{-3} / 3600 = 1/360$).*
+
+::: {.callout-tip}
+## Exemplo resolvido: estimativa de $t_c$, $I$ e $Q_{\max}$
+Uma microbacia agrícola de $A = 12\text{ ha}$ apresenta talvegue principal com $L_m = 450\text{ m}$ e desnível $H = 18\text{ m}$ ($S_m = 18/450 = 0{,}04\text{ m m}^{-1}$), solo franco-argiloso com cobertura regular ($C = 0{,}45$) e equação IDF local $I = 1450\,TR^{0{,}18}/(t_c + 15)^{0{,}80}$. Para $TR = 10\text{ anos}$:
+
+1. **Tempo de concentração:** $t_c = 0{,}0195 \times (450)^{0{,}77} \times (0{,}04)^{-0{,}385} = 0{,}0195 \times 110{,}2 \times 3{,}45 = 7{,}4\text{ min}$ (adota-se $t_c = 10\text{ min}$ como mínimo prático).
+2. **Intensidade de projeto:** $I = \frac{1450 \times 10^{0{,}18}}{(10 + 15)^{0{,}80}} = \frac{1450 \times 1{,}514}{13{,}13} = 167{,}2\text{ mm h}^{-1}$.
+3. **Vazão de pico:** $Q_{\max} = \frac{0{,}45 \times 167{,}2 \times 12}{360} = 2{,}51\text{ m}^3\text{ s}^{-1}$.
+:::
+
+## Erosão Eólica e Controle por Quebra-ventos
+
+Embora a erosão hídrica domine as regiões úmidas, em áreas semiáridas, tabuleiros arenosos e cerrados durante a estação seca prolongada a ação do vento torna-se um agente erosivo expressivo. O transporte eólico ocorre por três mecanismos físicos distintos conforme o diâmetro das partículas:
+
+1. **Rolamento superficial (*creep*):** partículas grossas ($0{,}5\text{ a }2{,}0\text{ mm}$), pesadas demais para se erguer, rolam e deslizam sobre a superfície empurradas pelo vento e pelo impacto de outros grãos;
+2. **Saltação:** partículas de tamanho médio ($0{,}1\text{ a }0{,}5\text{ mm}$, areia fina) são erguidas a poucos centímetros ou decímetros do solo e descrevem trajetórias parabólicas curtas. Ao retornarem ao solo com alta energia cinética, quebram agregados maiores e disparam novas partículas, sendo o **principal mecanismo desencadeador da erosão eólica**;
+3. **Suspensão:** partículas muito finas de silte e argila ($< 0{,}1\text{ mm}$) e matéria orgânica leve são lançadas às camadas superiores da atmosfera e transportadas por dezenas ou centenas de quilômetros, empobrecendo irreversivelmente a fertilidade química do solo.
+
+O controle agronômico e biotécnico baseia-se na **Equação da Erosão Eólica ($E = f(I, K, C, L, V)$)**, atuando simultaneamente sobre três frentes: manter **palhada e restos culturais em pé** (que elevam a altura de rugosidade aerodinâmica e afastam a corrente de vento da superfície do solo), adotar **preparo em nível** formando sulcos perpendiculares ao vento dominante e implantar **quebra-ventos vegetados**. Um erro clássico de projeto consiste em plantar barreiras arbóreas excessivamente fechadas (porosidade $< 20\%$): o vento salta por cima da barreira e gera redemoinhos turbulentos intensos logo a sotavento, agravando a erosão. Quebra-ventos eficientes possuem **porosidade óptica de $40\text{ a }50\%$**, filtrando e desacelerando o fluxo de ar gradualmente e protegendo uma faixa equivalente a **$15\text{ a }20$ vezes a altura ($H$) da barreira** a sotavento.

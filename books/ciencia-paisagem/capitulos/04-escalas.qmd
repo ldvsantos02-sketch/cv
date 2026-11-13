@@ -64,7 +64,7 @@ Os dados da @tbl-dependencia-escalar revelam que, ao passar de 10 m para 250 m d
 
 A dimensão temporal da escala é igualmente relevante, embora frequentemente negligenciada. A paisagem visível hoje é o resultado de processos que operam em escalas temporais que variam de dias (desmatamento por corte raso, queimada) a milênios (evolução geomorfológica, pedogênese). A compreensão da dinâmica da paisagem exige que se explicite o intervalo temporal da análise e que se reconheça que processos diferentes operam em escalas temporais diferentes.
 
-Em estudos de detecção de mudanças, a escolha do intervalo temporal afeta profundamente os resultados. Análises anuais capturam processos abruptos como desmatamento, expansão urbana e abertura de estradas, mas podem ignorar a regeneração secundária lenta que ocorre entre duas imagens. Análises decadais revelam tendências graduais como a regeneração florestal, a migração de bordas agrícolas e a densificação urbana, mas podem omitir eventos importantes que ocorreram e foram revertidos dentro da década. Análises multi-temporais com séries longas (20–40 anos), como as oferecidas pelo MapBiomas para o Brasil (1985–presente), permitem identificar trajetórias de mudança e distinguir flutuações de curto prazo de tendências estruturais irreversíveis [@pontius2004].
+Em estudos de detecção de mudanças, a escolha do intervalo temporal afeta profundamente os resultados. Análises anuais capturam processos abruptos como desmatamento, expansão urbana e abertura de estradas, mas podem ignorar a regeneração secundária lenta que ocorre entre duas imagens. Análises decadais revelam tendências graduais como a regeneração florestal, a migração de bordas agrícolas e a densificação urbana, mas podem omitir eventos importantes que ocorreram e foram revertidos dentro da década. Análises multi-temporais com séries longas (20-40 anos), como as oferecidas pelo MapBiomas para o Brasil (1985-presente), permitem identificar trajetórias de mudança e distinguir flutuações de curto prazo de tendências estruturais irreversíveis [@pontius2004].
 
 Um exemplo clarifica a importância da escala temporal. Um fragmento florestal que aparece estável em imagens de 2010 e 2020 pode ter sofrido degradação seletiva (extração de madeira, fogo de sub-bosque) durante a década, com alteração de estrutura vertical sem mudança na cobertura horizontal. A detecção dessa degradação requer séries temporais de alta frequência (mensal ou trimestral) e métricas sensíveis à qualidade do habitat (não apenas à sua presença/ausência), como a amplitude sazonal do NDVI ou o retroespalhamento radar.
 
@@ -86,9 +86,9 @@ digraph {
     edge [color="#555555", penwidth=1.2]
 
     A [label="Região Biogeográfica\n(10⁶ ha, 10³ anos)", fillcolor="#1B5E20", fontcolor="white", color="#0D3310"]
-    B [label="Paisagem\n(10³–10⁵ ha, 10¹–10² anos)", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20"]
-    C [label="Ecossistema\n(10¹–10³ ha, 10⁰–10¹ anos)", fillcolor="#43A047", fontcolor="white", color="#2E7D32"]
-    D [label="Comunidade/População\n(10⁻¹–10¹ ha, 10⁻¹–10⁰ anos)", fillcolor="#66BB6A", fontcolor="white", color="#43A047"]
+    B [label="Paisagem\n(10³-10⁵ ha, 10¹-10² anos)", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20"]
+    C [label="Ecossistema\n(10¹-10³ ha, 10⁰-10¹ anos)", fillcolor="#43A047", fontcolor="white", color="#2E7D32"]
+    D [label="Comunidade/População\n(10⁻¹-10¹ ha, 10⁻¹-10⁰ anos)", fillcolor="#66BB6A", fontcolor="white", color="#43A047"]
 
     A -> B
     B -> C
@@ -102,7 +102,7 @@ Essa perspectiva hierárquica distingue a ecologia da paisagem madura da mera ap
 
 ## Escala e planejamento territorial
 
-Para o planejamento territorial, a escolha da escala deve ser guiada pelo processo de interesse e pela unidade de gestão. A criação de um corredor ecológico exige análise na escala da paisagem ($10^3$–$10^5$ ha), com resolução suficiente para mapear fragmentos, avaliar conectividade e identificar gargalos. O planejamento de restauração de uma Área de Preservação Permanente (APP) específica opera numa escala menor ($10^0$–$10^1$ ha), com resolução de detalhe que permita avaliar declividade, tipo de solo, vegetação remanescente e uso anterior.
+Para o planejamento territorial, a escolha da escala deve ser guiada pelo processo de interesse e pela unidade de gestão. A criação de um corredor ecológico exige análise na escala da paisagem ($10^3$-$10^5$ ha), com resolução suficiente para mapear fragmentos, avaliar conectividade e identificar gargalos. O planejamento de restauração de uma Área de Preservação Permanente (APP) específica opera numa escala menor ($10^0$-$10^1$ ha), com resolução de detalhe que permita avaliar declividade, tipo de solo, vegetação remanescente e uso anterior.
 
 A análise multiescalar, na qual duas ou mais escalas são utilizadas complementarmente, é considerada a melhor prática quando os recursos permitem. O mapeamento regional (extensão municipal ou de bacia) identifica áreas prioritárias para conservação e restauração, enquanto o mapeamento local (extensão de propriedade ou sub-bacia) detalha as intervenções necessárias em cada sítio. A consistência entre escalas é assegurada pela hierarquia de planejamento, na qual decisões tomadas na escala superior condicionam as opções disponíveis na escala inferior.
 
@@ -113,6 +113,6 @@ Turner e Gardner [-@turner2015] recomendam que a extensão da análise seja no m
 
 ## Escalas das paisagens brasileiras
 
-A análise das paisagens brasileiras impõe desafios escalares específicos derivados da dimensão continental do país e da diversidade de biomas. Os biomas brasileiros cobrem áreas de $10^5$ a $10^8$ ha (a Amazônia, com 4,2 × $10^8$ ha, é a maior floresta tropical contígua do planeta), exigindo dados de média resolução (250–500 m) para mapeamentos sinópticos. Bacias hidrográficas de planejamento (comitês de bacia) variam de $10^3$ a $10^5$ ha, compatíveis com dados Landsat e Sentinel (10–30 m). Propriedades rurais, unidades de gestão do Código Florestal, variam de $10^0$ a $10^3$ ha e requerem dados de alta resolução (1–5 m) ou VANT (drones) para mapeamento cadastral e verificação de conformidade ambiental.
+A análise das paisagens brasileiras impõe desafios escalares específicos derivados da dimensão continental do país e da diversidade de biomas. Os biomas brasileiros cobrem áreas de $10^5$ a $10^8$ ha (a Amazônia, com 4,2 × $10^8$ ha, é a maior floresta tropical contígua do planeta), exigindo dados de média resolução (250-500 m) para mapeamentos sinópticos. Bacias hidrográficas de planejamento (comitês de bacia) variam de $10^3$ a $10^5$ ha, compatíveis com dados Landsat e Sentinel (10-30 m). Propriedades rurais, unidades de gestão do Código Florestal, variam de $10^0$ a $10^3$ ha e requerem dados de alta resolução (1-5 m) ou VANT (drones) para mapeamento cadastral e verificação de conformidade ambiental.
 
 Projetos como o MapBiomas operam em escala nacional com resolução de 30 m (Landsat), oferecendo séries temporais de uso e cobertura desde 1985 que permitem análises de dinâmica da paisagem em extensões continentais. Para análises locais de fragmentação e conectividade, contudo, é frequentemente necessário recorrer a imagens de maior resolução ou a levantamentos de campo complementares. Essa necessidade de articulação entre escalas reforça o caráter multiescalar inerente à Ciência da Paisagem e justifica o investimento em métodos que integrem dados de diferentes resoluções dentro de um arcabouço hierárquico coerente.

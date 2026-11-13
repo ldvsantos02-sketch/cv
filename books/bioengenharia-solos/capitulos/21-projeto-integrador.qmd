@@ -75,7 +75,7 @@ A sequência de implantação é crítica para o sucesso do projeto, pois a inst
 
 ::: {.callout-warning}
 ## Período de implantação
-A implantação da fase de revegetação deve coincidir com o início da estação chuvosa para maximizar a taxa de estabelecimento da vegetação e a sobrevivência de mudas. Em regiões semiáridas com período chuvoso curto, irrigação suplementar pode ser necessária nos primeiros 60 dias após o plantio, período em que as raízes ainda não atingiram profundidade suficiente para acessar reservas hídricas do solo. O uso de Bio-SAP (@sec-biopolimeros) no substrato de plantio pode reduzir a demanda de irrigação em 50–70%.
+A implantação da fase de revegetação deve coincidir com o início da estação chuvosa para maximizar a taxa de estabelecimento da vegetação e a sobrevivência de mudas. Em regiões semiáridas com período chuvoso curto, irrigação suplementar pode ser necessária nos primeiros 60 dias após o plantio, período em que as raízes ainda não atingiram profundidade suficiente para acessar reservas hídricas do solo. O uso de Bio-SAP (@sec-biopolimeros) no substrato de plantio pode reduzir a demanda de irrigação em 50-70%.
 :::
 
 ### Etapa 7: Monitoramento
@@ -84,7 +84,7 @@ O monitoramento é obrigatório em projetos de NBS (ver @sec-nbs), pois são sis
 
 | Indicador | Método | Frequência | Meta |
 |-----------|--------|------------|------|
-| Cobertura vegetal (%) | Fotografia aérea por RPAS/drone | Mensal (ano 1), trimestral (anos 2–3) | > 80% em 12 meses |
+| Cobertura vegetal (%) | Fotografia aérea por RPAS/drone | Mensal (ano 1), trimestral (anos 2-3) | > 80% em 12 meses |
 | Taxa de sobrevivência (%) | Contagem em parcelas permanentes | Trimestral | > 70% |
 | Erosão (t/ha/ano) | Pinos de erosão + parcelas Wischmeier | Semestral | < tolerância do solo local |
 | Estabilidade do talude (FS) | Piezômetros + inclinômetros | Mensal (estação chuvosa) | FS ≥ 1,5 |
@@ -104,7 +104,7 @@ Os Sistemas de Informação Geográfica (SIG) são a plataforma central de integ
 
 ### Estabilidade de Taludes
 
-A análise de estabilidade de taludes é obrigatória para o dimensionamento de gabiões vivos (ver @sec-gabiao-vivo), paredes Krainer (ver @sec-parede-krainer) e retaludamento (ver @sec-nbs-viabilidade). Para análises em duas dimensões, os métodos de equilíbrio-limite (Bishop simplificado, Janbu, Spencer) podem ser executados com softwares como GeoStudio SLOPE/W, Slide2 (Rocscience) ou GEOSLOPE, que calculam automaticamente o fator de segurança mínimo ($FS$) por busca da superfície de ruptura crítica. A incorporação do efeito da vegetação ao modelo requer a adição do termo de coesão radicular ($c_r$) à coesão do solo na faixa de profundidade radicular (0–2 m para gramíneas, 0–5 m para espécies arbóreas), além da aplicação de uma sobrecarga correspondente ao peso da vegetação (0,5–2,0 kPa para gramíneas, 2–5 kPa para arbustos e 5–15 kPa para árvores).
+A análise de estabilidade de taludes é obrigatória para o dimensionamento de gabiões vivos (ver @sec-gabiao-vivo), paredes Krainer (ver @sec-parede-krainer) e retaludamento (ver @sec-nbs-viabilidade). Para análises em duas dimensões, os métodos de equilíbrio-limite (Bishop simplificado, Janbu, Spencer) podem ser executados com softwares como GeoStudio SLOPE/W, Slide2 (Rocscience) ou GEOSLOPE, que calculam automaticamente o fator de segurança mínimo ($FS$) por busca da superfície de ruptura crítica. A incorporação do efeito da vegetação ao modelo requer a adição do termo de coesão radicular ($c_r$) à coesão do solo na faixa de profundidade radicular (0-2 m para gramíneas, 0-5 m para espécies arbóreas), além da aplicação de uma sobrecarga correspondente ao peso da vegetação (0,5-2,0 kPa para gramíneas, 2-5 kPa para arbustos e 5-15 kPa para árvores).
 
 A lógica do cálculo de estabilidade pode ser implementada em linguagem Python para análises paramétricas rápidas. A equação do talude infinito (adequada para rupturas superficiais em encostas com espessura de solo homogênea) pode ser expressa como
 
@@ -136,7 +136,7 @@ $$
 A = R \cdot K \cdot LS \cdot C \cdot P = 7.500 \times 0{,}028 \times 4{,}2 \times 0{,}35 \times 1{,}0 = 308{,}7 \text{ t/ha/ano}
 $$
 
-valor que excede em mais de 30 vezes a tolerância de perda de solo para Latossolos no Cerrado (tipicamente 9–12 t/ha/ano), confirmando a necessidade urgente de intervenção.
+valor que excede em mais de 30 vezes a tolerância de perda de solo para Latossolos no Cerrado (tipicamente 9-12 t/ha/ano), confirmando a necessidade urgente de intervenção.
 
 ### Projeto
 
@@ -156,7 +156,7 @@ A @tbl-plano-intervencao apresenta o plano de intervenção por zona da voçoroc
 
 A modelagem dos resultados esperados utiliza a mesma equação RUSLE com os fatores $C$ e $P$ atualizados para refletir a progressão da cobertura vegetal e a instalação das práticas conservacionistas.
 
-No Ano 1, espera-se cobertura vegetal de 40–60% (estabelecimento das gramíneas por hidrossemeadura), com redução de erosão da ordem de 65% pela combinação das estruturas de contenção (paliçadas, gabiões) e da proteção superficial (biomantas).
+No Ano 1, espera-se cobertura vegetal de 40-60% (estabelecimento das gramíneas por hidrossemeadura), com redução de erosão da ordem de 65% pela combinação das estruturas de contenção (paliçadas, gabiões) e da proteção superficial (biomantas).
 
 No Ano 3, a cobertura vegetal deve superar 80% (consolidação da hidrossemeadura e crescimento das mudas arbóreas), com fator de segurança superior a 1,5 nos taludes estabilizados pela contribuição da coesão radicular ($\Delta c_r$).
 
@@ -184,13 +184,13 @@ A @tbl-orcamento apresenta o orçamento estimado para a recuperação da voçoro
 | Mão de obra | h | 800 | 35 | 28.000 |
 | Total | | | | 149.300 |
 
-: Orçamento estimado para recuperação da voçoroca — valores referenciais incluindo material e mão de obra. {#tbl-orcamento .striped}
+: Orçamento estimado para recuperação da voçoroca - valores referenciais incluindo material e mão de obra. {#tbl-orcamento .striped}
 
 ::: {.callout-tip}
 ## Custo-benefício
-O custo estimado de R$ 149.300 corresponde a aproximadamente R$ 100/m linear de voçoroca tratada, ou R$ 12/m² de área estabilizada, valor 3–5× inferior ao de soluções convencionais com muro de concreto armado para feições de porte equivalente (ver @tbl-custos-nbs em @sec-nbs-viabilidade). Quando os co-benefícios de sequestro de carbono e regulação hídrica são contabilizados, o retorno do investimento é estimado em 5–8 anos.
+O custo estimado de R$ 149.300 corresponde a aproximadamente R$ 100/m linear de voçoroca tratada, ou R$ 12/m² de área estabilizada, valor 3-5× inferior ao de soluções convencionais com muro de concreto armado para feições de porte equivalente (ver @tbl-custos-nbs em @sec-nbs-viabilidade). Quando os co-benefícios de sequestro de carbono e regulação hídrica são contabilizados, o retorno do investimento é estimado em 5-8 anos.
 :::
 
 ## Considerações Finais
 
-O projeto integrador demonstra que a combinação sinérgica de técnicas de bioengenharia é significativamente mais eficaz do que o uso isolado de qualquer uma delas, pois cada técnica atua em um compartimento específico da feição erosiva (cabeceira, paredes laterais, fundo, encosta contribuinte) e em uma escala temporal distinta (proteção imediata por biomantas, contenção estrutural por gabiões, estabilização radicular em 3–5 anos). O diagnóstico adequado do solo, do clima e das feições erosivas é o fundamento insubstituível para a seleção correta de intervenções, e a aplicação indiscriminada de técnicas sem diagnóstico é a principal causa de insucesso em projetos de recuperação. O monitoramento é obrigatório, não opcional, porque as NBS são sistemas vivos cuja trajetória depende de variáveis climáticas, edáficas e biológicas que exigem gestão adaptativa. O custo é competitivo, especialmente quando os co-benefícios ambientais são contabilizados, consolidando a bioengenharia de solos como uma solução baseada na natureza que atende simultaneamente aos critérios de eficiência técnica, viabilidade econômica e alinhamento com os Objetivos de Desenvolvimento Sustentável.
+O projeto integrador demonstra que a combinação sinérgica de técnicas de bioengenharia é significativamente mais eficaz do que o uso isolado de qualquer uma delas, pois cada técnica atua em um compartimento específico da feição erosiva (cabeceira, paredes laterais, fundo, encosta contribuinte) e em uma escala temporal distinta (proteção imediata por biomantas, contenção estrutural por gabiões, estabilização radicular em 3-5 anos). O diagnóstico adequado do solo, do clima e das feições erosivas é o fundamento insubstituível para a seleção correta de intervenções, e a aplicação indiscriminada de técnicas sem diagnóstico é a principal causa de insucesso em projetos de recuperação. O monitoramento é obrigatório, não opcional, porque as NBS são sistemas vivos cuja trajetória depende de variáveis climáticas, edáficas e biológicas que exigem gestão adaptativa. O custo é competitivo, especialmente quando os co-benefícios ambientais são contabilizados, consolidando a bioengenharia de solos como uma solução baseada na natureza que atende simultaneamente aos critérios de eficiência técnica, viabilidade econômica e alinhamento com os Objetivos de Desenvolvimento Sustentável.

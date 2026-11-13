@@ -4,7 +4,7 @@
 
 A degradação do solo compreende o conjunto de processos que reduzem a capacidade atual ou futura do solo de sustentar funções ecossistêmicas, incluindo produção de biomassa, filtragem e regulação hídrica, ciclagem de nutrientes e suporte físico à vegetação. 
 
-Diferentemente de uma simples perda de fertilidade química, a degradação envolve alterações estruturais, hidrológicas e biológicas frequentemente irreversíveis em escalas de tempo humanas, de modo que a reposição natural do material edáfico (taxas de formação de solo da ordem de 0,01–0,1 mm ano⁻¹ em regiões tropicais) é superada pelas taxas de remoção por erosão hídrica, eólica ou por processos de transporte em massa.
+Diferentemente de uma simples perda de fertilidade química, a degradação envolve alterações estruturais, hidrológicas e biológicas frequentemente irreversíveis em escalas de tempo humanas, de modo que a reposição natural do material edáfico (taxas de formação de solo da ordem de 0,01-0,1 mm ano⁻¹ em regiões tropicais) é superada pelas taxas de remoção por erosão hídrica, eólica ou por processos de transporte em massa.
 
 Os mecanismos primários de degradação podem ser agrupados em três domínios funcionais interconectados. O domínio físico engloba a erosão laminar e linear (sulcos, ravinas, voçorocas), a compactação subsuperficial (que eleva a densidade aparente e reduz a macroporosidade efetiva, diminuindo a condutividade hidráulica saturada $K_s$), o selamento e encrostamento superficial (redução da infiltração inicial por colapso de agregados sob impacto de gotas de chuva) e a perda de profundidade efetiva do perfil. O domínio químico abrange a acidificação, a salinização, a sodificação (com consequente dispersão de argilas, conforme detalhado na seção sobre colapso estrutural), a lixiviação de bases trocáveis e a contaminação por metais pesados ou agrotóxicos. O domínio biológico compreende a redução da biomassa e diversidade microbiana, a queda da atividade enzimática (β-glucosidase, fosfatase ácida, desidrogenase) e a diminuição do carbono orgânico do solo (COS), que opera como variável integradora entre os três domínios, uma vez que a matéria orgânica governa simultaneamente a estabilidade de agregados, a capacidade de troca catiônica e a atividade da biota edáfica.
 
@@ -38,14 +38,14 @@ onde $P$ é a precipitação anual e $ETP$ é a evapotranspiração potencial an
 
 ## Retroalimentação erosão-clima
 
-A relação entre erosão do solo e mudanças climáticas é bidirecional e amplificante. Por um lado, o aumento da intensidade das chuvas sob cenários de aquecimento global (IPCC AR6) eleva exponencialmente o fator $R$ da RUSLE, pois a erosividade é proporcional à potência da intensidade de precipitação. Modelos climáticos projetam incrementos de 20–40% na erosividade em regiões tropicais até 2100, mesmo em cenários de emissão moderada (RCP 4.5).
+A relação entre erosão do solo e mudanças climáticas é bidirecional e amplificante. Por um lado, o aumento da intensidade das chuvas sob cenários de aquecimento global (IPCC AR6) eleva exponencialmente o fator $R$ da RUSLE, pois a erosividade é proporcional à potência da intensidade de precipitação. Modelos climáticos projetam incrementos de 20-40% na erosividade em regiões tropicais até 2100, mesmo em cenários de emissão moderada (RCP 4.5).
 
-Por outro lado, a erosão do solo retroalimenta o sistema climático ao remover o carbono orgânico da camada superficial (onde está concentrado 50–70% do COS) e expô-lo à oxidação microbiana, convertendo-o em CO₂ atmosférico. Essa perda de COS não apenas contribui para o efeito estufa, mas degrada a estrutura do solo (pois a matéria orgânica é o principal agente cimentante dos agregados), reduzindo a infiltração ($K_s$ diminui), elevando o escoamento superficial e aumentando a erodibilidade ($K$ aumenta). Configura-se, assim, um ciclo vicioso no qual a perda de solo gera mais perda de solo e mais emissões de carbono.
+Por outro lado, a erosão do solo retroalimenta o sistema climático ao remover o carbono orgânico da camada superficial (onde está concentrado 50-70% do COS) e expô-lo à oxidação microbiana, convertendo-o em CO₂ atmosférico. Essa perda de COS não apenas contribui para o efeito estufa, mas degrada a estrutura do solo (pois a matéria orgânica é o principal agente cimentante dos agregados), reduzindo a infiltração ($K_s$ diminui), elevando o escoamento superficial e aumentando a erodibilidade ($K$ aumenta). Configura-se, assim, um ciclo vicioso no qual a perda de solo gera mais perda de solo e mais emissões de carbono.
 
 ::: {.callout-warning}
 ## Ciclo vicioso erosão-carbono
 
-A perda de 1 mm de solo superficial por erosão laminar equivale à remoção de aproximadamente 1,5 t C ha⁻¹ em solo rico em matéria orgânica. Em taxas de erosão de 10–50 t ha⁻¹ ano⁻¹ (comuns em pastagens degradadas no Cerrado), a perda anual de COS pode atingir 0,3–1,5 t C ha⁻¹, valor que supera a capacidade de reposição pela vegetação em sistemas degradados.
+A perda de 1 mm de solo superficial por erosão laminar equivale à remoção de aproximadamente 1,5 t C ha⁻¹ em solo rico em matéria orgânica. Em taxas de erosão de 10-50 t ha⁻¹ ano⁻¹ (comuns em pastagens degradadas no Cerrado), a perda anual de COS pode atingir 0,3-1,5 t C ha⁻¹, valor que supera a capacidade de reposição pela vegetação em sistemas degradados.
 :::
 
 ## Salinização e colapso da estrutura do solo
@@ -70,7 +70,7 @@ $$
 R_n - G = H + \lambda ET
 $$
 
-onde $R_n$ é o saldo de radiação, $G$ é o fluxo de calor no solo, $H$ é o fluxo de calor sensível (aquecimento do ar) e $\lambda ET$ é o fluxo de calor latente (evapotranspiração). Em superfícies degradadas, $\lambda ET$ diminui drasticamente (pouca evapotranspiração), $H$ aumenta (aquecimento excessivo) e a razão de Bowen ($\beta = H/\lambda ET$) cresce de valores em torno de 0,2–0,5 (vegetação ativa) para 2–5 (solo exposto), alterando a dinâmica atmosférica local.
+onde $R_n$ é o saldo de radiação, $G$ é o fluxo de calor no solo, $H$ é o fluxo de calor sensível (aquecimento do ar) e $\lambda ET$ é o fluxo de calor latente (evapotranspiração). Em superfícies degradadas, $\lambda ET$ diminui drasticamente (pouca evapotranspiração), $H$ aumenta (aquecimento excessivo) e a razão de Bowen ($\beta = H/\lambda ET$) cresce de valores em torno de 0,2-0,5 (vegetação ativa) para 2-5 (solo exposto), alterando a dinâmica atmosférica local.
 
 ## Indicadores bioquímicos de degradação
 
@@ -82,11 +82,11 @@ A @tbl-indicadores-solo sintetiza os principais indicadores e seus limiares de r
 
 | Indicador | Unidade | Solo preservado | Solo degradado | Resposta |
 |:----------|:--------|:---------------|:---------------|:---------|
-| $C_{bio}$ | μg C g⁻¹ | 200–600 | < 100 | Meses |
-| $qCO_2$ | μg CO₂-C μg⁻¹ $C_{bio}$ h⁻¹ | 0,5–1,5 | > 3,0 | Meses |
-| β-glucosidase | μg PNP g⁻¹ h⁻¹ | 50–200 | < 30 | Estações |
-| Fosfatase ácida | μg PNP g⁻¹ h⁻¹ | 100–400 | < 60 | Estações |
-| COS (0–30 cm) | t C ha⁻¹ | 30–80 | < 15 | Anos–décadas |
+| $C_{bio}$ | μg C g⁻¹ | 200-600 | < 100 | Meses |
+| $qCO_2$ | μg CO₂-C μg⁻¹ $C_{bio}$ h⁻¹ | 0,5-1,5 | > 3,0 | Meses |
+| β-glucosidase | μg PNP g⁻¹ h⁻¹ | 50-200 | < 30 | Estações |
+| Fosfatase ácida | μg PNP g⁻¹ h⁻¹ | 100-400 | < 60 | Estações |
+| COS (0-30 cm) | t C ha⁻¹ | 30-80 | < 15 | Anos-décadas |
 
 : Indicadores de qualidade do solo e limiares de referência para ecossistemas tropicais. {#tbl-indicadores-solo .striped .hover}
 

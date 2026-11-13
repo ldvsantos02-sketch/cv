@@ -142,7 +142,7 @@ A krigagem possui uma propriedade única entre os interpoladores: além da estim
 
 ::: {.callout-tip}
 ## Krigagem vs. IDW
-O Inverso da Distância Ponderada (IDW) é um interpolador determinístico que pondera as observações pelo inverso da distância elevada a uma potência ($p$, tipicamente 2). Embora computacionalmente simples, o IDW não modela a estrutura de dependência espacial (não usa semivariograma), não fornece estimativa de incerteza e é sensível à configuração geométrica da amostragem. A krigagem deve ser preferida sempre que houver dados suficientes para ajustar um semivariograma robusto (mínimo de 30–50 observações).
+O Inverso da Distância Ponderada (IDW) é um interpolador determinístico que pondera as observações pelo inverso da distância elevada a uma potência ($p$, tipicamente 2). Embora computacionalmente simples, o IDW não modela a estrutura de dependência espacial (não usa semivariograma), não fornece estimativa de incerteza e é sensível à configuração geométrica da amostragem. A krigagem deve ser preferida sempre que houver dados suficientes para ajustar um semivariograma robusto (mínimo de 30-50 observações).
 :::
 
 ## Modelagem difusa (Fuzzy Sets)

@@ -53,7 +53,7 @@ Em paisagens onde a fragmentação atingiu estágios avançados (Fig. @fig-fragm
 
 ## Limiares de fragmentação
 
-Estudos teóricos baseados em teoria de percolação e simulações neutras predizem que a conectividade estrutural de uma paisagem colapsa quando a proporção de habitat cai abaixo de aproximadamente 59% (limiar de percolação em mapas aleatórios). Em paisagens reais, com padrões não-aleatórios de desmatamento, limiares empíricos de 20–30% de habitat remanescente são frequentemente reportados como pontos de inflexão abaixo dos quais a riqueza de espécies, a conectividade funcional e os serviços ecossistêmicos declinam abruptamente.
+Estudos teóricos baseados em teoria de percolação e simulações neutras predizem que a conectividade estrutural de uma paisagem colapsa quando a proporção de habitat cai abaixo de aproximadamente 59% (limiar de percolação em mapas aleatórios). Em paisagens reais, com padrões não-aleatórios de desmatamento, limiares empíricos de 20-30% de habitat remanescente são frequentemente reportados como pontos de inflexão abaixo dos quais a riqueza de espécies, a conectividade funcional e os serviços ecossistêmicos declinam abruptamente.
 
 A existência de limiares tem implicações diretas para o planejamento territorial. Se uma bacia hidrográfica possui 35% de cobertura florestal, ela pode estar acima do limiar crítico de conectividade. Se a mesma bacia tem apenas 15%, ela pode já ter cruzado o limiar, e a restauração de fragmentos adicionais pode ter retorno ecológico proporcionalmente muito maior do que a mesma área restaurada na paisagem de 35%. A identificação de limiares específicos para cada contexto (bioma, grupo taxonômico, tipo de matriz) é um campo ativo de pesquisa e requer dados de biodiversidade associados a gradientes de proporção de habitat.
 
@@ -68,15 +68,15 @@ A **permeabilidade da matriz** é o conceito-chave que medeia a relação entre 
 | Tipo de cobertura | Permeabilidade | Custo de deslocamento (ref.) |
 |:------------------|:--------------:|:----------------------------:|
 | Floresta nativa contínua | Muito alta | 1 |
-| Floresta secundária / capoeira | Alta | 1–5 |
-| Silvicultura (eucalipto, pinus) | Média-alta | 5–15 |
-| Pastagem com árvores / silvipastoril | Média | 20–40 |
-| Pastagem limpa | Baixa | 40–80 |
-| Monocultura mecanizada (soja, cana) | Muito baixa | 60–100 |
-| Área urbana de baixa densidade | Variável | 100–300 |
-| Área urbana densa / industrial | Barreira | 300–500 |
+| Floresta secundária / capoeira | Alta | 1-5 |
+| Silvicultura (eucalipto, pinus) | Média-alta | 5-15 |
+| Pastagem com árvores / silvipastoril | Média | 20-40 |
+| Pastagem limpa | Baixa | 40-80 |
+| Monocultura mecanizada (soja, cana) | Muito baixa | 60-100 |
+| Área urbana de baixa densidade | Variável | 100-300 |
+| Área urbana densa / industrial | Barreira | 300-500 |
 | Rodovia pavimentada | Barreira forte | 1000 |
-| Corpo d'água (depende da espécie) | Variável | 10–1000 |
+| Corpo d'água (depende da espécie) | Variável | 10-1000 |
 
 : Valores de referência de resistência ao deslocamento por tipo de cobertura do solo. Valores normalizados com floresta nativa = 1. A parametrização precisa deve ser calibrada com dados de telemetria da espécie focal. Fontes: @taylor1993; @saura2007; compilação de literatura. {#tbl-resistencia-matriz .striped .hover}
 
@@ -152,7 +152,7 @@ A **vulnerabilidade socioambiental** complementa a resiliência ao quantificar a
 
 ::: {.callout-important}
 ## Limiares e irreversibilidade
-A teoria de percolação indica que paisagens com menos de 30% de habitat remanescente operam próximas a limiares de desconexão estrutural. A teoria de sistemas complexos sugere que, próximos a esses limiares, pequenas perturbações adicionais podem provocar transições de estado abruptas e desproporcionais à perturbação que as desencadeou. Para o planejamento territorial, isso implica que a relação entre invasão antrópica e degradação ecológica é não-linear, sendo que os primeiros 40–50% de conversão de habitat produzem impactos moderados, ao passo que a conversão dos últimos 20–30% pode precipitar colapso funcional desproporcional. A antecipação desses limiares, e não apenas a reação a eventos já observáveis, constitui o principal argumento para integrar análise de resiliência no planejamento preventivo de paisagens.
+A teoria de percolação indica que paisagens com menos de 30% de habitat remanescente operam próximas a limiares de desconexão estrutural. A teoria de sistemas complexos sugere que, próximos a esses limiares, pequenas perturbações adicionais podem provocar transições de estado abruptas e desproporcionais à perturbação que as desencadeou. Para o planejamento territorial, isso implica que a relação entre invasão antrópica e degradação ecológica é não-linear, sendo que os primeiros 40-50% de conversão de habitat produzem impactos moderados, ao passo que a conversão dos últimos 20-30% pode precipitar colapso funcional desproporcional. A antecipação desses limiares, e não apenas a reação a eventos já observáveis, constitui o principal argumento para integrar análise de resiliência no planejamento preventivo de paisagens.
 :::
 
 A resiliência pode ser incrementada por estratégias paisagísticas complementares que incluem a manutenção de habitat acima dos limiares críticos de proporção e conectividade, a diversificação estrutural da paisagem visando heterogeneidade e múltiplas rotas alternativas, a melhoria da qualidade da matriz (ver @tbl-resistencia-matriz) como meio de ampliar a capacidade adaptativa sem necessariamente aumentar a área protegida, e a alocação estratégica de áreas de restauração em zonas identificadas como gargalos pelos modelos de circuitos. O mosaico heterogêneo e conectado resultante dessas estratégias é o modelo estrutural de referência para paisagens funcionalmente resilientes (@fig-paisagem-resiliente).

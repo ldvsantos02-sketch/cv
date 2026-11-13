@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Livro-texto sobre soluções baseadas na natureza aplicadas à bioengenharia de água e solo em regiões tropicais, integrando fundamentos pedológicos e hidrossedimentológicos, protocolos de dimensionamento parametrizados em campo, técnicas de estabilização biológica e inovação em biomateriais para conservação e recuperação de áreas degradadas.">
+<meta name="description" content="Livro-texto sobre soluções baseadas na natureza aplicadas à bioengenharia de água e solo em regiões tropicais e no semiárido, com ancoragem nas bacias do São Francisco e do Vaza-Barris, integrando fundamentos pedológicos e hidrossedimentológicos, protocolos de dimensionamento parametrizados em campo, técnicas de estabilização biológica e inovação em biomateriais de fibras do sertão para conservação e recuperação de áreas degradadas.">
 
-<title>7&nbsp; Revegetação e Espécies para Bioengenharia – Soluções Baseadas na Natureza para Bioengenharia de Água e Solo</title>
+<title>8&nbsp; Revegetação e Espécies para Bioengenharia – Soluções Baseadas na Natureza para Bioengenharia de Água e Solo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../capitulos/07-palicadas.html" rel="next">
-<link href="../capitulos/05-classificacao-feicoes.html" rel="prev">
+<link href="../capitulos/05a-planejamento-terraceamento-canais.html" rel="prev">
 <link href="../img/capa_bioengenharia_de_solos.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -85,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-revegetacao.html">Parte III — Técnicas de Bioengenharia de Água e Solo</a></li><li class="breadcrumb-item"><a href="../capitulos/06-revegetacao.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Revegetação e Espécies para Bioengenharia</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-revegetacao.html">Parte III — Técnicas de Bioengenharia de Água e Solo</a></li><li class="breadcrumb-item"><a href="../capitulos/06-revegetacao.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Revegetação e Espécies para Bioengenharia</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -212,6 +241,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classificação de Feições Erosivas</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05a-planejamento-terraceamento-canais.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Planejamento Conservacionista, Terraceamento e Canais Escoadouros</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -226,79 +261,79 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/06-revegetacao.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Revegetação e Espécies para Bioengenharia</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Revegetação e Espécies para Bioengenharia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/07-palicadas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Paliçadas Permeáveis: Princípios e Materiais</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Paliçadas Permeáveis: Princípios e Materiais</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/07a-palicadas-protocolo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Protocolo Hidrogeotécnico para Dimensionamento de Paliçadas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Protocolo Hidrogeotécnico para Dimensionamento de Paliçadas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/07b-palicadas-execucao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Paliçadas: Execução, Estruturas Vivas e Monitoramento</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Paliçadas: Execução, Estruturas Vivas e Monitoramento</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/08-bacias-captacao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Bacias de Captação e Barraginhas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Bacias de Captação e Barraginhas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/09-feixes-drenos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Feixes Vivos e Drenos Verdes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Feixes Vivos e Drenos Verdes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/10-hidrossemeadura.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Hidrossemeadura</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Hidrossemeadura</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/11-biomantas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Biomantas e Geossintéticos Biodegradáveis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Biomantas e Geossintéticos Biodegradáveis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/12-enrocamento.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Enrocamento Vegetado</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Enrocamento Vegetado</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/13-cordoes-fascinas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Cordões Vegetativos e Fascinas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Cordões Vegetativos e Fascinas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/14-gabiao-vivo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Gabião Vivo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Gabião Vivo</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/15-parede-krainer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Parede Krainer</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Parede Krainer</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/16-canaleta-verde.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Canaleta Verde</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Canaleta Verde</span></span></a>
   </div>
 </li>
       </ul>
@@ -315,19 +350,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/17-geotexteis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Geotêxteis no Controle de Erosão</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Geotêxteis no Controle de Erosão</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/18-biotexteis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Biotêxteis de Fibras Vegetais</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Biotêxteis de Fibras Vegetais</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/19-biopolimeros.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Biopolímeros Superabsorventes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Biopolímeros Superabsorventes</span></span></a>
   </div>
 </li>
       </ul>
@@ -344,13 +379,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/23-bioengenharia-agua.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Bioengenharia de Água na Escala da Bacia</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Bioengenharia de Água na Escala da Bacia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/21-projeto-integrador.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Projeto Integrador</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Projeto Integrador</span></span></a>
   </div>
 </li>
       </ul>
@@ -367,13 +402,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/22-modelagem-3d.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Modelagem 3D de Sistemas Radiculares</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Modelagem 3D de Sistemas Radiculares</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/20-nbs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Viabilidade, Clima e Governança das NBS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Viabilidade, Clima e Governança das NBS</span></span></a>
   </div>
 </li>
       </ul>
@@ -394,35 +429,35 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#princípios-da-revegetação" id="toc-princípios-da-revegetação" class="nav-link active" data-scroll-target="#princípios-da-revegetação"><span class="header-section-number">7.1</span> Princípios da Revegetação</a></li>
-  <li><a href="#seleção-de-espécies" id="toc-seleção-de-espécies" class="nav-link" data-scroll-target="#seleção-de-espécies"><span class="header-section-number">7.2</span> Seleção de Espécies</a>
+  <li><a href="#princípios-da-revegetação" id="toc-princípios-da-revegetação" class="nav-link active" data-scroll-target="#princípios-da-revegetação"><span class="header-section-number">8.1</span> Princípios da Revegetação</a></li>
+  <li><a href="#seleção-de-espécies" id="toc-seleção-de-espécies" class="nav-link" data-scroll-target="#seleção-de-espécies"><span class="header-section-number">8.2</span> Seleção de Espécies</a>
   <ul class="collapse">
-  <li><a href="#critérios-técnicos" id="toc-critérios-técnicos" class="nav-link" data-scroll-target="#critérios-técnicos"><span class="header-section-number">7.2.1</span> Critérios Técnicos</a></li>
-  <li><a href="#critérios-ecológicos" id="toc-critérios-ecológicos" class="nav-link" data-scroll-target="#critérios-ecológicos"><span class="header-section-number">7.2.2</span> Critérios Ecológicos</a></li>
+  <li><a href="#critérios-técnicos" id="toc-critérios-técnicos" class="nav-link" data-scroll-target="#critérios-técnicos"><span class="header-section-number">8.2.1</span> Critérios Técnicos</a></li>
+  <li><a href="#critérios-ecológicos" id="toc-critérios-ecológicos" class="nav-link" data-scroll-target="#critérios-ecológicos"><span class="header-section-number">8.2.2</span> Critérios Ecológicos</a></li>
   </ul></li>
-  <li><a href="#espécies-recomendadas-para-regiões-tropicais" id="toc-espécies-recomendadas-para-regiões-tropicais" class="nav-link" data-scroll-target="#espécies-recomendadas-para-regiões-tropicais"><span class="header-section-number">7.3</span> Espécies Recomendadas para Regiões Tropicais</a>
+  <li><a href="#espécies-recomendadas-para-regiões-tropicais" id="toc-espécies-recomendadas-para-regiões-tropicais" class="nav-link" data-scroll-target="#espécies-recomendadas-para-regiões-tropicais"><span class="header-section-number">8.3</span> Espécies Recomendadas para Regiões Tropicais</a>
   <ul class="collapse">
-  <li><a href="#gramíneas-e-leguminosas-herbáceas" id="toc-gramíneas-e-leguminosas-herbáceas" class="nav-link" data-scroll-target="#gramíneas-e-leguminosas-herbáceas"><span class="header-section-number">7.3.1</span> Gramíneas e Leguminosas Herbáceas</a></li>
-  <li><a href="#espécies-arbóreas-e-arbustivas" id="toc-espécies-arbóreas-e-arbustivas" class="nav-link" data-scroll-target="#espécies-arbóreas-e-arbustivas"><span class="header-section-number">7.3.2</span> Espécies Arbóreas e Arbustivas</a></li>
-  <li><a href="#fibras-vegetais-para-bioengenharia" id="toc-fibras-vegetais-para-bioengenharia" class="nav-link" data-scroll-target="#fibras-vegetais-para-bioengenharia"><span class="header-section-number">7.3.3</span> Fibras Vegetais para Bioengenharia</a></li>
+  <li><a href="#gramíneas-e-leguminosas-herbáceas" id="toc-gramíneas-e-leguminosas-herbáceas" class="nav-link" data-scroll-target="#gramíneas-e-leguminosas-herbáceas"><span class="header-section-number">8.3.1</span> Gramíneas e Leguminosas Herbáceas</a></li>
+  <li><a href="#espécies-arbóreas-e-arbustivas" id="toc-espécies-arbóreas-e-arbustivas" class="nav-link" data-scroll-target="#espécies-arbóreas-e-arbustivas"><span class="header-section-number">8.3.2</span> Espécies Arbóreas e Arbustivas</a></li>
+  <li><a href="#fibras-vegetais-para-bioengenharia" id="toc-fibras-vegetais-para-bioengenharia" class="nav-link" data-scroll-target="#fibras-vegetais-para-bioengenharia"><span class="header-section-number">8.3.3</span> Fibras Vegetais para Bioengenharia</a></li>
   </ul></li>
-  <li><a href="#métodos-de-implantação" id="toc-métodos-de-implantação" class="nav-link" data-scroll-target="#métodos-de-implantação"><span class="header-section-number">7.4</span> Métodos de Implantação</a>
+  <li><a href="#métodos-de-implantação" id="toc-métodos-de-implantação" class="nav-link" data-scroll-target="#métodos-de-implantação"><span class="header-section-number">8.4</span> Métodos de Implantação</a>
   <ul class="collapse">
-  <li><a href="#plantio-direto" id="toc-plantio-direto" class="nav-link" data-scroll-target="#plantio-direto"><span class="header-section-number">7.4.1</span> Plantio Direto</a></li>
-  <li><a href="#plantio-de-mudas" id="toc-plantio-de-mudas" class="nav-link" data-scroll-target="#plantio-de-mudas"><span class="header-section-number">7.4.2</span> Plantio de Mudas</a></li>
-  <li><a href="#estacas-vivas" id="toc-estacas-vivas" class="nav-link" data-scroll-target="#estacas-vivas"><span class="header-section-number">7.4.3</span> Estacas Vivas</a></li>
-  <li><a href="#hidrossemeadura" id="toc-hidrossemeadura" class="nav-link" data-scroll-target="#hidrossemeadura"><span class="header-section-number">7.4.4</span> Hidrossemeadura</a></li>
+  <li><a href="#plantio-direto" id="toc-plantio-direto" class="nav-link" data-scroll-target="#plantio-direto"><span class="header-section-number">8.4.1</span> Plantio Direto</a></li>
+  <li><a href="#plantio-de-mudas" id="toc-plantio-de-mudas" class="nav-link" data-scroll-target="#plantio-de-mudas"><span class="header-section-number">8.4.2</span> Plantio de Mudas</a></li>
+  <li><a href="#estacas-vivas" id="toc-estacas-vivas" class="nav-link" data-scroll-target="#estacas-vivas"><span class="header-section-number">8.4.3</span> Estacas Vivas</a></li>
+  <li><a href="#hidrossemeadura" id="toc-hidrossemeadura" class="nav-link" data-scroll-target="#hidrossemeadura"><span class="header-section-number">8.4.4</span> Hidrossemeadura</a></li>
   </ul></li>
-  <li><a href="#cuidados-na-implantação" id="toc-cuidados-na-implantação" class="nav-link" data-scroll-target="#cuidados-na-implantação"><span class="header-section-number">7.5</span> Cuidados na Implantação</a></li>
+  <li><a href="#cuidados-na-implantação" id="toc-cuidados-na-implantação" class="nav-link" data-scroll-target="#cuidados-na-implantação"><span class="header-section-number">8.5</span> Cuidados na Implantação</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-revegetacao.html">Parte III — Técnicas de Bioengenharia de Água e Solo</a></li><li class="breadcrumb-item"><a href="../capitulos/06-revegetacao.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Revegetação e Espécies para Bioengenharia</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-revegetacao.html">Parte III — Técnicas de Bioengenharia de Água e Solo</a></li><li class="breadcrumb-item"><a href="../capitulos/06-revegetacao.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Revegetação e Espécies para Bioengenharia</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-revegetacao" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Revegetação e Espécies para Bioengenharia</span></span></h1>
+<h1 class="title"><span id="sec-revegetacao" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Revegetação e Espécies para Bioengenharia</span></span></h1>
 </div>
 
 
@@ -439,43 +474,86 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="princípios-da-revegetação" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="princípios-da-revegetação"><span class="header-section-number">7.1</span> Princípios da Revegetação</h2>
+<section id="princípios-da-revegetação" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="princípios-da-revegetação"><span class="header-section-number">8.1</span> Princípios da Revegetação</h2>
 <p>A revegetação é a técnica fundamental e mais antiga da bioengenharia de solos. Enquanto estruturas como paliçadas, gabiões e paredes Krainer oferecem estabilização mecânica imediata, é a vegetação que assegura a proteção em longo prazo, transformando progressivamente uma superfície vulnerável em um sistema autossustentável. Por essa razão, todas as demais técnicas de bioengenharia são, em última análise, projetadas para criar condições favoráveis ao estabelecimento vegetal.</p>
-<p>O sistema radicular é o componente-chave dessa proteção. A <a href="#fig-vetiver-raizes" class="quarto-xref">Figura&nbsp;<span>7.1</span></a> apresenta o sistema radicular do vetiver (<em>Vetiveria zizanioides</em>), considerado o padrão de referência em bioengenharia tropical, cujas raízes podem ultrapassar 3 m de profundidade em solos bem drenados.</p>
+<p>O sistema radicular é o componente-chave dessa proteção. A <a href="#fig-vetiver-raizes" class="quarto-xref">Figura&nbsp;<span>8.1</span></a> apresenta o sistema radicular do vetiver (<em>Vetiveria zizanioides</em>), considerado o padrão de referência em bioengenharia tropical, cujas raízes podem ultrapassar 3 m de profundidade em solos bem drenados.</p>
 <div id="fig-vetiver-raizes" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Sistema radicular de vetiver">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-vetiver-raizes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../img/vetiver_1.png" class="img-fluid figure-img" style="width:60.0%" alt="Sistema radicular de vetiver">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vetiver-raizes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;7.1: Sistema radicular de vetiver — raízes profundas que conferem coesão e ancoragem ao solo, mecanismo fundamental da revegetação em bioengenharia.
+Figura&nbsp;8.1: Sistema radicular de vetiver - raízes profundas que conferem coesão e ancoragem ao solo, mecanismo fundamental da revegetação em bioengenharia.
 </figcaption>
 </figure>
 </div>
-<p>Conforme ilustrado na <a href="#fig-vetiver-raizes" class="quarto-xref">Figura&nbsp;<span>7.1</span></a>, a densidade e a profundidade das raízes do vetiver criam uma malha tridimensional que reforça mecanicamente o solo. As plantas protegem o solo por seis mecanismos simultâneos e complementares. A interceptação da energia cinética das gotas de chuva pela copa e pelas folhas reduz em até 90% o impacto direto sobre a superfície, eliminando o efeito <em>splash</em> (desprendimento por impacto). A proteção superficial pelo acúmulo de serrapilheira (folhas mortas, restos vegetais) cria uma camada amortecedora que reduz a velocidade do escoamento e protege os agregados do solo contra desagregação. O reforço radicular aumenta a coesão do solo em 5–40 kPa, conforme demonstrado pelo modelo de Wu-Waldron discutido no <a href="02-solos-tropicais.html" class="quarto-xref"><span>Capítulo 3</span></a>, sendo o incremento proporcional à densidade e à resistência à tração das raízes. A drenagem biológica por evapotranspiração remove água do solo, reduzindo a poropressão e aumentando a tensão efetiva, o que estabiliza encostas suscetíveis a deslizamentos. A criação de macroporos pelo crescimento e pela decomposição das raízes eleva a permeabilidade do solo em 2 a 10 vezes, favorecendo a infiltração (que reduz o escoamento superficial) e melhorando a drenagem interna. Por fim, as raízes pivotantes ancoram camadas superficiais instáveis a substratos estáveis em profundidade, funcionando como tirantes naturais.</p>
+<p>Conforme ilustrado na <a href="#fig-vetiver-raizes" class="quarto-xref">Figura&nbsp;<span>8.1</span></a>, a densidade e a profundidade das raízes do vetiver criam uma malha tridimensional que reforça mecanicamente o solo. As plantas protegem o solo por seis mecanismos simultâneos e complementares. A interceptação da energia cinética das gotas de chuva pela copa e pelas folhas reduz em até 90% o impacto direto sobre a superfície, eliminando o efeito <em>splash</em> (desprendimento por impacto). A proteção superficial pelo acúmulo de serrapilheira (folhas mortas, restos vegetais) cria uma camada amortecedora que reduz a velocidade do escoamento e protege os agregados do solo contra desagregação. O reforço radicular aumenta a coesão do solo em 5-40 kPa, conforme demonstrado pelo modelo de Wu-Waldron discutido no <a href="02-solos-tropicais.html" class="quarto-xref"><span>Capítulo 3</span></a>, sendo o incremento proporcional à densidade e à resistência à tração das raízes. A drenagem biológica por evapotranspiração remove água do solo, reduzindo a poropressão e aumentando a tensão efetiva, o que estabiliza encostas suscetíveis a deslizamentos. A criação de macroporos pelo crescimento e pela decomposição das raízes eleva a permeabilidade do solo em 2 a 10 vezes, favorecendo a infiltração (que reduz o escoamento superficial) e melhorando a drenagem interna. Por fim, as raízes pivotantes ancoram camadas superficiais instáveis a substratos estáveis em profundidade, funcionando como tirantes naturais.</p>
+<p>Conhecidas as funções ecológicas, o reforço mecânico proporcionado pelo sistema radicular pode ser quantificado na envoltória de ruptura de <strong>Mohr-Coulomb</strong> acrescida do termo de coesão radicular (<span class="math inline">\(\Delta c_r\)</span>) de Wu e Waldron (<a href="#fig-mohr-coulomb-bs" class="quarto-xref">Figura&nbsp;<span>8.2</span></a>):</p>
+<div id="fig-mohr-coulomb-bs" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Envoltória de Mohr-Coulomb e relação alométrica diâmetro versus resistência à tração radicular">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mohr-coulomb-bs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/bs_mohr_coulomb_coesao_radicular.png" class="img-fluid figure-img" style="width:92.0%" alt="Envoltória de Mohr-Coulomb e relação alométrica diâmetro versus resistência à tração radicular">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mohr-coulomb-bs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;8.2: Envoltória de ruptura de Mohr-Coulomb com ganho biotécnico de coesão (<span class="math inline">\(\Delta c_r\)</span>) e lei alométrica da resistência à tração radicular (<span class="math inline">\(\sigma_r = a \cdot d^{-b}\)</span>) em função do diâmetro da raiz.
+</figcaption>
+</figure>
+</div>
+<p>A resistência à tração das raízes (<span class="math inline">\(\sigma_r\)</span>, em MPa) segue uma relação alométrica inversa com o diâmetro (<span class="math inline">\(d\)</span>, em mm), expressa por <span class="math inline">\(\sigma_r = a \cdot d^{-b}\)</span> (onde <span class="math inline">\(a\)</span> representa a resistência de uma raiz de <span class="math inline">\(1\text{ mm}\)</span> e o expoente <span class="math inline">\(b &gt; 0\)</span> expressa o declínio relativo com o espessamento). Na prática, <strong>raízes finas (<span class="math inline">\(d &lt; 2\text{ mm}\)</span>)</strong> possuem proporção muito maior de celulose estrutural por unidade de seção transversal e altíssima resistência específica à tração (frequentemente <span class="math inline">\(40\text{ a }150\text{ MPa}\)</span> no vetiver), atuando diretamente no incremento de coesão aparente (<span class="math inline">\(\Delta c_r\)</span>) na camada superficial. Já <strong>raízes grossas (<span class="math inline">\(d &gt; 5\text{ mm}\)</span>)</strong> rompem a tensões menores por área, mas trabalham prioritariamente à <strong>flexão e ao cisalhamento</strong>, exercendo efeito de estaca e ancoragem profunda através do plano potencial de ruptura.</p>
+<p>Para verificar numericamente o ganho de estabilidade de uma encosta após a revegetação, aplica-se o modelo de equilíbrio limite de <strong>talude infinito</strong> com inclinação <span class="math inline">\(\beta\)</span> e profundidade potencial de ruptura <span class="math inline">\(z\)</span>:</p>
+<p><span id="eq-fs-talude-cap6"><span class="math display">\[
+FS = \frac{c' + \Delta c_r + (\gamma\,z\cos^2\beta - u)\tan\phi'}{\gamma\,z\sin\beta\cos\beta}
+\tag{8.1}\]</span></span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo resolvido: ganho no Fator de Segurança (<span class="math inline">\(FS\)</span>) com capim-vetiver
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Considere um talude com <span class="math inline">\(\beta = 32^\circ\)</span>, solo com <span class="math inline">\(c' = 4{,}0\text{ kPa}\)</span>, <span class="math inline">\(\phi' = 24^\circ\)</span>, peso específico natural <span class="math inline">\(\gamma = 18{,}5\text{ kN m}^{-3}\)</span>, plano de deslizamento a <span class="math inline">\(z = 1{,}2\text{ m}\)</span> e condição saturada parcial com poropressão <span class="math inline">\(u = 4{,}5\text{ kPa}\)</span>.</p>
+<ol type="1">
+<li><strong>Sem cobertura radicular (<span class="math inline">\(\Delta c_r = 0\)</span>):</strong>
+<ul>
+<li>Força solicitante no denominador: <span class="math inline">\(\gamma z \sin 32^\circ \cos 32^\circ = 18{,}5 \times 1{,}2 \times 0{,}5299 \times 0{,}8480 = 9{,}98\text{ kPa}\)</span>;</li>
+<li>Tensão normal efetiva: <span class="math inline">\(\sigma' = 18{,}5 \times 1{,}2 \times \cos^2 32^\circ - 4{,}5 = 15{,}97 - 4{,}5 = 11{,}47\text{ kPa}\)</span>;</li>
+<li>Resistência disponível: <span class="math inline">\(4{,}0 + 11{,}47 \times \tan 24^\circ = 4{,}0 + 5{,}11 = 9{,}11\text{ kPa}\)</span>;</li>
+<li><strong><span class="math inline">\(FS_{\mathrm{sem}} = 9{,}11 / 9{,}98 = 0{,}91 &lt; 1{,}0\)</span> (talude instável — ruptura iminente!)</strong>.</li>
+</ul></li>
+<li><strong>Com barreira de vetiver estabelecida (<span class="math inline">\(\Delta c_r = 8{,}0\text{ kPa}\)</span>):</strong>
+<ul>
+<li>Nova resistência disponível: <span class="math inline">\(4{,}0 + 8{,}0 + 5{,}11 = 17{,}11\text{ kPa}\)</span>;</li>
+<li><strong><span class="math inline">\(FS_{\mathrm{com}} = 17{,}11 / 9{,}98 = 1{,}71 &gt; 1{,}5\)</span> (talude estável com margem de segurança geotécnica)</strong>.</li>
+</ul></li>
+</ol>
+</div>
+</div>
 </section>
-<section id="seleção-de-espécies" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="seleção-de-espécies"><span class="header-section-number">7.2</span> Seleção de Espécies</h2>
+<section id="seleção-de-espécies" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="seleção-de-espécies"><span class="header-section-number">8.2</span> Seleção de Espécies</h2>
 <p>A seleção de espécies para bioengenharia é uma decisão de engenharia, não apenas uma escolha paisagística. Cada espécie possui características funcionais (profundidade e arquitetura radicular, velocidade de cobertura, tolerância a estresses) que devem ser compatibilizadas com as condições do sítio (tipo de solo, declividade, regime hídrico, clima).</p>
-<section id="critérios-técnicos" class="level3" data-number="7.2.1">
-<h3 data-number="7.2.1" class="anchored" data-anchor-id="critérios-técnicos"><span class="header-section-number">7.2.1</span> Critérios Técnicos</h3>
-<p>Do ponto de vista técnico, cinco critérios devem ser avaliados simultaneamente. O sistema radicular é o mais importante e deve ser compatível com a função desejada (fasciculado para reforço da camada superficial 0–50 cm, ou pivotante para ancoragem profunda &gt; 1 m). A velocidade de estabelecimento determina o tempo de exposição do solo à erosão desprotegida; espécies que cobrem mais de 80% da superfície em 60–90 dias (como braquiária e vetiver) são preferidas para proteção emergencial. A tolerância a estresses (déficit hídrico, encharcamento temporário, solos ácidos com pH 4–5, baixa fertilidade) é fundamental em solos tropicais degradados, onde as condições raramente são favoráveis. A capacidade de regeneração após corte, pastejo ou dano mecânico (por enxurrada, por exemplo) determina a resiliência da cobertura ao longo do tempo. A produção de biomassa para ciclagem de nutrientes e formação de cobertura morta é especialmente importante em solos com baixa CTC, que dependem da matéria orgânica para reter nutrientes.</p>
+<section id="critérios-técnicos" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="critérios-técnicos"><span class="header-section-number">8.2.1</span> Critérios Técnicos</h3>
+<p>Do ponto de vista técnico, cinco critérios devem ser avaliados simultaneamente. O sistema radicular é o mais importante e deve ser compatível com a função desejada (fasciculado para reforço da camada superficial 0-50 cm, ou pivotante para ancoragem profunda &gt; 1 m). A velocidade de estabelecimento determina o tempo de exposição do solo à erosão desprotegida; espécies que cobrem mais de 80% da superfície em 60-90 dias (como braquiária e vetiver) são preferidas para proteção emergencial. A tolerância a estresses (déficit hídrico, encharcamento temporário, solos ácidos com pH 4-5, baixa fertilidade) é fundamental em solos tropicais degradados, onde as condições raramente são favoráveis. A capacidade de regeneração após corte, pastejo ou dano mecânico (por enxurrada, por exemplo) determina a resiliência da cobertura ao longo do tempo. A produção de biomassa para ciclagem de nutrientes e formação de cobertura morta é especialmente importante em solos com baixa CTC, que dependem da matéria orgânica para reter nutrientes.</p>
 </section>
-<section id="critérios-ecológicos" class="level3" data-number="7.2.2">
-<h3 data-number="7.2.2" class="anchored" data-anchor-id="critérios-ecológicos"><span class="header-section-number">7.2.2</span> Critérios Ecológicos</h3>
+<section id="critérios-ecológicos" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="critérios-ecológicos"><span class="header-section-number">8.2.2</span> Critérios Ecológicos</h3>
 <p>Sob a perspectiva ecológica, deve-se priorizar espécies nativas ou naturalizadas não invasoras, considerando o bioma e o tipo de vegetação local (Caatinga, Cerrado, Mata Atlântica). A legislação ambiental brasileira exige o uso de espécies nativas em áreas de preservação permanente (APP) e reserva legal (RL), o que restringe o uso de gramíneas exóticas como a braquiária nesses contextos. É essencial evitar espécies com histórico de invasão biológica (como <em>Leucaena leucocephala</em> em ilhas oceânicas) e promover a diversidade funcional pela combinação de gramíneas (cobertura rápida), leguminosas (fixação de nitrogênio), arbustos (cobertura intermediária) e árvores (ancoragem profunda e sombreamento).</p>
 </section>
 </section>
-<section id="espécies-recomendadas-para-regiões-tropicais" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="espécies-recomendadas-para-regiões-tropicais"><span class="header-section-number">7.3</span> Espécies Recomendadas para Regiões Tropicais</h2>
-<section id="gramíneas-e-leguminosas-herbáceas" class="level3" data-number="7.3.1">
-<h3 data-number="7.3.1" class="anchored" data-anchor-id="gramíneas-e-leguminosas-herbáceas"><span class="header-section-number">7.3.1</span> Gramíneas e Leguminosas Herbáceas</h3>
-<p>A <a href="#tbl-gramineas" class="quarto-xref">Tabela&nbsp;<span>7.1</span></a> apresenta as principais espécies herbáceas utilizadas em projetos de bioengenharia em regiões tropicais, com destaque para suas características radiculares e aplicações.</p>
+<section id="espécies-recomendadas-para-regiões-tropicais" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="espécies-recomendadas-para-regiões-tropicais"><span class="header-section-number">8.3</span> Espécies Recomendadas para Regiões Tropicais</h2>
+<section id="gramíneas-e-leguminosas-herbáceas" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="gramíneas-e-leguminosas-herbáceas"><span class="header-section-number">8.3.1</span> Gramíneas e Leguminosas Herbáceas</h3>
+<p>A <a href="#tbl-gramineas" class="quarto-xref">Tabela&nbsp;<span>8.1</span></a> apresenta as principais espécies herbáceas utilizadas em projetos de bioengenharia em regiões tropicais, com destaque para suas características radiculares e aplicações.</p>
 <div id="tbl-gramineas" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gramineas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabela&nbsp;7.1: Gramíneas e leguminosas para bioengenharia em regiões tropicais.
+Tabela&nbsp;8.1: Gramíneas e leguminosas para bioengenharia em regiões tropicais.
 </figcaption>
 <div aria-describedby="tbl-gramineas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped table-hover caption-top table">
@@ -497,7 +575,7 @@ Tabela&nbsp;7.1: Gramíneas e leguminosas para bioengenharia em regiões tropica
 <tr class="odd">
 <td><em>Vetiveria zizanioides</em></td>
 <td>Vetiver</td>
-<td>Fasciculado profundo (3–4 m)</td>
+<td>Fasciculado profundo (3-4 m)</td>
 <td>Barreiras vivas, taludes</td>
 </tr>
 <tr class="even">
@@ -545,17 +623,17 @@ Tabela&nbsp;7.1: Gramíneas e leguminosas para bioengenharia em regiões tropica
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>O vetiver (<em>Vetiveria zizanioides</em>) é considerado a planta ideal para bioengenharia tropical. Suas raízes podem atingir 4 m de profundidade, com resistência à tração de 40–120 MPa (comparável a fios de aço fino). A planta tolera pH entre 3 e 11, suporta tanto seca prolongada quanto encharcamento temporário, e suas barreiras vivas reduzem a velocidade do escoamento em 60–70%. Por não produzir sementes viáveis fora do seu centro de origem (Índia), não apresenta risco de invasão biológica.</p>
+<p>O vetiver (<em>Vetiveria zizanioides</em>) é considerado a planta ideal para bioengenharia tropical. Suas raízes podem atingir 4 m de profundidade, com resistência à tração de 40-120 MPa (comparável a fios de aço fino). A planta tolera pH entre 3 e 11, suporta tanto seca prolongada quanto encharcamento temporário, e suas barreiras vivas reduzem a velocidade do escoamento em 60-70%. Por não produzir sementes viáveis fora do seu centro de origem (Índia), não apresenta risco de invasão biológica.</p>
 </div>
 </div>
 </section>
-<section id="espécies-arbóreas-e-arbustivas" class="level3" data-number="7.3.2">
-<h3 data-number="7.3.2" class="anchored" data-anchor-id="espécies-arbóreas-e-arbustivas"><span class="header-section-number">7.3.2</span> Espécies Arbóreas e Arbustivas</h3>
-<p>Para intervenções que exigem ancoragem profunda e proteção em longo prazo (margens fluviais, taludes de grande porte, áreas de preservação permanente), espécies arbóreas e arbustivas complementam as gramíneas conforme descrito na <a href="#tbl-arboreas" class="quarto-xref">Tabela&nbsp;<span>7.2</span></a>.</p>
+<section id="espécies-arbóreas-e-arbustivas" class="level3" data-number="8.3.2">
+<h3 data-number="8.3.2" class="anchored" data-anchor-id="espécies-arbóreas-e-arbustivas"><span class="header-section-number">8.3.2</span> Espécies Arbóreas e Arbustivas</h3>
+<p>Para intervenções que exigem ancoragem profunda e proteção em longo prazo (margens fluviais, taludes de grande porte, áreas de preservação permanente), espécies arbóreas e arbustivas complementam as gramíneas conforme descrito na <a href="#tbl-arboreas" class="quarto-xref">Tabela&nbsp;<span>8.2</span></a>.</p>
 <div id="tbl-arboreas" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-arboreas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabela&nbsp;7.2: Espécies arbóreas para bioengenharia.
+Tabela&nbsp;8.2: Espécies arbóreas para bioengenharia.
 </figcaption>
 <div aria-describedby="tbl-arboreas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped table-hover caption-top table">
@@ -610,13 +688,13 @@ Tabela&nbsp;7.2: Espécies arbóreas para bioengenharia.
 </figure>
 </div>
 </section>
-<section id="fibras-vegetais-para-bioengenharia" class="level3" data-number="7.3.3">
-<h3 data-number="7.3.3" class="anchored" data-anchor-id="fibras-vegetais-para-bioengenharia"><span class="header-section-number">7.3.3</span> Fibras Vegetais para Bioengenharia</h3>
-<p>Além de seu papel direto na proteção do solo, as plantas tropicais fornecem fibras que são a matéria-prima de geotêxteis, biomantas e geocompostos biodegradáveis (abordados em detalhe nos capítulos sobre geotêxteis e biotêxteis). A <a href="#tbl-fibras" class="quarto-xref">Tabela&nbsp;<span>7.3</span></a> compara as propriedades mecânicas das principais fibras vegetais tropicais.</p>
+<section id="fibras-vegetais-para-bioengenharia" class="level3" data-number="8.3.3">
+<h3 data-number="8.3.3" class="anchored" data-anchor-id="fibras-vegetais-para-bioengenharia"><span class="header-section-number">8.3.3</span> Fibras Vegetais para Bioengenharia</h3>
+<p>Além de seu papel direto na proteção do solo, as plantas tropicais fornecem fibras que são a matéria-prima de geotêxteis, biomantas e geocompostos biodegradáveis (abordados em detalhe nos capítulos sobre geotêxteis e biotêxteis). A <a href="#tbl-fibras" class="quarto-xref">Tabela&nbsp;<span>8.3</span></a> compara as propriedades mecânicas das principais fibras vegetais tropicais.</p>
 <div id="tbl-fibras" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-fibras-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabela&nbsp;7.3: Fibras vegetais tropicais e suas propriedades mecânicas.
+Tabela&nbsp;8.3: Fibras vegetais tropicais e suas propriedades mecânicas.
 </figcaption>
 <div aria-describedby="tbl-fibras-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped table-hover caption-top table">
@@ -632,31 +710,31 @@ Tabela&nbsp;7.3: Fibras vegetais tropicais e suas propriedades mecânicas.
 <tr class="odd">
 <td><em>Agave sisalana</em></td>
 <td>Sisal</td>
-<td>400–700</td>
+<td>400-700</td>
 <td>Geotêxteis, cordas</td>
 </tr>
 <tr class="even">
 <td><em>Cocos nucifera</em></td>
 <td>Coco</td>
-<td>95–230</td>
+<td>95-230</td>
 <td>Biomantas, fibras</td>
 </tr>
 <tr class="odd">
 <td><em>Typha domingensis</em></td>
 <td>Taboa</td>
-<td>60–120</td>
+<td>60-120</td>
 <td>Geotêxteis, Bio-SAP</td>
 </tr>
 <tr class="even">
 <td><em>Boehmeria nivea</em></td>
 <td>Rami</td>
-<td>400–938</td>
+<td>400-938</td>
 <td>Reforço de geocompostos</td>
 </tr>
 <tr class="odd">
 <td><em>Musa</em> spp.</td>
 <td>Bananeira</td>
-<td>54–136</td>
+<td>54-136</td>
 <td>Geodrenos</td>
 </tr>
 </tbody>
@@ -664,31 +742,31 @@ Tabela&nbsp;7.3: Fibras vegetais tropicais e suas propriedades mecânicas.
 </div>
 </figure>
 </div>
-<p>A resistência à tração registrada na <a href="#tbl-fibras" class="quarto-xref">Tabela&nbsp;<span>7.3</span></a> expressa apenas uma das dimensões relevantes para a seleção do material. A durabilidade da fibra em campo depende da arquitetura química, em particular da razão entre lignina e celulose, que governa a barreira natural à radiação ultravioleta e à colonização microbiológica, e a caracterização físico-química correspondente, com composição lignocelulósica, assinatura espectroscópica e estabilidade térmica determinadas em ensaios próprios do grupo de pesquisa, é apresentada em <a href="18-biotexteis.html" class="quarto-xref"><span>Capítulo 21</span></a>.</p>
+<p>A resistência à tração registrada na <a href="#tbl-fibras" class="quarto-xref">Tabela&nbsp;<span>8.3</span></a> expressa apenas uma das dimensões relevantes para a seleção do material. A durabilidade da fibra em campo depende da arquitetura química, em particular da razão entre lignina e celulose, que governa a barreira natural à radiação ultravioleta e à colonização microbiológica, e a caracterização físico-química correspondente, com composição lignocelulósica, assinatura espectroscópica e estabilidade térmica determinadas em ensaios próprios do grupo de pesquisa, é apresentada em <a href="18-biotexteis.html" class="quarto-xref"><span>Capítulo 22</span></a>.</p>
 </section>
 </section>
-<section id="métodos-de-implantação" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="métodos-de-implantação"><span class="header-section-number">7.4</span> Métodos de Implantação</h2>
+<section id="métodos-de-implantação" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="métodos-de-implantação"><span class="header-section-number">8.4</span> Métodos de Implantação</h2>
 <p>A escolha do método de implantação depende da espécie selecionada, da acessibilidade do terreno, da declividade, da extensão da área e do orçamento disponível. Cada método possui vantagens, limitações e faixa de custo específicas.</p>
-<section id="plantio-direto" class="level3" data-number="7.4.1">
-<h3 data-number="7.4.1" class="anchored" data-anchor-id="plantio-direto"><span class="header-section-number">7.4.1</span> Plantio Direto</h3>
+<section id="plantio-direto" class="level3" data-number="8.4.1">
+<h3 data-number="8.4.1" class="anchored" data-anchor-id="plantio-direto"><span class="header-section-number">8.4.1</span> Plantio Direto</h3>
 <p>A semeadura direta consiste na deposição manual (a lanço ou em linhas) ou mecanizada (semeadeira) de sementes diretamente sobre o solo previamente preparado. É o método mais indicado para gramíneas de cobertura rápida (<em>Brachiaria</em>, <em>Paspalum</em>) e leguminosas herbáceas (<em>Stylosanthes</em>, <em>Cajanus</em>) em áreas planas a suavemente onduladas (declividade &lt; 20%) com acesso a máquinas ou mão de obra local. O custo varia entre R$ 800 e R$ 2.000/ha, dependendo da espécie e da densidade de semeadura. A principal limitação é a vulnerabilidade das sementes ao impacto das gotas de chuva e ao escoamento superficial antes da germinação, o que exige preferencialmente semeadura no início da estação chuvosa e, sempre que possível, cobertura com mulch ou palhada.</p>
 </section>
-<section id="plantio-de-mudas" class="level3" data-number="7.4.2">
-<h3 data-number="7.4.2" class="anchored" data-anchor-id="plantio-de-mudas"><span class="header-section-number">7.4.2</span> Plantio de Mudas</h3>
+<section id="plantio-de-mudas" class="level3" data-number="8.4.2">
+<h3 data-number="8.4.2" class="anchored" data-anchor-id="plantio-de-mudas"><span class="header-section-number">8.4.2</span> Plantio de Mudas</h3>
 <p>O transplante de mudas produzidas em viveiro é o método indicado para espécies arbóreas e arbustivas, que possuem sementes de germinação lenta ou irregular e que requerem um porte inicial mínimo para sobreviver às condições adversas do campo. É especialmente utilizado em projetos de recomposição de mata ciliar (APP), revegetação de áreas de mineração e recobrimento de taludes de grande porte. O custo varia entre R$ 3.000 e R$ 8.000/ha (incluindo produção ou aquisição de mudas, transporte, plantio e replantio), sendo o método mais oneroso, porém com maior taxa de sucesso para espécies arbóreas. Recomenda-se o uso de tubetes com substrato fertilizado e de gel hidrorretentores no plantio, especialmente em regiões semiáridas.</p>
 </section>
-<section id="estacas-vivas" class="level3" data-number="7.4.3">
-<h3 data-number="7.4.3" class="anchored" data-anchor-id="estacas-vivas"><span class="header-section-number">7.4.3</span> Estacas Vivas</h3>
-<p>A inserção de estacas vivas consiste em cortar segmentos de ramos de espécies com alta capacidade de enraizamento vegetativo (sabiá, gliricídia, salgueiro, ingá) e inseri-los diretamente no solo úmido, onde emitem raízes e brotações em 2–4 semanas. É um método versátil e econômico (R$ 1.500 a R$ 4.000/ha), indicado para encostas e taludes (onde as estacas são inseridas em ângulo de 45° para ancoragem), margens fluviais (estacas de salgueiro na zona de flutuação do nível d’água) e combinação com estruturas de bioengenharia (estacas inseridas em gabiões vivos, paredes Krainer e paliçadas). As estacas devem ter diâmetro entre 3 e 8 cm, comprimento de 50–100 cm, e ser inseridas com no mínimo 2/3 do comprimento enterrado. O corte deve ser feito durante o período de dormência (estação seca) para maximizar as reservas de carboidratos.</p>
+<section id="estacas-vivas" class="level3" data-number="8.4.3">
+<h3 data-number="8.4.3" class="anchored" data-anchor-id="estacas-vivas"><span class="header-section-number">8.4.3</span> Estacas Vivas</h3>
+<p>A inserção de estacas vivas consiste em cortar segmentos de ramos de espécies com alta capacidade de enraizamento vegetativo (sabiá, gliricídia, salgueiro, ingá) e inseri-los diretamente no solo úmido, onde emitem raízes e brotações em 2-4 semanas. É um método versátil e econômico (R$ 1.500 a R$ 4.000/ha), indicado para encostas e taludes (onde as estacas são inseridas em ângulo de 45° para ancoragem), margens fluviais (estacas de salgueiro na zona de flutuação do nível d’água) e combinação com estruturas de bioengenharia (estacas inseridas em gabiões vivos, paredes Krainer e paliçadas). As estacas devem ter diâmetro entre 3 e 8 cm, comprimento de 50-100 cm, e ser inseridas com no mínimo 2/3 do comprimento enterrado. O corte deve ser feito durante o período de dormência (estação seca) para maximizar as reservas de carboidratos.</p>
 </section>
-<section id="hidrossemeadura" class="level3" data-number="7.4.4">
-<h3 data-number="7.4.4" class="anchored" data-anchor-id="hidrossemeadura"><span class="header-section-number">7.4.4</span> Hidrossemeadura</h3>
-<p>A hidrossemeadura é a projeção mecanizada de uma mistura aquosa de sementes, mulch, fertilizante e fixador sobre superfícies erodíveis. Por sua importância e complexidade operacional, é detalhada em capítulo próprio (<a href="10-hidrossemeadura.html" class="quarto-xref"><span>Capítulo 13</span></a>). É o método mais produtivo (até 5.000 m²/h) e é a escolha preferencial para taludes rodoviários, mineração e barragens.</p>
+<section id="hidrossemeadura" class="level3" data-number="8.4.4">
+<h3 data-number="8.4.4" class="anchored" data-anchor-id="hidrossemeadura"><span class="header-section-number">8.4.4</span> Hidrossemeadura</h3>
+<p>A hidrossemeadura é a projeção mecanizada de uma mistura aquosa de sementes, mulch, fertilizante e fixador sobre superfícies erodíveis. Por sua importância e complexidade operacional, é detalhada em capítulo próprio (<a href="10-hidrossemeadura.html" class="quarto-xref"><span>Capítulo 14</span></a>). É o método mais produtivo (até 5.000 m²/h) e é a escolha preferencial para taludes rodoviários, mineração e barragens.</p>
 </section>
 </section>
-<section id="cuidados-na-implantação" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="cuidados-na-implantação"><span class="header-section-number">7.5</span> Cuidados na Implantação</h2>
+<section id="cuidados-na-implantação" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="cuidados-na-implantação"><span class="header-section-number">8.5</span> Cuidados na Implantação</h2>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1109,13 +1187,13 @@ Tabela&nbsp;7.3: Fibras vegetais tropicais e suas propriedades mecânicas.
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../capitulos/05-classificacao-feicoes.html" class="pagination-link" aria-label="Classificação de Feições Erosivas">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classificação de Feições Erosivas</span></span>
+      <a href="../capitulos/05a-planejamento-terraceamento-canais.html" class="pagination-link" aria-label="Planejamento Conservacionista, Terraceamento e Canais Escoadouros">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Planejamento Conservacionista, Terraceamento e Canais Escoadouros</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../capitulos/07-palicadas.html" class="pagination-link" aria-label="Paliçadas Permeáveis: Princípios e Materiais">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Paliçadas Permeáveis: Princípios e Materiais</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Paliçadas Permeáveis: Princípios e Materiais</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1123,7 +1201,7 @@ Tabela&nbsp;7.3: Fibras vegetais tropicais e suas propriedades mecânicas.
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2026 Luiz Diego Vidal Santos, Francisco Sandro Rodrigues Holanda e Emersson Guedes da Silva. Todos os direitos reservados.</p>
+<p>© 2026 Luiz Diego Vidal Santos, Emersson Guedes da Silva e Renisson Neponuceno de Araújo Filho. Todos os direitos reservados.</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

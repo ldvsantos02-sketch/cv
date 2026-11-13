@@ -9,28 +9,26 @@ book:
     - name: "Luiz Diego Vidal Santos"
       url: https://diegovidalcv.com.br/
       orcid: 0000-0001-8659-8557
-      roles: [conceptualization, writing, editor]
       affiliation:
         - name: "Universidade Estadual de Feira de Santana (UEFS)"
           url: https://www.uefs.br/
-    - name: "Francisco Sandro Rodrigues Holanda"
-      roles: [editor]
-      affiliation:
-        - name: "Universidade Federal de Sergipe (UFS)"
-          url: https://www.ufs.br/
     - name: "Emersson Guedes da Silva"
-      roles: [editor]
       affiliation:
         - name: "Universidade Federal de Sergipe (UFS)"
           url: https://www.ufs.br/
+    - name: "Renisson Neponuceno de Araújo Filho"
+      affiliation:
+        - name: "Universidade Federal Rural de Pernambuco (UFRPE)"
+          url: https://www.ufrpe.br/
   date: "2026-09-30"
   date-format: "DD/MM/YYYY"
   description: |
     Livro-texto sobre soluções baseadas na natureza aplicadas à bioengenharia
-    de água e solo em regiões tropicais, integrando fundamentos pedológicos e
+    de água e solo em regiões tropicais e no semiárido, com ancoragem nas bacias
+    do São Francisco e do Vaza-Barris, integrando fundamentos pedológicos e
     hidrossedimentológicos, protocolos de dimensionamento parametrizados em
-    campo, técnicas de estabilização biológica e inovação em biomateriais para
-    conservação e recuperação de áreas degradadas.
+    campo, técnicas de estabilização biológica e inovação em biomateriais de
+    fibras do sertão para conservação e recuperação de áreas degradadas.
   cover-image: img/capa_bioengenharia_de_solos.png
   favicon: img/capa_bioengenharia_de_solos.png
   reader-mode: true
@@ -42,7 +40,7 @@ book:
   search: true
   
   page-footer:
-    left: "© 2026 Luiz Diego Vidal Santos, Francisco Sandro Rodrigues Holanda e Emersson Guedes da Silva. Todos os direitos reservados."
+    left: "© 2026 Luiz Diego Vidal Santos, Emersson Guedes da Silva e Renisson Neponuceno de Araújo Filho. Todos os direitos reservados."
     right: "Feito com [Quarto](https://quarto.org)"
 
   chapters:
@@ -60,6 +58,7 @@ book:
         - capitulos/03-intemperismo.qmd
         - capitulos/04-erosao.qmd
         - capitulos/05-classificacao-feicoes.qmd
+        - capitulos/05a-planejamento-terraceamento-canais.qmd
 
     - part: "Parte III — Técnicas de Bioengenharia de Água e Solo"
       chapters:

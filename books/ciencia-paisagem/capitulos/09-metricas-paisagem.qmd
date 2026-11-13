@@ -50,7 +50,7 @@ $$
 Na equação, $a_{ij}$ é a área da mancha $j$ da classe $i$, o somatório representa a área total de todas as $n$ manchas dessa classe, e $A$ é a área total da paisagem. O PLAND opera independentemente da configuração espacial; um arranjo contíguo ou altamente fragmentado resultará no mesmo valor se a área total conservada for igual. 
 **Exemplo de cálculo:** Considere uma microbacia ($A = 1000$ ha) contendo fragmentos florestais de 120 ha, 50 ha e 30 ha. O somatório de $a_{ij}$ resulta em 200 ha. Aplicando a fórmula, $PLAND_{floresta} = (200 / 1000) \times 100 = 20\%$. Esse valor sinaliza, sob a ótica da teoria da percolação, um limiar crítico de conectividade onde elementos conectados tendem a se subdividir abruptamente na matriz.
 
-A riqueza de classes (*PR*, *patch richness*) restringe-se à contagem nominal do número de tipos de cobertura distintos presentes. O índice de diversidade de Shannon (*SHDI*) avança ao mensurar a heterogeneidade composicional ponderando a riqueza pela equabilidade (*evenness*) das extensões. O SHDI é um descritor quantitativo de incerteza da informação espacial — quão difícil é prever a classe de um pixel sorteado aleatoriamente na paisagem.
+A riqueza de classes (*PR*, *patch richness*) restringe-se à contagem nominal do número de tipos de cobertura distintos presentes. O índice de diversidade de Shannon (*SHDI*) avança ao mensurar a heterogeneidade composicional ponderando a riqueza pela equabilidade (*evenness*) das extensões. O SHDI é um descritor quantitativo de incerteza da informação espacial - quão difícil é prever a classe de um pixel sorteado aleatoriamente na paisagem.
 
 $$
 SHDI = -\sum_{i=1}^{m} p_i \cdot \ln(p_i)
@@ -123,7 +123,7 @@ Note a assimetria brutal: por ser mais massivo e próximo, $F_1$ fornece esmagad
 
 Li e Wu [-@li2004] alertaram para quatro armadilhas no uso de métricas da paisagem que, se não forem reconhecidas e mitigadas, comprometem a validade das análises.
 
-A primeira armadilha é a redundância. Muitas métricas são altamente correlacionadas (por exemplo, NP e PD, AREA_MN e AREA_CV, PROX e ENN) e o cálculo de dezenas de índices produz informação repetida que infla artificialmente a aparência de completude analítica. Análises de correlação ou componentes principais devem preceder a seleção para identificar grupos de métricas redundantes e selecionar um representante de cada grupo. Uuemaa et al. [-@uuemaa2009] demonstraram que 6–8 métricas são tipicamente suficientes para capturar mais de 90% da variância na estrutura da paisagem.
+A primeira armadilha é a redundância. Muitas métricas são altamente correlacionadas (por exemplo, NP e PD, AREA_MN e AREA_CV, PROX e ENN) e o cálculo de dezenas de índices produz informação repetida que infla artificialmente a aparência de completude analítica. Análises de correlação ou componentes principais devem preceder a seleção para identificar grupos de métricas redundantes e selecionar um representante de cada grupo. Uuemaa et al. [-@uuemaa2009] demonstraram que 6-8 métricas são tipicamente suficientes para capturar mais de 90% da variância na estrutura da paisagem.
 
 A segunda armadilha é a dependência escalar, já discutida no @sec-escalas. Métricas calculadas em grãos diferentes não são diretamente comparáveis, e a sensibilidade à escala varia entre métricas (NP é altamente sensível, PLAND é relativamente estável, SHDI é moderadamente sensível).
 

@@ -4,7 +4,7 @@
 
 O sensoriamento remoto é a tecnologia que permite adquirir informações sobre a superfície terrestre sem contato físico, utilizando sensores instalados em plataformas orbitais (satélites), sub-orbitais (aeronaves, VANT) ou terrestres (torres de monitoramento). Na análise da paisagem, o sensoriamento remoto é a principal fonte de dados espaciais, fornecendo imagens que, após processamento e classificação, são convertidas em mapas temáticos de uso e cobertura do solo que servem de insumo para o cálculo de métricas e a modelagem de processos ecológicos.
 
-O princípio físico subjacente é a interação da radiação eletromagnética com a superfície terrestre. Cada tipo de cobertura (vegetação, solo exposto, água, área urbana) apresenta um padrão característico de reflectância espectral, ou seja, a proporção de radiação incidente que é refletida em cada comprimento de onda. A vegetação fotossinteticamente ativa, por exemplo, apresenta alta absorção no vermelho visível (comprimento de onda ~ 0,65 μm), causada pelos pigmentos clorofilianos que capturam energia luminosa para fotossíntese, e alta reflectância no infravermelho próximo (~ 0,85 μm), causada pela estrutura celular do mesofilo que espalha a radiação internamente sem absorvê-la. No infravermelho de ondas curtas (1,6–2,2 μm), a absorção é proporcional ao conteúdo de água da folha, permitindo distinguir vegetação hidratada de vegetação sob estresse hídrico. A @fig-assinatura-espectral ilustra essas diferenças para três coberturas contrastantes.
+O princípio físico subjacente é a interação da radiação eletromagnética com a superfície terrestre. Cada tipo de cobertura (vegetação, solo exposto, água, área urbana) apresenta um padrão característico de reflectância espectral, ou seja, a proporção de radiação incidente que é refletida em cada comprimento de onda. A vegetação fotossinteticamente ativa, por exemplo, apresenta alta absorção no vermelho visível (comprimento de onda ~ 0,65 μm), causada pelos pigmentos clorofilianos que capturam energia luminosa para fotossíntese, e alta reflectância no infravermelho próximo (~ 0,85 μm), causada pela estrutura celular do mesofilo que espalha a radiação internamente sem absorvê-la. No infravermelho de ondas curtas (1,6-2,2 μm), a absorção é proporcional ao conteúdo de água da folha, permitindo distinguir vegetação hidratada de vegetação sob estresse hídrico. A @fig-assinatura-espectral ilustra essas diferenças para três coberturas contrastantes.
 
 ```{dot}
 //| label: fig-assinatura-espectral
@@ -54,16 +54,16 @@ Contudo, as assinaturas espectrais não são determinísticas. A reflectância d
 
 ## Principais sistemas orbitais para análise da paisagem
 
-A escolha do sistema orbital depende da escala da análise, da frequência temporal necessária e da disponibilidade de dados. Para estudos em escala regional (bacias hidrográficas, municípios), os sistemas Landsat (30 m, série contínua desde 1984) e Sentinel-2 (10–20 m, desde 2015) são os mais utilizados, oferecendo séries temporais longas com acesso gratuito e cobertura global. Para análises de dinâmica sazonal em escala continental, o sensor MODIS (250–1.000 m, revisita diária) é preferido pela alta frequência temporal que permite composições livres de nuvens mesmo em regiões tropicais. Para detalhamento local (propriedades rurais, fragmentos individuais, faixas de APP), imagens de alta resolução (Planet, WorldView, CBERS-4A) ou levantamentos por VANT são necessários. A @tbl-sistemas-orbitais compara os principais sistemas disponíveis.
+A escolha do sistema orbital depende da escala da análise, da frequência temporal necessária e da disponibilidade de dados. Para estudos em escala regional (bacias hidrográficas, municípios), os sistemas Landsat (30 m, série contínua desde 1984) e Sentinel-2 (10-20 m, desde 2015) são os mais utilizados, oferecendo séries temporais longas com acesso gratuito e cobertura global. Para análises de dinâmica sazonal em escala continental, o sensor MODIS (250-1.000 m, revisita diária) é preferido pela alta frequência temporal que permite composições livres de nuvens mesmo em regiões tropicais. Para detalhamento local (propriedades rurais, fragmentos individuais, faixas de APP), imagens de alta resolução (Planet, WorldView, CBERS-4A) ou levantamentos por VANT são necessários. A @tbl-sistemas-orbitais compara os principais sistemas disponíveis.
 
 | Sistema | Resolução espacial | Revisita temporal | Série temporal | Acesso |
 |:---|:---:|:---:|:---:|:---|
 | Landsat 5/7/8/9 | 30 m (MS), 15 m (PAN) | 16 dias (8 com 2 satélites) | Desde 1984 | Gratuito |
-| Sentinel-2A/2B | 10–20 m | 5 dias (2 satélites) | Desde 2015 | Gratuito |
-| MODIS Terra/Aqua | 250–1.000 m | Diária | Desde 2000 | Gratuito |
-| Planet (Dove) | 3–5 m | Diária | Desde 2017 | Comercial |
-| CBERS-4A | 2–8 m | 31 dias | Desde 2019 | Gratuito |
-| WorldView-3 | 0,31 m (PAN), 1,24 m (MS) | 1–3 dias | Desde 2014 | Comercial |
+| Sentinel-2A/2B | 10-20 m | 5 dias (2 satélites) | Desde 2015 | Gratuito |
+| MODIS Terra/Aqua | 250-1.000 m | Diária | Desde 2000 | Gratuito |
+| Planet (Dove) | 3-5 m | Diária | Desde 2017 | Comercial |
+| CBERS-4A | 2-8 m | 31 dias | Desde 2019 | Gratuito |
+| WorldView-3 | 0,31 m (PAN), 1,24 m (MS) | 1-3 dias | Desde 2014 | Comercial |
 
 : Principais sistemas orbitais utilizados em análise da paisagem, com resolução espacial, temporal e disponibilidade. {#tbl-sistemas-orbitais .striped .hover}
 
@@ -86,7 +86,7 @@ $$
 
 A equação introduz regressores analíticos para contornar ruídos que o NDVI absorve passivamente: $G = 2{,}5$ amplifica o ganho direcional, os coeficientes $C_1 = 6$ e $C_2 = 7{,}5$ extraem a interferência de aerossóis empregando a banda azul térmica ($\rho_{BLUE}$) como referência calibradora, e $L = 1$ intercepta e diminui a assinatura isolada do solo quando a biomassa é delgada ou o plantio apresenta falhas. Diferente do cômputo fechado da proporção anterior, o EVI exige calibração rigorosa de quatro bandas de reflectância de superfície (BOA), sendo essencial para modelar gradientes em matrizes florestais clímax, visto que não sofre achatamento assintótico ante altos valores de cobertura radicular da Amazônia ou da Mata Atlântica.
 
-Séries temporais desses descritores orbitais monitoram passivamente o comportamento fenológico da vizinhança ecossistêmica. No Cerrado e na Caatinga, a vegetação decídua apresenta queda acentuada de NDVI na estação seca (amplitude sazonal de 0,3–0,5), enquanto formações perenifólias (matas de galeria, florestas ombrófilas) mantêm NDVI relativamente estável ao longo do ano (amplitude inferior a 0,1). Essa informação fenológica é invaluável para a classificação de fitofisionomias e para a distinção entre pastagem (ciclo fenológico governado pelo manejo) e vegetação nativa (ciclo governado pela chuva). A composição em falsa cor (Fig. @fig-sentinel2-falsa-cor) ilustra como a combinação de bandas espectrais do Sentinel-2 realça feições da paisagem que não são visíveis na composição em cor verdadeira, permitindo discriminar vegetação sadia (tons vermelhos), solo exposto (tons claros) e corpos d'água (tons escuros).
+Séries temporais desses descritores orbitais monitoram passivamente o comportamento fenológico da vizinhança ecossistêmica. No Cerrado e na Caatinga, a vegetação decídua apresenta queda acentuada de NDVI na estação seca (amplitude sazonal de 0,3-0,5), enquanto formações perenifólias (matas de galeria, florestas ombrófilas) mantêm NDVI relativamente estável ao longo do ano (amplitude inferior a 0,1). Essa informação fenológica é invaluável para a classificação de fitofisionomias e para a distinção entre pastagem (ciclo fenológico governado pelo manejo) e vegetação nativa (ciclo governado pela chuva). A composição em falsa cor (Fig. @fig-sentinel2-falsa-cor) ilustra como a combinação de bandas espectrais do Sentinel-2 realça feições da paisagem que não são visíveis na composição em cor verdadeira, permitindo discriminar vegetação sadia (tons vermelhos), solo exposto (tons claros) e corpos d'água (tons escuros).
 
 ![Composição em falsa cor de imagem Sentinel-2: a combinação de bandas do infravermelho próximo com o vermelho e o verde realça a vegetação fotossinteticamente ativa (tons vermelhos), permitindo discriminar fitofisionomias, solo exposto e corpos d'água com maior contraste do que a composição em cor verdadeira.](../img/sentinel2_composicao_falsa_cor.png){#fig-sentinel2-falsa-cor fig-align="center" width="85%"}
 
@@ -100,7 +100,7 @@ A composição temporal seleciona, para cada pixel num período definido (mensal
 
 ::: {.callout-important}
 ## Nebulosidade em regiões tropicais
-Em regiões de floresta tropical úmida, como a Amazônia Oriental e a Zona da Mata do Nordeste, a nebulosidade persistente durante a estação chuvosa (4–6 meses) pode inviabilizar a obtenção de imagens ópticas livres de nuvens. Nesses casos, dados de radar (Sentinel-1 SAR), que penetram nuvens, e composições temporais com janelas amplas (trimestrais ou semestrais) são estratégias complementares indispensáveis.
+Em regiões de floresta tropical úmida, como a Amazônia Oriental e a Zona da Mata do Nordeste, a nebulosidade persistente durante a estação chuvosa (4-6 meses) pode inviabilizar a obtenção de imagens ópticas livres de nuvens. Nesses casos, dados de radar (Sentinel-1 SAR), que penetram nuvens, e composições temporais com janelas amplas (trimestrais ou semestrais) são estratégias complementares indispensáveis.
 :::
 
 ## Séries temporais e fenologia

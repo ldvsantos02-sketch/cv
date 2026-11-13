@@ -31,9 +31,9 @@ graph {
         C1 [label="CORREDOR\n(Mata ciliar)", shape=box, style="filled,rounded", fillcolor="#006400", fontcolor=white, color="#004D00", width=3.5, penwidth=1.5]
 
         {rank=same; P1; P2}
-        P1 -- C1 [style=solid, color="#006400", penwidth=2]
-        P2 -- C1 [style=solid, color="#006400", penwidth=2]
-        C1 -- P3 [style=dashed, color="#888888", label="isolamento", fontname="Helvetica", fontsize=8]
+        P1 - C1 [style=solid, color="#006400", penwidth=2]
+        P2 - C1 [style=solid, color="#006400", penwidth=2]
+        C1 - P3 [style=dashed, color="#888888", label="isolamento", fontname="Helvetica", fontsize=8]
     }
 }
 ```
@@ -54,7 +54,7 @@ A forma da mancha é quantificada por índices que comparam o perímetro real ao
 
 ::: {.callout-note}
 ## Efeito de borda em florestas tropicais
-Em fragmentos de Mata Atlântica, a mortalidade de árvores dentro dos primeiros 100 metros de borda é até 3 vezes maior que no interior do fragmento, e a temperatura do ar na borda pode ser 2–4°C superior à do interior, alterando a composição de espécies e a dinâmica de regeneração [@haddad2015]. O efeito de borda não é estático, pois em fragmentos recém-isolados a degradação da borda progride em direção ao interior ao longo de décadas, num processo denominado "dívida de extinção temporal".
+Em fragmentos de Mata Atlântica, a mortalidade de árvores dentro dos primeiros 100 metros de borda é até 3 vezes maior que no interior do fragmento, e a temperatura do ar na borda pode ser 2-4°C superior à do interior, alterando a composição de espécies e a dinâmica de regeneração [@haddad2015]. O efeito de borda não é estático, pois em fragmentos recém-isolados a degradação da borda progride em direção ao interior ao longo de décadas, num processo denominado "dívida de extinção temporal".
 :::
 
 ## Corredores
@@ -87,7 +87,7 @@ Duas paisagens podem ter composição idêntica (mesma proporção de floresta, 
 
 : Comparação entre composição e configuração como descritores da estrutura da paisagem. {#tbl-composicao-configuracao .striped .hover}
 
-A @tbl-composicao-configuracao evidencia que composição e configuração são analiticamente separáveis, mas ecologicamente interdependentes. Fahrig [-@fahrig2003] demonstrou que a composição (particularmente a proporção total de habitat) possui efeito dominante sobre a biodiversidade, explicando tipicamente 2 a 5 vezes mais variação na riqueza de espécies do que métricas de configuração. Contudo, em paisagens com proporção intermediária de habitat (20–50%), a configuração torna-se um modulador relevante, pois determina se o habitat remanescente está acessível ou fragmentado. Em paisagens com proporção muito baixa de habitat (inferior a 10–20%), tanto a quantidade quanto a configuração são críticas, pois a paisagem pode cruzar limiares de percolação abaixo dos quais a conectividade estrutural colapsa e os processos ecológicos dependentes de fluxo entre manchas cessam abruptamente.
+A @tbl-composicao-configuracao evidencia que composição e configuração são analiticamente separáveis, mas ecologicamente interdependentes. Fahrig [-@fahrig2003] demonstrou que a composição (particularmente a proporção total de habitat) possui efeito dominante sobre a biodiversidade, explicando tipicamente 2 a 5 vezes mais variação na riqueza de espécies do que métricas de configuração. Contudo, em paisagens com proporção intermediária de habitat (20-50%), a configuração torna-se um modulador relevante, pois determina se o habitat remanescente está acessível ou fragmentado. Em paisagens com proporção muito baixa de habitat (inferior a 10-20%), tanto a quantidade quanto a configuração são críticas, pois a paisagem pode cruzar limiares de percolação abaixo dos quais a conectividade estrutural colapsa e os processos ecológicos dependentes de fluxo entre manchas cessam abruptamente.
 
 ## Heterogeneidade
 
@@ -102,7 +102,7 @@ A relação entre heterogeneidade e biodiversidade é mediada pela escala e pelo
 
 ## Estrutura em paisagens tropicais brasileiras
 
-No contexto das paisagens brasileiras, o modelo mancha-corredor-matriz assume formas específicas condicionadas pela história de uso da terra e pelas características biogeográficas de cada bioma. Na Mata Atlântica, os fragmentos florestais remanescentes (8–12% da cobertura original) constituem manchas inseridas numa matriz agrícola, pecuária e urbana heterogênea, com corredores frequentemente restritos a matas ciliares estreitas, muitas delas degradadas. A fragmentação é antiga (séculos de colonização) e os fragmentos remanescentes são predominantemente pequenos (mais de 80% menores que 50 ha) e distantes entre si [@ribeiro2009]. A @fig-mosaico-mata-atlantica ilustra esse padrão, no qual manchas residuais de floresta, imersas numa matriz heterogênea, configuram um mosaico cuja conectividade depende quase exclusivamente dos corredores ripários remanescentes.
+No contexto das paisagens brasileiras, o modelo mancha-corredor-matriz assume formas específicas condicionadas pela história de uso da terra e pelas características biogeográficas de cada bioma. Na Mata Atlântica, os fragmentos florestais remanescentes (8-12% da cobertura original) constituem manchas inseridas numa matriz agrícola, pecuária e urbana heterogênea, com corredores frequentemente restritos a matas ciliares estreitas, muitas delas degradadas. A fragmentação é antiga (séculos de colonização) e os fragmentos remanescentes são predominantemente pequenos (mais de 80% menores que 50 ha) e distantes entre si [@ribeiro2009]. A @fig-mosaico-mata-atlantica ilustra esse padrão, no qual manchas residuais de floresta, imersas numa matriz heterogênea, configuram um mosaico cuja conectividade depende quase exclusivamente dos corredores ripários remanescentes.
 
 ![Mosaico de fragmentos florestais na Mata Atlântica: remanescentes pequenos e isolados inseridos em matriz agrícola e urbana, com conectividade restrita a corredores ripários.](../img/mosaico_mata_atlantica_fragmentos.jpg){#fig-mosaico-mata-atlantica fig-align="center" width="85%"}
 

@@ -1,0 +1,216 @@
+﻿\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{lastpage}
+
+\geometry{margin=2.0cm, top=2.8cm, bottom=2.2cm}
+\setlength{\headheight}{16pt}
+\renewcommand{\familydefault}{\sfdefault}
+\keepXColumns
+
+% ── Paleta de cores institucional UEFS ──
+\definecolor{uefsdark}{RGB}{0,51,102}
+\definecolor{uefsblue}{RGB}{25,84,150}
+\definecolor{uefslight}{RGB}{224,236,248}
+\definecolor{uefsgray}{RGB}{100,100,100}
+
+% ── Cabeçalho / Rodapé ──
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{uefsdark}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{\small\color{uefsgray}UEFS / PLANTERR}
+\fancyhead[R]{\small\color{uefsgray}Plano de Disciplina · Empreendedorismo Tecnológico}
+\fancyfoot[C]{\small\color{uefsgray}Página \thepage\ de \pageref{LastPage}}
+
+\hypersetup{colorlinks=true,linkcolor=uefsblue,urlcolor=uefsblue}
+
+\setlist[itemize]{leftmargin=1.5em,topsep=4pt,itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=1.8em,topsep=4pt,itemsep=3pt,parsep=0pt}
+
+\begin{document}
+
+% ── Cabeçalho Institucional UEFS ──
+\noindent
+\begin{minipage}[c]{0.15\textwidth}
+  \includegraphics[width=2.0cm]{../../aulas/assets/logo-uefs.png}
+\end{minipage}%
+\begin{minipage}[c]{0.85\textwidth}
+  \centering
+  {\large\bfseries UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA}\\[2pt]
+  {\normalsize\bfseries PROGRAMA DE PÓS-GRADUAÇÃO EM PLANEJAMENTO TERRITORIAL (PLANTERR)}\\[2pt]
+  {\small\bfseries MESTRADO}
+\end{minipage}
+
+\vspace{10pt}
+\begin{center}
+  {\large\bfseries\color{uefsdark} PLANO DE DISCIPLINA}
+\end{center}
+\vspace{4pt}
+
+% ── Quadro de Identificação ──
+\begin{tcolorbox}[colback=uefslight!60, colframe=black, boxrule=0.8pt, arc=0pt, left=8pt, right=8pt, top=6pt, bottom=6pt]
+\small
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\textbf{Componente Curricular:} & PLA016: Tópicos Especiais em Planejamento Territorial I (Empreendedorismo Tecnológico, Ecossistemas de Inovação e Análise de Investimentos no Desenvolvimento Territorial) \\
+\textbf{Carga Horária:} & 60h/a (4 créditos) \\
+\textbf{Unidade Responsável:} & Programa de Pós-Graduação em Planejamento Territorial (PLANTERR/UEFS) \\
+\textbf{Docente:} & Prof. Dr. Luiz Diego Vidal Santos (\texttt{ldvsantos@uefs.br}) \\
+\textbf{Tipo do Componente:} & Disciplina Eletiva (Mestrado) \\
+\textbf{Período Letivo:} & 2027/1 (proposta para apreciação do Colegiado) \\
+\textbf{Atendimento aos alunos:} & A definir conforme calendário do PLANTERR \\
+\end{tabularx}
+\end{tcolorbox}
+
+\vspace{8pt}
+\justifying
+
+\noindent\textbf{EMENTA*:} Empreendedorismo de base tecnológica e desenvolvimento territorial; estruturas de mercado, barreiras de entrada, \textit{clusters} e Arranjos Produtivos Locais (APLs); ecossistemas empreendedores, Sistemas Regionais de Inovação, governança e Hélice Trípode/Quádrupla/Quíntupla; empreendedorismo social, negócios de impacto, tecnologia social, economia solidária e Indicações Geográficas; processo empreendedor (\textit{causation} e \textit{effectuation}) e criação de novos negócios; identificação e análise de oportunidades tecnológicas e territoriais e propriedade intelectual; modelos de negócio e proposta de valor; planos de negócio e instrumentos de fomento regional; empreendedorismo corporativo, intraempreendedorismo e \textit{spin-offs}; elaboração de projetos de investimento com ênfase em decisão locacional; métodos de análise de investimentos (fluxo de caixa, TMA/WACC, VPL, TIR, \textit{Payback} e risco); fundamentos de \textit{valuation} de empreendimentos tecnológicos e projetos de impacto.
+
+\vspace{8pt}
+\noindent\textbf{OBJETIVO GERAL:} Capacitar o(a) discente de pós-graduação a compreender e analisar criticamente como o empreendedorismo tecnológico e social, a governança de ecossistemas de inovação e a avaliação de projetos de investimento estruturam dinâmicas de desenvolvimento regional, redução de assimetrias socioespaciais e planejamento territorial.
+
+\vspace{8pt}
+\noindent\textbf{OBJETIVOS ESPECÍFICOS:}
+\begin{itemize}
+  \item Analisar o papel da inovação e do empreendedorismo de base tecnológica na reestruturação produtiva e na redução de desigualdades regionais.
+  \item Examinar estruturas de mercado, barreiras à entrada e dinâmicas de aglomeração espacial (\textit{clusters}, APLs e Sistemas Regionais de Inovação).
+  \item Diagnosticar a arquitetura institucional, as redes de atores e a governança de ecossistemas empreendedores (universidade, empresa, governo e sociedade) em diferentes escalas territoriais.
+  \item Avaliar o potencial e os limites do empreendedorismo social, dos negócios de impacto, da economia solidária e das indicações geográficas como estratégias de desenvolvimento territorial inclusivo.
+  \item Compreender o processo empreendedor, a identificação de oportunidades tecnológicas e territoriais e a proteção estratégica de ativos intangíveis.
+  \item Estruturar modelos de negócio, propostas de valor, planos de negócio e estratégias de intraempreendedorismo/\textit{spin-offs} articulados a políticas públicas e fundos de fomento regional.
+  \item Aplicar critérios locacionais e ferramentas fundamentais de elaboração e análise econômico-financeira de projetos de investimento (VPL, TIR, \textit{Payback}) e \textit{valuation} para apoiar decisões de planejamento e gestão territorial.
+\end{itemize}
+
+\vspace{8pt}
+\noindent\textbf{HABILIDADES E COMPETÊNCIAS:} Ao final da disciplina, o(a) pós-graduando(a) deverá estar apto(a) a mapear e diagnosticar ecossistemas empreendedores e sistemas locais de inovação; analisar estruturas concorrenciais e barreiras de entrada em cadeias produtivas regionais; formular estratégias de desenvolvimento territorial baseadas em empreendedorismo tecnológico e social; estruturar modelos e planos de negócio articulados a demandas territoriais; conduzir estudos de pré-viabilidade locacional e econômico-financeira (VPL, TIR, \textit{Payback}); e dialogar criticamente com políticas de CT\&I, agências de fomento e instrumentos de \textit{valuation} de empreendimentos e projetos de impacto.
+
+\vspace{8pt}
+\noindent\textbf{METODOLOGIA:} A disciplina será ofertada presencialmente em 15 encontros semanais de 4 horas (totalizando 60 horas / 4 créditos), articulando exposição dialogada, seminários temáticos, estudos de caso territoriais e oficinas aplicadas. Os materiais complementares (artigos, livros, legislações e videoaulas) serão disponibilizados no Ambiente Virtual de Aprendizagem do docente e no SAGRES.
+
+As atividades práticas incluirão mapeamento de ecossistemas pela Hélice Quádrupla, construção de \textit{Business Model Canvas} territorial/tecnológico, busca de anterioridade em bases de patentes e oficinas quantitativas em planilha eletrônica para decisão locacional, fluxo de caixa, VPL, TIR e noções de \textit{valuation}. Ao longo do semestre, cada discente (ou dupla) desenvolverá um trabalho aplicado integrando diagnóstico territorial, modelo de negócio/impacto e análise de viabilidade.
+
+\vspace{8pt}
+\noindent\textbf{AVALIAÇÃO:} O processo avaliativo contemplará três instrumentos:
+\begin{enumerate}
+  \item \textbf{Seminário e Fichamento Crítico (30\%):} apresentação e discussão crítica de textos-base da Unidade I, acompanhada de síntese analítica escrita (3,0 pontos).
+  \item \textbf{Estudo Dirigido / Oficina Prática (20\%):} resolução individual integrando modelo de negócio, decisão locacional e indicadores econômico-financeiros (2,0 pontos).
+  \item \textbf{Projeto Final e Defesa Técnica (50\%):} entrega de artigo aplicado ou estudo técnico-territorial e apresentação oral de 20 minutos no seminário integrador (5,0 pontos).
+\end{enumerate}
+
+\begin{center}
+  $\text{NF} = \text{AV1 }(3{,}0) + \text{AV2 }(2{,}0) + \text{AV3 }(5{,}0)$
+\end{center}
+
+\vspace{6pt}
+\noindent\textbf{PROGRAMA DO COMPONENTE CURRICULAR:} O componente curricular será desenvolvido presencialmente, com carga horária total de 60 (sessenta) horas, distribuídas em 15 encontros letivos de 4 horas, estruturados em quatro unidades temáticas conforme o Quadro 1.
+
+\vspace{8pt}
+\begin{center}
+  {\bfseries CRONOGRAMA DAS ATIVIDADES}
+\end{center}
+
+\small
+\begin{tabularx}{\textwidth}{|c|p{7.8cm}|X|}
+\caption*{\textbf{Quadro 1. Conteúdo programático por aula de Empreendedorismo Tecnológico, Ecossistemas de Inovação e Análise de Investimentos no Desenvolvimento Territorial (PLANTERR/UEFS).}} \\
+\hline
+\rowcolor{uefslight}
+\textbf{SEM.} & \centering\textbf{ASSUNTOS PREVISTOS} & \textbf{REFERÊNCIAS} \\
+\hline
+\endfirsthead
+\hline
+\rowcolor{uefslight}
+\textbf{SEM.} & \centering\textbf{ASSUNTOS PREVISTOS} & \textbf{REFERÊNCIAS} \\
+\hline
+\endhead
+\hline
+\endfoot
+1 & \textbf{Unidade I ·} Apresentação da disciplina. Empreendedorismo de base tecnológica: destruição criadora (Schumpeter), trajetórias tecnológicas, assimetrias espaciais e \textit{Smart Specialisation}. & BAILETTI, 2012; TIDD; BESSANT, 2015; BYERS; DORF; NELSON, 2015. \\
+\hline
+2 & Estruturas de mercado, cinco forças competitivas de Porter, barreiras à entrada/saída, estratégias genéricas, \textit{clusters} e Arranjos Produtivos Locais (APLs). & PORTER, 1998; PORTER, 2004; CASSIOLATO; LASTRES, 2005; BARNEY, 1991. \\
+\hline
+3 & Ecossistemas empreendedores e Sistemas Regionais de Inovação: domínios de Isenberg, modelo causal de Stam \& van de Ven e as cinco dimensões da proximidade (Boschma). & STAM, 2015; STAM; VAN DE VEN, 2021; ISENBERG, 2010; LUNDVALL, 1992. \\
+\hline
+4 & Governança territorial da inovação: Hélice Trípode, Quádrupla e Quíntupla, parques tecnológicos, incubadoras, NITs, Marco Legal de CT\&I e o Estado Empreendedor. & ETZKOWITZ; LEYDESDORFF, 2000; MAZZUCATO, 2014; BRASIL (Lei 13.243/2016). \\
+\hline
+5 & Empreendedorismo social e negócios de impacto territorial: quadro PCDO, organizações híbridas, Teoria da Mudança, finanças sociais e \textit{mission drift}. & AUSTIN; STEVENSON; WEI-SKILLERN, 2006; MAIR; MARTÍ, 2006. \\
+\hline
+6 & Inovação social no território: Tecnologia Social, economia solidária, bioeconomia regional e Indicações Geográficas como ativos coletivos de PI. Entrega da AV1. & DAGNINO, 2014; BRASIL (Lei 9.279/1996). \\
+\hline
+7 & \textbf{Unidade II ·} Processo empreendedor: nexo indivíduo e oportunidade, \textit{Causation} vs. \textit{Effectuation}, bricolagem, estágios de maturidade (TRL) e ``Vale da Morte''. & SHANE; VENKATARAMAN, 2000; SARASVATHY, 2001; MANKINS/NASA, 2004. \\
+\hline
+8 & Identificação e análise de oportunidades tecnológicas e territoriais: descoberta vs. criação, dimensionamento TAM/SAM/SOM, busca de anterioridade e \textit{Freedom to Operate}. & SHANE; VENKATARAMAN, 2000; BRASIL (Lei 9.279/1996). \\
+\hline
+9 & Modelos de negócio e proposta de valor: \textit{Business Model Canvas}, \textit{Value Proposition Design}, \textit{Customer Development} e ciclo \textit{Lean Startup} (MVP). & OSTERWALDER; PIGNEUR, 2010; RIES, 2012; BLANK, 2013. \\
+\hline
+10 & Planos de negócio em empreendimentos tecnológicos: estrutura, \textit{unit economics} (CAC/LTV), subvenção econômica (FINEP/FAPs), FNE Inovação e \textit{venture capital}. & BYERS; DORF; NELSON, 2015. \\
+\hline
+11 & Empreendedorismo corporativo, intraempreendedorismo, ambidestria organizacional, \textit{Open Innovation}, \textit{spin-offs} acadêmicas e inovação no setor público. & CHESBROUGH, 2003; COHEN; LEVINTHAL, 1990; TIDD; BESSANT, 2015. \\
+\hline
+12 & \textbf{Unidade III ·} Elaboração de projetos de investimento: ciclo de projeto, estudo de mercado, escala, \textbf{decisão locacional no território}, CAPEX, capital de giro e OPEX. & WOILER; MATHIAS, 2008; NEWNAN; ESCHENBACH; LAVELLE, 2019. \\
+\hline
+13 & Métodos de análise de investimentos: fluxo de caixa (FCFF), TMA/CAPM/WACC, VPL, TIR, MTIR, VAUE, \textit{Payback} e análise de sensibilidade/Monte Carlo. Entrega da AV2. & CASAROTTO FILHO; KOPITTKE, 2020; ASSAF NETO, 2021; USP/PRG. \\
+\hline
+14 & \textit{Valuation} de empreendimentos tecnológicos e projetos de impacto: \textit{Enterprise} vs. \textit{Equity Value}, FCD, múltiplos, \textit{Dark Side of Valuation}, método VC e Opções Reais. & DAMODARAN, 2010; DAMODARAN, 2018; DIXIT; PINDYCK, 1994; BNDES. \\
+\hline
+15 & \textbf{Unidade IV ·} Seminário Final de Integração: apresentação e arguição técnica dos projetos aplicados de ecossistema territorial, modelo de negócio e viabilidade (AV3). & Bibliografia integrada das Unidades I, II e III. \\
+\hline
+\end{tabularx}
+
+\normalsize
+\vspace{8pt}
+\noindent\textbf{SIGNIFICADO DO COMPONENTE CURRICULAR PARA FORMAÇÃO PROFISSIONAL:} No âmbito do Programa de Pós-Graduação em Planejamento Territorial (PLANTERR/UEFS), o componente curricular articula a leitura socioespacial e institucional do território com os instrumentos estratégicos e econômico-financeiros que viabilizam a inovação produtiva. A passagem de diagnósticos territoriais para políticas públicas e intervenções concretas (como parques tecnológicos, arranjos produtivos locais, sistemas regionais de inovação, indicações geográficas ou negócios de impacto socioambiental) demanda pesquisadores(as) e planejadores(as) capazes de compreender a governança dos ecossistemas empreendedores, avaliar estruturas de mercado e testar a viabilidade locacional e financeira dos projetos.
+
+\vspace{8pt}
+\small
+\begin{flushleft}
+\noindent\textbf{BIBLIOGRAFIA BÁSICA*:}\\[4pt]
+AUSTIN, James; STEVENSON, Howard; WEI-SKILLERN, Jane. Social and commercial entrepreneurship: same, different, or both? \textbf{Entrepreneurship Theory and Practice}, v. 30, n. 1, p. 1--22, 2006.\\[3pt]
+CASSIOLATO, José Eduardo; LASTRES, Helena Maria Martins. Sistemas de inovação e desenvolvimento: as implicações de política. \textbf{São Paulo em Perspectiva}, v. 19, n. 1, p. 34--45, 2005.\\[3pt]
+CASAROTTO FILHO, Nelson; KOPITTKE, Bruno Hartmut. \textbf{Análise de investimentos}. 12. ed. São Paulo: Atlas, 2020.\\[3pt]
+ETZKOWITZ, Henry; LEYDESDORFF, Loet. The dynamics of innovation: from National Systems and ``Mode 2'' to a Triple Helix of university--industry--government relations. \textbf{Research Policy}, v. 29, n. 2, p. 109--123, 2000.\\[3pt]
+MAZZUCATO, Mariana. \textbf{O Estado empreendedor: desmascarando o mito do setor público vs. setor privado}. São Paulo: Portfolio-Penguin, 2014.\\[3pt]
+OSTERWALDER, Alexander; PIGNEUR, Yves. \textbf{Business model generation}. Rio de Janeiro: Alta Books, 2010.\\[3pt]
+PORTER, Michael E. Clusters and the new economics of competition. \textbf{Harvard Business Review}, v. 76, n. 6, p. 77--90, 1998.\\[3pt]
+STAM, Erik. Entrepreneurial ecosystems and regional policy: a sympathetic critique. \textbf{European Planning Studies}, v. 23, n. 9, p. 1759--1769, 2015.\\[8pt]
+
+\noindent\textbf{BIBLIOGRAFIA COMPLEMENTAR:}\\[4pt]
+ASSAF NETO, Alexandre. \textbf{Finanças corporativas e valor}. 8. ed. São Paulo: Atlas, 2021.\\[3pt]
+BAILETTI, Tony. Technology entrepreneurship: overview, definition, and distinctive aspects. \textbf{Technology Innovation Management Review}, v. 2, n. 2, p. 5--12, 2012.\\[3pt]
+BARNEY, Jay. Firm resources and sustained competitive advantage. \textbf{Journal of Management}, v. 17, n. 1, p. 99--120, 1991.\\[3pt]
+BLANK, Steve. Why the lean start-up changes everything. \textbf{Harvard Business Review}, v. 91, n. 5, p. 63--72, 2013.\\[3pt]
+BRASIL. \textbf{Lei nº 9.279, de 14 de maio de 1996} (Lei da Propriedade Industrial) e \textbf{Lei nº 13.243, de 11 de janeiro de 2016} (Marco Legal de CT\&I).\\[3pt]
+BYERS, Thomas H.; DORF, Richard C.; NELSON, Andrew J. \textbf{Technology ventures: from idea to enterprise}. 4. ed. New York: McGraw-Hill, 2015.\\[3pt]
+CHESBROUGH, Henry. \textbf{Open innovation}. Boston: Harvard Business School Press, 2003.\\[3pt]
+COHEN, Wesley M.; LEVINTHAL, Daniel A. Absorptive capacity: a new perspective on learning and innovation. \textbf{Administrative Science Quarterly}, v. 35, n. 1, p. 128--152, 1990.\\[3pt]
+DAGNINO, Renato. \textbf{Tecnologia social: contribuições conceituais e metodológicas}. Campina Grande: EDUEPB / SciELO Livros, 2014.\\[3pt]
+DAMODARAN, Aswath. \textbf{Avaliação de investimentos}. 2. ed. Rio de Janeiro: Qualitymark, 2010.\\[3pt]
+DAMODARAN, Aswath. \textbf{The dark side of valuation}. 3. ed. Upper Saddle River: Pearson, 2018.\\[3pt]
+DIXIT, Avinash K.; PINDYCK, Robert S. \textbf{Investment under uncertainty}. Princeton: Princeton University Press, 1994.\\[3pt]
+ISENBERG, Daniel. How to start an entrepreneurial revolution. \textbf{Harvard Business Review}, v. 88, n. 6, p. 40--50, 2010.\\[3pt]
+MAIR, Johanna; MARTÍ, Ignasi. Social entrepreneurship research: a source of explanation, prediction, and delight. \textbf{Journal of World Business}, v. 41, n. 1, p. 36--44, 2006.\\[3pt]
+NEWNAN, Donald G.; ESCHENBACH, Ted G.; LAVELLE, Jerome P. \textbf{Engineering economic analysis}. New York: Oxford University Press, 2019.\\[3pt]
+PORTER, Michael E. \textbf{Estratégia competitiva}. 2. ed. Rio de Janeiro: Elsevier, 2004.\\[3pt]
+RIES, Eric. \textbf{A startup enxuta}. Rio de Janeiro: Leya, 2012.\\[3pt]
+SARASVATHY, Saras D. Causation and effectuation. \textbf{Academy of Management Review}, v. 26, n. 2, p. 243--263, 2001.\\[3pt]
+SHANE, Scott; VENKATARAMAN, S. The promise of entrepreneurship as a field of research. \textbf{Academy of Management Review}, v. 25, n. 1, p. 217--226, 2000.\\[3pt]
+STAM, Erik; VAN DE VEN, Andrew. Entrepreneurial ecosystem elements. \textbf{Small Business Economics}, v. 56, p. 809--832, 2021.\\[3pt]
+TIDD, Joe; BESSANT, John. \textbf{Gestão da inovação}. 5. ed. Porto Alegre: Bookman, 2015.\\[3pt]
+WOILER, Samsão; MATHIAS, Washington Franco. \textbf{Projetos: planejamento, elaboração e análise}. 2. ed. São Paulo: Atlas, 2008.
+\end{flushleft}
+
+\end{document}

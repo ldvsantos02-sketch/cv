@@ -206,6 +206,23 @@ def output_size(output):
     return sum(path.stat().st_size for path in output.rglob("*") if path.is_file())
 
 
+def report_output_size(output):
+    groups = {}
+    largest = []
+    for path in output.rglob("*"):
+        if not path.is_file():
+            continue
+        size = path.stat().st_size
+        relative = path.relative_to(output)
+        key = "/".join(relative.parts[:2]) if relative.parts[0] == "books" else relative.parts[0]
+        groups[key] = groups.get(key, 0) + size
+        largest.append((size, relative.as_posix()))
+    for name, size in sorted(groups.items(), key=lambda item: item[1], reverse=True)[:20]:
+        print(f"Directory: {name}: {size / 1024**2:.1f} MiB", flush=True)
+    for size, name in sorted(largest, reverse=True)[:20]:
+        print(f"Largest: {name}: {size / 1024**2:.1f} MiB", flush=True)
+
+
 def remove_unreferenced_book_images(output):
     """Drop copied book image sources that no published text resource uses.
 
@@ -278,6 +295,7 @@ def prepare(output, base_path="/", max_bytes=1_000_000_000, asset_base_url=None)
           f"{removed} duplicate book outputs removed.", flush=True)
     print(f"Books: removed {unused_images} unreferenced image copies "
           f"({unused_bytes / 1024**2:.1f} MiB).", flush=True)
+    report_output_size(output)
     if after > max_bytes:
         raise ValueError(f"Pages output is {after:,} bytes; limit is {max_bytes:,} bytes")
     return after

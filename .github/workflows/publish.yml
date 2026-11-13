@@ -1,5 +1,10 @@
 on:
   workflow_dispatch:
+    inputs:
+      render_slides:
+        description: Regenerate lectures from QMD (disable only when committed HTML is already current)
+        type: boolean
+        default: true
   push:
     branches: main
 
@@ -43,11 +48,13 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Set up R
+        if: github.event_name != 'workflow_dispatch' || inputs.render_slides
         uses: r-lib/actions/setup-r@v2
         with:
           use-public-rspm: true
 
       - name: Install R rendering dependencies
+        if: github.event_name != 'workflow_dispatch' || inputs.render_slides
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages: |
@@ -56,6 +63,7 @@ jobs:
           install-quarto: false
 
       - name: Render introductory statistics (R)
+        if: github.event_name != 'workflow_dispatch' || inputs.render_slides
         run: quarto render aulas/introducao_estatistica/SLIDES_QUARTO --to revealjs
 
       - name: Generate CV PDFs
@@ -103,6 +111,7 @@ jobs:
           done
 
       - name: Render Aulas (RevealJS slides)
+        if: github.event_name != 'workflow_dispatch' || inputs.render_slides
         run: |
           # Discover the teaching projects, including SLIDES_QUARTO,
           # stand-alone Geotextiles decks, extra classes and new disciplines.

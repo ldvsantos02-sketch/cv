@@ -10,10 +10,12 @@ import binascii
 import hashlib
 import html
 from html.parser import HTMLParser
+import json
 from pathlib import Path
 import re
 import shutil
-from urllib.parse import unquote_to_bytes
+import unicodedata
+from urllib.parse import quote, unquote, unquote_to_bytes
 
 
 DATA_URI = re.compile(
@@ -204,6 +206,43 @@ def output_size(output):
     return sum(path.stat().st_size for path in output.rglob("*") if path.is_file())
 
 
+def remove_unreferenced_book_images(output):
+    """Drop copied book image sources that no published text resource uses.
+
+    Match filenames across the whole site, including CSS, JSON and SVG. This
+    deliberately keeps duplicate copies whenever their basename is referenced.
+    Original source images and downloadable PDFs are outside this cleanup.
+    """
+    books = output / "books"
+    if not books.is_dir():
+        return 0, 0
+    if not books.resolve().is_relative_to(output.resolve()):
+        raise ValueError("Unexpected books directory: " + str(books))
+    text_types = {".html", ".css", ".js", ".json", ".svg", ".xml", ".csv", ".mtl", ".gltf", ".map"}
+    text = "\n".join(path.read_text(encoding="utf-8", errors="replace")
+                     for path in output.rglob("*") if path.is_file() and path.suffix.lower() in text_types)
+    text = unicodedata.normalize("NFC", unquote(html.unescape(text))).replace("\\ ", " ")
+    image_types = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".avif"}
+    unused = []
+    for book in books.iterdir():
+        directory = book / "img"
+        if not (book / "index.html").is_file() or not directory.is_dir():
+            continue
+        for image_path in directory.rglob("*"):
+            if not image_path.is_file() or image_path.suffix.lower() not in image_types:
+                continue
+            name = unicodedata.normalize("NFC", image_path.name)
+            variants = (name, quote(name), json.dumps(name, ensure_ascii=True)[1:-1])
+            if not any(variant in text for variant in variants):
+                if image_path.is_symlink() or not image_path.resolve().is_relative_to(books.resolve()):
+                    raise ValueError("Unexpected book image location: " + str(image_path))
+                unused.append(image_path)
+    removed_bytes = sum(path.stat().st_size for path in unused)
+    for path in unused:
+        path.unlink()
+    return len(unused), removed_bytes
+
+
 def prepare(output, base_path="/", max_bytes=1_000_000_000):
     output = Path(output).resolve()
     if not output.is_dir() or not (output / "index.html").is_file():
@@ -228,10 +267,13 @@ def prepare(output, base_path="/", max_bytes=1_000_000_000):
             changed += 1
         if number % 50 == 0:
             print(f"Prepared {number} HTML files...", flush=True)
+    unused_images, unused_bytes = remove_unreferenced_book_images(output)
     after = output_size(output)
     print(f"Pages: {before / 1024**2:.1f} -> {after / 1024**2:.1f} MiB; "
           f"{changed} HTML files; {assets.created} shared assets; "
           f"{removed} duplicate book outputs removed.", flush=True)
+    print(f"Books: removed {unused_images} unreferenced image copies "
+          f"({unused_bytes / 1024**2:.1f} MiB).", flush=True)
     if after > max_bytes:
         raise ValueError(f"Pages output is {after:,} bytes; limit is {max_bytes:,} bytes")
     return after

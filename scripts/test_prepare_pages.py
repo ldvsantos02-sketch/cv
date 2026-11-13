@@ -8,7 +8,7 @@ import tempfile
 import unittest
 from urllib.parse import quote
 
-from prepare_pages import prepare
+from prepare_pages import prepare, remove_unreferenced_book_images
 
 
 class PreparePagesTests(unittest.TestCase):
@@ -104,6 +104,25 @@ class PreparePagesTests(unittest.TestCase):
         self.assertEqual(before, after)
         with self.assertRaisesRegex(ValueError, "limit"):
             self.run_prepare(max_bytes=1)
+
+    def test_removes_only_unused_book_images_and_preserves_references(self):
+        self.write("index.html", '<img src="books/example/img/caf%C3%A9.png">')
+        self.write("books/example/index.html", '<img src="img/used.png">')
+        self.write("books/example/style.css", '.figure{background:url(img/space\\ name.png)}')
+        self.write("books/example/data.json", '{"image":"img/json\\u00e9.png"}')
+        for name in ("used.png", "café.png", "space name.png", "jsoné.png", "unused.png"):
+            self.write("books/example/img/" + name, "image")
+        self.write("books/example/book.pdf", "download")
+        self.write("books/example/img/source.pdf", "download")
+        self.write("img/unused.png", "keep outside books")
+        self.write("books/no-index/img/unused.png", "keep without a rendered book")
+        self.assertEqual(remove_unreferenced_book_images(self.site), (1, 5))
+        self.assertFalse((self.site / "books/example/img/unused.png").exists())
+        for name in ("used.png", "café.png", "space name.png", "jsoné.png", "source.pdf"):
+            self.assertTrue((self.site / "books/example/img" / name).exists())
+        self.assertTrue((self.site / "books/example/book.pdf").exists())
+        self.assertTrue((self.site / "img/unused.png").exists())
+        self.assertTrue((self.site / "books/no-index/img/unused.png").exists())
 
 
 if __name__ == "__main__":

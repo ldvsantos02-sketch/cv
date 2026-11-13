@@ -1,21 +1,13 @@
 ---
-title: "ANOVA — Visão Completa"
-subtitle: "Aula 13 — Síntese da família ANOVA e ponte para análises multivariadas<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 13"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+title: "ANOVA - Visão Completa"
+subtitle: "Análise de Dados Ambientais · Aula 13"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 13"
 execute:
   echo: false
 ---
@@ -45,7 +37,7 @@ execute:
 :::
 
 
-# [1 — ONDE CADA ANOVA ENTRA?]{.section-header}
+# [1 - ONDE CADA ANOVA ENTRA?]{.section-header}
 
 ## A pergunta estatística central {.smaller-text}
 
@@ -96,7 +88,7 @@ Escolher a ANOVA correta é menos sobre o nome do teste e mais sobre **respeitar
 :::
 
 
-# [2 — MAPA DA FAMÍLIA ANOVA]{.section-header}
+# [2 - MAPA DA FAMÍLIA ANOVA]{.section-header}
 
 ## Das comparações simples às extensões {.smaller-text}
 
@@ -127,21 +119,21 @@ flowchart TD
 ::: {.info-box}
 | Teste | VI (Fator) | VD | Covariável | Medidas Repetidas |
 |-------|:---:|:---:|:---:|:---:|
-| **Teste t** | 1 (2 grupos) | 1 | — | — |
-| **ANOVA Uma Via** | 1 (≥ 3 grupos) | 1 | — | — |
-| **ANOVA Fatorial** | ≥ 2 | 1 | — | — |
-| **ANCOVA** | ≥ 1 | 1 | ≥ 1 | — |
-| **ANOVA-MR** | 1 ou mais | 1 | — | Sim |
-| **MANOVA** | ≥ 1 | **≥ 2** | — | — |
-| **MANCOVA** | ≥ 1 | **≥ 2** | ≥ 1 | — |
+| **Teste t** | 1 (2 grupos) | 1 | - | - |
+| **ANOVA Uma Via** | 1 (≥ 3 grupos) | 1 | - | - |
+| **ANOVA Fatorial** | ≥ 2 | 1 | - | - |
+| **ANCOVA** | ≥ 1 | 1 | ≥ 1 | - |
+| **ANOVA-MR** | 1 ou mais | 1 | - | Sim |
+| **MANOVA** | ≥ 1 | **≥ 2** | - | - |
+| **MANCOVA** | ≥ 1 | **≥ 2** | ≥ 1 | - |
 :::
 
 ::: {.highlight-box}
-Nesta aula, a MANOVA aparece como **ponte conceitual**. O tratamento completo agora está separado na Aula 13B — MANOVA.
+Nesta aula, a MANOVA aparece como **ponte conceitual**. O tratamento completo agora está separado na Aula 13B - MANOVA.
 :::
 
 
-# [3 — ANOVA, FATORIAL E ANCOVA]{.section-header}
+# [3 - ANOVA, FATORIAL E ANCOVA]{.section-header}
 
 ## Uma Via, Fatorial e ANCOVA {.smaller-text}
 
@@ -218,7 +210,7 @@ Quando a interação é significativa, a interpretação dos efeitos principais 
 :::
 
 
-# [4 — MEDIDAS REPETIDAS]{.section-header}
+# [4 - MEDIDAS REPETIDAS]{.section-header}
 
 ## Quando as observações não são independentes {.smaller-text}
 
@@ -280,7 +272,7 @@ Se a esfericidade falha:
 :::
 
 
-# [5 — PRESSUPOSTOS COMPARTILHADOS]{.section-header}
+# [5 - PRESSUPOSTOS COMPARTILHADOS]{.section-header}
 
 ## O que todas as ANOVAs pedem {.smaller-text}
 
@@ -350,7 +342,7 @@ Pressupostos são avaliados principalmente nos **resíduos do modelo**, não ape
 :::
 
 
-# [6 — PÓS-HOC E TAMANHO DE EFEITO]{.section-header}
+# [6 - PÓS-HOC E TAMANHO DE EFEITO]{.section-header}
 
 ## Depois do F significativo {.smaller-text}
 
@@ -392,7 +384,7 @@ Relatar apenas p-valor empobrece a interpretação. Inclua o **tamanho de efeito
 :::
 
 
-# [7 — QUANDO SAIR DA ANOVA?]{.section-header}
+# [7 - QUANDO SAIR DA ANOVA?]{.section-header}
 
 ## Nem toda comparação de grupos é ANOVA {.smaller-text}
 
@@ -431,7 +423,7 @@ ANOVA é potente quando a pergunta e os dados combinam com seus pressupostos. Qu
 :::
 
 
-# [8 — PONTE PARA MANOVA/MANCOVA]{.section-header}
+# [8 - PONTE PARA MANOVA/MANCOVA]{.section-header}
 
 ## Quando há múltiplas variáveis dependentes {.smaller-text}
 
@@ -458,14 +450,14 @@ Ex.: avaliar geotêxteis por resistência à tração, punção e rigidez simult
 :::
 
 ::: {.highlight-box}
-A próxima etapa é a Aula 13B — MANOVA, dedicada à comparação de **centroides multivariados** e à covariância entre variáveis dependentes.
+A próxima etapa é a Aula 13B - MANOVA, dedicada à comparação de **centroides multivariados** e à covariância entre variáveis dependentes.
 :::
 
 ::::
 :::
 
 
-## Resumo Geral — Escolhendo a ANOVA certa {.smaller-text}
+## Resumo Geral - Escolhendo a ANOVA certa {.smaller-text}
 
 ```{mermaid}
 %%| fig-width: 10

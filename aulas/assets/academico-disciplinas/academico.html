@@ -1,0 +1,284 @@
+<!-- Template acadêmico UEFS (RevealJS). Textos institucionais e a faixa da capa
+     chegam em #academic-config, gerado por academico.lua a partir do YAML. -->
+<script>
+(() => {
+  "use strict";
+
+  let deck;
+  let connected = false;
+  let initialized = false;
+  const text = (node) => node ? node.textContent.replace(/\s+/g, " ").trim() : "";
+  const element = (tag, className, value) => {
+    const node = document.createElement(tag);
+    node.className = className;
+    if (value) node.textContent = value;
+    return node;
+  };
+  const heading = (slide, tag) => Array.from(slide.children).find((node) => node.tagName === tag);
+  const shortLabel = (value) => {
+    if (Array.from(value).length <= 30) return value;
+    const prefix = Array.from(value).slice(0, 28).join("");
+    const split = prefix.lastIndexOf(" ");
+    return (split > 12 ? prefix.slice(0, split) : prefix) + "…";
+  };
+
+  function initialize() {
+    if (initialized) return;
+    // Reveal may already have moved the sections into its automatic scroll
+    // view on narrow screens. Restore the slide hierarchy before traversing it.
+    deck.configure({
+      width: 1280, height: 720, margin: 0, center: false,
+      minScale: 0.1, maxScale: 2, disableLayout: false,
+      view: "slide", scrollActivationWidth: null,
+      progress: false, slideNumber: false, controls: false,
+      pdfSeparateFragments: false, pdfMaxPagesPerSlide: 1
+    });
+    if (deck.isScrollView()) deck.toggleScrollView(false);
+    const slidesRoot = document.querySelector(".reveal .slides");
+    if (!slidesRoot) return;
+    initialized = true;
+
+    const config = document.getElementById("academic-config");
+    const setting = (key) => (config && config.dataset[key]) || "";
+    const footerLabel = setting("footer") || "UEFS";
+
+    // Traverse only Reveal's section hierarchy, excluding stack containers.
+    const leaves = [];
+    function visit(parent) {
+      Array.from(parent.children).forEach((slide) => {
+        if (slide.tagName !== "SECTION") return;
+        if (Array.from(slide.children).some((child) => child.tagName === "SECTION")) visit(slide);
+        else leaves.push(slide);
+      });
+    }
+    visit(slidesRoot);
+    const cover = leaves.find((slide) => slide.id === "title-slide" || slide.classList.contains("quarto-title-block"));
+    const resources = config;
+    const groups = [];
+    let group = null;
+    const records = leaves.map((slide, index) => {
+      slide.classList.add("academic-slide");
+      slide.classList.remove("center");
+      const sectionHeading = slide !== cover && heading(slide, "H1");
+      if (sectionHeading) {
+        group = {
+          title: text(sectionHeading).replace(/^\d+\s*[·.\-–—:]\s*/, ""),
+          label: slide.dataset.academicLabel || sectionHeading.dataset.academicLabel || shortLabel(text(sectionHeading)),
+          start: index,
+          slides: [],
+          number: groups.length + 1
+        };
+        groups.push(group);
+        slide.classList.add("academic-section");
+      }
+      const record = { slide, index, group: slide === cover ? null : group, sectionHeading };
+      if (record.group) record.group.slides.push(index);
+      return record;
+    });
+
+    function buildCover() {
+      if (!cover) return;
+      const title = text(cover.querySelector(".title, h1"));
+      const subtitle = text(cover.querySelector(".subtitle"));
+      const authors = Array.from(cover.querySelectorAll(".quarto-title-author-name"), text);
+      const author = authors.length ? authors.join(" · ") : text(cover.querySelector(".author"));
+      const date = text(cover.querySelector(".date"));
+      const institute = text(cover.querySelector(".institute, .quarto-title-affiliation"));
+      const advisorMatch = institute.match(/Orientador(?:a)?\s*:\s*.+/i);
+      const second = setting("second") || (advisorMatch ? advisorMatch[0] : "");
+      const place = setting("place") || date;
+      const box = element("div", "academic-cover-box");
+      const content = element("div", "academic-cover-content");
+      const header = config && config.querySelector(".academic-institution-header");
+      if (header) content.append(header.cloneNode(true));
+      else content.append(element("div", "academic-institution-header"));
+      const hero = element("div", "academic-cover-hero");
+      hero.append(element("h1", "academic-cover-title", title));
+      if (subtitle) hero.append(element("p", "academic-cover-subtitle", subtitle));
+      content.append(hero);
+      const people = element("div", "academic-cover-people");
+      if (author) people.append(element("p", "academic-cover-author", author));
+      if (second) people.append(element("p", "academic-cover-advisor", second));
+      if (place) people.append(element("p", "academic-cover-date", place));
+      content.append(people);
+      box.append(content);
+      const notes = Array.from(cover.children).filter((node) => node.matches("aside.notes"));
+      cover.replaceChildren(box, ...notes);
+      const ribbon = resources && resources.querySelector(".academic-cover-ribbon");
+      if (ribbon) cover.prepend(ribbon.cloneNode(true));
+      cover.classList.add("academic-cover");
+    }
+
+    buildCover();
+    records.forEach((record) => {
+      const { slide, sectionHeading } = record;
+      if (slide === cover) return;
+      if (sectionHeading) {
+        slide.insertBefore(element("p", "academic-stage-title", `ETAPA ${record.group.number} DE ${groups.length}`), sectionHeading);
+        const extra = Array.from(slide.childNodes).some((node) =>
+          node !== sectionHeading && !(node.nodeType === 1 && node.matches(".academic-stage-title, aside.notes, script, style")) &&
+          (text(node) || (node.nodeType === 1 && (node.matches("img, iframe, video, svg, figure") || node.querySelector("img, iframe, video, svg, figure")))));
+        if (!extra) return;
+        slide.classList.add("academic-section-with-content");
+      }
+      const title = sectionHeading || heading(slide, "H2");
+      const body = element("div", "academic-slide-body");
+      const content = element("div", "academic-slide-content");
+      let node = title ? title.nextSibling : slide.firstChild;
+      while (node) {
+        const next = node.nextSibling;
+        if (!(node.nodeType === 1 && node.matches("aside.notes, script, style"))) content.append(node);
+        node = next;
+      }
+      body.append(content);
+      slide.append(body);
+      record.heading = title;
+    });
+
+    function goTo(index) {
+      const indices = deck.getIndices(leaves[index]);
+      deck.slide(indices.h, indices.v);
+    }
+
+    function segment(section, record, opening = false) {
+      const button = element("button", opening ? "academic-ruler-intro" : "academic-ruler-segment");
+      button.type = "button";
+      button.style.flexGrow = String(section.slides.length);
+      button.title = section.title;
+      button.setAttribute("aria-label", section.title);
+      const current = opening ? !record.group : record.group === section;
+      if (current) {
+        button.classList.add("is-current");
+        button.setAttribute("aria-current", "step");
+      } else if (section.slides[section.slides.length - 1] < record.index) button.classList.add("is-past");
+      const track = element("span", "academic-ruler-track");
+      track.setAttribute("aria-hidden", "true");
+      section.slides.forEach((index) => {
+        const tick = element("span", "academic-ruler-tick");
+        if (index === record.index) tick.classList.add("is-current");
+        else if (index < record.index) tick.classList.add("is-past");
+        track.append(tick);
+      });
+      button.append(track);
+      if (!opening) button.append(element("span", "academic-ruler-label", section.label || section.title));
+      button.addEventListener("click", (event) => { event.stopPropagation(); goTo(section.start); });
+      return button;
+    }
+
+    const openingSlides = records.filter((record) => !record.group).map((record) => record.index);
+    const openingTitle = groups.length ? "Abertura" : "Apresentação";
+    records.forEach((record) => {
+      const footer = element("footer", "academic-footer");
+      const meta = element("div", "academic-footer-meta");
+      const stage = record.group ? `Etapa ${record.group.number}/${groups.length}` : openingTitle;
+      meta.append(element("span", "academic-footer-institution", `${footerLabel} | ${stage}`));
+      meta.append(element("span", "academic-footer-number", `Slide ${record.index + 1} de ${records.length}`));
+      const bottom = element("div", "academic-footer-bottom");
+      const ruler = element("nav", "academic-ruler");
+      ruler.setAttribute("aria-label", "Seções da apresentação");
+      if (openingSlides.length) ruler.append(segment({ title: openingTitle, start: openingSlides[0], slides: openingSlides }, record, true));
+      groups.forEach((section) => ruler.append(segment(section, record)));
+      const navigation = element("nav", "academic-navigation");
+      navigation.setAttribute("aria-label", "Navegação de slides");
+      [[-1, "‹", "Slide anterior"], [1, "›", "Próximo slide"]].forEach(([direction, symbol, label]) => {
+        const button = element("button", "academic-navigation-button", symbol);
+        button.type = "button";
+        button.setAttribute("aria-label", label);
+        button.title = label;
+        button.disabled = record.index + direction < 0 || record.index + direction >= records.length;
+        button.addEventListener("click", (event) => { event.stopPropagation(); goTo(record.index + direction); });
+        navigation.append(button);
+      });
+      bottom.append(ruler, navigation);
+      footer.append(meta, bottom);
+      record.slide.append(footer);
+    });
+
+    // Measure in canvas pixels, even when Reveal hides a slide or its stack.
+    function measurable(slide, callback) {
+      const saved = [];
+      for (let node = slide; node && node !== slidesRoot; node = node.parentElement) {
+        const styles = ["display", "visibility", "pointer-events"].map((key) => [key, node.style.getPropertyValue(key), node.style.getPropertyPriority(key)]);
+        saved.push([node, styles]);
+        node.style.setProperty("display", "block", "important");
+        node.style.setProperty("visibility", "hidden", "important");
+        node.style.setProperty("pointer-events", "none", "important");
+      }
+      try { callback(); }
+      finally {
+        saved.forEach(([node, styles]) => styles.forEach(([key, value, priority]) => {
+          if (value) node.style.setProperty(key, value, priority);
+          else node.style.removeProperty(key);
+        }));
+      }
+    }
+
+    // Shrink each slide body until it fits the fixed 1280 x 720 canvas.
+    function fitAll() {
+      records.forEach((record) => measurable(record.slide, () => {
+        const box = record.slide.querySelector(".academic-slide-body, .academic-cover-box");
+        if (!box) return;
+        if (record.heading) box.style.top = `${Math.max(112, record.heading.offsetTop + record.heading.offsetHeight + 18)}px`;
+        const content = box.firstElementChild;
+        const width = box.clientWidth;
+        const height = box.clientHeight;
+        if (!width || !height) return;
+        function fits(scale) {
+          content.style.width = `${width / scale}px`;
+          content.style.transform = `scale(${scale})`;
+          return content.scrollHeight * scale <= height && content.scrollWidth * scale <= width + 1;
+        }
+        let scale = 1;
+        if (!fits(1)) {
+          let low = 0.05;
+          let high = 1;
+          for (let iteration = 0; iteration < 14; iteration += 1) {
+            const middle = (low + high) / 2;
+            if (fits(middle)) low = middle;
+            else high = middle;
+          }
+          scale = low;
+          fits(scale);
+        }
+        record.slide.dataset.academicScale = scale.toFixed(3);
+      }));
+    }
+
+    // Responsive sizing belongs to Reveal; slide contents keep a fixed canvas.
+    fitAll();
+    deck.sync();
+    deck.layout();
+    let pending = false;
+    function scheduleFit() {
+      if (pending) return;
+      pending = true;
+      requestAnimationFrame(() => { pending = false; fitAll(); });
+    }
+    deck.on("slidechanged", scheduleFit);
+    deck.on("resize", scheduleFit);
+    deck.on("pdf-ready", fitAll);
+    window.addEventListener("beforeprint", fitAll);
+    if (document.fonts) document.fonts.ready.then(scheduleFit);
+    slidesRoot.querySelectorAll("img, iframe").forEach((media) => {
+      if (media.tagName === "IFRAME" || !media.complete) {
+        media.addEventListener("load", scheduleFit, { once: true });
+        media.addEventListener("error", scheduleFit, { once: true });
+      }
+    });
+    if (window.MathJax && window.MathJax.startup && window.MathJax.startup.promise) window.MathJax.startup.promise.then(scheduleFit);
+  }
+
+  function connect() {
+    // The Lua filter appends #academic-config after this script. Wait until
+    // parsing finishes so the institutional header, footer and cover exist.
+    if (connected || !window.Reveal || document.readyState === "loading") return;
+    deck = window.Reveal;
+    connected = true;
+    if (deck.isReady()) initialize();
+    else deck.on("ready", initialize);
+  }
+  connect();
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", connect, { once: true });
+  window.addEventListener("load", connect, { once: true });
+})();
+</script>

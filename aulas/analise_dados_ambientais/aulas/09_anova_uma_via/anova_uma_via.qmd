@@ -1,21 +1,13 @@
 ---
 title: "ANOVA de Uma Via"
-subtitle: "Aula 09 – Análise de Variância One-Way<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 09"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 09"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 09"
 execute:
   echo: false
 ---
@@ -28,7 +20,7 @@ execute:
 - [1]{.circle} O que é ANOVA?
 - [2]{.circle} Por que não usar vários Testes T?
 - [3]{.circle} Pressupostos da ANOVA
-- [4]{.circle} Lógica da ANOVA – Variância entre vs. dentro
+- [4]{.circle} Lógica da ANOVA - Variância entre vs. dentro
 - [5]{.circle} Cálculo passo a passo
 - [6]{.circle} Estatística F e decisão
 - [7]{.circle} Testes Post-hoc
@@ -44,7 +36,7 @@ execute:
 ::::
 :::
 
-# [1 – O QUE É ANOVA?]{.section-header}
+# [1 - O QUE É ANOVA?]{.section-header}
 
 ## Análise de Variância {.smaller-text}
 
@@ -56,11 +48,11 @@ execute:
 
 **ANOVA** (*Analysis of Variance*) é um teste paramétrico que avalia se as médias de **três ou mais grupos** diferem significativamente.
 
-Na Aula 08 vimos o Teste T – que compara 2 grupos. A ANOVA é a extensão natural para mais grupos.
+Na Aula 08 vimos o Teste T - que compara 2 grupos. A ANOVA é a extensão natural para mais grupos.
 :::
 
 ::: {.highlight-box}
-**Analogia simples:** Imagine que você quer saber se três tipos de cobertura de solo (sem cobertura, parcial e densa) produzem diferentes níveis de erosão. Não basta comparar dois a dois – a ANOVA faz isso de uma vez, com controle estatístico.
+**Analogia simples:** Imagine que você quer saber se três tipos de cobertura de solo (sem cobertura, parcial e densa) produzem diferentes níveis de erosão. Não basta comparar dois a dois - a ANOVA faz isso de uma vez, com controle estatístico.
 :::
 
 ::::
@@ -84,7 +76,7 @@ Na Aula 08 vimos o Teste T – que compara 2 grupos. A ANOVA é a extensão natu
 ## Família de ANOVAs {.smaller-text}
 
 ::: {.info-box}
-**Panorama:** A ANOVA tem várias variações. Hoje veremos a mais básica – a **ANOVA de Uma Via** (*One-Way*).
+**Panorama:** A ANOVA tem várias variações. Hoje veremos a mais básica - a **ANOVA de Uma Via** (*One-Way*).
 :::
 
 | Nome | Característica | Exemplo |
@@ -95,7 +87,7 @@ Na Aula 08 vimos o Teste T – que compara 2 grupos. A ANOVA é a extensão natu
 | ANOVA-MR | 1 VD em 3+ momentos | Erosão (pré, pós e follow-up) |
 | MANOVA | 1 VI → 2+ VDs | Geotêxtil → Tração + Punção + Rigidez |
 
-# [2 – POR QUE NÃO USAR VÁRIOS TESTES T?]{.section-header}
+# [2 - POR QUE NÃO USAR VÁRIOS TESTES T?]{.section-header}
 
 ## O Problema das Comparações Múltiplas {.smaller-text}
 
@@ -115,7 +107,7 @@ Comparar Taboa × Junco × Ouricuri usando Testes T:
 - Taboa vs. Ouricuri (5% de risco)
 - Junco vs. Ouricuri (5% de risco)
 
-**Risco acumulado ≈ 14,3%** – quase 3× o aceitável!
+**Risco acumulado ≈ 14,3%** - quase 3× o aceitável!
 :::
 
 ::::
@@ -130,7 +122,7 @@ Comparar Taboa × Junco × Ouricuri usando Testes T:
 **Solução:** A ANOVA compara todos os grupos em uma **única análise** e controla o Erro Tipo I por meio de testes **post-hoc**.
 :::
 
-# [3 – PRESSUPOSTOS DA ANOVA]{.section-header}
+# [3 - PRESSUPOSTOS DA ANOVA]{.section-header}
 
 ## Condições Necessárias {.smaller-text}
 
@@ -168,13 +160,13 @@ A variável medida deve estar em nível intervalar (peso, concentração, resist
 :::
 
 ::: {.highlight-box}
-**Tamanho de efeito:** Na ANOVA, usamos **$\omega^2$ (ômega ao quadrado)** ou **$\eta^2_p$ (eta parcial ao quadrado)** – veremos no final da aula.
+**Tamanho de efeito:** Na ANOVA, usamos **$\omega^2$ (ômega ao quadrado)** ou **$\eta^2_p$ (eta parcial ao quadrado)** - veremos no final da aula.
 :::
 
 ::::
 :::
 
-# [4 – LÓGICA DA ANOVA]{.section-header}
+# [4 - LÓGICA DA ANOVA]{.section-header}
 
 ## Variância Entre vs. Dentro dos Grupos {.smaller-text}
 
@@ -204,7 +196,7 @@ Se todos os jogadores são parecidos entre si (entre e dentro), é difícil dist
 ::::
 :::
 
-## Exemplo – Perda de Solo por Cobertura {.smaller-text}
+## Exemplo - Perda de Solo por Cobertura {.smaller-text}
 
 ::: {.info-box}
 **Pergunta de pesquisa:** Existem diferenças nos níveis de perda de solo entre parcelas com diferentes tipos de cobertura vegetal?
@@ -234,19 +226,19 @@ Se todos os jogadores são parecidos entre si (entre e dentro), é difícil dist
 ::::
 :::
 
-# [5 – CÁLCULO PASSO A PASSO]{.section-header}
+# [5 - CÁLCULO PASSO A PASSO]{.section-header}
 
-## Soma dos Quadrados – Visão Geral {.smaller-text}
+## Soma dos Quadrados - Visão Geral {.smaller-text}
 
 ::: {.info-box}
-**Objetivo:** Decompor a variação total dos dados em duas partes – a parte explicada pelos grupos (*between*) e a parte não explicada (*within/resíduo*).
+**Objetivo:** Decompor a variação total dos dados em duas partes - a parte explicada pelos grupos (*between*) e a parte não explicada (*within/resíduo*).
 :::
 
 ::: {.columns}
 :::: {.column width="50%"}
 
 ::: {.box}
-**Passo 1 – Soma dos Quadrados Total ($SQ_T$)**
+**Passo 1 - Soma dos Quadrados Total ($SQ_T$)**
 
 $$SQ_T = \sum_{i=1}^{N} (x_i - \bar{x}_{\text{geral}})^2$$
 
@@ -257,7 +249,7 @@ Mede a **variação total** de todos os dados em relação à média geral.
 :::: {.column width="50%"}
 
 ::: {.box}
-**Passo 2 – Soma dos Quadrados do Modelo ($SQ_M$)**
+**Passo 2 - Soma dos Quadrados do Modelo ($SQ_M$)**
 
 $$SQ_M = \sum_{k=1}^{K} n_k (\bar{x}_k - \bar{x}_{\text{geral}})^2$$
 
@@ -268,15 +260,15 @@ Mede o quanto as **médias de cada grupo** se afastam da média geral.
 :::
 
 ::: {.highlight-box}
-**Passo 3 – Soma dos Quadrados dos Resíduos:** $SQ_R = SQ_T - SQ_M$
+**Passo 3 - Soma dos Quadrados dos Resíduos:** $SQ_R = SQ_T - SQ_M$
 
-É a variação **não explicada** pelo modelo – o que sobra "dentro" dos grupos.
+É a variação **não explicada** pelo modelo - o que sobra "dentro" dos grupos.
 :::
 
 ## Exemplo Numérico {.smaller-text}
 
 ::: {.info-box}
-**Dados fictícios** – 3 grupos, 3 observações cada (média geral = 4,78):
+**Dados fictícios** - 3 grupos, 3 observações cada (média geral = 4,78):
 :::
 
 | Sujeito | Grupo | Escore | Diferença p/ média | $(x_i - \bar{x})^2$ |
@@ -290,7 +282,7 @@ Mede o quanto as **médias de cada grupo** se afastam da média geral.
 | 7 | 3 | 5 | +0,22 | 0,049 |
 | 8 | 3 | 6 | +1,22 | 1,494 |
 | 9 | 3 | 9 | +4,22 | 17,827 |
-| **Soma** | – | **43** | **0** | **35,56** |
+| **Soma** | - | **43** | **0** | **35,56** |
 
 ::: {.box}
 **SQ~T~ = 35,56** &emsp;|&emsp; **SQ~M~ = 20,26** &emsp;|&emsp; **SQ~R~ = 15,30**
@@ -299,7 +291,7 @@ Mede o quanto as **médias de cada grupo** se afastam da média geral.
 ## Soma dos Quadrados do Modelo {.smaller-text}
 
 ::: {.info-box}
-**Cálculo detalhado do $SQ_M$** – quanto cada grupo contribui para a variação:
+**Cálculo detalhado do $SQ_M$** - quanto cada grupo contribui para a variação:
 :::
 
 ::: {.columns}
@@ -322,13 +314,13 @@ Mede o quanto as **médias de cada grupo** se afastam da média geral.
 - Explicada (entre grupos): $SQ_M = 20{,}26$
 - Não explicada (resíduo): $SQ_R = 15{,}30$
 
-A variação entre grupos é **maior** que a residual – bom sinal!
+A variação entre grupos é **maior** que a residual - bom sinal!
 :::
 
 ::::
 :::
 
-# [6 – ESTATÍSTICA F E DECISÃO]{.section-header}
+# [6 - ESTATÍSTICA F E DECISÃO]{.section-header}
 
 ## Média dos Quadrados e Estatística F {.smaller-text}
 
@@ -408,7 +400,7 @@ $F_{\text{calc}} = 3{,}97 < F_{\text{crit}} = 5{,}14$
 ::::
 :::
 
-# [7 – TESTES POST-HOC]{.section-header}
+# [7 - TESTES POST-HOC]{.section-header}
 
 ## O que são e Quando Usar? {.smaller-text}
 
@@ -446,7 +438,7 @@ A ANOVA é um teste **generalista** (omnibus). A estatística F diz **se** exist
 ::::
 :::
 
-# [8 – TAMANHO DE EFEITO]{.section-header}
+# [8 - TAMANHO DE EFEITO]{.section-header}
 
 ## Ômega ao Quadrado ($\omega^2$) {.smaller-text}
 
@@ -462,8 +454,8 @@ O $\omega^2$ (ômega ao quadrado) quantifica a **proporção da variância total
 | Magnitude | $\omega^2$ (Field, 2013) | $\omega^2$ (Cohen, 1992) |
 |:---:|:---:|:---:|
 | Muito pequena | < 0,01 | < 0,02 |
-| Pequena | 0,01 – 0,06 | 0,02 – 0,13 |
-| Média | 0,06 – 0,14 | 0,13 – 0,26 |
+| Pequena | 0,01 - 0,06 | 0,02 - 0,13 |
+| Média | 0,06 - 0,14 | 0,13 - 0,26 |
 | Grande | ≥ 0,14 | ≥ 0,26 |
 
 ::::
@@ -488,11 +480,11 @@ O $\omega^2$ (ômega ao quadrado) quantifica a **proporção da variância total
 :::: {.column width="50%"}
 
 ::: {.box}
-[1]{.circle} ***d* de Cohen** – Tamanhos e DPs semelhantes entre grupos
+[1]{.circle} ***d* de Cohen** - Tamanhos e DPs semelhantes entre grupos
 
-[2]{.circle} **Delta de Glass** – DPs muito diferentes entre grupos
+[2]{.circle} **Delta de Glass** - DPs muito diferentes entre grupos
 
-[3]{.circle} ***g* de Hedges** – Tamanhos amostrais desiguais
+[3]{.circle} ***g* de Hedges** - Tamanhos amostrais desiguais
 :::
 
 ::::
@@ -508,7 +500,7 @@ O $\omega^2$ (ômega ao quadrado) quantifica a **proporção da variância total
 ::::
 :::
 
-## Resumo – ANOVA Uma Via {.smaller-text}
+## Resumo - ANOVA Uma Via {.smaller-text}
 
 ::: {.info-box}
 **Guia rápido**

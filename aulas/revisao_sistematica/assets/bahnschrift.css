@@ -1,0 +1,46 @@
+/* Fonte Bahnschrift - disciplina Revisão Sistemática
+   Sobrescrita local aplicada depois de uefs.scss e custom.css.
+   Bahnschrift é fonte variável do Windows; os fallbacks cobrem outros sistemas. */
+
+.reveal,
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6,
+.reveal p,
+.reveal li,
+.reveal td,
+.reveal th,
+.reveal blockquote,
+.reveal .box,
+.reveal .info-box,
+.reveal .highlight-box,
+.reveal table,
+.reveal figure,
+.reveal figcaption {
+  font-family: 'Bahnschrift', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* Capa */
+#title-slide,
+#title-slide .title,
+#title-slide .subtitle,
+#title-slide .author,
+#title-slide .institute,
+#title-slide .date,
+.reveal .slides section.title-slide .author,
+.reveal .slides section.title-slide .institute,
+.reveal .slides section.title-slide .date,
+.reveal .slides section.title-slide p,
+.reveal section.title-slide .quarto-title-authors,
+.reveal section.title-slide .quarto-title-author,
+.reveal section.title-slide .quarto-title-author-name,
+.reveal section.title-slide .quarto-title-affiliation,
+.reveal section.title-slide .quarto-title-meta-contents,
+.title-slide .author,
+.title-slide .institute,
+.title-slide .date {
+  font-family: 'Bahnschrift', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
+}

@@ -1,21 +1,13 @@
 ---
 title: "Taxonomia de Bloom"
-subtitle: "Aula 02 — Níveis Cognitivos e Formulação de Objetivos de Pesquisa<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 02"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 02"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 02"
 execute:
   echo: false
 ---
@@ -44,7 +36,7 @@ execute:
 ::: {.columns}
 
 ::: {.column width="60%"}
-- **Benjamin S. Bloom** (1913–1999) — Universidade de Chicago
+- **Benjamin S. Bloom** (1913-1999) - Universidade de Chicago
 - Publicou *Taxonomy of Educational Objectives* (1956)
 - Objetivo: criar uma **linguagem comum** para classificar objetivos de aprendizagem
 
@@ -67,7 +59,7 @@ A taxonomia organiza processos cognitivos do **mais simples** (lembrar) ao **mai
 ## Por que estudar Bloom em Estatística? {.smaller-text}
 
 ::: {.highlight-box}
-**Problema comum em pós-graduação:** Alunos formulam objetivos vagos como *"estudar a erosão"* ou *"analisar dados ambientais"* — sem especificar o **nível cognitivo** esperado.
+**Problema comum em pós-graduação:** Alunos formulam objetivos vagos como *"estudar a erosão"* ou *"analisar dados ambientais"* - sem especificar o **nível cognitivo** esperado.
 :::
 
 A Taxonomia de Bloom permite:
@@ -92,7 +84,7 @@ A Taxonomia de Bloom permite:
 | 6 | Avaliação | **Criar** |
 
 ::: {.info-box}
-Na versão revisada, **Criar** (antigo Síntese) é o nível mais alto — acima de Avaliar. Isso enfatiza a **geração de conhecimento novo** como objetivo máximo.
+Na versão revisada, **Criar** (antigo Síntese) é o nível mais alto - acima de Avaliar. Isso enfatiza a **geração de conhecimento novo** como objetivo máximo.
 :::
 
 
@@ -120,7 +112,7 @@ Na versão revisada, **Criar** (antigo Síntese) é o nível mais alto — acima
 :::
 
 ::: {.info-box}
-Hierarquia cumulativa: cada nível superior pressupõe o domínio dos anteriores. As habilidades de **ordem superior** (HOTS, níveis 4–6) sustentam-se sobre as de **ordem inferior** (LOTS, níveis 1–3).
+Hierarquia cumulativa: cada nível superior pressupõe o domínio dos anteriores. As habilidades de **ordem superior** (HOTS, níveis 4-6) sustentam-se sobre as de **ordem inferior** (LOTS, níveis 1-3).
 :::
 
 
@@ -257,11 +249,11 @@ Note como cada nível exige **mais variáveis**, **mais técnicas** e **raciocí
 
 - "Estudar" não é mensurável. Qual nível cognitivo?
 
-**Bom exemplo (Nível 4 — Analisar):**
+**Bom exemplo (Nível 4 - Analisar):**
 > "*Analisar a influência do tipo de cobertura vegetal (caatinga) sobre a taxa de perda de solo na microbacia do Rio Jacuípe, utilizando ANOVA fatorial e regressão múltipla*"
 
 
-## Alinhamento Objetivo–Método–Análise {.smaller-text .scrollable}
+## Alinhamento Objetivo-Método-Análise {.smaller-text .scrollable}
 
 | Componente | Nível 3 (Aplicar) | Nível 5 (Avaliar) |
 |:---|:---|:---|
@@ -276,7 +268,7 @@ Note como cada nível exige **mais variáveis**, **mais técnicas** e **raciocí
 | Erro | Problema | Correção |
 |:---|:---|:---|
 | "Verificar se há erosão" | Nível 1 (descritivo) | "Analisar os determinantes da erosão" (Nível 4) |
-| "Entender a relação solo–planta" | Não mensurável | "Investigar a correlação entre MOS e biomassa" (Nível 4) |
+| "Entender a relação solo-planta" | Não mensurável | "Investigar a correlação entre MOS e biomassa" (Nível 4) |
 | "Fazer análise estatística" | Sem especificação | "Aplicar ANOVA fatorial para comparar tratamentos" (Nível 3) |
 | Objetivo ≠ Análise | Desalinhamento | Usar mapeamento Bloom → Técnica |
 
@@ -306,7 +298,7 @@ A **tabela bidimensional** (processo cognitivo × tipo de conhecimento) permite 
 ::: {.box}
 - Bloom, B. S. et al. (1956). *Taxonomy of Educational Objectives: The Classification of Educational Goals*. Handbook I: Cognitive Domain. David McKay.
 - Anderson, L. W., & Krathwohl, D. R. (2001). *A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom's Taxonomy*. Longman.
-- Ferraz, A. P. C. M., & Belhot, R. V. (2010). Taxonomia de Bloom: revisão teórica e apresentação das adequações do instrumento para definição de objetivos instrucionais. *Gestão & Produção*, 17(2), 421–431.
+- Ferraz, A. P. C. M., & Belhot, R. V. (2010). Taxonomia de Bloom: revisão teórica e apresentação das adequações do instrumento para definição de objetivos instrucionais. *Gestão & Produção*, 17(2), 421-431.
 :::
 
 

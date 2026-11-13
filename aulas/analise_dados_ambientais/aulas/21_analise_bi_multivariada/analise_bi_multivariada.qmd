@@ -1,21 +1,13 @@
 ---
 title: "Análise Bi e Multivariada"
-subtitle: "Aula 21 — Técnicas Multivariadas Completas<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 21"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 21"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 21"
 execute:
   echo: false
 ---
@@ -95,7 +87,7 @@ Média = 126,35
 
 
 | Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 | 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
 
 
@@ -115,7 +107,7 @@ Escores variando de 34 a 170
 
 
 | Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 | 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
 
 
@@ -133,7 +125,7 @@ Escores variando de 34 a 170
 
 
 | Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 | 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
 
 
@@ -151,7 +143,7 @@ Escores variando de 34 a 170
 
 
 | Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 | 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
 
 
@@ -186,7 +178,7 @@ Escores variando de 94 a 162
 
 
 | Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 | 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
 
 
@@ -212,7 +204,7 @@ MEDIDAS DE DISPERSÃO
 
 
 | Escores das repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 | 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
 | Média = 126,35 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
@@ -237,7 +229,7 @@ Escores variando de 94 a 162
 
 
 | Escores das repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 | 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
 | Média = 126,35 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | -32,35 | -22,35 | -19,35 | -17,35 | -13,35 | -9,35 | -9,35 | -5,35 | 0,65 | 1,65 | 3,65 | 5,65 | 10,65 | 16,65 | 26,65 | 27,65 | 35,65 |
@@ -267,7 +259,7 @@ MEDIDAS DE DISPERSÃO
 
 
 | Diferença das médias |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 | -32,35 | -22,35 | -19,35 | -17,35 | -13,35 | -9,35 | -9,35 | -5,35 | 0,65 | 1,65 | 3,65 | 5,65 | 10,65 | 16,65 | 26,65 | 27,65 | 35,65 |
 | 1046,5 | 499,5 | 374,4 | 301,0 | 178,2 | 87,4 | 87,4 | 28,6 | 0,4 | 2,7 | 13,3 | 31,9 | 113,4 | 277,2 | 710,2 | 764,5 | 1270,9 |
 
@@ -627,7 +619,7 @@ Rejeito Aceito
 
 
 | Erro Tipo I | OK |
-| --- | --- |
+| - | - |
 | OK | Erro Tipo II |
 
 
@@ -857,7 +849,7 @@ Média = 613 = 76,62
 
 
 | 55 | 64 | 72 | 80 | 70 | 100 | 98 | 74 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - | - |
 
 
 ---
@@ -878,7 +870,7 @@ Média
 
 
 | 55 | 64 | 70 | 72 | 74 | 80 | 98 | 100 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - | - |
 
 
 ---
@@ -1148,7 +1140,7 @@ Cohen (1988, 1992)
 
 
 | Magnitude | Valor absoluto |
-| --- | --- |
+| - | - |
 | Nula | 0,00 |
 | Fraca | |0,10 - 0,30| |
 | Moderada | |0,30 - 0,50| |
@@ -1163,7 +1155,7 @@ COEFICIENTE DE CORRELAÇÃO
 
 
 | Magnitude | Valor absoluto |
-| --- | --- |
+| - | - |
 | Nula | 0,00 |
 | Fraca | |0,10 - 0,39| |
 | Moderada | |0,40 - 0,70| |
@@ -1219,7 +1211,7 @@ TAMANHO DE EFEITO (COEFICIENTE DE DETERMINAÇÃO)
 
 | Coeficiente de Correlação
 (r) | Variância compartilhada (tamanho de efeito, r2) |
-| --- | --- |
+| - | - |
 | r = 0,10 | r2 = 0,01 = 1% |
 | r = 0,20 | r2 = 0,04 = 4% |
 | r = 0,30 | r2 = 0,09 = 9% |
@@ -1262,7 +1254,7 @@ CORRELAÇÃO PARAMÉTRICA VS NÃO-PARAMÉTRICA
 
 | Correlação de Pearson | Correlação de Spearman
 Kendall (Tau) |
-| --- | --- |
+| - | - |
 | Paramétrica | Não-paramétrica |
 | Quando usar |  |
 | Quando os dados têm distribuição normal | Quando os dados não tem distribuição normal |
@@ -1291,7 +1283,7 @@ Nota: * = *p** *< 0,05; ** = *p** *< 0,01; n.s. = relação não significativa
 
 
 |  | Tempos | Resistência tração | Deformação tração | Rigidez secante |
-| --- | --- | --- | --- | --- |
+| - | - | - | - | - |
 | Tempos | 1 |  |  |  |
 | Resistência tração | -0,596** | 1 |  |  |
 | Deformação tração | 0,282** | -0,135* | 1 |  |
@@ -1323,7 +1315,7 @@ Forma de meia verdade!
 
 
 |  | Tempos | Resistência tração | Deformação tração | Rigidez secante |
-| --- | --- | --- | --- | --- |
+| - | - | - | - | - |
 | Tempos | 1 |  |  |  |
 | Resistência tração | -0,596** | 1 |  |  |
 | Deformação tração | 0,282** | -0,135* | 1 |  |
@@ -1344,7 +1336,7 @@ http://psychometrica.de/correlation.htm
 
 
 |  | Tempos | Resistência tração | Deformação tração | Rigidez secante |
-| --- | --- | --- | --- | --- |
+| - | - | - | - | - |
 | Tempos | 1 |  |  |  |
 | Resistência tração | -0,596** | 1 |  |  |
 | Deformação tração | 0,282** | -0,135* | 1 |  |
@@ -1367,7 +1359,7 @@ Nota: ***p** *< 0,01.
 
 
 |  | Tempos | Resistência tração | Deformação tração | Rigidez secante |
-| --- | --- | --- | --- | --- |
+| - | - | - | - | - |
 | Tempos | 1 |  |  |  |
 | Resistência tração | -0,596** | 1 |  |  |
 | Deformação tração | 0,282** | -0,135* | 1 |  |
@@ -1663,7 +1655,7 @@ MÚLTIPLA
 
 
 | Métodos de Entrada | Característica | Vantagens | Desvantagens |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | Enter (Inserir) | Todas as variáveis são
 inseridas de uma vez | Simplicidade | Multicolinearidade
 Não apresenta o R2
@@ -1678,7 +1670,7 @@ MÚLTIPLA
 
 
 | Métodos de Entrada | Característica | Vantagens | Desvantagens |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | Enter (Inserir) | Todas as variáveis são
 inseridas de uma vez | Simplicidade | Multicolinearidade
 Não apresenta o R2
@@ -1697,7 +1689,7 @@ MÚLTIPLA
 
 
 | Métodos de Entrada | Característica | Vantagens | Desvantagens |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | Enter (Inserir) | Todas as variáveis são
 inseridas de uma vez | Simplicidade | Multicolinearidade
 Não apresenta o R2
@@ -1720,7 +1712,7 @@ MÚLTIPLA
 
 
 | Métodos de Entrada | Característica | Vantagens | Desvantagens |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | Backward
 (Retroceder) | Variáveis excluídas
 passo a-passo | Elimina possíveis erros de inserção dos métodos stepwise e forward | - |
@@ -1734,7 +1726,7 @@ MÚLTIPLA
 
 
 | Métodos de Entrada | Característica | Vantagens | Desvantagens |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | Backward
 (Retroceder) | Variáveis excluídas
 passo a-passo | Elimina possíveis erros de inserção dos métodos stepwise e forward | - |
@@ -2047,7 +2039,7 @@ TESTE T ESTUDENT
 
 
 |  |
-| --- |
+| - |
 | Distribuição normal na população. |
 | A medida deve estar em nível intervalar (Aceita-se contínua) |
 | Independência das respostas
@@ -2124,7 +2116,7 @@ Um professor desconfia que o nível de satisfação dos seus alunos durante sua 
 
 
 | 7 | 9 | 9,5 | 8,9 | 10 | 9,8 | 7,9 | 8,9 | 9,1 | 9,3 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - | - | - | - |
 | 9,4 | 7,9 | 8,7 | 8,8 | 8,5 | 9,0 | 9,1 | 7,6 | 7,5 | 8 |
 
 
@@ -2152,7 +2144,7 @@ TESTE T ESTUDENTAMOSTRA ÚNICA
 
 
 | 7 | 9 | 9,5 | 8,9 | 10 | 9,8 | 7,9 | 8,9 | 9,1 | 9,3 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - | - | - | - |
 | 9,4 | 7,9 | 8,7 | 8,8 | 8,5 | 9,0 | 9,1 | 7,6 | 7,5 | 8 |
 
 
@@ -2224,7 +2216,7 @@ AMOSTRAS INDEPENDENTES
 
 
 | Pergunta Inicial | Variável métrica/ordinal | Grupos |
-| --- | --- | --- |
+| - | - | - |
 | Existem diferenças nos níveis de | níveis de intensificação do pastejo | bovinos de corte sob sistema intermitente? |
 | Existem diferenças na | capacidade de contenção de taludes | em repetições de geogrid com e sem aplicação de resina? |
 | Existem diferenças no | número de quedas de | Taludes com uso de pinos de erosão em latossolos? |
@@ -2251,7 +2243,7 @@ AMOSTRAS INDEPENDENTES
 
 
 | Coberto | Não coberto |
-| --- | --- |
+| - | - |
 | 12 | 10 |
 | 9 | 8 |
 | 6 | 8 |
@@ -2281,7 +2273,7 @@ Média = 9,57
 
 
 | Coberto | Não coberto |
-| --- | --- |
+| - | - |
 | 12 | 10 |
 | 9 | 8 |
 | 6 | 8 |
@@ -2420,7 +2412,7 @@ ANOVAS
 
 
 | Nome | Característica | Exemplo |
-| --- | --- | --- |
+| - | - | - |
 | ANOVA | Uma variável independente (categórica) e uma variável dependente | [Geotêxtil] x Efeito splash |
 | ANOVA FATORIAL | Duas (ou +) variáveis independentes e uma variável dependente | [Geotêxtil x Cobertura do solo (Ter/Não ter)] x Efeito splash |
 | ANCOVA | Uma variável independente, uma variável dependente (e uma ou mais variáveis de controle) | [Geotêxtil] x splash (Controlado por ter ou não ter cobertura) |
@@ -2434,7 +2426,7 @@ ANOVAS
 
 
 | Nome | Característica | Exemplo |
-| --- | --- | --- |
+| - | - | - |
 | ANOVA-MR | Uma variável dependente mensurada 3 (ou +) vezes | Efeito splash (pré-teste, pós-teste e follow-up) |
 | ANOVA FATORIAL-
 MR | Duas (ou +) variáveis de grupo mensuradas 3 (ou +) vezes | Splash  e Crescimento da vegetação (pré-
@@ -2528,7 +2520,7 @@ Uma variável métrica/ordinal (Satisfação com a vida)
 
 
 | Cobertura de solo | Variável métrica/ordinal |
-| --- | --- |
+| - | - |
 | Sem cobertura | Perda de solos |
 | Cobertura parcial |  |
 | Cobertura densa |  |
@@ -2574,7 +2566,7 @@ Soma dos quadrados (*Sum** **of** **Squares*)
 
 
 | Sujeito | Grupo | Escore | Média | Diferença |
-| --- | --- | --- | --- | --- |
+| - | - | - | - | - |
 | 1 | 1 | 5 | 4,77 | 0,222 |
 | 2 | 1 | 3 |  | -1,778 |
 | 3 | 1 | 6 |  | 1,222 |
@@ -2597,7 +2589,7 @@ Soma dos quadrados totais (*Sum** **of** **Squares** **SS**t*)
 
 
 | Sujeito7 | Grupo | Escore | Média | Diferença | Diferença2 |
-| --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - |
 | 1 | 1 | 5 | 4,777 | 0,222 | 0,049 |
 | 2 | 1 | 3 |  | -1,778 | 3,160 |
 | 3 | 1 | 6 |  | 1,222 | 1,494 |
@@ -2631,7 +2623,7 @@ SQM = 20,26
 
 | Sujeito7 | Grupo | Escore | Média | Média do
 Grupo | SQM |
-| --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - |
 | 1 | 1 | 5 | 4,777 | 4,67 | 0,03 |
 | 2 | 1 | 3 |  |  |  |
 | 3 | 1 | 6 |  |  |  |
@@ -2762,7 +2754,7 @@ FATORES (VI)
 
 | Variáveis de Grupo Fatores
 VIs |  | Variável métrica/ordinal |
-| --- | --- | --- |
+| - | - | - |
 | Tratamentos | Sem Resina | Resistência a tração [...] |
 |  | 1x Resina |  |
 |  | 2x Resina |  |
@@ -2879,7 +2871,7 @@ Mesmos repetições (Condições diferentes)
 
 
 | Taboa | Sem resina | 1x resina | 2x resina |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | Amostra 1 | 7 | 6 | 8 |
 | Amostra 2 | 4 | 9 | 9 |
 | Amostra 3 | 6 | 5 | 6 |
@@ -3160,7 +3152,7 @@ DE DIFERENÇAS DE GRUPOS
 
 
 | Paramétricos | Não-paramétricos |
-| --- | --- |
+| - | - |
 | Teste t para amostras independentes | Mann-Whitney |
 | Análise de Variância | Kruskal-Wallis |
 | Teste t para amostras dependentes | Wilcoxon Signed Rank |
@@ -3201,7 +3193,7 @@ Comparação de 2 grupos independentes
   - Substitui o teste *t** *de Student
 
 | Sujeito | Tratamento | Escore |
-| --- | --- | --- |
+| - | - | - |
 | 1 | A | 4 |
 | 2 | B | 6 |
 | 3 | A | 5 |
@@ -3230,7 +3222,7 @@ DOIS GRUPOS INDEPENDENTES
 
 
 | Tratamento | Escore | Posto | Posto Real |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | A | 4 | 1 | 1 |
 | A | 5 | 2 | 2,5 |
 | A | 5 | 3 | 2,5 |
@@ -3341,7 +3333,7 @@ DOIS GRUPOS INDEPENDENTES
 
 
 | Tratamento | Escore | Posto | Posto Real |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | A | 4 | 1 | 1 |
 | C | 5 | 2 | 2,5 |
 | B | 5 | 3 | 2,5 |
@@ -3433,7 +3425,7 @@ DOIS GRUPOS DEPENDENTES
 
 
 | Sujeito | Pré | Pós | Diff | Sinal |
-| --- | --- | --- | --- | --- |
+| - | - | - | - | - |
 | 1 | 5 | 7 | 2 | + |
 | 2 | 6 | 6 | 0 | Tie |
 | 3 | 2 | 3 | 1 | + |
@@ -3465,7 +3457,7 @@ ANOVA de Friedman: Substitui a ANOVA de Medidas Repetidas
 
 
 | Sujeito | Pré | Pós | Follow-up | Rank_Pré | Rank_Pós | Rank_Follow |
-| --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - |
 | 1 | 7 | 6 | 8 | 2 | 1 | 3 |
 | 2 | 5 | 6 | 8 | 1 | 2 | 3 |
 | 3 | 2 | 3 | 5 | 1 | 2 | 3 |

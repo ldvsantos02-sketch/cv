@@ -1,5 +1,5 @@
 ---
-title: "Plano de Disciplina — Análise de Dados Ambientais"
+title: "Plano de Disciplina - Análise de Dados Ambientais"
 description: "Plano completo da disciplina de Análise de Dados Ambientais."
 ---
 
@@ -31,7 +31,7 @@ Elaborar relatórios e comunicações científicas reprodutíveis, contribuindo 
 
 **HABILIDADES E COMPETÊNCIAS:** Capacitar os alunos para a utilização de regressões avançadas e análise de sobrevida em contextos ambientais, com ênfase em modelagem de eventos e longevidade de espécies. Facilitar o desenvolvimento de competências para a criação e análise de bancos de dados ambientais, incluindo o uso de dados secundários, temporais e correlacionais. Promover a habilidade de aplicar análise fatorial exploratória e confirmatória, além de modelagem por equações estruturais, utilizando ferramentas como JASP e Mplus, para entender e explicar relações complexas entre variáveis ambientais. Preparar os alunos para a comunicação eficaz e publicação de resultados de pesquisas ambientais, contribuindo para a tomada de decisões informadas em conservação, gestão ambiental e sustentabilidade.
 
-**METODOLOGIA:** A disciplina será desenvolvida ao longo de 15 encontros semanais, com 04 horas/aula por encontro (segundas-feiras, 08h–12h), totalizando 60 horas. As atividades combinarão exposição dialogada dos fundamentos teóricos com sessões práticas de análise computacional, utilizando os softwares R, JASP, FACTOR e Mplus.
+**METODOLOGIA:** A disciplina será desenvolvida ao longo de 15 encontros semanais, com 04 horas/aula por encontro (segundas-feiras, 08h-12h), totalizando 60 horas. As atividades combinarão exposição dialogada dos fundamentos teóricos com sessões práticas de análise computacional, utilizando os softwares R, JASP, FACTOR e Mplus.
 
 As aulas teóricas abordarão os conceitos estatísticos, pressupostos e interpretações, apoiadas em exemplos de estudos ambientais reais. As aulas práticas serão conduzidas em laboratório de informática, com exercícios orientados de análise de dados, interpretação de saídas e elaboração de relatórios reprodutíveis.
 
@@ -39,13 +39,13 @@ Serão utilizados datasets ambientais reais (biodiversidade, qualidade do solo, 
 
 **FORMAS DE AVALIAÇÃO:** O processo avaliativo contemplará instrumentos teóricos e práticos:
 
-* **1ª Avaliação (Teórica — Individual):** prova presencial com questões objetivas e discursivas, abrangendo estatística descritiva, inferencial, correlação, testes de hipóteses e ANOVA.
+* **1ª Avaliação (Teórica - Individual):** prova presencial com questões objetivas e discursivas, abrangendo estatística descritiva, inferencial, correlação, testes de hipóteses e ANOVA.
 
-* **2ª Avaliação (Prática — Individual):** análise computacional de dataset ambiental com entrega de relatório reprodutível, contemplando regressão, GLM e interpretação de resultados.
+* **2ª Avaliação (Prática - Individual):** análise computacional de dataset ambiental com entrega de relatório reprodutível, contemplando regressão, GLM e interpretação de resultados.
 
-* **3ª Avaliação (Teórica — Individual):** prova presencial abrangendo modelos avançados (GEE, redes ecológicas, regressões avançadas, análise de sobrevida, AFE/AFC e MEE).
+* **3ª Avaliação (Teórica - Individual):** prova presencial abrangendo modelos avançados (GEE, redes ecológicas, regressões avançadas, análise de sobrevida, AFE/AFC e MEE).
 
-* **4ª Avaliação (Projeto Final — Individual ou em grupo):** análise integrada de dataset ambiental com aplicação de múltiplas técnicas, relatório reprodutível e apresentação dos resultados.
+* **4ª Avaliação (Projeto Final - Individual ou em grupo):** análise integrada de dataset ambiental com aplicação de múltiplas técnicas, relatório reprodutível e apresentação dos resultados.
 
 Cada avaliação terá valor máximo de 10,0 pontos e a média final será calculada pela média aritmética simples.
 
@@ -75,9 +75,9 @@ O componente curricular será desenvolvido em 15 encontros de 4 horas cada, tota
 
    * Técnicas avançadas de bootstrap e aplicações em dados ambientais.
 
-4. **Correlação e Testes de Hipóteses — Teste t (4 h)**
+4. **Correlação e Testes de Hipóteses - Teste t (4 h)**
 
-   * Pearson, Spearman, ponto-bisserial, correlação parcial; distinção correlação–causalidade.
+   * Pearson, Spearman, ponto-bisserial, correlação parcial; distinção correlação-causalidade.
 
    * Formulação de H₀/H₁; erro tipo I/II; poder do teste; testes t para 1 e 2 amostras; pareados.
 
@@ -93,7 +93,7 @@ O componente curricular será desenvolvido em 15 encontros de 4 horas cada, tota
 
    * ANOVA de medidas repetidas: esfericidade, correções e descrição dos resultados.
 
-7. **ANOVA — Visão Completa e MANOVA (4 h)**
+7. **ANOVA - Visão Completa e MANOVA (4 h)**
 
    * ANOVA fatorial de medidas repetidas e modelos mistos.
 
@@ -149,35 +149,35 @@ O componente curricular será desenvolvido em 15 encontros de 4 horas cada, tota
 
 **CONTEÚDO PROGRAMÁTICO**
 
-**Quadro 1 — Conteúdo programático por aula de Análise de Dados Ambientais.**
+**Quadro 1 - Conteúdo programático por aula de Análise de Dados Ambientais.**
 
 | SEMANA | AULAS | ASSUNTOS PREVISTOS |
 | :----: | :---: | :----------------- |
-| 1ª | 01–02 | Introdução e Etimologia Estatística; Taxonomia de Bloom. Paradigmas frequentista e bayesiano; níveis cognitivos aplicados à análise de dados. |
-| 2ª | 03–04 | Estatística Descritiva e Inferencial. Tendência central, dispersão, escore Z; normalidade (Shapiro-Wilk, K-S), Q-Q plots, transformações. |
-| 3ª | 05–06 | Bootstrapping e Bootstrap Avançado. Intervalos de confiança via reamostragem; técnicas avançadas e aplicações ambientais. |
-| 4ª | 07–08 | Correlação e Teste t. Pearson, Spearman, ponto-bisserial, parcial; H₀/H₁, erro tipo I/II, testes t para 1 e 2 amostras. |
-| 5ª | 09–10 | ANOVA de Uma Via e ANOVA Fatorial. Particionamento da variância; comparações múltiplas; efeitos principais e interações. |
-| 6ª | 11–12 | ANCOVA e ANOVA de Medidas Repetidas. Covariáveis; esfericidade; correções e interpretação dos resultados. |
-| 7ª | 13 | ANOVA — Visão Completa e MANOVA. Fatorial de medidas repetidas; testes multivariados e aplicações em conservação. |
-| 8ª | 14–15 | Regressão e Qui-Quadrado. Regressão simples/múltipla; diagnóstico de resíduos; qui-quadrado 2×2, n×k, McNemar, Q de Cochran. |
-| 9ª | 16–17 | Associação e Dependência e Testes Não Paramétricos. Odds ratio, log-linear, correspondência; Mann-Whitney, Kruskal-Wallis, Friedman. |
-| 10ª | 18–19 | Escolha do Teste Estatístico e GLM/GEE. Fluxogramas de decisão; família exponencial; GEE para dados longitudinais e repetidos. |
-| 11ª | 20–21 | Detecção de Anomalias e Análise Bi e Multivariada. Séries temporais, outliers; PCA, redes ecológicas, centralidade, modularidade. |
-| 12ª | 22–23 | Análise Fatorial Exploratória e Construção de Instrumentos. Hull, número de fatores, rotação; elaboração de escalas e itens. |
-| 13ª | 24–25 | Adaptação e Validade de Instrumentos. Tradução e adaptação transcultural; validade de conteúdo, construto e critério. |
-| 14ª | 26–27 | Evidências de Validade e Introdução à TRI. AFC, invariância, MEE; Teoria de Resposta ao Item: conceitos e modelos. |
-| 15ª | 28–29 | Modelo de Rasch e Metanálise. Ajuste de itens, mapa de Wright; efeito combinado, forest plot, heterogeneidade, sobrevida. |
+| 1ª | 01-02 | Introdução e Etimologia Estatística; Taxonomia de Bloom. Paradigmas frequentista e bayesiano; níveis cognitivos aplicados à análise de dados. |
+| 2ª | 03-04 | Estatística Descritiva e Inferencial. Tendência central, dispersão, escore Z; normalidade (Shapiro-Wilk, K-S), Q-Q plots, transformações. |
+| 3ª | 05-06 | Bootstrapping e Bootstrap Avançado. Intervalos de confiança via reamostragem; técnicas avançadas e aplicações ambientais. |
+| 4ª | 07-08 | Correlação e Teste t. Pearson, Spearman, ponto-bisserial, parcial; H₀/H₁, erro tipo I/II, testes t para 1 e 2 amostras. |
+| 5ª | 09-10 | ANOVA de Uma Via e ANOVA Fatorial. Particionamento da variância; comparações múltiplas; efeitos principais e interações. |
+| 6ª | 11-12 | ANCOVA e ANOVA de Medidas Repetidas. Covariáveis; esfericidade; correções e interpretação dos resultados. |
+| 7ª | 13 | ANOVA - Visão Completa e MANOVA. Fatorial de medidas repetidas; testes multivariados e aplicações em conservação. |
+| 8ª | 14-15 | Regressão e Qui-Quadrado. Regressão simples/múltipla; diagnóstico de resíduos; qui-quadrado 2×2, n×k, McNemar, Q de Cochran. |
+| 9ª | 16-17 | Associação e Dependência e Testes Não Paramétricos. Odds ratio, log-linear, correspondência; Mann-Whitney, Kruskal-Wallis, Friedman. |
+| 10ª | 18-19 | Escolha do Teste Estatístico e GLM/GEE. Fluxogramas de decisão; família exponencial; GEE para dados longitudinais e repetidos. |
+| 11ª | 20-21 | Detecção de Anomalias e Análise Bi e Multivariada. Séries temporais, outliers; PCA, redes ecológicas, centralidade, modularidade. |
+| 12ª | 22-23 | Análise Fatorial Exploratória e Construção de Instrumentos. Hull, número de fatores, rotação; elaboração de escalas e itens. |
+| 13ª | 24-25 | Adaptação e Validade de Instrumentos. Tradução e adaptação transcultural; validade de conteúdo, construto e critério. |
+| 14ª | 26-27 | Evidências de Validade e Introdução à TRI. AFC, invariância, MEE; Teoria de Resposta ao Item: conceitos e modelos. |
+| 15ª | 28-29 | Modelo de Rasch e Metanálise. Ajuste de itens, mapa de Wright; efeito combinado, forest plot, heterogeneidade, sobrevida. |
 
 : {.striped .hover}
 
-> **Observação:** Aulas às segundas-feiras, 08h–12h (4h/aula). Período: março a junho.
+> **Observação:** Aulas às segundas-feiras, 08h-12h (4h/aula). Período: março a junho.
 
 **SIGNIFICADO DO COMPONENTE CURRICULAR PARA FORMAÇÃO PROFISSIONAL**
 
 O componente curricular Análise de Dados Ambientais é estruturante na formação de profissionais atuantes em planejamento territorial, gestão ambiental e conservação da biodiversidade. A capacidade de coletar, organizar, analisar e interpretar dados ambientais de forma rigorosa e reprodutível constitui competência essencial para a produção de evidências que subsidiem políticas públicas, licenciamentos, auditorias ambientais e projetos de recuperação de áreas degradadas.
 
-Ao longo da disciplina, o(a) discente desenvolve fluência em técnicas estatísticas avançadas — desde análises descritivas e testes de hipóteses até modelos generalizados, redes ecológicas e modelagem por equações estruturais —, aplicadas a problemas ambientais reais. A ênfase em ferramentas computacionais (R, JASP, Mplus) e em relatórios reprodutíveis prepara o(a) profissional para atuar com rigor metodológico, transparência e alinhamento aos princípios da ciência aberta.
+Ao longo da disciplina, o(a) discente desenvolve fluência em técnicas estatísticas avançadas - desde análises descritivas e testes de hipóteses até modelos generalizados, redes ecológicas e modelagem por equações estruturais -, aplicadas a problemas ambientais reais. A ênfase em ferramentas computacionais (R, JASP, Mplus) e em relatórios reprodutíveis prepara o(a) profissional para atuar com rigor metodológico, transparência e alinhamento aos princípios da ciência aberta.
 
 **REFERÊNCIAS**
 

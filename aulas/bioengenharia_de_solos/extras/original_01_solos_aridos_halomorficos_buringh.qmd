@@ -1,0 +1,423 @@
+---
+title: "Formação dos Solos Tropicais"
+subtitle: "Bioengenharia de Solos"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Bioengenharia de Solos"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Bioengenharia de Solos"
+execute:
+  echo: false
+---
+
+# [Do Clima à Química]{.section-header}
+
+## A Dinâmica dos Solos Tropicais e Subtropicais {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+Uma análise dos **processos pedogenéticos** em ambientes **Áridos** e **Halomórficos**.
+
+Baseado na obra *"Introduction to the Study of Soils in Tropical and Subtropical Regions"* de **Dr. P. Buringh** (2ª Ed., 1970).
+
+**Disciplina:** Bioengenharia de Solos
+
+**Prof. Dr. Luiz Diego Vidal Santos**
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+
+::: {.column width="45%"}
+![Capa da aula - Solos tropicais e subtropicais](img/slide_01.png){fig-align="center" width="100%"}
+:::
+:::
+
+---
+
+# [O Paradigma Tropical]{.section-header}
+
+## Por que a Latitude Importa? {.smaller-text}
+
+A formação do solo (**pedogênese**) nos trópicos difere fundamentalmente das regiões temperadas devido ao **Pedoclima**.
+
+::: {.columns}
+::: {.column width="55%"}
+
+| Fator | Efeito nos Trópicos |
+|-------|---------------------|
+| **Temperatura da Água** | Água de percolação é, em média, **+15 °C** mais quente que na Europa Central |
+| **Ionização** | A ionização da água é **4× maior** |
+| **Solubilidade da Sílica** | A sílica torna-se **8× mais solúvel**, acelerando a decomposição mineral |
+| **Hidrólise** | O poder hidrolítico da solução do solo é **significativamente superior** |
+
+: {.striped .hover}
+:::
+
+::: {.column width="45%"}
+![Pedoclima tropical](img/slide_02.png){fig-align="center" width="100%"}
+:::
+:::
+
+::: {.callout-important}
+No trópico úmido, o intemperismo é **contínuo e severo**. No trópico árido, a escassez de água **interrompe** esses processos, preservando a mineralogia primária.
+:::
+
+---
+
+## Fatores de Formação: O Contexto Ambiental {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+Os cinco fatores clássicos de Jenny (1941) assumem dinâmicas particulares nos trópicos:
+
+- **Clima** - Fator dominante; controla a intensidade do intemperismo
+- **Tempo** - Em regiões áridas, solos do Pleistoceno podem parecer "jovens", pois a pedogênese ocorre apenas durante curtos períodos de umidade
+- **Organismos** - A matéria orgânica varia de toneladas/ha em florestas a quase zero em desertos
+- **Relevo** - Importância crítica do mesorelevo no escoamento superficial (*run-off*) e erosão em *wadis*
+- **Material de Origem** - Condicionante da mineralogia e textura
+
+:::
+
+::: {.column width="45%"}
+![Fatores de formação do solo](img/slide_03.png){fig-align="center" width="100%"}
+:::
+:::
+
+::: {.callout-note}
+Nesta apresentação, focaremos nos extremos onde a água é o fator limitante: **Solos Áridos** e **Solos Halomórficos**.
+:::
+
+---
+
+# [Solos Áridos]{.section-header}
+
+## O Domínio da Aridez e o "Horizonte Morto" {.smaller-text}
+
+Solos de regiões com precipitação **< 300-400 mm**. A evaporação excede drasticamente a precipitação.
+
+::: {.columns}
+::: {.column width="55%"}
+
+**Estrutura do perfil em zona árida:**
+
+| Zona | Característica |
+|------|---------------|
+| **0-30 cm** | Zona de **umedecimento efêmero** - molha e seca rapidamente |
+| **> 30 cm** | **Horizonte Morto** (*Horizon mort de sécheresse*) - permanentemente seco |
+
+: {.striped .hover}
+
+A falta de lixiviação profunda **preserva minerais solúveis** e **carbonatos** próximos à superfície.
+
+:::
+
+::: {.column width="45%"}
+![Horizonte morto em zona árida](img/slide_04.png){fig-align="center" width="100%"}
+:::
+:::
+
+---
+
+## Processos Pedogenéticos: Calcificação e Gipsificação {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+A movimentação limitada de água gera acumulações minerais diagnósticas:
+
+- **Horizonte Cálcico** - Acúmulo de carbonatos ($CaCO_3$)
+- **Horizonte Gípsico** - Acúmulo de gesso ($CaSO_4 \cdot 2H_2O$), que por ser mais solúvel, acumula-se **abaixo** do carbonato de cálcio
+
+**Cimentações irreversíveis:**
+
+| Tipo | Agente Cimentante |
+|------|-------------------|
+| **Petrocalcic Horizon** | Cal (Caliche) |
+| **Duripan** | Sílica (> 50% opala) |
+
+: {.striped .hover}
+
+:::
+
+::: {.column width="45%"}
+![Calcificação e gipsificação](img/slide_05.png){fig-align="center" width="100%"}
+:::
+:::
+
+---
+
+## Morfologia Externa: A Armadura do Solo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+**Pavimento Desértico (Regs)**
+
+A erosão eólica remove os finos, deixando um "tapete" de cascalho protetor.
+
+**Selamento Superficial (*Surface Seals*)**
+
+Crostas finas, densas e quebradiças formadas pelo impacto da chuva.
+
+::: {.callout-warning}
+**Consequência:** Redução da infiltração e aumento de *flash-floods*.
+:::
+:::
+
+::: {.column width="50%"}
+![Pavimento desértico e selamento superficial](img/slide_06.png){fig-align="center" width="100%"}
+:::
+:::
+
+Matéria orgânica é escassa: **0,2-0,5%** (*Ochric epipedon*).
+
+---
+
+## Classificação: A Ordem Aridisols {.smaller-text}
+
+Solos que permanecem **secos mais da metade do ano** e possuem um *Ochric epipedon*. Correlacionados com *Sierozems* e *Red Desert Soils*.
+
+::: {.columns}
+::: {.column width="55%"}
+
+| Subordem | Critério | Grandes Grupos |
+|----------|----------|----------------|
+| **ARGIDS** | Com horizonte Argílico ou Nátrico | Haplargids, Paleargids, Natrargids |
+| **ORTHIDS** | Sem acumulação de argila | Calciorthids, Gypsiorthids, Salorthids |
+
+: {.striped .hover}
+
+:::
+
+::: {.column width="45%"}
+![Classificação dos Aridisols](img/slide_07.png){fig-align="center" width="100%"}
+:::
+:::
+
+---
+
+# [Solos Halomórficos]{.section-header}
+
+## A Ameaça do Sal {.smaller-text}
+
+Solos **intrazonais** dominados por sais solúveis ou sódio trocável.
+
+::: {.columns}
+::: {.column width="55%"}
+
+**Origens do Sal:**
+
+- Rochas sedimentares
+- Água de irrigação
+- Lençol freático ascendente
+- Intrusão marinha
+
+::: {.callout-important}
+**Impacto Fisiológico:** O sal aumenta a **pressão osmótica**, impedindo a planta de absorver água - uma **"Seca Fisiológica"**, mesmo em solo úmido.
+:::
+:::
+
+::: {.column width="45%"}
+![Origens da salinização](img/slide_08.png){fig-align="center" width="100%"}
+:::
+:::
+
+---
+
+## A Química do Problema: Salino vs. Alcalino (Sódico) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Solos Salinos (Solonchak)
+
+- **Química:** Excesso de sais neutros (Cloretos, Sulfatos)
+- **Física:** Estrutura **floculada** (permeável)
+- **Visual:** Cristais brancos; aspecto "fofo"
+
+:::
+
+::: {.column width="50%"}
+
+### Solos Alcalinos (Solonetz)
+
+- **Química:** Sódio (Na⁺) no complexo de troca; pH > 8,5
+- **Física:** Argila **dispersa**; estrutura colapsada (impermeável)
+- **Visual:** Estrutura colunar dura; cor escura
+
+:::
+:::
+
+![Comparação entre estrutura floculada e colapsada](img/slide_09.png){fig-align="center" width="70%"}
+
+---
+
+## Diagnóstico e Métricas (USDA) {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+**Parâmetros diagnósticos:**
+
+- **EC** (Condutividade Elétrica) - Mede sais solúveis. Crítico: **> 4 mmhos/cm**
+- **ESP** (Porcentagem de Sódio Trocável) - Mede sódio adsorvido. Crítico: **> 15%**
+
+**Regras de Classificação (USDA):**
+
+| Tipo | EC | ESP | pH |
+|------|-----|------|------|
+| **Salino** | > 4 | < 15 | < 8,5 |
+| **Salino-Alcalino** | > 4 | > 15 | ≈ 8,5 |
+| **Alcalino (Não-Salino)** | < 4 | > 15 | > 8,5 |
+
+: {.striped .hover}
+
+:::
+
+::: {.column width="45%"}
+![Diagnóstico USDA](img/slide_10.png){fig-align="center" width="100%"}
+:::
+:::
+
+::: {.callout-warning}
+**Nota:** O solo Alcalino (Não-Salino) é o **mais perigoso fisicamente** - a argila dispersa colapsa a estrutura do solo.
+:::
+
+---
+
+## Morfologia: Solonchak e Solonetz {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Solonchak
+
+- Cristais de sal superficiais
+- Estrutura "puffy" (se rico em $Na_2SO_4$)
+- Solo permeável
+
+![Perfil do Solonchak](img/slide_11.png){fig-align="center" width="90%"}
+
+:::
+
+::: {.column width="50%"}
+
+### Solonetz
+
+- Horizonte **Nátrico**
+- Estrutura **colunar**
+- Revestimentos de argila/húmus
+- Solo impermeável
+
+![Perfil do Solonetz](img/slide_11.png){fig-align="center" width="90%"}
+
+:::
+:::
+
+---
+
+## O Ciclo de Degradação: A Solodização {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+O processo de degradação ocorre em **três etapas**:
+
+1. **Alcalinização** - Acúmulo de sódio no complexo de troca
+2. **Lixiviação Intensa** - Remoção dos sais da superfície
+3. **Solodização** - Degradação ácida do horizonte superficial
+
+::: {.callout-tip}
+**O Solod (Soloth):** Solo ácido, degradado, com horizonte superficial esbranquiçado (**Horizonte Álbico, A2**) e línguas brancas penetrando o subsolo.
+:::
+
+:::
+
+::: {.column width="45%"}
+![Ciclo de solodização](img/slide_12.png){fig-align="center" width="100%"}
+:::
+:::
+
+---
+
+# [Manejo e Recuperação]{.section-header}
+
+## Potencial Agrícola e Riscos {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+**Salinização Secundária:** O lençol freático sobe trazendo sais para a zona da raiz - problema comum em áreas irrigadas.
+
+**Estratégias de Manejo:**
+
+| Solo | Tratamento |
+|------|------------|
+| **Salino** | Exigem **lixiviação** (lavagem) com excesso de água |
+| **Alcalino** | Exigem **correção química** ($CaSO_4$ - gesso) *antes* da lavagem para substituir o Sódio |
+
+: {.striped .hover}
+
+:::
+
+::: {.column width="45%"}
+![Estratégias de manejo](img/slide_13.png){fig-align="center" width="100%"}
+:::
+:::
+
+::: {.callout-important}
+Solos alcalinos **nunca devem ser lavados diretamente** - a argila dispersa vedará completamente o perfil.
+:::
+
+---
+
+## O Futuro: Manejo e Recuperação {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+> *"Projetos de irrigação falham não por falta de água, mas por falha na remoção dos sais que ela traz."*
+
+O problema da agricultura tropical não é apenas a fertilidade natural, mas a **condição física** e o **manejo da água**.
+
+**Medidas essenciais:**
+
+- **Drenagem Artificial** - Essencial para prevenir a ressalinização
+- **Nivelamento de Terras** - Distribuição uniforme da água
+- **Monitoramento** - Controle contínuo do lençol freático
+
+:::
+
+::: {.column width="45%"}
+![Manejo e recuperação de solos](img/slide_14.png){fig-align="center" width="100%"}
+:::
+:::
+
+---
+
+## Referências Bibliográficas {.smaller-text}
+
+- **BURINGH, P.** (1970). *Introduction to the study of soils in tropical and subtropical regions*. 2ª ed. Wageningen: Centre for Agricultural Publishing and Documentation.
+
+- **RICHARDS, L. A.** (Ed.) (1954). *Diagnosis and Improvement of Saline and Alkali Soils*. USDA Agriculture Handbook No. 60. Washington, D.C.
+
+- **FAO/UNESCO.** *Soil Map of the World*. Food and Agriculture Organization of the United Nations.
+
+- **JENNY, H.** (1941). *Factors of Soil Formation: A System of Quantitative Pedology*. New York: McGraw-Hill.
+
+---
+
+## {.center background-color="#2135A6"}
+
+::: {style="text-align: center;"}
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+:::

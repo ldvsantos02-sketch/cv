@@ -1,33 +1,25 @@
 ---
 title: "Regressão de Poisson Robusta"
-subtitle: "Teoria, Prática e Descrição<br>Estimando a Razão de Prevalência em Estudos Transversais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Poisson Robusta"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 19"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 19"
 execute:
   echo: false
 ---
 
-# [POISSON ROBUSTA — TEORIA]{.section-header}
+# [POISSON ROBUSTA - TEORIA]{.section-header}
 
 ## Estudos transversais e a medida de associação {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
 
-Estudos transversais avaliam **exposição e desfecho em um único momento** — um dos delineamentos mais realizados em pesquisa.
+Estudos transversais avaliam **exposição e desfecho em um único momento** - um dos delineamentos mais realizados em pesquisa.
 
 A medida de associação correta é a **Razão de Prevalência (RP)**.
 
@@ -57,7 +49,7 @@ Barros & Hirakata, 2003; Coutinho, Scazufca & Menezes, 2008
 
 ---
 
-## RP vs. OR — por que importa? {.smaller-text}
+## RP vs. OR - por que importa? {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -87,7 +79,7 @@ A OR quase **dobrou** a magnitude do efeito!
 | Frequência do desfecho | OR vs. RP |
 |----------------------|-----------|
 | Baixa (< 10%) | Resultados semelhantes |
-| Moderada (10–20%) | Superestimação |
+| Moderada (10-20%) | Superestimação |
 | Alta (> 20%) | Superestimação expressiva |
 :::
 
@@ -171,7 +163,7 @@ Barros & Hirakata, 2003; Coutinho, Scazufca & Menezes, 2008
 
 ---
 
-# [POISSON ROBUSTA — PRÁTICA]{.section-header}
+# [POISSON ROBUSTA - PRÁTICA]{.section-header}
 
 ## Solicitando a análise {.smaller-text}
 
@@ -257,16 +249,16 @@ exp(confint(coeftest(modelo,
 
 Prevalência de hipertensão × obesidade:
 
-**RP = 1,72** (IC 95%: 1,28–2,31; p < 0,001)
+**RP = 1,72** (IC 95%: 1,28-2,31; p < 0,001)
 
-> "Indivíduos com obesidade apresentaram prevalência de hipertensão **72% maior** em relação aos não obesos (RP = 1,72; IC 95%: 1,28–2,31; p < 0,001)."
+> "Indivíduos com obesidade apresentaram prevalência de hipertensão **72% maior** em relação aos não obesos (RP = 1,72; IC 95%: 1,28-2,31; p < 0,001)."
 
 :::
 :::
 
 ---
 
-# [POISSON ROBUSTA — DESCRIÇÃO]{.section-header}
+# [POISSON ROBUSTA - DESCRIÇÃO]{.section-header}
 
 ## Como reportar {.smaller-text}
 

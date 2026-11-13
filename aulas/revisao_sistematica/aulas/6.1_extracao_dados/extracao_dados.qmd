@@ -1,0 +1,150 @@
+---
+title: "Extração dos dados"
+subtitle: "Revisão Sistemática · Aula 6.1"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Revisão Sistemática"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Revisão Sistemática · Aula 6.1"
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Passo a passo da extração
+- [2]{.circle} Variáveis de interesse
+- [3]{.circle} Extração e avaliação da qualidade metodológica
+- [4]{.circle} Concordância entre juízes: Kappa e ICC
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Planejar e executar a extração de dados dos estudos incluídos, definindo o conjunto de variáveis de interesse, o protocolo de extração por juízes independentes e as medidas de concordância aplicáveis.
+:::
+:::
+:::
+
+# [1  -  PASSO A PASSO]{.section-header}
+
+## Passo a passo da extração {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Procedimento
+
+1. Selecionar as variáveis relevantes
+2. Criar o protocolo de extração
+3. Extrair os dados com **dois juízes independentes**
+4. Calcular o **coeficiente Kappa/ICC**
+5. Resolver divergências por **voto de minerva do terceiro juiz**
+:::
+
+::: {.column width="50%"}
+### Saída do processo
+
+6. **Dados finais tabelados**
+7. **Síntese dos dados**
+
+::: {.highlight-box}
+**Encadeamento** - a extração produz a matriz de dados que alimenta diretamente a etapa de síntese, garantindo rastreabilidade entre os estudos e os resultados da revisão.
+:::
+:::
+:::
+
+# [2  -  VARIÁVEIS DE INTERESSE]{.section-header}
+
+## Possíveis variáveis de interesse {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Variáveis de efeito e amostra
+
+- Medidas de tamanho de efeito (r de Pearson, diferença de médias, etc.)
+- Características da amostra (média de idade, percentual de gênero, etc.)
+- Variáveis culturais, consultáveis na base de Hofstede
+:::
+
+::: {.column width="50%"}
+### Variáveis metodológicas
+
+- Instrumentos
+- Procedimentos de coleta de dados
+- Métodos estatísticos
+- Técnica de análise de dados
+- Temas
+- Antecedentes, consequentes e variáveis associadas
+:::
+:::
+
+# [3  -  EXTRAÇÃO E QUALIDADE METODOLÓGICA]{.section-header}
+
+## Duas operações distintas {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Avaliação da qualidade metodológica
+
+Julga o delineamento, a condução e o risco de viés de cada estudo, apoiando decisões de inclusão e análise de sensibilidade.
+:::
+
+::: {.column width="50%"}
+### Extração dos dados
+
+Coleta objetiva as informações dos estudos (efeitos, amostra, método) para a matriz de síntese, sem julgamento de qualidade.
+:::
+:::
+
+::: {.info-box}
+**Separação de tarefas** - avaliar e extrair são operações diferentes, com instrumentos diferentes. O protocolo deve explicitá-las separadamente.
+:::
+
+# [4  -  CONCORDÂNCIA ENTRE JUIZES]{.section-header}
+
+## Kappa e ICC {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Coeficiente Kappa
+
+Aplicável a variáveis **categóricas** (ex.: decisão de inclusão sim/não, tipo de delineamento), com interpretação pelos limiares de Landis & Koch.
+:::
+
+::: {.column width="50%"}
+### Coeficiente de correlação intraclasse (ICC)
+
+Aplicável a variáveis **contínuas** (ex.: média de idade, escores, tamanhos de efeito extraídos).
+:::
+:::
+
+## Interpretação do ICC {.smaller-text .lesson-slide}
+
+| ICC | Interpretação |
+|:---:|---------------|
+| < 0,4 | Concordância pobre |
+| 0,4 a 0,6 | Concordância razoável |
+| 0,6 a 0,75 | Concordância boa |
+| 0,75 a 1,0 | Concordância excelente |
+
+: {.striped .hover .center-table}
+
+::: {.highlight-box}
+**Decisão de protocolo** - o tipo de coeficiente (Kappa ou ICC) depende da natureza da variável extraída e deve estar definido antes da coleta, junto com o limiar mínimo de concordância.
+:::
+
+# [Referências]{.section-header}
+
+## Bibliografia da aula {.smaller-text}
+
+- Higgins, J. P. T.; Li, T.; Deeks, J. J. (eds.). Collecting data. In: **Cochrane Handbook for Systematic Reviews of Interventions**. 2. ed. Chichester: Wiley, 2019. cap. 5.
+- Koo, T. K.; Li, M. Y. A guideline of selecting and reporting intraclass correlation coefficients for reliability research. **Journal of Chiropractic Medicine**, v. 15, p. 155-163, 2016.
+- Landis, J. R.; Koch, G. G. The measurement of observer agreement for categorical data. **Biometrics**, v. 33, p. 159-174, 1977.
+- Page, M. J.; McKenzie, J. E.; Bossuyt, P. M.; Boutron, I.; Hoffmann, T. C.; Mulrow, C. D. et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. **BMJ**, v. 372, n71, 2021.

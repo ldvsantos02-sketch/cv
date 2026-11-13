@@ -1,0 +1,93 @@
+---
+title: "Conteúdos Extraídos para Outras Disciplinas"
+subtitle: "Recortes de Ciência do Solo, Microbiologia Agrícola e Bioengenharia Geotécnica movidos de Análise Ambiental"
+author: "Prof. Dr. Luiz Diego Vidal Santos"
+format: html
+---
+
+# Apresentação deste Arquivo
+
+Este documento preserva integralmente os slides e recortes técnicos que estavam inseridos nas aulas de **Análise Ambiental (Bacharelado em Geografia)**, mas cujo escopo pertence a disciplinas específicas de **Ciência do Solo / Edafologia**, **Bioengenharia de Solos** ou **Análise da Paisagem**.
+
+- **Aula 17.1 (`17.1_paisagem_cultural_sistemas_tradicionais`)**: Movida integralmente para a pasta `aulas/analise_ambiental/extras/17.1_paisagem_cultural_sistemas_tradicionais/` (pertence à disciplina *Análise da Paisagem* — Aula 1.2).
+- **Recortes da Aula 12.1 (Análises laboratoriais edáficas e microbiológicas de rotina agronômica)**: Preservados abaixo para uso em *Pedologia / Conservação do Solo*.
+- **Recortes da Aula 14.1 (Detalhamento construtivo de bioengenharia geotécnica)**: Preservados abaixo para uso em *Bioengenharia de Solos*.
+
+---
+
+# 1 · Recortes de Física, Química e Microbiologia Laboratorial do Solo (Ex-Aula 12.1)
+
+## Indicadores Físicos Laboratoriais: Textura, Densidade e Porosidade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Parâmetros Fundamentais
+
+- **Textura** (granulometria): proporção de areia, silte e argila; propriedade permanente que condiciona todas as demais (determinada pelo método da pipeta ou densímetro de Bouyoucos)
+- **Densidade do solo ($D_s$):** massa de solo seco por volume total (cilindro volumétrico de Uhland / Kopecky)
+  - Referência: $D_s$ ideal para argilosos $< 1{,}30\text{ g/cm}^3$; para arenosos $< 1{,}60\text{ g/cm}^3$
+  - Acima do **limite crítico** → restrição ao crescimento radicular
+- **Porosidade total ($P_t$):** $P_t = 1 - (D_s / D_p)$ (mesa de tensão e câmara de Richards)
+  - **Macroporosidade** ($> 0{,}05\text{ mm}$): aeração e infiltração rápida; crítica quando $< 0{,}10\text{ m}^3/\text{m}^3$
+  - **Microporosidade**: retenção de água disponível para as plantas
+:::
+
+::: {.column width="50%"}
+### Estabilidade de Agregados e Resistência
+
+- **Estabilidade de agregados** (peneiramento úmido de Yoder):
+  - Mede a resistência dos agregados à desintegração pela água (DMP — Diâmetro Médio Ponderado e DMG — Diâmetro Médio Geométrico)
+  - Alta estabilidade → menor selamento superficial, menor erodibilidade
+  - Dependente do teor de matéria orgânica, óxidos de Fe/Al e hifas fúngicas
+- **Resistência mecânica à penetração (RP):**
+  - Medida com penetrômetro de impacto (Stolf) ou eletrônico
+  - Limite crítico: **$RP > 2{,}0\text{ MPa}$** restringe o crescimento radicular da maioria das culturas agrícolas
+:::
+:::
+
+---
+
+## Indicadores Químicos Agronômicos e Microbiológicos ($qCO_2$ e Enzimas) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Indicadores Químicos de Fertilidade
+
+| Indicador | Significado | Faixa ideal (referência agrícola) |
+|-----------|-------------|-----------------------------------|
+| **pH em água** | Acidez ativa | $5{,}5 - 6{,}5$ |
+| **CTC efetiva** | Capacidade de retenção de cátions | $> 5\text{ cmol}_c/\text{dm}^3$ |
+| **Saturação por bases (V%)** | Proporção de $Ca^{2+}$, $Mg^{2+}$, $K^+$ na CTC | $> 50\%$ (distrófico vs. eutrófico) |
+| **Saturação por $Al^{3+}$ (m%)** | Toxicidade por alumínio | $< 20\%$ |
+| ** carbono orgânico total (COT)** | Estoque de matéria orgânica (Walkley-Black) | $> 15\text{ g/kg}$ |
+| **Fósforo disponível (Mehlich-1)** | Nutriente mais limitante em solos tropicais | Variável conforme teor de argila |
+:::
+
+::: {.column width="50%"}
+### Indicadores Biológicos e Bioquímicos de Laboratório
+
+- **Carbono da biomassa microbiana (CBM):** método da fumigação-extração (Vance et al., 1987); fração viva e mais ativa da MO; responde rapidamente a mudanças de manejo (meses)
+- **Respiração basal ($CO_2$):** atividade metabólica total da microbiota por respirometria alcalina
+- **Quociente metabólico ($qCO_2$):** razão respiração / CBM
+  - $qCO_2$ alto → estresse metabólico da comunidade microbiana → **degradação**
+  - $qCO_2$ baixo → eficiência metabólica na incorporação de carbono → **estabilidade**
+- **Atividade enzimática:** $\beta$-glicosidase (ciclo do C), fosfatase ácida (ciclo do P), urease e arilsulfatase (ciclos de N e S)
+:::
+:::
+
+---
+
+# 2 · Recortes de Dimensionamento Geotécnico de Bioengenharia (Ex-Aula 14.1)
+
+## Dimensionamento Mecânico de Retentores e Geotêxteis {.smaller-text}
+
+- **Ensaios de tração direta de raízes ($\sigma_r$):** relação alométrica $\sigma_r = a \cdot d^{-b}$ entre diâmetro radicular ($d$) e resistência à tração.
+- **Modelo de Wu et al. (1979) e Waldron (1977):** acréscimo de coesão aparente do solo pelas raízes ($c_r = 1{,}2 \cdot \sigma_r \cdot (A_r / A)$), onde $A_r/A$ é a razão de área radicular por seção de cisalhamento.
+- **Geotêxteis biodegradáveis (fibra de coco vs. juta vs. taboa *Typha domingensis*):**
+  - Gramatura ($300\text{ a }600\text{ g/m}^2$), abertura de malha, retenção de umidade e meia-vida de fotodegradação/biodegradação em campo.
+  - Fixação com grampos em "U" de aço ou estacas vivas (*live staking*) espaçadas em quincôncio ($0{,}50\text{ m} \times 0{,}50\text{ m}$).
+
+
+## Permanência das aulas 12.1, 13.1 e 14.1
+
+Qualidade do Solo, Diagnóstico da Degradação e Bioengenharia de Água e Solo permanecem no núcleo de Análise Ambiental, com abordagem geográfica. Estes arquivos preservam versões anteriores e recortes complementares; não representam a retirada dessas aulas do componente. Os materiais de laboratório e dimensionamento também são aprofundados em Bioengenharia de Solos.

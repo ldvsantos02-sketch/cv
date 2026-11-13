@@ -1,21 +1,13 @@
 ---
 title: "Análise de Sobrevida"
-subtitle: "Introdução, Kaplan-Meier, Tábua de Sobrevida e Teste Log-Rank<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Análise de Sobrevida"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 29"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 29"
 execute:
   echo: false
 ---
@@ -36,7 +28,7 @@ Análise de Sobrevida é um conjunto de técnicas estatísticas para analisar o 
 - **Censura:** quando o evento não é observado durante o acompanhamento
 
 ::: {.info-box}
-Não se restringe a "sobrevivência" — aplica-se a qualquer evento temporal!
+Não se restringe a "sobrevivência" - aplica-se a qualquer evento temporal!
 :::
 
 :::
@@ -103,8 +95,8 @@ Taxa **instantânea** de ocorrência do evento no tempo $t$, dado que o sujeito 
 ::: {.highlight-box}
 **Relação entre as funções:**
 
-- $S(t)$ — probabilidade de **não** ter o evento
-- $h(t)$ — risco **instantâneo** de ter o evento
+- $S(t)$ - probabilidade de **não** ter o evento
+- $h(t)$ - risco **instantâneo** de ter o evento
 - São complementares na análise
 :::
 
@@ -212,7 +204,7 @@ ggsurvplot(km)
 
 ---
 
-## Curva de Kaplan-Meier — exemplo {.smaller-text}
+## Curva de Kaplan-Meier - exemplo {.smaller-text}
 
 ![Curva de Kaplan-Meier com IC 95% e tabela de risco](fig_02_kaplan_meier.png){width="80%" fig-align="center"}
 
@@ -269,7 +261,7 @@ survdiff(Surv(tempo, status) ~ grupo,
 
 ---
 
-## Curvas de Kaplan-Meier por grupos — exemplo {.smaller-text}
+## Curvas de Kaplan-Meier por grupos - exemplo {.smaller-text}
 
 ![Comparação de curvas de sobrevida entre dois tratamentos com teste log-rank](fig_03_kaplan_meier_grupos.png){width="80%" fig-align="center"}
 
@@ -280,14 +272,14 @@ survdiff(Surv(tempo, status) ~ grupo,
 ::: {.info-box}
 **Modelo de descrição para artigos/relatórios**
 
-> "A análise de sobrevida foi conduzida pelo método de Kaplan-Meier. O tempo de acompanhamento mediano foi de X meses (amplitude: X–X). A comparação entre as curvas de sobrevida por [variável de grupo] foi realizada pelo teste log-rank (Mantel-Cox). As probabilidades de sobrevida em 12, 24 e 60 meses foram estimadas e apresentadas com os respectivos intervalos de confiança de 95%. O nível de significância adotado foi de 5%."
+> "A análise de sobrevida foi conduzida pelo método de Kaplan-Meier. O tempo de acompanhamento mediano foi de X meses (amplitude: X-X). A comparação entre as curvas de sobrevida por [variável de grupo] foi realizada pelo teste log-rank (Mantel-Cox). As probabilidades de sobrevida em 12, 24 e 60 meses foram estimadas e apresentadas com os respectivos intervalos de confiança de 95%. O nível de significância adotado foi de 5%."
 :::
 
 ### Elementos essenciais no relatório
 
 | Elemento | Exemplo |
 |----------|---------|
-| Mediana de acompanhamento | Mediana = 36 meses (IIQ: 18–52) |
+| Mediana de acompanhamento | Mediana = 36 meses (IIQ: 18-52) |
 | Mediana de sobrevida | Mediana não atingida / 28 meses |
 | Sobrevida em pontos fixos | S(12m) = 85%; S(60m) = 62% |
 | Comparação entre grupos | Log-rank: χ² = X,XX; p = 0,XXX |

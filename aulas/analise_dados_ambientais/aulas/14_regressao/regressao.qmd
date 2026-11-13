@@ -1,21 +1,13 @@
 ---
 title: "Regressão"
-subtitle: "Aula 14 — Modelos de Regressão Linear, Múltipla e Logística<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 14"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 14"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 14"
 execute:
   echo: false
 ---
@@ -45,7 +37,7 @@ execute:
 :::
 
 
-# [1 — O QUE É REGRESSÃO?]{.section-header}
+# [1 - O QUE É REGRESSÃO?]{.section-header}
 
 ## Definição e família de modelos {.smaller-text}
 
@@ -112,7 +104,7 @@ A escolha do tipo de regressão depende **da natureza da VD** (contínua, binár
 :::
 
 
-# [2 — REGRESSÃO LINEAR SIMPLES]{.section-header}
+# [2 - REGRESSÃO LINEAR SIMPLES]{.section-header}
 
 ## A equação fundamental {.smaller-text}
 
@@ -128,7 +120,7 @@ $$Y = \beta_0 + \beta_x X + \varepsilon$$
 |-------|---------------|
 | $Y$ | Variável dependente (desfecho) |
 | $\beta_0$ | Intercepto (valor de Y quando X = 0) |
-| $\beta_x$ | Inclinação — efeito de X sobre Y |
+| $\beta_x$ | Inclinação - efeito de X sobre Y |
 | $X$ | Variável independente (preditor) |
 | $\varepsilon$ | Erro aleatório (variância não explicada) |
 :::
@@ -139,7 +131,7 @@ $$Y = \beta_0 + \beta_x X + \varepsilon$$
 ![Regressão linear simples com resíduos e IC 95%](fig_01_regressao_linear.png){width="100%"}
 
 ::: {.highlight-box}
-A regressão traça a **reta de melhor ajuste** que minimiza a soma dos quadrados dos resíduos (método dos mínimos quadrados ordinários — OLS).
+A regressão traça a **reta de melhor ajuste** que minimiza a soma dos quadrados dos resíduos (método dos mínimos quadrados ordinários - OLS).
 :::
 
 ::::
@@ -212,7 +204,7 @@ Nenhum modelo é livre de erro: o resíduo $\varepsilon$ representa a influênci
 :::
 
 
-# [3 — PRESSUPOSTOS DA REGRESSÃO]{.section-header}
+# [3 - PRESSUPOSTOS DA REGRESSÃO]{.section-header}
 
 ## Os cinco pressupostos clássicos {.smaller-text}
 
@@ -222,7 +214,7 @@ Nenhum modelo é livre de erro: o resíduo $\varepsilon$ representa a influênci
 ::: {.info-box}
 **Pressupostos do modelo linear**
 
-[1]{.circle} **Linearidade** — a relação entre X e Y é linear
+[1]{.circle} **Linearidade** - a relação entre X e Y é linear
 
 [2]{.circle} **Variância não nula** das VIs
 
@@ -255,7 +247,7 @@ A violação desses pressupostos compromete a inferência: erros padrão enviesa
 :::
 
 
-# [4 — REGRESSÃO LINEAR MÚLTIPLA]{.section-header}
+# [4 - REGRESSÃO LINEAR MÚLTIPLA]{.section-header}
 
 ## Da simples à múltipla {.smaller-text}
 
@@ -282,7 +274,7 @@ $$Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_n X_n + \varepsilon$$
 :::: {.column width="50%"}
 
 ::: {.info-box}
-**Exemplo aplicado — produtividade da soja**
+**Exemplo aplicado - produtividade da soja**
 
 Possíveis VIs:
 
@@ -308,7 +300,7 @@ Possíveis VIs:
 | **Enter** (Inserir) | Todas as VIs entram simultaneamente | Simplicidade | Vulnerável à multicolinearidade; não isola o $R^2$ de cada VI |
 | **Stepwise** (Por etapa) | VIs entram passo a passo pela significância de F | Modelo mais parcimonioso; isola o $R^2$ de cada VI | F sofre efeito do N; risco de **efeito supressor** |
 | **Forward** (Avançar) | VIs entram pela correlação parcial com a VD | Parcimonioso; isola o $R^2$ de cada VI | Influenciado por VIs já no modelo |
-| **Backward** (Retroceder) | Parte do modelo cheio e exclui VIs passo a passo | Reduz erros de inserção dos métodos forward/stepwise | — |
+| **Backward** (Retroceder) | Parte do modelo cheio e exclui VIs passo a passo | Reduz erros de inserção dos métodos forward/stepwise | - |
 | **Remove** (Remover) | Exclusão **manual** das VIs para comparar modelos | Permite testar hipóteses específicas | Escolhas arbitrárias podem enviesar |
 :::
 
@@ -317,7 +309,7 @@ Em pesquisa aplicada, prefira **Enter** quando há **hipóteses teóricas** sobr
 :::
 
 
-# [5 — DIAGNÓSTICOS E PROBLEMAS]{.section-header}
+# [5 - DIAGNÓSTICOS E PROBLEMAS]{.section-header}
 
 ## Multicolinearidade {.smaller-text}
 
@@ -379,7 +371,7 @@ Quando há autocorrelação, considere:
 :::
 
 
-## Problemas amostrais — outliers e influência {.smaller-text}
+## Problemas amostrais - outliers e influência {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
@@ -456,7 +448,7 @@ Para um cálculo **mais confiável**, use o **G\*Power** definindo:
 :::
 
 
-# [6 — VARIÁVEIS DUMMY]{.section-header}
+# [6 - VARIÁVEIS DUMMY]{.section-header}
 
 ## Quando usar variáveis dummy {.smaller-text}
 
@@ -531,7 +523,7 @@ Cada coeficiente $\beta_i$ das dummies representa a **diferença média de Y** e
 :::
 
 
-# [7 — REGRESSÃO LOGÍSTICA BINÁRIA]{.section-header}
+# [7 - REGRESSÃO LOGÍSTICA BINÁRIA]{.section-header}
 
 ## Quando usar regressão logística {.smaller-text}
 
@@ -553,7 +545,7 @@ Modelar a **probabilidade de ocorrência** de um desfecho **binário** (sim/não
 ::::
 :::: {.column width="50%"}
 
-![Cobertura vegetal — fator preditor de processos ambientais](foto_cobertura_vegetal.jpg){width="100%"}
+![Cobertura vegetal - fator preditor de processos ambientais](foto_cobertura_vegetal.jpg){width="100%"}
 
 ::::
 :::
@@ -602,7 +594,7 @@ Os coeficientes são interpretados como **log-odds**; sua exponencial $e^{\beta}
 ::: {.columns}
 :::: {.column width="55%"}
 
-![Curva logística — probabilidade × preditor](fig_03_curva_logistica.png){width="100%" .fig-compact}
+![Curva logística - probabilidade × preditor](fig_03_curva_logistica.png){width="100%" .fig-compact}
 
 ::::
 :::: {.column width="45%"}
@@ -627,12 +619,12 @@ Os coeficientes são interpretados como **log-odds**; sua exponencial $e^{\beta}
 :::
 
 
-## Avaliação do modelo logístico — Curva ROC {.smaller-text}
+## Avaliação do modelo logístico - Curva ROC {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="55%"}
 
-![Curva ROC — sensibilidade × 1 − especificidade](fig_04_curva_roc.png){width="100%"}
+![Curva ROC - sensibilidade × 1 − especificidade](fig_04_curva_roc.png){width="100%"}
 
 ::::
 :::: {.column width="45%"}
@@ -643,9 +635,9 @@ Os coeficientes são interpretados como **log-odds**; sua exponencial $e^{\beta}
 | AUC | Interpretação |
 |:---:|---------------|
 | 0,50 | Modelo aleatório |
-| 0,60–0,70 | Discriminação fraca |
-| 0,70–0,80 | Aceitável |
-| 0,80–0,90 | Excelente |
+| 0,60-0,70 | Discriminação fraca |
+| 0,70-0,80 | Aceitável |
+| 0,80-0,90 | Excelente |
 | > 0,90 | Excepcional |
 :::
 
@@ -657,7 +649,7 @@ A curva ROC mostra o **trade-off** entre sensibilidade (verdadeiros positivos) e
 :::
 
 
-# [8 — REGRESSÃO MULTINOMIAL]{.section-header}
+# [8 - REGRESSÃO MULTINOMIAL]{.section-header}
 
 ## Estendendo a logística {.smaller-text}
 
@@ -695,7 +687,7 @@ Pressupostos análogos à logística binária + **independência das alternativa
 :::
 
 
-## Resumo — escolhendo o modelo de regressão certo {.smaller-text}
+## Resumo - escolhendo o modelo de regressão certo {.smaller-text}
 
 ```{mermaid}
 %%| fig-width: 10

@@ -1,21 +1,13 @@
 ---
 title: "Bootstrapping"
-subtitle: "Aula 05 — Técnicas de Reamostragem<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 05"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 05"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 05"
 execute:
   echo: false
 ---
@@ -71,14 +63,14 @@ execute:
 
 ::: {.highlight-box}
 *"A maior parte do que sabemos sobre a verdadeira distribuição de probabilidade vem dos dados amostrais. Portanto, vamos tratar os dados como um proxy da verdadeira distribuição."*
-— Efron (1979)
+- Efron (1979)
 :::
 :::
 
 ::: {.column width="40%"}
 **Artigo seminal:**
 
-Efron, B. (1979). Bootstrap Methods: Another Look at the Jackknife. *The Annals of Statistics*, 7(1), 1–26.
+Efron, B. (1979). Bootstrap Methods: Another Look at the Jackknife. *The Annals of Statistics*, 7(1), 1-26.
 
 > Revolutionou a estatística computacional, permitindo inferência sem suposições distribucionais.
 :::
@@ -163,14 +155,14 @@ flowchart LR
 
 ---
 
-## Com Reposição — Por quê? {.smaller-text}
+## Com Reposição - Por quê? {.smaller-text}
 
 ::: {.info-box}
 **Com reposição** significa que cada observação pode ser selecionada **mais de uma vez** em cada reamostra.
 :::
 
 - Sem reposição: toda reamostra seria idêntica (mesmos valores, apenas reordenados)
-- Com reposição: cada reamostra é **diferente** — captura a **variabilidade amostral**
+- Com reposição: cada reamostra é **diferente** - captura a **variabilidade amostral**
 
 Cada observação tem probabilidade $\approx 63\%$ de ser incluída:
 
@@ -186,10 +178,10 @@ $$P(x_i \in X^*) = 1 - \left(1 - \tfrac{1}{n}\right)^{\!n} \approx 0{,}632$$
 
 | Objetivo | B recomendado |
 |:---|:---:|
-| Estimativa de viés/erro-padrão | 200–500 |
+| Estimativa de viés/erro-padrão | 200-500 |
 | IC percentil simples | 1.000 |
-| IC BCa (corrigido) | 2.000–5.000 |
-| Teste de hipóteses | 5.000–10.000 |
+| IC BCa (corrigido) | 2.000-5.000 |
+| Teste de hipóteses | 5.000-10.000 |
 
 ::: {.info-box}
 **Na prática:** Use **B = 5000** como padrão. Computadores modernos processam isso em segundos.
@@ -348,7 +340,7 @@ Após 5000 reamostras sob H₀:
 - **p-valor bootstrap:** 0,008
 
 ::: {.info-box}
-**Interpretação:** Como o IC 95% **não inclui zero**, rejeitamos H₀. O plantio direto apresenta teor de MOS significativamente maior (6,4 g/kg; IC 95%: 1,8–11,2; p = 0,008).
+**Interpretação:** Como o IC 95% **não inclui zero**, rejeitamos H₀. O plantio direto apresenta teor de MOS significativamente maior (6,4 g/kg; IC 95%: 1,8-11,2; p = 0,008).
 :::
 
 **Comparação com Teste T clássico:**
@@ -462,13 +454,13 @@ Bootstrap com B = 5000 reamostras, IC BCa:
 | Tamanho amostral | n < 30 | n > 100 com normalidade |
 | Normalidade | Violada ou não testável | Confirmada |
 | Estatística | Sem fórmula de EP (mediana, razão) | Média, proporção |
-| Mediação | Sempre (efeito indireto) | — |
+| Mediação | Sempre (efeito indireto) | - |
 | Dados ambientais | Séries curtas, extremos | Grandes bases |
 
 ::: {.info-box}
 **Vantagem principal:** Inferência **válida** sem suposições distribucionais.
 
-**Limitação:** Não cria informação — se a amostra é muito pequena (n < 5), o bootstrap também será limitado.
+**Limitação:** Não cria informação - se a amostra é muito pequena (n < 5), o bootstrap também será limitado.
 :::
 
 ---
@@ -476,9 +468,9 @@ Bootstrap com B = 5000 reamostras, IC BCa:
 ## Referências Essenciais {.smaller-text}
 
 ::: {.box}
-- Efron, B. (1979). Bootstrap Methods: Another Look at the Jackknife. *The Annals of Statistics*, 7(1), 1–26.
+- Efron, B. (1979). Bootstrap Methods: Another Look at the Jackknife. *The Annals of Statistics*, 7(1), 1-26.
 - Efron, B., & Tibshirani, R. J. (1993). *An Introduction to the Bootstrap*. Chapman & Hall.
-- Preacher, K. J., & Hayes, A. F. (2008). Asymptotic and resampling strategies for assessing and comparing indirect effects. *Behavior Research Methods*, 40(3), 879–891.
+- Preacher, K. J., & Hayes, A. F. (2008). Asymptotic and resampling strategies for assessing and comparing indirect effects. *Behavior Research Methods*, 40(3), 879-891.
 - Davison, A. C., & Hinkley, D. V. (1997). *Bootstrap Methods and Their Application*. Cambridge University Press.
 :::
 
@@ -489,7 +481,7 @@ Bootstrap com B = 5000 reamostras, IC BCa:
 
 **Prof. Luiz Diego Vidal Santos**
 
-UEFS — Universidade Estadual de Feira de Santana
+UEFS - Universidade Estadual de Feira de Santana
 
 [ldvsantos@uefs.br](mailto:ldvsantos@uefs.br)
 :::

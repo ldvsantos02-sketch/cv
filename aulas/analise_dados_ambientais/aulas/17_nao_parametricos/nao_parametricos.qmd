@@ -1,21 +1,13 @@
 ---
 title: "Testes Não Paramétricos"
-subtitle: "Aula 17 — Alternativas aos Testes Paramétricos<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 17"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 17"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 17"
 execute:
   echo: false
 ---
@@ -63,7 +55,7 @@ DE DIFERENÇAS DE GRUPOS
 
 
 | Paramétricos | Não-paramétricos |
-| --- | --- |
+| - | - |
 | Teste t para amostras independentes | Mann-Whitney |
 | Análise de Variância | Kruskal-Wallis |
 | Teste t para amostras dependentes | Wilcoxon Signed Rank |
@@ -105,7 +97,7 @@ Comparação de 2 grupos independentes
   - Substitui o teste *t** *de Student
 
 | Sujeito | Tratamento | Escore |
-| --- | --- | --- |
+| - | - | - |
 | 1 | A | 4 |
 | 2 | B | 6 |
 | 3 | A | 5 |
@@ -134,7 +126,7 @@ DOIS GRUPOS INDEPENDENTES
 
 
 | Tratamento | Escore | Posto | Posto Real |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | A | 4 | 1 | 1 |
 | A | 5 | 2 | 2,5 |
 | A | 5 | 3 | 2,5 |
@@ -246,7 +238,7 @@ DOIS GRUPOS INDEPENDENTES
 
 
 | Tratamento | Escore | Posto | Posto Real |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | A | 4 | 1 | 1 |
 | C | 5 | 2 | 2,5 |
 | B | 5 | 3 | 2,5 |
@@ -339,7 +331,7 @@ DOIS GRUPOS DEPENDENTES
 
 
 | Sujeito | Pré | Pós | Diff | Sinal |
-| --- | --- | --- | --- | --- |
+| - | - | - | - | - |
 | 1 | 5 | 7 | 2 | + |
 | 2 | 6 | 6 | 0 | Tie |
 | 3 | 2 | 3 | 1 | + |
@@ -372,7 +364,7 @@ ANOVA de Friedman: Substitui a ANOVA de Medidas Repetidas
 
 
 | Sujeito | Pré | Pós | Follow-up | Rank_Pré | Rank_Pós | Rank_Follow |
-| --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - |
 | 1 | 7 | 6 | 8 | 2 | 1 | 3 |
 | 2 | 5 | 6 | 8 | 1 | 2 | 3 |
 | 3 | 2 | 3 | 5 | 1 | 2 | 3 |

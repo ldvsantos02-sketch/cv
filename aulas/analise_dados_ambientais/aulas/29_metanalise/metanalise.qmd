@@ -1,21 +1,13 @@
 ---
 title: "Metanálise"
-subtitle: "Aula 29 — Fundamentos de Metanálise<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 29"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 29"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 29"
 execute:
   echo: false
 ---
@@ -351,7 +343,7 @@ Classificação da Heterogeneidade
 
 
 | 0% - 40% | Pode não ser importante |
-| --- | --- |
+| - | - |
 | 30% - 60% | Pode ser moderado |
 | 50 - 90% | Pode ser substancial |
 | 75 - 100% | Considerável |
@@ -385,11 +377,11 @@ EFEITO FIXO E ALEATÓRIOS
 
 
 | EFEITO FIXO | EFEITOS ALEATÓRIOS |
-| --- | --- |
+| - | - |
 
 
 | Os estudos estimam efeitos verdadeiros diferentes, que seguem uma distribuição |
-| --- |
+| - |
 
 
 ---
@@ -402,7 +394,7 @@ EFEITO FIXO E ALEATÓRIOS
 
 
 | EFEITOS FIXOS | EFEITOS ALEATÓRIOS |
-| --- | --- |
+| - | - |
 | Todos os estudos estimam o mesmo efeito verdadeiro (θ) | Os estudos estimam efeitos verdadeiros diferentes, que seguem uma distribuição |
 | Toda variação nos efeitos se deve ao erro amostral | A variação vem de erro amostral + heterogeneidade real entre estudos |
 | O peso (Wi) DOS estudos mais precisos dominam | O peso (Wi) é reduzido para estudos precisos se τ2 for alto |
@@ -514,7 +506,7 @@ DADOS CONTÍNUOS
 
 
 | Estudo | Método | Unidade |
-| --- | --- | --- |
+| - | - | - |
 | 1 | Anel volumétrico | g/cm³ (densidade aparente) |
 | 2 | Penetrômetro de impacto | J/cm² (energia por profundidade) |
 | 3 | Pressão crítica | kPa (resistência do solo) |
@@ -536,7 +528,7 @@ DADOS CONTÍNUOS
 
 
 | Estudo | Método | Unidade |
-| --- | --- | --- |
+| - | - | - |
 | 1 | Anel volumétrico | g/cm³ (densidade aparente) |
 | 2 | Penetrômetro de impacto | J/cm² (energia por profundidade) |
 | 3 | Pressão crítica | kPa (resistência do solo) |
@@ -609,7 +601,7 @@ DADOS CONTÍNUOS
 
 
 | Estudo | Método | Unidade |
-| --- | --- | --- |
+| - | - | - |
 | 1 | Walkley-Black | g/kg |
 | 2 | combustão seca (dry combustion) | % |
 | 3 | carbono orgânico total (COT) | mg/cm3 |
@@ -631,7 +623,7 @@ DADOS CONTÍNUOS
 
 
 | Estudo | Método | Unidade |
-| --- | --- | --- |
+| - | - | - |
 | 1 | Walkley-Black | g/kg |
 | 2 | combustão seca (dry combustion) | % |
 | 3 | carbono orgânico total (COT) | mg/cm3 |

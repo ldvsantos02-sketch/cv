@@ -1,21 +1,13 @@
 ---
 title: "Introdução e Etimologia Estatística"
-subtitle: "Aula 01 — Conceitos Fundamentais de Estatística<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 01"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 01"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 01"
 execute:
   echo: false
 ---
@@ -43,7 +35,7 @@ execute:
 :::
 
 
-# [1 — ETIMOLOGIA]{.section-header}
+# [1 - ETIMOLOGIA]{.section-header}
 
 ## Etimologia Estatística {.smaller-text}
 
@@ -67,7 +59,7 @@ Ou seja, a inferência estatística advém de uma relação entre a **teoria est
 :::
 
 
-# [2 — DADOS, POPULAÇÃO E AMOSTRA]{.section-header}
+# [2 - DADOS, POPULAÇÃO E AMOSTRA]{.section-header}
 
 ## Conjunto de Dados, População e Amostra {.smaller-text}
 
@@ -92,7 +84,7 @@ Subconjunto da população selecionado para representar o todo, utilizado quando
 
 ---
 
-## Relação População – Amostra {.smaller-text}
+## Relação População - Amostra {.smaller-text}
 
 ![](fig_populacao_amostra.png){fig-align="center" width="65%"}
 
@@ -101,7 +93,7 @@ A **amostra** é um subconjunto da **população**. A inferência estatística p
 :::
 
 
-# [3 — TIPOS DE VARIÁVEIS]{.section-header}
+# [3 - TIPOS DE VARIÁVEIS]{.section-header}
 
 ## Classificação de Stevens (1946) {.smaller-text}
 
@@ -187,7 +179,7 @@ O **tipo de variável** determina qual análise estatística deve ser utilizada.
 . . .
 
 ::: {.highlight-box}
-**Exemplo:** A ordem de chegada dos corredores na linha de chegada é uma medida ordinal — você sabe quem chegou primeiro, mas o dado por si só **não informa** se a diferença foi de um segundo ou uma hora.
+**Exemplo:** A ordem de chegada dos corredores na linha de chegada é uma medida ordinal - você sabe quem chegou primeiro, mas o dado por si só **não informa** se a diferença foi de um segundo ou uma hora.
 :::
 
 . . .
@@ -199,7 +191,7 @@ O **tipo de variável** determina qual análise estatística deve ser utilizada.
 :::
 
 
-## Variáveis Ordinais — Escalas Likert {.smaller-text}
+## Variáveis Ordinais - Escalas Likert {.smaller-text}
 
 ::: {.info-box}
 **Escalas Likert** são um tipo especial de variável ordinal amplamente utilizado em pesquisas.
@@ -262,7 +254,7 @@ A maioria das análises nas ciências humanas, sociais e da saúde utiliza dados
 ## Propriedades por Nível de Medida {.smaller-text}
 
 ::: {.info-box}
-**Procedimentos de análise** — Cada nível acumula as propriedades dos anteriores.
+**Procedimentos de análise** - Cada nível acumula as propriedades dos anteriores.
 :::
 
 | Nível de medida  | Distinção | Ordem | Distância |
@@ -279,12 +271,12 @@ Quanto **maior** o nível de medida, **mais poderosos** são os testes estatíst
 
 ---
 
-## Escalas de Medida — Síntese Visual {.smaller-text}
+## Escalas de Medida - Síntese Visual {.smaller-text}
 
 ![](fig_escalas_medida.png){fig-align="center" width="80%"}
 
 
-# [4 — CLASSIFICAÇÃO DAS VARIÁVEIS]{.section-header}
+# [4 - CLASSIFICAÇÃO DAS VARIÁVEIS]{.section-header}
 
 ## Classificação Problemática {.smaller-text}
 
@@ -346,12 +338,12 @@ graph TD
 :::
 
 
-# [5 — ESCALA LIKERT COMO CONTÍNUA]{.section-header}
+# [5 - ESCALA LIKERT COMO CONTÍNUA]{.section-header}
 
 ## Por que tratamos a escala Likert como variável contínua? {.smaller-text}
 
 ::: {.info-box}
-Quando somamos os itens de uma escala Likert, o escore total pode variar de um **mínimo** a um **máximo** com muitos valores possíveis — comportando-se como uma variável contínua.
+Quando somamos os itens de uma escala Likert, o escore total pode variar de um **mínimo** a um **máximo** com muitos valores possíveis - comportando-se como uma variável contínua.
 :::
 
 . . .
@@ -366,7 +358,7 @@ Quando somamos os itens de uma escala Likert, o escore total pode variar de um *
 . . .
 
 ::: {.highlight-box}
-**Mínimo:** 4 (todos = 1) → **Máximo:** 20 (todos = 5) — São **17 valores possíveis**, suficientes para aproximar uma distribuição contínua.
+**Mínimo:** 4 (todos = 1) → **Máximo:** 20 (todos = 5) - São **17 valores possíveis**, suficientes para aproximar uma distribuição contínua.
 :::
 
 
@@ -383,7 +375,7 @@ As distribuições dos escores somados tendem a se aproximar de uma **curva norm
 :::
 
 
-# [6 — DISTRIBUIÇÃO DE FREQUÊNCIAS]{.section-header}
+# [6 - DISTRIBUIÇÃO DE FREQUÊNCIAS]{.section-header}
 
 ## Distribuição de Frequências {.smaller-text}
 
@@ -399,7 +391,7 @@ Uma distribuição de frequências organiza os dados em **categorias ou interval
 . . .
 
 ::: {.highlight-box}
-Configura um caso particular das séries estatísticas — os fatores época, local e fenômeno permanecem fixos, e o fenômeno apresenta-se através de **"gradações"**.
+Configura um caso particular das séries estatísticas - os fatores época, local e fenômeno permanecem fixos, e o fenômeno apresenta-se através de **"gradações"**.
 :::
 
 ::::
@@ -415,7 +407,7 @@ Resumir toda a informação obtida de modo a **facilitar a análise** e a identi
 :::
 
 
-## Tabela de Frequências — Dados Discretos {.smaller-text}
+## Tabela de Frequências - Dados Discretos {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="55%"}
@@ -457,7 +449,7 @@ A distribuição é aproximadamente **simétrica**, com concentração nos valor
 
 ---
 
-## Visualização — Histograma de Frequências {.smaller-text}
+## Visualização - Histograma de Frequências {.smaller-text}
 
 ![](fig_histograma_frequencias.png){fig-align="center" width="75%"}
 

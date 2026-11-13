@@ -1,30 +1,44 @@
 project:
   type: default
+  render:
+    - "**/*.qmd"
+lang: pt-BR
+author: "Prof. Dr. Luiz Diego Vidal Santos"
 format:
   revealjs:
-    theme: [simple, ../../assets/uefs.scss]
-    css: ../../assets/custom.css
+    theme: ../../assets/academico-disciplinas/academico.scss
+    css: ../../assets/academico-disciplinas/academico.css
+    include-after-body:
+      - ../../assets/academico-disciplinas/academico.html
+      - ../../assets/image-lightbox.html
     width: 1280
     height: 720
-    transition: none
+    transition: fade
     background-transition: none
     preview-links: auto
-    slide-number: true
-    controls: true
-    controls-layout: bottom-right
+    slide-number: false
+    controls: false
+    progress: false
+    center: false
     touch: true
     navigation-mode: linear
     embed-resources: true
     auto-stretch: false
-    min-scale: 0.2
-    max-scale: 2.0
-    margin: 0.04
-    scrollable: true
+    min-scale: 0.1
+    max-scale: 2
+    margin: 0
+    scrollable: false
+    scroll-view: false
     view-distance: 1
     mobile-view-distance: 1
     menu: false
-    logo: ../../assets/logo-uefs.webp
-    footer: "DCHF-UEFS | Análise da Paisagem | Prof. Diego Vidal"
-    include-after-body:
-      - ../../assets/image-lightbox.html
-      - ../../assets/progress-bar.html
+  beamer:
+    pdf-engine: xelatex
+    aspectratio: 169
+    classoption: [10pt, professionalfonts]
+    include-in-header:
+      - ../../assets/academico-disciplinas/beamer-academico.tex
+filters:
+  - ../../assets/academico-disciplinas/academico.lua
+execute:
+  echo: false

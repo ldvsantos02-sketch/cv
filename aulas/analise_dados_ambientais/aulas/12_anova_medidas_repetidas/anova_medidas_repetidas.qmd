@@ -1,21 +1,13 @@
 ---
 title: "ANOVA de Medidas Repetidas"
-subtitle: "Aula 12 — Análise para Delineamentos com Medidas Repetidas<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 12"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 12"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 12"
 execute:
   echo: false
 ---
@@ -26,9 +18,9 @@ execute:
 :::: {.column width="60%"}
 
 - [1]{.circle} O que é ANOVA de Medidas Repetidas?
-- [2]{.circle} Quando usar — condições vs. momentos
+- [2]{.circle} Quando usar - condições vs. momentos
 - [3]{.circle} Estrutura dos dados e delineamento
-- [4]{.circle} Pressupostos — Esfericidade
+- [4]{.circle} Pressupostos - Esfericidade
 - [5]{.circle} Correções (Greenhouse-Geisser / Huynh-Feldt)
 - [6]{.circle} ANOVA Fatorial de Medidas Repetidas
 - [7]{.circle} Dados faltantes (Missing)
@@ -44,7 +36,7 @@ execute:
 :::
 
 
-# [1 — O QUE É ANOVA-MR?]{.section-header}
+# [1 - O QUE É ANOVA-MR?]{.section-header}
 
 ## Da ANOVA entre-sujeitos à ANOVA intra-sujeitos {.smaller-text}
 
@@ -108,7 +100,7 @@ A ANOVA-MR é mais **poderosa** que a ANOVA entre-sujeitos porque a variabilidad
 :::
 
 
-# [2 — QUANDO USAR]{.section-header}
+# [2 - QUANDO USAR]{.section-header}
 
 ## Condições diferentes ou Momentos diferentes {.smaller-text}
 
@@ -153,7 +145,7 @@ Ex.: Degradação de geotêxtil medida a cada 60 dias
 ![](fig_mr_conceito.png){width="70%" fig-align="center"}
 
 
-# [3 — ESTRUTURA DOS DADOS]{.section-header}
+# [3 - ESTRUTURA DOS DADOS]{.section-header}
 
 ## Formato wide vs. long {.smaller-text}
 
@@ -223,7 +215,7 @@ flowchart TD
 ::: {.info-box}
 **Diferença fundamental**
 
-Na ANOVA-MR, a variância entre sujeitos é **separada** e removida do erro. O erro é apenas a **interação Sujeito × Condição** — ou seja, a inconsistência de cada sujeito entre as condições.
+Na ANOVA-MR, a variância entre sujeitos é **separada** e removida do erro. O erro é apenas a **interação Sujeito × Condição** - ou seja, a inconsistência de cada sujeito entre as condições.
 :::
 
 ::: {.box}
@@ -240,7 +232,7 @@ Na ANOVA-MR, a variância entre sujeitos é **separada** e removida do erro. O e
 :::
 
 
-# [4 — ESFERICIDADE]{.section-header}
+# [4 - ESFERICIDADE]{.section-header}
 
 ## O novo pressuposto: Esfericidade {.smaller-text}
 
@@ -282,7 +274,7 @@ A esfericidade é mais provável de ser violada com **muitas condições** (≥ 
 ::: {.columns}
 :::: {.column width="50%"}
 
-Na ANOVA entre-sujeitos, as observações são independentes. Na MR, as medidas do **mesmo sujeito são correlacionadas** — e essa correlação pode diferir entre pares de condições.
+Na ANOVA entre-sujeitos, as observações são independentes. Na MR, as medidas do **mesmo sujeito são correlacionadas** - e essa correlação pode diferir entre pares de condições.
 
 ::: {.box}
 **Quando violada:**
@@ -310,7 +302,7 @@ Quanto menor ε, mais conservadora a correção.
 :::
 
 
-# [5 — CORREÇÕES]{.section-header}
+# [5 - CORREÇÕES]{.section-header}
 
 ## Greenhouse-Geisser e Huynh-Feldt {.smaller-text}
 
@@ -378,7 +370,7 @@ Com amostras grandes (n > 30 por condição), a ANOVA-MR é **robusta** a viola�
 :::
 
 
-# [6 — ANOVA FATORIAL-MR]{.section-header}
+# [6 - ANOVA FATORIAL-MR]{.section-header}
 
 ## Combinando fatores entre e intra-sujeitos {.smaller-text}
 
@@ -407,7 +399,7 @@ A ANOVA Fatorial-MR é muito utilizada em estudos de **degradação de materiais
 :::
 
 
-# [7 — DADOS FALTANTES]{.section-header}
+# [7 - DADOS FALTANTES]{.section-header}
 
 ## Missing Data em Medidas Repetidas {.smaller-text}
 
@@ -475,11 +467,11 @@ Dados faltantes são comuns em estudos longitudinais e de degradação (ex.: cor
 :::
 
 ::: {.info-box}
-A substituição pela média **não é recomendada** — ela preserva a média, mas reduz artificialmente a variância e ignora o padrão individual do sujeito. Prefira EM ou Imputação Múltipla.
+A substituição pela média **não é recomendada** - ela preserva a média, mas reduz artificialmente a variância e ignora o padrão individual do sujeito. Prefira EM ou Imputação Múltipla.
 :::
 
 
-## Resumo — Fluxo de Decisão {.smaller-text}
+## Resumo - Fluxo de Decisão {.smaller-text}
 
 ```{mermaid}
 %%| fig-width: 10

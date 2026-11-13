@@ -1,0 +1,218 @@
+---
+title: "Canal Escoadouro: Aplicação e Verificação"
+subtitle: "Bioengenharia de Solos"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Bioengenharia de Solos"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Bioengenharia de Solos"
+execute:
+  echo: false
+---
+
+## Aula 08 · Exercício completo de canal escoadouro {.smaller-text}
+
+**Caso didático adaptado do exercício do Perímetro da Ribeira.**
+
+Talhão de milho em sucessão com feijão, em Planossolo com contraste textural. Área: 400 × 200 m = 8 ha. Declividade do terreno: 8%.
+
+O objetivo é produzir um **pré-dimensionamento verificável**, distinguindo os dados do enunciado das hipóteses adotadas para completar os cálculos.
+
+
+
+# 1 · Diagnóstico e dados de entrada
+
+
+
+## Perfil do solo: manter e interpretar os dados {.smaller-text}
+
+| Atributo | Ap | E | EB | Bt |
+|---|---:|---:|---:|---:|
+| Matéria orgânica (dag kg⁻¹) | 3,6 | 1,3 | 0,8 | 0,8 |
+| Areia grossa (%) | 2 | 1 | 1 | 1 |
+| Areia fina (%) | 12 | 11 | 9 | 3 |
+| Argila (%) | 15 | 17 | 20 | 45 |
+| Silte (%) | 71 | 71 | 70 | 51 |
+
+As frações granulométricas somam 100% em cada horizonte.
+
+**Investigar:** contraste EB/Bt, drenagem, dispersividade e resistência à erosão. A classe pedológica orienta essas perguntas, mas não fornece valores hidráulicos ou geotécnicos.
+
+
+
+## O que é dado e o que é hipótese {.smaller-text}
+
+| Entrada | Valor usado | Condição |
+|---|---:|---|
+| Área contribuinte | 8 ha | Enunciado |
+| Declividade inicial do canal | 6% | Enunciado; verificar |
+| Período de retorno | 5 anos | Enunciado; discutir consequência de falha |
+| Chuva média anual | 950 mm | Enunciado; não substitui IDF |
+| Intensidade i | 190 mm h⁻¹ | Hipótese didática, a substituir pela IDF e por $t_c$ |
+| Coeficiente C | 0,58 | Hipótese didática |
+| Manning n | 0,035; 0,050; 0,080 | Cenários de sensibilidade |
+
+Os valores não constituem calibração ou recomendação regional.
+
+
+
+## Etapa 1 · Organização dos terraços {.smaller-text}
+
+Para praticar a geometria, adote preliminarmente $EV=1{,}0$ m:
+
+$$EH=\frac{100\times1{,}0}{8}=12{,}5 \mathrm{m}$$
+
+- Em 200 m de rampa horizontal, há 16 intervalos de 12,5 m.
+- A faixa retangular de 400 × 12,5 m tem 0,5 ha.
+- O número final de obras depende do levantamento e dos limites.
+- O EV preliminar precisa de critério regional e verificação hidráulica.
+
+Dimensione o canal final para a contribuição delimitada; não arredonde e acumule picos de terraços sem avaliar o tempo de resposta.
+
+
+
+## Etapa 2 · Vazão de projeto {.smaller-text}
+
+Com as hipóteses do exercício:
+
+$$Q_p=\frac{CiA_b}{360}=\frac{0{,}58\times190\times8}{360}$$
+$$Q_p=2{,}449 \mathrm{m^3,s^{-1}}$$
+
+Verificações anteriores ao uso em campo:
+
+1. Intensidade obtida de IDF válida para o local.
+2. Duração compatível com o tempo de concentração.
+3. C representativo da cobertura, solo e condição hídrica.
+4. Método adequado à escala, ao armazenamento e à área contribuinte.
+
+
+
+# 2 · Testar e revisar a solução
+
+
+
+## Etapa 3 · Teste do traçado com 6% {.smaller-text}
+
+Seção de teste: $b=4{,}0$ m, $z=2$ H:1 V; $n=0{,}050$; $S_f=0{,}06$.
+
+Resolvendo Manning para a vazão de 2,449 m³ s⁻¹:
+
+| Resultado | Valor |
+|---|---:|
+| Profundidade normal y | 0,281 m |
+| Área molhada | 1,281 m² |
+| Velocidade | 1,912 m s⁻¹ |
+| Tensão média | 143,5 Pa |
+| Froude | 1,22 |
+
+Para limites didáticos $V_{\mathrm{adm}}=1{,}35$ m s⁻¹ e $\tau_{\mathrm{adm}}=50$ Pa, o teste **não atende**. Os limites também precisam de comprovação para o sistema solo–revestimento.
+
+
+
+## Etapa 4 · Revisão do perfil longitudinal {.smaller-text}
+
+Investigue um trecho com $S_f=0{,}01$ (1%) e a mesma base e taludes.
+
+**Compatibilidade topográfica:**
+
+- Um trecho de 200 m a 6% perde 12 m de cota.
+- O mesmo comprimento a 1% perde apenas 2 m.
+- Os 10 m restantes exigem outro traçado ou estruturas de queda e dissipação.
+- Para perder 12 m continuamente a 1%, seriam necessários 1.200 m de desenvolvimento.
+
+Não reduza a declividade apenas na planilha: demonstre o perfil executável e dimensione transições e dissipadores. O exemplo seguinte verifica o trecho uniforme de 1%.
+
+
+
+## Etapa 5 · Seção para a capacidade de condução {.smaller-text}
+
+Adote, para teste, profundidade útil de 0,65 m e o cenário de maior rugosidade, $n=0{,}080$:
+
+$$A_h=(4+2\times0{,}65)\times0{,}65=3{,}445 \mathrm{m^2}$$
+$$P_m=4+2\times0{,}65\sqrt{5}=6{,}907 \mathrm{m}$$
+$$R_h=0{,}499 \mathrm{m}qquad V=0{,}786 \mathrm{m,s^{-1}}$$
+$$Q_{\mathrm{cap}}=3{,}445\times0{,}786=2{,}708 \mathrm{m^3,s^{-1}}$$
+
+Assim, $Q_{\mathrm{cap}}>Q_p$ nesse estado. A profundidade de 0,65 m é o limite útil adotado; a profundidade normal será menor.
+
+
+
+## Etapa 6 · Sensibilidade à rugosidade {.smaller-text}
+
+Para $Q_p=2{,}449$ m³ s⁻¹, $b=4$ m, $z=2$ e $S_f=0{,}01$:
+
+| n | y normal (m) | V (m s⁻¹) | Tensão média (Pa) | Fr |
+|---:|---:|---:|---:|---:|
+| 0,035 | 0,384 | 1,337 | 31,4 | 0,74 |
+| 0,050 | 0,471 | 1,052 | 37,4 | 0,53 |
+| 0,080 | 0,614 | 0,762 | 46,7 | 0,35 |
+
+A maior rugosidade governa a lâmina; a menor governa a velocidade neste exemplo. A margem em relação a 1,35 m s⁻¹ é pequena: outros estados ou limites podem exigir nova geometria ou revestimento.
+
+
+
+## Etapa 7 · Borda livre e largura superior {.smaller-text}
+
+Como hipótese de desenho, acrescente 0,20 m de borda livre à profundidade útil de 0,65 m:
+
+$$H=0{,}65+0{,}20=0{,}85 \mathrm{m}$$
+$$B_{\mathrm{topo}}=b+2zH=4+2\times2\times0{,}85=7{,}40 \mathrm{m}$$
+
+No cenário n = 0,080, a lâmina normal é 0,614 m; portanto a diferença até o coroamento é aproximadamente 0,236 m.
+
+Borda livre, largura, taludes e resistência precisam ser confirmados para sedimento, manutenção, recalque e condições locais.
+
+
+
+# 3 · Implantação, quantidades e acompanhamento
+
+
+
+## Etapa 8 · Quantitativos do trecho {.smaller-text}
+
+Seção geométrica até $H=0{,}85$ m:
+
+$$A_{\mathrm{geom}}=(4+2\times0{,}85)\times0{,}85=4{,}845 \mathrm{m^2}$$
+
+Área aproximada do revestimento por metro de canal:
+
+$$P_{\mathrm{rev}}=4+2\times0{,}85\sqrt5=7{,}801 \mathrm{m}$$
+
+Para um **trecho uniforme de 100 m**, isso corresponde a 484,5 m³ de prisma geométrico e 780,1 m² de superfície interna.
+
+O volume real de corte e aterro depende das seções do terreno. Acrescente transições, sobreposições, perdas e estruturas complementares ao orçamento.
+
+
+
+## Etapa 9 · Sequência de execução {.smaller-text}
+
+1. Confirmar levantamento, perfil, acesso e destino da descarga.
+2. Construir saída e dissipação previstas.
+3. Locar e conformar a seção; separar material superficial adequado.
+4. Controlar cotas, zonas de compactação e camada para raízes.
+5. Implantar revestimento e proteção temporária.
+6. Liberar a contribuição conforme o desempenho previsto para a fase inicial.
+7. Registrar seção e cobertura e inspecionar após chuvas.
+
+
+
+## Etapa 10 · Decisão e relatório {.smaller-text}
+
+O trecho a 1% atende aos testes numéricos **apenas sob as hipóteses adotadas**. A solução executiva ainda depende de:
+
+- IDF, tempo de concentração e coeficiente de escoamento locais.
+- Limites de resistência documentados para solo, vegetação e proteção inicial.
+- Perfil longitudinal completo, transições e dissipação dos desníveis.
+- Estabilidade dos taludes, nível d'água e saída.
+- Quantitativos reais, custos e plano de manutenção.
+
+**Entrega:** memorial de cálculo, tabela de sensibilidade, planta, perfil, seção e justificativa das revisões.
+
+
+
+## Leituras e fontes técnicas {.smaller-text}
+
+- [USDA-NRCS (2007). NEH 654, capítulo 8: Threshold Channel Design](https://directives.nrcs.usda.gov/sites/default/files2/1712931093/7332.pdf)
+- [Embrapa (2017). Manual de métodos de análise de solo, 3ª edição](https://www.embrapa.br/web/solos/busca-de-publicacoes/-/publicacao/1085209/manual-de-metodos-de-analise-de-solo)

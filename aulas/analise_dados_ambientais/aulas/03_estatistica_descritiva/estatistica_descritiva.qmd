@@ -1,21 +1,13 @@
 ---
 title: "Estatística Descritiva"
-subtitle: "Aula 03 — Medidas de Tendência Central e Dispersão<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 03"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 03"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 03"
 execute:
   echo: false
 ---
@@ -115,7 +107,7 @@ Investigar os níveis de **crescimento radicular** frente ao uso de fungos micor
 ## Média Aritmética {.smaller-text}
 
 ::: {.info-box}
-**Média** — Soma de todos os valores dividida pelo número de observações.
+**Média** - Soma de todos os valores dividida pelo número de observações.
 :::
 
 ::: {.columns}
@@ -142,7 +134,7 @@ $\sum = 2148$ &nbsp;·&nbsp; $N = 17$ &nbsp;·&nbsp; $\bar{X} = 126{,}35$
 ## Moda {.smaller-text}
 
 ::: {.info-box}
-**Moda** — O valor que aparece com **maior frequência** na amostra.
+**Moda** - O valor que aparece com **maior frequência** na amostra.
 :::
 
 ::: {.columns}
@@ -169,7 +161,7 @@ Distribuição **unimodal**.
 ## Mediana {.smaller-text}
 
 ::: {.info-box}
-**Mediana** — O valor que divide a amostra em **duas metades iguais** quando os dados estão ordenados.
+**Mediana** - O valor que divide a amostra em **duas metades iguais** quando os dados estão ordenados.
 :::
 
 ::: {.columns}
@@ -345,7 +337,7 @@ Em média, cada escore se afasta **19,02 cm** da média de 126,35 cm.
 :::: {.column width="50%"}
 
 ::: {.info-box}
-**Erro-Padrão (EP)** — Desvio-padrão entre as **médias das amostras** (Field, 2005).
+**Erro-Padrão (EP)** - Desvio-padrão entre as **médias das amostras** (Field, 2005).
 
 Estima a **precisão da média amostral** como estimativa da média populacional.
 :::
@@ -576,7 +568,7 @@ LS = $126{,}35 + 2{,}575 \times 4{,}61$
 ![](fig_intervalo_confianca.png){fig-align="center" width="75%"}
 
 ::: {.info-box}
-Quanto **maior** o nível de confiança, **mais amplo** é o intervalo — há um *trade-off* entre precisão e confiança.
+Quanto **maior** o nível de confiança, **mais amplo** é o intervalo - há um *trade-off* entre precisão e confiança.
 :::
 
 ::: {.highlight-box}

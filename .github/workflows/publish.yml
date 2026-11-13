@@ -84,16 +84,15 @@ jobs:
 
       - name: Render Aulas (RevealJS slides)
         run: |
-          for disciplina in analise_ambiental analise_paisagem analise_dados_ambientais bioengenharia_de_solos branding_agro ciencia_pi extensao_rural geotecnologias_sig geotexteis introducao_estatistica sociologia_rural; do
-            aulas_dir="aulas/$disciplina/aulas"
-            if [ -d "$aulas_dir" ]; then
-              echo "=== Rendering slides: $disciplina ==="
-              find "$aulas_dir" -name "*.qmd" -type f | while read qmd; do
-                echo "  -> $(basename $qmd)"
-                quarto render "$qmd" || echo "  !! WARN: falha em $(basename $qmd)"
-              done
-            fi
-          done
+          # Discover the teaching projects, including SLIDES_QUARTO,
+          # stand-alone Geotextiles decks, extra classes and new disciplines.
+          while IFS= read -r -d '' project; do
+            aulas_dir="$(dirname "$project")"
+            echo "=== Rendering slides: $aulas_dir ==="
+            quarto render "$aulas_dir" --to revealjs
+          done < <(find aulas -name '_quarto.yml' -type f \
+            -not -path '*/assets/*' -not -path '*/referencias/*' \
+            -not -path '*/.quarto/*' -print0 | sort -z)
 
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2

@@ -1,23 +1,13 @@
-﻿---
-title: "Análise da Paisagem"
-subtitle: "Legislação Ambiental e Políticas Públicas Aplicadas à Paisagem<br>Curso de Geografia"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise da Paisagem | Legislação e Políticas Públicas"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body:
-      - ../../../assets/image-lightbox.html
-      - ../../../assets/progress-bar.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+---
+title: "Legislação Ambiental e Políticas Públicas Aplicadas à Paisagem"
+subtitle: "Análise da Paisagem · Aula 10.2"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise da Paisagem"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise da Paisagem · Aula 10.2"
 execute:
   echo: false
 ---
@@ -268,8 +258,8 @@ A ecologia da paisagem fornece métricas para quantificar esses efeitos cumulati
 ### Produtos
 
 - Mapa de APPs delimitadas por geoprocessamento
-- Mapa de conflito APP Ã— uso atual
-- Mapa de RL declarada Ã— RL existente
+- Mapa de conflito APP Ã- uso atual
+- Mapa de RL declarada Ã- RL existente
 - Tabela síntese: conformidade legal por sub-bacia
 :::
 
@@ -287,7 +277,7 @@ digraph {
     A [label="MDE + Hidrografia", fillcolor="#E3F2FD", color="#1565C0"]
     B [label="Buffer â†’ APP", fillcolor="#BBDEFB", color="#1565C0"]
     C [label="MapBiomas\nUso e Cobertura", fillcolor="#C8E6C9", color="#2E7D32"]
-    D [label="Overlay\nAPP Ã— Uso", fillcolor="#FFE0B2", color="#E65100"]
+    D [label="Overlay\nAPP Ã- Uso", fillcolor="#FFE0B2", color="#E65100"]
     E [label="CAR â†’ RL", fillcolor="#E1BEE7", color="#6A1B9A"]
     F [label="Mapa de\nConflitos", fillcolor="#FFCDD2", color="#C62828"]
     G [label="Tabela\nConformidade", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20"]

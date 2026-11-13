@@ -1,21 +1,13 @@
-﻿---
-title: "Modelos de AssociaÃ§Ã£o e DependÃªncia"
-subtitle: "Aula 16 â€” Medidas de AssociaÃ§Ã£o para VariÃ¡veis CategÃ³ricas<br>AnÃ¡lise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | AnÃ¡lise de Dados Ambientais | Aula 16"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+---
+title: "Modelos de Associação e Dependência"
+subtitle: "Análise de Dados Ambientais · Aula 16"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 16"
 execute:
   echo: false
 ---
@@ -78,10 +70,10 @@ Em estudos observacionais ambientais, raramente hÃ¡ aleatorizaÃ§Ã£o â€�
 
 | SituaÃ§Ã£o | TÃ©cnica | Exemplo Ambiental |
 |:---------|:--------|:-----------------|
-| 2 categÃ³ricas (2Ã—2) | Ï† de Pearson, OR | ErosÃ£o (sim/nÃ£o) Ã— Cobertura (presente/ausente) |
-| 2 categÃ³ricas (rÃ—c) | V de Cramer | Tipo de solo (3 classes) Ã— Uso da terra (4 tipos) |
-| CategÃ³rica Ã— ContÃ­nua | Î·Â² (eta-quadrado) | Tipo de manejo â†’ Teor de MOS |
-| 2 contÃ­nuas | r de Pearson, Ï de Spearman | PrecipitaÃ§Ã£o Ã— VazÃ£o |
+| 2 categÃ³ricas (2Ã-2) | Ï† de Pearson, OR | ErosÃ£o (sim/nÃ£o) Ã- Cobertura (presente/ausente) |
+| 2 categÃ³ricas (rÃ-c) | V de Cramer | Tipo de solo (3 classes) Ã- Uso da terra (4 tipos) |
+| CategÃ³rica Ã- ContÃ­nua | Î·Â² (eta-quadrado) | Tipo de manejo â†’ Teor de MOS |
+| 2 contÃ­nuas | r de Pearson, Ï de Spearman | PrecipitaÃ§Ã£o Ã- VazÃ£o |
 | PrediÃ§Ã£o categÃ³rica | RegressÃ£o logÃ­stica | Fatores â†’ PresenÃ§a/ausÃªncia espÃ©cie |
 
 
@@ -108,7 +100,7 @@ As letras **a, b, c, d** formam a base para cÃ¡lculo de Ï†, OR, RR e Ï‡�
 
 ## Coeficiente Ï† (Phi) de Pearson {.smaller-text}
 
-Para tabelas **2Ã—2** â€” mede associaÃ§Ã£o entre duas variÃ¡veis dicotÃ´micas.
+Para tabelas **2Ã-2** â€” mede associaÃ§Ã£o entre duas variÃ¡veis dicotÃ´micas.
 
 $$\phi = \frac{ad - bc}{\sqrt{(a+b)(c+d)(a+c)(b+d)}}$$
 
@@ -131,7 +123,7 @@ $$\phi = \frac{(45)(50) - (15)(10)}{\sqrt{(60)(60)(55)(65)}} = \frac{2250 - 150}
 
 ## V de Cramer {.smaller-text}
 
-GeneralizaÃ§Ã£o do Ï† para tabelas **r Ã— c** (mais de 2 linhas ou colunas).
+GeneralizaÃ§Ã£o do Ï† para tabelas **r Ã- c** (mais de 2 linhas ou colunas).
 
 $$V = \sqrt{\frac{\chi^2}{n \cdot \min(r-1,\; c-1)}}$$
 
@@ -142,7 +134,7 @@ Onde:
 - $r$, $c$ = nÃºmero de linhas e colunas
 
 ::: {.info-box}
-**Quando usar:** Tipo de solo (Latossolo, Argissolo, Neossolo) Ã— Classe de erosÃ£o (Laminar, Sulcos, Ravinas, VoÃ§orocas).
+**Quando usar:** Tipo de solo (Latossolo, Argissolo, Neossolo) Ã- Classe de erosÃ£o (Laminar, Sulcos, Ravinas, VoÃ§orocas).
 
 V varia de **0** (sem associaÃ§Ã£o) a **1** (associaÃ§Ã£o perfeita).
 :::
@@ -151,7 +143,7 @@ V varia de **0** (sem associaÃ§Ã£o) a **1** (associaÃ§Ã£o perfeita).
 
 ## Coeficiente de ContingÃªncia C {.smaller-text}
 
-Outra medida para tabelas rÃ—c, mas com limite superior < 1:
+Outra medida para tabelas rÃ-c, mas com limite superior < 1:
 
 $$C = \sqrt{\frac{\chi^2}{\chi^2 + n}}$$
 
@@ -159,10 +151,10 @@ $$C = \sqrt{\frac{\chi^2}{\chi^2 + n}}$$
 
 | Tabela | C~mÃ¡x~ |
 |:---:|:---:|
-| 2Ã—2 | 0,707 |
-| 3Ã—3 | 0,816 |
-| 4Ã—4 | 0,866 |
-| 5Ã—5 | 0,894 |
+| 2Ã-2 | 0,707 |
+| 3Ã-3 | 0,816 |
+| 4Ã-4 | 0,866 |
+| 5Ã-5 | 0,894 |
 
 
 ::: {.highlight-box}
@@ -241,7 +233,7 @@ Se o IC 95% **nÃ£o contÃ©m 1**, a associaÃ§Ã£o Ã© **estatisticamente s
 
 Para tabelas de contingÃªncia com **3+ variÃ¡veis** categÃ³ricas.
 
-Modelo geral para tabela A Ã— B Ã— C:
+Modelo geral para tabela A Ã- B Ã- C:
 
 $$\ln(f_{ijk}) = \mu + \lambda_i^A + \lambda_j^B + \lambda_k^C + \lambda_{ij}^{AB} + \lambda_{ik}^{AC} + \lambda_{jk}^{BC} + \lambda_{ijk}^{ABC}$$
 
@@ -273,7 +265,7 @@ $$G^2 = 2 \sum f_{obs} \ln\left(\frac{f_{obs}}{f_{esp}}\right)$$
 
 
 ::: {.info-box}
-**Exemplo Ambiental:** Tipo de solo (A) Ã— Uso da terra (B) Ã— OcorrÃªncia de erosÃ£o (C).
+**Exemplo Ambiental:** Tipo de solo (A) Ã- Uso da terra (B) Ã- OcorrÃªncia de erosÃ£o (C).
 O modelo log-linear revela quais **combinaÃ§Ãµes** de fatores estÃ£o associadas Ã  erosÃ£o.
 :::
 
@@ -318,7 +310,7 @@ onde $\lambda_k$ sÃ£o os autovalores (variÃ¢ncia explicada por cada dimensÃ
 
 ---
 
-## Exemplo: Solo Ã— Uso da Terra {.smaller-text}
+## Exemplo: Solo Ã- Uso da Terra {.smaller-text}
 
 ```{mermaid}
 %%| fig-width: 10
@@ -368,14 +360,14 @@ ExtensÃ£o para **3 ou mais** variÃ¡veis categÃ³ricas simultÃ¢neas.
 
 
 ::: {.info-box}
-**Uso em Dados Ambientais:** Tipo de solo Ã— Cobertura vegetal Ã— Classe de erosÃ£o Ã— PrÃ¡ticas de manejo â€” visualizar padrÃµes multivariados em um Ãºnico biplot.
+**Uso em Dados Ambientais:** Tipo de solo Ã- Cobertura vegetal Ã- Classe de erosÃ£o Ã- PrÃ¡ticas de manejo â€” visualizar padrÃµes multivariados em um Ãºnico biplot.
 :::
 
 ---
 
 # [APLICAÃ‡Ã•ES EM DADOS AMBIENTAIS]{.section-header}
 
-## Estudo de Caso: ErosÃ£o Ã— Manejo {.smaller-text}
+## Estudo de Caso: ErosÃ£o Ã- Manejo {.smaller-text}
 
 **Objetivo:** Avaliar associaÃ§Ã£o entre prÃ¡ticas de manejo e ocorrÃªncia de erosÃ£o em 200 parcelas.
 
@@ -400,8 +392,8 @@ AssociaÃ§Ã£o **forte** (V > 0,50). Plantio Convencional concentra a maioria 
 
 | ComparaÃ§Ã£o | OR | IC 95% | InterpretaÃ§Ã£o |
 |:---|:---:|:---:|:---|
-| Convencional vs Agrofloresta | 28,5 | [8,9; 91,2] | 28Ã— mais chance erosÃ£o |
-| Cultivo MÃ­nimo vs Agrofloresta | 6,0 | [1,9; 18,7] | 6Ã— mais chance erosÃ£o |
+| Convencional vs Agrofloresta | 28,5 | [8,9; 91,2] | 28Ã- mais chance erosÃ£o |
+| Cultivo MÃ­nimo vs Agrofloresta | 6,0 | [1,9; 18,7] | 6Ã- mais chance erosÃ£o |
 | Plantio Direto vs Agrofloresta | 1,7 | [0,5; 5,9] | NS (IC inclui 1) |
 
 
@@ -415,9 +407,9 @@ AssociaÃ§Ã£o **forte** (V > 0,50). Plantio Convencional concentra a maioria 
 
 | Medida | Tipo de VariÃ¡vel | Faixa | Melhor para |
 |:---|:---|:---:|:---|
-| Ï† (phi) | 2 dicotÃ´micas | [-1; 1] | Tabela 2Ã—2 |
-| V de Cramer | CategÃ³ricas rÃ—c | [0; 1] | Qualquer tabela |
-| Coef. ContingÃªncia C | CategÃ³ricas rÃ—c | [0; C~mÃ¡x~] | Evitar (usar V) |
+| Ï† (phi) | 2 dicotÃ´micas | [-1; 1] | Tabela 2Ã-2 |
+| V de Cramer | CategÃ³ricas rÃ-c | [0; 1] | Qualquer tabela |
+| Coef. ContingÃªncia C | CategÃ³ricas rÃ-c | [0; C~mÃ¡x~] | Evitar (usar V) |
 | OR | 2 dicotÃ´micas | [0; âˆž) | Caso-controle |
 | RR | 2 dicotÃ´micas | [0; âˆž) | Coorte/transversal |
 | Log-linear | 3+ categÃ³ricas | â€” | InteraÃ§Ãµes multivariadas |

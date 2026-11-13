@@ -1,22 +1,13 @@
 ---
 title: "ANCOVA"
-subtitle: "Aula 11 — Análise de Covariância<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 11"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
-    scrollable: true
+subtitle: "Análise de Dados Ambientais · Aula 11"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 11"
 execute:
   echo: false
 ---
@@ -28,10 +19,10 @@ execute:
 
 - [1]{.circle} O que é ANCOVA?
 - [2]{.circle} Quando usar a ANCOVA?
-- [3]{.circle} Lógica — Removendo o ruído da covariável
+- [3]{.circle} Lógica - Removendo o ruído da covariável
 - [4]{.circle} Pressupostos específicos
-- [5]{.circle} Exemplo 1 — Erosão e Cobertura Vegetal
-- [6]{.circle} Exemplo 2 — Habilidades Matemáticas e IME
+- [5]{.circle} Exemplo 1 - Erosão e Cobertura Vegetal
+- [6]{.circle} Exemplo 2 - Habilidades Matemáticas e IME
 - [7]{.circle} Solicitando a ANCOVA
 - [8]{.circle} Descrevendo os Resultados
 - [9]{.circle} ANCOVA vs. ANOVA: quando preferir cada uma?
@@ -47,7 +38,7 @@ execute:
 :::
 
 
-# [1 — O QUE É ANCOVA?]{.section-header}
+# [1 - O QUE É ANCOVA?]{.section-header}
 
 ## Análise de Covariância {.smaller-text}
 
@@ -57,11 +48,11 @@ execute:
 ::: {.info-box}
 **Definição**
 
-A **ANCOVA** (*Analysis of Covariance*) combina ANOVA e regressão linear. Ela compara médias de grupos enquanto **controla** o efeito de uma ou mais variáveis contínuas — as **covariáveis**.
+A **ANCOVA** (*Analysis of Covariance*) combina ANOVA e regressão linear. Ela compara médias de grupos enquanto **controla** o efeito de uma ou mais variáveis contínuas - as **covariáveis**.
 :::
 
 ::: {.box}
-**Estrutura mínima — pelo menos três variáveis**
+**Estrutura mínima - pelo menos três variáveis**
 
 | Componente | Tipo | Exemplo |
 |------------|------|---------|
@@ -83,7 +74,7 @@ A covariável na ANCOVA é **sempre contínua** (ou, em algumas extensões, ordi
 :::
 
 
-## Erosão > Precipitação — Mas o que mais influencia? {.smaller-text}
+## Erosão > Precipitação - Mas o que mais influencia? {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
@@ -120,7 +111,7 @@ A ANCOVA remove o efeito da chuva antes de comparar os grupos.
 :::
 
 
-## Outro exemplo — Habilidades Matemáticas {.smaller-text}
+## Outro exemplo - Habilidades Matemáticas {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
@@ -170,7 +161,7 @@ A covariável "compreensão de texto" influencia o desempenho, mas **não é o f
 Imagine que você quer comparar a erosão entre 3 tipos de cobertura vegetal, **mas** a precipitação variou entre as parcelas:
 
 ::: {.highlight-box}
-**Sem ANCOVA:** a diferença entre os grupos pode ser devida à cobertura *ou* à precipitação — impossível separar.
+**Sem ANCOVA:** a diferença entre os grupos pode ser devida à cobertura *ou* à precipitação - impossível separar.
 
 **Com ANCOVA:** o efeito da precipitação é **removido estatisticamente**, e a comparação entre coberturas é feita como se todas as parcelas tivessem recebido a mesma chuva.
 :::
@@ -181,14 +172,14 @@ Imagine que você quer comparar a erosão entre 3 tipos de cobertura vegetal, **
 ![](fig_covariavel_efeito.png){width="100%"}
 
 ::: {.info-box}
-A ANCOVA **reduz a variância do erro** (SQ_Erro), aumentando o poder do teste F — ou seja, mais chance de detectar diferenças reais entre os grupos.
+A ANCOVA **reduz a variância do erro** (SQ_Erro), aumentando o poder do teste F - ou seja, mais chance de detectar diferenças reais entre os grupos.
 :::
 
 ::::
 :::
 
 
-# [2 — QUANDO USAR A ANCOVA?]{.section-header}
+# [2 - QUANDO USAR A ANCOVA?]{.section-header}
 
 ## Situações ideais para ANCOVA {.smaller-text}
 
@@ -225,7 +216,7 @@ A ANCOVA é especialmente útil em **estudos de campo** (ciências ambientais, a
 :::
 
 
-# [3 — A LÓGICA DA ANCOVA]{.section-header}
+# [3 - A LÓGICA DA ANCOVA]{.section-header}
 
 ## Removendo o ruído da covariável {.smaller-text}
 
@@ -264,7 +255,7 @@ flowchart TD
 |-------|----|----|-----|---|
 | Covariável | SQ_Cov | 1 | QM_Cov | QM_Cov / QM_E |
 | Fator | SQ_Fator(adj) | k − 1 | QM_F | QM_F / QM_E |
-| Erro | SQ_E | N − k − 1 | QM_E | — |
+| Erro | SQ_E | N − k − 1 | QM_E | - |
 :::
 
 ::::
@@ -284,7 +275,7 @@ flowchart TD
 ::: {.highlight-box}
 **Médias marginais estimadas** (EMMs)
 
-A ANCOVA produz **médias ajustadas** — o valor esperado da VD para cada grupo quando a covariável é fixada em sua **média geral**.
+A ANCOVA produz **médias ajustadas** - o valor esperado da VD para cada grupo quando a covariável é fixada em sua **média geral**.
 
 São essas médias ajustadas que devem ser comparadas nos testes post-hoc, não as médias brutas.
 :::
@@ -297,7 +288,7 @@ As médias ajustadas podem ser **muito diferentes** das médias brutas, especial
 :::
 
 
-# [4 — PRESSUPOSTOS]{.section-header}
+# [4 - PRESSUPOSTOS]{.section-header}
 
 ## Pressupostos Específicos da ANCOVA {.smaller-text}
 
@@ -320,14 +311,14 @@ Além dos pressupostos da ANOVA (normalidade, homocedasticidade, independência)
 ![](fig_pressupostos_ancova.png){width="100%"}
 
 ::: {.highlight-box}
-O pressuposto mais crítico é a **homogeneidade das inclinações de regressão** — se as retas não forem paralelas (interação significativa), a ANCOVA não é válida.
+O pressuposto mais crítico é a **homogeneidade das inclinações de regressão** - se as retas não forem paralelas (interação significativa), a ANCOVA não é válida.
 :::
 
 ::::
 :::
 
 
-# [5 — EXEMPLO 1: EROSÃO E COBERTURA]{.section-header}
+# [5 - EXEMPLO 1: EROSÃO E COBERTURA]{.section-header}
 
 ## Erosão e Cobertura Vegetal com Covariável {.smaller-text}
 
@@ -350,7 +341,7 @@ O pressuposto mais crítico é a **homogeneidade das inclinações de regressão
 |-------|---|---------|
 | Precipitação (Cov) | 28,4 | < 0,001 |
 | Cobertura (adj) | 15,7 | < 0,001 |
-| Erro | — | — |
+| Erro | - | - |
 
 Sem a covariável (ANOVA simples): F = 8,2; p = 0,002
 
@@ -366,7 +357,7 @@ Com a covariável (ANCOVA): **F = 15,7; p < 0,001** → poder aumentou!
 :::
 
 
-# [6 — EXEMPLO 2: HABILIDADES E IME]{.section-header}
+# [6 - EXEMPLO 2: HABILIDADES E IME]{.section-header}
 
 ## Método de Ensino e Desempenho Matemático {.smaller-text}
 
@@ -377,7 +368,7 @@ Com a covariável (ANCOVA): **F = 15,7; p < 0,001** → poder aumentou!
 **Delineamento**
 
 - **Fator:** Método de ensino (Tradicional, Ativo, Híbrido)
-- **VD:** Nota final em Matemática (0–100)
+- **VD:** Nota final em Matemática (0-100)
 - **Covariável:** Compreensão de Texto (escore padronizado)
 - **n = 15** por grupo → N = 45
 :::
@@ -389,11 +380,11 @@ Com a covariável (ANCOVA): **F = 15,7; p < 0,001** → poder aumentou!
 |-------|---|---------|-----------|
 | Compreensão (Cov) | 18,9 | < 0,001 | 0,31 |
 | Método (adj) | 7,3 | 0,002 | 0,26 |
-| Erro | — | — | — |
+| Erro | - | - | - |
 
 Sem covariável: F = 3,1; p = 0,055 (n.s.)
 
-Com covariável: **F = 7,3; p = 0,002** — a diferença era **mascarada** pela variação em compreensão!
+Com covariável: **F = 7,3; p = 0,002** - a diferença era **mascarada** pela variação em compreensão!
 :::
 
 ::::
@@ -421,7 +412,7 @@ Post-hoc (Bonferroni): Tradicional < Ativo (p = 0,04); Tradicional < Híbrido (p
 :::
 
 
-# [7 — SOLICITANDO A ANCOVA]{.section-header}
+# [7 - SOLICITANDO A ANCOVA]{.section-header}
 
 ## Como Solicitar a Análise {.smaller-text}
 
@@ -460,20 +451,20 @@ Post-hoc (Bonferroni): Tradicional < Ativo (p = 0,04); Tradicional < Híbrido (p
 :::
 
 ::: {.highlight-box}
-**Atenção:** nunca use as médias brutas para comparar os grupos na ANCOVA — use sempre as **médias marginais estimadas (EMMs)**.
+**Atenção:** nunca use as médias brutas para comparar os grupos na ANCOVA - use sempre as **médias marginais estimadas (EMMs)**.
 :::
 
 ::::
 :::
 
 
-## No R — Código Básico {.smaller-text}
+## No R - Código Básico {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
 
 ::: {.box}
-**1 — Testar homogeneidade de inclinações**
+**1 - Testar homogeneidade de inclinações**
 ```r
 # Modelo com interação
 mod_inter <- aov(erosao ~ cobertura * precipitacao,
@@ -484,7 +475,7 @@ summary(mod_inter)
 :::
 
 ::: {.box}
-**2 — ANCOVA (modelo final)**
+**2 - ANCOVA (modelo final)**
 ```r
 mod_ancova <- aov(erosao ~ precipitacao + cobertura,
                   data = dados)
@@ -496,7 +487,7 @@ summary(mod_ancova)
 :::: {.column width="50%"}
 
 ::: {.box}
-**3 — Médias ajustadas e post-hoc**
+**3 - Médias ajustadas e post-hoc**
 ```r
 library(emmeans)
 
@@ -517,7 +508,7 @@ O pacote `emmeans` calcula automaticamente as EMMs fixando a covariável na méd
 :::
 
 
-# [8 — DESCREVENDO OS RESULTADOS]{.section-header}
+# [8 - DESCREVENDO OS RESULTADOS]{.section-header}
 
 ## Como Reportar a ANCOVA {.smaller-text}
 
@@ -545,14 +536,14 @@ O pacote `emmeans` calcula automaticamente as EMMs fixando a covariável na méd
 :::
 
 ::: {.highlight-box}
-**Erro comum:** reportar médias brutas em vez das ajustadas. Na ANCOVA, as médias brutas podem ser enganosas — a "correção" pela covariável pode alterar consideravelmente a ordem ou a distância entre os grupos.
+**Erro comum:** reportar médias brutas em vez das ajustadas. Na ANCOVA, as médias brutas podem ser enganosas - a "correção" pela covariável pode alterar consideravelmente a ordem ou a distância entre os grupos.
 :::
 
 ::::
 :::
 
 
-# [9 — ANCOVA vs. ANOVA]{.section-header}
+# [9 - ANCOVA vs. ANOVA]{.section-header}
 
 ## Quando escolher cada técnica? {.smaller-text}
 
@@ -583,7 +574,7 @@ O pacote `emmeans` calcula automaticamente as EMMs fixando a covariável na méd
 :::
 
 
-## Resumo — Fluxo de Decisão {.smaller-text}
+## Resumo - Fluxo de Decisão {.smaller-text}
 
 ```{mermaid}
 %%| fig-width: 10

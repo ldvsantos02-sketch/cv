@@ -1,22 +1,13 @@
 ---
 title: "MANOVA"
-subtitle: "Aula 13B — Análise Multivariada da Variância<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 13B"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
-    scrollable: true
+subtitle: "Análise de Dados Ambientais"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais"
 execute:
   echo: false
 ---
@@ -31,7 +22,7 @@ execute:
 - [3]{.circle} Combinação linear das VDs
 - [4]{.circle} Pressupostos da MANOVA
 - [5]{.circle} Estatísticas de teste
-- [6]{.circle} Exemplo prático — Geotêxteis
+- [6]{.circle} Exemplo prático - Geotêxteis
 - [7]{.circle} MANOVA de Medidas Repetidas
 - [8]{.circle} Dados faltantes e relato dos resultados
 
@@ -46,7 +37,7 @@ execute:
 :::
 
 
-# [1 — POR QUE MANOVA?]{.section-header}
+# [1 - POR QUE MANOVA?]{.section-header}
 
 ## O problema das várias ANOVAs {.smaller-text}
 
@@ -129,7 +120,7 @@ A MANOVA testa se os grupos diferem no **conjunto das variáveis dependentes**, 
 :::
 
 
-# [2 — DA ANOVA À MANOVA]{.section-header}
+# [2 - DA ANOVA À MANOVA]{.section-header}
 
 ## A analogia central {.smaller-text}
 
@@ -198,7 +189,7 @@ Determinantes de matrizes.
 
 Na ANOVA, cada grupo tem uma **média**.
 
-Na MANOVA, cada grupo tem um **centroide** — o vetor de médias de todas as VDs.
+Na MANOVA, cada grupo tem um **centroide** - o vetor de médias de todas as VDs.
 
 ::: {.box}
 **Centroide do grupo "Taboa"**
@@ -225,7 +216,7 @@ Se a MANOVA rejeita H₀, pelo menos um centroide difere. A etapa seguinte ident
 :::
 
 
-# [3 — COMBINAÇÃO LINEAR DAS VDs]{.section-header}
+# [3 - COMBINAÇÃO LINEAR DAS VDs]{.section-header}
 
 ## O poder da combinação linear {.smaller-text}
 
@@ -250,7 +241,7 @@ Isoladamente, nenhuma variável pode distinguir os grupos. Mas a **combinação 
 ![](fig_combinacao_linear.png){width="100%"}
 
 ::: {.highlight-box}
-A MANOVA encontra a combinação linear das VDs que **maximiza** a separação entre os grupos — raciocínio próximo ao da Análise Discriminante.
+A MANOVA encontra a combinação linear das VDs que **maximiza** a separação entre os grupos - raciocínio próximo ao da Análise Discriminante.
 :::
 
 ::::
@@ -275,7 +266,7 @@ Ex.: o geotêxtil A tem resistência à tração maior que B e C.
 
 Nenhuma VD isolada muda muito, mas o **perfil conjunto** das VDs muda.
 
-Ex.: A é levemente melhor em tração, B em punção, C em rigidez — o padrão conjunto separa os grupos.
+Ex.: A é levemente melhor em tração, B em punção, C em rigidez - o padrão conjunto separa os grupos.
 :::
 
 ::::
@@ -300,7 +291,7 @@ O ganho da MANOVA depende da **correlação entre as VDs**: se elas não se rela
 :::
 
 
-# [4 — PRESSUPOSTOS DA MANOVA]{.section-header}
+# [4 - PRESSUPOSTOS DA MANOVA]{.section-header}
 
 ## Pressupostos principais {.smaller-text}
 
@@ -355,7 +346,7 @@ Quando os pressupostos são frágeis, relate a decisão: use **Pillai** como est
 :::
 
 
-# [5 — ESTATÍSTICAS DE TESTE]{.section-header}
+# [5 - ESTATÍSTICAS DE TESTE]{.section-header}
 
 ## Quatro formas de testar a MANOVA {.smaller-text}
 
@@ -396,7 +387,7 @@ Quando os pressupostos são frágeis, relate a decisão: use **Pillai** como est
 
 - Considera apenas a maior dimensão discriminante
 - Útil quando a diferença está concentrada em uma dimensão
-- Sensível a violações — usar com cautela
+- Sensível a violações - usar com cautela
 :::
 
 ::::
@@ -427,7 +418,7 @@ flowchart LR
 :::
 
 
-# [6 — EXEMPLO PRÁTICO]{.section-header}
+# [6 - EXEMPLO PRÁTICO]{.section-header}
 
 ## Geotêxteis: Taboa × Ouricuri × Junco {.smaller-text}
 
@@ -465,7 +456,7 @@ Isoladamente, cada VD pode não diferenciar os grupos (p > 0,05 nas ANOVAs indiv
 :::: {.column width="50%"}
 
 ::: {.box}
-**Passo 1 — MANOVA global**
+**Passo 1 - MANOVA global**
 
 | Estatística | Valor | F | p |
 |-------------|:---:|:---:|:---:|
@@ -479,7 +470,7 @@ Resultado: H₀ rejeitada → os centroides diferem.
 :::: {.column width="50%"}
 
 ::: {.box}
-**Passo 2 — ANOVAs de acompanhamento**
+**Passo 2 - ANOVAs de acompanhamento**
 
 | VD | F | p | η² |
 |----|:---:|:---:|:---:|
@@ -532,7 +523,7 @@ Não pule direto para várias ANOVAs sem relatar a MANOVA global. O ganho infere
 :::
 
 
-# [7 — MANOVA-MR]{.section-header}
+# [7 - MANOVA-MR]{.section-header}
 
 ## MANOVA de Medidas Repetidas {.smaller-text}
 
@@ -588,7 +579,7 @@ A MANCOVA é a ponte natural quando a pergunta é multivariada **e** há uma cov
 :::
 
 
-# [8 — DADOS FALTANTES E RELATO]{.section-header}
+# [8 - DADOS FALTANTES E RELATO]{.section-header}
 
 ## Missing data na MANOVA {.smaller-text}
 
@@ -660,7 +651,7 @@ Evite dizer apenas "houve diferença significativa". Em MANOVA, especifique que 
 :::
 
 
-## Resumo — Escolhendo a análise certa {.smaller-text}
+## Resumo - Escolhendo a análise certa {.smaller-text}
 
 ```{mermaid}
 %%| fig-width: 10

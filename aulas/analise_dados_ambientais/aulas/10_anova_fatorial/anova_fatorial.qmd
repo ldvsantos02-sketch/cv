@@ -1,21 +1,13 @@
 ---
 title: "ANOVA Fatorial"
-subtitle: "Aula 10 — Análise de Variância com Múltiplos Fatores<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 10"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 10"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 10"
 execute:
   echo: false
 ---
@@ -30,7 +22,7 @@ execute:
 - [3]{.circle} Efeitos principais e interação
 - [4]{.circle} Interpretando o gráfico de interação
 - [5]{.circle} Pressupostos
-- [6]{.circle} Exemplo prático — Bioengenharia de Solos
+- [6]{.circle} Exemplo prático - Bioengenharia de Solos
 - [7]{.circle} Tamanho de efeito e poder
 
 ::::
@@ -44,7 +36,7 @@ execute:
 :::
 
 
-# [1 — DA ANOVA UMA VIA À FATORIAL]{.section-header}
+# [1 - DA ANOVA UMA VIA À FATORIAL]{.section-header}
 
 ## Por que precisamos da ANOVA Fatorial? {.smaller-text}
 
@@ -111,7 +103,7 @@ O delineamento fatorial é ideal quando:
 :::
 
 
-# [2 — ESTRUTURA FATORIAL]{.section-header}
+# [2 - ESTRUTURA FATORIAL]{.section-header}
 
 ## Fatores, Níveis e Células {.smaller-text}
 
@@ -181,7 +173,7 @@ Na prática, delineamentos **2 × 2** e **3 × 2** são os mais comuns.
 :::
 
 
-# [3 — EFEITOS PRINCIPAIS E INTERAÇÃO]{.section-header}
+# [3 - EFEITOS PRINCIPAIS E INTERAÇÃO]{.section-header}
 
 ## Três Perguntas, Um Modelo {.smaller-text}
 
@@ -224,7 +216,7 @@ Ex.: O ganho de resistência com resina é **diferente** para taboa e ouricuri?
 :::
 
 ::: {.info-box}
-A **interação** é o resultado mais importante da ANOVA Fatorial. Quando significativa, os efeitos principais devem ser interpretados com cautela — pois o efeito de um fator **depende** do nível do outro.
+A **interação** é o resultado mais importante da ANOVA Fatorial. Quando significativa, os efeitos principais devem ser interpretados com cautela - pois o efeito de um fator **depende** do nível do outro.
 :::
 
 
@@ -259,8 +251,8 @@ flowchart TD
 | Fator A | SQ_A | a − 1 | QM_A | QM_A / QM_E |
 | Fator B | SQ_B | b − 1 | QM_B | QM_B / QM_E |
 | A × B | SQ_AB | (a−1)(b−1) | QM_AB | QM_AB / QM_E |
-| Erro | SQ_E | N − ab | QM_E | — |
-| **Total** | **SQ_T** | **N − 1** | — | — |
+| Erro | SQ_E | N − ab | QM_E | - |
+| **Total** | **SQ_T** | **N − 1** | - | - |
 
 Cada fonte gera seu próprio valor **F** e **p-valor**.
 :::
@@ -269,7 +261,7 @@ Cada fonte gera seu próprio valor **F** e **p-valor**.
 :::
 
 
-# [4 — GRÁFICO DE INTERAÇÃO]{.section-header}
+# [4 - GRÁFICO DE INTERAÇÃO]{.section-header}
 
 ## Interpretando o Gráfico de Interação {.smaller-text}
 
@@ -295,7 +287,7 @@ Cada fonte gera seu próprio valor **F** e **p-valor**.
 :::
 
 ::: {.info-box}
-Quando a interação é significativa, **não basta** olhar os efeitos principais isoladamente. É necessário analisar as **comparações simples** (simple effects) — ou seja, o efeito de um fator em cada nível do outro.
+Quando a interação é significativa, **não basta** olhar os efeitos principais isoladamente. É necessário analisar as **comparações simples** (simple effects) - ou seja, o efeito de um fator em cada nível do outro.
 :::
 
 
@@ -333,7 +325,7 @@ As linhas se cruzam. O efeito de um fator se **inverte** dependendo do nível do
 :::
 
 
-# [5 — PRESSUPOSTOS]{.section-header}
+# [5 - PRESSUPOSTOS]{.section-header}
 
 ## Pressupostos da ANOVA Fatorial {.smaller-text}
 
@@ -373,7 +365,7 @@ Se os pressupostos forem violados → **ANOVA robusta** (Welch) ou testes não p
 :::
 
 
-# [6 — EXEMPLO PRÁTICO]{.section-header}
+# [6 - EXEMPLO PRÁTICO]{.section-header}
 
 ## Resistência de Geotêxteis Naturais {.smaller-text}
 
@@ -416,7 +408,7 @@ Se os pressupostos forem violados → **ANOVA robusta** (Welch) ou testes não p
 | Fibra (A) | 12,43 | 0,002 | 0,34 |
 | Resina (B) | 45,67 | < 0,001 | 0,79 |
 | A × B | 4,21 | 0,026 | 0,26 |
-| Erro | — | — | — |
+| Erro | - | - | - |
 :::
 
 ::::
@@ -431,14 +423,14 @@ Se os pressupostos forem violados → **ANOVA robusta** (Welch) ou testes não p
 :::
 
 ::: {.info-box}
-O ouricuri beneficia-se **mais** da resina do que a taboa — interação ordinal.
+O ouricuri beneficia-se **mais** da resina do que a taboa - interação ordinal.
 :::
 
 ::::
 :::
 
 
-# [7 — TAMANHO DE EFEITO]{.section-header}
+# [7 - TAMANHO DE EFEITO]{.section-header}
 
 ## Eta Parcial ao Quadrado (η²p) {.smaller-text}
 
@@ -476,7 +468,7 @@ Diferente do η², o **η² parcial** permite comparar o tamanho de efeito de ca
 :::
 
 
-## Resumo — Fluxo de Decisão {.smaller-text}
+## Resumo - Fluxo de Decisão {.smaller-text}
 
 ```{mermaid}
 %%| fig-width: 10

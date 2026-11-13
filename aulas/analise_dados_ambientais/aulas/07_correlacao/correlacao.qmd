@@ -1,21 +1,13 @@
 ---
 title: "Análise de Correlação"
-subtitle: "Aula 07 | Correlação de Pearson, Spearman e Kendall<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 07"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 07"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 07"
 execute:
   echo: false
 ---
@@ -281,11 +273,11 @@ Os valores de resistência à tração e do módulo de Young apresentam associa�
 ::: {.box}
 | Variável | Deformação | Rigidez Sec. | Módulo Young | Máx. Carga | Resist. Tração |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| Deformação | — | | | | |
-| Rigidez Sec. | 0,194 | — | | | |
-| Módulo Young | −0,275\* | 0,415\*\*\* | — | | |
-| Máx. Carga | 0,410\*\*\* | 0,809\*\*\* | 0,308\*\* | — | |
-| Resist. Tração | 0,410\*\*\* | 0,809\*\*\* | 0,308\*\* | 1,000\*\*\* | — |
+| Deformação | - | | | | |
+| Rigidez Sec. | 0,194 | - | | | |
+| Módulo Young | −0,275\* | 0,415\*\*\* | - | | |
+| Máx. Carga | 0,410\*\*\* | 0,809\*\*\* | 0,308\*\* | - | |
+| Resist. Tração | 0,410\*\*\* | 0,809\*\*\* | 0,308\*\* | 1,000\*\*\* | - |
 :::
 
 ::: {.highlight-box}
@@ -365,7 +357,7 @@ A associação entre duas variáveis pode ser causada por uma **terceira variáv
 ::: {.box}
 **Exemplo clássico:**
 
-Ir à praia e tomar sorvete estão correlacionados — mas a causa real é a **temperatura**.
+Ir à praia e tomar sorvete estão correlacionados - mas a causa real é a **temperatura**.
 :::
 
 ::::
@@ -406,7 +398,7 @@ Felicidade × Sentido de vida
 
 $r = 0{,}362$ · $r^2 = 0{,}131$ (13,1%)
 
-A correlação **reduz** quando se controla o otimismo — parte da associação era mediada por essa variável.
+A correlação **reduz** quando se controla o otimismo - parte da associação era mediada por essa variável.
 :::
 
 ::::

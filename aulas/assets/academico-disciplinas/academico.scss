@@ -1,0 +1,51 @@
+/*-- scss:defaults --*/
+
+// Use as the theme itself to avoid web-font imports from built-in themes.
+$font-family-sans-serif: "Latin Modern Sans", sans-serif;
+$font-family-serif: "Latin Modern Sans", sans-serif;
+$body-bg: #ffffff;
+$body-color: #26313d;
+$link-color: #1f4268;
+$link-color-hover: #1f4268;
+$selection-bg: #e8edf3;
+$selection-color: #26313d;
+$presentation-font-size-root: 25.4px;
+$presentation-heading-font: "Latin Modern Sans", sans-serif;
+$presentation-heading-color: #1f4268;
+$presentation-heading-font-weight: 700;
+$presentation-heading-line-height: 1.16;
+$presentation-heading-letter-spacing: normal;
+$presentation-heading-text-transform: none;
+$presentation-heading-text-shadow: none;
+$presentation-h1-text-shadow: none;
+$presentation-h1-font-size: 34px;
+$presentation-h2-font-size: 34px;
+$presentation-h3-font-size: 28px;
+$presentation-h4-font-size: 25.4px;
+$presentation-block-margin: 14px;
+$code-block-bg: #f3f5f7;
+$code-color: #26313d;
+
+/*-- scss:rules --*/
+
+.reveal {
+  font-family: $font-family-sans-serif;
+  color: $body-color;
+  font-size: $presentation-font-size-root;
+  line-height: 1.23;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4,
+.reveal h5, .reveal h6 {
+  font-family: $presentation-heading-font;
+  color: $presentation-heading-color;
+  font-weight: 700;
+  text-transform: none;
+  text-shadow: none;
+  letter-spacing: normal;
+}
+
+.reveal strong, .reveal b {
+  color: inherit;
+  font-weight: 700;
+}

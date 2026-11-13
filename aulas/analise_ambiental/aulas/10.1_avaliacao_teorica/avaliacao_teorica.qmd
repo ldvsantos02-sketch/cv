@@ -1,163 +1,84 @@
 ---
-title: "Análise Ambiental"
-subtitle: "Avaliação Teórica (Prova Escrita Dissertativa)"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise Ambiental | 1ª Avaliação Teórica"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    navigation-mode: linear
-    scrollable: true
-    width: 1280
-    height: 720
-    margin: 0.04
-    css: ../../../assets/custom.css
-    include-after-body:
-      - ../../../assets/image-lightbox.html
-      - ../../../assets/progress-bar.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
-execute:
-  echo: false
+title: "Avaliação Teórica e Síntese do Diagnóstico"
+subtitle: "Análise Ambiental · Aula 10.1"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise Ambiental"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise Ambiental · Aula 10.1"
 ---
 
-## Avaliação Teórica {.smaller-text}
+## Visão Geral da Aula e da Avaliação {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Eixos avaliados
+### Eixos Avaliados (Unidades I e II)
 
-- [1]{.circle} Questão ambiental e sociedade-natureza
-- [2]{.circle} Geografia socioambiental
-- [3]{.circle} Conceitos de análise ambiental
-- [4]{.circle} AIA e planejamento
-- [5]{.circle} Bacias hidrográficas
-- [6]{.circle} Morfopedologia
-- [7]{.circle} Geossistemas, ecodinâmica e fragilidade
+- [1]{.circle} Questão ambiental, *Land-Change Science* e relação $S \leftrightarrow N$
+- [2]{.circle} Abordagens da Geografia Brasileira (Ab'Sáber, Monteiro, Mendonça, Suertegaray)
+- [3]{.circle} Conceitos operacionais: impacto, resiliência, vulnerabilidade e risco ($R = P \times E \times V$)
+- [4]{.circle} PNMA (Lei 6.938/1981), LC 140/2011 e processo de AIA / EIA-RIMA (CONAMA 01/86 e 237/97)
+- [5]{.circle} Análise Ambiental Integrada, escalas (Castro, 1995) e ZEE (Dec. 4.297/2002)
+- [6]{.circle} Bacia hidrográfica, morfometria fluvial e Lei das Águas (Lei 9.433/1997)
+- [7]{.circle} Morfopedologia, RUSLE, Ecodinâmica (Tricart), Fragilidade (Ross) e Vulnerabilidade (Crepani)
 :::
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**Objetivo da Avaliação**
+**Objetivo da Sessão**
 
-Verificar a integração dos conteúdos da disciplina por meio de questões dissertativas que articulem fundamentação teórica e operacionalização conceitual em análise ambiental.
+Realizar a **Avaliação Teórica Individual** (Unidades I e II — peso de 35% da média) e alinhar o **Protocolo Operacional de Campo** para o levantamento de dados primários do Trabalho Prático Final (Unidade III).
 :::
 :::
 :::
 
-# [Instruções e Critérios]{.section-header}
+# 1 · Quadro-Síntese das Unidades I e II {.section-header rotulo="Revisão"}
 
-## Estrutura da prova {.smaller-text}
+## Mapa Conceitual de Revisão (Aulas 1.1 a 9.1) {.smaller-text}
 
 ::: {.columns}
-::: {.column width="50%"}
-### Formato
+::: {.column width="100%"}
+### Articulações Essenciais para a Prova Dissertativa
 
-- **Tipo**: dissertativa individual, sem consulta.
-- **Duração**: 3 h.
-- **Questões**: 5 (de 8 propostas, escolher 5).
-- **Distribuição**: cada questão vale 2,0 pontos (total 10,0).
-- **Extensão máxima**: 25 linhas por questão.
-
-### Critérios de correção
-
-| Critério | Peso |
-|----------|:----:|
-| Domínio conceitual | 0,5 |
-| Articulação entre autores e abordagens | 0,5 |
-| Aplicação ao território (caso real) | 0,5 |
-| Clareza e organização textual | 0,3 |
-| Uso adequado de evidências e dados | 0,2 |
-
-: {.striped .hover}
-:::
-
-::: {.column width="50%"}
-::: {.highlight-box}
-**Eixos avaliados**
-
-1. Modernidade e questão ambiental
-2. Geografia socioambiental
-3. Conceitos operacionais
-4. AIA e planejamento
-5. Bacia hidrográfica e análise integrada
-6. Morfopedologia
-7. Geossistemas, ecodinâmica e fragilidade
-:::
+| Eixo Temático | Autores e Normas de Referência | Conceitos e Equações Chave |
+|---------------|--------------------------------|----------------------------|
+| **1. Epistemologia e Mudança de Uso da Terra** | Porto-Gonçalves (1989); Santos (1996); Leff (2001); Lambin et al. (2003); MapBiomas (2020) | Causas próximas vs. forças motrizes subjacentes; Primeira e Segunda Natureza; Meio Técnico-Científico-Informacional; Justiça Ambiental. |
+| **2. Escola Geográfica Brasileira** | Ab'Sáber (1969, 2003); Monteiro (1976, 2000); Mendonça (1993, 2001); Suertegaray (2001) | Os 3 níveis de Ab'Sáber (compartimentação, estrutura superficial, fisiologia); Sistema Clima Urbano (SCU); Geografia Socioambiental ($S \leftrightarrow N$). |
+| **3. Vocabulário Técnico e Risco** | Sánchez (2020); Lei 6.938/81; Lei 9.985/00; Lei 12.608/12 (PNPDEC); IPT (2007) | Aspecto vs. Impacto; Degradação vs. Poluição; Resistência vs. Resiliência; $R = P \times E \times V$; Graus de Risco Urbano (**R1 a R4**). |
+| **4. PNMA, Licenciamento e AIA** | Lei 6.938/81 (Art. 9º); LC 140/2011; CONAMA 01/86 e 237/97; Lei BA 10.431/06 | SISNAMA; LP $\rightarrow$ LI $\rightarrow$ LO; Triagem, Escopo e TR; ADA, AID e AII; Matriz de Leopold e Redes de Interação; Hierarquia da Mitigação. |
+| **5. Bacias e Recursos Hídricos** | Strahler (1952); Christofoletti (1980); Tucci (2001); Lei 9.433/97 (Art. 1º e 5º) | Ordem de Strahler; $K_c, K_f, I_c, D_d, t_c$; Hidrograma de cheia ($Q_p$); Zona ripária; Os 5 instrumentos da PNRH (Plano, Enquadramento, Outorga, Cobrança, SNIRH). |
+| **6. Morfopedologia, Ecodinâmica e ZEE** | Boulet (1982); Bertrand (1968); Tricart (1977); Ross (1994); Crepani et al. (2001) | Catena morfopedológica; Descontinuidade $A/Bt$; RUSLE ($A = R \cdot K \cdot LS \cdot C \cdot P$); Pedogênese vs. Morfogênese; Classes 1–5 (Ross) e Escala $1{,}0\text{–}3{,}0$ (Crepani). |
 :::
 :::
 
----
+# 2 · Instruções e Rubrica da Avaliação {.section-header rotulo="Prova"}
 
-## Roteiro de estudo {.smaller-text}
+## Condições de Realização {.smaller-text}
 
-::: {.columns}
-::: {.column width="50%"}
-### Conceitos-chave
+- **Modalidade**: individual, escrita e sem consulta a materiais impressos ou dispositivos eletrônicos.
+- **Duração total**: $100\text{ minutos}$.
+- **Estrutura da prova**:
+  - **Questões 1 e 2 (3,0 pontos)**: estudo de caso de licenciamento ambiental (EIA/RIMA) e conflito socioambiental na Bahia.
+  - **Questões 3 e 4 (3,5 pontos)**: interpretação de dados morfométricos de duas sub-bacias hidrográficas ($K_c, K_f, D_d$) e leitura de hidrogramas ($Q \times t$).
+  - **Questões 5 e 6 (3,5 pontos)**: diagnóstico de topossequência morfopedológica e cálculo/classificação de Fragilidade Emergente (Ross, 1994) e Vulnerabilidade Natural (Crepani et al., 2001).
 
-| Conceito | Autor de referência |
-|----------|---------------------|
-| Apropriação e conflitos | Porto-Gonçalves; Acselrad |
-| Geografia socioambiental | Mendonça |
-| Impacto e medidas | Sánchez |
-| Geossistema | Bertrand |
-| Ecodinâmica | Tricart |
-| Fragilidade | Ross |
-| Bacia hidrográfica | Botelho & Silva; Christofoletti |
-| Morfopedologia | Castro & Salomão; Casseti |
+## Rubrica de Correção (Padrão ENADE / Concursos) {.smaller-text}
 
-: {.striped .hover}
-:::
+| Critério Avaliado | Peso | O que se espera na resposta |
+|-------------------|------|-----------------------------|
+| **1. Precisão conceitual e normativa** | $35\%$ | Distinção exata entre conceitos (ex.: perigo vs. risco; fragilidade potencial vs. emergente; recuperação vs. restauração) e citação correta dos dispositivos legais. |
+| **2. Raciocínio mecanístico (Causa $\rightarrow$ Processo $\rightarrow$ Efeito)** | $35\%$ | Explicação física, hidrológica, pedológica e social do fenômeno, evitando frases genéricas ou meramente opinativas. |
+| **3. Articulação escalar e propositiva** | $30\%$ | Coerência entre o diagnóstico apresentado, a escala cartográfica e a medida mitigadora/instrumento de gestão proposto. |
 
-::: {.column width="50%"}
-::: {.info-box}
-**Sugestões de estudo**
+## Integrar os dados de campo à revisão {.smaller-text}
 
-1. Releia os fichamentos dos Estudos Orientados 1-5.
-2. Reorganize as cartas conceituais das aulas em mapa mental único.
-3. Pratique a articulação em dois eixos:
-   - **Concepção** (autor, conceito, contexto)
-   - **Aplicação** (caso real, dado, problema territorial)
-4. Lembre-se: a prova privilegia **articulação** sobre repetição memorística.
-:::
-:::
-:::
+Retome o roteiro da aula 9.2 e organize:
 
----
+- unidades e processos observados;
+- evidências de conexão entre vertente, canal e uso da terra;
+- conceitos e métodos que explicam o caso;
+- limitações dos dados e perguntas ainda abertas.
 
-## Exemplos de questões {.smaller-text}
-
-::: {.info-box}
-**Exemplo 1 - articulando conceitos**
-
-A partir de Mendonça (2001) e Bertrand (2004), discuta como a abordagem socioambiental e a abordagem geossistêmica se complementam para a Análise Ambiental, exemplificando com um caso do território baiano.
-:::
-
-::: {.highlight-box}
-**Exemplo 2 - aplicação**
-
-Selecione uma sub-bacia hipotética com declividades de 20-45%, solos rasos e pastagem extensiva. Aplique o método de fragilidade ambiental (Ross, 1994) descrevendo: variantes potencial e emergente, classificação esperada e implicações para a recomendação de uso.
-:::
-
-::: {.info-box}
-**Exemplo 3 - crítica**
-
-A Res. CONAMA 01/1986 define impacto como alteração decorrente de ação humana. Em que medida essa definição capta (ou não) impactos **cumulativos** e **sinérgicos** discutidos por Sánchez (2013)? Que implicações essa lacuna tem para o licenciamento de múltiplos empreendimentos numa mesma bacia?
-:::
-
-# [Referências]{.section-header}
-
-## Bibliografia de revisão {.smaller-text}
-
-- LEFF, E. **Epistemologia ambiental**, cap. 2: Interdisciplinaridade, ambiente e desenvolvimento sustentável. São Paulo: Cortez, 2001.
-- PORTO-GONÇALVES, C. W. A natureza da globalização e a globalização da natureza. In: **O desafio ambiental**. Org. Emir Sader. Rio de Janeiro: Record, 2004. Parte I, p. 13-75. (Os porquês da desordem mundial).
-- PORTO-GONÇALVES, C. W. **Os (des)caminhos do meio ambiente**. 14. ed. São Paulo: Contexto, 2006.
-- MENDONÇA, F. Geografia socioambiental. **Terra Livre**, n. 16, p. 113-132, 2001.
-- SÁNCHEZ, L. E. **Avaliação de impacto ambiental**: conceitos e métodos. 2. ed. São Paulo: Oficina de Textos, 2013.
-- BERTRAND, G. Paisagem e geografia física global: esboço metodológico. **RA'E GA**, v. 8, 2004. DOI: [10.5380/raega.v8i0.3389](https://doi.org/10.5380/raega.v8i0.3389).
-- TRICART, J. **Ecodinâmica**. Rio de Janeiro: IBGE, 1977.
-- ROSS, J. L. S. Análise empírica da fragilidade dos ambientes naturais e antropizados. **Revista do Departamento de Geografia**, v. 8, 1994. DOI: [10.7154/RDG.1994.0008.0006](https://doi.org/10.7154/RDG.1994.0008.0006).
+[Abrir o roteiro de campo](../09.2_roteiro_campo_analise_integrada/roteiro_campo_analise_integrada.html).

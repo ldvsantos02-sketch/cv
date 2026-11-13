@@ -1,0 +1,397 @@
+---
+title: "Atividade Prática: protocolo, triagem e pontuação no START"
+subtitle: "Revisão Sistemática · Aula 8.1"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Revisão Sistemática"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Revisão Sistemática · Aula 8.1"
+execute:
+  echo: false
+---
+
+## Visão Geral da Atividade {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} O caso de referência: brand equity sustentável em negócios florestais
+- [2]{.circle} Protocolo e registro no START
+- [3]{.circle} Questão de pesquisa e descritores
+- [4]{.circle} Busca nas bases e importação dos registros
+- [5]{.circle} Triagem, pontuação inicial e qualidade
+- [6]{.circle} Fluxo PRISMA-ScR e entregas
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Atividade**
+
+Conduzir a primeira metade de uma scoping review, da questão de pesquisa ao fluxograma de seleção, executando protocolo, triagem e pontuação no START, com o arquivo `.start` completo da tese como gabarito metodológico.
+:::
+:::
+:::
+
+# [1  -  O CASO DE REFERÊNCIA]{.section-header}
+
+## A revisão de escopo usada como exemplo {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Dados do estudo
+
+| Item | Detalhe |
+|------|---------|
+| **Estudo** | Brand equity sustentável em negócios florestais |
+| **Tipo** | Scoping review |
+| **Bases** | Scopus e Web of Science |
+| **Período** | 2011 a 2022 |
+| **Registros** | 264 recuperados, 43 elegíveis |
+| **Diretriz** | PRISMA-ScR |
+| **Registro** | Protocolo depositado no OSF |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Por que este exemplo?**
+
+O protocolo completo está disponível no arquivo `.start` da tese, com critérios de inclusão e exclusão, classificação automática SCAS por pontuação e citação, rubrica de qualidade com sete indicadores e seleção manual por dois pesquisadores independentes.
+
+> Na prática, a seleção, a avaliação de qualidade e a pontuação inicial desta atividade são executadas no START.
+:::
+:::
+:::
+
+## O percurso que a prática percorre {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="55%"}
+A atividade integra o conteúdo dos blocos do curso em uma única operação.
+
+| Etapa | Bloco de origem | Ferramenta |
+|:-----:|:---------------:|:----------:|
+| Protocolo e registro | Bloco 1 | START |
+| Questão de pesquisa | Bloco 2 | Roteiro |
+| Busca e critérios | Bloco 3 | Scopus e WoS |
+| Concordância entre juízes | Bloco 4 | START + consenso |
+| Qualidade e pontuação | Bloco 5 | START |
+| Seleção e fluxograma | Bloco 6 | PRISMA-ScR |
+
+: {.striped .hover}
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**Limite desta atividade**
+
+A síntese dos dados fica fora do escopo desta aula prática e é conduzida em uma segunda atividade, de caráter computacional, que demonstra o pipeline de análise sobre o corpus da scoping review de sistemas agrícolas tradicionais.
+:::
+:::
+:::
+
+# [2  -  PROTOCOLO E REGISTRO]{.section-header}
+
+## O que o protocolo fixa antes de qualquer busca {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="55%"}
+O protocolo registra no START as decisões que tornam a revisão replicável.
+
+- Título, autores e instituições da revisão
+- Questão de pesquisa e acrônimo de apoio
+- Critérios de inclusão e de exclusão
+- Bases de dados e período de publicação
+- String de busca completa, com operadores
+- Decisões de triagem e regras de divergência
+
+> O arquivo exportado pelo START, com extensão `.start`, empacota essas decisões junto com o corpus, de modo que outro revisor consiga refazer o caminho.
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**Registro público**
+
+O protocolo do exemplo foi depositado no Open Science Framework, com strings de busca, corpus e rotinas analíticas, e o fluxo de seleção seguiu a diretriz PRISMA-ScR, com a data da última busca registrada nos metadados da exportação.
+
+> O registro anterior à seleção reduz o risco de decisões ajustadas ao corpus já observado.
+:::
+:::
+:::
+
+## O protocolo do exemplo, em números {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Escopo declarado
+
+| Decisão | Valor adotado |
+|---------|---------------|
+| **Descritores** | Branding e sustentabilidade |
+| **Contexto** | Negócios florestais |
+| **Fontes** | Scopus e Web of Science |
+| **Período** | 2011 a 2022 |
+| **Idioma** | Inglês |
+| **Registros** | 264 na busca inicial |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Regra de transparência**
+
+Toda decisão que restringe o universo de busca precisa de critério objetivo. No exemplo, o período acompanhou a janela de publicação dos descritores, o idioma respeitou a dominância do inglês na indexação e apenas artigos completos foram aceitos.
+
+> A ausência de busca manual foi declarada, e não omitida.
+:::
+:::
+:::
+
+# [3  -  QUESTÃO DE PESQUISA]{.section-header}
+
+## Construindo a questão do próprio tema {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### A questão do exemplo
+
+> Quais os fatores relevantes que sustentam a criação de um brand equity sustentável nas empresas relacionadas à exploração florestal?
+
+| Bloco | Descritores |
+|-------|-------------|
+| **Branding** | branding OR "brand equity" |
+| **Sustentabilidade** | sustainability |
+| **Contexto** | forest OR environmental |
+
+: {.striped .hover}
+
+A questão vincula os dois descritores primários e delimita o contexto florestal, permitindo o mapeamento da literatura.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Sua vez**
+
+Defina a questão do tema escolhido com os descritores primários e o contexto explícitos, e derive o objetivo de mapeamento com o verbo adequado ao escopo de uma scoping review.
+
+> Registre a questão final no campo correspondente do protocolo do START antes de avançar.
+:::
+:::
+:::
+
+# [4  -  BUSCA]{.section-header}
+
+## A string do exemplo, completa {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="100%"}
+A busca varreu título, resumo e palavras-chave na base Scopus, com os descritores primários vinculados por operadores booleanos.
+
+```bash
+TITLE-ABS-KEY (branding OR "brand equity")
+AND TITLE-ABS-KEY (sustainability)
+AND ALL (forest OR environmental)
+AND PUBYEAR > 2011
+```
+
+> A busca recuperou 264 registros na Scopus, exportados em BibTeX e importados no START.
+:::
+:::
+
+## Importação e controle dos registros no START {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Passo a passo
+
+- Exportar cada busca no formato BibTeX, anotando base, data e número de registros
+- Importar os arquivos no START na etapa de identificação
+- Remover duplicatas entre bases e registrar a contagem resultante
+- Iniciar a triagem por título e resumo com dois juízes independentes
+
+> O registro do número de registros por base alimenta diretamente o fluxograma de seleção.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Critérios objetivos de corte**
+
+Idioma, período e tipo de documento precisam de justificativa registrada. No exemplo, a janela de 2011 a 2022 acompanhou a publicação dos descritores, o idioma respeitou a dominância do inglês e apenas artigos completos avançaram.
+
+> O ponto de partida da triagem são os 264 registros, dos quais 43 permaneceram elegíveis.
+:::
+:::
+:::
+
+# [5  -  TRIAGEM E PONTUAÇÃO]{.section-header}
+
+## Seleção por título e resumo no START {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Decisões de triagem
+
+| Decisão | Quando aplicar |
+|---------|----------------|
+| **Aceitar** | Atende aos critérios pelo título e resumo |
+| **Rejeitar** | Viola algum critério de inclusão |
+| **Duplicado** | Registro repetido entre bases |
+
+: {.striped .hover}
+
+Juízes independentes aplicam as mesmas decisões, e as divergências são resolvidas por consenso, com concordância registrada.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Qualidade da triagem no exemplo**
+
+A classificação automática SCAS do StArt pontuou os registros por citação e por escore de termos, aceitando automaticamente 30 artigos no quadrante Q1, e a leitura manual dos 26 artigos do Q2 aprovou 13.
+
+> A triagem combinada de máquina e juízes transforma a seleção em evidência auditável, e não em decisão pessoal.
+:::
+:::
+:::
+
+## A pontuação inicial da triagem {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="55%"}
+O exemplo classificou os registros em quadrantes de pontuação definidos pelo SCAS, combinando escore de termos e citação.
+
+- **Q1, 3 pontos**, 30 artigos aceitos automaticamente
+- **Q2, 2 pontos**, 26 artigos com escore acima de 20, conduzidos à leitura manual, com 13 aprovados
+- **Q3, 1 ponto**, 83 artigos
+- **Q4, 0 ponto**, 119 artigos rejeitados
+
+> O escore orienta a priorização, mas a decisão de inclusão permanece ancorada nos critérios de elegibilidade, com 43 artigos aptos à fase seguinte.
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**A pontuação no START**
+
+A pontuação inicial dos registros é executada no StArt, que registra o escore atribuído a cada estudo no arquivo `.start`. A avaliação formal de qualidade metodológica permanece uma etapa separada, e o escore de triagem não substitui o julgamento dos juízes.
+:::
+:::
+:::
+
+## Rubrica de qualidade do exemplo {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="100%"}
+Cada indicador recebe 0, 0,5 ou 1 ponto, reproduzindo a escala do protocolo da tese, e o escore máximo alcança 7 pontos.
+
+| Indicador de qualidade | Não atende (0) | Atende parcialmente (0,5) | Atende (1) |
+|------------------------|:--------------:|:-------------------------:|:----------:|
+| Descreve o método/meios econômicos adotados | 0 | 0,5 | 1 |
+| Apresenta a categoria do negócio adotado | 0 | 0,5 | 1 |
+| Apresenta capacidade de reprodução | 0 | 0,5 | 1 |
+| Aparenta ser uma inovação | 0 | 0,5 | 1 |
+| Aplica tecnologia direcionada ao empreendedorismo sustentável | 0 | 0,5 | 1 |
+| Descreve detalhadamente o procedimento metodológico | 0 | 0,5 | 1 |
+| Envolve tecnologia direcionada a branding sustentável | 0 | 0,5 | 1 |
+
+: {.striped .hover}
+
+> O corte de prioridade manteve os artigos de maior pontuação, com exclusão de trabalhos similares e de continuidade de uma mesma pesquisa ou grupo de autores.
+:::
+:::
+
+## Qualidade metodológica após a seleção {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Sequência da avaliação
+
+- Definir a rubrica de qualidade compatível com o objetivo da revisão
+- Aplicar a avaliação com dois pesquisadores independentes
+- Resolver divergências por consenso
+- Somar os escores e aplicar o corte de prioridade
+- Interpretar o escore e decidir o uso na síntese
+
+> O escore de triagem do START e a avaliação formal de qualidade são etapas distintas do processo.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Corte por Pareto no exemplo**
+
+O corte de 85% do somatório dos escores selecionou os sete artigos de maior pontuação, que concentram a maior parte do reconhecimento científico do corpus.
+
+> As maiores pontuações do ranking foram 56, 50, 49, 44 e 43 pontos, lideradas pelo estudo de Grigorescu e colaboradores.
+:::
+:::
+:::
+
+# [6  -  PRISMA E ENTREGAS]{.section-header}
+
+## Fluxograma de seleção do exemplo {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="100%"}
+O fluxo parte de 264 registros recuperados na Scopus e fecha com 7 artigos de maior pontuação após o corte de qualidade, seguindo a diretriz PRISMA-ScR.
+
+| Etapa | Registros |
+|-------|:---------:|
+| Busca na Scopus e Web of Science | 264 |
+| Exclusões iniciais (duplicados e notas explicativas) | 260 |
+| SCAS, aceitos automáticos no Q1 | 30 |
+| SCAS, Q2 com leitura manual | 13 aprovados |
+| Elegíveis para a fase seguinte | 43 |
+| Corte de 85% do somatório de qualidade | 7 artigos principais |
+
+: {.striped .hover}
+
+> Cada remoção precisa de motivo registrado, e os números do fluxograma devem bater com as contagens do START, com o fluxo depositado no OSF junto ao protocolo.
+:::
+:::
+
+## Entregas da atividade {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="100%"}
+| Entrega | Conteúdo | Peso |
+|---------|----------|:----:|
+| **Protocolo no START** | Arquivo `.start` com questão de pesquisa, critérios e string | 3,0 |
+| **Registro da busca** | Base, data e número de registros por base | 2,0 |
+| **Triagem e pontuação** | Tabela de decisões e escores por registro | 3,0 |
+| **Fluxograma PRISMA-ScR** | Fluxo completo com remoções justificadas | 2,0 |
+
+: {.striped .hover}
+
+> A pontuação de 10 pontos segue a rubrica de cada entrega, e a atividade se encerra com o corpus elegível pronto para a extração.
+:::
+:::
+
+## Check-list antes de entregar {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Auditoria da atividade
+
+- Questão de pesquisa registrada e coerente com o objetivo
+- String reproduzível em cada base
+- Critérios de inclusão e exclusão aplicáveis por leitura de título e resumo
+- Duplicatas removidas e contabilizadas
+- Divergências entre juízes documentadas
+- Escore de cada registro registrado no START
+
+> Qualquer número do fluxograma precisa ser rastreado até uma contagem do protocolo.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Próximo passo**
+
+Com o corpus elegível consolidado, a etapa seguinte transforma a seleção em tabelas categorizadas e conduz a síntese por análise de dados, demonstrada na atividade prática seguinte com o pipeline da scoping review de sistemas agrícolas tradicionais.
+
+> A extração das variáveis de interesse é a ponte entre esta atividade e a síntese computacional.
+:::
+:::
+:::

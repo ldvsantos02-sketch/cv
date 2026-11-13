@@ -1,23 +1,13 @@
-﻿---
-title: "Análise da Paisagem"
-subtitle: "Escala, Padrão e Processo na Dinâmica da Paisagem<br>Curso de Geografia"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise da Paisagem | Escala, Padrão e Processo"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body:
-      - ../../../assets/image-lightbox.html
-      - ../../../assets/progress-bar.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+---
+title: "Escala, Padrão e Processo na Dinâmica da Paisagem"
+subtitle: "Análise da Paisagem · Aula 3.2"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise da Paisagem"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise da Paisagem · Aula 3.2"
 execute:
   echo: false
 ---
@@ -197,10 +187,10 @@ Sistemas complexos se organizam em **níveis hierárquicos**:
 
 | Nível | Escala típica | Dinâmica |
 |-------|:---:|----------|
-| Bioma | 10⁵–10⁶ km² | Secular-geológica |
-| Paisagem | 10¹–10⁴ km² | Decenal-centenária |
-| Ecossistema | 10⁻¹–10¹ km² | Anual-decenal |
-| Comunidade | 10⁻²–10⁻¹ km² | Sazonal-anual |
+| Bioma | 10⁵-10⁶ km² | Secular-geológica |
+| Paisagem | 10¹-10⁴ km² | Decenal-centenária |
+| Ecossistema | 10⁻¹-10¹ km² | Anual-decenal |
+| Comunidade | 10⁻²-10⁻¹ km² | Sazonal-anual |
 | Organismo | m² | Instantâneo-anual |
 
 : {.striped .hover}
@@ -283,23 +273,23 @@ Exemplo: fragmentação (padrão) → isolamento de populações (processo) → 
 ::: {.column width="50%"}
 ### Por que "espacialmente explícita"?
 
-Diferente de outras abordagens da ecologia que tratam o espaço de forma **implícita** (médias, proporções), a Ecologia da Paisagem exige a **localização explícita** de cada elemento — onde estão as manchas, como se conectam, qual a vizinhança.
+Diferente de outras abordagens da ecologia que tratam o espaço de forma **implícita** (médias, proporções), a Ecologia da Paisagem exige a **localização explícita** de cada elemento - onde estão as manchas, como se conectam, qual a vizinhança.
 
 ### Padrão vs. processo: assimetria metodológica
 
 - **Padrões** são relativamente **fáceis de mapear**: classificação de imagens de satélite, MapBiomas, fotointerpretação
-- **Processos** (movimentação, dispersão, fluxo gênico) são **difíceis de mapear** — exigem métodos pontuais e custosos
+- **Processos** (movimentação, dispersão, fluxo gênico) são **difíceis de mapear** - exigem métodos pontuais e custosos
 :::
 
 ::: {.column width="50%"}
 ::: {.info-box}
 **Técnicas de captura de processos**
 
-- **Telemetria GPS** — colares/transmissores em mamíferos e aves de médio/grande porte
-- **Anilhamento e recaptura** — aves, morcegos, peixes
-- **Avistamento sistemático** — transectos, câmeras-trap
-- **Rastreamento acústico** — hidrofones, gravadores autônomos
-- **Marcadores moleculares** — fluxo gênico via DNA
+- **Telemetria GPS** - colares/transmissores em mamíferos e aves de médio/grande porte
+- **Anilhamento e recaptura** - aves, morcegos, peixes
+- **Avistamento sistemático** - transectos, câmeras-trap
+- **Rastreamento acústico** - hidrofones, gravadores autônomos
+- **Marcadores moleculares** - fluxo gênico via DNA
 
 *Limitação:* poucas espécies podem ser monitoradas; amostras pequenas frente à escala da paisagem.
 :::
@@ -307,7 +297,7 @@ Diferente de outras abordagens da ecologia que tratam o espaço de forma **impl�
 ::: {.highlight-box}
 **Implicação prática**
 
-Grande parte do que sabemos sobre processos vem de **inferência indireta** a partir do padrão — daí a importância de métricas, modelos de conectividade e simulação.
+Grande parte do que sabemos sobre processos vem de **inferência indireta** a partir do padrão - daí a importância de métricas, modelos de conectividade e simulação.
 :::
 :::
 :::

@@ -1,26 +1,18 @@
 ---
 title: "Regressão de Cox"
-subtitle: "Introdução, Análise Uni e Multivariada, Apresentação Gráfica e Descrição<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Regressão de Cox"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 29"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 29"
 execute:
   echo: false
 ---
 
-# [REGRESSÃO DE COX — INTRODUÇÃO]{.section-header}
+# [REGRESSÃO DE COX - INTRODUÇÃO]{.section-header}
 
 ## Modelo de riscos proporcionais de Cox {.smaller-text}
 
@@ -33,7 +25,7 @@ A **regressão de Cox** (1972) é o modelo mais utilizado em análise de sobrevi
 
 - O teste log-rank compara grupos, mas **não ajusta** por confundidores
 - A regressão de Cox permite a análise **multivariada**
-- É um modelo **semiparamétrico** — não exige especificar a distribuição de $S(t)$
+- É um modelo **semiparamétrico** - não exige especificar a distribuição de $S(t)$
 
 ### O modelo
 
@@ -45,10 +37,10 @@ $$h(t | X) = h_0(t) \cdot \exp(\beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_p X_p)
 ::: {.highlight-box}
 **Componentes do modelo**
 
-- $h(t | X)$ — risco no tempo $t$ dado as covariáveis
-- $h_0(t)$ — risco basal (*baseline hazard*), não especificado
-- $\beta_i$ — coeficientes das covariáveis
-- $\exp(\beta_i)$ — **Hazard Ratio (HR)** — a medida de efeito!
+- $h(t | X)$ - risco no tempo $t$ dado as covariáveis
+- $h_0(t)$ - risco basal (*baseline hazard*), não especificado
+- $\beta_i$ - coeficientes das covariáveis
+- $\exp(\beta_i)$ - **Hazard Ratio (HR)** - a medida de efeito!
 :::
 
 ::: {.info-box}
@@ -108,16 +100,16 @@ O HR expressa a **razão de riscos instantâneos** entre os grupos, não razão 
 
 ### Exemplo
 
-**HR = 2,15** (IC 95%: 1,42–3,26; p < 0,001)
+**HR = 2,15** (IC 95%: 1,42-3,26; p < 0,001)
 
-> "O risco de óbito foi **2,15 vezes maior** no grupo exposto (HR = 2,15; IC 95%: 1,42–3,26)."
+> "O risco de óbito foi **2,15 vezes maior** no grupo exposto (HR = 2,15; IC 95%: 1,42-3,26)."
 
 :::
 :::
 
 ---
 
-# [REGRESSÃO DE COX — PRÁTICA]{.section-header}
+# [REGRESSÃO DE COX - PRÁTICA]{.section-header}
 
 ## Análise univariada e multivariada {.smaller-text}
 
@@ -206,7 +198,7 @@ plot(cox.zph(cox_multi))
 :::
 ::: {.column width="50%"}
 
-![Resíduos de Schoenfeld — linhas suavizadas devem ser horizontais](fig_02_schoenfeld.png){width="100%" fig-align="center"}
+![Resíduos de Schoenfeld - linhas suavizadas devem ser horizontais](fig_02_schoenfeld.png){width="100%" fig-align="center"}
 
 :::
 :::
@@ -233,7 +225,7 @@ plot(cox.zph(cox_multi))
 | Resíduos de Martingale | Forma funcional das covariáveis |
 | Resíduos de Deviance | Observações influentes |
 | dfbeta | Influência de cada observação nos β |
-| Concordância (c) | Capacidade preditiva (0,5–1,0) |
+| Concordância (c) | Capacidade preditiva (0,5-1,0) |
 
 :::
 :::
@@ -271,14 +263,14 @@ ggforest(cox_multi, data = dados)
 :::
 ::: {.column width="50%"}
 
-![Forest Plot — HR e IC 95% de cada variável do modelo de Cox multivariado](fig_01_forest_plot.png){width="100%" fig-align="center"}
+![Forest Plot - HR e IC 95% de cada variável do modelo de Cox multivariado](fig_01_forest_plot.png){width="100%" fig-align="center"}
 
 :::
 :::
 
 ---
 
-# [REGRESSÃO DE COX — DESCRIÇÃO]{.section-header}
+# [REGRESSÃO DE COX - DESCRIÇÃO]{.section-header}
 
 ## Como reportar {.smaller-text}
 

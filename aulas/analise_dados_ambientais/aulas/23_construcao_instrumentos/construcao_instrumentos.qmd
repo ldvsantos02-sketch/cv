@@ -1,21 +1,13 @@
 ---
 title: "Construção de Instrumentos de Medida"
-subtitle: "Aula 23 — Desenvolvimento de Escalas e Questionários<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 23"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 23"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 23"
 execute:
   echo: false
 ---
@@ -283,7 +275,7 @@ Revisão da literatura
 | DEFINIÇÃO CONSTITUTIVA
 (Artigos teóricos, principalmente) | DEFINIÇÃO OPERACIONAL
 (Artigos de validação de medidas) |
-| --- | --- |
+| - | - |
 | Perspectiva 1 (Autor A) | Escala 1 (Autor F) |
 | Perspectiva 2 (Autor B) | Escala 2 (Autor G) |
 | Perspectiva 3 (Autor C) | Escala 3 (Autor H) |
@@ -307,7 +299,7 @@ Por favor, na hora de responder, considere as últimas **quatro semanas.**
 
 
 | 3. Eu não conseguia ter sentimentos positivos | Humor deprimido |
-| --- | --- |
+| - | - |
 | 5. Eu achei difícil ter iniciativa para fazer as coisas | Falta de motivação |
 | 10. Eu senti que não tinha expectativas positivas a respeito de nada | Pessimismo |
 | 13. Eu me senti abatido(a) e triste | Humor deprimido |
@@ -538,7 +530,7 @@ ELABORAÇÃO DE ITENS
 
 
 | 3. Eu não conseguia ter sentimentos positivos |
-| --- |
+| - |
 | 5. Eu achei difícil ter iniciativa para fazer as coisas |
 | 10. Eu senti que não tinha expectativas positivas a respeito de nada |
 | 13. Eu me senti abatido(a) e triste |
@@ -590,13 +582,13 @@ ELABORAÇÃO DE ITENS
 
 
 | Item | Nunca | Raramente | Às vezes | Frequente-  mente | Sempre |
-| --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - |
 | Sempre me preocupo que algo de ruim possa
 acontecer a qualquer momento | 1 | 2 | 3 | 4 | 5 |
 
 
 | Item | Nunca | Raramente | Às vezes | Frequente-  mente | Sempre |
-| --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - |
 | Tenho muito medo que algo de ruim possa  acontecer a qualquer momento | 1 | 2 | 3 | 4 | 5 |
 
 
@@ -723,7 +715,7 @@ ANÁLISE DE CONCORDÂNCIA
 
 
 | Tipo |
-| --- |
+| - |
 | Porcentagem de Concordância |
 | Índice de Validade de Conteúdo |
 | Razão de Validade de Conteúdo |
@@ -746,7 +738,7 @@ Diferentes tipos
 
 
 | Tipo |
-| --- |
+| - |
 | Índice de Validade de Conteúdo (IVC) |
 | Razão de Validade de Conteúdo (RVC) |
 | Coeficiente de Validade de Conteúdo (CVC)* |
@@ -847,7 +839,7 @@ RAZÃO DE VALIDADE  DE CONTEÚDO
 
 
 | No. juízes | RVC | No. de  concordantes |
-| --- | --- | --- |
+| - | - | - |
 | 5 | 1 | 5 |
 | 6 | 1 | 6 |
 | 7 | 1 | 7 |
@@ -875,7 +867,7 @@ CVC desenvolvido por Hernandez-Nieto (2002), avalia:
 (Exaustão Emocional) | Fator 2
 (Despersonalização) | Fator 3
 (Baixa realização  no Trabalho) |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | Item A |  |  |  |
 | Item B |  |  |  |
 
@@ -898,7 +890,7 @@ COEFICIENTE DE VALIDADE  DE CONTEÚDO
 
 
 | Item | M-Clareza | M-Pertinência | M-Relevância |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | Item 1 | 0,466 | 0,422 | 0,388 |
 | Item 2 | 0,333 | 0,477 | 0,466 |
 | Item k | ... | ... | ... |
@@ -925,7 +917,7 @@ COEFICIENTE DE VALIDADE  DE CONTEÚDO
 Clareza | CVCc -
 Pertinência | CVCc -
 Relevância |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | Item 1 | 0,925 | 0,923 | 0,971 |
 | Item 2 | 0,955 | 0,933 | 0,895 |
 | Item k | ... | ... | ... |

@@ -1,0 +1,853 @@
+---
+title: "Sistemas Radiculares: Ensaios e Modelagem 3D"
+subtitle: "Bioengenharia de Solos"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Bioengenharia de Solos"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Bioengenharia de Solos"
+execute:
+  echo: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Raízes e estabilidade de taludes
+- [2]{.circle} O capim-vetiver como modelo de estudo
+- [3]{.circle} Fundamentos de fotogrametria SfM
+- [4]{.circle} Protocolo de coleta em campo
+- [5]{.circle} Processamento no Meshroom
+- [6]{.circle} Análise no CloudCompare
+- [7]{.circle} Modelos mecânicos (Wu & Waldron)
+- [8]{.circle} Estudo de caso  -  Vetiver em talude
+- [9]{.circle} Quiz & exercício proposto
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Aprender a construir modelos 3D de sistemas radiculares expostos usando fotogrametria digital de baixo custo, processá-los no CloudCompare e extrair parâmetros relevantes para avaliação do controle de erosão.
+:::
+
+::: {.highlight-box}
+**⏱ Duração:** 60 min (teoria + demonstração + exercício)
+
+**📋 Pré-requisitos:** CloudCompare instalado, câmera ≥ 12 MP
+:::
+:::
+:::
+
+# [1  -  RAÍZES E ESTABILIDADE DE TALUDES]{.section-header}
+
+## O papel mecânico das raízes {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+As raízes aumentam a resistência ao cisalhamento do solo por dois mecanismos:
+
+### Reforço mecânico
+
+$$\Delta c_r = t_R \times (A_R / A)$$
+
+Onde:
+
+- $\Delta c_r$ = incremento de coesão pela raiz (kPa)
+- $t_R$ = resistência à tração da raiz (kPa)
+- $A_R / A$ = razão de área radicular (*Root Area Ratio*  -  RAR)
+
+### Efeito hidráulico
+
+- Raízes extraem água → reduzem poropressão
+- Aumento da sucção mátrica → estabilidade
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Modelo de Wu (1979)
+**
+
+O acréscimo de coesão é estimado como:
+
+$$\Delta c_r = 1{,}2 \times \overline{t_R} \times RAR$$
+
+O fator 1,2 corrige a orientação aleatória das raízes.
+
+### Valores típicos
+
+| Espécie | $\Delta c_r$ (kPa) |
+|---------|:---:|
+| Vetiver | 5 - 18 |
+| Ingá | 3 - 12 |
+| Leucena | 4 - 15 |
+| Gramíneas nativas | 1 - 6 |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+---
+
+## O capim-vetiver  -  planta-modelo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Por que o vetiver?
+
+O **capim-vetiver** (*Chrysopogon zizanioides*) é uma das espécies mais utilizadas em bioengenharia de solos no mundo, graças a características únicas:
+
+- **Raízes profundas**  -  alcançam 3-4 m no primeiro ano
+- **Sistema radicular denso**  -  milhares de raízes finas e fibrosas
+- **Alta resistência à tração**  -  40-180 MPa (comparável a aço de baixo carbono!)
+- **Tolerância extrema**  -  seca, inundação, pH 3-11, metais pesados
+- **Sem propagação invasiva**  -  não produz sementes viáveis na maioria dos climas
+- **Crescimento rápido**  -  barreira funcional em 3-6 meses
+
+:::
+
+::: {.column width="50%"}
+![Sistema radicular profundo do vetiver em campo  -  observe a densidade e a profundidade das raízes comparada à escala](img/raizes_vetiver/Vetiver_1.png){fig-alt="Raízes de vetiver expostas em talude de campo" width="100%"}
+:::
+:::
+
+---
+
+## Morfologia radicular do vetiver {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Arquitetura do sistema radicular
+
+O vetiver possui sistema radicular do tipo **fasciculado denso**, com características distintas:
+
+| Parâmetro | Valor típico |
+|-----------|:---:|
+| Profundidade máx. (1 ano) | 3,0 - 4,0 m |
+| Diâmetro médio da raiz | 0,5 - 0,8 mm |
+| Nº de raízes por touceira | 500 - 3.000 |
+| Massa seca radicular (kg/m³) | 0,8 - 3,5 |
+| Resistência à tração | 40 - 180 MPa |
+| RAR camada 0-30 cm | 0,15 - 0,45% |
+
+: {.striped .hover}
+
+:::
+
+::: {.column width="50%"}
+![Detalhe das raízes de vetiver  -  observe a densidade das raízes fibrosas do sistema radicular](img/raizes_vetiver/Vetiver_2.png){fig-alt="Detalhe do sistema radicular de vetiver" width="100%"}
+:::
+:::
+
+::: {.info-box}
+**Dado importante:** A resistência à tração das raízes de vetiver (40-180 MPa) é muito superior à de árvores típicas (5-40 MPa), tornando-o ideal para reforço de solos.
+:::
+
+---
+
+## Distribuição radicular em profundidade {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Perfil típico de RAR do vetiver
+
+A distribuição da densidade de raízes varia com a profundidade de forma não linear:
+
+| Camada (cm) | RAR (%) | Nº raízes/dm² | $\Delta c_r$ (kPa) |
+|:---:|:---:|:---:|:---:|
+| 0-10 | 0,40 | 180-250 | 7,2 |
+| 10-20 | 0,30 | 120-180 | 5,4 |
+| 20-30 | 0,20 | 80-120 | 3,6 |
+| 30-50 | 0,12 | 40-80 | 2,2 |
+| 50-100 | 0,05 | 10-30 | 0,9 |
+| > 100 | 0,01 | 2-10 | 0,2 |
+
+: {.striped .hover}
+
+A concentração é maior nos primeiros 30 cm, mas raízes profundas ancoram o talude em camadas estáveis.
+:::
+
+::: {.column width="45%"}
+![Perfil lateral do sistema radicular de vetiver em trincheira  -  note a diminuição gradual da densidade com a profundidade](img/raizes_vetiver/vetiver_perfil_raiz.jpg){fig-alt="Perfil lateral de raiz de vetiver em trincheira" width="100%"}
+:::
+:::
+
+---
+
+## Por que modelar em 3D? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Limitações da análise 2D
+
+A análise bidimensional (cortes, fotografias frontais) perde informação sobre:
+
+- **Distribuição espacial** das raízes no volume de solo
+- **Densidade volumétrica** (RVD  -  *Root Volume Density*)
+- **Conectividade** entre raízes  -  resistência à arrancamento
+- **Assimetria** da distribuição  -  taludes têm raízes predominantes a jusante
+- **Volume real**  -  estimativas 2D subestimam em 20-40%
+:::
+
+::: {.column width="50%"}
+### Vantagens da fotogrametria SfM
+
+A **fotogrametria SfM** (*Structure from Motion*) permite reconstruir a geometria 3D completa com:
+
+- Equipamento de **baixo custo** (câmera de celular ou DSLR)
+- Software **livre** (Meshroom, OpenDroneMap)
+- Análise em software **gratuito** (CloudCompare)
+- Precisão de **0,1-1,0 mm** dependendo da resolução
+- Registro permanente e **reprodutível** do sistema radicular
+:::
+:::
+
+---
+
+## Comparativo de técnicas de imagem 3D {.smaller-text}
+
+| Técnica | Resolução | Custo | Portabilidade | Ideal para |
+|---------|:---------:|:-----:|:-------------:|:-----------|
+| **Fotogrametria SfM** | 0,1-1 mm | Baixo (celular) | ✅ Campo | Raízes expostas em taludes |
+| **LiDAR terrestre** | 1-5 mm | Alto | ⚠️ Pesado | Estruturas maiores (> 1 m) |
+| **Tomografia (CT)** | 10-50 µm | Muito alto | ❌ Laboratório | Raízes finas in-situ (amostras) |
+| **Ressonância (MRI)** | 50-200 µm | Muito alto | ❌ Laboratório | Dinâmica de água nas raízes |
+| **Scanner 3D estruturado** | 0,05-0,5 mm | Médio | ⚠️ Lab/campo | Amostras lavadas em bancada |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Para bioengenharia de solos**, a fotogrametria SfM é a melhor relação custo-benefício: portátil, precisa (sub-milimétrica), não destrutiva e acessível a qualquer laboratório.
+:::
+
+# [2  -  FOTOGRAMETRIA DIGITAL SfM]{.section-header}
+
+## Conceito de Structure from Motion {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Princípio
+
+A partir de **múltiplas fotografias** de um mesmo objeto, tomadas de ângulos diferentes, o software identifica **pontos homólogos** e reconstrói a geometria 3D.
+
+### Etapas do processamento
+
+1. **Detecção de features**  -  SIFT/SURF em cada imagem
+2. **Correspondência**  -  emparelhar features entre imagens
+3. **Estimativa de câmera**  -  posição e orientação de cada foto
+4. **Nuvem densa**  -  triangulação de milhares de pontos 3D
+5. **Malha (mesh)**  -  superfície poligonal contínua
+6. **Textura**  -  projeção das cores sobre a malha
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**Softwares livres recomendados
+**
+
+| Software | Uso |
+|----------|-----|
+| **Meshroom** | Fotogrametria SfM (Nuvem densa) |
+| **OpenDroneMap** | Alternativa (melhor para drones) |
+| **COLMAP** | Motor SfM robusto |
+| **CloudCompare** | Visualização e análise 3D |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+---
+
+## GSD  -  Resolução espacial das fotos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O que é GSD?
+
+O **GSD** (*Ground Sampling Distance*) indica o tamanho real que cada pixel representa:
+
+$$GSD = \frac{d \times p}{f}$$
+
+Onde:
+
+- $d$ = distância câmera-objeto (m)
+- $p$ = tamanho do pixel no sensor (mm)
+- $f$ = distância focal da lente (mm)
+
+### Exemplo prático
+
+- Celular com $f = 4{,}2$ mm, pixel $= 0{,}0012$ mm, distância $= 0{,}5$ m:
+
+$$GSD = \frac{0{,}5 \times 0{,}0012}{4{,}2} = 0{,}14 \text{ mm/pixel}$$
+
+Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**GSD recomendado por aplicação
+**
+
+| Aplicação | GSD necessário |
+|-----------|:--------------:|
+| Raízes finas (< 1 mm) | ≤ 0,2 mm/pixel |
+| Raízes médias (1-5 mm) | ≤ 0,5 mm/pixel |
+| Raízes grossas (> 5 mm) | ≤ 1,0 mm/pixel |
+| Touceira inteira | ≤ 2,0 mm/pixel |
+
+: {.striped .hover}
+
+**Regra prática:** o GSD deve ser ≤ metade do diâmetro da menor raiz que se deseja detectar.
+:::
+:::
+:::
+
+# [3  -  PROTOCOLO DE COLETA EM CAMPO]{.section-header}
+
+## Preparação do local {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Etapa 1  -  Exposição da raiz
+
+1. Selecione o talude ou trincheira com raízes expostas
+2. Se necessário, use **jato de água** a baixa pressão para remover o solo aderido sem danificar as raízes
+3. Delimite a área de interesse com **estacas de referência coloridas** (mínimo 4 pontos)
+4. Posicione uma **escala métrica** (trena ou régua graduada) visível em todas as fotos
+:::
+
+::: {.column width="50%"}
+### Etapa 2  -  Aquisição das fotos
+
+- **Equipamento:** câmera ≥ 12 MP (celular serve)
+- **Nº de fotos:** 60-120 (quanto mais, melhor)
+- **Sobreposição:** ≥ 70% entre fotos consecutivas
+- **Ângulos:** circundar o objeto em pelo menos 2 alturas
+- **Iluminação:** difusa (céu nublado ideal)  -  evitar sombras duras
+- **Foco:** fixar foco manual se possível
+:::
+:::
+
+::: {.highlight-box}
+**Dica prática:** fotografe em círculos concêntricos (raster orbital) ao redor da raiz. Comece mais longe (contexto) e feche o enquadramento progressivamente.
+:::
+
+---
+
+## Checklist de campo  -  antes de fotografar {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### ✅ Antes de sair do laboratório
+
+- [ ] Câmera carregada e cartão de memória vazio
+- [ ] Trena/régua graduada (mínimo 30 cm)
+- [ ] Estacas coloridas ou alvos codificados (mínimo 4)
+- [ ] Borrifador de água (para umedecer raízes secas)
+- [ ] Caderneta de campo (anotar espécie, local, data)
+- [ ] Tripé ou estabilizador (opcional, mas recomendado)
+
+### ✅ No local
+
+- [ ] Limpar raízes com jato d'água suave
+- [ ] Posicionar escala métrica no campo de visão
+- [ ] Verificar iluminação (evitar sol direto, sombras fortes)
+- [ ] Fixar foco manual e ISO baixo (100-400)
+:::
+
+::: {.column width="50%"}
+### ✅ Durante a captura
+
+- [ ] Fotografar no mínimo 60-80 fotos
+- [ ] Sobreposição entre fotos ≥ 70%
+- [ ] Pelo menos 2 alturas de captura (órbita baixa + alta)
+- [ ] Incluir fotos de detalhe (close-up) das raízes finas
+- [ ] Manter distância constante (±10 cm de variação)
+- [ ] Revisar fotos no visor  -  descartar as tremidas
+
+### ✅ Ao finalizar
+
+- [ ] Anotar nº total de fotos e condições de luz
+- [ ] Fotografar etiqueta com identificação da amostra
+- [ ] Backup imediato das fotos (nuvem ou HD externo)
+:::
+:::
+
+---
+
+## Erros comuns na captura  -  como evitar {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### ❌ Erros frequentes
+
+| Erro | Consequência | Solução |
+|------|-------------|--------|
+| Poucas fotos (< 40) | Nuvem com buracos | Mínimo 60, ideal 80+ |
+| Sem escala métrica | Modelo sem dimensão real | Sempre incluir régua |
+| Sombras duras | Features falsas, ruído | Fotografar em dia nublado |
+| Foco automático | Fotos desfocadas | Travar foco manual |
+| Ângulos repetidos | Falha na reconstrução | Circundar em 360° |
+| Fundo complexo | Pontos espúrios na nuvem | Usar painel de fundo neutro |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+![Exemplo de foto de campo bem executada: raízes de vetiver expostas com escala métrica visível e iluminação uniforme](img/raizes_vetiver/vetiver_escala.png){fig-alt="Foto de campo com escala métrica" width="100%"}
+
+::: {.info-box}
+**Regra de ouro:** se você consegue ver a raiz com clareza na foto, o Meshroom também conseguirá reconstruí-la.
+:::
+:::
+:::
+
+# [4  -  PROCESSAMENTO NO MESHROOM]{.section-header}
+
+## Fluxo de trabalho no Meshroom {.smaller-text}
+
+| Passo | Nó (node) | Ação |
+|-------|-----------|------|
+| 1 | **CameraInit** | Importar fotos, detectar parâmetros da câmera |
+| 2 | **FeatureExtraction** | Extrair features SIFT de cada imagem |
+| 3 | **ImageMatching** | Emparelhar imagens por vocabulário visual |
+| 4 | **FeatureMatching** | Correspondência de features entre pares |
+| 5 | **StructureFromMotion** | Estimar posição das câmeras e nuvem esparsa |
+| 6 | **DepthMap** | Calcular mapa de profundidade |
+| 7 | **Meshing** | Gerar malha triangular |
+| 8 | **Texturing** | Aplicar textura fotográfica à malha |
+
+: {.striped .hover}
+
+**Saída final:** arquivo `.obj` ou `.ply` com a malha texturizada do sistema radicular.
+
+---
+
+## Resultado: Nuvem de pontos de raízes de vetiver {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Visualização do modelo 3D
+
+![Nuvem de pontos 3D de sistema radicular de vetiver processada no CloudCompare  -  cores representam a textura fotográfica original](img/raizes_vetiver/vetiver_nuvem_pontos.png){fig-alt="Nuvem de pontos 3D de raiz de vetiver" width="100%"}
+:::
+
+::: {.column width="50%"}
+### O que observar no modelo
+
+- **Geometria geral:** forma fasciculada, raízes irradiando do colo
+- **Densidade:** regiões mais densas nos 20 cm superiores
+- **Comprimento:** raízes individuais identificáveis até > 1 m
+- **Assimetria:** possível inclinação preferencial (gravidade, talude)
+
+::: {.info-box}
+No CloudCompare, use **Edit → Colors → Height Ramp** para colorir a nuvem por profundidade  -  facilita a visualização da distribuição vertical.
+:::
+:::
+:::
+
+---
+
+## Dicas de processamento {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Configurações recomendadas
+
+- **DepthMap:** resolução "Normal" (não "High"  -  evita tempo excessivo)
+- **Meshing:** `maxPoints = 5 000 000` para raízes (detalhe suficiente)
+- **Texturing:** resolução 4096 × 4096 por atlas
+
+### Tempo estimado
+
+- 80 fotos (12 MP) → ~30 min em GPU média
+- 120 fotos (20 MP) → ~1-2 h
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Alternativa sem GPU
+**
+
+Se não tiver placa de vídeo dedicada:
+
+1. Use **COLMAP** (CPU mode)
+2. Ou processe no **Google Colab** com GPU gratuita
+3. Ou use **OpenDroneMap** via WebODM (Docker)
+:::
+:::
+:::
+
+# [5  -  ANÁLISE NO CLOUDCOMPARE]{.section-header}
+
+## Importação e limpeza {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Passo a passo
+
+1. **File → Open** → carregar `.ply` ou `.obj`
+2. **Edit → Segment** → remover pontos do solo/fundo (selecionar e deletar)
+3. **Edit → Subsample** → reduzir a nuvem para análise (min. spacing = 1 mm)
+4. **Edit → Normals → Compute** → calcular normais para visualização de superfície
+
+### Escalonamento
+
+Se a escala não foi calibrada na fotogrametria:
+
+1. Usar ferramenta **Point Picking** para medir a distância entre dois pontos conhecidos (régua no campo)
+2. **Edit → Multiply/Scale** → aplicar fator de correção
+:::
+
+::: {.column width="45%"}
+![Malha triangular texturizada do sistema radicular de vetiver no CloudCompare  -  pronta para extração de parâmetros](img/raizes_vetiver/vetiver_malha_3d.png){fig-alt="Malha 3D texturizada de raiz de vetiver" width="100%"}
+:::
+:::
+
+---
+
+## Extração de parâmetros {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Parâmetros geométricos
+
+| Parâmetro | Como extrair |
+|-----------|-------------|
+| Volume do envelope (cm³) | Convex Hull; inclui vazios e não equivale ao volume de raízes |
+| Área da malha (cm²) | Conferir escala, oclusões e qualidade da reconstrução |
+| Diâmetro médio | Cortes transversais → fit circle |
+| Profundidade máxima (cm) | Bounding Box → dimensão Z |
+| RAR por camada | Cortes horizontais a cada 10 cm |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+### Cálculo do RAR por camada
+
+1. **Tools → Segmentation → Cross Section** → corte horizontal
+2. Em cada corte, calcular área total do corte e área ocupada por raízes
+3. $RAR = A_{raiz} / A_{total}$
+
+::: {.highlight-box}
+O RAR tipicamente diminui com a profundidade. A magnitude depende da espécie, da profundidade, do método e da área amostral. Registre a fração e, separadamente, sua expressão em porcentagem.
+:::
+:::
+:::
+
+---
+
+
+# 6 · Ensaios radiculares e integração mecânica
+
+
+
+## RAR: medir uma seção, sem preencher os vazios {.smaller-text}
+
+:::: {.columns}
+::: {.column width="50%"}
+
+$$RAR=\frac{\sum_i A_{r,i}}{A_{\mathrm{seção}}}$$
+
+1. Defina plano, área e orientação da seção em relação ao mecanismo de ruptura.
+2. Identifique cada raiz que cruza o plano.
+3. Some suas áreas transversais, com escala e resolução verificadas.
+4. Repita por profundidade e posição.
+
+O *convex hull* de uma touceira inclui vazios. A projeção de uma fatia espessa também pode sobrepor raízes e não fornece, sozinha, o RAR de um plano.
+
+:::
+::: {.column width="50%"}
+
+![Seção para identificar raízes e a área efetivamente ocupada](img/raizes_vetiver/vetiver_corte_rar.jpg){fig-align="center" width="90%"}
+
+:::
+::::
+
+
+
+## Tração e arrancamento: perguntas diferentes {.smaller-text}
+
+| Ensaio | Resultado | Controle |
+|---|---|---|
+| Tração direta | Força e tensão na ruptura da raiz | Diâmetro, comprimento, umidade, velocidade e fixação |
+| Arrancamento | Força e deslocamento do conjunto solo–raiz | Embutimento, ramificação, umidade e geometria |
+
+$$\sigma_r=\frac{F_{max}}{A_r},qquad A_r=\frac{\pi d^2}{4}$$
+
+Com F em N e área em mm², a tensão resulta em N mm⁻² = MPa.
+
+**Exemplo didático:** F = 40 N e d = 1 mm → $\sigma_r=50{,}93$ MPa. O arrancamento não mede diretamente essa mesma resistência do tecido.
+
+
+
+## Relação alométrica: ajustar dados de ensaio {.smaller-text}
+
+$$\sigma_r=a,d^{-b}$$
+
+- Informe as unidades de diâmetro e tensão: elas determinam as unidades do coeficiente a.
+- Ajuste os coeficientes aos ensaios; apresente dispersão, tamanho amostral e intervalo de diâmetros.
+- Registre rupturas na garra e critérios de exclusão.
+- Não transfira coeficientes entre espécies, idades e condições sem validação.
+
+A tensão pode diminuir com o diâmetro enquanto a força aumenta, pois a área cresce com $d^2$.
+
+
+
+## Do ensaio ao modelo de resistência {.smaller-text}
+
+![Curvas ilustrativas de Mohr-Coulomb e diferença entre tensão e força radicular](../../../../img/bs_mohr_coulomb_coesao_radicular.png){fig-align="center" width="96%"}
+
+
+
+## Wu–Waldron: conferir a conversão de unidades {.smaller-text}
+
+Na aproximação com fator de orientação 1,2:
+
+$$\Delta c_r\approx1{,}2,\overline{\sigma_r},RAR$$
+
+| Profundidade | RAR (%) | RAR (fração) | Tensão ilustrativa | Δcᵣ (kPa) |
+|---|---:|---:|---:|---:|
+| 0–10 cm | 0,025 | 0,00025 | 15 MPa | 4,50 |
+| 10–20 cm | 0,018 | 0,00018 | 15 MPa | 3,24 |
+| 20–30 cm | 0,010 | 0,00010 | 15 MPa | 1,80 |
+| 30–50 cm | 0,004 | 0,00004 | 15 MPa | 0,72 |
+
+Primeira linha: $1{,}2\times15.000\times0{,}00025=4{,}50$ kPa. São dados didáticos, não resultados medidos.
+
+
+
+## Limitações da estimativa de coesão adicional {.smaller-text}
+
+- Nem todas as raízes mobilizam a resistência máxima simultaneamente.
+- Orientação, ancoragem, arrancamento e ruptura progressiva modificam a contribuição.
+- O RAR relevante é o que cruza a superfície mobilizada.
+- A média de tensão precisa respeitar as classes de diâmetro e as áreas representadas.
+- A umidade modifica tanto o solo quanto a interação solo–raiz.
+
+Use a aproximação para cenários documentados e compare com ensaios de solo enraizado. Geometria 3D, isoladamente, não comprova ganho de resistência.
+
+# [7  -  MODELOS MECÂNICOS AVANÇADOS]{.section-header}
+
+
+## Orientação e mobilização das raízes {.smaller-text}
+
+Uma representação do incremento de resistência considera:
+
+$$\Delta S=T_r\frac{A_r}{A_s}(\sin\theta+\cos\theta\tan\phi')$$
+
+$T_r$: tensão mobilizada nas raízes; $A_r/A_s$: RAR; $\theta$: orientação de deformação; $\phi'$: atrito efetivo. Use unidades compatíveis de tensão.
+
+O fator aproximado 1,2 simplifica a orientação. Ambos os tratamentos exigem hipóteses sobre interação, mobilização e ancoragem. Nenhum se torna automaticamente um modelo executivo por conter mais parâmetros.
+
+Fonte: [Waldron (1977), ensaios de solo permeado por raízes](https://doi.org/10.2136/sssaj1977.03615995004100050005x).
+
+## Fator de Segurança com raízes {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Talude infinito com raízes
+
+Para um talude infinito de inclinação $\beta$, o Fator de Segurança (FS) com raízes é:
+
+$$FS = \frac{c' + \Delta c_r + (\gamma z \cos^2\beta - u)\tan\phi'}{\gamma z \sin\beta \cos\beta}$$
+
+Onde:
+
+- $c'$ = coesão efetiva do solo (kPa)
+- $\Delta c_r$ = contribuição das raízes (kPa)
+- $\gamma$ = peso específico do solo (kN/m³)
+- $z$ = profundidade vertical da superfície de ruptura (m)
+- $u$ = poropressão (kPa)
+:::
+
+::: {.column width="50%"}
+### Exemplo numérico ilustrativo
+
+**Dados:** $c' = 5$ kPa, $\phi' = 25°$, $\gamma = 18$ kN/m³, $\beta = 30°$, $z = 1$ m, $u = 0$
+
+**Sem raízes:**
+$$FS_{sem} = \frac{5 + (18 \times 1 \times \cos^2 30°) \times \tan 25°}{18 \times 1 \times \sin 30° \times \cos 30°}$$
+$$FS_{sem} = \frac{5 + 6{,}29}{7{,}79} = 1{,}45$$
+
+**Com contribuição radicular hipotética de 5 kPa:**
+$$FS_{com} = \frac{5 + 5 + 6{,}29}{7{,}79} = 2{,}09$$
+
+::: {.highlight-box}
+**Aumento calculado de 44% no FS neste cenário.** A contribuição na profundidade de ruptura precisa ser demonstrada; a fotogrametria não fornece esse parâmetro.
+:::
+:::
+:::
+
+
+# 8 · Planejar um estudo de caso
+
+
+
+## Talude revegetado: separar imagem, medida e hipótese {.smaller-text}
+
+:::: {.columns}
+::: {.column width="50%"}
+
+**Cenário didático:** talude de 3 m de altura com erosão superficial e plantio em linhas.
+
+1. Levante a geometria inicial e pontos fixos de controle.
+2. Registre cobertura e sobrevivência das plantas.
+3. Colete seções radiculares e ensaios independentes.
+4. Repita o levantamento após chuvas e manutenção.
+5. Modele resistência usando parâmetros cuja origem esteja declarada.
+
+Imagens de uma intervenção não demonstram, por si, valores de FS ou redução de erosão.
+
+:::
+::: {.column width="50%"}
+
+![Registro das etapas de exposição e análise de raízes](img/raizes_vetiver/Montagem_analise_campo_Vetiver.png){fig-align="center" width="90%"}
+
+:::
+::::
+
+
+
+## Plano de medição e inferência {.smaller-text}
+
+| Pergunta | Medida | Limitação a registrar |
+|---|---|---|
+| A superfície mudou? | Diferença entre modelos com referência estável | Erro de registro e limite de detecção |
+| Houve estabelecimento? | Cobertura, sobrevivência e raízes | Sazonalidade e manutenção |
+| A resistência mudou? | Tração, arrancamento e solo enraizado | Escala e condição hídrica |
+| A intervenção explica a mudança? | Controle ou referência e registro de chuvas | Outros processos e tratamentos |
+
+Não classifique um talude como seguro apenas porque um exemplo de FS supera 1. Defina critérios e cenários adequados à análise.
+
+# [9  -  QUIZ & EXERCÍCIO]{.section-header}
+
+## Quiz rápido  -  teste seus conhecimentos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Pergunta 1
+
+Qual a sobreposição mínima recomendada entre fotos consecutivas para fotogrametria SfM?
+
+a) 30%
+b) 50%
+c) **70%** ✅
+d) 90%
+
+### Pergunta 2
+
+O modelo de Wu (1979) tende a:
+
+a) Subestimar a coesão adicional
+b) **Superestimar a coesão adicional** ✅
+c) Fornecer valores exatos
+d) Ignorar o efeito das raízes
+:::
+
+::: {.column width="50%"}
+### Pergunta 3
+
+Qual parâmetro NÃO pode ser extraído diretamente de uma nuvem de pontos 3D?
+
+a) Volume radicular
+b) Profundidade máxima
+c) Área superficial
+d) **Resistência à tração da raiz** ✅
+
+### Pergunta 4
+
+Para detectar raízes de vetiver (diâmetro ≈ 0,5 mm), qual GSD máximo é aceitável?
+
+a) 1,0 mm/pixel
+b) 0,5 mm/pixel
+c) **0,2 mm/pixel** ✅
+d) 0,05 mm/pixel
+:::
+:::
+
+::: {.info-box}
+**Lembre-se:** a resistência à tração ($t_R$) deve ser medida em laboratório com ensaio de tração direta  -  não é possível extraí-la de imagens!
+:::
+
+---
+
+## Exercício proposto {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Atividade de campo + laboratório
+
+1. Em grupo (3-4 alunos), selecione uma planta com raízes expostas no campus
+2. Siga o protocolo de coleta (mín. 60 fotos, escala métrica)
+3. Processe no Meshroom e gere o modelo 3D
+4. Importe no CloudCompare e calcule o RAR em 3 camadas
+5. Meça tração ou use um conjunto de ensaios explicitamente identificado; estime $\Delta c_r$ com unidades e limitações declaradas
+6. Apresente os resultados em relatório técnico com figuras 3D
+:::
+
+::: {.column width="40%"}
+::: {.highlight-box}
+**Entrega
+**
+
+- **Formato:** relatório PDF + arquivo `.ply` da nuvem limpa
+- **Prazo:** 21 dias
+- **Avaliação:** protocolo de campo (20%), modelo 3D (30%), cálculos (30%), discussão (20%)
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Modelos mecânicos
+
+- Wu, T. H., McKinnell, W. P., & Swanston, D. N. (1979). Strength of tree roots and landslides on Prince of Wales Island. *Can. Geotech. J.*, 16(1), 19-33.
+- Waldron, L. J. (1977). The shear resistance of root-permeated homogeneous and stratified soil. *Soil Science Society of America J.*, 41(5), 843-849.
+- Pollen, N. & Simon, A. (2005). Estimating the mechanical effects of riparian vegetation on stream bank stability using a fiber bundle model. *Water Resources Research*, 41(7).
+
+### Raízes e bioengenharia
+
+- Stokes, A. et al. (2009). Desirable plant root traits for protecting natural and engineered slopes. *Plant and Soil*, 324, 1-30.
+- Mickovski, S. B. et al. (2009). Mechanical reinforcement of soil by willow roots. *Ecological Engineering*, 35, 1043-1053.
+- Truong, P., Van, T. T., & Pinners, E. (2008). *Vetiver System Applications: A Technical Reference Manual*. The Vetiver Network International.
+:::
+
+::: {.column width="50%"}
+### Fotogrametria e software
+
+- Meshroom (2024). AliceVision  -  Photogrammetric Computer Vision Framework. [alicevision.org](https://alicevision.org/)
+- CloudCompare (2024). 3D Point Cloud and Mesh Processing Software. [cloudcompare.org](https://www.cloudcompare.org/)
+- Westoby, M. J. et al. (2012). Structure-from-Motion photogrammetry: A low-cost, effective tool for geoscience applications. *Geomorphology*, 179, 300-314.
+- Lague, D., Brodu, N., & Leroux, J. (2013). Accurate 3D comparison of complex topography with terrestrial laser scanner. *ISPRS J. Photogramm. Remote Sens.*, 82, 10-26.
+
+### Vetiver  -  dados mecânicos
+
+- Hengchaovanich, D. (1998). Vetiver grass for slope stabilization and erosion control. *Technical Bulletin*, 1998/2. Pacific Rim Vetiver Network.
+- Islam, M. S. & Shahin, H. M. (2013). Reinforcing effect of Vetiver (*Chrysopogon zizanioides*) root in geotechnical structures. *Geomechanics and Geoengineering*, 8(4), 262-270.
+:::
+:::
+
+## {.center background-color="#2135A6"}
+
+::: {style="text-align: center;"}
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+:::

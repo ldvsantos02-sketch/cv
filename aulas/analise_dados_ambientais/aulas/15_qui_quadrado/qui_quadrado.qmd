@@ -1,21 +1,13 @@
 ---
 title: "Testes de Qui-Quadrado"
-subtitle: "Aula 15 — Teste de Independência e Aderência<br>Análise de Dados Ambientais"
-author: "Luiz Diego Vidal Santos"
-format:
-  revealjs:
-    logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 15"
-    slide-number: true
-    theme: [simple, ../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+subtitle: "Análise de Dados Ambientais · Aula 15"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise de Dados Ambientais"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise de Dados Ambientais · Aula 15"
 execute:
   echo: false
 ---
@@ -86,7 +78,7 @@ Qui-quadrado 2x2
 
 
 | Conjugalidade dos pais | Crianças Ansiosas | Crianças Não-Ansiosas |
-| --- | --- | --- |
+| - | - | - |
 | Divorciados | 15 | 35 |
 | Casados | 22 | 43 |
 
@@ -141,13 +133,13 @@ Gl = (g1)*(gl2) = 1x1
 
 
 | Sexo |
-| --- |
+| - |
 | Homem |
 | Mulher |
 
 
 | Compra Impulsiva |
-| --- |
+| - |
 | Sim |
 | Não |
 
@@ -192,13 +184,13 @@ Gl = 3
 
 
 | Ansiedade |
-| --- |
+| - |
 | Não-ansiosos |
 | Ansiosos |
 
 
 | Estilos Parentais |
-| --- |
+| - |
 | Autoritário |
 | Autoritativo |
 | Negligente |
@@ -226,7 +218,7 @@ Existe diferença no estado civil de pessoas que estão desempregadas?
 
 
 | Solteiras | Em união estável | Casadas | Divorciadas | Viúvas |
-| --- | --- | --- | --- | --- |
+| - | - | - | - | - |
 | 10 | 15 | 35 | 21 | 19 |
 
 
@@ -267,7 +259,7 @@ ADERÊNCIA
 
 
 |  | Teatro | Bares | Restaurantes |
-| --- | --- | --- | --- |
+| - | - | - | - |
 | Observado | 30 | 24 | 45 |
 | Esperado (99/3) | 33 | 33 | 33 |
 
@@ -312,19 +304,19 @@ LONGITUDINAL
 
 
 | Ansiedade |
-| --- |
+| - |
 | Não-ansiosos |
 | Ansiosos |
 
 
 | Ansiedade |
-| --- |
+| - |
 | Não-ansiosos |
 | Ansiosos |
 
 
 | Ansiedade |
-| --- |
+| - |
 | Não-ansiosos |
 | Ansiosos |
 

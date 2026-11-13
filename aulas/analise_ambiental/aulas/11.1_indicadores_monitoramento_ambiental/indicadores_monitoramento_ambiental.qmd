@@ -1,0 +1,217 @@
+---
+title: "Indicadores e Monitoramento Ambiental"
+subtitle: "Análise Ambiental · Aula 11.1"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Análise Ambiental"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Análise Ambiental · Aula 11.1"
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Dado, parâmetro, indicador e índice agregado (pirâmide da informação ambiental)
+- [2]{.circle} Matrizes Causais: **PER** (OCDE, 1993) e **FPEIR / DPSIR** (EEA, 1999)
+- [3]{.circle} Qualidade da Água: **IQA** (9 parâmetros e pesos), **IET** (Eutrofização) e **CONAMA 357/2005**
+- [4]{.circle} Padrões de Efluentes (**CONAMA 430/2011**) e Qualidade do Ar (**CONAMA 506/2024**)
+- [5]{.circle} Bioindicadores Bentônicos (BMWP e grupo EPT) e Métricas de Fragmentação da Paisagem
+- [6]{.circle} Índices Espectrais por Sensoriamento Remoto (**NDVI, SAVI e NDWI**)
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Capacitar o estudante a selecionar, calcular e interpretar **indicadores e índices ambientais** físicos, químicos, biológicos e orbitais dentro do modelo **FPEIR (DPSIR)**, confrontando-os com os padrões normativos brasileiros (**CONAMA 357/2005, 430/2011 e 506/2024**).
+:::
+:::
+:::
+
+# 1 · Fundamentos e Modelo FPEIR (DPSIR) {.section-header rotulo="FPEIR / DPSIR"}
+
+## Da Medição Bruta ao Índice Sintético {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### A Pirâmide da Informação Ambiental (Hammond et al., 1995; Siche et al., 2007)
+
+```text
+4. Índice Agregado (Ex.: IQA = 34 [Ruim]; IDH; IET)
+Agregação matemática ponderada de múltiplos indicadores para decisão.
+↑
+3. Indicador Ambiental (Ex.: Déficit de OD em relação ao limite CONAMA 357)
+Parâmetro contextualizado frente a uma meta, limiar crítico ou série histórica.
+↑
+2. Parâmetro / Variável (Ex.: Concentração média de OD = 3,2 mg/L)
+Propriedade física, química ou biológica estatisticamente tratada.
+↑
+1. Dado Bruto / Medição Primária (Ex.: Leituras da sonda multiparâmetro em campo)
+Observações pontuais coletadas em campanhas amostrais ou sensores orbitais.
+```
+:::
+
+::: {.column width="50%"}
+### Critérios SMART para Seleção de Bons Indicadores (Fidalgo, 2003)
+
+1. **Relevância causal e sensibilidade**: responder rapidamente ao tensor antrópico ou à medida de recuperação implantada.
+2. **Auditabilidade e reprodutibilidade**: protocolo padronizado (ex.: *Standard Methods* — APHA; Embrapa) que permita repetição por outro analista.
+3. **Existência de valor de referência (*Baseline* ou Padrão Legal)**: permitir comparação com área testemunha conservada ou resolução CONAMA.
+4. **Viabilidade operacional e custo-efetividade**: compatível com o cronograma e orçamento do monitoramento (PBA/PRAD).
+5. **Comunicabilidade pública**: compreensível por gestores, comitês de bacia e comunidades locais.
+:::
+:::
+
+## Matriz FPEIR (DPSIR), IQA e Enquadramento CONAMA 357/2005 {.smaller-text}
+
+![Articulação entre a matriz causal FPEIR (DPSIR), os 9 parâmetros do Índice de Qualidade das Águas (IQA) e as classes de enquadramento da Resolução CONAMA nº 357/2005.](../../../../img/aa_dpsir_iqa_conama357.png){.fig-full}
+
+## Aplicação Completa da Matriz FPEIR em uma Bacia Hidrográfica {.smaller-text}
+
+::: {.columns}
+::: {.column width="100%"}
+### Exemplo Prático: Sub-bacia do Rio Subaé / Rio Jacuípe (Bahia)
+
+| Elo da Cadeia FPEIR | Pergunta Diagnóstica | Exemplo de Indicador Quantitativo Auditável | Unidade de Medida |
+|---------------------|----------------------|---------------------------------------------|-------------------|
+| **F · Força Motriz (*Driving Force*)** | *Quais processos socioeconômicos macroestruturais geram demanda sobre a bacia?* | Taxa de crescimento urbano periférico sem rede coletora; expansão da área de pastagem/monocultura. | $\% \cdot \text{ano}^{-1}$ ou $\text{ha}\cdot\text{ano}^{-1}$ (IBGE / MapBiomas) |
+| **P · Pressão (*Pressure*)** | *Quais cargas diretas de matéria/energia ou supressões são impostas ao meio?* | Vazão de esgoto doméstico *in natura* lançado; taxa de desmatamento em APP; carga de fertilizantes nitrogenados/fosfatados. | $\text{kg DBO}\cdot\text{dia}^{-1}$; $\%$ de déficit de APP no CAR |
+| **E · Estado (*State*)** | *Qual é a condição física, química e biológica atual dos compartimentos?* | Concentração de Oxigênio Dissolvido (OD), Fósforo Total, Coliformes, Turbidez, **IQA** e **IET**. | $\text{mg}\cdot\text{L}^{-1}$; $\text{NMP}/100\text{ mL}$; $\text{NTU}$; adimensional ($0\text{–}100$) |
+| **I · Impacto (*Impact*)** | *Quais são os efeitos ecológicos, econômicos e à saúde humana resultantes?* | Floração de cianobactérias tóxicas; mortandade de peixes; internações por doenças de veiculação hídrica; custo de tratamento na ETA. | $\text{células}\cdot\text{mL}^{-1}$; casos/$10.000\text{ hab.}$; $\text{R\$}/1.000\text{ m}^3$ |
+| **R · Resposta (*Response*)** | *Quais ações políticas, legais e técnicas a sociedade adota para corrigir o quadro?* | Percentual de esgoto tratado (ETE c/ remoção terciária de $P$); hectares de APP restaurados via PRAD; enquadramento e outorga pelo INEMA/CBH. | $\%$ de atendimento; $\text{ha}$ recuperados; $\text{R\$}$ investidos |
+:::
+:::
+
+# 2 · Indicadores Hídricos e CONAMA 357/2005 {.section-header rotulo="Água e CONAMA"}
+
+## IQA: parâmetros, pesos e cálculo {.smaller-text}
+
+$$IQA=\prod_{i=1}^{9}q_i^{w_i},\qquad \sum w_i=1.$$
+
+| Parâmetro | Peso | Parâmetro | Peso |
+|---|---|---|---|
+| Oxigênio dissolvido | 0,17 | Nitrogênio total | 0,10 |
+| Coliformes termotolerantes | 0,15 | Fósforo total | 0,10 |
+| pH | 0,12 | Turbidez | 0,08 |
+| DBO$_{5,20}$ | 0,10 | Resíduo total | 0,08 |
+| Temperatura | 0,10 | **Soma** | **1,00** |
+
+Cada medida é convertida em $q_i$ pela curva do método. Não inserir diretamente concentração ou pH no produtório.
+
+## IQA: interpretação e limites {.smaller-text}
+
+O IQA foi concebido para sintetizar condições da água bruta para abastecimento após tratamento, com forte presença de indicadores de esgoto.
+
+- Não avalia todas as substâncias tóxicas, agrotóxicos ou patógenos.
+- Não substitui avaliação de potabilidade nem atendimento aos parâmetros legais.
+- As faixas de classificação variam entre os sistemas estaduais; informar a tabela adotada.
+- Médias anuais podem ocultar eventos críticos e mudanças sazonais.
+
+[ANA: parâmetros, curvas, pesos e faixas do IQA](https://www.ana.gov.br/portalpnqa/indicadores-indice-aguas.aspx).
+
+## IET: nutrientes e resposta biológica {.smaller-text}
+
+Na formulação de Lamparelli utilizada pela CETESB, o estado trófico é avaliado por **fósforo total e clorofila-a**, com equações próprias para rios e reservatórios.
+
+- Fósforo representa uma dimensão do potencial de enriquecimento.
+- Clorofila-a indica a resposta fitoplanctônica.
+- Transparência pode sofrer interferência de partículas minerais.
+- O mesmo teor de nutrientes não produz a mesma resposta em ambientes com luz, residência e mistura diferentes.
+
+Registrar método, unidades, tipo de ambiente e critério de combinação. Nitrogênio é relevante ao diagnóstico, mas não substitui as variáveis dessa formulação.
+
+## Água: classe, condição medida e lançamento {.smaller-text}
+
+| Instrumento | Pergunta |
+|---|---|
+| CONAMA 357/2005 | Qual a classe e quais padrões e usos se aplicam ao corpo receptor? |
+| CONAMA 430/2011 | Quais condições e padrões se aplicam ao lançamento de efluentes? |
+| Monitoramento | Qual é a condição observada, em que datas e locais? |
+| Enquadramento | Qual a meta de qualidade para os usos pretendidos? |
+
+Uma coleta fora do padrão não muda automaticamente o enquadramento. Na ausência de enquadramento aprovado, o art. 42 prevê águas doces como classe 2, **salvo condição atual melhor, para a qual se aplica a classe mais rigorosa correspondente**.
+
+## Águas doces: exemplos de padrões {.smaller-text}
+
+| Classe | OD mínimo (mg/L) | DBO$_{5,20}$ máxima (mg/L) | Turbidez máxima (UNT) |
+|---|---|---|---|
+| 1 | 6 | 3 | 40 |
+| 2 | 5 | 5 | 100 |
+| 3 | 4 | 10 | 100 |
+| 4 | Maior que 2 | Consultar norma | Consultar norma |
+
+Síntese parcial da CONAMA 357/2005. Conferir usos, exceções e frequência amostral no texto integral. Classe especial preserva as condições naturais; não se aplica uma tabela de limites artificiais.
+
+## Qualidade do ar: atualização normativa {.smaller-text}
+
+A **CONAMA 506/2024** estabelece os padrões nacionais atuais e revoga parte dos dispositivos da 491/2018.
+
+- A etapa **PI-2** entrou em vigor em 1º de janeiro de 2025.
+- Comparar cada poluente com o tempo de média e a etapa aplicáveis.
+- Não comparar diretamente média anual com limite de 24 horas.
+- Registrar cobertura temporal, estação, método e ocorrências excepcionais.
+
+[MMA: padrões de qualidade do ar](https://www.gov.br/mma/pt-br/assuntos/meio-ambiente-urbano-recursos-hidricos-qualidade-ambiental/qualidade-do-ar/padroes-de-qualidade-do-ar/padroes-de-qualidade-do-ar/).
+
+# 3 · Bioindicadores e Índices Espectrais Orbitais {.section-header rotulo="Biota e Satélite"}
+
+## Bioindicadores: resposta integrada ao habitat {.smaller-text}
+
+Macroinvertebrados respondem à qualidade da água, mas também a substrato, vazão, temperatura, conectividade e sazonalidade.
+
+- BMWP utiliza pontuações taxonômicas; explicitar a adaptação regional.
+- EPT pode indicar comunidades sensíveis, com diferenças entre ordens e famílias.
+- A ausência de um táxon não prova sozinha poluição.
+- Padronizar esforço, época, micro-hábitat e identificação.
+
+Combinar a biota com medidas físico-químicas e observações da bacia.
+
+## Índices espectrais: vegetação e água {.smaller-text}
+
+| Índice | Expressão com reflectâncias | Aplicação |
+|---|---|---|
+| NDVI | $(NIR-RED)/(NIR+RED)$ | Contraste espectral associado à vegetação |
+| SAVI | $(1+L)(NIR-RED)/(NIR+RED+L)$ | Atenuar efeito do fundo do solo; justificar $L$ |
+| NDWI de McFeeters | $(GREEN-NIR)/(GREEN+NIR)$ | Identificação de água superficial |
+| NDMI | $(NIR-SWIR)/(NIR+SWIR)$ | Sensibilidade à umidade da vegetação |
+
+Não atribuir classes universais de bioma a limiares de NDVI. Comparar sensores, correção atmosférica, nuvens e estação do ano. [USGS: NDMI](https://www.usgs.gov/landsat-missions/normalized-difference-moisture-index).
+
+
+## Selecionar indicadores para uma pergunta {.smaller-text}
+
+Pergunta: uma intervenção reduziu a entrega de sedimento de uma encosta?
+
+| Registro | Papel e limite |
+|---|---|
+| Chuva e umidade antecedente | Contextualizam a força dos eventos |
+| Cobertura do solo | Resposta da área tratada |
+| Pinos / seções | Mudança local da superfície |
+| Turbidez e vazão | Resposta no canal; turbidez requer calibração para massa |
+| Manutenção e falhas | Explicam diferenças no desempenho |
+
+Comparar períodos e áreas com condições documentadas. Uma redução de turbidez em ano seco não demonstra sozinha eficácia da intervenção.
+
+# 4 · Síntese e Referências {.section-header rotulo="Síntese"}
+
+## Pontos Essenciais para Fixação {.smaller-text}
+
+1. A matriz **FPEIR (DPSIR)** impede que o analista liste indicadores desconexos, obrigando a vincular **Força Motriz $\rightarrow$ Pressão $\rightarrow$ Estado $\rightarrow$ Impacto $\rightarrow$ Resposta**.
+2. O enquadramento e a condição medida são dimensões distintas; aplicar o art. 42 com a ressalva de condições atuais melhores.
+
+3. No Semiárido baiano, o uso combinado do **SAVI** (satélite), do **IQA/IET** (água) e de **bioindicadores bentônicos** oferece diagnóstico robusto e multiescalar.
+
+## Referências Bibliográficas {.smaller-text}
+
+- ANA (Agência Nacional de Águas e Saneamento Básico). **Indicadores de Qualidade — Índice de Qualidade das Águas (IQA)**. Brasília: ANA, 2020.
+- CONAMA. **Resolução nº 357, de 17 de março de 2005** (Classificação dos corpos de água e diretrizes ambientais para o seu enquadramento).
+- CONAMA. **Resolução nº 430, de 13 de maio de 2011** (Condições e padrões de lançamento de efluentes).
+- CONAMA. **Resolução nº 506, de 5 de julho de 2024** (Padrões de qualidade do ar).
+- EEA (European Environment Agency). **Environmental indicators: Typology and overview** (DPSIR Framework). Copenhagen: EEA, 1999.
+- MAGALHÃES JR., A. P. **Indicadores Ambientais e Recursos Hídricos: realidade e perspectivas para o Brasil a partir da experiência francesa**. Rio de Janeiro: Bertrand Brasil, 2007.
+- SICHE, R. et al. Índices versus indicadores: precisões conceituais na discussão da sustentabilidade de países. **Ambiente & Sociedade**, v. 10, n. 2, p. 137–148, 2007.

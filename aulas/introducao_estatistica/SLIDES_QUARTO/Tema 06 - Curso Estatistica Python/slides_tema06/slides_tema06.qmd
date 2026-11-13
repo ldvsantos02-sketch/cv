@@ -1,22 +1,15 @@
 ---
-title: "Curso de EstatÃ­stica com Python"
-subtitle: "Partes 1 e 2  -  PNAD 2015"
-author: "Luiz Diego Vidal Santos"
-footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 6  -  Curso de EstatÃ­stica com Python"
-format: 
+title: "Curso de Estatística com Python"
+subtitle: "Introdução à Estatística · Tema 06"
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Componente curricular: Introdução à Estatística"
+    - "Semestre letivo 2026.2"
+  local: "Feira de Santana – Bahia"
+  rodape: "UEFS · Introdução à Estatística · Tema 06"
+format:
   revealjs:
-    logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 6  -  Curso de EstatÃ­stica com Python"
-    slide-number: true
-    theme: [simple, ../../../../assets/uefs.scss]
-    controls: true
-    width: 1280
-    height: 720
-    css: ../../../../assets/custom.css
-    include-after-body: ../../../../assets/image-lightbox.html
-    transition: slide
-    background-transition: fade
-    preview-links: auto
     code-fold: false
     code-tools: true
 execute:
@@ -82,7 +75,7 @@ dados.info()
 ::: {.column width="50%"}
 ### Qualitativas Ordinais
 
-â–º VariÃ¡veis que podem ser **ordenadas ou hierarquizadas**
+â-º VariÃ¡veis que podem ser **ordenadas ou hierarquizadas**
 
 ```python
 dados['Anos de Estudo'].value_counts().sort_index()
@@ -92,7 +85,7 @@ dados['Anos de Estudo'].value_counts().sort_index()
 ::: {.column width="50%"}
 ### Qualitativas Nominais
 
-â–º VariÃ¡veis que **nÃ£o podem** ser ordenadas ou hierarquizadas
+â-º VariÃ¡veis que **nÃ£o podem** ser ordenadas ou hierarquizadas
 
 ```python
 dados['Cor'].value_counts()
@@ -112,7 +105,7 @@ dados['Sexo'].value_counts()
 ::: {.column width="50%"}
 ### Quantitativas Discretas
 
-â–º Valores formam um conjunto **finito ou enumerÃ¡vel**
+â-º Valores formam um conjunto **finito ou enumerÃ¡vel**
 
 ```python
 dados['Idade'].value_counts().sort_index().head(20)
@@ -130,7 +123,7 @@ A variÃ¡vel **idade** pode ser classificada como:
 ::: {.column width="50%"}
 ### Quantitativas ContÃ­nuas
 
-â–º Valores em **escala contÃ­nua** (nÃºmeros reais)
+â-º Valores em **escala contÃ­nua** (nÃºmeros reais)
 
 ```python
 dados['Altura'].describe()

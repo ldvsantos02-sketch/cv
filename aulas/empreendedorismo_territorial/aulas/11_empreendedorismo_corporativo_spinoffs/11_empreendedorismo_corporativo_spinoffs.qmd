@@ -1,0 +1,127 @@
+---
+title: "Empreendedorismo Corporativo, Intraempreendedorismo e Spin-offs"
+subtitle: "Empreendedorismo Tecnológico e Desenvolvimento Territorial · Aula 11"
+author: "Prof. Dr. Luiz Diego Vidal Santos"
+lang: pt-BR
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "PPGPT · Empreendedorismo Tecnológico e Desenvolvimento Territorial"
+    - "Aula 11 · 4 horas"
+  rodape: "UEFS · PPGPT · Aula 11 · Intraempreendedorismo e Spin-offs"
+  local: "Feira de Santana – Bahia"
+format:
+  revealjs:
+    theme: ../../../assets/academico/academico.scss
+    css: ../../../assets/academico/academico.css
+    include-after-body:
+      - ../../../assets/academico/academico.html
+    slide-number: false
+    controls: false
+    progress: false
+    center: false
+    margin: 0
+    navigation-mode: linear
+    width: 1280
+    height: 720
+    embed-resources: true
+    transition: fade
+    background-transition: none
+  beamer:
+    pdf-engine: xelatex
+    aspectratio: 169
+    classoption: [10pt, professionalfonts]
+    include-in-header:
+      - ../../../assets/academico/beamer-academico.tex
+filters:
+  - ../../../assets/academico/academico.lua
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Intraempreendedorismo vs. Empreendedorismo Corporativo
+- [2]{.circle} Inovação Aberta (*Open Innovation* — Chesbrough, 2003)
+- [3]{.circle} *Corporate Venture Capital* (CVC) e interação com *startups* locais
+- [4]{.circle} *Spin-offs* corporativas e acadêmicas no território
+- [5]{.circle} Intraempreendedorismo no setor público e em cooperativas
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Analisar como organizações estabelecidas (empresas, cooperativas, universidades e órgãos públicos) renovam suas capacidades por meio do **intraempreendedorismo**, da **inovação aberta** e da criação de ***spin-offs*** enraizadas no território.
+:::
+:::
+:::
+
+# 1 · Empreendedorismo em Organizações Existentes {.section-header rotulo="Corporativo"}
+
+## Conceitos e Dimensões (Pinchot, 1985; Guth & Ginsberg, 1990) {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Distinções Fundamentais
+
+- **Intraempreendedorismo:** iniciativa de colaboradores dentro da organização para desenvolver novos produtos, processos ou unidades de negócio usando recursos internos.
+- **Empreendedorismo Corporativo (*Corporate Entrepreneurship*):** estratégia institucionalizada da firma envolvendo:
+  1. **Renovação estratégica** (redefinição do negócio central);
+  2. **Inovação sustentada** (novos produtos/serviços);
+  3. ***Corporate Venturing*** (criação ou investimento em novos negócios).
+:::
+
+::: {.column width="50%"}
+### Barreiras Internas à Inovação
+
+- Aversão ao risco e foco exclusivo em métricas de curto prazo (*core business* atual).
+- Silos departamentais e falta de autonomia decisória.
+- **Solução organizacional:** *ambidestria organizacional* (O'Reilly & Tushman) — equilibrar a **exploração eficiente** (*exploitation*) do negócio atual com a **busca experimental** (*exploration*) do futuro.
+:::
+:::
+
+# 2 · Inovação Aberta e Spin-offs {.section-header rotulo="Open Innovation"}
+
+## *Open Innovation* e *Spin-offs* Acadêmicas {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Paradigma Aberto (Chesbrough, 2003)
+
+- **Modelo Fechado:** P&D 100% interno, segredo absoluto, comercialização apenas pela própria firma.
+- **Modelo Aberto:** fluxos intencionais de entrada (*inbound*) e saída (*outbound*) de conhecimento, envolvendo *startups*, universidades, fornecedores e clientes.
+- **Conexão Territorial:** grandes empresas âncoras instaladas em um território (ex.: polos industriais, agroindústrias, energia) podem atuar como **tratores de inovação** para *startups* locais via programas de inovação aberta.
+:::
+
+::: {.column width="50%"}
+### *Spin-offs* Acadêmicas e Transferência de Tecnologia
+
+- **Definição:** novas empresas criadas para explorar comercialmente resultados de pesquisa científica gerados em universidades ou ICTs.
+- **Desafios no Brasil:** transição do pesquisador para o papel empreendedor, licenciamento de PI pelos NITs e acesso a capital de risco para escala.
+:::
+:::
+
+# 3 · Setor Público e Fechamento da Unidade II {.section-header rotulo="Fechamento"}
+
+## Intraempreendedorismo Público e Leituras {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### Inovação no Setor Público Territorial
+
+- Laboratórios de inovação governamental (*GovTechs* e *Living Labs* municipais).
+- Uso de compras públicas de inovação e sandboxes regulatórios para testar soluções urbanas, ambientais e de defesa civil.
+:::
+
+::: {.column width="50%"}
+### Leituras para a Próxima Aula (Unidade III)
+
+- **WOILER, S.; MATHIAS, W. F.** *Projetos: planejamento, elaboração e análise* (Caps. 1 a 4 — Mercado, Tamanho e Localização).
+- **CASAROTTO FILHO, N.; KOPITTKE, B. H.** *Análise de investimentos* (Caps. introdutórios sobre elaboração de projetos).
+:::
+:::

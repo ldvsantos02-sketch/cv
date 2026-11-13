@@ -19,7 +19,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -41,6 +41,22 @@ jobs:
 
       - name: Install Python dependencies
         run: pip install -r requirements.txt
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install R rendering dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::knitr
+            any::rmarkdown
+          install-quarto: false
+
+      - name: Render introductory statistics (R)
+        run: quarto render aulas/introducao_estatistica/SLIDES_QUARTO --to revealjs
 
       - name: Generate CV PDFs
         run: |
@@ -96,6 +112,7 @@ jobs:
             quarto render "$aulas_dir" --to revealjs
           done < <(find aulas -name '_quarto.yml' -type f \
             -not -path '*/assets/*' -not -path '*/referencias/*' \
+            -not -path 'aulas/introducao_estatistica/SLIDES_QUARTO/_quarto.yml' \
             -not -path '*/.quarto/*' -print0 | sort -z)
 
       - name: Render Quarto Project

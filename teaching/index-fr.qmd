@@ -23,7 +23,7 @@ Accédez aux disciplines pour trouver des cours, lectures recommandées, vidéos
 ```{=html}
 <div class="discipline-grid">
 
-<a class="discipline-card" href="analise-da-paisagem/index.html">
+<a class="discipline-card" href="analise-da-paisagem/index.html" style="display:none">
 <div class="disc-icon"><i class="fa-solid fa-mountain-sun"></i></div>
 <div class="disc-title">Analyse du Paysage</div>
 <p class="disc-desc">Écologie du paysage, métriques FRAGSTATS, connectivité, diagnostic intégré et planification territoriale.</p>
@@ -32,8 +32,8 @@ Accédez aux disciplines pour trouver des cours, lectures recommandées, vidéos
 
 <a class="discipline-card" href="bioengenharia-de-solos/index.html">
 <div class="disc-icon"><i class="fa-solid fa-seedling"></i></div>
-<div class="disc-title">Bioingénierie des Sols</div>
-<p class="disc-desc">Érosion linéaire, palissades perméables, drains verts, éco-ingénierie et stabilisation de talus.</p>
+<div class="disc-title">Gestion et Conservation du Sol et de l’Eau</div>
+<p class="disc-desc">Conservation du sol et de l’eau, terrasses, érosion linéaire, palissades, drains verts et bioingénierie des talus.</p>
 <span class="disc-badge">21 cours</span>
 </a>
 
@@ -44,11 +44,18 @@ Accédez aux disciplines pour trouver des cours, lectures recommandées, vidéos
 <span class="disc-badge">11 cours</span>
 </a>
 
-<a class="discipline-card" href="analise-dados-ambientais/index.html">
+<a class="discipline-card" href="analise-dados-ambientais/index.html" style="display:none">
 <div class="disc-icon"><i class="fa-solid fa-chart-column"></i></div>
 <div class="disc-title">Analyse de Données Environnementales</div>
 <p class="disc-desc">Statistique spatiale, R, Python, géostatistique, machine learning et modélisation environnementale.</p>
 <span class="disc-badge">29 cours</span>
+</a>
+
+<a class="discipline-card" href="analise-ambiental/index.html">
+<div class="disc-icon"><i class="fa-solid fa-leaf"></i></div>
+<div class="disc-title">Analyse Environnementale</div>
+<p class="disc-desc">Société et nature, évaluation des impacts environnementaux, bassins versants, géosystèmes, qualité du sol, bioingénierie et législation environnementale.</p>
+<span class="disc-badge">16 cours</span>
 </a>
 
 <a class="discipline-card" href="estatistica-aplicada/index.html" style="display:none">

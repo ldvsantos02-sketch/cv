@@ -23,7 +23,7 @@ Acceda a cada disciplina para encontrar clases, lecturas recomendadas, videoclas
 ```{=html}
 <div class="discipline-grid">
 
-<a class="discipline-card" href="analise-da-paisagem/index.html">
+<a class="discipline-card" href="analise-da-paisagem/index.html" style="display:none">
 <div class="disc-icon"><i class="fa-solid fa-mountain-sun"></i></div>
 <div class="disc-title">Análisis del Paisaje</div>
 <p class="disc-desc">Ecología del paisaje, métricas FRAGSTATS, conectividad, diagnóstico integrado y planificación territorial.</p>
@@ -32,8 +32,8 @@ Acceda a cada disciplina para encontrar clases, lecturas recomendadas, videoclas
 
 <a class="discipline-card" href="bioengenharia-de-solos/index.html">
 <div class="disc-icon"><i class="fa-solid fa-seedling"></i></div>
-<div class="disc-title">Bioingeniería de Suelos</div>
-<p class="disc-desc">Erosión lineal, empalizadas permeables, drenajes verdes, ecoingeniería y estabilización de taludes.</p>
+<div class="disc-title">Manejo y Conservación del Suelo y del Agua</div>
+<p class="disc-desc">Conservación del suelo y del agua, terrazas, erosión lineal, empalizadas, drenajes verdes y bioingeniería de taludes.</p>
 <span class="disc-badge">21 clases</span>
 </a>
 
@@ -44,11 +44,18 @@ Acceda a cada disciplina para encontrar clases, lecturas recomendadas, videoclas
 <span class="disc-badge">11 clases</span>
 </a>
 
-<a class="discipline-card" href="analise-dados-ambientais/index.html">
+<a class="discipline-card" href="analise-dados-ambientais/index.html" style="display:none">
 <div class="disc-icon"><i class="fa-solid fa-chart-column"></i></div>
 <div class="disc-title">Análisis de Datos Ambientales</div>
 <p class="disc-desc">Estadística espacial, R, Python, geoestadística, machine learning y modelado ambiental.</p>
 <span class="disc-badge">29 clases</span>
+</a>
+
+<a class="discipline-card" href="analise-ambiental/index.html">
+<div class="disc-icon"><i class="fa-solid fa-leaf"></i></div>
+<div class="disc-title">Análisis Ambiental</div>
+<p class="disc-desc">Sociedad y naturaleza, evaluación de impacto ambiental, cuencas hidrográficas, geosistemas, calidad del suelo, bioingeniería y legislación ambiental.</p>
+<span class="disc-badge">16 clases</span>
 </a>
 
 <a class="discipline-card" href="estatistica-aplicada/index.html" style="display:none">

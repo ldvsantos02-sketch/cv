@@ -19,7 +19,7 @@ resources:
   - aulas/**/*_files/**
   - aulas/**/extras/*.xlsx
   - aulas/assets/**
-  - books/**
+  # The publication workflow renders books and copies their output separately.
   - teaching/**/*.html
   - teaching/**/*.pdf
   - teaching/**/SVG/**

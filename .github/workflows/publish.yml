@@ -24,6 +24,10 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Read GitHub Pages configuration
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
@@ -109,6 +113,11 @@ jobs:
 
       - name: Copy CNAME for custom domain
         run: cp CNAME _site/CNAME
+
+      - name: Deduplicate published resources and check Pages size
+        run: |
+          python -m unittest discover -s scripts -p test_prepare_pages.py
+          python scripts/prepare_pages.py _site --base-path '${{ steps.pages.outputs.base_path }}/'
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

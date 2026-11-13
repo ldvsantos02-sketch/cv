@@ -223,6 +223,86 @@ def report_output_size(output):
         print(f"Largest: {name}: {size / 1024**2:.1f} MiB", flush=True)
 
 
+IMAGE_TYPES = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".avif"}
+TEXT_TYPES = {".html", ".css", ".js", ".json", ".svg", ".xml", ".csv", ".mtl", ".gltf", ".map"}
+
+
+def share_copied_images(output, assets, base_path="/", source_base_url=None):
+    """Reuse identical extracted images and serve large originals from Git.
+
+    Only delete a published copy after rewriting its static URLs and checking
+    that no other text resource still mentions its filename. Original repository
+    files and PDFs are never changed. Source URLs must identify an immutable
+    public repository revision in the publication workflow.
+    """
+    replacements = {}
+    source_root = output.parent
+    for path in output.rglob("*"):
+        if not path.is_file() or path.suffix.lower() not in IMAGE_TYPES or assets.directory in path.parents:
+            continue
+        relative = path.relative_to(output)
+        extension = path.suffix.lower().replace(".jpeg", ".jpg")
+        content = path.read_bytes()
+        name = hashlib.sha256(content).hexdigest() + extension
+        if (assets.directory / name).is_file():
+            replacements[path.resolve()] = assets.url_prefix + name
+        elif source_base_url and relative.parts[0] == "img" and len(content) >= 8_000_000:
+            source = source_root / relative
+            if source.is_file() and source.read_bytes() == content:
+                replacements[path.resolve()] = source_base_url.rstrip("/") + "/" + quote(relative.as_posix(), safe="/")
+    if not replacements:
+        return 0, 0
+
+    def replace_url(value, document):
+        parsed = urlsplit(html.unescape(value))
+        if parsed.scheme or parsed.netloc or not parsed.path or parsed.path.startswith("#"):
+            return value
+        path = unquote(parsed.path)
+        if path.startswith("/"):
+            if base_path != "/" and path.startswith(base_path.rstrip("/") + "/"):
+                path = path[len(base_path.rstrip("/")):]
+            target = output / path.lstrip("/")
+        else:
+            target = document.parent / path
+        url = replacements.get(target.resolve())
+        if not url:
+            return value
+        return url + ("?" + parsed.query if parsed.query else "") + ("#" + parsed.fragment if parsed.fragment else "")
+
+    attributes = re.compile(r"(\b(?:src|href|poster|data-src|data-background-image)\s*=\s*)([\"'])(.*?)\2", re.I | re.S)
+    srcsets = re.compile(r"(\bsrcset\s*=\s*)([\"'])(.*?)\2", re.I | re.S)
+    css_urls = re.compile(r"(url\(\s*)([\"']?)([^)\s\"']+)\2(\s*\))", re.I)
+    documents = [path for path in output.rglob("*") if path.is_file() and path.suffix.lower() in TEXT_TYPES]
+    texts = []
+    for document in documents:
+        original = document.read_text(encoding="utf-8", errors="replace")
+        result = original
+        if document.suffix.lower() in {".html", ".css", ".svg"}:
+            result = attributes.sub(lambda m: m[1] + m[2] + replace_url(m[3], document) + m[2], result)
+            result = srcsets.sub(lambda m: m[1] + m[2] + re.sub(r"(^|,)(\s*)([^\s,]+)", lambda item: item[1] + item[2] + replace_url(item[3], document), m[3]) + m[2], result)
+            result = css_urls.sub(lambda m: m[1] + m[2] + replace_url(m[3], document) + m[2] + m[4], result)
+            if result != original:
+                document.write_text(result, encoding="utf-8", newline="")
+        texts.append(result)
+    text = unicodedata.normalize("NFC", unquote(html.unescape("\n".join(texts))))
+    # A rewritten raw GitHub URL contains the original filename. It is remote
+    # and therefore must not count as a reference to the local published copy.
+    for url in set(replacements.values()):
+        text = text.replace(unicodedata.normalize("NFC", unquote(url)), "")
+    removed = removed_bytes = 0
+    for path in replacements:
+        name = unicodedata.normalize("NFC", path.name)
+        variants = (name, quote(name), json.dumps(name, ensure_ascii=True)[1:-1])
+        if any(variant in text for variant in variants):
+            continue
+        if path.is_symlink() or not path.resolve().is_relative_to(output):
+            raise ValueError("Unexpected published image location: " + str(path))
+        removed_bytes += path.stat().st_size
+        path.unlink()
+        removed += 1
+    return removed, removed_bytes
+
+
 def remove_unreferenced_book_images(output):
     """Drop copied book image sources that no published text resource uses.
 
@@ -260,7 +340,7 @@ def remove_unreferenced_book_images(output):
     return len(unused), removed_bytes
 
 
-def prepare(output, base_path="/", max_bytes=1_000_000_000, asset_base_url=None):
+def prepare(output, base_path="/", max_bytes=1_000_000_000, asset_base_url=None, source_base_url=None):
     output = Path(output).resolve()
     if not output.is_dir() or not (output / "index.html").is_file():
         raise ValueError("Expected a rendered website containing index.html: " + str(output))
@@ -270,6 +350,10 @@ def prepare(output, base_path="/", max_bytes=1_000_000_000, asset_base_url=None)
         url = urlsplit(asset_base_url)
         if url.scheme not in {"https", "http"} or not url.netloc or url.query or url.fragment or url.username or url.password:
             raise ValueError("asset-base-url must be a public HTTP(S) site URL without credentials, query or fragment")
+    if source_base_url:
+        url = urlsplit(source_base_url)
+        if url.scheme != "https" or url.hostname != "raw.githubusercontent.com" or url.query or url.fragment or url.username or url.password or not re.fullmatch(r"/[^/]+/[^/]+/[0-9a-f]{40}/?", url.path):
+            raise ValueError("source-base-url must identify an immutable public GitHub repository revision")
     before = output_size(output)
     removed = remove_nested_book_outputs(output)
     assets = Assets(output, base_path, asset_base_url)
@@ -288,6 +372,7 @@ def prepare(output, base_path="/", max_bytes=1_000_000_000, asset_base_url=None)
             changed += 1
         if number % 50 == 0:
             print(f"Prepared {number} HTML files...", flush=True)
+    shared_images, shared_bytes = share_copied_images(output, assets, base_path, source_base_url)
     unused_images, unused_bytes = remove_unreferenced_book_images(output)
     after = output_size(output)
     print(f"Pages: {before / 1024**2:.1f} -> {after / 1024**2:.1f} MiB; "
@@ -295,6 +380,8 @@ def prepare(output, base_path="/", max_bytes=1_000_000_000, asset_base_url=None)
           f"{removed} duplicate book outputs removed.", flush=True)
     print(f"Books: removed {unused_images} unreferenced image copies "
           f"({unused_bytes / 1024**2:.1f} MiB).", flush=True)
+    print(f"Images: shared {shared_images} published copies "
+          f"({shared_bytes / 1024**2:.1f} MiB); original bytes preserved.", flush=True)
     report_output_size(output)
     if after > max_bytes:
         raise ValueError(f"Pages output is {after:,} bytes; limit is {max_bytes:,} bytes")
@@ -306,6 +393,7 @@ if __name__ == "__main__":
     argument_parser.add_argument("output", type=Path)
     argument_parser.add_argument("--base-path", default="/")
     argument_parser.add_argument("--asset-base-url", help="Canonical Pages URL; its redirects keep assets working when a custom domain is attached")
+    argument_parser.add_argument("--source-base-url", help="Immutable raw GitHub revision URL for large original images already tracked in the repository")
     argument_parser.add_argument("--max-bytes", type=int, default=1_000_000_000)
     options = argument_parser.parse_args()
-    prepare(options.output, options.base_path, options.max_bytes, options.asset_base_url)
+    prepare(options.output, options.base_path, options.max_bytes, options.asset_base_url, options.source_base_url)

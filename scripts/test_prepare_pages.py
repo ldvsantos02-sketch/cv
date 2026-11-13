@@ -8,7 +8,7 @@ import tempfile
 import unittest
 from urllib.parse import quote
 
-from prepare_pages import prepare, remove_unreferenced_book_images
+from prepare_pages import Assets, prepare, remove_unreferenced_book_images, share_copied_images
 
 
 class PreparePagesTests(unittest.TestCase):
@@ -135,6 +135,64 @@ class PreparePagesTests(unittest.TestCase):
         self.assertTrue((self.site / "books/example/book.pdf").exists())
         self.assertTrue((self.site / "img/unused.png").exists())
         self.assertTrue((self.site / "books/no-index/img/unused.png").exists())
+
+    def test_shares_copied_figures_in_html_css_and_srcset_without_changing_bytes(self):
+        image = b"original scientific figure bytes"
+        assets = Assets(self.site, "/cv/", "https://example.github.io/cv")
+        shared = assets.save(image, "png")
+        figure = self.site / "books/example/img/space name.png"
+        figure.parent.mkdir(parents=True)
+        figure.write_bytes(image)
+        chapter = self.write("books/example/chapters/chapter.html",
+                             '<img src="../img/space%20name.png?version=1#figure" '
+                             'srcset="../img/space%20name.png 1x, ../img/space%20name.png 2x">'
+                             '<a href="/cv/books/example/img/space%20name.png">Original</a>')
+        css = self.write("books/example/style.css", '.figure{background:url("img/space%20name.png")}')
+        self.assertEqual(share_copied_images(self.site, assets, "/cv/"), (1, len(image)))
+        self.assertFalse(figure.exists())
+        self.assertIn(shared + "?version=1#figure", chapter.read_text())
+        self.assertIn(shared + " 1x, " + shared + " 2x", chapter.read_text())
+        self.assertIn(shared, css.read_text())
+        self.assertEqual(next((self.site / "_pages-assets").glob("*.png")).read_bytes(), image)
+
+    def test_keeps_copied_images_used_by_dynamic_scripts_or_absolute_site_urls(self):
+        image = b"shared bytes"
+        assets = Assets(self.site, "/")
+        assets.save(image, "png")
+        self.write("books/example/img/dynamic.png", image.decode())
+        self.write("books/example/img/absolute.png", image.decode())
+        self.write("books/example/index.html", '<img src="img/dynamic.png"><img src="https://site.example/books/example/img/absolute.png">')
+        self.write("books/example/gallery.js", 'const path = "img/" + "dynamic.png";')
+        self.assertEqual(share_copied_images(self.site, assets), (0, 0))
+        self.assertTrue((self.site / "books/example/img/dynamic.png").exists())
+        self.assertTrue((self.site / "books/example/img/absolute.png").exists())
+
+    def test_serves_large_originals_from_immutable_source_only_when_bytes_match(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            output = root / "_site"
+            output.mkdir()
+            (output / "img").mkdir()
+            (root / "img").mkdir()
+            image = b"x" * 8_000_000
+            original = root / "img/original.jpg"
+            original.write_bytes(image)
+            published = output / "img/original.jpg"
+            published.write_bytes(image)
+            mismatch = output / "img/changed.jpg"
+            mismatch.write_bytes(image)
+            (root / "img/changed.jpg").write_bytes(b"different source bytes")
+            page = output / "index.html"
+            page.write_text('<img src="img/original.jpg"><a href="img/original.jpg">Download</a><img src="img/changed.jpg">')
+            source_base = "https://raw.githubusercontent.com/owner/repo/" + "a" * 40
+            self.assertEqual(share_copied_images(output, Assets(output, "/"), source_base_url=source_base), (1, len(image)))
+            self.assertIn(source_base + "/img/original.jpg", page.read_text())
+            self.assertFalse(published.exists())
+            self.assertTrue(mismatch.exists())
+            self.assertEqual(original.read_bytes(), image)
+        self.write("index.html", "site")
+        with self.assertRaisesRegex(ValueError, "immutable"):
+            self.run_prepare(source_base_url="https://raw.githubusercontent.com/owner/repo/main")
 
 
 if __name__ == "__main__":

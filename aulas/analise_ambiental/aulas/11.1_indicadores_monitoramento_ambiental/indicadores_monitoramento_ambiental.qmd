@@ -35,6 +35,12 @@ Capacitar o estudante a selecionar, calcular e interpretar **indicadores e índi
 
 # 1 · Fundamentos e Modelo FPEIR (DPSIR) {.section-header rotulo="FPEIR / DPSIR"}
 
+## O que é Monitoramento Ambiental e por que usar Indicadores? {.smaller-text}
+
+- **Diagnóstico vs. Monitoramento:** o diagnóstico retrata um estado em um momento específico; o **monitoramento** acompanha séries temporais padronizadas para verificar tendências de degradação ou recuperação e aferir a eficácia de políticas, licenciamentos e PRADs.
+- **Por que não basta apenas medir?** Leituras isoladas de campo ou de satélite (ex.: $12\text{ mg/L}$ de sólido ou $\text{pH} = 6{,}4$) pouco dizem sem um **padrão de referência** (condição natural, *baseline* ou limite legal).
+- **Papel dos indicadores:** traduzir fenômenos ambientais complexos em sinais claros, auditáveis e comparáveis no tempo e no espaço para orientar a gestão territorial.
+
 ## Da Medição Bruta ao Índice Sintético {.smaller-text}
 
 ::: {.columns}
@@ -88,6 +94,20 @@ Observações pontuais coletadas em campanhas amostrais ou sensores orbitais.
 :::
 
 # 2 · Indicadores Hídricos e CONAMA 357/2005 {.section-header rotulo="Água e CONAMA"}
+
+## Por que Monitorar a Água e como Funciona um Índice Sintético? {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+- **A água como integrador da bacia:** a qualidade de um rio reflete diretamente o uso e a cobertura da terra a montante (esgotos domésticos, efluentes industriais, erosão agrícola e remoção de mata ciliar).
+- **Por que criar um índice agregado?** Avaliar dezenas de variáveis físico-químicas e microbiológicas separadamente dificulta a comparação entre campanhas e a comunicação com gestores e comitês de bacia.
+- **Lógica do IQA (NSF / CETESB):** desenvolvido pela *National Sanitation Foundation* (EUA) e adaptado no Brasil pela CETESB, o índice converte 9 parâmetros em notas adimensionais ($q_i$, de $0$ a $100$) e as combina por pesos ($w_i$) conforme sua relevância sanitária e ecológica.
+:::
+
+::: {.column width="45%"}
+![Coleta e medição de parâmetros físicos da água em campo. Fonte: Wikimedia Commons (domínio público / CC).](../../../../img/aa_coleta_agua_campo.jpg){fig-align="center" width="100%"}
+:::
+:::
 
 ## IQA: parâmetros, pesos e cálculo {.smaller-text}
 
@@ -170,6 +190,22 @@ Macroinvertebrados respondem à qualidade da água, mas também a substrato, vaz
 - Padronizar esforço, época, micro-hábitat e identificação.
 
 Combinar a biota com medidas físico-químicas e observações da bacia.
+
+## Monitoramento Orbital: como Alvos da Superfície Refletem a Luz {.smaller-text}
+
+::: {.columns}
+::: {.column width="52%"}
+- **Por que usar satélite junto com o campo?** O monitoramento em campo oferece alta precisão pontual, enquanto sensores orbitais (Landsat, Sentinel-2) permitem acompanhar áreas extensas e séries históricas contínuas na bacia.
+- **Comportamento espectral dos alvos:**
+  - **Vegetação sadia:** absorve fortemente a luz vermelha (`RED`) na fotossíntese e reflete intensamente o infravermelho próximo (`NIR`) pela estrutura celular das folhas.
+  - **Água limpa:** absorve quase toda a energia no `NIR` e reflete relativamente mais no verde (`GREEN`).
+  - **Solo exposto:** pode mascarar o sinal da vegetação rala no Semiárido (motivando índices ajustados ao solo, como o SAVI).
+:::
+
+::: {.column width="48%"}
+![Resposta espectral da vegetação sadia vs. esparsa no visível e no infravermelho próximo (NDVI). Fonte: NASA Earth Observatory / Robert Simmon (domínio público).](../../../../img/aa_nasa_ndvi_espectro.jpg){fig-align="center" width="100%"}
+:::
+:::
 
 ## Índices espectrais: vegetação e água {.smaller-text}
 

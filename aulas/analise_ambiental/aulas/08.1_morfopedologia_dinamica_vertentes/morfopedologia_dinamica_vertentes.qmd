@@ -107,6 +107,20 @@ escoamento superficial por saturação → decapitação em sulcos e ravinas!
 
 # 3 · Modelagem da Erosão Hídrica (RUSLE) {.section-header rotulo="RUSLE"}
 
+## O que é a Erosão Laminar e por que Modelar a Perda de Solo? {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+- **Problema prático na vertente:** antes de abrir ravinas ou voçorocas, a chuva e o escoamento superficial removem camadas finas de solo fértil (**erosão laminar e em sulcos**), muitas vezes imperceptíveis a olho nu em um único ano.
+- **Por que estimar em $\text{t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}$?** Quantificar a perda média anual permite comparar cenários (ex.: pastagem degradada vs. sistema agroflorestal) e verificar se a perda supera a **tolerância de perda de solo ($T$)**.
+- **A lógica da RUSLE (Renard et al., 1997):** a Equação Universal de Perda de Solo Revisada separa **condicionantes naturais** (energia da chuva $R$, fragilidade do solo $K$ e geometria da rampa $LS$) das **decisões de manejo** (cobertura $C$ e práticas conservacionistas $P$).
+:::
+
+::: {.column width="45%"}
+![Erosão laminar e em sulcos em vertente agrícola após chuvas intensas. Fonte: USDA-NRCS / Wikimedia Commons (domínio público).](../../../../img/aa_erosao_laminar_sulcos.jpg){fig-align="center" width="100%"}
+:::
+:::
+
 ## Formulação Matemática e Significado Físico {.smaller-text}
 
 $$A = R \cdot K \cdot L \cdot S \cdot C \cdot P$$

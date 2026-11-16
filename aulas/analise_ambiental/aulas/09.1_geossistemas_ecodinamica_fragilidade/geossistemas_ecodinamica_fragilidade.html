@@ -1646,6 +1646,85 @@ Prof. Dr. Luiz Diego Vidal Santos
 </table>
 <p>Faixas baseadas em Ross (1994); a convenção de limites evita sobreposição. Porcentagem e grau são medidas distintas: <span class="math inline">\(d(\%)=100\tan\theta\)</span>.</p>
 </section>
+<section id="hierarquização-e-atribuição-de-notas-1-a-5" class="slide level2 smaller-text">
+<h2>Hierarquização e Atribuição de Notas (1 a 5)</h2>
+<p>Cada plano de informação (<em>raster</em>) é reclassificado em 5 graus de fragilidade, de <strong>1 (Muito Baixa)</strong> a <strong>5 (Muito Alta)</strong>:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Nota</th>
+<th>Fragilidade</th>
+<th>Declividade</th>
+<th>Exemplo: Solos (SiBCS)</th>
+<th>Exemplo: Uso da Terra (Proteção)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>1</strong></td>
+<td>Muito Baixa</td>
+<td><span class="math inline">\(&lt; 6\%\)</span> (plano)</td>
+<td>Latossolos</td>
+<td>Floresta densa (alta proteção)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>2</strong></td>
+<td>Baixa</td>
+<td><span class="math inline">\(6\% \le d &lt; 12\%\)</span></td>
+<td>Argissolos profundos</td>
+<td>Silvicultura / Pastagem bem manejada</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>3</strong></td>
+<td>Média</td>
+<td><span class="math inline">\(12\% \le d &lt; 20\%\)</span></td>
+<td>Cambissolos</td>
+<td>Culturas perenes</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>4</strong></td>
+<td>Alta</td>
+<td><span class="math inline">\(20\% \le d \le 30\%\)</span></td>
+<td>Neossolos Litólicos (rasos)</td>
+<td>Culturas temporárias (solo exposto parte do ano)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>5</strong></td>
+<td>Muito Alta</td>
+<td><span class="math inline">\(&gt; 30\%\)</span> (íngreme)</td>
+<td>Neossolos Quartzarênicos (arenosos)</td>
+<td>Área urbana / Solo exposto / Mineração</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cálculo-da-fragilidade-potencial-fp-e-emergente-fe-em-sig" class="slide level2 smaller-text">
+<h2>Cálculo da Fragilidade Potencial (FP) e Emergente (FE) em SIG</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="fragilidade-potencial-fp">1. Fragilidade Potencial (FP)</h3>
+<p>Combina apenas fatores naturais na Calculadora Raster (<em>Raster Calculator</em>):</p>
+<ul>
+<li><strong>Média Aritmética Simples:</strong> <span class="math display">\[\text{FP} = \frac{\text{Decliv.} + \text{Solos} + \text{Geol.} + \text{Pluv.}}{4}\]</span></li>
+<li><strong>Média Ponderada (ex.: AHP, <span class="math inline">\(\sum p_i = 1\)</span>):</strong> <span class="math display">\[\text{FP} = 0{,}4\cdot\text{Decliv.} + 0{,}3\cdot\text{Solos} + 0{,}1\cdot\text{Geol.} + 0{,}2\cdot\text{Pluv.}\]</span></li>
+</ul>
+<p><em>O mapa contínuo resultante (1 a 5) é reclassificado nas 5 categorias de fragilidade.</em></p>
+</div><div class="column" style="width:50%;">
+<h3 id="fragilidade-emergente-fe">2. Fragilidade Emergente (FE)</h3>
+<p>Cruza o mapa de <strong>FP</strong> com o <strong>Uso e Ocupação da Terra (UOT)</strong> (notas 1 a 5):</p>
+<ul>
+<li><strong>Por Média Simples ou Ponderada:</strong> <span class="math display">\[\text{FE} = \frac{\text{FP} + \text{UOT}}{2} \quad \text{ou} \quad \text{FE} = 0{,}6\cdot\text{FP} + 0{,}4\cdot\text{UOT}\]</span></li>
+<li><strong>Matriz Original de Ross (Dígitos):</strong> concatena os códigos em tabela de dupla entrada. Ex.: pixel com <span class="math inline">\(\text{FP} = 4\)</span> (alta) e <span class="math inline">\(\text{UOT} = 1\)</span> (floresta) recebe código <strong>41</strong>, resultando em FE Média ou Baixa pela proteção vegetal.</li>
+</ul>
+</div></div>
+</section>
 <section id="dissecação-interpretar-a-matriz-1155" class="slide level2 smaller-text">
 <h2>Dissecação: interpretar a matriz 11–55</h2>
 <p>Cruzamento entre <strong>entalhamento dos vales</strong> e <strong>dimensão interfluvial média</strong>:</p>

@@ -101,6 +101,43 @@ Ross (1994) utiliza unidades ecodinâmicas e hierarquias qualitativas. Aplicaç�
 
 Faixas baseadas em Ross (1994); a convenção de limites evita sobreposição. Porcentagem e grau são medidas distintas: $d(\%)=100\tan\theta$.
 
+## Hierarquização e Atribuição de Notas (1 a 5) {.smaller-text}
+
+Cada plano de informação (*raster*) é reclassificado em 5 graus de fragilidade, de **1 (Muito Baixa)** a **5 (Muito Alta)**:
+
+| Nota | Fragilidade | Declividade | Exemplo: Solos (SiBCS) | Exemplo: Uso da Terra (Proteção) |
+|:---:|---|---|---|---|
+| **1** | Muito Baixa | $< 6\%$ (plano) | Latossolos | Floresta densa (alta proteção) |
+| **2** | Baixa | $6\% \le d < 12\%$ | Argissolos profundos | Silvicultura / Pastagem bem manejada |
+| **3** | Média | $12\% \le d < 20\%$ | Cambissolos | Culturas perenes |
+| **4** | Alta | $20\% \le d \le 30\%$ | Neossolos Litólicos (rasos) | Culturas temporárias (solo exposto parte do ano) |
+| **5** | Muito Alta | $> 30\%$ (íngreme) | Neossolos Quartzarênicos (arenosos) | Área urbana / Solo exposto / Mineração |
+
+## Cálculo da Fragilidade Potencial (FP) e Emergente (FE) em SIG {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### 1. Fragilidade Potencial (FP)
+Combina apenas fatores naturais na Calculadora Raster (*Raster Calculator*):
+
+- **Média Aritmética Simples:**
+$$\text{FP} = \frac{\text{Decliv.} + \text{Solos} + \text{Geol.} + \text{Pluv.}}{4}$$
+- **Média Ponderada (ex.: AHP, $\sum p_i = 1$):**
+$$\text{FP} = 0{,}4\cdot\text{Decliv.} + 0{,}3\cdot\text{Solos} + 0{,}1\cdot\text{Geol.} + 0{,}2\cdot\text{Pluv.}$$
+
+*O mapa contínuo resultante (1 a 5) é reclassificado nas 5 categorias de fragilidade.*
+:::
+
+::: {.column width="50%"}
+### 2. Fragilidade Emergente (FE)
+Cruza o mapa de **FP** com o **Uso e Ocupação da Terra (UOT)** (notas 1 a 5):
+
+- **Por Média Simples ou Ponderada:**
+$$\text{FE} = \frac{\text{FP} + \text{UOT}}{2} \quad \text{ou} \quad \text{FE} = 0{,}6\cdot\text{FP} + 0{,}4\cdot\text{UOT}$$
+- **Matriz Original de Ross (Dígitos):** concatena os códigos em tabela de dupla entrada. Ex.: pixel com $\text{FP} = 4$ (alta) e $\text{UOT} = 1$ (floresta) recebe código **41**, resultando em FE Média ou Baixa pela proteção vegetal.
+:::
+:::
+
 ## Dissecação: interpretar a matriz 11–55 {.smaller-text}
 
 Cruzamento entre **entalhamento dos vales** e **dimensão interfluvial média**:

@@ -4,22 +4,22 @@ author: "Luiz Diego Vidal Santos"
 date: "2025-05-01"
 categories: [patente, visão computacional, classificação de solos, análise de imagem, instrumentação]
 description: "Dispositivo para análise visual e classificação de amostras de solo com sistema padronizado de iluminação, captura de imagem e retículo de referência."
-image: "../../img/visao_reticulo.png"
+image: "../../img/pesquisa/patentes/visao_reticulo.png"
 lang: pt-BR
 ---
 
 A classificação visual de amostras de solo é tradicionalmente realizada por métodos táteis e subjetivos, com alta dependência da experiência do operador e sem padronização das condições de observação (iluminação, ângulo, ampliação). O aparato para análise visual de amostras de solo (Vistada) propõe um sistema padronizado que integra câmara de iluminação controlada, retículo de referência sobreposto à amostra, captura digital de imagem e software de apoio à classificação, eliminando variáveis ambientais e subjetivas do processo.
 
-![Interface do retículo de referência sobreposto à amostra de solo, permitindo análise padronizada de cor, textura e estrutura com escala dimensional calibrada](../../img/visao_reticulo.png){fig-alt="Retículo de referência do aparato Vistada para análise de amostras de solo" width="80%"}
+![Interface do retículo de referência sobreposto à amostra de solo, permitindo análise padronizada de cor, textura e estrutura com escala dimensional calibrada](../../img/pesquisa/patentes/visao_reticulo.png){fig-alt="Retículo de referência do aparato Vistada para análise de amostras de solo" width="80%"}
 
 ## Componentes do aparato
 
 O sistema é composto por câmara fechada com iluminação LED difusa de temperatura de cor controlada (5500 K, simulando luz natural padronizada), suporte para amostra com ajuste de altura, lente com retículo de referência calibrado e câmera digital de alta resolução integrada ao conjunto. O retículo projeta uma grade de referência sobre a superfície da amostra, permitindo a medição direta de agregados, poros visíveis e feições texturais sem instrumentos auxiliares.
 
 ::: {layout-ncol=2}
-![Vista do aparato completo montado, com câmara de iluminação, suporte de amostra e sistema de captura digital](../../img/vistada_aparato1.png){fig-alt="Aparato Vistada montado para análise de amostras"}
+![Vista do aparato completo montado, com câmara de iluminação, suporte de amostra e sistema de captura digital](../../img/pesquisa/patentes/vistada_aparato1.png){fig-alt="Aparato Vistada montado para análise de amostras"}
 
-![Detalhe interno do aparato mostrando a disposição dos LEDs, a lente com retículo e o posicionamento da amostra](../../img/vistada_aparato2.png){fig-alt="Detalhe interno do aparato Vistada"}
+![Detalhe interno do aparato mostrando a disposição dos LEDs, a lente com retículo e o posicionamento da amostra](../../img/pesquisa/patentes/vistada_aparato2.png){fig-alt="Detalhe interno do aparato Vistada"}
 :::
 
 ## Software de apoio e operação
@@ -27,16 +27,16 @@ O sistema é composto por câmara fechada com iluminação LED difusa de tempera
 O software associado (ICS Analyzer) processa as imagens capturadas para extração de descritores de cor (espaço Munsell e CIE L\*a\*b\*), textura (granulometria aparente por análise de partículas) e estrutura (classificação de agregados). O operador posiciona a amostra, aciona a captura, e o sistema retorna um laudo padronizado com parâmetros quantitativos, reduzindo a subjetividade e melhorando a reprodutibilidade inter-laboratorial.
 
 ::: {layout-ncol=2}
-![Interface do software de análise mostrando a imagem capturada com retículo e os parâmetros extraídos automaticamente](../../img/vistada_tela.png){fig-alt="Interface do software ICS Analyzer do aparato Vistada"}
+![Interface do software de análise mostrando a imagem capturada com retículo e os parâmetros extraídos automaticamente](../../img/pesquisa/patentes/vistada_tela.png){fig-alt="Interface do software ICS Analyzer do aparato Vistada"}
 
-![Operador utilizando o aparato em condições de laboratório, demonstrando a ergonomia e simplicidade operacional do sistema](../../img/vistada_operador.png){fig-alt="Operador utilizando o aparato Vistada em laboratório"}
+![Operador utilizando o aparato em condições de laboratório, demonstrando a ergonomia e simplicidade operacional do sistema](../../img/pesquisa/patentes/vistada_operador.png){fig-alt="Operador utilizando o aparato Vistada em laboratório"}
 :::
 
 ## Inovação e estado de desenvolvimento
 
 O aparato encontra-se em desenvolvimento com artigo científico associado em preparação. A padronização das condições de análise visual representa um avanço significativo para a classificação de solos em levantamentos pedológicos, controle de qualidade em obras geotécnicas e ensino de ciência do solo, onde a reprodutibilidade e a rastreabilidade dos resultados são requisitos crescentes.
 
-![Diagrama conceitual do aparato mostrando o fluxo operacional desde a entrada da amostra até a geração do laudo automatizado](../../img/vistada_abstract.png){fig-alt="Diagrama conceitual do aparato Vistada" width="80%"}
+![Diagrama conceitual do aparato mostrando o fluxo operacional desde a entrada da amostra até a geração do laudo automatizado](../../img/pesquisa/patentes/vistada_abstract.png){fig-alt="Diagrama conceitual do aparato Vistada" width="80%"}
 
 ---
 

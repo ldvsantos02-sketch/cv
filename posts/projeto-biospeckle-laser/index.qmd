@@ -4,19 +4,19 @@ author: "Luiz Diego Vidal Santos"
 date: "2020-06-15"
 categories: [biospeckle, laser, análise não destrutiva, umidade do solo, FFT, processamento de imagens]
 description: "Aplicação de biospeckle laser para análise de frequências e correlação com valores de umidade do solo, utilizando algoritmos de triagem e Transformada de Fourier."
-image: "../../img/Biospecke 1.jpg"
+image: "../../img/pesquisa/projetos/Biospecke 1.jpg"
 lang: pt-BR
 ---
 
 A análise não destrutiva de propriedades do solo por métodos ópticos representa uma fronteira na instrumentação agrícola e ambiental. O projeto Biospeckle Laser investiga a aplicação de interferometria por speckle (granulação óptica) para correlacionar padrões de atividade de superfície com os estados hídricos do solo, por meio de algoritmos de processamento de imagem baseados na Transformada Rápida de Fourier (FFT) e em índices de atividade temporal.
 
-![Montagem experimental do sistema Biospeckle Laser com fonte coerente iluminando amostra de solo, câmera CCD e sistema de aquisição para captura de padrões de interferência](../../img/Biospecke%201.jpg){fig-alt="Equipamento de biospeckle laser montado para análise de amostras de solo" width="80%"}
+![Montagem experimental do sistema Biospeckle Laser com fonte coerente iluminando amostra de solo, câmera CCD e sistema de aquisição para captura de padrões de interferência](../../img/pesquisa/projetos/Biospecke%201.jpg){fig-alt="Equipamento de biospeckle laser montado para análise de amostras de solo" width="80%"}
 
 ## Princípio físico e montagem experimental
 
 O biospeckle fundamenta-se no fenômeno de granulação óptica que ocorre quando luz laser coerente é refletida ou transmitida por superfícies opticamente rugosas. Variações temporais no padrão de speckle refletem atividade na superfície analisada, seja por movimento de partículas, processos biológicos ou alterações no índice de refração associados ao teor de água. A montagem experimental utiliza um laser de He-Ne como fonte coerente, câmera CCD para aquisição de sequências de imagens dos padrões de speckle, e softwares dedicados para processamento temporal dos dados.
 
-![Detalhe do padrão de speckle capturado durante análise de amostra, evidenciando a granulação óptica cuja variação temporal é correlacionada com propriedades da matriz porosa do solo](../../img/Biospecke%202.jpg){fig-alt="Padrão de biospeckle capturado em amostra de solo" width="80%"}
+![Detalhe do padrão de speckle capturado durante análise de amostra, evidenciando a granulação óptica cuja variação temporal é correlacionada com propriedades da matriz porosa do solo](../../img/pesquisa/projetos/Biospecke%202.jpg){fig-alt="Padrão de biospeckle capturado em amostra de solo" width="80%"}
 
 ## Algoritmos de processamento e análise espectral
 

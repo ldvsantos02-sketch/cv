@@ -8,7 +8,7 @@ image: "../../posts/terroir-digital-ml/network-communities.png"
 lang: pt-BR
 ---
 
-![Área revegetada após protocolo de NBS, exemplo de resultado ambiental mensurável cuja validação depende de modelos preditivos robustos e dados FAIR](../../img/Revegetacao.JPEG){fig-alt="Área revegetada como resultado de intervenção ambiental mensurável" width="80%"}
+![Área revegetada após protocolo de NBS, exemplo de resultado ambiental mensurável cuja validação depende de modelos preditivos robustos e dados FAIR](../../img/bioengenharia/taludes/Revegetacao.JPEG){fig-alt="Área revegetada como resultado de intervenção ambiental mensurável" width="80%"}
 
 A aplicação da Inteligência Artificial nas ciências ambientais não constitui uma ruptura epistemológica, mas uma evolução dos métodos estatísticos para a aproximação de funções não lineares em espaços de alta dimensionalidade. O desafio central da pesquisa de qualidade não reside no ajuste dos dados de treino, mas na capacidade de generalização do modelo para cenários não observados. Em termos de engenharia de dados, o Erro de Generalização decompõe-se no dilema Viés-Variância ($E[(y - \hat{f}(x))^2] = \text{Viés}^2 + \text{Variância} + \sigma^2$), onde modelos excessivamente complexos tendem a ter baixo viés porém alta variância (overfitting), memorizando o ruído estocástico dos dados em vez de aprender o sinal determinístico do fenômeno ambiental. A qualidade científica é, portanto, medida pela robustez do modelo em manter o erro controlado quando exposto a novos dados, evitando conclusões espúrias que poderiam fundamentar decisões de gestão equivocadas.
 
@@ -24,7 +24,7 @@ A credibilidade da IA ambiental depende de sua auditabilidade. Modelos de tipo "
 
 No contexto do semiárido brasileiro, a escassez de séries históricas longas e a alta variabilidade climática impõem restrições adicionais à modelagem. A aplicação de algoritmos complexos (Redes Neurais Profundas) em datasets pequenos (*small data*) frequentemente resulta em soluções instáveis, razão pela qual a engenharia de conhecimento deve priorizar modelos mais parcimoniosos, como Random Forests, que oferecem melhor interpretabilidade e resistência ao ruído. A validação não deve se limitar a métricas de acurácia global, mas investigar a distribuição espacial do erro e a sensibilidade do modelo às variáveis de entrada. Somente através de uma governança de algoritmos transparente e tecnicamente fundamentada será possível transformar dados massivos em inteligência acionável para a conservação da biodiversidade e a gestão de recursos hídricos.
 
-![Visão reticular de dados geoespaciais processados por algoritmos de análise espacial](../../img/visao_reticulo.png){fig-alt="Visão reticular de dados geoespaciais processados" width="80%"}
+![Visão reticular de dados geoespaciais processados por algoritmos de análise espacial](../../img/pesquisa/patentes/visao_reticulo.png){fig-alt="Visão reticular de dados geoespaciais processados" width="80%"}
 
 ::: {.callout-tip}
 ## 📷 Sugestão de imagem

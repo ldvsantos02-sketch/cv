@@ -4,19 +4,19 @@ author: "Luiz Diego Vidal Santos"
 date: "2024-08-20"
 categories: [Electron, plataforma, submissão, inovação, blind review, SHA-256, SQLite]
 description: "Plataforma desktop multiplataforma para submissão e avaliação de projetos de inovação com validação de CPF, hash SHA-256, blind review e painel administrativo."
-image: "../../img/avalia_mais_capa.png"
+image: "../../img/pesquisa/projetos/avalia_mais_capa.png"
 lang: pt-BR
 ---
 
 A integridade documental em processos de submissão e avaliação de projetos é um requisito crítico em ecossistemas de inovação. O Avalia+ é uma plataforma desktop multiplataforma, desenvolvida sobre o framework Electron, que integra submissão de projetos, avaliação cega por pares (*blind review*), geração de protocolos com hash criptográfico SHA-256 e painel administrativo com rastreabilidade completa de todas as interações.
 
-![Interface principal do Avalia+, plataforma de submissão e avaliação de projetos de inovação com garantia de integridade criptográfica e rastreabilidade](../../img/avalia_mais_capa.png){fig-alt="Interface da plataforma Avalia+" width="80%"}
+![Interface principal do Avalia+, plataforma de submissão e avaliação de projetos de inovação com garantia de integridade criptográfica e rastreabilidade](../../img/pesquisa/projetos/avalia_mais_capa.png){fig-alt="Interface da plataforma Avalia+" width="80%"}
 
 ## Arquitetura e serviços
 
 A arquitetura do Avalia+ é organizada em 12 módulos de serviço independentes e orquestrados por um núcleo central. O serviço de autenticação utiliza BCrypt para hash de senhas com controle de sessão. O serviço de submissão processa os projetos com validação de CPF em tempo real, geração de PDF com protocolo único e hash SHA-256 verificável para cada documento submetido. O serviço de avaliação implementa o protocolo de *blind review* com anonimização automática e distribuição aleatória de avaliadores, garantindo imparcialidade e conformidade com diretrizes de avaliação institucional.
 
-![Logotipo do Avalia+, representando a identidade visual da plataforma de gestão de inovação](../../img/avalia_logo.png){fig-alt="Logo do Avalia+" width="40%"}
+![Logotipo do Avalia+, representando a identidade visual da plataforma de gestão de inovação](../../img/pesquisa/projetos/avalia_logo.png){fig-alt="Logo do Avalia+" width="40%"}
 
 ## Módulos complementares
 

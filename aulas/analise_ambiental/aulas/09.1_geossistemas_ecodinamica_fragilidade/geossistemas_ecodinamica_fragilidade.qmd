@@ -44,7 +44,7 @@ O **GTP** (Bertrand & Bertrand, 2007) articula geossistema, território e paisag
 :::
 
 ::: {.column width="50%"}
-![Sistema GTP: Geossistema (fonte), Território (recurso) e Paisagem (identidade).](../../../../img/aa_bertrand_gtp.jpg){fig-align="center" width="100%"}
+![Sistema GTP: Geossistema (fonte), Território (recurso) e Paisagem (identidade).](img/aa_bertrand_gtp.jpg){fig-align="center" width="100%"}
 :::
 :::
 
@@ -118,6 +118,36 @@ Para sair da classificação ecodinâmica e chegar ao planejamento territorial (
 
 Faixas baseadas em Ross (1994); a convenção de limites evita sobreposição. Porcentagem e grau são medidas distintas: $d(\%)=100\tan\theta$.
 
+## Cálculo da Declividade e Conversão (% e Graus) {.smaller-text}
+
+::: {.columns}
+::: {.column width="52%"}
+### Como Calcular na Carta ou no MDE
+
+A declividade relaciona o **desnível vertical ($\Delta H$)** com a **distância horizontal ($\Delta L$)**:
+
+$$d(\%) = \frac{\Delta H}{\Delta L} \times 100 = 100 \tan\theta$$
+
+$$\theta(^\circ) = \arctan\!\left(\frac{\Delta H}{\Delta L}\right) = \arctan\!\left(\frac{d(\%)}{100}\right)$$
+
+- **Exemplo prático:** se o terreno sobe $\Delta H = 12\text{ m}$ em $\Delta L = 100\text{ m}$, então $d = 12\%$ e $\theta = \arctan(0{,}12) \approx 6{,}84^\circ$.
+- **Atenção no SIG (QGIS / ArcGIS):** ao rodar a ferramenta *Slope* (Declividade), selecionar **Porcentagem** para aplicar diretamente as classes de Ross (1994).
+:::
+
+::: {.column width="48%"}
+### Tabela de Equivalência (% $\leftrightarrow$ Graus)
+
+| Declividade (%) | Ângulo ($\theta^\circ$) | Referência |
+|:---:|:---:|---|
+| $6\%$ | $3{,}4^\circ$ | Limite Classe 1 / 2 (Ross, 1994) |
+| $12\%$ | $6{,}8^\circ$ | Limite Classe 2 / 3 (Ross, 1994) |
+| $20\%$ | $11{,}3^\circ$ | Limite Classe 3 / 4 (Ross, 1994) |
+| $30\%$ | $16{,}7^\circ$ | Limite Classe 4 / 5 (Ross, 1994) |
+| $46{,}6\%$ | $25{,}0^\circ$ | Topo de morro (APP, Lei 12.651/2012) |
+| $100\%$ | $45{,}0^\circ$ | Encosta (APP, Lei 12.651/2012) |
+:::
+:::
+
 ## Hierarquização e Atribuição de Notas (1 a 5) {.smaller-text}
 
 Cada plano de informação (*raster*) é reclassificado em 5 graus de fragilidade, de **1 (Muito Baixa)** a **5 (Muito Alta)**:
@@ -155,7 +185,7 @@ $$\text{FE} = \frac{\text{FP} + \text{UOT}}{2} \quad \text{ou} \quad \text{FE} =
 :::
 :::
 
-![Fluxograma metodológico da Fragilidade Potencial (FP) e Fragilidade Emergente (FE) em ambiente SIG.](../../../../img/aa_fluxograma_ross.png){width="92%" fig-align="center"}
+![Fluxograma metodológico da Fragilidade Potencial (FP) e Fragilidade Emergente (FE) em ambiente SIG.](img/aa_fluxograma_ross.png){width="92%" fig-align="center"}
 
 ## Dissecação: interpretar a matriz 11–55 {.smaller-text}
 
@@ -210,7 +240,7 @@ $G$: geologia; $R$: geomorfologia; $S$: solos; $V_g$: vegetação; $C$: clima.
 
 O índice é relativo e empírico. Não representa probabilidade de desastre, t/ha/ano nem vulnerabilidade social.
 
-![Fluxograma metodológico de Crepani et al. (2001) aplicado ao Zoneamento Ecológico-Econômico (ZEE).](../../../../img/aa_fluxograma_crepani.png){width="92%" fig-align="center"}
+![Fluxograma metodológico de Crepani et al. (2001) aplicado ao Zoneamento Ecológico-Econômico (ZEE).](img/aa_fluxograma_crepani.png){width="92%" fig-align="center"}
 
 ## Atribuir valores com rastreabilidade {.smaller-text}
 
@@ -236,7 +266,7 @@ Se apenas a cobertura passar de 2,5 para 1,5, o resultado será 1,90. Isso expli
 
 ## Operações que permanecem distintas {.smaller-text}
 
-![Combinação de atributos em aplicações de Ross e média dos cinco temas de Crepani.](../../../../img/aa_ross_crepani_algebra_mapas.png){.fig-full}
+![Combinação de atributos em aplicações de Ross e média dos cinco temas de Crepani.](img/aa_ross_crepani_algebra_mapas.png){.fig-full}
 
 # 4 · Oficina de síntese cartográfica {.section-header rotulo="Aplicação"}
 

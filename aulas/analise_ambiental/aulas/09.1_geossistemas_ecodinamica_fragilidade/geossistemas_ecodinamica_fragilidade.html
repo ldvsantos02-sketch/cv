@@ -1679,6 +1679,63 @@ Prof. Dr. Luiz Diego Vidal Santos
 </table>
 <p>Faixas baseadas em Ross (1994); a convenção de limites evita sobreposição. Porcentagem e grau são medidas distintas: <span class="math inline">\(d(\%)=100\tan\theta\)</span>.</p>
 </section>
+<section id="cálculo-da-declividade-e-conversão-e-graus" class="slide level2 smaller-text">
+<h2>Cálculo da Declividade e Conversão (% e Graus)</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<h3 id="como-calcular-na-carta-ou-no-mde">Como Calcular na Carta ou no MDE</h3>
+<p>A declividade relaciona o <strong>desnível vertical (<span class="math inline">\(\Delta H\)</span>)</strong> com a <strong>distância horizontal (<span class="math inline">\(\Delta L\)</span>)</strong>:</p>
+<p><span class="math display">\[d(\%) = \frac{\Delta H}{\Delta L} \times 100 = 100 \tan\theta\]</span></p>
+<p><span class="math display">\[\theta(^\circ) = \arctan\!\left(\frac{\Delta H}{\Delta L}\right) = \arctan\!\left(\frac{d(\%)}{100}\right)\]</span></p>
+<ul>
+<li><strong>Exemplo prático:</strong> se o terreno sobe <span class="math inline">\(\Delta H = 12\text{ m}\)</span> em <span class="math inline">\(\Delta L = 100\text{ m}\)</span>, então <span class="math inline">\(d = 12\%\)</span> e <span class="math inline">\(\theta = \arctan(0{,}12) \approx 6{,}84^\circ\)</span>.</li>
+<li><strong>Atenção no SIG (QGIS / ArcGIS):</strong> ao rodar a ferramenta <em>Slope</em> (Declividade), selecionar <strong>Porcentagem</strong> para aplicar diretamente as classes de Ross (1994).</li>
+</ul>
+</div><div class="column" style="width:48%;">
+<h3 id="tabela-de-equivalência-leftrightarrow-graus">Tabela de Equivalência (% <span class="math inline">\(\leftrightarrow\)</span> Graus)</h3>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Declividade (%)</th>
+<th style="text-align: center;">Ângulo (<span class="math inline">\(\theta^\circ\)</span>)</th>
+<th>Referência</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(6\%\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(3{,}4^\circ\)</span></td>
+<td>Limite Classe 1 / 2 (Ross, 1994)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(12\%\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(6{,}8^\circ\)</span></td>
+<td>Limite Classe 2 / 3 (Ross, 1994)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(20\%\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(11{,}3^\circ\)</span></td>
+<td>Limite Classe 3 / 4 (Ross, 1994)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(30\%\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(16{,}7^\circ\)</span></td>
+<td>Limite Classe 4 / 5 (Ross, 1994)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(46{,}6\%\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(25{,}0^\circ\)</span></td>
+<td>Topo de morro (APP, Lei 12.651/2012)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(100\%\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(45{,}0^\circ\)</span></td>
+<td>Encosta (APP, Lei 12.651/2012)</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
 <section id="hierarquização-e-atribuição-de-notas-1-a-5" class="slide level2 smaller-text">
 <h2>Hierarquização e Atribuição de Notas (1 a 5)</h2>
 <p>Cada plano de informação (<em>raster</em>) é reclassificado em 5 graus de fragilidade, de <strong>1 (Muito Baixa)</strong> a <strong>5 (Muito Alta)</strong>:</p>

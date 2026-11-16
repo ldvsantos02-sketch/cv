@@ -124,13 +124,13 @@ Faixas baseadas em Ross (1994); a convenção de limites evita sobreposição. P
 ::: {.column width="52%"}
 ### Como Calcular na Carta ou no MDE
 
-A declividade relaciona o **desnível vertical ($\Delta H$)** com a **distância horizontal ($\Delta L$)**:
+A declividade relaciona o **desnível vertical ($D_V$)** com a **distância horizontal ($D_H$)** medida em planta:
 
-$$d(\%) = \frac{\Delta H}{\Delta L} \times 100 = 100 \tan\theta$$
+$$d(\%) = \frac{D_V}{D_H} \times 100 = 100 \tan\theta$$
 
-$$\theta(^\circ) = \arctan\!\left(\frac{\Delta H}{\Delta L}\right) = \arctan\!\left(\frac{d(\%)}{100}\right)$$
+$$\theta(^\circ) = \arctan\!\left(\frac{D_V}{D_H}\right) = \arctan\!\left(\frac{d(\%)}{100}\right)$$
 
-- **Exemplo prático:** se o terreno sobe $\Delta H = 12\text{ m}$ em $\Delta L = 100\text{ m}$, então $d = 12\%$ e $\theta = \arctan(0{,}12) \approx 6{,}84^\circ$.
+- **Exemplo prático:** se o terreno sobe $D_V = 12\text{ m}$ em uma distância horizontal $D_H = 100\text{ m}$, então $d = 12\%$ e $\theta = \arctan(0{,}12) \approx 6{,}84^\circ$.
 - **Atenção no SIG (QGIS / ArcGIS):** ao rodar a ferramenta *Slope* (Declividade), selecionar **Porcentagem** para aplicar diretamente as classes de Ross (1994).
 :::
 

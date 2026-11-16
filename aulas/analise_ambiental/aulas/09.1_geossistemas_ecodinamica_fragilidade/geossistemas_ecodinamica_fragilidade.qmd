@@ -13,8 +13,8 @@ academico:
 ## Objetivos e percurso {.smaller-text}
 
 - Relacionar geossistemas, unidades de paisagem e fluxos ambientais.
-- Aplicar o raciocínio ecodinâmico de Tricart.
-- Distinguir fragilidade de Ross e vulnerabilidade à perda de solo de Crepani.
+- Aplicar o raciocínio ecodinâmico de Tricart (1977).
+- Distinguir fragilidade de Ross (1994) e vulnerabilidade à perda de solo de Crepani et al. (2001).
 - Construir uma legenda reproduzível, com validação em campo.
 
 **Produto:** duas interpretações da mesma área, com regras e limites declarados.
@@ -27,9 +27,9 @@ Em uma microbacia, relevo, solo, vegetação, água e práticas sociais interage
 
 O recorte depende da pergunta: a vertente permite estudar transferências; a bacia inclui rotas até o canal; o território evidencia decisões de acesso, manejo e proteção.
 
-**Sotchava:** geossistemas são sistemas naturais espacializados, abertos e hierarquizados. A ação humana modifica sua dinâmica; a unidade de estudo precisa ser justificada.
+**Sotchava (1977):** geossistemas são sistemas naturais espacializados, abertos e hierarquizados. A ação humana modifica sua dinâmica; a unidade de estudo precisa ser justificada.
 
-## Bertrand: organização da paisagem {.smaller-text}
+## Bertrand (1968): organização da paisagem {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -40,7 +40,7 @@ O recorte depende da pergunta: a vertente permite estudar transferências; a bac
 
 O geossistema articula potencial ecológico, exploração biológica e ação antrópica. Não equivale automaticamente a tamanho de pixel ou limite administrativo.
 
-O **GTP** articula geossistema, território e paisagem: funcionamento biofísico, apropriação social e percepção.
+O **GTP** (Bertrand & Bertrand, 2007) articula geossistema, território e paisagem: funcionamento biofísico, apropriação social e percepção.
 :::
 
 ::: {.column width="50%"}
@@ -48,7 +48,7 @@ O **GTP** articula geossistema, território e paisagem: funcionamento biofísico
 :::
 :::
 
-## Tricart: relações entre processos {.smaller-text}
+## Tricart (1977): relações entre processos {.smaller-text}
 
 | Meio | Relação predominante | Pergunta de campo |
 |---|---|---|
@@ -56,16 +56,16 @@ O **GTP** articula geossistema, território e paisagem: funcionamento biofísico
 | Intergrade | Interferência entre pedogênese e morfogênese | Quais processos coexistem? |
 | Fortemente instável | Predomínio da morfogênese | Há remoção, incisão ou movimentos ativos? |
 
-Vegetação aberta ou sazonal não demonstra sozinha instabilidade. Interpretar a Caatinga com sua sazonalidade, material e formas de uso.a
+Vegetação aberta ou sazonal não demonstra sozinha instabilidade. Interpretar a Caatinga com sua sazonalidade, material e formas de uso.
 
-## Tricart: Avaliação Integrada Regional {.smaller-text}
+## Tricart (1977): Avaliação Integrada Regional {.smaller-text}
 
 Para sair da classificação ecodinâmica e chegar ao planejamento territorial (**organização** ou **reorganização** do espaço), Tricart (1977) estrutura quatro etapas sequenciais:
 
 1. **Quadro regional:** análise do **clima dinâmico** (eventos extremos e ritmo, além das médias) e do **quadro morfoestrutural** (tectônica e litologia).
 2. **Análise morfodinâmica:** sistema morfogenético com **litovariantes** (variações litológicas) e **topovariantes** (variações de dissecação/relevo), avaliando os processos atuais quanto a **natureza, intensidade e distribuição** + ação antrópica.
 3. **Recursos ecológicos:** regime hídrico, condições ecoclimatológicas, degradação dos solos e diagnóstico agroecológico.
-4. **Gestão e recomendações:** definição de aptidões, limitações e compatibilização de usos (matriz direta para **Ross** e **Crepani**).
+4. **Gestão e recomendações:** definição de aptidões, limitações e compatibilização de usos (matriz direta para **Ross, 1994** e **Crepani et al., 2001**).
 
 ## Classificação Funcional das Regiões para Gestão (Tricart, 1977) {.smaller-text}
 
@@ -79,7 +79,7 @@ Para sair da classificação ecodinâmica e chegar ao planejamento territorial (
 
 > **Princípio da conexão:** intervir em uma unidade produtiva sem gerir as regiões conexas ou marginais a montante compromete a estabilidade do conjunto.
 
-# 2 · Fragilidade ambiental de Ross {.section-header rotulo="Ross"}
+# 2 · Fragilidade ambiental de Ross (1994) {.section-header rotulo="Ross"}
 
 ## Fragilidade potencial e emergente {.smaller-text}
 
@@ -113,7 +113,7 @@ Cada plano de informação (*raster*) é reclassificado em 5 graus de fragilidad
 | **4** | Alta | $20\% \le d \le 30\%$ | Neossolos Litólicos (rasos) | Culturas temporárias (solo exposto parte do ano) |
 | **5** | Muito Alta | $> 30\%$ (íngreme) | Neossolos Quartzarênicos (arenosos) | Área urbana / Solo exposto / Mineração |
 
-## Cálculo da Fragilidade Potencial (FP) e Emergente (FE) em SIG {.smaller-text}
+## Cálculo da Fragilidade Potencial (FP) e Emergente (FE) em SIG {.smaller-text .scrollable}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -138,9 +138,7 @@ $$\text{FE} = \frac{\text{FP} + \text{UOT}}{2} \quad \text{ou} \quad \text{FE} =
 :::
 :::
 
-## Fluxograma: Fragilidade Ambiental de Ross (1994) {.smaller-text}
-
-![Fluxograma metodológico da Fragilidade Potencial (FP) e Fragilidade Emergente (FE) em ambiente SIG.](../../../../img/aa_fluxograma_ross.png){.fig-full}
+![Fluxograma metodológico da Fragilidade Potencial (FP) e Fragilidade Emergente (FE) em ambiente SIG.](../../../../img/aa_fluxograma_ross.png){width="92%" fig-align="center"}
 
 ## Dissecação: interpretar a matriz 11–55 {.smaller-text}
 
@@ -178,7 +176,7 @@ Uma legenda pode registrar **relevo–solo–cobertura**. Declarar a ordem e o s
 
 **Entrega:** reclassificação, operação, legenda, fontes e verificação em campo.
 
-# 3 · Vulnerabilidade de Crepani e colaboradores {.section-header rotulo="Crepani"}
+# 3 · Vulnerabilidade de Crepani et al. (2001) {.section-header rotulo="Crepani"}
 
 ## Base Conceitual: Ecodinâmica de Tricart aplicada ao Zoneamento {.smaller-text}
 
@@ -248,8 +246,10 @@ Duas unidades obtêm $V_{\mathrm{UTB}}=2{,}10$. Uma combina relevo suave e solo 
 
 ## Referências e leitura metodológica {.smaller-text}
 
+- SOTCHAVA, V. B. O estudo de geossistemas. **Métodos em Questão**, 16, 1–52, 1977.
 - TRICART, J. **Ecodinâmica**. IBGE, 1977.
 - BERTRAND, G. Paisagem e geografia física global: esboço metodológico. **Caderno de Ciências da Terra**, 13, 1972 [original de 1968].
+- BERTRAND, G.; BERTRAND, C. **Uma geografia transversal e de travessias: o meio ambiente através dos territórios e das temporalidades**. Massoni, 2007.
 - CHRISTOFOLETTI, A. **Análise de sistemas em Geografia**. Hucitec/Edusp, 1979.
 - ROSS, J. L. S. [Análise empírica da fragilidade dos ambientes naturais e antropizados](https://revistas.usp.br/rdg/article/view/47327). **RDG**, 8, 63–74, 1994.
 - CREPANI, E. et al. **Sensoriamento remoto e geoprocessamento aplicados ao zoneamento ecológico-econômico e ao ordenamento territorial**. INPE, 2001.

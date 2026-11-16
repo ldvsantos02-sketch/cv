@@ -109,6 +109,14 @@ html, body, .reveal-viewport {
   left: 58px;
 }
 
+.reveal section.scrollable .academic-slide-body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+  pointer-events: auto;
+  scrollbar-width: thin;
+}
+
 .reveal .academic-slide-content {
   display: flow-root;
   width: 100%;

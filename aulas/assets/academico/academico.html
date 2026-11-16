@@ -223,6 +223,12 @@
         const width = box.clientWidth;
         const height = box.clientHeight;
         if (!width || !height) return;
+        if (record.slide.classList.contains("scrollable")) {
+          content.style.width = "100%";
+          content.style.transform = "none";
+          record.slide.dataset.academicScale = "1.000";
+          return;
+        }
         function fits(scale) {
           content.style.width = `${width / scale}px`;
           content.style.transform = `scale(${scale})`;
@@ -280,5 +286,39 @@
   connect();
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", connect, { once: true });
   window.addEventListener("load", connect, { once: true });
+})();
+</script>
+<script>
+/* Lightbox para imagens — RevealJS Slides UEFS
+   Clique em qualquer figura -> zoom (overlay)
+   Botão "Nova aba" · ESC para fechar */
+(function () {
+  "use strict";
+  function initLightbox() {
+    if (document.getElementById("img-lb")) return;
+    var ov = document.createElement("div");
+    ov.id = "img-lb";
+    ov.innerHTML = '<div id="img-lb-bg"></div><div id="img-lb-wrap"><img id="img-lb-pic" src="" alt=""><div id="img-lb-bar"><a id="img-lb-open" href="" target="_blank" rel="noopener" title="Abrir em nova aba"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Nova aba</a><button id="img-lb-x" type="button" title="Fechar (ESC)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Fechar</button></div></div>';
+    document.body.appendChild(ov);
+    var s = document.createElement("style");
+    s.textContent = ".reveal .slides img:not(.slide-logo):not([src*=logo]){cursor:zoom-in;transition:opacity .15s}.reveal .slides img:not(.slide-logo):not([src*=logo]):hover{opacity:.88}#img-lb{display:none;position:fixed;inset:0;z-index:99999}#img-lb.on{display:flex;justify-content:center;align-items:center}#img-lb-bg{position:absolute;inset:0;background:rgba(0,0,0,.88);cursor:zoom-out}#img-lb-wrap{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;max-width:94vw;max-height:94vh}#img-lb-pic{max-width:92vw;max-height:84vh;object-fit:contain;border-radius:6px;box-shadow:0 8px 32px rgba(0,0,0,.6)}#img-lb-bar{display:flex;gap:12px;margin-top:14px}#img-lb-bar a,#img-lb-bar button{display:inline-flex;align-items:center;gap:6px;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:7px 18px;border-radius:6px;font-size:13px;font-family:inherit;text-decoration:none;cursor:pointer;transition:background .2s}#img-lb-bar a:hover,#img-lb-bar button:hover{background:rgba(255,255,255,.28)}";
+    document.head.appendChild(s);
+    var pic = document.getElementById("img-lb-pic"), lnk = document.getElementById("img-lb-open");
+    function openLb(src) { pic.src = src; lnk.href = src; ov.classList.add("on"); }
+    function closeLb() { ov.classList.remove("on"); pic.src = ""; }
+    document.getElementById("img-lb-bg").addEventListener("click", closeLb);
+    document.getElementById("img-lb-x").addEventListener("click", closeLb);
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && ov.classList.contains("on")) { closeLb(); e.stopPropagation(); } }, true);
+    document.addEventListener("click", function (e) {
+      var t = e.target;
+      if (t.tagName !== "IMG") return;
+      if (t.classList.contains("slide-logo")) return;
+      if (t.naturalWidth < 80 || t.naturalHeight < 80) return;
+      if (t.closest(".slide-logo,.reveal>.backgrounds")) return;
+      if (!t.closest(".reveal .slides")) return;
+      e.preventDefault(); e.stopPropagation(); openLb(t.src);
+    }, true);
+  }
+  if (document.readyState === "loading") { document.addEventListener("DOMContentLoaded", initLightbox); } else { initLightbox(); }
 })();
 </script>

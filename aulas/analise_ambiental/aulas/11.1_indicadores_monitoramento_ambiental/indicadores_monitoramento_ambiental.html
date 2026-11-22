@@ -1001,6 +1001,7 @@ font-style: italic;
 
 .reveal .academic-slide table caption { caption-side: top; margin-bottom: 8px; font-size: 20px; color: var(--academic-muted); text-align: left; }
 .reveal .academic-slide .small-text { font-size: 0.85em; }
+
 .reveal .slides section.academic-section-with-content > .academic-stage-title {
 position: static;
 margin: 0 0 14px;
@@ -1539,13 +1540,13 @@ Prof. Dr. Luiz Diego Vidal Santos
 <li><span class="circle">2</span> Matrizes Causais: <strong>PER</strong> (OCDE, 1993) e <strong>FPEIR / DPSIR</strong> (EEA, 1999)</li>
 <li><span class="circle">3</span> Qualidade da Água: <strong>IQA</strong> (9 parâmetros e pesos), <strong>IET</strong> (Eutrofização) e <strong>CONAMA 357/2005</strong></li>
 <li><span class="circle">4</span> Padrões de Efluentes (<strong>CONAMA 430/2011</strong>) e Qualidade do Ar (<strong>CONAMA 506/2024</strong>)</li>
-<li><span class="circle">5</span> Bioindicadores Bentônicos (BMWP e grupo EPT) e Métricas de Fragmentação da Paisagem</li>
-<li><span class="circle">6</span> Índices Espectrais por Sensoriamento Remoto (<strong>NDVI, SAVI e NDWI</strong>)</li>
+<li><span class="circle">5</span> Os 5 Pilares da Avaliação, <strong>Biomarcadores de Alerta Precoce</strong> e Bioindicadores (BMWP/EPT, Líquens)</li>
+<li><span class="circle">6</span> <strong>QA/QC, Gestão Adaptativa</strong>, Índices Orbitais (<strong>NDVI, SAVI, NDWI</strong>) e Indicadores Técnicos vs. Científicos</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="info-box">
 <p><strong>Objetivo da Aula</strong></p>
-<p>Capacitar o estudante a selecionar, calcular e interpretar <strong>indicadores e índices ambientais</strong> físicos, químicos, biológicos e orbitais dentro do modelo <strong>FPEIR (DPSIR)</strong>, confrontando-os com os padrões normativos brasileiros (<strong>CONAMA 357/2005, 430/2011 e 506/2024</strong>).</p>
+<p>Capacitar o estudante a selecionar, auditar (QA/QC) e interpretar <strong>indicadores e índices ambientais</strong> físicos, químicos, biológicos e orbitais dentro do modelo <strong>FPEIR (DPSIR)</strong> e da <strong>Gestão Adaptativa</strong>, confrontando-os com os padrões normativos brasileiros (<strong>CONAMA 357/2005, 430/2011 e 506/2024</strong>).</p>
 </div>
 </div></div>
 </section>
@@ -1558,7 +1559,8 @@ Prof. Dr. Luiz Diego Vidal Santos
 <h2>O que é Monitoramento Ambiental e por que usar Indicadores?</h2>
 <ul>
 <li><strong>Diagnóstico vs. Monitoramento:</strong> o diagnóstico retrata um estado em um momento específico; o <strong>monitoramento</strong> acompanha séries temporais padronizadas para verificar tendências de degradação ou recuperação e aferir a eficácia de políticas, licenciamentos e PRADs.</li>
-<li><strong>Por que não basta apenas medir?</strong> Leituras isoladas de campo ou de satélite (ex.: <span class="math inline">\(12\text{ mg/L}\)</span> de sólido ou <span class="math inline">\(\text{pH} = 6{,}4\)</span>) pouco dizem sem um <strong>padrão de referência</strong> (condição natural, <em>baseline</em> ou limite legal).</li>
+<li><strong>Fotografia vs. Filme (Química vs. Biologia):</strong> uma análise química de água ou solo funciona como uma <strong>fotografia</strong> instantânea — mostra o que estava presente no exato segundo da coleta (um pulso poluente pode já ter sido levado pela correnteza). Já os <strong>bioindicadores e biomarcadores</strong> funcionam como um <strong>filme</strong>, revelando o impacto <strong>cumulativo e sinérgico</strong> dos estressores ao longo do tempo.</li>
+<li><strong>Por que não basta apenas medir?</strong> Leituras isoladas de campo ou de satélite (ex.: <span class="math inline">\(12\text{ mg/L}\)</span> de sólido ou <span class="math inline">\(\text{pH} = 6{,}4\)</span>) pouco dizem sem um <strong>padrão de referência</strong> (área testemunha conservada, <em>baseline</em> ou limite legal).</li>
 <li><strong>Papel dos indicadores:</strong> traduzir fenômenos ambientais complexos em sinais claros, auditáveis e comparáveis no tempo e no espaço para orientar a gestão territorial.</li>
 </ul>
 </section>
@@ -1837,20 +1839,74 @@ Prof. Dr. Luiz Diego Vidal Santos
 <p><a href="https://www.gov.br/mma/pt-br/assuntos/meio-ambiente-urbano-recursos-hidricos-qualidade-ambiental/qualidade-do-ar/padroes-de-qualidade-do-ar/padroes-de-qualidade-do-ar/">MMA: padrões de qualidade do ar</a>.</p>
 </section></section>
 <section>
-<section id="bioindicadores-e-índices-espectrais-orbitais" class="title-slide slide level1 section-header center" data-academic-label="Biota e Satélite">
-<h1>Bioindicadores e Índices Espectrais Orbitais</h1>
+<section id="bioindicadores-biomarcadores-e-índices-orbitais" class="title-slide slide level1 section-header center" data-academic-label="Biota e Satélite">
+<h1>Bioindicadores, Biomarcadores e Índices Orbitais</h1>
 
 </section>
-<section id="bioindicadores-resposta-integrada-ao-habitat" class="slide level2 smaller-text">
-<h2>Bioindicadores: resposta integrada ao habitat</h2>
-<p>Macroinvertebrados respondem à qualidade da água, mas também a substrato, vazão, temperatura, conectividade e sazonalidade.</p>
+<section id="os-5-pilares-da-avaliação-ambiental-e-alerta-precoce" class="slide level2 smaller-text">
+<h2>Os 5 Pilares da Avaliação Ambiental e Alerta Precoce</h2>
+<p>O estresse ambiental nunca começa matando o ecossistema inteiro de uma só vez; ele percorre uma <strong>cascata de falhas</strong> em cinco níveis crescentes de complexidade:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nível / Pilar</th>
+<th>O que mede</th>
+<th>Caráter da resposta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Químico</strong></td>
+<td>Concentração de contaminantes nos compartimentos (água, solo, ar)</td>
+<td>Exposição externa instantânea</td>
+</tr>
+<tr class="even">
+<td><strong>2. Bioacumulação</strong></td>
+<td>Dose crítica interna retida nos tecidos da biota</td>
+<td>Exposição acumulada no tempo</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Efeito Biológico (Biomarcadores)</strong></td>
+<td>Alterações bioquímicas, moleculares (DNA/proteínas), subcelulares e celulares</td>
+<td><strong>Sinal prévio reversível</strong> (alerta precoce)</td>
+</tr>
+<tr class="even">
+<td><strong>4. Saúde do Organismo</strong></td>
+<td>Necrose tecidual, tumores, doenças crônicas e falência de órgãos</td>
+<td><strong>Efeito tardio irreversível</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>5. Ecossistema</strong></td>
+<td>Queda de densidade, perda de riqueza e colapso das funções</td>
+<td>Dano sistêmico consolidado</td>
+</tr>
+</tbody>
+</table>
+<div class="info-box">
+<p><strong>Exemplo de Biomarcador Precoce (<em>Tradescantia pallida</em>):</strong> o teste de <strong>micronúcleos</strong> detecta fragmentos de DNA perdidos durante a divisão celular antes que qualquer dano macroscópico apareça na planta, funcionando como “canário na mina de carvão” para riscos mutagênicos.</p>
+</div>
+</section>
+<section id="bioindicadores-na-paisagem-e-regra-trófica" class="slide level2 smaller-text">
+<h2>Bioindicadores na Paisagem e Regra Trófica</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
 <ul>
-<li>BMWP utiliza pontuações taxonômicas; explicitar a adaptação regional.</li>
-<li>EPT pode indicar comunidades sensíveis, com diferenças entre ordens e famílias.</li>
-<li>A ausência de um táxon não prova sozinha poluição.</li>
-<li>Padronizar esforço, época, micro-hábitat e identificação.</li>
+<li><strong>Flora e Líquens (qualidade do ar):</strong> sem raízes para retirar nutrientes do solo, os líquens absorvem umidade e gases diretamente da atmosfera como “esponjas vivas”, desaparecendo rapidamente diante de <span class="math inline">\(\text{SO}_2\)</span> e poluentes industriais.</li>
+<li><strong>Fauna Edáfica (minhocas):</strong> indicam contaminação por metais pesados e agrotóxicos via contato direto da cutícula e ingestão de serapilheira.</li>
+<li><strong>Macroinvertebrados Bentônicos (BMWP e EPT):</strong> respondem à qualidade da água, substrato, vazão e conectividade; exigir padronização de esforço, época e micro-hábitat.</li>
 </ul>
-<p>Combinar a biota com medidas físico-químicas e observações da bacia.</p>
+</div><div class="column" style="width:48%;">
+<ul>
+<li><strong>Regra Trófica:</strong> priorizar organismos na <strong>base da cadeia alimentar</strong> (plâncton, moluscos filtradores, invertebrados) permite detectar bioacumulação antes que atinja predadores de topo em doses letais.</li>
+<li><strong>Nem todo bioindicador morre:</strong> na <strong>maré vermelha</strong> (<em>Gonyaulax catenella</em>) ou floração de cianobactérias, o indicador é a <strong>proliferação patológica</strong> desencadeada por excesso de nutrientes (esgoto) e mudanças térmicas.</li>
+<li><strong>Critérios de um biomonitor ideal (van der Oost):</strong> fácil taxonomia, abundância ampla, acúmulo mensurável, sensibilidade precoce, estabilidade sazonal e confiabilidade QA/QC.</li>
+</ul>
+</div></div>
 </section>
 <section id="monitoramento-orbital-como-alvos-da-superfície-refletem-a-luz" class="slide level2 smaller-text">
 <h2>Monitoramento Orbital: como Alvos da Superfície Refletem a Luz</h2>
@@ -1952,6 +2008,76 @@ Prof. Dr. Luiz Diego Vidal Santos
 </tbody>
 </table>
 <p>Comparar períodos e áreas com condições documentadas. Uma redução de turbidez em ano seco não demonstra sozinha eficácia da intervenção.</p>
+</section>
+<section id="correlação-vs.-causalidade-e-arquitetura-da-qualidade-qaqc" class="slide level2 smaller-text">
+<h2>Correlação vs. Causalidade e Arquitetura da Qualidade (QA/QC)</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<ul>
+<li><strong>Armadilha da causalidade:</strong> se a turbidez de um rio sobe próximo a uma obra, multar a construtora sem <strong>área de referência (controle a montante)</strong> confunde correlação com causalidade — o pico pode vir de chuva intensa 18 km acima em encosta desmatada.</li>
+<li><strong>Desenho amostral rigoroso:</strong> unidades espaciais fixas, locais de referência conservados e frequência temporal padronizada (evitar deslocar pontos sem registro, o que invalida séries de 10+ anos).</li>
+</ul>
+</div><div class="column" style="width:48%;">
+<ul>
+<li><strong>Protocolo QA/QC em campo e laboratório:</strong>
+<ul>
+<li>Inserir <strong>amostras em branco</strong> (<em>field blanks</em>) para descartar contaminação do frasco/reagente.</li>
+<li>Coletar <strong>duplicatas físicas</strong> e manter <strong>cadeia de custódia</strong> assinada e preservação térmica.</li>
+<li><strong>Regra de ouro QA/QC:</strong> dados anômalos ou inválidos <strong>nunca devem ser deletados silenciosamente</strong>; investigar a causa raiz revela falhas de calibração ou gargalos reais de processo.</li>
+</ul></li>
+</ul>
+</div></div>
+</section>
+<section id="gestão-adaptativa-fechando-o-loop-decisório" class="slide level2 smaller-text">
+<h2>Gestão Adaptativa: Fechando o Loop Decisório</h2>
+<p>Monitoramento ambiental <strong>não é arquivo de gaveta</strong>: o dado coletado deve acionar uma decisão quando cruza o <strong>Limite de Ação Operacional (<em>Threshold</em>)</strong>.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situação observada</th>
+<th>Diagnóstico da causa raiz</th>
+<th>Ação obrigatória</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Dentro da faixa esperada</strong></td>
+<td>Sistema alinhado ao estado desejável</td>
+<td>Manter plano de monitoramento e frequência vigente</td>
+</tr>
+<tr class="even">
+<td><strong>Desvio por erro metodológico</strong></td>
+<td>Falha na cadeia QA/QC, desvio de calibração ou troca de método/sensor</td>
+<td>Recalibrar equipamentos, revisar protocolo e retreinar equipe</td>
+</tr>
+<tr class="odd">
+<td><strong>Desvio por resposta ambiental real</strong></td>
+<td>Aumento de pressão externa ou falha de manejo em campo</td>
+<td>Ativar <strong>Manejo Adaptativo imediato</strong> (ex.: replantio, controle de invasoras, contenção de carga)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="indicadores-técnicos-vs.-científicos-e-o-desafio-climático" class="slide level2 smaller-text">
+<h2>Indicadores Técnicos vs. Científicos e o Desafio Climático</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<ul>
+<li><strong>Indicadores Técnicos (conformidade rápida):</strong> métricas visuais e estruturais usadas por órgãos ambientais (cobertura do solo, presença de exóticas invasoras como braquiária, estratificação do dossel).</li>
+<li><strong>Indicadores Científicos (processos de longo prazo):</strong> chuva de sementes (poleiros artificiais), retorno reprodutivo da fauna e fluxo gênico entre fragmentos.</li>
+<li><strong>Dimensão Socioeconômica (Rigueira &amp; Mariano-Neto):</strong> a sustentabilidade de áreas recuperadas exige cruzar flora, fauna e solo com a <strong>função social</strong> (adesão comunitária, renda e capacitação).</li>
+</ul>
+</div><div class="column" style="width:48%;">
+<div class="info-box">
+<p><strong>Desafio do Século XXI — <em>Shifting Baselines</em> (Referências Móveis):</strong></p>
+<p>Sob mudanças climáticas globais severas, os próprios remanescentes usados como <strong>áreas de referência</strong> sofrem alterações de temperatura e regime hídrico. Monitorar exige distinguir variação climática regional de falha local de manejo.</p>
+</div>
+</div></div>
 </section></section>
 <section>
 <section id="síntese-e-referências" class="title-slide slide level1 section-header center" data-academic-label="Síntese">
@@ -1961,21 +2087,22 @@ Prof. Dr. Luiz Diego Vidal Santos
 <section id="pontos-essenciais-para-fixação" class="slide level2 smaller-text">
 <h2>Pontos Essenciais para Fixação</h2>
 <ol type="1">
-<li><p>A matriz <strong>FPEIR (DPSIR)</strong> impede que o analista liste indicadores desconexos, obrigando a vincular <strong>Força Motriz <span class="math inline">\(\rightarrow\)</span> Pressão <span class="math inline">\(\rightarrow\)</span> Estado <span class="math inline">\(\rightarrow\)</span> Impacto <span class="math inline">\(\rightarrow\)</span> Resposta</strong>.</p></li>
-<li><p>O enquadramento e a condição medida são dimensões distintas; aplicar o art. 42 com a ressalva de condições atuais melhores.</p></li>
-<li><p>No Semiárido baiano, o uso combinado do <strong>SAVI</strong> (satélite), do <strong>IQA/IET</strong> (água) e de <strong>bioindicadores bentônicos</strong> oferece diagnóstico robusto e multiescalar.</p></li>
+<li>A matriz <strong>FPEIR (DPSIR)</strong> impede que o analista liste indicadores desconexos, obrigando a vincular <strong>Força Motriz <span class="math inline">\(\rightarrow\)</span> Pressão <span class="math inline">\(\rightarrow\)</span> Estado <span class="math inline">\(\rightarrow\)</span> Impacto <span class="math inline">\(\rightarrow\)</span> Resposta</strong>.</li>
+<li>A análise química é uma <strong>fotografia</strong> instantânea; <strong>biomarcadores precoces e bioindicadores</strong> funcionam como um <strong>filme</strong> do impacto cumulativo (com atenção à regra trófica e proliferações patológicas).</li>
+<li>Sem <strong>área de referência</strong>, <strong>QA/QC</strong> (brancos, duplicatas, cadeia de custódia) e <strong>Gestão Adaptativa</strong>, o monitoramento vira acúmulo de planilhas sem poder causal ou corretivo.</li>
+<li>No Semiárido baiano, a combinação de <strong>SAVI</strong> (satélite), <strong>IQA/IET</strong> (água), <strong>CONAMA 357/430/506</strong> e <strong>bioindicadores</strong> oferece diagnóstico robusto e multiescalar.</li>
 </ol>
 </section>
 <section id="referências-bibliográficas" class="slide level2 smaller-text">
 <h2>Referências Bibliográficas</h2>
 <ul>
 <li>ANA (Agência Nacional de Águas e Saneamento Básico). <strong>Indicadores de Qualidade — Índice de Qualidade das Águas (IQA)</strong>. Brasília: ANA, 2020.</li>
-<li>CONAMA. <strong>Resolução nº 357, de 17 de março de 2005</strong> (Classificação dos corpos de água e diretrizes ambientais para o seu enquadramento).</li>
-<li>CONAMA. <strong>Resolução nº 430, de 13 de maio de 2011</strong> (Condições e padrões de lançamento de efluentes).</li>
-<li>CONAMA. <strong>Resolução nº 506, de 5 de julho de 2024</strong> (Padrões de qualidade do ar).</li>
+<li>CONAMA. <strong>Resolução nº 357, de 17 de março de 2005</strong>; <strong>Resolução nº 430, de 13 de maio de 2011</strong>; <strong>Resolução nº 506, de 5 de julho de 2024</strong>.</li>
 <li>EEA (European Environment Agency). <strong>Environmental indicators: Typology and overview</strong> (DPSIR Framework). Copenhagen: EEA, 1999.</li>
-<li>MAGALHÃES JR., A. P. <strong>Indicadores Ambientais e Recursos Hídricos: realidade e perspectivas para o Brasil a partir da experiência francesa</strong>. Rio de Janeiro: Bertrand Brasil, 2007.</li>
+<li>MAGALHÃES JR., A. P. <strong>Indicadores Ambientais e Recursos Hídricos</strong>. Rio de Janeiro: Bertrand Brasil, 2007.</li>
+<li>RIGUEIRA, D. M. G.; MARIANO-NETO, E. Monitoramento: uma proposta integrada para avaliação do sucesso em projetos de restauração ecológica em áreas florestais. <strong>Revista Caititu</strong>, n. 1, p. 73–88, 2013.</li>
 <li>SICHE, R. et al. Índices versus indicadores: precisões conceituais na discussão da sustentabilidade de países. <strong>Ambiente &amp; Sociedade</strong>, v. 10, n. 2, p. 137–148, 2007.</li>
+<li>VAN DER OOST, R.; BEYER, J.; VERMEULEN, N. P. E. Fish bioaccumulation and biomarkers in environmental risk assessment: a review. <strong>Environmental Toxicology and Pharmacology</strong>, v. 13, n. 2, p. 57–149, 2003.</li>
 </ul>
 
 </section></section>

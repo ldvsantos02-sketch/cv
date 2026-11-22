@@ -1,0 +1,171 @@
+% ============================================================================
+% CAPA INSTITUCIONAL — CHF662 ANÁLISE AMBIENTAL (DCHF/UEFS)
+% ============================================================================
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+  % Painel superior azul-marinho profundo
+  \fill[uefsNavyDark] (current page.north west) rectangle ([yshift=-18.2cm]current page.north east);
+  % Faixa lateral esquerda de identidade cromática
+  \fill[uefsTeal] (current page.north west) rectangle ([xshift=0.55cm, yshift=-18.2cm]current page.north west);
+  \fill[uefsGold] ([xshift=0.55cm]current page.north west) rectangle ([xshift=0.72cm, yshift=-18.2cm]current page.north west);
+
+  % Curvas de nível estilizadas (isolíneas topográficas) no canto superior direito
+  \begin{scope}
+    \clip (current page.north west) rectangle ([yshift=-18.2cm]current page.north east);
+    \foreach \r/\op in {2.5/0.24, 3.6/0.21, 4.7/0.18, 5.8/0.15, 6.9/0.13, 8.0/0.11, 9.2/0.09, 10.4/0.07}{
+      \draw[uefsTeal!75!white, opacity=\op, line width=0.95pt]
+        ([xshift=21.2cm, yshift=-1.0cm]current page.north west)
+        .. controls +(-0.9*\r, -0.15*\r) and +(-0.2*\r, 0.7*\r) ..
+        ([xshift=21.2cm-1.05*\r, yshift=-1.0cm-0.8*\r]current page.north west)
+        .. controls +(0.2*\r, -0.6*\r) and +(-0.6*\r, -0.2*\r) ..
+        ([xshift=21.2cm, yshift=-1.0cm-1.35*\r]current page.north west);
+    }
+    % Rede hidrográfica esquemática sutil em dourado
+    \draw[uefsGold, opacity=0.22, line width=1.1pt]
+      ([xshift=15.8cm, yshift=-1.4cm]current page.north west)
+      .. controls +(0.4cm, -2.5cm) and +(-0.8cm, 2.2cm) ..
+      ([xshift=17.4cm, yshift=-7.6cm]current page.north west)
+      .. controls +(0.5cm, -1.5cm) and +(-0.3cm, 1.8cm) ..
+      ([xshift=18.2cm, yshift=-12.8cm]current page.north west);
+    \draw[uefsGold, opacity=0.16, line width=0.8pt]
+      ([xshift=18.9cm, yshift=-4.4cm]current page.north west)
+      .. controls +(-0.8cm, -0.9cm) and +(0.6cm, 0.9cm) ..
+      ([xshift=17.4cm, yshift=-7.6cm]current page.north west);
+    \draw[uefsGold, opacity=0.16, line width=0.8pt]
+      ([xshift=14.9cm, yshift=-6.8cm]current page.north west)
+      .. controls +(1.0cm, -0.7cm) and +(-0.5cm, 0.8cm) ..
+      ([xshift=17.6cm, yshift=-9.4cm]current page.north west);
+  \end{scope}
+
+  % Faixas horizontais de transição
+  \fill[uefsTeal] ([yshift=-18.2cm]current page.north west) rectangle ([yshift=-18.55cm]current page.north east);
+  \fill[uefsGold] ([yshift=-18.55cm]current page.north west) rectangle ([yshift=-18.75cm]current page.north east);
+  % Painel inferior claro
+  \fill[bgSoft] ([yshift=-18.75cm]current page.north west) rectangle (current page.south east);
+\end{tikzpicture}
+
+\vspace*{1.0cm}
+\begin{flushleft}
+  {\color{uefsGold}\bfseries\small\sffamily UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA (UEFS)}\\[0.18cm]
+  {\color{bgGold!90!white}\small\sffamily Departamento de Ciências Humanas e Filosofia (DCHF) $\bullet$ Curso de Geografia}\\[1.15cm]
+
+  \tcbox[on line, arc=2pt, colback=uefsTeal, colframe=uefsTeal, boxrule=0pt, left=8pt, right=8pt, top=3.5pt, bottom=3.5pt]{%
+    {\color{white}\bfseries\footnotesize\sffamily COMPONENTE CURRICULAR CHF662 $\bullet$ LIVRO DIDÁTICO COMPLETO}%
+  }\\[0.65cm]
+
+  {\color{white}\bfseries\fontsize{38}{43}\selectfont\sffamily ANÁLISE}\\[0.15cm]
+  {\color{white}\bfseries\fontsize{38}{43}\selectfont\sffamily AMBIENTAL}\\[0.5cm]
+
+  {\color{uefsGold}\rule{4.8cm}{2.2pt}}\\[0.5cm]
+
+  {\color{bgGold}\large\sffamily Fundamentos Epistemológicos, Abordagens Sistêmicas,\\
+  Bacias Hidrográficas, Avaliação de Impacto Ambiental,\\
+  Qualidade do Solo e Bioengenharia Aplicada}\\[0.75cm]
+
+  \begin{tcolorbox}[colback=white!8!uefsNavyDark, colframe=uefsTeal!80!white, arc=3pt, boxrule=0.8pt, width=0.96\textwidth, left=12pt, right=12pt, top=9pt, bottom=9pt]
+    \begin{tabularx}{\textwidth}{@{}X X@{}}
+      {\color{uefsGold}\bfseries\footnotesize ARQUITETURA EM 10 ETAPAS} & {\color{uefsGold}\bfseries\footnotesize PRÁTICA E AVALIAÇÃO} \\
+      {\color{white}\footnotesize Teoria progressiva e estudos de caso resolvidos} & {\color{white}\footnotesize Simulados por módulo, roteiro de campo e Trabalho Final} \\
+    \end{tabularx}
+  \end{tcolorbox}
+\end{flushleft}
+
+\vspace*{3.3cm}
+
+\begin{center}
+  \begin{tcolorbox}[colback=white, colframe=uefsNavy, borderline west={3.5pt}{0pt}{uefsTeal}, arc=3pt, boxrule=0.8pt, width=0.98\textwidth, left=14pt, right=14pt, top=11pt, bottom=11pt]
+    \renewcommand{\arraystretch}{1.28}
+    \small
+    \begin{tabularx}{\textwidth}{@{}p{4.1cm} >{\raggedright\arraybackslash}X@{}}
+      \textbf{\color{uefsNavy}Componente Curricular:} & CHF662: Análise Ambiental (Obrigatória $\bullet$ 60 h/a $\bullet$ 4 créditos) \\
+      \textbf{\color{uefsNavy}Docente Responsável:} & Prof. Dr. Luiz Diego Vidal (DCHF / Geografia, UEFS) \\
+      \textbf{\color{uefsNavy}Período e Atendimento:} & 2026/2 $\bullet$ Terças, 07h30 às 11h30 (Laboratório GEOTRÓPICOS) \\
+      \textbf{\color{uefsNavy}Estrutura da Obra:} & 5 Módulos $\bullet$ 15 Capítulos $\bullet$ 6 Simulados $\bullet$ Glossário e Formulário \\
+    \end{tabularx}
+  \end{tcolorbox}
+\end{center}
+
+\vfill
+\begin{center}
+  {\footnotesize\color{uefsMuted}\bfseries FEIRA DE SANTANA, BAHIA $\bullet$ EDIÇÃO A4 PARA IMPRESSÃO E ESTUDO AUTÔNOMO $\bullet$ 2026/2}
+\end{center}
+\end{titlepage}
+
+% ============================================================================
+% APRESENTAÇÃO, IDENTIFICAÇÃO DA DISCIPLINA E GUIA DE USO
+% ============================================================================
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Apresentação da Disciplina CHF662 e Guia de Uso}
+\chapter*{Apresentação da Disciplina e Guia de Uso da Apostila}
+\markboth{APRESENTAÇÃO E GUIA DE USO}{APRESENTAÇÃO E GUIA DE USO}
+
+Bem-vindo(a) à apostila completa do componente curricular \textbf{CHF662 — Análise Ambiental}, ofertado pelo Departamento de Ciências Humanas e Filosofia (DCHF) do Curso de Geografia da Universidade Estadual de Feira de Santana (UEFS).
+
+Este material foi concebido como um \textbf{livro didático progressivo e autônomo}, alinhado integralmente ao Plano de Disciplina 2026/2. Ele parte dos conceitos mais elementares da relação sociedade–natureza e da epistemologia ambiental até o domínio de ferramentas técnicas aplicadas em consultorias, órgãos públicos e pesquisa geográfica: análise morfométrica de bacias hidrográficas, fragilidade ambiental (Ross), ecodinâmica (Tricart), Avaliação de Impacto Ambiental (AIA), indicadores de qualidade do solo, diagnóstico de erosão linear, bioengenharia de água e solo, legislação ambiental e elaboração de um Diagnóstico Ambiental Aplicado.
+
+\section*{Ficha Técnica Oficial e Ementa (CHF662)}
+
+\begin{boxConceito}[Ementa Oficial — CHF662 Análise Ambiental (60 h/a)]
+Fundamentos conceituais, epistemológicos e metodológicos da Análise Ambiental na Geografia e áreas afins. Relação sociedade-natureza, questão ambiental contemporânea, degradação dos recursos naturais e planejamento ambiental. Abordagens sistêmicas e integradoras aplicadas ao estudo do ambiente: geossistema, ecodinâmica, ecogeografia, análise integrada da paisagem e planejamento territorial. Bacia hidrográfica como unidade de análise ambiental integrada, com ênfase nas relações entre relevo, solo, água, cobertura vegetal, uso da terra e processos de degradação. Avaliação de Impacto Ambiental: conceitos, etapas, diagnóstico, prognóstico, medidas mitigadoras, compensatórias e monitoramento. Indicadores ambientais e indicadores de qualidade do solo aplicados ao diagnóstico de áreas degradadas. Morfopedologia, fragilidade ambiental, vulnerabilidade, risco e recuperação ambiental. Princípios e aplicações da bioengenharia de água e solo em processos de estabilização, conservação e recuperação de áreas degradadas. Legislação ambiental, áreas de preservação permanente, licenciamento ambiental, PRAD e instrumentos de gestão ambiental. Elaboração de produtos técnicos: mapas, matrizes de indicadores, relatórios interpretativos, diagnósticos ambientais e propostas de intervenção.
+\end{boxConceito}
+
+\subsection*{Objetivo Geral e Competências Esperadas}
+
+O objetivo central da disciplina é capacitar o(a) discente a compreender e aplicar os fundamentos teórico-metodológicos da Análise Ambiental, integrando componentes físico-bióticos e socioespaciais para o diagnóstico, interpretação e proposição de medidas de planejamento, gestão, conservação e recuperação ambiental, com ênfase em \textbf{bacias hidrográficas, indicadores ambientais, qualidade do solo e bioengenharia de água e solo}.
+
+Ao concluir os 15 capítulos e as atividades práticas, o(a) estudante estará apto(a) a:
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+  \item Interpretar o ambiente como totalidade complexa, dinâmica e multiescalar, superando a dicotomia clássica entre Geografia Física e Geografia Humana.
+  \item Empregar com rigor metodológico os conceitos de geossistema, ecodinâmica, morfopedologia, fragilidade potencial/emergente, vulnerabilidade e risco.
+  \item Executar cálculos morfométricos básicos de bacias hidrográficas, interpretar matrizes de AIA, avaliar indicadores físico-químico-biológicos do solo e diagnosticar estágios de erosão linear.
+  \item Selecionar técnicas de bioengenharia de água e solo adequadas a margens, taludes, ravinas e voçorocas, articulando-as à legislação ambiental vigente (PNMA, Código Florestal, licenciamento e PRAD).
+  \item Produzir mapas temáticos, matrizes de indicadores, relatórios interpretativos e propostas técnicas justificadas para a gestão e recuperação ambiental.
+\end{itemize}
+
+\section*{Sistema Oficial de Avaliação da Disciplina}
+
+A avaliação presencial da disciplina CHF662 combina acompanhamento processual de leitura, verificação teórica dissertativa e entrega de produto técnico aplicado:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}l >{\raggedright\arraybackslash}X c c@{}}
+  \toprule
+  \rowcolor{uefsNavy}
+  \textcolor{white}{\bfseries Instrumento} & \textcolor{white}{\bfseries Descrição e Vínculo com a Apostila} & \textcolor{white}{\bfseries Peso} & \textcolor{white}{\bfseries Pontos} \\
+  \midrule
+  Estudos Orientados (EO1–EO4) & Quatro atividades individuais vinculadas aos textos-base da fase inicial (Caps. 2, 3, 4 e 5). Cada EO vale $0,5$ ponto. & 20\% & 2,0 \\
+  \rowcolor{bgTeal}
+  Avaliação Teórica Individual & Prova escrita presencial, predominantemente dissertativa, abrangendo os Módulos 1, 2 e 3 (Caps. 1 a 9; aplicada na Semana 10). & 30\% & 3,0 \\
+  Trabalho Prático Final & Diagnóstico Ambiental Aplicado (área, microbacia, encosta, margem ou APP), integrando caracterização, degradação, matriz de indicadores e proposta de intervenção (guia no Cap. 15). & 50\% & 5,0 \\
+  \midrule
+  \textbf{Nota Final (NF)} & $\text{NF} = \text{EO1}(0,5) + \text{EO2}(0,5) + \text{EO3}(0,5) + \text{EO4}(0,5) + \text{Prova}(3,0) + \text{Trabalho}(5,0)$ & \textbf{100\%} & \textbf{10,0} \\
+  \bottomrule
+\end{tabularx}
+\end{center}
+
+\section*{Como Estudar com Esta Apostila (Método em 10 Etapas)}
+
+Todos os 15 capítulos seguem rigorosamente a mesma arquitetura didática em 10 etapas, desenhada para que nenhum conceito, símbolo ou fórmula seja apresentado sem antes explicar sua origem, sua finalidade e sua aplicação prática:
+
+\begin{enumerate}[leftmargin=1.8em, itemsep=2.5pt]
+  \item \textbf{Etapa 1 — O que você vai aprender:} metas claras de aprendizagem do capítulo.
+  \item \textbf{Etapa 2 — Revisando o que você precisa saber:} ponte com conceitos anteriores necessários antes de avançar.
+  \item \textbf{Etapa 3 — Explicação teórica:} construção conceitual gradual com vocabulário técnico prévio, figuras vetoriais, tabelas comparativas, demonstração detalhada de equações/índices e exemplos reais da Bahia e do Semiárido.
+  \item \textbf{Etapa 4 — Estudos de caso e exemplos resolvidos passo a passo:} cinco situações-problema (básico, intermediário e avançado) resolvidas integralmente sem omitir nenhuma etapa intermediária, com verificação crítica final.
+  \item \textbf{Etapa 5 — Erros mais comuns:} equívocos conceituais e metodológicos frequentes em provas, diagnósticos e licenciamentos, com orientações para evitá-los.
+  \item \textbf{Etapa 6 — Exercícios de fixação:} 15 atividades organizadas em três níveis (básico, intermediário e aplicado/concurso) com espaço para resolução impressa.
+  \item \textbf{Etapa 7 — Questões de provas, ENADE e concursos ambientais:} questões inéditas no estilo de exames de Geografia, ENADE e concursos para Analista Ambiental (IBAMA, INEMA, órgãos estaduais), sempre claramente identificadas quanto à autoria.
+  \item \textbf{Etapa 8 — Gabarito comentado:} em página separada, trazendo a resolução completa e a justificativa técnica de cada questão.
+  \item \textbf{Etapa 9 — Resumo do capítulo:} síntese visual dos conceitos, equações e critérios de decisão.
+  \item \textbf{Etapa 10 — Teste de aprendizagem (Checkpoint):} autoavaliação rápida para confirmar o domínio do tema antes de seguir para a semana seguinte.
+\end{enumerate}
+
+\subsection*{Legenda das Etiquetas do Plano CHF662}
+\begin{itemize}[leftmargin=1.5em, itemsep=4pt]
+  \item \tagEmenta\quad Conteúdo central da ementa e da Avaliação Teórica escrita (Semana 10).
+  \item \tagEO{1–4}\quad Base direta para a elaboração e entrega dos Estudos Orientados (EO1 a EO4).
+  \item \tagCampo\quad Conteúdo articulado diretamente à atividade de campo no Semiárido Baiano.
+  \item \tagPratica\quad Ferramenta metodológica essencial para o Trabalho Prático Final (50\% da nota).
+\end{itemize}

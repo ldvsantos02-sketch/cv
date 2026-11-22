@@ -1,0 +1,63 @@
+\documentclass[11pt, a4paper, oneside]{book}
+\usepackage{styles/apostila_aa}
+
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{2}
+
+\begin{document}
+
+% ============================================================================
+% ABERTURA: CAPA, APRESENTAÇÃO, SUMÁRIO E CRONOGRAMA DE 16 SEMANAS
+% ============================================================================
+\frontmatter
+\input{sections/00_capa_e_abertura}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Sumário Pedagógico Completo}
+\tableofcontents
+
+\input{sections/01_cronograma_16_semanas}
+
+% ============================================================================
+% CORPO DA APOSTILA: 5 MÓDULOS COMPLETOS (15 CAPÍTULOS + 5 SIMULADOS)
+% ============================================================================
+\mainmatter
+
+% --- MÓDULO 1 — FUNDAMENTOS EPISTEMOLÓGICOS E CONCEITUAIS ---
+\input{sections/mod1_cap01}
+\input{sections/mod1_cap02}
+\input{sections/mod1_cap03}
+\input{sections/mod1_cap04}
+\input{sections/mod1_simulado}
+
+% --- MÓDULO 2 — AIA E ANÁLISE AMBIENTAL INTEGRADA ---
+\input{sections/mod2_cap05}
+\input{sections/mod2_cap06}
+\input{sections/mod2_simulado}
+
+% --- MÓDULO 3 — BACIAS, MORFOPEDOLOGIA, GEOSSISTEMAS E FRAGILIDADE ---
+\input{sections/mod3_cap07}
+\input{sections/mod3_cap08}
+\input{sections/mod3_cap09}
+\input{sections/mod3_simulado}
+
+% --- MÓDULO 4 — INDICADORES, QUALIDADE DO SOLO E DEGRADAÇÃO ---
+\input{sections/mod4_cap10}
+\input{sections/mod4_cap11}
+\input{sections/mod4_cap12}
+\input{sections/mod4_simulado}
+
+% --- MÓDULO 5 — BIOENGENHARIA, LEGISLAÇÃO, PRAD E DIAGNÓSTICO FINAL ---
+\input{sections/mod5_cap13}
+\input{sections/mod5_cap14}
+\input{sections/mod5_cap15}
+\input{sections/mod5_simulado}
+
+% ============================================================================
+% ENCERRAMENTO: AVALIAÇÃO GERAL INTEGRADA, FORMULÁRIO, GLOSSÁRIO E REFERÊNCIAS
+% ============================================================================
+\input{sections/98_avaliacao_geral_final}
+\input{sections/99_formulario_glossario_referencias}
+
+\end{document}

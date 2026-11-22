@@ -1,0 +1,86 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Análise Ambiental (CHF662)"
+  subtitle: "Apostila Completa — DCHF / Geografia (UEFS)"
+  author:
+    - name: "Luiz Diego Vidal Santos"
+      url: https://diegovidalcv.com.br/
+      orcid: 0000-0001-8659-8557
+      affiliation:
+        - name: "Universidade Estadual de Feira de Santana (UEFS)"
+          url: https://www.uefs.br/
+  date: "2026-11-22"
+  date-format: "DD/MM/YYYY"
+  description: |
+    Apostila completa do componente curricular CHF662 (Análise Ambiental),
+    Curso de Geografia da UEFS, organizada em cinco módulos, 15 capítulos
+    em 10 etapas, simulados comentados, formulário e glossário.
+  cover-image: img/capa_analise_ambiental.png
+  favicon: img/capa_analise_ambiental.png
+  reader-mode: true
+  site-url: https://diegovidalcv.com.br/books/analise-ambiental/
+  repo-url: https://github.com/ldvsantos02-sketch/cv/
+  repo-actions: [issue]
+  sharing: [twitter, facebook, linkedin]
+  search: true
+
+  page-footer:
+    left: "© Luiz Diego Vidal Santos, 2026 (DCHF/UEFS). [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+    right: "Feito com [Quarto](https://quarto.org)"
+
+  chapters:
+    - index.qmd
+
+    - part: "Módulo 1 — Fundamentos Epistemológicos e Conceituais"
+      chapters:
+        - capitulos/01-questao-ambiental.qmd
+        - capitulos/02-sociedade-natureza.qmd
+        - capitulos/03-geografia-socioambiental-gtp.qmd
+        - capitulos/04-conceitos-operacionais-risco.qmd
+        - capitulos/mod1-simulado.qmd
+
+    - part: "Módulo 2 — AIA e Análise Ambiental Integrada"
+      chapters:
+        - capitulos/05-avaliacao-impacto-ambiental.qmd
+        - capitulos/06-analise-ambiental-integrada.qmd
+        - capitulos/mod2-simulado.qmd
+
+    - part: "Módulo 3 — Bacias, Morfopedologia, Geossistemas e Fragilidade"
+      chapters:
+        - capitulos/07-bacias-hidrograficas-morfometria.qmd
+        - capitulos/08-morfopedologia-vertentes.qmd
+        - capitulos/09-geossistemas-ecodinamica-ross.qmd
+        - capitulos/mod3-simulado.qmd
+
+    - part: "Módulo 4 — Indicadores, Qualidade do Solo e Degradação"
+      chapters:
+        - capitulos/10-indicadores-ambientais-peir.qmd
+        - capitulos/11-qualidade-solo-iqs.qmd
+        - capitulos/12-degradacao-erosao-usle.qmd
+        - capitulos/mod4-simulado.qmd
+
+    - part: "Módulo 5 — Bioengenharia, Legislação, PRAD e Diagnóstico"
+      chapters:
+        - capitulos/13-bioengenharia-agua-solo.qmd
+        - capitulos/14-legislacao-ambiental-prad.qmd
+        - capitulos/15-diagnostico-ambiental-aplicado.qmd
+        - capitulos/mod5-simulado.qmd
+
+    - part: "Encerramento, Formulário e Referências"
+      chapters:
+        - capitulos/16-avaliacao-geral-final.qmd
+        - capitulos/17-formulario-glossario-referencias.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    code-link: true
+    lang: pt-BR
+    fig-align: center
+
+lang: pt-BR

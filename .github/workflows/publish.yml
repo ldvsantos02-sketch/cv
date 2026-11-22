@@ -82,7 +82,7 @@ jobs:
       - name: Backup book PDFs
         run: |
           mkdir -p /tmp/book-pdfs
-          for book in bioengenharia-solos ciencia-paisagem geotecnologias-sig pi branding-agro; do
+          for book in analise-ambiental bioengenharia-solos ciencia-paisagem geotecnologias-sig pi branding-agro; do
             if ls books/$book/_book/*.pdf 1> /dev/null 2>&1; then
               echo "=== Backing up PDFs from $book ==="
               mkdir -p /tmp/book-pdfs/$book
@@ -92,7 +92,7 @@ jobs:
 
       - name: Render Books (HTML only)
         run: |
-          for book in bioengenharia-solos ciencia-paisagem geotecnologias-sig pi branding-agro; do
+          for book in analise-ambiental bioengenharia-solos ciencia-paisagem geotecnologias-sig pi branding-agro; do
             if [ -f "books/$book/_quarto.yml" ]; then
               echo "=== Rendering $book ==="
               cd books/$book
@@ -103,7 +103,7 @@ jobs:
 
       - name: Restore book PDFs
         run: |
-          for book in bioengenharia-solos ciencia-paisagem geotecnologias-sig pi branding-agro; do
+          for book in analise-ambiental bioengenharia-solos ciencia-paisagem geotecnologias-sig pi branding-agro; do
             if [ -d "/tmp/book-pdfs/$book" ]; then
               echo "=== Restoring PDFs to $book ==="
               cp /tmp/book-pdfs/$book/*.pdf books/$book/_book/
@@ -129,7 +129,7 @@ jobs:
 
       - name: Copy book output to site
         run: |
-          for book in bioengenharia-solos ciencia-paisagem geotecnologias-sig pi branding-agro; do
+          for book in analise-ambiental bioengenharia-solos ciencia-paisagem geotecnologias-sig pi branding-agro; do
             if [ -d "books/$book/_book" ]; then
               echo "=== Copying $book ==="
               mkdir -p _site/books/$book

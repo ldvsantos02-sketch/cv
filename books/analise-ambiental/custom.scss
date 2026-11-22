@@ -1,0 +1,38 @@
+/*-- scss:defaults --*/
+$primary: #1B2A4A;
+$link-color: #0E7C7B;
+
+/*-- scss:rules --*/
+.sidebar nav[role=doc-toc] a {
+  font-size: 0.92rem;
+}
+
+.quarto-title-meta {
+  margin-top: 1rem;
+}
+
+.callout {
+  border-radius: 0.4rem;
+}
+
+.quarto-figure {
+  margin: 1.5rem 0;
+}
+
+.quarto-figure figcaption {
+  font-size: 0.88rem;
+  color: #555;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+table {
+  margin: 1rem 0;
+}
+
+.book-cover {
+  max-width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+}

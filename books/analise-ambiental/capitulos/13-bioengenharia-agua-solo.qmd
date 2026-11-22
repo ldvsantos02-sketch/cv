@@ -1,0 +1,648 @@
+# 13 Bioengenharia Agua Solo
+
+. Os três capítulos e o simulado final preparam diretamente a entrega e a defesa do Trabalho Prático Final:
+
+- **Capítulo 13 — Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental (Semana 14):** princípios da Engenharia Natural (Gray; Sotir, 1996; Schiechtl; Stern, 1996; Durlo; Sutili, 2005), reforço radicular na equação de Mohr--Coulomb, efeitos mecânicos e hidrológicos da vegetação, dimensionamento de paliçadas permeáveis, biomantas biodegradáveis de sisal e coco, retentores de sedimentos e comparação com obras cinzas rígidas.
+- **Capítulo 14 — Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão (Semana 15):** Política Nacional do Meio Ambiente (Lei n^o^ 6.938/1981), SISNAMA, Licenciamento Trifásico (LP, LI, LO, EIA/RIMA, CONAMA 001/1986 e 237/1997, IBAMA/INEMA), Código Florestal (Lei n^o^ 12.651/2012: APPs, Reserva Legal, CAR e PRA), estrutura técnica de PRAD e Tríplice Responsabilidade Ambiental (Lei n^o^ 9.605/1998).
+- **Capítulo 15 — Diagnóstico Ambiental Integrado e Elaboração do Trabalho Prático Final (Semana 16):** roteiro completo de integração dos dados da viagem de campo e da microbacia, matriz de impactos, seleção de indicadores, prescrição de medidas de bioengenharia e redação de parecer técnico conclusivo.
+- **Simulado e Revisão Integrada do Módulo 5:** oito questões objetivas autorais no estilo ENADE e concursos ambientais, duas questões dissertativas aplicadas, gabarito comentado, espelho de correção e quadro de autoavaliação.
+
+
+# Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental
+
+\noindent`TRABALHO PRÁTICO FINAL`
+
+::: {.callout-note}
+## Etapa 1 — O que você vai aprender neste capítulo
+
+Ao concluir este capítulo, você será capaz de:
+
+- Explicar os fundamentos conceituais da Bioengenharia de Solos (Engenharia Natural) e o papel estruturante de plantas vivas combinadas a materiais inertes biodegradáveis.
+- Quantificar o reforço mecânico das raízes ($\Delta c_r$) na equação de Mohr--Coulomb e distinguir os efeitos mecânicos (tração, ancoragem, arqueamento) dos efeitos hidrológicos (interceptação, rugosidade superficial, infiltração e evapotranspiração).
+- Dimensionar paliçadas e barragens permeáveis para controle de ravinas e voçorocas, calculando o espaçamento entre estruturas ($E = h/S$) e o volume da cunha de sedimentos retidos ($V = \frac{1}{2}\cdot L_m \cdot h \cdot b$).
+- Selecionar técnicas vegetativas (estacas vivas, fascinas, trançados vivos) e coberturas biodegradáveis (biomantas de sisal, fibra de coco, taboa e juta) adequadas a taludes, margens fluviais e áreas degradadas do Semiárido Baiano.
+- Comparar técnica, ecológica e economicamente soluções de bioengenharia frente a obras cinzas rígidas em projetos de recuperação ambiental e PRAD.
+
+:::
+
+::: {.callout-tip}
+## Etapa 2 — Revisando o que você precisa saber
+
+Para dominar o dimensionamento e a seleção das técnicas deste capítulo, retome os seguintes conteúdos dos módulos anteriores:
+
+- **Dinâmica de vertentes e infiltração (Capítulos 7 e 8):** a remoção da cobertura vegetal reduz a rugosidade superficial e a porosidade estrutural, acelerando o escoamento concentrado nas encostas e nos taludes de estradas.
+- **Qualidade do solo e matéria orgânica (Capítulo 11):** solos degradados apresentam baixa estabilidade de agregados, alta densidade aparente e déficit de carbono orgânico, o que dificulta a revegetação espontânea sem proteção inicial da superfície.
+- **Erosão linear e monitoramento (Capítulo 12):** sulcos, ravinas e voçorocas evoluem por energia cinética de enxurrada e solapamento de base; pinos de erosão e perfis transversais medem a perda de solo antes e após as intervenções corretivas.
+
+:::
+
+## Etapa 3: Fundamentação Teórica: Princípios, Mecânica Radicular e Técnicas de Bioengenharia
+
+::: {.callout-note}
+## Vocabulário Técnico e Símbolos do Capítulo 13
+
+- **Bioengenharia de Solos (Engenharia Natural):** disciplina técnica que utiliza plantas vivas, isoladas ou associadas a materiais inertes (madeira, fibras vegetais, rocha), como elementos estruturais vivos para estabilização de taludes, controle erosivo e recuperação de margens.
+- $\tau$: resistência ao cisalhamento do solo no plano potencial de ruptura ($\text{kPa}$).
+- $c'$ e $c_r$ (ou $\Delta c_r$): coesão efetiva intrínseca do solo ($\text{kPa}$) e coesão aparente adicional conferida pela malha de raízes sob tração ($\text{kPa}$).
+- $\sigma'$ e $\phi'$: tensão normal efetiva no plano de ruptura ($\text{kPa}$) e ângulo de atrito interno efetivo do solo (graus).
+- $E$, $h$ e $S$: espaçamento longitudinal entre paliçadas consecutivas ($\text{m}$), altura útil da paliçada acima do leito ($\text{m}$) e declividade longitudinal do canal ou ravina ($\text{m}\cdot\text{m}^{-1}$).
+- $L_m$, $b$ e $V$: comprimento da cunha de sedimentos acumulada a montante da paliçada ($\text{m}$), largura média do canal ($\text{m}$) e volume retido ($\text{m}^3$).
+
+:::
+
+## Princípios da Bioengenharia de Solos e Engenharia Natural
+
+A degradação de taludes rodoviários, margens de cursos d'água, áreas mineradas e platôs terraplenados raramente é resolvida de modo duradouro apenas por obras rígidas de concreto ou apenas por semeadura desprotegida. Quando a erosão já superou a capacidade de regeneração natural, o solo exposto perde umidade, nutrientes e sementes a cada evento chuvoso. A **Bioengenharia de Solos** (também denominada **Engenharia Natural**) surge exatamente nessa fronteira entre a engenharia geotécnica, a hidrologia e a ecologia aplicada (GRAY; SOTIR, 1996; SCHIECHTL; STERN, 1996; DURLO; SUTILI, 2005).
+
+O princípio central da Bioengenharia consiste em empregar **materiais vivos (sementes, estacas, mudas, touceiras)** como componentes estruturais ativos. Na fase inicial, estruturas leves ou materiais biodegradáveis (biomantas, paliçadas de madeira, fascinas) assumem o papel de proteção física imediata contra o salpicamento e a enxurrada. À medida que esses elementos inertes se degradam gradualmente, o sistema radicular e a parte aérea das plantas crescem, consolidam o solo e assumem em definitivo a função estabilizadora, tornando a estrutura autossustentável e integrada à paisagem.
+
+::: {.callout-note}
+## Os Quatro Pilares Operacionais da Bioengenharia de Água e Solo
+
+Segundo Durlo e Sutili (2005) e Gray e Sotir (1996), projetos consistentes de Bioengenharia apoiam-se em quatro diretrizes:
+
+1. **Proteção superficial imediata:** interceptar o impacto direto das gotas de chuva (*splash*) desde o primeiro dia pós-obra por meio de coberturas mortas, biomantas ou geotêxteis naturais.
+2. **Dissipação de energia hidráulica:** reduzir a velocidade e o poder erosivo do escoamento concentrado com barreiras permeáveis escalonadas (paliçadas, retentores, fascinas) em vez de impermeabilizar o leito.
+3. **Reforço vivo crescente:** selecionar espécies rústicas, nativas ou adaptadas ao bioma local (como espécies da Caatinga e gramíneas cespitosas de enraizamento profundo), cuja resistência mecânica aumenta com o tempo.
+4. **Sucessão ecológica e baixo impacto:** utilizar materiais locais de baixa pegada energética que favoreçam o retorno da fauna edáfica, a infiltração hídrica e a recomposição da vegetação ciliar ou de encosta.
+
+:::
+
+## Efeitos Mecânicos e Hidrológicos da Vegetação na Estabilidade
+
+A vegetação atua simultaneamente sobre os dois lados do equilíbrio de um talude ou margem fluvial: aumenta a **resistência mecânica** da massa de solo e reduz as **solicitações hidrológicas** que desencadeiam ruptura e erosão. Enquanto solos sem cobertura sofrem saturação rápida e escoamento superficial acelerado, solos vegetados mantêm matriz porosa estruturada e reforçada por fibras biológicas.
+
+![Integração dos efeitos mecânicos (tração radicular, ancoragem em camadas estáveis e arqueamento lateral) e efeitos hidrológicos (interceptação da copa, rugosidade superficial, infiltração e evapotranspiração) da vegetação na estabilização de encostas e margens.](../img/fig13_efeitos_raizes_solo.png)
+
+No plano mecânico, Gray e Sotir (1996) sistematizam três mecanismos principais pelas quais as raízes estabilizam o solo:
+
+- **Reforço por tração radicular ($\Delta c_r$):** o solo possui boa resistência à compressão, porém baixa resistência à tração. As raízes finas e médias comportam-se como fibras flexíveis de alta resistência à tração inseridas na matriz terrosa. Quando uma zona potencial de cisalhamento tende a escorregar, as raízes que cruzam esse plano são tensionadas e transferem parte do esforço para o solo adjacente.
+- **Ancoragem em horizontes firmes:** raízes pivotantes profundas atravessam horizontes superficiais mais friáveis ou alterados e ancoram-se em camadas subsuperficiais mais coesas ou fraturas do saprolito, atuando de modo análogo a microestacas naturais.
+- **Arqueamento e contenção lateral:** sistemas radiculares densos de árvores e arbustos distribuídos em encostas formam zonas de maior rigidez que redistribuem tensões por efeito de arco, restringindo o deslocamento de pequenas cunhas de solo entre os troncos.
+
+No plano hidrológico, a vegetação promove quatro efeitos protetores complementares: (1) **interceptação** da chuva pelas copas e pela serapilheira, amortecendo a energia cinética das gotas antes do contato com o solo; (2) aumento da **rugosidade superficial**, que reduz a velocidade de escoamento laminar e concentrado; (3) estímulo à **infiltração** via bioporos formados por raízes mortas e atividade biológica; e (4) **evapotranspiração**, que consome água da zona radicular, reduzindo o grau de saturação e a poropressão positiva ($u$) no interior do talude entre eventos chuvosos.
+
+::: {.callout-tip}
+## Critério de Mohr--Coulomb com Reforço Radicular ($\Delta c_r$)
+
+Na mecânica dos solos clássica, a resistência ao cisalhamento $\tau$ de um solo saturado ou parcialmente saturado é expressa pela equação de Mohr--Coulomb. Quando incorporamos a malha de raízes vivas, soma-se um termo de coesão aparente radicular $c_r$ (também grafado $\Delta c_r$):
+
+$$
+
+  \tau = (c' + c_r) + \sigma' \tan\phi'
+
+$$
+
+**Leitura intuitiva dos termos:**
+
+- $c'$ é a "cola" natural entre as partículas minerais e orgânicas do solo (coesão efetiva, em $\text{kPa}$); em solos arenosos puros, $c'$ aproxima-se de zero.
+- $c_r$ ($\Delta c_r$) é o reforço adicional fornecido pelas raízes que atravessam o plano de ruptura (em $\text{kPa}$), funcionando como uma armadura fibrosa distribuída tridimensionalmente no solo superficial.
+- $\sigma'$ é a tensão normal efetiva ($\sigma' = \sigma - u$, onde $\sigma$ é o peso da massa de solo acima do plano e $u$ é a pressão da água nos poros). Quanto menor a poropressão $u$ (graças à evapotranspiração e à drenagem adequada), maior é $\sigma'$ e maior é o atrito resistente $\sigma'\tan\phi'$.
+- $\phi'$ é o ângulo de atrito interno efetivo, que expressa o intertravamento mecânico entre os grãos do solo.
+
+**Fator de Segurança simplificado ($FS$):** comparando a resistência disponível $\tau$ com a tensão cisalhante solicitante $\tau_{\text{sol}}$ exercida pelo peso da camada inclinada, tem-se $FS = \tau / \tau_{\text{sol}}$. Valores de $FS < 1{,}0$ indicam instabilidade; o ganho de $c_r$ e a redução de $u$ elevam $FS$ para patamares seguros.
+
+:::
+
+## Técnicas Vegetativas, Paliçadas Permeáveis e Biomantas Biodegradáveis
+
+A seleção das técnicas de bioengenharia depende da declividade da vertente, da presença de fluxo concentrado, da profundidade da incisão erosiva e das condições climáticas locais. Em ambientes semiáridos, como a área de estudo da disciplina CHF662 na Bahia, a escolha deve considerar chuvas convectivas concentradas e longos períodos de déficit hídrico.
+
+### Técnicas vegetativas lineares e de cobertura: estacas vivas, fascinas e trançados
+
+- **Estacas vivas (*live stakes*):** segmentos lenhosos ou semilenhosos de espécies com alta capacidade de brotação vegetativa (como gliricídia, sabiá, salgueiro em áreas úmidas ou espécies nativas propagáveis por estaquia), cravados perpendicularmente à superfície do talude ou levemente inclinados para jusante. Atuam como pinos biológicos que drenam e ancoram os primeiros $0{,}4\text{ m}$ a $0{,}8\text{ m}$ de solo.
+- **Fascinas vivas (*live fascines*):** feixes cilíndricos alongados de ramos vivos amarrados com arame ou sisal, enterrados parcialmente em valas em curva de nível ao longo da encosta ou na base de margens fluviais. As fascinas funcionam como pequenos terraços permeáveis contínuos que quebram o comprimento de rampa, retêm sedimentos finos e emitem raízes e brotos ao longo de todo o feixe.
+- **Trançados vivos (*wattle fences*):** cercas baixas construídas com estacas cravadas verticalmente e ramos flexíveis entrelaçados horizontalmente em curvas de nível. Retêm solo mobilizado a montante e criam patamares de baixa declividade favoráveis ao estabelecimento de mudas.
+
+### Paliçadas e barragens permeáveis no controle de ravinas e voçorocas
+
+Quando a erosão já formou sulcos profundos, ravinas ou voçorocas, apenas técnicas de cobertura superficial não resistem ao fluxo concentrado. Nesse cenário, implantam-se **paliçadas** (ou pequenas **barragens permeáveis** de madeira, bambu, estacas vivas ou sacaria biodegradável preenchida com solo local). Diferentemente de barragens rígidas impermeáveis, a paliçada permite a passagem lenta da água através dos interstícios, reduzindo o empuxo hidrostático, enquanto retém as partículas sólidas transportadas por arraste e saltação.
+
+![Esquema técnico de controle de erosão linear com paliçadas permeáveis escalonadas em série, evidenciando o espaçamento $E = h/S$, a cunha de sedimentos retidos a montante e o revestimento complementar de talude com biomanta e estacas vivas.](../img/fig12_bioengenharia_palicada_talude.png)
+
+O acúmulo gradual de sedimentos a montante de cada paliçada reduz a declividade do leito da ravina, formando patamares estabilizados (degraus vegetados) que diminuem a velocidade da enxurrada e permitem a colonização vegetal no interior da antiga incisão.
+
+::: {.callout-tip}
+## Dimensionamento de Paliçadas: Espaçamento ($E$) e Cunha de Sedimentos ($V$)
+
+Para que o sistema funcione em cascata, o pé de uma paliçada a montante deve coincidir com o topo da cunha de sedimentos retida pela paliçada imediatamente a jusante, nivelando o perfil do canal em degraus estáveis:
+
+1. **Espaçamento longitudinal entre paliçadas ($E$):**
+  
+$$
+
+    E = \frac{h}{S}
+  
+$$
+
+  onde $h$ é a altura útil da paliçada acima do fundo do canal ($\text{m}$) e $S$ é a declividade longitudinal do leito em razão decimal ($\text{m}\cdot\text{m}^{-1}$; por exemplo, uma declividade de $10%$ corresponde a $S = 0{,}10$). Em solos muito friáveis ou curvas sinuosas, recomenda-se reduzir o espaçamento em $15%$ a $20%$ por margem de segurança.
+2. **Estimativa do volume da cunha de sedimentos retidos ($V$):**
+  Considerando a cunha acumulada a montante com seção longitudinal triangular de altura $h$ na face da paliçada, comprimento nivelado $L_m$ (no limite teórico, $L_m = E$) e largura média do canal $b$, o volume máximo retido por uma paliçada é:
+  
+$$
+
+    V = \frac{1}{2} \cdot L_m \cdot h \cdot b
+  
+$$
+
+  onde $V$ resulta em metros cúbicos ($\text{m}^3$). Multiplicando-se $V$ pela densidade aparente seca do sedimento ($\rho_s$, em $\text{t}\cdot\text{m}^{-3}$), obtém-se a massa de solo retida na ravina ($M = V \cdot \rho_s$), impedindo que esse material alcance cursos d'água e reservatórios a jusante.
+
+:::
+
+### Biomantas, geotêxteis biodegradáveis e retentores de sedimentos
+
+Em taludes recém-conformados, platôs de obras lineares ou áreas submetidas a hidrossemeadura, as **biomantas** e os **geotêxteis biodegradáveis** oferecem proteção imediata ao solo nu. São mantas tecidas ou costuradas com fibras vegetais naturais:
+
+- **Fibra de sisal (*Agave sisalana*):** amplamente disponível na Bahia, apresenta boa resistência mecânica inicial e decomposição moderada ($12$ a $24$ meses), integrando-se à economia regional do Semiárido.
+- **Fibra de coco (*Cocos nucifera*):** elevada proporção de lignina, conferindo maior longevidade ($24$ a $48$ meses), indicada para taludes íngremes e margens sujeitas a fluxo intermitente mais energético.
+- **Fibra de taboa (*Typha domingensis*) e juta:** materiais leves e altamente higroscópicos, úteis para retenção de umidade em climas secos e proteção de superfícies de baixa a média declividade até a germinação do estrato herbáceo.
+
+Associam-se às biomantas os **retentores de sedimentos** (biorretentores cilíndricos preenchidos com palha, fibra de coco ou casca de arroz, dispostos em curvas de nível ou na base de taludes) e a **revegetação estratificada**, que combina gramíneas de cobertura rápida com leguminosas fixadoras de nitrogênio e espécies arbustivo-arbóreas nativas.
+
+## Quadro Comparativo: Bioengenharia vs. Obras Cinzas Rígidas
+
+A escolha entre soluções baseadas na natureza e obras convencionais de engenharia civil não deve ser ideológica, mas técnica. Em encostas com risco geotécnico imediato sobre edificações críticas ou em gargantas fluviais submetidas a velocidades hidráulicas extremas, estruturas rígidas podem ser indispensáveis. Entretanto, na vasta maioria das áreas degradadas rurais, faixas de domínio e margens fluviais, a bioengenharia supera as obras cinzas em custo-efetividade e desempenho ecológico.
+
+\small
+
+| p{3.1cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}} \bfseries Critério de Análise | \bfseries Bioengenharia de Água e Solo | \bfseries Obras Cinzas Rígidas (Concreto / Alvenaria) |
+| --- | --- | --- |
+| **Evolução do desempenho** | Crescente ao longo do tempo: à medida que a vegetação se estabelece, aumenta a resistência radicular e a cobertura. | Decrescente ao longo do tempo: sujeita a fissuras, fadiga estrutural, desgaste hidráulico e solapamento sem autorreparação. |
+| **Interação hidrológica** | Mantém a permeabilidade, favorece a infiltração, alivia poropressões e reduz picos de cheia a jusante. | Impermeabiliza o substrato, exige sistemas complexos de drenos e pode transferir energia erosiva para jusante. |
+| **Custo de implantação** | Reduzido ($30%$ a $75%$ menor em taludes e ravinas), utilizando mão de obra e insumos vegetais locais. | Elevado devido a escavações profundas, formas, aço, cimento e transporte de materiais pesados. |
+| **Manutenção inicial** | Maior atenção nos primeiros $12$ a $24$ meses (irrigação de pegamento, replantio, controle de formigas). | Baixa no curto prazo, porém reparos corretivos após trincas ou recalques são complexos e onerosos. |
+| **Valor ecológico e legal** | Restaura funções ecossistêmicas, conectividade ripária e biodiversidade; atende diretamente metas de PRAD em APPs. | Fragmenta habitats marginais, bloqueia trocas solo-água e limita a regeneração da vegetação nativa. |
+
+## Etapa 4: Estudos de Caso e Exemplos Resolvidos Passo a Passo
+
+::: {.callout-tip}
+## Estudo de Caso / Exemplo 1 — Reforço Radicular na Equação de Mohr--Coulomb em Talude Degradado
+
+**1. Situação-problema / Enunciado:** Durante o diagnóstico de um talude de corte em solo argilo-arenoso ao longo de uma estrada de acesso no Semiárido Baiano, avalia-se o ganho de estabilidade proporcionado pela implantação de vegetação de enraizamento denso em comparação ao solo exposto.
+
+**2. Dados e informações fornecidas:** Coesão efetiva do solo $c' = 8{,}0\text{ kPa}$; ângulo de atrito efetivo $\phi' = 28^\circ$ ($\tan 28^\circ \approx 0{,}5317$); tensão normal efetiva no plano potencial de ruptura $\sigma' = 25{,}0\text{ kPa}$; reforço radicular medido para a espécie implantada $c_r = 6{,}5\text{ kPa}$; tensão cisalhante solicitante durante chuva intensa $\tau_{\text{sol}} = 23{,}0\text{ kPa}$.
+
+**3. O que a análise solicita:** Calcule a resistência ao cisalhamento sem vegetação ($\tau_0$) e com vegetação ($\tau_1$), o ganho percentual de resistência e o Fator de Segurança ($FS = \tau / \tau_{\text{sol}}$) nos dois cenários.
+
+**4. Referencial e método adotado:** Aplicação direta do critério de Mohr--Coulomb modificado pelo reforço radicular (Gray; Sotir, 1996): $\tau = (c' + c_r) + \sigma'\tan\phi'$.
+
+**5. Desenvolvimento passo a passo:**
+
+1. Parcela de atrito interno do solo:
+
+$$
+
+  \sigma' \tan\phi' = 25{,}0 \times 0{,}5317 = 13{,}29\text{ kPa}
+
+$$
+
+2. Resistência ao cisalhamento sem raízes ($c_r = 0$):
+
+$$
+
+  \tau_0 = 8{,}0 + 13{,}29 = 21{,}29\text{ kPa}
+
+$$
+
+3. Resistência ao cisalhamento com reforço radicular ($c_r = 6{,}5\text{ kPa}$):
+
+$$
+
+  \tau_1 = (8{,}0 + 6{,}5) + 13{,}29 = 14{,}5 + 13{,}29 = 27{,}79\text{ kPa}
+
+$$
+
+4. Ganho percentual de resistência:
+
+$$
+
+  \Delta_{%} = \frac{27{,}79 - 21{,}29}{21{,}29} \times 100% = \frac{6{,}50}{21{,}29} \times 100% \approx 30{,}53%
+
+$$
+
+5. Cálculo do Fator de Segurança ($FS$):
+
+$$
+
+  FS_0 = \frac{21{,}29}{23{,}0} \approx 0{,}93   (\text{instável, } FS < 1{,}0)
+
+$$
+
+$$
+
+  FS_1 = \frac{27{,}79}{23{,}0} \approx 1{,}21   (\text{estável, } FS > 1{,}0)
+
+$$
+
+
+**6. Síntese / Resposta:** Sem vegetação, $\tau_0 = 21{,}29\text{ kPa}$ ($FS_0 = 0{,}93$); com reforço radicular, $\tau_1 = 27{,}79\text{ kPa}$ ($FS_1 = 1{,}21$), representando ganho de $30{,}53%$ na resistência ao cisalhamento.
+
+**7. Verificação crítica:** O resultado é coerente com a física do solo: um incremento modesto de coesão radicular ($6{,}5\text{ kPa}$) é suficiente para converter um talude superficialmente instável ($FS < 1{,}0$) em estável ($FS > 1{,}2$) sob condição chuvosa crítica.
+
+:::
+
+::: {.callout-tip}
+## Estudo de Caso / Exemplo 2 — Dimensionamento de Paliçadas Permeáveis e Volume de Sedimentos Retidos
+
+**1. Situação-problema / Enunciado:** Uma ravina ativa formada a jusante de um bueiro rodoviário apresenta risco de evoluir para voçoroca e assorear um riacho intermitente. A equipe técnica propõe instalar paliçadas de madeira e bambu em série ao longo do trecho mais íngreme.
+
+**2. Dados e informações fornecidas:** Comprimento total do trecho a tratar $L_t = 45{,}0\text{ m}$; declividade longitudinal média do leito da ravina $S = 8%$ ($0{,}08\text{ m}\cdot\text{m}^{-1}$); altura útil adotada para cada paliçada $h = 0{,}60\text{ m}$; largura média da seção da ravina $b = 2{,}50\text{ m}$; densidade aparente do sedimento retido $\rho_s = 1{,}35\text{ t}\cdot\text{m}^{-3}$.
+
+**3. O que a análise solicita:** Determine o espaçamento teórico entre paliçadas ($E$), a quantidade de estruturas necessárias no trecho ($n$), o volume da cunha de sedimentos retido por paliçada ($V_1$), o volume total ($V_{\text{total}}$) e a massa total de sedimentos retida ($M$).
+
+**4. Referencial e método adotado:** Cálculo geométrico de perfil nivelado em degraus ($E = h/S$) e volume prismático triangular de cunha sedimentar ($V = \frac{1}{2}\cdot L_m \cdot h \cdot b$, com $L_m = E$).
+
+**5. Desenvolvimento passo a passo:**
+
+1. Espaçamento longitudinal entre paliçadas:
+
+$$
+
+  E = \frac{h}{S} = \frac{0{,}60}{0{,}08} = 7{,}50\text{ m}
+
+$$
+
+2. Número de paliçadas ao longo dos $45{,}0\text{ m}$:
+
+$$
+
+  n = \frac{L_t}{E} = \frac{45{,}0}{7{,}50} = 6\text{ paliçadas}
+
+$$
+
+3. Volume da cunha de sedimentos retida por uma paliçada ($L_m = E = 7{,}50\text{ m}$):
+
+$$
+
+  V_1 = \frac{1}{2} \cdot L_m \cdot h \cdot b = 0{,}5 \times 7{,}50 \times 0{,}60 \times 2{,}50 = 5{,}625\text{ m}^3
+
+$$
+
+4. Volume total e massa de sedimentos retidos pelo sistema completo:
+
+$$
+
+  V_{\text{total}} = 6 \times 5{,}625 = 33{,}75\text{ m}^3
+
+$$
+
+$$
+
+  M = V_{\text{total}} \cdot \rho_s = 33{,}75 \times 1{,}35 = 45{,}56\text{ t}
+
+$$
+
+
+**6. Síntese / Resposta:** Espaçamento $E = 7{,}50\text{ m}$; $n = 6$ paliçadas; $V_1 = 5{,}625\text{ m}^3$ por estrutura; volume total retido $V_{\text{total}} = 33{,}75\text{ m}^3$, equivalente a $45{,}56\text{ t}$ de sedimentos.
+
+**7. Verificação crítica:** Seis estruturas de $0{,}60\text{ m}$ de altura acumulam um desnível total de $6 \times 0{,}60 = 3{,}60\text{ m}$, exatamente igual ao desnível natural do trecho de $45{,}0\text{ m}$ a $8%$ ($45{,}0 \times 0{,}08 = 3{,}60\text{ m}$), confirmando o fechamento geométrico do escalonamento.
+
+:::
+
+::: {.callout-tip}
+## Estudo de Caso / Exemplo 3 — Proteção Superficial com Biomanta de Sisal e Redução de Perda de Solo
+
+**1. Situação-problema / Enunciado:** Um talude de corte recém-terraplenado em um empreendimento eólico no Semiárido apresenta perda de solo acentuada nos primeiros meses chuvosos. Para conter a erosão laminar e viabilizar o estabelecimento de gramíneas e leguminosas, prescreve-se a aplicação de biomanta de fibra de sisal associada à hidrossemeadura.
+
+**2. Dados e informações fornecidas:** Área do talude $A = 1.200\text{ m}^2$ ($0{,}12\text{ ha}$); taxa de perda de solo sem proteção medida por pinos de erosão igual a $45{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}$; eficiência de redução da perda de solo pela biomanta de sisal igual a $85%$; dimensões comerciais do rolo de biomanta: $2{,}0\text{ m} \times 25{,}0\text{ m}$ ($50{,}0\text{ m}^2$ por rolo), exigindo $10%$ de acréscimo de área para sobreposição das emendas.
+
+**3. O que a análise solicita:** Calcule a perda anual de solo sem proteção e com biomanta (em $\text{t}\cdot\text{ano}^{-1}$), a massa de solo retida anualmente na encosta e o número mínimo inteiro de rolos de biomanta a adquirir.
+
+**4. Referencial e método adotado:** Conversão de área para hectares, aplicação do fator de atenuação erosiva ($1 - 0{,}85 = 0{,}15$) e dimensionamento de cobertura com sobreposição.
+
+**5. Desenvolvimento passo a passo:**
+
+1. Perda anual sem proteção na área de $0{,}12\text{ ha}$:
+
+$$
+
+  P_0 = 0{,}12\text{ ha} \times 45{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1} = 5{,}40\text{ t}\cdot\text{ano}^{-1}
+
+$$
+
+2. Perda anual residual com biomanta ($15%$ da perda original):
+
+$$
+
+  P_1 = 5{,}40 \times (1 - 0{,}85) = 5{,}40 \times 0{,}15 = 0{,}81\text{ t}\cdot\text{ano}^{-1}
+
+$$
+
+3. Massa de solo retida na encosta pela proteção:
+
+$$
+
+  \Delta P = 5{,}40 - 0{,}81 = 4{,}59\text{ t}\cdot\text{ano}^{-1}
+
+$$
+
+4. Área efetiva de biomanta com $10%$ de sobreposição e número de rolos:
+
+$$
+
+  A_{\text{ef}} = 1.200 \times 1{,}10 = 1.320\text{ m}^2
+
+$$
+
+$$
+
+  N_{\text{rolos}} = \frac{1.320}{50{,}0} = 26{,}4 \rightarrow \mathbf{27\text{ rolos}}
+
+$$
+
+
+**6. Síntese / Resposta:** A perda cai de $5{,}40\text{ t}\cdot\text{ano}^{-1}$ para $0{,}81\text{ t}\cdot\text{ano}^{-1}$ (retenção de $4{,}59\text{ t}\cdot\text{ano}^{-1}$); devem ser adquiridos $27$ rolos de biomanta de sisal.
+
+**7. Verificação crítica:** O arredondamento para cima ($27$ rolos) garante que não falte material nas bordas de ancoragem em valas de coroamento e pé de talude, prática obrigatória em especificações executivas.
+
+:::
+
+::: {.callout-tip}
+## Estudo de Caso / Exemplo 4 — Dimensionamento de Estacas Vivas e Fascinas em Margem Fluvial
+
+**1. Situação-problema / Enunciado:** Um trecho de margem fluvial degradada apresenta solapamento na base e exposição do talude marginal. O projeto de recuperação combina fascinas vivas na zona de variação do nível d'água com plantio de estacas vivas na rampa superior.
+
+**2. Dados e informações fornecidas:** Extensão da margem $L = 180\text{ m}$; largura da faixa de rampa tratada com estacas vivas $w = 4{,}0\text{ m}$ (área $= 720\text{ m}^2$); espaçamento das estacas na rampa igual a $0{,}80\text{ m} \times 0{,}80\text{ m}$ ($0{,}64\text{ m}^2$ por estaca); $3$ linhas contínuas de fascinas na base ($3 \times 180 = 540\text{ m}$ lineares), fixadas por $1$ estaca a cada $0{,}75\text{ m}$; taxa média de pegamento esperada em campo igual a $75%$.
+
+**3. O que a análise solicita:** Calcule o número de estacas na rampa, o número de estacas de fixação das fascinas, o total de estacas necessárias e a quantidade estimada de plantas vivas estabelecidas após o primeiro ciclo chuvoso.
+
+**4. Referencial e método adotado:** Razão entre área/comprimento e espaçamento unitário, seguida de aplicação da taxa de sobrevivência.
+
+**5. Desenvolvimento passo a passo:**
+
+1. Estacas vivas distribuídas na rampa ($720\text{ m}^2$):
+
+$$
+
+  N_{\text{rampa}} = \frac{720}{0{,}64} = 1.125\text{ estacas}
+
+$$
+
+2. Estacas de ancoragem ao longo dos $540\text{ m}$ de fascinas:
+
+$$
+
+  N_{\text{fasc}} = \frac{540}{0{,}75} = 720\text{ estacas}
+
+$$
+
+3. Total de estacas a produzir/colher:
+
+$$
+
+  N_{\text{total}} = 1.125 + 720 = 1.845\text{ estacas}
+
+$$
+
+4. Estimativa de indivíduos vivos estabelecidos ($75%$ de pegamento):
+
+$$
+
+  N_{\text{vivas}} = 1.845 \times 0{,}75 = 1.383{,}75 \approx 1.384\text{ plantas vivas}
+
+$$
+
+
+**6. Síntese / Resposta:** São necessárias $1.125$ estacas na rampa e $720$ nas fascinas (total de $1.845$ estacas), resultando em aproximadamente $1.384$ plantas vivas estabelecidas.
+
+**7. Verificação crítica:** Mesmo com $25%$ de mortalidade inicial, permanecem cerca de $1{,}17\text{ planta}\cdot\text{m}^{-2}$ na rampa ($844/720$) e $3{,}0\text{ estacas}\cdot\text{m}^{-1}$ nas fascinas ao longo da margem ($540/180$), densidades adequadas para formar cobertura contínua na zona crítica.
+
+:::
+
+::: {.callout-tip}
+## Estudo de Caso / Exemplo 5 — Análise Comparativa de Custo e Desempenho: Bioengenharia vs. Obra Cinza
+
+**1. Situação-problema / Enunciado:** A prefeitura de um município baiano precisa estabilizar $100\text{ m}$ de talude marginal de uma estrada vicinal que dá acesso a uma área de captação de água, evitando o assoreamento do manancial.
+
+**2. Dados e informações fornecidas:** Extensão do trecho $L = 100\text{ m}$; altura do talude $h = 3{,}0\text{ m}$. Alternativa A (obra cinza rígida em muro de concreto/gabião argamassado): custo unitário de $R$ 1.850{,00}\cdot\text{m}^{-1}$. Alternativa B (bioengenharia com retentores de sedimentos na base, biomanta de coco e estacas vivas nativas): custo de implantação de $R$ 420{,00}\cdot\text{m}^{-1}$ mais plano de manutenção de $2$ anos orçado em $R$ 8.000{,00}$ no total.
+
+**3. O que a análise solicita:** Calcule o custo total de cada alternativa, a economia financeira absoluta e percentual proporcionada pela bioengenharia e justifique a escolha sob a ótica hidrogeomorfológica.
+
+**4. Referencial e método adotado:** Orçamentação linear direta e comparação relativa de custos associada à análise de serviços ecossistêmicos.
+
+**5. Desenvolvimento passo a passo:**
+
+1. Custo total da Alternativa A (obra cinza):
+
+$$
+
+  C_A = 100 \times 1.850{,}00 = R$ 185.000{,00}
+
+$$
+
+2. Custo total da Alternativa B (bioengenharia + 2 anos de manutenção):
+
+$$
+
+  C_B = (100 \times 420{,}00) + 8.000{,}00 = 42.000{,}00 + 8.000{,}00 = R$ 50.000{,00}
+
+$$
+
+3. Economia financeira absoluta e percentual:
+
+$$
+
+  \Delta C = 185.000{,}00 - 50.000{,}00 = R$ 135.000{,00}
+
+$$
+
+$$
+
+  \Delta C_{%} = \frac{135.000{,}00}{185.000{,}00} \times 100% \approx 72{,}97%
+
+$$
+
+
+**6. Síntese / Resposta:** Alternativa A: $R$ 185.000{,00}$; Alternativa B: $R$ 50.000{,00}$. A bioengenharia gera economia de $R$ 135.000{,00}$ ($72{,}97%$), além de preservar a infiltração na zona de recarga do manancial.
+
+**7. Verificação crítica:** O valor de economia de $72{,}97%$ é compatível com a literatura de Engenharia Natural para taludes de média altura ($3{,}0\text{ m}$) sem cargas estruturais de edificações no coroamento.
+
+:::
+
+## Etapa 5: Erros Mais Comuns e Armadilhas Metodológicas
+
+::: {.callout-warning}
+## Erro 1 — Construir Paliçadas Impermeáveis Sem Dissipação de Energia
+
+Fechar totalmente a seção da ravina com chapas rígidas, alvenaria sem drenos ou lonas plásticas cria empuxo hidrostático excessivo a montante e transbordamento concentrado pelas laterais, provocando erosão regressiva nas ombreiras e destruição da obra logo na primeira enxurrada intensa. Paliçadas devem ser **permeáveis** e devidamente engastadas nas paredes laterais da ravina.
+
+:::
+
+::: {.callout-warning}
+## Erro 2 — Aplicar Biomanta Sem Contato Íntimo com o Solo Preparado
+
+Estender biomantas sobre superfície irregular cheia de torrões, pedras soltas ou sulcos não regularizados deixa bolsões de ar sob a manta. A água da chuva escoa por baixo da biomanta, escava o solo invisivelmente e impede que as raízes das sementes germinadas alcancem o substrato mineral. O preparo, a regularização e o grampeamento firme ao solo são obrigatórios.
+
+:::
+
+::: {.callout-warning}
+## Erro 3 — Usar Espécies Exóticas Invasoras por Facilidade de Pegamento
+
+Selecionar espécies exóticas agressivas (como leucena ou gramíneas africanas invasoras) apenas pelo crescimento rápido compromete a sucessão ecológica nativa e viola diretrizes de PRAD em Áreas de Preservação Permanente. A escolha deve priorizar espécies nativas regionais ou coberturas anuais não invasoras que cedam espaço às nativas.
+
+:::
+
+::: {.callout-warning}
+## Erro 4 — Ignorar o Esforço de Manutenção Pós-Plantio no Semiárido
+
+Em regiões de baixa pluviosidade irregular, abandonar estacas, mudas ou biomantas sem controle de formigas cortadeiras, proteção contra pisoteio de rebanhos e irrigação de salvamento nos primeiros meses leva a taxas de mortalidade superiores a $80%$, anulando o investimento inicial antes que o reforço radicular $c_r$ se estabeleça.
+
+:::
+
+## Etapa 6: Exercícios de Fixação (15 Questões)
+
+### Bloco A — Questões Conceituais Básicas (1 a 5)
+
+1. Explique o princípio da substituição gradual de funções entre materiais inertes biodegradáveis e elementos vivos na Bioengenharia de Solos.
+  
+*Espaço reservado para resolução na versão impressa.*
+2. Diferencie o papel mecânico do reforço por tração radicular ($c_r$) do mecanismo de ancoragem profunda das raízes em uma encosta inclinada.
+  
+*Espaço reservado para resolução na versão impressa.*
+3. Descreva três efeitos hidrológicos da vegetação que contribuem para aumentar a estabilidade de um talude e reduzir o escoamento superficial.
+  
+*Espaço reservado para resolução na versão impressa.*
+4. Compare as finalidades construtivas de estacas vivas, fascinas e trançados vivos na recuperação de vertentes degradadas.
+  
+*Espaço reservado para resolução na versão impressa.*
+5. Cite três vantagens ambientais e econômicas das biomantas de fibra de sisal ou coco em comparação com o revestimento rígido em concreto projetado.
+  
+*Espaço reservado para resolução na versão impressa.*
+
+### Bloco B — Questões Intermediárias e Quantitativas (6 a 10)
+
+1. Um solo apresenta coesão efetiva $c' = 6{,}0\text{ kPa}$, tensão normal efetiva $\sigma' = 20{,}0\text{ kPa}$ e $\tan\phi' = 0{,}50$. Calcule a resistência ao cisalhamento sem vegetação ($\tau_0$) e com reforço radicular $c_r = 5{,}0\text{ kPa}$ ($\tau_1$), indicando o ganho percentual obtido.
+  
+*Espaço reservado para resolução na versão impressa.*
+2. Uma ravina com declividade longitudinal $S = 0{,}10\text{ m}\cdot\text{m}^{-1}$ ($10%$) será estabilizada com paliçadas de madeira de altura útil $h = 0{,}50\text{ m}$ e largura média $b = 2{,}00\text{ m}$. Calcule o espaçamento teórico $E$ entre as paliçadas e o volume de sedimentos retido na cunha de uma paliçada ($L_m = E$).
+  
+*Espaço reservado para resolução na versão impressa.*
+3. Em um trecho de $36{,}0\text{ m}$ de uma voçoroca com declividade $S = 0{,}05\text{ m}\cdot\text{m}^{-1}$, deseja-se instalar paliçadas com altura útil $h = 0{,}45\text{ m}$ e largura média $b = 1{,}80\text{ m}$. Determine o espaçamento $E$, o número de paliçadas necessárias e a massa total de sedimentos retida considerando $\rho_s = 1{,}40\text{ t}\cdot\text{m}^{-3}$.
+  
+*Espaço reservado para resolução na versão impressa.*
+4. Um talude de $2.500\text{ m}^2$ será protegido com biomanta de fibra de coco vendida em rolos de $2{,}0\text{ m} \times 30{,}0\text{ m}$ ($60\text{ m}^2$ por rolo), prevendo-se $8%$ de perda por sobreposição de emendas e ancoragem em valas. Calcule a quantidade mínima inteira de rolos necessários.
+  
+*Espaço reservado para resolução na versão impressa.*
+5. Uma faixa de margem fluvial de $120\text{ m}$ de extensão e $5{,}0\text{ m}$ de largura ($600\text{ m}^2$) receberá estacas vivas no espaçamento de $1{,}0\text{ m} \times 0{,}60\text{ m}$ ($0{,}60\text{ m}^2$ por estaca). Sabendo que a sobrevivência esperada é de $80%$, quantas estacas devem ser plantadas e quantas plantas vivas deverão permanecer estabelecidas?
+  
+*Espaço reservado para resolução na versão impressa.*
+
+### Bloco C — Questões Objetivas de Múltipla Escolha (11 a 15)
+
+1. Na equação de Mohr--Coulomb modificada para solos vegetados, $\tau = (c' + c_r) + \sigma'\tan\phi'$, o termo $c_r$ representa:
+  
+
+  
+*Espaço reservado para resolução na versão impressa.*
+7. Uma ravina com declividade $S = 12%$ ($0{,}12$) será tratada com paliçadas permeáveis de altura útil $h = 0{,}60\text{ m}$. O espaçamento teórico $E$ entre duas paliçadas consecutivas é:
+  
+
+  
+*Espaço reservado para resolução na versão impressa.*
+13. Considerando uma paliçada com altura útil $h = 0{,}50\text{ m}$, largura do canal $b = 2{,}40\text{ m}$ e comprimento da cunha retida a montante $L_m = 6{,}00\text{ m}$, o volume máximo de sedimentos retido por essa estrutura é:
+  
+
+  
+*Espaço reservado para resolução na versão impressa.*
+19. Sobre as fibras vegetais empregadas em biomantas e geotêxteis biodegradáveis no Brasil, assinale a alternativa correta:
+  
+
+  
+*Espaço reservado para resolução na versão impressa.*
+25. Em comparação com muros rígidos de concreto armado utilizados na contenção de margens fluviais rurais, uma solução de bioengenharia com fascinas vivas e estacas vivas caracteriza-se por:
+  
+
+  
+*Espaço reservado para resolução na versão impressa.*
+
+## Etapa 7: Questões no Estilo ENADE e Concursos Ambientais
+
+::: {.callout-tip}
+## Foco de Provas, ENADE e Concursos Ambientais
+
+Bancas como CESPE/Cebraspe, FGV e o exame do ENADE valorizam a integração entre processo físico (erosão, cisalhamento, poropressão) e escolha da técnica de recuperação. Ao analisar estudos de caso, verifique se a técnica proposta ataca a causa hidrológica e mecânica do processo, e não apenas o sintoma estético.
+
+:::
+
+1. **[Questão Autoral — Estilo ENADE / Geografia]** Após a implantação de um parque eólico em área de chapada semiárida, verificou-se a abertura de ravinas em taludes de corte de estradas de acesso, com carreamento de sedimentos para um riacho intermitente. Como solução, um técnico propôs substituir um projeto de canaletas e muros de concreto por um arranjo de bioengenharia combinando biomantas de sisal nos taludes, retentores de sedimentos no pé das rampas e paliçadas permeáveis escalonadas nas incisões. Considerando os princípios da Engenharia Natural, avalie as asserções:
+  
+
+  É correto o que se afirma em:
+  
+
+10. **[Questão Autoral — Estilo Concurso Analista Ambiental / INEMA-BA]** Em um projeto de recuperação de área degradada (PRAD) em margem fluvial de bacia hidrográfica baiana, deseja-se aumentar a estabilidade do talude marginal contra escorregamentos rasos durante cheias sazonais. À luz da equação $\tau = (c' + c_r) + (\sigma - u)\tan\phi'$, qual combinação de mecanismos explica corretamente o efeito benéfico da vegetação ripária estabelecida?
+  
+
+16. **[Questão Autoral — Estilo Concurso Analista Ambiental / IBAMA]** Uma equipe de campo precisa estabilizar um trecho de $60{,}0\text{ m}$ de uma ravina com declividade média de $10%$ ($S = 0{,}10\text{ m}\cdot\text{m}^{-1}$) e largura média de $2{,}0\text{ m}$, utilizando paliçadas permeáveis com altura útil $h = 0{,}60\text{ m}$. Adotando o critério geométrico $E = h/S$ e $V = \frac{1}{2}\cdot L_m \cdot h \cdot b$ (com $L_m = E$), a quantidade de paliçadas e o volume total teórico de sedimentos retidos pelo conjunto são, respectivamente:
+  
+
+## Etapa 8: Gabarito Comentado do Capítulo 13
+
+::: {.callout-note collapse=\"true\"}
+## Resoluções Completas — Exercícios de Fixação (1 a 15)
+
+1. Na Bioengenharia de Solos, materiais inertes biodegradáveis (biomantas, madeira, fibras) fornecem proteção mecânica e hidráulica imediata logo após a obra, quando as plantas ainda são pequenas. À medida que esses materiais se decompõem, o sistema radicular e a cobertura vegetal crescem e assumem permanentemente a função de ancoragem e controle erosivo.
+2. O **reforço por tração radicular ($c_r$)** resulta da rede densa de raízes finas e médias que cruzam a zona de cisalhamento e trabalham tracionadas como fibras na matriz do solo. A **ancoragem** ocorre quando raízes pivotantes profundas atravessam o solo superficial instável e se fixam em horizontes mais coesos ou fraturas rochosas subjacentes.
+3. Três efeitos hidrológicos principais: (1) **interceptação** da chuva pela copa e serapilheira, reduzindo o salpicamento; (2) aumento da **rugosidade superficial**, desacelerando a enxurrada; (3) **evapotranspiração** e abertura de bioporos, drenando o solo e reduzindo a poropressão positiva ($u$) no interior do talude.
+4. **Estacas vivas:** peças lenhosas cravadas isoladamente em malha para atuar como pinos biológicos de drenagem e ancoragem superficial. **Fascinas:** feixes cilíndricos enterrados em valas em curva de nível que quebram o comprimento de rampa e retêm umidade. **Trançados vivos:** pequenas cercas entrelaçadas em degraus que retêm sedimentos mobilizados a montante.
+5. Três vantagens: (1) permitem infiltração de água e trocas gasosas no solo; (2) incorporam matéria orgânica e favorecem a sucessão vegetal nativa; (3) apresentam custo de implantação e pegada de carbono muito inferiores ao concreto projetado, além de valorizarem cadeias produtivas regionais como a do sisal na Bahia.
+6. **Desenvolvimento:**
+  $\sigma'\tan\phi' = 20{,}0 \times 0{,}50 = 10{,}0\text{ kPa}$.
+  Sem vegetação: $\tau_0 = 6{,}0 + 10{,}0 = \mathbf{16{,}0\text{ kPa}}$.
+  Com reforço radicular: $\tau_1 = (6{,}0 + 5{,}0) + 10{,}0 = \mathbf{21{,}0\text{ kPa}}$.
+  Ganho percentual: $(21{,}0 - 16{,}0)/16{,}0 \times 100% = 5{,}0/16{,}0 \times 100% = \mathbf{31{,}25%}$.
+7. **Desenvolvimento:**
+  Espaçamento: $E = h / S = 0{,}50 / 0{,}10 = \mathbf{5{,}00\text{ m}}$.
+  Volume retido por paliçada ($L_m = E = 5{,}00\text{ m}$): $V = 0{,}5 \times 5{,}00 \times 0{,}50 \times 2{,}00 = \mathbf{2{,}50\text{ m}^3}$.
+8. **Desenvolvimento:**
+  Espaçamento: $E = 0{,}45 / 0{,}05 = \mathbf{9{,}00\text{ m}}$.
+  Número de paliçadas: $n = 36{,}0 / 9{,}00 = \mathbf{4\text{ paliçadas}}$.
+  Volume por paliçada: $V_1 = 0{,}5 \times 9{,}00 \times 0{,}45 \times 1{,}80 = 3{,}645\text{ m}^3$.
+  Volume total: $V_{\text{total}} = 4 \times 3{,}645 = 14{,}58\text{ m}^3$.
+  Massa retida: $M = 14{,}58 \times 1{,}40 = \mathbf{20{,}412\text{ t}}$ ($\approx 20{,}41\text{ t}$).
+9. **Desenvolvimento:**
+  Área com $8%$ de sobreposição: $A_{\text{ef}} = 2.500 \times 1{,}08 = 2.700\text{ m}^2$.
+  Rolos necessários: $2.700 / 60 = \mathbf{45\text{ rolos}}$.
+10. **Desenvolvimento:**
+  Estacas plantadas: $600 / 0{,}60 = \mathbf{1.000\text{ estacas}}$.
+  Plantas estabelecidas ($80%$ de sobrevivência): $1.000 \times 0{,}80 = \mathbf{800\text{ plantas vivas}}$.
+11. **Gabarito: (C).** O termo $c_r$ expressa a coesão aparente adicional conferida pela resistência à tração das raízes que cruzam o plano de cisalhamento.
+12. **Gabarito: (C).** $E = h / S = 0{,}60 / 0{,}12 = \mathbf{5{,}00\text{ m}}$.
+13. **Gabarito: (B).** $V = \frac{1}{2} \cdot 6{,}00 \cdot 0{,}50 \cdot 2{,}40 = \mathbf{3{,}60\text{ m}^3}$.
+14. **Gabarito: (B).** O sisal é cultura tradicional no Semiárido Baiano, possui resistência adequada para proteção contra o salpicamento e permite a germinação e o desenvolvimento vegetal através de sua trama aberta.
+15. **Gabarito: (D).** Soluções de bioengenharia aumentam sua resistência ao longo do tempo com o desenvolvimento radicular, preservam a permeabilidade hidráulica e reconstituem a função ecológica da margem.
+
+:::
+
+::: {.callout-note collapse=\"true\"}
+## Resoluções Completas — Questões ENADE e Concursos (1 a 3)
+
+1. **Gabarito: (C).** As afirmações I e II descrevem corretamente os mecanismos protetores de biomantas e paliçadas permeáveis. A afirmação III é incorreta porque obras de bioengenharia devem ser integradas a dispositivos de drenagem disciplinada da pista (valetas, bacias de contenção ou descidas d'água), e não dispensá-los.
+2. **Gabarito: (B).** A vegetação ripária eleva a resistência ao cisalhamento por dois caminhos simultâneos previstos na equação: aumenta a parcela coesiva via reforço radicular ($c_r$) e reduz a poropressão ($u$) via evapotranspiração e melhoria da estrutura drenante, elevando $\sigma' = \sigma - u$.
+3. **Gabarito: (B).** Espaçamento: $E = 0{,}60 / 0{,}10 = 6{,}0\text{ m}$. Número de paliçadas: $n = 60{,}0 / 6{,}0 = \mathbf{10}$. Volume por paliçada: $V_1 = 0{,}5 \times 6{,}0 \times 0{,}60 \times 2{,}0 = 3{,}6\text{ m}^3$. Volume total: $10 \times 3{,}6 = \mathbf{36{,}0\text{ m}^3}$.
+
+:::
+
+::: {.callout-note}
+## Etapa 9 — Resumo do capítulo e síntese conceitual
+
+- **Princípio da Bioengenharia (Gray; Sotir, 1996; Durlo; Sutili, 2005):** integrar materiais inertes biodegradáveis (proteção imediata) e plantas vivas (reforço estrutural crescente e autossustentável).
+- **Equação de Mohr--Coulomb vegetada:** $\tau = (c' + c_r) + \sigma'\tan\phi'$, somando o reforço por tração radicular ($c_r$) aos efeitos hidrológicos de interceptação, rugosidade, infiltração e evapotranspiração.
+- **Paliçadas permeáveis:** dissipam energia sem impermeabilizar o leito; dimensionadas por $E = h/S$ e $V = \frac{1}{2}\cdot L_m \cdot h \cdot b$.
+- **Coberturas e comparação técnica:** biomantas de sisal, coco, taboa e juta protegem contra o salpicamento e retêm umidade; frente às obras cinzas rígidas, a bioengenharia apresenta menor custo, maior permeabilidade e integração ecológica direta a PRADs.
+
+:::
+
+::: {.callout-important}
+## Etapa 10 — Teste de aprendizagem (Checkpoint)
+
+Avalie cada afirmação com **V** (Verdadeiro) ou **F** (Falso) antes de conferir o gabarito abaixo:
+
+1. (   ) Na equação $\tau = (c' + c_r) + \sigma'\tan\phi'$, o reforço radicular $c_r$ eleva a resistência ao cisalhamento do solo superficial ao atuar sob tração no plano de ruptura.
+2. (   ) Paliçadas permeáveis devem ser construídas com paredes totalmente estanques e sem frestas, de modo a impedir qualquer passagem de água para jusante.
+3. (   ) Quanto maior a declividade longitudinal $S$ da ravina para uma mesma altura útil $h$, menor deve ser o espaçamento $E$ entre paliçadas consecutivas.
+4. (   ) A fibra de coco decompõe-se lentamente devido ao alto teor de lignina, sendo indicada para taludes que exigem proteção prolongada até a consolidação da vegetação.
+
+{\footnotesize**Gabarito do Checkpoint:** 1-**V**  |  2-**F**\ (a permeabilidade é essencial para aliviar o empuxo hidrostático e reter apenas os sedimentos)  |  3-**V**\ (como $E = h/S$, maior $S$ resulta em menor $E$)  |  4-**V**.}
+
+:::

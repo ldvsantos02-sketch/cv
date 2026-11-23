@@ -28,17 +28,12 @@ Este capítulo integra todos os módulos da disciplina CHF662 em um roteiro úni
 \etapa{3}{Guia Operacional do Trabalho Prático Final (Semana 16: 5,0 Pontos)}
 
 \begin{boxSimbolo}[Vocabulário Técnico e Símbolos do Capítulo 15]
-\begin{itemize}[leftmargin=1.4em, itemsep=2.5pt]
-  \item \textbf{Recorte Espacial ($A_{\text{rec}}$):} unidade territorial delimitada para o diagnóstico (preferencialmente microbacia hidrográfica, sub-bacia, vertente completa ou trecho de APP/área degradada).
-  \item \textbf{SIRGAS 2000:} Sistema de Referência Geocêntrico para as Américas, datum geodésico oficial do Brasil, obrigatório nos projetos em QGIS e nos mapas finais.
-  \item $A_{\min}$: \textbf{área mínima mapeável} no terreno correspondente a $4\text{ mm}^2$ no mapa impresso ($A_{\min} = 4 \times 10^{-6} \cdot E^2\text{ m}^2$, onde $E$ é o denominador da escala $1:E$).
-  \item \textbf{Matriz de Indicadores:} tabela analítica que cruza Pressão, Estado, Impacto e Resposta (PEIR) com atributos de qualidade do solo ($IQS$) e fragilidade emergente ($FE$).
-  \item $IPI$: \textbf{Índice Composto de Priorização de Intervenção} (adimensional entre $0$ e $1$), usado para ranquear setores críticos na alocação de bioengenharia e PRAD.
-  \item $CE$: \textbf{Custo-Efetividade} de uma intervenção ($\text{t}\cdot\text{ano}^{-1}$ de sedimentos retidos por $\reais{1.000,00}$ investidos).
-\end{itemize}
+Para padronizar a comunicação técnica do Trabalho Prático Final, o \textbf{Recorte Espacial ($A_{\text{rec}}$)} designa a unidade territorial delimitada para o diagnóstico, correspondendo preferencialmente a uma microbacia hidrográfica, sub-bacia, vertente completa ou trecho de APP e área degradada. Todos os projetos em QGIS e os mapas finais devem adotar o \textbf{SIRGAS 2000} (Sistema de Referência Geocêntrico para as Américas), datum geodésico oficial do Brasil. Na definição da escala cartográfica, $A_{\min}$ indica a \textbf{área mínima mapeável} no terreno correspondente a $4\text{ mm}^2$ no mapa impresso, calculada por $A_{\min} = 4 \times 10^{-6} \cdot E^2\text{ m}^2$, em que $E$ é o denominador da escala $1:E$.
+
+Na etapa de síntese quantitativa, a \textbf{Matriz de Indicadores} organiza os dados cruzando Pressão, Estado, Impacto e Resposta (PEIR) com atributos de qualidade do solo ($IQS$) e fragilidade emergente ($FE$). Desse cruzamento deriva-se o \textbf{Índice Composto de Priorização de Intervenção ($IPI$)}, parâmetro adimensional entre $0$ e $1$ empregado para ranquear setores críticos na alocação de bioengenharia e PRAD, enquanto $CE$ representa o \textbf{Custo-Efetividade} de uma intervenção, medido em $\text{t}\cdot\text{ano}^{-1}$ de sedimentos retidos por $\reais{1.000,00}$ investidos.
 \end{boxSimbolo}
 
-O Trabalho Prático Final da disciplina CHF662 representa $50\%$ da avaliação semestral ($5{,}0$ pontos) e simula a entrega de um diagnóstico técnico profissional em Análise Ambiental. Conforme ilustra a Figura~\ref{fig:fluxo_diagnostico_final}, o fluxo metodológico articula sete etapas encadeadas, da delimitação espacial à socialização dos resultados.
+O Trabalho Prático Final da disciplina CHF662 representa $50\%$ da avaliação semestral ($5{,}0$ pontos) e simula a entrega de um diagnóstico técnico profissional em Análise Ambiental. Conforme ilustra a Figura~\ref{fig:fluxo_diagnostico_final}, o fluxo metodológico articula sete etapas encadeadas, partindo da delimitação espacial e do levantamento de bases abertas até a matriz de indicadores, os produtos cartográficos, a proposta de intervenção e a socialização dos resultados.
 
 \begin{figure}[H]
   \centering
@@ -49,18 +44,13 @@ O Trabalho Prático Final da disciplina CHF662 representa $50\%$ da avaliação 
 
 \section{Etapa 1: Escolha e Delimitação do Recorte Espacial}
 
-A escolha da área de estudo deve equilibrar \textbf{relevância socioambiental} e \textbf{viabilidade de levantamento} no prazo semestral (IBGE, 2018; Cavalcanti, 2006). O recorte pode ser:
-\begin{enumerate}[leftmargin=1.8em, itemsep=2.5pt]
-  \item \textbf{Microbacia hidrográfica:} unidade preferencial por integrar divisores de água, rede de drenagem, conectividade hidrossedimentológica e uso da terra (área sugerida entre $1\text{ km}^2$ e $50\text{ km}^2$).
-  \item \textbf{Encosta ou vertente representativa:} indicada quando o foco recai sobre processos erosivos lineares (sulcos, ravinas, voçorocas) ou movimentos de massa em áreas urbanas e rurais.
-  \item \textbf{Margem de curso d'água, APP ou área degradada pontual:} adequada para diagnósticos de passivo florestal (Lei nº 12.651/2012), assoreamento de açudes, antigas cascalheiras ou acessos de empreendimentos energéticos (como observado no campo do Semiárido).
-\end{enumerate}
+A escolha da área de estudo deve equilibrar \textbf{relevância socioambiental} e \textbf{viabilidade de levantamento} no prazo semestral (IBGE, 2018; Cavalcanti, 2006). Entre as possibilidades de recorte, a \textbf{microbacia hidrográfica} constitui a unidade preferencial por integrar divisores de água, rede de drenagem, conectividade hidrossedimentológica e uso da terra, recomendando-se áreas entre $1\text{ km}^2$ e $50\text{ km}^2$. Quando o foco recai sobre processos erosivos lineares (sulcos, ravinas e voçorocas) ou movimentos de massa em áreas urbanas e rurais, a delimitação pode concentrar-se em uma \textbf{encosta ou vertente representativa}. De modo complementar, diagnósticos voltados a passivo florestal (Lei nº 12.651/2012), assoreamento de açudes, antigas cascalheiras ou acessos de empreendimentos energéticos (como observado no campo do Semiárido) ajustam-se bem ao recorte de uma \textbf{margem de curso d'água, APP ou área degradada pontual}.
 
-A delimitação deve ser vetorizada em polígono fechado no QGIS (formato GeoPackage `.gpkg` ou Shapefile `.shp`), com justificativa clara dos critérios naturais (divisores topográficos) ou legais/administrativos (limites de APP ou poligonal de empreendimento) adotados.
+Qualquer que seja o recorte selecionado, a delimitação deve ser vetorizada em polígono fechado no QGIS (formato GeoPackage `.gpkg` ou Shapefile `.shp`), acompanhada de justificativa clara dos critérios naturais (divisores topográficos) ou legais e administrativos (limites de APP ou poligonal de empreendimento) adotados.
 
 \section{Etapa 2: Levantamento de Bases Cartográficas e Dados Abertos}
 
-Todo diagnóstico ambiental auditável depende de fontes públicas rastreáveis, organizadas em um banco geográfico padronizado em \textbf{SIRGAS 2000} (coordenadas geográficas para abrangência regional ou projeção UTM, fuso 24S para a maior parte da Bahia, para cálculos de área e comprimento):
+Todo diagnóstico ambiental auditável depende de fontes públicas rastreáveis, organizadas em um banco geográfico padronizado em \textbf{SIRGAS 2000}, adotando-se coordenadas geográficas para contextualização regional e projeção UTM (fuso 24S para a maior parte da Bahia) nos cálculos de área e comprimento. As plataformas oficiais e suas aplicações diretas no trabalho final estão sistematizadas na tabela a seguir.
 
 \begin{center}
 \renewcommand{\arraystretch}{1.22}
@@ -83,38 +73,22 @@ Todo diagnóstico ambiental auditável depende de fontes públicas rastreáveis,
 
 \section{Etapa 3: Caracterização Integrada Físico-Biótica e Socioespacial}
 
-Seguindo a abordagem sistêmica de Cavalcanti (2006) e IBGE (2018), o texto diagnóstico não deve apresentar compartimentos isolados (clima, solo, vegetação e sociedade em blocos desconexos), mas explicar suas \textbf{interações causais}:
-\begin{itemize}[leftmargin=1.5em, itemsep=2.5pt]
-  \item \textbf{Meio físico-biótico:} articular regime pluviométrico (concentração sazonal das chuvas), compartimentos do relevo (topo, meia encosta, sopé e planície), classes de solo (espessura, textura e suscetibilidade erosiva) e fisionomia vegetal remanescente (Caatinga, Mata Atlântica, Cerrado ou vegetação ripária).
-  \item \textbf{Dinâmica socioespacial:} relacionar formas de uso e ocupação da terra (pecuária extensiva, agricultura de sequeiro, expansão urbana, infraestrutura energética ou mineração), estrutura fundiária, pressões sobre os recursos hídricos e percepção/vulnerabilidade das comunidades locais.
-\end{itemize}
+Seguindo a abordagem sistêmica de Cavalcanti (2006) e IBGE (2018), o texto diagnóstico articula os compartimentos naturais e sociais explicando suas \textbf{interações causais}. No âmbito do \textbf{meio físico-biótico}, essa leitura integrada relaciona o regime pluviométrico (especialmente a concentração sazonal das chuvas), os compartimentos do relevo (topo, meia encosta, sopé e planície), as classes de solo (espessura, textura e suscetibilidade erosiva) e a fisionomia vegetal remanescente (Caatinga, Mata Atlântica, Cerrado ou vegetação ripária). Em conexão direta com essa base física, a análise da \textbf{dinâmica socioespacial} associa as formas de uso e ocupação da terra (pecuária extensiva, agricultura de sequeiro, expansão urbana, infraestrutura energética ou mineração) à estrutura fundiária, às pressões sobre os recursos hídricos e à percepção e vulnerabilidade das comunidades locais.
 
 \section{Etapa 4: Identificação e Mapeamento de Processos de Degradação}
 
-Com apoio de imagens de alta resolução (Google/Bing/CBERS-4A no QGIS) e, quando viável, verificação de campo com registro fotográfico georreferenciado e escala métrica, devem ser inventariados os processos ativos:
-\begin{enumerate}[leftmargin=1.8em, itemsep=2pt]
-  \item \textbf{Erosão hídrica:} selamento superficial, erosão laminar, sulcos ($<0{,}5\text{ m}$), ravinas ($>0{,}5\text{ m}$) e voçorocas (com eventual exfiltração e \textit{piping}).
-  \item \textbf{Degradação física do solo:} compactação em trilhas, estradas não pavimentadas e áreas de pisoteio intenso.
-  \item \textbf{Degradação ripária e fluvial:} supressão de mata ciliar em APPs, solapamento de margens e assoreamento de córregos, barreiros ou açudes.
-  \item \textbf{Passivos de resíduos ou contaminação:} disposição irregular de resíduos sólidos, efluentes domésticos ou rejeitos minerários sem contenção.
-\end{enumerate}
+Com apoio de imagens de alta resolução (Google, Bing ou CBERS-4A no QGIS) e, quando viável, verificação de campo com registro fotográfico georreferenciado e escala métrica, realiza-se o inventário espacial dos processos ativos na área de estudo. A investigação abrange inicialmente os processos de \textbf{erosão hídrica}, identificando áreas com selamento superficial, erosão laminar, sulcos ($<0{,}5\text{ m}$), ravinas ($>0{,}5\text{ m}$) e voçorocas (com eventual exfiltração e \textit{piping}). Em paralelo, mapeiam-se a \textbf{degradação física do solo} decorrente da compactação em trilhas, estradas não pavimentadas e áreas de pisoteio intenso, bem como a \textbf{degradação ripária e fluvial}, expressa pela supressão de mata ciliar em APPs, pelo solapamento de margens e pelo assoreamento de córregos, barreiros ou açudes. Quando presentes no recorte, incluem-se ainda os \textbf{passivos de resíduos ou contaminação}, como disposição irregular de resíduos sólidos, efluentes domésticos ou rejeitos minerários sem contenção.
 
 \section{Etapa 5: Montagem da Matriz de Indicadores e Índice de Priorização}
 
-Para evitar diagnósticos puramente descritivos, o Trabalho Prático Final exige uma \textbf{Matriz de Indicadores} que integre o modelo \textbf{PEIR} (Capítulo 10), os atributos de \textbf{Qualidade do Solo} (Capítulo 11) e a \textbf{Fragilidade Emergente de Ross} (Capítulo 9). Quando houver múltiplos setores ou subunidades na área de estudo, aplica-se o Índice Composto de Priorização de Intervenção ($IPI$) para hierarquizar onde agir primeiro.
+Para conferir rigor analítico e evitar diagnósticos puramente descritivos, o Trabalho Prático Final exige uma \textbf{Matriz de Indicadores} que integre o modelo \textbf{PEIR} (Capítulo 10), os atributos de \textbf{Qualidade do Solo} (Capítulo 11) e a \textbf{Fragilidade Emergente de Ross} (Capítulo 9). Quando houver múltiplos setores ou subunidades na área de estudo, aplica-se o Índice Composto de Priorização de Intervenção ($IPI$) para hierarquizar onde agir primeiro.
 
 \begin{boxFormula}[Índice Composto de Priorização de Intervenção ($IPI$)]
-Para cada setor homogêneo avaliado na área de estudo, o Índice Composto de Priorização de Intervenção ($IPI \in [0,\,1]$) combina três dimensões normalizadas:
+Para cada setor homogêneo avaliado na área de estudo, o Índice Composto de Priorização de Intervenção ($IPI \in [0,\,1]$) combina três dimensões normalizadas por meio da soma ponderada:
 \[
 IPI = w_F \cdot F_{\text{norm}} + w_S \cdot (1 - IQS) + w_P \cdot P_{\text{norm}}
 \]
-em que:
-\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
-  \item $F_{\text{norm}} = \dfrac{FE - 1}{4}$: \textbf{Fragilidade Emergente de Ross normalizada} ($FE \in \{1, 2, 3, 4, 5\}$ convertida para a escala $[0,\,1]$; logo $FE=1 \Rightarrow 0{,}00$ e $FE=5 \Rightarrow 1{,}00$).
-  \item $(1 - IQS)$: \textbf{Déficit de Qualidade do Solo}, obtido a partir do Índice de Qualidade do Solo ($IQS \in [0,\,1]$; quanto menor o $IQS$, maior o déficit edáfico).
-  \item $P_{\text{norm}} \in [0,\,1]$: \textbf{Pressão/Impacto Antrópico normalizado} na matriz PEIR (por exemplo, razão entre a densidade de focos erosivos ou o déficit de APP do setor e o valor crítico de referência).
-  \item $w_F, w_S, w_P$: pesos técnicos atribuídos conforme o objetivo do diagnóstico ($w_F + w_S + w_P = 1{,}00$; padrão sugerido na apostila: $w_F = 0{,}35$, $w_S = 0{,}35$ e $w_P = 0{,}30$).
-\end{itemize}
+Nessa equação, $F_{\text{norm}} = \dfrac{FE - 1}{4}$ expressa a \textbf{Fragilidade Emergente de Ross normalizada}, convertendo a escala ordinal $FE \in \{1, 2, 3, 4, 5\}$ para o intervalo $[0,\,1]$, de modo que $FE=1$ resulta em $0{,}00$ e $FE=5$ equivale a $1{,}00$. O termo $(1 - IQS)$ traduz o \textbf{Déficit de Qualidade do Solo} a partir do Índice de Qualidade do Solo ($IQS \in [0,\,1]$), aumentando à medida que a condição edáfica se degrada. Por sua vez, $P_{\text{norm}} \in [0,\,1]$ representa a \textbf{Pressão ou Impacto Antrópico normalizado} na matriz PEIR, calculado, por exemplo, pela razão entre a densidade de focos erosivos ou o déficit de APP do setor e o valor crítico de referência. Os coeficientes $w_F, w_S, w_P$ correspondem aos pesos técnicos atribuídos conforme o objetivo do diagnóstico, respeitando $w_F + w_S + w_P = 1{,}00$, com padrão sugerido na apostila de $w_F = 0{,}35$, $w_S = 0{,}35$ e $w_P = 0{,}30$.
 
 \textbf{Faixas Operacionais de Priorização:}
 \begin{center}
@@ -152,16 +126,13 @@ em que:
 
 \section{Etapa 6: Produtos Técnicos Obrigatórios e Proposta de Intervenção}
 
-O trabalho entregue deve conter três produtos técnicos articulados:
-\begin{enumerate}[leftmargin=1.8em, itemsep=2.5pt]
-  \item \textbf{Conjunto de Mapas Temáticos (mínimo de 3 mapas):} (a) Mapa de Localização e Delimitação do Recorte Espacial; (b) Mapa de Uso e Cobertura da Terra / APPs; e (c) Mapa de Fragilidade Ambiental e Pontos de Degradação. Todos devem conter os \textbf{seis elementos cartográficos obrigatórios}: título informativo, orientação (seta Norte), escala gráfica e numérica, grade de coordenadas com indicação do datum (\textbf{SIRGAS 2000}), legenda legível e quadro de fontes/autoria.
-  \item \textbf{Relatório Técnico Interpretativo:} texto estruturado com introdução e objetivos, localização e métodos, resultados integrados (com tabelas, gráficos e matriz de indicadores) e discussão crítica apoiada na bibliografia da disciplina.
-  \item \textbf{Proposta Preliminar de Conservação, Bioengenharia ou PRAD:} conjunto de medidas vinculadas diretamente aos indicadores diagnosticados (Vital et al., 2020), especificando técnica selecionada (paliçadas, biomantas, plantio em contorno, isolamento de APP, espécies nativas), cronograma físico simplificado e metas mensuráveis de monitoramento pós-implantação (ex.: taxa de sobrevivência $\ge 80\%$, redução de recuo de borda).
-\end{enumerate}
+O trabalho entregue deve conter três produtos técnicos articulados entre si. O primeiro produto consiste no \textbf{conjunto de mapas temáticos}, composto por no mínimo três cartas principais, sendo elas o Mapa de Localização e Delimitação do Recorte Espacial, o Mapa de Uso e Cobertura da Terra e APPs, e o Mapa de Fragilidade Ambiental e Pontos de Degradação; todos os layouts devem apresentar os \textbf{seis elementos cartográficos obrigatórios} (título informativo, orientação com seta Norte, escala gráfica e numérica, grade de coordenadas com indicação do datum \textbf{SIRGAS 2000}, legenda legível e quadro de fontes e autoria).
+
+O segundo produto corresponde ao \textbf{relatório técnico interpretativo}, redigido de forma estruturada com introdução e objetivos, localização e métodos, resultados integrados (apoiados em tabelas, gráficos e matriz de indicadores) e discussão crítica fundamentada na bibliografia da disciplina. Articulando-se diretamente a esse diagnóstico, o terceiro produto reúne a \textbf{proposta preliminar de conservação, bioengenharia ou PRAD}, vinculando cada medida aos indicadores críticos diagnosticados (Vital et al., 2020) mediante especificação das técnicas selecionadas (paliçadas, biomantas, plantio em contorno, isolamento de APP e espécies nativas), cronograma físico simplificado e metas mensuráveis de monitoramento pós-implantação, como taxa de sobrevivência $\ge 80\%$ e redução do recuo de borda erosiva.
 
 \section{Etapa 7: Checklist de Entrega e Rubrica Oficial de Avaliação (5,0 Pontos)}
 
-Na Semana 16, o trabalho é entregue e socializado em apresentação oral breve. Utilize a rubrica oficial abaixo para auditar seu projeto antes da submissão final:
+Na Semana 16, o trabalho é entregue e socializado em apresentação oral breve. Utilize a rubrica oficial apresentada a seguir para auditar seu projeto antes da submissão final.
 
 \begin{center}
 \renewcommand{\arraystretch}{1.22}

@@ -31,7 +31,7 @@ Na prática da Análise Ambiental contemporânea, conforme destacam Sánchez (20
 
 ## Aspecto Ambiental vs. Impacto Ambiental e Classificação de Impactos
 
-Um dos avanços conceituais mais importantes da gestão ambiental moderna, consolidado pela norma ABNT NBR ISO 14001 e sistematizado por Sánchez (2013), é a separação rigorosa entre **atividade**, **aspecto ambiental** e **impacto ambiental**, organizados em uma **cadeia de causa e efeito** (@fig-aspecto-risco, Painel esquerdo),
+Um dos avanços conceituais mais importantes da gestão ambiental moderna, consolidado pela norma ABNT NBR ISO 14001 e sistematizado por Sánchez (2013), é a separação rigorosa entre **atividade**, **aspecto ambiental** e **impacto ambiental**, organizados em uma **cadeia de causa e efeito** (@fig-aspecto-risco, Subfigura (a)),
 
 **Atividade humana (causa geradora).** Ação, obra, processo produtivo ou serviço executado pela sociedade (por exemplo, abertura de estrada em encosta, operação de laticínio, terraplanagem de parque eólico, implantação de estação de tratamento de esgoto). **Aspecto ambiental (mecanismo de interação).** Elemento das atividades, produtos ou serviços de uma organização que pode interagir com o meio ambiente (por exemplo, supressão da cobertura vegetal e exposição do solo à chuva, lançamento de efluente líquido com carga orgânica, emissão de poeira, captação de água subterrânea).
 
@@ -69,14 +69,14 @@ Quatro conceitos frequentemente confundidos em relatórios técnicos precisam se
 
 **Fragilidade Ambiental.** Propriedade física e ecológica de um ambiente (ou unidade de paisagem) de sofrer desestabilização frente a processos morfodinâmicos e intervenções humanas, em função da interação entre declividade, solo, litologia, clima e cobertura vegetal (conceito que será formalizado matematicamente no Cap. 9 com a metodologia de Ross, 1994). A fragilidade existe *mesmo quando não há ocupação humana*. **Risco Ambiental ($R$).** Expectativa de perdas ou danos resultante da combinação (interseção) entre um **perigo ($P$)** e um sistema **vulnerável ($V$)**. Se uma vertente muito íngreme de rocha fraturada apresenta alta fragilidade e perigo de queda de blocos ($P = 4$), mas está em área desabitada sem estradas nem infraestrutura ($V = 0$), existe perigo e fragilidade, mas não existe risco socioambiental humano. O risco nasce da exposição de elementos vulneráveis à ameaça.
 
-![Conceitos operacionais centrais da Análise Ambiental. **Painel esquerdo.** Cadeia causal Atividade Humana $\rightarrow$ Aspecto Ambiental $\rightarrow$ Impacto Ambiental segundo Sánchez (2013), destacando a diferença entre mecanismo de interação (aspecto) e alteração na qualidade ambiental (impacto). **Painel direito,** Matriz Conceitual de Risco Ambiental ($R = P \times V$) em escala ordinal $4 \times 4$, combinando níveis de Perigo/Ameaça ($P$) e Vulnerabilidade ($V$) em quatro classes operacionais (Baixo, Médio, Alto e Crítico).](../img/fig02_aspecto_impacto_risco.png "fig:"){#fig-aspecto-risco}
+![Conceitos operacionais centrais da Análise Ambiental. **Subfigura (a).** Cadeia causal Atividade Humana $\rightarrow$ Aspecto Ambiental $\rightarrow$ Impacto Ambiental segundo Sánchez (2013), destacando a diferença entre mecanismo de interação (aspecto) e alteração na qualidade ambiental (impacto). **Subfigura (b),** Matriz Conceitual de Risco Ambiental ($R = P \times V$) em escala ordinal $4 \times 4$, combinando níveis de Perigo/Ameaça ($P$) e Vulnerabilidade ($V$) em quatro classes operacionais (Baixo, Médio, Alto e Crítico).](../img/fig02_aspecto_impacto_risco.png "fig:"){#fig-aspecto-risco}
 
 ## Equação e Matriz Conceitual do Risco Ambiental ($R = P \times V$)
 
 ![**Figura 4.2:** Distinção operacional entre fragilidade física, perigo, vulnerabilidade e risco ($R = P \times V$). *O que observar:* ambas as encostas possuem a mesma declividade de 38% e solo raso, porém na Vertente 1 a ausência de exposição humana zera o risco ($V = 0 \Rightarrow R = 0$). Na Vertente 2, o desmatamento e a ocupação na base elevam o perigo e a vulnerabilidade, convertendo a fragilidade em risco crítico ($R = 16$). Fonte: Elaboração didática CHF662.](../img/fig_cap04_risco_vs_fragilidade.png){#fig-risco_vs_fragilidade}
 
 
-Na análise semiquantitativa de riscos socioambientais (alinhada ao Painel direito da @fig-aspecto-risco), o índice de risco ambiental $R$ é obtido pelo produto do nível de **Perigo / Ameaça ($P$)** pelo nível de **Vulnerabilidade ($V$)**,
+Na análise semiquantitativa de riscos socioambientais (alinhada ao Subfigura (b) da @fig-aspecto-risco), o índice de risco ambiental $R$ é obtido pelo produto do nível de **Perigo / Ameaça ($P$)** pelo nível de **Vulnerabilidade ($V$)**,
 
 $$
 

@@ -36,9 +36,9 @@ a escolha entre **alternativas locacionais** (onde instalar o empreendimento, ev
 
 ## Etapas do Processo de Avaliação de Impacto Ambiental
 
-A literatura internacional e os manuais brasileiros de referência (Sánchez, 2013; Brasil/MMA, 2016) organizam a AIA em um encadeamento lógico e iterativo de etapas, sintetizado no Painel A da @fig-aia_mitigacao. Cada etapa condiciona a qualidade da etapa seguinte.
+A literatura internacional e os manuais brasileiros de referência (Sánchez, 2013; Brasil/MMA, 2016) organizam a AIA em um encadeamento lógico e iterativo de etapas, sintetizado no (a) da @fig-aia_mitigacao. Cada etapa condiciona a qualidade da etapa seguinte.
 
-![Fluxo metodológico completo da Avaliação de Impacto Ambiental (Painel A) e ordem de prioridade técnica da Hierarquia de Mitigação (Painel B). Fonte, elaboração didática da disciplina CHF662 com base em Sánchez (2013) e Brasil/MMA (2016).](../img/fig03_etapas_aia_mitigacao.png "fig:"){#fig-aia_mitigacao}
+![Fluxo metodológico completo da Avaliação de Impacto Ambiental ((a)) e ordem de prioridade técnica da Hierarquia de Mitigação ((b)). Fonte, elaboração didática da disciplina CHF662 com base em Sánchez (2013) e Brasil/MMA (2016).](../img/fig03_etapas_aia_mitigacao.png "fig:"){#fig-aia_mitigacao}
 
 ### 1. Triagem (*Screening*)
 
@@ -76,7 +76,7 @@ O diagnóstico exige a delimitação cartográfica rigorosa das três **Áreas d
 | **AID** (Área de Influência Direta) | Espaço que sofre impactos diretos (primários) decorrentes da implantação e operação, geralmente definido pela microbacia, mancha de ruído ou raio de dispersão de poeira/fauna. | Microbacia drenada pelos acessos do parque eólico, áreas de afugentamento de avifauna e povoados lindeiros sujeitos a poeira e ruído. |
 | **AII** (Área de Influência Indireta) | Espaço alcançado por impactos secundários ou indiretos (econômicos, demográficos, viários ou sobre a bacia hidrográfica regional). | Municípios afetados pelo aumento de arrecadação, demanda por serviços urbanos, tráfego pesado e sub-bacia regional. |
 
-![**Figura 5.2:** Delimitação técnica das Áreas de Influência (ADA, AID e AII) em bacia hidrográfica. *O que observar:* o painel esquerdo mostra o erro metodológico de traçar círculos concêntricos arbitrários, ignorando o sentido do escoamento. O painel direito demonstra o critério geográfico correto, no qual a AID física acompanha os divisores topográficos e a rede de drenagem a jusante da ADA. Fonte: Elaboração didática CHF662 com base em Sánchez (2013).](../img/fig_cap05_areas_influencia.png){#fig-areas_influencia}
+![**Figura 5.2:** Delimitação técnica das Áreas de Influência (ADA, AID e AII) em bacia hidrográfica. *O que observar:* em (a), o traçado de círculos concêntricos arbitrários desconsidera o sentido do escoamento; em (b), o critério geográfico correto delimita a AID física pelos divisores topográficos e pela rede de drenagem a jusante da ADA. Fonte: Elaboração didática CHF662 com base em Sánchez (2013).](../img/fig_cap05_areas_influencia.png){#fig-areas_influencia}
 
 
 ### 4. Identificação, Previsão e Valoração de Impactos
@@ -146,7 +146,9 @@ $$
 
 Célula $(F_1, A_1)$, impacto adverso ($s=-1$), alta intensidade física ($M=8$) em solo frágil de encosta ($I=9$) $\implies P_{11} = -1 \times (8 \times 9) = -72$. Célula $(F_2, A_1)$, pequeno efeito positivo temporário de pagamento pela limpeza ($s=+1$, $M=2$, $I=3$) $\implies P_{21} = +1 \times (2 \times 3) = +6$. Célula $(F_1, A_2)$, a contratação em si não altera fisicamente o solo $\implies P_{12} = 0$. Célula $(F_2, A_2)$, impacto benéfico relevante ($s=+1$, $M=6$, $I=7$) $\implies P_{22} = +1 \times (6 \times 7) = +42$. **Somas das ações (colunas),** $T_1 = -72 + 6 = -66$ (ação fortemente adversa); $T_2 = 0 + 42 = +42$. **Somas dos fatores (linhas),** $F_1 = -72 + 0 = -72$ (fator crítico que exige mitigação prioritária); $F_2 = +6 + 42 = +48$.
 
-**Balanço e alerta metodológico,** $\Sigma^{-} = -72$, $\Sigma^{+} = +48$ e balanço líquido $B = -72 + 48 = -24$. *Atenção,* a soma positiva em renda ($+48$) **nunca** elimina fisicamente a erosão do solo ($-72$); por isso, a decisão técnica exige analisar sempre $\Sigma^{-}$, $\Sigma^{+}$ e as células críticas individuais, nunca apenas o saldo líquido $B$.
+**Balanço e alerta metodológico,** $\Sigma^{-} = -72$, $\Sigma^{+} = +48$ e balanço líquido $B = -72 + 48 = -24$. *Atenção,* a soma positiva em renda ($+48$) **nunca** elimina fisicamente a erosão do solo ($-72$); por isso, a decisão técnica exige analisar sempre $\Sigma^{-}$, $\Sigma^{+}$ e as células críticas individuais, nunca apenas o saldo líquido $B$. A @fig-matriz_leopold_excel exemplifica a aplicação operacional dessa matriz na planilha eletrônica da disciplina.
+
+![**Figura 5.4:** Exemplo visual da Matriz de Leopold Ponderada na planilha eletrônica da disciplina. *O que observar:* as células em vermelho indicam impactos adversos e as células em verde destacam impactos positivos, com cálculo automático dos totais por ação e por fator ambiental. Fonte: Planilha didática `matriz_leopold_aia.xlsx` (CHF662).](../img/fig_cap05_matriz_leopold_excel.png){#fig-matriz_leopold_excel}
 
 ### 5. Prognóstico Ambiental, Cenário com Projeto vs. Cenário sem Projeto
 
@@ -158,7 +160,7 @@ O impacto verdadeiro atribuível ao projeto corresponde à **diferença entre a 
 
 ### 6. Hierarquia de Mitigação, Medidas Mitigadoras e Compensatórias
 
-Diante dos impactos adversos identificados, o planejador ambiental não pode escolher medidas aleatoriamente ou propor compensação financeira de imediato para danos que poderiam ser evitados. A prática internacional e a legislação ambiental impõem a **Hierarquia de Mitigação**, representada no Painel B da @fig-aia_mitigacao,
+Diante dos impactos adversos identificados, o planejador ambiental não pode escolher medidas aleatoriamente ou propor compensação financeira de imediato para danos que poderiam ser evitados. A prática internacional e a legislação ambiental impõem a **Hierarquia de Mitigação**, representada no (b) da @fig-aia_mitigacao,
 
 **1º, Evitar (prevenção na origem).** Alterar a localização, o traçado, o cronograma ou a tecnologia do projeto para impedir que o impacto sequer ocorra. É o degrau de maior eficácia ecológica e, frequentemente, de menor custo global a longo prazo. **2º, Minimizar (redução de magnitude, duração ou extensão).** Quando o impacto não pode ser integralmente evitado, aplicam-se controles de engenharia e manejo para reduzir sua intensidade (filtros, bacias de contenção de sedimentos, supressão seletiva, limitação de horários de tráfego).
 

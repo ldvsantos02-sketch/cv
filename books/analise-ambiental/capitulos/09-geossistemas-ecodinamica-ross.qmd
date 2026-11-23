@@ -54,7 +54,7 @@ Enquanto Bertrand organizou a paisagem em níveis espaciais, o geomorfólogo fra
 
 **Pedogênese.** Conjunto de processos físicos, químicos e biológicos que promovem o intemperismo das rochas, a infiltração da água e a formação/espessamento dos horizontes do solo;. **Morfogênese.** Conjunto de processos erosivos, gravitacionais e de escoamento que removem partículas da superfície, rebaixam o manto de alteração e modelam o relevo.
 
-A partir dessa competição contínua, Tricart (1977) estabelece **três grandes tipos de meios ecodinâmicos** (ilustrados no Painel A da @fig-ecodinamica_ross e detalhados na Tabela (ecodinamica tricart)),
+A partir dessa competição contínua, Tricart (1977) estabelece **três grandes tipos de meios ecodinâmicos** (ilustrados no (a) da @fig-ecodinamica_ross e detalhados na Tabela (ecodinamica tricart)),
 
 
 | **Meio Ecodinâmico** | **Balanço Morfogênese vs. Pedogênese** | **Características Típicas** | **Manejo e Fragilidade** |
@@ -65,7 +65,7 @@ A partir dessa competição contínua, Tricart (1977) estabelece **três grandes
 
 : Classificação ecodinâmica dos ambientes segundo Tricart (1977) e implicações para o planejamento. {#tbl-ecodinamica_tricart}
 
-![Integração metodológica entre a Ecodinâmica de Tricart (1977), expressa pelo balanço relativo entre pedogênese e morfogênese nos três tipos de meios (Painel A), e a Matriz de Fragilidade Emergente de Ross (1994), obtida pelo cruzamento da Fragilidade Potencial com o grau de proteção do Uso da Terra (Painel B).](../img/fig07_ecodinamica_ross_matriz.png "fig:"){#fig-ecodinamica_ross}
+![Integração metodológica entre a Ecodinâmica de Tricart (1977), expressa pelo balanço relativo entre pedogênese e morfogênese nos três tipos de meios ((a)), e a Matriz de Fragilidade Emergente de Ross (1994), obtida pelo cruzamento da Fragilidade Potencial com o grau de proteção do Uso da Terra ((b)).](../img/fig07_ecodinamica_ross_matriz.png "fig:"){#fig-ecodinamica_ross}
 
 ## Análise Empírica da Fragilidade Ambiental (Ross, 1994)
 
@@ -134,7 +134,7 @@ I_{FP} = \frac{D_R + D_S + D_C}{3} \quad \xrightarrow{\text{arredondamento}} \qu
 $$
 
 
-**Passo 4, Determinação da Classe Síntese de $FE$ (1 a 5) na Matriz de Fragilidade Emergente.** Cruza-se a **Classe $FP$** (linha) com o dígito do **Uso da Terra $D_U$** (coluna) na adaptação didático-operacional da matriz de Ross (1994) e Spörl e Ross (2004) apresentada abaixo (@fig-ecodinamica_ross, Painel B). Nos casos em que $(FP + D_U)/2$ resulta em fração $0{,}5$, a matriz pondera o efeito protetor da cobertura vegetal densa ($D_U \le 2$, arredondando para baixo) em contraste com o agravamento imposto por usos antrópicos expostos ($D_U \ge 3$, arredondando para cima),
+**Passo 4, Determinação da Classe Síntese de $FE$ (1 a 5) na Matriz de Fragilidade Emergente.** Cruza-se a **Classe $FP$** (linha) com o dígito do **Uso da Terra $D_U$** (coluna) na adaptação didático-operacional da matriz de Ross (1994) e Spörl e Ross (2004) apresentada abaixo (@fig-ecodinamica_ross, (b)). Nos casos em que $(FP + D_U)/2$ resulta em fração $0{,}5$, a matriz pondera o efeito protetor da cobertura vegetal densa ($D_U \le 2$, arredondando para baixo) em contraste com o agravamento imposto por usos antrópicos expostos ($D_U \ge 3$, arredondando para cima),
 
 | **Fragilidade Potencial ($FP$)** $\backslash$ **Uso ($D_U$)** | **1 (M. Alta Prot.)** | **2 (Alta)** | **3 (Média)** | **4 (Baixa)** | **5 (Nula)** |
 |:---|:---|:---|:---|:---|:---|
@@ -191,7 +191,7 @@ A conferência em campo confronta o mapa com incisões ativas, surgências, dep�
 
 **Problema a resolver.** Classificar cada setor segundo a Ecodinâmica de Tricart (1977), explicando o balanço morfogênese vs. pedogênese.
 
-**Fundamento da análise.** Comparação dos processos dominantes com os critérios da Tabela (ecodinamica tricart) e do Painel A da @fig-ecodinamica_ross.
+**Fundamento da análise.** Comparação dos processos dominantes com os critérios da Tabela (ecodinamica tricart) e do (a) da @fig-ecodinamica_ross.
 
 **Desenvolvimento.**
 
@@ -225,7 +225,7 @@ I_{FP} = \frac{3 + 3 + 4}{3} = \frac{10}{3} \approx 3{,}33 \implies \text{Classe
 
 $$
 
-. **Fragilidade Emergente ($FE$).** Código posicional $\mathbf{3344}$. Cruzando $FP = 3$ com $D_U = 4$ na Matriz de Ross (@fig-ecodinamica_ross, Painel B) $\implies$ **Classe $FE = 4$ (Forte)**.
+. **Fragilidade Emergente ($FE$).** Código posicional $\mathbf{3344}$. Cruzando $FP = 3$ com $D_U = 4$ na Matriz de Ross (@fig-ecodinamica_ross, (b)) $\implies$ **Classe $FE = 4$ (Forte)**.
 
 **Interpretação do resultado.** Código $FP = 334$ (Classe 3, Média); Código $FE = 3344$ (Classe 4, Forte).
 
@@ -479,7 +479,7 @@ Você completou o **Módulo 3**! Na Semana 10, a Avaliação Teórica cobrará e
 
 16. **Gabarito, (B).** Bertrand (2004) concebe o geossistema como unidade territorial concreta e cartografável resultante da interação entre fatores abióticos, bióticos e antrópicos.
 
-17. **Gabarito, (A).** Na Matriz de Fragilidade Emergente de Ross (@fig-ecodinamica_ross, Painel B), $FP=4 \times D_U=1 \implies FE=2$ (Fraca), enquanto $FP=4 \times D_U=5 \implies FE=5$ (Muito Forte).
+17. **Gabarito, (A).** Na Matriz de Fragilidade Emergente de Ross (@fig-ecodinamica_ross, (b)), $FP=4 \times D_U=1 \implies FE=2$ (Fraca), enquanto $FP=4 \times D_U=5 \implies FE=5$ (Muito Forte).
 
 18. **Gabarito, (B).** Declividade acentuada ($28\%$), solo raso (Neossolo Litólico), ravinamento ativo e perda de solo caracterizam amplo predomínio da morfogênese sobre a pedogênese (Meio Fortemente Instável).
 :::

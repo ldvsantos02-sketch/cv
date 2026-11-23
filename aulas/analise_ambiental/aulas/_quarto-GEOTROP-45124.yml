@@ -1,0 +1,52 @@
+# Aulas de Análise Ambiental: template acadêmico UEFS (aulas/assets/academico).
+# Cada QMD gera as duas saídas com o mesmo conteúdo:
+#   quarto render <aula>.qmd                 -> HTML (RevealJS) + PDF (Beamer)
+#   quarto render <aula>.qmd --to revealjs   -> só HTML
+#   quarto render <aula>.qmd --to beamer     -> só PDF
+#   quarto render                            -> todas as aulas, nos dois formatos
+# No QMD de cada aula ficam apenas title, subtitle e academico.rodape.
+project:
+  type: default
+
+author: "Prof. Dr. Luiz Diego Vidal Santos"
+lang: pt-BR
+academico:
+  cabecalho:
+    - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
+    - "Departamento de Ciências Humanas e Filosofia · DCHF"
+    - "Componente curricular: Análise Ambiental · Semestre 2026.2"
+  rodape: "DCHF-UEFS · Análise Ambiental"
+  local: "Feira de Santana – Bahia"
+
+filters:
+  - ../../assets/academico/academico.lua
+
+execute:
+  echo: false
+
+format:
+  revealjs:
+    theme: ../../assets/academico/academico.scss
+    css: ../../assets/academico/academico.css
+    include-after-body:
+      - ../../assets/academico/academico.html
+      - ../../assets/image-lightbox.html
+    width: 1280
+    height: 720
+    margin: 0
+    center: false
+    slide-number: false
+    controls: false
+    progress: false
+    navigation-mode: linear
+    transition: fade
+    background-transition: none
+    touch: true
+    embed-resources: true
+    menu: false
+  beamer:
+    pdf-engine: xelatex
+    aspectratio: 169
+    classoption: [10pt, professionalfonts, t]
+    include-in-header:
+      - ../../assets/academico/beamer-academico.tex

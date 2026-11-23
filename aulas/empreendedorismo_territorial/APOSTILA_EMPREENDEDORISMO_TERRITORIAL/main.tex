@@ -1,0 +1,49 @@
+\documentclass[11pt, a4paper, oneside]{book}
+\usepackage{styles/apostila_et}
+
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{2}
+
+\begin{document}
+
+\frontmatter
+\input{sections/00_capa_e_abertura}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Sumário Pedagógico Completo}
+\tableofcontents
+
+\input{sections/01_cronograma_15_encontros}
+
+\mainmatter
+
+% --- UNIDADE I — TERRITÓRIO E ECOSSISTEMAS ---
+\input{sections/unid1_cap01}
+\input{sections/unid1_cap02}
+\input{sections/unid1_cap03}
+\input{sections/unid1_cap04}
+\input{sections/unid1_cap05}
+\input{sections/unid1_cap06}
+\input{sections/unid1_simulado}
+
+% --- UNIDADE II — PROCESSO E ESTRATÉGIA ---
+\input{sections/unid2_cap07}
+\input{sections/unid2_cap08}
+\input{sections/unid2_cap09}
+\input{sections/unid2_cap10}
+\input{sections/unid2_cap11}
+\input{sections/unid2_simulado}
+
+% --- UNIDADE III — PROJETOS E VIABILIDADE ---
+\input{sections/unid3_cap12}
+\input{sections/unid3_cap13}
+\input{sections/unid3_cap14}
+\input{sections/unid3_simulado}
+
+% --- UNIDADE IV — SÍNTESE TERRITORIAL E ENCERRAMENTO ---
+\input{sections/unid4_cap15}
+\input{sections/98_avaliacao_geral_final}
+\input{sections/99_formulario_glossario_referencias}
+
+\end{document}

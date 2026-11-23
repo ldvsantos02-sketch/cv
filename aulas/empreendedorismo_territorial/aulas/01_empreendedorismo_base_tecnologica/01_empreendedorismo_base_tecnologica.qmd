@@ -47,8 +47,8 @@ execute:
 
 - [1]{.circle} Contrato didático, ementa e avaliação (60 h)
 - [2]{.circle} Empreendedorismo de base tecnológica: conceito e especificidades
-- [3]{.circle} Schumpeter, destruição criadora e trajetórias tecnológicas
-- [4]{.circle} Por que a inovação concentra-se no espaço? Assimetrias territoriais
+- [3]{.circle} Schumpeter (*Mark I* e *II*) vs. críticas ao determinismo tecnológico e inércia (Dosi; Mazzucato)
+- [4]{.circle} Por que a inovação concentra-se no espaço? Assimetrias territoriais (Milton Santos)
 - [5]{.circle} Empreendedorismo tecnológico em regiões periféricas e no Brasil
 - [6]{.circle} Oficina inicial: mapeamento de demandas territoriais
 :::
@@ -152,6 +152,76 @@ Apresentar a estrutura do componente curricular e fundamentar teoricamente o **e
 :::
 :::
 
+## De Thomas Kuhn (1962) a Giovanni Dosi (1982): Paradigma Tecnológico {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="48%"}
+### 1. A Origem na Filosofia da Ciência (Kuhn, 1962)
+
+- Em *A Estrutura das Revoluções Científicas*, **Thomas Kuhn** mostrou que a ciência não evolui de modo linear, mas por **paradigmas** e rupturas.
+- **Ciência normal:** a comunidade científica resolve "quebra-cabeças" dentro de um modelo mental compartilhado (ex.: mecânica de Newton).
+- Quando acumulam-se anomalias insolúveis, ocorre uma **revolução científica** e nasce um novo paradigma (ex.: relatividade de Einstein e mecânica quântica).
+- **Transposição de Giovanni Dosi (1982):** engenheiros, centros de P&D e firmas inovam na economia exatamente como os cientistas de Kuhn.
+:::
+
+::: {.column width="52%"}
+### 2. A Definição de Dosi Desmontada
+
+> *"Um **modelo e padrão de solução** de problemas tecnológicos selecionados com base em **princípios da ciência natural**..."* (Dosi, 1982)
+
+| Problema Prático | Princípio da Ciência Natural Selecionado | Paradigma Tecnológico Resultante |
+|---|---|---|
+| **Transporte** | Termodinâmica da queima de hidrocarbonetos | Motor a combustão interna (gasolina/diesel) |
+| **Cálculo e Dados** | Física quântica/elétrica dos semicondutores | Microeletrônica de estado sólido (silício/transistor) |
+| **Iluminação** | Incandescência térmica $\rightarrow$ Eletroluminescência | Filamento de tungstênio $\rightarrow$ Diodo emissor de luz (LED) |
+:::
+:::
+
+## Trajetória Tecnológica, *Path Dependence* e *Lock-in* no Território {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### O Desdobramento Prático do Paradigma
+
+1. **Trajetória Tecnológica (a "ciência normal" da engenharia):**
+   - Estabelecido o paradigma, empresas passam décadas aperfeiçoando o **mesmo princípio** (ex.: injeção eletrônica e catalisadores no motor a combustão; Lei de Moore no chip de silício).
+2. **Dependência de Trajetória (*Path Dependence*) e *Lock-in*:**
+   - Refinarias, cadeias de autopeças, rodovias, currículos de engenharia e marcos regulatórios são moldados ao redor daquele paradigma.
+   - O sistema produtivo fica **aprisionado (*locked-in*)**, tornando custosa a mudança mesmo diante de crise ecológica ou obsolescência.
+:::
+
+::: {.column width="50%"}
+### Por que Isso é Decisivo no Planejamento Territorial (PLANTERR)?
+
+- Um planejador regional não pode supor que um decreto ou incentivo fiscal isolado reconverte automaticamente a economia de uma região.
+- **Inércia territorial na Bahia:** polos consolidados em torno de paradigmas maduros (como o polo petroquímico ou bacias agroindustriais convencionais) sofrem de **inércia cognitiva e dependência de trajetória**.
+- **Transição para a Bioeconomia ou Energia Renovável:** exige uma **mudança de paradigma tecnológico** — alterando a base científica, recriando competências nas universidades/ICTs e remodelando as redes locais de aprendizado.
+:::
+:::
+
+## Contraponto Crítico (Eixo 1): Limites do Modelo Schumpeteriano {.smaller-text .lesson-slide}
+
+::: {.columns}
+::: {.column width="50%"}
+### 1. Crítica ao Determinismo e à Rotinização (Dosi; Perez; Teece)
+
+- Schumpeter (*Mark II*) previu a obsolescência do empreendedor individual pela burocratização do P&D em megacorporações.
+- **Ruptura empírica:** as revoluções em TICs, biotecnologia e IA mostraram que grandes corporações sofrem de **inércia cognitiva** e aprisionamento em trajetórias estabelecidas (*path dependence*).
+- Novas firmas tecnológicas e redes abertas rompem paradigmas justamente onde o oligopólio é conservador.
+:::
+
+::: {.column width="50%"}
+### 2. O Mito do Empreendedor Privado Isolado (Mazzucato, 2014)
+
+- Confronto direto com a narrativa heroica de que o capital privado e o *venture capital* movem sozinhos a fronteira tecnológica.
+- **Evidência histórica:** o capital privado só entra quando as incertezas mais radicais já foram absorvidas por décadas de **investimento público estatal de alto risco** e capital paciente (universidades, laboratórios públicos e encomendas estatais).
+
+::: {.info-box}
+**Tensão para a AV1:** Quem assume o risco tecnológico fundacional no território e quem apropria os retornos privados?
+:::
+:::
+:::
+
 # 3 · Espaço, Assimetrias e Território {.section-header rotulo="Território"}
 
 ## Por que o Empreendedorismo Tecnológico Concentra-se no Espaço? {.smaller-text .lesson-slide}
@@ -216,10 +286,12 @@ Em duplas, escolha um **território de referência** (município, bacia ou terri
 :::
 
 ::: {.column width="50%"}
-### Leituras para a Próxima Aula
+### Leituras da Aula 01 e Próxima Aula (Eixos 1 e 2)
 
-- **PORTER, M. E.** *Estratégia competitiva* (Cap. 1: Análise Estrutural de Indústrias).
-- **PORTER, M. E.** *Clusters and the new economics of competition*. HBR, 1998.
-- **CASSIOLATO, J. E.; LASTRES, H. M. M.** *Sistemas de inovação e desenvolvimento*. São Paulo em Perspectiva, 2005.
+- **KUHN, T. S.** *A estrutura das revoluções científicas*. Perspectiva, 1962; **DOSI, G.** *Technological paradigms and technological trajectories*. Research Policy, 1982.
+- **BAILETTI, T.** *Technology entrepreneurship: overview, definition, and distinctive aspects*. TIM Review, 2012.
+- **SANTOS, M.** *A Natureza do Espaço: Técnica e Tempo, Razão e Emoção*. Hucitec, 1996.
+- **PORTER, M. E.** *Estratégia competitiva* (Cap. 1) e *Clusters and the new economics of competition* (HBR, 1998).
+- **CASSIOLATO, J. E.; LASTRES, H. M. M.** *Sistemas de inovação e desenvolvimento: as implicações de política*. São Paulo em Perspectiva, 2005.
 :::
 :::

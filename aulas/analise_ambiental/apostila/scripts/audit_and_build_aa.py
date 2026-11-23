@@ -161,10 +161,6 @@ def build_all(build_modules=True):
     print("\nCompilando APOSTILA COMPLETA CHF662 (2 passadas XeLaTeX)...")
     if not run_xelatex(os.path.join(ROOT, "main.tex"), "APOSTILA_ANALISE_AMBIENTAL_CHF662_UEFS", final_pdf):
         return False
-    # Copiar também na raiz da pasta oficial da disciplina (10 - ANALISE AMBIENTAL)
-    parent_copy = os.path.join(PARENT_DISCIPLINA, pdf_name)
-    shutil.copy2(final_pdf, parent_copy)
-    print(f"[CÓPIA NA PASTA DA DISCIPLINA] {parent_copy}")
 
     if build_modules:
         print("\nCompilando PDFs individuais por módulo...")

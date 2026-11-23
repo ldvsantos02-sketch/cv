@@ -1,592 +1,529 @@
-# Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão
+# Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão {#cap:legislacao_apps_licenciamento_prad}
 
-\noindent`TRABALHO PRÁTICO FINAL`
+A legislação ambiental estabelece instrumentos de proteção, competências e procedimentos que condicionam o uso do território. Sua aplicação exige relacionar o dispositivo legal às características da área e ao tipo de atividade. A identificação da norma, de sua versão e do órgão competente integra o trabalho técnico.
 
-::: {.callout-note}
-## Etapa 1 — O que você vai aprender neste capítulo
+## Etapa 1 - Objetivos de aprendizagem
 
-Ao concluir este capítulo, você será capaz de:
+O capítulo desenvolve a interpretação de áreas protegidas, licenciamento e recuperação ambiental. O estudante deve identificar o enquadramento da situação estudada, distinguir instrumentos e justificar as informações necessárias à elaboração de uma proposta de recuperação.
 
-- Explicar os objetivos, os princípios, a estrutura institucional do SISNAMA e os instrumentos da Política Nacional do Meio Ambiente (Lei n^o^ 6.938/1981).
-- Distinguir as fases do Licenciamento Ambiental Trifásico (LP, LI e LO), os critérios de exigibilidade do EIA/RIMA (Resoluções CONAMA 001/1986 e 237/1997) e a repartição de competências entre IBAMA e órgãos estaduais como o INEMA.
-- Aplicar integralmente os parâmetros do Código Florestal (Lei n^o^ 12.651/2012) para delimitação e cálculo de Áreas de Preservação Permanente (APPs), percentuais de Reserva Legal por bioma ($80%$, $35%$ e $20%$), CAR e PRA.
-- Estruturar tecnicamente um Plano de Recuperação de Áreas Degradadas (PRAD), dimensionando densidade de plantio, grupos ecológicos de recomposição e indicadores de monitoramento.
-- Diferenciar a Tríplice Responsabilidade Ambiental (civil objetiva, administrativa e penal, Lei n^o^ 9.605/1998) na atuação pericial e na gestão ambiental.
+## Etapa 2 - Conhecimentos necessários
 
-:::
+A leitura retoma bacia, curso de água, nascente, declividade e uso da terra. A delimitação cartográfica de uma feição depende de seu reconhecimento em campo e de dados cuja escala seja compatível com o critério legal utilizado.
 
-::: {.callout-tip}
-## Etapa 2 — Revisando o que você precisa saber
+## Etapa 3 - Fundamentação teórica
 
-Para articular corretamente a base legal aos procedimentos técnicos de diagnóstico, retome os seguintes conceitos vistos nos módulos anteriores:
+### Vocabulário Técnico e Símbolos do Capítulo 14
 
-- **AIA e hierarquia da mitigação (Capítulo 5):** a Avaliação de Impacto Ambiental e o EIA/RIMA constituem o suporte técnico-decisório que fundamenta a emissão de licenças ambientais e a definição de condicionantes.
-- **Bacias hidrográficas e zonas ripárias (Capítulos 7 e 8):** a delimitação de calhas regulares, nascentes, topos de morro e encostas íngremes conecta diretamente a morfopedologia de vertentes às restrições espaciais do Código Florestal.
-- **Bioengenharia e controle erosivo (Capítulo 13):** as técnicas vegetativas e estruturais leves aprendidas anteriormente compõem o arsenal executivo central de um PRAD em áreas alteradas e APPs.
+**PNMA / SISNAMA,** Política Nacional do Meio Ambiente (Lei n^o^ 6.938/1981) e Sistema Nacional do Meio Ambiente. **LP, LI e LO,** Licença Prévia, Licença de Instalação e Licença de Operação no rito trifásico de licenciamento ambiental. **APP e RL,** Área de Preservação Permanente (função ambiental rígida de preservação hídrica, edáfica e ecológica) e Reserva Legal (percentual mínimo de cobertura nativa no imóvel rural). **CAR e PRA,** Cadastro Ambiental Rural (registro público eletrônico nacional obrigatório) e Programa de Regularização Ambiental.
 
-:::
+**PRAD,** Plano de Recuperação de Áreas Degradadas (ou Alteradas), instrumento técnico executivo destinado à reabilitação ecológica e geomorfológica de áreas impactadas. $A_{\text{APP}}$ e $A_{\text{RL}}$, área total de Área de Preservação Permanente ($\text{ha}$) e área mínima exigida de Reserva Legal ($\text{ha}$). $L$, $w$ e $r$, extensão do curso d’água dentro do imóvel ($\text{m}$), largura da faixa marginal de APP ($\text{m}$) e raio de proteção ao redor de nascente ($\text{m}$).
 
-## Etapa 3: Fundamentação Teórica: Arcabouço Legal, Licenciamento, Código Florestal e PRAD
-
-::: {.callout-note}
-## Vocabulário Técnico e Símbolos do Capítulo 14
-
-- **PNMA / SISNAMA:** Política Nacional do Meio Ambiente (Lei n^o^ 6.938/1981) e Sistema Nacional do Meio Ambiente.
-- **LP, LI e LO:** Licença Prévia, Licença de Instalação e Licença de Operação no rito trifásico de licenciamento ambiental.
-- **APP e RL:** Área de Preservação Permanente (função ambiental rígida de preservação hídrica, edáfica e ecológica) e Reserva Legal (percentual mínimo de cobertura nativa no imóvel rural).
-- **CAR e PRA:** Cadastro Ambiental Rural (registro público eletrônico nacional obrigatório) e Programa de Regularização Ambiental.
-- **PRAD:** Plano de Recuperação de Áreas Degradadas (ou Alteradas), instrumento técnico executivo destinado à reabilitação ecológica e geomorfológica de áreas impactadas.
-- $A_{\text{APP}}$ e $A_{\text{RL}}$: área total de Área de Preservação Permanente ($\text{ha}$) e área mínima exigida de Reserva Legal ($\text{ha}$).
-- $L$, $w$ e $r$: extensão do curso d'água dentro do imóvel ($\text{m}$), largura da faixa marginal de APP ($\text{m}$) e raio de proteção ao redor de nascente ($\text{m}$).
-
-:::
-
-## Política Nacional do Meio Ambiente (Lei n^o^ 6.938/1981) e SISNAMA
+### Política Nacional do Meio Ambiente (Lei n^o^ 6.938/1981) e SISNAMA
 
 A **Lei n^o^ 6.938, de 31 de agosto de 1981**, instituiu a **Política Nacional do Meio Ambiente (PNMA)**, marco fundador da gestão ambiental moderna no Brasil e posteriormente recepcionada pelo artigo 225 da Constituição Federal de 1988. Seu objetivo central é a preservação, melhoria e recuperação da qualidade ambiental propícia à vida, visando assegurar no país condições ao desenvolvimento socioeconômico, aos interesses da segurança nacional e à proteção da dignidade da vida humana (Art. 2^o^).
 
-Entre seus princípios estruturantes destacam-se a ação governamental na manutenção do equilíbrio ecológico, a racionalização do uso do solo, do subsolo, da água e do ar, o planejamento e a fiscalização do uso dos recursos ambientais, a proteção dos ecossistemas e o controle de atividades potencial ou efetivamente poluidoras. Para operacionalizar esses objetivos, a lei estruturou o **Sistema Nacional do Meio Ambiente (SISNAMA)**, rede federativa integrada pelos órgãos e entidades da União, dos Estados, do Distrito Federal e dos Municípios:
+Entre seus princípios estruturantes destacam-se a ação governamental na manutenção do equilíbrio ecológico, a racionalização do uso do solo, do subsolo, da água e do ar, o planejamento e a fiscalização do uso dos recursos ambientais, a proteção dos ecossistemas e o controle de atividades potencial ou efetivamente poluidoras. Para operacionalizar esses objetivos, a lei estruturou o **Sistema Nacional do Meio Ambiente (SISNAMA)**, rede federativa integrada pelos órgãos e entidades da União, dos Estados, do Distrito Federal e dos Municípios,
 
-- **Órgão Superior:** Conselho de Governo (assessoramento direto à Presidência da República).
-- **Órgão Consultivo e Deliberativo:** Conselho Nacional do Meio Ambiente (**CONAMA**), responsável por editar resoluções normativas e padrões ambientais nacionais.
-- **Órgão Central:** Ministério do Meio Ambiente e Mudança do Clima (**MMA**), encarregado de planejar, coordenar e supervisionar a política nacional.
-- **Órgãos Executores:** **IBAMA** (licenciamento e fiscalização em âmbito federal) e **ICMBio** (gestão das Unidades de Conservação federais).
-- **Órgãos Seccionais (Estaduais):** entidades responsáveis pela execução de programas e licenciamento estadual, como o Instituto do Meio Ambiente e Recursos Hídricos (**INEMA**) na Bahia.
-- **Órgãos Locais (Municipais):** secretarias e conselhos municipais de meio ambiente com atuação sobre impactos de âmbito local.
+**Órgão Superior,** Conselho de Governo (assessoramento direto à Presidência da República). **Órgão Consultivo e Deliberativo,** Conselho Nacional do Meio Ambiente (**CONAMA**), responsável por editar resoluções normativas e padrões ambientais nacionais. **Órgão Central,** Ministério do Meio Ambiente e Mudança do Clima (**MMA**), encarregado de planejar, coordenar e supervisionar a política nacional. **Órgãos Executores,** **IBAMA** (licenciamento e fiscalização em âmbito federal) e **ICMBio** (gestão das Unidades de Conservação federais).
 
-::: {.callout-note}
-## Principais Instrumentos da PNMA (Art. 9^o^ da Lei n^o^ 6.938/1981)
+**Órgãos Seccionais (Estaduais).** Entidades responsáveis pela execução de programas e licenciamento estadual, como o Instituto do Meio Ambiente e Recursos Hídricos (**INEMA**) na Bahia. **Órgãos Locais (Municipais).** Secretarias e conselhos municipais de meio ambiente com atuação sobre impactos de âmbito local.
 
-A PNMA articula instrumentos preventivos, corretivos, informacionais e econômicos de gestão territorial:
+### Principais Instrumentos da PNMA (Art. 9^o^ da Lei n^o^ 6.938/1981)
 
-- Estabelecimento de padrões de qualidade ambiental e o **Zoneamento Ambiental** (Zoneamento Ecológico-Econômico).
-- A **Avaliação de Impactos Ambientais (AIA)** e o **Licenciamento** e a revisão de atividades efetiva ou potencialmente poluidoras.
-- A criação de espaços territoriais especialmente protegidos pelo Poder Público (Unidades de Conservação, APPs).
-- O Sistema Nacional de Informações sobre o Meio Ambiente (**SINIMA**), o Cadastro Técnico Federal e a garantia de prestação de informações relativas ao meio ambiente.
-- Penalidades disciplinares ou compensatórias ao não cumprimento das medidas necessárias à preservação ou correção da degradação ambiental.
+A PNMA articula instrumentos preventivos, corretivos, informacionais e econômicos de gestão territorial,
 
-:::
+Estabelecimento de padrões de qualidade ambiental e o **Zoneamento Ambiental** (Zoneamento Ecológico-Econômico). A **Avaliação de Impactos Ambientais (AIA)** e o **Licenciamento** e a revisão de atividades efetiva ou potencialmente poluidoras. A criação de espaços territoriais especialmente protegidos pelo Poder Público (Unidades de Conservação, APPs). O Sistema Nacional de Informações sobre o Meio Ambiente (**SINIMA**), o Cadastro Técnico Federal e a garantia de prestação de informações relativas ao meio ambiente.
 
-## Licenciamento Ambiental Trifásico, EIA/RIMA e Competências
+Penalidades disciplinares ou compensatórias ao não cumprimento das medidas necessárias à preservação ou correção da degradação ambiental.
+
+### Licenciamento Ambiental Trifásico, EIA/RIMA e Competências
 
 O **Licenciamento Ambiental** é o procedimento administrativo pelo qual o órgão ambiental competente licencia a localização, instalação, ampliação e operação de empreendimentos e atividades utilizadoras de recursos ambientais considerados efetiva ou potencialmente poluidores, ou capazes de causar degradação ambiental (Resolução CONAMA n^o^ 237/1997; BRASIL/MMA, 2016; SÁNCHEZ, 2013).
 
-No rito ordinário brasileiro, o processo divide-se em **três etapas sucessivas**, denominadas **Licenciamento Trifásico**:
+No rito ordinário brasileiro, o processo divide-se em **três etapas sucessivas**, denominadas **Licenciamento Trifásico**,
 
-1. **Licença Prévia (LP):** concedida na fase preliminar do planejamento do empreendimento, aprova sua **localização e concepção**, atesta a **viabilidade ambiental** e estabelece os requisitos básicos e condicionantes a atender nas próximas fases. *Não autoriza o início de obras*. Validade máxima legal: até $5$ anos.
-2. **Licença de Instalação (LI):** autoriza a **instalação do empreendimento ou atividade** (supressão vegetal autorizada, terraplenagem, canteiro de obras, construção civil), de acordo com as especificações constantes dos planos, programas e projetos executivos aprovados, incluindo as medidas de controle ambiental e condicionantes da LP. Validade máxima legal: até $6$ anos.
-3. **Licença de Operação (LO):** autoriza a **operação da atividade ou empreendimento**, após a verificação do efetivo cumprimento do que consta das licenças anteriores, com as medidas de controle ambiental e condicionantes determinadas para a operação e o monitoramento contínuo. Validade legal: mínimo de $4$ anos e máximo de $10$ anos. A renovação da LO deve ser requerida com antecedência mínima de $120$ dias antes da expiração do prazo de validade (Art. 18, § 4^o^, CONAMA 237/1997 e Art. 14, § 4^o^, LC 140/2011), ficando seu prazo prorrogado automaticamente até a manifestação definitiva do órgão.
+**Licença Prévia (LP).** Concedida na fase preliminar do planejamento do empreendimento, aprova sua **localização e concepção**, atesta a **viabilidade ambiental** e estabelece os requisitos básicos e condicionantes a atender nas próximas fases. *Não autoriza o início de obras*. Validade máxima legal, até $5$ anos. **Licença de Instalação (LI).** Autoriza a **instalação do empreendimento ou atividade** (supressão vegetal autorizada, terraplenagem, canteiro de obras, construção civil), de acordo com as especificações constantes dos planos, programas e projetos executivos aprovados, incluindo as medidas de controle ambiental e condicionantes da LP. Validade máxima legal, até $6$ anos.
+
+**Licença de Operação (LO).** Autoriza a **operação da atividade ou empreendimento**, após a verificação do efetivo cumprimento do que consta das licenças anteriores, com as medidas de controle ambiental e condicionantes determinadas para a operação e o monitoramento contínuo. Validade legal, mínimo de $4$ anos e máximo de $10$ anos. A renovação da LO deve ser requerida com antecedência mínima de $120$ dias antes da expiração do prazo de validade (Art. 18, §4^o^, CONAMA 237/1997 e Art. 14, §4^o^, LC 140/2011), ficando seu prazo prorrogado automaticamente até a manifestação definitiva do órgão.
 
 Para obras e atividades causadoras de **significativa degradação ambiental** (como rodovias, hidrelétricas, linhas de transmissão de alta tensão, mineração de grande porte, complexos eólicos em áreas sensíveis ou distritos industriais), a Constituição Federal e a **Resolução CONAMA n^o^ 001/1986** exigem a elaboração prévia do **Estudo de Impacto Ambiental (EIA)** e de seu respectivo **Relatório de Impacto Ambiental (RIMA)**, submetidos a audiência pública antes da decisão sobre a LP. Enquanto o EIA constitui o documento técnico-científico aprofundado (com diagnóstico dos meios físico, biótico e socioeconômico, análise de impactos, alternativas locacionais e programas ambientais), o RIMA traduz suas conclusões em linguagem objetiva, gráfica e acessível à sociedade.
 
-A repartição de competências administrativas entre União (**IBAMA**), Estados (**INEMA** na Bahia) e Municípios é regida pela **Lei Complementar n^o^ 140/2011**, segundo o critério predominante de abrangência do impacto e titularidade da área: empreendimentos localizados em dois ou mais Estados, no mar territorial, em terras indígenas ou unidades de conservação federais competem ao IBAMA; impactos de âmbito local tipificados pelos conselhos estaduais competem aos municípios; e a regra geral residual dos demais empreendimentos compete aos órgãos estaduais.
+A repartição de competências administrativas entre União (**IBAMA**), Estados (**INEMA** na Bahia) e Municípios é regida pela **Lei Complementar n^o^ 140/2011**, segundo o critério predominante de abrangência do impacto e titularidade da área, empreendimentos localizados em dois ou mais Estados, no mar territorial, em terras indígenas ou unidades de conservação federais competem ao IBAMA; impactos de âmbito local tipificados pelos conselhos estaduais competem aos municípios; e a regra geral residual dos demais empreendimentos compete aos órgãos estaduais.
 
-## Código Florestal (Lei n^o^ 12.651/2012): APPs, Reserva Legal, CAR e PRA
+### Código Florestal (Lei n^o^ 12.651/2012), APPs, Reserva Legal, CAR e PRA
 
-A **Lei n^o^ 12.651, de 25 de maio de 2012** (Novo Código Florestal), estabelece normas gerais sobre a proteção da vegetação nativa no Brasil, definindo dois regimes espaciais fundamentais nos imóveis rurais e urbanos: as **Áreas de Preservação Permanente (APPs)** e a **Reserva Legal (RL)**.
+A **Lei n^o^ 12.651, de 25 de maio de 2012** (Novo Código Florestal), estabelece normas gerais sobre a proteção da vegetação nativa no Brasil, definindo dois regimes espaciais fundamentais nos imóveis rurais e urbanos, as **Áreas de Preservação Permanente (APPs)** e a **Reserva Legal (RL)**.
 
-### Áreas de Preservação Permanente (APPs — Art. 4^o^)
+#### Áreas de Preservação Permanente (APPs, Art. 4^o^)
 
-Define-se APP como área protegida, coberta ou não por vegetação nativa, com a função ambiental de preservar os recursos hídricos, a paisagem, a estabilidade geológica e a biodiversidade, facilitar o fluxo gênico de fauna e flora, proteger o solo e assegurar o bem-estar das populações humanas. A tabela a seguir sintetiza as principais tipologias legais:
+Define-se APP como área protegida, coberta ou não por vegetação nativa, com a função ambiental de preservar os recursos hídricos, a paisagem, a estabilidade geológica e a biodiversidade, facilitar o fluxo gênico de fauna e flora, proteger o solo e assegurar o bem-estar das populações humanas. A tabela a seguir sintetiza as principais tipologias legais,
 
-\small
+| Feição ou condição | Faixa de referência da regra geral | Medição e enquadramento |
+|:--|:--|:--|
+| Curso de água natural com largura menor que 10 m | 30 m em cada margem. | Borda da calha do leito regular. |
+| Curso de água com largura de 10 a 50 m | 50 m em cada margem. | Borda da calha do leito regular. |
+| Curso de água com largura de 50 a 200 m | 100 m em cada margem. | Borda da calha do leito regular. |
+| Curso de água com largura de 200 a 600 m | 200 m em cada margem. | Borda da calha do leito regular. |
+| Curso de água com largura superior a 600 m | 500 m em cada margem. | Borda da calha do leito regular. |
+| Nascente e olho de água perene | Raio mínimo de 50 m. | Ponto de afloramento. |
+| Lago ou lagoa natural em zona rural, com até 20 ha | Faixa de 50 m. | Considerar as disposições específicas para pequenas acumulações. |
+| Lago ou lagoa natural em zona rural, com mais de 20 ha | Faixa de 100 m. | Margem do corpo de água. |
+| Lago ou lagoa natural em zona urbana | Faixa de 30 m. | Conferir o enquadramento da área. |
+| Reservatório artificial decorrente de barramento de curso natural | Faixa definida no licenciamento. | Observar as disposições específicas aplicáveis ao reservatório. |
+| Encosta com inclinação superior a 45° | Área da encosta que atende ao critério. | Linha de maior declive, equivalente a valor superior a 100%. |
+| Vereda | Faixa mínima de 50 m. | Limite do espaço permanentemente brejoso e encharcado. |
+| Topo de morro, monte, montanha ou serra | Terço superior conforme os critérios do art. 4º. | Altura mínima de 100 m e inclinação média superior a 25°, observada a definição legal da base. |
+| Restinga e manguezal | Proteção segundo a função e a feição definidas na lei. | Restinga fixadora de dunas ou estabilizadora de mangues; manguezal em toda sua extensão. |
 
-| p{4.3cm} >{\raggedright\arraybackslash}X p{4.2cm}@{}} \bfseries Tipologia de APP (Art. 4^o^) | \bfseries Critério Espacial e Largura Mínima | \bfseries Referência de Medição |
-| --- | --- | --- |
-| **Faixas marginais de cursos d'água naturais** (perenes e intermitentes; excluídos os efêmeros) | $\bullet$ Largura do rio $< 10\text{ m}$: **30 m** de APP  $\bullet$ Largura de $10\text{ m}$ a $50\text{ m}$: **50 m** de APP  $\bullet$ Largura de $50\text{ m}$ a $200\text{ m}$: **100 m** de APP  $\bullet$ Largura de $200\text{ m}$ a $600\text{ m}$: **200 m** de APP  $\bullet$ Largura $> 600\text{ m}$: **500 m** de APP | A partir da borda da calha do leito regular, em cada margem. |
-| **Nascentes e olhos d'água perenes** | Raio mínimo de **50 m** em qualquer situação topográfica. | Raio circular centrado no ponto de afloramento hídrico. |
-| **Lagos e lagoas naturais** | $\bullet$ Zona rural ($> 20\text{ ha}$ de espelho): **100 m**  $\bullet$ Zona rural ($\le 20\text{ ha}$ de espelho): **50 m**  $\bullet$ Zona urbana: **30 m** | Faixa marginal contínua ao redor do espelho d'água. |
-| **Reservatórios d'água artificiais** | Faixa definida na licença ambiental do empreendimento (decorrentes de barramento ou represamento de cursos naturais). | Contorno do nível máximo operativo normal. |
-| **Encostas íngremes** | Áreas com declividade superior a **$45^\circ$** (equivalente a $100%$ na linha de maior declive). | Toda a extensão da encosta acima do limiar crítico. |
-| **Topos de morros, montes, montanhas e serras** | Altura mínima de **100 m** e inclinação média maior que **$25^\circ$**, no terço superior da elevação. | Área delimitada a partir da curva de nível correspondente a $2/3$ da altura mínima em relação à base. |
-| **Restingas e manguezais** | Restingas como fixadoras de dunas ou estabilizadoras de mangues; manguezais em toda a sua extensão. | Limite ecofisiográfico integral da feição costeira. |
 
-![Integração esquemática entre o rito do Licenciamento Ambiental Trifásico (LP, LI, LO) e a espacialização legal das Áreas de Preservação Permanente (faixas marginais de cursos d'água, nascentes de $50\text{ m}$, encostas $> 45^\circ$ e topos de morro) e Reserva Legal em imóvel rural.](../img/fig14_licenciamento_apps.png)
+![Integração esquemática entre o rito do Licenciamento Ambiental Trifásico (LP, LI, LO) e a espacialização legal das Áreas de Preservação Permanente (faixas marginais de cursos d’água, nascentes de $50\text{ m}$, encostas $> 45^\circ$ e topos de morro) e Reserva Legal em imóvel rural.](../img/fig14_licenciamento_apps.png "fig:"){#fig-licenciamento_apps}
 
-### Reserva Legal (Art. 12), CAR e PRA
+#### Reserva Legal (Art. 12), CAR e PRA
 
-A **Reserva Legal (RL)** corresponde à área localizada no interior de uma propriedade ou posse rural que deve ser mantida com cobertura de vegetação nativa, permitindo o manejo sustentável mediante plano aprovado, nos seguintes percentuais mínimos da área total do imóvel:
+A **Reserva Legal (RL)** corresponde à área localizada no interior de uma propriedade ou posse rural que deve ser mantida com cobertura de vegetação nativa, permitindo o manejo sustentável mediante plano aprovado, nos seguintes percentuais mínimos da área total do imóvel,
 
-- **$80%$** no imóvel situado em área de **florestas** na Amazônia Legal;
-- **$35%$** no imóvel situado em área de **cerrado** na Amazônia Legal;
-- **$20%$** no imóvel situado em área de **campos gerais** na Amazônia Legal e em **todos os demais biomas e regiões do país** (incluindo Caatinga, Mata Atlântica e Cerrado na Bahia).
+**$80\%$** no imóvel situado em área de **florestas** na Amazônia Legal;. **$35\%$** no imóvel situado em área de **cerrado** na Amazônia Legal;. **$20\%$** no imóvel situado em área de **campos gerais** na Amazônia Legal e em **todos os demais biomas e regiões do país** (incluindo Caatinga, Mata Atlântica e Cerrado na Bahia).
 
 O Art. 15 do Código Florestal admite o cômputo das APPs no cálculo do percentual da Reserva Legal apenas quando o benefício previsto não implicar a conversão de novas áreas para uso alternativo do solo, a área a ser computada estiver conservada ou em processo de recuperação e o proprietário houver efetuado a inscrição no **Cadastro Ambiental Rural (CAR)**. O CAR é o registro público eletrônico nacional obrigatório que reúne o perímetro georreferenciado do imóvel, suas APPs, RL, remanescentes de vegetação nativa e áreas consolidadas, servindo como porta de entrada para o **Programa de Regularização Ambiental (PRA)**, mediante assinatura de Termo de Compromisso para recomposição ou compensação de passivos.
 
-::: {.callout-tip}
-## Cálculo Espacial de APPs e Reserva Legal em Imóvel Rural
+### Cálculo Espacial de APPs e Reserva Legal em Imóvel Rural
 
-Para auditar um imóvel rural no CAR ou dimensionar áreas em um PRAD, aplicam-se relações geométricas diretas:
+Para auditar um imóvel rural no CAR ou dimensionar áreas em um PRAD, aplicam-se relações geométricas diretas,
 
-1. \textbf{APP marginal de curso d'água ($A_{\text{marg}}$):}
-  
-$$
-
-    A_{\text{marg}} = \frac{n_m \cdot L \cdot w}{10.000}   (\text{em hectares})
-  
-$$
-
-  onde $n_m \in \{1, 2\}$ indica se o curso d'água margeia o imóvel em apenas uma margem ($n_m = 1$) ou atravessa o imóvel com ambas as margens dentro da propriedade ($n_m = 2$), $L$ é a extensão longitudinal do rio no imóvel ($\text{m}$) e $w$ é a largura da faixa de APP correspondente à largura do rio ($\text{m}$).
-2. \textbf{APP circular de nascente ($A_{\text{nasc}}$):}
-  
-$$
-
-    A_{\text{nasc}} = \frac{\pi \cdot r^2}{10.000}   (\text{com } r = 50\text{ m} \Rightarrow A_{\text{nasc}} \approx 0{,}7854\text{ ha por nascente isolada})
-  
-$$
-3. \textbf{Reserva Legal mínima exigida ($A_{\text{RL}}$):}
-  
-$$
-
-    A_{\text{RL}} = f_{\text{bioma}} \cdot A_{\text{imóvel}}
-  
-$$
-
-  sendo $f_{\text{bioma}} \in \{0{,}80;\, 0{,}35;\, 0{,}20\}$ conforme a localização do imóvel.
-
-:::
-
-## PRAD e Tríplice Responsabilidade Ambiental
-
-O **Plano de Recuperação de Áreas Degradadas (PRAD)** é o instrumento técnico-executivo exigido tanto em processos de licenciamento e regularização (PRA) quanto em condenações administrativas ou judiciais para recompor funções ecológicas, hidrológicas e edáficas de áreas alteradas. Embora modelos simplificados variem entre órgãos (IBAMA, INEMA), a estrutura técnica completa de um PRAD compreende cinco blocos essenciais:
-
-1. **Identificação e caracterização da área:** delimitação cartográfica georreferenciada, histórico da degradação, diagnóstico de solo, relevo, drenagem e cobertura vegetal remanescente.
-2. **Isolamento dos fatores de degradação:** cercamento contra gado, controle de incêndios, fechamento de acessos clandestinos e eliminação de fontes de poluição.
-3. **Preparo físico e controle erosivo (Bioengenharia):** reconformação de taludes, drenagem superficial, instalação de paliçadas, biomantas e correção física/química do substrato.
-4. **Recomposição vegetal:** definição do método (condução da regeneração natural, semeadura direta ou plantio de mudas em área total/enriquecimento), escolha de espécies nativas regionais em grupos sucessionais (pioneiras/recobrimento e secundárias tardias/diversidade), cálculo do número de mudas e reserva de replantio.
-5. **Cronograma e monitoramento:** acompanhamento periódico ($24$ a $60$ meses) por meio de indicadores objetivos (taxa de sobrevivência de mudas, cobertura de copa, estabilização de sulcos e qualidade do solo).
-
-O descumprimento das normas ambientais submete o infrator (pessoa física ou jurídica) à **Tríplice Responsabilidade Ambiental** consagrada no Art. 225, § 3^o^ da Constituição Federal e regulamentada pela **Lei de Crimes Ambientais (Lei n^o^ 9.605/1998)** e pelo Decreto n^o^ 6.514/2008:
-
-- **Responsabilidade Civil (Objetiva e *Propter Rem*):** obrigação de reparar integralmente o dano ambiental ou indenizá-lo, independentemente da comprovação de culpa ou dolo (basta o nexo causal entre a atividade e o dano). A obrigação de recompor APP e RL acompanha o imóvel (*propter rem*), transferindo-se ao sucessor em caso de venda.
-- **Responsabilidade Administrativa:** aplicação de sanções pelo poder de polícia ambiental (IBAMA, INEMA, municípios), incluindo advertência, multa simples ou diária, apreensão de equipamentos, embargo de obra/atividade e suspensão de licenças.
-- **Responsabilidade Penal:** aplicação de penas privativas de liberdade, restritivas de direitos ou multa criminal a pessoas físicas e jurídicas por condutas tipificadas como crimes ambientais (desmatar APP sem autorização, poluir mananciais, operar empreendimento potencialmente poluidor sem licença válida).
-
-## Etapa 4: Estudos de Caso e Exemplos Resolvidos Passo a Passo
-
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 1 — Delimitação de APPs e Reserva Legal em Imóvel Rural na Bahia
-
-**1. Situação-problema / Enunciado:** Durante a análise ambiental de uma propriedade rural localizada no interior da Bahia (bioma Caatinga, fora da Amazônia Legal), necessita-se quantificar a área total de APP e a área mínima de Reserva Legal para conferência do CAR.
-
-**2. Dados e informações fornecidas:** Área total do imóvel $A_{\text{imóvel}} = 250{,}0\text{ ha}$; o imóvel é margeado em apenas um dos lados ($n_m = 1$) por um rio perene de $35\text{ m}$ de largura ao longo de $1.200\text{ m}$ de extensão; no interior da propriedade existe ainda $1$ nascente perene isolada (sem sobreposição espacial com a faixa do rio).
-
-**3. O que a análise solicita:** Calcule a área da APP marginal ($A_{\text{marg}}$), a área da APP de nascente ($A_{\text{nasc}}$), a área total de APP do imóvel e a área mínima exigida de Reserva Legal ($A_{\text{RL}}$).
-
-**4. Referencial e método adotado:** Aplicação dos parâmetros do Art. 4^o^ e Art. 12 da Lei n^o^ 12.651/2012 e conversão de $\text{m}^2$ para hectares ($1\text{ ha} = 10.000\text{ m}^2$).
-
-**5. Desenvolvimento passo a passo:**
-
-1. Largura de APP para rio de $35\text{ m}$ (faixa entre $10\text{ m}$ e $50\text{ m}$): $w = 50\text{ m}$.
-2. Área da APP marginal ($n_m = 1$):
+**APP marginal de curso d’água ($A_{\text{marg}}$),**
 
 $$
-
-  A_{\text{marg}} = \frac{1 \times 1.200 \times 50}{10.000} = \frac{60.000}{10.000} = 6{,}00\text{ ha}
-
+A_{\text{marg}} = \frac{n_m \cdot L \cdot w}{10.000} \quad (\text{em hectares})
 $$
 
-3. Área da APP da nascente perene ($r = 50\text{ m}$):
+ onde $n_m \in \{1, 2\}$ indica se o curso d’água margeia o imóvel em apenas uma margem ($n_m = 1$) ou atravessa o imóvel com ambas as margens dentro da propriedade ($n_m = 2$), $L$ é a extensão longitudinal do rio no imóvel ($\text{m}$) e $w$ é a largura da faixa de APP correspondente à largura do rio ($\text{m}$). **APP circular de nascente ($A_{\text{nasc}}$),**
 
 $$
-
-  A_{\text{nasc}} = \frac{\pi \cdot 50^2}{10.000} = \frac{3{,}1416 \times 2.500}{10.000} \approx 0{,}79\text{ ha}
-
+A_{\text{nasc}} = \frac{\pi \cdot r^2}{10.000} \quad (\text{com } r = 50\text{ m} \Rightarrow A_{\text{nasc}} \approx 0{,}7854\text{ ha por nascente isolada})
 $$
 
-4. Área total de APP no imóvel (sem sobreposição):
+. **Reserva Legal mínima exigida ($A_{\text{RL}}$),**
 
 $$
-
-  A_{\text{APP}} = 6{,}00 + 0{,}79 = 6{,}79\text{ ha}
-
+A_{\text{RL}} = f_{\text{bioma}} \cdot A_{\text{imóvel}}
 $$
 
-5. Reserva Legal mínima exigida na Bahia ($f_{\text{bioma}} = 20% = 0{,}20$):
+ sendo $f_{\text{bioma}} \in \{0{,}80;\, 0{,}35;\, 0{,}20\}$ conforme a localização do imóvel.
+
+### PRAD e Tríplice Responsabilidade Ambiental
+
+O **Plano de Recuperação de Áreas Degradadas (PRAD)** é o instrumento técnico-executivo exigido tanto em processos de licenciamento e regularização (PRA) quanto em condenações administrativas ou judiciais para recompor funções ecológicas, hidrológicas e edáficas de áreas alteradas. Embora modelos simplificados variem entre órgãos (IBAMA, INEMA), a estrutura técnica completa de um PRAD compreende cinco blocos essenciais,
+
+**Identificação e caracterização da área.** Delimitação cartográfica georreferenciada, histórico da degradação, diagnóstico de solo, relevo, drenagem e cobertura vegetal remanescente. **Isolamento dos fatores de degradação.** Cercamento contra gado, controle de incêndios, fechamento de acessos clandestinos e eliminação de fontes de poluição. **Preparo físico e controle erosivo (Bioengenharia).** Reconformação de taludes, drenagem superficial, instalação de paliçadas, biomantas e correção física/química do substrato. **Recomposição vegetal.** Definição do método (condução da regeneração natural, semeadura direta ou plantio de mudas em área total/enriquecimento), escolha de espécies nativas regionais em grupos sucessionais (pioneiras/recobrimento e secundárias tardias/diversidade), cálculo do número de mudas e reserva de replantio.
+
+**Cronograma e monitoramento.** Acompanhamento periódico ($24$ a $60$ meses) por meio de indicadores objetivos (taxa de sobrevivência de mudas, cobertura de copa, estabilização de sulcos e qualidade do solo).
+
+O descumprimento das normas ambientais submete o infrator (pessoa física ou jurídica) à **Tríplice Responsabilidade Ambiental** consagrada no Art. 225, §3^o^ da Constituição Federal e regulamentada pela **Lei de Crimes Ambientais (Lei n^o^ 9.605/1998)** e pelo Decreto n^o^ 6.514/2008,
+
+**Responsabilidade Civil (Objetiva e *Propter Rem*),** obrigação de reparar integralmente o dano ambiental ou indenizá-lo, independentemente da comprovação de culpa ou dolo (basta o nexo causal entre a atividade e o dano). A obrigação de recompor APP e RL acompanha o imóvel (*propter rem*), transferindo-se ao sucessor em caso de venda. **Responsabilidade Administrativa.** Aplicação de sanções pelo poder de polícia ambiental (IBAMA, INEMA, municípios), incluindo advertência, multa simples ou diária, apreensão de equipamentos, embargo de obra/atividade e suspensão de licenças.
+
+**Responsabilidade Penal.** Aplicação de penas privativas de liberdade, restritivas de direitos ou multa criminal a pessoas físicas e jurídicas por condutas tipificadas como crimes ambientais (desmatar APP sem autorização, poluir mananciais, operar empreendimento potencialmente poluidor sem licença válida).
+
+### Atualização normativa e coerência do PRAD
+
+A Lei nº 15.190/2025 passou a integrar o marco nacional do licenciamento ambiental. O estudo do procedimento deve consultar seu [texto atualizado na Câmara dos Deputados](https://www2.camara.leg.br/legin/fed/lei/2025/lei-15190-8-agosto-2025-797833-normaatualizada-pl.html) e relacioná-lo às competências previstas na Lei Complementar nº 140/2011. A sequência LP, LI e LO permanece uma referência de estudo, enquanto o enquadramento depende das modalidades e condições aplicáveis ao caso.
+
+A caracterização de APP deve diferenciar a regra geral de proteção e as disposições específicas aplicáveis à situação analisada. Curso de água, nascente, reservatório e área rural consolidada possuem critérios próprios. O relatório precisa informar a feição reconhecida e o dispositivo utilizado para delimitar sua proteção.
+
+O PRAD deve partir do processo responsável pela degradação. A revegetação de uma superfície cuja drenagem continua concentrando enxurradas pode apresentar baixa persistência. A proposta precisa relacionar controle da causa, preparação do terreno, estabelecimento vegetal e manutenção ao funcionamento da área.
+
+Metas de execução registram o que foi implantado, enquanto metas ambientais verificam a resposta do local. O documento deve indicar período de avaliação, referência de comparação e critério de revisão. Essa ligação entre diagnóstico e acompanhamento permite avaliar o resultado da recuperação e ajustar as medidas quando as condições observadas exigirem mudança.
+
+## Etapa 4 - Exemplos resolvidos
+
+### Exemplo 1. Delimitação de APPs e Reserva Legal em Imóvel Rural na Bahia
+
+**Situação analisada.** Durante a análise ambiental de uma propriedade rural localizada no interior da Bahia (bioma Caatinga, fora da Amazônia Legal), necessita-se quantificar a área total de APP e a área mínima de Reserva Legal para conferência do CAR.
+
+**Dados disponíveis.** Área total do imóvel $A_{\text{imóvel}} = 250{,}0\text{ ha}$; o imóvel é margeado em apenas um dos lados ($n_m = 1$) por um rio perene de $35\text{ m}$ de largura ao longo de $1.200\text{ m}$ de extensão; no interior da propriedade existe ainda $1$ nascente perene isolada (sem sobreposição espacial com a faixa do rio).
+
+**Problema a resolver.** Calcule a área da APP marginal ($A_{\text{marg}}$), a área da APP de nascente ($A_{\text{nasc}}$), a área total de APP do imóvel e a área mínima exigida de Reserva Legal ($A_{\text{RL}}$).
+
+**Fundamento da análise.** Aplicação dos parâmetros do Art. 4^o^ e Art. 12 da Lei n^o^ 12.651/2012 e conversão de $\text{m}^2$ para hectares ($1\text{ ha} = 10.000\text{ m}^2$).
+
+**Desenvolvimento.** 1. Largura de APP para rio de $35\text{ m}$ (faixa entre $10\text{ m}$ e $50\text{ m}$), $w = 50\text{ m}$. 2. Área da APP marginal ($n_m = 1$),
 
 $$
+A_{\text{marg}} = \frac{1 \times 1.200 \times 50}{10.000} = \frac{60.000}{10.000} = 6{,}00\text{ ha}
+$$
 
-  A_{\text{RL}} = 0{,}20 \times 250{,}0 = 50{,}00\text{ ha}
+ 3. Área da APP da nascente perene ($r = 50\text{ m}$),
 
+$$
+A_{\text{nasc}} = \frac{\pi \cdot 50^2}{10.000} = \frac{3{,}1416 \times 2.500}{10.000} \approx 0{,}79\text{ ha}
+$$
+
+ 4. Área total de APP no imóvel (sem sobreposição),
+
+$$
+A_{\text{APP}} = 6{,}00 + 0{,}79 = 6{,}79\text{ ha}
+$$
+
+ 5. Reserva Legal mínima exigida na Bahia ($f_{\text{bioma}} = 20\% = 0{,}20$),
+
+$$
+A_{\text{RL}} = 0{,}20 \times 250{,}0 = 50{,}00\text{ ha}
 $$
 
 
-**6. Síntese / Resposta:** $A_{\text{marg}} = 6{,}00\text{ ha}$; $A_{\text{nasc}} = 0{,}79\text{ ha}$; $A_{\text{APP}} = 6{,}79\text{ ha}$; Reserva Legal mínima $A_{\text{RL}} = 50{,}00\text{ ha}$.
+**Interpretação do resultado.** $A_{\text{marg}} = 6{,}00\text{ ha}$; $A_{\text{nasc}} = 0{,}79\text{ ha}$; $A_{\text{APP}} = 6{,}79\text{ ha}$; Reserva Legal mínima $A_{\text{RL}} = 50{,}00\text{ ha}$.
 
-**7. Verificação crítica:** O rio de $35\text{ m}$ enquadra-se corretamente na faixa de $10\text{ m}$ a $50\text{ m}$ (APP de $50\text{ m}$), e a Bahia situa-se integralmente fora da Amazônia Legal, aplicando-se o percentual de $20%$ de Reserva Legal.
+**Condições de validade.** O rio de $35\text{ m}$ enquadra-se corretamente na faixa de $10\text{ m}$ a $50\text{ m}$ (APP de $50\text{ m}$), e a Bahia situa-se integralmente fora da Amazônia Legal, aplicando-se o percentual de $20\%$ de Reserva Legal.
 
-:::
+### Exemplo 2. Verificação do Cômputo de APP na Reserva Legal (Art. 15 do Código Florestal)
 
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 2 — Verificação do Cômputo de APP na Reserva Legal (Art. 15 do Código Florestal)
+**Situação analisada.** Um imóvel rural de $400{,}0\text{ ha}$ situado em área de cerrado dentro da Amazônia Legal (percentual legal de Reserva Legal de $35\%$) busca regularização ambiental no CAR/PRA sem realizar novas supressões.
 
-**1. Situação-problema / Enunciado:** Um imóvel rural de $400{,}0\text{ ha}$ situado em área de cerrado dentro da Amazônia Legal (percentual legal de Reserva Legal de $35%$) busca regularização ambiental no CAR/PRA sem realizar novas supressões.
+**Dados disponíveis.** Área total $= 400{,}0\text{ ha}$; percentual de RL exigido $= 35\%$; área de APP integralmente conservada $= 60{,}0\text{ ha}$; área de vegetação nativa conservada fora da APP $= 90{,}0\text{ ha}$. O proprietário não converteu novas áreas e inscreveu o imóvel no CAR.
 
-**2. Dados e informações fornecidas:** Área total $= 400{,}0\text{ ha}$; percentual de RL exigido $= 35%$; área de APP integralmente conservada $= 60{,}0\text{ ha}$; área de vegetação nativa conservada fora da APP $= 90{,}0\text{ ha}$. O proprietário não converteu novas áreas e inscreveu o imóvel no CAR.
+**Problema a resolver.** Calcule a área de RL exigida, verifique o déficit existente sem cômputo da APP e avalie se o cômputo previsto no Art. 15 da Lei n^o^ 12.651/2012 regulariza o imóvel.
 
-**3. O que a análise solicita:** Calcule a área de RL exigida, verifique o déficit existente sem cômputo da APP e avalie se o cômputo previsto no Art. 15 da Lei n^o^ 12.651/2012 regulariza o imóvel.
+**Fundamento da análise.** Cálculo da RL exigida ($0{,}35 \cdot A_{\text{imóvel}}$) e soma condicionada da APP conservada à vegetação nativa remanescente.
 
-**4. Referencial e método adotado:** Cálculo da RL exigida ($0{,}35 \cdot A_{\text{imóvel}}$) e soma condicionada da APP conservada à vegetação nativa remanescente.
-
-**5. Desenvolvimento passo a passo:**
-
-1. Reserva Legal mínima exigida ($35%$):
+**Desenvolvimento.** 1. Reserva Legal mínima exigida ($35\%$),
 
 $$
-
-  A_{\text{RL, exigida}} = 0{,}35 \times 400{,}0 = 140{,}0\text{ ha}
-
+A_{\text{RL, exigida}} = 0{,}35 \times 400{,}0 = 140{,}0\text{ ha}
 $$
 
-2. Balanço sem cômputo da APP:
+ 2. Balanço sem cômputo da APP,
 
 $$
-
-  \text{Déficit} = 140{,}0 - 90{,}0 = 50{,}0\text{ ha}
-
+\text{Déficit} = 140{,}0 - 90{,}0 = 50{,}0\text{ ha}
 $$
 
-3. Balanço com cômputo da APP (atendidos os requisitos do Art. 15):
+ 3. Balanço com cômputo da APP (atendidos os requisitos do Art. 15),
 
 $$
-
-  A_{\text{RL, computada}} = 90{,}0 + 60{,}0 = 150{,}0\text{ ha}   \left(\frac{150{,}0}{400{,}0} = 37{,}5% > 35%\right)
-
+A_{\text{RL, computada}} = 90{,}0 + 60{,}0 = 150{,}0\text{ ha} \quad \left(\frac{150{,}0}{400{,}0} = 37{,}5\% > 35\%\right)
 $$
 
-4. Saldo excedente de vegetação nativa:
+ 4. Saldo excedente de vegetação nativa,
 
 $$
-
-  \text{Excedente} = 150{,}0 - 140{,}0 = 10{,}0\text{ ha}
-
+\text{Excedente} = 150{,}0 - 140{,}0 = 10{,}0\text{ ha}
 $$
 
 
-**6. Síntese / Resposta:** Sem cômputo, haveria déficit de $50{,}0\text{ ha}$; aplicando o Art. 15, o imóvel soma $150{,}0\text{ ha}$ ($37{,}5%$), cumprindo integralmente os $140{,}0\text{ ha}$ exigidos com $10{,}0\text{ ha}$ excedentes.
+**Interpretação do resultado.** Sem cômputo, haveria déficit de $50{,}0\text{ ha}$; aplicando o Art. 15, o imóvel soma $150{,}0\text{ ha}$ ($37{,}5\%$), cumprindo integralmente os $140{,}0\text{ ha}$ exigidos com $10{,}0\text{ ha}$ excedentes.
 
-**7. Verificação crítica:** O cômputo da APP não transforma a APP em área explorável para corte raso; ela continua sob proteção integral do Art. 4^o^, apenas contribuindo para o atingimento do percentual mínimo de RL quando cumpridas todas as exigências legais.
+**Condições de validade.** O cômputo da APP não transforma a APP em área explorável para corte raso; ela continua sob proteção integral do Art. 4^o^, apenas contribuindo para o atingimento do percentual mínimo de RL quando cumpridas todas as exigências legais.
 
-:::
+### Exemplo 3. Dimensionamento de Mudas e Grupos Ecológicos em PRAD
 
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 3 — Dimensionamento de Mudas e Grupos Ecológicos em PRAD
+**Situação analisada.** Para cumprir um Termo de Compromisso no PRA, elabora-se o PRAD de uma área degradada em APP de margem fluvial que será recuperada por plantio total de espécies nativas regionais.
 
-**1. Situação-problema / Enunciado:** Para cumprir um Termo de Compromisso no PRA, elabora-se o PRAD de uma área degradada em APP de margem fluvial que será recuperada por plantio total de espécies nativas regionais.
+**Dados disponíveis.** Área a recuperar $A = 4{,}50\text{ ha}$ ($45.000\text{ m}^2$); espaçamento adotado entre mudas de $3{,}0\text{ m} \times 2{,}0\text{ m}$ ($6{,}0\text{ m}^2$ por muda); composição florística composta por $60\%$ de espécies de recobrimento (pioneiras e secundárias iniciais) e $40\%$ de espécies de diversidade (secundárias tardias e clímax); reserva técnica de $15\%$ sobre o plantio inicial para replantio de falhas.
 
-**2. Dados e informações fornecidas:** Área a recuperar $A = 4{,}50\text{ ha}$ ($45.000\text{ m}^2$); espaçamento adotado entre mudas de $3{,}0\text{ m} \times 2{,}0\text{ m}$ ($6{,}0\text{ m}^2$ por muda); composição florística composta por $60%$ de espécies de recobrimento (pioneiras e secundárias iniciais) e $40%$ de espécies de diversidade (secundárias tardias e clímax); reserva técnica de $15%$ sobre o plantio inicial para replantio de falhas.
+**Problema a resolver.** Calcule o número base de mudas para o plantio inicial, a quantidade destinada a cada grupo ecológico, a reserva de replantio e o total de mudas a adquirir no viveiro.
 
-**3. O que a análise solicita:** Calcule o número base de mudas para o plantio inicial, a quantidade destinada a cada grupo ecológico, a reserva de replantio e o total de mudas a adquirir no viveiro.
+**Fundamento da análise.** Divisão da área total pela área útil por cova e repartição proporcional por grupo sucessional.
 
-**4. Referencial e método adotado:** Divisão da área total pela área útil por cova e repartição proporcional por grupo sucessional.
-
-**5. Desenvolvimento passo a passo:**
-
-1. Quantidade base de mudas para o plantio inicial:
+**Desenvolvimento.** 1. Quantidade base de mudas para o plantio inicial,
 
 $$
-
-  N_{\text{base}} = \frac{45.000\text{ m}^2}{6{,}0\text{ m}^2\cdot\text{muda}^{-1}} = 7.500\text{ mudas}
-
+N_{\text{base}} = \frac{45.000\text{ m}^2}{6{,}0\text{ m}^2\cdot\text{muda}^{-1}} = 7.500\text{ mudas}
 $$
 
-2. Repartição do plantio inicial por grupo ecológico:
+ 2. Repartição do plantio inicial por grupo ecológico,
 
 $$
-
-  N_{\text{recobrimento}} = 7.500 \times 0{,}60 = 4.500\text{ mudas}
-
-$$
-
-$$
-
-  N_{\text{diversidade}} = 7.500 \times 0{,}40 = 3.000\text{ mudas}
-
-$$
-
-3. Reserva técnica de $15%$ para replantio:
-
-$$
-
-  N_{\text{replantio}} = 7.500 \times 0{,}15 = 1.125\text{ mudas}
-
-$$
-
-4. Total geral de mudas a adquirir:
-
-$$
-
-  N_{\text{total}} = 7.500 + 1.125 = 8.625\text{ mudas}
-
+N_{\text{recobrimento}} = 7.500 \times 0{,}60 = 4.500\text{ mudas}
 $$
 
 
-**6. Síntese / Resposta:** Plantio inicial de $7.500$ mudas ($4.500$ de recobrimento e $3.000$ de diversidade), acrescido de $1.125$ mudas para replantio, totalizando $8.625$ mudas.
-
-**7. Verificação crítica:** A densidade de $1.667\text{ mudas}\cdot\text{ha}^{-1}$ ($7.500 / 4{,}5$) corresponde exatamente ao padrão clássico de $3{,}0\text{ m} \times 2{,}0\text{ m}$ adotado em projetos de restauração florestal.
-
-:::
-
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 4 — Análise de Responsabilidade Administrativa e Civil por Supressão em APP
-
-**1. Situação-problema / Enunciado:** Durante vistoria fiscalizatória em uma propriedade rural, constatou-se o desmatamento não autorizado de vegetação nativa em APP marginal para implantação de pastagem.
-
-**2. Dados e informações fornecidas:** Área suprimida irregularmente $= 3{,}60\text{ ha}$; valor-base didático de multa administrativa adotado no exercício $= R$ 5.000{,00}\cdot\text{ha}^{-1}$, acrescido de $50%$ por incidir especificamente em APP; custo unitário estimado de execução e monitoramento de PRAD por $3$ anos $= R$ 18.000{,00}\cdot\text{ha}^{-1}$.
-
-**3. O que a análise solicita:** Calcule o valor da multa administrativa, o custo da reparação civil via PRAD e o desembolso financeiro total estimado, explicando a relação com a esfera penal.
-
-**4. Referencial e método adotado:** Aplicação independente das esferas administrativa e civil segundo o princípio da Tríplice Responsabilidade Ambiental (Art. 225, § 3^o^ da CF/88 e Lei n^o^ 9.605/1998).
-
-**5. Desenvolvimento passo a passo:**
-
-1. Multa administrativa com acréscimo de $50%$ ($1{,}50$):
 
 $$
-
-  M_{\text{adm}} = 3{,}60 \times 5.000{,}00 \times 1{,}50 = 18.000{,}00 \times 1{,}50 = R$ 27.000{,00}
-
+N_{\text{diversidade}} = 7.500 \times 0{,}40 = 3.000\text{ mudas}
 $$
 
-2. Custo da obrigação civil de recomposição (PRAD):
+ 3. Reserva técnica de $15\%$ para replantio,
 
 $$
-
-  C_{\text{PRAD}} = 3{,}60 \times 18.000{,}00 = R$ 64.800{,00}
-
+N_{\text{replantio}} = 7.500 \times 0{,}15 = 1.125\text{ mudas}
 $$
 
-3. Desembolso total nas esferas administrativa e civil:
+ 4. Total geral de mudas a adquirir,
 
 $$
-
-  C_{\text{total}} = 27.000{,}00 + 64.800{,}00 = R$ 91.800{,00}
-
+N_{\text{total}} = 7.500 + 1.125 = 8.625\text{ mudas}
 $$
 
 
-**6. Síntese / Resposta:** Multa administrativa de $R$ 27.000{,00}$ e custo de PRAD de $R$ 64.800{,00}$, somando $R$ 91.800{,00}$, sem prejuízo da eventual responsabilização penal (Art. 38 da Lei n^o^ 9.605/1998).
+**Interpretação do resultado.** Plantio inicial de $7.500$ mudas ($4.500$ de recobrimento e $3.000$ de diversidade), acrescido de $1.125$ mudas para replantio, totalizando $8.625$ mudas.
 
-**7. Verificação crítica:** O pagamento da multa administrativa não dispensa o infrator da obrigação civil de recuperar a APP, pois as três esferas são independentes e cumulativas.
+**Condições de validade.** A densidade de $1.667\text{ mudas}\cdot\text{ha}^{-1}$ ($7.500 / 4{,}5$) corresponde exatamente ao padrão clássico de $3{,}0\text{ m} \times 2{,}0\text{ m}$ adotado em projetos de restauração florestal.
 
-:::
+### Exemplo 4. Análise de Responsabilidade Administrativa e Civil por Supressão em APP
 
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 5 — Auditoria de Prazos e Etapas no Licenciamento Ambiental Trifásico
+**Situação analisada.** Durante vistoria fiscalizatória em uma propriedade rural, constatou-se o desmatamento não autorizado de vegetação nativa em APP marginal para implantação de pastagem.
 
-**1. Situação-problema / Enunciado:** Um empreendimento energético de médio impacto ambiental na Bahia obteve sua Licença de Operação (LO) junto ao órgão estadual competente (INEMA) após cumprir o rito trifásico.
+**Dados disponíveis.** Área suprimida irregularmente $= 3{,}60\text{ ha}$; valor-base didático de multa administrativa adotado no exercício $= \text{R\$ }5.000{,}00\cdot\text{ha}^{-1}$, acrescido de $50\%$ por incidir especificamente em APP; custo unitário estimado de execução e monitoramento de PRAD por $3$ anos $= \text{R\$ }18.000{,}00\cdot\text{ha}^{-1}$.
 
-**2. Dados e informações fornecidas:** Data de emissão da LO: $10/08/2026$; prazo de validade concedido na LO: $6$ anos (vencimento em $10/08/2032$).
+**Problema a resolver.** Calcule o valor da multa administrativa, o custo da reparação civil via PRAD e o desembolso financeiro total estimado, explicando a relação com a esfera penal.
 
-**3. O que a análise solicita:** Indique as atividades permitidas em cada fase anterior (LP e LI), verifique se o prazo de $6$ anos está dentro do intervalo legal da LO e determine a data limite para protocolar o pedido de renovação da LO com prorrogação automática.
+**Fundamento da análise.** Aplicação independente das esferas administrativa e civil segundo o princípio da Tríplice Responsabilidade Ambiental (Art. 225, §3^o^ da CF/88 e Lei n^o^ 9.605/1998).
 
-**4. Referencial e método adotado:** Confronto com os limites da Resolução CONAMA n^o^ 237/1997 (Art. 18) e da Lei Complementar n^o^ 140/2011 (Art. 14, § 4^o^).
+**Desenvolvimento.** 1. Multa administrativa com acréscimo de $50\%$ ($1{,}50$),
 
-**5. Desenvolvimento passo a passo:**
+$$
+M_{\text{adm}} = 3{,}60 \times 5.000{,}00 \times 1{,}50 = 18.000{,}00 \times 1{,}50 = \text{R\$ }27.000{,}00
+$$
 
-1. Verificação do prazo de validade da LO: a legislação fixa o intervalo de $4$ a $10$ anos para LO. Portanto, $6$ anos está integralmente dentro da faixa legal.
-2. Antecedência mínima legal para protocolo de renovação: $120$ dias antes do vencimento ($10/08/2032$).
-3. Contagem regressiva de $120$ dias antes de $10/08/2032$:
+ 2. Custo da obrigação civil de recomposição (PRAD),
 
-- Agosto: $10$ dias ($01$ a $10/08$); restam $110$ dias.
-- Julho: $31$ dias; restam $79$ dias.
-- Junho: $30$ dias; restam $49$ dias.
-- Maio: $31$ dias; restam $18$ dias.
-- Abril (30 dias): $30 - 18 = 12 \rightarrow$ data limite em **12/04/2032**.
+$$
+C_{\text{PRAD}} = 3{,}60 \times 18.000{,}00 = \text{R\$ }64.800{,}00
+$$
+
+ 3. Desembolso total nas esferas administrativa e civil,
+
+$$
+C_{\text{total}} = 27.000{,}00 + 64.800{,}00 = \text{R\$ }91.800{,}00
+$$
 
 
-**6. Síntese / Resposta:** A LP aprova apenas concepção/localização e a LI autoriza a obra; o prazo de $6$ anos da LO é válido ($4$ a $10$ anos); o pedido de renovação deve ser protocolado até **12/04/2032** para garantir a prorrogação automática.
+**Interpretação do resultado.** Multa administrativa de $\text{R\$ }27.000{,}00$ e custo de PRAD de $\text{R\$ }64.800{,}00$, somando $\text{R\$ }91.800{,}00$, sem prejuízo da eventual responsabilização penal (Art. 38 da Lei n^o^ 9.605/1998).
 
-**7. Verificação crítica:** Caso o empreendedor protocole após o prazo de $120$ dias e a licença vença sem análise, a operação torna-se irregular, sujeitando o responsável a embargo e autuação.
+**Condições de validade.** O pagamento da multa administrativa não dispensa o infrator da obrigação civil de recuperar a APP, pois as três esferas são independentes e cumulativas.
 
-:::
+### Exemplo 5. Auditoria de Prazos e Etapas no Licenciamento Ambiental Trifásico
 
-## Etapa 5: Erros Mais Comuns e Armadilhas Metodológicas
+**Situação analisada.** Um empreendimento energético de médio impacto ambiental na Bahia obteve sua Licença de Operação (LO) junto ao órgão estadual competente (INEMA) após cumprir o rito trifásico.
 
-::: {.callout-warning}
-## Erro 1 — Iniciar Obras Apenas com a Licença Prévia (LP)
+**Dados disponíveis.** Data de emissão da LO, $10/08/2026$; prazo de validade concedido na LO, $6$ anos (vencimento em $10/08/2032$).
+
+**Problema a resolver.** Indique as atividades permitidas em cada fase anterior (LP e LI), verifique se o prazo de $6$ anos está dentro do intervalo legal da LO e determine a data limite para protocolar o pedido de renovação da LO com prorrogação automática.
+
+**Fundamento da análise.** Confronto com os limites da Resolução CONAMA n^o^ 237/1997 (Art. 18) e da Lei Complementar n^o^ 140/2011 (Art. 14, §4^o^).
+
+**Desenvolvimento.** 1. Verificação do prazo de validade da LO, a legislação fixa o intervalo de $4$ a $10$ anos para LO. Portanto, $6$ anos está integralmente dentro da faixa legal. 2. Antecedência mínima legal para protocolo de renovação, $120$ dias antes do vencimento ($10/08/2032$). 3. Contagem regressiva de $120$ dias antes de $10/08/2032$,
+
+Agosto, $10$ dias ($01$ a $10/08$); restam $110$ dias. Julho, $31$ dias; restam $79$ dias. Junho, $30$ dias; restam $49$ dias. Maio, $31$ dias; restam $18$ dias. Abril (30 dias), $30 - 18 = 12 \rightarrow$ data limite em **12/04/2032**.
+
+**Interpretação do resultado.** A LP aprova apenas concepção/localização e a LI autoriza a obra; o prazo de $6$ anos da LO é válido ($4$ a $10$ anos); o pedido de renovação deve ser protocolado até **12/04/2032** para garantir a prorrogação automática.
+
+**Condições de validade.** Caso o empreendedor protocole após o prazo de $120$ dias e a licença vença sem análise, a operação torna-se irregular, sujeitando o responsável a embargo e autuação.
+
+## Etapa 5 - Erros de interpretação
+
+### Erro 1, Iniciar Obras Apenas com a Licença Prévia (LP)
 
 A Licença Prévia atesta somente a viabilidade locacional e ambiental do projeto. Realizar supressão vegetal, abertura de acessos ou terraplenagem com base apenas na LP configura instalação sem licença válida, gerando embargo imediato da obra, multa administrativa e crime ambiental (Art. 60 da Lei n^o^ 9.605/1998).
 
-:::
+### Erro 2, Medir a APP Marginal a Partir do Espelho d’Água da Estiagem
 
-::: {.callout-warning}
-## Erro 2 — Medir a APP Marginal a Partir do Espelho d'Água da Estiagem
+No Semiárido e em rios sazonais, o espelho d’água reduz-se drasticamente na seca (ou desaparece nos rios intermitentes). O Art. 4^o^ do Código Florestal determina que a faixa de APP seja medida a partir da **borda da calha do leito regular**, e não do filete d’água momentâneo da estação seca.
 
-No Semiárido e em rios sazonais, o espelho d'água reduz-se drasticamente na seca (ou desaparece nos rios intermitentes). O Art. 4^o^ do Código Florestal determina que a faixa de APP seja medida a partir da **borda da calha do leito regular**, e não do filete d'água momentâneo da estação seca.
-
-:::
-
-::: {.callout-warning}
-## Erro 3 — Confundir Recuperação de APP com Compensação em Outro Imóvel
+### Erro 3, Confundir Recuperação de APP com Compensação em Outro Imóvel
 
 Enquanto o passivo de Reserva Legal pode ser compensado fora do imóvel (via Cota de Reserva Ambiental ou área equivalente no mesmo bioma), passivos em **Áreas de Preservação Permanente** exigem recomposição física *in loco* na própria área protegida, pois sua função hidrogeomorfológica é intransferível.
 
-:::
+### Erro 4, Tratar a Tríplice Responsabilidade como Alternativa (“Paga Multa ou Recupera”)
 
-::: {.callout-warning}
-## Erro 4 — Tratar a Tríplice Responsabilidade como Alternativa ("Paga Multa ou Recupera")
+Um equívoco frequente é supor que o pagamento de multa administrativa encerra o problema ambiental. Na realidade, as esferas civil, administrativa e penal são independentes, o infrator paga a multa (administrativa), continua obrigado a recuperar integralmente a área via PRAD (civil) e pode responder a processo criminal (penal).
 
-Um equívoco frequente é supor que o pagamento de multa administrativa encerra o problema ambiental. Na realidade, as esferas civil, administrativa e penal são independentes: o infrator paga a multa (administrativa), continua obrigado a recuperar integralmente a área via PRAD (civil) e pode responder a processo criminal (penal).
+## Etapa 6 - Exercícios de fixação
 
-:::
-
-## Etapa 6: Exercícios de Fixação (15 Questões)
-
-### Bloco A — Questões Conceituais Básicas (1 a 5)
+#### Bloco A, Questões Conceituais Básicas (1 a 5)
 
 1. Cite os objetivos principais da Política Nacional do Meio Ambiente (Lei n^o^ 6.938/1981) e explique a função do CONAMA e dos órgãos executores/seccionais (IBAMA e INEMA) dentro do SISNAMA.
-  
-*Espaço reservado para resolução na versão impressa.*
+
 2. Diferencie o escopo técnico e jurídico da Licença Prévia (LP), da Licença de Instalação (LI) e da Licença de Operação (LO).
-  
-*Espaço reservado para resolução na versão impressa.*
+
 3. Explique a diferença entre o EIA (Estudo de Impacto Ambiental) e o RIMA (Relatório de Impacto Ambiental), indicando em qual etapa do licenciamento são analisados.
-  
-*Espaço reservado para resolução na versão impressa.*
+
 4. Distinga a função ambiental e o regime jurídico da Área de Preservação Permanente (APP) em relação à Reserva Legal (RL) no Código Florestal.
-  
-*Espaço reservado para resolução na versão impressa.*
+
 5. Descreva os cinco blocos técnicos mínimos que estruturam um Plano de Recuperação de Áreas Degradadas (PRAD).
-  
-*Espaço reservado para resolução na versão impressa.*
 
-### Bloco B — Questões Intermediárias e Quantitativas (6 a 10)
+#### Bloco B, Questões Intermediárias e Quantitativas (6 a 10)
 
-1. Uma propriedade rural de $180{,}0\text{ ha}$ na Bahia é atravessada por um riacho de $6{,}0\text{ m}$ de largura média (ambas as margens no interior do imóvel, $n_m = 2$) ao longo de $800\text{ m}$ de extensão, possuindo ainda $2$ nascentes perenes isoladas. Calcule a área total de APP do imóvel e a área mínima exigida de Reserva Legal.
-  
-*Espaço reservado para resolução na versão impressa.*
-2. Um imóvel de $500{,}0\text{ ha}$ situado em área de floresta na Amazônia Legal possui $310{,}0\text{ ha}$ de vegetação nativa fora de APP e $100{,}0\text{ ha}$ de APP conservada. Determine a RL exigida ($80%$), verifique se há déficit sem o cômputo da APP e avalie se o cômputo do Art. 15 supre integralmente a exigência legal.
-  
-*Espaço reservado para resolução na versão impressa.*
-3. Para recuperar uma área alterada de $3{,}00\text{ ha}$ ($30.000\text{ m}^2$) em APP, um PRAD especifica plantio de mudas nativas no espaçamento $2{,}5\text{ m} \times 2{,}0\text{ m}$ ($5{,}0\text{ m}^2$ por muda), com $50%$ de pioneiras/secundárias iniciais e $50%$ de secundárias tardias/clímax, além de $10%$ de reserva para replantio. Calcule o total de mudas a adquirir.
-  
-*Espaço reservado para resolução na versão impressa.*
-4. Uma indústria recebeu sua Licença de Instalação (LI) com validade de $4$ anos e, após concluir a obra, obteve a LO em $15/05/2027$ com validade de $5$ anos. Indique a data de vencimento da LO e a data limite para protocolar o pedido de renovação com antecedência mínima de $120$ dias.
-  
-*Espaço reservado para resolução na versão impressa.*
-5. Um empreendimento suprimiu irregularmente $2{,}50\text{ ha}$ de vegetação nativa fora de APP, sofrendo multa didática de $R$ 4.000{,00}\cdot\text{ha}^{-1}$ e obrigação de executar PRAD orçado em $R$ 14.000{,00}\cdot\text{ha}^{-1}$. Calcule o custo total nas esferas administrativa e civil.
-  
-*Espaço reservado para resolução na versão impressa.*
+6. Uma propriedade rural de $180{,}0\text{ ha}$ na Bahia é atravessada por um riacho de $6{,}0\text{ m}$ de largura média (ambas as margens no interior do imóvel, $n_m = 2$) ao longo de $800\text{ m}$ de extensão, possuindo ainda $2$ nascentes perenes isoladas. Calcule a área total de APP do imóvel e a área mínima exigida de Reserva Legal.
 
-### Bloco C — Questões Objetivas de Múltipla Escolha (11 a 15)
+7. Um imóvel de $500{,}0\text{ ha}$ situado em área de floresta na Amazônia Legal possui $310{,}0\text{ ha}$ de vegetação nativa fora de APP e $100{,}0\text{ ha}$ de APP conservada. Determine a RL exigida ($80\%$), verifique se há déficit sem o cômputo da APP e avalie se o cômputo do Art. 15 supre integralmente a exigência legal.
 
-1. No âmbito do SISNAMA (Lei n^o^ 6.938/1981), o órgão consultivo e deliberativo responsável por estabelecer normas e padrões ambientais nacionais mediante resoluções é o:
-  
+8. Para recuperar uma área alterada de $3{,}00\text{ ha}$ ($30.000\text{ m}^2$) em APP, um PRAD especifica plantio de mudas nativas no espaçamento $2{,}5\text{ m} \times 2{,}0\text{ m}$ ($5{,}0\text{ m}^2$ por muda), com $50\%$ de pioneiras/secundárias iniciais e $50\%$ de secundárias tardias/clímax, além de $10\%$ de reserva para replantio. Calcule o total de mudas a adquirir.
 
-  
-*Espaço reservado para resolução na versão impressa.*
-7. De acordo com a Lei n^o^ 12.651/2012 (Art. 4^o^), a faixa mínima de Área de Preservação Permanente para um curso d'água natural com $75\text{ m}$ de largura de calha regular e para uma nascente perene são, respectivamente:
-  
+9. Uma indústria recebeu sua Licença de Instalação (LI) com validade de $4$ anos e, após concluir a obra, obteve a LO em $15/05/2027$ com validade de $5$ anos. Indique a data de vencimento da LO e a data limite para protocolar o pedido de renovação com antecedência mínima de $120$ dias.
 
-  
-*Espaço reservado para resolução na versão impressa.*
-13. Os percentuais mínimos de Reserva Legal exigidos pelo Código Florestal para imóveis situados na Amazônia Legal em áreas de floresta, cerrado e campos gerais são, respectivamente:
-  
+10. Um empreendimento suprimiu irregularmente $2{,}50\text{ ha}$ de vegetação nativa fora de APP, sofrendo multa didática de $\text{R\$ }4.000{,}00\cdot\text{ha}^{-1}$ e obrigação de executar PRAD orçado em $\text{R\$ }14.000{,}00\cdot\text{ha}^{-1}$. Calcule o custo total nas esferas administrativa e civil.
 
-  
-*Espaço reservado para resolução na versão impressa.*
-19. Sobre a Tríplice Responsabilidade Ambiental no ordenamento jurídico brasileiro, é correto afirmar que:
-  
+#### Bloco C, Questões Objetivas de Múltipla Escolha (11 a 15)
 
-  
-*Espaço reservado para resolução na versão impressa.*
-25. No Licenciamento Ambiental Trifásico (Resolução CONAMA n^o^ 237/1997), a licença que autoriza o início efetivo das obras civis e da instalação dos equipamentos, mediante atendimento às condicionantes da fase preliminar, é a:
-  
+11. No âmbito do SISNAMA (Lei n^o^ 6.938/1981), o órgão consultivo e deliberativo responsável por estabelecer normas e padrões ambientais nacionais mediante resoluções é o,
 
-  
-*Espaço reservado para resolução na versão impressa.*
+    (A) IBAMA.
 
-## Etapa 7: Questões no Estilo ENADE e Concursos Ambientais
+    (B) CONAMA.
 
-::: {.callout-tip}
-## Foco de Provas, ENADE e Concursos (IBAMA / INEMA / Perícia)
+    (C) INEMA.
+
+    (D) ICMBio.
+
+    (E) Ministério Público Federal.
+
+12. De acordo com a Lei n^o^ 12.651/2012 (Art. 4^o^), a faixa mínima de Área de Preservação Permanente para um curso d’água natural com $75\text{ m}$ de largura de calha regular e para uma nascente perene são, respectivamente,
+
+    (A) $50\text{ m}$ e $30\text{ m}$.
+
+    (B) $100\text{ m}$ e $50\text{ m}$.
+
+    (C) $200\text{ m}$ e $50\text{ m}$.
+
+    (D) $100\text{ m}$ e $100\text{ m}$.
+
+    (E) $30\text{ m}$ e $50\text{ m}$.
+
+13. Os percentuais mínimos de Reserva Legal exigidos pelo Código Florestal para imóveis situados na Amazônia Legal em áreas de floresta, cerrado e campos gerais são, respectivamente,
+
+    (A) $80\%$, $35\%$ e $20\%$.
+
+    (B) $80\%$, $50\%$ e $20\%$.
+
+    (C) $50\%$, $35\%$ e $20\%$.
+
+    (D) $80\%$, $20\%$ e $20\%$.
+
+    (E) $35\%$, $20\%$ e $20\%$.
+
+14. Sobre a Tríplice Responsabilidade Ambiental no ordenamento jurídico brasileiro, é correto afirmar que,
+
+    (A) A responsabilidade civil ambiental é subjetiva, exigindo sempre a prova de intenção dolosa do degradador.
+
+    (B) O pagamento da multa administrativa extingue automaticamente a obrigação de reparar o dano em PRAD.
+
+    (C) As sanções administrativas, civis e penais podem incidir cumulativamente sobre o mesmo fato danoso, sendo objetiva a obrigação civil de reparar o dano.
+
+    (D) Pessoas jurídicas não podem ser responsabilizadas na esfera penal por crimes ambientais no Brasil.
+
+    (E) A obrigação de recompor a Reserva Legal desaparece quando o imóvel rural é vendido a terceiros.
+
+15. No Licenciamento Ambiental Trifásico (Resolução CONAMA n^o^ 237/1997), a licença que autoriza o início efetivo das obras civis e da instalação dos equipamentos, mediante atendimento às condicionantes da fase preliminar, é a,
+
+    (A) Licença Prévia (LP).
+
+    (B) Licença de Instalação (LI).
+
+    (C) Licença de Operação (LO).
+
+    (D) Outorga Preventiva de Uso da Água.
+
+    (E) Certidão de Cadastro Ambiental Rural (CAR).
+
+## Etapa 7 - Questões de aplicação
+
+### Foco de Provas, ENADE e Concursos (IBAMA / INEMA / Perícia)
 
 Questões de concursos e do ENADE frequentemente apresentam situações reais de campo em que um proprietário ou empreendedor confunde fases do licenciamento, mede APPs de forma equivocada ou tenta compensar APP fora do imóvel. Domine os números exatos da Lei n^o^ 12.651/2012 e a independência das três esferas de responsabilidade.
 
-:::
+16. **\[Questão Autoral, Estilo ENADE / Geografia\]** Durante visita técnica a uma propriedade rural localizada no Semiárido Baiano, estudantes da disciplina Análise Ambiental observaram que um trecho de $600\text{ m}$ da margem de um rio perene de $15\text{ m}$ de largura encontrava-se desmatado e com sulcos erosivos ativos. O proprietário afirmou que não havia necessidade de recomposição porque, (1) a faixa desmatada media $30\text{ m}$ de largura a partir do espelho d’água atual na estação seca; e (2) ele pretendia comprar uma área de Caatinga preservada em outro município para “compensar a APP” desmatada. À luz da Lei n^o^ 12.651/2012, avalie as afirmações,
 
-1. **[Questão Autoral — Estilo ENADE / Geografia]** Durante visita técnica a uma propriedade rural localizada no Semiárido Baiano, estudantes da disciplina Análise Ambiental observaram que um trecho de $600\text{ m}$ da margem de um rio perene de $15\text{ m}$ de largura encontrava-se desmatado e com sulcos erosivos ativos. O proprietário afirmou que não havia necessidade de recomposição porque: (1) a faixa desmatada media $30\text{ m}$ de largura a partir do espelho d'água atual na estação seca; e (2) ele pretendia comprar uma área de Caatinga preservada em outro município para "compensar a APP" desmatada. À luz da Lei n^o^ 12.651/2012, avalie as afirmações:
-  
+    - Para um curso d’água de $15\text{ m}$ de largura, a APP marginal mínima é de $50\text{ m}$ medidos a partir da borda da calha do leito regular, e não do espelho d’água da estiagem.
 
-  É correto o que se afirma em:
-  
+    - A compensação em outro imóvel rural aplica-se a déficits de Reserva Legal, não substituindo a obrigação de recompor fisicamente a APP degradada no próprio imóvel.
 
-10. **[Questão Autoral — Estilo Concurso Analista Ambiental / INEMA-BA]** Um empreendimento com potencial de significativa degradação ambiental protocolou pedido de licenciamento junto ao órgão estadual competente. Considerando a Resolução CONAMA n^o^ 001/1986 e a Resolução CONAMA n^o^ 237/1997, assinale a sequência correta de procedimentos administrativos:
-  
+    - Por se tratar de propriedade situada na Bahia, o percentual mínimo de Reserva Legal exigido é de $35\%$.
 
-16. **[Questão Autoral — Estilo Concurso Analista Ambiental / IBAMA]** Em razão de vazamento de efluentes industriais não licenciados que provocou mortandade de peixes e contaminação de margem fluvial, o órgão ambiental lavrou auto de infração com multa, o Ministério Público ajuizou ação civil pública exigindo PRAD e indenização, e foi instaurado processo criminal com base na Lei n^o^ 9.605/1998. A defesa da empresa alegou que não houve intenção de poluir e que o pagamento da multa administrativa já impediria outras cobranças. Sob o ponto de vista jurídico-ambiental brasileiro, a tese da defesa é:
-  
+    É correto o que se afirma em,
 
-## Etapa 8: Gabarito Comentado do Capítulo 14
+    (A) I, apenas.
 
-::: {.callout-note collapse=\"true\"}
-## Resoluções Completas — Exercícios de Fixação (1 a 15)
+    (B) III, apenas.
+
+    (C) I e II, apenas.
+
+    (D) II e III, apenas.
+
+    (E) I, II e III.
+
+17. **\[Questão Autoral, Estilo Concurso Analista Ambiental / INEMA-BA\]** Um empreendimento com potencial de significativa degradação ambiental protocolou pedido de licenciamento junto ao órgão estadual competente. Considerando a Resolução CONAMA n^o^ 001/1986 e a Resolução CONAMA n^o^ 237/1997, assinale a sequência correta de procedimentos administrativos,
+
+    (A) Emissão da LI para abertura do canteiro de obras $\rightarrow$ elaboração do EIA/RIMA durante a operação $\rightarrow$ emissão da LP ao final da vida útil.
+
+    (B) Elaboração do EIA/RIMA e realização de audiência pública $\rightarrow$ análise e emissão da LP (viabilidade locacional) $\rightarrow$ aprovação dos projetos executivos e emissão da LI (autorização de obras) $\rightarrow$ verificação das condicionantes e emissão da LO (funcionamento).
+
+    (C) Inscrição no CAR $\rightarrow$ dispensa de LP e LI $\rightarrow$ emissão direta da LO por autodeclaração.
+
+    (D) Emissão simultânea de LP, LI e LO sem vistoria prévia para qualquer obra energética de grande porte.
+
+    (E) Elaboração apenas do RIMA simplificado sem EIA técnico, sendo facultativa a apresentação de alternativas locacionais.
+
+18. **\[Questão Autoral, Estilo Concurso Analista Ambiental / IBAMA\]** Em razão de vazamento de efluentes industriais não licenciados que provocou mortandade de peixes e contaminação de margem fluvial, o órgão ambiental lavrou auto de infração com multa, o Ministério Público ajuizou ação civil pública exigindo PRAD e indenização, e foi instaurado processo criminal com base na Lei n^o^ 9.605/1998. A defesa da empresa alegou que não houve intenção de poluir e que o pagamento da multa administrativa já impediria outras cobranças. Sob o ponto de vista jurídico-ambiental brasileiro, a tese da defesa é,
+
+    (A) Procedente, pois a responsabilidade civil ambiental exige comprovação de dolo específico.
+
+    (B) Procedente, pois o princípio da unicidade impede a cumulação de multa administrativa com ação penal.
+
+    (C) Improcedente, pois a responsabilidade civil ambiental é objetiva (independe de culpa ou dolo) e as esferas civil, administrativa e penal são independentes e cumulativas.
+
+    (D) Parcialmente procedente, pois empresas privadas não podem sofrer sanções administrativas, apenas pessoas físicas.
+
+    (E) Improcedente apenas quanto à multa, mas procedente quanto ao PRAD, que é sempre facultativo em áreas industriais.
+
+## Etapa 8 - Gabarito comentado
+
+### Resoluções Completas, Exercícios de Fixação (1 a 15)
 
 1. A PNMA visa preservar, melhorar e recuperar a qualidade ambiental propícia à vida e ao desenvolvimento sustentável. No SISNAMA, o **CONAMA** atua como órgão consultivo e deliberativo (editando normas e resoluções), enquanto **IBAMA** (federal) e **INEMA** (estadual na Bahia) executam o licenciamento, a fiscalização e o controle ambiental em suas respectivas esferas de competência.
-2. **LP:** atesta viabilidade ambiental e aprova localização/concepção (não autoriza obra). **LI:** autoriza a instalação/construção do empreendimento segundo projetos executivos aprovados. **LO:** autoriza o início da operação após verificação do cumprimento das condicionantes anteriores.
+
+2. **LP.** Atesta viabilidade ambiental e aprova localização/concepção (não autoriza obra). **LI.** Autoriza a instalação/construção do empreendimento segundo projetos executivos aprovados. **LO.** Autoriza o início da operação após verificação do cumprimento das condicionantes anteriores.
+
 3. O **EIA** é o estudo técnico-científico multidisciplinar completo (diagnóstico, prognóstico, impactos, alternativas e programas); o **RIMA** é sua síntese acessível ao público e aos conselhos. Ambos integram a fase preliminar de avaliação que subsidia a decisão sobre a **LP**.
-4. A **APP** tem função ambiental rígida vinculada a feições sensíveis (rios, nascentes, encostas, topos de morro), exigindo preservação integral e recuperação *in loco* quando degradada. A **Reserva Legal** é um percentual da área do imóvel rural ($20%$, $35%$ ou $80%$) destinado à conservação da vegetação nativa com possibilidade de manejo sustentável e compensação legal em caso de passivo consolidado.
-5. Os cinco blocos são: (1) identificação e diagnóstico da área; (2) isolamento dos fatores de degradação; (3) preparo físico e obras de controle erosivo/bioengenharia; (4) recomposição vegetal estratificada; (5) cronograma executivo e monitoramento por indicadores.
-6. **Desenvolvimento:**
-  Riacho de $6{,}0\text{ m}$ ($< 10\text{ m}$): APP de $w = 30\text{ m}$ em cada margem ($n_m = 2$).
-  APP marginal: $A_{\text{marg}} = (2 \times 800 \times 30) / 10.000 = 48.000 / 10.000 = 4{,}80\text{ ha}$.
-  APP das $2$ nascentes ($r = 50\text{ m}$): $A_{\text{nasc}} = 2 \times (\pi \cdot 50^2 / 10.000) \approx 2 \times 0{,}7854 = 1{,}57\text{ ha}$.
-  APP total: $4{,}80 + 1{,}57 = \mathbf{6{,}37\text{ ha}}$.
-  Reserva Legal mínima na Bahia ($20%$): $A_{\text{RL}} = 0{,}20 \times 180{,}0 = \mathbf{36{,}00\text{ ha}}$.
-7. **Desenvolvimento:**
-  RL exigida ($80%$ em floresta na Amazônia Legal): $0{,}80 \times 500{,}0 = \mathbf{400{,}0\text{ ha}}$.
-  Sem cômputo da APP: déficit de $400{,}0 - 310{,}0 = \mathbf{90{,}0\text{ ha}}$.
-  Com cômputo da APP (Art. 15): $310{,}0 + 100{,}0 = \mathbf{410{,}0\text{ ha}}$ ($82{,}0% > 80%$), suprindo integralmente a exigência com $10{,}0\text{ ha}$ excedentes.
-8. **Desenvolvimento:**
-  Mudas base: $30.000 / 5{,}0 = 6.000$ mudas ($3.000$ pioneiras/secundárias iniciais e $3.000$ secundárias tardias/clímax).
-  Reserva de replantio ($10%$): $6.000 \times 0{,}10 = 600$ mudas.
-  Total a adquirir: $6.000 + 600 = \mathbf{6.600\text{ mudas}}$.
-9. **Desenvolvimento:**
-  Vencimento da LO: **15/05/2032** ($5$ anos após $15/05/2027$).
-  Contagem regressiva de $120$ dias (lembrando que 2032 é ano bissexto, mas fevereiro já ficou antes da contagem):
-  Maio ($15$ dias: $01$ a $15/05$, restam $105$); Abril ($30$ dias, restam $75$); Março ($31$ dias, restam $44$); Fevereiro de 2032 ($29$ dias, restam $15$); Janeiro ($31 - 15 = 16 \rightarrow$ **16/01/2032**). (Em anos não bissextos seria 15/01; em 2032, bissexto, $16/01/2032$ completa exatamente $120$ dias até $15/05/2032$.)
-10. **Desenvolvimento:**
-  Multa administrativa: $2{,}50 \times 4.000{,}00 = R$ 10.000{,00}$.
-  Custo do PRAD (esfera civil): $2{,}50 \times 14.000{,}00 = R$ 35.000{,00}$.
-  Total nas duas esferas: $10.000{,}00 + 35.000{,}00 = \mathbf{R$ 45.000{,00}}$.
-11. **Gabarito: (B).** O CONAMA é o órgão consultivo e deliberativo do SISNAMA.
-12. **Gabarito: (B).** Cursos d'água entre $50\text{ m}$ e $200\text{ m}$ de largura exigem $100\text{ m}$ de APP marginal; nascentes perenes exigem raio de $50\text{ m}$.
-13. **Gabarito: (A).** Art. 12 da Lei n^o^ 12.651/2012: $80%$ (florestas), $35%$ (cerrado) e $20%$ (campos gerais) na Amazônia Legal.
-14. **Gabarito: (C).** A responsabilidade civil ambiental é objetiva (baseada no risco integral e no nexo causal) e coexiste de forma independente com as sanções administrativas e penais.
-15. **Gabarito: (B).** A Licença de Instalação (LI) é o ato administrativo que autoriza a execução física das obras e a instalação do empreendimento.
 
-:::
+4. A **APP** tem função ambiental rígida vinculada a feições sensíveis (rios, nascentes, encostas, topos de morro), exigindo preservação integral e recuperação *in loco* quando degradada. A **Reserva Legal** é um percentual da área do imóvel rural ($20\%$, $35\%$ ou $80\%$) destinado à conservação da vegetação nativa com possibilidade de manejo sustentável e compensação legal em caso de passivo consolidado.
 
-::: {.callout-note collapse=\"true\"}
-## Resoluções Completas — Questões ENADE e Concursos (1 a 3)
+5. Os cinco blocos são, (1) identificação e diagnóstico da área; (2) isolamento dos fatores de degradação; (3) preparo físico e obras de controle erosivo/bioengenharia; (4) recomposição vegetal estratificada; (5) cronograma executivo e monitoramento por indicadores.
 
-1. **Gabarito: (C).** As afirmações I e II estão corretas: rio de $15\text{ m}$ exige $50\text{ m}$ de APP medidos da borda da calha regular, e APP degradada deve ser recuperada no local, não cabendo compensação externa. A afirmação III é falsa porque a Bahia está fora da Amazônia Legal, aplicando-se $20%$ de Reserva Legal.
-2. **Gabarito: (B).** Apenas (B) respeita a ordem cronológica e legal do licenciamento trifásico para obras sujeitas a EIA/RIMA: estudos e audiência pública prévios à LP, projetos executivos e autorização de obras na LI, e funcionamento autorizado na LO.
-3. **Gabarito: (C).** A tese da defesa é improcedente em ambos os pontos: no Brasil, a obrigação civil de reparar o dano ambiental é objetiva (dispensa prova de dolo ou culpa) e as três esferas (civil, administrativa e penal) atuam de forma independente e cumulativa.
+6. **Desenvolvimento,** Riacho de $6{,}0\text{ m}$ ($< 10\text{ m}$), APP de $w = 30\text{ m}$ em cada margem ($n_m = 2$). APP marginal, $A_{\text{marg}} = (2 \times 800 \times 30) / 10.000 = 48.000 / 10.000 = 4{,}80\text{ ha}$. APP das $2$ nascentes ($r = 50\text{ m}$), $A_{\text{nasc}} = 2 \times (\pi \cdot 50^2 / 10.000) \approx 2 \times 0{,}7854 = 1{,}57\text{ ha}$. APP total, $4{,}80 + 1{,}57 = \mathbf{6{,}37\text{ ha}}$. Reserva Legal mínima na Bahia ($20\%$), $A_{\text{RL}} = 0{,}20 \times 180{,}0 = \mathbf{36{,}00\text{ ha}}$.
 
-:::
+7. **Desenvolvimento,** RL exigida ($80\%$ em floresta na Amazônia Legal), $0{,}80 \times 500{,}0 = \mathbf{400{,}0\text{ ha}}$. Sem cômputo da APP, déficit de $400{,}0 - 310{,}0 = \mathbf{90{,}0\text{ ha}}$. Com cômputo da APP (Art. 15), $310{,}0 + 100{,}0 = \mathbf{410{,}0\text{ ha}}$ ($82{,}0\% > 80\%$), suprindo integralmente a exigência com $10{,}0\text{ ha}$ excedentes.
 
-::: {.callout-note}
-## Etapa 9 — Resumo do capítulo e síntese conceitual
+8. **Desenvolvimento,** Mudas base, $30.000 / 5{,}0 = 6.000$ mudas ($3.000$ pioneiras/secundárias iniciais e $3.000$ secundárias tardias/clímax). Reserva de replantio ($10\%$), $6.000 \times 0{,}10 = 600$ mudas. Total a adquirir, $6.000 + 600 = \mathbf{6.600\text{ mudas}}$.
 
-- **PNMA (Lei n^o^ 6.938/1981):** institui o SISNAMA (CONAMA, MMA, IBAMA, ICMBio, órgãos estaduais como INEMA e órgãos municipais) e instrumentos como AIA, licenciamento, zoneamento e SINIMA.
-- **Licenciamento Trifásico (CONAMA 237/1997 e 001/1986):** LP (viabilidade e localização; até $5$ anos), LI (instalação/obras; até $6$ anos) e LO (operação; $4$ a $10$ anos, renovação com $120$ dias de antecedência); EIA/RIMA obrigatório para significativa degradação.
-- **Código Florestal (Lei n^o^ 12.651/2012):** APPs marginais de $30\text{ m}$ a $500\text{ m}$, nascentes de $50\text{ m}$, encostas $> 45^\circ$, topos de morro, restingas e manguezais; Reserva Legal de $80%$, $35%$ ou $20%$; regularização via CAR e PRA.
-- **PRAD e Tríplice Responsabilidade:** recomposição técnica com isolamento, bioengenharia, plantio estratificado e monitoramento; responsabilização civil objetiva, administrativa e penal cumulativas (Lei n^o^ 9.605/1998).
+9. **Desenvolvimento,** Vencimento da LO, **15/05/2032** ($5$ anos após $15/05/2027$). Contagem regressiva de $120$ dias (lembrando que 2032 é ano bissexto, mas fevereiro já ficou antes da contagem), Maio ($15$ dias, $01$ a $15/05$, restam $105$); Abril ($30$ dias, restam $75$); Março ($31$ dias, restam $44$); Fevereiro de 2032 ($29$ dias, restam $15$); Janeiro ($31 - 15 = 16 \rightarrow$ **16/01/2032**). (Em anos não bissextos seria 15/01; em 2032, bissexto, $16/01/2032$ completa exatamente $120$ dias até $15/05/2032$.)
 
-:::
+10. **Desenvolvimento,** Multa administrativa, $2{,}50 \times 4.000{,}00 = \text{R\$ }10.000{,}00$. Custo do PRAD (esfera civil), $2{,}50 \times 14.000{,}00 = \text{R\$ }35.000{,}00$. Total nas duas esferas, $10.000{,}00 + 35.000{,}00 = \mathbf{\text{R\$ }45.000{,}00}$.
 
-::: {.callout-important}
-## Etapa 10 — Teste de aprendizagem (Checkpoint)
+11. **Gabarito, (B).** O CONAMA é o órgão consultivo e deliberativo do SISNAMA.
 
-Avalie cada afirmação com **V** (Verdadeiro) ou **F** (Falso) antes de conferir o gabarito abaixo:
+12. **Gabarito, (B).** Cursos d’água entre $50\text{ m}$ e $200\text{ m}$ de largura exigem $100\text{ m}$ de APP marginal; nascentes perenes exigem raio de $50\text{ m}$.
 
-1. (   ) A Licença Prévia (LP) autoriza o empreendedor a realizar a supressão vegetal e a terraplenagem inicial do terreno enquanto conclui os projetos executivos para a LI.
-2. (   ) Em um curso d'água natural de $40\text{ m}$ de largura, a APP marginal mínima prevista no Código Florestal é de $50\text{ m}$ em cada margem a partir da borda da calha do leito regular.
-3. (   ) Na Bahia, o percentual mínimo de Reserva Legal exigido para imóveis rurais é de $20%$, podendo a APP conservada ser computada apenas quando atendidos os requisitos cumulativos do Art. 15 da Lei n^o^ 12.651/2012.
-4. (   ) A obrigação civil de reparar o dano ambiental independe da comprovação de dolo ou culpa do agente, coexistindo com eventuais multas administrativas e sanções penais.
+13. **Gabarito, (A).** Art. 12 da Lei n^o^ 12.651/2012, $80\%$ (florestas), $35\%$ (cerrado) e $20\%$ (campos gerais) na Amazônia Legal.
 
-{\footnotesize**Gabarito do Checkpoint:** 1-**F**\ (a instalação e a supressão dependem da LI)  |  2-**V**  |  3-**V**  |  4-**V**.}
+14. **Gabarito, (C).** A responsabilidade civil ambiental é objetiva (baseada no risco integral e no nexo causal) e coexiste de forma independente com as sanções administrativas e penais.
 
-:::
+15. **Gabarito, (B).** A Licença de Instalação (LI) é o ato administrativo que autoriza a execução física das obras e a instalação do empreendimento.
+
+### Resoluções Completas, Questões ENADE e Concursos (16 a 18)
+
+16. **Gabarito, (C).** As afirmações I e II estão corretas, rio de $15\text{ m}$ exige $50\text{ m}$ de APP medidos da borda da calha regular, e APP degradada deve ser recuperada no local, não cabendo compensação externa. A afirmação III é falsa porque a Bahia está fora da Amazônia Legal, aplicando-se $20\%$ de Reserva Legal.
+
+17. **Gabarito, (B).** Apenas (B) respeita a ordem cronológica e legal do licenciamento trifásico para obras sujeitas a EIA/RIMA, estudos e audiência pública prévios à LP, projetos executivos e autorização de obras na LI, e funcionamento autorizado na LO.
+
+18. **Gabarito, (C).** A tese da defesa é improcedente em ambos os pontos, no Brasil, a obrigação civil de reparar o dano ambiental é objetiva (dispensa prova de dolo ou culpa) e as três esferas (civil, administrativa e penal) atuam de forma independente e cumulativa.
+
+## Etapa 9 - Síntese conceitual
+
+**PNMA (Lei n^o^ 6.938/1981).** Institui o SISNAMA (CONAMA, MMA, IBAMA, ICMBio, órgãos estaduais como INEMA e órgãos municipais) e instrumentos como AIA, licenciamento, zoneamento e SINIMA. **Licenciamento Trifásico (CONAMA 237/1997 e 001/1986),** LP (viabilidade e localização; até $5$ anos), LI (instalação/obras; até $6$ anos) e LO (operação; $4$ a $10$ anos, renovação com $120$ dias de antecedência); EIA/RIMA obrigatório para significativa degradação. **Código Florestal (Lei n^o^ 12.651/2012),** APPs marginais de $30\text{ m}$ a $500\text{ m}$, nascentes de $50\text{ m}$, encostas $> 45^\circ$, topos de morro, restingas e manguezais; Reserva Legal de $80\%$, $35\%$ ou $20\%$; regularização via CAR e PRA.
+
+**PRAD e Tríplice Responsabilidade.** Recomposição técnica com isolamento, bioengenharia, plantio estratificado e monitoramento; responsabilização civil objetiva, administrativa e penal cumulativas (Lei n^o^ 9.605/1998).
+
+## Etapa 10 - Verificação da aprendizagem
+
+Avalie cada afirmação com **V** (Verdadeiro) ou **F** (Falso) antes de conferir o gabarito abaixo,
+
+1. ( ) A Licença Prévia (LP) autoriza o empreendedor a realizar a supressão vegetal e a terraplenagem inicial do terreno enquanto conclui os projetos executivos para a LI.
+
+2. ( ) Em um curso d’água natural de $40\text{ m}$ de largura, a APP marginal mínima prevista no Código Florestal é de $50\text{ m}$ em cada margem a partir da borda da calha do leito regular.
+
+3. ( ) Na Bahia, o percentual mínimo de Reserva Legal exigido para imóveis rurais é de $20\%$, podendo a APP conservada ser computada apenas quando atendidos os requisitos cumulativos do Art. 15 da Lei n^o^ 12.651/2012.
+
+4. ( ) A obrigação civil de reparar o dano ambiental independe da comprovação de dolo ou culpa do agente, coexistindo com eventuais multas administrativas e sanções penais.
+
+**Gabarito do verificação da aprendizagem,** 1-**F** (a instalação e a supressão dependem da LI) \|-**V** \|-**V** \|-**V**.

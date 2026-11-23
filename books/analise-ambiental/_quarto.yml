@@ -1,10 +1,14 @@
 project:
   type: book
   output-dir: _book
+  post-render:
+    - quarto run sync-output.ts
 
 book:
   title: "Análise Ambiental (CHF662)"
-  subtitle: "Apostila Completa — DCHF / Geografia (UEFS)"
+  subtitle: "Apostila de estudo, DCHF / Geografia (UEFS)"
+  output-file: APOSTILA_ANALISE_AMBIENTAL_CHF662_UEFS
+  downloads: [pdf]
   author:
     - name: "Luiz Diego Vidal Santos"
       url: https://diegovidalcv.com.br/
@@ -12,7 +16,7 @@ book:
       affiliation:
         - name: "Universidade Estadual de Feira de Santana (UEFS)"
           url: https://www.uefs.br/
-  date: "2026-11-22"
+  date: "2026-11-23"
   date-format: "DD/MM/YYYY"
   description: |
     Apostila completa do componente curricular CHF662 (Análise Ambiental),
@@ -34,7 +38,7 @@ book:
   chapters:
     - index.qmd
 
-    - part: "Módulo 1 — Fundamentos Epistemológicos e Conceituais"
+    - part: "Módulo 1. Fundamentos epistemológicos e conceituais"
       chapters:
         - capitulos/01-questao-ambiental.qmd
         - capitulos/02-sociedade-natureza.qmd
@@ -42,27 +46,27 @@ book:
         - capitulos/04-conceitos-operacionais-risco.qmd
         - capitulos/mod1-simulado.qmd
 
-    - part: "Módulo 2 — AIA e Análise Ambiental Integrada"
+    - part: "Módulo 2. AIA e análise ambiental integrada"
       chapters:
         - capitulos/05-avaliacao-impacto-ambiental.qmd
         - capitulos/06-analise-ambiental-integrada.qmd
         - capitulos/mod2-simulado.qmd
 
-    - part: "Módulo 3 — Bacias, Morfopedologia, Geossistemas e Fragilidade"
+    - part: "Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade"
       chapters:
         - capitulos/07-bacias-hidrograficas-morfometria.qmd
         - capitulos/08-morfopedologia-vertentes.qmd
         - capitulos/09-geossistemas-ecodinamica-ross.qmd
         - capitulos/mod3-simulado.qmd
 
-    - part: "Módulo 4 — Indicadores, Qualidade do Solo e Degradação"
+    - part: "Módulo 4. Indicadores, qualidade do solo e degradação"
       chapters:
         - capitulos/10-indicadores-ambientais-peir.qmd
         - capitulos/11-qualidade-solo-iqs.qmd
         - capitulos/12-degradacao-erosao-usle.qmd
         - capitulos/mod4-simulado.qmd
 
-    - part: "Módulo 5 — Bioengenharia, Legislação, PRAD e Diagnóstico"
+    - part: "Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico"
       chapters:
         - capitulos/13-bioengenharia-agua-solo.qmd
         - capitulos/14-legislacao-ambiental-prad.qmd
@@ -80,7 +84,48 @@ format:
       - cosmo
       - custom.scss
     code-link: true
+    toc: true
+    toc-depth: 2
+    number-depth: 1
+    smooth-scroll: true
+    link-external-newwindow: true
+    grid:
+      body-width: 820px
+      sidebar-width: 280px
+      margin-width: 240px
     lang: pt-BR
     fig-align: center
+  pdf:
+    documentclass: scrreprt
+    pdf-engine: lualatex
+    papersize: a4
+    fontsize: 11pt
+    geometry:
+      - top=25mm
+      - bottom=25mm
+      - left=25mm
+      - right=20mm
+    toc: true
+    toc-depth: 2
+    number-depth: 1
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: teal
+    keep-tex: true
+    fig-pos: H
+    include-in-header:
+      text: |
+        \usepackage{longtable,booktabs,array}
+        \usepackage{microtype}
+        \emergencystretch=3em
+        \setlength{\LTpre}{12pt}
+        \setlength{\LTpost}{12pt}
+        \renewcommand{\labelitemi}{-}
+        \renewcommand{\labelitemii}{-}
+        \renewcommand{\labelitemiii}{-}
+        \renewcommand{\labelitemiv}{-}
+        \let\oldlongtable\longtable
+        \let\endoldlongtable\endlongtable
+        \renewenvironment{longtable}{\small\oldlongtable}{\endoldlongtable}
 
 lang: pt-BR

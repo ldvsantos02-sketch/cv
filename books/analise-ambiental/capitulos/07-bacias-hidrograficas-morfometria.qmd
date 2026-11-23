@@ -1,671 +1,635 @@
-# 07 Bacias Hidrograficas Morfometria
+# Bacia Hidrográfica como Unidade de Análise Ambiental Integrada {#cap:bacia_hidrografica}
 
-quanto o **Trabalho Prático Final**:
+A bacia hidrográfica conecta áreas produtoras de escoamento e sedimentos a um ponto de saída. Sua morfometria descreve geometria e organização da drenagem, fornecendo elementos para interpretar a resposta do sistema às chuvas. Essa interpretação depende da combinação com solos, cobertura da terra e características dos eventos.
 
-- **Capítulo 7 (Semana 7) — Bacia Hidrográfica:** delimitação funcional, hierarquia fluvial de Strahler, índices morfométricos ($D_d$, $K_c$, $I_c$, $H_m$, $R_r$), áreas ripárias, conectividade hidrossedimentológica e efeitos da mudança de uso da terra.
-- **Capítulo 8 (Semana 8) — Morfopedologia:** relação genética relevo–solo–água ao longo de vertentes (topossequências), cálculo de declividade em porcentagem e graus, classes EMBRAPA/Ross, papel da cobertura vegetal, erosão e movimentos de massa.
-- **Capítulo 9 (Semana 9) — Geossistemas, Ecodinâmica e Fragilidade Ambiental:** Teoria Geral dos Sistemas (Bertalanffy), taxonomia da paisagem (Bertrand; Rodriguez et al.), balanço morfogênese–pedogênese (Tricart) e análise empírica da fragilidade potencial e emergente (Ross, 1994).
-- **Simulado Preparatório (Semana 10):** revisão integral dos Módulos 1 a 3 com 10 questões objetivas, 4 questões dissertativas no padrão da prova presencial, espelho com critérios de pontuação e diagnóstico de revisão.
+## Etapa 1 - Objetivos de aprendizagem
 
+O estudo desenvolve o cálculo de índices morfométricos e a análise de suas condições de uso. O estudante deve conferir unidades, reconhecer a influência da escala cartográfica e explicar como cada resultado contribui para uma hipótese sobre o comportamento da bacia.
 
-# Bacia Hidrográfica como Unidade de Análise Ambiental Integrada
+## Etapa 2 - Conhecimentos necessários
 
-\noindent`PLANO CHF662 • PROVA TEÓRICA`\ `TRABALHO PRÁTICO FINAL`
+A leitura utiliza os conceitos de divisor, exutório, canal, área e perímetro. Comprimento de canal, comprimento axial e extensão da vertente representam medidas diferentes. A definição de cada medida deve acompanhar a fórmula e o procedimento de obtenção.
 
-::: {.callout-note}
-## Etapa 1 — O que você vai aprender neste capítulo
+## Etapa 3 - Fundamentação teórica
 
-Ao concluir este capítulo (Semana 7 do Plano CHF662), você será capaz de:
+### Vocabulário Técnico e Símbolos do Capítulo 7
 
-1. Definir bacia e microbacia hidrográfica sob as perspectivas espacial, topográfica e funcional, explicando por que elas constituem a unidade territorial preferencial de planejamento e gestão ambiental.
-2. Identificar os elementos estruturais de uma bacia (divisores topográficos, interflúvios, vertentes, talvegue, rede de drenagem, áreas ripárias e exutório) e aplicar passo a passo a **Hierarquia Fluvial de Strahler**.
-3. Calcular e interpretar os principais índices da **morfometria de bacias**: Densidade de Drenagem ($D_d$), Coeficiente de Compacidade ($K_c$), Índice de Circularidade ($I_c$), Amplitude Altimétrica ($H_m$) e Relação de Relevo ($R_r$).
-4. Analisar a **conectividade hidrossedimentológica**, a função protetora das áreas ripárias e os impactos da impermeabilização urbana e do desmatamento sobre o escoamento superficial, a erosão e os picos de cheia.
+**Divisor topográfico (interflúvio).** Linha que conecta os pontos mais elevados do terreno ao redor da bacia, separando o escoamento superficial que drena para o interior da bacia daquele que segue para bacias vizinhas. **Talvegue.** Linha que une os pontos de menor cota ao longo do fundo de um vale, por onde concentra-se o eixo do canal fluvial. **Exutório (seção de controle).** Ponto de menor altitude do perímetro da bacia, por onde toda a água superficial e os sedimentos transportados pela rede de drenagem deixam o sistema.
 
-:::
+**Área de drenagem ($A$).** Projeção horizontal da superfície delimitada pelo divisor topográfico, expressa usualmente em $\text{km}^2$ ou hectares ($\text{ha}$). **Perímetro ($P$).** Comprimento total da linha do divisor topográfico que contorna a bacia, expresso em $\text{km}$. **Comprimento total dos canais ($L_t$).** Somatório do comprimento de todos os cursos d’água (perenes, intermitentes e efêmeros mapeados) no interior da bacia, em $\text{km}$. **Comprimento axial da bacia ($L$).** Distância em linha reta paralela ao eixo principal de drenagem entre o exutório e o ponto mais distante no divisor de águas (Schumm, 1956), distinta do comprimento sinuoso do canal principal ($L_p$), em $\text{km}$ ou $\text{m}$.
 
-::: {.callout-tip}
-## Etapa 2 — Revisando o que você precisa saber
+**Cotas extremas ($H_{\max}$ e $H_{\min}$).** Maior altitude no divisor de cabeceira e menor altitude no exutório, em metros ($\text{m}$). **Índices morfométricos,** $D_d$ (Densidade de Drenagem), $K_c$ (Coeficiente de Compacidade), $I_c$ (Índice de Circularidade), $H_m$ (Amplitude Altimétrica) e $R_r$ (Relação de Relevo). **Conectividade hidrossedimentológica.** Grau de continuidade física e funcional que permite a transferência de água e sedimentos desde as vertentes até o canal fluvial e o exutório.
 
-Antes de iniciar o estudo de bacias hidrográficas, retome três noções construídas nos Módulos 1 e 2:
-
-- **Sistema aberto (Cap. 6):** uma bacia hidrográfica recebe entradas de energia solar e precipitação, processa fluxos de água, sedimentos e nutrientes em seu interior e transfere saídas (vazão fluvial, evapotranspiração e carga sólida) através de fronteiras bem definidas.
-- **Escala espacial e temporal (Cap. 6):** processos hidrológicos em uma microbacia de cabeceira respondem em minutos ou horas a uma chuva convectiva, enquanto grandes bacias regionais (como a do São Francisco ou do Paraguaçu) integram respostas em dias, meses e décadas.
-- **Leitura básica de unidades e geometria:** lembre-se de que $1\text{ km} = 1.000\text{ m}$, $1\text{ km}^2 = 1.000.000\text{ m}^2 = 100\text{ ha}$ e $1\text{ mm}$ de chuva sobre $1\text{ m}^2$ equivale exatamente a $1\text{ litro}$ ($0,001\text{ m}^3$) de água.
-
-:::
-
-## Etapa 3: Explicação Teórica — Conceito, Hierarquia Fluvial, Morfometria e Dinâmica Hidrossedimentológica
-
-::: {.callout-note}
-## Vocabulário Técnico e Símbolos do Capítulo 7
-
-- **Divisor topográfico (interflúvio):** linha que conecta os pontos mais elevados do terreno ao redor da bacia, separando o escoamento superficial que drena para o interior da bacia daquele que segue para bacias vizinhas.
-- **Talvegue:** linha que une os pontos de menor cota ao longo do fundo de um vale, por onde concentra-se o eixo do canal fluvial.
-- **Exutório (seção de controle):** ponto de menor altitude do perímetro da bacia, por onde toda a água superficial e os sedimentos transportados pela rede de drenagem deixam o sistema.
-- **Área de drenagem ($A$):** projeção horizontal da superfície delimitada pelo divisor topográfico, expressa usualmente em $\text{km}^2$ ou hectares ($\text{ha}$).
-- **Perímetro ($P$):** comprimento total da linha do divisor topográfico que contorna a bacia, expresso em $\text{km}$.
-- **Comprimento total dos canais ($L_t$):** somatório do comprimento de todos os cursos d'água (perenes, intermitentes e efêmeros mapeados) no interior da bacia, em $\text{km}$.
-- **Comprimento axial da bacia ($L$):** distância em linha reta paralela ao eixo principal de drenagem entre o exutório e o ponto mais distante no divisor de águas (Schumm, 1956), distinta do comprimento sinuoso do canal principal ($L_p$), em $\text{km}$ ou $\text{m}$.
-- \textbf{Cotas extremas ($H_{\max}$ e $H_{\min}$):} maior altitude no divisor de cabeceira e menor altitude no exutório, em metros ($\text{m}$).
-- **Índices morfométricos:** $D_d$ (Densidade de Drenagem), $K_c$ (Coeficiente de Compacidade), $I_c$ (Índice de Circularidade), $H_m$ (Amplitude Altimétrica) e $R_r$ (Relação de Relevo).
-- **Conectividade hidrossedimentológica:** grau de continuidade física e funcional que permite a transferência de água e sedimentos desde as vertentes até o canal fluvial e o exutório.
-
-:::
-
-## Conceito Espacial e Funcional de Bacia e Microbacia Hidrográfica
+### Conceito Espacial e Funcional de Bacia e Microbacia Hidrográfica
 
 Na Geografia Física e na Análise Ambiental, a **bacia hidrográfica** não é um recorte arbitrário traçado em gabinete, mas uma unidade natural de drenagem definida pela topografia. Segundo **Christofoletti (1981)**, trata-se de uma área drenada por um determinado rio ou por um sistema fluvial, funcionando como um sistema aberto em que a água precipitada, guiada pela força da gravidade, converge das áreas mais elevadas (divisores) para o fundo dos vales (talvegues) até deixar o sistema por uma única seção de saída, o **exutório**.
 
 **Botelho e Silva (2004)** destacam que a bacia hidrográfica constitui a célula básica de análise e planejamento ambiental porque permite acompanhar, de modo integrado, as interações entre atmosfera (chuva e evapotranspiração), litosfera e pedosfera (rochas, solos, infiltração e erosão), biosfera (cobertura vegetal e fauna aquática) e antroposfera (cidades, estradas, agricultura, mineração e reservatórios). Nessa mesma linha, **Guerra e Cunha (1996)** enfatizam que qualquer intervenção realizada nas vertentes, como desmatamento, abertura de estradas rurais ou impermeabilização urbana, produz reflexos mensuráveis nos canais fluviais a jusante, manifestando-se sob a forma de enxurradas, erosão marginal, assoreamento e queda na qualidade da água.
 
-::: {.callout-note}
-## Bacia, Sub-bacia e Microbacia: Escala Funcional e Gestão
+### Bacia, Sub-bacia e Microbacia, Escala Funcional e Gestão
 
-Na prática técnica e na legislação brasileira (Política Nacional de Recursos Hídricos, Lei nº 9.433/1997), adota-se uma hierarquia espacial encaixada:
+Na prática técnica e na legislação brasileira (Política Nacional de Recursos Hídricos, Lei nº 9.433/1997), adota-se uma hierarquia espacial encaixada,
 
-- **Bacia hidrográfica (escala regional):** grandes sistemas de drenagem com milhares de $\text{km}^2$, como a Bacia do Rio Paraguaçu ou a Bacia do Rio São Francisco, geridos por Comitês de Bacia Hidrográfica.
-- **Sub-bacia (escala intermediária):** área de drenagem de um tributário importante dentro de uma bacia maior, como a sub-bacia do Rio Jacuípe (afluente do Paraguaçu) ou do Rio Subaé, na região de Feira de Santana (BA).
-- **Microbacia (escala local/operacional):** unidade hidrográfica de pequena extensão (frequentemente entre poucos hectares e dezenas de $\text{km}^2$, correspondendo em geral a canais de 1ª a 3ª ordem de Strahler), cuja sensibilidade a chuvas intensas e mudanças de uso da terra é imediata. Por permitir diagnóstico de campo detalhado, a microbacia é a unidade preferencial para projetos de conservação do solo, recuperação de nascentes e bioengenharia.
+**Bacia hidrográfica (escala regional).** Grandes sistemas de drenagem com milhares de $\text{km}^2$, como a Bacia do Rio Paraguaçu ou a Bacia do Rio São Francisco, geridos por Comitês de Bacia Hidrográfica. **Sub-bacia (escala intermediária).** Área de drenagem de um tributário importante dentro de uma bacia maior, como a sub-bacia do Rio Jacuípe (afluente do Paraguaçu) ou do Rio Subaé, na região de Feira de Santana (BA).
 
-:::
+**Microbacia (escala local/operacional).** Unidade hidrográfica de pequena extensão (frequentemente entre poucos hectares e dezenas de $\text{km}^2$, correspondendo em geral a canais de 1ª a 3ª ordem de Strahler), cuja sensibilidade a chuvas intensas e mudanças de uso da terra é imediata. Por permitir diagnóstico de campo detalhado, a microbacia é a unidade preferencial para projetos de conservação do solo, recuperação de nascentes e bioengenharia.
 
 Uma distinção técnica relevante diz respeito ao **divisor topográfico** (ou divisor superficial) frente ao **divisor freático** (ou subterrâneo). O divisor topográfico acompanha a linha de cumeada do relevo e governa o escoamento superficial; já o divisor freático acompanha o topo do lençol subterrâneo e depende do mergulho das camadas geológicas e das fraturas da rocha. Em terrenos cristalinos rasos do Semiárido baiano, os dois divisores tendem a coincidir de modo aproximado; em bacias sedimentares ou áreas cársticas (como o oeste baiano ou setores da Chapada Diamantina), o fluxo subterrâneo pode cruzar o divisor superficial e alimentar bacias adjacentes.
 
-## Elementos Estruturais e Hierarquia Fluvial de Strahler
+### Elementos Estruturais e Hierarquia Fluvial de Strahler
 
 Os canais de uma bacia organizam-se em uma rede ramificada que parte das nascentes e cabeceiras até o canal principal no exutório. Para comparar bacias de tamanhos distintos e avaliar o grau de ramificação e dissecação da paisagem, os geomorfólogos empregam sistemas de ordenação fluvial. O mais difundido na análise ambiental é a **Hierarquia Fluvial de Strahler (1952)**, uma simplificação operacional da proposta original de Horton (1945) apresentada por **Christofoletti (1981)**.
 
-::: {.callout-note}
-## Regras Passo a Passo da Hierarquia Fluvial de Strahler
+### Regras Passo a Passo da Hierarquia Fluvial de Strahler
 
-A ordenação de Strahler é aplicada sempre de **montante (cabeceiras) para jusante (exutório)**, obedecendo estritamente a três regras:
+A ordenação de Strahler é aplicada sempre de **montante (cabeceiras) para jusante (exutório)**, obedecendo estritamente a três regras,
 
-1. **Canais de 1ª ordem:** todo curso d'água sem tributários (da nascente até a primeira confluência) recebe ordem $1$.
-2. **Confluência de canais de mesma ordem ($n + n \to n + 1$):** quando dois canais de 1ª ordem se encontram, formam um segmento de 2ª ordem ($1 + 1 \to 2$); quando dois canais de 2ª ordem confluem, originam um segmento de 3ª ordem ($2 + 2 \to 3$), e assim sucessivamente.
-3. **Confluência de canais de ordens diferentes ($n + m \to \max(n, m)$):** quando um canal de ordem inferior desemboca em um canal de ordem superior, a ordem do canal receptor **não se altera** ($2 + 1 \to 2$; $3 + 1 \to 3$; $3 + 2 \to 3$).
+**Canais de 1ª ordem.** Todo curso d’água sem tributários (da nascente até a primeira confluência) recebe ordem $1$. **Confluência de canais de mesma ordem ($n + n \to n + 1$).** Quando dois canais de 1ª ordem se encontram, formam um segmento de 2ª ordem ($1 + 1 \to 2$); quando dois canais de 2ª ordem confluem, originam um segmento de 3ª ordem ($2 + 2 \to 3$), e assim sucessivamente. **Confluência de canais de ordens diferentes ($n + m \to \max(n, m)$).** Quando um canal de ordem inferior desemboca em um canal de ordem superior, a ordem do canal receptor **não se altera** ($2 + 1 \to 2$; $3 + 1 \to 3$; $3 + 2 \to 3$).
 
 A **ordem da bacia hidrográfica** corresponde à ordem do segmento fluvial principal na altura do exutório.
 
-:::
+A @fig-bacia_strahler sintetiza os elementos estruturais de uma bacia hidrográfica (divisor topográfico, rede de drenagem, área ripária e exutório) e ilustra a aplicação da regra de Strahler até a formação de um canal principal de 3ª ordem. Observe que, quando um canal de 1ª ordem desemboca diretamente em um segmento de ordem superior (2ª ou 3ª ordem), prevalece sempre a maior ordem.
 
-A Figura indicada acima sintetiza os elementos estruturais de uma bacia hidrográfica (divisor topográfico, rede de drenagem, área ripária e exutório) e ilustra a aplicação da regra de Strahler até a formação de um canal principal de 3ª ordem. Observe que, quando um canal de 1ª ordem desemboca diretamente em um segmento de ordem superior (2ª ou 3ª ordem), prevalece sempre a maior ordem.
+![Representação esquemática de uma bacia hidrográfica como unidade funcional, destacando divisor topográfico, áreas ripárias (APP), exutório e aplicação da Hierarquia Fluvial de Strahler (3ª ordem).](../img/fig05_bacia_hidrografica_strahler.png "fig:"){#fig-bacia_strahler}
 
-![Representação esquemática de uma bacia hidrográfica como unidade funcional, destacando divisor topográfico, áreas ripárias (APP), exutório e aplicação da Hierarquia Fluvial de Strahler (3ª ordem).](../img/fig05_bacia_hidrografica_strahler.png)
+Além da ordem hierárquica, a geometria espacial da rede, chamada **padrão de drenagem**, oferece pistas imediatas sobre geologia e relevo,
 
-Além da ordem hierárquica, a geometria espacial da rede — chamada **padrão de drenagem** — oferece pistas imediatas sobre geologia e relevo:
+**Dendrítico (arborescente).** Lembra galhos de árvore, típico de rochas com resistência relativamente homogênea à erosão (como granitos e gnaisses pouco fraturados ou coberturas sedimentares horizontais). **Retangular ou treliça.** Confluências próximas a $90^\circ$, denunciando forte controle estrutural por falhas, fraturas ou dobramentos (frequente em setores serranos da Chapada Diamantina). **Paralelo.** Canais alongados e quase paralelos entre si, característicos de vertentes com declividade acentuada e uniforme. **Radial.** Canais divergem de um ponto alto central (morros isolados, domos) ou convergem para uma depressão fechada.
 
-- **Dendrítico (arborescente):** lembra galhos de árvore, típico de rochas com resistência relativamente homogênea à erosão (como granitos e gnaisses pouco fraturados ou coberturas sedimentares horizontais).
-- **Retangular ou treliça:** confluências próximas a $90^\circ$, denunciando forte controle estrutural por falhas, fraturas ou dobramentos (frequente em setores serranos da Chapada Diamantina).
-- **Paralelo:** canais alongados e quase paralelos entre si, característicos de vertentes com declividade acentuada e uniforme.
-- **Radial:** canais divergem de um ponto alto central (morros isolados, domos) ou convergem para uma depressão fechada.
-
-## Morfometria de Bacias Hidrográficas
+### Morfometria de Bacias Hidrográficas
 
 A **análise morfométrica** consiste em traduzir as características geométricas, lineares, areais e hipsométricas de uma bacia em índices numéricos objetivos (Christofoletti, 1981; Villela; Mattos, 1975). Esses índices permitem diagnosticar a permeabilidade do substrato, a velocidade de resposta às chuvas, a propensão natural a enchentes e o potencial energético para erosão e transporte de sedimentos. A seguir, examinamos os cinco parâmetros essenciais exigidos no Plano CHF662.
 
-### Densidade de Drenagem ($D_d$)
+#### Densidade de Drenagem ($D_d$)
 
-::: {.callout-tip}
-## Densidade de Drenagem — $D_d$ (Horton, 1945)
+### Densidade de Drenagem, $D_d$ (Horton, 1945)
 
-**Origem e finalidade:** proposta por Robert E. Horton (1945), a Densidade de Drenagem expressa o comprimento médio de canais fluviais por unidade de área da bacia. Ela indica o grau de desenvolvimento e eficiência do sistema de escoamento superficial, refletindo a interação entre permeabilidade do solo/rocha, clima, declividade e cobertura vegetal.
+**Origem e finalidade.** Proposta por Robert E. Horton (1945), a Densidade de Drenagem expressa o comprimento médio de canais fluviais por unidade de área da bacia. Ela indica o grau de desenvolvimento e eficiência do sistema de escoamento superficial, refletindo a interação entre permeabilidade do solo/rocha, clima, declividade e cobertura vegetal.
 
-**Equação:**
-
-$$
-
-  D_d = \frac{L_t}{A}
+**Equação,**
 
 $$
-
-**Variáveis e unidades:**
-
-- $D_d$: densidade de drenagem, expressa em $\text{km}/\text{km}^2$ (ou $\text{km}^{-1}$).
-- $L_t$: comprimento total somado de todos os cursos d'água da bacia, em $\text{km}$.
-- $A$: área total de drenagem da bacia, em $\text{km}^2$.
-
-**Exemplo numérico completo:** uma microbacia possui área $A = 25,0\text{ km}^2$ e somatório dos canais mapeados igual a $L_t = 45,0\text{ km}$.
-
+D_d = \frac{L_t}{A}
 $$
 
-  D_d = \frac{45,0\text{ km}}{25,0\text{ km}^2} = 1,80\text{ km}/\text{km}^2.
+ **Variáveis e unidades,**
+
+$D_d$, densidade de drenagem, expressa em $\text{km}/\text{km}^2$ (ou $\text{km}^{-1}$). $L_t$, comprimento total somado de todos os cursos d’água da bacia, em $\text{km}$. $A$, área total de drenagem da bacia, em $\text{km}^2$.
+
+**Exemplo numérico completo.** Uma microbacia possui área $A = 25,0\text{ km}^2$ e somatório dos canais mapeados igual a $L_t = 45,0\text{ km}$.
 
 $$
+D_d = \frac{45{,}0\text{ km}}{25{,}0\text{ km}^2} = 1{,}80\text{ km}/\text{km}^2.
+$$
 
-**Interpretação:** valor intermediário, compatível com drenagem moderada a boa, onde parte da água infiltra nos solos e parte escoa rapidamente pelos canais.
+ **Interpretação.** Valor intermediário, compatível com drenagem moderada a boa, onde parte da água infiltra nos solos e parte escoa rapidamente pelos canais.
 
-:::
+Em termos ambientais, valores baixos de $D_d$ ($< 0,5\text{ km}/\text{km}^2$) associam-se a rochas e solos muito permeáveis (como arenitos profundos e Latossolos arenosos), relevos planos e elevada infiltração. Valores elevados ($> 2,0\text{ km}/\text{km}^2$, conforme a Tabela [morfometria limiares](07-bacias-hidrograficas-morfometria.qmd#tbl-morfometria_interpretacao)) ocorrem em substratos pouco permeáveis (como rochas cristalinas fraturadas com solos rasos no Semiárido), encostas íngremes e regimes de chuvas concentradas, indicando rápida geração de escoamento superficial e maior dissecação erosiva. Um cuidado metodológico indispensável é que $D_d$ depende da **escala cartográfica**, mapas mais detalhados (1,10.000) registram canais de 1ª ordem efêmeros que desaparecem em cartas menores (1,100.000), portanto só se devem comparar valores de $D_d$ obtidos na mesma escala!
 
-Em termos ambientais, valores baixos de $D_d$ ($< 0,5\text{ km}/\text{km}^2$) associam-se a rochas e solos muito permeáveis (como arenitos profundos e Latossolos arenosos), relevos planos e elevada infiltração. Valores elevados ($> 2,0\text{ km}/\text{km}^2$, conforme a Tabela indicada acima) ocorrem em substratos pouco permeáveis (como rochas cristalinas fraturadas com solos rasos no Semiárido), encostas íngremes e regimes de chuvas concentradas, indicando rápida geração de escoamento superficial e maior dissecação erosiva. Um cuidado metodológico indispensável é que $D_d$ depende da **escala cartográfica**: mapas mais detalhados (1:10.000) registram canais de 1ª ordem efêmeros que desaparecem em cartas menores (1:100.000), portanto só se devem comparar valores de $D_d$ obtidos na mesma escala!
-
-### Índices de Forma: Coeficiente de Compacidade ($K_c$) e Índice de Circularidade ($I_c$)
+#### Índices de Forma, Coeficiente de Compacidade ($K_c$) e Índice de Circularidade ($I_c$)
 
 A forma geométrica em planta de uma bacia controla diretamente o comportamento das cheias no exutório. Em uma bacia próxima a um círculo, todos os tributários percorrem distâncias parecidas até o exutório, fazendo com que os picos de vazão cheguem simultaneamente (elevando o risco de enchentes rápidas). Em uma bacia estreita e alongada, as águas das cabeceiras levam muito mais tempo para alcançar o exutório do que as águas do baixo curso, distribuindo a vazão no tempo e atenuando o pico de cheia.
 
-::: {.callout-tip}
-## Coeficiente de Compacidade ($K_c$) e Índice de Circularidade ($I_c$)
+### Coeficiente de Compacidade ($K_c$) e Índice de Circularidade ($I_c$)
 
-**Origem geométrica e finalidade:** ambos comparam a geometria da bacia com a de um círculo perfeito (a figura de menor perímetro para uma dada área), quantificando a tendência natural à concentração de enxurradas.
+**Origem geométrica e finalidade.** Ambos comparam a geometria da bacia com a de um círculo perfeito (a figura de menor perímetro para uma dada área), quantificando a tendência natural à concentração de enxurradas.
 
-- **Coeficiente de Compacidade (Índice de Gravelius — $K_c$):** razão entre o perímetro real da bacia ($P$) e o perímetro de um círculo que possua exatamente a mesma área ($A$). Como a área de um círculo é $A = \pi r^2$, seu raio é $r = \sqrt{A/\pi}$ e seu perímetro é $P_c = 2\pi r = 2\sqrt{\pi}\sqrt{A} \approx 3,5449\sqrt{A}$. Logo:
-  
+**Coeficiente de Compacidade (Índice de Gravelius, $K_c$).** Razão entre o perímetro real da bacia ($P$) e o perímetro de um círculo que possua exatamente a mesma área ($A$). Como a área de um círculo é $A = \pi r^2$, seu raio é $r = \sqrt{A/\pi}$ e seu perímetro é $P_c = 2\pi r = 2\sqrt{\pi}\sqrt{A} \approx 3,5449\sqrt{A}$. Logo,
+
+$$
+K_c = \frac{P}{P_c} = \frac{1}{2\sqrt{\pi}}\cdot \frac{P}{\sqrt{A}} \approx 0{,}2821 \cdot \frac{P}{\sqrt{A}} \;\;\Longrightarrow\;\; K_c = 0{,}28 \cdot \frac{P}{\sqrt{A}}
 $$
 
-    K_c = \frac{P}{P_c} = \frac{1}{2\sqrt{\pi}}\cdot \frac{P}{\sqrt{A}} \approx 0,2821 \cdot \frac{P}{\sqrt{A}} \;\;\Longrightarrow\;\; K_c = 0,28 \cdot \frac{P}{\sqrt{A}}
-  
+ Na prática hidrológica clássica (Villela; Mattos, 1975), adota-se a constante arredondada $0,28$. Como nenhuma forma fechada plana tem perímetro menor que o círculo de mesma área, tem-se sempre $K_c \ge 1$ (adimensional). Quanto mais próximo de $1,0$, mais circular é a bacia e maior a propensão a picos de cheia.
+
+**Índice de Circularidade (Índice de Miller, 1953, $I_c$).** Razão entre a área real da bacia ($A$) e a área de um círculo que possua o mesmo perímetro ($P$). Como um círculo de perímetro $P$ tem raio $r = P/(2\pi)$ e área $A_c = \pi r^2 = \frac{P^2}{4\pi}$, obtém-se,
+
+$$
+I_c = \frac{A}{A_c} = \frac{4\pi \cdot A}{P^2} \approx \frac{12{,}5664 \cdot A}{P^2} \;\;\Longrightarrow\;\; I_c = \frac{12{,}57 \cdot A}{P^2}
 $$
 
-  Na prática hidrológica clássica (Villela; Mattos, 1975), adota-se a constante arredondada $0,28$. Como nenhuma forma fechada plana tem perímetro menor que o círculo de mesma área, tem-se sempre $K_c \ge 1$ (adimensional). Quanto mais próximo de $1,0$, mais circular é a bacia e maior a propensão a picos de cheia.
-- **Índice de Circularidade (Índice de Miller, 1953 — $I_c$):** razão entre a área real da bacia ($A$) e a área de um círculo que possua o mesmo perímetro ($P$). Como um círculo de perímetro $P$ tem raio $r = P/(2\pi)$ e área $A_c = \pi r^2 = \frac{P^2}{4\pi}$, obtém-se:
-  
-$$
+ O índice $I_c$ é adimensional e varia no intervalo $0 < I_c \le 1$. Quanto mais próximo de $1,0$, mais circular a bacia (note a relação inversa, $I_c \approx 1 / K_c^2$).
 
-    I_c = \frac{A}{A_c} = \frac{4\pi \cdot A}{P^2} \approx \frac{12,5664 \cdot A}{P^2} \;\;\Longrightarrow\;\; I_c = \frac{12,57 \cdot A}{P^2}
-  
-$$
+**Variáveis e unidades,** $A$ em $\text{km}^2$ e $P$ em $\text{km}$ (ou $A$ em $\text{m}^2$ e $P$ em $\text{m}$, mantendo compatibilidade).
 
-  O índice $I_c$ é adimensional e varia no intervalo $0 < I_c \le 1$. Quanto mais próximo de $1,0$, mais circular a bacia (note a relação inversa: $I_c \approx 1 / K_c^2$).
-
-**Variáveis e unidades:** $A$ em $\text{km}^2$ e $P$ em $\text{km}$ (ou $A$ em $\text{m}^2$ e $P$ em $\text{m}$, mantendo compatibilidade).
-
-**Exemplo numérico completo:** para a mesma microbacia com $A = 25,0\text{ km}^2$ e $P = 24,0\text{ km}$:
+**Exemplo numérico completo.** Para a mesma microbacia com $A = 25,0\text{ km}^2$ e $P = 24,0\text{ km}$,
 
 $$
 \begin{aligned}
-  K_c &= 0,28 \cdot \frac{24,0}{\sqrt{25,0}} = 0,28 \cdot \frac{24,0}{5,0} = 0,28 \cdot 4,80 = 1,344 \approx 1,34 
-
-  I_c &= \frac{12,57 \cdot 25,0}{(24,0)^2} = \frac{314,25}{576,0} \approx 0,5456 \approx 0,55.
+K_c &= 0{,}28 \cdot \frac{24{,}0}{\sqrt{25{,}0}} = 0{,}28 \cdot \frac{24{,}0}{5{,}0} = 0{,}28 \cdot 4{,}80 = 1{,}344 \approx 1{,}34 \\
+I_c &= \frac{12{,}57 \cdot 25{,}0}{(24{,}0)^2} = \frac{314{,}25}{576{,}0} \approx 0{,}5456 \approx 0{,}55.
 \end{aligned}
 $$
 
-**Interpretação:** com $K_c = 1,34$ (entre $1,25$ e $1,50$) e $I_c = 0,55$ (próximo a $0,51$), a bacia apresenta forma ovalada/mediana, com suscetibilidade moderada a enchentes sob condições naturais.
+ **Interpretação.** Com $K_c = 1,34$ (entre $1,25$ e $1,50$) e $I_c = 0,55$ (próximo a $0,51$), a bacia apresenta forma ovalada/mediana, com suscetibilidade moderada a enchentes sob condições naturais.
 
-:::
-
-### Índices de Relevo: Amplitude Altimétrica ($H_m$) e Relação de Relevo ($R_r$)
+#### Índices de Relevo, Amplitude Altimétrica ($H_m$) e Relação de Relevo ($R_r$)
 
 A energia potencial disponível para movimentar água e sedimentos das cabeceiras ao exutório depende do desnível topográfico distribuído ao longo do comprimento da bacia.
 
-::: {.callout-tip}
-## Amplitude Altimétrica ($H_m$) e Relação de Relevo ($R_r$ — Schumm, 1956)
+### Amplitude Altimétrica ($H_m$) e Relação de Relevo ($R_r$, Schumm, 1956)
 
-**Origem e finalidade:** a Amplitude Altimétrica ($H_m$) mede a diferença vertical total da bacia; porém, isoladamente, ela não informa se esse desnível ocorre em $2\text{ km}$ (encostas abruptas) ou em $200\text{ km}$ (planície suave). Para resolver isso, Stanley Schumm (1956) definiu a Relação de Relevo ($R_r$), que relaciona o desnível total ao comprimento axial da bacia, funcionando como um indicador direto da declividade geral média e do potencial erosivo e de transporte de sedimentos.
+**Origem e finalidade.** A Amplitude Altimétrica ($H_m$) mede a diferença vertical total da bacia; porém, isoladamente, ela não informa se esse desnível ocorre em $2\text{ km}$ (encostas abruptas) ou em $200\text{ km}$ (planície suave). Para resolver isso, Stanley Schumm (1956) definiu a Relação de Relevo ($R_r$), que relaciona o desnível total ao comprimento axial da bacia, funcionando como um indicador direto da declividade geral média e do potencial erosivo e de transporte de sedimentos.
 
-**Equações:**
-
-$$
-
-  H_m = H_{\max} - H_{\min}  \text{e}  R_r = \frac{H_m}{L}
+**Equações,**
 
 $$
+H_m = H_{\max} - H_{\min} \qquad\text{e}\qquad R_r = \frac{H_m}{L}
+$$
 
-**Variáveis e unidades (atenção redobrada!):**
+ **Variáveis e unidades (atenção redobrada!),**
 
-- $H_{\max}$ e $H_{\min}$: altitude máxima no divisor e altitude mínima no exutório, em metros ($\text{m}$).
-- $H_m$: amplitude altimétrica, em metros ($\text{m}$).
-- $L$: comprimento axial da bacia (paralelo ao canal principal, do exutório ao divisor), em $\text{km}$ ou $\text{m}$.
-- $R_r$: pode ser expresso em $\text{m}/\text{km}$ (quando $H_m$ está em $\text{m}$ e $L$ em $\text{km}$) ou na forma adimensional $\text{m}/\text{m}$ (convertendo $L$ para metros: $L_{\text{m}} = L_{\text{km}} \times 1.000$).
+$H_{\max}$ e $H_{\min}$, altitude máxima no divisor e altitude mínima no exutório, em metros ($\text{m}$). $H_m$, amplitude altimétrica, em metros ($\text{m}$). $L$, comprimento axial da bacia (paralelo ao canal principal, do exutório ao divisor), em $\text{km}$ ou $\text{m}$. $R_r$, pode ser expresso em $\text{m}/\text{km}$ (quando $H_m$ está em $\text{m}$ e $L$ em $\text{km}$) ou na forma adimensional $\text{m}/\text{m}$ (convertendo $L$ para metros, $L_{\text{m}} = L_{\text{km}} \times 1.000$).
 
-**Exemplo numérico completo:** se nossa microbacia tem $H_{\max} = 420\text{ m}$, $H_{\min} = 220\text{ m}$ e $L = 8,0\text{ km}$:
+**Exemplo numérico completo.** Se nossa microbacia tem $H_{\max} = 420\text{ m}$, $H_{\min} = 220\text{ m}$ e $L = 8,0\text{ km}$,
 
 $$
 \begin{aligned}
-  H_m &= 420 - 220 = 200\text{ m} 
-
-  R_r &= \frac{200\text{ m}}{8,0\text{ km}} = 25,0\text{ m}/\text{km} = \frac{200\text{ m}}{8.000\text{ m}} = 0,025\text{ m}/\text{m}\;\; (2,5%).
+H_m &= 420 - 220 = 200\text{ m} \\
+R_r &= \frac{200\text{ m}}{8{,}0\text{ km}} = 25{,}0\text{ m}/\text{km} = \frac{200\text{ m}}{8.000\text{ m}} = 0{,}025\text{ m}/\text{m}\;\; (2{,}5\%).
 \end{aligned}
 $$
 
-**Interpretação:** em média, o relevo cai $25\text{ m}$ a cada quilômetro percorrido ao longo do eixo principal, um gradiente moderado que requer atenção conservacionista nas cabeceiras mais inclinadas.
+ **Interpretação.** Em média, o relevo cai $25\text{ m}$ a cada quilômetro percorrido ao longo do eixo principal, um gradiente moderado que requer atenção conservacionista nas cabeceiras mais inclinadas.
 
-:::
+A Tabela [morfometria interpretacao](07-bacias-hidrograficas-morfometria.qmd#tbl-morfometria_interpretacao) reúne faixas usuais de referência utilizadas em diagnósticos ambientais para interpretar rapidamente $D_d$, $K_c$, $I_c$ e $R_r$.
 
-A Tabela indicada acima reúne faixas usuais de referência utilizadas em diagnósticos ambientais para interpretar rapidamente $D_d$, $K_c$, $I_c$ e $R_r$.
+| Índice | Faixa de referência do exercício | Interpretação condicionada ao contexto |
+|:--|:--|:--|
+| Densidade de drenagem | Menor que 0,5 km/km² | Menor extensão mapeada de canais por área. Conferir permeabilidade, relevo e critério de extração. |
+| Densidade de drenagem | De 0,5 a 2,0 km/km² | Condição intermediária no conjunto de faixas adotado. A comparação exige redes obtidas pelo mesmo método. |
+| Densidade de drenagem | Maior que 2,0 km/km² | Maior extensão de canais por área. Investigar dissecação, materiais e conectividade do escoamento. |
+| Compacidade | De 1,00 a 1,25 | Forma próxima da circular, considerada junto à chuva, ao armazenamento e à velocidade do escoamento. |
+| Compacidade | De 1,25 a 1,50 | Forma intermediária nas faixas didáticas adotadas. |
+| Compacidade | Maior que 1,50 | Forma mais alongada. A resposta de cheia permanece dependente das demais condições hidrológicas. |
+| Circularidade | Maior que 0,51 | Maior aproximação da forma circular segundo o limiar de referência utilizado. |
+| Circularidade | Até 0,51 | Menor circularidade. Verificar geometria, delimitação e método de medição do perímetro. |
+| Relação de relevo | Menor que 15 m/km | Menor gradiente altimétrico global na faixa de referência adotada. |
+| Relação de relevo | De 15 a 40 m/km | Gradiente intermediário, cuja distribuição interna precisa ser examinada nas vertentes. |
+| Relação de relevo | Maior que 40 m/km | Maior gradiente global, interpretado junto à geometria, aos materiais e à cobertura. |
 
-\centering
-\caption{Síntese interpretativa dos principais índices morfométricos de bacias hidrográficas.}
+: Síntese interpretativa dos principais índices morfométricos de bacias hidrográficas. {#tbl-morfometria_interpretacao}
 
-\small
-
-| p{2.7cm} p{3.1cm} >{\raggedright\arraybackslash}X@{}} \bfseries Índice | \bfseries Faixa de Valores | \bfseries Significado Hidrológico e Ambiental |
-| --- | --- | --- |
-| **Densidade de Drenagem ($D_d$)** | $< 0,5\text{ km}/\text{km}^2$ | Drenagem pobre; substrato muito permeável, alta infiltração, baixa dissecação. |
-|  | $0,5\text{ a } 2,0\text{ km}/\text{km}^2$ | Drenagem regular a média; equilíbrio intermediário entre infiltração e escoamento. |
-|  | $> 2,0\text{ km}/\text{km}^2$ | Drenagem boa a excepcional; substrato pouco permeável, escoamento rápido e maior potencial erosivo. |
-| **Compacidade ($K_c$)** | $1,00\text{ a } 1,25$ | Forma circular a quase circular; alta propensão a picos rápidos de enchente. |
-|  | $1,25\text{ a } 1,50$ | Forma ovalada; propensão moderada a cheias. |
-|  | $> 1,50$ | Forma alongada; menor propensão natural a grandes picos simultâneos de cheia. |
-| **Circularidade ($I_c$)** | $> 0,51$ (aprox. de $1,0$) | Tendência circular; escoamento converge rapidamente para o exutório. |
-|  | $\le 0,51$ (aprox. de $0$) | Tendência alongada; escoamento mais distribuído ao longo do tempo. |
-| **Relação de Relevo ($R_r$)** | Baixa ($< 15\text{ m}/\text{km}$) | Relevo suave/plano; menor velocidade do escoamento, tendência à deposição. |
-|  | Alta ($> 40\text{ m}/\text{km}$) | Relevo acidentado/montanhoso; elevada energia cinética, erosão e transporte grosseiro. |
-
-## Áreas Ripárias, Conectividade Hidrossedimentológica e Mudanças de Uso da Terra
+### Áreas Ripárias, Conectividade Hidrossedimentológica e Mudanças de Uso da Terra
 
 Os índices morfométricos descrevem a arquitetura física "estática" (ou de evolução lenta) da bacia, mas a resposta ambiental real depende criticamente da cobertura vegetal e do manejo do solo nas vertentes e nas margens fluviais.
 
-### Áreas Ripárias e Zonas Tampão
+#### Áreas Ripárias e Zonas Tampão
 
-As **áreas ripárias** (matas ciliares, galerias e várzeas marginais, juridicamente protegidas como Áreas de Preservação Permanente, APPs, pelo Código Florestal, Lei nº 12.651/2012) constituem a interface ecossistêmica entre a vertente terrestre e o canal fluvial. Elas desempenham quatro funções ambientais insubstituíveis:
+As **áreas ripárias** (matas ciliares, galerias e várzeas marginais, juridicamente protegidas como Áreas de Preservação Permanente, APPs, pelo Código Florestal, Lei nº 12.651/2012) constituem a interface ecossistêmica entre a vertente terrestre e o canal fluvial. Elas desempenham quatro funções ambientais insubstituíveis,
 
-1. **Filtragem de sedimentos e agroquímicos:** a serapilheira e os caules aumentam a rugosidade superficial, desacelerando a enxurrada proveniente das vertentes e retendo solo erodido antes que atinja o leito do rio.
-2. **Estabilização geotécnica das margens:** o entrelaçamento das raízes eleva a resistência ao cisalhamento dos barrancos, reduzindo o solapamento marginal e o alargamento erosivo do canal.
-3. **Regulação térmica e ecológica:** o sombreamento mantém temperaturas mais amenas na água, preserva teores de oxigênio dissolvido e fornece matéria orgânica e abrigo para a biota aquática.
-4. **Recarga e amortecimento de cheias:** solos ripários porosos atuam como esponjas, armazenando água nos períodos chuvosos e liberando-a gradualmente para manter o fluxo de base nos períodos secos.
+**Filtragem de sedimentos e agroquímicos.** A serapilheira e os caules aumentam a rugosidade superficial, desacelerando a enxurrada proveniente das vertentes e retendo solo erodido antes que atinja o leito do rio. **Estabilização geotécnica das margens.** O entrelaçamento das raízes eleva a resistência ao cisalhamento dos barrancos, reduzindo o solapamento marginal e o alargamento erosivo do canal. **Regulação térmica e ecológica.** O sombreamento mantém temperaturas mais amenas na água, preserva teores de oxigênio dissolvido e fornece matéria orgânica e abrigo para a biota aquática.
 
-### Conectividade Hidrossedimentológica
+**Recarga e amortecimento de cheias.** Solos ripários porosos atuam como esponjas, armazenando água nos períodos chuvosos e liberando-a gradualmente para manter o fluxo de base nos períodos secos.
 
-Na geomorfologia fluvial contemporânea, denomina-se **conectividade hidrossedimentológica** a eficiência com que água e partículas de solo mobilizadas nas vertentes conseguem efetivamente viajar até a rede de canais e atingir o exutório (Brierley; Fryirs, 2005). Ela possui duas dimensões:
+#### Conectividade Hidrossedimentológica
 
-- **Conectividade estrutural:** continuidade física dos caminhos de fluxo (declividade, presença de ravinas, estradas rurais mal drenadas ou galerias pluviais que ligam diretamente a encosta ao rio).
-- **Conectividade funcional:** ativação efetiva desses caminhos durante eventos chuvosos (por exemplo, um canal efêmero no Semiárido só se torna funcionalmente conectado após chuvas convectivas intensas que superam a capacidade de infiltração).
+Na geomorfologia fluvial contemporânea, denomina-se **conectividade hidrossedimentológica** a eficiência com que água e partículas de solo mobilizadas nas vertentes conseguem efetivamente viajar até a rede de canais e atingir o exutório (Brierley; Fryirs, 2005). Ela possui duas dimensões,
 
-Uma mata ciliar conservada, terraços agrícolas em nível ou paliçadas permeáveis atuam como **desconectores** (barreiras ou *buffers*), interrompendo a chegada de sedimentos ao curso d'água. Por outro lado, o desmatamento das margens e a abertura de estradas não pavimentadas morro abaixo funcionam como **conectores artificiais**, acelerando o assoreamento de rios e açudes.
+**Conectividade estrutural.** Continuidade física dos caminhos de fluxo (declividade, presença de ravinas, estradas rurais mal drenadas ou galerias pluviais que ligam diretamente a encosta ao rio). **Conectividade funcional.** Ativação efetiva desses caminhos durante eventos chuvosos (por exemplo, um canal efêmero no Semiárido só se torna funcionalmente conectado após chuvas convectivas intensas que superam a capacidade de infiltração).
 
-### Impactos da Mudança de Uso da Terra: Impermeabilização e Desmatamento
+Uma mata ciliar conservada, terraços agrícolas em nível ou paliçadas permeáveis atuam como **desconectores** (barreiras ou *buffers*), interrompendo a chegada de sedimentos ao curso d’água. Por outro lado, o desmatamento das margens e a abertura de estradas não pavimentadas morro abaixo funcionam como **conectores artificiais**, acelerando o assoreamento de rios e açudes.
 
-Quando uma microbacia florestada ou coberta por Caatinga preservada é convertida em pastagem degradada, monocultura sem práticas conservacionistas ou loteamento urbano pavimentado, ocorre uma alteração drástica no balanço hídrico local:
+#### Impactos da Mudança de Uso da Terra, Impermeabilização e Desmatamento
 
-- **Queda da interceptação e da infiltração:** a retirada do dossel e a selagem/pavimentação do solo impedem a entrada da água no perfil edáfico, elevando o **coeficiente de escoamento superficial ($C$)**, definido como a razão entre o volume escoado na superfície e o volume total precipitado (tipicamente $0,10$ a $0,20$ em florestas e $0,65$ a $0,90$ em áreas urbanas densamente impermeabilizadas).
-- **Redução do tempo de concentração e amplificação do pico de cheia:** a água corre mais rápido sobre asfalto, telhados e solos compactados, gerando hidrogramas mais agudos e inundações frequentes, mesmo sem aumento na chuva total, cenário recorrente em microbacias urbanizadas de Feira de Santana (como cabeceiras do Rio Subaé e do Rio Jacuípe).
-- **Redução da recarga de aquíferos e das vazões de estiagem:** como menos água infiltra durante as chuvas, os lençóis freáticos recebem menor recarga, fazendo com que nascentes sequem ou apresentem vazão muito reduzida na estação seca.
+Quando uma microbacia florestada ou coberta por Caatinga preservada é convertida em pastagem degradada, monocultura sem práticas conservacionistas ou loteamento urbano pavimentado, ocorre uma alteração drástica no balanço hídrico local,
 
-## Etapa 4: Estudos de Caso e Exemplos Resolvidos Passo a Passo
+**Queda da interceptação e da infiltração.** A retirada do dossel e a selagem/pavimentação do solo impedem a entrada da água no perfil edáfico, elevando o **coeficiente de escoamento superficial ($C$)**, definido como a razão entre o volume escoado na superfície e o volume total precipitado (tipicamente $0,10$ a $0,20$ em florestas e $0,65$ a $0,90$ em áreas urbanas densamente impermeabilizadas). **Redução do tempo de concentração e amplificação do pico de cheia.** A água corre mais rápido sobre asfalto, telhados e solos compactados, gerando hidrogramas mais agudos e inundações frequentes, mesmo sem aumento na chuva total, cenário recorrente em microbacias urbanizadas de Feira de Santana (como cabeceiras do Rio Subaé e do Rio Jacuípe).
 
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 7.1 — Hierarquia Fluvial de Strahler em uma Microbacia de Cabeceira (Nível Básico)
+**Redução da recarga de aquíferos e das vazões de estiagem.** Como menos água infiltra durante as chuvas, os lençóis freáticos recebem menor recarga, fazendo com que nascentes sequem ou apresentem vazão muito reduzida na estação seca.
 
-**1. Situação-problema / Enunciado:** Durante o mapeamento hidrográfico de uma microbacia afluente do Rio Jacuípe (BA), uma equipe de Geografia identificou a seguinte estrutura de drenagem de montante para jusante:
-(a) dois córregos sem afluentes ($C_1$ e $C_2$) unem-se formando o trecho $T_1$;
-(b) dois outros córregos sem afluentes ($C_3$ e $C_4$) unem-se formando o trecho $T_2$;
-(c) um córrego sem afluentes ($C_5$) desemboca no trecho $T_2$, originando o trecho $T_3$;
-(d) os trechos $T_1$ e $T_3$ encontram-se, formando o canal $T_4$;
-(e) finalmente, dois novos córregos sem afluentes ($C_6$ e $C_7$) unem-se formando o trecho $T_5$, que desemboca em $T_4$, gerando o canal principal $T_6$ até o exutório.}
+### Delimitação, resolução e interpretação hidrológica
 
-**2. Dados e informações fornecidas:** Sete canais de cabeceira sem tributários ($C_1$ a $C_7$) e cinco pontos de confluência sequenciais até o exutório ($T_6$).
+A posição do exutório condiciona toda a delimitação. Deslocamentos desse ponto podem incorporar tributários e modificar área, perímetro e comprimento do canal principal. O registro de suas coordenadas e a inspeção do modelo de elevação são necessários para que outra pessoa possa repetir o procedimento.
 
-**3. O que a análise solicita:** Determinar a ordem de Strahler de cada trecho ($T_1$ a $T_6$) e a ordem final da microbacia.
+A densidade de drenagem também responde ao critério utilizado para iniciar os canais. Um limiar menor de área de contribuição tende a produzir uma rede mais extensa e, consequentemente, maior densidade. A comparação entre bacias requer a mesma base, a mesma resolução e um critério de extração compatível, acompanhado de verificação cartográfica e de campo.
 
-**4. Referencial e método adotado:** Aplicação sequencial das três regras da Hierarquia Fluvial de Strahler (1952): nascentes sem afluentes $= 1$; encontro $n + n \to n + 1$; encontro $n + m \to \max(n, m)$.
+Forma circular pode favorecer a chegada de contribuições em intervalos próximos, dependendo da distribuição da chuva e da velocidade do escoamento. A previsão de cheia exige ainda intensidade e duração da precipitação, umidade antecedente, armazenamento e capacidade dos canais. Índices de forma devem sustentar uma interpretação condicionada a esses fatores.
 
-**5. Desenvolvimento passo a passo:**
+O coeficiente de compacidade possui expressão geométrica exata dada pela razão entre o perímetro observado e o perímetro do círculo de mesma área. O fator $1/(2\sqrt{\pi})$ vale aproximadamente 0,2821. A aproximação por 0,28 introduz pequena diferença perto do limite circular e deve ser reconhecida ao conferir resultados próximos de 1.
 
-1. **Canais sem afluentes:** $C_1, C_2, C_3, C_4, C_5, C_6$ e $C_7$ são todos de **1ª ordem**.
-2. **Trecho $T_1$:** encontro de $C_1$ (1ª) com $C_2$ (1ª) $\Rightarrow 1 + 1 \to$ **2ª ordem**.
-3. **Trecho $T_2$:** encontro de $C_3$ (1ª) com $C_4$ (1ª) $\Rightarrow 1 + 1 \to$ **2ª ordem**.
-4. **Trecho $T_3$:** encontro de $T_2$ (2ª) com $C_5$ (1ª). Como as ordens são diferentes, mantém-se a maior $\Rightarrow 2 + 1 \to$ **2ª ordem**.
-5. **Trecho $T_4$:** encontro de $T_1$ (2ª) com $T_3$ (2ª). Como ambos são de 2ª ordem, eleva-se a hierarquia $\Rightarrow 2 + 2 \to$ **3ª ordem**.
-6. **Trecho $T_5$:** encontro de $C_6$ (1ª) com $C_7$ (1ª) $\Rightarrow 1 + 1 \to$ **2ª ordem**.
-7. **Trecho $T_6$ (exutório):** encontro de $T_4$ (3ª) com $T_5$ (2ª). Ordens desiguais mantêm a maior $\Rightarrow 3 + 2 \to$ **3ª ordem**.
+## Etapa 4 - Exemplos resolvidos
 
-**6. Síntese / Resposta:** $T_1 = 2^{\text{a}}$, $T_2 = 2^{\text{a}}$, $T_3 = 2^{\text{a}}$, $T_4 = 3^{\text{a}}$, $T_5 = 2^{\text{a}}$, $T_6 = 3^{\text{a}}$ ordem. Portanto, trata-se de uma **microbacia de 3ª ordem**.
+### Exemplo 7.1 - Hierarquia Fluvial de Strahler em uma Microbacia de Cabeceira (Nível Básico)
 
-**7. Verificação crítica:** Para surgir uma bacia de 4ª ordem seriam necessários, no mínimo, dois segmentos de 3ª ordem confluindo entre si (o que exigiria ao menos quatro canais de 2ª ordem e oito de 1ª ordem perfeitamente pareados). Com apenas sete canais de 1ª ordem, é matematicamente impossível ultrapassar a 3ª ordem, confirmando a consistência da resposta.
+**Situação analisada.** Durante o mapeamento hidrográfico de uma microbacia afluente do Rio Jacuípe (BA), uma equipe de Geografia identificou a seguinte estrutura de drenagem de montante para jusante, (a) dois córregos sem afluentes ($C_1$ e $C_2$) unem-se formando o trecho $T_1$; (b) dois outros córregos sem afluentes ($C_3$ e $C_4$) unem-se formando o trecho $T_2$; (c) um córrego sem afluentes ($C_5$) desemboca no trecho $T_2$, originando o trecho $T_3$; (d) os trechos $T_1$ e $T_3$ encontram-se, formando o canal $T_4$; (e) finalmente, dois novos córregos sem afluentes ($C_6$ e $C_7$) unem-se formando o trecho $T_5$, que desemboca em $T_4$, gerando o canal principal $T_6$ até o exutório.
 
-:::
+**Dados disponíveis.** Sete canais de cabeceira sem tributários ($C_1$ a $C_7$) e cinco pontos de confluência sequenciais até o exutório ($T_6$).
 
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 7.2 — Densidade de Drenagem e Contraste Litológico (Nível Básico–Intermediário)
+**Problema a resolver.** Determinar a ordem de Strahler de cada trecho ($T_1$ a $T_6$) e a ordem final da microbacia.
 
-**1. Situação-problema / Enunciado:** Em um diagnóstico ambiental comparativo na Bahia, analisaram-se duas microbacias rurais de mesma área, mapeadas na mesma escala 1:25.000: a **Microbacia A**, situada sobre embasamento cristalino (gnaisses) com solos rasos no Semiárido, e a **Microbacia B**, situada sobre bacia sedimentar arenosa com solos profundos e bem drenados.
+**Fundamento da análise.** Aplicação sequencial das três regras da Hierarquia Fluvial de Strahler (1952), nascentes sem afluentes $= 1$; encontro $n + n \to n + 1$; encontro $n + m \to \max(n, m)$.
 
-**2. Dados e informações fornecidas:** Microbacia A: $A_A = 16,0\text{ km}^2$ e $L_{tA} = 41,6\text{ km}$. Microbacia B: $A_B = 16,0\text{ km}^2$ e $L_{tB} = 12,8\text{ km}$.
+**Desenvolvimento.**
 
-**3. O que a análise solicita:** Calcular a Densidade de Drenagem ($D_d$) de cada microbacia e explicar a relação entre os resultados, a permeabilidade do terreno e a geração de escoamento superficial.
+**Canais sem afluentes,** $C_1, C_2, C_3, C_4, C_5, C_6$ e $C_7$ são todos de **1ª ordem**. **Trecho $T_1$.** Encontro de $C_1$ (1ª) com $C_2$ (1ª) $\Rightarrow 1 + 1 \to$ **2ª ordem**. **Trecho $T_2$.** Encontro de $C_3$ (1ª) com $C_4$ (1ª) $\Rightarrow 1 + 1 \to$ **2ª ordem**. **Trecho $T_3$.** Encontro de $T_2$ (2ª) com $C_5$ (1ª). Como as ordens são diferentes, mantém-se a maior $\Rightarrow 2 + 1 \to$ **2ª ordem**. **Trecho $T_4$.** Encontro de $T_1$ (2ª) com $T_3$ (2ª). Como ambos são de 2ª ordem, eleva-se a hierarquia $\Rightarrow 2 + 2 \to$ **3ª ordem**. **Trecho $T_5$.** Encontro de $C_6$ (1ª) com $C_7$ (1ª) $\Rightarrow 1 + 1 \to$ **2ª ordem**.
 
-**4. Referencial e método adotado:** Aplicação da equação de Horton ($D_d = L_t / A$) e interpretação hidrogeomorfológica comparativa.
+**Trecho $T_6$ (exutório).** Encontro de $T_4$ (3ª) com $T_5$ (2ª). Ordens desiguais mantêm a maior $\Rightarrow 3 + 2 \to$ **3ª ordem**.
 
-**5. Desenvolvimento passo a passo:**
+**Interpretação do resultado.** $T_1 = 2^{\text{a}}$, $T_2 = 2^{\text{a}}$, $T_3 = 2^{\text{a}}$, $T_4 = 3^{\text{a}}$, $T_5 = 2^{\text{a}}$, $T_6 = 3^{\text{a}}$ ordem. Portanto, trata-se de uma **microbacia de 3ª ordem**.
 
-1. **Microbacia A (cristalino):**
-  
+**Condições de validade.** Para surgir uma bacia de 4ª ordem seriam necessários, no mínimo, dois segmentos de 3ª ordem confluindo entre si (o que exigiria ao menos quatro canais de 2ª ordem e oito de 1ª ordem perfeitamente pareados). Com apenas sete canais de 1ª ordem, é matematicamente impossível ultrapassar a 3ª ordem, confirmando a consistência da resposta.
+
+### Exemplo 7.2 - Densidade de Drenagem e Contraste Litológico (Nível Básico-Intermediário) {#07-bacias-hidrograficas-morfometria-exemplo-7.2.-densidade-de-drenagem-e-contraste-litológico-nível-básicointermediário}
+
+**Situação analisada.** Em um diagnóstico ambiental comparativo na Bahia, analisaram-se duas microbacias rurais de mesma área, mapeadas na mesma escala 1,25.000, a **Microbacia A**, situada sobre embasamento cristalino (gnaisses) com solos rasos no Semiárido, e a **Microbacia B**, situada sobre bacia sedimentar arenosa com solos profundos e bem drenados.
+
+**Dados disponíveis.** Microbacia A, $A_A = 16,0\text{ km}^2$ e $L_{tA} = 41,6\text{ km}$. Microbacia B, $A_B = 16,0\text{ km}^2$ e $L_{tB} = 12,8\text{ km}$.
+
+**Problema a resolver.** Calcular a Densidade de Drenagem ($D_d$) de cada microbacia e explicar a relação entre os resultados, a permeabilidade do terreno e a geração de escoamento superficial.
+
+**Fundamento da análise.** Aplicação da equação de Horton ($D_d = L_t / A$) e interpretação hidrogeomorfológica comparativa.
+
+**Desenvolvimento.**
+
+**Microbacia A (cristalino),**
+
+$$
+D_{dA} = \frac{L_{tA}}{A_A} = \frac{41{,}6\text{ km}}{16{,}0\text{ km}^2} = 2{,}60\text{ km}/\text{km}^2.
 $$
 
-    D_{dA} = \frac{L_{tA}}{A_A} = \frac{41,6\text{ km}}{16,0\text{ km}^2} = 2,60\text{ km}/\text{km}^2.
-  
-$$
-2. **Microbacia B (sedimentar arenoso):**
-  
-$$
+. **Microbacia B (sedimentar arenoso),**
 
-    D_{dB} = \frac{L_{tB}}{A_B} = \frac{12,8\text{ km}}{16,0\text{ km}^2} = 0,80\text{ km}/\text{km}^2.
-  
 $$
-3. **Razão comparativa:**
-  
+D_{dB} = \frac{L_{tB}}{A_B} = \frac{12{,}8\text{ km}}{16{,}0\text{ km}^2} = 0{,}80\text{ km}/\text{km}^2.
 $$
 
-    \frac{D_{dA}}{D_{dB}} = \frac{2,60}{0,80} = 3,25.
-  
+. **Razão comparativa,**
+
+$$
+\frac{D_{dA}}{D_{dB}} = \frac{2{,}60}{0{,}80} = 3{,}25.
 $$
 
-**6. Síntese / Resposta:** $D_{dA} = 2,60\text{ km}/\text{km}^2$ (drenagem alta) e $D_{dB} = 0,80\text{ km}/\text{km}^2$ (drenagem regular/baixa). A Microbacia A possui densidade de drenagem $3,25$ vezes maior que a Microbacia B.
+.
 
-**7. Verificação crítica:** O resultado faz pleno sentido ambiental: rochas cristalinas pouco permeáveis e solos rasos (Microbacia A) limitam a infiltração profunda, forçando grande parte da chuva a escoar em superfície e entalhar uma rede densa de canais. Já os arenitos e solos profundos (Microbacia B) favorecem a infiltração e recarga subterrânea, exigindo menos canais superficiais por $\text{km}^2$. Como ambas foram mapeadas na escala 1:25.000, a comparação é metodologicamente válida.
+**Interpretação do resultado.** $D_{dA} = 2,60\text{ km}/\text{km}^2$ (drenagem alta) e $D_{dB} = 0,80\text{ km}/\text{km}^2$ (drenagem regular/baixa). A Microbacia A possui densidade de drenagem $3,25$ vezes maior que a Microbacia B.
 
-:::
+**Condições de validade.** O resultado faz pleno sentido ambiental, rochas cristalinas pouco permeáveis e solos rasos (Microbacia A) limitam a infiltração profunda, forçando grande parte da chuva a escoar em superfície e entalhar uma rede densa de canais. Já os arenitos e solos profundos (Microbacia B) favorecem a infiltração e recarga subterrânea, exigindo menos canais superficiais por $\text{km}^2$. Como ambas foram mapeadas na escala 1,25.000, a comparação é metodologicamente válida.
 
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 7.3 — Forma da Bacia ($K_c$ e $I_c$) e Suscetibilidade a Enchentes (Nível Intermediário)
+### Exemplo 7.3 - Forma da Bacia ($K_c$ e $I_c$) e Suscetibilidade a Enchentes (Nível Intermediário)
 
-**1. Situação-problema / Enunciado:** A prefeitura de um município baiano precisa priorizar obras de macrodrenagem e proteção de margens entre duas sub-bacias periurbanas de mesma área total ($36,0\text{ km}^2$): a **Bacia X**, de contorno mais arredondado, e a **Bacia Y**, encaixada em um vale estreito e alongado.
+**Situação analisada.** A prefeitura de um município baiano precisa priorizar obras de macrodrenagem e proteção de margens entre duas sub-bacias periurbanas de mesma área total ($36,0\text{ km}^2$), a **Bacia X**, de contorno mais arredondado, e a **Bacia Y**, encaixada em um vale estreito e alongado.
 
-**2. Dados e informações fornecidas:** Bacia X: $A_X = 36,0\text{ km}^2$ e $P_X = 24,0\text{ km}$. Bacia Y: $A_Y = 36,0\text{ km}^2$ e $P_Y = 36,0\text{ km}$.
+**Dados disponíveis.** Bacia X, $A_X = 36,0\text{ km}^2$ e $P_X = 24,0\text{ km}$. Bacia Y, $A_Y = 36,0\text{ km}^2$ e $P_Y = 36,0\text{ km}$.
 
-**3. O que a análise solicita:** Calcular o Coeficiente de Compacidade ($K_c$) e o Índice de Circularidade ($I_c$) de ambas as bacias e indicar qual delas apresenta maior suscetibilidade natural a picos rápidos de cheia.
+**Problema a resolver.** Calcular o Coeficiente de Compacidade ($K_c$) e o Índice de Circularidade ($I_c$) de ambas as bacias e indicar qual delas apresenta maior suscetibilidade natural a picos rápidos de cheia.
 
-**4. Referencial e método adotado:** Cálculo de $K_c = 0,28 \cdot \frac{P}{\sqrt{A}}$ e $I_c = \frac{12,57 \cdot A}{P^2}$, seguido de classificação pela Tabela indicada acima.
+**Fundamento da análise.** Cálculo de $K_c = 0,28 \cdot \frac{P}{\sqrt{A}}$ e $I_c = \frac{12,57 \cdot A}{P^2}$, seguido de classificação pela Tabela [morfometria interpretacao](07-bacias-hidrograficas-morfometria.qmd#tbl-morfometria_interpretacao).
 
-**5. Desenvolvimento passo a passo:**
+**Desenvolvimento.**
 
-1. **Raiz quadrada da área (comum às duas bacias):** $\sqrt{36,0} = 6,0\text{ km}$.
-2. **Bacia X:**
-  
+**Raiz quadrada da área (comum às duas bacias),** $\sqrt{36,0} = 6,0\text{ km}$. **Bacia X,**
+
 $$
 \begin{aligned}
-    K_{cX} &= 0,28 \cdot \frac{24,0}{6,0} = 0,28 \cdot 4,0 = 1,12 
-
-    I_{cX} &= \frac{12,57 \cdot 36,0}{(24,0)^2} = \frac{452,52}{576,0} \approx 0,7856 \approx 0,79.
-  \end{aligned}
-$$
-3. **Bacia Y:**
-  
-$$
-\begin{aligned}
-    K_{cY} &= 0,28 \cdot \frac{36,0}{6,0} = 0,28 \cdot 6,0 = 1,68 
-
-    I_{cY} &= \frac{12,57 \cdot 36,0}{(36,0)^2} = \frac{12,57}{36,0} \approx 0,3492 \approx 0,35.
-  \end{aligned}
+K_{cX} &= 0{,}28 \cdot \frac{24{,}0}{6{,}0} = 0{,}28 \cdot 4{,}0 = 1{,}12 \\
+I_{cX} &= \frac{12{,}57 \cdot 36{,}0}{(24{,}0)^2} = \frac{452{,}52}{576{,}0} \approx 0{,}7856 \approx 0{,}79.
+\end{aligned}
 $$
 
-**6. Síntese / Resposta:** Bacia X: $K_c = 1,12$ e $I_c = 0,79$ (forma tendendo à circular, **alta suscetibilidade a enchentes**). Bacia Y: $K_c = 1,68$ e $I_c = 0,35$ (forma alongada, **baixa suscetibilidade natural a picos concentrados**). A Bacia X deve receber prioridade nas medidas preventivas contra cheias rápidas.
+. **Bacia Y,**
 
-**7. Verificação crítica:** Verificamos a coerência matemática entre os dois índices: para a Bacia X, $1 / K_{cX}^2 = 1 / (1,12)^2 = 1 / 1,2544 \approx 0,80 \approx I_{cX}$ (a pequena diferença decorre do arredondamento de $0,2821$ para $0,28$). Além disso, ambos respeitam os limites geométricos $K_c \ge 1$ e $I_c \le 1$.
-
-:::
-
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 7.4 — Amplitude Altimétrica ($H_m$) e Relação de Relevo ($R_r$) em Cabeceiras Contrastantes (Nível Intermediário)
-
-**1. Situação-problema / Enunciado:** Para avaliar o potencial energético de erosão e transporte de sedimentos, comparam-se duas microbacias de mesmo comprimento axial ($L = 6,0\text{ km}$): uma situada nas cabeceiras serranas da **Chapada Diamantina** e outra localizada em setor aplainado do **Planalto Sertanejo**.
-
-**2. Dados e informações fornecidas:** Chapada Diamantina: $H_{\max} = 960\text{ m}$, $H_{\min} = 480\text{ m}$, $L = 6,0\text{ km}$. Planalto Sertanejo: $H_{\max} = 360\text{ m}$, $H_{\min} = 240\text{ m}$, $L = 6,0\text{ km}$.
-
-**3. O que a análise solicita:** Calcular $H_m$ e $R_r$ (em $\text{m}/\text{km}$ e em $\text{m}/\text{m}$) para ambas as unidades e interpretar suas implicações geomorfológicas.
-
-**4. Referencial e método adotado:** Aplicação de $H_m = H_{\max} - H_{\min}$ e $R_r = H_m / L$, com conversão cuidadosa de $L$ de quilômetros para metros ($6,0\text{ km} = 6.000\text{ m}$) na forma adimensional.
-
-**5. Desenvolvimento passo a passo:**
-
-1. **Cabeceira da Chapada Diamantina:**
-  
 $$
 \begin{aligned}
-    H_{m1} &= 960 - 480 = 480\text{ m} 
-
-    R_{r1} &= \frac{480\text{ m}}{6,0\text{ km}} = 80,0\text{ m}/\text{km} 
-
-    R_{r1,\text{adim}} &= \frac{480\text{ m}}{6.000\text{ m}} = 0,080\text{ m}/\text{m} \;\; (8,0%).
-  \end{aligned}
+K_{cY} &= 0{,}28 \cdot \frac{36{,}0}{6{,}0} = 0{,}28 \cdot 6{,}0 = 1{,}68 \\
+I_{cY} &= \frac{12{,}57 \cdot 36{,}0}{(36{,}0)^2} = \frac{12{,}57}{36{,}0} \approx 0{,}3492 \approx 0{,}35.
+\end{aligned}
 $$
-2. **Planalto Sertanejo:**
-  
+
+.
+
+**Interpretação do resultado.** Bacia X, $K_c = 1,12$ e $I_c = 0,79$ (forma tendendo à circular, **alta suscetibilidade a enchentes**). Bacia Y, $K_c = 1,68$ e $I_c = 0,35$ (forma alongada, **baixa suscetibilidade natural a picos concentrados**). A Bacia X deve receber prioridade nas medidas preventivas contra cheias rápidas.
+
+**Condições de validade.** Verificamos a coerência matemática entre os dois índices, para a Bacia X, $1 / K_{cX}^2 = 1 / (1,12)^2 = 1 / 1,2544 \approx 0,80 \approx I_{cX}$ (a pequena diferença decorre do arredondamento de $0,2821$ para $0,28$). Além disso, ambos respeitam os limites geométricos $K_c \ge 1$ e $I_c \le 1$.
+
+### Exemplo 7.4 - Amplitude Altimétrica ($H_m$) e Relação de Relevo ($R_r$) em Cabeceiras Contrastantes (Nível Intermediário)
+
+**Situação analisada.** Para avaliar o potencial energético de erosão e transporte de sedimentos, comparam-se duas microbacias de mesmo comprimento axial ($L = 6,0\text{ km}$), uma situada nas cabeceiras serranas da **Chapada Diamantina** e outra localizada em setor aplainado do **Planalto Sertanejo**.
+
+**Dados disponíveis.** Chapada Diamantina, $H_{\max} = 960\text{ m}$, $H_{\min} = 480\text{ m}$, $L = 6,0\text{ km}$. Planalto Sertanejo, $H_{\max} = 360\text{ m}$, $H_{\min} = 240\text{ m}$, $L = 6,0\text{ km}$.
+
+**Problema a resolver.** Calcular $H_m$ e $R_r$ (em $\text{m}/\text{km}$ e em $\text{m}/\text{m}$) para ambas as unidades e interpretar suas implicações geomorfológicas.
+
+**Fundamento da análise.** Aplicação de $H_m = H_{\max} - H_{\min}$ e $R_r = H_m / L$, com conversão cuidadosa de $L$ de quilômetros para metros ($6,0\text{ km} = 6.000\text{ m}$) na forma adimensional.
+
+**Desenvolvimento.**
+
+**Cabeceira da Chapada Diamantina,**
+
 $$
 \begin{aligned}
-    H_{m2} &= 360 - 240 = 120\text{ m} 
-
-    R_{r2} &= \frac{120\text{ m}}{6,0\text{ km}} = 20,0\text{ m}/\text{km} 
-
-    R_{r2,\text{adim}} &= \frac{120\text{ m}}{6.000\text{ m}} = 0,020\text{ m}/\text{m} \;\; (2,0%).
-  \end{aligned}
+H_{m1} &= 960 - 480 = 480\text{ m} \\
+R_{r1} &= \frac{480\text{ m}}{6{,}0\text{ km}} = 80{,}0\text{ m}/\text{km} \\
+R_{r1,\text{adim}} &= \frac{480\text{ m}}{6.000\text{ m}} = 0{,}080\text{ m}/\text{m} \;\; (8{,}0\%).
+\end{aligned}
 $$
 
-**6. Síntese / Resposta:** Chapada Diamantina: $H_m = 480\text{ m}$ e $R_r = 80,0\text{ m}/\text{km}$ ($0,080\text{ m}/\text{m}$). Planalto Sertanejo: $H_m = 120\text{ m}$ e $R_r = 20,0\text{ m}/\text{km}$ ($0,020\text{ m}/\text{m}$). A microbacia serrana possui energia de relevo $4$ vezes superior.
+. **Planalto Sertanejo,**
 
-**7. Verificação crítica:** A mesma distância horizontal ($6\text{ km}$) acomoda um desnível $4$ vezes maior na Chapada, gerando velocidades de escoamento bem mais elevadas, maior capacidade de transporte de blocos e cascalhos e maior sensibilidade a ravinas e movimentos de massa caso a vegetação seja removida.
-
-:::
-
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 7.5 — Impacto Hidrológico da Impermeabilização Urbana em uma Microbacia (Nível Avançado)
-
-**1. Situação-problema / Enunciado:** Uma microbacia periurbana de $4,0\text{ km}^2$ na borda de expansão de Feira de Santana era originalmente coberta por vegetação nativa e áreas ripárias conservadas, apresentando coeficiente médio de escoamento superficial $C_1 = 0,15$. Após a implantação de loteamentos pavimentados, canalização de córregos e supressão da mata ciliar, o coeficiente subiu para $C_2 = 0,75$. Considere uma chuva intensa de $P_{\text{chuva}} = 60\text{ mm}$.
-
-**2. Dados e informações fornecidas:** $A = 4,0\text{ km}^2 = 4.000.000\text{ m}^2$; $P_{\text{chuva}} = 60\text{ mm} = 0,060\text{ m}$; $C_1 = 0,15$; $C_2 = 0,75$.
-
-**3. O que a análise solicita:** Calcular o volume total de água precipitado sobre a microbacia, o volume de escoamento superficial gerado antes e depois da urbanização, a diferença absoluta e relativa, e explicar os reflexos sobre a conectividade hidrossedimentológica.
-
-**4. Referencial e método adotado:** Cálculo volumétrico direto do balanço superficial: $V_{\text{prec}} = P_{\text{chuva}} \cdot A$ e $V_{\text{esc}} = C \cdot V_{\text{prec}}$, seguido de análise ambiental integrada.
-
-**5. Desenvolvimento passo a passo:**
-
-1. **Conversão de unidades:**
-  
+$$
+\begin{aligned}
+H_{m2} &= 360 - 240 = 120\text{ m} \\
+R_{r2} &= \frac{120\text{ m}}{6{,}0\text{ km}} = 20{,}0\text{ m}/\text{km} \\
+R_{r2,\text{adim}} &= \frac{120\text{ m}}{6.000\text{ m}} = 0{,}020\text{ m}/\text{m} \;\; (2{,}0\%).
+\end{aligned}
 $$
 
-    A = 4,0 \times 1.000.000\text{ m}^2 = 4.000.000\text{ m}^2,   P_{\text{chuva}} = \frac{60}{1.000}\text{ m} = 0,060\text{ m}.
-  
-$$
-2. **Volume total precipitado na microbacia:**
-  
-$$
+.
 
-    V_{\text{prec}} = 0,060\text{ m} \times 4.000.000\text{ m}^2 = 240.000\text{ m}^3.
-  
-$$
-3. **Volume de escoamento superficial no cenário conservado ($C_1 = 0,15$):**
-  
-$$
+**Interpretação do resultado.** Chapada Diamantina, $H_m = 480\text{ m}$ e $R_r = 80,0\text{ m}/\text{km}$ ($0,080\text{ m}/\text{m}$). Planalto Sertanejo, $H_m = 120\text{ m}$ e $R_r = 20,0\text{ m}/\text{km}$ ($0,020\text{ m}/\text{m}$). A microbacia serrana possui energia de relevo $4$ vezes superior.
 
-    V_{\text{esc},1} = 0,15 \times 240.000\text{ m}^3 = 36.000\text{ m}^3.
-  
-$$
+**Condições de validade.** A mesma distância horizontal ($6\text{ km}$) acomoda um desnível $4$ vezes maior na Chapada, gerando velocidades de escoamento bem mais elevadas, maior capacidade de transporte de blocos e cascalhos e maior sensibilidade a ravinas e movimentos de massa caso a vegetação seja removida.
 
-  (Os outros $204.000\text{ m}^3$, equivalentes a $85%$, foram retidos por interceptação, depressões e infiltração.)
-4. **Volume de escoamento superficial no cenário impermeabilizado ($C_2 = 0,75$):**
-  
-$$
+### Exemplo 7.5 - Impacto Hidrológico da Impermeabilização Urbana em uma Microbacia (Nível Avançado)
 
-    V_{\text{esc},2} = 0,75 \times 240.000\text{ m}^3 = 180.000\text{ m}^3.
-  
+**Situação analisada.** Uma microbacia periurbana de $4,0\text{ km}^2$ na borda de expansão de Feira de Santana era originalmente coberta por vegetação nativa e áreas ripárias conservadas, apresentando coeficiente médio de escoamento superficial $C_1 = 0,15$. Após a implantação de loteamentos pavimentados, canalização de córregos e supressão da mata ciliar, o coeficiente subiu para $C_2 = 0,75$. Considere uma chuva intensa de $P_{\text{chuva}} = 60\text{ mm}$.
+
+**Dados disponíveis.** $A = 4,0\text{ km}^2 = 4.000.000\text{ m}^2$; $P_{\text{chuva}} = 60\text{ mm} = 0,060\text{ m}$; $C_1 = 0,15$; $C_2 = 0,75$.
+
+**Problema a resolver.** Calcular o volume total de água precipitado sobre a microbacia, o volume de escoamento superficial gerado antes e depois da urbanização, a diferença absoluta e relativa, e explicar os reflexos sobre a conectividade hidrossedimentológica.
+
+**Fundamento da análise.** Cálculo volumétrico direto do balanço superficial, $V_{\text{prec}} = P_{\text{chuva}} \cdot A$ e $V_{\text{esc}} = C \cdot V_{\text{prec}}$, seguido de análise ambiental integrada.
+
+**Desenvolvimento.**
+
+**Conversão de unidades,**
+
 $$
-5. **Aumento absoluto e fator multiplicador:**
-  
+A = 4{,}0 \times 1.000.000\text{ m}^2 = 4.000.000\text{ m}^2, \qquad P_{\text{chuva}} = \frac{60}{1.000}\text{ m} = 0{,}060\text{ m}.
 $$
 
-    \Delta V_{\text{esc}} = 180.000 - 36.000 = 144.000\text{ m}^3,   \frac{V_{\text{esc},2}}{V_{\text{esc},1}} = \frac{180.000}{36.000} = 5\text{ vezes (}+400%\text{)}.
-  
+. **Volume total precipitado na microbacia,**
+
+$$
+V_{\text{prec}} = 0{,}060\text{ m} \times 4.000.000\text{ m}^2 = 240.000\text{ m}^3.
 $$
 
-**6. Síntese / Resposta:** O escoamento superficial saltou de $36.000\text{ m}^3$ para $180.000\text{ m}^3$, um acréscimo de $144.000\text{ m}^3$ (cinco vezes o volume original) para a mesma chuva de $60\text{ mm}$.
+. **Volume de escoamento superficial no cenário conservado ($C_1 = 0,15$),**
 
-**7. Verificação crítica:** Note que $144.000\text{ m}^3$ correspondem a cerca de $58$ piscinas olímpicas ($2.500\text{ m}^3$ cada) lançadas abruptamente no canal em poucas horas. A supressão da mata ciliar e a canalização eliminam os desconectores naturais, elevam ao máximo a conectividade hidrossedimentológica artificial e provocam alagamentos a jusante, erosão de margens e redução severa da recarga subterrânea.
+$$
+V_{\text{esc},1} = 0{,}15 \times 240.000\text{ m}^3 = 36.000\text{ m}^3.
+$$
 
-:::
+ (Os outros $204.000\text{ m}^3$, equivalentes a $85\%$, foram retidos por interceptação, depressões e infiltração.). **Volume de escoamento superficial no cenário impermeabilizado ($C_2 = 0,75$),**
 
-## Etapa 5: Erros Mais Comuns em Provas e Diagnósticos
+$$
+V_{\text{esc},2} = 0{,}75 \times 240.000\text{ m}^3 = 180.000\text{ m}^3.
+$$
 
-::: {.callout-warning}
-## Erro 1 — Somar ordens diferentes na Hierarquia de Strahler ($2 + 1 = 3$)
+. **Aumento absoluto e fator multiplicador,**
 
-**Equívoco frequente:** acreditar que toda confluência eleva a ordem do rio, escrevendo incorretamente que um canal de 2ª ordem ao receber um tributário de 1ª ordem passa a ser de 3ª ordem.
+$$
+\Delta V_{\text{esc}} = 180.000 - 36.000 = 144.000\text{ m}^3, \qquad \frac{V_{\text{esc},2}}{V_{\text{esc},1}} = \frac{180.000}{36.000} = 5\text{ vezes (}+400\%\text{)}.
+$$
 
-**Correção técnica:** na regra de Strahler, a ordem só aumenta quando se encontram **dois segmentos de mesma ordem** ($1+1 \to 2$, $2+2 \to 3$). Quando um canal de ordem inferior encontra um de ordem superior, prevalece a maior ordem ($2+1 \to 2$).
+.
 
-:::
+**Interpretação do resultado.** O escoamento superficial saltou de $36.000\text{ m}^3$ para $180.000\text{ m}^3$, um acréscimo de $144.000\text{ m}^3$ (cinco vezes o volume original) para a mesma chuva de $60\text{ mm}$.
 
-::: {.callout-warning}
-## Erro 2 — Confundir o sentido de interpretação de $K_c$ e $I_c$
+**Condições de validade.** Note que $144.000\text{ m}^3$ correspondem a cerca de $58$ piscinas olímpicas ($2.500\text{ m}^3$ cada) lançadas abruptamente no canal em poucas horas. A supressão da mata ciliar e a canalização eliminam os desconectores naturais, elevam ao máximo a conectividade hidrossedimentológica artificial e provocam alagamentos a jusante, erosão de margens e redução severa da recarga subterrânea.
 
-**Equívoco frequente:** afirmar que "quanto maior o $K_c$, mais circular é a bacia e maior o risco de enchentes", confundindo $K_c$ com $I_c$.
+## Etapa 5 - Erros de interpretação
 
-**Correção técnica:** $K_c$ e $I_c$ variam em **sentidos opostos**. Quanto mais próxima de um círculo (maior propensão a cheias rápidas), **menor** é $K_c$ (mais próximo de $1,0$) e **maior** é $I_c$ (mais próximo de $1,0$). Em bacias alongadas, $K_c$ cresce ($> 1,50$) e $I_c$ diminui ($< 0,45$). Além disso, um resultado com $K_c < 1$ ou $I_c > 1$ denuncia erro de cálculo ou medição incorreta de área/perímetro.
+### Erro 1, Somar ordens diferentes na Hierarquia de Strahler ($2 + 1 = 3$)
 
-:::
+**Equívoco frequente.** Acreditar que toda confluência eleva a ordem do rio, escrevendo incorretamente que um canal de 2ª ordem ao receber um tributário de 1ª ordem passa a ser de 3ª ordem.
 
-::: {.callout-warning}
-## Erro 3 — Misturar metros e quilômetros no cálculo da Relação de Relevo ($R_r$)
+**Correção técnica.** Na regra de Strahler, a ordem só aumenta quando se encontram **dois segmentos de mesma ordem** ($1+1 \to 2$, $2+2 \to 3$). Quando um canal de ordem inferior encontra um de ordem superior, prevalece a maior ordem ($2+1 \to 2$).
 
-**Equívoco frequente:** dividir $H_m = 200\text{ m}$ por $L = 8\text{ km}$, obter $25$ e registrar o resultado como "$25\text{ m/m}$" ou "$25%$".
+### Erro 2, Confundir o sentido de interpretação de $K_c$ e $I_c$
 
-**Correção técnica:** ao dividir metros por quilômetros, a unidade obrigatória é $\text{m}/\text{km}$ ($25\text{ m}/\text{km}$). Para obter $R_r$ adimensional ($\text{m}/\text{m}$) ou em porcentagem, converta $L$ para metros antes de dividir: $200\text{ m} / 8.000\text{ m} = 0,025\text{ m}/\text{m} = 2,5%$.
+**Equívoco frequente.** Afirmar que "quanto maior o $K_c$, mais circular é a bacia e maior o risco de enchentes", confundindo $K_c$ com $I_c$.
 
-:::
+**Correção técnica,** $K_c$ e $I_c$ variam em **sentidos opostos**. Quanto mais próxima de um círculo (maior propensão a cheias rápidas), **menor** é $K_c$ (mais próximo de $1,0$) e **maior** é $I_c$ (mais próximo de $1,0$). Em bacias alongadas, $K_c$ cresce ($> 1,50$) e $I_c$ diminui ($< 0,45$). Além disso, um resultado com $K_c < 1$ ou $I_c > 1$ denuncia erro de cálculo ou medição incorreta de área/perímetro.
 
-::: {.callout-warning}
-## Erro 4 — Comparar Densidade de Drenagem ($D_d$) obtida em escalas cartográficas diferentes
+### Erro 3, Misturar metros e quilômetros no cálculo da Relação de Relevo ($R_r$)
 
-**Equívoco frequente:** calcular $D_d$ de uma bacia a partir de imagem de alta resolução/carta 1:10.000 e compará-la com o $D_d$ de outra bacia extraído de base 1:100.000, concluindo que a primeira é "muito menos permeável".
+**Equívoco frequente.** Dividir $H_m = 200\text{ m}$ por $L = 8\text{ km}$, obter $25$ e registrar o resultado como "$25\text{ m/m}$" ou "$25\%$".
 
-**Correção técnica:** bases de escala pequena (1:100.000) generalizam a rede hidrográfica e omitem a maioria dos canais de 1ª ordem, subestimando $L_t$ e $D_d$. Análises comparativas só são válidas quando a rede de drenagem de todas as bacias é vetorizada na mesma escala e sob o mesmo critério de mapeamento.
+**Correção técnica.** Ao dividir metros por quilômetros, a unidade obrigatória é $\text{m}/\text{km}$ ($25\text{ m}/\text{km}$). Para obter $R_r$ adimensional ($\text{m}/\text{m}$) ou em porcentagem, converta $L$ para metros antes de dividir, $200\text{ m} / 8.000\text{ m} = 0,025\text{ m}/\text{m} = 2,5\%$.
 
-:::
+### Erro 4, Comparar Densidade de Drenagem ($D_d$) obtida em escalas cartográficas diferentes
 
-## Etapa 6: Exercícios de Fixação
+**Equívoco frequente.** Calcular $D_d$ de uma bacia a partir de imagem de alta resolução/carta 1,10.000 e compará-la com o $D_d$ de outra bacia extraído de base 1,100.000, concluindo que a primeira é "muito menos permeável".
 
-### Nível Básico (Exercícios 1 a 5)
+**Correção técnica.** Bases de escala pequena (1,100.000) generalizam a rede hidrográfica e omitem a maioria dos canais de 1ª ordem, subestimando $L_t$ e $D_d$. Análises comparativas só são válidas quando a rede de drenagem de todas as bacias é vetorizada na mesma escala e sob o mesmo critério de mapeamento.
+
+## Etapa 6 - Exercícios de fixação
+
+#### Nível Básico (Exercícios 1 a 5)
 
 1. Explique, com base em Botelho e Silva (2004) e Christofoletti (1981), por que a bacia hidrográfica é considerada a unidade espacial mais adequada para a análise e o planejamento ambiental, diferenciando **divisor topográfico**, **talvegue** e **exutório**.
-  
-*Espaço reservado para resolução na versão impressa.*
-2. Uma microbacia rural apresenta área de drenagem $A = 20,0\text{ km}^2$ e comprimento total de canais $L_t = 35,0\text{ km}$. Calcule sua Densidade de Drenagem ($D_d$) e classifique-a conforme a Tabela indicada acima.
-  
-*Espaço reservado para resolução na versão impressa.*
+
+2. Uma microbacia rural apresenta área de drenagem $A = 20,0\text{ km}^2$ e comprimento total de canais $L_t = 35,0\text{ km}$. Calcule sua Densidade de Drenagem ($D_d$) e classifique-a conforme a Tabela [morfometria interpretacao](07-bacias-hidrograficas-morfometria.qmd#tbl-morfometria_interpretacao).
+
 3. Calcule o Coeficiente de Compacidade ($K_c$) de uma sub-bacia com área $A = 49,0\text{ km}^2$ e perímetro $P = 35,0\text{ km}$. Indique se sua forma tende à circular, ovalada ou alongada.
-  
-*Espaço reservado para resolução na versão impressa.*
+
 4. Uma microbacia possui área $A = 25,0\text{ km}^2$ e perímetro $P = 25,0\text{ km}$. Calcule seu Índice de Circularidade ($I_c$) e avalie sua propensão natural a picos concentrados de enchente.
-  
-*Espaço reservado para resolução na versão impressa.*
+
 5. Determine a Amplitude Altimétrica ($H_m$) e a Relação de Relevo ($R_r$), em $\text{m}/\text{km}$ e em $\text{m}/\text{m}$, para uma bacia com $H_{\max} = 640\text{ m}$, $H_{\min} = 280\text{ m}$ e comprimento axial $L = 9,0\text{ km}$.
-  
-*Espaço reservado para resolução na versão impressa.*
 
-### Nível Intermediário (Exercícios 6 a 10)
+#### Nível Intermediário (Exercícios 6 a 10)
 
-1. Compare duas bacias hidrográficas mapeadas na mesma escala (1:25.000), ambas com área $A = 64,0\text{ km}^2$:
-  
+6. Compare duas bacias hidrográficas mapeadas na mesma escala (1,25.000), ambas com área $A = 64,0\text{ km}^2$,
 
-  Calcule $D_d$, $K_c$, $I_c$, $H_m$ e $R_r$ para ambas e justifique qual delas exige maior cuidado contra cheias rápidas e processos erosivos.
-  
-*Espaço reservado para resolução na versão impressa.*
-4. Em uma rede hidrográfica hipotética, quatro pares de canais de 1ª ordem formam quatro canais de 2ª ordem ($A, B, C, D$). Os canais $A$ e $B$ se unem formando o trecho $X$; o canal $C$ desemboca em $X$ formando o trecho $Y$; e o canal $D$ desemboca em $Y$ formando o canal final $Z$ no exutório. Determine a ordem de Strahler de $X$, $Y$ e $Z$ e explique por que a ordem final não chegou a 4ª ordem.
-  
-*Espaço reservado para resolução na versão impressa.*
-5. Uma microbacia de $5,0\text{ km}^2$ sofreu desmatamento e abertura de estradas compactadas, elevando seu coeficiente de escoamento superficial de $C_1 = 0,20$ para $C_2 = 0,70$. Para uma chuva de $50\text{ mm}$, calcule o volume escoado superficialmente (em $\text{m}^3$) nos dois cenários e o percentual de aumento do escoamento.
-  
-*Espaço reservado para resolução na versão impressa.*
-6. Explique a diferença entre **conectividade estrutural** e **conectividade funcional** em uma bacia hidrográfica do Semiárido baiano e dê um exemplo de elemento que atua como *conector* e outro que atua como *desconector* de sedimentos.
-  
-*Espaço reservado para resolução na versão impressa.*
-7. Por que a supressão de matas ciliares (áreas ripárias) em microbacias rurais provoca simultaneamente aumento da turbidez da água, assoreamento de reservatórios e instabilidade de margens?
-  
-*Espaço reservado para resolução na versão impressa.*
+    - **Bacia M1,** $P = 32,0\text{ km}$, $L_t = 160,0\text{ km}$, $H_{\max} = 540\text{ m}$, $H_{\min} = 220\text{ m}$, $L = 8,0\text{ km}$.
 
-### Questões Objetivas (Exercícios 11 a 15)
+    - **Bacia M2,** $P = 48,0\text{ km}$, $L_t = 51,2\text{ km}$, $H_{\max} = 380\text{ m}$, $H_{\min} = 220\text{ m}$, $L = 16,0\text{ km}$.
 
-1. Na Hierarquia Fluvial de Strahler, quando um curso d'água de 3ª ordem recebe um afluente de 2ª ordem e, mais a jusante, conflui com outro curso d'água de 3ª ordem, as ordens dos segmentos imediatamente após a primeira e a segunda confluência serão, respectivamente:
-  
+    Calcule $D_d$, $K_c$, $I_c$, $H_m$ e $R_r$ para ambas e justifique qual delas exige maior cuidado contra cheias rápidas e processos erosivos.
 
-7. Uma bacia hidrográfica apresenta $A = 100,0\text{ km}^2$, $P = 50,0\text{ km}$, $L_t = 220,0\text{ km}$, $H_{\max} = 750\text{ m}$, $H_{\min} = 250\text{ m}$ e $L = 20,0\text{ km}$. Os valores corretos de $D_d$, $K_c$ e $R_r$ (em $\text{m}/\text{km}$) são, respectivamente:
-  
+7. Em uma rede hidrográfica hipotética, quatro pares de canais de 1ª ordem formam quatro canais de 2ª ordem ($A, B, C, D$). Os canais $A$ e $B$ se unem formando o trecho $X$; o canal $C$ desemboca em $X$ formando o trecho $Y$; e o canal $D$ desemboca em $Y$ formando o canal final $Z$ no exutório. Determine a ordem de Strahler de $X$, $Y$ e $Z$ e explique por que a ordem final não chegou a 4ª ordem.
 
-13. Sobre o Coeficiente de Compacidade ($K_c$) e o Índice de Circularidade ($I_c$), assinale a alternativa tecnicamente correta:
-  
+8. Uma microbacia de $5,0\text{ km}^2$ sofreu desmatamento e abertura de estradas compactadas, elevando seu coeficiente de escoamento superficial de $C_1 = 0,20$ para $C_2 = 0,70$. Para uma chuva de $50\text{ mm}$, calcule o volume escoado superficialmente (em $\text{m}^3$) nos dois cenários e o percentual de aumento do escoamento.
 
-19. Em relação às áreas ripárias em bacias hidrográficas, é **INCORRETO** afirmar que:
-  
+9. Explique a diferença entre **conectividade estrutural** e **conectividade funcional** em uma bacia hidrográfica do Semiárido baiano e dê um exemplo de elemento que atua como *conector* e outro que atua como *desconector* de sedimentos.
 
-25. A urbanização intensa e sem drenagem sustentável em uma microbacia provoca, no hidrograma de cheia medido no exutório:
-  
+10. Por que a supressão de matas ciliares (áreas ripárias) em microbacias rurais provoca simultaneamente aumento da turbidez da água, assoreamento de reservatórios e instabilidade de margens?
 
-## Etapa 7: Questões de Provas, ENADE e Concursos Ambientais
+#### Questões Objetivas (Exercícios 11 a 15)
 
-1. **(Questão autoral — estilo ENADE / Licenciatura e Bacharelado em Geografia)** Um órgão estadual de meio ambiente avalia o pedido de supressão vegetal para expansão agropecuária em uma microbacia de cabeceira situada sobre embasamento cristalino no Nordeste brasileiro. O relatório técnico apresentou $D_d = 2,85\text{ km}/\text{km}^2$, $K_c = 1,14$ e $R_r = 55\text{ m}/\text{km}$. Com base na interpretação integrada desses indicadores morfométricos, conclui-se que a microbacia apresenta:
-  
+11. Na Hierarquia Fluvial de Strahler, quando um curso d’água de 3ª ordem recebe um afluente de 2ª ordem e, mais a jusante, conflui com outro curso d’água de 3ª ordem, as ordens dos segmentos imediatamente após a primeira e a segunda confluência serão, respectivamente,
 
-7. **(Questão autoral — estilo Concurso Analista Ambiental / INEMA-BA)** Em um estudo hidrológico para outorga e prevenção de inundações, uma sub-bacia foi caracterizada por $A = 81,0\text{ km}^2$, $P = 36,0\text{ km}$, $L_t = 202,5\text{ km}$, $H_{\max} = 680\text{ m}$, $H_{\min} = 230\text{ m}$ e $L = 15,0\text{ km}$. Assinale a alternativa que apresenta corretamente os valores de $D_d$, $K_c$, $I_c$ e $R_r$ (em $\text{m}/\text{m}$) dessa sub-bacia:
-  
+    (A) 4ª ordem e 5ª ordem.
 
-13. **(Questão autoral — estilo Concurso IBAMA / Gestão de Bacias Hidrográficas)** Sobre o conceito de conectividade hidrossedimentológica aplicado à gestão de bacias hidrográficas, analise as afirmativas abaixo:
-  
+    (B) 3ª ordem e 4ª ordem.
 
-  Está correto o que se afirma em:
-  
+    (C) 3ª ordem e 3ª ordem.
 
-::: {.callout-tip}
-## Conexão com a Avaliação Teórica e com o Trabalho Prático Final
+    (D) 5ª ordem e 6ª ordem.
 
-Na **Prova Teórica da Semana 10**, os índices morfométricos raramente são cobrados como contas isoladas: o enunciado exige que você calcule ($D_d$, $K_c$, $I_c$, $R_r$) e **interprete o significado ambiental** do número encontrado. No seu **Trabalho Prático Final**, extrair esses cinco índices em SIG (QGIS) para a microbacia escolhida, sempre informando a escala da base cartográfica utilizada, confere alto rigor técnico à caracterização da área de estudo.
+    (E) 2ª ordem e 4ª ordem.
 
-:::
+12. Uma bacia hidrográfica apresenta $A = 100,0\text{ km}^2$, $P = 50,0\text{ km}$, $L_t = 220,0\text{ km}$, $H_{\max} = 750\text{ m}$, $H_{\min} = 250\text{ m}$ e $L = 20,0\text{ km}$. Os valores corretos de $D_d$, $K_c$ e $R_r$ (em $\text{m}/\text{km}$) são, respectivamente,
 
-## Etapa 8: Gabarito Comentado — Exercícios 1 a 18
+    (A) $2,20\text{ km}/\text{km}^2$; $1,40$; $25,0\text{ m}/\text{km}$.
 
-::: {.callout-note collapse=\"true\"}
-## Resoluções e Justificativas — Capítulo 7
+    (B) $0,45\text{ km}/\text{km}^2$; $1,40$; $25,0\text{ m}/\text{km}$.
 
-1. **Conceito e elementos:** a bacia hidrográfica é uma unidade espacial natural e sistêmica na qual todos os fluxos de água, sedimentos e poluentes das vertentes convergem para um único exutório, permitindo relacionar diretamente o uso da terra ao estado dos recursos hídricos (Botelho; Silva, 2004; Christofoletti, 1981). *Divisor topográfico*: linha de pontos mais altos que separa bacias adjacentes; *talvegue*: linha de pontos mais baixos ao longo do vale onde se aloja o canal; *exutório*: ponto de menor cota do contorno por onde sai toda a drenagem superficial.
-2. **Cálculo de $D_d$:** $D_d = L_t / A = 35,0 / 20,0 = \mathbf{1,75\text{ km}/\text{km}^2}$. Classificação: drenagem regular a média ($0,5$ a $2,0\text{ km}/\text{km}^2$).
-3. **Cálculo de $K_c$:** $\sqrt{49,0} = 7,0\text{ km}$. Logo, $K_c = 0,28 \cdot (35,0 / 7,0) = 0,28 \cdot 5,0 = \mathbf{1,40}$. Classificação: forma ovalada ($1,25$ a $1,50$), suscetibilidade moderada a cheias.
-4. **Cálculo de $I_c$:** $I_c = \frac{12,57 \cdot 25,0}{(25,0)^2} = \frac{12,57}{25,0} = \mathbf{0,5028 \approx 0,50}$. Por situar-se no limiar de $0,51$, indica forma intermediária (levemente alongada/ovalada), com propensão moderada a cheias concentradas.
-5. **Cálculo de $H_m$ e $R_r$:** $H_m = 640 - 280 = \mathbf{360\text{ m}}$. Em $\text{m}/\text{km}$: $R_r = 360 / 9,0 = \mathbf{40,0\text{ m}/\text{km}}$. Em $\text{m}/\text{m}$: $L = 9,0\text{ km} = 9.000\text{ m} \Rightarrow R_r = 360 / 9.000 = \mathbf{0,040\text{ m}/\text{m}}$ ($4,0%$).
-6. **Comparação M1 vs. M2:** como $\sqrt{64,0} = 8,0$:
-  
+    (C) $2,20\text{ km}/\text{km}^2$; $0,71$; $50,0\text{ m}/\text{km}$.
 
-  **Conclusão:** a **Bacia M1** exige muito maior cuidado contra cheias rápidas e erosão, pois combina alta densidade de drenagem ($2,50$), contorno tendente ao circular ($K_c = 1,12$; $I_c = 0,79$) e energia de relevo quatro vezes superior ($40,0$ contra $10,0\text{ m}/\text{km}$).
-9. **Hierarquia de Strahler:** $A$ (2ª) $+ B$ (2ª) $\to X$ (**3ª ordem**). Em seguida, $X$ (3ª) $+ C$ (2ª) $\to Y$ (**3ª ordem**, pois $3 > 2$). Depois, $Y$ (3ª) $+ D$ (2ª) $\to Z$ (**3ª ordem**). A bacia não atingiu 4ª ordem porque $C$ e $D$ desembocaram separadamente no canal de 3ª ordem; para surgir uma 4ª ordem, $C$ e $D$ precisariam ter confluído entre si formando um segundo canal de 3ª ordem antes de encontrar $X$.
-10. **Balanço do escoamento:** $A = 5,0\text{ km}^2 = 5.000.000\text{ m}^2$; $P_{\text{chuva}} = 50\text{ mm} = 0,050\text{ m}$. Volume precipitado: $V_{\text{prec}} = 0,050 \times 5.000.000 = 250.000\text{ m}^3$.
-  Antes ($C_1 = 0,20$): $V_1 = 0,20 \times 250.000 = \mathbf{50.000\text{ m}^3}$.
-  Depois ($C_2 = 0,70$): $V_2 = 0,70 \times 250.000 = \mathbf{175.000\text{ m}^3}$.
-  Aumento absoluto: $125.000\text{ m}^3$. Percentual de aumento: $(125.000 / 50.000) \times 100 = \mathbf{+250%}$ (ou $3,5$ vezes o volume inicial).
-11. **Conectividade:** a *estrutural* refere-se à continuidade física dos caminhos de fluxo no terreno (declividade, ravinas, drenagem), enquanto a *funcional* depende da efetiva ativação desses fluxos pela chuva. Exemplo de *conector*: estrada rural sem caixas secas ligada diretamente ao córrego; exemplo de *desconector*: faixa de mata ciliar conservada ou paliçada permeável retentora de sedimentos.
-12. **Remoção de áreas ripárias:** sem a cobertura vegetal marginal, o solo das vertentes não é filtrado antes de alcançar o rio (elevando turbidez e sedimentos em suspensão), o excesso de carga sólida deposita-se no leito e em reservatórios (assoreamento) e a perda das raízes reduz a coesão dos barrancos, acelerando o desmoronamento e solapamento das margens.
-13. **Gabarito: (B).** Primeiro encontro: $3 + 2 \to 3^{\text{a}}$ ordem (mantém a maior). Segundo encontro: $3 + 3 \to 4^{\text{a}}$ ordem (ordens iguais somam $+1$).
-14. **Gabarito: (A).** $D_d = 220,0 / 100,0 = 2,20\text{ km}/\text{km}^2$; $K_c = 0,28 \cdot (50,0 / \sqrt{100,0}) = 0,28 \cdot 5,0 = 1,40$; $H_m = 750 - 250 = 500\text{ m} \Rightarrow R_r = 500 / 20,0 = 25,0\text{ m}/\text{km}$.
-15. **Gabarito: (C).** O círculo perfeito tem $K_c = 1,0$ e $I_c = 1,0$; bacias próximas desses valores concentram o escoamento mais rapidamente no exutório. (A) erra ao colocar $K_c = 0$; (B) inverte o significado de $K_c$; (D) viola o limite $I_c \le 1$; (E) ignora o papel central do perímetro $P$.
-16. **Gabarito: (E).** A afirmação (E) é incorreta porque a supressão de áreas ripárias promove compactação, selamento superficial e aceleração do escoamento, *reduzindo* a infiltração e a recarga dos aquíferos locais, o que prejudica a vazão de estiagem.
-17. **Gabarito: (C).** A impermeabilização acelera o escoamento superficial (menor tempo de concentração) e amplia o volume que chega rapidamente ao canal (maior vazão de pico).
-18. **Gabarito: (C).** $D_d = 2,85\text{ km}/\text{km}^2$ é alto (substrato pouco permeável/cristalino), $K_c = 1,14$ indica forma tendente à circular (alta propensão a cheias rápidas) e $R_r = 55\text{ m}/\text{km}$ revela elevada energia de relevo e potencial erosivo.
-19. **Gabarito: (A).** Contas passo a passo: $D_d = 202,5 / 81,0 = 2,50\text{ km}/\text{km}^2$; $\sqrt{81,0} = 9,0 \Rightarrow K_c = 0,28 \cdot (36,0 / 9,0) = 0,28 \cdot 4,0 = 1,12$; $I_c = 12,57 \cdot 81,0 / 36,0^2 = 1.018,17 / 1.296,0 \approx 0,7856 \approx 0,79$; $H_m = 680 - 230 = 450\text{ m}$ e $L = 15.000\text{ m} \Rightarrow R_r = 450 / 15.000 = 0,030\text{ m}/\text{m}$. Note que (B) erra a unidade de $R_r$ ($30,0$ seria em $\text{m}/\text{km}$, não em $\text{m}/\text{m}$).
-20. **Gabarito: (E).** Todas as três proposições descrevem corretamente a dinâmica da conectividade estrutural e funcional em bacias hidrográficas, inclusive no contexto intermitente do Semiárido.
+    (D) $2,20\text{ km}/\text{km}^2$; $1,40$; $0,25\text{ m}/\text{km}$.
 
-:::
+    (E) $4,40\text{ km}/\text{km}^2$; $2,80$; $25,0\text{ m}/\text{km}$.
 
-::: {.callout-note}
-## Etapa 9 — Resumo do capítulo e síntese conceitual
+13. Sobre o Coeficiente de Compacidade ($K_c$) e o Índice de Circularidade ($I_c$), assinale a alternativa tecnicamente correta,
 
-- **Bacia hidrográfica:** sistema aberto delimitado por divisores topográficos que drena água e sedimentos até um único exutório (unidade básica de análise e gestão ambiental).
-- **Strahler:** $1 + 1 \to 2$; $n + n \to n + 1$; $n + m \to \max(n, m)$. A ordem da bacia é a ordem do canal principal no exutório.
-- **Formulário Morfométrico Essencial:**
-  
+    (A) Uma bacia perfeitamente circular apresenta $K_c = 0$ e $I_c = 1$.
+
+    (B) Quanto maior o valor de $K_c$, maior a tendência da bacia à forma circular e maior o risco de cheias súbitas.
+
+    (C) Valores de $K_c$ próximos de $1,0$ e de $I_c$ próximos de $1,0$ indicam bacia mais circular e maior suscetibilidade a picos concentrados de enchente.
+
+    (D) O valor de $I_c$ pode assumir qualquer número real positivo superior a $1,0$ em bacias muito alongadas.
+
+    (E) Os índices $K_c$ e $I_c$ dependem exclusivamente da altitude máxima e da extensão dos rios, independendo do perímetro.
+
+14. Em relação às áreas ripárias em bacias hidrográficas, é **INCORRETO** afirmar que,
+
+    (A) Atuam como zonas tampão que retêm parte dos sedimentos e nutrientes carreados das vertentes.
+
+    (B) Contribuem para a estabilização das margens fluviais por meio do sistema radicular da vegetação.
+
+    (C) Aumentam a rugosidade superficial, reduzindo a velocidade do escoamento que alcança o canal.
+
+    (D) Sua remoção eleva a conectividade hidrossedimentológica entre encostas agrícolas e o leito fluvial.
+
+    (E) Sua supressão aumenta a recarga dos aquíferos locais ao eliminar o consumo de água por evapotranspiração.
+
+15. A urbanização intensa e sem drenagem sustentável em uma microbacia provoca, no hidrograma de cheia medido no exutório,
+
+    (A) Aumento do tempo de concentração e diminuição do pico de vazão.
+
+    (B) Redução do volume escoado superficialmente e elevação do fluxo de base na estiagem.
+
+    (C) Redução do tempo de concentração e aumento acentuado da vazão de pico.
+
+    (D) Manutenção inalterada da curva de cheia, pois a área da bacia permanece constante.
+
+    (E) Eliminação da conectividade estrutural entre vertentes e canais.
+
+## Etapa 7 - Questões de aplicação
+
+16. **(Questão autoral, estilo ENADE / Licenciatura e Bacharelado em Geografia)** Um órgão estadual de meio ambiente avalia o pedido de supressão vegetal para expansão agropecuária em uma microbacia de cabeceira situada sobre embasamento cristalino no Nordeste brasileiro. O relatório técnico apresentou $D_d = 2,85\text{ km}/\text{km}^2$, $K_c = 1,14$ e $R_r = 55\text{ m}/\text{km}$. Com base na interpretação integrada desses indicadores morfométricos, conclui-se que a microbacia apresenta,
+
+    (A) Substrato muito permeável, forma alongada e relevo plano, com baixíssima vulnerabilidade à erosão hídrica.
+
+    (B) Elevada capacidade de infiltração profunda e lenta resposta hidrológica, dispensando faixas ripárias protetoras.
+
+    (C) Baixa permeabilidade relativa, forma tendente à circular e elevada energia de relevo, configurando alta propensão natural a enxurradas rápidas e processos erosivos caso a vegetação seja suprimida.
+
+    (D) Predomínio de deposição sedimentar em planície aluvial ampla, pois $K_c$ próximo de $1,0$ impede a concentração do escoamento no exutório.
+
+    (E) Incompatibilidade matemática nos dados, visto que uma bacia com $D_d > 2,0$ não pode apresentar $K_c > 1,0$.
+
+17. **(Questão autoral, estilo Concurso Analista Ambiental / INEMA-BA)** Em um estudo hidrológico para outorga e prevenção de inundações, uma sub-bacia foi caracterizada por $A = 81,0\text{ km}^2$, $P = 36,0\text{ km}$, $L_t = 202,5\text{ km}$, $H_{\max} = 680\text{ m}$, $H_{\min} = 230\text{ m}$ e $L = 15,0\text{ km}$. Assinale a alternativa que apresenta corretamente os valores de $D_d$, $K_c$, $I_c$ e $R_r$ (em $\text{m}/\text{m}$) dessa sub-bacia,
+
+    (A) $D_d = 2,50\text{ km}/\text{km}^2$; $K_c = 1,12$; $I_c = 0,79$; $R_r = 0,030\text{ m}/\text{m}$.
+
+    (B) $D_d = 2,50\text{ km}/\text{km}^2$; $K_c = 1,12$; $I_c = 0,79$; $R_r = 30,0\text{ m}/\text{m}$.
+
+    (C) $D_d = 0,40\text{ km}/\text{km}^2$; $K_c = 1,12$; $I_c = 0,79$; $R_r = 0,030\text{ m}/\text{m}$.
+
+    (D) $D_d = 2,50\text{ km}/\text{km}^2$; $K_c = 1,40$; $I_c = 0,50$; $R_r = 0,030\text{ m}/\text{m}$.
+
+    (E) $D_d = 2,50\text{ km}/\text{km}^2$; $K_c = 0,89$; $I_c = 1,26$; $R_r = 0,030\text{ m}/\text{m}$.
+
+18. **(Questão autoral, estilo Concurso IBAMA / Gestão de Bacias Hidrográficas)** Sobre o conceito de conectividade hidrossedimentológica aplicado à gestão de bacias hidrográficas, analise as afirmativas abaixo,
+
+    - Estradas vicinais não pavimentadas construídas no sentido da declividade atuam como conectores estruturais, canalizando o escoamento das vertentes diretamente para os cursos d’água.
+
+    - A recomposição de matas ciliares e a implantação de barreiras de retenção de sedimentos reduzem a conectividade entre áreas degradadas e o canal principal.
+
+    - Em climas semiáridos, canais efêmeros podem exibir alta conectividade estrutural em mapa, mas conectividade funcional intermitente, ativada apenas em eventos pluviométricos que superam a capacidade de infiltração.
+
+    Está correto o que se afirma em,
+
+    (A) I, apenas.
+
+    (B) II, apenas.
+
+    (C) I e II, apenas.
+
+    (D) II e III, apenas.
+
+    (E) I, II e III.
+
+### Conexão com a Avaliação Teórica e com o Trabalho Prático Final
+
+Na **Prova Teórica da Semana 10**, os índices morfométricos raramente são cobrados como contas isoladas, o enunciado exige que você calcule ($D_d$, $K_c$, $I_c$, $R_r$) e **interprete o significado ambiental** do número encontrado. No seu **Trabalho Prático Final**, extrair esses cinco índices em SIG (QGIS) para a microbacia escolhida, sempre informando a escala da base cartográfica utilizada, confere alto rigor técnico à caracterização da área de estudo.
+
+## Etapa 8 - Gabarito comentado
+
+### Resoluções e Justificativas, Capítulo 7
+
+1. **Conceito e elementos.** A bacia hidrográfica é uma unidade espacial natural e sistêmica na qual todos os fluxos de água, sedimentos e poluentes das vertentes convergem para um único exutório, permitindo relacionar diretamente o uso da terra ao estado dos recursos hídricos (Botelho; Silva, 2004; Christofoletti, 1981). *Divisor topográfico*, linha de pontos mais altos que separa bacias adjacentes; *talvegue*, linha de pontos mais baixos ao longo do vale onde se aloja o canal; *exutório*, ponto de menor cota do contorno por onde sai toda a drenagem superficial.
+
+2. **Cálculo de $D_d$,** $D_d = L_t / A = 35,0 / 20,0 = \mathbf{1,75\text{ km}/\text{km}^2}$. Classificação, drenagem regular a média ($0,5$ a $2,0\text{ km}/\text{km}^2$).
+
+3. **Cálculo de $K_c$,** $\sqrt{49,0} = 7,0\text{ km}$. Logo, $K_c = 0,28 \cdot (35,0 / 7,0) = 0,28 \cdot 5,0 = \mathbf{1,40}$. Classificação, forma ovalada ($1,25$ a $1,50$), suscetibilidade moderada a cheias.
+
+4. **Cálculo de $I_c$,** $I_c = \frac{12,57 \cdot 25,0}{(25,0)^2} = \frac{12,57}{25,0} = \mathbf{0,5028 \approx 0,50}$. Por situar-se no limiar de $0,51$, indica forma intermediária (levemente alongada/ovalada), com propensão moderada a cheias concentradas.
+
+5. **Cálculo de $H_m$ e $R_r$,** $H_m = 640 - 280 = \mathbf{360\text{ m}}$. Em $\text{m}/\text{km}$, $R_r = 360 / 9,0 = \mathbf{40,0\text{ m}/\text{km}}$. Em $\text{m}/\text{m}$, $L = 9,0\text{ km} = 9.000\text{ m} \Rightarrow R_r = 360 / 9.000 = \mathbf{0,040\text{ m}/\text{m}}$ ($4,0\%$).
+
+6. **Comparação M1 vs. M2.** Como $\sqrt{64,0} = 8,0$,
+
+    - **M1,** $D_d = 160,0 / 64,0 = \mathbf{2,50\text{ km}/\text{km}^2}$; $K_c = 0,28 \cdot (32,0 / 8,0) = \mathbf{1,12}$; $I_c = 12,57 \cdot 64,0 / 32,0^2 = 804,48 / 1.024 = \mathbf{0,79}$; $H_m = 540 - 220 = \mathbf{320\text{ m}}$; $R_r = 320 / 8,0 = \mathbf{40,0\text{ m}/\text{km}}$ ($0,040\text{ m}/\text{m}$).
+
+    - **M2,** $D_d = 51,2 / 64,0 = \mathbf{0,80\text{ km}/\text{km}^2}$; $K_c = 0,28 \cdot (48,0 / 8,0) = \mathbf{1,68}$; $I_c = 12,57 \cdot 64,0 / 48,0^2 = 804,48 / 2.304 = \mathbf{0,35}$; $H_m = 380 - 220 = \mathbf{160\text{ m}}$; $R_r = 160 / 16,0 = \mathbf{10,0\text{ m}/\text{km}}$ ($0,010\text{ m}/\text{m}$).
+
+    **Conclusão.** A **Bacia M1** exige muito maior cuidado contra cheias rápidas e erosão, pois combina alta densidade de drenagem ($2,50$), contorno tendente ao circular ($K_c = 1,12$; $I_c = 0,79$) e energia de relevo quatro vezes superior ($40,0$ contra $10,0\text{ m}/\text{km}$).
+
+7. **Hierarquia de Strahler,** $A$ (2ª) $+ B$ (2ª) $\to X$ (**3ª ordem**). Em seguida, $X$ (3ª) $+ C$ (2ª) $\to Y$ (**3ª ordem**, pois $3 > 2$). Depois, $Y$ (3ª) $+ D$ (2ª) $\to Z$ (**3ª ordem**). A bacia não atingiu 4ª ordem porque $C$ e $D$ desembocaram separadamente no canal de 3ª ordem; para surgir uma 4ª ordem, $C$ e $D$ precisariam ter confluído entre si formando um segundo canal de 3ª ordem antes de encontrar $X$.
+
+8. **Balanço do escoamento,** $A = 5,0\text{ km}^2 = 5.000.000\text{ m}^2$; $P_{\text{chuva}} = 50\text{ mm} = 0,050\text{ m}$. Volume precipitado, $V_{\text{prec}} = 0,050 \times 5.000.000 = 250.000\text{ m}^3$. Antes ($C_1 = 0,20$), $V_1 = 0,20 \times 250.000 = \mathbf{50.000\text{ m}^3}$. Depois ($C_2 = 0,70$), $V_2 = 0,70 \times 250.000 = \mathbf{175.000\text{ m}^3}$. Aumento absoluto, $125.000\text{ m}^3$. Percentual de aumento, $(125.000 / 50.000) \times 100 = \mathbf{+250\%}$ (ou $3,5$ vezes o volume inicial).
+
+9. **Conectividade.** A *estrutural* refere-se à continuidade física dos caminhos de fluxo no terreno (declividade, ravinas, drenagem), enquanto a *funcional* depende da efetiva ativação desses fluxos pela chuva. Exemplo de *conector*, estrada rural sem caixas secas ligada diretamente ao córrego; exemplo de *desconector*, faixa de mata ciliar conservada ou paliçada permeável retentora de sedimentos.
+
+10. **Remoção de áreas ripárias.** Sem a cobertura vegetal marginal, o solo das vertentes não é filtrado antes de alcançar o rio (elevando turbidez e sedimentos em suspensão), o excesso de carga sólida deposita-se no leito e em reservatórios (assoreamento) e a perda das raízes reduz a coesão dos barrancos, acelerando o desmoronamento e solapamento das margens.
+
+11. **Gabarito, (B).** Primeiro encontro, $3 + 2 \to 3^{\text{a}}$ ordem (mantém a maior). Segundo encontro, $3 + 3 \to 4^{\text{a}}$ ordem (ordens iguais somam $+1$).
+
+12. **Gabarito, (A).** $D_d = 220,0 / 100,0 = 2,20\text{ km}/\text{km}^2$; $K_c = 0,28 \cdot (50,0 / \sqrt{100,0}) = 0,28 \cdot 5,0 = 1,40$; $H_m = 750 - 250 = 500\text{ m} \Rightarrow R_r = 500 / 20,0 = 25,0\text{ m}/\text{km}$.
+
+13. **Gabarito, (C).** O círculo perfeito tem $K_c = 1,0$ e $I_c = 1,0$; bacias próximas desses valores concentram o escoamento mais rapidamente no exutório. (A) erra ao colocar $K_c = 0$; (B) inverte o significado de $K_c$; (D) viola o limite $I_c \le 1$; (E) ignora o papel central do perímetro $P$.
+
+14. **Gabarito, (E).** A afirmação (E) é incorreta porque a supressão de áreas ripárias promove compactação, selamento superficial e aceleração do escoamento, *reduzindo* a infiltração e a recarga dos aquíferos locais, o que prejudica a vazão de estiagem.
+
+15. **Gabarito, (C).** A impermeabilização acelera o escoamento superficial (menor tempo de concentração) e amplia o volume que chega rapidamente ao canal (maior vazão de pico).
+
+16. **Gabarito, (C).** $D_d = 2,85\text{ km}/\text{km}^2$ é alto (substrato pouco permeável/cristalino), $K_c = 1,14$ indica forma tendente à circular (alta propensão a cheias rápidas) e $R_r = 55\text{ m}/\text{km}$ revela elevada energia de relevo e potencial erosivo.
+
+17. **Gabarito, (A).** Contas passo a passo, $D_d = 202,5 / 81,0 = 2,50\text{ km}/\text{km}^2$; $\sqrt{81,0} = 9,0 \Rightarrow K_c = 0,28 \cdot (36,0 / 9,0) = 0,28 \cdot 4,0 = 1,12$; $I_c = 12,57 \cdot 81,0 / 36,0^2 = 1.018,17 / 1.296,0 \approx 0,7856 \approx 0,79$; $H_m = 680 - 230 = 450\text{ m}$ e $L = 15.000\text{ m} \Rightarrow R_r = 450 / 15.000 = 0,030\text{ m}/\text{m}$. Note que (B) erra a unidade de $R_r$ ($30,0$ seria em $\text{m}/\text{km}$, não em $\text{m}/\text{m}$).
+
+18. **Gabarito, (E).** Todas as três proposições descrevem corretamente a dinâmica da conectividade estrutural e funcional em bacias hidrográficas, inclusive no contexto intermitente do Semiárido.
+
+## Etapa 9 - Síntese conceitual
+
+**Bacia hidrográfica.** Sistema aberto delimitado por divisores topográficos que drena água e sedimentos até um único exutório (unidade básica de análise e gestão ambiental). **Strahler,** $1 + 1 \to 2$; $n + n \to n + 1$; $n + m \to \max(n, m)$. A ordem da bacia é a ordem do canal principal no exutório. **Formulário Morfométrico Essencial,**
+
+$$
+D_d = \frac{L_t}{A} \quad (\text{km}/\text{km}^2) \qquad;\qquad K_c = 0{,}28 \cdot \frac{P}{\sqrt{A}} \ge 1 \qquad;\qquad I_c = \frac{12{,}57 \cdot A}{P^2} \le 1
 $$
 
-    D_d = \frac{L_t}{A}   (\text{km}/\text{km}^2)  ;  K_c = 0,28 \cdot \frac{P}{\sqrt{A}} \ge 1  ;  I_c = \frac{12,57 \cdot A}{P^2} \le 1
-  
+
+
+$$
+H_m = H_{\max} - H_{\min} \quad (\text{m}) \qquad;\qquad R_r = \frac{H_m}{L} \quad (\text{m}/\text{km ou m}/\text{m})
 $$
 
-  
-$$
+. **Dinâmica aplicada.** Áreas ripárias funcionam como desconectores de sedimentos e estabilizadores de margens; desmatamento e impermeabilização elevam o coeficiente de escoamento ($C$), encurtam o tempo de concentração e amplificam enchentes e processos erosivos.
 
-    H_m = H_{\max} - H_{\min}   (\text{m})  ;  R_r = \frac{H_m}{L}   (\text{m}/\text{km ou m}/\text{m})
-  
-$$
-- **Dinâmica aplicada:** áreas ripárias funcionam como desconectores de sedimentos e estabilizadores de margens; desmatamento e impermeabilização elevam o coeficiente de escoamento ($C$), encurtam o tempo de concentração e amplificam enchentes e processos erosivos.
+## Etapa 10 - Verificação da aprendizagem
 
-:::
+Responda rapidamente (Verdadeiro \[**V**\] ou Falso \[**F**\]) sem consultar o texto e confira ao final,
 
-::: {.callout-important}
-## Etapa 10 — Teste de aprendizagem (Checkpoint)
+1. () Na Hierarquia de Strahler, o encontro de um canal de 3ª ordem com um canal de 1ª ordem produz um segmento de 4ª ordem.
 
-Responda rapidamente (Verdadeiro [**V**] ou Falso [**F**]) sem consultar o texto e confira ao final:
+2. () Entre duas bacias de mesma área, aquela com menor valor de $K_c$ (mais próximo de $1,0$) e maior valor de $I_c$ possui contorno mais circular e maior suscetibilidade a picos concentrados de cheia.
 
-1. ( ) Na Hierarquia de Strahler, o encontro de um canal de 3ª ordem com um canal de 1ª ordem produz um segmento de 4ª ordem.
-2. ( ) Entre duas bacias de mesma área, aquela com menor valor de $K_c$ (mais próximo de $1,0$) e maior valor de $I_c$ possui contorno mais circular e maior suscetibilidade a picos concentrados de cheia.
-3. ( ) Em uma bacia com $H_{\max} = 500\text{ m}$, $H_{\min} = 200\text{ m}$ e $L = 10\text{ km}$, a Relação de Relevo equivale a $30\text{ m}/\text{km}$ ou $0,030\text{ m}/\text{m}$.
-4. ( ) A impermeabilização urbana aumenta o escoamento superficial e reduz o tempo de concentração das cheias, mesmo quando o total precipitado não se altera.
+3. () Em uma bacia com $H_{\max} = 500\text{ m}$, $H_{\min} = 200\text{ m}$ e $L = 10\text{ km}$, a Relação de Relevo equivale a $30\text{ m}/\text{km}$ ou $0,030\text{ m}/\text{m}$.
 
-{\footnotesize**Gabarito do Checkpoint:** 1-**F**\ (mantém 3ª ordem, pois $3 \neq 1$); 2-**V**; 3-**V**\ ($300\text{ m}/10\text{ km} = 30\text{ m}/\text{km} = 300/10.000 = 0,030\text{ m}/\text{m}$); 4-**V**.}
+4. () A impermeabilização urbana aumenta o escoamento superficial e reduz o tempo de concentração das cheias, mesmo quando o total precipitado não se altera.
 
-:::
+**Gabarito do verificação da aprendizagem,** 1-**F** (mantém 3ª ordem, pois $3 \neq 1$); 2-**V**; 3-**V** ($300\text{ m}/10\text{ km} = 30\text{ m}/\text{km} = 300/10.000 = 0,030\text{ m}/\text{m}$); 4-**V**.

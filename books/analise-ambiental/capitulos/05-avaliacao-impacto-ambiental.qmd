@@ -76,6 +76,8 @@ O diagnóstico exige a delimitação cartográfica rigorosa das três **Áreas d
 | **AID** (Área de Influência Direta) | Espaço que sofre impactos diretos (primários) decorrentes da implantação e operação, geralmente definido pela microbacia, mancha de ruído ou raio de dispersão de poeira/fauna. | Microbacia drenada pelos acessos do parque eólico, áreas de afugentamento de avifauna e povoados lindeiros sujeitos a poeira e ruído. |
 | **AII** (Área de Influência Indireta) | Espaço alcançado por impactos secundários ou indiretos (econômicos, demográficos, viários ou sobre a bacia hidrográfica regional). | Municípios afetados pelo aumento de arrecadação, demanda por serviços urbanos, tráfego pesado e sub-bacia regional. |
 
+A @fig-areas_influencia compara o erro de traçar círculos concêntricos arbitrários com a delimitação técnica baseada nos divisores topográficos.
+
 ![**Figura 5.2:** Delimitação técnica das Áreas de Influência (ADA, AID e AII) em bacia hidrográfica. *O que observar:* em (a), o traçado de círculos concêntricos arbitrários desconsidera o sentido do escoamento; em (b), o critério geográfico correto delimita a AID física pelos divisores topográficos e pela rede de drenagem a jusante da ADA. Fonte: Elaboração didática CHF662 com base em Sánchez (2013).](../img/fig_cap05_areas_influencia.png){#fig-areas_influencia}
 
 
@@ -88,6 +90,8 @@ Para executar essa etapa de modo transparente e auditável, a análise ambiental
 **Listagens de controle (*Checklists*),** relações estruturadas de fatores ambientais e potenciais impactos organizados por tipologia de projeto. Podem ser *simples* (apenas verificam presença/ausência), *descritivas* (incluem orientações de medição) ou *escalares/ponderadas* (atribuem notas e pesos). São rápidas e úteis na triagem e no escopo, porém tendem a ser estáticas e não explicitam facilmente as relações diretas entre cada ação específica e cada efeito indireto. **Matrizes de interação (Matriz de Leopold e matrizes ponderadas).** Cruzam em tabela bidimensional as *ações do empreendimento* (colunas) com os *fatores ambientais* (linhas). Proposta originalmente por Leopold et al. (1971) com $100$ ações e $88$ fatores ($8\,800$ células possíveis), a matriz é hoje adaptada para cada projeto concreto, avaliando cada interação relevante por sinal, **magnitude** e **importância**.
 
 **Redes de interação (*Networks*),** diagramas em grafo (fluxogramas causa-efeito) que rastreiam cadeias de impactos, uma ação inicial gera um *impacto primário* (direto), que desencadeia *impactos secundários* e *terciários* (indiretos). Exemplo clássico no Semiárido, abertura de estrada sem drenagem (ação) $\to$ exposição do solo e concentração do escoamento (1ª ordem) $\to$ sulcos, ravinas e carreamento de sedimentos para o riacho (2ª ordem) $\to$ assoreamento do açude comunitário e redução da disponibilidade hídrica na seca (3ª ordem).
+
+A @fig-rede_interacao encadeia essa propagação em cascata a partir da abertura de estrada sem drenagem, cujo efeito em campo é registrado na @fig-foto-estrada-sulco.
 
 ![**Figura 5.3:** Rede de interação em cascata a partir de abertura de estrada sem drenagem. *O que observar:* o fluxograma encadeia os impactos desde a compactação inicial (1ª ordem) e o ravinamento (2ª ordem) até o assoreamento de açudes a jusante (3ª ordem). Fonte: Elaboração didática CHF662.](../img/fig_cap05_rede_interacao.png){#fig-rede_interacao}
 

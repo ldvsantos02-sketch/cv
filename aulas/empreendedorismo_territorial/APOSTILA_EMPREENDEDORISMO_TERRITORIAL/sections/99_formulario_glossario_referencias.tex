@@ -1,0 +1,201 @@
+% ============================================================================
+% FORMULÁRIO TÉCNICO, GLOSSÁRIO ALFABÉTICO E REFERÊNCIAS BIBLIOGRÁFICAS
+% ============================================================================
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Formulário Técnico, Glossário e Referências}
+\chapter*{Formulário Técnico, Glossário e Referências}
+\markboth{FORMULÁRIO, GLOSSÁRIO E REFERÊNCIAS}{FORMULÁRIO, GLOSSÁRIO E REFERÊNCIAS}
+
+% ============================================================================
+% SEÇÃO 1 — FORMULÁRIO TÉCNICO DE CONSULTA RÁPIDA
+% ============================================================================
+\section*{1. Formulário Técnico de Consulta Rápida}
+
+Este formulário reúne as 16 expressões analíticas centrais da disciplina, acompanhadas de seus critérios de decisão e unidades de referência.
+
+\begin{boxFormula}[Bloco A: Território, Mercado, Tração e Localização (Unidades I, II e III)]
+\begin{enumerate}[leftmargin=1.5em, itemsep=4pt]
+  \item \textbf{Índice Herfindahl-Hirschman ($\text{HHI}$):}
+  \[
+  \text{HHI} = \sum_{i=1}^{n} s_i^2 \quad (s_i \text{ em } \%, \text{ escala } 0 \text{ a } 10.000)
+  \]
+  \textit{Critério:} $<1.500$ (desconcentrado); $1.500$–$2.500$ (moderado); $>2.500$ (altamente concentrado).
+
+  \item \textbf{Funil de Mercado ($\text{TAM}$, $\text{SAM}$, $\text{SOM}$):}
+  \[
+  \text{TAM} = N_{\text{total}} \times \bar{P}, \qquad \text{SAM} = \alpha_{\text{acessível}} \cdot \text{TAM}, \qquad \text{SOM} = \beta_{\text{captura}} \cdot \text{SAM}
+  \]
+
+  \item \textbf{Métricas de Tração ($\text{CAC}$ e $\text{LTV}$):}
+  \[
+  \text{CAC} = \frac{\text{Despesas de Marketing e Vendas}}{\text{Novos Clientes Adquiridos}}, \qquad \text{LTV} = \text{Ticket} \times \text{Margem \%} \times \text{Tempo de Retenção}
+  \]
+  Quando a retenção é dada pela taxa de cancelamento (\textit{churn}): $\text{Tempo de Retenção} = \frac{1}{\text{churn}}$. \textit{Meta saudável:} $\text{LTV/CAC} \ge 3{,}0$.
+
+  \item \textbf{\textit{Burn Rate} e \textit{Runway}:}
+  \[
+  \text{Burn Líquido} = \text{Desembolsos Mensais} - \text{Receitas Mensais}, \qquad \text{Runway (meses)} = \frac{\text{Caixa Disponível}}{\text{Burn Líquido}}
+  \]
+
+  \item \textbf{Matriz Locacional Ponderada:}
+  \[
+  S_j = \sum_{i=1}^{m} w_i\,n_{ij}, \quad \text{com } \sum_{i=1}^{m} w_i = 1
+  \]
+
+  \item \textbf{Ponto de Equilíbrio Contábil ($\text{PE}$):}
+  \[
+  Q_{\text{PE}} = \frac{CF}{p - CV_u}, \qquad \text{Receita}_{\text{PE}} = \frac{CF}{\text{Margem de Contribuição \%}}
+  \]
+\end{enumerate}
+\end{boxFormula}
+
+\begin{boxFormula}[Bloco B: Viabilidade Econômico-Financeira e Avaliação de Projetos (Unidade III)]
+\begin{enumerate}[leftmargin=1.5em, itemsep=4pt, resume]
+  \item \textbf{Fluxo de Caixa Livre ($\text{FCL}$):}
+  \[
+  \text{FCL}_t = \text{EBIT}_t(1 - T) + \text{Depreciação}_t - \text{CAPEX}_t - \Delta \text{NCG}_t
+  \]
+
+  \item \textbf{Valor Presente Líquido ($\text{VPL}$):}
+  \[
+  \text{VPL} = -I_0 + \sum_{t=1}^{n} \frac{\text{FCL}_t}{(1 + i)^t}
+  \]
+  \textit{Critério:} aceitar se $\text{VPL} > 0$ (taxa de desconto $i = \text{TMA}$ ou $\text{WACC}$).
+
+  \item \textbf{Taxa Interna de Retorno ($\text{TIR}$) e $\text{TIR}$ Modificada ($\text{MTIR}$):}
+  \[
+  0 = -I_0 + \sum_{t=1}^{n} \frac{\text{FCL}_t}{(1 + \text{TIR})^t}, \qquad \text{MTIR} = \left(\frac{\text{VF}_{\text{entradas à } i_{\text{reinv}}}}{\text{VP}_{\text{saídas à } i_{\text{fin}}}}\right)^{1/n} - 1
+  \]
+  \textit{Critério:} aceitar se $\text{TIR} > \text{TMA}$ (ou $\text{MTIR} > \text{TMA}$).
+
+  \item \textbf{Valor Anual Uniforme Equivalente ($\text{VAUE}$):}
+  \[
+  \text{VAUE} = \text{VPL} \cdot \left[\frac{i(1 + i)^n}{(1 + i)^n - 1}\right]
+  \]
+
+  \item \textbf{\textit{Payback} Descontado ($PB_d$):}
+  \[
+  PB_d = (t^* - 1) + \frac{\left|\text{Saldo Acumulado}_{t^*-1}\right|}{\text{VP}(\text{FCL}_{t^*})}
+  \]
+  onde $t^*$ é o primeiro período em que o saldo acumulado descontado torna-se não negativo.
+\end{enumerate}
+\end{boxFormula}
+
+\begin{boxFormula}[Bloco C: Valuation, Venture Capital e Rubrica AV3 (Unidades III e IV)]
+\begin{enumerate}[leftmargin=1.5em, itemsep=4pt, resume]
+  \item \textbf{Custo Médio Ponderado de Capital ($\text{WACC}$):}
+  \[
+  \text{WACC} = \left(\frac{E}{E + D}\right)K_e + \left(\frac{D}{E + D}\right)K_d(1 - T)
+  \]
+
+  \item \textbf{Valor Terminal de Gordon ($VT$):}
+  \[
+  VT_n = \frac{\text{FCL}_n(1 + g)}{\text{WACC} - g} \quad (\text{com } \text{WACC} > g)
+  \]
+
+  \item \textbf{\textit{Enterprise Value} ($\text{EV}$) e \textit{Equity Value} ($EqV$):}
+  \[
+  \text{EV} = \sum_{t=1}^{n} \frac{\text{FCL}_t}{(1 + \text{WACC})^t} + \frac{VT_n}{(1 + \text{WACC})^n}, \qquad EqV = \text{EV} - \text{Dívida Bruta} + \text{Caixa}
+  \]
+
+  \item \textbf{Método de \textit{Venture Capital} ($\text{VC}$):}
+  \[
+  V_{\text{Post-Money}} = \frac{V_{\text{saída}}}{(1 + k_{\text{VC}})^T}, \qquad V_{\text{Pre-Money}} = V_{\text{Post-Money}} - \text{Aporte}, \qquad \text{Diluição} = \frac{\text{Aporte}}{V_{\text{Post-Money}}}
+  \]
+
+  \item \textbf{Rubrica Oficial AV3 e Média Final ($M_F$):}
+  \[
+  N_{\text{AV3}} = 0{,}30\,L_T + 0{,}30\,E_M + 0{,}25\,V_F + 0{,}15\,C_D, \qquad M_F = 0{,}30\,\text{AV1} + 0{,}20\,\text{AV2} + 0{,}50\,N_{\text{AV3}}
+  \]
+\end{enumerate}
+\end{boxFormula}
+
+% ============================================================================
+% SEÇÃO 2 — GLOSSÁRIO TÉCNICO ALFABÉTICO
+% ============================================================================
+\section*{2. Glossário Técnico Alfabético}
+
+\begin{description}[leftmargin=1.2em, style=nextline, itemsep=3pt]
+  \item[Aglomeração Produtiva] Concentração geográfica e setorial de empresas, fornecedores e serviços especializados em um mesmo território, capaz de gerar economias externas e ganhos de produtividade.
+  \item[APL (Arranjo Produtivo Local)] Aglomeração territorial de agentes econômicos, políticos e sociais com foco em um conjunto específico de atividades produtivas, que mantêm vínculos de articulação, interação, cooperação e aprendizagem.
+  \item[Bootstrapping] Estratégia de criação e crescimento de um negócio utilizando exclusivamente recursos próprios dos fundadores e fluxo de caixa operacional inicial, sem aportes externos de investidores.
+  \item[Burn Rate] Velocidade com que uma empresa em estágio inicial consome seu caixa disponível por mês; distingue-se entre \textit{gross burn} (desembolso total) e \textit{net burn} (desembolso menos receitas).
+  \item[CAPEX (\textit{Capital Expenditure})] Despesas de capital destinadas à aquisição, construção ou melhoria de ativos físicos e intangíveis de longo prazo (máquinas, instalações, equipamentos, licenças).
+  \item[Causation] Lógica de tomada de decisão empreendedora que parte de um objetivo predeterminado e seleciona os meios necessários para alcançá-lo por meio de planejamento preditivo.
+  \item[Deep Tech] Empreendimento baseado em descobertas científicas ou avanços de engenharia profundos, geralmente protegido por Propriedade Intelectual e com ciclos longos de P\&D antes da escala comercial.
+  \item[Destruição Criadora] Processo schumpeteriano pelo qual inovações radicais (novos produtos, métodos, mercados ou formas organizacionais) substituem estruturas econômicas antigas, renovando a dinâmica capitalista.
+  \item[Effectuation] Lógica de ação empreendedora sob incerteza proposta por Sarasvathy (2001), que parte dos meios disponíveis, adota o princípio da perda aceitável e cocria objetivos via parcerias.
+  \item[Eficiência Coletiva] Vantagem competitiva derivada da combinação de economias externas locais incidentais e ações conjuntas deliberadas entre empresas e instituições de um aglomerado produtivo (Schmitz, 1995).
+  \item[Enterprise Value ($\text{EV}$)] Valor econômico total das operações de um empreendimento, pertencente conjuntamente a acionistas e credores, calculado pelo valor presente dos Fluxos de Caixa Livres da firma.
+  \item[Equity Value] Valor líquido pertencente exclusivamente aos sócios e acionistas, obtido pela subtração da dívida bruta e adição do caixa ao \textit{Enterprise Value}.
+  \item[FCD (Fluxo de Caixa Descontado)] Método de avaliação econômica que estima o valor intrínseco de um ativo ou empresa trazendo seus fluxos de caixa futuros a valor presente por uma taxa de desconto ajustada ao risco.
+  \item[Gazelle] Empresa jovem e de alto crescimento acelerado de receita ou emprego em um intervalo curto de tempo, independentemente do setor de atuação.
+  \item[Hélice Quádrupla / Quíntupla] Extensão do modelo Universidade-Empresa-Governo (Hélice Tríplice) que incorpora a sociedade civil e a mídia/cultura (Quádrupla) e o meio ambiente natural/sustentabilidade (Quíntupla) na governança da inovação.
+  \item[Indicação Geográfica (IG)] Ativo de Propriedade Industrial concedido pelo INPI que protege produtos ou serviços característicos de sua origem geográfica (Indicação de Procedência ou Denominação de Origem).
+  \item[Isomorfismo] Reprodução acrítica de estruturas, políticas ou modelos institucionais de outros territórios (como imitar o Vale do Silício) sem aderência às capacidades e demandas locais.
+  \item[Lock-in] Aprisionamento tecnológico, cognitivo ou institucional de um território ou firma em trajetórias históricas passadas, dificultando a transição para novos paradigmas produtivos.
+  \item[Mission Drift] Desvio gradual da missão socioambiental original de um negócio de impacto ou organização social em função de pressões comerciais ou financeiras de curto prazo.
+  \item[MTIR (Taxa Interna de Retorno Modificada)] Variante da TIR que elimina o pressuposto irrealista de reinvestimento à própria TIR, capitalizando entradas à taxa de reinvestimento e descontando saídas ao custo de financiamento.
+  \item[OPEX (\textit{Operational Expenditure})] Despesas operacionais recorrentes necessárias para manter o funcionamento contínuo do negócio (folha salarial, aluguel, energia, insumos, marketing).
+  \item[Open Innovation (Inovação Aberta)] Paradigma proposto por Chesbrough (2003) no qual organizações combinam fluxos internos e externos de conhecimento e tecnologia para acelerar inovações e ampliar mercados.
+  \item[Path Dependence] Dependência da trajetória histórica: condição na qual escolhas e investimentos realizados no passado restringem e moldam o leque de opções tecnológicas e territoriais no presente.
+  \item[Payback Descontado] Tempo necessário para que o valor presente dos fluxos de caixa futuros de um projeto recupere integralmente o investimento inicial, considerando o custo de oportunidade do capital.
+  \item[Proximidade Cognitiva] Grau de similaridade entre as bases de conhecimento de dois ou mais agentes; segundo Boschma (2005), níveis moderados favorecem o aprendizado interativo sem gerar redundância ou incompreensão.
+  \item[Spin-off Acadêmica] Nova empresa criada para explorar comercialmente conhecimentos, tecnologias ou ativos de Propriedade Intelectual gerados no interior de universidades ou institutos de pesquisa.
+  \item[SRI (Sistema Regional de Inovação)] Rede territorialmente enraizada de empresas, universidades, centros de P\&D, agências de fomento e instituições de apoio que interagem na geração e difusão de inovações.
+  \item[Tecnologia Social] Conjunto de técnicas, produtos ou metodologias reaplicáveis, desenvolvidas na interação com a comunidade e que representam efetivas soluções de transformação social e inclusão produtiva (Dagnino, 2014).
+  \item[Teoria da Mudança] Ferramenta lógica que explicita o encadeamento causal entre insumos, atividades, produtos, resultados e impacto socioambiental de longo prazo de um projeto.
+  \item[TIR (Taxa Interna de Retorno)] Taxa de desconto que iguala a zero o Valor Presente Líquido ($\text{VPL}$) de um fluxo de caixa; representa a rentabilidade intrínseca percentual do projeto.
+  \item[TMA (Taxa Mínima de Atratividade)] Taxa de retorno mínima exigida pelo investidor ou empreendedor para aceitar um projeto, refletindo o custo de oportunidade do capital em alternativas de risco equivalente.
+  \item[TRL (\textit{Technology Readiness Level})] Escala padronizada de $1$ a $9$ que mede o grau de maturidade de uma tecnologia, desde a observação de princípios básicos (TRL 1) até a operação comprovada em ambiente real (TRL 9).
+  \item[Vale da Morte] Intervalo crítico entre a pesquisa científica ou protótipo laboratorial e a validação comercial autossustentável, marcado por escassez de capital privado e elevado risco tecnológico.
+  \item[VAUE (Valor Anual Uniforme Equivalente)] Série anual uniforme equivalente ao $\text{VPL}$ de um projeto ao longo de sua vida útil; utilizada sobretudo na comparação de alternativas com horizontes temporais distintos.
+  \item[VPL (Valor Presente Líquido)] Soma algébrica dos fluxos de caixa futuros descontados pela $\text{TMA}$ (ou $\text{WACC}$) menos o investimento inicial; mede a criação absoluta de valor econômico.
+  \item[WACC (\textit{Weighted Average Cost of Capital})] Custo médio ponderado entre o capital próprio ($K_e$) e o capital de terceiros líquido do benefício fiscal ($K_d(1-T)$), utilizado como taxa de desconto no FCD da firma.
+\end{description}
+
+% ============================================================================
+% SEÇÃO 3 — REFERÊNCIAS BIBLIOGRÁFICAS DA DISCIPLINA
+% ============================================================================
+\section*{3. Referências Bibliográficas da Disciplina}
+
+\begin{enumerate}[leftmargin=1.5em, itemsep=3.5pt]
+  \item ALVAREZ, S. A.; BARNEY, J. B. Discovery and creation: alternative theories of entrepreneurial action. \textit{Strategic Entrepreneurship Journal}, v. 1, n. 1--2, p. 11--26, 2007.
+  \item AUSTIN, J.; STEVENSON, H.; WEI-SKILLERN, J. Social and commercial entrepreneurship: same, different, or both? \textit{Entrepreneurship Theory and Practice}, v. 30, n. 1, p. 1--22, 2006.
+  \item BAILETTI, T. Technology entrepreneurship: overview, definition, and distinctive aspects. \textit{Technology Innovation Management Review}, v. 2, n. 2, p. 5--12, 2012.
+  \item BLANK, S. Why the lean start-up changes everything. \textit{Harvard Business Review}, v. 91, n. 5, p. 63--72, 2013.
+  \item BOSCHMA, R. Proximity and innovation: a critical assessment. \textit{Regional Studies}, v. 39, n. 1, p. 61--74, 2005.
+  \item BRASIL. \textit{Lei nº 9.279, de 14 de maio de 1996}. Regula direitos e obrigações relativos à propriedade industrial. Brasília, DF: Presidência da República, 1996.
+  \item BRASIL. \textit{Lei nº 10.973, de 2 de dezembro de 2004}. Dispõe sobre incentivos à inovação e à pesquisa científica e tecnológica no ambiente produtivo. Brasília, DF: Presidência da República, 2004.
+  \item BRASIL. \textit{Lei nº 11.196, de 21 de novembro de 2005} (Lei do Bem). Institui incentivos fiscais à inovação tecnológica. Brasília, DF: Presidência da República, 2005.
+  \item BRASIL. \textit{Lei nº 13.243, de 11 de janeiro de 2016} (Marco Legal de CT\&I). Dispõe sobre estímulos ao desenvolvimento científico, à pesquisa, à capacitação científica e tecnológica e à inovação. Brasília, DF: Presidência da República, 2016.
+  \item CHESBROUGH, H. \textit{Open Innovation: The New Imperative for Creating and Profiting from Technology}. Boston: Harvard Business School Press, 2003.
+  \item CHESBROUGH, H.; ROSENBLOOM, R. S. The role of the business model in capturing value from innovation: evidence from Xerox Corporation's technology spin-off companies. \textit{Industrial and Corporate Change}, v. 11, n. 3, p. 529--555, 2002.
+  \item DAGNINO, R. \textit{Tecnologia Social: contribuições conceituais e metodológicas}. Campina Grande: EDUEPB, 2014.
+  \item DAMODARAN, A. \textit{Avaliação de Investimentos: ferramentas e técnicas para a determinação do valor de qualquer ativo}. 2. ed. Rio de Janeiro: Qualitymark, 2010.
+  \item DOSI, G. Technological paradigms and technological trajectories: a suggested interpretation of the determinants and directions of technical change. \textit{Research Policy}, v. 11, n. 3, p. 147--162, 1982.
+  \item DRUCKER, P. F. \textit{Innovation and Entrepreneurship: Practice and Principles}. New York: Harper \& Row, 1985.
+  \item ETZKOWITZ, H.; LEYDESDORFF, L. The dynamics of innovation: from National Systems and ``Mode 2'' to a Triple Helix of university--industry--government relations. \textit{Research Policy}, v. 29, n. 2, p. 109--123, 2000.
+  \item GUTH, W. D.; GINSBERG, A. Guest editors' introduction: corporate entrepreneurship. \textit{Strategic Management Journal}, v. 11, p. 5--15, 1990.
+  \item ISENBERG, D. \textit{The Entrepreneurship Ecosystem Strategy as a New Paradigm for Economic Policy: Principles for Cultivating Entrepreneurship}. Babson Park: Babson Entrepreneurship Ecosystem Project, 2011.
+  \item KUHN, T. S. \textit{The Structure of Scientific Revolutions}. Chicago: University of Chicago Press, 1962.
+  \item MAZZUCATO, M. \textit{The Entrepreneurial State: Debunking Public vs. Private Sector Myths}. London: Anthem Press, 2013.
+  \item MAZZUCATO, M. \textit{The Value of Everything: Making and Taking in the Global Economy}. London: Allen Lane, 2018.
+  \item OSTERWALDER, A.; PIGNEUR, Y. \textit{Business Model Generation}. Hoboken: John Wiley \& Sons, 2010.
+  \item PINCHOT, G. \textit{Intrapreneuring: Why You Don't Have to Leave the Corporation to Become an Entrepreneur}. New York: Harper \& Row, 1985.
+  \item PORTER, M. E. How competitive forces shape strategy. \textit{Harvard Business Review}, v. 57, n. 2, p. 137--145, 1979.
+  \item PORTER, M. E. \textit{Competitive Strategy: Techniques for Analyzing Industries and Competitors}. New York: Free Press, 1980.
+  \item RIES, E. \textit{The Lean Startup}. New York: Crown Business, 2011.
+  \item SANTOS, M. \textit{A Natureza do Espaço: Técnica e Tempo, Razão e Emoção}. São Paulo: Hucitec, 1996.
+  \item SARASVATHY, S. D. Causation and effectuation: toward a theoretical shift from economic inevitability to entrepreneurial contingency. \textit{Academy of Management Review}, v. 26, n. 2, p. 243--263, 2001.
+  \item SCHMITZ, H. Collective efficiency: growth path for small-scale industry. \textit{Journal of Development Studies}, v. 31, n. 4, p. 529--566, 1995.
+  \item SCHUMPETER, J. A. \textit{The Theory of Economic Development}. Cambridge, MA: Harvard University Press, 1911.
+  \item SCHUMPETER, J. A. \textit{Capitalism, Socialism and Democracy}. New York: Harper \& Brothers, 1942.
+  \item SHANE, S.; VENKATARAMAN, S. The promise of entrepreneurship as a field of research. \textit{Academy of Management Review}, v. 25, n. 1, p. 217--226, 2000.
+  \item STAM, E. Entrepreneurial ecosystems and regional policy: a sympathetic critique. \textit{European Planning Studies}, v. 23, n. 9, p. 1759--1769, 2015.
+  \item STAM, E.; VAN DE VEN, A. Entrepreneurial ecosystem elements. \textit{Small Business Economics}, v. 56, n. 2, p. 809--832, 2021.
+  \item STOREY, D. J.; TETHER, B. S. New technology-based firms in the European Union: an introduction. \textit{Research Policy}, v. 26, n. 9, p. 933--946, 1998.
+  \item WOILER, S.; MATHIAS, W. F. \textit{Projetos: planejamento, elaboração, análise}. 2. ed. São Paulo: Atlas, 2008.
+\end{enumerate}

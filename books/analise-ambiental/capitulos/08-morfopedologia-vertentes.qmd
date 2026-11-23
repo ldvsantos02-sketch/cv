@@ -4,11 +4,15 @@ A morfopedologia interpreta as relações entre relevo, materiais, solos e circu
 
 ## Etapa 1 - Objetivos de aprendizagem
 
+::: {.callout-note title="O que você vai aprender neste capítulo"}
 A aprendizagem envolve interpretar uma topossequência e relacionar observações de solo e relevo ao comportamento da água. O estudante deve formular hipóteses sobre os processos dominantes e indicar quais medições permitem avaliá-las.
+:::
 
 ## Etapa 2 - Conhecimentos necessários
 
+::: {.callout-tip title="Revisando o que você precisa saber"}
 A leitura retoma horizonte pedológico, textura, estrutura, porosidade e declividade. Textura descreve a distribuição de tamanho das partículas, enquanto estrutura representa sua organização em agregados. Essas propriedades participam da circulação de água por mecanismos diferentes.
+:::
 
 ## Etapa 3 - Fundamentação teórica
 
@@ -28,7 +32,7 @@ Na prática da Análise Ambiental, a morfopedologia parte de um princípio diret
 
 ### Formas de Vertente e Distribuição de Solos (Topossequência)
 
-Uma vertente típica raramente é uma rampa reta e uniforme. Ao caminhar do divisor de águas até o leito do rio, o geógrafo observa cinco setores morfopedológicos característicos, integrados na @fig-morfopedologia_vertente e detalhados na Tabela [topossequencia](08-morfopedologia-vertentes.qmd#tbl-topossequencia),
+Uma vertente típica raramente é uma rampa reta e uniforme. Ao caminhar do divisor de águas até o leito do rio, o geógrafo observa cinco setores morfopedológicos característicos, integrados na @fig-morfopedologia_vertente e detalhados na Tabela (topossequencia),
 
 **Topo plano ou suave (interflúvio).** Declividade muito baixa, energia do escoamento superficial reduzida e amplo predomínio da **infiltração vertical**. A água percola profundamente, favorecendo o intemperismo químico intenso e a formação de solos profundos, bem drenados e envelhecidos, como os **Latossolos** (típicos dos tabuleiros e chapadões baianos). **Ombro convexo (alta vertente).** A declividade começa a aumentar progressivamente para jusante. O fluxo superficial ganha velocidade e inicia-se o transporte seletivo de partículas finas (erosão laminar e rastejo). Os solos tornam-se gradualmente menos espessos.
 
@@ -59,7 +63,9 @@ A **declividade** é o principal parâmetro quantitativo que expressa a energia 
 **Equações fundamentais,**
 
 $$
+
 S(\%) = \frac{\Delta h}{d_h} \times 100 \qquad\text{e}\qquad \theta = \arctan\!\left(\frac{\Delta h}{d_h}\right)
+
 $$
 
  **Relações auxiliares indispensáveis em Geografia,**
@@ -67,7 +73,9 @@ $$
 **A partir de carta topográfica (escala $1:E$).** Se a distância medida no mapa entre duas curvas de nível é $d_{\text{mapa}}$ (em metros ou convertida de cm para m), então $d_h = d_{\text{mapa}} \times E$. **A partir de trena no terreno (distância inclinada $d_{\text{inc}}$).** Pelo Teorema de Pitágoras, obtém-se primeiro a distância horizontal,
 
 $$
+
 d_h = \sqrt{d_{\text{inc}}^2 - \Delta h^2}.
+
 $$
 
 . **Conversão direta entre graus e porcentagem,** $S(\%) = 100 \cdot \tan\theta$ e $\theta = \arctan(S / 100)$.
@@ -77,14 +85,16 @@ $$
 **Exemplo numérico completo.** Uma encosta desce da cota $316\text{ m}$ para a cota $280\text{ m}$ ao longo de uma distância horizontal de $d_h = 200\text{ m}$.
 
 $$
+
 \begin{aligned}
 \Delta h &= 316 - 280 = 36\text{ m} \\
 S(\%) &= \frac{36}{200} \times 100 = 0{,}18 \times 100 = 18{,}0\% \\
 \theta &= \arctan(0{,}18) \approx 10{,}20^\circ.
 \end{aligned}
+
 $$
 
- **Interpretação.** A cada $100\text{ m}$ percorridos na horizontal, o terreno sobe ou desce $18\text{ m}$. Pelas classes da Tabela [classes declividade](08-morfopedologia-vertentes.qmd#tbl-classes_declividade), o relevo é **Ondulado** (EMBRAPA) e apresenta **Fragilidade Média, Classe 3** (Ross, 1994).
+ **Interpretação.** A cada $100\text{ m}$ percorridos na horizontal, o terreno sobe ou desce $18\text{ m}$. Pelas classes da Tabela (classes declividade), o relevo é **Ondulado** (EMBRAPA) e apresenta **Fragilidade Média, Classe 3** (Ross, 1994).
 
 Note um marco conceitual que elimina erros em provas, **uma declividade de $45^\circ$ corresponde exatamente a $100\%$**, pois $\tan(45^\circ) = 1$, o que significa que $\Delta h = d_h$ (o terreno sobe $1\text{ m}$ a cada $1\text{ m}$ na horizontal). Consequentemente, rampas mais íngremes que $45^\circ$ possuem declividades **superiores a $100\%$** (por exemplo, $60^\circ$ equivale a $\tan(60^\circ) \times 100 \approx 173,2\%$).
 
@@ -125,7 +135,7 @@ Quando essa proteção é removida, o escoamento superficial concentrado evolui 
 
 Enquanto a erosão hídrica transporta partículas de solo gradualmente pela ação da água corrente, os **movimentos de massa** (ou movimentos gravitacionais de massa) consistem no deslocamento coletivo de volumes expressivos de solo, saprólito e/ou rocha encosta abaixo, impulsionados diretamente pela força da gravidade quando as tensões cisalhantes superam a resistência interna do material (Guerra, 2018; Varnes, 1978).
 
-Na análise ambiental e na gestão de riscos em encostas, processos frequentes em áreas serranas e em bairros periféricos sobre relevo acidentado na Bahia (como Salvador, cidades do Recôncavo e bordas de serras), distinguem-se cinco tipos principais, sistematizados na Tabela [movimentos massa](08-morfopedologia-vertentes.qmd#tbl-movimentos_massa).
+Na análise ambiental e na gestão de riscos em encostas, processos frequentes em áreas serranas e em bairros periféricos sobre relevo acidentado na Bahia (como Salvador, cidades do Recôncavo e bordas de serras), distinguem-se cinco tipos principais, sistematizados na Tabela (movimentos massa).
 
 | **Tipo de Movimento** | **Velocidade** | **Geometria / Mecanismo** | **Principais Gatilhos** | **Feições Diagnósticas em Campo** |
 |:---|:---|:---|:---|:---|
@@ -153,6 +163,7 @@ O planejamento morfopedológico relaciona essas observações às intervenções
 
 ## Etapa 4 - Exemplos resolvidos
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 8.1 - Declividade e Solos ao Longo de uma Topossequência (Nível Básico)
 
 **Situação analisada.** Durante um trabalho de campo da disciplina CHF662, os estudantes levantaram três segmentos consecutivos de uma mesma vertente, o **Topo** (desnível de $6\text{ m}$ em $300\text{ m}$ horizontais), a **Meia Encosta** (desnível de $54\text{ m}$ em $150\text{ m}$ horizontais) e o **Sopé** (desnível de $12\text{ m}$ em $200\text{ m}$ horizontais).
@@ -168,19 +179,25 @@ O planejamento morfopedológico relaciona essas observações às intervenções
 **Topo,**
 
 $$
+
 S_1 = \frac{6}{300} \times 100 = 0{,}02 \times 100 = 2{,}0\% \qquad;\qquad \theta_1 = \arctan(0{,}02) \approx 1{,}15^\circ.
+
 $$
 
 . **Meia Encosta,**
 
 $$
+
 S_2 = \frac{54}{150} \times 100 = 0{,}36 \times 100 = 36{,}0\% \qquad;\qquad \theta_2 = \arctan(0{,}36) \approx 19{,}80^\circ.
+
 $$
 
 . **Sopé,**
 
 $$
+
 S_3 = \frac{12}{200} \times 100 = 0{,}06 \times 100 = 6{,}0\% \qquad;\qquad \theta_3 = \arctan(0{,}06) \approx 3{,}43^\circ.
+
 $$
 
 .
@@ -188,7 +205,9 @@ $$
 **Interpretação do resultado.** Topo, $2,0\%$ ($1,15^\circ$), EMBRAPA Plano / Ross Classe 1 (Muito Fraca), com predomínio de **Latossolos**. Meia Encosta, $36,0\%$ ($19,80^\circ$), EMBRAPA Forte ondulado / Ross Classe 5 (Muito Forte, $>30\%$), com **Neossolos Litólicos / Cambissolos**. Sopé, $6,0\%$ ($3,43^\circ$), EMBRAPA Suave ondulado / Ross Classe 2 (Fraca, $6\text{-}12\%$), com **Argissolos / Planossolos**.
 
 **Condições de validade.** O perfil numérico reproduz o comportamento clássico da @fig-morfopedologia_vertente, declividade mínima no topo (máxima infiltração e solo profundo), salto abrupto na meia encosta (predomínio erosivo e solo raso) e suavização no sopé (acumulação coluvial).
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 8.2 - Cálculo de Declividade a partir de Carta Topográfica (Nível Básico-Intermediário) {#08-morfopedologia-vertentes-exemplo-8.2.-cálculo-de-declividade-a-partir-de-carta-topográfica-nível-básicointermediário}
 
 **Situação analisada.** Em uma carta topográfica na escala **1,25.000**, duas curvas de nível de cotas $260\text{ m}$ e $320\text{ m}$ estão separadas, em linha reta perpendicular às curvas, por uma distância medida na régua de $d_{\text{mapa}} = 1,2\text{ cm}$.
@@ -204,25 +223,33 @@ $$
 **Distância horizontal real ($d_h$),**
 
 $$
+
 d_h = 1{,}2\text{ cm} \times 25.000 = 30.000\text{ cm}.
+
 $$
 
  Convertendo centímetros para metros (dividindo por $100$),
 
 $$
+
 d_h = \frac{30.000}{100} = 300\text{ m}.
+
 $$
 
 . **Desnível vertical ($\Delta h$),**
 
 $$
+
 \Delta h = 320 - 260 = 60\text{ m}.
+
 $$
 
 . **Declividade em porcentagem e em graus,**
 
 $$
+
 S(\%) = \frac{60}{300} \times 100 = 0{,}20 \times 100 = 20{,}0\% \qquad;\qquad \theta = \arctan(0{,}20) \approx 11{,}31^\circ.
+
 $$
 
 .
@@ -230,7 +257,9 @@ $$
 **Interpretação do resultado.** $d_h = 300\text{ m}$, $\Delta h = 60\text{ m}$, $S = 20,0\%$ e $\theta \approx 11,31^\circ$. Classe EMBRAPA, limite superior de Ondulado ($8\text{-}20\%$); Classe Ross, início da Classe 4, Forte ($20\text{-}30\%$).
 
 **Condições de validade.** Em escala 1,25.000, cada $1\text{ cm}$ vale $250\text{ m}$; logo $1,2\text{ cm}$ corresponde a $250 + 50 = 300\text{ m}$, confirmando a conversão. Como $60 / 300 = 1/5 = 0,20$, a declividade de $20\%$ e o ângulo de $11,31^\circ$ são exatos e alertam para a necessidade de práticas conservacionistas rigorosas.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 8.3 - Correção de Distância Inclinada Medida com Trena em Campo (Nível Intermediário)
 
 **Situação analisada.** Durante uma vistoria de encosta sem mapa detalhado, um técnico mediu com trena apoiada sobre a superfície do terreno uma rampa de comprimento inclinado $d_{\text{inc}} = 100\text{ m}$. Com auxílio de nível topográfico/altímetro de precisão, verificou-se um desnível vertical de $\Delta h = 28\text{ m}$ entre a base e o topo dessa rampa.
@@ -246,13 +275,17 @@ $$
 **Cálculo da distância horizontal ($d_h$),**
 
 $$
+
 d_h = \sqrt{100^2 - 28^2} = \sqrt{10.000 - 784} = \sqrt{9.216} = 96{,}0\text{ m}.
+
 $$
 
 . **Declividade correta em porcentagem e graus,**
 
 $$
+
 S(\%) = \frac{28}{96} \times 100 \approx 0{,}2917 \times 100 = 29{,}17\% \qquad;\qquad \theta = \arctan\!\left(\frac{28}{96}\right) \approx 16{,}26^\circ.
+
 $$
 
 . **Comparação com o erro de usar $d_{\text{inc}}$ diretamente.** Se o técnico dividisse $28 / 100$, obteria $28,00\%$ (subestimando a declividade em $1,17$ ponto percentual, pois $28/100 = \sin\theta$ e não $\tan\theta$).
@@ -260,7 +293,9 @@ $$
 **Interpretação do resultado.** $d_h = 96,0\text{ m}$; declividade correta $S = 29,17\%$ e $\theta \approx 16,26^\circ$ (EMBRAPA, Forte ondulado; Ross, Classe 4, Forte, quase no limite da Classe 5).
 
 **Condições de validade.** Como a hipotenusa ($d_{\text{inc}} = 100\text{ m}$) é sempre maior que o cateto horizontal ($d_h = 96\text{ m}$), usar a distância medida pela trena no denominador sempre subestima a declividade real, erro que se torna muito grave em encostas acima de $30\%$.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 8.4 - Efeito da Cobertura Vegetal no Balanço Infiltração vs. Escoamento (Nível Intermediário)
 
 **Situação analisada.** Duas parcelas experimentais adjacentes em uma mesma meia encosta ($S = 18\%$) receberam uma chuva de $80\text{ mm}$, a **Parcela 1** possui cobertura de Caatinga arbóreo-arbustiva conservada com serapilheira (infiltração/retenção de $85\%$ e escoamento superficial de $15\%$); a **Parcela 2** encontra-se com solo exposto após queimada e pisoteio bovino (infiltração de $25\%$ e escoamento superficial de $75\%$).
@@ -276,25 +311,31 @@ $$
 **Parcela 1 (vegetação conservada),**
 
 $$
+
 \begin{aligned}
 L_{\text{inf},1} &= 0{,}85 \times 80\text{ mm} = 68{,}0\text{ mm} \;\; (68\text{ L/m}^2) \\
 L_{\text{esc},1} &= 0{,}15 \times 80\text{ mm} = 12{,}0\text{ mm} \;\; (12\text{ L/m}^2).
 \end{aligned}
+
 $$
 
 . **Parcela 2 (solo exposto),**
 
 $$
+
 \begin{aligned}
 L_{\text{inf},2} &= 0{,}25 \times 80\text{ mm} = 20{,}0\text{ mm} \;\; (20\text{ L/m}^2) \\
 L_{\text{esc},2} &= 0{,}75 \times 80\text{ mm} = 60{,}0\text{ mm} \;\; (60\text{ L/m}^2).
 \end{aligned}
+
 $$
 
 . **Comparação do escoamento superficial,**
 
 $$
+
 \frac{L_{\text{esc},2}}{L_{\text{esc},1}} = \frac{60{,}0}{12{,}0} = 5{,}0\text{ vezes}.
+
 $$
 
 .
@@ -302,7 +343,9 @@ $$
 **Interpretação do resultado.** Na parcela conservada infiltram $68\text{ L/m}^2$ e escoam $12\text{ L/m}^2$; no solo exposto infiltram apenas $20\text{ L/m}^2$ e escoam $60\text{ L/m}^2$, um volume superficial $5$ vezes maior.
 
 **Condições de validade.** Observe a soma em ambas as parcelas ($68 + 12 = 80\text{ mm}$; $20 + 60 = 80\text{ mm}$). Sobre uma vertente de $18\%$, multiplicar o escoamento por cinco sem a rugosidade da serapilheira desencadeia rapidamente erosão laminar, sulcos e assoreamento do sopé, além de reduzir em $70,6\%$ a água disponível para recarga e sobrevivência da vegetação na estação seca.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 8.5 - Instabilização de Encosta Urbana por Corte de Talude (Nível Avançado)
 
 **Situação analisada.** Uma encosta natural com solo argilo-arenoso espesso apresenta desnível $\Delta h = 27\text{ m}$ distribuído ao longo de uma distância horizontal $d_{h1} = 150\text{ m}$. Para implantar um conjunto de residências sem projeto geotécnico, executou-se um corte no sopé da vertente, concentrando o mesmo desnível de $27\text{ m}$ em uma distância horizontal reduzida para $d_{h2} = 45\text{ m}$, acompanhado de lançamento de águas servidas a montante.
@@ -311,20 +354,24 @@ $$
 
 **Problema a resolver.** Calcular a declividade ($S\%$ e $\theta$) antes e depois da intervenção, verificar se ultrapassa o limite de APP de $45^\circ$ ($100\%$), identificar o tipo de movimento de massa mais provável e justificar os mecanismos envolvidos.
 
-**Fundamento da análise.** Cálculo comparativo de $S(\%)$ e $\theta$ e diagnóstico geotécnico-morfopedológico baseado na Tabela [movimentos massa](08-morfopedologia-vertentes.qmd#tbl-movimentos_massa).
+**Fundamento da análise.** Cálculo comparativo de $S(\%)$ e $\theta$ e diagnóstico geotécnico-morfopedológico baseado na Tabela (movimentos massa).
 
 **Desenvolvimento.**
 
 **Encosta natural ($d_{h1} = 150\text{ m}$),**
 
 $$
+
 S_1 = \frac{27}{150} \times 100 = 18{,}0\% \qquad;\qquad \theta_1 = \arctan(0{,}18) \approx 10{,}20^\circ.
+
 $$
 
 . **Talude após corte ($d_{h2} = 45\text{ m}$),**
 
 $$
+
 S_2 = \frac{27}{45} \times 100 = 60{,}0\% \qquad;\qquad \theta_2 = \arctan(0{,}60) \approx 30{,}96^\circ.
+
 $$
 
 . **Verificação do limite legal de $45^\circ$ ($100\%$).** Como $30,96^\circ < 45^\circ$ ($60\% < 100\%$), o talude não atingiu o patamar de APP de encosta ($>45^\circ$), mas saltou da Classe 3 de Ross (Média) para a **Classe 5 (Muito Forte, $>30\%$)** e da classe Ondulado para **Montanhoso (EMBRAPA)**.
@@ -332,32 +379,41 @@ $$
 **Interpretação do resultado.** A declividade mais que triplicou, passando de $18,0\%$ ($10,20^\circ$) para $60,0\%$ ($30,96^\circ$). Em solo argilo-arenoso espesso sujeito a corte no pé e saturação por águas servidas, o movimento de massa mais provável é o **escorregamento rotacional**.
 
 **Condições de validade.** O resultado demonstra um ponto crucial de Análise Ambiental, uma encosta não precisa atingir $45^\circ$ ($100\%$) para apresentar risco crítico! O corte retira o contraforte natural na base do maciço de solo, enquanto as águas servidas elevam a poropressão e reduzem o atrito interno, criando condições clássicas para ruptura curva (rotacional) durante eventos de chuva prolongada.
+:::
 
 ## Etapa 5 - Erros de interpretação
 
+::: {.callout-warning appearance="simple"}
 ### Erro 1, Achar que $100\%$ de declividade equivale a um paredão vertical de $90^\circ$
 
 **Equívoco frequente.** Associar intuitivamente $100\%$ ao ângulo reto ($90^\circ$) e concluir que $45^\circ$ valeria $50\%$.
 
 **Correção técnica.** A declividade em porcentagem é $100 \times \tan\theta$. Como $\tan(45^\circ) = 1$, uma encosta de **$45^\circ$ tem exatamente $100\%$ de declividade** ($\Delta h = d_h$). Já uma parede vertical ($90^\circ$) possui $d_h = 0$, tendendo a declividade ao infinito.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 2, Usar a distância inclinada da trena no denominador de $S(\%)$
 
 **Equívoco frequente.** Medir $50\text{ m}$ inclinados no terreno com trena e dividir $\Delta h$ diretamente por $50\text{ m}$.
 
 **Correção técnica.** A definição matemática de declividade usa a **distância horizontal ($d_h$)** no denominador ($\Delta h / d_h = \tan\theta$). Quando se dispõe apenas da distância inclinada ($d_{\text{inc}}$), deve-se calcular $d_h = \sqrt{d_{\text{inc}}^2 - \Delta h^2}$ antes de aplicar a fórmula.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 3, Confundir escorregamento rotacional com translacional
 
 **Equívoco frequente.** Chamar qualquer deslizamento de terra genericamente de "desmoronamento" ou trocar os condicionantes de cada tipo.
 
 **Correção técnica.** O **escorregamento rotacional** ocorre tipicamente em solos espessos e homogêneos, formando superfície de ruptura curva (em colher); o **escorregamento translacional (planar)** ocorre em solos rasos sobre substrato rochoso ou planos de fraqueza, deslizando como uma placa paralela à superfície da encosta.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 4, Analisar solo e relevo de forma desarticulada no diagnóstico
 
 **Equívoco frequente.** Descrever o solo do topo da vertente (por exemplo, Latossolo profundo) e generalizar suas propriedades de alta permeabilidade para toda a encosta, incluindo a meia vertente íngreme e o fundo de vale.
 
 **Correção técnica.** Pela abordagem morfopedológica, a variação da declividade e da curvatura altera profundamente a pedogênese ao longo da topossequência. Cada compartimento (topo, ombro, meia encosta, sopé e várzea) exige diagnóstico e manejo específicos.
+:::
 
 ## Etapa 6 - Exercícios de fixação
 
@@ -499,6 +555,7 @@ Os cinco patamares de declividade de Ross ($<6\%$, $6\text{-}12\%$, $12\text{-}2
 
 ## Etapa 8 - Gabarito comentado
 
+::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resoluções e Justificativas, Capítulo 8
 
 1. **Topossequência.** É a sucessão ordenada de solos que varia do topo ao fundo de vale em uma mesma vertente. No topo plano, a baixa declividade favorece a infiltração vertical e a permanência do manto de intemperismo (gerando solos profundos como Latossolos); na meia encosta íngreme, a alta velocidade do escoamento remove continuamente partículas superficiais, mantendo os solos rasos e jovens (Neossolos Litólicos/Cambissolos).
@@ -542,19 +599,25 @@ Os cinco patamares de declividade de Ross ($<6\%$, $6\text{-}12\%$, $12\text{-}2
 17. **Gabarito, (A).** $S = (90 / 250)\times 100 = 36,0\%$; $\theta = \arctan(0,36) \approx 19,80^\circ$. Como $36,0\% > 30\%$, enquadra-se na Classe 5 de Ross (Muito Forte). Em solo raso sobre substrato rochoso pouco permeável sob alta declividade, o mecanismo típico de ruptura é o escorregamento translacional (planar) ao longo do contato solo-rocha.
 
 18. **Gabarito, (C).** Drenagem adequada controla a poropressão; evitar cortes/aterros preserva a geometria de equilíbrio; e a cobertura vegetal/bioengenharia acrescenta proteção superficial e coesão radicular.
+:::
 
 ## Etapa 9 - Síntese conceitual
 
+::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Morfopedologia.** Integra formas de relevo, solos e dinâmica hídrica em **topossequências** (topo com Latossolos profundos $\to$ meia encosta com Neossolos/Cambissolos rasos $\to$ sopé coluvial com Argissolos/Planossolos $\to$ fundo de vale com Gleissolos). **Cálculo de Declividade,**
 
 $$
+
 S(\%) = \frac{\Delta h}{d_h} \times 100 \qquad;\qquad \theta = \arctan\!\left(\frac{\Delta h}{d_h}\right) \qquad;\qquad 45^\circ \equiv 100\%
+
 $$
 
  Em cartas ($1:E$), $d_h = d_{\text{mapa}} \times E$. Em medições de trena inclinada, $d_h = \sqrt{d_{\text{inc}}^2 - \Delta h^2}$. **Classes de Ross (declividade),** $<6\%$ (1), $6\text{-}12\%$ (2), $12\text{-}20\%$ (3), $20\text{-}30\%$ (4), $>30\%$ (5). **Movimentos de massa.** Rastejo (muito lento), escorregamento rotacional (curvo, solo espesso), escorregamento translacional (planar, solo raso), corrida de detritos (fluido rápido) e queda de blocos (paredões rochosos).
+:::
 
 ## Etapa 10 - Verificação da aprendizagem
 
+::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
 Responda rapidamente (**V** ou **F**) e confira no gabarito abaixo,
 
 1. () Em uma topossequência típica, a meia encosta íngreme apresenta maior taxa de infiltração e solos mais profundos do que o topo plano.
@@ -566,3 +629,4 @@ Responda rapidamente (**V** ou **F**) e confira no gabarito abaixo,
 4. () A infiltração de águas servidas em encostas ocupadas eleva a poropressão e reduz a resistência ao cisalhamento do solo, favorecendo escorregamentos.
 
 **Gabarito do verificação da aprendizagem,** 1-**F** (ocorre o inverso, topo plano tem mais infiltração e solos profundos); 2-**V**; 3-**V**; 4-**V**.
+:::

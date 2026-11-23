@@ -4,11 +4,15 @@ Indicadores ambientais conectam uma pergunta de gestão a observações que pode
 
 ## Etapa 1 - Objetivos de aprendizagem
 
+::: {.callout-note title="O que você vai aprender neste capítulo"}
 O capítulo desenvolve a seleção de indicadores e a construção de relações entre pressão, estado, impacto e resposta. O estudante deve justificar a posição de cada variável no modelo e explicar como os dados serão interpretados durante o monitoramento.
+:::
 
 ## Etapa 2 - Conhecimentos necessários
 
+::: {.callout-tip title="Revisando o que você precisa saber"}
 A leitura utiliza as distinções entre atividade, alteração do ambiente e consequência, além dos conceitos de bacia e área de influência. Uma estrada pode atravessar diferentes unidades de drenagem, enquanto efeitos sobre a fauna dependem também das rotas e dos períodos de atividade das espécies.
+:::
 
 ## Etapa 3 - Fundamentação teórica
 
@@ -66,7 +70,9 @@ A resposta reúne medidas de gestão e intervenção, incluindo controle de dren
 A taxa de supressão relaciona a área removida à área total da poligonal. As duas áreas devem ser expressas na mesma unidade. A multiplicação da proporção por 100 fornece seu valor percentual.
 
 $$
+
 T_{\mathrm{sup}} = \frac{A_{\mathrm{sup}}}{A_{\mathrm{pol}}} \times 100
+
 $$
 
 O símbolo $A_{\mathrm{sup}}$ representa a área de vegetação suprimida e $A_{\mathrm{pol}}$ a área total de referência, ambas em hectares ou em outra unidade comum. O resultado é informado em porcentagem. A área de referência e a data precisam acompanhar o valor, pois sua mudança altera a comparação.
@@ -74,7 +80,9 @@ O símbolo $A_{\mathrm{sup}}$ representa a área de vegetação suprimida e $A_{
 A densidade viária divide o comprimento dos acessos pela área analisada. Para obter quilômetros de acesso por quilômetro quadrado, a extensão deve estar em quilômetros e a área em quilômetros quadrados.
 
 $$
+
 D_v = \frac{L_{\mathrm{acessos}}}{A_{\mathrm{ref}}}
+
 $$
 
 O comprimento total é representado por $L_{\mathrm{acessos}}$ e a área de referência por $A_{\mathrm{ref}}$. A unidade do resultado é $\mathrm{km\,km^{-2}}$. Quando a área foi fornecida em hectares, sua conversão utiliza a relação $1\ \mathrm{km^2}=100\ \mathrm{ha}$. A densidade informa a extensão relativa da rede, cuja interpretação ambiental depende também de sua posição na drenagem e na cobertura vegetal.
@@ -82,7 +90,9 @@ O comprimento total é representado por $L_{\mathrm{acessos}}$ e a área de refe
 A correção simplificada da mortalidade de aves utiliza a contagem observada e as probabilidades de detecção e persistência. O exemplo assume busca integral da área considerada e define o período da contagem.
 
 $$
+
 M_{\mathrm{est}} = \frac{N_{\mathrm{obs}}}{e\,p}
+
 $$
 
 O número observado de carcaças é $N_{\mathrm{obs}}$. A eficiência da busca é representada por $e$ e a persistência entre campanhas por $p$, com valores maiores que zero e até 1. O resultado corresponde ao período acompanhado e deve ser normalizado por torre e por tempo quando essa for a finalidade. A fórmula é um recurso didático simplificado, cuja utilização operacional depende do desenho e das correções apropriadas ao levantamento.
@@ -90,7 +100,9 @@ O número observado de carcaças é $N_{\mathrm{obs}}$. A eficiência da busca �
 A variação relativa de um indicador compara a diferença com seu valor inicial. A convenção abaixo produz valores positivos para aumento e negativos para redução.
 
 $$
+
 \Delta_{\%} = \frac{X_f-X_i}{X_i} \times 100
+
 $$
 
 Os símbolos $X_i$ e $X_f$ representam valores inicial e final obtidos em condições comparáveis. O cálculo exige $X_i\ne0$. Quando o valor inicial é zero, a mudança deve ser descrita por diferença absoluta e pelas condições observadas. Para indicadores já expressos em porcentagem, a diferença entre percentuais é informada em pontos percentuais, enquanto a divisão pela condição inicial produz uma variação relativa.
@@ -190,6 +202,7 @@ Uma resposta de gestão também precisa separar execução e desempenho. Comprim
 
 ## Etapa 4 - Exemplos resolvidos
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 10.1 - Seleção de indicadores e interpretação do monitoramento
 
 #### Situação e condições do exercício
@@ -238,7 +251,9 @@ Na campanha inicial, a poligonal de cortes e plataformas mede 12,0 ha, dos quais
 
 
 $$
+
 T_{\mathrm{exp}} = \frac{A_{\mathrm{exp}}}{A_{\mathrm{ref}}} \times 100
+
 $$
 
 
@@ -246,7 +261,9 @@ O símbolo $A_{\mathrm{exp}}$ representa a área com solo exposto e $A_{\mathrm{
 
 
 $$
+
 T_{\mathrm{exp},1} = \frac{3{,}6\ \mathrm{ha}}{12{,}0\ \mathrm{ha}} \times 100 = 30{,}0\%
+
 $$
 
 
@@ -258,7 +275,9 @@ A vistoria inicial cobriu 6,0 km de acessos e identificou 18 focos ativos segund
 
 
 $$
+
 D_{\mathrm{eros}} = \frac{N_{\mathrm{focos}}}{L_{\mathrm{vist}}}
+
 $$
 
 
@@ -266,7 +285,9 @@ O símbolo $N_{\mathrm{focos}}$ representa a contagem de focos ativos e $L_{\mat
 
 
 $$
+
 D_{\mathrm{eros},1} = \frac{18\ \mathrm{focos}}{6{,}0\ \mathrm{km}} = 3{,}0\ \mathrm{focos\,km^{-1}}
+
 $$
 
 
@@ -278,12 +299,16 @@ Após ações de drenagem e revegetação, a segunda campanha encontrou 2,4 ha d
 
 
 $$
+
 T_{\mathrm{exp},2} = \frac{2{,}4}{12{,}0} \times 100 = 20{,}0\%
+
 $$
 
 
 $$
+
 D_{\mathrm{eros},2} = \frac{9}{6{,}0} = 1{,}5\ \mathrm{focos\,km^{-1}}
+
 $$
 
 
@@ -291,7 +316,9 @@ A exposição diminuiu de 30,0% para 20,0%, correspondendo a uma redução de **
 
 
 $$
+
 r_{\mathrm{exp}} = \frac{30{,}0 - 20{,}0}{30{,}0} \times 100 \approx 33{,}3\%
+
 $$
 
 
@@ -299,7 +326,9 @@ A densidade passou de 3,0 para 1,5 focos por quilômetro. Mantido o mesmo suport
 
 
 $$
+
 r_{\mathrm{eros}} = \frac{3{,}0 - 1{,}5}{3{,}0} \times 100 = 50{,}0\%
+
 $$
 
 
@@ -308,6 +337,7 @@ $$
 Os resultados indicam melhora dos indicadores nas condições observadas. A interpretação deve considerar a chuva entre campanhas, a sazonalidade da vegetação, a manutenção e a possibilidade de mudança no comportamento dos focos remanescentes. Uma redução na contagem pode coexistir com aumento de tamanho de determinadas feições, o que justifica manter registros de dimensões e fotografias em posições repetidas.
 
 A conclusão do exercício seleciona os candidatos I e III para o monitoramento proposto, recomenda reformular II e IV e relaciona cada decisão aos critérios. O relatório mantém os valores medidos, o suporte espacial e o método de cálculo. Os resultados posteriores à intervenção sustentam a comparação temporal, cuja atribuição causal exige examinar as condições ambientais e operacionais do período.
+:::
 
 ### Atividade 10.1A - Seleção e cálculo para resolução autônoma
 
@@ -333,6 +363,7 @@ Calcule a taxa de solo exposto e a densidade de focos em cada campanha. Apresent
 
 Redija uma interpretação técnica que relacione a comparação às condições de chuva, manutenção e representatividade do levantamento. Indique quais dados adicionais permitiriam examinar se as feições remanescentes aumentaram de tamanho. A atividade deve ser entregue com seu próprio desenvolvimento e não apresenta gabarito nesta apostila.
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 10.2 (Intermediário). Cálculo de Supressão Vegetal e Densidade Viária em Parque Eólico
 
 **Situação analisada.** Durante a análise do Estudo de Impacto Ambiental (EIA) de um parque eólico situado em uma chapada no eixo Canudos-Sento Sé, você precisa quantificar dois indicadores de Pressão, a taxa percentual de supressão da Caatinga e a densidade de acessos internos dentro da poligonal do empreendimento.
@@ -346,38 +377,50 @@ Redija uma interpretação técnica que relacione a comparação às condições
 **Desenvolvimento.** **Etapa 1, Área dos platôs das torres,**
 
 $$
+
 A_{\text{platôs}} = 25 \times 0{,}45\text{ ha} = 11{,}25\text{ ha}
+
 $$
 
  **Etapa 2, Área das estradas de acesso.** Convertemos $18{,}0\text{ km}$ para metros ($18.000\text{ m}$), multiplicamos pela largura de $10\text{ m}$ e dividimos por $10.000\text{ m}^2\cdot\text{ha}^{-1}$,
 
 $$
+
 A_{\text{acessos}} = \frac{18.000\text{ m} \times 10\text{ m}}{10.000\text{ m}^2\cdot\text{ha}^{-1}} = \frac{180.000}{10.000} = 18{,}00\text{ ha}
+
 $$
 
  **Etapa 3, Área total suprimida e taxa percentual,**
 
 $$
+
 A_{\text{sup}} = 11{,}25 + 18{,}00 + 2{,}75 = 32{,}00\text{ ha}
-$$
-
-
 
 $$
+
+
+
+$$
+
 T_{\text{sup}} = \frac{32{,}00}{1.600} \times 100\% = 0{,}02 \times 100\% = 2{,}00\%
+
 $$
 
  **Etapa 4, Densidade viária interna.** Convertemos a área da poligonal para $\text{km}^2$, $A_{\text{km}^2} = 1.600 / 100 = 16{,}0\text{ km}^2$.
 
 $$
+
 D_v = \frac{18{,}0\text{ km}}{16{,}0\text{ km}^2} = 1{,}125\text{ km}\cdot\text{km}^{-2}
+
 $$
 
 
 **Interpretação do resultado.** Área total suprimida de $32{,}00\text{ ha}$, equivalente a uma taxa de supressão de $2{,}00\%$ da poligonal, e densidade viária interna de $1{,}125\text{ km}\cdot\text{km}^{-2}$.
 
 **Condições de validade.** Note um ponto crítico de interpretação geográfica, embora $2{,}00\%$ pareça um percentual reduzido em termos de área absoluta, a maior parcela da supressão ($18{,}0\text{ ha}$, ou $56{,}25\%$ do total) corresponde a corredores lineares (estradas), gerando uma densidade viária superior a $1\text{ km}\cdot\text{km}^{-2}$. Esse arranjo linear potencializa a fragmentação da Caatinga e a concentração de escoamento pluvial.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 10.3 (Intermediário). Construção de Matriz PEIR para o Eixo Energético do Submédio São Francisco
 
 **Situação analisada.** A partir das observações da viagem de campo entre Sobradinho, Casa Nova, Juazeiro, Rodelas e Paulo Afonso, estruture uma matriz PEIR que integre simultaneamente dois vetores territoriais presentes nesse eixo, (1) implantação de complexos eólicos em bordas de chapada e (2) regularização hidrelétrica de vazões no Rio São Francisco.
@@ -398,7 +441,9 @@ $$
 **Interpretação do resultado.** A matriz PEIR articulada permite acompanhar separadamente as causas (P), as mudanças mensuráveis do meio (E), os danos ecológicos e sociais (I) e a efetividade das ações corretivas (R) nos dois eixos energéticos.
 
 **Condições de validade.** Cada coluna apresenta grandezas verificáveis e evita a confusão frequente de classificar uma atividade (pressão) como impacto ou um programa de monitoramento (resposta) como estado ambiental.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 10.4 (Avançado). Indicador Corrigido de Mortalidade de Avifauna em Parque Eólico
 
 **Situação analisada.** O monitoramento de avifauna em um parque eólico com $40$ aerogeradores próximo a corredores ecológicos da Caatinga baiana registrou, ao longo de 12 meses de vistorias padronizadas sob as torres, $18$ carcaças de aves associadas à colisão. Testes experimentais de controle de campo indicaram que a equipe encontra em média $60\%$ das carcaças presentes ($e = 0{,}60$) e que $75\%$ das carcaças permanecem no terreno até o momento da vistoria sem serem removidas por animais necrófagos ($p = 0{,}75$).
@@ -412,13 +457,17 @@ $$
 **Desenvolvimento.** **Etapa 1, Taxa bruta (sem correção de viés de detecção),**
 
 $$
+
 T_{\text{bruta}} = \frac{18}{40} = 0{,}45\text{ ave}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}
+
 $$
 
  **Etapa 2, Produto dos fatores de detecção,**
 
 $$
+
 e \cdot p = 0{,}60 \times 0{,}75 = 0{,}45
+
 $$
 
  Isso significa que apenas $45\%$ das colisões reais são efetivamente detectadas nas buscas de campo.
@@ -426,13 +475,17 @@ $$
 **Etapa 3, Mortalidade total corrigida e taxa por torre,**
 
 $$
+
 M_{\text{est}} = \frac{18}{0{,}45} = 40{,}0\text{ aves}\cdot\text{ano}^{-1}
-$$
-
-
 
 $$
+
+
+
+$$
+
 T_{\text{corr}} = \frac{40{,}0}{40} = 1{,}00\text{ ave}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}
+
 $$
 
  **Etapa 4, Comparação com o limiar de alerta ($0{,}80\text{ ave}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}$),** Como $1{,}00 > 0{,}80$, o limiar de alerta foi ultrapassado em $25\%$ ($\frac{1{,}00 - 0{,}80}{0{,}80}\times 100\% = 25\%$).
@@ -440,7 +493,9 @@ $$
 **Interpretação do resultado.** A taxa bruta era de $0{,}45\text{ ave}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}$, mas a taxa corrigida atinge $1{,}00\text{ ave}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}$ ($M_{\text{est}} = 40$ aves/ano), superando o limiar de alerta e exigindo resposta mitigadora imediata.
 
 **Condições de validade.** O exemplo ilustra por que relatórios sem correção de eficiência de busca e remoção por necrófagos subestimam impactos reais, pela taxa bruta ($0{,}45$), o parque pareceria abaixo do limiar de alerta, ocultando um risco significativo à avifauna da Caatinga.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 10.5 (Avançado). Avaliação Quantitativa de Eficácia de Resposta Mitigadora no Ciclo PEIR
 
 **Situação analisada.** Após vistoria de campo apontar erosão acelerada nos acessos de um complexo eólico no Semiárido, o empreendedor executou um programa de resposta (R) combinando canaletas revestidas, dissipadores de energia em pedra rachão, paliçadas permeáveis e semeadura de espécies nativas da Caatinga nos taludes. Antes das obras, havia $36$ focos erosivos ativos ao longo de $12\text{ km}$ de estradas e cobertura vegetal média nos taludes de $15\%$. Doze meses após as intervenções, nova vistoria registrou $9$ focos ativos e cobertura vegetal média de $69\%$.
@@ -454,25 +509,33 @@ $$
 **Desenvolvimento.** **Etapa 1, Densidade de focos erosivos por quilômetro de acesso,**
 
 $$
+
 D_{f,0} = \frac{36}{12} = 3{,}00\text{ focos}\cdot\text{km}^{-1} \qquad \text{e} \qquad D_{f,1} = \frac{9}{12} = 0{,}75\text{ foco}\cdot\text{km}^{-1}
+
 $$
 
  **Etapa 2, Redução percentual dos focos erosivos,**
 
 $$
+
 \Delta F_{\%} = \frac{9 - 36}{36} \times 100\% = \frac{-27}{36} \times 100\% = -75{,}0\% \quad (\text{redução de } 75{,}0\%)
+
 $$
 
  **Etapa 3, Ganho de cobertura vegetal (pontos percentuais e aumento relativo),**
 
 $$
+
 \Delta C_{\text{pp}} = 69\% - 15\% = +54\text{ pontos percentuais (p.p.)}
-$$
-
-
 
 $$
+
+
+
+$$
+
 \Delta C_{\text{rel}} = \frac{69 - 15}{15} \times 100\% = \frac{54}{15} \times 100\% = +360{,}0\%
+
 $$
 
  **Etapa 4, Conferência frente às metas do PRAD,** Redução de focos, $75{,}0\% \ge 70\%$ (meta cumprida). Ganho de cobertura, $54\text{ p.p.} \ge 50\text{ p.p.}$ (meta cumprida).
@@ -480,32 +543,41 @@ $$
 **Interpretação do resultado.** A densidade de focos caiu de $3{,}00$ para $0{,}75\text{ foco}\cdot\text{km}^{-1}$ (redução de $75{,}0\%$) e a cobertura vegetal avançou $+54$ pontos percentuais ($+360{,}0\%$ relativos), cumprindo ambas as metas do PRAD.
 
 **Condições de validade.** Distinguir *pontos percentuais* (diferença direta entre duas taxas, $69\% - 15\% = 54\text{ p.p.}$) de *variação relativa* ($+360\%$) evita ambiguidades graves em relatórios de auditoria ambiental. Além disso, a permanência de $9$ focos ativos indica necessidade de manutenção pontual no segundo ano.
+:::
 
 ## Etapa 5 - Erros de interpretação
 
+::: {.callout-warning appearance="simple"}
 ### Erro 1, Confundir Dado Bruto, Pressão e Impacto na Matriz PEIR
 
 **Equívoco frequente,** Listar “abertura de $18\text{ km}$ de estradas” na coluna de Impacto (I) ou registrar “execução de PRAD” na coluna de Estado (E).
 
 **Correção técnica,** A abertura de estradas é a ação humana geradora de perturbação, logo pertence à **Pressão (P)**. A execução do PRAD é uma intervenção corretiva da sociedade, portanto é **Resposta (R)**. O **Estado (E)** retrata a condição biofísica resultante (percentual de solo exposto), enquanto o **Impacto (I)** expressa o dano ou consequência (ravinamento em taludes, perda de biodiversidade, assoreamento).
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 2, Assumir que Energia Eólica Equivale a Impacto Ambiental Nulo
 
 **Equívoco frequente,** Afirmar em diagnósticos que parques eólicos na Caatinga não causam degradação por serem fontes renováveis de baixa emissão de carbono.
 
 **Correção técnica,** Toda fonte energética possui pegada territorial. No Semiárido Baiano, a implantação eólica envolve terraplenagem pesada, supressão linear da Caatinga, erosão em solos rasos de chapadas, riscos à avifauna (como a arara-azul-de-lear em Canudos) e conflitos fundiários e sonoros que exigem licenciamento rigoroso e monitoramento contínuo.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 3, Subestimar a Fragmentação ao Olhar Apenas o Percentual Total de Supressão
 
 **Equívoco frequente,** Concluir que uma taxa de supressão de $2\%$ em um parque eólico é ecologicamente irrelevante.
 
 **Correção técnica,** Um pequeno percentual distribuído em forma de malha viária extensa e linhas de transmissão cria centenas de metros de borda exposta, interrompe o deslocamento de fauna terrestre e concentra o escoamento superficial das chuvas torrenciais do Semiárido. Por isso, deve-se sempre complementar $T_{\text{sup}}$ com métricas espaciais como a densidade viária ($D_v$) e o índice de fragmentação.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 4, Comparar Contagens Brutas de Fauna ou Erosão sem Padronização Amostral
 
 **Equívoco frequente,** Relatar apenas o número absoluto de carcaças de aves ou focos erosivos sem considerar esforço amostral, número de torres, extensão vistoriada ou eficiência de detecção.
 
 **Correção técnica,** Sem relativização (por torre/ano ou por km de estrada) e sem correção de viés de detecção ($e \cdot p$ no monitoramento faunístico), os números não são comparáveis entre campanhas nem entre empreendimentos, comprometendo a solidez analítica exigida pela OCDE (2003).
+:::
 
 ## Etapa 6 - Exercícios de fixação
 
@@ -647,6 +719,7 @@ Exames de Geografia e concursos para Analista Ambiental frequentemente combinam 
 
 ## Etapa 8 - Gabarito comentado
 
+::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resoluções Completas, Exercícios de Fixação (1 a 15)
 
 1. **Dado bruto** é a medição isolada sem tratamento interpretativo (por exemplo, $12\text{ focos}$ erosivos contados em uma estrada). **Indicador** é a variável relativizada e ligada a um objetivo de gestão (por exemplo, $1{,}5\text{ focos erosivos}\cdot\text{km}^{-1}$ de acesso, comparado a uma meta de controle). **Índice** é a agregação matemática de múltiplos indicadores normalizados em um número sintético único (por exemplo, Índice de Qualidade do Solo combinando matéria orgânica, porosidade, infiltração e densidade).
@@ -686,13 +759,17 @@ Exames de Geografia e concursos para Analista Ambiental frequentemente combinam 
 17. **Gabarito, (B).** Apenas (B) respeita a sequência causal exata, captação/operação de barramentos (**P**) $\rightarrow$ nível fluviométrico e vegetação ripária (**E**) $\rightarrow$ conflitos hídricos e queda na pesca (**I**) $\rightarrow$ alocação negociada no CBHSF e recomposição de APPs (**R**).
 
 18. **Gabarito, (B).** A densidade semestral de incisões por km, profundidade em seções fixas georreferenciadas e cobertura vegetal de taludes cumpre todos os quatro critérios da OCDE, relevância direta à erosão, protocolo padronizado, viabilidade operacional e alta sensibilidade a medidas de drenagem e revegetação.
+:::
 
 ## Etapa 9 - Síntese conceitual
 
+::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Indicador vs. Dado vs. Índice.** Dados brutos alimentam indicadores (variáveis relativizadas com significado de gestão), que podem ser agregados em índices compostos sem descartar a leitura individual. **Critérios de seleção (OECD, 2003; Fidalgo, 2003; IBGE, 2018).** Relevância política/técnica, solidez analítica, mensurabilidade e sensibilidade. **Ciclo PEIR,** Pressão (vetores antrópicos) $\rightarrow$ Estado (condição biofísica) $\rightarrow$ Impacto (consequências ecológicas e sociais) $\rightarrow$ Resposta (mitigação, PRAD, ordenamento) $\rightarrow$ retroalimentação sobre P e E. **Campo no Semiárido Baiano (Canudos e Submédio São Francisco).** A inserção eólica e hidrelétrica exige monitoramento conjunto de supressão e fragmentação da Caatinga ($T_{\text{sup}}$ e $D_v$), erosão na base de torres e acessos, mortalidade corrigida de avifauna ($M_{\text{est}} = N_{\text{obs}}/(e\cdot p)$) e governança de vazões no Rio São Francisco.
+:::
 
 ## Etapa 10 - Verificação da aprendizagem
 
+::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
 Avalie cada afirmação com **V** (Verdadeiro) ou **F** (Falso) antes de conferir o gabarito abaixo,
 
 1. ( ) No modelo PEIR, a abertura de estradas de acesso e a terraplenagem de platôs eólicos são classificadas como *Pressão*, enquanto a formação de ravinas nos taludes configura um *Impacto*.
@@ -704,3 +781,4 @@ Avalie cada afirmação com **V** (Verdadeiro) ou **F** (Falso) antes de conferi
 4. ( ) Uma baixa taxa percentual de supressão vegetal ($2\%$) garante, por si só, ausência de fragmentação de habitats e de concentração de escoamento superficial na Caatinga.
 
 **Gabarito do verificação da aprendizagem,** 1-**V** \|-**F** (sem corrigir $e \cdot p$, a mortalidade real é subestimada) \|-**V** \|-**F** (acessos lineares geram fragmentação e concentração de enxurrada mesmo com baixo percentual de área).
+:::

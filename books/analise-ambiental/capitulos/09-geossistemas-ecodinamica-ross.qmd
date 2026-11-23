@@ -4,11 +4,15 @@ Geossistemas e ecodinâmica oferecem formas de interpretar a organização e a t
 
 ## Etapa 1 - Objetivos de aprendizagem
 
+::: {.callout-note title="O que você vai aprender neste capítulo"}
 O capítulo desenvolve a interpretação dos meios ecodinâmicos e a construção de sínteses de fragilidade. O estudante deve reconhecer a natureza ordinal das classes e justificar como relevo, solo, clima e cobertura influenciam a suscetibilidade observada.
+:::
 
 ## Etapa 2 - Conhecimentos necessários
 
+::: {.callout-tip title="Revisando o que você precisa saber"}
 A leitura retoma formação do solo, mobilização de materiais, cobertura vegetal e dinâmica de vertentes. Pedogênese e morfogênese interagem durante períodos distintos, enquanto intervenções humanas podem modificar rapidamente as condições de proteção e circulação da água.
+:::
 
 ## Etapa 3 - Fundamentação teórica
 
@@ -36,7 +40,7 @@ Inspirado na TGS e na escola russo-soviética (Sochava), o geógrafo francês **
 
 **Potencial Ecológico.** Base abiótica formada por geologia, geomorfologia, clima e hidrologia;. **Exploração Biológica.** Vegetação, solos e fauna que colonizam e protegem essa base;. **Ação Antrópica.** Organização socioeconômica, uso da terra e intervenções técnicas que transformam ou conservam o conjunto.
 
-Para evitar a confusão entre escalas regionais e locais (a falácia de escala vista no Cap. 6), Bertrand (2004) estruturou uma **taxonomia hierárquica da paisagem** em seis níveis, organizados das unidades superiores (zonais/estruturais) às unidades inferiores (dinâmicas/locais), conforme sintetiza a Tabela [taxonomia bertrand](09-geossistemas-ecodinamica-ross.qmd#tbl-taxonomia_bertrand).
+Para evitar a confusão entre escalas regionais e locais (a falácia de escala vista no Cap. 6), Bertrand (2004) estruturou uma **taxonomia hierárquica da paisagem** em seis níveis, organizados das unidades superiores (zonais/estruturais) às unidades inferiores (dinâmicas/locais), conforme sintetiza a Tabela (taxonomia bertrand).
 
 \@p2.3cm p2.2cm p2.3cm p3.1cm \>X@ **Unidade** & **Ordem (Escala G)** & **Escala Cartográfica** & **Critério Definidor Principal** & **Exemplo no Brasil / Semiárido**\
 \
@@ -56,9 +60,8 @@ Enquanto Bertrand organizou a paisagem em níveis espaciais, o geomorfólogo fra
 
 **Pedogênese.** Conjunto de processos físicos, químicos e biológicos que promovem o intemperismo das rochas, a infiltração da água e a formação/espessamento dos horizontes do solo;. **Morfogênese.** Conjunto de processos erosivos, gravitacionais e de escoamento que removem partículas da superfície, rebaixam o manto de alteração e modelam o relevo.
 
-A partir dessa competição contínua, Tricart (1977) estabelece **três grandes tipos de meios ecodinâmicos** (ilustrados no Painel A da @fig-ecodinamica_ross e detalhados na Tabela [ecodinamica tricart](09-geossistemas-ecodinamica-ross.qmd#tbl-ecodinamica_tricart)),
+A partir dessa competição contínua, Tricart (1977) estabelece **três grandes tipos de meios ecodinâmicos** (ilustrados no Painel A da @fig-ecodinamica_ross e detalhados na Tabela (ecodinamica tricart)),
 
-[]{#tbl-taxonomia_bertrand}
 
 | **Meio Ecodinâmico** | **Balanço Morfogênese vs. Pedogênese** | **Características Típicas** | **Manejo e Fragilidade** |
 |:---|:---|:---|:---|
@@ -75,7 +78,9 @@ A partir dessa competição contínua, Tricart (1977) estabelece **três grandes
 Na década de 1990, o geógrafo brasileiro **Jurandyr Luciano Sanches Ross (1994)** operacionalizou os princípios dos Geossistemas e da Ecodinâmica de Tricart em uma metodologia cartográfica e quantitativa padronizada, a **Análise Empírica da Fragilidade dos Ambientes Naturais e Antropizados**. Para manter a coerência com Tricart, Ross substituiu a expressão “meios estáveis/instáveis” por **Unidades Ecodinâmicas Estáveis** e **Unidades Ecodinâmicas de Instabilidade Potencial ou Emergente**, classificadas em **cinco graus hierárquicos**,
 
 $$
+
 1 = \text{Muito Fraca} \quad;\quad 2 = \text{Fraca} \quad;\quad 3 = \text{Média} \quad;\quad 4 = \text{Forte} \quad;\quad 5 = \text{Muito Forte}.
+
 $$
 
 
@@ -120,14 +125,18 @@ Na metodologia de Ross (1994), cada unidade geoambiental recebe um **código num
 **Passo 2, Montagem dos códigos posicionais,**
 
 $$
+
 \text{Código } FP = D_R\,D_S\,D_C \qquad\text{e}\qquad \text{Código } FE = D_R\,D_S\,D_C\,D_U.
+
 $$
 
 
 **Passo 3, Determinação da Classe Síntese de $FP$ (1 a 5).** Calcula-se a média aritmética das três variáveis físicas e arredonda-se para o inteiro mais próximo de $1$ a $5$ (em empates de $0{,}5$, adota-se o valor mais conservador ou o peso dominante do relevo $D_R$),
 
 $$
+
 I_{FP} = \frac{D_R + D_S + D_C}{3} \quad \xrightarrow{\text{arredondamento}} \quad \text{Classe } FP \in \{1, 2, 3, 4, 5\}.
+
 $$
 
 
@@ -159,6 +168,7 @@ A conferência em campo confronta o mapa com incisões ativas, surgências, dep�
 
 ## Etapa 4 - Exemplos resolvidos
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 9.1 - Enquadramento na Taxonomia da Paisagem de Bertrand (Nível Básico)
 
 **Situação analisada.** Uma equipe de Análise Ambiental da UEFS está diagnosticando processos erosivos em uma propriedade rural próxima a Feira de Santana (BA). Durante o trabalho, os estudantes precisam situar espacialmente quatro recortes, (I) o Domínio das Caatingas; (II) a sub-bacia do Rio Jacuípe (escala $1:100.000$); (III) uma vertente homogênea de pastagem sobre Argissolo ($1:15.000$); e (IV) uma voçoroca ativa com $40\,\text{m}$ de comprimento ($1:1.000$).
@@ -167,7 +177,7 @@ A conferência em campo confronta o mapa com incisões ativas, surgências, dep�
 
 **Problema a resolver.** Enquadrar corretamente cada recorte (I a IV) nas unidades taxonômicas de Bertrand (2004).
 
-**Fundamento da análise.** Aplicação direta da Tabela [taxonomia bertrand](09-geossistemas-ecodinamica-ross.qmd#tbl-taxonomia_bertrand) (unidades superiores e inferiores segundo ordem de grandeza e critério definidor).
+**Fundamento da análise.** Aplicação direta da Tabela (taxonomia bertrand) (unidades superiores e inferiores segundo ordem de grandeza e critério definidor).
 
 **Desenvolvimento.**
 
@@ -176,7 +186,9 @@ A conferência em campo confronta o mapa com incisões ativas, surgências, dep�
 **Interpretação do resultado.** I = Domínio; II = Geossistema; III = Geofácies; IV = Geótopo.
 
 **Condições de validade.** A sequência segue exatamente a ordem decrescente de grandeza espacial da taxonomia de Bertrand ($G\text{II} \to G\text{V} \to G\text{VI} \to G\text{VII}$), evitando misturar unidades regionais com feições pontuais de campo.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 9.2 - Diagnóstico Ecodinâmico de Tricart em Três Setores de Sub-bacia (Nível Básico-Intermediário) {#09-geossistemas-ecodinamica-ross-exemplo-9.2.-diagnóstico-ecodinâmico-de-tricart-em-três-setores-de-sub-bacia-nível-básicointermediário}
 
 **Situação analisada.** Ao percorrer uma sub-bacia do Piemonte da Chapada Diamantina, um geógrafo observou três compartimentos distintos, **Setor X**, chapada plana com vegetação arbórea conservada, Latossolo profundo e ausência de sulcos; **Setor Y**, rampa suave ($9\%$) com pastagem manejada, onde ocorrem infiltração moderada e leve escoamento laminar após chuvas fortes; **Setor Z**, encosta íngreme ($35\%$) desmatada, com Neossolo Litólico raso, ravinas profundas e blocos rolados.
@@ -185,7 +197,7 @@ A conferência em campo confronta o mapa com incisões ativas, surgências, dep�
 
 **Problema a resolver.** Classificar cada setor segundo a Ecodinâmica de Tricart (1977), explicando o balanço morfogênese vs. pedogênese.
 
-**Fundamento da análise.** Comparação dos processos dominantes com os critérios da Tabela [ecodinamica tricart](09-geossistemas-ecodinamica-ross.qmd#tbl-ecodinamica_tricart) e do Painel A da @fig-ecodinamica_ross.
+**Fundamento da análise.** Comparação dos processos dominantes com os critérios da Tabela (ecodinamica tricart) e do Painel A da @fig-ecodinamica_ross.
 
 **Desenvolvimento.**
 
@@ -194,7 +206,9 @@ A conferência em campo confronta o mapa com incisões ativas, surgências, dep�
 **Interpretação do resultado.** Setor X = Meio Estável; Setor Y = Meio Intergrade; Setor Z = Meio Fortemente Instável.
 
 **Condições de validade.** O diagnóstico orienta diretamente a gestão, no Setor Z a prioridade é contenção erosiva e revegetação; no Setor Y, manejo conservacionista para impedir que o meio intergrade migre para a instabilidade forte.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 9.3 - Cálculo Passo a Passo da Fragilidade Potencial e Emergente (Nível Intermediário)
 
 **Situação analisada.** Uma unidade geoambiental utilizada para estudo de planejamento municipal apresenta declividade média de $S = 15\%$, solo classificado como Argissolo profundo de textura média/argilosa, clima tropical semiárido com chuvas concentradas e torrenciais ($D_C = 4$) e uso atual por cultura temporária de mandioca em solo parcialmente descoberto.
@@ -212,7 +226,9 @@ Relevo ($S = 15\%$, faixa $12\text{-}20\%$), $D_R = 3$ (Média). Solos (Argissol
 **Atribuição dos dígitos,**. **Fragilidade Potencial ($FP$).** Código posicional $\mathbf{334}$. Média física,
 
 $$
+
 I_{FP} = \frac{3 + 3 + 4}{3} = \frac{10}{3} \approx 3{,}33 \implies \text{Classe } FP = \mathbf{3\text{ (Média)}}.
+
 $$
 
 . **Fragilidade Emergente ($FE$).** Código posicional $\mathbf{3344}$. Cruzando $FP = 3$ com $D_U = 4$ na Matriz de Ross (@fig-ecodinamica_ross, Painel B) $\implies$ **Classe $FE = 4$ (Forte)**.
@@ -220,7 +236,9 @@ $$
 **Interpretação do resultado.** Código $FP = 334$ (Classe 3, Média); Código $FE = 3344$ (Classe 4, Forte).
 
 **Condições de validade.** Note o papel agravante do uso agrícola anual ($D_U = 4$), a unidade possui fragilidade natural média ($3$), mas o cultivo temporário com baixa proteção eleva a fragilidade real emergente para forte ($4$), exigindo plantio em nível e cobertura morta.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 9.4 - Efeito Amortecedor da Vegetação na Matriz de Ross (Nível Intermediário-Avançado) {#09-geossistemas-ecodinamica-ross-exemplo-9.4.-efeito-amortecedor-da-vegetação-na-matriz-de-ross-nível-intermediárioavançado}
 
 **Situação analisada.** Considere uma encosta íngreme de $S = 24\%$ ($D_R = 4$) com Planossolo/Argissolo abrúptico ($D_S = 4$) sob regime de chuvas intensas sazonais ($D_C = 4$). Compare dois cenários de uso sobre essa mesma base física, **Cenário 1**, área mantida com mata nativa primária densa; **Cenário 2**, área totalmente desmatada e terraplanada (solo exposto) para loteamento sem drenagem.
@@ -229,7 +247,7 @@ $$
 
 **Problema a resolver.** Calcular $FP$ e $FE$ para ambos os cenários e explicar tecnicamente a diferença obtida.
 
-**Fundamento da análise.** Cálculo do código $FP$, identificação de $D_U$ pela Tabela [ross clima uso](09-geossistemas-ecodinamica-ross.qmd#tbl-ross_clima_uso) e leitura da Matriz de Fragilidade Emergente de Ross.
+**Fundamento da análise.** Cálculo do código $FP$, identificação de $D_U$ pela Tabela (ross clima uso) e leitura da Matriz de Fragilidade Emergente de Ross.
 
 **Desenvolvimento.**
 
@@ -238,7 +256,9 @@ $$
 **Interpretação do resultado.** Ambos têm $FP = 444$ (Classe 4, Forte). No Cenário 1, $FE = 4441$ (Classe 2, Fraca); no Cenário 2, $FE = 4445$ (Classe 5, Muito Forte).
 
 **Condições de validade.** O resultado comprova quantitativamente o princípio de Ross e Tricart, a floresta densa reduz em dois graus a fragilidade emergente ($4 \to 2$), mantendo o equilíbrio pedogenético; já a exposição do solo libera toda a energia potencial da encosta, disparando a fragilidade máxima ($5$).
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 9.5 - Compartimentação Geoambiental e Zoneamento de Microbacia (Nível Avançado)
 
 **Situação analisada.** Para elaborar o diagnóstico físico-ambiental do Trabalho Prático Final, uma microbacia do Semiárido baiano ($D_C = 4$ em toda a área) foi compartimentada em três Unidades Geoambientais (UGs),
@@ -258,32 +278,41 @@ $$
 **Interpretação do resultado.** UG1, $FP=114$ (2), $FE=1142$ (2, Fraca, Estável); UG2, $FP=554$ (5), $FE=5544$ (5, Muito Forte, Fortemente Instável); UG3, $FP=244$ (3), $FE=2443$ (3, Média, Intergrade).
 
 **Condições de validade.** O zoneamento resultante é ambientalmente coerente, UG1 comporta uso sustentável controlado; UG3 exige manejo conservacionista (manutenção do SAF e drenagem do Planossolo); UG2 deve ser destinada à preservação e recuperação (exclusão do gado e bioengenharia para conter ravinas).
+:::
 
 ## Etapa 5 - Erros de interpretação
 
+::: {.callout-warning appearance="simple"}
 ### Erro 1, Confundir Fragilidade Potencial ($FP$) com Fragilidade Emergente ($FE$)
 
 **Equívoco frequente.** Incluir o uso da terra ($D_U$) no cálculo da Fragilidade Potencial, ou afirmar que uma encosta íngreme florestada tem “baixa fragilidade potencial”.
 
 **Correção técnica.** A **Fragilidade Potencial ($FP$)** depende exclusivamente dos fatores físicos naturais ($D_R, D_S, D_C$). Uma encosta de $35\%$ com solo raso continua tendo **FP Muito Forte ($5$)** mesmo sob mata primária; o que a floresta reduz é a **Fragilidade Emergente ($FE$)**, que passa a depender do uso atual ($D_U$).
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 2, Inverter a escala de proteção do Uso da Terra ($D_U$) em Ross (1994)
 
 **Equívoco frequente.** Atribuir classe $5$ para floresta densa (por associar $5$ ao “máximo de vegetação”) e classe $1$ para solo exposto.
 
 **Correção técnica.** Na metodologia de Ross, **todas as variáveis seguem o sentido da fragilidade** ($1$ = menor fragilidade; $5$ = maior fragilidade). Portanto, a floresta densa, por oferecer máxima proteção contra a erosão, recebe **classe $1$**, enquanto o solo exposto recebe **classe $5$**.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 3, Tratar “Meio Intergrade” como sinônimo de “Meio Sem Risco”
 
 **Equívoco frequente.** Concluir que ambientes intergrades de Tricart são estáveis e dispensam práticas de manejo.
 
 **Correção técnica.** O meio intergrade é uma **zona de transição dinâmica** ($P \approx M$). Basta uma intervenção inadequada (queimada, sobrepastejo ou corte de talude) para que a morfogênese supere a pedogênese e o setor passe rapidamente a fortemente instável.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 4, Usar Geossistema e Ecossistema como termos idênticos sem critério escalar
 
 **Equívoco frequente.** Chamar qualquer parcela de $10\text{ m}^2$ ou um bioma continental inteiro de “geossistema”.
 
 **Correção técnica.** Na taxonomia de Bertrand (2004), o geossistema ocupa a ordem $G\text{V}$ (escala de dezenas a centenas de $\text{km}^2$, cartas de $1:50.000$ a $1:100.000$). Unidades continentais pertencem à Zona/Domínio ($G\text{I}\text{-}G\text{II}$), e unidades pontuais de campo pertencem ao Geótopo ($G\text{VII}$).
+:::
 
 ## Etapa 6 - Exercícios de fixação
 
@@ -417,6 +446,7 @@ Você completou o **Módulo 3**! Na Semana 10, a Avaliação Teórica cobrará e
 
 ## Etapa 8 - Gabarito comentado
 
+::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resoluções e Justificativas, Capítulo 9
 
 1. **Propriedade emergente (TGS).** A fragilidade ambiental resulta da interação simultânea entre relevo, solo, clima e cobertura vegetal/uso da terra. Nenhum elemento isolado define o risco final; uma declividade alta pode ser estabilizada por floresta densa, enquanto um solo frágil em clima torrencial degrada-se ao perder a vegetação.
@@ -458,15 +488,19 @@ Você completou o **Módulo 3**! Na Semana 10, a Avaliação Teórica cobrará e
 17. **Gabarito, (A).** Na Matriz de Fragilidade Emergente de Ross (@fig-ecodinamica_ross, Painel B), $FP=4 \times D_U=1 \implies FE=2$ (Fraca), enquanto $FP=4 \times D_U=5 \implies FE=5$ (Muito Forte).
 
 18. **Gabarito, (B).** Declividade acentuada ($28\%$), solo raso (Neossolo Litólico), ravinamento ativo e perda de solo caracterizam amplo predomínio da morfogênese sobre a pedogênese (Meio Fortemente Instável).
+:::
 
 ## Etapa 9 - Síntese conceitual
 
+::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **TGS (Bertalanffy, 2010).** Paisagens são sistemas abertos interdependentes; a fragilidade ambiental é uma propriedade emergente da interação entre componentes físicos e uso humano. **Taxonomia de Bertrand (2004),** Unidades Superiores (Zona $\to$ Domínio $\to$ Região Natural) e Unidades Inferiores (Geossistema $\to$ Geofácies $\to$ Geótopo). **Ecodinâmica (Tricart, 1977),** Meios Estáveis ($P \gg M$), Meios Intergrades ($P \approx M$) e Meios Fortemente Instáveis ($M \gg P$). **Fragilidade Ambiental (Ross, 1994).** Classes de $1$ (Muito Fraca) a $5$ (Muito Forte) para $D_R$, $D_S$, $D_C$ e $D_U$.
 
 **Códigos de Ross,** Fragilidade Potencial ($FP = D_R D_S D_C$, média física) e Fragilidade Emergente ($FE = D_R D_S D_C D_U$, cruzamento de $FP \times D_U$ na Matriz de Ross).
+:::
 
 ## Etapa 10 - Verificação da aprendizagem
 
+::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
 Responda rapidamente (**V** ou **F**) e confira no gabarito abaixo,
 
 1. () Na metodologia de Ross (1994), a Fragilidade Potencial ($FP$) inclui o grau de proteção da cobertura vegetal e do uso atual da terra.
@@ -478,3 +512,4 @@ Responda rapidamente (**V** ou **F**) e confira no gabarito abaixo,
 4. () Na taxonomia de Bertrand (2004), o Geótopo representa a menor unidade espacial, de detalhe extremo (como uma voçoroca ou afloramento).
 
 **Gabarito do verificação da aprendizagem,** 1-**F** ($FP$ considera apenas $D_R, D_S, D_C$; o uso $D_U$ entra apenas na Fragilidade Emergente $FE$); 2-**V**; 3-**V**; 4-**V**.
+:::

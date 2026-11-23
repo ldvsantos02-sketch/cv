@@ -4,11 +4,15 @@ A degradação por erosão resulta da interação entre disponibilidade de mater
 
 ## Etapa 1 - Objetivos de aprendizagem
 
+::: {.callout-note title="O que você vai aprender neste capítulo"}
 A aprendizagem envolve diferenciar processos erosivos, aplicar estimativas de perda de solo e interpretar medições repetidas. O estudante deve reconhecer a escala de validade de cada método e explicar como os resultados se relacionam ao transporte e à deposição de sedimentos.
+:::
 
 ## Etapa 2 - Conhecimentos necessários
 
+::: {.callout-tip title="Revisando o que você precisa saber"}
 A leitura retoma balanço de massa, densidade do solo, área e volume. Taxa de perda em toneladas por hectare e por ano, volume erodido em uma feição e carga sólida transportada no canal representam grandezas distintas e exigem procedimentos próprios.
+:::
 
 ## Etapa 3 - Fundamentação teórica
 
@@ -48,7 +52,9 @@ Desenvolvida por Wischmeier e Smith (1978) a partir de milhares de parcelas expe
 
 
 $$
+
 A = R \cdot K \cdot L \cdot S \cdot C \cdot P
+
 $$
 
 
@@ -59,7 +65,9 @@ $C$, fator de **uso, manejo e cobertura vegetal** (adimensional, entre $\approx 
 **Relação entre Perda de Massa ($A$) e Rebaixamento Superficial ($h$),** Como $1\text{ ha} = 10.000\text{ m}^2$, uma lâmina de $1\text{ mm}$ ($0{,}001\text{ m}$) de solo em $1\text{ ha}$ possui volume de $10\text{ m}^3$. Multiplicando pela densidade do solo ($D_s$ em $\text{t}\cdot\text{m}^{-3} = \text{g}\cdot\text{cm}^{-3}$), cada $1\text{ mm}$ corresponde a $10 \cdot D_s$ toneladas por hectare,
 
 $$
+
 h\,(\text{mm}\cdot\text{ano}^{-1}) = \frac{A\,(\text{t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1})}{10 \cdot D_s} \qquad \Longleftrightarrow \qquad A = 10 \cdot D_s \cdot h
+
 $$
 
 
@@ -89,6 +97,7 @@ A distinção entre ravina e voçoroca deve registrar o critério adotado. Dimen
 
 ## Etapa 4 - Exemplos resolvidos
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 12.1 (Básico). Aplicação da USLE e Comparação de Cenários de Manejo (@fig-usle_sensibilidade) {#12-degradacao-erosao-usle-exemplo-12.1-básico.-aplicação-da-usle-e-comparação-de-cenários-de-manejo-figura-figusle_sensibilidade}
 
 **Situação analisada.** Uma vertente no Semiárido Baiano apresenta os seguintes fatores físicos naturais, erosividade da chuva $R = 6.000\text{ MJ}\cdot\text{mm}\cdot\text{ha}^{-1}\cdot\text{h}^{-1}\cdot\text{ano}^{-1}$, erodibilidade do solo $K = 0{,}03\text{ t}\cdot\text{ha}\cdot\text{h}\cdot\text{ha}^{-1}\cdot\text{MJ}^{-1}\cdot\text{mm}^{-1}$ e fator topográfico combinado $LS = 1{,}5$. O limite ilustrativo de tolerância de perda de solo adotado para o local é $T = 12{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}$.
@@ -102,7 +111,9 @@ A distinção entre ravina e voçoroca deve registrar o critério adotado. Dimen
 **Desenvolvimento.** **Etapa 1, Potencial Natural de Erosão ($PNE$),**
 
 $$
+
 PNE = R \cdot K \cdot LS = 6.000 \times 0{,}03 \times 1{,}5 = 180 \times 1{,}5 = 270{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}
+
 $$
 
  Note que as unidades de $\text{MJ}$, $\text{mm}$, $\text{h}$ e um fator $\text{ha}$ cancelam-se rigorosamente entre $R$ e $K$, restando $\text{t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}$.
@@ -110,6 +121,7 @@ $$
 **Etapa 2, Perda de solo ($A$) nos cinco cenários,**
 
 $$
+
 \begin{aligned}
 A_1\; (\text{solo exposto}) &= 270{,}0 \times 1{,}00 \times 1{,}00 = 270{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1} \quad (> 12\text{, crítico}) \\
 A_2\; (\text{cultivo morro abaixo}) &= 270{,}0 \times 0{,}40 \times 1{,}00 = 108{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1} \quad (> 12\text{, insustentável}) \\
@@ -117,19 +129,24 @@ A_3\; (\text{pastagem degradada}) &= 270{,}0 \times 0{,}15 \times 1{,}00 = 40{,}
 A_4\; (\text{manejo conservacionista}) &= 270{,}0 \times 0{,}05 \times 0{,}50 = 6{,}75\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1} \quad (\le 12\text{, sustentável}) \\
 A_5\; (\text{Caatinga densa}) &= 270{,}0 \times 0{,}005 \times 1{,}00 = 1{,}35\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1} \quad (\le 12\text{, referência})
 \end{aligned}
+
 $$
 
  **Etapa 3, Redução do manejo conservacionista ($A_4$) frente ao cultivo morro abaixo ($A_2$),**
 
 $$
+
 \text{Redução} = \frac{108{,}0 - 6{,}75}{108{,}0}\times 100\% = \frac{101{,}25}{108{,}0}\times 100\% = 93{,}75\%
+
 $$
 
 
 **Interpretação do resultado.** Perdas, $270{,}0$ (solo exposto), $108{,}0$ (morro abaixo), $40{,}5$ (pastagem degradada), $6{,}75$ (manejo conservacionista) e $1{,}35\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}$ (Caatinga). Apenas os cenários 4 e 5 atendem ao limite $T = 12\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}$; o manejo conservacionista reduz a erosão em $93{,}75\%$.
 
 **Condições de validade.** Os valores coincidem integralmente com as barras da @fig-usle_sensibilidade (onde $6{,}75$ e $1{,}35$ aparecem arredondados para uma casa decimal, $6{,}8$ e $1{,}4$) e demonstram que a cobertura do solo ($C$) exerce impacto decisivo no controle da erosão.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 12.2 (Intermediário). Conversão de Perda de Solo (USLE) em Espessura de Rebaixamento Superficial
 
 **Situação analisada.** Para comunicar a agricultores e gestores o significado físico da perda de solo obtida no cenário de cultivo morro abaixo do Exemplo 12.1 ($A = 108{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}$), converta essa taxa em espessura anual de solo removido e estime quanto do horizonte A será perdido em $25$ anos.
@@ -143,26 +160,34 @@ $$
 **Desenvolvimento.** **Etapa 1, Massa correspondente a $1\text{ mm}$ de solo em $1\text{ ha}$,**
 
 $$
+
 M_{1\text{mm}} = 10 \cdot D_s = 10 \times 1{,}35 = 13{,}5\text{ t}\cdot\text{ha}^{-1}\cdot\text{mm}^{-1}
+
 $$
 
  **Etapa 2, Rebaixamento anual,**
 
 $$
+
 h = \frac{108{,}0}{13{,}5} = 8{,}00\text{ mm}\cdot\text{ano}^{-1}
+
 $$
 
  **Etapa 3, Rebaixamento acumulado em $25$ anos,**
 
 $$
+
 H_{25} = 8{,}00\text{ mm}\cdot\text{ano}^{-1} \times 25\text{ anos} = 200{,}0\text{ mm} = 20{,}0\text{ cm}
+
 $$
 
 
 **Interpretação do resultado.** Taxa de rebaixamento de $8{,}00\text{ mm}\cdot\text{ano}^{-1}$, removendo $20{,}0\text{ cm}$ de solo superficial em apenas $25$ anos.
 
 **Condições de validade.** Em solos rasos do Semiárido Baiano (como Neossolos Litólicos e Luvissolos com horizonte A entre $15$ e $25\text{ cm}$), perder $20\text{ cm}$ em um quarto de século significa eliminar completamente a camada biologicamente ativa e expor o horizonte B ou a rocha alterada, processo clássico de desertificação edáfica.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 12.3 (Intermediário). Monitoramento de Talude pelo Método dos Pinos de Erosão
 
 **Situação analisada.** Cinco pinos de erosão foram instalados ao longo de um perfil de talude exposto próximo à estrada de acesso de um empreendimento, todos com altura inicial exposta padronizada de $150\text{ mm}$. Após um ciclo hidrológico de $12$ meses, novas leituras foram coletadas com paquímetro.
@@ -176,6 +201,7 @@ $$
 **Desenvolvimento.** **Etapa 1, Variação em cada pino,**
 
 $$
+
 \begin{aligned}
 \Delta h_1 &= 168 - 150 = +18\text{ mm} \quad (\text{erosão}) \\
 \Delta h_2 &= 174 - 150 = +24\text{ mm} \quad (\text{erosão máxima no terço médio}) \\
@@ -183,25 +209,32 @@ $$
 \Delta h_4 &= 156 - 150 = +6\text{ mm} \quad (\text{erosão moderada}) \\
 \Delta h_5 &= 140 - 150 = -10\text{ mm} \quad (\text{deposição no sopé})
 \end{aligned}
+
 $$
 
  **Etapa 2, Balanço líquido médio ($\Delta \bar{h}$),**
 
 $$
+
 \Delta \bar{h} = \frac{18 + 24 + 12 + 6 + (-10)}{5} = \frac{50}{5} = +10{,}0\text{ mm}\cdot\text{ano}^{-1}
+
 $$
 
  **Etapa 3, Perda líquida equivalente de solo,**
 
 $$
+
 A_{\text{pinos}} = 10 \times 1{,}40 \times 10{,}0 = 140{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}
+
 $$
 
 
 **Interpretação do resultado.** Rebaixamento líquido médio de $10{,}0\text{ mm}\cdot\text{ano}^{-1}$, correspondente a uma perda líquida equivalente de $140{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}$.
 
 **Condições de validade.** O sinal negativo no Pino 5 ($-10\text{ mm}$) é fisicamente esperado em encostas, parte do sedimento removido dos segmentos superiores e médios deposita-se no sopé com a redução da declividade. Desconsiderar o sinal negativo superestimaria o balanço líquido da encosta.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 12.4 (Avançado). Cubagem de Solo Mobilizado em Ravina por Perfis Transversais
 
 **Situação analisada.** Para dimensionar estruturas de contenção em uma ravina ativa com $40{,}0\text{ m}$ de extensão, uma equipe levantou duas seções transversais representativas (Seção 1 a montante e Seção 2 a jusante), ambas aproximadas por geometria trapezoidal.
@@ -215,32 +248,42 @@ $$
 **Desenvolvimento.** **Etapa 1, Área das seções transversais,**
 
 $$
+
 A_1 = \frac{3{,}2 + 1{,}2}{2}\times 1{,}5 = \frac{4{,}4}{2}\times 1{,}5 = 2{,}2 \times 1{,}5 = 3{,}30\text{ m}^2
-$$
-
-
 
 $$
+
+
+
+$$
+
 A_2 = \frac{4{,}0 + 1{,}6}{2}\times 2{,}0 = \frac{5{,}6}{2}\times 2{,}0 = 2{,}8 \times 2{,}0 = 5{,}60\text{ m}^2
+
 $$
 
  **Etapa 2, Volume total mobilizado no trecho de $40\text{ m}$,**
 
 $$
+
 V = \frac{3{,}30 + 5{,}60}{2}\times 40{,}0 = \frac{8{,}90}{2}\times 40{,}0 = 4{,}45 \times 40{,}0 = 178{,}0\text{ m}^3
+
 $$
 
  **Etapa 3, Massa total de solo mobilizada,**
 
 $$
+
 M = 178{,}0\text{ m}^3 \times 1{,}45\text{ t}\cdot\text{m}^{-3} = 258{,}1\text{ t}
+
 $$
 
 
 **Interpretação do resultado.** $A_1 = 3{,}30\text{ m}^2$, $A_2 = 5{,}60\text{ m}^2$, volume escavado $V = 178{,}0\text{ m}^3$ e massa mobilizada de $258{,}1\text{ toneladas}$ de solo.
 
 **Condições de validade.** Para visualizar a magnitude do impacto, $178\text{ m}^3$ equivalem a aproximadamente $15$ a $18$ caminhões basculantes convencionais carregados de solo removidos de uma única ravina de $40\text{ m}$, grande parte dos quais segue diretamente para drenagens e açudes a jusante.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 12.5 (Avançado). Estimativa de Assoreamento de Reservatório por USLE e Razão de Aporte ($SDR$)
 
 **Situação analisada.** Uma microbacia rural de $250\text{ ha}$ no Semiárido Baiano drena para um açude comunitário com capacidade inicial de armazenamento de $160.000\text{ m}^3$. Estudos anteriores estimaram perda média de solo pela USLE de $A = 32{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}$ na microbacia e Razão de Aporte de Sedimentos $SDR = 0{,}25$ (isto é, $25\%$ do solo erodido nas vertentes atinge o reservatório).
@@ -254,57 +297,74 @@ $$
 **Desenvolvimento.** **Etapa 1, Aporte anual de sedimentos no reservatório ($Y$),**
 
 $$
+
 Y = 32{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1} \times 250\text{ ha} \times 0{,}25 = 8.000 \times 0{,}25 = 2.000{,}0\text{ t}\cdot\text{ano}^{-1}
+
 $$
 
  **Etapa 2, Volume anual de assoreamento ($V_{\text{sed}}$),**
 
 $$
+
 V_{\text{sed}} = \frac{2.000{,}0\text{ t}\cdot\text{ano}^{-1}}{1{,}25\text{ t}\cdot\text{m}^{-3}} = 1.600{,}0\text{ m}^3\cdot\text{ano}^{-1}
+
 $$
 
  **Etapa 3, Volume assoreado em $20$ anos e perda percentual de capacidade,**
 
 $$
+
 V_{20} = 1.600{,}0 \times 20 = 32.000{,}0\text{ m}^3
-$$
-
-
 
 $$
+
+
+
+$$
+
 \text{Perda percentual} = \frac{32.000{,}0}{160.000{,}0}\times 100\% = 20{,}0\%
+
 $$
 
 
 **Interpretação do resultado.** Aporte anual de $2.000{,}0\text{ t}\cdot\text{ano}^{-1}$ ($1.600{,}0\text{ m}^3\cdot\text{ano}^{-1}$), provocando perda de $20{,}0\%$ da capacidade de armazenamento do açude em $20$ anos.
 
 **Condições de validade.** O resultado demonstra a conexão indissociável entre manejo de solos nas vertentes e segurança hídrica no Semiárido, sem controle erosivo na microbacia (redução de $C$ e $P$ e recomposição ripária), um quinto do volume do reservatório desaparece em duas décadas.
+:::
 
 ## Etapa 5 - Erros de interpretação
 
+::: {.callout-warning appearance="simple"}
 ### Erro 1, Chamar Qualquer Canal Erosivo Profundo de Voçoroca
 
 **Equívoco frequente,** Classificar qualquer incisão com mais de $1\text{ m}$ de profundidade automaticamente como voçoroca sem investigar a presença de água subsuperficial.
 
 **Correção técnica,** A distinção geomorfológica entre **ravina** e **voçoroca** baseia-se no mecanismo dominante, ravinas são escavadas exclusivamente por escoamento superficial concentrado; voçorocas interceptam o lençol freático ou fluxos subsuperficiais concentrados, apresentando *piping*, surgências de água e solapamento de taludes. Esse diagnóstico muda radicalmente o projeto de recuperação (voçorocas exigem drenagem subsuperficial além do desvio de águas superficiais).
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 2, Aplicar a USLE para Estimar Erosão em Voçorocas ou Margens Fluviais
 
 **Equívoco frequente,** Usar $A = R \cdot K \cdot L \cdot S \cdot C \cdot P$ como se o resultado englobasse toda a produção de sedimentos de uma bacia com voçorocas ativas e desmoronamento de margens.
 
 **Correção técnica,** A USLE foi calibrada exclusivamente para **erosão laminar e em sulcos** nas vertentes. Processos lineares profundos (ravinas e voçorocas) e erosão marginal devem ser quantificados separadamente por perfis transversais, estacas de recuo, levantamento topográfico ou fotogrametria com drone.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 3, Misturar Unidades Métricas e Inglesas nos Fatores $R$ e $K$ da USLE
 
 **Equívoco frequente,** Multiplicar um fator $R$ no Sistema Internacional ($\text{MJ}\cdot\text{mm}\cdot\text{ha}^{-1}\cdot\text{h}^{-1}\cdot\text{ano}^{-1}$) por um fator $K$ retirado de tabelas antigas em unidades norte-americanas sem conversão.
 
 **Correção técnica,** Confira sempre a análise dimensional de $R \cdot K$, no Sistema Internacional, o produto $R \cdot K$ deve resultar diretamente em $\text{t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}$. Divergências de ordem de grandeza ($10\times$ ou $100\times$) quase sempre denunciam incompatibilidade de unidades entre $R$ e $K$.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 4, Ignorar Pinos com Valores Negativos (Deposição) no Balanço de Vertente
 
 **Equívoco frequente,** Descartar ou tomar em módulo as leituras de pinos parcialmente soterrados na base de uma encosta.
 
 **Correção técnica,** Pinos com $\Delta h < 0$ registram redistribuição interna de sedimentos (deposição). Para estimar o balanço líquido da vertente, preserva-se o sinal algébrico na média; para analisar separadamente a zona de perda máxima, reportam-se ambos os valores (erosão bruta nos segmentos de perda e balanço líquido total).
+:::
 
 ## Etapa 6 - Exercícios de fixação
 
@@ -438,6 +498,7 @@ Em concursos e no ENADE, o diagnóstico da forma erosiva (laminar, sulco, ravina
 
 ## Etapa 8 - Gabarito comentado
 
+::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resoluções Completas, Exercícios de Fixação (1 a 15)
 
 1. O impacto direto das gotas de chuva (*splash*) sobre solo desprotegido desagrega torrões e libera argila e silte em suspensão. Essas partículas finas entopem os poros da superfície, criando uma crosta de baixa permeabilidade (**selamento superficial**). Com a infiltração drasticamente reduzida, a água acumula-se na superfície e escoa em lâmina difusa, iniciando a erosão laminar.
@@ -477,18 +538,24 @@ Em concursos e no ENADE, o diagnóstico da forma erosiva (laminar, sulco, ravina
 17. **Gabarito, (E).** Como $R$, $K$ e $P$ são idênticos, a razão simplifica-se para,
 
 $$
+
 \frac{A_1}{A_2} = \frac{LS_1 \cdot C_1}{LS_2 \cdot C_2} = \frac{2{,}5 \times 0{,}80}{0{,}5 \times 0{,}01} = \frac{2{,}00}{0{,}005} = \mathbf{400}\text{ vezes maior.}
+
 $$
 
 
 18. **Gabarito, (B).** Apenas a combinação de USLE (erosão laminar e em sulcos), pinos de erosão (rebaixamento direto em taludes) e perfis transversais (cubagem de ravinas) cobre integralmente os três processos citados.
+:::
 
 ## Etapa 9 - Síntese conceitual
 
+::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Sequência evolutiva,** *splash* + selamento $\rightarrow$ erosão laminar $\rightarrow$ sulcos ($<0{,}5\text{ m}$) $\rightarrow$ ravinas ($>0{,}5\text{ m}$, fluxo superficial) $\rightarrow$ voçorocas (lençol freático, *piping* e solapamento). **USLE ($A = R \cdot K \cdot L \cdot S \cdot C \cdot P$).** Separa o potencial natural ($R\cdot K\cdot LS$) do efeito protetor do manejo ($C\cdot P$). Conversão de massa para espessura, $h\,(\text{mm}\cdot\text{ano}^{-1}) = A / (10 \cdot D_s)$. **Monitoramento em campo.** Pinos de erosão (balanço líquido $\Delta \bar{h}$), estacas externas (recuo de cabeceira), perfis transversais ($V = \frac{A_1+A_2}{2}\cdot L$) e aporte a reservatórios ($Y = A \cdot \text{Área} \cdot SDR$).
+:::
 
 ## Etapa 10 - Verificação da aprendizagem
 
+::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
 Responda com **V** (Verdadeiro) ou **F** (Falso) e confira abaixo,
 
 1. ( ) O selamento superficial causado pelo impacto direto das gotas de chuva (*splash*) reduz a taxa de infiltração e intensifica o escoamento superficial.
@@ -500,3 +567,4 @@ Responda com **V** (Verdadeiro) ou **F** (Falso) e confira abaixo,
 4. ( ) Para uma mesma taxa de perda de solo $A = 140\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}$ e densidade $D_s = 1{,}40\text{ g}\cdot\text{cm}^{-3}$, a superfície do terreno sofre rebaixamento médio de $10\text{ mm}\cdot\text{ano}^{-1}$.
 
 **Gabarito do verificação da aprendizagem,** 1-**V** \|-**F** (a USLE modela apenas erosão laminar e em sulcos) \|-**V** \|-**V** ($140 / (10 \times 1{,}40) = 10\text{ mm}\cdot\text{ano}^{-1}$).
+:::

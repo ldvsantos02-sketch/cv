@@ -4,11 +4,15 @@ A análise ambiental depende de conceitos que estabeleçam relações observáve
 
 ## Etapa 1 - Objetivos de aprendizagem
 
+::: {.callout-note title="O que você vai aprender neste capítulo"}
 O capítulo desenvolve o emprego dos conceitos em situações concretas. O estudante deve descrever uma cadeia causal, reconhecer os elementos expostos e explicar quais informações faltam para estimar a possibilidade e a gravidade de um dano.
+:::
 
 ## Etapa 2 - Conhecimentos necessários
 
+::: {.callout-tip title="Revisando o que você precisa saber"}
 A leitura retoma a relação entre processos naturais e uso da terra. Uma encosta suscetível à erosão possui condições físicas que favorecem a mobilização de partículas. A presença de uma estrada ou de uma população a jusante acrescenta elementos que podem sofrer consequências dessa mobilização.
+:::
 
 ## Etapa 3 - Fundamentação teórica
 
@@ -78,7 +82,9 @@ Quatro conceitos frequentemente confundidos em relatórios técnicos precisam se
 Na análise semiquantitativa de riscos socioambientais (alinhada ao Painel direito da @fig-aspecto-risco), o índice de risco ambiental $R$ é obtido pelo produto do nível de **Perigo / Ameaça ($P$)** pelo nível de **Vulnerabilidade ($V$)**,
 
 $$
+
 R = P \times V
+
 $$
 
  em que,
@@ -101,7 +107,9 @@ $P \in \{1, 2, 3, 4\}$, $1 = \text{Baixo}$, $2 = \text{Médio}$, $3 = \text{Alto
 Risco inicial, $R_0 = P \times V_0 = 4 \times 3 = 12$ (**Risco Crítico**). Risco final, $R_1 = P \times V_1 = 4 \times 2 = 8$ (**Risco Alto**). Variação percentual do risco,
 
 $$
+
 \Delta R\% = \frac{R_1 - R_0}{R_0} \times 100\% = \frac{8 - 12}{12} \times 100\% = \frac{-4}{12} \times 100\% \approx -33{,}33\%.
+
 $$
 
 .
@@ -135,6 +143,7 @@ O relatório precisa descrever como foram atribuídas as classes. A frequência 
 
 ## Etapa 4 - Exemplos resolvidos
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 4.1 - Cadeia Atividade-Aspecto-Impacto e Classificação em Obra Urbana (Básico) {#04-conceitos-operacionais-risco-exemplo-4.1.-cadeia-atividadeaspectoimpacto-e-classificação-em-obra-urbana-básico}
 
 **Situação analisada.** A prefeitura de Feira de Santana realiza uma obra de abertura de avenida marginal com drenagem pluvial ao longo de um córrego urbano. Durante a terraplanagem em período chuvoso, máquinas retiram a vegetação de barranco sem instalar barreiras de contenção de sedimentos, gerando enxurrada barrenta que atinge o córrego e assoreia um trecho de $400\text{ m}$ a jusante. Estruture a cadeia causal e classifique o impacto de assoreamento.
@@ -156,7 +165,9 @@ Natureza, **adverso (negativo)**;. Ordem causal, **indireto (secundário)** (dec
 **Interpretação do resultado.** Atividade, terraplanagem; Aspecto, exposição de solo sem contenção; Impacto direto, erosão/turbidez; Impacto indireto, assoreamento a jusante (adverso, indireto, imediato/médio prazo, reversível mediante intervenção, local e potencialmente cumulativo).
 
 **Condições de validade.** A separação clara entre aspecto e impacto permite atacar a causa (instalar barreiras de contenção, biomantas e drenagem provisória sobre o solo exposto) antes que o assoreamento se consolide.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 4.2 - Poluição vs. Degradação Ambiental em Duas Propriedades no Semiárido (Básico)
 
 **Situação analisada.** Durante fiscalização técnica em uma sub-bacia do Semiárido baiano, um analista avalia duas propriedades rurais vizinhas, na Propriedade Alfa, o superpastejo contínuo removeu o estrato herbáceo, compactou o solo e desencadeou sulcos e ravinas profundas em encosta; na Propriedade Beta, um pequeno laticínio lança soro de leite e água de lavagem sem tratamento diretamente em um riacho intermitente, elevando a Demanda Bioquímica de Oxigênio (DBO) muito acima dos limites do CONAMA e provocando mortandade de peixes nas poças remanescentes. Classifique cada situação quanto a degradação ambiental e poluição.
@@ -173,7 +184,9 @@ Natureza, **adverso (negativo)**;. Ordem causal, **indireto (secundário)** (dec
 **Interpretação do resultado.** Propriedade Alfa, degradação ambiental sem poluição. Propriedade Beta, poluição hídrica e, consequentemente, degradação ambiental.
 
 **Condições de validade.** O enquadramento jurídico e técnico está consistente com a relação de inclusão da PNMA (poluição $\subset$ degradação), orientando respostas distintas, manejo conservacionista do solo/pastagem em Alfa e estação de tratamento de efluentes + autuação por poluição em Beta.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 4.3 - Cálculo Matricial e Redução Percentual de Risco Ambiental ($R = P \times V$) (Intermediário)
 
 **Situação analisada.** A Defesa Civil de um município do Recôncavo Baiano mapeou três setores de uma vertente sujeita a escorregamentos (Setores A, B e C) utilizando a matriz $4 \times 4$ da @fig-aspecto-risco. Posteriormente, no setor mais grave, a prefeitura executou obras de drenagem superficial, estabilização de talude com bioengenharia e realocação das casas mais precárias. Avalie o risco inicial de cada setor e quantifique o efeito percentual da intervenção.
@@ -192,20 +205,26 @@ Setor A, $R_A = 4 \times 4 = 16$ (**Risco Crítico**). Setor B, $R_B = 3 \times 
 **Passo 3, Cenário pós-intervenção no Setor A ($P_1 = 3$, $V_1 = 2$),**
 
 $$
-R_{A,\text{final}} = 3 \times 2 = 6 \quad (\textbf{Risco Médio}).
+
+R_{A,\text{final}} = 3 \times 2 = 6 \quad (\text{Risco Médio}).
+
 $$
 
  **Passo 4, Variação percentual do risco no Setor A,**
 
 $$
+
 \Delta R\% = \frac{6 - 16}{16} \times 100\% = \frac{-10}{16} \times 100\% = -0{,}625 \times 100\% = -62{,}50\%.
+
 $$
 
 
 **Interpretação do resultado.** Inicial, Setor A = $16$ (Crítico), Setor B = $9$ (Alto), Setor C = $4$ (Médio). Após intervenção no Setor A, $R = 6$ (Médio), representando redução de $62,50\%$ no índice de risco.
 
 **Condições de validade.** O resultado faz pleno sentido matemático ($6/16 = 37,5\%$ do risco original, logo queda de $62,5\%$) e operacional, demonstrando que atuar simultaneamente sobre o perigo (engenharia/bioengenharia) e sobre a vulnerabilidade (ordenamento/habitação) produz redução expressiva de risco.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 4.4 - Fragilidade Ambiental vs. Perigo vs. Risco em Vertentes da Caatinga (Intermediário)
 
 **Situação analisada.** Considere duas vertentes geomorfologicamente idênticas no Semiárido baiano, ambas possuem $38\%$ de declividade, Neossolo Litólico raso e chuvas concentradas de alta erosividade. A Vertente 1 localiza-se no interior de um Parque Estadual preservado, sem estradas nem moradores. A Vertente 2 teve sua vegetação suprimida e recebeu um loteamento residencial irregular na base da encosta. Compare fragilidade ambiental, perigo, vulnerabilidade e risco nas duas vertentes.
@@ -224,7 +243,9 @@ $$
 **Interpretação do resultado.** Ambas possuem alta fragilidade física potencial, mas apenas a Vertente 2 apresenta risco socioambiental humano elevado, em virtude da exposição de moradores vulneráveis e da desestabilização antrópica da cobertura vegetal.
 
 **Condições de validade.** Esse contraste comprova por que mapas de fragilidade física não devem ser rotulados automaticamente como “mapas de risco” sem cruzar o dado de exposição e vulnerabilidade social.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 4.5 - Escolha entre Restauração e Reabilitação em Passivo Minerário (Avançado)
 
 **Situação analisada.** Na planície fluvial do Rio Jacuípe (BA), uma área de $8\text{ ha}$ usada por 15 anos para extração irregular de areia deixou cavas com $4\text{ m}$ de profundidade que atingiram o lençol freático, margens instáveis em desmoronamento e perda completa do horizonte A do solo. A área está hoje cercada por expansão urbana e por pequenas lavouras que aplicam fertilizantes solúveis. O Ministério Público exigiu um PRAD. Discuta a resiliência local, o potencial impacto cumulativo/sinérgico com as lavouras vizinhas e justifique tecnicamente a escolha entre restauração ecológica integral e reabilitação ambiental.
@@ -242,32 +263,41 @@ $$
 **Interpretação do resultado.** Resiliência muito baixa; risco de impacto sinérgico (eutrofização e contaminação do aquífero pela interação cava aberta + fertilizantes); estratégia indicada, **reabilitação ambiental** associada à faixa tampão vegetada nativa nas bordas, descartando a restauração topográfica integral por inviabilidade física e ecológica.
 
 **Condições de validade.** A decisão respeita a legislação (o PRAD exige recuperação, que admite reabilitação quando o retorno ao estado original é impraticável) e neutraliza tanto a instabilidade geotécnica das margens quanto a vulnerabilidade do lençol freático.
+:::
 
 ## Etapa 5 - Erros de interpretação
 
+::: {.callout-warning appearance="simple"}
 ### Erro 1, Confundir Aspecto Ambiental com Impacto Ambiental
 
 **Equívoco frequente.** Listar em uma matriz de AIA o “desmatamento” ou o “lançamento de esgoto” na coluna de *impactos ambientais*.\
 **Por que está incorreto.** Desmatamento (supressão vegetal) e lançamento de esgoto são **aspectos ambientais** (mecanismos pelos quais a atividade interage com o meio). Os **impactos** são as alterações resultantes na qualidade ambiental, perda de habitat, erosão laminar, redução do oxigênio dissolvido ou mortandade de peixes.\
 **Como evitar.** Teste sempre a frase com o conector “provoca”, *Atividade* gera *Aspecto*, que **provoca** *Impacto*.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 2, Tratar Todo Impacto como Negativo e Igualar Poluição a Degradação
 
 **Equívoco frequente.** Afirmar que “não há impacto ambiental em projetos de recuperação” ou dizer que “a erosão do solo por pastoreio é um caso de poluição”.\
 **Por que está incorreto.** Projetos de recuperação geram **impactos ambientais benéficos** (positivos); além disso, erosão sem lançamento de substâncias em desacordo com padrões legais é **degradação ambiental**, mas não necessariamente poluição.\
 **Como evitar.** Qualifique sempre o impacto (adverso ou benéfico) e verifique se houve lançamento de matéria/energia ou alteração sanitária prevista no Art. 3º, III da PNMA antes de usar o termo poluição.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 3, Confundir Fragilidade Ambiental ou Perigo com Risco
 
 **Equívoco frequente.** Chamar um mapa de declividade ou de erodibilidade de “mapa de risco ambiental” sem considerar a presença e a vulnerabilidade da população ou da infraestrutura.\
 **Por que está incorreto.** Declividade e erodibilidade expressam **fragilidade** ou **perigo físico ($P$)**. Sem vulnerabilidade ($V > 0$), não há risco socioambiental ($R = P \times V$).\
 **Como evitar.** Verifique se os dois fatores ($P$ e $V$) estão explicitamente presentes no diagnóstico antes de empregar a palavra risco.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 4, Prometer “Restauração Integral” Onde Apenas a Reabilitação é Viável
 
 **Equívoco frequente.** Redigir em um PRAD que uma cava profunda de mineração ou uma área urbana aterrada será “integralmente restaurada à sua condição original”.\
 **Por que está incorreto.** A restauração exige aproximação máxima da estrutura, composição e funções originais pré-distúrbio, o que frequentemente é impossível após alterações geomorfológicas irreversíveis. Promessas inexequíveis levam à rejeição do PRAD ou ao descumprimento de condicionantes.\
 **Como evitar.** Avalie a resiliência e o grau de alteração do relevo/solo; use **restauração** apenas quando o retorno ao ecossistema de referência for factível, e **reabilitação** quando o objetivo for um novo uso estável e seguro.
+:::
 
 ## Etapa 6 - Exercícios de fixação
 
@@ -419,6 +449,7 @@ No **EO3** (Semana 4, baseado em Sánchez, 2013, cap. 1, e Tauk-Tornisielo, 1996
 
 ## Etapa 8 - Gabarito comentado
 
+::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resolução, Nível Básico (Exercícios 1 a 5)
 
 1. **Meio ambiente (PNMA e Sánchez, 2013).** Pela Lei nº 6.938/1981 (Art. 3º, I), meio ambiente é o conjunto de condições, leis, influências e interações de ordem física, química e biológica que permite, abriga e rege a vida em todas as suas formas. Sánchez (2013) destaca a inclusão do meio construído e das relações socioeconômicas porque as atividades humanas transformam continuamente os sistemas naturais e os impactos ambientais atingem diretamente a saúde, a economia, o patrimônio e o bem-estar social (como reconhece a Resolução CONAMA nº 01/1986).
@@ -486,15 +517,19 @@ No **EO3** (Semana 4, baseado em Sánchez, 2013, cap. 1, e Tauk-Tornisielo, 1996
 17. **Gabarito, (B).** Comunidade 1, $R_1 = 3 \times 1 = 3$ (Risco Baixo). Comunidade 2, $R_2 = 3 \times 4 = 12$ (Risco Crítico). Mesmo sob igual perigo ($P = 3$), a vulnerabilidade socioespacial quadruplicou o índice de risco. Incorretas, (C) usa soma em vez de produto; (D) reduz vulnerabilidade à geologia; (E) ignora que medidas de redução de vulnerabilidade reduzem fortemente o risco.
 
 18. **Gabarito, (C).** Como a área será estabilizada e destinada a um novo uso funcional (parque de retenção de cheias) sem reconstituição da condição original, trata-se de **reabilitação ambiental** (uma modalidade legítima de recuperação prevista no escopo de um PRAD).
+:::
 
 ## Etapa 9 - Síntese conceitual
 
+::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Ambiente.** Sistema de interações físico-químicas, bióticas e socioeconômicas (Lei nº 6.938/1981; CONAMA nº 01/1986; Sánchez, 2013). **Cadeia Causal,** A atividade humana corresponde à ação praticada. O aspecto ambiental descreve o mecanismo pelo qual essa ação interage com o meio, enquanto o impacto expressa o efeito adverso ou benéfico resultante.. **Atributos dos Impactos.** Natureza (adverso/benéfico), ordem (direto/indireto), prazo (imediato/médio/longo), duração (temporário/permanente), reversibilidade, abrangência espacial, cumulatividade e sinergia. **Poluição vs. Degradação.** Degradação é o gênero (toda alteração adversa); poluição é espécie (degradação associada a danos sanitários/bióticos ou lançamento de matéria/energia fora dos padrões). **Fragilidade, Perigo, Vulnerabilidade e Risco.** Fragilidade é intrínseca ao sistema biofísico; risco exige interseção entre perigo ($P$) e vulnerabilidade ($V$), calculado na matriz $4 \times 4$ por $R = P \times V$ (1 a 3 Baixo; 4 a 6 Médio; 8 a 9 Alto; 12 a 16 Crítico).
 
 **Resiliência e Intervenção,** *recuperação* (condição não degradada, termo geral) engloba *restauração* (próximo ao original) e *reabilitação* (novo uso funcional estável); *remediação* trata contaminantes químicos; *sustentabilidade forte* respeita limites ecológicos insubstituíveis.
+:::
 
 ## Etapa 10 - Verificação da aprendizagem
 
+::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
 Responda sem consultar o texto e verifique o gabarito logo abaixo,
 
 1. (**V ou F**) Na Resolução CONAMA nº 01/1986 e em Sánchez (2013), o conceito de impacto ambiental aplica-se exclusivamente a alterações negativas provocadas por atividades industriais.
@@ -506,3 +541,4 @@ Responda sem consultar o texto e verifique o gabarito logo abaixo,
 4. **Enquadramento técnico.** Qual é a diferença fundamental de objetivo entre **restauração** e **reabilitação** ambiental?
 
 **Gabarito do verificação da aprendizagem,** **1.** **F** (impacto pode ser adverso ou benéfico e resultar de qualquer atividade humana, não apenas industrial). **2.** **V** (degradação é o gênero amplo; poluição é espécie particular). **3.** Inicial, $R = 3 \times 3 = \mathbf{9}$ (**Risco Alto**); final, $R = 3 \times 2 = \mathbf{6}$ (**Risco Médio**). **4.** A **restauração** busca restituir o ecossistema o mais próximo possível de sua condição original pré-distúrbio; a **reabilitação** destina a área degradada a um novo uso estável e funcional diferente do original.
+:::

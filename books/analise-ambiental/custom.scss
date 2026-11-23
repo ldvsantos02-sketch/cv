@@ -1,13 +1,19 @@
 /*-- scss:defaults --*/
 $primary: #1B2A4A;
 $link-color: #0E7C7B;
-$font-family-sans-serif: "Segoe UI", system-ui, sans-serif;
-$font-size-base: 1.05rem;
-$line-height-base: 1.75;
+$font-family-sans-serif: "Segoe UI", system-ui, -apple-system, sans-serif;
+$font-size-base: 1.03rem;
+$line-height-base: 1.72;
+
+$callout-color-note: #1B2A4A;
+$callout-color-tip: #0E7C7B;
+$callout-color-important: #2D6A4F;
+$callout-color-warning: #B02A37;
+$callout-color-caution: #C4983B;
 
 /*-- scss:rules --*/
 .sidebar nav[role=doc-toc] a {
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
 
 .quarto-title-meta {
@@ -15,7 +21,19 @@ $line-height-base: 1.75;
 }
 
 .callout {
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(27, 42, 74, 0.06);
+  margin: 1.35rem 0;
+}
+
+.callout-header {
+  font-weight: 600;
+}
+
+.callout.callout-style-simple {
+  background-color: #f8fafc;
+  border-left-width: 4px;
+  padding: 0.85rem 1.1rem;
 }
 
 .quarto-figure {
@@ -38,7 +56,7 @@ main.content {
 }
 
 main.content p {
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.05rem;
   text-wrap: pretty;
   hyphens: auto;
 }
@@ -51,15 +69,23 @@ main.content h3 {
   text-wrap: balance;
 }
 
+main.content h1 {
+  border-bottom: 2.5px solid #0E7C7B;
+  padding-bottom: 0.45rem;
+  margin-bottom: 1.2rem;
+}
+
 main.content h2 {
-  margin-top: 2.6rem;
-  padding-top: 0.75rem;
+  margin-top: 2.4rem;
+  padding-top: 0.65rem;
   border-top: 1px solid #dce4e9;
+  color: #1B2A4A;
 }
 
 main.content h3 {
-  margin-top: 1.8rem;
-  font-size: 1.18rem;
+  margin-top: 1.65rem;
+  font-size: 1.16rem;
+  color: #0E7C7B;
 }
 
 .sidebar-item-text {

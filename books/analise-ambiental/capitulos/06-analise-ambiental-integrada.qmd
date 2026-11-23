@@ -4,11 +4,15 @@ A análise integrada procura explicar como mudanças em um componente ambiental 
 
 ## Etapa 1 - Objetivos de aprendizagem
 
+::: {.callout-note title="O que você vai aprender neste capítulo"}
 O capítulo desenvolve a formulação de balanços, a escolha de escalas compatíveis e a interpretação das interações entre componentes. O estudante deve justificar o recorte adotado e reconhecer os processos que atravessam suas fronteiras.
+:::
 
 ## Etapa 2 - Conhecimentos necessários
 
+::: {.callout-tip title="Revisando o que você precisa saber"}
 São necessários os conceitos de bacia hidrográfica, entrada, saída e armazenamento. Uma redução de volume em um reservatório pode resultar da combinação entre menor entrada, maior saída e variação do estoque, exigindo dados de período e unidade compatíveis.
+:::
 
 ## Etapa 3 - Fundamentação teórica
 
@@ -69,13 +73,17 @@ Ignorar o acoplamento entre escalas leva à **falácia de escala**, um dos erros
 **1. Equação geral do balanço em um sistema ambiental aberto,**
 
 $$
+
 \Delta S = E - S_{\text{out}}
+
 $$
 
  Para o **balanço hídrico** de uma microbacia (em $\text{mm/ano}$),
 
 $$
+
 \Delta S = P - \left(ET + Q_s + Q_b\right)
+
 $$
 
  onde $P$ é a precipitação (entrada), $ET$ é a evapotranspiração real, $Q_s$ é o escoamento superficial direto e $Q_b$ é o escoamento de base/drenagem profunda (saídas). Se $\Delta S = 0$, há equilíbrio dinâmico; se $\Delta S < 0$, ocorre depleção do estoque hídrico do solo/aquífero; se $\Delta S > 0$, ocorre recarga.
@@ -83,20 +91,26 @@ $$
 **2. Razão de Entrega de Sedimentos (*Sediment Delivery Ratio*, SDR) e quantificação da falácia de escala,**
 
 $$
+
 \text{SDR} = \frac{Y}{E_b} \qquad \Longleftrightarrow \qquad Y = E_b \times \text{SDR}, \qquad \text{com } 0 < \text{SDR} \le 1
+
 $$
 
  onde $E_b$ é a erosão bruta nas vertentes ($\text{t/(ha}\cdot\text{ano)}$) e $Y$ é a produção específica de sedimentos medida no exutório da bacia ($\text{t/(ha}\cdot\text{ano)}$). Para uma bacia de área $A$ ($\text{ha}$), sendo $E_{b,\text{tot}} = E_b \times A$ a erosão bruta total e $Y_{\text{tot}} = Y \times A$ o aporte total no exutório ($\text{t/ano}$), a massa total retida internamente nas encostas e planícies (colúvios e alúvios) é $R_{\text{sed}} = (E_b - Y) \times A$. Quando um analista extrapola dados de parcela para a bacia assumindo implicitamente $\text{SDR} = 1$, comete erro relativo de superestimativa igual a,
 
 $$
+
 \text{Erro (\%)} = \frac{E_{b,\text{tot}} - Y_{\text{tot}}}{Y_{\text{tot}}} \times 100\% = \left(\frac{1}{\text{SDR}} - 1\right) \times 100\%.
+
 $$
 
 
 **3. Menor feição representável em carta de escala $1:D$ (erro gráfico de $0{,}2\,\text{mm}$),**
 
 $$
+
 d_{\min}\,(\text{m}) = 0{,}0002 \times D.
+
 $$
 
 
@@ -136,6 +150,7 @@ O diagnóstico deve manter registro de fonte, data, unidade e método de cada ca
 
 ## Etapa 4 - Exemplos resolvidos
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 6.1 - Balanço Hídrico em Sistema Ambiental Aberto no Semiárido (Nível Básico)
 
 **Situação analisada.** Uma microbacia experimental inserida no domínio da Caatinga foi monitorada durante um ano hidrológico completo. Deseja-se avaliar se o sistema hídrico local operou em equilíbrio dinâmico, recarga ou depleção de estoque.
@@ -151,13 +166,17 @@ O diagnóstico deve manter registro de fonte, data, unidade e método de cada ca
 **Soma das saídas do sistema ($S_{\text{out}}$),**
 
 $$
+
 S_{\text{out}} = ET + Q_s + Q_b = 545 + 115 + 35 = 695\,\text{mm/ano}.
+
 $$
 
 . **Variação do estoque hídrico ($\Delta S$),**
 
 $$
+
 \Delta S = P - S_{\text{out}} = 680 - 695 = -15\,\text{mm/ano}.
+
 $$
 
 . **Interpretação física.** O sinal negativo ($\Delta S = -15\,\text{mm/ano}$) indica que as saídas superaram as entradas em $15\,\text{mm}$; logo, o sistema consumiu parte da água armazenada previamente no solo e nos reservatórios subterrâneos rasos (depleção líquida de estoque).
@@ -165,7 +184,9 @@ $$
 **Interpretação do resultado.** Total de saídas $S_{\text{out}} = 695\,\text{mm/ano}$ e variação do estoque $\Delta S = -15\,\text{mm/ano}$, caracterizando depleção moderada do estoque hídrico interno nesse ano.
 
 **Condições de validade.** O valor é fisicamente coerente para o Semiárido baiano, a evapotranspiração consome a maior parcela da chuva ($545/680 \approx 80{,}15\%$), e déficits interanuais moderados de estoque são esperados em anos de precipitação ligeiramente abaixo da média, sendo compensados nos anos mais chuvosos se a cobertura vegetal preservar a infiltração.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 6.2 - Quantificando a Falácia de Escala pela Razão de Entrega de Sedimentos, SDR (Nível Básico-Intermediário) {#06-analise-ambiental-integrada-exemplo-6.2.-quantificando-a-falácia-de-escala-pela-razão-de-entrega-de-sedimentos-sdr-nível-básicointermediário}
 
 **Situação analisada.** Em uma parcela experimental de $20\,\text{m}^2$ de solo exposto em uma microbacia do Piemonte da Diamantina, mediu-se uma taxa de erosão bruta de $E_b = 24{,}0\,\text{t/(ha}\cdot\text{ano)}$. Para estimar o assoreamento de um açude no exutório da bacia (área total $A = 1\,500\,\text{ha}$), um técnico multiplicou diretamente a taxa da parcela pela área da bacia. Entretanto, o monitoramento hidrossedimentológico no exutório registrou uma chegada efetiva de $Y_{\text{tot}} = 9\,720\,\text{t/ano}$.
@@ -181,31 +202,41 @@ $$
 **Extrapolação linear do técnico (erosão bruta total),**
 
 $$
+
 E_{b,\text{tot}} = 24{,}0\,\text{t/(ha}\cdot\text{ano)} \times 1\,500\,\text{ha} = 36\,000\,\text{t/ano}.
+
 $$
 
 . **Produção específica real de sedimentos no exutório ($Y$),**
 
 $$
+
 Y = \frac{9\,720\,\text{t/ano}}{1\,500\,\text{ha}} = 6{,}48\,\text{t/(ha}\cdot\text{ano)}.
+
 $$
 
 . **Razão de Entrega de Sedimentos (SDR),**
 
 $$
+
 \text{SDR} = \frac{Y}{E_b} = \frac{6{,}48}{24{,}0} = 0{,}27 \quad (\text{ou } 27\%).
+
 $$
 
 . **Massa de sedimentos retida internamente na bacia,**
 
 $$
+
 R_{\text{sed}} = 36\,000 - 9\,720 = 26\,280\,\text{t/ano} \quad (73\% \text{ do solo mobilizado}).
+
 $$
 
 . **Erro percentual de superestimativa (falácia de escala),**
 
 $$
+
 \text{Erro (\%)} = \frac{36\,000 - 9\,720}{9\,720} \times 100\% = \frac{26\,280}{9\,720} \times 100\% \approx 270{,}37\%.
+
 $$
 
 .
@@ -213,7 +244,9 @@ $$
 **Interpretação do resultado.** $E_{b,\text{tot}} = 36\,000\,\text{t/ano}$; $Y = 6{,}48\,\text{t/(ha}\cdot\text{ano)}$; $\text{SDR} = 0{,}27$; sedimentos retidos $= 26\,280\,\text{t/ano}$; erro de superestimativa $= 270{,}37\%$.
 
 **Condições de validade.** Confere-se a fórmula alternativa do erro, $(1/\text{SDR} - 1)\times 100\% = (1/0{,}27 - 1)\times 100\% = (3{,}7037 - 1)\times 100\% = 270{,}37\%$. Ambientalmente, esse resultado demonstra a essência da **falácia de escala**, taxas medidas em parcela de $20\,\text{m}^2$ não consideram a rede de deposição em sopés, depressões e matas ciliares que retém $73\%$ dos sedimentos ao longo de uma bacia de $1\,500\,\text{ha}$.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 6.3 - Limiar de Infiltração e Retroalimentação Positiva versus Negativa (Nível Intermediário)
 
 **Situação analisada.** Duas vertentes vizinhas com mesma litologia e declividade no Semiárido baiano recebem a mesma chuva convectiva intensa de $I = 65{,}0\,\text{mm/h}$ durante $1$ hora. A **Vertente 1** possui cobertura de Caatinga conservada com serrapilheira e capacidade de infiltração estável $f_{c1} = 78{,}0\,\text{mm/h}$. A **Vertente 2** foi submetida a sobrepastejo contínuo, apresentando solo compactado com capacidade de infiltração reduzida para $f_{c2} = 22{,}0\,\text{mm/h}$.
@@ -229,19 +262,25 @@ $$
 **Vertente 1 (Caatinga conservada),** Como $I = 65{,}0\,\text{mm/h} < f_{c1} = 78{,}0\,\text{mm/h}$, o limiar de infiltração **não é ultrapassado**,
 
 $$
+
 R_1 = \max(0,\; 65{,}0 - 78{,}0) = 0{,}0\,\text{mm/h} \quad (0\% \text{ de escoamento hortoniano}).
+
 $$
 
  Toda a lâmina de $65{,}0\,\text{mm}$ infiltra-se, recarregando a umidade do solo, sustentando a vegetação e mantendo a estrutura porosa (**retroalimentação negativa**, estabilizadora). **Vertente 2 (Pastagem compactada),** Como $I = 65{,}0\,\text{mm/h} > f_{c2} = 22{,}0\,\text{mm/h}$, o limiar de infiltração é **rompido**,
 
 $$
+
 R_2 = 65{,}0 - 22{,}0 = 43{,}0\,\text{mm/h}.
+
 $$
 
 . **Percentual da chuva convertido em escoamento superficial na Vertente 2,**
 
 $$
+
 \frac{R_2}{I} \times 100\% = \frac{43{,}0}{65{,}0} \times 100\% \approx 66{,}15\%.
+
 $$
 
  Mais de dois terços da chuva escoam velozmente pela superfície, removendo solo fértil, sementes e nutrientes, o que dificulta a regeneração vegetal e reduz ainda mais $f_c$ nas chuvas seguintes (**retroalimentação positiva**, amplificadora da degradação).
@@ -249,7 +288,9 @@ $$
 **Interpretação do resultado.** Vertente 1, $R_1 = 0{,}0\,\text{mm/h}$ ($0\%$, abaixo do limiar, retroalimentação negativa). Vertente 2, $R_2 = 43{,}0\,\text{mm/h}$ ($66{,}15\%$ da chuva vira enxurrada, limiar rompido, retroalimentação positiva degradativa).
 
 **Condições de validade.** O contraste entre $0\,\text{mm/h}$ e $43{,}0\,\text{mm/h}$ sob exatamente a mesma chuva demonstra que a degradação no Semiárido não decorre apenas da “força da natureza”, mas da interação entre o evento climático (meio físico) e o manejo do solo/vegetação (meios biótico e antrópico).
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 6.4 - Escolha de Escala Cartográfica e Erro Gráfico Mínimo em Diagnósticos (Nível Intermediário-Avançado) {#06-analise-ambiental-integrada-exemplo-6.4.-escolha-de-escala-cartográfica-e-erro-gráfico-mínimo-em-diagnósticos-nível-intermediárioavançado}
 
 **Situação analisada.** Uma equipe de Geografia precisa mapear ravinas com largura média de $4{,}0\,\text{m}$ e faixas de mata ciliar de $15{,}0\,\text{m}$ em uma microbacia de $850\,\text{ha}$ ($8{,}5\,\text{km}^2$) próxima a Feira de Santana. A prefeitura dispõe de três bases cartográficas, uma carta regional do ZEE ($1:250\,000$), uma carta topográfica sistemática ($1:50\,000$) e um ortomosaico detalhado ($1:10\,000$).
@@ -265,19 +306,25 @@ $$
 **Carta regional ($1:250\,000$),**
 
 $$
+
 d_{\min,1} = 0{,}0002 \times 250\,000 = 50{,}0\,\text{m}.
+
 $$
 
  Nem a mata ciliar ($15{,}0\,\text{m} < 50{,}0\,\text{m}$) nem as ravinas ($4{,}0\,\text{m} < 50{,}0\,\text{m}$) podem ser representadas com fidelidade geométrica. **Carta topográfica municipal ($1:50\,000$),**
 
 $$
+
 d_{\min,2} = 0{,}0002 \times 50\,000 = 10{,}0\,\text{m}.
+
 $$
 
  A mata ciliar ($15{,}0\,\text{m} > 10{,}0\,\text{m}$) já é representável, porém as ravinas ($4{,}0\,\text{m} < 10{,}0\,\text{m}$) permanecem abaixo do limite gráfico. **Base detalhada ($1:10\,000$),**
 
 $$
+
 d_{\min,3} = 0{,}0002 \times 10\,000 = 2{,}0\,\text{m}.
+
 $$
 
  Tanto a mata ciliar ($15{,}0\,\text{m} > 2{,}0\,\text{m}$) quanto as ravinas ($4{,}0\,\text{m} > 2{,}0\,\text{m}$) são representáveis em escala real.
@@ -285,7 +332,9 @@ $$
 **Interpretação do resultado.** As menores feições representáveis são $50{,}0\,\text{m}$ ($1:250\,000$), $10{,}0\,\text{m}$ ($1:50\,000$) e $2{,}0\,\text{m}$ ($1:10\,000$). Somente a escala $1:10\,000$ (ou maior detalhe, como $1:5\,000$ obtida por drone/VANT) permite mapear simultaneamente as ravinas de $4{,}0\,\text{m}$ e a mata ciliar de $15{,}0\,\text{m}$.
 
 **Condições de validade.** Concluir que “não existem ravinas na microbacia” após inspecionar uma carta $1:250\,000$ seria um exemplo clássico de falácia de escala descendente, a ausência no mapa reflete a limitação da escala escolhida, não a inexistência do processo erosivo em campo.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 6.5 - Zoneamento Ecológico-Econômico (ZEE) e Articulação com o Ordenamento Territorial (Nível Avançado)
 
 **Situação analisada.** Após integrar levantamentos de solos, declividade, remanescentes de Caatinga, recursos hídricos e uso agropecuário, um município baiano de $1\,200\,\text{km}^2$ elaborou sua proposta de Zoneamento Ecológico-Econômico (ZEE), distribuindo o território em quatro zonas.
@@ -303,16 +352,20 @@ $Z_1$, Zona de Consolidação Produtiva, $420\,\text{km}^2$;. $Z_2$, Zona de Exp
 **Verificação da soma das áreas,** $420 + 330 + 210 + 240 = 1\,200\,\text{km}^2$ ($100{,}0\%$, fechamento exato). **Percentual de cada zona,**
 
 $$
+
 \begin{aligned}
 \%Z_1 &= \frac{420}{1\,200} \times 100\% = 35{,}0\%, & \%Z_2 &= \frac{330}{1\,200} \times 100\% = 27{,}5\%, \\
 \%Z_3 &= \frac{210}{1\,200} \times 100\% = 17{,}5\%, & \%Z_4 &= \frac{240}{1\,200} \times 100\% = 20{,}0\%.
 \end{aligned}
+
 $$
 
 . **Soma das zonas de proteção e recuperação ($Z_3 + Z_4$),**
 
 $$
+
 A_{3+4} = 210 + 240 = 450\,\text{km}^2 \implies \frac{450}{1\,200} \times 100\% = 37{,}5\% \quad (\text{ou } 17{,}5\% + 20{,}0\% = 37{,}5\%).
+
 $$
 
 . **Articulação conceitual.** O **planejamento ambiental** forneceu o diagnóstico integrado de solos, nascentes, fragilidades e áreas degradadas ($Z_3$ e $Z_4$); o **planejamento territorial** compatibilizou essas informações com as metas de produção agropecuária, estradas e abastecimento urbano ($Z_1$ e $Z_2$); o **ordenamento territorial** normatizou o mapa final do ZEE em lei/decreto, vinculando licenciamento ambiental, crédito rural e investimentos públicos às regras de cada zona.
@@ -320,9 +373,11 @@ $$
 **Interpretação do resultado.** $Z_1 = 35{,}0\%$, $Z_2 = 27{,}5\%$, $Z_3 = 17{,}5\%$ e $Z_4 = 20{,}0\%$; conservação e recuperação somam $450\,\text{km}^2$ ($37{,}5\%$ do município). O ZEE materializa o ordenamento territorial apoiado pelos planejamentos ambiental e territorial.
 
 **Condições de validade.** A soma dos percentuais fecha em $35{,}0 + 27{,}5 + 17{,}5 + 20{,}0 = 100{,}0\%$. Territorialmente, reservar $37{,}5\%$ para proteção e recuperação enquanto se direcionam $62{,}5\%$ para produção consolidada e manejo sustentável mostra que o ZEE não paralisa o desenvolvimento econômico, mas o redireciona para áreas com capacidade de suporte adequada.
+:::
 
 ## Etapa 5 - Erros de interpretação
 
+::: {.callout-warning appearance="simple"}
 ### Erro 1, Confundir retroalimentação positiva com algo “bom” ou desejável
 
 **Equívoco frequente.** Interpretar “retroalimentação positiva” como um processo ambientalmente benéfico e “retroalimentação negativa” como algo prejudicial.
@@ -330,7 +385,9 @@ $$
 **Por que está incorreto.** Na Teoria dos Sistemas, os adjetivos *positivo* e *negativo* têm sentido matemático/cibernético, não moral. **Negativa** significa que o retorno *opõe-se* ao desvio inicial e estabiliza o sistema; **positiva** significa que o retorno *soma-se* ao desvio inicial e o amplifica, constituindo o motor típico de voçorocamentos, desertificação e colapsos ecológicos.
 
 **Como evitar.** Associe sempre **negativa = freio estabilizador** e **positiva = acelerador/bola de neve**.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 2, Praticar a falácia de escala extrapolando dados de parcela diretamente para a bacia
 
 **Equívoco frequente.** Multiplicar a perda de solo medida em parcela de $10\,\text{m}^2$ pela área inteira de uma bacia de $5\,000\,\text{ha}$ e afirmar que toda aquela massa chegará ao rio principal.
@@ -338,7 +395,9 @@ $$
 **Por que está incorreto.** Ignora os estoques intermediários e a deposição ao longo das encostas e planícies (Razão de Entrega de Sedimentos $\text{SDR} < 1$). Do mesmo modo, utilizar cartas regionais ($1:250\,000$) para diagnosticar feições de poucos metros omite processos críticos locais.
 
 **Como evitar.** Explicite sempre a escala espacial e temporal da medição e verifique se o modelo ou a carta escolhida possui resolução compatível com o fenômeno analisado.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 3, Reduzir a Análise Ambiental Integrada à soma de relatórios setoriais desconexos
 
 **Equívoco frequente.** Entregar um trabalho com uma seção de geologia, uma de vegetação e uma de população que nunca se referenciam entre si.
@@ -346,7 +405,9 @@ $$
 **Por que está incorreto.** Sem explicitar como a declividade e o solo respondem à retirada da vegetação e como isso repercute no uso da terra e na oferta hídrica, não há análise integrada, apenas um inventário descritivo fragmentado.
 
 **Como evitar.** Ao redigir qualquer diagnóstico, use verbos de processo e encadeamento (infiltra, concentra, carreia, protege, amplifica, restringe) conectando explicitamente os meios físico, biótico e antrópico.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 4, Tratar planejamento ambiental, planejamento territorial e ordenamento territorial como sinônimos
 
 **Equívoco frequente.** Usar os três termos de maneira intercambiável em provas ou confundir ZEE com simples criação de Unidades de Conservação.
@@ -354,6 +415,7 @@ $$
 **Por que está incorreto.** Embora articulados, possuem recortes distintos, o planejamento ambiental foca processos e limites ecológicos; o planejamento territorial integra todas as dimensões socioespaciais e de infraestrutura; o ordenamento territorial corresponde à regulação espacial normativa do uso da terra (tendo no ZEE um instrumento que abrange tanto zonas produtivas quanto zonas de recuperação e conservação).
 
 **Como evitar.** Memorize a tríade funcional, *limites ambientais* (planejamento ambiental) $\to$ *estratégia multissetorial* (planejamento territorial) $\to$ *regulação espacial normativa* (ordenamento territorial / ZEE).
+:::
 
 ## Etapa 6 - Exercícios de fixação
 
@@ -509,6 +571,7 @@ Os conceitos deste capítulo (sistema aberto, balanço de fluxos, escalas e inte
 
 ## Etapa 8 - Gabarito comentado
 
+::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resoluções dos Exercícios 1 a 10 (Básicos e Intermediários)
 
 1. **Bacia hidrográfica como sistema aberto.** Troca continuamente energia e matéria com o entorno. *Entradas,* precipitação e radiação solar (além de insumos agrícolas). *Estoques internos,* água no solo/aquífero e biomassa/solo. *Processos,* infiltração e erosão/intemperismo. *Saídas,* vazão fluvial no exutório, sedimentos exportados e evapotranspiração.
@@ -592,15 +655,19 @@ Os conceitos deste capítulo (sistema aberto, balanço de fluxos, escalas e inte
 - **Questão 17, Gabarito, (D).** I e III estão corretas. II é falsa porque, no equilíbrio dinâmico (*steady state*), os fluxos de entrada e saída continuam ativos e equivalentes ($\Delta S \approx 0$), sem jamais cessar.
 
 - **Questão 18, Gabarito, (B).** A integração multidisciplinar de variáveis físico-bióticas e socioeconômicas para definir zonas normativas de uso produtivo, manejo, recuperação e conservação descreve exatamente o **Zoneamento Ecológico-Econômico (ZEE)**.
+:::
 
 ## Etapa 9 - Síntese conceitual
 
+::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Análise Ambiental Integrada.** Foca as conexões funcionais entre os meios **físico**, **biótico** e **antrópico**, superando diagnósticos setoriais fragmentados (Castro; Lemos, 2016; Drew, 1989). **Sistemas ambientais abertos.** Operam por entradas ($E$), estoques, processos e saídas ($S_{\text{out}}$), regidos pelo balanço $\Delta S = E - S_{\text{out}}$. **Retroalimentação negativa** estabiliza o sistema; **retroalimentação positiva** amplifica desvios e degradação; **limiares** marcam rupturas de regime. **Escalas e falácia de escala.** Escala espacial (parcela $\to$ bioma) e escala temporal (evento $\to$ tempo geológico) são acopladas. Extrapolar parcela para bacia sem $\text{SDR} = Y / E_b$ ou usar carta de pequena escala ($d_{\min} = 0{,}0002 \times D$) para feições locais configura falácia de escala.
 
 **Tríade de gestão do espaço,** **Planejamento Ambiental** (limites e potencialidades ecológicas) $\leftrightarrow$ **Planejamento Territorial** (estratégia socioespacial multissetorial) $\leftrightarrow$ **Ordenamento Territorial** (regulação normativa espacial do uso da terra, materializada no **ZEE**).
+:::
 
 ## Etapa 10 - Verificação da aprendizagem
 
+::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
 Assinale Verdadeiro (**V**) ou Falso (**F**) para confirmar o domínio do Capítulo 6 antes de iniciar o Simulado do Módulo 2,
 
 1. () Em um sistema ambiental aberto, equilíbrio dinâmico significa que as entradas igualam as saídas em média ($\Delta S \approx 0$), com circulação contínua de matéria e energia.
@@ -612,3 +679,4 @@ Assinale Verdadeiro (**V**) ou Falso (**F**) para confirmar o domínio do Capít
 4. () O Zoneamento Ecológico-Econômico (ZEE) é um instrumento de ordenamento territorial que articula zonas produtivas, de manejo sustentável, de recuperação e de proteção.
 
 **Gabarito do verificação da aprendizagem,** 1. **V**; 2. **F** (retroalimentação positiva amplifica o desvio inicial, como na erosão acelerada; quem estabiliza é a negativa); 3. **V** ($0{,}0002 \times 50\,000 = 10{,}0\,\text{m}$); 4. **V**.
+:::

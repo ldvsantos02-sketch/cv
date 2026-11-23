@@ -4,11 +4,15 @@ As abordagens socioambientais integram o funcionamento dos sistemas naturais, as
 
 ## Etapa 1 - Objetivos de aprendizagem
 
+::: {.callout-note title="O que você vai aprender neste capítulo"}
 O estudo desenvolve o uso articulado dos conceitos de ambiente, paisagem, território e geossistema. O estudante deve conseguir formular uma pergunta integrada e selecionar métodos que relacionem processos físicos, decisões de uso e experiências dos grupos envolvidos.
+:::
 
 ## Etapa 2 - Conhecimentos necessários
 
+::: {.callout-tip title="Revisando o que você precisa saber"}
 A interpretação exige reconhecer que mapas, documentos e relatos possuem escalas e finalidades diferentes. Uma unidade de solo caracteriza propriedades do terreno, um limite fundiário representa relações de propriedade e uma paisagem cultural expressa formas de reconhecimento do lugar. A integração depende da explicação de suas relações.
+:::
 
 ## Etapa 3 - Fundamentação teórica
 
@@ -101,7 +105,9 @@ O grande ganho do sistema GTP reside nas **setas bidirecionais** que conectam os
 Para auditar se um relatório ou diagnóstico ambiental realmente integra os três polos de Bertrand (2004), em vez de hipertrofiar apenas o meio físico ou apenas a descrição social, adotamos em CHF662 uma métrica operacional didática baseada na **média harmônica** das notas de cobertura técnica de cada polo ($g, t, p \in [0, 10]$),
 
 $$
+
 I_{\text{GTP}} = \frac{3\,g\,t\,p}{g\,t + g\,p + t\,p} \qquad (\text{para } g, t, p > 0)
+
 $$
 
  Caso qualquer um dos três polos esteja completamente ausente ($g = 0$, $t = 0$ ou $p = 0$), define-se $I_{\text{GTP}} = 0$, indicando ruptura da integração tripolar.
@@ -140,6 +146,7 @@ Esse índice foi construído para o treinamento proposto na apostila e deve ser 
 
 ## Etapa 4 - Exemplos resolvidos
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 3.1 - Superando a Dicotomia Físico-Humana em Enchentes Urbanas (Básico) {#03-geografia-socioambiental-gtp-exemplo-3.1.-superando-a-dicotomia-físicohumana-em-enchentes-urbanas-básico}
 
 **Situação analisada.** Durante a estação chuvosa, bairros situados na cabeceira do Rio Subaé, em Feira de Santana (BA), sofrem alagamentos recorrentes. Dois consultores emitiram pareceres conflitantes, o Parecer 1 afirmou que o problema decorre exclusivamente de chuvas convectivas intensas e relevo plano mal drenado; o Parecer 2 sustentou que se trata apenas de segregação urbana e descaso político, sem considerar a hidrografia local. Reformule o diagnóstico sob a ótica da Geografia Socioambiental.
@@ -157,7 +164,9 @@ Esse índice foi construído para o treinamento proposto na apostila e deve ser 
 **Interpretação do resultado.** Ambos os pareceres são dicotômicos (naturalista no Parecer 1; sociologizante no Parecer 2). A leitura socioambiental integra a dinâmica hidrológica da cabeceira (infiltração, relevo plano e chuvas intensas) à produção desigual do espaço urbano (impermeabilização, aterramento de lagoas e vulnerabilidade habitacional).
 
 **Condições de validade.** A síntese faz sentido ambiental e técnico porque permite combinar ações estruturais (parques lineares, retenção de águas pluviais, desimpermeabilização) com ações territoriais e sociais (revisão do zoneamento urbano e regularização fundiária segura).
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 3.2 - Distinção Operacional entre Espaço, Paisagem, Território e Ambiente (Básico)
 
 **Situação analisada.** Uma equipe de estudantes de CHF662 realiza trabalho de campo no entorno da Lagoa Grande, em Feira de Santana (BA), área que passou por obras de urbanização, requalificação paisagística e controle de drenagem. Em seus cadernos de campo, os alunos registraram quatro observações distintas e precisam classificá-las corretamente segundo as quatro categorias geográficas estudadas.
@@ -176,7 +185,9 @@ Esse índice foi construído para o treinamento proposto na apostila e deve ser 
 **Interpretação do resultado.** I = Paisagem; II = Território; III = Ambiente; IV = Espaço Geográfico.
 
 **Condições de validade.** Cada categoria respondeu a uma pergunta diferente sobre o mesmo lugar (Lagoa Grande), comprovando que os quatro termos não são sinônimos e se complementam na construção do diagnóstico.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 3.3 - Aplicação do Sistema Tripolar GTP em Parque Eólico no Semiárido (Intermediário)
 
 **Situação analisada.** Na preparação para a atividade de campo de CHF662 no eixo energético do Semiárido Baiano (região de Canudos/Sertão), solicita-se estruturar um roteiro de análise integrada sobre a implantação de um complexo eólico em chapadas e tabuleiros de Caatinga, utilizando o Sistema Tripolar GTP de Georges Bertrand (2004).
@@ -197,7 +208,9 @@ $T \leftrightarrow G$, decisões contratuais e de traçado viário do empreendim
 **Interpretação do resultado.** Polo G, dinâmica solo-água-vegetação-avifauna nas plataformas e acessos; Polo T, arrendamentos, licenciamento e conflitos fundiários; Polo P, reconfiguração visual/sonora e identidade sertaneja. As conexões $T \leftrightarrow G$ e $P \leftrightarrow T$ demonstram a indivisibilidade do sistema.
 
 **Condições de validade.** O roteiro cobre todas as dimensões exigidas na viagem de campo da Semana 11, evitando reduzir a energia eólica a um debate exclusivamente técnico-elétrico ou exclusivamente paisagístico.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 3.4 - Auditoria Quantitativa de Relatórios Ambientais com o Índice $I_{\text{GTP}}$ (Intermediário)
 
 **Situação analisada.** Para subsidiar o plano de gestão de uma microbacia no Vale do Paraguaçu (BA), um órgão público avaliou dois diagnósticos preliminares elaborados por consultorias diferentes. A comissão avaliadora atribuiu notas de $0$ a $10$ para a consistência técnica em cada polo do sistema GTP. Verifique numericamente qual diagnóstico apresenta real integração socioambiental.
@@ -211,7 +224,9 @@ $T \leftrightarrow G$, decisões contratuais e de traçado viário do empreendim
 **Desenvolvimento.** **Passo 1, Médias aritméticas,**
 
 $$
+
 \text{MA}_X = \frac{10{,}0 + 1{,}0 + 1{,}0}{3} = \frac{12{,}0}{3} = 4{,}00 \qquad\text{e}\qquad \text{MA}_Y = \frac{4{,}0 + 4{,}0 + 4{,}0}{3} = \frac{12{,}0}{3} = 4{,}00.
+
 $$
 
  Pela média aritmética simples, os dois relatórios pareceriam empatados!\
@@ -228,7 +243,9 @@ Numerador, $3 \times 4,0 \times 4,0 \times 4,0 = 192,0$. Denominador, $(4,0 \tim
 **Interpretação do resultado.** $\text{MA}_X = \text{MA}_Y = 4,00$; contudo, $I_{\text{GTP}, X} \approx 1,43$ (fragmentado) e $I_{\text{GTP}, Y} = 4,00$ (integração parcial equilibrada). O Diagnóstico Y é mais coerente com a abordagem socioambiental, embora ambos precisem ser aprimorados para atingir o patamar integrado ($\ge 7,0$).
 
 **Condições de validade.** O resultado faz pleno sentido matemático (pela desigualdade entre médias, a média harmônica é sempre menor ou igual à média aritmética, igualando-se apenas quando $g = t = p$) e ambiental (excelência isolada em mapeamento físico não compensa a omissão de conflitos territoriais e da percepção social).
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 3.5 - Desenho de Projeto Interdisciplinar em Microbacia Periurbana (Avançado)
 
 **Situação analisada.** A prefeitura de um município da Região Metropolitana de Feira de Santana contratou um estudo ambiental para uma microbacia afluente do Rio Jacuípe que enfrenta desmatamento de mata ciliar, retirada irregular de areia e expansão de chácaras sem esgotamento sanitário. A proposta inicial da empresa previa cinco relatórios isolados (Geologia, Botânica, Hidrologia, Economia e Sociologia) entregues em anexos separados, em escalas cartográficas diferentes ($1:100.000$ na Geologia e $1:5.000$ no cadastro urbano). Reestruture a proposta para garantir interdisciplinaridade efetiva.
@@ -247,32 +264,41 @@ Numerador, $3 \times 4,0 \times 4,0 \times 4,0 = 192,0$. Denominador, $(4,0 \tim
 **Interpretação do resultado.** A proposta original é meramente multidisciplinar e escalarmente incompatível. A reestruturação exige unidade espacial comum (microbacia em escala de detalhe $1:5.000$-$1:10.000$), pergunta-problema compartilhada, matriz integradora GTP e oficinas participativas (transdisciplinaridade).
 
 **Condições de validade.** A solução assegura que os dados físicos (erosão e qualidade hídrica) orientem diretamente o ordenamento territorial e a fiscalização ambiental, evitando relatórios desconexos que nunca saem da gaveta.
+:::
 
 ## Etapa 5 - Erros de interpretação
 
+::: {.callout-warning appearance="simple"}
 ### Erro 1, Empregar Espaço, Paisagem, Território e Ambiente como Sinônimos
 
 **Equívoco frequente.** Em textos acadêmicos e relatórios, o estudante escreve “território” em um parágrafo e “paisagem” ou “ambiente” no parágrafo seguinte apenas para evitar repetir a mesma palavra.\
 **Por que está incorreto.** Cada categoria define um recorte teórico e operacional distinto. Falar em “preservar a paisagem” quando o conflito envolve disputa fundiária ou poder de gestão (território) enfraquece a precisão técnica do argumento.\
 **Como evitar.** Antes de escolher o termo, pergunte qual é o foco da frase, se for poder/gestão/norma, use *território*; se for fisionomia/memória/percepção, use *paisagem*; se for interação físico-biótico-social, use *ambiente*; se for totalidade de objetos e ações, use *espaço geográfico*.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 2, Confundir Geografia Socioambiental com Soma Mecânica de Capítulos
 
 **Equívoco frequente.** Acreditar que basta escrever uma seção de “aspectos físicos” (clima, relevo, solo) e outra seção separada de “aspectos humanos” (população, economia) para cumprir a abordagem socioambiental de Mendonça (2001).\
 **Por que está incorreto.** Justapor partes desconexas reproduz a dicotomia clássico-positivista sob aparência integrada (multidisciplinaridade fragmentada).\
 **Como evitar.** Explicite sempre as **relações causais e de retroalimentação** entre as dinâmicas naturais e sociais (por exemplo, como o modelo de manejo do solo intensifica a erosão e como essa erosão reduz a renda agrícola e agrava conflitos locais).
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 3, Entender o Polo Geossistema (G) como “Natureza Intocada”
 
 **Equívoco frequente.** Imaginar que, no Sistema GTP de Bertrand (2004), o Geossistema exclui qualquer ação humana e só existiria em florestas virgens ou parques sem moradores.\
 **Por que está incorreto.** Desde 1968, e de forma ainda mais clara no modelo GTP, Bertrand inclui a **antropização** como componente interno da dinâmica geossistêmica. Uma bacia rural cultivada ou uma várzea urbana continuam operando como geossistemas, agora profundamente modificados pela sociedade.\
 **Como evitar.** Lembre que o polo G focaliza o *funcionamento biofísico e ecológico* (incluindo os efeitos físicos da ação humana), enquanto os polos T e P tratam da gestão/poder e da identidade/percepção.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 4, Tratar a Paisagem (P) como Aspecto Meramente Decorativo ou Estético
 
 **Equívoco frequente.** Desvalorizar o polo Paisagem do sistema GTP em diagnósticos ambientais, considerando-o “subjetivo demais” frente aos dados numéricos de solo e água.\
 **Por que está incorreto.** A paisagem expressa vínculos de pertencimento, memória coletiva e leitura histórica do espaço. Projetos de intervenção (como barragens, parques eólicos ou recuperação de lagoas urbanas) frequentemente fracassam ou geram forte resistência social quando ignoram o valor identitário e patrimonial que as comunidades atribuem à paisagem.\
 **Como evitar.** Integre levantamentos de percepção ambiental, história oral e patrimônio paisagístico ao diagnóstico físico e territorial.
+:::
 
 ## Etapa 6 - Exercícios de fixação
 
@@ -430,6 +456,7 @@ No **EO2** (Semana 3, baseado em Mendonça, 2001, e Bertrand, 2004) e na **Prova
 
 ## Etapa 8 - Gabarito comentado
 
+::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resolução, Nível Básico (Exercícios 1 a 5)
 
 1. **Determinismo vs. Possibilismo.** No *determinismo ambiental* (associado a Ratzel e leituras deterministas posteriores), as condições naturais (clima, relevo, solo) determinam diretamente a organização e o desenvolvimento das sociedades. No *possibilismo* (Vidal de La Blache), a natureza oferece possibilidades e condicionantes, cabendo à sociedade escolher, adaptar-se e transformar o meio por intermédio da técnica, da cultura e do *gênero de vida*.
@@ -501,15 +528,19 @@ No **EO2** (Semana 3, baseado em Mendonça, 2001, e Bertrand, 2004) e na **Prova
 17. **Gabarito, (C).** A justificativa da consultoria reproduz a dicotomia clássica natureza-sociedade, ignorando que conflitos fundiários (Território) e valores culturais/patrimoniais das serras (Paisagem) integram a Análise Ambiental moderna e influenciam diretamente a viabilidade socioambiental do empreendimento.
 
 18. **Gabarito, (D).** A análise integrada demanda escalas compatíveis, cooperação interdisciplinar em torno de perguntas comuns e articulação entre os polos G, T e P. Incorretas, (A) escalas incompatíveis impedem cruzamento espacial; (B) o geógrafo articula, não substitui os demais profissionais; (C) as categorias orientam escolhas cartográficas e analíticas; (E) transdisciplinaridade integra saberes locais às medições científicas, jamais as substitui.
+:::
 
 ## Etapa 9 - Síntese conceitual
 
+::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Trajetória histórica.** A Geografia moderna passou pelo determinismo, possibilismo, revolução teorético-quantitativa e Geografia Crítica, acumulando uma dicotomia interna entre o físico e o humano que a análise ambiental contemporânea precisa superar. **Geografia Socioambiental (Mendonça, 2001).** Reafirma a indissociabilidade entre processos biofísicos e organização social; o prefixo *socio* recusa tanto o reducionismo naturalista quanto a análise social sem materialidade ecológica. **Quatro categorias não intercambiáveis,** **Espaço geográfico** (totalidade de objetos e ações), **Paisagem** (fisionomia, memória e percepção), **Território** (poder, apropriação, normas e gestão) e **Ambiente** (interações físico-biótico-antrópicas).
 
 **Sistema Tripolar GTP (Bertrand, 2004).** Integra três entradas complementares em interação bidirecional, **G**eossistema (fonte / tempo da natureza, com antropização), **T**erritório (recurso / tempo social e jurídico) e **P**aisagem (identidade e patrimônio / tempo da cultura). **Integração de saberes.** Superar a *multidisciplinaridade* (capítulos isolados) rumo à *interdisciplinaridade* (problema e escala comuns) e à *transdisciplinaridade* (diálogo com saberes locais).
+:::
 
 ## Etapa 10 - Verificação da aprendizagem
 
+::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
 Responda sem consultar as seções anteriores e confira o gabarito ao final,
 
 1. (**V ou F**) No Sistema GTP de Bertrand (2004), o polo Geossistema exclui qualquer influência da ação humana, aplicando-se apenas a áreas de vegetação primária sem ocupação.
@@ -521,3 +552,4 @@ Responda sem consultar as seções anteriores e confira o gabarito ao final,
 4. **Cálculo rápido.** Um diagnóstico obteve notas $g = 6,0$, $t = 3,0$ e $p = 2,0$ nos polos GTP. Calcule $I_{\text{GTP}}$ e classifique o nível de integração.
 
 **Gabarito do verificação da aprendizagem,** **1.** **F** (o geossistema incorpora a antropização como força atuante na dinâmica biofísica). **2.** **F** (valoriza as especialidades físicas e humanas, mas exige sua articulação integrada em problemas socioambientais). **3.** Categoria, **Território**; Polo GTP, **T (Território, recurso/gestão/poder)**. **4.** $I_{\text{GTP}} = \frac{3 \times 6,0 \times 3,0 \times 2,0}{(6,0\times 3,0)+(6,0\times 2,0)+(3,0\times 2,0)} = \frac{108,0}{18,0 + 12,0 + 6,0} = \frac{108,0}{36,0} = \mathbf{3,00}$ (**diagnóstico fragmentado/dicotômico**, pois $I_{\text{GTP}} < 4,0$).
+:::

@@ -4,11 +4,15 @@ Qualidade do solo expressa a capacidade de desempenhar funções em determinado 
 
 ## Etapa 1 - Objetivos de aprendizagem
 
+::: {.callout-note title="O que você vai aprender neste capítulo"}
 O capítulo desenvolve a interpretação de indicadores e a construção de índices de qualidade do solo. O estudante deve demonstrar os cálculos, justificar a normalização e relacionar a pontuação obtida às funções do solo avaliadas.
+:::
 
 ## Etapa 2 - Conhecimentos necessários
 
+::: {.callout-tip title="Revisando o que você precisa saber"}
 A leitura retoma massa, volume, porosidade e matéria orgânica. Uma amostra indeformada preserva a organização necessária à determinação da densidade aparente, enquanto análises químicas utilizam procedimentos de preparo e expressão dos resultados que precisam ser registrados.
+:::
 
 ## Etapa 3 - Fundamentação teórica
 
@@ -67,20 +71,26 @@ Os indicadores biológicos costumam ser os mais sensíveis às perturbações in
 **1. Atributos Físicos (Anel Volumétrico e Porosidade),**
 
 $$
+
 D_s = \frac{m_s}{V_t} \quad (\text{g}\cdot\text{cm}^{-3}) \qquad\qquad P_t = \left(1 - \frac{D_s}{D_p}\right) \times 100\%
+
 $$
 
  Para anel saturado ($m_{\text{sat}}$), drenado a $6\text{ kPa}$ ($m_{6\text{kPa}}$) e seco em estufa ($m_s$), com $\rho_{\text{água}} = 1{,}0\text{ g}\cdot\text{cm}^{-3}$,
 
 $$
+
 P_{\text{micro}} = \frac{m_{6\text{kPa}} - m_s}{\rho_{\text{água}} \cdot V_t}\times 100\% \qquad\qquad P_{\text{macro}} = \frac{m_{\text{sat}} - m_{6\text{kPa}}}{\rho_{\text{água}} \cdot V_t}\times 100\%
+
 $$
 
 
 **2. Matéria Orgânica, Carbono Orgânico (van Bemmelen) e Estoque de Carbono,**
 
 $$
+
 CO = \frac{MO}{1{,}724} \quad \Longleftrightarrow \quad MO = CO \times 1{,}724 \qquad\qquad EC = \left(\frac{CO_{\text{g/kg}}}{1000}\right) \cdot D_s \cdot (10.000 \cdot h_{\text{m}})
+
 $$
 
  onde $EC$ é o estoque de carbono na camada de espessura $h_{\text{m}}$ (em metros), expresso em $\text{Mg C}\cdot\text{ha}^{-1}$ (toneladas de carbono por hectare), utilizando a equivalência $1\text{ g}\cdot\text{cm}^{-3} = 1\text{ Mg}\cdot\text{m}^{-3}$ para a densidade do solo $D_s$.
@@ -88,7 +98,9 @@ $$
 **3. Fertilidade Química (Bases e Saturação),**
 
 $$
+
 SB = Ca^{2+} + Mg^{2+} + K^+ + Na^+ \qquad CTC = SB + (H^+ + Al^{3+}) \qquad V\% = \frac{SB}{CTC}\times 100\%
+
 $$
 
 
@@ -99,7 +111,9 @@ $$
 A partir das pontuações normalizadas $S_i$, calcula-se o **Índice de Qualidade do Solo**,
 
 $$
+
 \text{IQS}_{\text{simples}} = \frac{1}{n}\sum_{i=1}^{n} S_i \qquad \text{ou} \qquad \text{IQS}_{\text{ponderado}} = \sum_{i=1}^{n} w_i \, S_i \quad \left(\text{com } \sum_{i=1}^{n} w_i = 1\right)
+
 $$
 
 
@@ -125,6 +139,7 @@ O IQS deve ser apresentado junto aos valores individuais e aos pesos. Duas área
 
 ## Etapa 4 - Exemplos resolvidos
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 11.1 (Básico). Cálculo de Densidade do Solo e Porosidade Total em Anel Volumétrico
 
 **Situação analisada.** Durante uma campanha prática da disciplina CHF662, foram coletadas amostras indeformadas (camada $0$-$10\text{ cm}$) utilizando anéis de Kopecky de $100\text{ cm}^3$ em dois pontos contíguos sobre o mesmo tipo de solo mineral ($D_p = 2{,}65\text{ g}\cdot\text{cm}^{-3}$), um fragmento de Caatinga conservada e a borda compactada de um acesso de parque eólico.
@@ -138,25 +153,33 @@ O IQS deve ser apresentado junto aos valores individuais e aos pesos. Duas área
 **Desenvolvimento.** **Ponto 1, Caatinga conservada,**
 
 $$
+
 D_{s,1} = \frac{122\text{ g}}{100\text{ cm}^3} = 1{,}22\text{ g}\cdot\text{cm}^{-3}
-$$
-
-
 
 $$
+
+
+
+$$
+
 P_{t,1} = \left(1 - \frac{1{,}22}{2{,}65}\right)\times 100\% = (1 - 0{,}4604)\times 100\% = 53{,}96\%
+
 $$
 
  **Ponto 2, Acesso compactado,**
 
 $$
+
 D_{s,2} = \frac{175\text{ g}}{100\text{ cm}^3} = 1{,}75\text{ g}\cdot\text{cm}^{-3}
-$$
-
-
 
 $$
+
+
+
+$$
+
 P_{t,2} = \left(1 - \frac{1{,}75}{2{,}65}\right)\times 100\% = (1 - 0{,}6604)\times 100\% = 33{,}96\%
+
 $$
 
  **Diferença de porosidade,** $P_{t,2} - P_{t,1} = 33{,}96\% - 53{,}96\% = -20{,}00$ pontos percentuais (perda relativa de $37{,}1\%$ do espaço poroso original).
@@ -164,7 +187,9 @@ $$
 **Interpretação do resultado.** Caatinga conservada, $D_s = 1{,}22\text{ g}\cdot\text{cm}^{-3}$ e $P_t = 53{,}96\%$. Acesso compactado, $D_s = 1{,}75\text{ g}\cdot\text{cm}^{-3}$ e $P_t = 33{,}96\%$.
 
 **Condições de validade.** A compactação aumentou a densidade em $0{,}53\text{ g}\cdot\text{cm}^{-3}$ e eliminou exatamente $20$ pontos percentuais de porosidade, colapsando prioritariamente os macroporos de drenagem rápida e explicando o aumento imediato de escoamento superficial na borda do acesso.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 11.2 (Básico/Intermediário). Fator de van Bemmelen e Estoque de Carbono na Camada 0 a 20 cm {#11-qualidade-solo-iqs-exemplo-11.2-básicointermediário.-fator-de-van-bemmelen-e-estoque-de-carbono-na-camada-020-cm}
 
 **Situação analisada.** Um laudo laboratorial reportou carbono orgânico total de $18{,}0\text{ g}\cdot\text{kg}^{-1}$ em um solo sob Caatinga preservada (Área A, com $D_s = 1{,}25\text{ g}\cdot\text{cm}^{-3}$). Em uma pastagem degradada adjacente no mesmo solo (Área B, com $D_s = 1{,}60\text{ g}\cdot\text{cm}^{-3}$), outro laboratório expressou o resultado em matéria orgânica total, $MO = 12{,}068\text{ g}\cdot\text{kg}^{-1}$.
@@ -178,44 +203,58 @@ $$
 **Desenvolvimento.** **Etapa 1, Conversão pelo fator de van Bemmelen,**
 
 $$
+
 MO_A = 18{,}0 \times 1{,}724 = 31{,}032\text{ g}\cdot\text{kg}^{-1} \quad (\text{ou } 3{,}10\%)
-$$
-
-
 
 $$
+
+
+
+$$
+
 CO_B = \frac{12{,}068}{1{,}724} = 7{,}00\text{ g}\cdot\text{kg}^{-1} \quad (\text{ou } 0{,}70\%)
+
 $$
 
  **Etapa 2, Volume de solo por hectare na camada de $0{,}20\text{ m}$,**
 
 $$
+
 V_{\text{ha}} = 10.000\text{ m}^2 \times 0{,}20\text{ m} = 2.000\text{ m}^3\cdot\text{ha}^{-1}
+
 $$
 
  **Etapa 3, Massa de solo e estoque de carbono ($EC$),** Na Área A, massa de solo $= 2.000\text{ m}^3 \times 1{,}25\text{ Mg}\cdot\text{m}^{-3} = 2.500\text{ Mg}\cdot\text{ha}^{-1}$. Como $CO_A = 18{,}0\text{ g}\cdot\text{kg}^{-1} = 0{,}018$,
 
 $$
+
 EC_A = 2.500 \times 0{,}018 = 45{,}00\text{ Mg C}\cdot\text{ha}^{-1}
+
 $$
 
  Na Área B, massa de solo $= 2.000\text{ m}^3 \times 1{,}60\text{ Mg}\cdot\text{m}^{-3} = 3.200\text{ Mg}\cdot\text{ha}^{-1}$. Como $CO_B = 7{,}00\text{ g}\cdot\text{kg}^{-1} = 0{,}007$,
 
 $$
+
 EC_B = 3.200 \times 0{,}007 = 22{,}40\text{ Mg C}\cdot\text{ha}^{-1}
+
 $$
 
  **Etapa 4, Perda líquida de carbono na camada fixa,**
 
 $$
+
 \Delta EC = 45{,}00 - 22{,}40 = 22{,}60\text{ Mg C}\cdot\text{ha}^{-1} \quad (\text{redução de } 50{,}2\%)
+
 $$
 
 
 **Interpretação do resultado.** Área A, $MO = 31{,}032\text{ g}\cdot\text{kg}^{-1}$ e $EC = 45{,}00\text{ Mg C}\cdot\text{ha}^{-1}$. Área B, $CO = 7{,}00\text{ g}\cdot\text{kg}^{-1}$ e $EC = 22{,}40\text{ Mg C}\cdot\text{ha}^{-1}$. Perda líquida de $22{,}60\text{ Mg C}\cdot\text{ha}^{-1}$.
 
 **Condições de validade.** Observe um cuidado avançado muito valorizado em estudos científicos, devido à compactação da Área B ($D_s = 1{,}60$ vs. $1{,}25$), uma mesma profundidade fixa de $20\text{ cm}$ contém maior massa de solo na área degradada ($3.200\text{ Mg}$ vs. $2.500\text{ Mg}$). Em pesquisas de estoques de carbono de alta precisão, corrige-se essa diferença pelo método da massa equivalente de solo; ainda assim, a perda aqui já ultrapassa metade do estoque original.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 11.3 (Intermediário). Diagnóstico Químico, Soma de Bases, CTC e Saturação por Bases ($V\%$)
 
 **Situação analisada.** Compare os laudos químicos de rotina (camada $0$-$20\text{ cm}$) de dois solos baianos, Solo 1 (Luvissolo Crômico sob Caatinga no Semiárido) e Solo 2 (Latossolo Amarelo sob pastagem degradada nos Tabuleiros Costeiros).
@@ -231,44 +270,58 @@ Solo 1, $Ca^{2+} = 5{,}40$; $Mg^{2+} = 2{,}60$; $K^+ = 0{,}45$; $Na^+ = 0{,}15$;
 **Desenvolvimento.** **Solo 1 (Luvissolo, Semiárido),**
 
 $$
+
 SB_1 = 5{,}40 + 2{,}60 + 0{,}45 + 0{,}15 = 8{,}60\text{ cmol}_c\cdot\text{dm}^{-3}
-$$
-
-
 
 $$
+
+
+
+$$
+
 CTC_1 = 8{,}60 + 2{,}40 = 11{,}00\text{ cmol}_c\cdot\text{dm}^{-3}
-$$
-
-
 
 $$
-V\%_1 = \frac{8{,}60}{11{,}00}\times 100\% = 78{,}18\% \quad (\ge 50\% \Rightarrow \textbf{Eutrófico})
+
+
+
+$$
+
+V\%_1 = \frac{8{,}60}{11{,}00}\times 100\% = 78{,}18\% \quad (\ge 50\% \Rightarrow \text{Eutrófico})
+
 $$
 
  **Solo 2 (Latossolo degradado, Tabuleiro),**
 
 $$
+
 SB_2 = 1{,}20 + 0{,}60 + 0{,}15 + 0{,}05 = 2{,}00\text{ cmol}_c\cdot\text{dm}^{-3}
-$$
-
-
 
 $$
+
+
+
+$$
+
 CTC_2 = 2{,}00 + 4{,}00 = 6{,}00\text{ cmol}_c\cdot\text{dm}^{-3}
-$$
-
-
 
 $$
-V\%_2 = \frac{2{,}00}{6{,}00}\times 100\% = 33{,}33\% \quad (< 50\% \Rightarrow \textbf{Distrófico})
+
+
+
+$$
+
+V\%_2 = \frac{2{,}00}{6{,}00}\times 100\% = 33{,}33\% \quad (< 50\% \Rightarrow \text{Distrófico})
+
 $$
 
 
 **Interpretação do resultado.** Solo 1, $SB = 8{,}60$, $CTC = 11{,}00\text{ cmol}_c\cdot\text{dm}^{-3}$ e $V\% = 78{,}18\%$ (eutrófico). Solo 2, $SB = 2{,}00$, $CTC = 6{,}00\text{ cmol}_c\cdot\text{dm}^{-3}$ e $V\% = 33{,}33\%$ (distrófico).
 
 **Condições de validade.** O resultado é plenamente coerente com a pedogênese regional, no Semiárido, a menor lixiviação preserva bases trocáveis (solos eutróficos, cuja maior limitação costuma ser hídrica e de profundidade física), enquanto nos ambientes úmidos a intensa lixiviação combinada à perda de matéria orgânica reduz $SB$, $CTC$ e $V\%$.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 11.4 (Avançado). Separação de Macro e Microporosidade em Mesa de Tensão
 
 **Situação analisada.** Uma amostra indeformada de solo ($V_t = 100\text{ cm}^3$) proveniente de uma área em recuperação com bioengenharia foi saturada por capilaridade, submetida à tensão de $6\text{ kPa}$ em mesa de tensão para drenar os macroporos e, finalmente, seca em estufa a $105\,^\circ\text{C}$.
@@ -282,19 +335,25 @@ $$
 **Desenvolvimento.** **Etapa 1, Porosidade total por saturação (água total no anel saturado),**
 
 $$
+
 P_t^{\text{sat}} = \frac{174 - 128}{1{,}0 \times 100}\times 100\% = \frac{46}{100}\times 100\% = 46{,}0\%
+
 $$
 
  **Etapa 2, Microporosidade (água retida após drenagem a $6\text{ kPa}$),**
 
 $$
+
 P_{\text{micro}} = \frac{158 - 128}{1{,}0 \times 100}\times 100\% = \frac{30}{100}\times 100\% = 30{,}0\%
+
 $$
 
  **Etapa 3, Macroporosidade (água drenada entre saturação e $6\text{ kPa}$),**
 
 $$
+
 P_{\text{macro}} = \frac{174 - 158}{1{,}0 \times 100}\times 100\% = \frac{16}{100}\times 100\% = 16{,}0\%
+
 $$
 
  **Conferência aditiva,** $P_{\text{micro}} + P_{\text{macro}} = 30{,}0\% + 16{,}0\% = 46{,}0\% = P_t^{\text{sat}}$.
@@ -302,7 +361,9 @@ $$
 **Interpretação do resultado.** $P_t^{\text{sat}} = 46{,}0\%$, $P_{\text{micro}} = 30{,}0\%$ e $P_{\text{macro}} = 16{,}0\%$. Não há restrição crítica de aeração, pois a macroporosidade supera o limiar mínimo de $10\%$.
 
 **Condições de validade.** A proporção observada (cerca de um terço de macroporos e dois terços de microporos) aproxima-se do equilíbrio físico desejável para armazenamento hídrico aliado à drenagem interna e oxigenação de raízes.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 11.5 (Avançado). Normalização Linear e Cálculo Completo do Índice de Qualidade do Solo (IQS)
 
 **Situação analisada.** Para o Trabalho Prático Final, um grupo selecionou um Conjunto Mínimo de Dados com quatro indicadores para avaliar uma encosta submetida à recuperação ambiental, comparando-a a uma mata de referência no mesmo solo.
@@ -318,62 +379,79 @@ Matéria Orgânica ($MO$, “maior melhor”), avaliada $= 16{,}0\text{ g}\cdot\
 **Desenvolvimento.** **Etapa 1, Normalização individual (escala $0$ a $1$),**
 
 $$
+
 \begin{aligned}
 S_{MO} &= \frac{16{,}0}{32{,}0} = 0{,}50 \quad \text{(maior melhor)} \\[3pt]
 S_{TIB} &= \frac{24{,}0}{60{,}0} = 0{,}40 \quad \text{(maior melhor)} \\[3pt]
 S_{D_s} &= \frac{1{,}20}{1{,}50} = 0{,}80 \quad \text{(menor melhor, razão invertida!)} \\[3pt]
 S_{DMP} &= \frac{1{,}25}{2{,}50} = 0{,}50 \quad \text{(maior melhor)}
 \end{aligned}
+
 $$
 
  **Etapa 2, Cálculo do IQS simples,**
 
 $$
+
 \text{IQS}_{\text{simples}} = \frac{0{,}50 + 0{,}40 + 0{,}80 + 0{,}50}{4} = \frac{2{,}20}{4} = 0{,}550
+
 $$
 
  **Etapa 3, Cálculo do IQS ponderado ($\sum w_i = 0{,}30 + 0{,}30 + 0{,}20 + 0{,}20 = 1{,}00$),**
 
 $$
+
 \text{IQS}_{\text{ponderado}} = (0{,}30 \times 0{,}50) + (0{,}30 \times 0{,}40) + (0{,}20 \times 0{,}80) + (0{,}20 \times 0{,}50)
-$$
-
-
 
 $$
+
+
+
+$$
+
 \text{IQS}_{\text{ponderado}} = 0{,}150 + 0{,}120 + 0{,}160 + 0{,}100 = 0{,}530
+
 $$
 
 
 **Interpretação do resultado.** Pontuações, $S_{MO}=0{,}50$, $S_{TIB}=0{,}40$, $S_{D_s}=0{,}80$, $S_{DMP}=0{,}50$. $\text{IQS}_{\text{simples}} = 0{,}550$ e $\text{IQS}_{\text{ponderado}} = 0{,}530$ (qualidade moderada). O gargalo prioritário é a taxa de infiltração básica ($S_{TIB} = 0{,}40$).
 
 **Condições de validade.** O $\text{IQS}_{\text{ponderado}}$ ($0{,}530$) ficou ligeiramente abaixo do simples ($0{,}550$) porque os maiores pesos ($0{,}30$ cada) recaíram justamente sobre a infiltração e a matéria orgânica, que apresentaram os piores desempenhos. Em campo, isso orienta ações focadas em cobertura morta, descompactação superficial e aporte orgânico.
+:::
 
 ## Etapa 5 - Erros de interpretação
 
+::: {.callout-warning appearance="simple"}
 ### Erro 1, Usar a Fórmula “Quanto Maior Melhor” para Densidade do Solo ($D_s$)
 
 **Equívoco frequente,** Normalizar $D_s$ dividindo o valor da área degradada ($1{,}75$) pelo da referência ($1{,}20$), obtendo escore superior a $1{,}0$ e premiando um solo severamente compactado.
 
 **Correção técnica,** Para densidade do solo e resistência à penetração, valores maiores indicam pior qualidade física. Deve-se aplicar obrigatoriamente a função **“quanto menor melhor”**, $S_{D_s} = \min(1;\; D_{s,\text{ref}} / D_{s,\text{avaliado}})$.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 2, Confundir Carbono Orgânico ($CO$) com Matéria Orgânica ($MO$)
 
 **Equívoco frequente,** Comparar diretamente um laudo expresso em $CO$ ($\text{g}\cdot\text{kg}^{-1}$) com outro expresso em $MO$ ($\text{g}\cdot\text{kg}^{-1}$) sem conversão prévia.
 
 **Correção técnica,** A matéria orgânica contém carbono, oxigênio, hidrogênio, nitrogênio e outros elementos; portanto, $MO$ é sempre numericamente maior que $CO$ ($MO = 1{,}724 \times CO$ pelo fator de van Bemmelen). Padronize todas as amostras na mesma grandeza antes de comparar ou calcular estoques de carbono.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 3, Comparar Áreas em Solos de Texturas Distintas Sem Referência Local
 
 **Equívoco frequente,** Classificar um Neossolo Quartzarênico arenoso ($D_s = 1{,}45\text{ g}\cdot\text{cm}^{-3}$) como degradado comparando-o a um Latossolo argiloso conservado ($D_s = 1{,}05\text{ g}\cdot\text{cm}^{-3}$).
 
 **Correção técnica,** Solos arenosos possuem naturalmente maior densidade e menor $CTC$ do que solos argilosos bem estruturados. A área de referência (vegetação nativa) deve sempre pertencer à **mesma classe de solo, textura e posição geomorfológica** da área diagnosticada.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 4, Avaliar Resistência à Penetração ($RP$) Sem Registrar a Umidade do Solo
 
 **Equívoco frequente,** Medir $RP$ na estação seca no Semiárido, obter valores acima de $4{,}0\text{ MPa}$ e diagnosticar compactação antrópica irreversível.
 
 **Correção técnica,** A resistência mecânica à penetração aumenta exponencialmente à medida que o solo seca, devido à coesão entre partículas e à sucção matricial. Leituras de penetrômetro só são comparáveis quando realizadas sob umidade controlada (idealmente próxima à capacidade de campo) ou acompanhadas do teor gravimétrico de umidade.
+:::
 
 ## Etapa 6 - Exercícios de fixação
 
@@ -519,6 +597,7 @@ Em provas de Geografia e concursos ambientais, dois detalhes costumam decidir qu
 
 ## Etapa 8 - Gabarito comentado
 
+::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resoluções Completas, Exercícios de Fixação (1 a 15)
 
 1. A fertilidade química clássica foca na disponibilidade imediata de nutrientes para produção vegetal. Já a **Qualidade do Solo** avalia o conjunto das funções ecossistêmicas (regulação hídrica, filtragem de poluentes, estocagem de carbono, sustentação da biodiversidade e resistência à erosão), exigindo integração de atributos físicos, químicos e biológicos.
@@ -558,13 +637,17 @@ Em provas de Geografia e concursos ambientais, dois detalhes costumam decidir qu
 17. **Gabarito, (B).** $V\% = (3{,}20 / 8{,}00)\times 100\% = \mathbf{40{,}0\%}$. Como $V\% < 50\%$, o solo é **distrófico**.
 
 18. **Gabarito, (E).** A alternativa (E) é incorreta porque a recuperação biológica da estrutura física do solo compactado ocorre gradualmente (meses a anos) e requer diagnóstico conjunto com indicadores físicos ($D_s$, $P_{\text{macro}}$, $TIB$ e $RP$).
+:::
 
 ## Etapa 9 - Síntese conceitual
 
+::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Funcionalidade edáfica.** A qualidade do solo mede sua capacidade de infiltrar água, ciclar nutrientes, estocar carbono e sustentar vida, avaliada sempre contra um solo de referência da mesma classe pedológica. **Tríade do MDS.** Indicadores **físicos** ($D_s$, $P_t$, $P_{\text{macro}}$, $DMP$, $TIB$, $RP$), **químicos** ($CO$, $MO = 1{,}724 \cdot CO$, pH, $SB$, $CTC$, $V\%$) e **biológicos** ($C\text{-BM}$, $RBS$, $q\text{CO}_2$, fauna e cobertura vegetal). **Cálculo do IQS.** Padronize cada atributo entre $0$ e $1$ respeitando a direção (“maior melhor” $= x_i/x_{\text{ref}}$; “menor melhor” $= x_{\text{ref}}/x_i$) e agregue via média simples ou ponderada, mantendo o gráfico radar para evidenciar gargalos individuais.
+:::
 
 ## Etapa 10 - Verificação da aprendizagem
 
+::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
 Marque **V** (Verdadeiro) ou **F** (Falso) e confira o gabarito,
 
 1. ( ) Quanto maior a densidade do solo ($D_s$) para uma mesma densidade de partículas ($D_p$), menor será a porosidade total ($P_t$).
@@ -576,3 +659,4 @@ Marque **V** (Verdadeiro) ou **F** (Falso) e confira o gabarito,
 4. ( ) No cálculo do IQS, a densidade do solo ($D_s$) segue a função “quanto menor melhor”, enquanto a taxa de infiltração básica ($TIB$) segue “quanto maior melhor”.
 
 **Gabarito do verificação da aprendizagem,** 1-**V** \|-**V** \|-**F** ($V\% \ge 50\%$ caracteriza solo eutrófico) \|-**V**.
+:::

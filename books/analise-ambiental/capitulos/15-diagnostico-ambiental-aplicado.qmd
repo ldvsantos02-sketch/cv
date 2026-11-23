@@ -4,11 +4,15 @@ O diagnóstico ambiental aplicado reúne evidências para explicar o funcionamen
 
 ## Etapa 1 - Objetivos de aprendizagem
 
+::: {.callout-note title="O que você vai aprender neste capítulo"}
 A aprendizagem envolve elaborar um diagnóstico com pergunta, recorte, dados, interpretação e proposta coerentes. O estudante deve justificar suas conclusões, reconhecer limitações e apresentar critérios de acompanhamento que permitam revisar a intervenção.
+:::
 
 ## Etapa 2 - Conhecimentos necessários
 
+::: {.callout-tip title="Revisando o que você precisa saber"}
 O trabalho articula leitura de paisagem, análise de bacia, solos, indicadores e instrumentos de gestão. A integração exige que mapas e tabelas utilizem unidades territoriais compatíveis e que diferenças de data e método sejam consideradas na interpretação.
+:::
 
 ## Etapa 3 - Fundamentação teórica
 
@@ -63,7 +67,9 @@ Para evitar diagnósticos puramente descritivos, o Trabalho Prático Final exige
 Para cada setor homogêneo avaliado na área de estudo, o Índice Composto de Priorização de Intervenção ($IPI \in [0,\,1]$) combina três dimensões normalizadas,
 
 $$
+
 IPI = w_F \cdot F_{\text{norm}} + w_S \cdot (1 - IQS) + w_P \cdot P_{\text{norm}}
+
 $$
 
  em que,
@@ -81,6 +87,7 @@ $w_F, w_S, w_P$, pesos técnicos atribuídos conforme o objetivo do diagnóstico
 | $0{,}60 \le IPI < 0{,}80$ | **Alta** | Bioengenharia leve (biomantas, estacas vivas) e recomposição de APP. |
 | $0{,}80 \le IPI \le 1{,}00$ | **Crítica** | Intervenção imediata integrada (PRAD, paliçadas, drenagem e isolamento). |
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo Estrutural da Matriz Integrada de Indicadores
 
 | **Dimensão** | **Indicador Medido** | **Fonte / Método** | **Valor / Classe** | **Papel na Resposta (PRAD)** |
@@ -89,6 +96,7 @@ $w_F, w_S, w_P$, pesos técnicos atribuídos conforme o objetivo do diagnóstico
 | **PEIR (E) / Solo** | Densidade do solo ($D_s$) e $IQS$ | Anel volumétrico / MDS | $IQS = 0{,}42$ (Baixo) | Descompactação e aporte de matéria orgânica. |
 | **Ross (FE)** | Fragilidade Emergente | Cruzamento decliv./solo/uso | $FE = 4$ (Forte) | Restrição de uso e cobertura permanente. |
 | **PEIR (I)** | Focos erosivos lineares | Campo / Imagem alta res. | $4\text{ ravinas/km}^2$ | Paliçadas permeáveis e dissipadores de energia. |
+:::
 
 ## Etapa 6, Produtos Técnicos Obrigatórios e Proposta de Intervenção
 
@@ -123,6 +131,7 @@ O plano de acompanhamento completa o diagnóstico ao definir como a hipótese e 
 
 ## Etapa 4 - Exemplos resolvidos
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 15.1 (Básico). Escolha da Escala Cartográfica e Área Mínima Mapeável ($A_{\min}$)
 
 **Situação analisada.** Uma equipe escolheu uma microbacia de $12{,}5\text{ km}^2$ no Piemonte do Paraguaçu (BA) para o Trabalho Prático Final, onde existem voçorocas com cerca de $0{,}40\text{ ha}$ de área em planta e trechos de APP marginal com $30\text{ m}$ de largura. Os discentes precisam decidir entre produzir os mapas temáticos finais na escala $1:25.000$ ou na escala regional $1:100.000$.
@@ -136,13 +145,17 @@ O plano de acompanhamento completa o diagnóstico ao definir como a hipótese e 
 **Desenvolvimento.** **1. Escala $1:25.000$,**
 
 $$
+
 A_{\min,1} = 4 \times 10^{-6} \times (25.000)^2 = 4 \times 10^{-6} \times 6{,}25 \times 10^8 = 2.500\text{ m}^2 = \mathbf{0{,}25\text{ ha}}.
+
 $$
 
  **2. Escala $1:100.000$,**
 
 $$
+
 A_{\min,2} = 4 \times 10^{-6} \times (100.000)^2 = 4 \times 10^{-6} \times 10^{10} = 40.000\text{ m}^2 = \mathbf{4{,}00\text{ ha}}.
+
 $$
 
  Comparando com a voçoroca alvo ($0{,}40\text{ ha}$), na escala $1:25.000$, $0{,}40\text{ ha} > 0{,}25\text{ ha}$ (feição representável em polígono); na escala $1:100.000$, $0{,}40\text{ ha} < 4{,}00\text{ ha}$ (feição $10$ vezes menor que o limite legível, desaparecendo no mapa).
@@ -150,7 +163,9 @@ $$
 **Interpretação do resultado.** Deve-se adotar a escala **$1:25.000$** (ou mais detalhada, como $1:15.000$), pois $A_{\min} = 0{,}25\text{ ha}$ permite cartografar a voçoroca de $0{,}40\text{ ha}$, ao passo que $1:100.000$ ($A_{\min} = 4{,}00\text{ ha}$) ocultaria o processo erosivo.
 
 **Condições de validade.** Além da área mínima, uma faixa de APP de $30\text{ m}$ mede $1{,}2\text{ mm}$ em $1:25.000$ (visível), mas apenas $0{,}3\text{ mm}$ em $1:100.000$ (espessura inferior a uma linha padrão de impressão). A escolha é cartograficamente consistente.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 15.2 (Intermediário). Montagem da Matriz Integrada e Cálculo do $IPI$ por Setor
 
 **Situação analisada.** Ao organizar a Matriz de Indicadores do Trabalho Final, uma equipe dividiu uma microbacia em três setores homogêneos e levantou, por meio de QGIS, campo e análise de solo, os valores de Fragilidade Emergente ($FE$), Índice de Qualidade do Solo ($IQS$) e Pressão/Impacto PEIR normalizado ($P_{\text{norm}}$).
@@ -167,26 +182,34 @@ Pesos adotados, $w_F = 0{,}35$, $w_S = 0{,}35$, $w_P = 0{,}30$.
 **Desenvolvimento.** **Setor A,** $F_{\text{norm}} = (5 - 1)/4 = 1{,}00$; $(1 - IQS) = 1 - 0{,}36 = 0{,}64$.
 
 $$
+
 IPI_A = 0{,}35(1{,}00) + 0{,}35(0{,}64) + 0{,}30(0{,}90) = 0{,}350 + 0{,}224 + 0{,}270 = \mathbf{0{,}844}\quad(\text{Prioridade Crítica}).
+
 $$
 
  **Setor B,** $F_{\text{norm}} = (3 - 1)/4 = 0{,}50$; $(1 - IQS) = 1 - 0{,}60 = 0{,}40$.
 
 $$
+
 IPI_B = 0{,}35(0{,}50) + 0{,}35(0{,}40) + 0{,}30(0{,}50) = 0{,}175 + 0{,}140 + 0{,}150 = \mathbf{0{,}465}\quad(\text{Prioridade Média}).
+
 $$
 
  **Setor C,** $F_{\text{norm}} = (2 - 1)/4 = 0{,}25$; $(1 - IQS) = 1 - 0{,}88 = 0{,}12$.
 
 $$
+
 IPI_C = 0{,}35(0{,}25) + 0{,}35(0{,}12) + 0{,}30(0{,}10) = 0{,}0875 + 0{,}0420 + 0{,}0300 = \mathbf{0{,}1595}\approx \mathbf{0{,}160}\quad(\text{Prioridade Baixa}).
+
 $$
 
 
 **Interpretação do resultado.** $IPI_A = \mathbf{0{,}844}$ (Crítica, PRAD e bioengenharia imediatos); $IPI_B = \mathbf{0{,}465}$ (Média, manejo conservacionista); $IPI_C = \mathbf{0{,}160}$ (Baixa, manutenção e monitoramento).
 
 **Condições de validade.** Todos os valores permanecem dentro do intervalo teórico $[0,\,1]$, e a ordenação ($A > B > C$) reflete fielmente o gradiente de degradação observado.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 15.3 (Intermediário). Quantificação de Passivo em APP Marginal e Demanda de Mudas
 
 **Situação analisada.** Na sobreposição entre a hidrografia vetorial, o SICAR e o MapBiomas, uma equipe diagnosticou um trecho de $2.000\text{ m}$ de curso d’água com $12\text{ m}$ de largura regular, no qual a mata ciliar foi parcialmente substituída por pastagem degradada.
@@ -200,32 +223,42 @@ $$
 **Desenvolvimento.** **1. Área total de APP legal (duas margens),**
 
 $$
+
 A_{\text{APP}} = 2 \times 50\text{ m} \times 2.000\text{ m} = 200.000\text{ m}^2 = \mathbf{20{,}0\text{ ha}}.
+
 $$
 
  **2. Passivo ambiental a recompor ($35\%$),**
 
 $$
+
 A_{\text{passivo}} = 0{,}35 \times 20{,}0\text{ ha} = \mathbf{7{,}0\text{ ha}}.
+
 $$
 
  **3. Quantidade de mudas (plantio inicial + $10\%$ de replantio),**
 
 $$
+
 N_{\text{inicial}} = 7{,}0\text{ ha} \times 2.000\text{ mudas}\cdot\text{ha}^{-1} = 14.000\text{ mudas}.
-$$
-
-
 
 $$
+
+
+
+$$
+
 N_{\text{total}} = 14.000 \times 1{,}10 = \mathbf{15.400\text{ mudas}}.
+
 $$
 
 
 **Interpretação do resultado.** APP total $= \mathbf{20{,}0\text{ ha}}$; passivo a recompor $= \mathbf{7{,}0\text{ ha}}$; demanda total do viveiro $= \mathbf{15.400\text{ mudas nativas}}$.
 
 **Condições de validade.** Para $7{,}0\text{ ha}$, o número inicial de $14.000$ mudas equivale exatamente a $1$ muda a cada $5\text{ m}^2$ ($70.000 / 5 = 14.000$), e o acréscimo de $10\%$ ($1.400$ mudas) garante a reposição de eventuais perdas no primeiro ciclo seco.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 15.4 (Avançado). Seleção de Alternativa de Intervenção por Custo-Efetividade ($CE$)
 
 **Situação analisada.** Para conter o aporte de sedimentos em uma ravina crítica ($IPI = 0{,}84$) identificada no Trabalho Final, a equipe comparou duas propostas preliminares de intervenção, Pacote 1 (paliçadas permeáveis de bambu, biomanta e revegetação com espécies nativas) e Pacote 2 (enrocamento com gabiões de pedra e canaleta rígida de concreto).
@@ -240,20 +273,26 @@ $$
 **Desenvolvimento.** **1. Pacote 1 (Bioengenharia),**
 
 $$
+
 CE_1 = \frac{180\text{ t}\cdot\text{ano}^{-1}}{18{,}0\text{ (milhares de reais)}} = \mathbf{10{,}0\text{ t}\cdot\text{ano}^{-1}\text{ por }\text{R\$ }1.000{,}00}.
+
 $$
 
  **2. Pacote 2 (Obra Rígida),**
 
 $$
+
 CE_2 = \frac{225\text{ t}\cdot\text{ano}^{-1}}{45{,}0\text{ (milhares de reais)}} = \mathbf{5{,}0\text{ t}\cdot\text{ano}^{-1}\text{ por }\text{R\$ }1.000{,}00}.
+
 $$
 
 
 **Interpretação do resultado.** O Pacote 1 apresenta retenção estimada de 10,0 toneladas por ano a cada R\$ 1.000,00 investidos, enquanto o Pacote 2 apresenta 5,0 toneladas por ano para o mesmo custo de referência. Nos dados didáticos fornecidos, o primeiro pacote apresenta o dobro da retenção estimada por unidade de custo. A seleção final deve considerar também a compatibilidade técnica, a duração da intervenção e sua manutenção.
 
 **Condições de validade.** O Pacote 2 retém apenas $25\%$ a mais de sedimentos ($225$ contra $180\text{ t}\cdot\text{ano}^{-1}$), mas custa $2{,}5$ vezes mais ($\text{R\$ }45.000$ contra $\text{R\$ }18.000$), confirmando a vantagem técnica e econômica da bioengenharia em ravinas de pequeno e médio porte.
+:::
 
+::: {.callout-tip appearance="simple"}
 ### Exemplo 15.5 (Aplicado). Auditoria Pré-Entrega pela Rubrica Oficial CHF662 ($5{,}0$ Pontos)
 
 **Situação analisada.** Uma semana antes da socialização da Semana 16, um grupo realizou uma simulação de autoavaliação de seu rascunho de Trabalho Prático Final utilizando a Rubrica Oficial de $5{,}0$ pontos da disciplina CHF662.
@@ -269,13 +308,17 @@ Critério 1 (Delimitação e bases, máx. $1{,}0$), $0{,}70$ (faltou indicar o d
 **Desenvolvimento.** **1. Pontuação atual do rascunho,**
 
 $$
+
 N_{\text{atual}} = 0{,}70 + 0{,}90 + 1{,}00 + 0{,}85 + 0{,}75 = \mathbf{4{,}20\text{ pontos}}.
+
 $$
 
  **2. Percentual atingido sobre $5{,}0$ pontos,**
 
 $$
+
 \frac{4{,}20}{5{,}00} \times 100\% = \mathbf{84{,}0\%}.
+
 $$
 
  **3. Maiores déficits,** Critério 4 ($1{,}20 - 0{,}85 = 0{,}35\text{ pt}$) e Critério 1 ($1{,}00 - 0{,}70 = 0{,}30\text{ pt}$).
@@ -283,32 +326,41 @@ $$
 **Interpretação do resultado.** Pontuação atual $= \mathbf{4{,}20\text{ pts}}$ ($84{,}0\%$). Inserir metas mensuráveis de monitoramento no PRAD ($+0{,}35\text{ pt}$) e completar o datum SIRGAS 2000 e a escala gráfica no mapa ($+0{,}30\text{ pt}$) eleva o trabalho para $4{,}85\text{ pts}$ ($97{,}0\%$).
 
 **Condições de validade.** A soma das perdas totais ($0{,}30 + 0{,}10 + 0{,}00 + 0{,}35 + 0{,}05 = 0{,}80\text{ pt}$) fecha exatamente com $5{,}00 - 4{,}20 = 0{,}80\text{ pt}$.
+:::
 
 ## Etapa 5 - Erros de interpretação
 
+::: {.callout-warning appearance="simple"}
 ### Erro 1, Produzir Mapas sem Datum, Escala Gráfica ou Grade de Coordenadas
 
 **Equívoco frequente,** Exportar layouts do QGIS apenas com o desenho colorido da microbacia, omitindo o sistema de referência (SIRGAS 2000), a barra de escala, a seta Norte ou a fonte dos dados.
 
 **Correção técnica,** Mapa sem elementos cartográficos obrigatórios perde validade técnica e sofre desconto imediato na rubrica de avaliação. Utilize um modelo padronizado no Compositor de Impressão do QGIS com os seis elementos conferidos antes de exportar em PDF/PNG de alta resolução ($300\text{ dpi}$).
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 2, Calcular Áreas e Comprimentos em Graus Decimais (Coordenadas Geográficas)
 
 **Equívoco frequente,** Deixar as camadas em SIRGAS 2000 geográfico (EPSG,4674) ao calcular áreas de APPs ou comprimentos de canais na calculadora de campo do QGIS.
 
 **Correção técnica,** Reprojete sempre as camadas de trabalho para o sistema métrico plano **SIRGAS 2000 / UTM** (por exemplo, Fuso 24S, EPSG,31984, na maior parte da Bahia) antes de mensurar hectares, perímetros ou densidades de drenagem.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 3, Apresentar Diagnóstico Desconectado da Proposta de Intervenção
 
 **Equívoco frequente,** Descrever no relatório uma voçoroca ativa com *piping* e compactação severa, mas propor na conclusão apenas “conscientização ambiental” ou “plantio aleatório de mudas” sem controle de escoamento.
 
 **Correção técnica,** Cada medida da proposta de PRAD ou bioengenharia deve responder diretamente a um indicador crítico da Matriz de Indicadores ($IPI$), articulando controle hidráulico a montante, estabilização mecânica (paliçadas/biomantas) e recomposição vegetal adaptada ao bioma.
+:::
 
+::: {.callout-warning appearance="simple"}
 ### Erro 4, Confundir Indicadores de Pressão, Estado, Impacto e Resposta na Matriz
 
 **Equívoco frequente,** Listar a execução do PRAD como “Impacto” ou classificar a declividade natural do relevo como “Pressão antrópica”.
 
 **Correção técnica,** Lembre a cadeia causal do modelo PEIR, **P** é o vetor ou atividade humana modificadora; **E** é a condição atual do meio; **I** é o efeito físico, ecológico ou social mensurável; e **R** é a ação corretiva, legal ou de manejo proposta pelo poder público ou empreendedor.
+:::
 
 ## Etapa 6 - Exercícios de fixação
 
@@ -442,6 +494,7 @@ Em editais de Analista Ambiental (IBAMA, ICMBio, INEMA) e no ENADE de Geografia,
 
 ## Etapa 8 - Gabarito comentado
 
+::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resoluções Completas, Exercícios de Fixação (1 a 15)
 
 1. A microbacia possui limites físicos naturais definidos pelos divisores topográficos e integra em um único sistema os fluxos de água, sedimentos, nutrientes e usos da terra. Duas vantagens, (a) permite fechar balanços hídricos e hidrossedimentológicos (erosão na vertente $\rightarrow$ assoreamento no exutório); e (b) evidencia interdependências entre propriedades a montante e a jusante que recortes municipais ou de lotes isolados ocultam.
@@ -489,13 +542,17 @@ Em editais de Analista Ambiental (IBAMA, ICMBio, INEMA) e no ENADE de Geografia,
 17. **Gabarito, (C).** A recuperação efetiva atua na causa hidráulica primeiro (desvio e dissipação da enxurrada da estrada), corrige a compactação do solo, estabiliza fisicamente os pontos críticos e implanta a revegetação nativa na APP com monitoramento.
 
 18. **Gabarito, (B).** Apenas relatórios georreferenciados, apoiados em indicadores mensuráveis e metas auditáveis permitem análise técnica objetiva e fiscalização pelo órgão ambiental.
+:::
 
 ## Etapa 9 - Síntese conceitual
 
+::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Fluxo do Trabalho Final (Semana 16, $5{,}0$ pts),** (1) delimitação em microbacia/encosta/APP; (2) bases abertas em SIRGAS 2000/UTM; (3) caracterização integrada; (4) mapeamento da degradação; (5) Matriz de Indicadores ($IPI = 0{,}35\,F_{\text{norm}} + 0{,}35\,(1-IQS) + 0{,}30\,P_{\text{norm}}$); (6) mapas + relatório + PRAD/bioengenharia; (7) auditoria pela rubrica e socialização. **Cartografia obrigatória.** Todos os mapas devem exibir título, Norte, escala gráfica/numérica, coordenadas em SIRGAS 2000, legenda e fonte. **Coerência técnica.** Cada medida de bioengenharia ou PRAD deve responder diretamente a um indicador crítico diagnosticado e respeitar a Lei nº 12.651/2012.
+:::
 
 ## Etapa 10 - Verificação da aprendizagem
 
+::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
 Responda com **V** (Verdadeiro) ou **F** (Falso) e confira abaixo,
 
 1. ( ) O Trabalho Prático Final (Semana 16) corresponde a $50\%$ da nota da disciplina CHF662 e exige integração entre bases cartográficas abertas, Matriz de Indicadores e proposta preliminar de intervenção.
@@ -507,3 +564,4 @@ Responda com **V** (Verdadeiro) ou **F** (Falso) e confira abaixo,
 4. ( ) Mapas temáticos entregues sem escala, sem seta Norte e sem indicação de datum atendem integralmente aos critérios cartográficos da rubrica oficial.
 
 **Gabarito do verificação da aprendizagem,** 1-**V** \|-**F** (cálculos métricos exigem projeção plana SIRGAS 2000 / UTM) \|-**V** \|-**F** (os 6 elementos cartográficos e o datum SIRGAS 2000 são obrigatórios).
+:::

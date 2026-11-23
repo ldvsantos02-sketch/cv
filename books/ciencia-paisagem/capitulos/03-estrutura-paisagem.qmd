@@ -31,9 +31,9 @@ graph {
         C1 [label="CORREDOR\n(Mata ciliar)", shape=box, style="filled,rounded", fillcolor="#006400", fontcolor=white, color="#004D00", width=3.5, penwidth=1.5]
 
         {rank=same; P1; P2}
-        P1 - C1 [style=solid, color="#006400", penwidth=2]
-        P2 - C1 [style=solid, color="#006400", penwidth=2]
-        C1 - P3 [style=dashed, color="#888888", label="isolamento", fontname="Helvetica", fontsize=8]
+        P1 -- C1 [style=solid, color="#006400", penwidth=2]
+        P2 -- C1 [style=solid, color="#006400", penwidth=2]
+        C1 -- P3 [style=dashed, color="#888888", label="isolamento", fontname="Helvetica", fontsize=8]
     }
 }
 ```

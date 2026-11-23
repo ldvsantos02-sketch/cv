@@ -2,21 +2,15 @@
 
 A análise ambiental depende de conceitos que estabeleçam relações observáveis entre atividades, alterações do meio e consequências. Aspecto, impacto, fragilidade, vulnerabilidade e risco respondem a perguntas diferentes. Sua distinção permite construir diagnósticos em que cada conclusão esteja ligada a uma evidência e a uma decisão de gestão.
 
-## Etapa 1 - Objetivos de aprendizagem
-
 ::: {.callout-note title="O que você vai aprender neste capítulo"}
 O capítulo desenvolve o emprego dos conceitos em situações concretas. O estudante deve descrever uma cadeia causal, reconhecer os elementos expostos e explicar quais informações faltam para estimar a possibilidade e a gravidade de um dano.
 :::
-
-## Etapa 2 - Conhecimentos necessários
 
 ::: {.callout-tip title="Revisando o que você precisa saber"}
 A leitura retoma a relação entre processos naturais e uso da terra. Uma encosta suscetível à erosão possui condições físicas que favorecem a mobilização de partículas. A presença de uma estrada ou de uma população a jusante acrescenta elementos que podem sofrer consequências dessa mobilização.
 :::
 
-## Etapa 3 - Fundamentação teórica
-
-### Símbolos, Siglas e Convenções do Capítulo
+## Símbolos, Siglas e Convenções do Capítulo
 
 |  |  |
 |:---|:---|
@@ -29,13 +23,13 @@ A leitura retoma a relação entre processos naturais e uso da terra. Uma encost
 | **$R$** | Risco ambiental calculado pela matriz conceitual $R = P \times V$ (valores de $1$ a $16$). |
 | **$\Delta R\%$** | Variação percentual do índice de risco após medida preventiva ou mitigadora, $\Delta R\% = \frac{R_{\text{final}} - R_{\text{inicial}}}{R_{\text{inicial}}} \times 100\%$. |
 
-### Ambiente e Meio Ambiente, Enquadramento Legal e Científico
+## Ambiente e Meio Ambiente, Enquadramento Legal e Científico
 
 Na legislação brasileira, a Política Nacional do Meio Ambiente (Lei nº 6.938/1981, Art. 3º, inciso I) define **meio ambiente** como o “conjunto de condições, leis, influências e interações de ordem física, química e biológica, que permite, abriga e rege a vida em todas as suas formas”. Essa definição marcou um avanço histórico ao reconhecer o caráter sistêmico e interativo do ambiente, superando a lista estática de elementos isolados.
 
 Na prática da Análise Ambiental contemporânea, conforme destacam Sánchez (2013, cap. 1) e Tauk-Tornisielo (1996), o conceito operacional de **ambiente** precisa ser lido de forma ampliada, abrangendo tanto o meio natural (físico e biótico) quanto o meio construído e as relações socioeconômicas e culturais. Essa ampliação é confirmada pela própria Resolução CONAMA nº 01/1986, que ao regulamentar a Avaliação de Impacto Ambiental exige o diagnóstico integrado de três meios, *meio físico* (subsolo, água, ar, clima, relevo, solos), *meio biológico e ecossistemas naturais* (fauna, flora, interações ecológicas) e *meio socioeconômico* (uso e ocupação do solo, infraestrutura, economia local, patrimônio histórico e cultural).
 
-### Aspecto Ambiental vs. Impacto Ambiental e Classificação de Impactos
+## Aspecto Ambiental vs. Impacto Ambiental e Classificação de Impactos
 
 Um dos avanços conceituais mais importantes da gestão ambiental moderna, consolidado pela norma ABNT NBR ISO 14001 e sistematizado por Sánchez (2013), é a separação rigorosa entre **atividade**, **aspecto ambiental** e **impacto ambiental**, organizados em uma **cadeia de causa e efeito** (@fig-aspecto-risco, Painel esquerdo),
 
@@ -43,7 +37,7 @@ Um dos avanços conceituais mais importantes da gestão ambiental moderna, conso
 
 **Impacto ambiental (efeito / consequência).** Qualquer alteração das propriedades físicas, químicas e biológicas do meio ambiente, causada por qualquer forma de matéria ou energia resultante das atividades humanas que, direta ou indiretamente, afetam a saúde, a segurança e o bem-estar da população, as atividades sociais e econômicas, a biota, as condições estéticas e sanitárias do meio ambiente e a qualidade dos recursos ambientais (Resolução CONAMA nº 01/1986, Art. 1º; Sánchez, 2013).
 
-### Impacto Ambiental Pode Ser Adverso ou Benéfico
+## Impacto Ambiental Pode Ser Adverso ou Benéfico
 
 Diferentemente do senso comum, no qual “impacto” é quase sempre usado como sinônimo de prejuízo, na Análise Ambiental técnica o impacto é uma **alteração da qualidade ambiental** resultante de ação humana, podendo ser **adverso (negativo)**, quando degrada a qualidade do meio, ou **benéfico (positivo)**, quando melhora condições ecológicas ou socioeconômicas, como a recuperação de uma mata ciliar degradada ou a implantação de saneamento básico que reduz a carga orgânica em um rio.
 
@@ -59,7 +53,7 @@ Para que os impactos identificados em um diagnóstico sejam comparáveis e subsi
 | **Abrangência Espacial** | Local/pontual, Regional ou Estratégico | Local, derramamento contido em pátio. Regional, alteração do regime hidrológico em toda a bacia do Rio Paraguaçu. |
 | **Interação / Acumulação** | Cumulativo vs. Sinérgico | **Cumulativo.** Soma de efeitos semelhantes ao longo do tempo ou de múltiplos empreendimentos (por exemplo, dezenas de barramentos pequenos reduzindo a vazão total do rio). **Sinérgico.** Interação entre dois ou mais impactos distintos cujo efeito combinado supera a soma isolada das partes (por exemplo, supressão de mata ciliar + lançamento de esgoto doméstico elevando drasticamente a eutrofização e o assoreamento). |
 
-### Poluição vs. Degradação Ambiental
+## Poluição vs. Degradação Ambiental
 
 A Lei nº 6.938/1981 (Art. 3º, incisos II e III) e Sánchez (2013) estabelecem uma relação lógica precisa entre degradação ambiental e poluição,
 
@@ -67,7 +61,7 @@ A Lei nº 6.938/1981 (Art. 3º, incisos II e III) e Sánchez (2013) estabelecem 
 
 A regra prática para nunca confundir os dois conceitos é simples, **toda poluição causa degradação ambiental, mas nem toda degradação ambiental constitui poluição**. Por exemplo, o desmatamento ilegal de uma encosta de Caatinga seguido de sobrepastejo provoca compactação do solo, perda de biodiversidade e erosão em ravinas, trata-se de severa **degradação ambiental**, mesmo sem lançamento de substâncias tóxicas ou poluentes químicos. Já o despejo de efluente industrial com metais pesados em um córrego acima dos padrões do CONAMA caracteriza simultaneamente **poluição** e **degradação ambiental**.
 
-### Perigo, Vulnerabilidade, Fragilidade Ambiental e Risco Ambiental
+## Perigo, Vulnerabilidade, Fragilidade Ambiental e Risco Ambiental
 
 Quatro conceitos frequentemente confundidos em relatórios técnicos precisam ser rigorosamente separados para fundamentar mapas de risco, defesa civil e ordenamento territorial,
 
@@ -77,7 +71,7 @@ Quatro conceitos frequentemente confundidos em relatórios técnicos precisam se
 
 ![Conceitos operacionais centrais da Análise Ambiental. **Painel esquerdo.** Cadeia causal Atividade Humana $\rightarrow$ Aspecto Ambiental $\rightarrow$ Impacto Ambiental segundo Sánchez (2013), destacando a diferença entre mecanismo de interação (aspecto) e alteração na qualidade ambiental (impacto). **Painel direito,** Matriz Conceitual de Risco Ambiental ($R = P \times V$) em escala ordinal $4 \times 4$, combinando níveis de Perigo/Ameaça ($P$) e Vulnerabilidade ($V$) em quatro classes operacionais (Baixo, Médio, Alto e Crítico).](../img/fig02_aspecto_impacto_risco.png "fig:"){#fig-aspecto-risco}
 
-### Equação e Matriz Conceitual do Risco Ambiental ($R = P \times V$)
+## Equação e Matriz Conceitual do Risco Ambiental ($R = P \times V$)
 
 Na análise semiquantitativa de riscos socioambientais (alinhada ao Painel direito da @fig-aspecto-risco), o índice de risco ambiental $R$ é obtido pelo produto do nível de **Perigo / Ameaça ($P$)** pelo nível de **Vulnerabilidade ($V$)**,
 
@@ -116,7 +110,7 @@ $$
 
 **Interpretação.** Mesmo quando o perigo natural não pode ser eliminado ($P = 4$), reduzir a vulnerabilidade reduz o índice de risco em $33,33\%$, retirando o setor da faixa crítica.
 
-### Resiliência, Recuperação, Restauração, Reabilitação e Sustentabilidade
+## Resiliência, Recuperação, Restauração, Reabilitação e Sustentabilidade
 
 Quando um ambiente já sofreu degradação, o analista ambiental precisa avaliar sua capacidade de resposta espontânea e definir o objetivo técnico viável de intervenção. Sánchez (2013) e a Lei do SNUC (Lei nº 9.985/2000, Art. 2º, XIII e XIV) diferenciam com rigor esses conceitos,
 
@@ -133,7 +127,7 @@ Quando um ambiente já sofreu degradação, o analista ambiental precisa avaliar
 | **Reabilitação** | Novo uso estável, produtivo ou socialmente útil, diferente do original. | Cavas de mineração urbana, áreas muito alteradas em que o retorno ao estado original é inviável física ou economicamente. |
 | **Remediação** | Eliminação ou controle seguro de contaminantes químicos. | Áreas contaminadas por hidrocarbonetos, chorume, metais pesados ou agrotóxicos persistentes. |
 
-### Do conceito à variável observável
+## Do conceito à variável observável
 
 A abertura de uma estrada envolve corte, aterro e retirada de vegetação. A exposição de solo e a concentração do escoamento constituem mecanismos pelos quais a atividade modifica o ambiente. O aumento do aporte de sedimentos a um curso de água representa uma alteração que pode ser medida por campanhas comparáveis. A interrupção de uma captação acrescenta uma consequência sobre um uso específico da água.
 
@@ -141,7 +135,7 @@ Uma matriz de risco organiza informações sobre possibilidade de ocorrência, e
 
 O relatório precisa descrever como foram atribuídas as classes. A frequência observada de eventos, o estado da drenagem, a distância dos elementos expostos e a possibilidade de interrupção de serviços sustentam a classificação. O registro de dados insuficientes é parte da análise, pois orienta a próxima medição e impede que uma nota aparente mais precisão do que a evidência disponível permite.
 
-## Etapa 4 - Exemplos resolvidos
+## Exemplos resolvidos
 
 ::: {.callout-tip appearance="simple"}
 ### Exemplo 4.1 - Cadeia Atividade-Aspecto-Impacto e Classificação em Obra Urbana (Básico) {#04-conceitos-operacionais-risco-exemplo-4.1.-cadeia-atividadeaspectoimpacto-e-classificação-em-obra-urbana-básico}
@@ -265,7 +259,7 @@ $$
 **Condições de validade.** A decisão respeita a legislação (o PRAD exige recuperação, que admite reabilitação quando o retorno ao estado original é impraticável) e neutraliza tanto a instabilidade geotécnica das margens quanto a vulnerabilidade do lençol freático.
 :::
 
-## Etapa 5 - Erros de interpretação
+## Erros comuns de interpretação
 
 ::: {.callout-warning appearance="simple"}
 ### Erro 1, Confundir Aspecto Ambiental com Impacto Ambiental
@@ -299,7 +293,7 @@ $$
 **Como evitar.** Avalie a resiliência e o grau de alteração do relevo/solo; use **restauração** apenas quando o retorno ao ecossistema de referência for factível, e **reabilitação** quando o objetivo for um novo uso estável e seguro.
 :::
 
-## Etapa 6 - Exercícios de fixação
+## Exercícios de fixação
 
 #### Nível Básico (Exercícios 1 a 5)
 
@@ -387,7 +381,7 @@ $$
 
     (E) Equivale à compensação pecuniária automática de qualquer dano irreversível.
 
-## Etapa 7 - Questões de aplicação
+## Questões de aplicação
 
 ### Estratégia para o Estudo Orientado 3 (EO3) e para a Avaliação Teórica
 
@@ -447,7 +441,7 @@ No **EO3** (Semana 4, baseado em Sánchez, 2013, cap. 1, e Tauk-Tornisielo, 1996
 
     (E) Sustentabilidade fraca ilegal, pois o SNUC proíbe qualquer intervenção que não reconstitua integralmente o estado original.
 
-## Etapa 8 - Gabarito comentado
+## Gabarito comentado {.unnumbered}
 
 ::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resolução, Nível Básico (Exercícios 1 a 5)
@@ -519,7 +513,7 @@ No **EO3** (Semana 4, baseado em Sánchez, 2013, cap. 1, e Tauk-Tornisielo, 1996
 18. **Gabarito, (C).** Como a área será estabilizada e destinada a um novo uso funcional (parque de retenção de cheias) sem reconstituição da condição original, trata-se de **reabilitação ambiental** (uma modalidade legítima de recuperação prevista no escopo de um PRAD).
 :::
 
-## Etapa 9 - Síntese conceitual
+## Síntese conceitual {.unnumbered}
 
 ::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Ambiente.** Sistema de interações físico-químicas, bióticas e socioeconômicas (Lei nº 6.938/1981; CONAMA nº 01/1986; Sánchez, 2013). **Cadeia Causal,** A atividade humana corresponde à ação praticada. O aspecto ambiental descreve o mecanismo pelo qual essa ação interage com o meio, enquanto o impacto expressa o efeito adverso ou benéfico resultante.. **Atributos dos Impactos.** Natureza (adverso/benéfico), ordem (direto/indireto), prazo (imediato/médio/longo), duração (temporário/permanente), reversibilidade, abrangência espacial, cumulatividade e sinergia. **Poluição vs. Degradação.** Degradação é o gênero (toda alteração adversa); poluição é espécie (degradação associada a danos sanitários/bióticos ou lançamento de matéria/energia fora dos padrões). **Fragilidade, Perigo, Vulnerabilidade e Risco.** Fragilidade é intrínseca ao sistema biofísico; risco exige interseção entre perigo ($P$) e vulnerabilidade ($V$), calculado na matriz $4 \times 4$ por $R = P \times V$ (1 a 3 Baixo; 4 a 6 Médio; 8 a 9 Alto; 12 a 16 Crítico).
@@ -527,9 +521,9 @@ No **EO3** (Semana 4, baseado em Sánchez, 2013, cap. 1, e Tauk-Tornisielo, 1996
 **Resiliência e Intervenção,** *recuperação* (condição não degradada, termo geral) engloba *restauração* (próximo ao original) e *reabilitação* (novo uso funcional estável); *remediação* trata contaminantes químicos; *sustentabilidade forte* respeita limites ecológicos insubstituíveis.
 :::
 
-## Etapa 10 - Verificação da aprendizagem
+## Autoavaliação {.unnumbered}
 
-::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
+::: {.callout-caution title="Autoavaliação e Checkpoint"}
 Responda sem consultar o texto e verifique o gabarito logo abaixo,
 
 1. (**V ou F**) Na Resolução CONAMA nº 01/1986 e em Sánchez (2013), o conceito de impacto ambiental aplica-se exclusivamente a alterações negativas provocadas por atividades industriais.

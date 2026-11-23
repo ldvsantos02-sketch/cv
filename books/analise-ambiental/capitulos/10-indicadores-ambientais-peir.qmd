@@ -2,21 +2,15 @@
 
 Indicadores ambientais conectam uma pergunta de gestão a observações que podem ser repetidas. A seleção começa pelo processo e pela decisão que se pretende acompanhar. Um número ganha significado quando sua unidade, área de referência, período e método de obtenção estão definidos.
 
-## Etapa 1 - Objetivos de aprendizagem
-
 ::: {.callout-note title="O que você vai aprender neste capítulo"}
 O capítulo desenvolve a seleção de indicadores e a construção de relações entre pressão, estado, impacto e resposta. O estudante deve justificar a posição de cada variável no modelo e explicar como os dados serão interpretados durante o monitoramento.
 :::
-
-## Etapa 2 - Conhecimentos necessários
 
 ::: {.callout-tip title="Revisando o que você precisa saber"}
 A leitura utiliza as distinções entre atividade, alteração do ambiente e consequência, além dos conceitos de bacia e área de influência. Uma estrada pode atravessar diferentes unidades de drenagem, enquanto efeitos sobre a fauna dependem também das rotas e dos períodos de atividade das espécies.
 :::
 
-## Etapa 3 - Fundamentação teórica
-
-### Dados, indicadores e índices
+## Dados, indicadores e índices
 
 Um dado bruto corresponde a uma observação obtida por um procedimento definido, como a área de vegetação removida em uma imagem de determinada data. O indicador relaciona essa informação a uma pergunta de análise. A taxa de supressão, por exemplo, divide a área removida pela área de referência e permite comparar poligonais de tamanhos diferentes, desde que o período e o critério de mapeamento sejam compatíveis.
 
@@ -24,7 +18,7 @@ Um índice agrega indicadores segundo uma regra de normalização e combinação
 
 Nesta leitura, $A_{\text{sup}}$ representa a área suprimida em hectares e $T_{\text{sup}}$ sua proporção percentual. A densidade viária $D_v$ relaciona o comprimento dos acessos à área analisada, expressa em quilômetros por quilômetro quadrado. A mortalidade estimada $M_{\text{est}}$ incorpora, no exercício didático, as probabilidades de detecção e persistência das carcaças, representadas por $e$ e $p$.
 
-### Conceito, Funções e Critérios de Seleção de Indicadores Ambientais
+## Conceito, Funções e Critérios de Seleção de Indicadores Ambientais
 
 No trabalho geográfico e na gestão ambiental, a abundância de dados não equivale automaticamente à qualidade do diagnóstico. Um relatório técnico com dezenas de tabelas desconexas pouco informa ao tomador de decisão se as variáveis não estiverem articuladas a perguntas ambientais precisas. É exatamente essa ponte entre medição e decisão que os **indicadores ambientais** estabelecem.
 
@@ -34,7 +28,7 @@ Os indicadores sintetizam processos complexos por meio de grandezas comparáveis
 
 A comunicação do indicador precisa explicar a relação entre a medida e a decisão. Uma mudança na cobertura do solo pode orientar uma vistoria, enquanto sua interpretação depende da estação do ano e das intervenções realizadas. Comunidades, conselhos de bacia e órgãos ambientais utilizam essa informação com finalidades diferentes, o que exige explicitar o significado do valor apresentado.
 
-### Pirâmide da Informação Ambiental, do Dado ao Índice
+## Pirâmide da Informação Ambiental, do Dado ao Índice
 
 A informação ambiental passa por níveis de tratamento. Registros de chuva, medidas de largura de acessos e contagens de feições constituem dados primários. Sua transformação em taxas e densidades exige definir o suporte espacial e temporal, permitindo relacionar a medida a uma pergunta de análise.
 
@@ -49,7 +43,7 @@ Para evitar a escolha arbitrária de variáveis, OECD (2003), Fidalgo (2003) e I
 | **Mensurabilidade** | Pode ser obtido com custo compatível, regularidade temporal e disponibilidade real de dados em campo, laboratório ou bases oficiais. | É possível medir ou atualizar a série histórica sem inviabilizar financeiramente o monitoramento? |
 | **Sensibilidade e responsividade** | Detecta alterações precoces do ambiente e responde às intervenções de manejo em horizonte de tempo útil à correção. | O indicador acusa degradação antes do colapso e registra melhoria após ações de controle? |
 
-### Modelos PER e PEIR, Arquitetura Causal e Construção de Matrizes
+## Modelos PER e PEIR, Arquitetura Causal e Construção de Matrizes
 
 Um conjunto de indicadores só ganha força interpretativa quando organizado dentro de uma estrutura lógica que explicite causa, consequência e intervenção. O modelo **PER (Pressão, Estado e Resposta)**, formulado inicialmente por Anthony Friend e David Rapport no Canadá e difundido internacionalmente pela OCDE (OECD, 2003), parte de uma lógica de retroalimentação, atividades humanas exercem *pressões* sobre o meio; essas pressões modificam o *estado* (qualidade e quantidade) dos recursos naturais; e a sociedade reage com *respostas* políticas, econômicas ou técnicas voltadas a reduzir as pressões ou recuperar o estado ambiental.
 
@@ -65,7 +59,7 @@ O impacto corresponde às consequências que a alteração produz sobre funçõe
 
 A resposta reúne medidas de gestão e intervenção, incluindo controle de drenagem, recuperação da cobertura, manutenção e revisão de regras operacionais. Indicadores de execução permitem acompanhar as medidas implantadas. Indicadores de resultado verificam a resposta do ambiente e sustentam a revisão da intervenção.
 
-### Métricas de campo e interpretação das unidades
+## Métricas de campo e interpretação das unidades
 
 A taxa de supressão relaciona a área removida à área total da poligonal. As duas áreas devem ser expressas na mesma unidade. A multiplicação da proporção por 100 fornece seu valor percentual.
 
@@ -107,11 +101,11 @@ $$
 
 Os símbolos $X_i$ e $X_f$ representam valores inicial e final obtidos em condições comparáveis. O cálculo exige $X_i\ne0$. Quando o valor inicial é zero, a mudança deve ser descrita por diferença absoluta e pelas condições observadas. Para indicadores já expressos em porcentagem, a diferença entre percentuais é informada em pontos percentuais, enquanto a divisão pela condição inicial produz uma variação relativa.
 
-### Estudo de Caso Integrado, Viagem de Campo no Semiárido Baiano
+## Estudo de Caso Integrado, Viagem de Campo no Semiárido Baiano
 
 A atividade de campo prevista na Semana 11 do Plano CHF662 examina a região de **Canudos** e o eixo energético do **Rio São Francisco**, com referência a **Paulo Afonso, Rodelas, Sobradinho, Casa Nova, Sento Sé e Juazeiro**. A leitura desse território relaciona a Caatinga, as formas do relevo, os usos da água e as infraestruturas de geração e transmissão. A observação deve registrar as condições de cada parada, distinguindo o que foi visto, o que foi informado por documentos e o que permanece como hipótese de análise.
 
-### Leitura das infraestruturas durante o campo
+## Leitura das infraestruturas durante o campo
 
 Os acessos e as plataformas dos aerogeradores conectam a implantação elétrica à dinâmica da vertente (@fig-canudos-acessos). A superfície exposta pode receber o impacto direto das gotas, enquanto valetas e bueiros modificam a direção e a concentração do escoamento. O registro de campo deve localizar saídas de drenagem, proteção dos taludes e eventuais caminhos que alcancem a rede hidrográfica. A fotografia permite reconhecer o arranjo, enquanto a avaliação de impacto depende de medições e de observação temporal.
 
@@ -133,7 +127,7 @@ A configuração do conjunto deve ser examinada junto ao espaço ocupado e às f
 
 ![Arranjo fotovoltaico flutuante em um corpo de água. Fonte acervo didático disponibilizado pelo docente. Instalação sem identificação documental no material consultado.](../img/fotovoltaica_flutuante_arranjo.jpeg){#fig-fpv-arranjo fig-alt="Conjunto de módulos solares flutuantes formando uma plataforma sobre a água"}
 
-### Evidência publicada sobre pistas de vento e erosão em Xingó
+## Evidência publicada sobre pistas de vento e erosão em Xingó
 
 As pistas de vento e os focos erosivos foram examinados por Holanda e colaboradores no artigo publicado em 2020 na *Revista Brasileira de Geografia Física* (@fig-xingo-publicado-2020). O mapa do segmento II relaciona a geometria do reservatório à localização dos focos identificados. Essa representação permite formular perguntas sobre exposição das margens e direcionar o levantamento de materiais e processos.
 
@@ -141,7 +135,7 @@ As pistas de vento e os focos erosivos foram examinados por Holanda e colaborado
 
 A associação espacial orienta uma hipótese sobre a ação das ondas, cuja avaliação também depende da resistência dos materiais, da variação do nível e de outras fontes de solicitação. A comparação com mapas de um estudo posterior deve conferir a convenção de azimute, a definição de fetch e a data da geometria utilizada. As representações são mantidas com seus critérios de origem para que diferenças entre procedimentos possam ser examinadas.
 
-### Convergência com o estudo de ondas e seleção de sítios em Xingó
+## Convergência com o estudo de ondas e seleção de sítios em Xingó
 
 O estudo de Santos, Holanda e Wanderley sobre ondas e fotovoltaica flutuante em Xingó permite discutir a ligação entre geometria, vento e escolha de sítios (@fig-xingo-fetch). O material consultado corresponde ao manuscrito e ao conjunto de dados disponibilizados pelo autor. Xingó é utilizado como estudo comparativo no **Baixo São Francisco, entre Alagoas e Sergipe**, enquanto o roteiro de campo descrito anteriormente se refere ao eixo baiano. Essa distinção situa corretamente a comparação territorial.
 
@@ -164,7 +158,7 @@ A seleção de sítios relaciona esses resultados à batimetria e às restriçõ
 O cruzamento entre focos de erosão, pistas de vento e margens permite formular hipóteses sobre exposição e resposta. A associação espacial deve ser examinada junto à variação do nível, às propriedades do material e às ondas geradas por embarcações. No arquivo de focos consultado, os campos de coordenadas precisam ter sua ordem e seu sistema de referência conferidos antes do uso em SIG. Essa conferência evita deslocar pontos e produzir convergências aparentes entre camadas incompatíveis.
 
 
-#### Fatores Locacionais de Viabilidade da Matriz Eólica no Semiárido
+### Fatores Locacionais de Viabilidade da Matriz Eólica no Semiárido
 
 A concentração de parques eólicos em Canudos, Casa Nova, Sento Sé e no entorno do Lago de Sobradinho não é aleatória. Ela resulta da convergência de quatro condicionantes geográficos e infraestruturais,
 
@@ -174,7 +168,7 @@ A avaliação do recurso eólico deve utilizar séries e mapas com altura, perí
 
 **Proximidade de linhas de transmissão e subestações do SIN.** O eixo histórico de geração hidrelétrica de Paulo Afonso (complexo CHESF) e Sobradinho já estruturava redes de transmissão de alta tensão conectadas ao Sistema Interligado Nacional (SIN), reduzindo custos de escoamento da energia eólica e solar recém-implantada. **Estrutura fundiária e baixo preço relativo da terra.** Grandes imóveis rurais e áreas de uso comunal (como fundos de pasto) no Semiárido permitiram contratos de arrendamento extensivos, ainda que frequentemente acompanhados de assimetrias informacionais e conflitos territoriais.
 
-#### Convivência com a Caatinga e Diagnóstico dos Principais Impactos Ambientais
+### Convivência com a Caatinga e Diagnóstico dos Principais Impactos Ambientais
 
 Embora a energia eólica apresente baixas emissões de gases de efeito estufa na fase de operação, classificá-la de forma acrítica como “energia de impacto zero” constitui um erro metodológico grave em Análise Ambiental. A avaliação em campo no eixo Canudos-Submédio São Francisco demonstra que os impactos concentram-se na fase de implantação e na reorganização territorial, exigindo diagnóstico rigoroso,
 
@@ -186,11 +180,11 @@ Embora a energia eólica apresente baixas emissões de gases de efeito estufa na
 
 **Regularização de vazões e conflitos por usos múltiplos da água no Submédio São Francisco.** Ao longo do eixo Sobradinho-Casa Nova-Juazeiro-Rodelas-Paulo Afonso, a operação em cascata das usinas hidrelétricas alterou profundamente o pulso natural de cheias e vazantes do Rio São Francisco. A redução de vazões defluentes em períodos de crise hídrica acentua a salinização no baixo curso, favorece a proliferação de bancos de areia e macrófitas, restringe a agricultura de vazante e intensifica disputas entre geração hidrelétrica, irrigação de fruticultura (polo Petrolina-Juazeiro), abastecimento urbano e comunidades ribeirinhas e quilombolas.
 
-### Roteiro Prático de Observação em Campo (DCHF/UEFS)
+## Roteiro Prático de Observação em Campo (DCHF/UEFS)
 
 Durante o percurso técnico em Canudos e no Submédio São Francisco, a equipe discente deve registrar evidências georreferenciadas em quatro eixos integrados, (i) **relevo e substrato** (posição geomorfológica das torres, presença de solos rasos ou afloramentos, declividade dos acessos); (ii) **processos erosivos e drenagem** (selamento, sulcos em borda de platô, saídas de drenagem pluvial e assoreamento de drenagens efêmeras); (iii) **cobertura da Caatinga e fauna** (fisionomia vegetal, presença de licurizeiros, efeito de borda e sinalização de monitoramento faunístico); e (iv) **dinâmica hídrica e socioambiental** (nível de operação dos reservatórios, áreas de irrigação, comunidades de fundo de pasto e percepção local sobre benefícios e incômodos dos empreendimentos).
 
-### Ficha do indicador e tratamento de dados ausentes
+## Ficha do indicador e tratamento de dados ausentes
 
 A ficha de um indicador define o fenômeno acompanhado, a forma de cálculo e o suporte espacial. Para densidade de focos erosivos em acessos, por exemplo, é necessário registrar o comprimento efetivamente inspecionado, o critério de reconhecimento de um foco e o tratamento dado às feições conectadas. A repetição da campanha exige manter esses critérios.
 
@@ -200,7 +194,7 @@ No acompanhamento de aves, a contagem de carcaças depende da área efetivamente
 
 Uma resposta de gestão também precisa separar execução e desempenho. Comprimento de drenagem construído informa execução, enquanto redução de incisões ou manutenção da cobertura informa resultados ambientais. O monitoramento deve acompanhar ambos, pois uma obra concluída pode exigir manutenção ou revisão do seu funcionamento.
 
-## Etapa 4 - Exemplos resolvidos
+## Exemplos resolvidos
 
 ::: {.callout-tip appearance="simple"}
 ### Exemplo 10.1 - Seleção de indicadores e interpretação do monitoramento
@@ -545,7 +539,7 @@ $$
 **Condições de validade.** Distinguir *pontos percentuais* (diferença direta entre duas taxas, $69\% - 15\% = 54\text{ p.p.}$) de *variação relativa* ($+360\%$) evita ambiguidades graves em relatórios de auditoria ambiental. Além disso, a permanência de $9$ focos ativos indica necessidade de manutenção pontual no segundo ano.
 :::
 
-## Etapa 5 - Erros de interpretação
+## Erros comuns de interpretação
 
 ::: {.callout-warning appearance="simple"}
 ### Erro 1, Confundir Dado Bruto, Pressão e Impacto na Matriz PEIR
@@ -579,7 +573,7 @@ $$
 **Correção técnica,** Sem relativização (por torre/ano ou por km de estrada) e sem correção de viés de detecção ($e \cdot p$ no monitoramento faunístico), os números não são comparáveis entre campanhas nem entre empreendimentos, comprometendo a solidez analítica exigida pela OCDE (2003).
 :::
 
-## Etapa 6 - Exercícios de fixação
+## Exercícios de fixação
 
 #### Nível Básico (Conceitos, Critérios e Modelo PEIR)
 
@@ -667,7 +661,7 @@ $$
 
     (E) $2{,}50\text{ aves}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}$.
 
-## Etapa 7 - Questões de aplicação
+## Questões de aplicação
 
 ### Foco de Provas, ENADE e Concursos (IBAMA / INEMA)
 
@@ -717,7 +711,7 @@ Exames de Geografia e concursos para Analista Ambiental frequentemente combinam 
 
     (E) Contabilização apenas da geração elétrica anual em megawatts-hora (MWh), por ser o dado de maior precisão disponível na subestação.
 
-## Etapa 8 - Gabarito comentado
+## Gabarito comentado {.unnumbered}
 
 ::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resoluções Completas, Exercícios de Fixação (1 a 15)
@@ -761,15 +755,15 @@ Exames de Geografia e concursos para Analista Ambiental frequentemente combinam 
 18. **Gabarito, (B).** A densidade semestral de incisões por km, profundidade em seções fixas georreferenciadas e cobertura vegetal de taludes cumpre todos os quatro critérios da OCDE, relevância direta à erosão, protocolo padronizado, viabilidade operacional e alta sensibilidade a medidas de drenagem e revegetação.
 :::
 
-## Etapa 9 - Síntese conceitual
+## Síntese conceitual {.unnumbered}
 
 ::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Indicador vs. Dado vs. Índice.** Dados brutos alimentam indicadores (variáveis relativizadas com significado de gestão), que podem ser agregados em índices compostos sem descartar a leitura individual. **Critérios de seleção (OECD, 2003; Fidalgo, 2003; IBGE, 2018).** Relevância política/técnica, solidez analítica, mensurabilidade e sensibilidade. **Ciclo PEIR,** Pressão (vetores antrópicos) $\rightarrow$ Estado (condição biofísica) $\rightarrow$ Impacto (consequências ecológicas e sociais) $\rightarrow$ Resposta (mitigação, PRAD, ordenamento) $\rightarrow$ retroalimentação sobre P e E. **Campo no Semiárido Baiano (Canudos e Submédio São Francisco).** A inserção eólica e hidrelétrica exige monitoramento conjunto de supressão e fragmentação da Caatinga ($T_{\text{sup}}$ e $D_v$), erosão na base de torres e acessos, mortalidade corrigida de avifauna ($M_{\text{est}} = N_{\text{obs}}/(e\cdot p)$) e governança de vazões no Rio São Francisco.
 :::
 
-## Etapa 10 - Verificação da aprendizagem
+## Autoavaliação {.unnumbered}
 
-::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
+::: {.callout-caution title="Autoavaliação e Checkpoint"}
 Avalie cada afirmação com **V** (Verdadeiro) ou **F** (Falso) antes de conferir o gabarito abaixo,
 
 1. ( ) No modelo PEIR, a abertura de estradas de acesso e a terraplenagem de platôs eólicos são classificadas como *Pressão*, enquanto a formação de ravinas nos taludes configura um *Impacto*.

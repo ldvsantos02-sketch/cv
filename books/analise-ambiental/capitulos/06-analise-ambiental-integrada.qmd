@@ -2,21 +2,15 @@
 
 A análise integrada procura explicar como mudanças em um componente ambiental se propagam pelos demais. Água, sedimentos, energia e decisões de uso atravessam limites administrativos e unidades de paisagem. A delimitação do sistema e do período de análise define quais dessas transferências entram no diagnóstico.
 
-## Etapa 1 - Objetivos de aprendizagem
-
 ::: {.callout-note title="O que você vai aprender neste capítulo"}
 O capítulo desenvolve a formulação de balanços, a escolha de escalas compatíveis e a interpretação das interações entre componentes. O estudante deve justificar o recorte adotado e reconhecer os processos que atravessam suas fronteiras.
 :::
-
-## Etapa 2 - Conhecimentos necessários
 
 ::: {.callout-tip title="Revisando o que você precisa saber"}
 São necessários os conceitos de bacia hidrográfica, entrada, saída e armazenamento. Uma redução de volume em um reservatório pode resultar da combinação entre menor entrada, maior saída e variação do estoque, exigindo dados de período e unidade compatíveis.
 :::
 
-## Etapa 3 - Fundamentação teórica
-
-### Vocabulário Sistêmico, Escalar e de Ordenamento
+## Vocabulário Sistêmico, Escalar e de Ordenamento
 
 | **Termo / Símbolo** | **Definição operacional na Análise Ambiental Integrada** |
 |:---|:---|
@@ -28,7 +22,7 @@ São necessários os conceitos de bacia hidrográfica, entrada, saída e armazen
 | **SDR ($Y / E_b$)** | Razão de Entrega de Sedimentos (*Sediment Delivery Ratio*), fração da erosão bruta das vertentes ($E_b$) que efetivamente alcança o exutório da bacia ($Y$). |
 | **ZEE** | Zoneamento Ecológico-Econômico, instrumento de ordenamento territorial que integra potencialidades e fragilidades geoambientais e socioeconômicas em zonas com diretrizes de uso. |
 
-### Elementos dos Meios Físico, Biótico e Antrópico e suas Interações
+## Elementos dos Meios Físico, Biótico e Antrópico e suas Interações
 
 Um erro recorrente em relatórios ambientais é tratar o diagnóstico como uma colagem de capítulos isolados, um capítulo sobre rochas, outro sobre plantas, outro sobre população, sem explicar como eles interagem. A **Análise Ambiental Integrada** (Castro; Lemos, 2016; Drew, 1989) rompe com essa visão compartimentada ao focar não apenas nos *elementos* isolados, mas sobretudo nas **relações funcionais** que conectam três subsistemas,
 
@@ -38,7 +32,7 @@ Um erro recorrente em relatórios ambientais é tratar o diagnóstico como uma c
 
 No Semiárido baiano, essas interações são imediatamente visíveis em uma única encosta de Caatinga, a retirada da vegetação lenhosa (ação antrópica sobre o meio biótico) expõe um Neossolo ou Argissolo raso (meio físico) ao impacto direto das chuvas torrenciais convectivas, reduz a matéria orgânica e a infiltração, acelera o escoamento superficial, abre sulcos e ravinas, assoreia o barreiro ou açude comunitário e agrava a escassez de água na estiagem (retorno direto sobre o meio socioeconômico).
 
-### Sistemas Ambientais Abertos, Limiares e Retroalimentação
+## Sistemas Ambientais Abertos, Limiares e Retroalimentação
 
 A fundamentação sistêmica da Análise Ambiental apoia-se na Teoria Geral dos Sistemas (Bertalanffy, 2010) e na abordagem dos sistemas ambientais (Drew, 1989; Christofoletti, 1999). Paisagens, vertentes e bacias hidrográficas são **sistemas ambientais abertos**, isto é, recebem continuamente fluxos externos de matéria e energia (**entradas** ou *inputs*, como radiação solar, chuva, insumos agrícolas e trabalho humano), transformam e armazenam parte desses fluxos em **estoques internos** (solo, água subterrânea, biomassa, nutrientes) por meio de **processos** (infiltração, intemperismo, fotossíntese, erosão) e exportam fluxos (**saídas** ou *outputs*, como vazão fluvial, sedimentos, evapotranspiração e colheitas).
 
@@ -46,13 +40,13 @@ O Painel A da @fig-sistema_escalas ilustra essa arquitetura aberta e o circuito 
 
 ![Representação do sistema ambiental aberto com entradas, estoques, processos, saídas e retroalimentação (Painel A) e acoplamento entre escalas espaciais e temporais na dinâmica geoambiental (Painel B). Fonte, elaboração didática da disciplina CHF662 com base em Drew (1989) e Castro; Lemos (2016).](../img/fig04_sistema_aberto_escalas.png "fig:"){#fig-sistema_escalas}
 
-### Equilíbrio Dinâmico, Limiares (*Thresholds*) e Retroalimentação
+## Equilíbrio Dinâmico, Limiares (*Thresholds*) e Retroalimentação
 
 **Equilíbrio dinâmico (*steady state*),** condição em que as entradas e saídas se compensam em média ao longo do tempo ($\Delta S \approx 0$), mantendo os estoques estáveis apesar da circulação contínua de água, energia e matéria. Não se trata de imobilidade, mas de autorregulação ativa. **Retroalimentação negativa (*feedback* negativo),** mecanismo **estabilizador** que amortece uma perturbação e devolve o sistema ao equilíbrio. Exemplo, em uma vertente bem vegetada, um aumento moderado de chuva eleva a umidade do solo $\to$ estimula o crescimento herbáceo $\to$ aumenta a interceptação e a infiltração $\to$ reduz o escoamento erosivo.
 
 **Retroalimentação positiva (*feedback* positivo),** mecanismo **amplificador** que reforça o desvio inicial, podendo conduzir o sistema à degradação acelerada. Exemplo clássico de desertificação ou erosão linear, sobrepastejo reduz cobertura vegetal $\to$ aumenta selamento e compactação do solo $\to$ cai a infiltração e cresce o escoamento superficial $\to$ carrega matéria orgânica e sementes $\to$ dificulta ainda mais o crescimento vegetal $\to$ acelera a abertura de ravinas e voçorocas. **Limiares (*thresholds*),** pontos críticos de ruptura a partir dos quais o sistema muda de regime. Podem ser **extrínsecos** (disparados por um evento externo, como uma chuva cuja intensidade ultrapassa a taxa máxima de infiltração do solo, $I > f_c$) ou **intrínsecos** (resultantes do enfraquecimento interno gradual do próprio sistema, como o desgaste progressivo da coesão de um talude até o rompimento repentino).
 
-### Escalas Espaciais, Escalas Temporais e o Risco da Falácia de Escala
+## Escalas Espaciais, Escalas Temporais e o Risco da Falácia de Escala
 
 Nenhum processo geoambiental ocorre fora de uma escala determinada. Como mostra o Painel B da @fig-sistema_escalas, existe um **acoplamento natural entre escala espacial e escala temporal**, processos microscópicos ou pontuais costumam ocorrer em minutos ou horas, enquanto transformações de bacias regionais e biomas desdobram-se em décadas, séculos ou milênios.
 
@@ -68,7 +62,7 @@ Ignorar o acoplamento entre escalas leva à **falácia de escala**, um dos erros
 
 **Extrapolação ascendente indevida (micro $\to$ macro).** Assumir que uma taxa medida em parcela experimental de $10\,\text{m}^2$ multiplica-se linearmente por toda uma bacia de $1\,000\,\text{ha}$. Na realidade, grande parte do solo erodido nas encostas fica retida em sopés côncavos, depressões, barreiras vegetais e planícies aluviais antes de atingir o rio principal. **Inferência descendente indevida (macro $\to$ micro).** Usar um mapa de escala pequena ($1:250\,000$ ou $1:1\,000\,000$), elaborado para planejamento estadual, para localizar uma ravina de $4\,\text{m}$ de largura ou projetar uma paliçada de bioengenharia. Em escala cartográfica $1:D$, o menor detalhe graficamente distinguível no papel ($\approx 0{,}2\,\text{mm} = 0{,}0002\,\text{m}$) corresponde no terreno a $d_{\min} = 0{,}0002 \times D$ metros, em $1:250\,000$, qualquer feição menor que $50\,\text{m}$ simplesmente desaparece do mapa!
 
-### Balanço de Massa em Sistema Aberto, Razão de Entrega de Sedimentos (SDR) e Resolução de Escala
+## Balanço de Massa em Sistema Aberto, Razão de Entrega de Sedimentos (SDR) e Resolução de Escala
 
 **1. Equação geral do balanço em um sistema ambiental aberto,**
 
@@ -114,7 +108,7 @@ d_{\min}\,(\text{m}) = 0{,}0002 \times D.
 $$
 
 
-### Dinâmica Geoambiental, Planejamento Ambiental, Planejamento Territorial e Ordenamento Territorial
+## Dinâmica Geoambiental, Planejamento Ambiental, Planejamento Territorial e Ordenamento Territorial
 
 Compreender a **dinâmica geoambiental**, isto é, o comportamento integrado das paisagens frente às pressões climáticas e socioeconômicas, é a base técnica indispensável para orientar decisões públicas sobre o uso do espaço. Contudo, na literatura técnica e em concursos, três expressões correlatas são frequentemente confundidas, **planejamento ambiental**, **planejamento territorial** e **ordenamento territorial** (Arruda, 2013; IBGE, 2018).
 
@@ -126,7 +120,7 @@ Compreender a **dinâmica geoambiental**, isto é, o comportamento integrado das
 
 Em síntese operacional, o **planejamento ambiental** define os limites, potenciais e fragilidades dos sistemas naturais; o **planejamento territorial** integra esses condicionantes às demandas econômicas, sociais e de infraestrutura; e o **ordenamento territorial** traduz essas diretrizes em normas espaciais e zoneamentos concretos de regulação do uso da terra.
 
-### Zoneamento Ecológico-Econômico (ZEE) como Instrumento de Ordenamento
+## Zoneamento Ecológico-Econômico (ZEE) como Instrumento de Ordenamento
 
 Previsto originalmente na Política Nacional do Meio Ambiente (Lei nº 6.938/1981) e regulamentado pelo **Decreto Federal nº 4.297/2002**, o **Zoneamento Ecológico-Econômico (ZEE)** é o principal instrumento técnico-político de organização do território no Brasil. Ele não é um “mapa de proibições”, tampouco um documento meramente cartográfico, trata-se de um processo participativo e multidisciplinar que cruza a **potencialidade socioeconômica** com a **vulnerabilidade/fragilidade natural** dos sistemas geoambientais (IBGE, 2018; Arruda, 2013).
 
@@ -138,7 +132,7 @@ A partir desse cruzamento, o território é dividido em **zonas homogêneas** co
 
 O ZEE dialoga diretamente com a AIA (Capítulo 5), quando um estado ou município dispõe de um ZEE atualizado em escala compatível, a etapa de triagem e a seleção de alternativas locacionais tornam-se muito mais céleres, transparentes e seguras juridicamente.
 
-### Balanço ambiental e compatibilidade entre escalas
+## Balanço ambiental e compatibilidade entre escalas
 
 Um balanço de água relaciona entradas, saídas e variação do armazenamento durante um intervalo definido. Precipitação medida em milímetros representa uma lâmina, enquanto vazão em metros cúbicos por segundo representa volume por tempo. A comparação exige converter a lâmina em volume pela área correspondente e integrar a vazão no intervalo observado.
 
@@ -148,7 +142,7 @@ A integração espacial também exige coerência entre mapas. A ampliação visu
 
 O diagnóstico deve manter registro de fonte, data, unidade e método de cada camada. Esse registro permite explicar divergências, selecionar áreas para verificação em campo e avaliar como as incertezas dos dados influenciam a proposta de ordenamento.
 
-## Etapa 4 - Exemplos resolvidos
+## Exemplos resolvidos
 
 ::: {.callout-tip appearance="simple"}
 ### Exemplo 6.1 - Balanço Hídrico em Sistema Ambiental Aberto no Semiárido (Nível Básico)
@@ -375,7 +369,7 @@ $$
 **Condições de validade.** A soma dos percentuais fecha em $35{,}0 + 27{,}5 + 17{,}5 + 20{,}0 = 100{,}0\%$. Territorialmente, reservar $37{,}5\%$ para proteção e recuperação enquanto se direcionam $62{,}5\%$ para produção consolidada e manejo sustentável mostra que o ZEE não paralisa o desenvolvimento econômico, mas o redireciona para áreas com capacidade de suporte adequada.
 :::
 
-## Etapa 5 - Erros de interpretação
+## Erros comuns de interpretação
 
 ::: {.callout-warning appearance="simple"}
 ### Erro 1, Confundir retroalimentação positiva com algo “bom” ou desejável
@@ -417,7 +411,7 @@ $$
 **Como evitar.** Memorize a tríade funcional, *limites ambientais* (planejamento ambiental) $\to$ *estratégia multissetorial* (planejamento territorial) $\to$ *regulação espacial normativa* (ordenamento territorial / ZEE).
 :::
 
-## Etapa 6 - Exercícios de fixação
+## Exercícios de fixação
 
 #### Nível 1, Básico (Sistemas Abertos, Escalas e Ordenamento)
 
@@ -511,7 +505,7 @@ $$
 
     (E) Utilizar apenas variáveis climáticas, dispensando informações de solos, relevo e estrutura social.
 
-## Etapa 7 - Questões de aplicação
+## Questões de aplicação
 
 16. **\[Autoral, Estilo ENADE / Geografia\]** A abordagem sistêmica aplicada à Análise Ambiental Integrada (Drew, 1989; Castro; Lemos, 2016) compreende a paisagem como resultado de interações dinâmicas entre fluxos de matéria, energia e decisões humanas. Avalie as asserções a seguir e a relação proposta entre elas,
 
@@ -569,7 +563,7 @@ $$
 
 Os conceitos deste capítulo (sistema aberto, balanço de fluxos, escalas e interações físico-biótico-antrópicas) são a engrenagem direta do **Módulo 3**. A partir da Semana 7, você aplicará essa visão sistêmica à **bacia hidrográfica** como unidade operacional (Cap. 7), à **morfopedologia de vertentes** (Cap. 8) e aos modelos de **geossistema, ecodinâmica de Tricart e fragilidade de Ross** (Cap. 9), todos cobrados na Avaliação Teórica da Semana 10!
 
-## Etapa 8 - Gabarito comentado
+## Gabarito comentado {.unnumbered}
 
 ::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resoluções dos Exercícios 1 a 10 (Básicos e Intermediários)
@@ -657,7 +651,7 @@ Os conceitos deste capítulo (sistema aberto, balanço de fluxos, escalas e inte
 - **Questão 18, Gabarito, (B).** A integração multidisciplinar de variáveis físico-bióticas e socioeconômicas para definir zonas normativas de uso produtivo, manejo, recuperação e conservação descreve exatamente o **Zoneamento Ecológico-Econômico (ZEE)**.
 :::
 
-## Etapa 9 - Síntese conceitual
+## Síntese conceitual {.unnumbered}
 
 ::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Análise Ambiental Integrada.** Foca as conexões funcionais entre os meios **físico**, **biótico** e **antrópico**, superando diagnósticos setoriais fragmentados (Castro; Lemos, 2016; Drew, 1989). **Sistemas ambientais abertos.** Operam por entradas ($E$), estoques, processos e saídas ($S_{\text{out}}$), regidos pelo balanço $\Delta S = E - S_{\text{out}}$. **Retroalimentação negativa** estabiliza o sistema; **retroalimentação positiva** amplifica desvios e degradação; **limiares** marcam rupturas de regime. **Escalas e falácia de escala.** Escala espacial (parcela $\to$ bioma) e escala temporal (evento $\to$ tempo geológico) são acopladas. Extrapolar parcela para bacia sem $\text{SDR} = Y / E_b$ ou usar carta de pequena escala ($d_{\min} = 0{,}0002 \times D$) para feições locais configura falácia de escala.
@@ -665,9 +659,9 @@ Os conceitos deste capítulo (sistema aberto, balanço de fluxos, escalas e inte
 **Tríade de gestão do espaço,** **Planejamento Ambiental** (limites e potencialidades ecológicas) $\leftrightarrow$ **Planejamento Territorial** (estratégia socioespacial multissetorial) $\leftrightarrow$ **Ordenamento Territorial** (regulação normativa espacial do uso da terra, materializada no **ZEE**).
 :::
 
-## Etapa 10 - Verificação da aprendizagem
+## Autoavaliação {.unnumbered}
 
-::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
+::: {.callout-caution title="Autoavaliação e Checkpoint"}
 Assinale Verdadeiro (**V**) ou Falso (**F**) para confirmar o domínio do Capítulo 6 antes de iniciar o Simulado do Módulo 2,
 
 1. () Em um sistema ambiental aberto, equilíbrio dinâmico significa que as entradas igualam as saídas em média ($\Delta S \approx 0$), com circulação contínua de matéria e energia.

@@ -2,21 +2,15 @@
 
 Qualidade do solo expressa a capacidade de desempenhar funções em determinado contexto de uso e ambiente. Densidade, carbono, agregação e atividade biológica descrevem aspectos complementares desse funcionamento. A interpretação depende de referências compatíveis com o solo, a profundidade e a época de amostragem.
 
-## Etapa 1 - Objetivos de aprendizagem
-
 ::: {.callout-note title="O que você vai aprender neste capítulo"}
 O capítulo desenvolve a interpretação de indicadores e a construção de índices de qualidade do solo. O estudante deve demonstrar os cálculos, justificar a normalização e relacionar a pontuação obtida às funções do solo avaliadas.
 :::
-
-## Etapa 2 - Conhecimentos necessários
 
 ::: {.callout-tip title="Revisando o que você precisa saber"}
 A leitura retoma massa, volume, porosidade e matéria orgânica. Uma amostra indeformada preserva a organização necessária à determinação da densidade aparente, enquanto análises químicas utilizam procedimentos de preparo e expressão dos resultados que precisam ser registrados.
 :::
 
-## Etapa 3 - Fundamentação teórica
-
-### Vocabulário Técnico e Símbolos do Capítulo 11
+## Vocabulário Técnico e Símbolos do Capítulo 11
 
 **Qualidade do Solo (QS).** Capacidade de um tipo específico de solo funcionar, dentro dos limites do ecossistema natural ou manejado, para sustentar a produtividade biológica, manter ou melhorar a qualidade da água e do ar e suportar a saúde humana e dos habitats (Karlen et al., 1997). **MDS (*Minimum Data Set*),** conjunto mínimo e não redundante de atributos físicos, químicos e biológicos capaz de representar a funcionalidade integral do solo com viabilidade analítica.
 
@@ -24,21 +18,21 @@ $D_s$ e $D_p$, densidade do solo (massa de solo seco dividida pelo volume total,
 
 $TIB$ e $RP$, taxa de infiltração básica ($\text{mm}\cdot\text{h}^{-1}$) e resistência do solo à penetração ($\text{MPa}$). $S_i$, $w_i$ e $\text{IQS}$, pontuação normalizada ($0$ a $1$) do indicador $i$, peso atribuído ao indicador ($\sum w_i = 1$) e Índice de Qualidade do Solo ($0$ a $1$).
 
-### Conceito de Qualidade do Solo e Funcionalidade Edáfica
+## Conceito de Qualidade do Solo e Funcionalidade Edáfica
 
 Historicamente, a ciência do solo privilegiou a avaliação da fertilidade química voltada à resposta de culturas agrícolas a fertilizantes minerais. Essa visão revelou-se insuficiente para a Análise Ambiental porque um solo quimicamente adubado pode apresentar compactação severa, baixíssima infiltração de água, intensa perda por erosão e colapso da biota edáfica.
 
 A partir da década de 1990, Doran e Parkin (1994) e Karlen et al. (1997) consolidaram o conceito moderno de **Qualidade do Solo**, centrado nas **funções ecossistêmicas** que o solo desempenha na paisagem, (i) regular e particionar o fluxo de água (infiltração, armazenamento e drenagem); (ii) sustentar a biodiversidade e a atividade biológica; (iii) filtrar, tamponar e degradar poluentes orgânicos e inorgânicos; (iv) ciclar nutrientes e estocar carbono orgânico; e (v) oferecer suporte físico estável a plantas e estruturas. No Brasil, Vezzani e Mielniczuk (2009) enfatizam que a qualidade do solo emerge como propriedade sistêmica da interação entre estrutura física (agregação), dinâmica da matéria orgânica e organismos vivos, exigindo avaliação integrada e comparada a um **solo de referência** sob vegetação nativa da mesma classe pedológica e condição climática.
 
-### Propriedades Inerentes vs. Propriedades Dinâmicas do Solo
+## Propriedades Inerentes vs. Propriedades Dinâmicas do Solo
 
 Todo diagnóstico edáfico deve distinguir dois grupos de atributos,
 
 **Propriedades inerentes (estáticas).** Determinadas pelos fatores de formação do solo (rocha-mãe, relevo, clima, tempo), como textura (proporção areia-silte-argila), mineralogia da fração argila e profundidade efetiva. Mudam apenas em escalas geológicas e definem o *potencial natural* do solo. **Propriedades dinâmicas (sensíveis ao manejo).** Modificam-se em meses ou anos em resposta ao desmatamento, pisoteio, tráfego de máquinas, queimadas ou práticas conservacionistas. Incluem densidade do solo, porosidade, estabilidade de agregados, matéria orgânica, infiltração e atividade microbiana. São essas propriedades que compõem o **Conjunto Mínimo de Dados (MDS)**.
 
-### Indicadores Físicos, Químicos e Biológicos do MDS
+## Indicadores Físicos, Químicos e Biológicos do MDS
 
-#### Indicadores Físicos (Arquitetura Porosa e Fluxo Hídrico)
+### Indicadores Físicos (Arquitetura Porosa e Fluxo Hídrico)
 
 Os atributos físicos governam a circulação de água, ar e raízes no perfil do solo e respondem rapidamente à degradação mecânica observada em pastagens sobrepastoreadas, áreas agrícolas convencionais e acessos de obras civis ou parques eólicos,
 
@@ -50,7 +44,7 @@ Os atributos físicos governam a circulação de água, ar e raízes no perfil d
 
 **Resistência do solo à penetração ($RP$).** Medida em campo por penetrômetro de impacto ou eletrônico ($\text{MPa}$), sempre acompanhada da umidade do solo no instante da leitura (pois um solo seco oferece resistência muito maior que o mesmo solo úmido). Na capacidade de campo, valores acima de $2{,}0$-$2{,}5\text{ MPa}$ impõem forte impedimento mecânico às raízes.
 
-#### Indicadores Químicos (Matéria Orgânica, Acidez e Troca Catiônica)
+### Indicadores Químicos (Matéria Orgânica, Acidez e Troca Catiônica)
 
 Os atributos químicos determinam a disponibilidade de nutrientes, o poder tampão e a estabilidade coloidal do solo,
 
@@ -58,7 +52,7 @@ Os atributos químicos determinam a disponibilidade de nutrientes, o poder tamp�
 
 **Potencial hidrogeniônico (pH).** Indica acidez ou alcalinidade ativa do solo, influenciando a solubilidade de nutrientes e a toxicidade do alumínio trocável ($Al^{3+}$) em pH inferior a $5{,}5$. No Semiárido Baiano, Luvissolos e Neossolos pouco intemperizados tendem a apresentar pH levemente ácido a neutro ($6{,}0$-$7{,}2$), enquanto Latossolos profundos de tabuleiros e chapadas costumam ser ácidos ($4{,}5$-$5{,}5$). **Soma de Bases ($SB$), $CTC$ e Saturação por Bases ($V\%$),** $SB$ reúne os cátions básicos trocáveis ($Ca^{2+} + Mg^{2+} + K^+ + Na^+$); somando-se a acidez potencial ($H^+ + Al^{3+}$), obtém-se a $CTC$ a pH $7{,}0$. A razão $V\% = (SB / CTC) \times 100\%$ indica a proporção das cargas negativas ocupadas por bases, solos com $V\% \ge 50\%$ são classificados como **eutróficos** (alta fertilidade natural), e solos com $V\% < 50\%$ são **distróficos** (baixa fertilidade natural).
 
-#### Indicadores Biológicos (Motor Vivo da Funcionalidade Edáfica)
+### Indicadores Biológicos (Motor Vivo da Funcionalidade Edáfica)
 
 Os indicadores biológicos costumam ser os mais sensíveis às perturbações iniciais e às respostas de recuperação,
 
@@ -66,7 +60,7 @@ Os indicadores biológicos costumam ser os mais sensíveis às perturbações in
 
 **Fauna edáfica e cobertura vegetal.** Riqueza e abundância de macrofauna (minhocas, térmitas, formigas e coleópteros, considerados engenheiros do ecossistema por construírem bioporos) e percentual de cobertura do solo por serapilheira e vegetação viva, fundamental para amortecer a temperatura superficial no Semiárido e proteger o solo contra a erosão.
 
-### Equações Fundamentais de Qualidade do Solo e Cálculo do IQS
+## Equações Fundamentais de Qualidade do Solo e Cálculo do IQS
 
 **1. Atributos Físicos (Anel Volumétrico e Porosidade),**
 
@@ -117,7 +111,7 @@ $$
 $$
 
 
-### Visualização Multivariada da Qualidade do Solo
+## Visualização Multivariada da Qualidade do Solo
 
 A integração dos indicadores normalizados em um **gráfico radar** (ou gráfico de teia) constitui um dos recursos mais eficazes em relatórios técnicos ambientais porque preserva simultaneamente a visão global (área do polígono proporcional ao IQS) e o diagnóstico individual de cada gargalo (eixos recolhidos próximo ao centro).
 
@@ -127,7 +121,7 @@ Observando os dados plotados na @fig-qualidade_solo_radar, nota-se um gradiente 
 
 **Referência (Caatinga conservada).** Escores de $0{,}90$ (MO), $0{,}88$ (porosidade total), $0{,}92$ (taxa de infiltração), $0{,}86$ (estabilidade de agregados), $0{,}85$ (baixa densidade) e $0{,}95$ (cobertura vegetal), resultando em $\text{IQS} = (0{,}90+0{,}88+0{,}92+0{,}86+0{,}85+0{,}95)/6 = \mathbf{0{,}893}$ (qualidade muito alta). **Área em recuperação (bioengenharia).** Escores entre $0{,}68$ e $0{,}78$, com $\text{IQS} = (0{,}68+0{,}72+0{,}75+0{,}70+0{,}68+0{,}78)/6 = \mathbf{0{,}718}$ (qualidade boa em trajetória ascendente, mas com matéria orgânica e densidade ainda em consolidação). **Área degradada (solo exposto e compactado).** Escores colapsados entre $0{,}18$ (cobertura vegetal) e $0{,}35$ (porosidade total), produzindo $\text{IQS} = (0{,}28+0{,}35+0{,}22+0{,}30+0{,}32+0{,}18)/6 = \mathbf{0{,}275}$ (qualidade crítica, exigindo intervenção prioritária na cobertura superficial e descompactação biológica).
 
-### Amostragem, referência e normalização do IQS
+## Amostragem, referência e normalização do IQS
 
 A comparação entre área manejada e referência exige condições pedológicas e topográficas compatíveis. Profundidade, textura e posição na vertente influenciam os resultados. Campanhas realizadas em épocas distintas também podem registrar respostas sazonais, especialmente em variáveis biológicas e no estado hídrico.
 
@@ -137,7 +131,7 @@ A normalização transforma medidas em pontuações comparáveis segundo uma fun
 
 O IQS deve ser apresentado junto aos valores individuais e aos pesos. Duas áreas podem obter a mesma média com limitações distintas, exigindo medidas diferentes. Protocolos de coleta e determinação devem acompanhar referências como o [Manual de métodos de análise de solo da Embrapa](https://www.infoteca.cnptia.embrapa.br/handle/doc/1085209), permitindo verificar como cada valor foi obtido.
 
-## Etapa 4 - Exemplos resolvidos
+## Exemplos resolvidos
 
 ::: {.callout-tip appearance="simple"}
 ### Exemplo 11.1 (Básico). Cálculo de Densidade do Solo e Porosidade Total em Anel Volumétrico
@@ -419,7 +413,7 @@ $$
 **Condições de validade.** O $\text{IQS}_{\text{ponderado}}$ ($0{,}530$) ficou ligeiramente abaixo do simples ($0{,}550$) porque os maiores pesos ($0{,}30$ cada) recaíram justamente sobre a infiltração e a matéria orgânica, que apresentaram os piores desempenhos. Em campo, isso orienta ações focadas em cobertura morta, descompactação superficial e aporte orgânico.
 :::
 
-## Etapa 5 - Erros de interpretação
+## Erros comuns de interpretação
 
 ::: {.callout-warning appearance="simple"}
 ### Erro 1, Usar a Fórmula “Quanto Maior Melhor” para Densidade do Solo ($D_s$)
@@ -453,7 +447,7 @@ $$
 **Correção técnica,** A resistência mecânica à penetração aumenta exponencialmente à medida que o solo seca, devido à coesão entre partículas e à sucção matricial. Leituras de penetrômetro só são comparáveis quando realizadas sob umidade controlada (idealmente próxima à capacidade de campo) ou acompanhadas do teor gravimétrico de umidade.
 :::
 
-## Etapa 6 - Exercícios de fixação
+## Exercícios de fixação
 
 #### Nível Básico (Conceitos de Funcionalidade Edáfica e MDS)
 
@@ -547,7 +541,7 @@ $$
 
     (E) Equivalência funcional plena em relação à Caatinga conservada.
 
-## Etapa 7 - Questões de aplicação
+## Questões de aplicação
 
 ### Atenção às Armadilhas em Questões de Solos
 
@@ -595,7 +589,7 @@ Em provas de Geografia e concursos ambientais, dois detalhes costumam decidir qu
 
     (E) Indicadores biológicos dispensam totalmente a avaliação de densidade do solo e infiltração, pois a presença de micro-organismos elimina a compactação mecânica em poucos dias.
 
-## Etapa 8 - Gabarito comentado
+## Gabarito comentado {.unnumbered}
 
 ::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resoluções Completas, Exercícios de Fixação (1 a 15)
@@ -639,15 +633,15 @@ Em provas de Geografia e concursos ambientais, dois detalhes costumam decidir qu
 18. **Gabarito, (E).** A alternativa (E) é incorreta porque a recuperação biológica da estrutura física do solo compactado ocorre gradualmente (meses a anos) e requer diagnóstico conjunto com indicadores físicos ($D_s$, $P_{\text{macro}}$, $TIB$ e $RP$).
 :::
 
-## Etapa 9 - Síntese conceitual
+## Síntese conceitual {.unnumbered}
 
 ::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Funcionalidade edáfica.** A qualidade do solo mede sua capacidade de infiltrar água, ciclar nutrientes, estocar carbono e sustentar vida, avaliada sempre contra um solo de referência da mesma classe pedológica. **Tríade do MDS.** Indicadores **físicos** ($D_s$, $P_t$, $P_{\text{macro}}$, $DMP$, $TIB$, $RP$), **químicos** ($CO$, $MO = 1{,}724 \cdot CO$, pH, $SB$, $CTC$, $V\%$) e **biológicos** ($C\text{-BM}$, $RBS$, $q\text{CO}_2$, fauna e cobertura vegetal). **Cálculo do IQS.** Padronize cada atributo entre $0$ e $1$ respeitando a direção (“maior melhor” $= x_i/x_{\text{ref}}$; “menor melhor” $= x_{\text{ref}}/x_i$) e agregue via média simples ou ponderada, mantendo o gráfico radar para evidenciar gargalos individuais.
 :::
 
-## Etapa 10 - Verificação da aprendizagem
+## Autoavaliação {.unnumbered}
 
-::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
+::: {.callout-caution title="Autoavaliação e Checkpoint"}
 Marque **V** (Verdadeiro) ou **F** (Falso) e confira o gabarito,
 
 1. ( ) Quanto maior a densidade do solo ($D_s$) para uma mesma densidade de partículas ($D_p$), menor será a porosidade total ($P_t$).

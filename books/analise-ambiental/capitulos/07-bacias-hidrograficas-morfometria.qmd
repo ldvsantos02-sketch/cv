@@ -2,21 +2,15 @@
 
 A bacia hidrográfica conecta áreas produtoras de escoamento e sedimentos a um ponto de saída. Sua morfometria descreve geometria e organização da drenagem, fornecendo elementos para interpretar a resposta do sistema às chuvas. Essa interpretação depende da combinação com solos, cobertura da terra e características dos eventos.
 
-## Etapa 1 - Objetivos de aprendizagem
-
 ::: {.callout-note title="O que você vai aprender neste capítulo"}
 O estudo desenvolve o cálculo de índices morfométricos e a análise de suas condições de uso. O estudante deve conferir unidades, reconhecer a influência da escala cartográfica e explicar como cada resultado contribui para uma hipótese sobre o comportamento da bacia.
 :::
-
-## Etapa 2 - Conhecimentos necessários
 
 ::: {.callout-tip title="Revisando o que você precisa saber"}
 A leitura utiliza os conceitos de divisor, exutório, canal, área e perímetro. Comprimento de canal, comprimento axial e extensão da vertente representam medidas diferentes. A definição de cada medida deve acompanhar a fórmula e o procedimento de obtenção.
 :::
 
-## Etapa 3 - Fundamentação teórica
-
-### Vocabulário Técnico e Símbolos do Capítulo 7
+## Vocabulário Técnico e Símbolos do Capítulo 7
 
 **Divisor topográfico (interflúvio).** Linha que conecta os pontos mais elevados do terreno ao redor da bacia, separando o escoamento superficial que drena para o interior da bacia daquele que segue para bacias vizinhas. **Talvegue.** Linha que une os pontos de menor cota ao longo do fundo de um vale, por onde concentra-se o eixo do canal fluvial. **Exutório (seção de controle).** Ponto de menor altitude do perímetro da bacia, por onde toda a água superficial e os sedimentos transportados pela rede de drenagem deixam o sistema.
 
@@ -24,13 +18,13 @@ A leitura utiliza os conceitos de divisor, exutório, canal, área e perímetro.
 
 **Cotas extremas ($H_{\max}$ e $H_{\min}$).** Maior altitude no divisor de cabeceira e menor altitude no exutório, em metros ($\text{m}$). **Índices morfométricos,** $D_d$ (Densidade de Drenagem), $K_c$ (Coeficiente de Compacidade), $I_c$ (Índice de Circularidade), $H_m$ (Amplitude Altimétrica) e $R_r$ (Relação de Relevo). **Conectividade hidrossedimentológica.** Grau de continuidade física e funcional que permite a transferência de água e sedimentos desde as vertentes até o canal fluvial e o exutório.
 
-### Conceito Espacial e Funcional de Bacia e Microbacia Hidrográfica
+## Conceito Espacial e Funcional de Bacia e Microbacia Hidrográfica
 
 Na Geografia Física e na Análise Ambiental, a **bacia hidrográfica** não é um recorte arbitrário traçado em gabinete, mas uma unidade natural de drenagem definida pela topografia. Segundo **Christofoletti (1981)**, trata-se de uma área drenada por um determinado rio ou por um sistema fluvial, funcionando como um sistema aberto em que a água precipitada, guiada pela força da gravidade, converge das áreas mais elevadas (divisores) para o fundo dos vales (talvegues) até deixar o sistema por uma única seção de saída, o **exutório**.
 
 **Botelho e Silva (2004)** destacam que a bacia hidrográfica constitui a célula básica de análise e planejamento ambiental porque permite acompanhar, de modo integrado, as interações entre atmosfera (chuva e evapotranspiração), litosfera e pedosfera (rochas, solos, infiltração e erosão), biosfera (cobertura vegetal e fauna aquática) e antroposfera (cidades, estradas, agricultura, mineração e reservatórios). Nessa mesma linha, **Guerra e Cunha (1996)** enfatizam que qualquer intervenção realizada nas vertentes, como desmatamento, abertura de estradas rurais ou impermeabilização urbana, produz reflexos mensuráveis nos canais fluviais a jusante, manifestando-se sob a forma de enxurradas, erosão marginal, assoreamento e queda na qualidade da água.
 
-### Bacia, Sub-bacia e Microbacia, Escala Funcional e Gestão
+## Bacia, Sub-bacia e Microbacia, Escala Funcional e Gestão
 
 Na prática técnica e na legislação brasileira (Política Nacional de Recursos Hídricos, Lei nº 9.433/1997), adota-se uma hierarquia espacial encaixada,
 
@@ -40,11 +34,11 @@ Na prática técnica e na legislação brasileira (Política Nacional de Recurso
 
 Uma distinção técnica relevante diz respeito ao **divisor topográfico** (ou divisor superficial) frente ao **divisor freático** (ou subterrâneo). O divisor topográfico acompanha a linha de cumeada do relevo e governa o escoamento superficial; já o divisor freático acompanha o topo do lençol subterrâneo e depende do mergulho das camadas geológicas e das fraturas da rocha. Em terrenos cristalinos rasos do Semiárido baiano, os dois divisores tendem a coincidir de modo aproximado; em bacias sedimentares ou áreas cársticas (como o oeste baiano ou setores da Chapada Diamantina), o fluxo subterrâneo pode cruzar o divisor superficial e alimentar bacias adjacentes.
 
-### Elementos Estruturais e Hierarquia Fluvial de Strahler
+## Elementos Estruturais e Hierarquia Fluvial de Strahler
 
 Os canais de uma bacia organizam-se em uma rede ramificada que parte das nascentes e cabeceiras até o canal principal no exutório. Para comparar bacias de tamanhos distintos e avaliar o grau de ramificação e dissecação da paisagem, os geomorfólogos empregam sistemas de ordenação fluvial. O mais difundido na análise ambiental é a **Hierarquia Fluvial de Strahler (1952)**, uma simplificação operacional da proposta original de Horton (1945) apresentada por **Christofoletti (1981)**.
 
-### Regras Passo a Passo da Hierarquia Fluvial de Strahler
+## Regras Passo a Passo da Hierarquia Fluvial de Strahler
 
 A ordenação de Strahler é aplicada sempre de **montante (cabeceiras) para jusante (exutório)**, obedecendo estritamente a três regras,
 
@@ -60,11 +54,11 @@ Além da ordem hierárquica, a geometria espacial da rede, chamada **padrão de 
 
 **Dendrítico (arborescente).** Lembra galhos de árvore, típico de rochas com resistência relativamente homogênea à erosão (como granitos e gnaisses pouco fraturados ou coberturas sedimentares horizontais). **Retangular ou treliça.** Confluências próximas a $90^\circ$, denunciando forte controle estrutural por falhas, fraturas ou dobramentos (frequente em setores serranos da Chapada Diamantina). **Paralelo.** Canais alongados e quase paralelos entre si, característicos de vertentes com declividade acentuada e uniforme. **Radial.** Canais divergem de um ponto alto central (morros isolados, domos) ou convergem para uma depressão fechada.
 
-### Morfometria de Bacias Hidrográficas
+## Morfometria de Bacias Hidrográficas
 
 A **análise morfométrica** consiste em traduzir as características geométricas, lineares, areais e hipsométricas de uma bacia em índices numéricos objetivos (Christofoletti, 1981; Villela; Mattos, 1975). Esses índices permitem diagnosticar a permeabilidade do substrato, a velocidade de resposta às chuvas, a propensão natural a enchentes e o potencial energético para erosão e transporte de sedimentos. A seguir, examinamos os cinco parâmetros essenciais exigidos no Plano CHF662.
 
-### Densidade de Drenagem ($D_d$) — Horton (1945)
+## Densidade de Drenagem ($D_d$), Horton (1945)
 
 **Origem e finalidade.** Proposta por Robert E. Horton (1945), a Densidade de Drenagem expressa o comprimento médio de canais fluviais por unidade de área da bacia. Ela indica o grau de desenvolvimento e eficiência do sistema de escoamento superficial, refletindo a interação entre permeabilidade do solo/rocha, clima, declividade e cobertura vegetal.
 
@@ -92,7 +86,7 @@ $$
 
 Em termos ambientais, valores baixos de $D_d$ ($< 0,5\text{ km}/\text{km}^2$) associam-se a rochas e solos muito permeáveis (como arenitos profundos e Latossolos arenosos), relevos planos e elevada infiltração. Valores elevados ($> 2,0\text{ km}/\text{km}^2$, conforme a Tabela (morfometria limiares)) ocorrem em substratos pouco permeáveis (como rochas cristalinas fraturadas com solos rasos no Semiárido), encostas íngremes e regimes de chuvas concentradas, indicando rápida geração de escoamento superficial e maior dissecação erosiva. Um cuidado metodológico indispensável é que $D_d$ depende da **escala cartográfica**, mapas mais detalhados (1:10.000) registram canais de 1ª ordem efêmeros que desaparecem em cartas menores (1:100.000), portanto só se devem comparar valores de $D_d$ obtidos na mesma escala!
 
-### Índices de Forma: Coeficiente de Compacidade ($K_c$) e Índice de Circularidade ($I_c$)
+## Índices de Forma: Coeficiente de Compacidade ($K_c$) e Índice de Circularidade ($I_c$)
 
 A forma geométrica em planta de uma bacia controla diretamente o comportamento das cheias no exutório. Em uma bacia próxima a um círculo, todos os tributários percorrem distâncias parecidas até o exutório, fazendo com que os picos de vazão cheguem simultaneamente (elevando o risco de enchentes rápidas). Em uma bacia estreita e alongada, as águas das cabeceiras levam muito mais tempo para alcançar o exutório do que as águas do baixo curso, distribuindo a vazão no tempo e atenuando o pico de cheia.
 
@@ -133,11 +127,11 @@ $$
 
  **Interpretação.** Com $K_c = 1,34$ (entre $1,25$ e $1,50$) e $I_c = 0,55$ (próximo a $0,51$), a bacia apresenta forma ovalada/mediana, com suscetibilidade moderada a enchentes sob condições naturais.
 
-#### Índices de Relevo, Amplitude Altimétrica ($H_m$) e Relação de Relevo ($R_r$)
+### Índices de Relevo, Amplitude Altimétrica ($H_m$) e Relação de Relevo ($R_r$)
 
 A energia potencial disponível para movimentar água e sedimentos das cabeceiras ao exutório depende do desnível topográfico distribuído ao longo do comprimento da bacia.
 
-### Amplitude Altimétrica ($H_m$) e Relação de Relevo ($R_r$, Schumm, 1956)
+## Amplitude Altimétrica ($H_m$) e Relação de Relevo ($R_r$, Schumm, 1956)
 
 **Origem e finalidade.** A Amplitude Altimétrica ($H_m$) mede a diferença vertical total da bacia; porém, isoladamente, ela não informa se esse desnível ocorre em $2\text{ km}$ (encostas abruptas) ou em $200\text{ km}$ (planície suave). Para resolver isso, Stanley Schumm (1956) definiu a Relação de Relevo ($R_r$), que relaciona o desnível total ao comprimento axial da bacia, funcionando como um indicador direto da declividade geral média e do potencial erosivo e de transporte de sedimentos.
 
@@ -184,11 +178,11 @@ A Tabela (morfometria interpretacao) reúne faixas usuais de referência utiliza
 
 : Síntese interpretativa dos principais índices morfométricos de bacias hidrográficas. {#tbl-morfometria_interpretacao}
 
-### Áreas Ripárias, Conectividade Hidrossedimentológica e Mudanças de Uso da Terra
+## Áreas Ripárias, Conectividade Hidrossedimentológica e Mudanças de Uso da Terra
 
 Os índices morfométricos descrevem a arquitetura física "estática" (ou de evolução lenta) da bacia, mas a resposta ambiental real depende criticamente da cobertura vegetal e do manejo do solo nas vertentes e nas margens fluviais.
 
-#### Áreas Ripárias e Zonas Tampão
+### Áreas Ripárias e Zonas Tampão
 
 As **áreas ripárias** (matas ciliares, galerias e várzeas marginais, juridicamente protegidas como Áreas de Preservação Permanente, APPs, pelo Código Florestal, Lei nº 12.651/2012) constituem a interface ecossistêmica entre a vertente terrestre e o canal fluvial. Elas desempenham quatro funções ambientais insubstituíveis,
 
@@ -196,7 +190,7 @@ As **áreas ripárias** (matas ciliares, galerias e várzeas marginais, juridica
 
 **Recarga e amortecimento de cheias.** Solos ripários porosos atuam como esponjas, armazenando água nos períodos chuvosos e liberando-a gradualmente para manter o fluxo de base nos períodos secos.
 
-#### Conectividade Hidrossedimentológica
+### Conectividade Hidrossedimentológica
 
 Na geomorfologia fluvial contemporânea, denomina-se **conectividade hidrossedimentológica** a eficiência com que água e partículas de solo mobilizadas nas vertentes conseguem efetivamente viajar até a rede de canais e atingir o exutório (Brierley; Fryirs, 2005). Ela possui duas dimensões,
 
@@ -204,7 +198,7 @@ Na geomorfologia fluvial contemporânea, denomina-se **conectividade hidrossedim
 
 Uma mata ciliar conservada, terraços agrícolas em nível ou paliçadas permeáveis atuam como **desconectores** (barreiras ou *buffers*), interrompendo a chegada de sedimentos ao curso d’água. Por outro lado, o desmatamento das margens e a abertura de estradas não pavimentadas morro abaixo funcionam como **conectores artificiais**, acelerando o assoreamento de rios e açudes.
 
-#### Impactos da Mudança de Uso da Terra, Impermeabilização e Desmatamento
+### Impactos da Mudança de Uso da Terra, Impermeabilização e Desmatamento
 
 Quando uma microbacia florestada ou coberta por Caatinga preservada é convertida em pastagem degradada, monocultura sem práticas conservacionistas ou loteamento urbano pavimentado, ocorre uma alteração drástica no balanço hídrico local,
 
@@ -212,7 +206,7 @@ Quando uma microbacia florestada ou coberta por Caatinga preservada é convertid
 
 **Redução da recarga de aquíferos e das vazões de estiagem.** Como menos água infiltra durante as chuvas, os lençóis freáticos recebem menor recarga, fazendo com que nascentes sequem ou apresentem vazão muito reduzida na estação seca.
 
-### Delimitação, resolução e interpretação hidrológica
+## Delimitação, resolução e interpretação hidrológica
 
 A posição do exutório condiciona toda a delimitação. Deslocamentos desse ponto podem incorporar tributários e modificar área, perímetro e comprimento do canal principal. O registro de suas coordenadas e a inspeção do modelo de elevação são necessários para que outra pessoa possa repetir o procedimento.
 
@@ -222,7 +216,7 @@ Forma circular pode favorecer a chegada de contribuições em intervalos próxim
 
 O coeficiente de compacidade possui expressão geométrica exata dada pela razão entre o perímetro observado e o perímetro do círculo de mesma área. O fator $1/(2\sqrt{\pi})$ vale aproximadamente 0,2821. A aproximação por 0,28 introduz pequena diferença perto do limite circular e deve ser reconhecida ao conferir resultados próximos de 1.
 
-## Etapa 4 - Exemplos resolvidos
+## Exemplos resolvidos
 
 ::: {.callout-tip appearance="simple"}
 ### Exemplo 7.1 - Hierarquia Fluvial de Strahler em uma Microbacia de Cabeceira (Nível Básico)
@@ -436,7 +430,7 @@ $$
 **Condições de validade.** Note que $144.000\text{ m}^3$ correspondem a cerca de $58$ piscinas olímpicas ($2.500\text{ m}^3$ cada) lançadas abruptamente no canal em poucas horas. A supressão da mata ciliar e a canalização eliminam os desconectores naturais, elevam ao máximo a conectividade hidrossedimentológica artificial e provocam alagamentos a jusante, erosão de margens e redução severa da recarga subterrânea.
 :::
 
-## Etapa 5 - Erros de interpretação
+## Erros comuns de interpretação
 
 ::: {.callout-warning appearance="simple"}
 ### Erro 1, Somar ordens diferentes na Hierarquia de Strahler ($2 + 1 = 3$)
@@ -470,7 +464,7 @@ $$
 **Correção técnica.** Bases de escala pequena (1:100.000) generalizam a rede hidrográfica e omitem a maioria dos canais de 1ª ordem, subestimando $L_t$ e $D_d$. Análises comparativas só são válidas quando a rede de drenagem de todas as bacias é vetorizada na mesma escala e sob o mesmo critério de mapeamento.
 :::
 
-## Etapa 6 - Exercícios de fixação
+## Exercícios de fixação
 
 #### Nível Básico (Exercícios 1 a 5)
 
@@ -564,7 +558,7 @@ $$
 
     (E) Eliminação da conectividade estrutural entre vertentes e canais.
 
-## Etapa 7 - Questões de aplicação
+## Questões de aplicação
 
 16. **(Questão autoral, estilo ENADE / Licenciatura e Bacharelado em Geografia)** Um órgão estadual de meio ambiente avalia o pedido de supressão vegetal para expansão agropecuária em uma microbacia de cabeceira situada sobre embasamento cristalino no Nordeste brasileiro. O relatório técnico apresentou $D_d = 2,85\text{ km}/\text{km}^2$, $K_c = 1,14$ e $R_r = 55\text{ m}/\text{km}$. Com base na interpretação integrada desses indicadores morfométricos, conclui-se que a microbacia apresenta,
 
@@ -614,7 +608,7 @@ $$
 
 Na **Prova Teórica da Semana 10**, os índices morfométricos raramente são cobrados como contas isoladas, o enunciado exige que você calcule ($D_d$, $K_c$, $I_c$, $R_r$) e **interprete o significado ambiental** do número encontrado. No seu **Trabalho Prático Final**, extrair esses cinco índices em SIG (QGIS) para a microbacia escolhida, sempre informando a escala da base cartográfica utilizada, confere alto rigor técnico à caracterização da área de estudo.
 
-## Etapa 8 - Gabarito comentado
+## Gabarito comentado {.unnumbered}
 
 ::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resoluções e Justificativas, Capítulo 7
@@ -662,7 +656,7 @@ Na **Prova Teórica da Semana 10**, os índices morfométricos raramente são co
 18. **Gabarito, (E).** Todas as três proposições descrevem corretamente a dinâmica da conectividade estrutural e funcional em bacias hidrográficas, inclusive no contexto intermitente do Semiárido.
 :::
 
-## Etapa 9 - Síntese conceitual
+## Síntese conceitual {.unnumbered}
 
 ::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Bacia hidrográfica.** Sistema aberto delimitado por divisores topográficos que drena água e sedimentos até um único exutório (unidade básica de análise e gestão ambiental). **Strahler,** $1 + 1 \to 2$; $n + n \to n + 1$; $n + m \to \max(n, m)$. A ordem da bacia é a ordem do canal principal no exutório. **Formulário Morfométrico Essencial,**
@@ -684,9 +678,9 @@ $$
 . **Dinâmica aplicada.** Áreas ripárias funcionam como desconectores de sedimentos e estabilizadores de margens; desmatamento e impermeabilização elevam o coeficiente de escoamento ($C$), encurtam o tempo de concentração e amplificam enchentes e processos erosivos.
 :::
 
-## Etapa 10 - Verificação da aprendizagem
+## Autoavaliação {.unnumbered}
 
-::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
+::: {.callout-caution title="Autoavaliação e Checkpoint"}
 Responda rapidamente (Verdadeiro \[**V**\] ou Falso \[**F**\]) sem consultar o texto e confira ao final,
 
 1. () Na Hierarquia de Strahler, o encontro de um canal de 3ª ordem com um canal de 1ª ordem produz um segmento de 4ª ordem.

@@ -2,21 +2,15 @@
 
 A avaliação de impacto ambiental examina as consequências de uma intervenção enquanto alternativas ainda podem ser consideradas. O diagnóstico estabelece as condições de referência, o prognóstico explicita as mudanças esperadas e o monitoramento permite verificar a resposta do sistema após a decisão.
 
-## Etapa 1 - Objetivos de aprendizagem
-
 ::: {.callout-note title="O que você vai aprender neste capítulo"}
 A aprendizagem envolve construir cadeias de impacto, comparar alternativas e justificar critérios de significância. O estudante deve relacionar cada medida proposta ao mecanismo que pretende controlar e indicar como seu desempenho poderá ser verificado.
 :::
-
-## Etapa 2 - Conhecimentos necessários
 
 ::: {.callout-tip title="Revisando o que você precisa saber"}
 O capítulo utiliza as distinções entre atividade, aspecto e impacto, além das noções de escala e vulnerabilidade. A delimitação da área de estudo depende dos processos examinados, incluindo deslocamento de sedimentos, conectividade de habitats, circulação de pessoas e alteração de usos da água.
 :::
 
-## Etapa 3 - Fundamentação teórica
-
-### Vocabulário Técnico e Siglas Essenciais da AIA
+## Vocabulário Técnico e Siglas Essenciais da AIA
 
 | **Termo / Sigla** | **Significado operacional na Análise Ambiental** |
 |:---|:---|
@@ -28,33 +22,33 @@ O capítulo utiliza as distinções entre atividade, aspecto e impacto, além da
 | **$M_{ij}$, $I_{ij}$, $P_{ij}$** | Magnitude ($1$ a $10$), Importância ($1$ a $10$) e Pontuação Ponderada ($P_{ij} = s_{ij}\cdot M_{ij}\cdot I_{ij}$) da interação entre o fator ambiental $i$ e a ação $j$ numa matriz de Leopold adaptada. |
 | **Impacto residual** | Parcela do impacto adverso que permanece mesmo após esgotadas as medidas de prevenção, minimização e recuperação, sendo o alvo legítimo da compensação. |
 
-### Conceito, Natureza Preventiva e Papel da AIA no Planejamento
+## Conceito, Natureza Preventiva e Papel da AIA no Planejamento
 
 A **Avaliação de Impacto Ambiental (AIA)** é um instrumento de política e planejamento ambiental de caráter essencialmente **preventivo**. Como sintetiza Sánchez (2013, cap. 7), avaliar impactos ambientais significa identificar, prever, interpretar e comunicar, *antes* que uma obra, atividade ou política seja implantada, as alterações que ela poderá provocar nos meios físico, biótico e socioeconômico, bem como propor alternativas e medidas capazes de evitar ou reduzir danos e potencializar benefícios.
 
 No Brasil, a AIA constitui um dos instrumentos da Política Nacional do Meio Ambiente (Lei nº 6.938/1981) e articula-se diretamente ao licenciamento ambiental (Brasil/MMA, 2016; Vital et al., 2020). Embora o Estudo de Impacto Ambiental e seu respectivo Relatório (EIA/RIMA) representem a modalidade mais conhecida, destinada a atividades potencialmente causadoras de *significativa* degradação ambiental (Resolução CONAMA nº 001/1986), a AIA não se restringe ao EIA. O processo de AIA engloba também estudos simplificados (como o Relatório Ambiental Simplificado \[RAS\], o Plano de Controle Ambiental \[PCA\] e o Estudo Ambiental Preliminar \[EAP\]), a análise técnica pelo órgão licenciador, a participação pública (audiências públicas) e o acompanhamento posterior à licença.
 
-### Por que a AIA pertence ao Planejamento Ambiental?
+## Por que a AIA pertence ao Planejamento Ambiental?
 
 Quando reduzida a um rito cartorial executado após todas as decisões de engenharia já estarem fechadas, a AIA perde sua função precípua e transforma-se em mera justificativa documental. Para cumprir seu papel no **planejamento ambiental**, a AIA deve operar desde a fase de concepção do projeto, orientando,
 
 a escolha entre **alternativas locacionais** (onde instalar o empreendimento, evitando nascentes, APPs, solos muito frágeis ou áreas de alto valor cultural);. a escolha entre **alternativas tecnológicas** (qual técnica construtiva ou processo produtivo gera menor rejeito, menor supressão vegetal e menor demanda hídrica);. a avaliação da **alternativa zero** (cenário de não realização do projeto), verificando se o interesse público e o balanço socioambiental efetivamente justificam a intervenção.
 
-### Etapas do Processo de Avaliação de Impacto Ambiental
+## Etapas do Processo de Avaliação de Impacto Ambiental
 
 A literatura internacional e os manuais brasileiros de referência (Sánchez, 2013; Brasil/MMA, 2016) organizam a AIA em um encadeamento lógico e iterativo de etapas, sintetizado no Painel A da @fig-aia_mitigacao. Cada etapa condiciona a qualidade da etapa seguinte.
 
 ![Fluxo metodológico completo da Avaliação de Impacto Ambiental (Painel A) e ordem de prioridade técnica da Hierarquia de Mitigação (Painel B). Fonte, elaboração didática da disciplina CHF662 com base em Sánchez (2013) e Brasil/MMA (2016).](../img/fig03_etapas_aia_mitigacao.png "fig:"){#fig-aia_mitigacao}
 
-#### 1. Triagem (*Screening*)
+### 1. Triagem (*Screening*)
 
 A triagem responde à primeira pergunta decisória do processo, *este projeto requer uma AIA completa (EIA/RIMA), um estudo ambiental simplificado ou está dispensado de AIA?* Os critérios de triagem combinam a tipologia da atividade (rodovias, parques eólicos, mineração, barragens), o porte (área, potência, vazão) e, fundamentalmente, a **sensibilidade do local** de inserção (proximidade de Unidades de Conservação, terras indígenas, comunidades tradicionais, nascentes ou áreas de Caatinga bem conservada).
 
-#### 2. Definição de Escopo (*Scoping*) e Termo de Referência (TR)
+### 2. Definição de Escopo (*Scoping*) e Termo de Referência (TR)
 
 Confirmada a necessidade de AIA, a definição de escopo delimita *o que realmente importa estudar*, evitando dois extremos prejudiciais, relatórios enciclopédicos cheios de dados irrelevantes ou estudos omissos em impactos críticos. O produto formal dessa etapa é o **Termo de Referência (TR)**, emitido pelo órgão ambiental (como o INEMA na Bahia ou o IBAMA na esfera federal), que especifica a profundidade do diagnóstico, as metodologias obrigatórias, o horizonte temporal e as questões levantadas em consultas preliminares.
 
-#### 3. Diagnóstico Ambiental (Linha de Base) e Áreas de Influência
+### 3. Diagnóstico Ambiental (Linha de Base) e Áreas de Influência
 
 O diagnóstico constrói a **linha de base (*baseline*)**, ou seja, o retrato qualiquantitativo do ambiente *antes* da implantação do projeto, estruturado em três meios interdependentes,
 
@@ -68,7 +62,7 @@ O diagnóstico exige a delimitação cartográfica rigorosa das três **Áreas d
 | **AID** (Área de Influência Direta) | Espaço que sofre impactos diretos (primários) decorrentes da implantação e operação, geralmente definido pela microbacia, mancha de ruído ou raio de dispersão de poeira/fauna. | Microbacia drenada pelos acessos do parque eólico, áreas de afugentamento de avifauna e povoados lindeiros sujeitos a poeira e ruído. |
 | **AII** (Área de Influência Indireta) | Espaço alcançado por impactos secundários ou indiretos (econômicos, demográficos, viários ou sobre a bacia hidrográfica regional). | Municípios afetados pelo aumento de arrecadação, demanda por serviços urbanos, tráfego pesado e sub-bacia regional. |
 
-#### 4. Identificação, Previsão e Valoração de Impactos
+### 4. Identificação, Previsão e Valoração de Impactos
 
 Nesta etapa, cruzam-se as ações do projeto (nas fases de planejamento, implantação, operação e desativação) com os fatores ambientais descritos no diagnóstico. Os impactos são classificados segundo atributos padronizados, **natureza** (adverso ou benéfico), **incidência** (direto ou indireto), **abrangência** (local, regional ou estratégica), **temporalidade** (imediato, médio ou longo prazo), **duração** (temporário, permanente ou cíclico), **reversibilidade** (reversível ou irreversível) e **cumulatividade/sinergia** (quando se soma ou se amplifica junto a outros projetos existentes na bacia).
 
@@ -87,7 +81,7 @@ Para executar essa etapa de modo transparente e auditável, a análise ambiental
 | **Redes de Interação** | Evidencia impactos indiretos, cumulativos e efeitos em cascata nos sistemas naturais. | Pode tornar-se visualmente complexa em grandes projetos; não quantifica por si só a distribuição espacial. | Análise de bacias, erosão, hidrologia e cadeias tróficas. |
 | **Sobreposição / SIG** | Explicita exatamente *onde* ocorrem os conflitos e orienta alternativas locacionais. | Exige base cartográfica compatível na escala de detalhe; não substitui a análise de processos sociais não mapeáveis. | Escolha de traçados, parques energéticos e zoneamentos. |
 
-### Matriz de Leopold Ponderada, Pontuação de Magnitude, Importância e Balanço
+## Matriz de Leopold Ponderada, Pontuação de Magnitude, Importância e Balanço
 
 Em uma matriz de interação ponderada adaptada de Leopold et al. (1971), cada célula $(i,j)$ onde há interação efetiva entre o **fator ambiental $i$** (linha) e a **ação do empreendimento $j$** (coluna) recebe três atributos explícitos,
 
@@ -132,7 +126,7 @@ Célula $(F_1, A_1)$, impacto adverso ($s=-1$), alta intensidade física ($M=8$)
 
 **Balanço e alerta metodológico,** $\Sigma^{-} = -72$, $\Sigma^{+} = +48$ e balanço líquido $B = -72 + 48 = -24$. *Atenção,* a soma positiva em renda ($+48$) **nunca** elimina fisicamente a erosão do solo ($-72$); por isso, a decisão técnica exige analisar sempre $\Sigma^{-}$, $\Sigma^{+}$ e as células críticas individuais, nunca apenas o saldo líquido $B$.
 
-#### 5. Prognóstico Ambiental, Cenário com Projeto vs. Cenário sem Projeto
+### 5. Prognóstico Ambiental, Cenário com Projeto vs. Cenário sem Projeto
 
 O prognóstico projeta a evolução futura da qualidade ambiental em dois cenários comparativos obrigatórios,
 
@@ -140,7 +134,7 @@ O prognóstico projeta a evolução futura da qualidade ambiental em dois cenár
 
 O impacto verdadeiro atribuível ao projeto corresponde à **diferença entre a trajetória futura com o projeto e a trajetória futura sem o projeto**, e não simplesmente à diferença entre o “depois” e o “antes” estático.
 
-#### 6. Hierarquia de Mitigação, Medidas Mitigadoras e Compensatórias
+### 6. Hierarquia de Mitigação, Medidas Mitigadoras e Compensatórias
 
 Diante dos impactos adversos identificados, o planejador ambiental não pode escolher medidas aleatoriamente ou propor compensação financeira de imediato para danos que poderiam ser evitados. A prática internacional e a legislação ambiental impõem a **Hierarquia de Mitigação**, representada no Painel B da @fig-aia_mitigacao,
 
@@ -150,13 +144,13 @@ Diante dos impactos adversos identificados, o planejador ambiental não pode esc
 
 Para impactos **benéficos**, em vez de medidas mitigadoras, formulam-se **medidas potencializadoras** (por exemplo, capacitação profissional prévia de moradores locais para maximizar a absorção de mão de obra da AID).
 
-#### 7. Plano Básico Ambiental (PBA) e Monitoramento Pós-Implantação
+### 7. Plano Básico Ambiental (PBA) e Monitoramento Pós-Implantação
 
 Na etapa de decisão, o órgão ambiental emite parecer técnico e decide pelo deferimento (com condicionantes) ou indeferimento da licença (Licença Prévia \[LP\], seguida de Licença de Instalação \[LI\] e Licença de Operação \[LO\]). Os compromissos genéricos listados no EIA são então detalhados em projetos executivos no **Plano Básico Ambiental (PBA)**, que reúne programas operacionais como, Programa de Controle de Processos Erosivos, Programa de Monitoramento da Qualidade da Água, Programa de Resgate e Monitoramento de Fauna, Programa de Educação Ambiental e PRAD.
 
 O **monitoramento pós-implantação** (acompanhamento) fecha o ciclo da AIA. Medindo periodicamente os mesmos indicadores levantados na linha de base (turbidez da água, taxa de erosão, ruído, sobrevivência de mudas), o monitoramento verifica se as previsões do estudo estavam corretas e se as medidas do PBA atingiram as metas estipuladas. Caso os indicadores ultrapassem os limites toleráveis, aciona-se a **gestão adaptativa**, com correção imediata dos controles em campo.
 
-### Diagnóstico, cenário de referência e efeitos cumulativos
+## Diagnóstico, cenário de referência e efeitos cumulativos
 
 O cenário de referência descreve a trajetória provável do ambiente durante o período analisado, considerando tendências já existentes. A comparação com o empreendimento deve manter o mesmo horizonte temporal. Uma área submetida a expansão urbana pode apresentar mudanças mesmo sem o projeto proposto, o que exige distinguir tendências preexistentes e efeitos adicionais.
 
@@ -166,7 +160,7 @@ Uma matriz ponderada auxilia a comparação quando critérios e pesos são trans
 
 O acompanhamento completa a análise ao confrontar previsão e observação. Uma medida de controle precisa de condição inicial, meta, frequência de verificação e responsável. A mudança observada deve ser interpretada junto às condições de chuva, operação e manutenção, permitindo corrigir a intervenção quando o resultado divergir do esperado.
 
-## Etapa 4 - Exemplos resolvidos
+## Exemplos resolvidos
 
 ::: {.callout-tip appearance="simple"}
 ### Exemplo 5.1 - Delimitação Quantitativa de ADA, AID e AII em Parque Solar no Semiárido (Nível Básico)
@@ -405,7 +399,7 @@ $$
 **Condições de validade.** Por que descontar $T_0 = 18{,}0\,\text{NTU}$ no denominador? Porque o rio já apresentava turbidez natural de $18{,}0\,\text{NTU}$ antes da obra; uma medida de controle não visa “zerar” a turbidez natural do rio, mas abater o acréscimo provocado pela intervenção. Sem o desconto da linha de base, o cálculo subestimaria a eficiência real ($79/112 = 70{,}54\%$).
 :::
 
-## Etapa 5 - Erros de interpretação
+## Erros comuns de interpretação
 
 ::: {.callout-warning appearance="simple"}
 ### Erro 1, Confundir AIA com EIA/RIMA ou tratar o licenciamento como mera burocracia
@@ -447,7 +441,7 @@ $$
 **Como evitar.** Delimite a AID do meio físico pela microbacia ou área de drenagem, a AID biótica pelos habitats e corredores ecológicos afetados e a AII socioeconômica pela rede de relações territoriais e municipais.
 :::
 
-## Etapa 6 - Exercícios de fixação
+## Exercícios de fixação
 
 #### Nível 1, Básico (Conceitos, Etapas e Cálculos Fundamentais)
 
@@ -543,7 +537,7 @@ $$
 
     (E) O monitoramento só deve iniciar após a desativação definitiva do empreendimento.
 
-## Etapa 7 - Questões de aplicação
+## Questões de aplicação
 
 16. **\[Autoral, Estilo ENADE / Geografia\]** A implantação de grandes empreendimentos energéticos e rodoviários no Semiárido brasileiro exige estudos ambientais rigorosos no âmbito da AIA. Considere as afirmações a seguir sobre o papel do geógrafo na AIA,
 
@@ -604,7 +598,7 @@ $$
 
 No **Estudo Orientado EO4** (Semana 5), ao analisar o texto de Sánchez (2013, cap. 7) e o guia do MMA (2016), concentre sua argumentação em três eixos avaliados na Prova Teórica, (1) a AIA como processo preventivo e não burocrático; (2) a escolha justificada de métodos (sabendo quando combinar matriz ponderada, rede de interação e SIG); e (3) a aplicação rigorosa da Hierarquia de Mitigação. No **Trabalho Prático Final**, você utilizará a mesma lógica de linha de base $\to$ matriz de impactos/indicadores $\to$ hierarquia de intervenção para a sua área de estudo.
 
-## Etapa 8 - Gabarito comentado
+## Gabarito comentado {.unnumbered}
 
 ::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resoluções dos Exercícios 1 a 10 (Básicos e Intermediários)
@@ -698,7 +692,7 @@ No **Estudo Orientado EO4** (Semana 5), ao analisar o texto de Sánchez (2013, c
 - **Questão 18, Gabarito, (A).** A associação correta de cima para baixo é, PBA (4), programas operacionais; TR (1), escopo e conteúdo mínimo; Diagnóstico/Linha de Base (2), caracterização prévia dos três meios; Matriz de Leopold (3), cruzamento ações $\times$ fatores por magnitude e importância $\implies$ **4 - 1 - 2 - 3**.
 :::
 
-## Etapa 9 - Síntese conceitual
+## Síntese conceitual {.unnumbered}
 
 ::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Essência da AIA.** Processo **preventivo** que informa a tomada de decisão *antes* da implantação de projetos, integrando alternativas locacionais, tecnológicas e a alternativa zero (Sánchez, 2013; Brasil/MMA, 2016). **Fluxo das etapas,** Triagem (*screening*) $\to$ Escopo (*scoping* / TR) $\to$ Diagnóstico (linha de base nos meios físico, biótico e socioeconômico + ADA, AID, AII) $\to$ Identificação/Previsão/Valoração $\to$ Prognóstico (com vs. sem projeto) $\to$ Mitigação/Compensação e PBA $\to$ Decisão e Monitoramento pós-implantação. **Métodos complementares,** *Checklists* (rapidez inicial), Matriz de Leopold Ponderada ($P_{ij} = s_{ij} \cdot M_{ij} \cdot I_{ij}$, sempre separando $\Sigma^{-}$ e $\Sigma^{+}$), Redes de Interação (efeitos indiretos em cascata) e Sobreposição em SIG (localização e alternativas locacionais).
@@ -706,9 +700,9 @@ No **Estudo Orientado EO4** (Semana 5), ao analisar o texto de Sánchez (2013, c
 **Hierarquia de Mitigação,** **1º Evitar $\to$ 2º Minimizar $\to$ 3º Recuperar $\to$ 4º Compensar** (apenas para o impacto residual inevitável). **Auditoria do PBA.** Eficiência de abatimento sobre a carga antrópica calculada em relação à linha de base ($E_f = \frac{T_{\text{sem}} - T_{\text{com}}}{T_{\text{sem}} - T_0} \times 100\%$), viabilizando gestão adaptativa.
 :::
 
-## Etapa 10 - Verificação da aprendizagem
+## Autoavaliação {.unnumbered}
 
-::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
+::: {.callout-caution title="Autoavaliação e Checkpoint"}
 Marque Verdadeiro (**V**) ou Falso (**F**) para testar seu domínio antes de avançar ao Capítulo 6,
 
 1. () A AIA equivale exatamente ao EIA/RIMA, sendo dispensada para empreendimentos que apresentam apenas PCA ou RAS.

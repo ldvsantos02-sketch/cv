@@ -2,21 +2,15 @@
 
 O diagnóstico ambiental aplicado reúne evidências para explicar o funcionamento de uma área e orientar decisões. Mapas e indicadores sustentam a análise quando suas relações são demonstradas. O produto final deve permitir compreender o problema, localizar as intervenções e verificar os resultados esperados.
 
-## Etapa 1 - Objetivos de aprendizagem
-
 ::: {.callout-note title="O que você vai aprender neste capítulo"}
 A aprendizagem envolve elaborar um diagnóstico com pergunta, recorte, dados, interpretação e proposta coerentes. O estudante deve justificar suas conclusões, reconhecer limitações e apresentar critérios de acompanhamento que permitam revisar a intervenção.
 :::
-
-## Etapa 2 - Conhecimentos necessários
 
 ::: {.callout-tip title="Revisando o que você precisa saber"}
 O trabalho articula leitura de paisagem, análise de bacia, solos, indicadores e instrumentos de gestão. A integração exige que mapas e tabelas utilizem unidades territoriais compatíveis e que diferenças de data e método sejam consideradas na interpretação.
 :::
 
-## Etapa 3 - Fundamentação teórica
-
-### Vocabulário Técnico e Símbolos do Capítulo 15
+## Vocabulário Técnico e Símbolos do Capítulo 15
 
 **Recorte Espacial ($A_{\text{rec}}$).** Unidade territorial delimitada para o diagnóstico (preferencialmente microbacia hidrográfica, sub-bacia, vertente completa ou trecho de APP/área degradada). **SIRGAS 2000,** Sistema de Referência Geocêntrico para as Américas, datum geodésico oficial do Brasil, obrigatório nos projetos em QGIS e nos mapas finais. $A_{\min}$, **área mínima mapeável** no terreno correspondente a $4\text{ mm}^2$ no mapa impresso ($A_{\min} = 4 \times 10^{-6} \cdot E^2\text{ m}^2$, onde $E$ é o denominador da escala $1:E$). **Matriz de Indicadores.** Tabela analítica que cruza Pressão, Estado, Impacto e Resposta (PEIR) com atributos de qualidade do solo ($IQS$) e fragilidade emergente ($FE$).
 
@@ -62,7 +56,7 @@ Com apoio de imagens de alta resolução (Google/Bing/CBERS-4A no QGIS) e, quand
 
 Para evitar diagnósticos puramente descritivos, o Trabalho Prático Final exige uma **Matriz de Indicadores** que integre o modelo **PEIR** (Capítulo 10), os atributos de **Qualidade do Solo** (Capítulo 11) e a **Fragilidade Emergente de Ross** (Capítulo 9). Quando houver múltiplos setores ou subunidades na área de estudo, aplica-se o Índice Composto de Priorização de Intervenção ($IPI$) para hierarquizar onde agir primeiro.
 
-### Índice Composto de Priorização de Intervenção ($IPI$)
+## Índice Composto de Priorização de Intervenção ($IPI$)
 
 Para cada setor homogêneo avaliado na área de estudo, o Índice Composto de Priorização de Intervenção ($IPI \in [0,\,1]$) combina três dimensões normalizadas,
 
@@ -88,7 +82,7 @@ $w_F, w_S, w_P$, pesos técnicos atribuídos conforme o objetivo do diagnóstico
 | $0{,}80 \le IPI \le 1{,}00$ | **Crítica** | Intervenção imediata integrada (PRAD, paliçadas, drenagem e isolamento). |
 
 ::: {.callout-tip appearance="simple"}
-### Exemplo Estrutural da Matriz Integrada de Indicadores
+## Exemplo Estrutural da Matriz Integrada de Indicadores
 
 | **Dimensão** | **Indicador Medido** | **Fonte / Método** | **Valor / Classe** | **Papel na Resposta (PRAD)** |
 |:---|:---|:---|:---|:---|
@@ -119,7 +113,7 @@ Na Semana 16, o trabalho é entregue e socializado em apresentação oral breve.
 | **5. Redação Técnica e Socialização (Semana 16)** | $0{,}8$ | Clareza, norma culta, citações padronizadas (ABNT) e defesa oral objetiva, respeitando o tempo e respondendo com domínio conceitual. |
 | **TOTAL GERAL** | $\mathbf{5{,}0}$ | **Correspondente a $50\%$ da média semestral de CHF662.** |
 
-### Da evidência à proposta de intervenção
+## Da evidência à proposta de intervenção
 
 Uma recomendação deve indicar qual processo será alterado e por qual mecanismo. A recuperação de uma margem pode exigir controlar sedimentos produzidos em acessos situados a montante. A localização das medidas decorre do percurso da água e da relação entre fontes, caminhos e receptores.
 
@@ -129,7 +123,7 @@ A prioridade de intervenção combina gravidade do processo, elementos expostos,
 
 O plano de acompanhamento completa o diagnóstico ao definir como a hipótese e a intervenção serão avaliadas. Registros georreferenciados, medições repetidas e documentação da manutenção permitem verificar a evolução. O relatório deve apresentar também os dados ausentes e a influência esperada dessas lacunas sobre a decisão, mantendo a distinção entre constatação, hipótese e previsão.
 
-## Etapa 4 - Exemplos resolvidos
+## Exemplos resolvidos
 
 ::: {.callout-tip appearance="simple"}
 ### Exemplo 15.1 (Básico). Escolha da Escala Cartográfica e Área Mínima Mapeável ($A_{\min}$)
@@ -328,7 +322,7 @@ $$
 **Condições de validade.** A soma das perdas totais ($0{,}30 + 0{,}10 + 0{,}00 + 0{,}35 + 0{,}05 = 0{,}80\text{ pt}$) fecha exatamente com $5{,}00 - 4{,}20 = 0{,}80\text{ pt}$.
 :::
 
-## Etapa 5 - Erros de interpretação
+## Erros comuns de interpretação
 
 ::: {.callout-warning appearance="simple"}
 ### Erro 1, Produzir Mapas sem Datum, Escala Gráfica ou Grade de Coordenadas
@@ -362,7 +356,7 @@ $$
 **Correção técnica,** Lembre a cadeia causal do modelo PEIR, **P** é o vetor ou atividade humana modificadora; **E** é a condição atual do meio; **I** é o efeito físico, ecológico ou social mensurável; e **R** é a ação corretiva, legal ou de manejo proposta pelo poder público ou empreendedor.
 :::
 
-## Etapa 6 - Exercícios de fixação
+## Exercícios de fixação
 
 #### Nível Básico (Conceitos, Bases Abertas e Fluxo do Trabalho Final)
 
@@ -450,7 +444,7 @@ $$
 
     (E) A rubrica atribui $100\%$ da nota apenas à quantidade de páginas do relatório, dispensando coerência entre diagnóstico, legislação e proposta técnica.
 
-## Etapa 7 - Questões de aplicação
+## Questões de aplicação
 
 ### Da Universidade para a Prática Profissional
 
@@ -492,7 +486,7 @@ Em editais de Analista Ambiental (IBAMA, ICMBio, INEMA) e no ENADE de Geografia,
 
     (E) Impossibilidade de comparação temporal futura em razão do uso de indicadores numéricos.
 
-## Etapa 8 - Gabarito comentado
+## Gabarito comentado {.unnumbered}
 
 ::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
 ### Resoluções Completas, Exercícios de Fixação (1 a 15)
@@ -544,15 +538,15 @@ Em editais de Analista Ambiental (IBAMA, ICMBio, INEMA) e no ENADE de Geografia,
 18. **Gabarito, (B).** Apenas relatórios georreferenciados, apoiados em indicadores mensuráveis e metas auditáveis permitem análise técnica objetiva e fiscalização pelo órgão ambiental.
 :::
 
-## Etapa 9 - Síntese conceitual
+## Síntese conceitual {.unnumbered}
 
 ::: {.callout-important title="Síntese Conceitual do Capítulo"}
 **Fluxo do Trabalho Final (Semana 16, $5{,}0$ pts),** (1) delimitação em microbacia/encosta/APP; (2) bases abertas em SIRGAS 2000/UTM; (3) caracterização integrada; (4) mapeamento da degradação; (5) Matriz de Indicadores ($IPI = 0{,}35\,F_{\text{norm}} + 0{,}35\,(1-IQS) + 0{,}30\,P_{\text{norm}}$); (6) mapas + relatório + PRAD/bioengenharia; (7) auditoria pela rubrica e socialização. **Cartografia obrigatória.** Todos os mapas devem exibir título, Norte, escala gráfica/numérica, coordenadas em SIRGAS 2000, legenda e fonte. **Coerência técnica.** Cada medida de bioengenharia ou PRAD deve responder diretamente a um indicador crítico diagnosticado e respeitar a Lei nº 12.651/2012.
 :::
 
-## Etapa 10 - Verificação da aprendizagem
+## Autoavaliação {.unnumbered}
 
-::: {.callout-caution title="Checkpoint — Verificação da Aprendizagem"}
+::: {.callout-caution title="Autoavaliação e Checkpoint"}
 Responda com **V** (Verdadeiro) ou **F** (Falso) e confira abaixo,
 
 1. ( ) O Trabalho Prático Final (Semana 16) corresponde a $50\%$ da nota da disciplina CHF662 e exige integração entre bases cartográficas abertas, Matriz de Indicadores e proposta preliminar de intervenção.

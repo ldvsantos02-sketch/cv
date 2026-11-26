@@ -1,0 +1,66 @@
+\documentclass[border=12pt]{standalone}
+\input{er_tikz_style}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+  % Título principal
+  \node[erTitle, font=\large\bfseries\sffamily] (title) at (0, 5.20)
+    {Paradigmas Tecnológicos na Extensão: Convencional vs. Tecnologia Social};
+  \node[erSub] (sub) at (0, 4.70)
+    {Contraste entre a lógica difusionista de pacotes exógenos e a adequação sociotécnica};
+
+  % ================= COLUNA ESQUERDA: CONVENCIONAL =================
+  \begin{scope}[shift={(-4.35, 0)}]
+    \node[draw=erAlert!75, fill=bgAlert, rounded corners=8pt, line width=1.25pt,
+          minimum width=7.3cm, minimum height=7.6cm] (panelL) at (0, 0.25) {};
+
+    \node[erBadge=erAlert, rounded corners=5pt, inner xsep=12pt, inner ysep=4pt]
+      at ([yshift=-22pt]panelL.north) {Tecnologia Convencional};
+
+    \node[erBox=erAlert, text width=5.85cm, minimum height=0.92cm] (l1) at (0, 2.35)
+      {\textbf{1. Gerada em laboratório exógeno}};
+    \node[erBox=erAlert, text width=5.85cm, minimum height=0.92cm] (l2) at (0, 0.85)
+      {\textbf{2. Pacote padronizado}};
+    \node[erBox=erAlert, text width=5.85cm, minimum height=0.92cm] (l3) at (0, -0.65)
+      {\textbf{3. Dependente de insumos externos}};
+    \node[erBox=erAlert, text width=5.85cm, minimum height=0.92cm] (l4) at (0, -2.15)
+      {\textbf{4. Intensiva em capital}};
+
+    \draw[erArrow, color=erAlert] (l1.south) -- (l2.north);
+    \draw[erArrow, color=erAlert] (l2.south) -- (l3.north);
+    \draw[erArrow, color=erAlert] (l3.south) -- (l4.north);
+  \end{scope}
+
+  % ================= COLUNA DIREITA: TECNOLOGIA SOCIAL =================
+  \begin{scope}[shift={(4.35, 0)}]
+    \node[draw=erForest!80, fill=bgForest, rounded corners=8pt, line width=1.25pt,
+          minimum width=7.3cm, minimum height=7.6cm] (panelR) at (0, 0.25) {};
+
+    \node[erBadge=erForest, rounded corners=5pt, inner xsep=12pt, inner ysep=4pt]
+      at ([yshift=-22pt]panelR.north) {Tecnologia Social (Dagnino)};
+
+    \node[erBox=erForest, text width=5.85cm, minimum height=0.92cm] (r1) at (0, 2.35)
+      {\textbf{1. Co-construída com comunidades}};
+    \node[erBox=erForest, text width=5.85cm, minimum height=0.92cm] (r2) at (0, 0.85)
+      {\textbf{2. Adaptável ao território}};
+    \node[erBox=erForest, text width=5.85cm, minimum height=0.92cm] (r3) at (0, -0.65)
+      {\textbf{3. Baseada em recursos locais}};
+    \node[erBox=erForest, text width=5.85cm, minimum height=0.92cm] (r4) at (0, -2.15)
+      {\textbf{4. Acessível, reaplicável e autônoma}};
+
+    \draw[erArrow, color=erForest] (r1.south) -- (r2.north);
+    \draw[erArrow, color=erForest] (r2.south) -- (r3.north);
+    \draw[erArrow, color=erForest] (r3.south) -- (r4.north);
+  \end{scope}
+
+  % Marcador central de contraste
+  \node[
+    draw=erNavy!40, fill=white, circle, line width=1.1pt,
+    inner sep=4pt, font=\scriptsize\bfseries\sffamily, text=erNavy
+  ] at (0, 0.25) {VS};
+
+\end{tikzpicture}
+\end{document}

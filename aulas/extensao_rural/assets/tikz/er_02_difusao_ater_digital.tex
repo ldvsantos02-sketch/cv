@@ -1,0 +1,140 @@
+\documentclass[border=12pt]{standalone}
+\input{er_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+
+  % Título geral no topo
+  \node[erTitle, font=\large\bfseries\sffamily] (title) at (7.65, 8.05)
+    {Difusão de Inovações (Rogers) e Estratégia de ATER Digital Híbrida};
+
+  % ================= ESQUERDA: PGFPLOTS CURVA S =================
+  \begin{scope}[shift={(0, 0)}]
+    % Moldura sutil para o painel esquerdo (alinhada ao painel direito)
+    \draw[draw=erNavy!30, fill=bgNavy!45, rounded corners=8pt, line width=1pt]
+      (-1.35, -1.75) rectangle (8.35, 7.35);
+
+    \node[erBadge=erNavy, rounded corners=5pt, inner ysep=4pt, anchor=west] at (-1.05, 6.85)
+      {Curva S de Difusão de Inovações (Rogers, 2003)};
+
+    \begin{axis}[
+      at={(-0.15cm, -0.35cm)},
+      width=8.1cm,
+      height=5.95cm,
+      scale only axis,
+      xmin=0, xmax=10,
+      ymin=0, ymax=106,
+      xtick={1.67, 3.49, 5.0, 6.51},
+      xticklabels={},
+      ytick={0, 25, 50, 75, 100},
+      yticklabels={0\%, 25\%, 50\%, 75\%, 100\%},
+      xlabel={Tempo de Adoção},
+      ylabel={\% de Adoção Acumulada},
+      label style={font=\footnotesize\bfseries\sffamily, text=erInk},
+      tick label style={font=\scriptsize\sffamily, text=erMuted},
+      axis lines=left,
+      axis line style={draw=erNavy, line width=1pt},
+      ymajorgrids=true,
+      grid style={dashed, draw=erNavy!18},
+      clip=false
+    ]
+      % Linhas verticais tracejadas separando os 5 estágios acumulados (2.5%, 16%, 50%, 84%)
+      \draw[dashed, color=erTeal!55, line width=0.8pt] (axis cs:1.67, 0) -- (axis cs:1.67, 100);
+      \draw[dashed, color=erTeal!55, line width=0.8pt] (axis cs:3.49, 0) -- (axis cs:3.49, 100);
+      \draw[dashed, color=erTeal!55, line width=0.8pt] (axis cs:5.00, 0) -- (axis cs:5.00, 100);
+      \draw[dashed, color=erTeal!55, line width=0.8pt] (axis cs:6.51, 0) -- (axis cs:6.51, 100);
+
+      % Curva logística S suave: 100 / (1 + exp(-1.1*(x - 5)))
+      \addplot[
+        domain=0.2:9.8,
+        samples=120,
+        smooth,
+        line width=2.4pt,
+        color=erNavy
+      ] {100 / (1 + exp(-1.1*(x - 5)))};
+
+      % Pontos marcadores nos estágios
+      \addplot[
+        only marks,
+        mark=*,
+        mark size=2.8pt,
+        color=erGoldDark,
+        fill=erGold
+      ] coordinates {
+        (0.95, 1.15)
+        (2.58, 6.53)
+        (4.25, 30.5)
+        (5.75, 69.5)
+        (7.75, 95.4)
+      };
+
+      % Rótulos sem sobreposição com linhas conectoras limpas
+      \node[erBox=erGold, inner sep=3.5pt, font=\scriptsize\sffamily, fill=white]
+        (lbl1) at (axis cs:1.25, 22) {\textbf{Inovadores}\\2,5\%};
+      \draw[->, >=Stealth, color=erGoldDark, line width=0.8pt] (lbl1.south) -- (axis cs:0.95, 3.5);
+
+      \node[erBox=erTeal, inner sep=3.5pt, font=\scriptsize\sffamily, fill=white]
+        (lbl2) at (axis cs:2.35, 45) {\textbf{Adotantes}\\[-1pt]\textbf{Iniciais}\\13,5\%};
+      \draw[->, >=Stealth, color=erTeal, line width=0.8pt] (lbl2.south) -- (axis cs:2.58, 9.2);
+
+      \node[erBox=erForest, inner sep=3.5pt, font=\scriptsize\sffamily, fill=white]
+        (lbl3) at (axis cs:3.25, 76) {\textbf{Maioria}\\[-1pt]\textbf{Inicial}\\34\%};
+      \draw[->, >=Stealth, color=erForest, line width=0.8pt] (lbl3.south east) -- (axis cs:4.15, 33.5);
+
+      \node[erBox=erNavy, inner sep=3.5pt, font=\scriptsize\sffamily, fill=white]
+        (lbl4) at (axis cs:7.6, 52) {\textbf{Maioria}\\[-1pt]\textbf{Tardia}\\34\%};
+      \draw[->, >=Stealth, color=erNavy, line width=0.8pt] (lbl4.north west) -- (axis cs:5.9, 67.5);
+
+      \node[erBox=erMuted, inner sep=3.5pt, font=\scriptsize\sffamily, fill=white]
+        (lbl5) at (axis cs:8.35, 81) {\textbf{Retardatários}\\16\%};
+      \draw[->, >=Stealth, color=erMuted, line width=0.8pt] (lbl5.north) -- (axis cs:7.75, 93);
+
+    \end{axis}
+  \end{scope}
+
+  % ================= DIREITA: ATER DIGITAL HÍBRIDA =================
+  \begin{scope}[shift={(12.5, 0)}]
+    % Moldura externa do painel direito (mesma altura exata do painel esquerdo)
+    \draw[draw=erTeal!60, fill=bgTeal!70, rounded corners=8pt, line width=1.15pt]
+      (-3.7, -1.75) rectangle (3.7, 7.35);
+
+    \node[erBadge=erTeal, rounded corners=5pt, inner ysep=4pt] (rbadge) at (0, 6.85)
+      {ATER Digital Híbrida};
+    \node[font=\scriptsize\bfseries\sffamily, text=erNavy, below=4pt of rbadge] (rsub)
+      {Evitando a Exclusão Rural};
+
+    % Bloco superior: Canais Digitais (posicionado com below=of para zero sobreposição)
+    \node[erBox=erTeal, text width=6.3cm, align=left, inner sep=8pt, below=8pt of rsub]
+      (dig) {
+      {\color{erTeal}\textbf{\footnotesize Canais Digitais (Escala \& Agilidade)}}\\[4pt]
+      \scriptsize
+      \textbullet\ \textbf{WhatsApp \& Áudio:} alertas técnicos e dúvidas\\
+      \textbullet\ \textbf{Rádio Web \& Podcasts:} alcance sem banda larga\\
+      \textbullet\ \textbf{Sensores \& Plataformas:} clima, manejo e mercados
+    };
+
+    % Conector central
+    \node[fill=erGold, text=white, circle, inner sep=3.5pt, font=\small\bfseries\sffamily,
+          below=11pt of dig] (plus) {+};
+    \draw[erArrow, color=erTeal] (dig.south) -- (plus.north);
+
+    % Bloco inferior: Mediação Presencial
+    \node[erBox=erNavy, text width=6.3cm, align=left, inner sep=8pt, below=11pt of plus]
+      (pres) {
+      {\color{erNavy}\textbf{\footnotesize Mediação Presencial (Vínculo \& Inclusão)}}\\[4pt]
+      \scriptsize
+      \textbullet\ \textbf{Visitas Técnicas:} diagnóstico situado na propriedade\\
+      \textbullet\ \textbf{Unidades Demonstrativas:} aprendizado entre pares\\
+      \textbullet\ \textbf{Acesso \& Conectividade:} inclusão e letramento digital
+    };
+    \draw[erArrow, color=erNavy] (plus.south) -- (pres.north);
+
+    % Nota de rodapé do painel direito
+    \node[fill=bgNavy, draw=erNavy!45, rounded corners=5pt, inner sep=6pt,
+          text width=6.3cm, align=center, font=\scriptsize\bfseries\itshape\sffamily, text=erNavy,
+          below=10pt of pres]
+      {O digital potencializa a ATER sem substituir o contato humano.};
+  \end{scope}
+
+\end{tikzpicture}
+\end{document}

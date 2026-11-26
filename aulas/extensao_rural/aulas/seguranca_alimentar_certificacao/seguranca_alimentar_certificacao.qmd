@@ -12,11 +12,12 @@ execute:
   echo: false
 ---
 
-## Visão Geral {.smaller-text}
+## [Abertura]{.pitch-tag .pitch-tag--gold} Visão Geral da Aula {#visao-geral .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos Principais
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Roteiro da aula]{.pitch-card-index}
+[Tópicos estruturantes]{.pitch-heading}
 
 - [1]{.circle} Segurança Alimentar e Nutricional (SAN)
 - [2]{.circle} Soberania Alimentar
@@ -26,242 +27,442 @@ execute:
 - [6]{.circle} O Papel do Extensionista na SAN
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo Central**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Objetivo central]{.pitch-card-index}
+[Da produção ao consumo responsável]{.pitch-heading}
 
 Compreender os conceitos de segurança e soberania alimentar, os mecanismos de certificação de produtos orgânicos e as indicações geográficas como estratégias de valorização da agricultura familiar e de promoção do desenvolvimento rural sustentável.
 :::
-:::
-:::
 
----
-
-## SEGURANÇA ALIMENTAR E NUTRICIONAL {.smaller-text}
-
-A **Segurança Alimentar e Nutricional** (SAN) consiste na "realização do direito de todos ao acesso regular e permanente a alimentos de qualidade, em quantidade suficiente, sem comprometer o acesso a outras necessidades essenciais, tendo como base práticas alimentares promotoras de saúde que respeitem a diversidade cultural e que sejam ambiental, cultural, econômica e socialmente sustentáveis" (LOSAN, Lei 11.346/2006, Art. 3°).
-
-O conceito de SAN é multidimensional. Envolve a disponibilidade de alimentos (produção e abastecimento), o acesso (renda e distribuição), a utilização biológica (qualidade nutricional e sanitária) e a estabilidade (regularidade ao longo do tempo). A extensão rural atua diretamente sobre a primeira dimensão, ao apoiar sistemas produtivos diversificados e sustentáveis, e sobre a terceira, ao orientar práticas de processamento, conservação e higiene alimentar (Maluf, 2007).
-
----
-
-## INSEGURANÇA ALIMENTAR NO BRASIL {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-A Pesquisa de Orçamentos Familiares do IBGE (POF 2017-2018) e o Inquérito Nacional sobre Insegurança Alimentar (VIGISAN, 2022) revelaram que **33,1 milhões de brasileiros** viviam em situação de insegurança alimentar grave (fome) em 2022, e mais de **125 milhões** enfrentavam algum grau de insegurança alimentar. O paradoxo brasileiro é marcante, posto que o país é um dos maiores produtores e exportadores mundiais de alimentos, mas não garante acesso alimentar adequado a parcela significativa de sua população.
-
-No meio rural, a insegurança alimentar atinge especialmente agricultores familiares do semiárido, comunidades quilombolas, povos indígenas e assentados da reforma agrária (IBGE, 2020).
+::: {.pitch-pill-row}
+[LOSAN · SISAN]{.pitch-pill}
+[Auditoria · SPG · OCS]{.pitch-pill .pitch-pill--gold}
+[IP · DO · INPI]{.pitch-pill}
 :::
 
-::: {.column width="50%"}
-::: {.highlight-box}
-**Dados sobre Insegurança Alimentar no Brasil (VIGISAN, 2022)**
-
-1. 33,1 milhões em insegurança alimentar grave
-2. 125,2 milhões com algum grau de insegurança alimentar
-3. Maior incidência no Norte e Nordeste
-4. Famílias chefiadas por mulheres negras são mais atingidas
-5. O meio rural apresenta proporcionalmente mais insegurança que o urbano
+::: {.pitch-band .pitch-band--teal}
+Conectando direito humano à alimentação, certificação participativa e mercados territoriais.
 :::
 :::
 :::
 
----
+# 1 · Segurança e Soberania Alimentar {.section-header rotulo="SAN e Soberania"}
 
-## SOBERANIA ALIMENTAR {.smaller-text}
+## [SAN]{.pitch-tag .pitch-tag--gold} Segurança Alimentar e Nutricional (SAN) {#conceito-san .smaller-text .lesson-slide}
 
-A **soberania alimentar** é um conceito político formulado pela Via Campesina em 1996, que amplia a noção de segurança alimentar ao incorporar a dimensão do controle sobre os sistemas alimentares. Soberania alimentar é "o direito dos povos de definir suas próprias políticas e estratégias sustentáveis de produção, distribuição e consumo de alimentos, garantindo o direito à alimentação para toda a população, com base na pequena e média produção, respeitando suas próprias culturas e a diversidade dos modos camponeses de produção e comercialização" (Via Campesina, 1996).
+::: {.pitch-formula}
+**LOSAN (Lei 11.346/2006, Art. 3°):** *"realização do direito de todos ao acesso regular e permanente a alimentos de qualidade, em quantidade suficiente, sem comprometer o acesso a outras necessidades essenciais, tendo como base práticas alimentares promotoras de saúde que respeitem a diversidade cultural e que sejam ambiental, cultural, econômica e socialmente sustentáveis."*
+:::
 
-A distinção entre segurança e soberania alimentar é relevante para o extensionista. Enquanto a SAN trata do "o quê" (acesso a alimentos suficientes e de qualidade), a soberania alimentar trata do "como" e do "por quem" (quem controla os sistemas alimentares, com que modelos produtivos e em benefício de quem). Essa perspectiva fundamenta a defesa de circuitos curtos de comercialização, sementes crioulas, mercados locais e sistemas de produção de base agroecológica (Maluf, 2007).
+::: {.pitch-flow-4}
+::: {.pitch-card .pitch-card--forest}
+[01 · Disponibilidade]{.pitch-card-index}
+[Produção e oferta]{.pitch-heading}
 
----
+Sistemas produtivos diversificados, sustentáveis e abastecimento local.
+:::
 
-## POLÍTICAS PÚBLICAS E SAN {.smaller-text}
+::: {.pitch-card .pitch-card--gold}
+[02 · Acesso]{.pitch-card-index}
+[Renda e distribuição]{.pitch-heading}
 
-O Brasil desenvolveu, especialmente entre 2003 e 2016, um conjunto robusto de políticas públicas voltadas à SAN, muitas delas com interface direta com a extensão rural.
+Capacidade econômica e canais regulares de obtenção de alimentos.
+:::
 
-| Política/Programa | Ano | Contribuição para SAN |
+::: {.pitch-card .pitch-card--teal}
+[03 · Utilização biológica]{.pitch-card-index}
+[Qualidade e higiene]{.pitch-heading}
+
+Valor nutricional, processamento, conservação e inocuidade sanitária.
+:::
+
+::: {.pitch-card}
+[04 · Estabilidade]{.pitch-card-index}
+[Regularidade temporal]{.pitch-heading}
+
+Continuidade do acesso frente a secas, crises e choques de preços.
+:::
+:::
+
+::: {.pitch-band}
+A extensão rural incide diretamente sobre a **disponibilidade** (diversificação produtiva) e a **utilização biológica** (processamento, conservação e higiene alimentar — Maluf, 2007).
+:::
+
+## [SAN]{.pitch-tag .pitch-tag--alert} Insegurança Alimentar e o Paradoxo Brasileiro {#inseguranca-alimentar .smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--alert}
+[POF (IBGE, 2020) · VIGISAN (2022)]{.pitch-card-index}
+[O paradoxo alimentar brasileiro]{.pitch-heading}
+
+O país figura entre os maiores produtores e exportadores mundiais de alimentos, mas não assegura acesso alimentar adequado a parcela expressiva da população.
+:::
+
+::: {.pitch-card}
+[Vulnerabilidade no campo]{.pitch-card-index}
+[Quem mais sofre no meio rural]{.pitch-heading}
+
+Agricultores familiares do semiárido, comunidades quilombolas, povos indígenas e assentados da reforma agrária concentram índices críticos de insegurança alimentar (IBGE, 2020).
+:::
+:::
+
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**33,1 milhões** de brasileiros viviam em **insegurança alimentar grave (fome)** segundo o VIGISAN (2022).
+:::
+
+::: {.pitch-milestone-item}
+**125,2 milhões** enfrentavam algum grau de insegurança alimentar no país.
+:::
+
+::: {.pitch-milestone-item}
+**Desigualdade regional:** maior incidência concentrada nas regiões Norte e Nordeste.
+:::
+
+::: {.pitch-milestone-item}
+**Recorte interseccional:** domicílios chefiados por mulheres negras são os mais atingidos.
+:::
+
+::: {.pitch-milestone-item}
+**Assimetria rural-urbana:** o meio rural apresenta proporcionalmente maior insegurança alimentar que o urbano.
+:::
+:::
+:::
+
+## [Soberania]{.pitch-tag .pitch-tag--forest} Soberania Alimentar e Controle dos Sistemas {#soberania-alimentar .smaller-text .lesson-slide}
+
+::: {.pitch-formula}
+**Via Campesina (1996):** *"o direito dos povos de definir suas próprias políticas e estratégias sustentáveis de produção, distribuição e consumo de alimentos, garantindo o direito à alimentação para toda a população, com base na pequena e média produção, respeitando suas próprias culturas e a diversidade dos modos camponeses de produção e comercialização."*
+:::
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Foco no "O Quê"]{.pitch-card-index}
+[Segurança Alimentar (SAN)]{.pitch-heading}
+
+Garante acesso regular e permanente a alimentos suficientes, seguros e de qualidade nutricional para toda a população.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[Foco no "Como" e "Por Quem"]{.pitch-card-index}
+[Soberania Alimentar]{.pitch-heading}
+
+Questiona quem controla os sistemas alimentares, defendendo circuitos curtos, sementes crioulas, mercados locais e agroecologia (Maluf, 2007).
+:::
+:::
+
+::: {.pitch-band .pitch-band--teal}
+Para o extensionista, articular SAN e soberania alimentar significa fortalecer a autonomia produtiva e alimentar das famílias rurais.
+:::
+
+## [Políticas]{.pitch-tag .pitch-tag--gold} Políticas Públicas de SAN no Brasil {#politicas-san .smaller-text .lesson-slide}
+
+::: {.pitch-table-box}
+| Política / Programa | Ano | Contribuição para a SAN |
 | --- | --- | --- |
-| **LOSAN (Lei 11.346)** | 2006 | Define SAN como direito e cria o SISAN |
+| **LOSAN (Lei 11.346)** | 2006 | Define SAN como direito humano e cria o SISAN |
 | **PAA** | 2003 | Compra direta da agricultura familiar para doação e estoques |
-| **PNAE (Lei 11.947)** | 2009 | Mínimo de 30% da alimentação escolar da agricultura familiar |
+| **PNAE (Lei 11.947)** | 2009 | Mínimo de **30%** da alimentação escolar oriunda da agricultura familiar |
 | **Programa Cisternas** | 2003 | Acesso à água para consumo e produção no semiárido |
-| **PNAPO (Decreto 7.794)** | 2012 | Fomento à agroecologia e produção orgânica |
-| **Programa Brasil Sem Fome** | 2023 | Retomada de ações de combate à fome |
-
-A extensão rural é componente transversal dessas políticas, atuando desde o apoio à diversificação produtiva até a orientação sobre acesso a mercados institucionais (Grisa e Schneider, 2015).
-
----
-
-## CERTIFICAÇÃO ORGÂNICA NO BRASIL {.smaller-text}
-
-A Lei 10.831/2003 e o Decreto 6.323/2007 regulamentam o sistema de produção orgânica no Brasil e estabelecem três mecanismos de **avaliação da conformidade orgânica** reconhecidos pelo Ministério da Agricultura.
-
-```{mermaid}
-%%| fig-cap: "Mecanismos de avaliação da conformidade orgânica no Brasil"
-flowchart TD
-    A["AVALIAÇÃO DA\nCONFORMIDADE ORGÂNICA"] --> B["Certificação por\nAuditoria (3ª parte)"]
-    A --> C["Sistema Participativo\nde Garantia (SPG)"]
-    A --> D["Organização de\nControle Social (OCS)"]
-    B1["Certificadoras credenciadas\npelo MAPA"] -.-> B
-    C1["Membros: agricultores,\nconsumidores, técnicos"] -.-> C
-    D1["Venda direta ao consumidor\nsem selo, com cadastro no MAPA"] -.-> D
-    classDef main fill:#1a5276,stroke:#fff,color:#fff
-    classDef tipo fill:#2e86c1,stroke:#fff,color:#fff
-    classDef desc fill:#d5f5e3,stroke:#27ae60,color:#1a5276
-    class A main
-    class B,C,D tipo
-    class B1,C1,D1 desc
-```
-
-Cada mecanismo atende a públicos e escalas distintas. A certificação por auditoria é mais onerosa e voltada a mercados formais de maior porte. O SPG e a OCS são mais acessíveis à agricultura familiar e coerentes com os princípios da agroecologia.
-
----
-
-## SISTEMAS PARTICIPATIVOS DE GARANTIA {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-Os **Sistemas Participativos de Garantia** (SPG) são mecanismos de certificação orgânica baseados na confiança, na participação social e no controle compartilhado. No Brasil, os SPGs são credenciados pelo MAPA como Organismos Participativos de Avaliação da Conformidade (OPACs) e emitem o selo orgânico reconhecido nacionalmente (Brasil, Decreto 6.323/2007).
-
-A **Rede Ecovida de Agroecologia**, atuante nos três estados do Sul, é a maior experiência brasileira de SPG, articulando mais de 4.500 famílias agricultoras em 27 núcleos regionais (Meirelles, 2010).
+| **PNAPO (Decreto 7.794)** | 2012 | Fomento à agroecologia e à produção orgânica |
+| **Programa Brasil Sem Fome** | 2023 | Retomada articulada de ações de combate à fome |
 :::
 
-::: {.column width="50%"}
-::: {.highlight-box}
-**Funcionamento do SPG**
-
-1. Grupo de agricultores constitui um núcleo
-2. Visitas de verificação cruzada entre pares
-3. Participação de consumidores e técnicos no controle
-4. Registro no MAPA como OPAC
-5. Emissão do selo orgânico brasileiro
-6. Custo significativamente menor que certificação por auditoria
+::: {.pitch-band}
+A **extensão rural** é componente transversal dessas políticas, atuando da diversificação produtiva à habilitação para compras públicas (Grisa e Schneider, 2015).
 :::
+
+# 2 · Certificação Orgânica e SPG {.section-header rotulo="Certificação"}
+
+## [Certificação]{.pitch-tag .pitch-tag--teal} Conformidade Orgânica e Compras Públicas {#certificacao-organica-diagrama .smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--tall}
+![Fluxo dos três mecanismos de avaliação da conformidade orgânica conectados ao PAA e PNAE.](img/er_10_seguranca_alimentar_certificacao.png)
+
+[Avaliação da Conformidade Orgânica (Lei 10.831/2003) e Articulação com PAA/PNAE]{.pitch-caption}
+[Auditoria de 3ª Parte, Sistema Participativo de Garantia (SPG) e Organização de Controle Social (OCS) · Lei 11.947/2009 (Mín. 30%)]{.pitch-caption-sub}
+:::
+
+## [Certificação]{.pitch-tag .pitch-tag--teal} Mecanismos de Avaliação da Conformidade Orgânica {#modalidades-conformidade .smaller-text .lesson-slide}
+
+::: {.pitch-cards}
+::: {.pitch-card}
+[01 · Auditoria (3ª parte)]{.pitch-card-index}
+[Certificadoras credenciadas]{.pitch-heading}
+
+- Emissão do selo SisOrg por certificadora credenciada pelo MAPA
+- Custo financeiro e burocrático mais elevado
+- Voltada a exportação, grande varejo e escalas maiores
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[02 · SPG]{.pitch-card-index}
+[Sistema Participativo de Garantia]{.pitch-heading}
+
+- Emite selo SisOrg via **OPAC** credenciado ao MAPA
+- Controle social coletivo entre agricultores, consumidores e técnicos
+- Acessível à agricultura familiar e coerente com a agroecologia
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[03 · OCS]{.pitch-card-index}
+[Organização de Controle Social]{.pitch-heading}
+
+- Venda **direta** ao consumidor final sem selo comercial
+- Exige cadastro ativo no MAPA e rastreabilidade do grupo
+- Baixo custo para feiras locais e vendas institucionais (PAA/PNAE)
 :::
 :::
 
----
-
-## INDICAÇÕES GEOGRÁFICAS {.smaller-text}
-
-As **Indicações Geográficas** (IG) são instrumentos de propriedade industrial que reconhecem e protegem produtos cujas qualidades ou reputação derivam de sua origem territorial. No Brasil, a Lei de Propriedade Industrial (Lei 9.279/1996) prevê duas modalidades.
-
-::: {.columns}
-::: {.column width="50%"}
-### Indicação de Procedência (IP)
-
-Reconhece que determinada região se tornou conhecida como centro de produção de um produto ou serviço. O foco é a **reputação** do território. Exemplos incluem o Vale dos Vinhedos (RS) para vinhos e o Litoral Norte Gaúcho para arroz.
+::: {.pitch-band .pitch-band--navy}
+**Lei 10.831/2003 e Decreto 6.323/2007:** cada mecanismo atende a públicos e escalas distintas, democratizando o acesso da agricultura familiar à garantia orgânica.
 :::
 
-::: {.column width="50%"}
-### Denominação de Origem (DO)
+## [Certificação]{.pitch-tag .pitch-tag--forest} Sistemas Participativos de Garantia (SPG) na Prática {#spg-pratica .smaller-text .lesson-slide}
 
-Reconhece que as qualidades ou características do produto se devem **exclusivamente** ao meio geográfico (fatores naturais e humanos). O vínculo qualidade-território é comprovado cientificamente. Exemplos incluem a Região do Cerrado Mineiro para café e a Costa Negra (CE) para camarão.
-:::
-:::
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--teal}
+[Decreto 6.323/2007 · OPAC]{.pitch-card-index}
+[Confiança e controle compartilhado]{.pitch-heading}
 
-O INPI (Instituto Nacional da Propriedade Industrial) é o órgão responsável pelo registro. Até 2024, o Brasil contabilizava mais de 100 IGs registradas, com crescimento acelerado no setor agropecuário.
-
----
-
-## IGs E AGRICULTURA FAMILIAR {.smaller-text}
-
-As Indicações Geográficas representam oportunidades concretas para a agricultura familiar ao agregar valor a produtos com identidade territorial. O extensionista pode atuar no processo de construção de uma IG, realizando diagnósticos da produção local, apoiando a organização coletiva dos produtores, articulando com instituições de pesquisa para a caracterização do produto e facilitando o processo de registro junto ao INPI (Niederle, 2013).
-
-::: {.columns}
-::: {.column width="50%"}
-### Exemplos com Agricultura Familiar
-
-A IG da Própolis Vermelha de Alagoas, a IP do Queijo Artesanal do Serro (MG), a IP da Região de Salinas para cachaça (MG) e a IP de Paraty para aguardente (RJ) são casos que demonstram como a IG pode valorizar produtos de base artesanal e familiar, conectando tradição produtiva, identidade cultural e acesso a mercados diferenciados.
+Credenciados pelo MAPA como **Organismos Participativos de Avaliação da Conformidade (OPACs)**, os SPGs unem rigor normativo, participação social e emissão do selo orgânico nacional.
 :::
 
-::: {.column width="50%"}
-### Desafios
+::: {.pitch-card .pitch-card--forest}
+[Referência nacional · Meirelles (2010)]{.pitch-card-index}
+[Rede Ecovida de Agroecologia]{.pitch-heading}
 
-A construção de uma IG exige organização coletiva, conformidade com cadernos de especificação técnica, investimentos em infraestrutura de processamento e estratégias de marketing territorial. O risco de exclusão de produtores menores dentro da própria área delimitada é uma preocupação recorrente (Niederle, 2013).
+Maior experiência brasileira de SPG, articulando mais de **4.500 famílias agricultoras** em **27 núcleos regionais** nos três estados do Sul do Brasil.
 :::
 :::
 
----
-
-## O EXTENSIONISTA E A SAN {.smaller-text}
-
-A atuação do extensionista na promoção da segurança alimentar vai além da recomendação de tecnologias produtivas. Envolve a orientação sobre diversificação de cultivos alimentares, o apoio ao processamento e beneficiamento local, a facilitação do acesso a mercados institucionais (PAA e PNAE), a promoção de práticas de higiene e conservação de alimentos e o fortalecimento das organizações comunitárias para gestão coletiva da produção e comercialização (Maluf, 2007).
-
-```{mermaid}
-%%| fig-cap: "Campos de atuação do extensionista na promoção da SAN"
-flowchart LR
-    A["EXTENSIONISTA"] --> B["Diversificação\nProdutiva"]
-    A --> C["Processamento\nLocal"]
-    A --> D["Acesso a\nMercados"]
-    A --> E["Certificação\n(SPG/OCS)"]
-    A --> F["Organização\nComunitária"]
-    B --> G["SEGURANÇA\nALIMENTAR"]
-    C --> G
-    D --> G
-    E --> G
-    F --> G
-    classDef ext fill:#f39c12,stroke:#fff,color:#fff
-    classDef campo fill:#2e86c1,stroke:#fff,color:#fff
-    classDef san fill:#27ae60,stroke:#fff,color:#fff
-    class A ext
-    class B,C,D,E,F campo
-    class G san
-```
-
----
-
-## SISTEMAS ALIMENTARES LOCAIS {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-Os **circuitos curtos de comercialização** aproximam produtores e consumidores, reduzindo a dependência de cadeias longas e fortalecendo a economia local. Feiras agroecológicas, cestas por assinatura, lojas solidárias, grupos de consumo responsável e plataformas digitais de venda direta são modalidades que têm se expandido no Brasil, especialmente após a pandemia de Covid-19 (Schneider et al., 2020).
-
-Essas estratégias promovem simultaneamente segurança alimentar (acesso a alimentos frescos e diversificados), soberania alimentar (autonomia sobre o sistema alimentar local) e viabilidade econômica para os agricultores familiares.
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1.** Grupo de agricultores constitui um núcleo territorial
 :::
 
-::: {.column width="50%"}
-::: {.highlight-box}
-**Circuitos Curtos no Brasil**
+::: {.pitch-milestone-item}
+**2.** Visitas periódicas de verificação cruzada entre pares
+:::
 
-1. Feiras agroecológicas e da agricultura familiar (mais de 7.000 em todo o país)
+::: {.pitch-milestone-item}
+**3.** Participação ativa de consumidores e técnicos no controle
+:::
+
+::: {.pitch-milestone-item}
+**4.** Registro formal do grupo no MAPA como OPAC
+:::
+
+::: {.pitch-milestone-item}
+**5.** Emissão do selo orgânico brasileiro para mercados formais
+:::
+
+::: {.pitch-milestone-item}
+**6.** Custo expressivamente menor que a auditoria de terceira parte
+:::
+:::
+:::
+
+# 3 · Indicações Geográficas (IG) {.section-header rotulo="Indicações Geográficas"}
+
+## [Território]{.pitch-tag .pitch-tag--gold} Indicações Geográficas: IP e DO (Lei 9.279/1996) {#indicacoes-geograficas .smaller-text .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Modalidade 1 · Reputação]{.pitch-card-index}
+[Indicação de Procedência (IP)]{.pitch-heading}
+
+Reconhece região que se tornou conhecida como centro de extração, produção ou fabricação de determinado produto ou serviço.
+
+- **Foco:** reputação histórica do território
+- **Exemplos:** Vale dos Vinhedos (RS — vinhos) e Litoral Norte Gaúcho (arroz)
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Modalidade 2 · Terroir]{.pitch-card-index}
+[Denominação de Origem (DO)]{.pitch-heading}
+
+Reconhece produto cujas qualidades ou características se devem **exclusivamente** ao meio geográfico, incluindo fatores naturais e humanos.
+
+- **Foco:** vínculo qualidade-território comprovado cientificamente
+- **Exemplos:** Região do Cerrado Mineiro (café) e Costa Negra (CE — camarão)
+:::
+:::
+
+::: {.pitch-band .pitch-band--navy}
+**Registro no INPI:** o Instituto Nacional da Propriedade Industrial é o órgão responsável. Até **2024**, o Brasil contabilizava **mais de 100 IGs registradas**, com forte expansão no setor agropecuário.
+:::
+
+## [Território]{.pitch-tag .pitch-tag--gold} IGs e Agricultura Familiar: Potencial e Riscos {#igs-agricultura-familiar .smaller-text .lesson-slide}
+
+::: {.pitch-cards}
+::: {.pitch-card .pitch-card--teal}
+[01 · Papel do Extensionista]{.pitch-card-index}
+[Construção coletiva]{.pitch-heading}
+
+Realizar diagnósticos locais, apoiar a organização coletiva, articular instituições de pesquisa na caracterização do produto e facilitar o registro no INPI (Niederle, 2013).
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[02 · Casos Familiares]{.pitch-card-index}
+[Identidade territorial]{.pitch-heading}
+
+- Própolis Vermelha de Alagoas
+- Queijo Artesanal do Serro (MG)
+- Cachaça da Região de Salinas (MG)
+- Aguardente de Paraty (RJ)
+:::
+
+::: {.pitch-card .pitch-card--alert}
+[03 · Desafios e Cuidados]{.pitch-card-index}
+[Risco de exclusão]{.pitch-heading}
+
+Exige conformidade com cadernos de especificação técnica, infraestrutura e marketing territorial; há risco recorrente de exclusão de pequenos produtores na área delimitada (Niederle, 2013).
+:::
+:::
+
+::: {.pitch-band}
+A IG agrega valor a saberes tradicionais apenas quando governada de forma inclusiva pelas organizações da agricultura familiar.
+:::
+
+# 4 · Atuação do Extensionista e Circuitos Curtos {.section-header rotulo="Atuação e Circuitos"}
+
+## [Atuação]{.pitch-tag .pitch-tag--forest} O Extensionista na Promoção da SAN {#extensionista-san .smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1. Diversificação produtiva:** ampliação de cultivos alimentares para autoconsumo e venda.
+:::
+
+::: {.pitch-milestone-item}
+**2. Processamento local:** agregação de valor, higiene e conservação de alimentos.
+:::
+
+::: {.pitch-milestone-item}
+**3. Acesso a mercados:** habilitação e logística para **PAA** e **PNAE**.
+:::
+
+::: {.pitch-milestone-item}
+**4. Certificação (SPG/OCS):** construção de confiança e conformidade orgânica acessível.
+:::
+
+::: {.pitch-milestone-item}
+**5. Organização comunitária:** gestão coletiva da produção, beneficiamento e comercialização.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Visão sistêmica · Maluf (2007)]{.pitch-card-index}
+[Além da tecnologia produtiva]{.pitch-heading}
+
+Todos os cinco eixos de trabalho do extensionista convergem para a promoção da **Segurança Alimentar e Nutricional** no campo e na cidade, superando a assistência técnica puramente produtivista.
+:::
+
+::: {.pitch-band .pitch-band--navy}
+Produzir com diversidade + beneficiar no território + certificar coletivamente + escoar em mercados justos = **SAN sustentável**.
+:::
+:::
+:::
+
+## [Diagrama]{.pitch-tag .pitch-tag--forest} Campos de Atuação do(a) Extensionista na SAN {#extensionista-san-tikz .smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--tall}
+![](img/er_10b_extensionista_san.png)
+
+[Atuação Sistêmica do Extensionista na Promoção da Segurança Alimentar e Nutricional]{.pitch-caption}
+[Convergência entre diversificação produtiva, processamento local, mercados institucionais, SPG/OCS e organização comunitária]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band}
+A promoção da **SAN** demanda atuação integrada do extensionista do campo à mesa, articulando produção agroecológica e mercados de proximidade.
+:::
+
+## [Mercados]{.pitch-tag .pitch-tag--gold} Sistemas Alimentares Locais e Circuitos Curtos {#sistemas-alimentares-locais .smaller-text .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Schneider et al. (2020)]{.pitch-card-index}
+[Circuitos curtos de comercialização]{.pitch-heading}
+
+Aproximam produtores e consumidores, reduzem cadeias intermediárias e promovem simultaneamente **SAN** (alimentos frescos), **soberania alimentar** e **viabilidade econômica** familiar.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Modalidades em expansão no Brasil]{.pitch-card-index}
+[Canais diretos e institucionais]{.pitch-heading}
+
+1. Feiras agroecológicas e familiares (**+7.000** no país)
 2. Entregas em domicílio (cestas orgânicas)
-3. Grupos de Consumo Responsável (GCR)
-4. Cooperativas de consumidores
-5. Compras públicas (PAA, PNAE)
-6. Plataformas digitais de venda direta
-:::
+3. Grupos de Consumo Responsável (GCR) e cooperativas
+4. Compras públicas (**PAA**, **PNAE**) e plataformas digitais
 :::
 :::
 
----
+::: {.pitch-media-card .pitch-media-card--photo}
+![II Feira Baiana da Agricultura Familiar e Economia Solidária em Salvador, Bahia.](img/feira_agricultura_familiar_ba.jpg)
 
-## CONCLUSÃO {.smaller-text}
+[II Feira Baiana da Agricultura Familiar e Economia Solidária]{.pitch-caption}
+[Salvador/BA · Foto: Neusa Cadore (CC-BY 2.0) · Encontro direto entre campo e cidade]{.pitch-caption-sub}
+:::
+:::
 
-A segurança alimentar e nutricional, a certificação de produtos orgânicos e as indicações geográficas são temas centrais para a formação do extensionista contemporâneo. Compreender as dimensões da SAN e da soberania alimentar permite ao profissional de ciências agrárias orientar agricultores familiares na construção de sistemas produtivos diversificados, no acesso a mecanismos de certificação adequados e na inserção em mercados que valorizem a qualidade, a origem e os atributos socioambientais de seus produtos.
+## [Síntese]{.pitch-tag .pitch-tag--gold} Conclusão {#conclusao .smaller-text .lesson-slide}
 
-A extensão rural que incorpora a perspectiva da SAN contribui para superar o paradoxo brasileiro, conectando o potencial produtivo do país com o direito humano à alimentação adequada e com o fortalecimento dos sistemas alimentares territoriais.
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--gold}
+[Articulação estratégica]{.pitch-card-index}
+[SAN, Certificação e Origem]{.pitch-heading}
 
----
+Integrar SAN, soberania alimentar, certificação orgânica (SPG/OCS) e Indicações Geográficas capacita o extensionista a apoiar sistemas diversificados e mercados que valorizam qualidade, origem e atributos socioambientais.
+:::
 
-## REFERÊNCIAS {.smaller-text}
+::: {.pitch-card .pitch-card--forest}
+[Superação do paradoxo]{.pitch-card-index}
+[Direito humano e território]{.pitch-heading}
 
-- Brasil. Lei 9.279/1996. Propriedade Industrial (1996).
-- Brasil. Lei 10.831/2003. Agricultura Orgânica (2003).
-- Brasil. Lei 11.346/2006. Lei Orgânica de Segurança Alimentar (LOSAN).
-- Brasil. Lei 11.947/2009. Programa Nacional de Alimentação Escolar (PNAE).
-- Brasil. Decreto 6.323/2007. Regulamentação da agricultura orgânica.
-- Brasil. Decreto 7.794/2012. Política Nacional de Agroecologia e Produção Orgânica (PNAPO).
-- Grisa, C.; Schneider, S. Três gerações de políticas públicas para a agricultura familiar. Revista de Economia e Sociologia Rural, v. 52, p. 125-146, 2015.
-- IBGE. Pesquisa de Orçamentos Familiares 2017-2018 (2020).
-- Maluf, R. S. Segurança Alimentar e Nutricional. Petrópolis: Vozes, 2007.
-- Meirelles, L. Certificação participativa: a experiência da Rede Ecovida. Ipê: Centro Ecológico, 2010.
-- Niederle, P. A. Indicações geográficas: qualidade e origem nos mercados alimentares. Porto Alegre: UFRGS, 2013.
-- Rede PENSSAN. VIGISAN: Inquérito Nacional sobre Insegurança Alimentar (2022).
-- Schneider, S. et al. A pandemia e os sistemas alimentares no Brasil. Porto Alegre: UFRGS, 2020.
-- Via Campesina. Declaração sobre Soberania Alimentar. Roma, 1996.
+A extensão rural comprometida com a SAN conecta o potencial produtivo agrário brasileiro ao **direito humano à alimentação adequada** e ao fortalecimento dos sistemas alimentares territoriais.
+:::
+:::
+
+::: {.pitch-band .pitch-band--navy}
+Da produção diversificada à mesa do consumidor: certificação e mercados territoriais garantem autonomia à agricultura familiar.
+:::
+
+## [Referências]{.pitch-tag} Referências da Aula {#referencias .smaller-text .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Bloco 1 · Legislação e Marcos Normativos]{.pitch-card-index}
+[Leis e decretos estruturantes]{.pitch-heading}
+
+- Brasil. *Lei 9.279/1996*. Propriedade Industrial (1996).
+- Brasil. *Lei 10.831/2003*. Agricultura Orgânica (2003).
+- Brasil. *Lei 11.346/2006*. Lei Orgânica de Segurança Alimentar (LOSAN).
+- Brasil. *Lei 11.947/2009*. Programa Nacional de Alimentação Escolar (PNAE).
+- Brasil. *Decreto 6.323/2007*. Regulamentação da agricultura orgânica.
+- Brasil. *Decreto 7.794/2012*. Política Nacional de Agroecologia e Produção Orgânica (PNAPO).
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Bloco 2 · Literatura e Inquéritos]{.pitch-card-index}
+[Estudos de SAN, SPG, IG e mercados]{.pitch-heading}
+
+- Grisa, C.; Schneider, S. Três gerações de políticas públicas para a agricultura familiar. *Revista de Economia e Sociologia Rural*, v. 52, p. 125–146, 2015.
+- IBGE. *Pesquisa de Orçamentos Familiares 2017–2018* (2020).
+- Maluf, R. S. *Segurança Alimentar e Nutricional*. Petrópolis: Vozes, 2007.
+- Meirelles, L. *Certificação participativa: a experiência da Rede Ecovida*. Ipê: Centro Ecológico, 2010.
+- Niederle, P. A. *Indicações geográficas: qualidade e origem nos mercados alimentares*. Porto Alegre: UFRGS, 2013.
+- Rede PENSSAN. *VIGISAN: Inquérito Nacional sobre Insegurança Alimentar* (2022).
+- Schneider, S. et al. *A pandemia e os sistemas alimentares no Brasil*. Porto Alegre: UFRGS, 2020.
+- Via Campesina. *Declaração sobre Soberania Alimentar*. Roma, 1996.
+:::
+:::
 
 ## {.center background-color="#2135A6"}
 
@@ -271,6 +472,6 @@ A extensão rural que incorpora a perspectiva da SAN contribui para superar o pa
 ::: {style="color: white; font-size: 0.7em;"}
 Luiz Diego Vidal Santos
 
-Universidade Federal de Sergipe (UFS)
+Universidade Estadual de Feira de Santana (UEFS)
 :::
 :::

@@ -1,0 +1,83 @@
+\documentclass[border=12pt]{standalone}
+\input{er_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[node distance=1cm]
+
+  % Título principal
+  \node[erTitle, font=\large\bfseries\sffamily] (mainTitle) at (0, 5.2)
+    {Evolução da Extensão Rural: Do Modelo Difusionista à PNATER Participativa};
+
+  % ================= PAINEL 1: DIFUSIONISTA =================
+  \begin{scope}[shift={(0, 2.55)}]
+    % Fundo do painel
+    \node[draw=erAlert!70, fill=bgAlert, rounded corners=8pt, line width=1.2pt,
+          minimum width=17.2cm, minimum height=3.25cm] (panel1) at (0, 0) {};
+
+    % Badge do painel
+    \node[erBadge=erAlert, rounded corners=5pt, inner ysep=4pt, anchor=west]
+      at ([xshift=14pt, yshift=-15pt]panel1.north west)
+      {1. Modelo Difusionista Clássico (1950--1980)};
+    \node[font=\scriptsize\itshape\sffamily, text=erAlert, anchor=east]
+      at ([xshift=-14pt, yshift=-15pt]panel1.north east)
+      {Fluxo unidirecional · Pacote tecnológico};
+
+    % Nós do fluxo
+    \node[erBox=erAlert, minimum width=3.3cm, minimum height=1.25cm] (p1_pesq) at (-6.0, -0.35)
+      {\textbf{Pesquisador / ICT}\\[2pt]\scriptsize\color{erMuted}Gera tecnologia em estação};
+
+    \node[erBox=erAlert, minimum width=3.3cm, minimum height=1.25cm] (p1_ext) at (0, -0.35)
+      {\textbf{Extensionista}\\[2pt]\scriptsize\color{erMuted}Difusor / repassador técnico};
+
+    \node[erBox=erAlert, minimum width=3.5cm, minimum height=1.25cm] (p1_agr) at (6.0, -0.35)
+      {\textbf{Agricultor}\\[2pt]\scriptsize\color{erAlert}\textbf{(Receptor Passivo)}};
+
+    % Setas unidirecionais com folga ampla
+    \draw[erArrow, color=erAlert] (p1_pesq.east) -- (p1_ext.west)
+      node[midway, above=5pt, font=\scriptsize\bfseries\sffamily, text=erAlert] {transfere pacote};
+    \draw[erArrow, color=erAlert] (p1_ext.east) -- (p1_agr.west)
+      node[midway, above=4pt, font=\scriptsize\bfseries\sffamily, text=erAlert, align=center]
+      {transmite\\[-1pt]unidirecionalmente};
+  \end{scope}
+
+  % ================= PAINEL 2: DIALÓGICO & PNATER =================
+  \begin{scope}[shift={(0, -1.85)}]
+    % Fundo do painel
+    \node[draw=erForest!80, fill=bgForest, rounded corners=8pt, line width=1.2pt,
+          minimum width=17.2cm, minimum height=4.35cm] (panel2) at (0, 0) {};
+
+    % Badge do painel
+    \node[erBadge=erForest, rounded corners=5pt, inner ysep=4pt, anchor=west]
+      at ([xshift=14pt, yshift=-15pt]panel2.north west)
+      {2. Modelo Dialógico \& PNATER (Lei 12.188/2010)};
+    \node[font=\scriptsize\itshape\sffamily, text=erForest, anchor=east]
+      at ([xshift=-14pt, yshift=-15pt]panel2.north east)
+      {Construção participativa · Agroecologia};
+
+    % Nós do fluxo
+    \node[erBox=erForest, minimum width=3.3cm, minimum height=1.25cm] (p2_pesq) at (-6.0, 0.2)
+      {\textbf{Pesquisador}\\[2pt]\scriptsize\color{erMuted}Conhecimento científico};
+
+    \node[erBox=erForest, minimum width=3.3cm, minimum height=1.25cm] (p2_ext) at (0, 0.2)
+      {\textbf{Extensionista}\\[2pt]\scriptsize\color{erMuted}Educador e mediador};
+
+    \node[erBox=erForest, minimum width=3.5cm, minimum height=1.25cm] (p2_agr) at (6.0, 0.2)
+      {\textbf{Agricultor(a) Familiar}\\[2pt]\scriptsize\color{erForest}\textbf{(Sujeito e Saberes Locais)}};
+
+    % Setas bidirecionais horizontais
+    \draw[erDArrow, color=erForest] (p2_pesq.east) -- (p2_ext.west)
+      node[midway, above=5pt, font=\scriptsize\bfseries\sffamily, text=erForest] {diálogo horizontal};
+    \draw[erDArrow, color=erForest] (p2_ext.east) -- (p2_agr.west)
+      node[midway, above=4pt, font=\scriptsize\bfseries\sffamily, text=erForest, align=center]
+      {co-construção\\[-1pt]agroecológica};
+
+    % Arco curvo de retroalimentação (Agricultor -> Pesquisador)
+    \draw[erArrow, color=erTeal, line width=1.4pt, dashed]
+      (p2_agr.south) .. controls +(0,-1.2) and +(0,-1.2) .. (p2_pesq.south)
+      node[midway, fill=bgForest, inner xsep=10pt, inner ysep=2pt,
+           font=\footnotesize\bfseries\itshape\sffamily, text=erTeal]
+      {Diálogo de Saberes · Freire (retroalimentação e validação social)};
+  \end{scope}
+
+\end{tikzpicture}
+\end{document}

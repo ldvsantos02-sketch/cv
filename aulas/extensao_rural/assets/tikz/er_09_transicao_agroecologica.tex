@@ -1,0 +1,55 @@
+\documentclass[border=10pt]{standalone}
+\input{er_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título e subtítulo bem acima do degrau 4
+\node[erTitle, font=\large\bfseries\sffamily] (title) at (8.05, 7.35)
+  {Os 4 Níveis da Transição Agroecológica (Gliessman, 2001; 2015)};
+\node[erSub] (sub) at (8.05, 6.85)
+  {Escalonamento progressivo do manejo técnico à transformação socioecológica do território};
+
+% Cards em degraus ascendentes (esquerda -> direita) com espaçamento para setas
+\node[erTint=erMuted, text width=3.15cm, minimum height=2.25cm, anchor=south west] (n1) at (0.0, 0.95) {
+  \textbf{\textcolor{erInk}{Nível 1}}\\[2pt]
+  \textbf{\textcolor{erNavy}{Eficiência de Insumos}}\\[5pt]
+  \scriptsize\textit{Reduzir desperdício e doses de agroquímicos}
+};
+
+\node[erTint=erGold, text width=3.15cm, minimum height=2.25cm, anchor=south west] (n2) at (4.20, 1.85) {
+  \textbf{\textcolor{erGoldDark}{Nível 2}}\\[2pt]
+  \textbf{\textcolor{erNavy}{Substituição de Insumos}}\\[5pt]
+  \scriptsize\textit{Bioinsumos, adubação verde, controle biológico}
+};
+
+\node[erTint=erTeal, text width=3.15cm, minimum height=2.25cm, anchor=south west] (n3) at (8.40, 2.75) {
+  \textbf{\textcolor{erTeal}{Nível 3}}\\[2pt]
+  \textbf{\textcolor{erNavy}{Redesenho do Agroecossistema}}\\[5pt]
+  \scriptsize\textit{Policultivos, SAFs,\\ciclagem de nutrientes}
+};
+
+\node[erTint=erForest, text width=3.15cm, minimum height=2.25cm, anchor=south west] (n4) at (12.60, 3.65) {
+  \textbf{\textcolor{erForest}{Nível 4}}\\[2pt]
+  \textbf{\textcolor{erNavy}{Conexão Direta \& Territorialidade}}\\[5pt]
+  \scriptsize\textit{Feiras, SPGs, cultura alimentar sustentável}
+};
+
+% Badges de escopo acima de cada degrau (rounded corners ajustado)
+\node[erBadge=erMuted, rounded corners=5pt, anchor=south] at ([yshift=5pt]n1.north) {Racionalização};
+\node[erBadge=erGold, rounded corners=5pt, anchor=south] at ([yshift=5pt]n2.north) {Substituição};
+\node[erBadge=erTeal, rounded corners=5pt, anchor=south] at ([yshift=5pt]n3.north) {Redesenho};
+\node[erBadge=erForest, rounded corners=5pt, anchor=south] at ([yshift=5pt]n4.north) {Sistema Agroalimentar};
+
+% Setas de progressão entre degraus
+\draw[erArrow, color=erGoldDark] ([yshift=14pt]n1.east) -- ([yshift=-14pt]n2.west);
+\draw[erArrow, color=erTeal] ([yshift=14pt]n2.east) -- ([yshift=-14pt]n3.west);
+\draw[erArrow, color=erForest] ([yshift=14pt]n3.east) -- ([yshift=-14pt]n4.west);
+
+% Linha base e seta direcional inferior
+\draw[erArrow, color=erNavy, line width=2pt] (0.0, 0.30) -- (16.10, 0.30);
+\node[fill=white, inner xsep=10pt, font=\footnotesize\bfseries\sffamily, text=erNavy]
+  at (8.05, 0.30) {Da Escala da Parcela à Transformação do Sistema Agroalimentar $\rightarrow$};
+
+\end{tikzpicture}
+\end{document}

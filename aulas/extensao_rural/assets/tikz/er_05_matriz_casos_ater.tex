@@ -1,0 +1,74 @@
+\documentclass[border=12pt]{standalone}
+\input{er_tikz_style}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título principal
+\node[erTitle, font=\large\bfseries\sffamily] (title) at (0, 5.25)
+  {Análise Comparada de Experiências Brasileiras de ATER no Território};
+
+% Barra conectora superior
+\node[
+  fill=erNavy, text=white, rounded corners=5pt,
+  minimum width=16.0cm, minimum height=0.82cm,
+  font=\small\bfseries\sffamily, align=center
+] (header) at (0, 4.15)
+  {Eixos de Extensão e Adaptação Sociotécnica};
+
+% Eixo central de conexão (tronco entre colunas)
+\coordinate (trunkTop) at (0, 3.74);
+\coordinate (trunkR1)  at (0, 2.15);
+\coordinate (trunkR2)  at (0, -1.25);
+
+% Card 1: Semiárido & Convivência (ASA)
+\node[
+  draw=erTeal, fill=bgTeal, rounded corners=6pt, line width=1.25pt,
+  text width=6.6cm, minimum height=2.75cm, inner sep=10pt, align=left
+] (c1) at (-4.35, 2.15) {%
+  {\color{erTeal}\normalsize\bfseries 1. Semiárido \& Convivência (ASA)}\\[5pt]
+  {\setlength{\fboxsep}{3pt}\colorbox{erTeal}{\color{white}\scriptsize\bfseries\ Cisternas de placa · P1MC/P1+2\ }}\\[6pt]
+  {\color{erInk}\footnotesize Captação de água de chuva e autonomia familiar}
+};
+
+% Card 2: Programa ABC & ILPF
+\node[
+  draw=erForest, fill=bgForest, rounded corners=6pt, line width=1.25pt,
+  text width=6.6cm, minimum height=2.75cm, inner sep=10pt, align=left
+] (c2) at (4.35, 2.15) {%
+  {\color{erForest}\normalsize\bfseries 2. Programa ABC \& ILPF}\\[5pt]
+  {\setlength{\fboxsep}{3pt}\colorbox{erForest}{\color{white}\scriptsize\bfseries\ Integração Lavoura-Pecuária-Floresta\ }}\\[6pt]
+  {\color{erInk}\footnotesize Recuperação de pastagens e baixa emissão\\de carbono}
+};
+
+% Card 3: Projeto Silvânia (Cerrados)
+\node[
+  draw=erNavy, fill=bgNavy, rounded corners=6pt, line width=1.25pt,
+  text width=6.6cm, minimum height=2.75cm, inner sep=10pt, align=left
+] (c3) at (-4.35, -1.25) {%
+  {\color{erNavy}\normalsize\bfseries 3. Projeto Silvânia (Cerrados)}\\[5pt]
+  {\setlength{\fboxsep}{3pt}\colorbox{erNavy}{\color{white}\scriptsize\bfseries\ Pesquisa participativa em microbacia\ }}\\[6pt]
+  {\color{erInk}\footnotesize Co-adaptação de sistemas pela Embrapa\\e produtores}
+};
+
+% Card 4: ATER Quilombola & Indígena
+\node[
+  draw=erGoldDark, fill=bgGold, rounded corners=6pt, line width=1.25pt,
+  text width=6.6cm, minimum height=2.75cm, inner sep=10pt, align=left
+] (c4) at (4.35, -1.25) {%
+  {\color{erGoldDark}\normalsize\bfseries 4. ATER Quilombola \& Indígena}\\[5pt]
+  {\setlength{\fboxsep}{3pt}\colorbox{erGoldDark}{\color{white}\scriptsize\bfseries\ Etnodesenvolvimento e soberania\ }}\\[6pt]
+  {\color{erInk}\footnotesize Respeito a saberes tradicionais e territorialidade}
+};
+
+% Conexões da barra superior aos 4 eixos
+\draw[line width=1.35pt, color=erNavy!70] (trunkTop) -- (trunkR2);
+\draw[erArrow, color=erTeal]     (trunkR1) -- (c1.east);
+\draw[erArrow, color=erForest]   (trunkR1) -- (c2.west);
+\draw[erArrow, color=erNavy]     (trunkR2) -- (c3.east);
+\draw[erArrow, color=erGoldDark] (trunkR2) -- (c4.west);
+
+\end{tikzpicture}
+\end{document}

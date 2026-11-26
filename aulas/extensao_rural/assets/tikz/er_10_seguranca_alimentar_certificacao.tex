@@ -1,0 +1,59 @@
+\documentclass[border=10pt]{standalone}
+\input{er_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título
+\node[erTitle, font=\large\bfseries\sffamily] (title) at (7.5, 5.05)
+  {Segurança Alimentar (SAN), Compras Públicas e Certificação Orgânica (Lei 10.831/2003)};
+\node[erSub] (sub) at (7.5, 4.58)
+  {Mecanismos de garantia da qualidade orgânica e sua articulação com os mercados institucionais};
+
+% Linha superior: 3 vias de certificação lado a lado (mesma altura)
+\node[erTint=erMuted, text width=4.45cm, minimum height=2.70cm, anchor=north] (c1) at (2.4, 3.85) {
+  \textbf{\textcolor{erNavy}{1. Certificação por Auditoria}}\\
+  \textbf{\textcolor{erNavy}{(3ª Parte)}}\\[6pt]
+  \scriptsize
+  $\bullet$ Selo SisOrg via certificadora\\acreditada\\[2pt]
+  $\bullet$ Maior custo financeiro e burocrático\\[2pt]
+  $\bullet$ Foco: exportação e grande varejo
+};
+
+\node[erTint=erTeal, text width=4.45cm, minimum height=2.70cm, anchor=north] (c2) at (7.5, 3.85) {
+  \textbf{\textcolor{erNavy}{2. Sistema Participativo}}\\
+  \textbf{\textcolor{erNavy}{de Garantia (SPG)}}\\[6pt]
+  \scriptsize
+  $\bullet$ Selo SisOrg via OPAC\\[2pt]
+  $\bullet$ Controle social coletivo entre\\agricultores e consumidores\\[2pt]
+  $\bullet$ Fortalece redes locais e varejo
+};
+
+\node[erTint=erForest, text width=4.45cm, minimum height=2.70cm, anchor=north] (c3) at (12.6, 3.85) {
+  \textbf{\textcolor{erNavy}{3. Organização de Controle}}\\
+  \textbf{\textcolor{erNavy}{Social (OCS)}}\\[6pt]
+  \scriptsize
+  $\bullet$ Sem selo comercial\\[2pt]
+  $\bullet$ Venda direta em feiras e PAA/PNAE\\[2pt]
+  $\bullet$ Baixo custo e adesão familiar
+};
+
+% Badges superiores sem artefato de canto
+\node[erBadge=erMuted, rounded corners=5pt] at (c1.north) {Auditoria Externa};
+\node[erBadge=erTeal, rounded corners=5pt] at (c2.north) {Selo Participativo};
+\node[erBadge=erForest, rounded corners=5pt] at (c3.north) {Venda Direta};
+
+% Conectores verticais para a barra inferior
+\draw[erArrow, color=erNavy!75] (c1.south) -- (2.4, 0.35);
+\draw[erArrow, color=erNavy] (c2.south) -- (7.5, 0.35);
+\draw[erArrow, color=erNavy] (c3.south) -- (12.6, 0.35);
+
+% Barra horizontal inferior (erNavy)
+\node[draw=erNavyDark, fill=erNavy, rounded corners=6pt, line width=1.2pt,
+      text=white, text width=14.6cm, inner sep=10pt, align=center, anchor=north] (bar) at (7.5, 0.33) {
+  {\small\textbf{PAA e PNAE (Lei 11.947/2009 — Mín. 30\%)}}\\[3pt]
+  {\footnotesize Mercados institucionais estruturantes que garantem escoamento, renda rural e SAN escolar/local.}
+};
+
+\end{tikzpicture}
+\end{document}

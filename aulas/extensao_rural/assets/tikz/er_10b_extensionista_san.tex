@@ -1,0 +1,68 @@
+\documentclass[border=12pt]{standalone}
+\input{er_tikz_style}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+  % Título principal
+  \node[erTitle, font=\large\bfseries\sffamily] (title) at (0, 4.70)
+    {Campos de Atuação do(a) Extensionista na Promoção da SAN};
+  \node[erSub] (sub) at (0, 4.20)
+    {Articulação multidimensional entre produção diversificada, mercados e organização social};
+
+  % Hub Esquerdo: Extensionista Rural
+  \node[
+    draw=erGoldDark, fill=bgGold, rounded corners=8pt, line width=1.5pt,
+    text width=3.35cm, minimum height=1.85cm, inner sep=9pt, align=center
+  ] (hub) at (-6.45, 0.25) {%
+    {\normalsize\bfseries\textcolor{erGoldDark}{Extensionista\\Rural}}\\[4pt]
+    {\scriptsize\textcolor{erMuted}{Mediação técnica\\e organizativa}}
+  };
+
+  % 5 Cards Horizontais Empilhados
+  \node[erTint=erForest, text width=5.6cm, minimum height=0.92cm, inner sep=7pt] (a1) at (0, 2.85)
+    {\textbf{\textcolor{erForest}{Diversificação Produtiva}}};
+
+  \node[erTint=erTeal, text width=5.6cm, minimum height=0.92cm, inner sep=7pt] (a2) at (0, 1.55)
+    {\textbf{\textcolor{erTeal}{Processamento Local e Agroindústria}}};
+
+  \node[erTint=erNavy, text width=5.6cm, minimum height=0.92cm, inner sep=7pt] (a3) at (0, 0.25)
+    {\textbf{\textcolor{erNavy}{Acesso a Mercados e Compras Públicas}}};
+
+  \node[erTint=erGold, text width=5.6cm, minimum height=0.92cm, inner sep=7pt] (a4) at (0, -1.05)
+    {\textbf{\textcolor{erGoldDark}{Certificação Participativa (SPG / OCS)}}};
+
+  \node[erTint=erForest, text width=5.6cm, minimum height=0.92cm, inner sep=7pt] (a5) at (0, -2.35)
+    {\textbf{\textcolor{erForest}{Organização Comunitária \& Cooperativas}}};
+
+  % Card Destaque Direito: SAN
+  \node[
+    draw=erForest, fill=erForest, rounded corners=8pt, line width=1.5pt,
+    text=white, text width=3.65cm, minimum height=2.25cm, inner sep=10pt, align=center
+  ] (san) at (6.65, 0.25) {%
+    {\normalsize\bfseries Segurança Alimentar\\e Nutricional (SAN)}\\[5pt]
+    {\scriptsize Soberania, renda familiar\\e alimento saudável}
+  };
+
+  % Barramento esquerdo (hub -> 5 campos)
+  \draw[line width=1.35pt, color=erGoldDark] (hub.east) -- (-3.65, 0.25);
+  \draw[line width=1.25pt, color=erGoldDark!75] (-3.65, -2.35) -- (-3.65, 2.85);
+  \draw[erArrow, color=erForest]   (-3.65,  2.85) -- (a1.west);
+  \draw[erArrow, color=erTeal]     (-3.65,  1.55) -- (a2.west);
+  \draw[erArrow, color=erNavy]     (-3.65,  0.25) -- (a3.west);
+  \draw[erArrow, color=erGoldDark] (-3.65, -1.05) -- (a4.west);
+  \draw[erArrow, color=erForest]   (-3.65, -2.35) -- (a5.west);
+
+  % Barramento direito (5 campos -> SAN)
+  \draw[line width=1.2pt, color=erForest]   (a1.east) -- (3.65,  2.85);
+  \draw[line width=1.2pt, color=erTeal]     (a2.east) -- (3.65,  1.55);
+  \draw[line width=1.2pt, color=erNavy]     (a3.east) -- (3.65,  0.25);
+  \draw[line width=1.2pt, color=erGoldDark] (a4.east) -- (3.65, -1.05);
+  \draw[line width=1.2pt, color=erForest]   (a5.east) -- (3.65, -2.35);
+  \draw[line width=1.3pt, color=erForest!85] (3.65, -2.35) -- (3.65, 2.85);
+  \draw[erArrow, color=erForest, line width=1.6pt] (3.65, 0.25) -- (san.west);
+
+\end{tikzpicture}
+\end{document}

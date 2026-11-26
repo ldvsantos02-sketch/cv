@@ -1,0 +1,71 @@
+\documentclass[border=12pt]{standalone}
+\input{er_tikz_style}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+  % Título principal
+  \node[erTitle, font=\large\bfseries\sffamily] (title) at (0, 5.15)
+    {Estrutura Institucional da PNATER e do PRONATER (Lei 12.188/2010)};
+  \node[erSub] (sub) at (0, 4.65)
+    {Arquitetura legal da política pública brasileira de Assistência Técnica e Extensão Rural};
+
+  % Nível 1: PNATER
+  \node[
+    draw=erNavyDark, fill=erNavy, rounded corners=7pt, line width=1.4pt,
+    text=white, text width=8.2cm, minimum height=1.25cm, inner sep=9pt, align=center
+  ] (pnater) at (0, 3.25) {%
+    {\normalsize\bfseries PNATER (Lei 12.188/2010)}\\[3pt]
+    {\scriptsize Política Nacional de Assistência Técnica e Extensão Rural}
+  };
+
+  % Nível 2: PRONATER
+  \node[
+    draw=erTeal, fill=bgTeal, rounded corners=7pt, line width=1.4pt,
+    text=erInk, text width=7.6cm, minimum height=1.15cm, inner sep=8pt, align=center
+  ] (pronater) at (0, 1.10) {%
+    {\small\bfseries\textcolor{erTeal}{PRONATER (Programa Nacional de ATER)}}\\[2pt]
+    {\scriptsize\textcolor{erMuted}{Instrumento programático de planejamento, financiamento e execução}}
+  };
+
+  % Seta PNATER -> PRONATER
+  \draw[erArrow, color=erNavy, line width=1.5pt] (pnater.south) -- (pronater.north);
+
+  % Nível 3: 4 cards iguais da esquerda para a direita
+  \node[erTint=erNavy, text width=3.15cm, minimum height=2.05cm, inner sep=8pt] (c1) at (-6.15, -1.75) {%
+    \textbf{\textcolor{erNavy}{1. Capacitação de}}\\[1pt]
+    \textbf{\textcolor{erNavy}{Agentes de ATER}}\\[5pt]
+    \scriptsize\textcolor{erMuted}{Formação metodológica\\e educação continuada}
+  };
+
+  \node[erTint=erTeal, text width=3.15cm, minimum height=2.05cm, inner sep=8pt] (c2) at (-2.05, -1.75) {%
+    \textbf{\textcolor{erTeal}{2. Capacitação de}}\\[1pt]
+    \textbf{\textcolor{erTeal}{Agricultores(as)}}\\[5pt]
+    \scriptsize\textcolor{erMuted}{Troca de saberes e\\autonomia produtiva}
+  };
+
+  \node[erTint=erGold, text width=3.15cm, minimum height=2.05cm, inner sep=8pt] (c3) at (2.05, -1.75) {%
+    \textbf{\textcolor{erGoldDark}{3. Programas}}\\[1pt]
+    \textbf{\textcolor{erGoldDark}{Estaduais de ATER}}\\[5pt]
+    \scriptsize\textcolor{erMuted}{Articulação federativa\\e redes locais}
+  };
+
+  \node[erTint=erForest, text width=3.15cm, minimum height=2.05cm, inner sep=8pt] (c4) at (6.15, -1.75) {%
+    \textbf{\textcolor{erForest}{4. ATER Setorial}}\\[1pt]
+    \textbf{\textcolor{erForest}{e Temática}}\\[5pt]
+    \scriptsize\textcolor{erMuted}{Agroecologia, crédito,\\mulheres e juventude}
+  };
+
+  % Tronco e barramento de distribuição
+  \draw[line width=1.35pt, color=erTeal] (pronater.south) -- (0, -0.10);
+  \draw[line width=1.25pt, color=erMuted!65] (-6.15, -0.10) -- (6.15, -0.10);
+
+  \draw[erArrow, color=erNavy]     (-6.15, -0.10) -- (c1.north);
+  \draw[erArrow, color=erTeal]     (-2.05, -0.10) -- (c2.north);
+  \draw[erArrow, color=erGoldDark] ( 2.05, -0.10) -- (c3.north);
+  \draw[erArrow, color=erForest]   ( 6.15, -0.10) -- (c4.north);
+
+\end{tikzpicture}
+\end{document}

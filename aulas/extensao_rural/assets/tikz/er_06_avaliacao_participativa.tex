@@ -1,0 +1,86 @@
+\documentclass[border=12pt]{standalone}
+\input{er_tikz_style}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título principal
+\node[erTitle, font=\large\bfseries\sffamily] (title) at (0, 5.15)
+  {Avaliação Participativa de Impacto em Tecnologias Sociais};
+
+% Subtítulo da faixa temporal
+\node[erSub, font=\scriptsize\bfseries\sffamily, text=erMuted] (tl_label) at (0, 4.45)
+  {CICLO TEMPORAL DA AVALIAÇÃO};
+
+% Fluxo temporal superior
+\node[
+  erTint=erNavy, text width=4.35cm, minimum height=1.25cm, inner sep=8pt
+] (t1) at (-5.6, 3.35) {%
+  {\color{erNavy}\small\bfseries Ex-ante}\\[3pt]
+  {\color{erInk}\footnotesize Linha de Base}
+};
+
+\node[
+  erTint=erTeal, text width=4.65cm, minimum height=1.25cm, inner sep=8pt
+] (t2) at (0, 3.35) {%
+  {\color{erTeal}\small\bfseries De Processo}\\[3pt]
+  {\color{erInk}\footnotesize Monitoramento Participativo}
+};
+
+\node[
+  erTint=erForest, text width=4.35cm, minimum height=1.25cm, inner sep=8pt
+] (t3) at (5.6, 3.35) {%
+  {\color{erForest}\small\bfseries Ex-post}\\[3pt]
+  {\color{erInk}\footnotesize Impacto Territorial}
+};
+
+\draw[erArrow, color=erNavy!80] (t1.east) -- (t2.west);
+\draw[erArrow, color=erTeal!80] (t2.east) -- (t3.west);
+
+% Linha divisória sutil para comparação
+\draw[color=erMuted!35, line width=0.9pt] (-8.0, 2.25) -- (8.0, 2.25);
+\node[
+  fill=white, text=erMuted, font=\scriptsize\bfseries\sffamily, inner xsep=8pt
+] at (0, 2.25) {CONTRASTE DE ABORDAGENS};
+
+% Card esquerdo: Avaliação Convencional (Top-Down)
+\node[
+  draw=erAlert, fill=bgAlert, rounded corners=6pt, line width=1.25pt,
+  text width=6.55cm, inner sep=11pt, align=left, anchor=north
+] (conv) at (-4.3, 1.75) {%
+  \parbox[t][3.25cm][t]{6.55cm}{%
+    {\color{erAlert}\small\bfseries Avaliação Convencional (Top-Down)}\\[4pt]
+    {\color{erAlert!45}\rule{6.55cm}{0.8pt}}\\[8pt]
+    {\color{erInk}\footnotesize
+    \textbf{\color{erAlert}$\times$}\enspace Ignora o saber local\\[6pt]
+    \textbf{\color{erAlert}$\times$}\enspace Mede apenas produtividade e renda\\[6pt]
+    \textbf{\color{erAlert}$\times$}\enspace Não capta autonomia ou gênero\\[6pt]
+    \textbf{\color{erAlert}$\times$}\enspace Sem retorno à comunidade}
+  }%
+};
+
+% Card direito: Avaliação Participativa (Co-investigação)
+\node[
+  draw=erForest, fill=bgForest, rounded corners=6pt, line width=1.25pt,
+  text width=6.55cm, inner sep=11pt, align=left, anchor=north
+] (part) at (4.3, 1.75) {%
+  \parbox[t][3.25cm][t]{6.55cm}{%
+    {\color{erForest}\small\bfseries Avaliação Participativa (Co-investigação)}\\[4pt]
+    {\color{erForest!45}\rule{6.55cm}{0.8pt}}\\[8pt]
+    {\color{erInk}\footnotesize
+    \textbf{\color{erForest}\checkmark}\enspace Beneficiários atuam como co-avaliadores\\[6pt]
+    \textbf{\color{erForest}\checkmark}\enspace Indicadores quantitativos e qualitativos\\[6pt]
+    \textbf{\color{erForest}\checkmark}\enspace Empoderamento e controle social}
+  }%
+};
+
+% Selo central de contraste
+\node[
+  circle, fill=white, draw=erMuted!60, line width=1pt,
+  font=\scriptsize\bfseries\sffamily, text=erMuted, inner sep=4.5pt
+] at (0, -0.25) {vs.};
+
+\end{tikzpicture}
+\end{document}

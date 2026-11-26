@@ -1,0 +1,65 @@
+\usepackage[no-math]{fontspec}
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amssymb}
+\IfFileExists{C:/Windows/Fonts/Lato_Regular.ttf}{%
+  \setmainfont{Lato}[
+    Path = C:/Windows/Fonts/,
+    UprightFont = Lato_Regular.ttf,
+    BoldFont = Lato_Bold.ttf,
+    ItalicFont = Lato_Italic.ttf,
+    BoldItalicFont = Lato_BoldItalic.ttf
+  ]
+  \setsansfont{Lato}[
+    Path = C:/Windows/Fonts/,
+    UprightFont = Lato_Regular.ttf,
+    BoldFont = Lato_Bold.ttf,
+    ItalicFont = Lato_Italic.ttf,
+    BoldItalicFont = Lato_BoldItalic.ttf
+  ]
+}{%
+  \RequirePackage[default]{lato}
+}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,backgrounds,calc,decorations.pathreplacing,patterns}
+
+% Paleta institucional UEFS / Extensão Rural
+\definecolor{erNavy}{HTML}{1F4268}
+\definecolor{erNavyDark}{HTML}{152E4A}
+\definecolor{erGold}{HTML}{B38A3D}
+\definecolor{erGoldDark}{HTML}{8C6927}
+\definecolor{erTeal}{HTML}{0E7C7B}
+\definecolor{erForest}{HTML}{2D6A4F}
+\definecolor{erAlert}{HTML}{9E2A2B}
+\definecolor{erInk}{HTML}{26313D}
+\definecolor{erMuted}{HTML}{5B6573}
+
+\definecolor{bgNavy}{HTML}{EDF2F7}
+\definecolor{bgGold}{HTML}{F8F3E9}
+\definecolor{bgTeal}{HTML}{EBF6F5}
+\definecolor{bgForest}{HTML}{EEF5F0}
+\definecolor{bgAlert}{HTML}{FDF2F2}
+
+\tikzset{
+  >=Stealth,
+  erBox/.style={
+    draw=#1, fill=white, rounded corners=5pt, line width=1.15pt,
+    inner sep=7pt, align=center, font=\footnotesize\sffamily, text=erInk
+  },
+  erTint/.style={
+    draw=#1, fill=#1!8!white, rounded corners=5pt, line width=1.15pt,
+    inner sep=7pt, align=center, font=\footnotesize\sffamily, text=erInk
+  },
+  erBadge/.style={
+    fill=#1, text=white, rounded corners=9pt, inner xsep=8pt, inner ysep=3pt,
+    font=\scriptsize\bfseries\sffamily
+  },
+  erTitle/.style={font=\normalsize\bfseries\sffamily, text=erNavy, align=center},
+  erSub/.style={font=\footnotesize\sffamily, text=erMuted, align=center},
+  erArrow/.style={->, >=Stealth, line width=1.35pt},
+  erDArrow/.style={<->, >=Stealth, line width=1.35pt}
+}

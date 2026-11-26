@@ -12,11 +12,12 @@ execute:
   echo: false
 ---
 
-## Visão Geral {.smaller-text}
+## [Abertura]{.pitch-tag .pitch-tag--teal} Visão Geral da Aula {#visao-geral .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos Principais
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Roteiro da aula]{.pitch-card-index}
+[Tópicos estruturantes]{.pitch-heading}
 
 - [1]{.circle} Concepções de Projeto em Extensão
 - [2]{.circle} Diagnóstico e Identificação de Demandas
@@ -26,319 +27,539 @@ execute:
 - [6]{.circle} Monitoramento, Avaliação e Defesa Pública
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo Central**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--teal}
+[Objetivo central]{.pitch-card-index}
+[Do diagnóstico à defesa pública]{.pitch-heading}
 
 Capacitar o estudante de ciências agrárias para a elaboração, execução e avaliação de projetos de extensão rural voltados à agricultura familiar, desde a identificação do problema até a defesa pública da proposta.
 :::
-:::
-:::
 
----
-
-## CONCEPÇÕES DE PROJETO EM EXTENSÃO RURAL {.smaller-text}
-
-A elaboração de projetos é competência central para o extensionista. Projetos de extensão rural diferenciam-se de projetos de pesquisa e de investimento por sua **natureza interventiva e educativa**, pois buscam promover mudanças concretas na realidade de comunidades rurais por meio de processos participativos de construção de conhecimento e ação coletiva (Coelho, 2014).
-
-::: {.columns}
-::: {.column width="50%"}
-### Tipos de Projetos em ATER
-
-Projetos de **assessoria técnica** focam na orientação produtiva a grupos de agricultores para melhoria de sistemas de produção específicos. Projetos de **desenvolvimento comunitário** abordam demandas mais amplas (organização social, acesso a mercados, infraestrutura). Projetos de **pesquisa-ação participativa** integram geração de conhecimento e intervenção, envolvendo agricultores como co-pesquisadores. Projetos de **formação** visam capacitar multiplicadores locais em temas técnicos ou organizativos.
+::: {.pitch-pill-row}
+[DRP Participativo]{.pitch-pill}
+[Metas SMART · Gantt]{.pitch-pill .pitch-pill--gold}
+[Marco Lógico · PRONAF]{.pitch-pill}
 :::
 
-::: {.column width="50%"}
-### Fontes de Financiamento
-
-O financiamento de projetos de extensão pode vir de Chamadas Públicas de ATER (ANATER, estados), editais de extensão universitária (PROEX, MEC), emendas parlamentares e convênios governamentais, cooperação internacional (FAO, FIDA, GIZ), recursos do Sistema S (SENAR, SEBRAE) e editais de fundações e organizações da sociedade civil.
-:::
-:::
-
----
-
-## DIAGNÓSTICO E IDENTIFICAÇÃO DE DEMANDAS {.smaller-text}
-
-Todo projeto de extensão rural deve partir de um **diagnóstico** da realidade onde se pretende atuar. O diagnóstico não é mera coleta de dados, mas um processo participativo de leitura da realidade que envolve os agricultores como sujeitos e não apenas como informantes (Verdejo, 2006).
-
-```{mermaid}
-%%| fig-cap: "Ferramentas de diagnóstico para projetos de extensão rural"
-flowchart LR
-    A["DIAGNÓSTICO\nPARTICIPATIVO"] --> B["DRP\nDiagnóstico Rural\nParticipativo"]
-    A --> C["Caminhada\nTransversal"]
-    A --> D["Mapa Falante"]
-    A --> E["Linha do\nTempo"]
-    A --> F["Diagrama\nde Venn"]
-    A --> G["Matriz\nFOFA/SWOT"]
-    classDef main fill:#1a5276,stroke:#fff,color:#fff
-    classDef tool fill:#85c1e9,stroke:#2e86c1,color:#1a5276
-    class A main
-    class B,C,D,E,F,G tool
-```
-
-O DRP (Diagnóstico Rural Participativo) é a ferramenta mais consolidada para esse fim, tendo sido sistematizado a partir de experiências internacionais de PRA (Participatory Rural Appraisal) e adaptado ao contexto brasileiro (Kummer, 2007).
-
----
-
-## ELEMENTOS DO DRP {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-### Ferramentas Visuais
-
-O **Mapa Falante** permite à comunidade representar graficamente seu território, identificando recursos naturais, áreas produtivas, infraestruturas e problemas ambientais. A **Linha do Tempo** reconstrói a trajetória histórica da comunidade, revelando marcos de transformação. O **Diagrama de Venn** mapeia as instituições e organizações que atuam no território e suas relações com a comunidade.
-:::
-
-::: {.column width="50%"}
-### Ferramentas Analíticas
-
-A **Caminhada Transversal** consiste em percorrer o território com membros da comunidade, observando e registrando características edáficas, produtivas e ambientais ao longo de um transecto. A **Matriz FOFA** (Forças, Oportunidades, Fraquezas, Ameaças) organiza as informações levantadas em categorias que orientam o planejamento. O **Calendário Sazonal** identifica padrões temporais de produção, trabalho, renda e vulnerabilidades ao longo do ano (Verdejo, 2006).
-:::
-:::
-
----
-
-## ESTRUTURA DO PROJETO {.smaller-text}
-
-A estrutura de um projeto de extensão rural deve contemplar elementos que permitam a compreensão clara do problema, da intervenção proposta e dos resultados esperados. A sequência lógica do projeto segue o encadeamento problema, justificativa, objetivos, metas, metodologia, cronograma, orçamento e avaliação.
-
-```{mermaid}
-%%| fig-cap: "Encadeamento lógico de um projeto de extensão rural"
-flowchart TD
-    A["1. PROBLEMA\n(O que resolver?)"] --> B["2. JUSTIFICATIVA\n(Por que é relevante?)"]
-    B --> C["3. OBJETIVOS\n(O que alcançar?)"]
-    C --> D["4. METAS\n(Quanto e quando?)"]
-    D --> E["5. METODOLOGIA\n(Como fazer?)"]
-    E --> F["6. CRONOGRAMA\n(Quando cada ação?)"]
-    F --> G["7. ORÇAMENTO\n(Com que recursos?)"]
-    G --> H["8. AVALIAÇÃO\n(Como medir?)"]
-    classDef step fill:#2e86c1,stroke:#fff,color:#fff
-    class A,B,C,D,E,F,G,H step
-```
-
----
-
-## FORMULAÇÃO DO PROBLEMA E DA JUSTIFICATIVA {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-### O Problema
-
-O problema é a questão concreta a ser enfrentada pelo projeto. Deve ser formulado de maneira clara, delimitado no espaço e no tempo, e embasado por dados do diagnóstico. Problemas genéricos como "baixa produtividade" ou "falta de assistência técnica" devem ser refinados até se tornarem específicos e mensuráveis.
-
-**Exemplo refinado:** "Os 45 agricultores familiares do assentamento Nova Esperança (município X, SE) apresentam perda média de 30% da produção de hortaliças por manejo fitossanitário inadequado, comprometendo a renda familiar e o abastecimento da feira local."
-:::
-
-::: {.column width="50%"}
-### A Justificativa
-
-A justificativa responde à pergunta "por que esse problema merece atenção?". Deve articular dados locais do diagnóstico com referências da literatura, marcos legais pertinentes (PNATER, LOSAN, PNAPO) e a relevância social, econômica e ambiental da intervenção. A justificativa não é apenas retórica, é o argumento que convence o financiador ou a instituição de ATER a investir recursos no projeto (Coelho, 2014).
-:::
-:::
-
----
-
-## OBJETIVOS E METAS {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-### Objetivo Geral
-
-O objetivo geral expressa a mudança ampla que o projeto pretende promover. Deve ser redigido com verbo no infinitivo e manter coerência direta com o problema identificado.
-
-**Exemplo:** "Promover o manejo agroecológico de hortaliças no assentamento Nova Esperança, reduzindo perdas produtivas e fortalecendo a comercialização na feira local."
-
-### Objetivos Específicos
-
-Os objetivos específicos decompõem o objetivo geral em ações concretamente alcançáveis durante a vigência do projeto. Cada objetivo específico deve gerar metas e indicadores verificáveis.
-:::
-
-::: {.column width="50%"}
-### Metas (SMART)
-
-As metas quantificam os objetivos específicos em termos de prazo e magnitude. A formulação segue o critério SMART (Specific, Measurable, Achievable, Relevant, Time-bound).
-
-::: {.highlight-box}
-**Exemplo de Metas SMART**
-
-1. Capacitar 45 agricultores em manejo integrado de pragas até o mês 3
-2. Implantar 15 unidades demonstrativas de horticultura agroecológica até o mês 5
-3. Reduzir em 20% as perdas por fitossanidade até o mês 10
-4. Inserir 10 novos produtores na feira local até o mês 12
+::: {.pitch-band .pitch-band--teal}
+Coerência metodológica entre demanda territorial, planejamento operacional e avaliação participativa.
 :::
 :::
 :::
 
----
+# 1 · Concepções e Diagnóstico Participativo {.section-header rotulo="Diagnóstico"}
 
-## ESTRATÉGIA METODOLÓGICA {.smaller-text}
+## [Projetos]{.pitch-tag .pitch-tag--teal} Concepções e Fontes de Financiamento em ATER {#concepcoes-projeto .smaller-text .lesson-slide}
 
-A metodologia descreve **como** o projeto será executado. Em projetos de extensão rural, a coerência metodológica com os princípios da PNATER é fundamental. Métodos participativos devem prevalecer sobre abordagens puramente transmissivas (Caporal e Costabeber, 2004).
+::: {.pitch-band .pitch-band--navy}
+**Coelho (2014):** projetos de extensão rural diferenciam-se de projetos de pesquisa e investimento por sua **natureza interventiva e educativa**, promovendo mudanças concretas via participação e ação coletiva.
+:::
 
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Tipologia de atuação]{.pitch-card-index}
+[Tipos de projetos em ATER]{.pitch-heading}
+
+- **Assessoria técnica:** orientação produtiva a grupos para melhoria de sistemas específicos
+- **Desenvolvimento comunitário:** organização social, acesso a mercados e infraestrutura
+- **Pesquisa-ação participativa:** geração de conhecimento com agricultores como co-pesquisadores
+- **Formação:** capacitação de multiplicadores locais em temas técnicos e organizativos
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Captação e fomento]{.pitch-card-index}
+[Fontes de financiamento]{.pitch-heading}
+
+- Chamadas Públicas de ATER (ANATER e governos estaduais)
+- Editais de extensão universitária (PROEX, MEC)
+- Emendas parlamentares e convênios governamentais
+- Cooperação internacional (FAO, FIDA, GIZ)
+- Sistema S (SENAR, SEBRAE), fundações e OSCs
+:::
+:::
+
+## [Projetos]{.pitch-tag .pitch-tag--teal} Ciclo de Projetos de Extensão e Marco Lógico {#ciclo-projetos-tikz .smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--tall}
+![Ciclo completo de elaboração de projetos de extensão rural em cinco etapas e coerência vertical do Marco Lógico.](img/er_11_ciclo_projetos_ater.png)
+
+[Ciclo de Elaboração de Projetos de Extensão Rural e Coerência do Marco Lógico]{.pitch-caption}
+[1. Diagnóstico Participativo → 2. Árvore de Problemas & Objetivos → 3. Matriz de Marco Lógico → 4. Cronograma, Orçamento & PRONAF → 5. Monitoramento & Avaliação]{.pitch-caption-sub}
+:::
+
+## [Diagnóstico]{.pitch-tag .pitch-tag--forest} Diagnóstico Participativo e Ferramentas do DRP {#diagnostico-drp .smaller-text .lesson-slide}
+
+::: {.pitch-band}
+**Verdejo (2006) e Kummer (2007):** o diagnóstico não é mera coleta extrativa de dados, mas leitura participativa da realidade com os agricultores como sujeitos; o **DRP** (adaptado do *PRA*) é sua principal caixa de ferramentas.
+:::
+
+::: {.pitch-cards}
+::: {.pitch-card .pitch-card--teal}
+[01 · Mapa Falante]{.pitch-card-index}
+[Leitura espacial]{.pitch-heading}
+
+Comunidade desenha seu território, localizando recursos naturais, áreas produtivas, infraestrutura e problemas ambientais.
+:::
+
+::: {.pitch-card}
+[02 · Linha do Tempo]{.pitch-card-index}
+[Trajetória histórica]{.pitch-heading}
+
+Reconstrói marcos de transformação produtiva, climática e organizativa vividos pela comunidade.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[03 · Diagrama de Venn]{.pitch-card-index}
+[Rede institucional]{.pitch-heading}
+
+Mapeia instituições, sindicatos e organizações atuantes no território e a força de seus vínculos locais.
+:::
+:::
+
+::: {.pitch-cards}
+::: {.pitch-card .pitch-card--forest}
+[04 · Caminhada Transversal]{.pitch-card-index}
+[Observação em transecto]{.pitch-heading}
+
+Percurso em campo com moradores observando solos, relevo, cobertura vegetal e usos produtivos.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[05 · Matriz FOFA / SWOT]{.pitch-card-index}
+[Síntese estratégica]{.pitch-heading}
+
+Organiza Forças, Oportunidades, Fraquezas e Ameaças levantadas para orientar prioridades do projeto.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[06 · Calendário Sazonal]{.pitch-card-index}
+[Dinâmica anual]{.pitch-heading}
+
+Identifica padrões mensais de chuvas, trabalho, produção, renda e períodos críticos de vulnerabilidade.
+:::
+:::
+
+## [Diagnóstico]{.pitch-tag .pitch-tag--forest} Caixa de Ferramentas do Diagnóstico Participativo {#ferramentas-drp-tikz .smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--tall}
+![](img/er_11b_diagnostico_ferramentas.png)
+
+[Ferramentas Participativas de Diagnóstico em Projetos de Extensão Rural]{.pitch-caption}
+[Combinação de ferramentas espaciais, temporais, relacionais e estratégicas no DRP (Verdejo, 2006; Kummer, 2007)]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band}
+O cruzamento de ferramentas visuais com diferentes grupos (mulheres, jovens e idosos) reduz vieses e qualifica o levantamento de demandas do projeto.
+:::
+
+# 2 · Estrutura, Problema e Metas {.section-header rotulo="Estrutura"}
+
+## [Estrutura]{.pitch-tag .pitch-tag--teal} Encadeamento Lógico do Projeto de Extensão {#estrutura-projeto .smaller-text .lesson-slide}
+
+::: {.pitch-flow-4}
+::: {.pitch-card .pitch-card--alert}
+[01 · Problema]{.pitch-card-index}
+[O que resolver?]{.pitch-heading}
+
+Situação concreta delimitada e comprovada no diagnóstico.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[02 · Justificativa]{.pitch-card-index}
+[Por que importa?]{.pitch-heading}
+
+Relevância social, econômica, ambiental e respaldo legal.
+:::
+
+::: {.pitch-card}
+[03 · Objetivos]{.pitch-card-index}
+[O que alcançar?]{.pitch-heading}
+
+Mudança geral pretendida e desdobramentos específicos.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[04 · Metas]{.pitch-card-index}
+[Quanto e quando?]{.pitch-heading}
+
+Quantificação objetiva em prazo e magnitude (SMART).
+:::
+:::
+
+::: {.pitch-flow-4}
+::: {.pitch-card .pitch-card--forest}
+[05 · Metodologia]{.pitch-card-index}
+[Como fazer?]{.pitch-heading}
+
+Métodos participativos coerentes com a PNATER.
+:::
+
+::: {.pitch-card}
+[06 · Cronograma]{.pitch-card-index}
+[Quando agir?]{.pitch-heading}
+
+Sequência temporal e dependências (Gráfico de Gantt).
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[07 · Orçamento]{.pitch-card-index}
+[Com quais recursos?]{.pitch-heading}
+
+Rubricas detalhadas, justificadas e viáveis.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[08 · Avaliação]{.pitch-card-index}
+[Como medir?]{.pitch-heading}
+
+Indicadores quantitativos e qualitativos participativos.
+:::
+:::
+
+::: {.pitch-band .pitch-band--navy}
+A força de uma proposta reside na **coerência interna**: cada objetivo específico deve dialogar com uma meta, um método, uma rubrica e um indicador.
+:::
+
+## [Estrutura]{.pitch-tag .pitch-tag--teal} Formulação do Problema e da Justificativa {#problema-justificativa .smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-card .pitch-card--alert}
+[Delimitação espacial e temporal]{.pitch-card-index}
+[O Problema refinado]{.pitch-heading}
+
+Evitar fórmulas genéricas ("baixa produtividade" ou "falta de ATER"); o problema precisa ser específico, mensurável e ancorado no diagnóstico.
+
+**Exemplo refinado:** *"Os 45 agricultores familiares do assentamento Nova Esperança (município X, SE) apresentam perda média de 30% da produção de hortaliças por manejo fitossanitário inadequado, comprometendo a renda familiar e o abastecimento da feira local."*
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Argumentação técnica e política · Coelho (2014)]{.pitch-card-index}
+[A Justificativa]{.pitch-heading}
+
+Responde *"por que esse problema merece atenção?"* articulando:
+
+- Dados empíricos locais obtidos no DRP
+- Referências científicas da literatura agronômica
+- Marcos legais pertinentes (**PNATER**, **LOSAN**, **PNAPO**)
+- Relevância social, econômica e ambiental para convencer o financiador ou órgão de ATER
+:::
+:::
+
+## [Estrutura]{.pitch-tag .pitch-tag--teal} Objetivos e Metas SMART {#objetivos-metas .smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Verbo no infinitivo]{.pitch-card-index}
+[Objetivo Geral]{.pitch-heading}
+
+Expressa a mudança ampla em coerência direta com o problema: *"Promover o manejo agroecológico de hortaliças no assentamento Nova Esperança, reduzindo perdas produtivas e fortalecendo a comercialização na feira local."*
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Desdobramento operacional]{.pitch-card-index}
+[Objetivos Específicos]{.pitch-heading}
+
+Decompõem o objetivo geral em ações concretamente alcançáveis na vigência do projeto, gerando metas e indicadores verificáveis.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-band}
+**Critério SMART:** *Specific* (específica), *Measurable* (mensurável), *Achievable* (alcançável), *Relevant* (relevante) e *Time-bound* (temporal).
+:::
+
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**Meta 1:** Capacitar **45 agricultores** em manejo integrado de pragas até o **mês 3**.
+:::
+
+::: {.pitch-milestone-item}
+**Meta 2:** Implantar **15 unidades demonstrativas** de horticultura agroecológica até o **mês 5**.
+:::
+
+::: {.pitch-milestone-item}
+**Meta 3:** Reduzir em **20%** as perdas por fitossanidade até o **mês 10**.
+:::
+
+::: {.pitch-milestone-item}
+**Meta 4:** Inserir **10 novos produtores** na feira local até o **mês 12**.
+:::
+:::
+:::
+:::
+
+# 3 · Metodologia, Orçamento e Cronograma {.section-header rotulo="Operação"}
+
+## [Metodologia]{.pitch-tag .pitch-tag--forest} Estratégia Metodológica Participativa {#estrategia-metodologica .smaller-text .lesson-slide}
+
+::: {.pitch-table-box}
 | Método | Descrição | Quando Usar |
 | --- | --- | --- |
-| **Oficinas participativas** | Atividades práticas com grupos de agricultores | Capacitação em manejo, processamento |
+| **Oficinas participativas** | Atividades práticas com grupos de agricultores | Capacitação em manejo e processamento |
 | **Unidades demonstrativas** | Áreas experimentais em propriedades | Validação de tecnologias adaptadas |
 | **Intercâmbio agricultor-agricultor** | Visitas entre produtores de diferentes regiões | Troca de experiências e motivação |
 | **Dias de campo** | Eventos abertos com demonstrações práticas | Difusão ampliada de resultados |
 | **Assistência técnica individual** | Visitas às propriedades com orientação sob medida | Acompanhamento de casos específicos |
 | **Produção de material didático** | Cartilhas, vídeos, folders | Suporte às atividades de formação |
-
----
-
-## PRODUÇÃO DE MATERIAL DIDÁTICO {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-A produção de material de apoio é componente metodológico relevante em projetos de extensão. O material didático deve ser adequado ao público-alvo em termos de linguagem, formato e conteúdo. Para agricultores com baixa escolaridade, a ênfase deve recair sobre elementos visuais (fotografias, ilustrações, esquemas) e textos curtos e objetivos (Coelho, 2014).
-
-**Tipos de material**
-
-Cartilhas técnicas ilustradas, folders e panfletos de divulgação, vídeos instrucionais, podcasts e programas de rádio, cadernos de campo para registro e materiais digitais para aplicativos de celular são formatos comuns utilizados na ATER contemporânea.
 :::
 
-::: {.column width="50%"}
-::: {.highlight-box}
-**Princípios para Material Didático em ATER**
-
-1. Linguagem acessível (evitar jargão acadêmico)
-2. Riqueza visual (fotos reais, esquemas coloridos)
-3. Conteúdo prático e aplicável
-4. Respeito à diversidade cultural do público
-5. Formato adequado ao meio de circulação (impresso, digital, rádio)
-6. Co-produção com os agricultores sempre que possível
+::: {.pitch-band .pitch-band--teal}
+Em coerência com a **PNATER**, métodos participativos devem prevalecer sobre abordagens puramente transmissivas (Caporal e Costabeber, 2004).
 :::
+
+## [Metodologia]{.pitch-tag .pitch-tag--forest} Produção de Material Didático no Projeto {#material-didatico-projeto .smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Adequação comunicacional · Coelho (2014)]{.pitch-card-index}
+[Linguagem e visualidade]{.pitch-heading}
+
+Para agricultores com baixa escolaridade, priorizar fotografias, ilustrações e esquemas com textos curtos, diretos e aplicáveis à rotina produtiva.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Múltiplos suportes]{.pitch-card-index}
+[Formatos na ATER contemporânea]{.pitch-heading}
+
+Cartilhas técnicas ilustradas, folders e panfletos, vídeos instrucionais, podcasts e programas de rádio, cadernos de campo e materiais digitais para celular.
 :::
 :::
 
----
-
-## ORÇAMENTO E CRONOGRAMA {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-### Orçamento
-
-O orçamento detalha os recursos financeiros necessários, organizados em rubricas compatíveis com as exigências do financiador. As rubricas mais comuns em projetos de ATER incluem recursos humanos (bolsas, diárias, honorários), material de consumo (insumos, sementes, materiais de escritório), equipamentos e material permanente, serviços de terceiros (gráfica, transporte, audiovisual), deslocamentos (combustível, passagens) e custos administrativos.
-
-A clareza e a razoabilidade do orçamento são fatores decisivos na aprovação de projetos em chamadas públicas e editais.
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1. Linguagem acessível:** evitar jargão acadêmico excessivo.
 :::
 
-::: {.column width="50%"}
-### Cronograma
+::: {.pitch-milestone-item}
+**2. Riqueza visual:** fotos reais da comunidade e esquemas claros.
+:::
 
-O cronograma organiza as atividades ao longo do tempo de execução do projeto, permitindo visualizar a sequência lógica das ações e identificar dependências entre atividades. O formato mais utilizado é o **Gráfico de Gantt**, que representa cada atividade como barra horizontal ao longo de uma escala temporal.
+::: {.pitch-milestone-item}
+**3. Conteúdo prático:** orientações passo a passo aplicáveis em campo.
+:::
 
-| Atividade | M1 | M2 | M3 | M4 | M5 | M6 |
-| --- | --- | --- | --- | --- | --- | --- |
+::: {.pitch-milestone-item}
+**4. Diversidade cultural:** respeito às expressões e saberes locais.
+:::
+
+::: {.pitch-milestone-item}
+**5. Meio adequado:** impresso, digital ou rádio conforme acesso local.
+:::
+
+::: {.pitch-milestone-item}
+**6. Co-produção:** elaborar e validar com os agricultores sempre que possível.
+:::
+:::
+:::
+
+## [Operação]{.pitch-tag .pitch-tag--gold} Orçamento e Cronograma (Gráfico de Gantt) {#orcamento-cronograma .smaller-text .lesson-slide}
+
+::: {.pitch-grid-40}
+::: {.pitch-card .pitch-card--gold}
+[Viabilidade financeira]{.pitch-card-index}
+[Rubricas do Orçamento]{.pitch-heading}
+
+Organizadas segundo as regras do financiador:
+
+- **Recursos humanos:** bolsas, diárias e honorários
+- **Material de consumo:** insumos, sementes e escritório
+- **Equipamentos / permanente**
+- **Serviços de terceiros:** gráfica, transporte e audiovisual
+- **Deslocamentos** (combustível, passagens) e custos administrativos
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Atividade (Gantt) | M1 | M2 | M3 | M4 | M5 | M6 |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Diagnóstico (DRP) | X | X | | | | |
 | Oficinas de capacitação | | X | X | X | | |
 | Unidades demonstrativas | | | X | X | X | |
 | Dias de campo | | | | | X | |
 | Avaliação e relatório | | | | | X | X |
 :::
+
+::: {.pitch-band}
+Clareza orçamentária e realismo no **Gráfico de Gantt** são fatores decisivos para aprovação em editais e crédito rural (como **PRONAF** / chamadas de ATER).
 :::
-
----
-
-## MONITORAMENTO E AVALIAÇÃO {.smaller-text}
-
-O monitoramento é o acompanhamento contínuo das atividades durante a execução do projeto, verificando se as ações planejadas estão sendo realizadas conforme previsto. A avaliação, por sua vez, consiste na análise dos resultados alcançados em relação aos objetivos e metas propostos (Rua, 2009).
-
-```{mermaid}
-%%| fig-cap: "Ciclo de monitoramento e avaliação em projetos de extensão rural"
-flowchart LR
-    A["PLANEJAMENTO\n(metas e indicadores)"] --> B["EXECUÇÃO\n(atividades)"]
-    B --> C["MONITORAMENTO\n(acompanhamento contínuo)"]
-    C --> D["AVALIAÇÃO\n(resultados vs. metas)"]
-    D --> E["RETROALIMENTAÇÃO\n(ajustes e aprendizados)"]
-    E --> B
-    classDef step fill:#2e86c1,stroke:#fff,color:#fff
-    class A,B,C,D,E step
-```
-
-A avaliação em projetos de extensão rural deve incluir indicadores quantitativos (número de beneficiários, produtividade, renda) e **indicadores qualitativos** (empoderamento, participação, satisfação, mudanças de prática). A avaliação participativa, envolvendo os próprios agricultores na análise dos resultados, é coerente com os princípios da PNATER e valoriza o protagonismo dos beneficiários.
-
----
-
-## INDICADORES DE RESULTADO {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-### Indicadores Quantitativos
-
-Indicadores quantitativos são mensuráveis numericamente e permitem comparações objetivas. O número de agricultores capacitados, a área sob manejo agroecológico implantada, a variação percentual de produtividade e renda, o volume de produção comercializado e o número de organizações comunitárias fortalecidas são exemplos recorrentes em projetos de ATER.
-:::
-
-::: {.column width="50%"}
-### Indicadores Qualitativos
-
-Indicadores qualitativos captam dimensões não mensuráveis numericamente, mas igualmente relevantes. O grau de participação dos agricultores nas decisões do projeto, a percepção subjetiva de mudança de qualidade de vida, o fortalecimento de redes de cooperação entre produtores, a autonomia decisória dos beneficiários e a satisfação com os serviços de ATER são indicadores qualitativos fundamentais para avaliar a efetividade transformadora do projeto.
 :::
 :::
 
----
+# 4 · Monitoramento, Marco Lógico e Defesa {.section-header rotulo="Avaliação e Defesa"}
 
-## MODELO DE MARCO LÓGICO {.smaller-text}
+## [Avaliação]{.pitch-tag .pitch-tag--teal} Ciclo de Monitoramento e Avaliação (M&A) {#monitoramento-avaliacao .smaller-text .lesson-slide}
 
-O **Marco Lógico** (Logical Framework) é uma ferramenta de planejamento e avaliação amplamente utilizada em projetos de cooperação internacional e em chamadas públicas de ATER. Ele organiza a intervenção em quatro níveis hierárquicos.
+::: {.pitch-grid-50}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1. Planejamento:** definição prévia de metas, linha de base e indicadores.
+:::
 
-| Nível | Descrição | Exemplo |
+::: {.pitch-milestone-item}
+**2. Execução:** realização das atividades previstas no cronograma.
+:::
+
+::: {.pitch-milestone-item}
+**3. Monitoramento:** acompanhamento contínuo da entrega e do ritmo das ações.
+:::
+
+::: {.pitch-milestone-item}
+**4. Avaliação:** análise dos resultados alcançados frente aos objetivos e metas (Rua, 2009).
+:::
+
+::: {.pitch-milestone-item}
+**5. Retroalimentação:** ajustes de rota e aprendizados devolvidos diretamente à execução.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Rua (2009)]{.pitch-card-index}
+[Monitorar ≠ Avaliar]{.pitch-heading}
+
+O **monitoramento** verifica continuamente *se estamos fazendo conforme planejado*; a **avaliação** analisa *quais resultados e transformações foram efetivamente produzidos*.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[Coerência com a PNATER]{.pitch-card-index}
+[Avaliação participativa]{.pitch-heading}
+
+Envolve os próprios agricultores na leitura dos resultados, combinando dados numéricos e dimensões qualitativas de autonomia.
+:::
+:::
+:::
+
+## [Ciclo M&A]{.pitch-tag .pitch-tag--teal} Fluxo Contínuo de Monitoramento e Avaliação {#monitoramento-avaliacao-tikz .smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--tall}
+![](img/er_11c_monitoramento_avaliacao.png)
+
+[Ciclo Contínuo de Monitoramento e Avaliação (M&A) em Projetos de ATER]{.pitch-caption}
+[Retroalimentação permanente entre planejamento, execução em campo, monitoramento e avaliação de resultados]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band .pitch-band--navy}
+**Gestão adaptativa:** o monitoramento acompanha processos durante a execução; a avaliação verifica transformações e retroalimenta o replanejamento com as famílias.
+:::
+
+## [Avaliação]{.pitch-tag .pitch-tag--teal} Indicadores Quantitativos e Qualitativos {#indicadores-resultado .smaller-text .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Mensuração objetiva]{.pitch-card-index}
+[Indicadores Quantitativos]{.pitch-heading}
+
+Permitem comparações numéricas diretas ao longo do projeto:
+
+- Número de agricultores capacitados
+- Área implantada sob manejo agroecológico
+- Variação percentual de produtividade e renda
+- Volume de produção comercializado
+- Número de organizações comunitárias fortalecidas
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Efetividade transformadora]{.pitch-card-index}
+[Indicadores Qualitativos]{.pitch-heading}
+
+Captam dimensões não reduzíveis a números:
+
+- Grau de participação nas decisões do projeto
+- Percepção de mudança na qualidade de vida
+- Fortalecimento de redes de cooperação entre produtores
+- Autonomia decisória dos beneficiários
+- Satisfação com os serviços de ATER
+:::
+:::
+
+::: {.pitch-band .pitch-band--navy}
+Projetos robustos equilibram **metas físicas entregues** com **evidências de apropriação e autonomia comunitária**.
+:::
+
+## [Marco Lógico]{.pitch-tag .pitch-tag--gold} Modelo de Marco Lógico (Logical Framework) {#marco-logico .smaller-text .lesson-slide}
+
+::: {.pitch-table-box}
+| Nível Hierárquico | Descrição | Exemplo em Projeto de ATER |
 | --- | --- | --- |
 | **Objetivo Superior** | Mudança de longo prazo à qual o projeto contribui | Melhoria da SAN no território |
 | **Objetivo do Projeto** | Mudança direta que o projeto produz | Agricultores adotam manejo agroecológico |
 | **Resultados** | Produtos e serviços entregues pelo projeto | 15 unidades demonstrativas implantadas |
-| **Atividades** | Ações concretas para alcançar os resultados | Oficinas, visitas, dias de campo |
-
-Para cada nível, são definidos indicadores verificáveis, fontes de verificação e pressupostos (condições externas necessárias). O Marco Lógico é especialmente útil para projetos financiados por organizações como FAO, FIDA e GIZ.
-
----
-
-## DEFESA PÚBLICA DA PROPOSTA {.smaller-text}
-
-A defesa pública é momento de síntese e argumentação. O estudante deve demonstrar domínio do problema, coerência da proposta metodológica e viabilidade da execução. A apresentação deve ser estruturada de forma clara e objetiva, com duração adequada ao tempo disponível.
-
-::: {.columns}
-::: {.column width="50%"}
-### Estrutura da Apresentação
-
-A abertura contextualiza o problema e o território. O desenvolvimento apresenta objetivos, metodologia, cronograma e orçamento. O fechamento sintetiza os resultados esperados e as contribuições do projeto. A arguição é o momento de diálogo com a banca ou comunidade, demonstrando capacidade de resposta fundamentada.
+| **Atividades** | Ações concretas para alcançar os resultados | Oficinas, visitas técnicas, dias de campo |
 :::
 
-::: {.column width="50%"}
-::: {.highlight-box}
-**Critérios de Avaliação na Defesa**
+::: {.pitch-band .pitch-band--teal}
+Para cada nível definem-se **indicadores verificáveis**, **fontes de verificação** e **pressupostos** (condições externas) — padrão amplamente exigido por **FAO**, **FIDA** e **GIZ**.
+:::
 
-1. Pertinência e clareza do problema
-2. Coerência entre problema, objetivos e metodologia
-3. Viabilidade do orçamento e cronograma
-4. Uso de métodos participativos
-5. Qualidade do material de apoio produzido
-6. Capacidade de argumentação e resposta a questionamentos
+## [Defesa]{.pitch-tag .pitch-tag--teal} Defesa Pública da Proposta {#defesa-publica .smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Comunicação em banca ou comunidade]{.pitch-card-index}
+[Estrutura da apresentação]{.pitch-heading}
+
+- **Abertura:** contextualiza o problema e o território
+- **Desenvolvimento:** apresenta objetivos, metodologia, cronograma e orçamento
+- **Fechamento:** sintetiza resultados esperados e contribuições sociais
+- **Arguição:** diálogo fundamentado com banca examinadora ou comunidade
+:::
+
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1.** Pertinência e clareza na delimitação do problema
+:::
+
+::: {.pitch-milestone-item}
+**2.** Coerência lógica entre problema, objetivos e metodologia
+:::
+
+::: {.pitch-milestone-item}
+**3.** Viabilidade real do orçamento e do cronograma
+:::
+
+::: {.pitch-milestone-item}
+**4.** Uso consistente de métodos participativos
+:::
+
+::: {.pitch-milestone-item}
+**5.** Qualidade do material de apoio produzido
+:::
+
+::: {.pitch-milestone-item}
+**6.** Capacidade de argumentação e resposta na arguição
 :::
 :::
 :::
 
----
+## [Síntese]{.pitch-tag .pitch-tag--teal} Conclusão e Referências {#conclusao-referencias .smaller-text .lesson-slide}
 
-## CONCLUSÃO {.smaller-text}
+::: {.pitch-band .pitch-band--navy}
+**Síntese:** um projeto de extensão rural consistente articula diagnóstico participativo, fundamentação teórica e legal, planejamento operacional factível e avaliação dialógica voltada à transformação das condições de vida no campo.
+:::
 
-A capacidade de elaborar projetos de extensão rural é competência indispensável para o profissional de ciências agrárias que atuará em ATER. O projeto bem elaborado articula diagnóstico participativo, fundamentação teórica e metodológica, planejamento operacional e estratégias de monitoramento e avaliação, assegurando coerência entre a identificação do problema e a intervenção proposta.
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Bloco 1 · Metodologia e Projetos]{.pitch-card-index}
+[Base técnica e participativa]{.pitch-heading}
 
-A formação acadêmica deve proporcionar ao estudante não apenas o domínio da estrutura formal do projeto, mas a sensibilidade para construir propostas que respeitem os saberes locais, promovam a participação dos agricultores em todas as etapas e contribuam efetivamente para a transformação das condições de vida no meio rural.
+- Caporal, F. R.; Costabeber, J. A. *Agroecologia e Extensão Rural: contribuições para o desenvolvimento rural sustentável*. Brasília: MDA/IICA, 2004.
+- Coelho, F. M. G. *A Arte das Orientações Técnicas no Campo*. Rio Branco: Suprema, 2014.
+- Kummer, L. *Metodologia Participativa no Meio Rural: uma visão interdisciplinar*. Salvador: GTZ, 2007.
+- Rua, M. G. *Avaliação de Políticas, Programas e Projetos: notas introdutórias*. Brasília: ENAP, 2009.
+- Verdejo, M. E. *Diagnóstico Rural Participativo: guia prático DRP*. Brasília: MDA/SAF, 2006.
+:::
 
----
+::: {.pitch-card .pitch-card--teal}
+[Bloco 2 · Marcos Legais]{.pitch-card-index}
+[Referências normativas brasileiras]{.pitch-heading}
 
-## REFERÊNCIAS {.smaller-text}
-
-- Caporal, F. R.; Costabeber, J. A. Agroecologia e Extensão Rural: contribuições para o desenvolvimento rural sustentável. Brasília: MDA/IICA, 2004.
-- Coelho, F. M. G. A Arte das Orientações Técnicas no Campo. Rio Branco: Suprema, 2014.
-- Kummer, L. Metodologia Participativa no Meio Rural: uma visão interdisciplinar. Salvador: GTZ, 2007.
-- Rua, M. G. Avaliação de Políticas, Programas e Projetos: notas introdutórias. Brasília: ENAP, 2009.
-- Verdejo, M. E. Diagnóstico Rural Participativo: guia prático DRP. Brasília: MDA/SAF, 2006.
-- Brasil. Lei 12.188/2010. PNATER/PRONATER (2010).
-- Brasil. Lei 11.346/2006. Lei Orgânica de Segurança Alimentar (LOSAN).
-- Brasil. Decreto 7.794/2012. Política Nacional de Agroecologia e Produção Orgânica (PNAPO).
+- Brasil. *Lei 12.188/2010*. PNATER/PRONATER (2010).
+- Brasil. *Lei 11.346/2006*. Lei Orgânica de Segurança Alimentar (LOSAN).
+- Brasil. *Decreto 7.794/2012*. Política Nacional de Agroecologia e Produção Orgânica (PNAPO).
+:::
+:::
 
 ## {.center background-color="#2135A6"}
 
@@ -348,6 +569,6 @@ A formação acadêmica deve proporcionar ao estudante não apenas o domínio da
 ::: {style="color: white; font-size: 0.7em;"}
 Luiz Diego Vidal Santos
 
-Universidade Federal de Sergipe (UFS)
+Universidade Estadual de Feira de Santana (UEFS)
 :::
 :::

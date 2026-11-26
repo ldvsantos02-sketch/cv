@@ -1,0 +1,86 @@
+\documentclass[border=12pt]{standalone}
+\input{er_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+
+  % Título principal
+  \node[erTitle, font=\large\bfseries\sffamily] (title) at (0, 5.55)
+    {Comunicação Dialógica (Freire) e Ferramentas do Diagnóstico Rural Participativo (DRP)};
+
+  % ================= CONTRASTE SUPERIOR: FREIRE =================
+  \node[erTint=erAlert, minimum width=7.5cm, minimum height=1.95cm, text width=6.9cm, align=center]
+    (invasao) at (-4.45, 3.8) {
+    \textbf{\small Extensão como Invasão Cultural (Bancária)}\\[5pt]
+    \scriptsize\color{erInk}
+    Transmissão vertical e antidialógica de receitas técnicas.\\
+    Ignora o contexto sociocultural e silencia o saber camponês.
+  };
+
+  \node[erTint=erForest, minimum width=7.5cm, minimum height=1.95cm, text width=6.9cm, align=center]
+    (dialogo) at (4.45, 3.8) {
+    \textbf{\small Comunicação Horizontal e\\Problematizadora (Freire, 1977)}\\[4pt]
+    \scriptsize\color{erInk}
+    Co-investigação crítica da realidade agrária.\\
+    Educador e agricultor aprendem juntos em reciprocidade.
+  };
+
+  % Seta de transição entre os modelos
+  \draw[erArrow, color=erForest, line width=1.6pt] (invasao.east) -- (dialogo.west)
+    node[midway, above=4pt, font=\scriptsize\bfseries\sffamily, text=erForest] {superação};
+
+  % ================= DIVISOR DE SEÇÃO: 4 FERRAMENTAS DRP =================
+  \node[erBadge=erNavy, rounded corners=5pt, inner ysep=4pt] (drpHeader) at (0, 2.05)
+    {Principais Ferramentas do Diagnóstico Rural Participativo (DRP)};
+
+  % Barra distribuidora para os 4 cards
+  \draw[draw=erNavy!50, line width=1.1pt] (drpHeader.south) -- (0, 1.48);
+  \draw[draw=erNavy!50, line width=1.1pt] (-6.3, 1.48) -- (6.3, 1.48);
+
+  % ================= 4 CARDS DRP EM LINHA (SEM TIKZ ANINHADO!) =================
+  % Card 1: Mapa Falado
+  \node[erBox=erNavy, minimum width=3.9cm, minimum height=3.45cm] (card1) at (-6.3, -0.65) {};
+  \draw[erArrow, color=erNavy!75, line width=1.1pt] (-6.3, 1.48) -- (card1.north);
+  \node[erBadge=erNavy, rounded corners=5pt, inner ysep=4pt]
+    at ([yshift=-18pt]card1.north) {1. Mapa Falado};
+  \node[text width=3.45cm, align=center, font=\scriptsize\sffamily, text=erInk]
+    at ([yshift=-14pt]card1.center) {
+    \textbf{Espaço e Recursos}\\[6pt]
+    \color{erMuted}Desenho coletivo da comunidade: limites, águas, solos, lavouras e infraestrutura local.
+  };
+
+  % Card 2: Travessia / Caminhada
+  \node[erBox=erTeal, minimum width=3.9cm, minimum height=3.45cm] (card2) at (-2.1, -0.65) {};
+  \draw[erArrow, color=erTeal!80, line width=1.1pt] (-2.1, 1.48) -- (card2.north);
+  \node[erBadge=erTeal, rounded corners=5pt, inner ysep=4pt]
+    at ([yshift=-18pt]card2.north) {2. Travessia / Caminhada};
+  \node[text width=3.45cm, align=center, font=\scriptsize\sffamily, text=erInk]
+    at ([yshift=-14pt]card2.center) {
+    \textbf{Observação \textit{in loco}}\\[6pt]
+    \color{erMuted}Percurso transversal no agroecossistema dialogando sobre relevo, manejo e problemas.
+  };
+
+  % Card 3: Calendário Sazonal
+  \node[erBox=erForest, minimum width=3.9cm, minimum height=3.45cm] (card3) at (2.1, -0.65) {};
+  \draw[erArrow, color=erForest!80, line width=1.1pt] (2.1, 1.48) -- (card3.north);
+  \node[erBadge=erForest, rounded corners=5pt, inner ysep=4pt]
+    at ([yshift=-18pt]card3.north) {3. Calendário Sazonal};
+  \node[text width=3.45cm, align=center, font=\scriptsize\sffamily, text=erInk]
+    at ([yshift=-14pt]card3.center) {
+    \textbf{Chuvas, Plantio e Renda}\\[6pt]
+    \color{erMuted}Mapeamento anual de precipitação, safras, mão de obra, pragas e fluxo financeiro.
+  };
+
+  % Card 4: Diagrama de Venn
+  \node[erBox=erGold, minimum width=3.9cm, minimum height=3.45cm] (card4) at (6.3, -0.65) {};
+  \draw[erArrow, color=erGoldDark!80, line width=1.1pt] (6.3, 1.48) -- (card4.north);
+  \node[erBadge=erGoldDark, rounded corners=5pt, inner ysep=4pt]
+    at ([yshift=-18pt]card4.north) {4. Diagrama de Venn};
+  \node[text width=3.45cm, align=center, font=\scriptsize\sffamily, text=erInk]
+    at ([yshift=-14pt]card4.center) {
+    \textbf{Atores e Instituições}\\[6pt]
+    \color{erMuted}Círculos representando importância, vínculo e distância das organizações no território.
+  };
+
+\end{tikzpicture}
+\end{document}

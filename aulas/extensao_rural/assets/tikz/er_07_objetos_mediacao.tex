@@ -1,0 +1,81 @@
+\documentclass[border=12pt]{standalone}
+\input{er_tikz_style}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título principal
+\node[erTitle, font=\large\bfseries\sffamily] (title) at (0, 4.45)
+  {Objetos de Mediação Sociotécnica na Comunicação Rural};
+
+% Polos laterais de conhecimento
+\node[
+  draw=erNavy, fill=bgNavy, rounded corners=6pt, line width=1.25pt,
+  text width=4.05cm, minimum height=1.85cm, inner sep=10pt, align=center
+] (tech) at (-5.75, 2.35) {%
+  {\color{erNavy}\small\bfseries Saber Técnico /\\Agronomia}\\[4pt]
+  {\color{erMuted}\scriptsize Conhecimento científico\\e normativo}
+};
+
+\node[
+  draw=erForest, fill=bgForest, rounded corners=6pt, line width=1.25pt,
+  text width=4.05cm, minimum height=1.85cm, inner sep=10pt, align=center
+] (farm) at (5.75, 2.35) {%
+  {\color{erForest}\small\bfseries Saber Prático /\\Camponês}\\[4pt]
+  {\color{erMuted}\scriptsize Experiência territorial\\e saber tradicional}
+};
+
+% Hub central: Objeto de Mediação
+\node[
+  draw=erGoldDark, fill=bgGold, rounded corners=8pt, line width=1.6pt,
+  text width=3.9cm, minimum height=1.95cm, inner sep=10pt, align=center
+] (hub) at (0, 2.35) {%
+  {\color{erGoldDark}\normalsize\bfseries Objeto de\\Mediação}\\[4pt]
+  {\color{erInk}\scriptsize Tradução horizontal\\sem hierarquia}
+};
+
+% Setas bidirecionais laterais
+\draw[erDArrow, color=erNavy]   (tech.east) -- (hub.west);
+\draw[erDArrow, color=erForest] (hub.east)  -- (farm.west);
+
+% 4 Pílulas de exemplo abaixo (com espaçamento horizontal limpo)
+\node[
+  draw=erTeal, fill=bgTeal, rounded corners=12pt, line width=1.15pt,
+  text width=3.4cm, minimum height=1.18cm, inner sep=7pt, align=center,
+  font=\footnotesize\bfseries\sffamily, text=erTeal
+] (p1) at (-6.45, -1.1) {Croquis \& Mapas\\Participativos};
+
+\node[
+  draw=erNavy, fill=bgNavy, rounded corners=12pt, line width=1.15pt,
+  text width=3.4cm, minimum height=1.18cm, inner sep=7pt, align=center,
+  font=\footnotesize\bfseries\sffamily, text=erNavy
+] (p2) at (-2.15, -1.1) {Análise Tátil de\\Solos \& VESS};
+
+\node[
+  draw=erGoldDark, fill=bgGold, rounded corners=12pt, line width=1.15pt,
+  text width=3.4cm, minimum height=1.18cm, inner sep=7pt, align=center,
+  font=\footnotesize\bfseries\sffamily, text=erGoldDark
+] (p3) at (2.15, -1.1) {Cadernetas\\Agroecológicas};
+
+\node[
+  draw=erForest, fill=bgForest, rounded corners=12pt, line width=1.15pt,
+  text width=3.4cm, minimum height=1.18cm, inner sep=7pt, align=center,
+  font=\footnotesize\bfseries\sffamily, text=erForest
+] (p4) at (6.45, -1.1) {Unidades Demonstrativas\\\& Maquetes};
+
+% Tronco vertical e barramento horizontal limpo sem sobreposição de cores
+\draw[line width=1.2pt, color=erGoldDark!75] (hub.south) -- (0, 0.22);
+\node[
+  fill=white, text=erMuted, font=\scriptsize\bfseries\sffamily, inner xsep=8pt, inner ysep=3pt
+] (exlabel) at (0, 0.72) {EXEMPLOS DE DISPOSITIVOS DE MEDIAÇÃO};
+
+\draw[line width=1.15pt, color=erMuted!55] (-6.45, 0.22) -- (6.45, 0.22);
+\draw[line width=1.15pt, color=erTeal,     ->, >=Stealth] (-6.45, 0.22) -- (p1.north);
+\draw[line width=1.15pt, color=erNavy,     ->, >=Stealth] (-2.15, 0.22) -- (p2.north);
+\draw[line width=1.15pt, color=erGoldDark, ->, >=Stealth] ( 2.15, 0.22) -- (p3.north);
+\draw[line width=1.15pt, color=erForest,   ->, >=Stealth] ( 6.45, 0.22) -- (p4.north);
+
+\end{tikzpicture}
+\end{document}

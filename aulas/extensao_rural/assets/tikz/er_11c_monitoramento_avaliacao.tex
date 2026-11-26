@@ -1,0 +1,60 @@
+\documentclass[border=12pt]{standalone}
+\input{er_tikz_style}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+  % Título principal
+  \node[erTitle, font=\large\bfseries\sffamily] (title) at (8.80, 4.45)
+    {Ciclo Contínuo de Monitoramento e Avaliação (M\&A) em ATER};
+  \node[erSub] (sub) at (8.80, 3.95)
+    {Fluxo permanente de acompanhamento de metas, avaliação de resultados e correção de rumos};
+
+  % 5 etapas uniformemente espaçadas
+  \node[erTint=erNavy, text width=2.70cm, minimum height=2.25cm] (s1) at (1.50, 2.25) {
+    \textbf{\textcolor{erNavy}{1. Planejamento}}\\[2pt]
+    \scriptsize\textbf{\textcolor{erInk}{(Metas \& Indicadores)}}\\[5pt]
+    \scriptsize\textcolor{erMuted}{Definição participativa\\de objetivos e marcos}
+  };
+
+  \node[erTint=erTeal, text width=2.70cm, minimum height=2.25cm] (s2) at (5.15, 2.25) {
+    \textbf{\textcolor{erTeal}{2. Execução das}}\\[1pt]
+    \textbf{\textcolor{erTeal}{Atividades}}\\[5pt]
+    \scriptsize\textcolor{erMuted}{Implementação em\\campo com famílias}
+  };
+
+  \node[erTint=erGold, text width=2.70cm, minimum height=2.25cm] (s3) at (8.80, 2.25) {
+    \textbf{\textcolor{erGoldDark}{3. Monitoramento}}\\[1pt]
+    \textbf{\textcolor{erGoldDark}{Contínuo}}\\[5pt]
+    \scriptsize\textcolor{erMuted}{Registro rotineiro de\\processos e entregas}
+  };
+
+  \node[erTint=erForest, text width=2.70cm, minimum height=2.25cm] (s4) at (12.45, 2.25) {
+    \textbf{\textcolor{erForest}{4. Avaliação}}\\[2pt]
+    \scriptsize\textbf{\textcolor{erInk}{(Resultados vs. Metas)}}\\[5pt]
+    \scriptsize\textcolor{erMuted}{Análise crítica de\\eficácia e impacto}
+  };
+
+  \node[erTint=erNavy, text width=2.70cm, minimum height=2.25cm] (s5) at (16.10, 2.25) {
+    \textbf{\textcolor{erNavy}{5. Retroalimentação}}\\[1pt]
+    \textbf{\textcolor{erNavy}{\& Aprendizado}}\\[5pt]
+    \scriptsize\textcolor{erMuted}{Sistematização e\\replanejamento}
+  };
+
+  % Setas diretas entre etapas
+  \draw[erArrow, color=erNavy]     (s1.east) -- (s2.west);
+  \draw[erArrow, color=erTeal]     (s2.east) -- (s3.west);
+  \draw[erArrow, color=erGoldDark] (s3.east) -- (s4.west);
+  \draw[erArrow, color=erForest]   (s4.east) -- (s5.west);
+
+  % Arco inferior ininterrupto de retroalimentação (Etapa 5 -> Etapa 2)
+  \draw[erArrow, color=erTeal, line width=1.5pt]
+    (s5.south) .. controls +(0, -1.65) and +(0, -1.65) .. (s2.south)
+    node[midway, fill=white, draw=erTeal!55, rounded corners=8pt, line width=0.9pt,
+         inner xsep=10pt, inner ysep=3.5pt, font=\footnotesize\bfseries\itshape\sffamily, text=erTeal]
+    {Ajuste contínuo da prática};
+
+\end{tikzpicture}
+\end{document}

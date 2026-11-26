@@ -1,0 +1,56 @@
+\documentclass[border=10pt]{standalone}
+\input{er_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título
+\node[erTitle, font=\large\bfseries\sffamily] (title) at (8.20, 4.55)
+  {Produção de Material Didático para Extensão Rural: Do Campo ao Campo};
+\node[erSub] (sub) at (8.20, 4.08)
+  {Ciclo comunicacional centrado no agricultor, na legibilidade visual e na validação em campo};
+
+% 4 nós claros em fluxo horizontal (mesma altura e espaçamento amplo para setas)
+\node[erTint=erNavy, text width=3.15cm, minimum height=2.35cm] (n1) at (1.75, 2.30) {
+  \textbf{\textcolor{erNavy}{1. Levantamento de}}\\
+  \textbf{\textcolor{erNavy}{Demanda \& Linguagem}}\\
+  \textbf{\textcolor{erNavy}{Local}}\\[6pt]
+  \scriptsize Escuta no território\\e termos regionais
+};
+
+\node[erTint=erTeal, text width=3.15cm, minimum height=2.35cm] (n2) at (6.05, 2.30) {
+  \textbf{\textcolor{erTeal}{2. Escolha do}}\\
+  \textbf{\textcolor{erNavy}{Suporte}}\\[6pt]
+  \scriptsize\textit{Cartilha ilustrada,\\Fotonovela, Rádio rural,\\Áudio/Vídeo curto}
+};
+
+\node[erTint=erGold, text width=3.15cm, minimum height=2.35cm] (n3) at (10.35, 2.30) {
+  \textbf{\textcolor{erGoldDark}{3. Prototipagem com}}\\
+  \textbf{\textcolor{erNavy}{Princípios de}}\\
+  \textbf{\textcolor{erNavy}{Legibilidade}}\\[6pt]
+  \scriptsize\textit{Visual limpo, vocabulário cotidiano, ilustrações locais}
+};
+
+\node[erTint=erForest, text width=3.15cm, minimum height=2.35cm] (n4) at (14.65, 2.30) {
+  \textbf{\textcolor{erForest}{4. Pré-Teste e}}\\
+  \textbf{\textcolor{erNavy}{Validação com}}\\
+  \textbf{\textcolor{erNavy}{Agricultores(as)}}\\[6pt]
+  \scriptsize Leitura compartilhada\\e compreensão real
+};
+
+% Setas diretas de avanço
+\draw[erArrow, color=erNavy] (n1.east) -- (n2.west);
+\draw[erArrow, color=erTeal] (n2.east) -- (n3.west);
+\draw[erArrow, color=erForest] (n3.east) -- (n4.west);
+
+% Loop de retroalimentação roteado por fora (Etapa 4 -> Etapa 3)
+\draw[erArrow, color=erAlert, line width=1.5pt, rounded corners=8pt]
+  (n4.south) -- ++(0, -0.62) -| (n3.south);
+
+\node[fill=bgAlert, draw=erAlert, rounded corners=4pt, inner xsep=9pt, inner ysep=4pt,
+      font=\scriptsize\bfseries\sffamily, text=erAlert, anchor=north]
+  at ($ (n3.south)!0.5!(n4.south) + (0, -0.78) $)
+  {Retroalimentação: revisão e ajuste de linguagem antes da tiragem final};
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass[border=12pt]{standalone}
+\input{er_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+
+  % Título principal
+  \node[erTitle, font=\large\bfseries\sffamily] (title) at (0, 5.2)
+    {Arquitetura Institucional da ATER no Brasil: Pública, Terceiro Setor e Privada};
+
+  % ================= 3 CARDS BALANCEADOS =================
+  % Card Esquerdo: ATER Pública & Governamental
+  \node[draw=erForest, fill=bgForest, rounded corners=7pt, line width=1.2pt,
+        minimum width=5.15cm, minimum height=5.9cm] (card1) at (-5.55, 1.45) {};
+
+  \node[erBadge=erForest, rounded corners=5pt, inner ysep=4pt, minimum width=4.55cm, align=center]
+    at ([yshift=-20pt]card1.north) {ATER Pública \& Governamental};
+
+  \node[erBox=erForest!60, minimum width=4.65cm, minimum height=4.35cm, text width=4.15cm, align=left]
+    at ([yshift=-16pt]card1.center) {
+    {\color{erForest}\textbf{\scriptsize Governança \& Atores}}\\[1pt]
+    \scriptsize EMATERs, BAHIATER, INCRA e Secretarias Municipais.\\[7pt]
+    {\color{erForest}\textbf{\scriptsize Financiamento}}\\[1pt]
+    \scriptsize Orçamento público federal, estadual e municipal (gratuidade).\\[7pt]
+    {\color{erForest}\textbf{\scriptsize Orientação Estratégica}}\\[1pt]
+    \scriptsize Foco em Agricultura Familiar e Política Pública (\textbf{Lei 12.188/10}).
+  };
+
+  % Card Central: ONGs, Cooperativas & Terceiro Setor
+  \node[draw=erTeal, fill=bgTeal, rounded corners=7pt, line width=1.2pt,
+        minimum width=5.15cm, minimum height=5.9cm] (card2) at (0, 1.45) {};
+
+  \node[erBadge=erTeal, rounded corners=5pt, inner ysep=4pt, minimum width=4.55cm, align=center]
+    at ([yshift=-20pt]card2.north) {ONGs, Cooperativas \& 3º Setor};
+
+  \node[erBox=erTeal!60, minimum width=4.65cm, minimum height=4.35cm, text width=4.15cm, align=left]
+    at ([yshift=-16pt]card2.center) {
+    {\color{erTeal}\textbf{\scriptsize Governança \& Atores}}\\[1pt]
+    \scriptsize ASA, COOPAFS, sindicatos e Redes Agroecológicas.\\[7pt]
+    {\color{erTeal}\textbf{\scriptsize Financiamento}}\\[1pt]
+    \scriptsize Chamadas Públicas da PNATER, convênios e fundos territoriais.\\[7pt]
+    {\color{erTeal}\textbf{\scriptsize Orientação Estratégica}}\\[1pt]
+    \scriptsize Enraizamento territorial, convivência com o semiárido e autonomia.
+  };
+
+  % Card Direito: ATER Privada, Integradoras & Sistema S
+  \node[draw=erGold, fill=bgGold, rounded corners=7pt, line width=1.2pt,
+        minimum width=5.15cm, minimum height=5.9cm] (card3) at (5.55, 1.45) {};
+
+  \node[erBadge=erGoldDark, rounded corners=5pt, inner ysep=4pt, minimum width=4.55cm, align=center]
+    at ([yshift=-20pt]card3.north) {ATER Privada, Integradoras \& Sist. S};
+
+  \node[erBox=erGold!70, minimum width=4.65cm, minimum height=4.35cm, text width=4.15cm, align=left]
+    at ([yshift=-16pt]card3.center) {
+    {\color{erGoldDark}\textbf{\scriptsize Governança \& Atores}}\\[1pt]
+    \scriptsize Revendas de insumos, Agroindústrias e SENAR / ATeG.\\[7pt]
+    {\color{erGoldDark}\textbf{\scriptsize Financiamento}}\\[1pt]
+    \scriptsize Margem comercial, contratos de integração ou contribuição setorial.\\[7pt]
+    {\color{erGoldDark}\textbf{\scriptsize Orientação Estratégica}}\\[1pt]
+    \scriptsize Foco comercial, pacotes tecnológicos ou eficiência na cadeia produtiva.
+  };
+
+  % ================= BANNER SÍNTESE INFERIOR =================
+  \node[draw=erNavy, fill=bgNavy, rounded corners=6pt, line width=1.2pt,
+        minimum width=16.25cm, inner xsep=12pt, inner ysep=9pt, align=center,
+        font=\footnotesize\sffamily, text=erNavy] (banner) at (0, -2.35) {
+    \textbf{Desafio ao Engenheiro Agrônomo:}
+    \textit{prevenir conflitos de interesse técnico-comerciais e assegurar a autonomia decisória do agricultor.}
+  };
+
+\end{tikzpicture}
+\end{document}

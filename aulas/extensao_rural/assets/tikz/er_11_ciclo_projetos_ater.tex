@@ -1,0 +1,63 @@
+\documentclass[border=10pt]{standalone}
+\input{er_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título
+\node[erTitle, font=\large\bfseries\sffamily] (title) at (8.80, 4.35)
+  {Ciclo de Elaboração de Projetos de Extensão Rural e Marco Lógico};
+\node[erSub] (sub) at (8.80, 3.88)
+  {Encadeamento metodológico do diagnóstico participativo à avaliação de impacto no território};
+
+% Pipeline horizontal de 5 etapas balanceadas (mesma altura e espaçamento amplo para setas)
+\node[erTint=erTeal, text width=2.55cm, minimum height=2.15cm] (s1) at (1.60, 2.25) {
+  \textbf{\textcolor{erTeal}{1. Diagnóstico}}\\
+  \textbf{\textcolor{erNavy}{Participativo}}\\[5pt]
+  \scriptsize Leitura da realidade\\e demandas locais
+};
+
+\node[erTint=erNavy, text width=2.55cm, minimum height=2.15cm] (s2) at (5.20, 2.25) {
+  \textbf{\textcolor{erNavy}{2. Árvore de}}\\
+  \textbf{\textcolor{erNavy}{Problemas \&}}\\
+  \textbf{\textcolor{erNavy}{Objetivos}}\\[5pt]
+  \scriptsize Causas, efeitos\\e meios-fins
+};
+
+\node[erTint=erGold, text width=2.55cm, minimum height=2.15cm] (s3) at (8.80, 2.25) {
+  \textbf{\textcolor{erGoldDark}{3. Matriz de}}\\
+  \textbf{\textcolor{erNavy}{Marco Lógico}}\\[5pt]
+  \scriptsize Indicadores, fontes\\e pressupostos
+};
+
+\node[erTint=erForest, text width=2.55cm, minimum height=2.15cm] (s4) at (12.40, 2.25) {
+  \textbf{\textcolor{erForest}{4. Cronograma,}}\\
+  \textbf{\textcolor{erNavy}{Orçamento \&}}\\
+  \textbf{\textcolor{erNavy}{PRONAF}}\\[5pt]
+  \scriptsize Viabilidade técnica\\e financeira
+};
+
+\node[erTint=erNavy, text width=2.55cm, minimum height=2.15cm] (s5) at (16.00, 2.25) {
+  \textbf{\textcolor{erNavy}{5. Monitoramento}}\\
+  \textbf{\textcolor{erNavy}{\& Avaliação}}\\[5pt]
+  \scriptsize Aprendizagem e\\ajuste contínuo
+};
+
+% Setas do pipeline
+\draw[erArrow, color=erNavy] (s1.east) -- (s2.west);
+\draw[erArrow, color=erNavy] (s2.east) -- (s3.west);
+\draw[erArrow, color=erNavy] (s3.east) -- (s4.west);
+\draw[erArrow, color=erNavy] (s4.east) -- (s5.west);
+
+% Conector da Matriz de Marco Lógico para o cartão de destaque
+\draw[erArrow, color=erGoldDark] (s3.south) -- (8.80, 0.50);
+
+% Cartão inferior de destaque (erGold)
+\node[draw=erGold, fill=bgGold, rounded corners=6pt, line width=1.4pt,
+      text=erInk, text width=16.8cm, inner sep=10pt, align=center, anchor=north] (card) at (8.80, 0.48) {
+  {\small\textbf{\textcolor{erGoldDark}{Coerência Vertical do Marco Lógico}}}\\[4pt]
+  {\footnotesize\textit{Atividades $\rightarrow$ Produtos $\rightarrow$ Propósito $\rightarrow$ Financiamento Sustentável e Impacto Social}}
+};
+
+\end{tikzpicture}
+\end{document}

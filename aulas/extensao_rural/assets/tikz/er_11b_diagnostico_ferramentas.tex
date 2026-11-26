@@ -1,0 +1,74 @@
+\documentclass[border=12pt]{standalone}
+\input{er_tikz_style}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+  % Título principal
+  \node[erTitle, font=\large\bfseries\sffamily] (title) at (0.65, 4.10)
+    {Caixa de Ferramentas do Diagnóstico Participativo em Projetos de ATER};
+  \node[erSub] (sub) at (0.65, 3.60)
+    {Instrumentos metodológicos para leitura coletiva do território e planejamento rural};
+
+  % Hub Esquerdo: Diagnóstico Participativo
+  \node[
+    draw=erNavyDark, fill=erNavy, rounded corners=8pt, line width=1.5pt,
+    text=white, text width=3.35cm, minimum height=2.25cm, inner sep=10pt, align=center
+  ] (hub) at (-6.05, 0.25) {%
+    {\normalsize\bfseries Diagnóstico\\Participativo}\\[5pt]
+    {\scriptsize Leitura coletiva\\da realidade rural}
+  };
+
+  % Grid 2x3 (Linha Superior: y = 1.85)
+  \node[erTint=erTeal, text width=3.20cm, minimum height=1.70cm, inner sep=8pt] (g11) at (-1.35, 1.85) {%
+    \textbf{\textcolor{erTeal}{DRP (Diagnóstico}}\\[1pt]
+    \textbf{\textcolor{erTeal}{Rural Participativo)}}\\[4pt]
+    \scriptsize\textcolor{erMuted}{Levantamento coletivo\\multitemático}
+  };
+
+  \node[erTint=erForest, text width=3.20cm, minimum height=1.70cm, inner sep=8pt] (g12) at (2.75, 1.85) {%
+    \textbf{\textcolor{erForest}{Caminhada}}\\[1pt]
+    \textbf{\textcolor{erForest}{Transversal}}\\[4pt]
+    \scriptsize\textcolor{erMuted}{Observação direta das\\zonas agroecológicas}
+  };
+
+  \node[erTint=erNavy, text width=3.20cm, minimum height=1.70cm, inner sep=8pt] (g13) at (6.85, 1.85) {%
+    \textbf{\textcolor{erNavy}{Mapa Falante da}}\\[1pt]
+    \textbf{\textcolor{erNavy}{Propriedade}}\\[4pt]
+    \scriptsize\textcolor{erMuted}{Uso do solo, água\\e infraestrutura local}
+  };
+
+  % Grid 2x3 (Linha Inferior: y = -1.35)
+  \node[erTint=erGold, text width=3.20cm, minimum height=1.70cm, inner sep=8pt] (g21) at (-1.35, -1.35) {%
+    \textbf{\textcolor{erGoldDark}{Linha do Tempo}}\\[1pt]
+    \textbf{\textcolor{erGoldDark}{Histórica}}\\[4pt]
+    \scriptsize\textcolor{erMuted}{Marcos produtivos e\\mudanças territoriais}
+  };
+
+  \node[erTint=erTeal, text width=3.20cm, minimum height=1.70cm, inner sep=8pt] (g22) at (2.75, -1.35) {%
+    \textbf{\textcolor{erTeal}{Diagrama de Venn}}\\[1pt]
+    \textbf{\textcolor{erTeal}{(Instituições)}}\\[4pt]
+    \scriptsize\textcolor{erMuted}{Atores, parcerias e\\grau de influência}
+  };
+
+  \node[erTint=erNavy, text width=3.20cm, minimum height=1.70cm, inner sep=8pt] (g23) at (6.85, -1.35) {%
+    \textbf{\textcolor{erNavy}{Matriz FOFA /}}\\[1pt]
+    \textbf{\textcolor{erNavy}{SWOT}}\\[4pt]
+    \scriptsize\textcolor{erMuted}{Forças, fraquezas,\\oportunidades e ameaças}
+  };
+
+  % Tronco central no corredor horizontal (y = 0.25) sem cruzamentos
+  \draw[line width=1.45pt, color=erNavy] (hub.east) -- (6.85, 0.25);
+
+  \draw[erArrow, color=erTeal]     (-1.35, 0.25) -- (g11.south);
+  \draw[erArrow, color=erForest]   ( 2.75, 0.25) -- (g12.south);
+  \draw[erArrow, color=erNavy]     ( 6.85, 0.25) -- (g13.south);
+
+  \draw[erArrow, color=erGoldDark] (-1.35, 0.25) -- (g21.north);
+  \draw[erArrow, color=erTeal]     ( 2.75, 0.25) -- (g22.north);
+  \draw[erArrow, color=erNavy]     ( 6.85, 0.25) -- (g23.north);
+
+\end{tikzpicture}
+\end{document}

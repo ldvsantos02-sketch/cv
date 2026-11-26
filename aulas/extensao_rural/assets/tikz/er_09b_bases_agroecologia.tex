@@ -1,0 +1,72 @@
+\documentclass[border=12pt]{standalone}
+\input{er_tikz_style}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+  % Título principal
+  \node[erTitle, font=\large\bfseries\sffamily] (title) at (0, 4.75)
+    {Bases Epistemológicas e Diálogo de Saberes na Agroecologia};
+  \node[erSub] (sub) at (0, 4.25)
+    {Articulação transdisciplinar entre ciência acadêmica e conhecimento camponês};
+
+  % Hub Central
+  \node[
+    draw=erForest, fill=bgForest, rounded corners=8pt, line width=1.7pt,
+    text width=4.3cm, minimum height=1.45cm, inner sep=9pt, align=center
+  ] (hub) at (0, 0.20) {%
+    {\normalsize\bfseries\textcolor{erForest}{AGROECOLOGIA}}\\[3pt]
+    {\scriptsize\textcolor{erInk}{Ciência · Prática · Movimento}}
+  };
+
+  % Par Superior
+  \node[
+    draw=erNavy, fill=bgNavy, rounded corners=6pt, line width=1.25pt,
+    text width=4.35cm, minimum height=1.45cm, inner sep=8pt, align=center
+  ] (tl) at (-4.95, 2.55) {%
+    {\small\bfseries\textcolor{erNavy}{Ecologia \& Ciências\\Naturais}}
+  };
+
+  \node[
+    draw=erForest, fill=bgForest, rounded corners=6pt, line width=1.25pt,
+    text width=4.35cm, minimum height=1.45cm, inner sep=8pt, align=center
+  ] (tr) at (4.95, 2.55) {%
+    {\small\bfseries\textcolor{erForest}{Saberes Tradicionais\\\& Camponeses}}
+  };
+
+  % Par Inferior
+  \node[
+    draw=erTeal, fill=bgTeal, rounded corners=6pt, line width=1.25pt,
+    text width=4.35cm, minimum height=1.45cm, inner sep=8pt, align=center
+  ] (bl) at (-4.95, -2.15) {%
+    {\small\bfseries\textcolor{erTeal}{Ciências Sociais \&\\Economia Ecológica}}
+  };
+
+  \node[
+    draw=erGoldDark, fill=bgGold, rounded corners=6pt, line width=1.25pt,
+    text width=4.35cm, minimum height=1.45cm, inner sep=8pt, align=center
+  ] (br) at (4.95, -2.15) {%
+    {\small\bfseries\textcolor{erGoldDark}{Experiência Prática\\dos Agricultores}}
+  };
+
+  % Setas horizontais de diálogo (Par Superior e Par Inferior)
+  \draw[erDArrow, color=erNavy!65!erForest] (tl.east) -- (tr.west)
+    node[midway, fill=white, draw=erForest!45, rounded corners=8pt, line width=0.8pt,
+         inner xsep=8pt, inner ysep=2.5pt, font=\scriptsize\bfseries\sffamily, text=erForest]
+    {diálogo};
+
+  \draw[erDArrow, color=erTeal!60!erGoldDark] (bl.east) -- (br.west)
+    node[midway, fill=white, draw=erTeal!45, rounded corners=8pt, line width=0.8pt,
+         inner xsep=8pt, inner ysep=2.5pt, font=\scriptsize\bfseries\sffamily, text=erTeal]
+    {diálogo};
+
+  % Radiação do Hub Central para os 4 cards simétricos
+  \draw[erArrow, color=erNavy]     (hub.north west) -- ([xshift=-18pt]tl.south east);
+  \draw[erArrow, color=erForest]   (hub.north east) -- ([xshift=18pt]tr.south west);
+  \draw[erArrow, color=erTeal]     (hub.south west) -- ([xshift=-18pt]bl.north east);
+  \draw[erArrow, color=erGoldDark] (hub.south east) -- ([xshift=18pt]br.north west);
+
+\end{tikzpicture}
+\end{document}

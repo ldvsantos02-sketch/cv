@@ -149,7 +149,7 @@ def run_xelatex(tex_path, jobname, out_pdf_path):
                 print(res.stdout[-2000:])
             return False
     built_pdf = os.path.join(BUILD_DIR, f"{jobname}.pdf")
-    shutil.copy2(built_pdf, out_pdf_path)
+    shutil.move(built_pdf, out_pdf_path)
     print(f"[PDF GERADO] {out_pdf_path}")
     return True
 

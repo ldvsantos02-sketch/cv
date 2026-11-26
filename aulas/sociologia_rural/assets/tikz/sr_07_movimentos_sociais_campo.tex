@@ -1,0 +1,69 @@
+\documentclass[border=10pt]{standalone}
+\input{sr_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+  % Título
+  \node[srTitle, font=\large\bfseries\sffamily] (title) at (0, 3.05)
+    {Movimentos Sociais do Campo e Repertórios de Ação no Brasil};
+  \node[srSub] (sub) at (0, 2.52)
+    {Trajetórias históricas, sujeitos políticos e formas de organização no meio rural};
+
+  \def\pW{3.55cm}
+  \def\pH{4.85cm}
+  \def\hdrW{3.2cm}
+  \def\bodyW{3.1cm}
+
+  % Pilar 1: Ligas Camponesas
+  \node[draw=srAlert, fill=bgAlert, rounded corners=6pt, line width=1.2pt,
+        minimum width=\pW, minimum height=\pH, anchor=north] (p1) at (-5.85, 1.95) {};
+  \node[fill=srAlert, text=white, rounded corners=4pt, text width=\hdrW,
+        inner ysep=5pt, font=\footnotesize\bfseries\sffamily, align=center, anchor=north]
+        (h1) at ($(p1.north)+(0,-0.15)$) {Ligas Camponesas\\(1955--64)};
+  \node[text=srInk, font=\footnotesize\sffamily, text width=\bodyW, align=left, anchor=north]
+        at ($(h1.south)+(0,-0.22)$) {%
+    $\bullet$\;\;Liderança de Francisco Julião (Nordeste)\par\vspace{6pt}
+    $\bullet$\;\;Luta pela Reforma Agrária ``na lei ou na marra''\par\vspace{6pt}
+    $\bullet$\;\;Combate ao cambão e ao latifúndio tradicional
+  };
+
+  % Pilar 2: Sindicalismo & CONTAG
+  \node[draw=srNavy, fill=bgNavy, rounded corners=6pt, line width=1.2pt,
+        minimum width=\pW, minimum height=\pH, anchor=north] (p2) at (-1.95, 1.95) {};
+  \node[fill=srNavy, text=white, rounded corners=4pt, text width=\hdrW,
+        inner ysep=5pt, font=\footnotesize\bfseries\sffamily, align=center, anchor=north]
+        (h2) at ($(p2.north)+(0,-0.15)$) {Sindicalismo \&\\CONTAG};
+  \node[text=srInk, font=\footnotesize\sffamily, text width=\bodyW, align=left, anchor=north]
+        at ($(h2.south)+(0,-0.22)$) {%
+    $\bullet$\;\;Direitos trabalhistas e Estatuto do Trabalhador Rural\par\vspace{6pt}
+    $\bullet$\;\;Previdência social rural (Funrural / CF 1988)\par\vspace{6pt}
+    $\bullet$\;\;Negociação sindical e políticas de crédito
+  };
+
+  % Pilar 3: MST, CPT & Reforma Agrária
+  \node[draw=srForest, fill=bgForest, rounded corners=6pt, line width=1.2pt,
+        minimum width=\pW, minimum height=\pH, anchor=north] (p3) at (1.95, 1.95) {};
+  \node[fill=srForest, text=white, rounded corners=4pt, text width=\hdrW,
+        inner ysep=5pt, font=\footnotesize\bfseries\sffamily, align=center, anchor=north]
+        (h3) at ($(p3.north)+(0,-0.15)$) {MST, CPT \&\\Reforma Agrária};
+  \node[text=srInk, font=\footnotesize\sffamily, text width=\bodyW, align=left, anchor=north]
+        at ($(h3.south)+(0,-0.22)$) {%
+    $\bullet$\;\;Ocupações de terras improdutivas e acampamentos\par\vspace{6pt}
+    $\bullet$\;\;Assentamentos, cooperativas e agroindústrias\par\vspace{6pt}
+    $\bullet$\;\;Educação do campo e agroecologia
+  };
+
+  % Pilar 4: MAB, MMC & Via Campesina
+  \node[draw=srTeal, fill=bgTeal, rounded corners=6pt, line width=1.2pt,
+        minimum width=\pW, minimum height=\pH, anchor=north] (p4) at (5.85, 1.95) {};
+  \node[fill=srTeal, text=white, rounded corners=4pt, text width=\hdrW,
+        inner ysep=5pt, font=\footnotesize\bfseries\sffamily, align=center, anchor=north]
+        (h4) at ($(p4.north)+(0,-0.15)$) {MAB, MMC \&\\Via Campesina};
+  \node[text=srInk, font=\footnotesize\sffamily, text width=\bodyW, align=left, anchor=north]
+        at ($(h4.south)+(0,-0.22)$) {%
+    $\bullet$\;\;Atingidos por barragens (MAB) e justiça hídrica\par\vspace{6pt}
+    $\bullet$\;\;Mulheres camponesas (MMC) e protagonismo feminino\par\vspace{6pt}
+    $\bullet$\;\;Soberania alimentar e sementes crioulas
+  };
+\end{tikzpicture}
+\end{document}

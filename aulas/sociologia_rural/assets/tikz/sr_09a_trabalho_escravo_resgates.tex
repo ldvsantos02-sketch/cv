@@ -1,0 +1,72 @@
+\documentclass[border=12pt]{standalone}
+\input{sr_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis}[
+    ybar,
+    width=14.0cm,
+    height=7.6cm,
+    bar width=28pt,
+    ymin=0,
+    ymax=22500,
+    enlarge x limits=0.13,
+    axis lines*=left,
+    axis line style={draw=srInk!55, line width=0.9pt},
+    tick style={draw=srInk!45},
+    ymajorgrids=true,
+    grid style={dashed, srMuted!32, line width=0.6pt},
+    xtick=data,
+    symbolic x coords={1995--99, 2000--04, 2005--09, 2010--14, 2015--19, 2020--23},
+    xticklabel style={font=\small\bfseries\sffamily, text=srInk, yshift=-2pt},
+    ytick={0, 5000, 10000, 15000, 20000},
+    yticklabel={\pgfmathprintnumber[fixed, 1000 sep={.}, assume math mode=true]{\tick}},
+    yticklabel style={font=\footnotesize\sffamily, text=srMuted},
+    ylabel={Trabalhadores resgatados},
+    ylabel style={font=\small\bfseries\sffamily, text=srNavy, yshift=4pt},
+    scaled y ticks=false,
+    nodes near coords={\pgfmathprintnumber[fixed, 1000 sep={.}, assume math mode=true]{\pgfplotspointmeta}},
+    nodes near coords align={vertical},
+    every node near coord/.append style={
+      font=\small\bfseries\sffamily,
+      text=srAlert,
+      yshift=3pt
+    },
+    clip=false
+  ]
+    \addplot[
+      fill=srAlert!82!white,
+      draw=srAlert,
+      line width=0.9pt,
+      rounded corners=2pt
+    ] coordinates {
+      (1995--99, 2285)
+      (2000--04, 13244)
+      (2005--09, 17405)
+      (2010--14, 10998)
+      (2015--19, 9156)
+      (2020--23, 6476)
+    };
+
+    % Destaque discreto do pico histórico acima da linha de 20.000, sem colisão
+    \node[
+      font=\scriptsize\bfseries\sffamily,
+      text=srAlert,
+      fill=bgAlert,
+      draw=srAlert!55,
+      rounded corners=3pt,
+      inner xsep=6pt,
+      inner ysep=2.5pt,
+      anchor=south
+    ] at (axis cs:2005--09, 20500) {Pico da série};
+  \end{axis}
+
+  % Título e subtítulo centralizados acima do gráfico
+  \node[srTitle, font=\large\bfseries\sffamily, anchor=south]
+    at ($(current axis.north)+(0,1.05cm)$)
+    {Trabalhadores Resgatados em Condição Análoga à Escravidão (MTE/SIT)};
+  \node[srSub, font=\small\sffamily, anchor=south]
+    at ($(current axis.north)+(0,0.48cm)$)
+    {Grupo Especial de Fiscalização Móvel (1995--2023 \textperiodcentered{} Total acumulado: 59.564 resgates)};
+\end{tikzpicture}
+\end{document}

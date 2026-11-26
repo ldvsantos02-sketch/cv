@@ -1,0 +1,75 @@
+\documentclass[border=12pt]{standalone}
+\input{sr_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis}[
+    ybar,
+    bar shift=0pt,
+    width=13.5cm,
+    height=7.5cm,
+    bar width=32pt,
+    ymin=0,
+    ymax=2250,
+    enlarge x limits=0.16,
+    axis lines*=left,
+    axis line style={draw=srInk!55, line width=0.9pt},
+    tick style={draw=srInk!45},
+    ymajorgrids=true,
+    grid style={dashed, srMuted!32, line width=0.6pt},
+    xtick={2018, 2019, 2020, 2021, 2022},
+    symbolic x coords={2018, 2019, 2020, 2021, 2022},
+    xticklabel style={font=\small\bfseries\sffamily, text=srInk, yshift=-2pt},
+    ytick={0, 500, 1000, 1500, 2000},
+    yticklabel={\pgfmathprintnumber[fixed, 1000 sep={.}, assume math mode=true]{\tick}},
+    yticklabel style={font=\footnotesize\sffamily, text=srMuted},
+    ylabel={Ocorrências registradas},
+    ylabel style={font=\small\bfseries\sffamily, text=srNavy, yshift=4pt},
+    scaled y ticks=false,
+    nodes near coords={\pgfmathprintnumber[fixed, 1000 sep={.}, assume math mode=true]{\pgfplotspointmeta}},
+    nodes near coords align={vertical},
+    clip=false
+  ]
+    % Série 2018-2021 em srGoldDark
+    \addplot[
+      fill=srGold!82!white,
+      draw=srGoldDark,
+      line width=0.95pt,
+      rounded corners=2pt,
+      every node near coord/.append style={
+        font=\small\bfseries\sffamily,
+        text=srGoldDark,
+        yshift=3pt
+      }
+    ] coordinates {
+      (2018, 1489)
+      (2019, 1254)
+      (2020, 1576)
+      (2021, 1768)
+    };
+
+    % Destaque 2022 (maior patamar do período) em srAlert
+    \addplot[
+      fill=srAlert!84!white,
+      draw=srAlert,
+      line width=1.0pt,
+      rounded corners=2pt,
+      every node near coord/.append style={
+        font=\small\bfseries\sffamily,
+        text=srAlert,
+        yshift=3pt
+      }
+    ] coordinates {
+      (2022, 1893)
+    };
+  \end{axis}
+
+  % Título e subtítulo centralizados acima do gráfico
+  \node[srTitle, font=\large\bfseries\sffamily, anchor=south]
+    at ($(current axis.north)+(0,1.05cm)$)
+    {Conflitos por Terra no Campo Brasileiro (CPT, 2018--2022)};
+  \node[srSub, font=\small\sffamily, anchor=south]
+    at ($(current axis.north)+(0,0.48cm)$)
+    {Número de ocorrências registradas --- Caderno Conflitos no Campo Brasil (CPT)};
+\end{tikzpicture}
+\end{document}

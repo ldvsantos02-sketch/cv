@@ -1,0 +1,67 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{sr_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+
+  % Title
+  \node[srTitle] (title) at (0, 5.55) {Trajetória das Políticas Públicas para o Meio Rural no Brasil};
+  \node[srSub] (sub) at (0, 5.08) {Da modernização excludente ao reconhecimento institucional da agricultura familiar e da agroecologia};
+
+  % Rising trajectory baseline guide
+  \draw[dashed, line width=0.9pt, srMuted!50] (-8.4, -1.75) -- (8.4, -1.75);
+  \node[font=\scriptsize\sffamily, text=srMuted] at (-6.6, -2.04) {1964};
+  \node[font=\scriptsize\sffamily, text=srMuted] at (-2.2, -2.04) {1988};
+  \node[font=\scriptsize\sffamily, text=srMuted] at (2.2, -2.04) {1995--2002};
+  \node[font=\scriptsize\sffamily, text=srMuted] at (6.6, -2.04) {2003--Presente};
+
+  % Phase 1: 1964-1985
+  \node[srTint=srAlert, text width=3.15cm, minimum height=3.85cm, anchor=south] (p1) at (-6.6, -1.35) {};
+  \node[srBadge=srAlert, rounded corners=5pt, anchor=north] at ([yshift=-8pt]p1.north) {1964--1985};
+  \node[font=\footnotesize\bfseries\sffamily, text=srAlert, align=center, text width=2.95cm, anchor=north] at ([yshift=-31pt]p1.north) {Modernização Conservadora};
+  \node[font=\scriptsize\sffamily, text=srInk, align=left, text width=2.9cm, anchor=north] at ([yshift=-62pt]p1.north) {%
+    \textbullet\ Estatuto da Terra (Lei 4.504/64)\\[5pt]
+    \textbullet\ SNCR: crédito seletivo e patronal
+  };
+
+  % Phase 2: 1988
+  \node[srTint=srNavy, text width=3.15cm, minimum height=3.85cm, anchor=south] (p2) at (-2.2, -0.75) {};
+  \node[srBadge=srNavy, rounded corners=5pt, anchor=north] at ([yshift=-8pt]p2.north) {1988};
+  \node[font=\footnotesize\bfseries\sffamily, text=srNavy, align=center, text width=2.95cm, anchor=north] at ([yshift=-31pt]p2.north) {Constituição Cidadã};
+  \node[font=\scriptsize\sffamily, text=srInk, align=left, text width=2.9cm, anchor=north] at ([yshift=-62pt]p2.north) {%
+    \textbullet\ Função social da propriedade\\[5pt]
+    \textbullet\ Previdência rural e direitos sociais
+  };
+
+  % Phase 3: 1995-2002
+  \node[srTint=srTeal, text width=3.15cm, minimum height=3.85cm, anchor=south] (p3) at (2.2, -0.15) {};
+  \node[srBadge=srTeal, rounded corners=5pt, anchor=north] at ([yshift=-8pt]p3.north) {1995--2002};
+  \node[font=\footnotesize\bfseries\sffamily, text=srTeal, align=center, text width=2.95cm, anchor=north] at ([yshift=-31pt]p3.north) {PRONAF};
+  \node[font=\scriptsize\sffamily, text=srInk, align=left, text width=2.9cm, anchor=north] at ([yshift=-56pt]p3.north) {%
+    \textbullet\ Crédito diferenciado à agricultura familiar\\[5pt]
+    \textbullet\ Financiamento de custeio/investimento
+  };
+
+  % Phase 4: 2003-Presente
+  \node[srTint=srForest, text width=3.15cm, minimum height=3.85cm, anchor=south] (p4) at (6.6, 0.45) {};
+  \node[srBadge=srForest, rounded corners=5pt, anchor=north] at ([yshift=-8pt]p4.north) {2003--Presente};
+  \node[font=\footnotesize\bfseries\sffamily, text=srForest, align=center, text width=2.95cm, anchor=north] at ([yshift=-31pt]p4.north) {PAA, PNAE \& PNATER};
+  \node[font=\scriptsize\sffamily, text=srInk, align=left, text width=2.9cm, anchor=north] at ([yshift=-60pt]p4.north) {%
+    \textbullet\ Compras públicas (Lei 11.947/09)\\[4pt]
+    \textbullet\ Lei 11.326/06\\[4pt]
+    \textbullet\ Agroecologia e ATER
+  };
+
+  % Rising arrows connecting phases
+  \draw[srArrow, srNavy]   (p1.east) -- (p2.west);
+  \draw[srArrow, srTeal]   (p2.east) -- (p3.west);
+  \draw[srArrow, srForest] (p3.east) -- (p4.west);
+
+  % Timeline drop ticks
+  \draw[dotted, srAlert, line width=0.8pt]  (p1.south) -- (-6.6, -1.75);
+  \draw[dotted, srNavy, line width=0.8pt]   (p2.south) -- (-2.2, -1.75);
+  \draw[dotted, srTeal, line width=0.8pt]   (p3.south) -- (2.2, -1.75);
+  \draw[dotted, srForest, line width=0.8pt] (p4.south) -- (6.6, -1.75);
+
+\end{tikzpicture}
+\end{document}

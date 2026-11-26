@@ -1,0 +1,64 @@
+\documentclass[border=10pt]{standalone}
+\input{sr_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis}[
+    xbar,
+    width=11.4cm,
+    height=6.2cm,
+    at={(0cm,0cm)},
+    xmin=0,
+    xmax=112,
+    ymin=-0.55,
+    ymax=5.55,
+    bar width=16pt,
+    bar shift=0pt,
+    axis lines*=left,
+    axis line style={draw=srMuted!65, line width=0.8pt},
+    major tick style={draw=none},
+    xmajorgrids=true,
+    grid style={dashed, draw=srMuted!35, line width=0.5pt},
+    xtick={0,20,40,60,80,100},
+    xticklabels={0\%,20\%,40\%,60\%,80\%,100\%},
+    xticklabel style={font=\footnotesize\sffamily, text=srMuted},
+    ytick={0,1,2,3,4,5},
+    yticklabels={Internet fixa, Rádio, YouTube, WhatsApp, Celular, TV Aberta},
+    yticklabel style={font=\small\bfseries\sffamily, text=srInk, xshift=-3pt},
+    nodes near coords={\pgfmathprintnumber[fixed,precision=0,assume math mode=true]{\pgfplotspointmeta}\%},
+    nodes near coords align={horizontal},
+    every node near coord/.append style={
+      font=\small\bfseries\sffamily,
+      text=srInk,
+      fill=white,
+      fill opacity=0.88,
+      text opacity=1,
+      inner sep=1.5pt,
+      xshift=4pt
+    },
+    clip=false
+  ]
+    % Barras em srNavy (infraestrutura fixa e radiodifusão sonora)
+    \addplot[fill=srNavy, draw=srNavyDark, line width=0.6pt] coordinates {
+      (21, 0)
+      (43, 1)
+    };
+    % Barras em srTeal (plataformas digitais)
+    \addplot[fill=srTeal, draw=srTeal!80!black, line width=0.6pt] coordinates {
+      (45, 2)
+      (79, 3)
+    };
+    % Barras em srForest (meios de maior capilaridade)
+    \addplot[fill=srForest, draw=srForest!80!black, line width=0.6pt] coordinates {
+      (87, 4)
+      (95, 5)
+    };
+  \end{axis}
+
+  % Título e subtítulo posicionados logo acima do eixo
+  \node[srTitle, font=\large\bfseries\sffamily] (title) at (4.4, 5.65)
+    {Meios de Comunicação no Meio Rural Brasileiro (PNAD TIC/IBGE, 2022)};
+  \node[srSub] (sub) at (4.4, 5.15)
+    {Utilização pela população rural (\%) por meio/plataforma};
+\end{tikzpicture}
+\end{document}

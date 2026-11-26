@@ -12,34 +12,49 @@ execute:
   echo: false
 ---
 
-## Visão Geral {.smaller-text}
+## [Abertura]{.pitch-tag .pitch-tag--alert} Visão Geral da Aula {#visao-geral .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos Principais
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Roteiro da aula]{.pitch-card-index}
+[Tópicos principais]{.pitch-heading}
 
-- [1]{.circle} Direitos Humanos  -  Fundamentos
+- [1]{.circle} Direitos Humanos — Fundamentos
 - [2]{.circle} Direitos Trabalhistas no Campo
 - [3]{.circle} Trabalho Análogo à Escravidão
 - [4]{.circle} Conflitos Agrários e Violência
 - [5]{.circle} Extensão Rural e Educação em Direitos
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo Central**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Objetivo central]{.pitch-card-index}
+[Trabalho, dignidade e justiça rural]{.pitch-heading}
 
 Compreender os direitos humanos aplicados ao meio rural brasileiro, analisando violações estruturais, marcos legais de proteção e o papel do engenheiro agrônomo na promoção da dignidade e justiça no campo.
 :::
+
+::: {.pitch-pill-row}
+[DUDH · CF/1988]{.pitch-pill}
+[Art. 149 CP · NR-31]{.pitch-pill .pitch-pill--gold}
+[PNEDH · PNATER · OIT]{.pitch-pill}
+:::
+
+::: {.pitch-band .pitch-band--teal}
+Articulando marcos constitucionais, saúde do trabalhador e responsabilidade ética na ATER.
 :::
 :::
+:::
 
----
+# 1 · Fundamentos e Direitos Trabalhistas no Campo {.section-header rotulo="Fundamentos e Trabalho"}
 
-## DIREITOS HUMANOS  -  FUNDAMENTOS {.smaller-text}
+## [Direitos]{.pitch-tag .pitch-tag--gold} Direitos Humanos: Fundamentos e Marcos Legais {#direitos-humanos-fundamentos .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[ONU (1948) · CF/1988]{.pitch-card-index}
+[Fundamentos e princípios]{.pitch-heading}
+
 Os direitos humanos são garantias fundamentais **inerentes a toda pessoa**, reconhecidos pela Declaração Universal dos Direitos Humanos (ONU, 1948) e incorporados à Constituição Federal de 1988.
 
 **Princípios estruturantes:**
@@ -50,110 +65,188 @@ Os direitos humanos são garantias fundamentais **inerentes a toda pessoa**, rec
 - Inalienabilidade
 :::
 
-::: {.column width="50%"}
-::: {.highlight-box}
-**Marcos Legais no Brasil
-**
+::: {.pitch-card .pitch-card--gold}
+[Ordenamento jurídico brasileiro]{.pitch-card-index}
+[Marcos Legais no Brasil]{.pitch-heading}
 
-- CF/1988  -  Art. 5º (direitos fundamentais)
-- CF/1988  -  Art. 6º (direitos sociais)
-- CF/1988  -  Art. 186 (função social da propriedade rural)
-- Estatuto da Terra (Lei 4.504/64)
-- Estatuto do Trabalhador Rural (Lei 5.889/73)
-- PNDH-3  -  Decreto 7.037/2009
+- **CF/1988 — Art. 5º** (direitos fundamentais)
+- **CF/1988 — Art. 6º** (direitos sociais)
+- **CF/1988 — Art. 186** (função social da propriedade rural)
+- **Estatuto da Terra** (Lei 4.504/64)
+- **Estatuto do Trabalhador Rural** (Lei 5.889/73)
+- **PNDH-3** — Decreto 7.037/2009
 :::
 :::
+
+## [Vulnerabilidade]{.pitch-tag .pitch-tag--alert} Direitos Humanos e o Meio Rural {#direitos-humanos-campo .smaller-text .lesson-slide}
+
+::: {.pitch-band}
+No campo brasileiro, os direitos humanos apresentam violações de natureza **estrutural** e **histórica**, distribuídas em seis dimensões de vulnerabilidade.
 :::
 
----
+::: {.pitch-cards}
+::: {.pitch-card .pitch-card--alert}
+[01 · Acesso à terra]{.pitch-card-index}
+[Concentração fundiária]{.pitch-heading}
 
-## DIREITOS HUMANOS E O MEIO RURAL {.smaller-text}
+Impede que milhões de famílias acessem terra para produção e moradia.
+:::
 
-No campo brasileiro, os direitos humanos apresentam violações de natureza **estrutural** e **histórica**:
+::: {.pitch-card .pitch-card--alert}
+[02 · Trabalho digno]{.pitch-card-index}
+[Precarização laboral]{.pitch-heading}
 
-**Dimensões de vulnerabilidade:**
+Condições precárias, informalidade, sazonalidade e baixa remuneração.
+:::
 
-- **Acesso à terra:** concentração fundiária impede que milhões de famílias acessem terra para produção e moradia
-- **Trabalho digno:** condições precárias, informalidade, sazonalidade e baixa remuneração
-- **Segurança alimentar:** paradoxo de quem produz alimento e passa fome
-- **Educação:** escolas rurais com infraestrutura deficiente e currículo descontextualizado
-- **Saúde:** cobertura precária de atenção básica em municípios rurais
-- **Participação política:** sub-representação de populações rurais nas instâncias decisórias
+::: {.pitch-card .pitch-card--gold}
+[03 · Segurança alimentar]{.pitch-card-index}
+[Paradoxo rural]{.pitch-heading}
 
----
+Paradoxo de quem produz alimento e passa fome no campo.
+:::
 
-## ESTATUTO DO TRABALHADOR RURAL {.smaller-text}
+::: {.pitch-card}
+[04 · Educação]{.pitch-card-index}
+[Escolas rurais]{.pitch-heading}
 
-A **Lei 5.889/73** e o Art. 7º da CF/1988 garantem ao trabalhador rural os mesmos direitos do trabalhador urbano:
+Infraestrutura deficiente e currículo descontextualizado da realidade agrária.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[05 · Saúde]{.pitch-card-index}
+[Atenção básica]{.pitch-heading}
+
+Cobertura precária de serviços de saúde em municípios rurais.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[06 · Participação política]{.pitch-card-index}
+[Representação]{.pitch-heading}
+
+Sub-representação das populações rurais nas instâncias decisórias.
+:::
+:::
+
+## [Trabalho]{.pitch-tag .pitch-tag--gold} Estatuto do Trabalhador Rural (Lei 5.889/73) {#estatuto-trabalhador-rural .smaller-text .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Lei 5.889/73 · CF/1988, Art. 7º]{.pitch-card-index}
+[Equiparação de direitos urbanos e rurais]{.pitch-heading}
+
+A legislação garante ao trabalhador rural os mesmos direitos do trabalhador urbano:
 
 - Salário mínimo
-- Jornada máxima de 8 horas diárias / 44 semanais
+- Jornada máxima de **8 horas diárias / 44 semanais**
 - Repouso semanal remunerado
 - Férias anuais + 1/3 constitucional
 - 13º salário
 - FGTS e aposentadoria
 - Proteção à maternidade e paternidade
+:::
 
-**Realidade:** segundo o IBGE (2017), a informalidade no trabalho rural ultrapassa **60%** nos estados do Nordeste, significando que a maioria dos trabalhadores não tem acesso efetivo a esses direitos.
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--alert}
+[IBGE (2017)]{.pitch-card-index}
+[Fosso entre norma e realidade]{.pitch-heading}
 
----
+A informalidade no trabalho rural ultrapassa **60%** nos estados do Nordeste, significando que a maioria dos trabalhadores não tem acesso efetivo a esses direitos.
+:::
 
-## TRABALHO ANÁLOGO À ESCRAVIDÃO {.smaller-text}
+::: {.pitch-band .pitch-band--navy}
+A formalização do vínculo rural é condição básica para a proteção previdenciária e trabalhista no campo.
+:::
+:::
+:::
 
-::: {.columns}
-::: {.column width="50%"}
-### Definição Legal (Art. 149, CP)
+# 2 · Trabalho Escravo Contemporâneo e Conflitos Agrários {.section-header rotulo="Trabalho Escravo e Conflitos"}
+
+## [Violações]{.pitch-tag .pitch-tag--alert} Trabalho Análogo à Escravidão (Art. 149, CP) {#trabalho-escravo .smaller-text .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--alert}
+[Art. 149 do Código Penal]{.pitch-card-index}
+[Definição Legal]{.pitch-heading}
 
 O trabalho análogo à escravidão se configura por:
 
-- **Trabalho forçado**  -  cerceamento de liberdade
-- **Jornada exaustiva**  -  degradação física extrema
-- **Condições degradantes**  -  alojamento, alimentação, higiene
-- **Servidão por dívida**  -  retenção por adiantamentos ou cobranças abusivas
+- **Trabalho forçado** — cerceamento de liberdade
+- **Jornada exaustiva** — degradação física extrema
+- **Condições degradantes** — alojamento, alimentação e higiene
+- **Servidão por dívida** — retenção por adiantamentos ou cobranças abusivas
 :::
 
-::: {.column width="50%"}
-### Dados (MTE/SIT)
+::: {.pitch-card}
+[MTE/SIT · Fiscalização Móvel]{.pitch-card-index}
+[Dados acumulados (1995–2023)]{.pitch-heading}
 
 O Grupo Especial de Fiscalização Móvel resgatou:
 
 - **59.564 trabalhadores** em condição análoga à escravidão entre 1995 e 2023
-- Setores mais frequentes no campo: pecuária, cana-de-açúcar, soja, café, carvão vegetal
-- Estados com maior incidência: Pará, Maranhão, Mato Grosso, Minas Gerais
-
-```{mermaid}
-%%| fig-cap: "Fonte: MTE/SIT  -  Grupo Especial de Fiscalização Móvel. Total: 59.564 resgatados"
-%%{init: {"themeVariables": {"xyChart": {"plotColorPalette": "#c0392b"}}} }%%
-xychart-beta
-    title "Trabalhadores Resgatados - Condicao Analoga a Escravidao (MTE/SIT)"
-    x-axis ["1995-99", "2000-04", "2005-09", "2010-14", "2015-19", "2020-23"]
-    y-axis "Trabalhadores resgatados" 0 --> 20000
-    bar [2285, 13244, 17405, 10998, 9156, 6476]
-```
-
-A "Lista Suja" do trabalho escravo (Cadastro de Empregadores) é instrumento de **transparência e accountability**.
+- **Setores mais frequentes no campo:** pecuária, cana-de-açúcar, soja, café, carvão vegetal
+- **Estados com maior incidência:** Pará, Maranhão, Mato Grosso, Minas Gerais
 :::
 :::
 
----
+::: {.pitch-band .pitch-band--navy}
+A **"Lista Suja"** do trabalho escravo (Cadastro de Empregadores) é instrumento de **transparência e accountability**.
+:::
 
-## TRABALHO ESCRAVO  -  CASO EMBLEMÁTICO {.smaller-text}
+## [Indicadores]{.pitch-tag .pitch-tag--alert} Resgates de Trabalho Análogo à Escravidão (MTE/SIT) {#trabalho-escravo-grafico .smaller-text .lesson-slide}
 
-**José Pereira vs. Brasil (CIDH, 2003):**
+::: {.pitch-media-card .pitch-media-card--tall}
+![Evolução quinquenal dos trabalhadores resgatados pelo Grupo Especial de Fiscalização Móvel entre 1995 e 2023 (MTE/SIT).](img/sr_09a_trabalho_escravo_resgates.png)
 
-Em 1989, o trabalhador rural José Pereira, então com 17 anos, foi submetido a trabalho forçado em uma fazenda no sul do Pará. Ao tentar fugir, foi baleado, perdendo a visão de um olho e o uso de uma mão.
+[Trabalhadores Resgatados em Condição Análoga à Escravidão (MTE/SIT, 1995–2023)]{.pitch-caption}
+[Grupo Especial de Fiscalização Móvel · Total acumulado: 59.564 resgates · Pico da série em 2005–2009 (17.405)]{.pitch-caption-sub}
+:::
 
-O caso foi apresentado à **Comissão Interamericana de Direitos Humanos (CIDH)**, que responsabilizou o Estado brasileiro por omissão na proteção dos trabalhadores rurais.
+::: {.pitch-band}
+A persistência dos resgates ao longo de quase três décadas evidencia o caráter estrutural da superexploração em cadeias agropecuárias e extrativas.
+:::
 
-**Consequência:** o Brasil firmou acordo reconhecendo a responsabilidade e se comprometeu a intensificar ações de combate ao trabalho escravo no campo. Este caso é considerado marco na construção da política brasileira de enfrentamento ao trabalho escravo.
+## [Caso]{.pitch-tag .pitch-tag--alert} Trabalho Escravo — Caso José Pereira vs. Brasil {#caso-jose-pereira .smaller-text .lesson-slide}
 
----
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--alert}
+[Sul do Pará · 1989]{.pitch-card-index}
+[A violação]{.pitch-heading}
 
-## CONFLITOS AGRÁRIOS E VIOLÊNCIA {.smaller-text}
+Em 1989, o trabalhador rural **José Pereira**, então com 17 anos, foi submetido a trabalho forçado em uma fazenda no sul do Pará. Ao tentar fugir, foi baleado, perdendo a visão de um olho e o uso de uma mão.
+:::
 
-::: {.columns}
-::: {.column width="50%"}
-### Dados da CPT
+::: {.pitch-card .pitch-card--gold}
+[CIDH · 2003]{.pitch-card-index}
+[Responsabilização do Estado]{.pitch-heading}
+
+O caso foi apresentado à **Comissão Interamericana de Direitos Humanos (CIDH)**, que responsabilizou o Estado brasileiro por **omissão** na proteção dos trabalhadores rurais.
+:::
+:::
+
+::: {.pitch-band .pitch-band--teal}
+**Consequência:** o Brasil firmou acordo reconhecendo a responsabilidade e se comprometeu a intensificar ações de combate ao trabalho escravo no campo — marco na construção da política nacional de enfrentamento.
+:::
+
+## [Indicadores]{.pitch-tag .pitch-tag--alert} Conflitos por Terra no Campo Brasileiro (CPT) {#conflitos-terra-grafico .smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--tall}
+![Número de ocorrências de conflitos por terra registradas no campo brasileiro entre 2018 e 2022 segundo a Comissão Pastoral da Terra (CPT).](img/sr_09b_conflitos_terra_cpt.png)
+
+[Conflitos por Terra no Campo Brasileiro (CPT, 2018–2022)]{.pitch-caption}
+[Fonte: Comissão Pastoral da Terra — Caderno Conflitos no Campo Brasil (crescimento contínuo de 2019 a 2022, atingindo 1.893 ocorrências)]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band}
+Os registros da **CPT** revelam escalada contínua das disputas fundiárias e territoriais no campo brasileiro no período recente.
+:::
+
+## [Conflitos]{.pitch-tag .pitch-tag--alert} Conflitos Agrários e Violência no Campo {#conflitos-agrarios .smaller-text .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--alert}
+[CPT · Dados de 2022]{.pitch-card-index}
+[Violência documentada]{.pitch-heading}
 
 A Comissão Pastoral da Terra documenta anualmente os conflitos no campo brasileiro:
 
@@ -161,100 +254,112 @@ A Comissão Pastoral da Terra documenta anualmente os conflitos no campo brasile
 - **47 assassinatos** de lideranças e trabalhadores rurais em 2022
 - Aumento de ameaças e intimidações contra defensores de direitos no campo
 - Invasões de territórios indígenas e quilombolas
-
-```{mermaid}
-%%| fig-cap: "Fonte: CPT  -  Caderno Conflitos no Campo Brasil"
-%%{init: {"themeVariables": {"xyChart": {"plotColorPalette": "#e67e22, #c0392b"}}} }%%
-xychart-beta
-    title "Conflitos por Terra e Assassinatos no Campo (CPT)"
-    x-axis [2018, 2019, 2020, 2021, 2022]
-    y-axis "Conflitos por terra" 0 --> 2100
-    bar [1489, 1254, 1576, 1768, 1893]
-```
 :::
 
-::: {.column width="50%"}
-### Tipologia dos Conflitos
+::: {.pitch-card}
+[Múltiplas frentes de disputa]{.pitch-card-index}
+[Tipologia dos Conflitos]{.pitch-heading}
 
-- **Conflitos fundiários:** disputa pela posse e titulação de terras
-- **Conflitos trabalhistas:** condições de trabalho, remuneração
-- **Conflitos ambientais:** desmatamento, contaminação por agrotóxicos
-- **Conflitos hídricos:** acesso à água, barragens, irrigação
-- **Conflitos étnicos:** demarcação de terras indígenas e quilombolas
-
-> O campo brasileiro é, historicamente, o território onde os direitos humanos são mais frequentemente violados (Martins, 2000).
+- **Fundiários:** disputa pela posse e titulação de terras
+- **Trabalhistas:** condições de trabalho e remuneração
+- **Ambientais:** desmatamento e contaminação por agrotóxicos
+- **Hídricos:** acesso à água, barragens e irrigação
+- **Étnicos:** demarcação de terras indígenas e quilombolas
 :::
 :::
 
----
+::: {.pitch-formula}
+*"O campo brasileiro é, historicamente, o território onde os direitos humanos são mais frequentemente violados"* (Martins, 2000).
+:::
 
-## AGROTÓXICOS E DIREITO À SAÚDE {.smaller-text}
+# 3 · Saúde, Função Social da Terra e Convenções da OIT {.section-header rotulo="Saúde, Terra e OIT"}
 
-O Brasil é o maior consumidor de agrotóxicos do mundo desde 2008, e a exposição ocupacional afeta diretamente os trabalhadores rurais:
+## [Saúde]{.pitch-tag .pitch-tag--alert} Agrotóxicos e Direito à Saúde {#agrotoxicos-saude .smaller-text .lesson-slide}
 
-**Impactos na saúde:**
+::: {.pitch-band .pitch-band--navy}
+O Brasil é o **maior consumidor de agrotóxicos do mundo desde 2008**, e a exposição ocupacional afeta diretamente os trabalhadores rurais.
+:::
+
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--alert}
+[Exposição ocupacional e ambiental]{.pitch-card-index}
+[Impactos na saúde]{.pitch-heading}
 
 - Intoxicações agudas (pele, olhos, sistema respiratório)
 - Doenças crônicas (câncer, disfunções endócrinas, danos neurológicos)
 - Contaminação de águas e alimentos nas comunidades adjacentes
 - Suicídio entre agricultores expostos a organofosforados
+:::
 
-**Marco legal:** a NR-31 (Norma Regulamentadora de Segurança e Saúde no Trabalho na Agricultura) estabelece obrigações para empregadores quanto ao uso seguro de agrotóxicos, incluindo EPIs, treinamento e exames periódicos.
+::: {.pitch-card .pitch-card--teal}
+[NR-31 · Responsabilidade técnica]{.pitch-card-index}
+[Marco legal e papel do agrônomo]{.pitch-heading}
+
+A **NR-31** (Norma Regulamentadora de Segurança e Saúde no Trabalho na Agricultura) estabelece obrigações para empregadores quanto ao uso seguro de agrotóxicos, incluindo **EPIs, treinamento e exames periódicos**.
 
 O engenheiro agrônomo, ao emitir **receituário agronômico**, tem responsabilidade direta na proteção da saúde do trabalhador.
-
----
-
-## DIREITO À TERRA E FUNÇÃO SOCIAL {.smaller-text}
-
-A Constituição Federal de 1988, Art. 186, define que a propriedade rural cumpre sua **função social** quando atende simultaneamente:
-
-- **Aproveitamento racional e adequado** do imóvel
-- **Utilização adequada dos recursos naturais** e preservação do meio ambiente
-- **Observância das disposições trabalhistas** que regulam as relações de trabalho
-- **Exploração que favoreça o bem-estar** dos proprietários e dos trabalhadores
-
-O descumprimento da função social é, constitucionalmente, motivo para **desapropriação** para fins de reforma agrária (Art. 184).
-
-Na prática, a aplicação desse dispositivo é **limitada e politicamente disputada**, conforme documentam Fernandes (2001) e Sauer (2010).
-
----
-
-## EDUCAÇÃO EM DIREITOS HUMANOS {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-### O que é EDH?
-
-A Educação em Direitos Humanos (EDH) é um processo de **formação continuada** que visa:
-
-- Construir cultura de respeito à dignidade humana
-- Desenvolver capacidade de identificar e combater violações
-- Promover cidadania ativa e participativa
-- Fortalecer mecanismos de proteção
-
-**Marco:** Plano Nacional de Educação em Direitos Humanos (PNEDH, 2006)
-:::
-
-::: {.column width="50%"}
-### EDH na Formação do Agrônomo
-
-O engenheiro agrônomo atua diretamente no campo, onde direitos são violados cotidianamente. Sua formação deve incluir:
-
-- Reconhecimento de situações de trabalho degradante
-- Receituário agronômico como instrumento de **proteção** (não apenas técnico)
-- Mediação de conflitos em assentamentos e comunidades
-- Noções de legislação trabalhista e ambiental
-- Ética profissional na relação com trabalhadores rurais
 :::
 :::
 
----
+## [Constituição]{.pitch-tag .pitch-tag--gold} Direito à Terra e Função Social (Art. 186, CF/88) {#funcao-social-terra .smaller-text .lesson-slide}
 
-## CONVENÇÕES DA OIT PARA O MEIO RURAL {.smaller-text}
+::: {.pitch-band}
+A Constituição Federal de 1988, **Art. 186**, define que a propriedade rural cumpre sua **função social** quando atende simultaneamente quatro requisitos:
+:::
 
-A Organização Internacional do Trabalho (OIT) possui convenções específicas para a proteção do trabalhador rural:
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[01 · Produção]{.pitch-card-index}
+[Uso racional]{.pitch-heading}
 
+Aproveitamento racional e adequado do imóvel rural.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[02 · Meio ambiente]{.pitch-card-index}
+[Preservação]{.pitch-heading}
+
+Utilização adequada dos recursos naturais e preservação ambiental.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[03 · Trabalho]{.pitch-card-index}
+[Leis trabalhistas]{.pitch-heading}
+
+Observância das disposições que regulam as relações de trabalho.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[04 · Bem-estar]{.pitch-card-index}
+[Equilíbrio social]{.pitch-heading}
+
+Exploração que favoreça proprietários e trabalhadores.
+:::
+:::
+
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--gold}
+[CF/1988, Art. 184]{.pitch-card-index}
+[Desapropriação]{.pitch-heading}
+
+O descumprimento da função social é, constitucionalmente, motivo para **desapropriação** para fins de reforma agrária.
+:::
+
+::: {.pitch-card .pitch-card--alert}
+[Fernandes (2001) · Sauer (2010)]{.pitch-card-index}
+[Disputa política]{.pitch-heading}
+
+Na prática, a aplicação desse dispositivo é **limitada e politicamente disputada**, exigindo mobilização social e fiscalização efetiva.
+:::
+:::
+
+## [Normas OIT]{.pitch-tag} Convenções da OIT para o Meio Rural {#convencoes-oit .smaller-text .lesson-slide}
+
+::: {.pitch-band}
+A Organização Internacional do Trabalho (**OIT**) possui convenções específicas para a proteção do trabalhador rural:
+:::
+
+::: {.pitch-table-box}
 | Convenção | Tema | Ratificação Brasil |
 | --- | --- | --- |
 | **C029** (1930) | Trabalho Forçado | 1957 |
@@ -263,47 +368,130 @@ A Organização Internacional do Trabalho (OIT) possui convenções específicas
 | **C155** (1981) | Segurança e Saúde dos Trabalhadores | 1992 |
 | **C169** (1989) | Povos Indígenas e Tribais | 2002 |
 | **C184** (2001) | Segurança e Saúde na Agricultura | Não ratificada |
+:::
 
-A não ratificação da Convenção 184, específica sobre segurança na agricultura, é uma lacuna significativa na proteção dos trabalhadores rurais brasileiros.
+::: {.pitch-band .pitch-band--teal}
+A **não ratificação da Convenção 184**, específica sobre segurança na agricultura, é uma lacuna significativa na proteção dos trabalhadores rurais brasileiros.
+:::
 
----
+# 4 · Educação em Direitos Humanos, ATER e Síntese {.section-header rotulo="EDH e ATER"}
 
-## EXTENSÃO RURAL E DIREITOS HUMANOS {.smaller-text}
+## [Educação]{.pitch-tag .pitch-tag--forest} Educação em Direitos Humanos na Agronomia {#edh-agronomo .smaller-text .lesson-slide}
 
-A PNATER (Lei 12.188/2010) incorpora princípios de direitos humanos ao definir que a extensão rural deve promover **inclusão social**, **equidade de gênero** e **respeito à diversidade**.
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[PNEDH (2006)]{.pitch-card-index}
+[O que é EDH?]{.pitch-heading}
 
-**Articulações práticas:**
+A Educação em Direitos Humanos (EDH) é um processo de **formação continuada** que visa:
 
-- Inclusão de temas de direitos nas atividades de formação (Escolas de Campo)
-- Articulação com órgãos de fiscalização (MTE, MPT) para denúncia de irregularidades
-- Assessoria jurídica a assentamentos e comunidades tradicionais
-- Promoção de segurança do trabalho como componente da ATER
-- Formação de agentes comunitários de saúde e direitos
+- Construir cultura de respeito à dignidade humana
+- Desenvolver capacidade de identificar e combater violações
+- Promover cidadania ativa e participativa
+- Fortalecer mecanismos de proteção
+:::
 
-> O extensionista que ignora as violações de direitos no campo não é apenas omisso  -  é **cúmplice** (Martins, 2000).
+::: {.pitch-card .pitch-card--forest}
+[Atuação cotidiana no campo]{.pitch-card-index}
+[EDH na Formação do Agrônomo]{.pitch-heading}
 
----
+Onde direitos são violados cotidianamente, a formação deve incluir:
 
-## CONCLUSÃO {.smaller-text}
+- Reconhecimento de situações de trabalho degradante
+- **Receituário agronômico** como instrumento de **proteção** (não apenas técnico)
+- Mediação de conflitos em assentamentos e comunidades
+- Noções de legislação trabalhista e ambiental
+- Ética profissional na relação com trabalhadores rurais
+:::
+:::
 
-A educação em direitos humanos é componente indissociável da formação do engenheiro agrônomo. O profissional que atua no campo lida cotidianamente com situações onde a dignidade humana está em jogo, seja no receituário agronômico (saúde do trabalhador), na assistência técnica (condições de trabalho) ou na mediação de conflitos (acesso à terra).
+## [ATER]{.pitch-tag .pitch-tag--forest} Extensão Rural e Direitos Humanos (PNATER) {#extensao-direitos-humanos .smaller-text .lesson-slide}
 
-Conhecer os marcos legais, reconhecer as violações e atuar de forma ética e propositiva são competências que distinguem o agrônomo-extensionista do mero técnico de produção.
+::: {.pitch-band .pitch-band--teal}
+A **PNATER (Lei 12.188/2010)** incorpora princípios de direitos humanos ao definir que a extensão rural deve promover **inclusão social**, **equidade de gênero** e **respeito à diversidade**.
+:::
 
----
+::: {.pitch-grid-55}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1.** Inclusão de temas de direitos nas atividades de formação (**Escolas de Campo**).
+:::
 
-## REFERÊNCIAS {.smaller-text}
+::: {.pitch-milestone-item}
+**2.** Articulação com órgãos de fiscalização (**MTE, MPT**) para denúncia de irregularidades.
+:::
 
-- Brasil. Constituição Federal (1988)  -  Art. 5º, 6º, 7º, 184, 186
-- Brasil. Lei 5.889/73  -  Estatuto do Trabalhador Rural
-- Brasil. Lei 12.188/2010  -  PNATER
-- Brasil. Decreto 7.037/2009  -  PNDH-3
-- CPT. Conflitos no Campo Brasil 2022 (2023)
-- Fernandes, B. M. Questão agrária, pesquisa e MST (2001)
-- Martins, J. S. Reforma agrária: o impossível diálogo (2000)
-- MTE/SIT. Trabalho escravo no Brasil em retrospectiva (2023)
-- OIT. Convenções fundamentais do trabalho (2024)
-- Sauer, S. Terra e modernidade (2010)
+::: {.pitch-milestone-item}
+**3.** Assessoria jurídica a assentamentos e comunidades tradicionais.
+:::
+
+::: {.pitch-milestone-item}
+**4.** Promoção de **segurança do trabalho** como componente da ATER.
+:::
+
+::: {.pitch-milestone-item}
+**5.** Formação de agentes comunitários de saúde e direitos.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+*"O extensionista que ignora as violações de direitos no campo não é apenas omisso — é **cúmplice**"* (Martins, 2000).
+:::
+
+::: {.pitch-band}
+A assistência técnica comprometida com direitos humanos transforma a rotina de campo em espaço de prevenção, denúncia e cidadania.
+:::
+:::
+:::
+
+## [Síntese]{.pitch-tag .pitch-tag--forest} Conclusão {#conclusao .smaller-text .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Formação indissociável]{.pitch-card-index}
+[Dignidade em jogo no campo]{.pitch-heading}
+
+A educação em direitos humanos é componente indissociável da formação do engenheiro agrônomo. O profissional que atua no campo lida cotidianamente com situações onde a dignidade humana está em jogo — no receituário agronômico (saúde do trabalhador), na assistência técnica (condições de trabalho) e na mediação de conflitos (acesso à terra).
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Atuação ética e propositiva]{.pitch-card-index}
+[O agrônomo-extensionista]{.pitch-heading}
+
+Conhecer os marcos legais, reconhecer as violações e atuar de forma ética e propositiva são competências que distinguem o **agrônomo-extensionista** do mero técnico de produção.
+:::
+:::
+
+::: {.pitch-band .pitch-band--navy}
+Garantir direitos trabalhistas, saúde ocupacional e função social da terra é parte integrante da engenharia agronômica democrática.
+:::
+
+## [Referências]{.pitch-tag} Referências Bibliográficas {#referencias .smaller-text .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Marcos legais e internacionais]{.pitch-card-index}
+[Legislação e convenções]{.pitch-heading}
+
+- Brasil. *Constituição Federal* (1988) — Art. 5º, 6º, 7º, 184, 186.
+- Brasil. *Lei 5.889/73* — Estatuto do Trabalhador Rural.
+- Brasil. *Lei 12.188/2010* — PNATER.
+- Brasil. *Decreto 7.037/2009* — PNDH-3.
+- OIT. *Convenções fundamentais do trabalho* (2024).
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Dados, relatórios e estudos]{.pitch-card-index}
+[Literatura e monitoramento]{.pitch-heading}
+
+- CPT. *Conflitos no Campo Brasil 2022* (2023).
+- Fernandes, B. M. *Questão agrária, pesquisa e MST* (2001).
+- Martins, J. S. *Reforma agrária: o impossível diálogo* (2000).
+- MTE/SIT. *Trabalho escravo no Brasil em retrospectiva* (2023).
+- Sauer, S. *Terra e modernidade* (2010).
+:::
+:::
 
 ## {.center background-color="#2135A6"}
 
@@ -313,6 +501,6 @@ Conhecer os marcos legais, reconhecer as violações e atuar de forma ética e p
 ::: {style="color: white; font-size: 0.7em;"}
 Luiz Diego Vidal Santos
 
-Universidade Federal de Sergipe (UFS)
+Universidade Estadual de Feira de Santana (UEFS)
 :::
 :::

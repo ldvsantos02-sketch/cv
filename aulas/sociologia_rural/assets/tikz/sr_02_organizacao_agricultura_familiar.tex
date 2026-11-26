@@ -1,0 +1,58 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{sr_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+
+  % Title
+  \node[srTitle] (title) at (0, 4.45) {Organização Social da Agricultura Familiar (Chayanov e Lei nº 11.326/2006)};
+  \node[srSub] (sub) at (0, 3.98) {Contraste entre racionalidades produtivas e critérios legais de enquadramento no Brasil};
+
+  % Top Left Card: Lógica Camponesa
+  \node[srTint=srTeal, text width=6.1cm, minimum height=4.25cm, anchor=north] (left) at (-4.25, 3.30) {};
+  \node[srBadge=srTeal, rounded corners=5pt, anchor=north] at ([yshift=-9pt]left.north) {Lógica Camponesa (Chayanov)};
+  \node[font=\footnotesize\sffamily, text=srInk, align=left, text width=5.6cm, anchor=north] at ([yshift=-36pt]left.north) {%
+    \textbullet\ \textbf{Unidade produção = consumo}: família e estabelecimento indivisíveis\\[6pt]
+    \textbullet\ \textbf{Balanço trabalho--penosidade}: equilíbrio entre esforço e necessidade\\[6pt]
+    \textbullet\ \textbf{Pluriatividade e autoconsumo}: reprodução social e segurança alimentar
+  };
+
+  % Top Right Card: Empresa Patronal Capitalista
+  \node[srTint=srGold, text width=6.1cm, minimum height=4.25cm, anchor=north] (right) at (4.25, 3.30) {};
+  \node[srBadge=srGoldDark, rounded corners=5pt, anchor=north] at ([yshift=-9pt]right.north) {Empresa Patronal Capitalista};
+  \node[font=\footnotesize\sffamily, text=srInk, align=left, text width=5.6cm, anchor=north] at ([yshift=-36pt]right.north) {%
+    \textbullet\ \textbf{Separação capital/trabalho}: gestão dissociada da execução direta\\[6pt]
+    \textbullet\ \textbf{Lucro e taxa de retorno}: acumulação orientada pelo mercado\\[6pt]
+    \textbullet\ \textbf{Trabalho assalariado predominante}: contratação externa contínua ou sazonal
+  };
+
+  % Comparison connector
+  \draw[srDArrow, srMuted] (left.east) -- (right.west)
+    node[midway, fill=white, inner sep=3pt, font=\scriptsize\bfseries\sffamily, text=srMuted] {VS.};
+
+  % Bottom Unified Card: 4 Requisitos Legais
+  \node[srTint=srForest, text width=14.6cm, minimum height=3.75cm, anchor=north] (bottom) at (0, -1.85) {};
+  \node[srBadge=srForest, rounded corners=5pt, anchor=north] at ([yshift=-9pt]bottom.north) {4 Requisitos Legais da Agricultura Familiar (Lei nº 11.326/2006)};
+
+  % 4 Inner pills (2x2 grid)
+  \node[srBox=srForest, text width=6.4cm, minimum height=0.88cm, align=left, anchor=north east] (p1)
+    at ([xshift=-0.25cm, yshift=-38pt]bottom.north)
+    {\textbf{(1)} Área $\le$ 4 módulos fiscais};
+
+  \node[srBox=srForest, text width=6.4cm, minimum height=0.88cm, align=left, anchor=north west] (p2)
+    at ([xshift=0.25cm, yshift=-38pt]bottom.north)
+    {\textbf{(2)} Mão de obra predominantemente familiar};
+
+  \node[srBox=srForest, text width=6.4cm, minimum height=0.88cm, align=left, anchor=north] (p3)
+    at ([yshift=-0.24cm]p1.south)
+    {\textbf{(3)} Renda oriunda do próprio estabelecimento};
+
+  \node[srBox=srForest, text width=6.4cm, minimum height=0.88cm, align=left, anchor=north] (p4)
+    at ([yshift=-0.24cm]p2.south)
+    {\textbf{(4)} Gestão dirigida pela família};
+
+  % Downward arrow from Lógica Camponesa to Lei 11.326
+  \draw[srArrow, srTeal] (left.south) -- ++(0,-0.42) -| (bottom.north);
+
+\end{tikzpicture}
+\end{document}

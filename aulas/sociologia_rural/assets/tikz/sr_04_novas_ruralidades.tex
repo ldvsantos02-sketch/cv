@@ -1,0 +1,51 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{sr_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+
+  % Title
+  \node[srTitle] (title) at (0, 4.15) {Do Continuum Rural--Urbano às Novas Ruralidades};
+  \node[srSub] (sub) at (0, 3.68) {Superação da dicotomia campo--cidade e emergência de múltiplas funções no espaço rural};
+
+  % Left Card: Visão Tradicional Dicotômica
+  \node[srTint=srNavy, text width=4.6cm, minimum height=5.45cm, anchor=west] (left) at (-8.15, 0.25) {};
+  \node[srBadge=srNavy, rounded corners=5pt, anchor=north] at ([yshift=-10pt]left.north) {Visão Tradicional Dicotômica};
+  \node[srBox=srNavy!55, text width=4.0cm, minimum height=1.05cm, align=center, font=\footnotesize\itshape\sffamily, text=srInk, anchor=north] (l1)
+    at ([yshift=-44pt]left.north)
+    {Rural = exclusivamente agrícola e atrasado};
+  \node[srBox=srNavy!55, text width=4.0cm, minimum height=1.05cm, align=center, font=\footnotesize\itshape\sffamily, text=srInk, anchor=north] (l2)
+    at ([yshift=-0.28cm]l1.south)
+    {Êxodo rural inevitável rumo à cidade};
+  \node[font=\scriptsize\sffamily, text=srMuted, align=center, text width=4.1cm, anchor=south]
+    at ([yshift=12pt]left.south)
+    {Leitura setorial restrita à produção agropecuária primária};
+
+  % Right Card: Novas Ruralidades (Rurbanidade)
+  \node[srTint=srForest, text width=6.1cm, minimum height=5.45cm, anchor=east] (right) at (8.15, 0.25) {};
+  \node[srBadge=srForest, rounded corners=5pt, anchor=north] at ([yshift=-10pt]right.north) {Novas Ruralidades (Rurbanidade)};
+
+  % 4 inner pills inside Right Card
+  \node[srBox=srForest, text width=5.3cm, minimum height=0.72cm, align=center, font=\footnotesize\bfseries\sffamily, text=srInk, anchor=north] (r1)
+    at ([yshift=-42pt]right.north)
+    {Pluriatividade e Rendas Não Agrícolas};
+
+  \node[srBox=srForest, text width=5.3cm, minimum height=0.72cm, align=center, font=\footnotesize\bfseries\sffamily, text=srInk, anchor=north] (r2)
+    at ([yshift=-0.22cm]r1.south)
+    {Turismo Rural e Gastronomia};
+
+  \node[srBox=srForest, text width=5.3cm, minimum height=0.72cm, align=center, font=\footnotesize\bfseries\sffamily, text=srInk, anchor=north] (r3)
+    at ([yshift=-0.22cm]r2.south)
+    {Conservação Ambiental \& PSA};
+
+  \node[srBox=srForest, text width=5.3cm, minimum height=0.72cm, align=center, font=\footnotesize\bfseries\sffamily, text=srInk, anchor=north] (r4)
+    at ([yshift=-0.22cm]r3.south)
+    {Agroindústria Artesanal e Serviços};
+
+  % Transition Arrow with Theoretical Label
+  \draw[srArrow, srTeal, line width=1.6pt] (left.east) -- (right.west)
+    node[midway, above=8pt, align=center, text width=3.6cm, font=\scriptsize\sffamily, text=srTeal]
+    {\textbf{Superação teórica:}\\Graziano da Silva $\cdot$\\Wanderley $\cdot$ Abramovay};
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,59 @@
+\documentclass[border=10pt]{standalone}
+\input{sr_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+  % Título
+  \node[srTitle, font=\large\bfseries\sffamily] (title) at (0, 2.85)
+    {Capitalismo Agrário, Financeirização e Conflitos Territoriais (Delgado, 2012)};
+  \node[srSub] (sub) at (0, 2.32)
+    {Da modernização industrial à hegemonia do capital financeiro sobre a terra e a natureza};
+
+  % 4 nós do pipeline horizontal (altura uniforme)
+  \node[draw=srNavy, fill=bgNavy, rounded corners=5pt, line width=1.2pt,
+        text width=3.2cm, minimum height=2.25cm, align=center, font=\footnotesize\sffamily, text=srInk]
+        (n1) at (-5.7, 0.55) {%
+    {\color{srNavy}\bfseries 1. Complexo\\Agroindustrial}\\[5pt]
+    Integração agricultura--indústria e crédito rural estatal
+  };
+
+  \node[draw=srNavyDark, fill=bgNavy, rounded corners=5pt, line width=1.2pt,
+        text width=3.2cm, minimum height=2.25cm, align=center, font=\footnotesize\sffamily, text=srInk]
+        (n2) at (-1.9, 0.55) {%
+    {\color{srNavyDark}\bfseries 2. Pacto do\\Agronegócio}\\[5pt]
+    Aliança Estado, grande propriedade e corporações globais
+  };
+
+  \node[draw=srTeal, fill=bgTeal, rounded corners=5pt, line width=1.2pt,
+        text width=3.2cm, minimum height=2.25cm, align=center, font=\footnotesize\sffamily, text=srInk]
+        (n3) at (1.9, 0.55) {%
+    {\color{srTeal}\bfseries 3. Financeirização\\\& Commodities}\\[5pt]
+    Preços em bolsa, fundos de investimento e renda fundiária
+  };
+
+  \node[draw=srGoldDark, fill=bgGold, rounded corners=5pt, line width=1.2pt,
+        text width=3.2cm, minimum height=2.25cm, align=center, font=\footnotesize\sffamily, text=srInk]
+        (n4) at (5.7, 0.55) {%
+    {\color{srGoldDark}\bfseries 4. Expansão de\\Fronteira (MATOPIBA)}\\[5pt]
+    Avanço sobre o Cerrado, terras devolutas e povos locais
+  };
+
+  % Setas entre etapas
+  \draw[srArrow, color=srNavy] (n1.east) -- (n2.west);
+  \draw[srArrow, color=srNavyDark] (n2.east) -- (n3.west);
+  \draw[srArrow, color=srTeal] (n3.east) -- (n4.west);
+
+  % Chave e seta para o card de síntese inferior
+  \draw[decorate, decoration={brace, amplitude=6pt, mirror}, line width=1.15pt, color=srAlert]
+    (-7.15, -0.78) -- (7.15, -0.78);
+  \draw[srArrow, color=srAlert, line width=1.4pt] (0, -1.02) -- (0, -1.52);
+
+  % Card de síntese inferior
+  \node[draw=srAlert, fill=bgAlert, rounded corners=6pt, line width=1.25pt,
+        text width=14.3cm, inner sep=10pt, align=center, font=\footnotesize\sffamily, text=srInk, anchor=north]
+        (synth) at (0, -1.55) {%
+    {\color{srAlert}\bfseries Contradições Estruturais:}\;
+    renda da terra capturada pelo capital financeiro\;\;$\cdot$\;\;grilagem e desmatamento\;\;$\cdot$\;\;pressões hídricas e concentração fundiária.
+  };
+\end{tikzpicture}
+\end{document}

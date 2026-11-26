@@ -1,0 +1,100 @@
+\documentclass[border=12pt]{standalone}
+\input{sr_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[
+  card/.style={
+    draw=#1,
+    fill=white,
+    rounded corners=6pt,
+    line width=1.2pt,
+    minimum width=5.55cm,
+    minimum height=5.15cm,
+    inner sep=0pt
+  },
+  cardHead/.style={
+    fill=#1,
+    text=white,
+    font=\small\bfseries\sffamily,
+    align=center,
+    minimum width=5.55cm,
+    minimum height=0.95cm,
+    rounded corners=5pt
+  },
+  cardBody/.style={
+    anchor=north,
+    text width=4.85cm,
+    align=left,
+    font=\footnotesize\sffamily,
+    text=srInk,
+    inner sep=0pt
+  }
+]
+  % Título principal
+  \node[srTitle, font=\large\bfseries\sffamily] (title) at (0, 4.10)
+    {Diversidade Étnico-Racial e Territórios Tradicionais no Brasil (Decreto nº 6.040/2007)};
+
+  % Posições dos 3 cartões
+  \coordinate (c1) at (-5.95, 0.85);
+  \coordinate (c2) at ( 0.00, 0.85);
+  \coordinate (c3) at ( 5.95, 0.85);
+
+  % --- Cartão 1: Povos Indígenas ---
+  \node[card=srForest, fill=bgForest!55!white] (box1) at (c1) {};
+  \node[cardHead=srForest, anchor=north] (head1) at (box1.north) {};
+  \fill[srForest] ($(head1.south west)+(0,0.18cm)$) rectangle (head1.south east);
+  \node[font=\small\bfseries\sffamily, text=white] at (head1) {Povos Indígenas};
+  \node[cardBody] at ($(head1.south)+(0,-0.32cm)$) {%
+    \hyphenpenalty=10000\exhyphenpenalty=10000
+    \textbf{\textcolor{srForest}{\textbullet}} \textbf{Art. 231 da CF/1988}: direitos originários sobre as terras que tradicionalmente ocupam.\\[7pt]
+    \textbf{\textcolor{srForest}{\textbullet}} \textbf{Terras Indígenas demarcadas}: proteção territorial e usufruto exclusivo.\\[7pt]
+    \textbf{\textcolor{srForest}{\textbullet}} \textbf{Sociobiodiversidade}: sistemas tradicionais e manejo da biodiversidade.
+  };
+
+  % --- Cartão 2: Comunidades Quilombolas ---
+  \node[card=srGoldDark, fill=bgGold!70!white] (box2) at (c2) {};
+  \node[cardHead=srGoldDark, anchor=north] (head2) at (box2.north) {};
+  \fill[srGoldDark] ($(head2.south west)+(0,0.18cm)$) rectangle (head2.south east);
+  \node[font=\small\bfseries\sffamily, text=white] at (head2) {Comunidades Quilombolas};
+  \node[cardBody] at ($(head2.south)+(0,-0.32cm)$) {%
+    \hyphenpenalty=10000\exhyphenpenalty=10000
+    \textbf{\textcolor{srGoldDark}{\textbullet}} \textbf{Art. 68 do ADCT} \& \textbf{Decreto nº 4.887/2003}: reconhecimento e autodefinição.\\[7pt]
+    \textbf{\textcolor{srGoldDark}{\textbullet}} \textbf{Titulação coletiva (INCRA)}: propriedade definitiva em nome da associação.\\[7pt]
+    \textbf{\textcolor{srGoldDark}{\textbullet}} \textbf{Território e cultura}: memória territorial e roças tradicionais.
+  };
+
+  % --- Cartão 3: Povos e Comunidades Tradicionais ---
+  \node[card=srTeal, fill=bgTeal!60!white] (box3) at (c3) {};
+  \node[cardHead=srTeal, anchor=north] (head3) at (box3.north) {};
+  \fill[srTeal] ($(head3.south west)+(0,0.18cm)$) rectangle (head3.south east);
+  \node[font=\small\bfseries\sffamily, text=white] at (head3) {Povos e Comunidades Tradicionais};
+  \node[cardBody] at ($(head3.south)+(0,-0.32cm)$) {%
+    \hyphenpenalty=10000\exhyphenpenalty=10000
+    \textbf{\textcolor{srTeal}{\textbullet}} \textbf{Fundos e Fechos de Pasto}: uso comum da terra no semiárido e cerrado.\\[7pt]
+    \textbf{\textcolor{srTeal}{\textbullet}} \textbf{Catadoras de Mangaba}: extrativismo costeiro e soberania alimentar.\\[7pt]
+    \textbf{\textcolor{srTeal}{\textbullet}} \textbf{Ribeirinhos, Extrativistas e Geraizeiros}: saberes ecológicos locais.
+  };
+
+  % Banner inferior de síntese
+  \node[
+    draw=srNavy,
+    fill=bgNavy,
+    rounded corners=6pt,
+    line width=1.25pt,
+    minimum width=17.45cm,
+    minimum height=1.05cm,
+    align=center,
+    font=\small\sffamily,
+    text=srNavyDark,
+    inner xsep=12pt,
+    inner ysep=8pt
+  ] (banner) at (0, -2.90) {%
+    \textit{\textbf{PNPCT (Decreto nº 6.040/2007):} proteção territorial, autodeterminação e coexistência de modos de vida rurais.}
+  };
+
+  % Conectores convergentes para o banner de síntese
+  \draw[srArrow, srForest] (box1.south) -- (box1.south |- banner.north);
+  \draw[srArrow, srGoldDark] (box2.south) -- (box2.south |- banner.north);
+  \draw[srArrow, srTeal] (box3.south) -- (box3.south |- banner.north);
+\end{tikzpicture}
+\end{document}

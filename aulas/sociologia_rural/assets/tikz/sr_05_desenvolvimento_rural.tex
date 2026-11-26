@@ -1,0 +1,52 @@
+\documentclass[border=10pt]{standalone}
+\input{sr_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+  % Título principal
+  \node[srTitle, font=\large\bfseries\sffamily] (title) at (0, 3.65)
+    {Paradigmas de Desenvolvimento Rural: Do Produtivismo ao Ecodesenvolvimento};
+  \node[srSub] (sub) at (0, 3.12)
+    {Ruptura analítica entre o modelo técnico-produtivista e a abordagem multidimensional do território};
+
+  % Dimensões das colunas
+  \def\colW{6.5cm}
+  \def\colH{5.25cm}
+
+  % Coluna Esquerda: Paradigma Clássico / Revolução Verde
+  \node[draw=srAlert, fill=bgAlert, rounded corners=6pt, line width=1.25pt,
+        minimum width=\colW, minimum height=\colH, anchor=north] (leftCard) at (-4.35, 2.55) {};
+  \node[fill=srAlert, text=white, rounded corners=4pt, text width=5.9cm,
+        inner ysep=6pt, font=\small\bfseries\sffamily, align=center, anchor=north]
+        (leftHdr) at ($(leftCard.north)+(0,-0.16)$)
+    {Paradigma Clássico / Revolução Verde};
+  \node[text=srInk, font=\footnotesize\sffamily, text width=5.85cm, align=left, anchor=north]
+        at ($(leftHdr.south)+(0,-0.22)$) {%
+    \textbf{Lógica:} modernização conservadora e pacote tecnológico exógeno.\par\vspace{7pt}
+    $\bullet$\;\;Foco exclusivo em PIB agrícola e produtividade por hectare\par\vspace{6pt}
+    $\bullet$\;\;Mecanização pesada, monocultura e pacote químico (agrotóxicos e fertilizantes)\par\vspace{6pt}
+    $\bullet$\;\;Concentração fundiária, endividamento e êxodo rural acelerado
+  };
+
+  % Coluna Direita: Desenvolvimento Territorial Sustentável
+  \node[draw=srForest, fill=bgForest, rounded corners=6pt, line width=1.25pt,
+        minimum width=\colW, minimum height=\colH, anchor=north] (rightCard) at (4.35, 2.55) {};
+  \node[fill=srForest, text=white, rounded corners=4pt, text width=5.9cm,
+        inner ysep=6pt, font=\small\bfseries\sffamily, align=center, anchor=north]
+        (rightHdr) at ($(rightCard.north)+(0,-0.16)$)
+    {Desenvolvimento Territorial Sustentável\\[-1pt]{\scriptsize\normalfont\sffamily (Ignacy Sachs; Amartya Sen)}};
+  \node[text=srInk, font=\footnotesize\sffamily, text width=5.85cm, align=left, anchor=north]
+        at ($(rightHdr.south)+(0,-0.22)$) {%
+    \textbf{Lógica:} sustentabilidade multidimensional e ampliação de capacidades.\par\vspace{7pt}
+    $\bullet$\;\;5 Dimensões (Sachs): Social, Econômica, Ecológica, Espacial e Cultural\par\vspace{6pt}
+    $\bullet$\;\;Expansão de liberdades substantivas, autonomia e equidade (Sen)\par\vspace{6pt}
+    $\bullet$\;\;Valorização de mercados locais, agroecologia e diversidade sociocultural
+  };
+
+  % Seta de transição entre os paradigmas
+  \draw[srArrow, color=srGoldDark, line width=1.8pt]
+    ($(leftCard.east)+(0.18,0)$) -- ($(rightCard.west)+(-0.18,0)$);
+  \node[fill=srGoldDark, text=white, rounded corners=4pt, inner xsep=8pt, inner ysep=3.5pt,
+        font=\scriptsize\bfseries\sffamily, anchor=south] at ($(leftCard.east)!0.5!(rightCard.west)+(0,0.22)$) {Transição};
+\end{tikzpicture}
+\end{document}

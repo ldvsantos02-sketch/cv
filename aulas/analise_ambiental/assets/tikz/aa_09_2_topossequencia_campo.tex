@@ -1,0 +1,117 @@
+\documentclass[tikz,border=8pt]{standalone}
+\input{../../apostila/figures/tikz/aa_tikz_style.tex}
+\usepgfplotslibrary{fillbetween}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+  width=14cm,
+  height=7cm,
+  scale only axis,
+  title={Roteiro de Campo em Topossequência: Estações de Observação Integrada},
+  title style={font=\normalsize\bfseries\sffamily, text=uefsNavy, yshift=6pt},
+  axis lines=left,
+  axis line style={lineGray, line width=1pt},
+  tick style={uefsMuted},
+  xmin=0, xmax=10.3,
+  ymin=0, ymax=7.2,
+  xtick={0, 2, 4, 6, 8, 10},
+  ytick={0, 1, 2, 3, 4, 5, 6, 7},
+  tick label style={font=\footnotesize\sffamily, text=uefsInk},
+  xlabel={\textbf{Posição ao longo da topossequência (km / m relativos)}},
+  ylabel={\textbf{Cota relativa (m)}},
+  label style={font=\footnotesize\sffamily, text=uefsInk},
+  legend style={
+    at={(0.02,0.03)}, anchor=south west,
+    font=\scriptsize\sffamily, fill=white, fill opacity=0.94,
+    draw=lineGray, rounded corners=3pt, inner sep=4pt,
+    cells={anchor=west}
+  },
+  legend image post style={scale=0.8},
+  clip=true
+]
+
+% Superfície topográfica e substrato
+\addplot[name path=base, draw=none, domain=0:10] {0};
+
+\addplot[
+  name path=bed,
+  dashed, color=uefsNavy, line width=1pt,
+  domain=0:10, samples=140, forget plot
+] {
+  (3.35 - 0.22*x - 1.0/(1 + exp(-(x - 4.2)*1.15)) + 0.65 - 0.32*exp(-((x - 9.55)^2)/0.22))
+  - (0.68 - 0.30*exp(-((x - 4.2)^2)/2.0) + 0.22*exp(-((x - 8.9)^2)/1.4))
+};
+
+\addplot[
+  name path=surf,
+  color=uefsForest, line width=2.2pt,
+  domain=0:10, samples=140, forget plot
+] {3.35 - 0.22*x - 1.0/(1 + exp(-(x - 4.2)*1.15)) + 0.65 - 0.32*exp(-((x - 9.55)^2)/0.22)};
+
+% Preenchimento substrato e manto de solo
+\addplot[fill=lineGray!55, draw=none] fill between[of=base and bed];
+\addlegendentry{Substrato rochoso / saprólito}
+
+\addplot[fill=uefsSand!75, draw=none] fill between[of=bed and surf];
+\addlegendentry{Manto de solo e colúvio}
+
+% Re-traçar linhas para nitidez
+\addplot[dashed, color=uefsNavy, line width=1pt, domain=0:10, samples=140, forget plot] {
+  (3.35 - 0.22*x - 1.0/(1 + exp(-(x - 4.2)*1.15)) + 0.65 - 0.32*exp(-((x - 9.55)^2)/0.22))
+  - (0.68 - 0.30*exp(-((x - 4.2)^2)/2.0) + 0.22*exp(-((x - 8.9)^2)/1.4))
+};
+\addplot[color=uefsForest, line width=2.3pt, domain=0:10, samples=140, forget plot]
+  {3.35 - 0.22*x - 1.0/(1 + exp(-(x - 4.2)*1.15)) + 0.65 - 0.32*exp(-((x - 9.55)^2)/0.22)};
+
+% Espelho d'água limpo no canal fluvial à direita (x = 9.08..9.98)
+\addplot[name path=watertop, color=uefsWater, line width=1.1pt, domain=9.12:9.98, forget plot] {0.82};
+\addplot[name path=waterbed, draw=none, domain=9.12:9.98, samples=40, forget plot]
+  {3.35 - 0.22*x - 1.0/(1 + exp(-(x - 4.2)*1.15)) + 0.65 - 0.32*exp(-((x - 9.55)^2)/0.22)};
+\addplot[fill=uefsWater!70, draw=none, forget plot] fill between[of=waterbed and watertop];
+\draw[uefsWater, line width=1.1pt] (axis cs:9.12, 0.82) -- (axis cs:9.98, 0.82);
+\node[font=\scriptsize\bfseries\sffamily, text=uefsWater] at (axis cs:9.55, 1.06) {Canal};
+
+% 4 Estações acima do perfil topográfico com caixas escalonadas (zero sobreposição)
+\node[aaBox=uefsForest, fill=bgForest, text width=2.75cm, inner sep=4pt, font=\scriptsize\sffamily]
+  (p1) at (axis cs:1.30, 5.90)
+  {\textbf{\color{uefsForest}P1 · Interflúvio / Topo}\\[2pt]
+   Latossolo · infiltração · divisor};
+
+\node[aaBox=uefsAlert, fill=bgAlert, text width=2.85cm, inner sep=4pt, font=\scriptsize\sffamily]
+  (p2) at (axis cs:3.95, 5.20)
+  {\textbf{\color{uefsAlert}P2 · Meia-Encosta}\\[2pt]
+   Declividade · sulcos · transição A/Bt};
+
+\node[aaBox=uefsGoldDark, fill=bgGold, text width=2.85cm, inner sep=4pt, font=\scriptsize\sffamily]
+  (p3) at (axis cs:6.55, 4.15)
+  {\textbf{\color{uefsGoldDark}P3 · Base / Colúvio}\\[2pt]
+   Deposição · exfiltração · cobertura};
+
+\node[aaBox=uefsNavy, fill=bgNavy, text width=2.85cm, inner sep=4pt, font=\scriptsize\sffamily]
+  (p4) at (axis cs:8.85, 2.95)
+  {\textbf{\color{uefsNavy}P4 · Canal / Zona Ripária}\\[2pt]
+   APP ciliar Lei 12.651 · turbidez · margens};
+
+% Linhas-guia verticais tracejadas + marcadores na superfície
+\draw[dashed, color=uefsForest, line width=1pt] (p1.south) -- (axis cs:1.30, 3.72);
+\filldraw[fill=uefsForest, draw=white, line width=0.8pt] (axis cs:1.30, 3.72) circle (3pt);
+
+\draw[dashed, color=uefsAlert, line width=1pt] (p2.south) -- (axis cs:3.95, 2.70);
+\filldraw[fill=uefsAlert, draw=white, line width=0.8pt] (axis cs:3.95, 2.70) circle (3pt);
+
+\draw[dashed, color=uefsGoldDark, line width=1pt] (p3.south) -- (axis cs:6.55, 1.66);
+\filldraw[fill=uefsGoldDark, draw=white, line width=0.8pt] (axis cs:6.55, 1.66) circle (3pt);
+
+\draw[dashed, color=uefsNavy, line width=1pt] (p4.south) -- (axis cs:8.85, 1.03);
+\filldraw[fill=uefsNavy, draw=white, line width=0.8pt] (axis cs:8.85, 1.03) circle (3pt);
+
+\end{axis}
+
+% Nota de rodapé abaixo do eixo
+\node[font=\footnotesize\itshape\sffamily, text=uefsMuted, anchor=north]
+  at (7.0, -1.05)
+  {Registrar coordenadas GNSS, foto com escala, clinometria, solo, feições erosivas e APP.};
+
+\end{tikzpicture}
+\end{document}

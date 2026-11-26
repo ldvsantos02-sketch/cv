@@ -1,0 +1,121 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{et_tikz_style}
+\usepgfplotslibrary{fillbetween}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+\begin{axis}[
+  width=15.0cm,
+  height=8.4cm,
+  title={\textbf{O ``Vale da Morte'' Tecnológico e a Transição Bancada $\rightarrow$ Mercado}},
+  title style={font=\normalsize\bfseries\sffamily, text=etNavy, yshift=6pt},
+  ylabel={Caixa acumulado (escala ilustrativa)},
+  ylabel style={font=\footnotesize\sffamily, text=etInk},
+  xmin=0, xmax=4.2,
+  ymin=-4.5, ymax=5.8,
+  xtick={0.55, 1.65, 2.85, 3.80},
+  xticklabels={
+    {Pesquisa /\\Ideação},
+    {Protótipo /\\Validação},
+    {Tração /\\Break-even},
+    {Escala}
+  },
+  xticklabel style={align=center, font=\footnotesize\sffamily, text=etInk, yshift=-3pt},
+  ytick={-4,-2,0,2,4},
+  yticklabel style={font=\scriptsize\sffamily, text=etMuted},
+  axis lines=left,
+  axis line style={draw=etMuted, line width=0.9pt},
+  tick style={draw=etMuted},
+  ymajorgrids=true,
+  grid style={draw=etBorder, dotted, line width=0.6pt},
+  clip=false,
+  legend pos=north west,
+  legend style={
+    draw=etBorder, fill=white, rounded corners=4pt,
+    font=\scriptsize\sffamily, text=etInk,
+    inner sep=5pt, cells={anchor=west}
+  }
+]
+
+% Subtle vertical stage dividers
+\draw[draw=etBorder, dashed, line width=0.7pt] (axis cs:1.10, -4.5) -- (axis cs:1.10, 5.5);
+\draw[draw=etBorder, dashed, line width=0.7pt] (axis cs:2.25, -4.5) -- (axis cs:2.25, 5.5);
+\draw[draw=etBorder, dashed, line width=0.7pt] (axis cs:3.40, -4.5) -- (axis cs:3.40, 5.5);
+
+% Zero reference line
+\addplot[name path=zero, domain=0:4.1, draw=etMuted, dashed, line width=0.95pt, forget plot] {0};
+
+% Smooth cashflow curve: exact zero at x=0 and x=2.85, trough at x=1.65 (y=-3.2)
+\addplot[
+  name path=curve,
+  smooth,
+  tension=0.62,
+  line width=2.2pt,
+  etNavy
+] coordinates {
+  (0.00,  0.00)
+  (0.55, -1.05)
+  (1.15, -2.65)
+  (1.65, -3.20)
+  (2.15, -2.35)
+  (2.85,  0.00)
+  (3.45,  2.45)
+  (4.05,  5.05)
+};
+\addlegendentry{Caixa acumulado}
+
+% Shaded regions: Vale da Morte (< 0) and positive scale (> 0)
+\addplot[area legend, fill=bgAlert, draw=etAlert!45!white, fill opacity=0.85]
+  fill between[of=curve and zero, soft clip={domain=0:2.85}];
+\addlegendentry{Vale da Morte (déficit acumulado)}
+
+\addplot[area legend, fill=bgTeal, draw=etTeal!45!white, fill opacity=0.85]
+  fill between[of=curve and zero, soft clip={domain=2.85:4.05}];
+\addlegendentry{Retorno positivo e escala}
+
+% Re-draw curve on top of shading so stroke stays sharp
+\addplot[
+  smooth,
+  tension=0.62,
+  line width=2.2pt,
+  etNavy,
+  forget plot
+] coordinates {
+  (0.00,  0.00)
+  (0.55, -1.05)
+  (1.15, -2.65)
+  (1.65, -3.20)
+  (2.15, -2.35)
+  (2.85,  0.00)
+  (3.45,  2.45)
+  (4.05,  5.05)
+};
+
+% Key points
+\fill[etAlert] (axis cs:1.65, -3.20) circle (3.3pt);
+\fill[etTeal]  (axis cs:2.85,  0.00) circle (3.3pt);
+
+% Non-overlapping Callout 1: Ponto de Mínimo (placed cleanly in open middle space above zero)
+\node[
+  draw=etAlert, fill=white, rounded corners=4pt, line width=1pt,
+  inner sep=5pt, align=center, font=\scriptsize\sffamily, text=etInk
+] (minBox) at (axis cs:1.65, 1.45) {%
+  \textbf{\color{etAlert}Ponto de Mínimo}\\
+  {\color{etMuted}(Maior risco financeiro)}
+};
+\draw[etArrow, etAlert, line width=1.15pt] (minBox.south) -- (axis cs:1.65, -3.02);
+
+% Non-overlapping Callout 2: Break-even (placed cleanly to upper-left of zero crossing)
+\node[
+  draw=etTeal, fill=white, rounded corners=4pt, line width=1pt,
+  inner sep=5pt, align=center, font=\scriptsize\sffamily, text=etInk
+] (beBox) at (axis cs:2.65, 2.75) {%
+  \textbf{\color{etTeal}Break-even (Payback)}\\
+  {\color{etMuted}Transição ao equilíbrio}
+};
+\draw[etArrow, etTeal, line width=1.15pt] (beBox.south) -- (axis cs:2.83, 0.18);
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,159 @@
+\documentclass[tikz,border=8pt]{standalone}
+\input{../../apostila/figures/tikz/aa_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título principal bem acima de toda a figura
+\node[font=\large\bfseries\sffamily, text=uefsNavy, align=center] at (5.35, 7.15)
+  {Estrutura Operacional da Matriz de Leopold (Leopold et al., 1971)};
+
+% =========================================================
+% PAINEL ESQUERDO: MATRIZ CRUZADA (Ações x Fatores)
+% =========================================================
+\begin{scope}[shift={(0,0)}]
+  \def\cw{1.36}
+  \def\ch{0.64}
+  \def\hh{2.30}
+
+  % Rótulo superior das colunas
+  \node[font=\small\bfseries\sffamily, text=uefsNavy] at (2.5*\cw, 6*\ch + \hh + 0.35)
+    {Ações do Empreendimento (Colunas)};
+
+  % Fundos dos cabeçalhos das 5 colunas (desenhados primeiro)
+  \foreach \j in {0,...,4} {
+    \fill[bgNavy] (\j*\cw, 6*\ch) rectangle (\j*\cw+\cw, 6*\ch+\hh);
+    \draw[lineGray, line width=0.8pt] (\j*\cw, 6*\ch) rectangle (\j*\cw+\cw, 6*\ch+\hh);
+  }
+  % Rótulos rotacionados depois (sem oclusão e estritamente dentro de cada coluna)
+  \foreach \j/\lbl in {
+    0/Supressão veg.,
+    1/Terraplenagem,
+    2/Obras civis,
+    3/Drenagem,
+    4/Operação%
+  } {
+    \node[rotate=65, anchor=west, font=\scriptsize\bfseries\sffamily, text=uefsNavy]
+      at (\j*\cw+0.44, 6*\ch+0.12) {\lbl};
+  }
+
+  % Rótulo vertical à esquerda dos grupos de fatores
+  \node[rotate=90, font=\small\bfseries\sffamily, text=uefsNavy] at (-3.25, 3*\ch)
+    {Fatores Ambientais (Linhas)};
+
+  % Faixas de grupo (Físico, Biótico, Socioeconômico)
+  \fill[uefsNavy]   (-2.85, 4*\ch) rectangle (-2.3, 6*\ch);
+  \node[rotate=90, font=\scriptsize\bfseries\sffamily, text=white] at (-2.575, 5*\ch) {Físico};
+
+  \fill[uefsForest] (-2.85, 2*\ch) rectangle (-2.3, 4*\ch);
+  \node[rotate=90, font=\scriptsize\bfseries\sffamily, text=white] at (-2.575, 3*\ch) {Biótico};
+
+  \fill[uefsGoldDark] (-2.85, 0*\ch) rectangle (-2.3, 2*\ch);
+  \node[rotate=90, font=\scriptsize\bfseries\sffamily, text=white] at (-2.575, 1*\ch) {Socioec.};
+
+  % Linhas de fatores (y de cima para baixo: row 5 = topo, row 0 = base)
+  \foreach \r/\lbl/\bg in {
+    5/Solo e erosão/bgNavy,
+    4/Água superficial/bgNavy,
+    3/Flora nativa/bgForest,
+    2/Fauna silvestre/bgForest,
+    1/Emprego e renda/bgGold,
+    0/Conflitos de uso/bgGold%
+  } {
+    \fill[\bg] (-2.3, \r*\ch) rectangle (0, \r*\ch+\ch);
+    \draw[lineGray, line width=0.8pt] (-2.3, \r*\ch) rectangle (0, \r*\ch+\ch);
+    \node[anchor=west, font=\scriptsize\bfseries\sffamily, text=uefsInk] at (-2.18, \r*\ch+0.5*\ch) {\lbl};
+  }
+
+  % Grade completa 5x6
+  \foreach \j in {0,...,4} {
+    \foreach \r in {0,...,5} {
+      \draw[lineGray, line width=0.8pt, fill=white] (\j*\cw, \r*\ch) rectangle (\j*\cw+\cw, \r*\ch+\ch);
+    }
+  }
+
+  % Macro para célula diagonalizada: \cellMI{col}{row}{mag}{imp}{color}
+  \newcommand{\cellMI}[5]{%
+    \fill[#5!12] (#1*\cw, #2*\ch) rectangle (#1*\cw+\cw, #2*\ch+\ch);
+    \draw[lineGray, line width=0.8pt] (#1*\cw, #2*\ch) rectangle (#1*\cw+\cw, #2*\ch+\ch);
+    \draw[#5, line width=0.9pt] (#1*\cw, #2*\ch) -- (#1*\cw+\cw, #2*\ch+\ch);
+    \node[font=\tiny\bfseries, text=#5] at (#1*\cw+0.30*\cw, #2*\ch+0.72*\ch) {#3};
+    \node[font=\tiny\bfseries, text=uefsInk] at (#1*\cw+0.72*\cw, #2*\ch+0.28*\ch) {#4};
+  }
+
+  \cellMI{0}{5}{-6}{7}{uefsAlert}
+  \cellMI{0}{3}{-8}{9}{uefsAlert}
+  \cellMI{0}{2}{-6}{7}{uefsAlert}
+  \cellMI{1}{4}{-5}{7}{uefsAlert}
+  \cellMI{2}{1}{+6}{7}{uefsForest}
+  \cellMI{3}{4}{+5}{6}{uefsForest}
+  \cellMI{4}{1}{+7}{8}{uefsForest}
+  \cellMI{4}{0}{-4}{6}{uefsAlert}
+
+  % Célula destacada (Terraplenagem x Solo e erosão: col=1, row=5)
+  \fill[bgAlert] (1*\cw, 5*\ch) rectangle (2*\cw, 6*\ch);
+  \draw[uefsAlert, line width=1.8pt] (1*\cw, 5*\ch) rectangle (2*\cw, 6*\ch);
+  \draw[uefsAlert, line width=1.1pt] (1*\cw, 5*\ch) -- (2*\cw, 6*\ch);
+  \node[font=\tiny\bfseries, text=uefsAlert] at (1*\cw+0.30*\cw, 5*\ch+0.72*\ch) {-7};
+  \node[font=\tiny\bfseries, text=uefsInk]   at (1*\cw+0.72*\cw, 5*\ch+0.28*\ch) {8};
+
+  % Borda externa da matriz
+  \draw[uefsNavy, line width=1.2pt] (-2.85, 0) rectangle (5*\cw, 6*\ch);
+  \draw[uefsNavy, line width=1.2pt] (0, 6*\ch) rectangle (5*\cw, 6*\ch+\hh);
+
+  % Coordenada âncora da célula destacada
+  \coordinate (sampleCell) at (2*\cw, 5.5*\ch);
+\end{scope}
+
+% =========================================================
+% PAINEL DIREITO: ZOOM DA CÉLULA + LEGENDA + AVISO CRÍTICO
+% =========================================================
+\begin{scope}[shift={(7.9, 0)}]
+
+  % Caixa de Zoom da Célula
+  \draw[draw=uefsNavy, fill=bgGray, rounded corners=6pt, line width=1.1pt] (-0.25, 2.85) rectangle (6.65, 5.85);
+  \node[font=\footnotesize\bfseries\sffamily, text=uefsNavy] at (3.2, 5.5)
+    {Zoom: Célula da Matriz (Terraplenagem $\times$ Solo)};
+
+  % Quadrado ampliado com corte diagonal
+  \begin{scope}[shift={(0.2, 3.15)}]
+    \fill[bgAlert] (0,0) -- (0, 1.95) -- (1.95, 1.95) -- cycle;
+    \fill[bgNavy]  (0,0) -- (1.95, 0) -- (1.95, 1.95) -- cycle;
+    \draw[uefsAlert, line width=1.5pt] (0,0) rectangle (1.95, 1.95);
+    \draw[uefsNavy, line width=1.4pt] (0,0) -- (1.95, 1.95);
+    \node[font=\normalsize\bfseries, text=uefsAlert] at (0.56, 1.42) {-7};
+    \node[font=\normalsize\bfseries, text=uefsNavy]  at (1.42, 0.56) {8};
+  \end{scope}
+
+  % Explicação dos triângulos
+  \node[anchor=west, text width=3.95cm, align=left, font=\scriptsize\sffamily, text=uefsInk] at (2.4, 4.12) {%
+    \textbf{\color{uefsAlert}Magnitude (sup. esq.):}\\
+    Escala \textbf{$-10$ a $+10$} (intensidade física da alteração)\\[6pt]
+    \textbf{\color{uefsNavy}Importância (inf. dir.):}\\
+    Escala \textbf{$1$ a $10$} (peso / relevância no contexto)
+  };
+
+  % Legenda de Critérios e Sinais
+  \node[draw=uefsTeal, fill=bgTeal, rounded corners=6pt, line width=1.1pt,
+        anchor=north west, text width=6.45cm, inner sep=8pt, align=left,
+        font=\scriptsize\sffamily, text=uefsInk] at (-0.25, 2.55)
+    {\textbf{\footnotesize\color{uefsTeal}Critérios e Leitura dos Sinais}\\[4pt]
+     $\bullet$ \textbf{\color{uefsAlert}Sinal ($-$):} impacto adverso (negativo)\\[2pt]
+     $\bullet$ \textbf{\color{uefsForest}Sinal ($+$):} impacto benéfico (positivo)\\[2pt]
+     $\bullet$ Célula em branco: sem interação direta};
+
+  % Caixa de Aviso Crítico
+  \node[draw=uefsAlert, fill=bgAlert, rounded corners=6pt, line width=1.3pt,
+        anchor=north west, text width=6.45cm, inner sep=8pt, align=left,
+        font=\scriptsize\sffamily, text=uefsInk] at (-0.25, 0.35)
+    {\textbf{\footnotesize\color{uefsAlert}Limitação Crítica da Matriz:}\\[3pt]
+     \textit{Não captura impactos indiretos de 2ª/3ª ordem, cumulativos ou sinérgicos (exige \textbf{Rede de Interação} complementar).}};
+
+\end{scope}
+
+% Seta conectando a célula destacada ao Zoom (passa limpa pelas células em branco)
+\draw[->, >=Stealth, line width=1.6pt, uefsAlert, dashed]
+  (sampleCell) -- (7.65, 3.52);
+
+\end{tikzpicture}
+\end{document}

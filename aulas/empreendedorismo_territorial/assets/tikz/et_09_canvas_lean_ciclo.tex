@@ -1,0 +1,104 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{et_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Title
+\node[etTitle] (title) at (8.1, 7.65) {Business Model Canvas (9 Blocos) e Ciclo Lean Startup};
+
+% ==================== LEFT ZONE: BUSINESS MODEL CANVAS (10.5 x 6.4 cm) ====================
+\node[etSub, font=\footnotesize\bfseries\sffamily, text=etNavy] at (5.25, 6.78) {Business Model Canvas (9 Blocos)};
+
+% Canvas block helper style
+\tikzset{
+  bmcCell/.style={
+    draw=#1, fill=#1!8!white, line width=1pt, rounded corners=2pt
+  },
+  bmcHead/.style={
+    font=\scriptsize\bfseries\sffamily, text=#1, align=center, inner sep=3pt
+  },
+  bmcBody/.style={
+    font=\tiny\sffamily, text=etMuted, align=center, inner sep=2pt
+  }
+}
+
+% Grid dimensions: x in [0, 10.5] (5 cols x 2.1cm), y in [0, 6.4]
+% Upper rows y in [1.6, 6.4] (height 4.8cm, split at y=4.0 -> 2.4cm each)
+% Bottom row y in [0, 1.6] (height 1.6cm, split at x=5.25 -> 5.25cm each)
+
+% 1. Parcerias-Chave (col 1, full upper)
+\draw[bmcCell=etNavy] (0.00, 1.60) rectangle (2.06, 6.40);
+\node[bmcHead=etNavy, anchor=north, text width=1.85cm] at (1.03, 6.26) {Parcerias-Chave};
+\node[bmcBody, text width=1.85cm] at (1.03, 3.85) {Rede de aliados,\\ICTs, fornecedores\\e cooperativas};
+
+% 2. Atividades-Chave (col 2, upper)
+\draw[bmcCell=etNavy] (2.11, 4.03) rectangle (4.17, 6.40);
+\node[bmcHead=etNavy, anchor=north, text width=1.85cm] at (3.14, 6.26) {Atividades-Chave};
+\node[bmcBody, text width=1.85cm] at (3.14, 4.85) {P\&D, produção\\e operação};
+
+% 3. Recursos-Chave (col 2, lower)
+\draw[bmcCell=etNavy] (2.11, 1.60) rectangle (4.17, 3.97);
+\node[bmcHead=etNavy, anchor=north, text width=1.85cm] at (3.14, 3.83) {Recursos-Chave};
+\node[bmcBody, text width=1.85cm] at (3.14, 2.45) {PI, equipe e ativos\\territoriais};
+
+% 4. Proposta de Valor (col 3, full upper, highlighted Gold)
+\draw[draw=etGold, fill=bgGold, line width=1.35pt, rounded corners=2pt] (4.22, 1.60) rectangle (6.28, 6.40);
+\node[bmcHead=etGoldDark, anchor=north, text width=1.85cm] at (5.25, 6.26) {Proposta de Valor};
+\node[bmcBody, text=etInk, text width=1.85cm] at (5.25, 3.85) {Dor resolvida ou\\ganho entregue\\ao cliente};
+
+% 5. Relacionamento (col 4, upper)
+\draw[bmcCell=etTeal] (6.33, 4.03) rectangle (8.39, 6.40);
+\node[bmcHead=etTeal, anchor=north, text width=1.85cm] at (7.36, 6.26) {Relacionamento};
+\node[bmcBody, text width=1.85cm] at (7.36, 4.85) {Aquisição, retenção\\e suporte};
+
+% 6. Canais (col 4, lower)
+\draw[bmcCell=etTeal] (6.33, 1.60) rectangle (8.39, 3.97);
+\node[bmcHead=etTeal, anchor=north, text width=1.85cm] at (7.36, 3.83) {Canais};
+\node[bmcBody, text width=1.85cm] at (7.36, 2.45) {Entrega física\\ou digital};
+
+% 7. Segmentos de Clientes (col 5, full upper)
+\draw[bmcCell=etTeal] (8.44, 1.60) rectangle (10.50, 6.40);
+\node[bmcHead=etTeal, anchor=north, text width=1.85cm] at (9.47, 6.26) {Segmentos de Clientes};
+\node[bmcBody, text width=1.85cm] at (9.47, 3.85) {Perfis e nichos\\atendidos};
+
+% 8. Estrutura de Custos (bottom left)
+\draw[bmcCell=etAlert] (0.00, 0.00) rectangle (5.22, 1.54);
+\node[bmcHead=etAlert, anchor=north, text width=4.8cm] at (2.61, 1.42) {Estrutura de Custos};
+\node[bmcBody, text width=4.8cm] at (2.61, 0.55) {Custos fixos, variáveis e escala operacional};
+
+% 9. Fontes de Receita (bottom right)
+\draw[bmcCell=etForest] (5.28, 0.00) rectangle (10.50, 1.54);
+\node[bmcHead=etForest, anchor=north, text width=4.8cm] at (7.89, 1.42) {Fontes de Receita};
+\node[bmcBody, text width=4.8cm] at (7.89, 0.55) {Precificação, recorrência e licenciamento};
+
+% ==================== RIGHT ZONE: LEAN STARTUP LOOP ====================
+\node[etSub, font=\footnotesize\bfseries\sffamily, text=etNavy] at (13.65, 6.78) {Ciclo Lean Startup};
+
+\node[draw=etNavy, fill=bgNavy, rounded corners=6pt, line width=1.25pt,
+      text width=3.55cm, minimum height=1.22cm, align=center, font=\footnotesize\sffamily, text=etInk]
+  (b1) at (13.25, 5.45) {\textbf{\color{etNavy}1. Construir}\\{\scriptsize (MVP / Hipótese)}};
+
+\node[draw=etTeal, fill=bgTeal, rounded corners=6pt, line width=1.25pt,
+      text width=3.55cm, minimum height=1.22cm, align=center, font=\footnotesize\sffamily, text=etInk]
+  (b2) at (13.25, 3.20) {\textbf{\color{etTeal}2. Medir}\\{\scriptsize (Métricas Acionáveis)}};
+
+\node[draw=etGold, fill=bgGold, rounded corners=6pt, line width=1.25pt,
+      text width=3.55cm, minimum height=1.22cm, align=center, font=\footnotesize\sffamily, text=etInk]
+  (b3) at (13.25, 0.95) {\textbf{\color{etGoldDark}3. Aprender}\\{\scriptsize (Pivotar ou Perseverar)}};
+
+\draw[etArrow, etNavy] (b1.south) -- (b2.north);
+\draw[etArrow, etTeal] (b2.south) -- (b3.north);
+
+% Clean external return arrow on the right edge (never behind box 2!)
+\draw[etArrow, etGoldDark, line width=1.45pt, rounded corners=8pt]
+  (b3.east) -- (16.15, 0.95) -- (16.15, 5.45) -- (b1.east);
+
+\node[fill=white, text=etGoldDark, font=\scriptsize\bfseries\sffamily, rotate=90, inner sep=3pt]
+  at (16.15, 3.20) {Iteração Contínua};
+
+% Subtle link from Canvas to Lean Loop
+\draw[etArrow, etMuted, dashed, line width=1.15pt] (10.65, 3.20) -- (b2.west);
+
+\end{tikzpicture}
+\end{document}

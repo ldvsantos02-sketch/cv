@@ -6,14 +6,16 @@ lang: pt-BR
 academico:
   cabecalho:
     - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
-    - "PPGPT · Empreendedorismo Tecnológico e Desenvolvimento Territorial"
-    - "Aula 10 · 4 horas"
-  rodape: "UEFS · PPGPT · Aula 10 · Planos de Negócio e Fomento"
+    - "PLANTERR · Programa de Pós-Graduação em Planejamento Territorial"
+    - "Empreendedorismo Tecnológico e Desenvolvimento Territorial · Aula 10 · 4 horas"
+  rodape: "UEFS · PLANTERR · Aula 10 · Planos de Negócio e Fomento"
   local: "Feira de Santana – Bahia"
 format:
   revealjs:
     theme: ../../../assets/academico/academico.scss
-    css: ../../../assets/academico/academico.css
+    css:
+      - ../../../assets/academico/academico.css
+      - ../../assets/planterr-slides.css
     include-after-body:
       - ../../../assets/academico/academico.html
     slide-number: false
@@ -27,6 +29,9 @@ format:
     embed-resources: true
     transition: fade
     background-transition: none
+    auto-stretch: false
+    pdf-separate-fragments: false
+    pdf-max-pages-per-slide: 1
   beamer:
     pdf-engine: xelatex
     aspectratio: 169
@@ -39,43 +44,51 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text .lesson-slide}
+## [Unidade II]{.pitch-tag} Visão Geral da Aula {#visao-geral .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Roteiro da aula · 4 horas]{.pitch-card-index}
+[Tópicos estruturantes]{.pitch-heading}
 
-- [1]{.circle} Modelo de Negócio vs. Plano de Negócio: quando usar cada um?
-- [2]{.circle} Estrutura completa de um Plano de Negócio Tecnológico
-- [3]{.circle} Fontes de financiamento: *bootstrapping*, subvenção e *venture capital*
-- [4]{.circle} Fundos regionais de desenvolvimento (FNE/BNB, FINEP, FAPs)
-- [5]{.circle} *Pitch deck* e comunicação para bancas de fomento e investidores
+1. Modelo de Negócio vs. Plano de Negócio: quando usar cada um?
+2. Estrutura completa de um Plano de Negócio Tecnológico.
+3. Fontes de financiamento: *bootstrapping*, subvenção e *venture capital*.
+4. Fundos regionais de desenvolvimento (FNE/BNB, FINEP, FAPs).
+5. *Pitch deck* e comunicação para bancas de fomento e investidores.
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Objetivo central]{.pitch-card-index}
+[Planejamento e captação regional]{.pitch-heading}
 
 Capacitar o(a) discente a estruturar **planos de negócio** para empreendimentos tecnológicos e projetos territoriais, conectando a lógica estratégica e operacional às **fontes de financiamento e fomento regional** disponíveis no Brasil.
+:::
+
+::: {.pitch-band .pitch-band--teal}
+**Ponte prática:** traduzir hipóteses validadas no *Canvas* em projetos financiáveis por editais e bancos regionais.
 :::
 :::
 :::
 
 # 1 · Plano de Negócio na Era Ágil {.section-header rotulo="Conceito"}
 
-## Para que serve o Plano de Negócio hoje? {.smaller-text .lesson-slide}
+## [Conceito]{.pitch-tag} Para que serve o Plano de Negócio hoje? {#plano-negocio-era-agil .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Complementaridade com o *Canvas*
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Canvas → Plano]{.pitch-card-index}
+[Complementaridade com o Canvas]{.pitch-heading}
 
 - O **Canvas** e o *Lean Startup* servem para **buscar e validar** o modelo de negócio sob alta incerteza.
 - O **Plano de Negócio** entra quando é necessário **executar, escalar e captar recursos formais** (bancos de desenvolvimento, editais FINEP/FAPs, investidores institucionais).
 - **Função dupla:** alinhamento interno da equipe e **redução de assimetria de informação** perante financiadores.
 :::
 
-::: {.column width="50%"}
-### Estrutura Padrão de um Plano Tecnológico
+::: {.pitch-card .pitch-card--gold}
+[Arquitetura documental]{.pitch-card-index}
+[Estrutura padrão de um plano tecnológico]{.pitch-heading}
 
 1. **Sumário Executivo** (síntese decisiva em 1–2 páginas);
 2. **Análise de Mercado e Setorial** (TAM/SAM/SOM, 5 Forças, diferenciais);
@@ -88,12 +101,10 @@ Capacitar o(a) discente a estruturar **planos de negócio** para empreendimentos
 
 # 2 · Financiamento e Fomento Regional {.section-header rotulo="Financiamento"}
 
-## A Escada do Capital para Base Tecnológica {.smaller-text .lesson-slide}
+## [Território]{.pitch-tag .pitch-tag--gold} A Escada do Capital e o Fomento no Nordeste {#escada-capital-nordeste .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
-### Fontes por Estágio de Maturidade
-
+::: {.pitch-grid-55}
+::: {.pitch-table-box}
 | Estágio | Fontes Típicas | Natureza do Capital |
 |---|---|---|
 | **Ideação / P&D** | *Bootstrapping*, editais **PIPE/FAPs, Centelha, Tecnova** | Não reembolsável (subvenção) |
@@ -101,8 +112,9 @@ Capacitar o(a) discente a estruturar **planos de negócio** para empreendimentos
 | **Escala Regional** | Fundos de *Seed / Venture Capital*, **FNE Inovação (BNB)**, BNDES | *Equity* ou dívida subsidiada |
 :::
 
-::: {.column width="45%"}
-### Instrumentos Territoriais no Nordeste
+::: {.pitch-card .pitch-card--teal}
+[Política regional]{.pitch-card-index}
+[Instrumentos territoriais no Nordeste]{.pitch-heading}
 
 - **FNE (Fundo Constitucional de Financiamento do Nordeste — BNB):** linhas com juros diferenciados para inovação, sustentabilidade e infraestrutura produtiva regional.
 - **SUDENE / Incentivos Fiscais:** redução de IRPJ para empreendimentos prioritários na área de atuação.
@@ -110,29 +122,49 @@ Capacitar o(a) discente a estruturar **planos de negócio** para empreendimentos
 :::
 :::
 
-## Esquema: Escada de Financiamento e Fomento Regional {.smaller-text .lesson-slide}
+::: {.pitch-band .pitch-band--navy}
+No Nordeste, instrumentos constitucionais (FNE/BNB) e subvenções (FINEP/FAPs) compensam parcialmente a menor densidade de *venture capital* privado.
+:::
 
-![Instrumentos financeiros por estágio de maturidade tecnológica (TRL): do *bootstrapping* e subvenção econômica (FINEP/FAPs) ao *Venture Capital* e FNE Inovação.](img/et_escada_financiamento.png){.fig-full}
+## [Síntese]{.pitch-tag .pitch-tag--teal} Esquema: Escada de Financiamento e Fomento Regional {#esquema-escada-financiamento .smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--tall}
+![Instrumentos financeiros por estágio de maturidade tecnológica (TRL): do bootstrapping e subvenção econômica (FINEP/FAPs) ao Venture Capital e FNE Inovação.](img/et_escada_financiamento.png)
+
+[Escada de Financiamento e Fomento Regional por estágio TRL]{.pitch-caption}
+[Alinhamento entre redução de incerteza tecnológica e adequação das fontes de capital]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band}
+Captar a fonte errada no estágio errado (ex.: dívida bancária em TRL 2) compromete a sobrevivência financeira do empreendimento.
+:::
 
 # 3 · Métricas-Chave e Pitch {.section-header rotulo="Métricas"}
 
-## Indicadores de Tração e Estrutura do *Pitch Deck* {.smaller-text .lesson-slide}
+## [Método]{.pitch-tag .pitch-tag--teal} Indicadores de Tração, Pitch Deck e Leituras {#metricas-pitch-leituras .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### *Unit Economics* Essenciais
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Economia da unidade]{.pitch-card-index}
+[*Unit Economics* essenciais]{.pitch-heading}
 
-- **CAC (Custo de Aquisição de Cliente):** gasto comercial/marketing dividido por novos clientes.
+- **CAC (Custo de Aquisição de Cliente):** gasto comercial e de marketing dividido por novos clientes.
 - **LTV (*Lifetime Value*):** margem líquida gerada pelo cliente ao longo do relacionamento.
-- **Regra de saúde:** $\text{LTV} / \text{CAC} \ge 3$ e recuperação do CAC em até 12 meses.
 - **Ponto de Equilíbrio (*Break-even*):** volume mínimo de vendas para cobrir custos fixos e variáveis.
 :::
 
-::: {.column width="50%"}
-### Leituras para a Próxima Aula
+::: {.pitch-formula}
+**Regra de saúde financeira:** $\text{LTV} / \text{CAC} \ge 3$ com recuperação do CAC em até 12 meses.
+:::
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Preparação · Aula 11]{.pitch-card-index}
+[Leituras para a próxima aula]{.pitch-heading}
 
 - **CHESBROUGH, H.** *Open innovation* (Caps. 1 e 3).
 - **KURATKO, D. F.; COVIN, J. G.** *Corporate entrepreneurship*.
-- Literatura sobre **Spin-offs Acadêmicas** e atuação dos NITs no Brasil.
+- Literatura sobre **Spin-offs Acadêmicas** e atuação dos **NITs** no Brasil.
 :::
 :::

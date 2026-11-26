@@ -1,0 +1,523 @@
+/* Estilo compartilhado da disciplina Empreendedorismo Tecnológico e Desenvolvimento Territorial
+   Mantém a estrutura e identidade acadêmica UEFS/PLANTERR (#1f4268 + #b38a3d + #0e7c7b),
+   aplicando a hierarquia de cartões, tags, fórmulas e diagramas em todas as aulas (01-15 + 09a). */
+
+:root {
+  --pitch-navy: #1f4268;
+  --pitch-navy-dark: #152e4a;
+  --pitch-gold: #b38a3d;
+  --pitch-gold-dark: #8c6927;
+  --pitch-gold-soft: #f8f3e9;
+  --pitch-teal: #0e7c7b;
+  --pitch-teal-soft: #ebf6f5;
+  --pitch-alert: #9e2a2b;
+  --pitch-alert-soft: #fdf2f2;
+  --pitch-bg: #f5f7fa;
+  --pitch-surface: #ffffff;
+  --pitch-border: #d5dee8;
+  --pitch-text: #26313d;
+  --pitch-muted: #5b6573;
+}
+
+/* Fundo sutil nos slides de conteúdo (mantém capa e seções no padrão da disciplina) */
+.reveal .slides section.academic-slide.lesson-slide {
+  background: var(--pitch-bg);
+  padding: 28px 56px 110px;
+}
+
+/* Cabeçalho com tag de etapa discreta */
+.reveal .academic-slide.lesson-slide > h2 {
+  font-size: 31px;
+  line-height: 1.14;
+  max-width: 1168px;
+  color: var(--pitch-navy);
+}
+
+.reveal .academic-slide.lesson-slide > h2 > .pitch-tag {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  padding: 3px 11px;
+  border-radius: 999px;
+  background: var(--pitch-navy);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+.reveal .academic-slide.lesson-slide > h2 > .pitch-tag--gold {
+  background: var(--pitch-gold-dark);
+}
+
+.reveal .academic-slide.lesson-slide > h2 > .pitch-tag--teal {
+  background: var(--pitch-teal);
+}
+
+.reveal .academic-slide.lesson-slide > h2 > .pitch-tag--alert {
+  background: var(--pitch-alert);
+}
+
+.reveal .academic-slide.lesson-slide > h2::after {
+  width: 82px;
+  height: 3.5px;
+  margin-top: 9px;
+  background: linear-gradient(90deg, var(--pitch-navy) 0%, var(--pitch-gold) 100%);
+  border-radius: 2px;
+}
+
+.reveal .academic-slide.lesson-slide .academic-slide-body {
+  right: 56px;
+  left: 56px;
+  bottom: 108px;
+}
+
+.reveal .academic-slide.lesson-slide .academic-slide-content {
+  font-size: 22.5px;
+  line-height: 1.26;
+}
+
+.reveal .academic-slide.lesson-slide h3 {
+  font-size: 24px;
+  margin: 0 0 8px;
+  color: var(--pitch-navy);
+}
+
+/* ==========================================================================
+   CARTÕES, BLOCOS E ÍNDICES
+   ========================================================================== */
+.reveal .academic-slide .pitch-card {
+  background: var(--pitch-surface);
+  border: 1px solid var(--pitch-border);
+  border-left: 5px solid var(--pitch-navy);
+  border-radius: 10px;
+  padding: 15px 18px;
+  box-shadow: 0 3px 10px rgba(31, 66, 104, 0.05);
+  min-height: auto;
+}
+
+.reveal .academic-slide .pitch-card--gold {
+  border-left-color: var(--pitch-gold);
+  background: #fffdf9;
+}
+
+.reveal .academic-slide .pitch-card--teal {
+  border-left-color: var(--pitch-teal);
+}
+
+.reveal .academic-slide .pitch-card--alert {
+  border-left-color: var(--pitch-alert);
+  background: var(--pitch-alert-soft);
+}
+
+.reveal .academic-slide .pitch-card-index {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--pitch-navy);
+  background: #edf2f7;
+  padding: 2px 9px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+
+.reveal .academic-slide .pitch-card--gold .pitch-card-index {
+  color: var(--pitch-gold-dark);
+  background: var(--pitch-gold-soft);
+}
+
+.reveal .academic-slide .pitch-card--teal .pitch-card-index {
+  color: var(--pitch-teal);
+  background: var(--pitch-teal-soft);
+}
+
+.reveal .academic-slide .pitch-card--alert .pitch-card-index {
+  color: var(--pitch-alert);
+  background: #f9e3e3;
+}
+
+.reveal .academic-slide .pitch-heading {
+  display: block;
+  font-size: 20.5px;
+  line-height: 1.18;
+  font-weight: 700;
+  color: var(--pitch-navy);
+  margin-bottom: 6px;
+}
+
+.reveal .academic-slide .pitch-card p,
+.reveal .academic-slide .pitch-card li {
+  font-size: 18.5px;
+  line-height: 1.26;
+  color: var(--pitch-text);
+}
+
+.reveal .academic-slide .pitch-card p {
+  margin: 0 0 6px;
+}
+
+.reveal .academic-slide .pitch-card ul,
+.reveal .academic-slide .pitch-card ol {
+  margin: 4px 0 0 18px;
+  padding: 0;
+}
+
+.reveal .academic-slide .pitch-card li {
+  margin-bottom: 5px;
+}
+
+.reveal .academic-slide .pitch-card li:last-child,
+.reveal .academic-slide .pitch-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Grades de cartões, colunas e fluxos */
+.reveal .academic-slide .pitch-grid-50 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.reveal .academic-slide .pitch-grid-55 {
+  display: grid;
+  grid-template-columns: minmax(0, 1.22fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.reveal .academic-slide .pitch-grid-60 {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.reveal .academic-slide .pitch-grid-40 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr);
+  gap: 18px;
+  align-items: start;
+}
+
+/* Grades de cartões e fluxos */
+.reveal .academic-slide .pitch-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.reveal .academic-slide .pitch-cards-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.reveal .academic-slide .pitch-flow-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.reveal .academic-slide .pitch-canvas {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 11px;
+  margin: 4px 0 12px;
+}
+
+.reveal .academic-slide .pitch-canvas .pitch-card {
+  padding: 12px 13px;
+  border-radius: 8px;
+}
+
+.reveal .academic-slide .pitch-canvas .pitch-card .pitch-heading {
+  font-size: 17.5px;
+  margin-bottom: 4px;
+}
+
+.reveal .academic-slide .pitch-canvas .pitch-card p {
+  font-size: 16.5px;
+  line-height: 1.22;
+}
+
+/* Pilares da capa de abertura e etiquetas */
+.reveal .academic-slide .pitch-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 10px;
+}
+
+.reveal .academic-slide .pitch-pill {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #edf2f7;
+  border: 1px solid var(--pitch-border);
+  color: var(--pitch-navy);
+  font-size: 15.5px;
+  font-weight: 700;
+}
+
+.reveal .academic-slide .pitch-pill--gold {
+  background: var(--pitch-gold-soft);
+  border-color: #dfd0b2;
+  color: var(--pitch-gold-dark);
+}
+
+/* Faixas de síntese / alerta */
+.reveal .academic-slide .pitch-band {
+  border: 1px solid var(--pitch-border);
+  border-left: 5px solid var(--pitch-gold);
+  background: var(--pitch-surface);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 10px 0 6px;
+  font-size: 19.5px;
+  line-height: 1.25;
+  color: var(--pitch-navy);
+  box-shadow: 0 2px 8px rgba(31, 66, 104, 0.04);
+}
+
+.reveal .academic-slide .pitch-band--navy {
+  background: var(--pitch-navy);
+  border-color: var(--pitch-navy);
+  border-left: 5px solid var(--pitch-gold);
+  color: #ffffff;
+}
+
+.reveal .academic-slide .pitch-band--teal {
+  border-left-color: var(--pitch-teal);
+  background: var(--pitch-teal-soft);
+}
+
+.reveal .academic-slide .pitch-band p {
+  margin: 0;
+}
+
+/* Fórmula em destaque */
+.reveal .academic-slide .pitch-formula {
+  background: var(--pitch-surface);
+  border: 1px solid #dfd0b2;
+  border-left: 6px solid var(--pitch-gold);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 6px 0 16px;
+  font-size: 22px;
+  line-height: 1.32;
+  box-shadow: 0 4px 12px rgba(31, 66, 104, 0.05);
+}
+
+.reveal .academic-slide .pitch-formula p {
+  margin: 0 0 8px;
+}
+
+.reveal .academic-slide .pitch-formula p:last-child {
+  margin-bottom: 0;
+}
+
+/* Passos verticais (Oficina, Etapas e Canvas) */
+.reveal .academic-slide .pitch-milestones {
+  display: grid;
+  gap: 10px;
+}
+
+.reveal .academic-slide .pitch-milestone-item {
+  background: var(--pitch-surface);
+  border: 1px solid var(--pitch-border);
+  border-left: 5px solid var(--pitch-navy);
+  border-radius: 10px;
+  padding: 10px 14px;
+  box-shadow: 0 2px 8px rgba(31, 66, 104, 0.04);
+}
+
+.reveal .academic-slide .pitch-milestone-item:nth-child(even) {
+  border-left-color: var(--pitch-gold);
+}
+
+.reveal .academic-slide .pitch-milestone-item p {
+  font-size: 18px;
+  line-height: 1.24;
+  margin: 0;
+}
+
+.reveal .academic-slide .pitch-milestone-item strong {
+  color: var(--pitch-navy);
+}
+
+/* Cronograma 3 minutos */
+.reveal .academic-slide .pitch-timeline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 6px 0 14px;
+}
+
+.reveal .academic-slide .pitch-time {
+  background: var(--pitch-surface);
+  border: 1px solid var(--pitch-border);
+  border-top: 4px solid var(--pitch-navy);
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 3px 10px rgba(31, 66, 104, 0.05);
+}
+
+.reveal .academic-slide .pitch-time:nth-child(even) {
+  border-top-color: var(--pitch-gold);
+}
+
+.reveal .academic-slide .pitch-time p {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.24;
+}
+
+.reveal .academic-slide .pitch-time-badge {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--pitch-navy);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.reveal .academic-slide .pitch-time:nth-child(even) .pitch-time-badge {
+  background: var(--pitch-gold-dark);
+}
+
+/* ==========================================================================
+   CARTÕES DE MÍDIA / FOTOGRAFIAS / DIAGRAMAS (sem cortes nem texto solto)
+   ========================================================================== */
+.reveal .academic-slide .pitch-media-card {
+  background: var(--pitch-surface);
+  border: 1px solid var(--pitch-border);
+  border-radius: 12px;
+  padding: 10px 12px 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(31, 66, 104, 0.06);
+}
+
+.reveal .academic-slide .pitch-media-card figure {
+  margin: 0;
+}
+
+.reveal .academic-slide .pitch-media-card figcaption {
+  display: none;
+}
+
+.reveal .academic-slide .pitch-media-card img {
+  display: block;
+  width: 100%;
+  height: 315px;
+  max-height: 315px;
+  object-fit: contain;
+  margin: 0;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.reveal .academic-slide .pitch-media-card--photo img {
+  object-fit: cover;
+}
+
+.reveal .academic-slide .pitch-media-card--wide img {
+  height: 340px;
+  max-height: 340px;
+}
+
+.reveal .academic-slide .pitch-media-card--tall img {
+  height: 385px;
+  max-height: 385px;
+}
+
+.reveal .academic-slide .pitch-media-card--compact img {
+  height: 270px;
+  max-height: 270px;
+}
+
+.reveal .academic-slide .pitch-caption {
+  display: block;
+  margin-top: 8px;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--pitch-navy);
+  line-height: 1.2;
+}
+
+.reveal .academic-slide .pitch-caption-sub {
+  display: block;
+  font-size: 13.5px;
+  color: var(--pitch-muted);
+  margin-top: 3px;
+  line-height: 1.2;
+}
+
+.reveal .academic-slide .pitch-source {
+  font-size: 14px;
+  line-height: 1.24;
+  color: var(--pitch-muted);
+  margin-top: 6px;
+}
+
+.reveal .academic-slide .pitch-source p {
+  margin: 0;
+}
+
+/* Tabela estilizada no cartão branco */
+.reveal .academic-slide .pitch-table-box {
+  background: var(--pitch-surface);
+  border: 1px solid var(--pitch-border);
+  border-radius: 12px;
+  padding: 10px 14px;
+  box-shadow: 0 3px 10px rgba(31, 66, 104, 0.05);
+  margin-bottom: 10px;
+}
+
+.reveal .academic-slide .pitch-table-box table {
+  font-size: 18.5px;
+  margin: 0;
+}
+
+.reveal .academic-slide .pitch-table-box th {
+  background: var(--pitch-navy);
+  color: #ffffff;
+  padding: 9px 11px;
+}
+
+.reveal .academic-slide .pitch-table-box td {
+  padding: 8px 11px;
+}
+
+/* Lista de checagem em grade limpa e caixas legadas */
+.reveal .academic-slide .pitch-stack-2 {
+  display: grid;
+  gap: 12px;
+}
+
+.reveal .academic-slide.lesson-slide .columns {
+  gap: 18px;
+}
+
+.reveal .academic-slide.lesson-slide .info-box,
+.reveal .academic-slide.lesson-slide .highlight-box {
+  background: var(--pitch-surface);
+  border: 1px solid var(--pitch-border);
+  border-left: 5px solid var(--pitch-navy);
+  border-radius: 10px;
+  padding: 13px 16px;
+  box-shadow: 0 3px 10px rgba(31, 66, 104, 0.05);
+}
+
+.reveal .academic-slide.lesson-slide .highlight-box {
+  border-left-color: var(--pitch-gold);
+  background: var(--pitch-gold-soft);
+}

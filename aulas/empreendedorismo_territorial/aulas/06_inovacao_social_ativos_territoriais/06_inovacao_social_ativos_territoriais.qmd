@@ -6,14 +6,16 @@ lang: pt-BR
 academico:
   cabecalho:
     - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
-    - "PPGPT · Empreendedorismo Tecnológico e Desenvolvimento Territorial"
-    - "Aula 06 · 4 horas"
-  rodape: "UEFS · PPGPT · Aula 06 · Inovação Social e Ativos Territoriais"
+    - "PLANTERR · Programa de Pós-Graduação em Planejamento Territorial"
+    - "Empreendedorismo Tecnológico e Desenvolvimento Territorial · Aula 06 · 4 horas"
+  rodape: "UEFS · PLANTERR · Aula 06 · Inovação Social e Ativos Territoriais"
   local: "Feira de Santana – Bahia"
 format:
   revealjs:
     theme: ../../../assets/academico/academico.scss
-    css: ../../../assets/academico/academico.css
+    css:
+      - ../../../assets/academico/academico.css
+      - ../../assets/planterr-slides.css
     include-after-body:
       - ../../../assets/academico/academico.html
     slide-number: false
@@ -27,6 +29,9 @@ format:
     embed-resources: true
     transition: fade
     background-transition: none
+    auto-stretch: false
+    pdf-separate-fragments: false
+    pdf-max-pages-per-slide: 1
   beamer:
     pdf-engine: xelatex
     aspectratio: 169
@@ -39,125 +44,189 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text .lesson-slide}
+## [Unidade I]{.pitch-tag} Visão Geral da Aula {#visao-geral .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Roteiro da aula · 4 horas]{.pitch-card-index}
+[Tópicos estruturantes]{.pitch-heading}
 
-- [1]{.circle} Crítica à tecnologia convencional vs. Tecnologia Social emancipatória (Dagnino, 2014)
-- [2]{.circle} Maximização de lucro vs. autogestão e Economia Solidária (Singer, 2002)
-- [3]{.circle} Apropriação privada vs. ativos coletivos territoriais: Indicações Geográficas (IGs)
-- [4]{.circle} Bioeconomia territorial e valorização da sociobiodiversidade
-- [5]{.circle} Matriz de Debate Crítico da Unidade I e orientações para o Seminário/Fichamento (AV1)
+1. Crítica à tecnologia convencional vs. Tecnologia Social emancipatória (Dagnino, 2014).
+2. Maximização de lucro vs. autogestão e Economia Solidária (Singer, 2002).
+3. Apropriação privada vs. ativos coletivos territoriais: Indicações Geográficas (IGs).
+4. Bioeconomia territorial e valorização da sociobiodiversidade.
+5. Matriz de Debate Crítico da Unidade I e orientações para Seminário/Fichamento (AV1).
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Objetivo central]{.pitch-card-index}
+[Inovação social e valor distribuído]{.pitch-heading}
 
 Aprofundar a dimensão territorial da inovação social, analisando como **tecnologias sociais**, **empreendimentos econômicos solidários**, **indicações geográficas** e a **bioeconomia** convertem saberes e recursos locais em valor distribuído no território.
 :::
+
+::: {.pitch-band .pitch-band--teal}
+**Fechamento da Unidade I:** articulação dos marcos teóricos territoriais para a avaliação AV1.
+:::
 :::
 :::
 
-## Ponto de Partida: Por Que nem Toda Tecnologia Funciona em Todo Território? {.smaller-text .lesson-slide}
+## [Território]{.pitch-tag .pitch-tag--gold} Por que nem toda tecnologia funciona em todo território? {#ponto-partida .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### O Problema da Transferência Cega
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--alert}
+[01 · Assimetria]{.pitch-card-index}
+[O problema da transferência cega]{.pitch-heading}
 
 - Um equipamento projetado para grandes escalas industriais costuma exigir capital alto, peças importadas e mão de obra escassa localmente.
 - Quando instalado sem adaptação em cooperativas ou comunidades rurais, tende a gerar dependência técnica e baixa apropriação de renda.
 :::
 
-::: {.column width="50%"}
-### A Resposta pela Inovação Territorial
+::: {.pitch-card .pitch-card--teal}
+[02 · Enraizamento]{.pitch-card-index}
+[A resposta pela inovação territorial]{.pitch-heading}
 
 - **Tecnologia Social:** soluções cocriadas com a comunidade, de baixo custo e reaplicáveis (como cisternas de placas e sistemas de reúso de água).
 - **Ativos Territoriais Protegidos:** transformar saberes, clima e biodiversidade locais em valor reconhecido (Indicações Geográficas e bioeconomia).
 :::
 :::
 
+::: {.pitch-band .pitch-band--navy}
+Inovar no território exige adequação sociotécnica: tecnologia não é neutra e precisa dialogar com a organização social local.
+:::
+
 # 1 · Tecnologia Social e Economia Solidária {.section-header rotulo="Tecnologia Social"}
 
-## Tecnologia Convencional vs. Tecnologia Social (Dagnino, 2014) {.smaller-text .lesson-slide}
+## [Crítica]{.pitch-tag .pitch-tag--alert} Tecnologia Convencional vs. Tecnologia Social (Dagnino, 2014) {#ts-economia-solidaria .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Crítica à Neutralidade Tecnológica
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[01 · Adequação sociotécnica]{.pitch-card-index}
+[Crítica à neutralidade tecnológica]{.pitch-heading}
 
 - A **tecnologia convencional** é desenhada para escalas industriais, poupando mão de obra e concentrando renda.
 - A **Tecnologia Social (TS)** envolve produtos, técnicas ou metodologias **reaplicáveis**, desenvolvidas na interação com a comunidade e voltadas à transformação social.
-- **Exemplos emblemáticos no Brasil:** cisternas de placas (ASA), biodigestores rurais, bancos comunitários de desenvolvimento e sistemas agroflorestais.
+- **Exemplos no Brasil:** cisternas de placas (ASA), biodigestores rurais, bancos comunitários de desenvolvimento e sistemas agroflorestais.
 :::
 
-::: {.column width="50%"}
-### Economia Solidária (Singer, 2002)
+::: {.pitch-card .pitch-card--gold}
+[02 · Autogestão]{.pitch-card-index}
+[Economia Solidária (Singer, 2002)]{.pitch-heading}
 
 - Baseada em **autogestão**, propriedade coletiva dos meios de produção e repartição equitativa de excedentes.
 - **Desafio de gestão:** conciliar democracia interna (cooperativas e associações) com eficiência operacional e acesso a mercados dinâmicos.
+:::
+:::
 
-::: {.highlight-box}
-**Síntese Territorial:** A articulação entre **tecnologia social + organização solidária + assessoria técnica universitária** reduz a dependência de pacotes tecnológicos exógenos.
-:::
-:::
+::: {.pitch-band}
+**Síntese Territorial:** a articulação entre **tecnologia social + organização solidária + assessoria técnica universitária** reduz a dependência de pacotes tecnológicos exógenos.
 :::
 
 # 2 · Indicações Geográficas e Bioeconomia {.section-header rotulo="Ativos Territoriais"}
 
-## Indicações Geográficas (IGs) e Valorização do *Terroir* {.smaller-text .lesson-slide}
+## [Conceito]{.pitch-tag} Indicações Geográficas e Bioeconomia Territorial {#igs-bioeconomia .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### PI Coletiva no Território (Lei nº 9.279/1996)
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--gold}
+[Lei nº 9.279/1996]{.pitch-card-index}
+[PI coletiva e valorização do *terroir*]{.pitch-heading}
 
 - **Indicação de Procedência (IP):** nome geográfico conhecido como centro de extração, produção ou fabricação de determinado produto/serviço.
 - **Denominação de Origem (DO):** qualidades ou características devem-se exclusiva ou essencialmente ao **meio geográfico** (fatores naturais + humanos).
 - **Efeito econômico:** cria **diferenciação protegida** que impede apropriação por concorrentes externos e retém margem na região produtora.
 :::
 
-::: {.column width="50%"}
-### Bioeconomia Territorial e Sociobiodiversidade
+::: {.pitch-card .pitch-card--teal}
+[Lei nº 13.123/2015]{.pitch-card-index}
+[Bioeconomia e sociobiodiversidade]{.pitch-heading}
 
 - Uso intensivo de conhecimento científico aliado a saberes tradicionais para gerar bioprodutos, bioinsumos e serviços ecossistêmicos.
 - **Cuidado crítico:** evitar a "biopirataria" ou cadeias extrativistas onde apenas a matéria-prima bruta sai do território e o valor agregado fica fora.
-- **Instrumento-chave:** repartição de benefícios (Lei da Biodiversidade, Lei nº 13.123/2015).
+- **Instrumento-chave:** repartição de benefícios (Lei da Biodiversidade).
 :::
 :::
 
-## Síntese Visual: Tecnologia Social e Indicações Geográficas {.smaller-text .lesson-slide}
+::: {.pitch-band .pitch-band--navy}
+Ativos territoriais coletivos convertem identidade, clima, solo e saber-fazer regional em barreiras legítimas à comoditização.
+:::
 
-![Síntese entre Tecnologia Social e Indicações Geográficas no território](img/et_tecnologia_social_ig.png){width="95%" fig-align="center"}
+## [Caso]{.pitch-tag .pitch-tag--gold} Ativos territoriais na prática: Café da Chapada Diamantina {#caso-chapada .smaller-text .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--wide}
+![Embalagem e sachê drip bag do Café Latitude 13 Blend Chapada Diamantina (Fazenda Progresso).](img/foto_cafe_chapada_diamantina.jpg)
+
+[Café Latitude 13 · Blend Chapada Diamantina (BA)]{.pitch-caption}
+[Registro empírico de produto territorial com indicação de origem, lote e formato de alto valor agregado]{.pitch-caption-sub}
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Diferenciação no território]{.pitch-card-index}
+[Do grão *commodity* ao ativo de origem]{.pitch-heading}
+
+- **Identidade geográfica:** associação explícita à **Chapada Diamantina**, vinculando altitude, manejo e colheita seletiva ao perfil sensorial.
+- **Agregação tecnológica de formato:** uso de *drip bag* individual, elevando conveniência e preço por dose frente ao café torrado convencional.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Rastreabilidade e mercado]{.pitch-card-index}
+[Acesso a nichos globais]{.pitch-heading}
+
+- Identificação de lote, validade e origem permite inserção direta em mercados internacionais exigentes (EUA, Europa e Ásia), retendo marca e valor na região produtora.
+:::
+:::
+:::
+
+## [Síntese]{.pitch-tag .pitch-tag--teal} Tecnologia Social e Indicações Geográficas no território {#esquema-ts-ig .smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--tall}
+![Síntese entre Tecnologia Social e Indicações Geográficas no território](img/et_tecnologia_social_ig.png)
+
+[Convergência entre Tecnologia Social (Dagnino, 2014) e Indicações Geográficas (Lei nº 9.279/1996)]{.pitch-caption}
+[Estratégia combinada de apropriação local de conhecimento e retenção de valor na bioeconomia regional]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band .pitch-band--navy}
+Enquanto a **Tecnologia Social** democratiza os meios técnicos de produção, as **Indicações Geográficas** protegem coletivamente o valor simbólico e econômico no mercado.
+:::
 
 # 3 · Fechamento da Unidade I {.section-header rotulo="Fechamento"}
 
-## Matriz de Debate Crítico para o Seminário e Fichamento (AV1) {.smaller-text .lesson-slide}
+## [Crítica]{.pitch-tag .pitch-tag--alert} Matriz de Debate Crítico para Seminário e Fichamento (AV1) {#matriz-av1 .smaller-text .lesson-slide}
 
+::: {.pitch-table-box}
 | Tema em Disputa | Abordagem Tradicional / Canônica | Contraponto Crítico Sociológico e Territorial |
 | :--- | :--- | :--- |
 | **Origem da Inovação** | Empreendedor individual privado (*Schumpeter I*) ou laboratório corporativo (*Schumpeter II*). | Estado como investidor de primeiro risco (Mazzucato) e redes coletivas de aprendizado (Lundvall; Dosi). |
 | **Papel do Território** | Espaço físico neutro para economias externas de custo e transação (*Clusters* de Porter). | Construção social e institucional; risco de *lock-in* e dependência de trajetória (Boschma; Cassiolato & Lastres; Santos). |
 | **Modelo de Ecossistema** | Transplante de modelos hegemônicos ("Vales do Silício" locais via parques padronizados). | Especialização Inteligente (Foray), APLs enraizados e Hélice Quádrupla/Quíntupla orientada por missões públicas. |
 | **Objetivo do Empreendimento** | Escalar *startups* para maximização de valor privado de saída (*exit*) a fundos de capital de risco. | Valor territorial compartilhado, Tecnologias Sociais emancipatórias (Dagnino), Economia Solidária (Singer) e IGs. |
+:::
 
-## Leituras para a Próxima Aula e Orientação AV1 {.smaller-text .lesson-slide}
+::: {.pitch-band}
+**Uso na AV1:** selecione um caso territorial empírico e posicione-o criticamente nos quatro eixos da matriz.
+:::
 
-::: {.columns}
-::: {.column width="50%"}
-### Síntese da Unidade I (Pontos 1, 7, 10 e 12)
+## [Síntese]{.pitch-tag .pitch-tag--teal} Leituras, AV1 e transição para a Unidade II {#leituras-av1 .smaller-text .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Fechamento da Unidade I]{.pitch-card-index}
+[Síntese (Pontos 1, 7, 10 e 12)]{.pitch-heading}
 
 - Revisamos a base territorial do empreendedorismo: assimetrias espaciais, barreiras de entrada/APLs, ecossistemas/SRI/Hélices e inovação social/impacto.
 - **AV1 (30%):** Seminários temáticos e entrega do fichamento crítico articulando um caso territorial aos autores da Unidade I.
 :::
 
-::: {.column width="50%"}
-### Leituras da Aula 06 e Transição para a Unidade II
+::: {.pitch-card .pitch-card--teal}
+[Referências da Aula 06 e Aula 07]{.pitch-card-index}
+[Leituras obrigatórias]{.pitch-heading}
 
 - **DAGNINO, R.** *Tecnologia Social: contribuições conceituais e metodológicas*. EDUEPB / SciELO, 2014.
 - **SINGER, P.** *Introdução à Economia Solidária*. Fundação Perseu Abramo, 2002.
-- **BRASIL.** *Lei nº 9.279/1996* (Indicações Geográficas — IP e DO) e *Lei nº 13.123/2015* (Sociobiodiversidade).
-- **SHANE, S.; VENKATARAMAN, S.** *The promise of entrepreneurship as a field of research*. AMR, 2000 (Aula 07).
-- **SARASVATHY, S. D.** *Causation and effectuation*. AMR, 2001; **BYERS; DORF; NELSON.** *Technology ventures*, 2015 (Aula 07).
+- **BRASIL.** *Lei nº 9.279/1996* (IGs — IP e DO) e *Lei nº 13.123/2015* (Sociobiodiversidade).
+- **SHANE & VENKATARAMAN** (*AMR*, 2000); **SARASVATHY** (*AMR*, 2001); **BYERS; DORF; NELSON** (2015) — *Aula 07*.
 :::
 :::

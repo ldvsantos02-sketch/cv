@@ -6,14 +6,16 @@ lang: pt-BR
 academico:
   cabecalho:
     - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
-    - "PPGPT · Empreendedorismo Tecnológico e Desenvolvimento Territorial"
-    - "Aula 04 · 4 horas"
-  rodape: "UEFS · PPGPT · Aula 04 · Governança da Inovação"
+    - "PLANTERR · Programa de Pós-Graduação em Planejamento Territorial"
+    - "Empreendedorismo Tecnológico e Desenvolvimento Territorial · Aula 04 · 4 horas"
+  rodape: "UEFS · PLANTERR · Aula 04 · Governança da Inovação"
   local: "Feira de Santana – Bahia"
 format:
   revealjs:
     theme: ../../../assets/academico/academico.scss
-    css: ../../../assets/academico/academico.css
+    css:
+      - ../../../assets/academico/academico.css
+      - ../../assets/planterr-slides.css
     include-after-body:
       - ../../../assets/academico/academico.html
     slide-number: false
@@ -27,6 +29,9 @@ format:
     embed-resources: true
     transition: fade
     background-transition: none
+    auto-stretch: false
+    pdf-separate-fragments: false
+    pdf-max-pages-per-slide: 1
   beamer:
     pdf-engine: xelatex
     aspectratio: 169
@@ -39,35 +44,59 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text .lesson-slide}
+## [Unidade I]{.pitch-tag} Visão geral da aula {#visao-geral .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
-
-- [1]{.circle} Hélice Trípode, Quádrupla e Quíntupla no território
-- [2]{.circle} O Estado Empreendedor (Mazzucato): socialização do risco vs. privatização do lucro
-- [3]{.circle} Crítica ao isomorfismo do Vale do Silício e Especialização Inteligente (Foray)
-- [4]{.circle} Infraestruturas de suporte: parques tecnológicos, incubadoras e NITs
-- [5]{.circle} Marco Legal de CT&I no Brasil e instrumentos regionais
+::: {.pitch-grid-55}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**01 · Modelos em hélice:** Hélice Tríplice, Quádrupla e Quíntupla no território.
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-milestone-item}
+**02 · Estado Empreendedor:** Mazzucato — socialização do risco vs. privatização do lucro.
+:::
+
+::: {.pitch-milestone-item}
+**03 · Crítica ao isomorfismo:** Limites da cópia do Vale do Silício e *Smart Specialisation* (Foray).
+:::
+
+::: {.pitch-milestone-item}
+**04 · Habitats de suporte:** Parques tecnológicos, incubadoras, aceleradoras e NITs.
+:::
+
+::: {.pitch-milestone-item}
+**05 · Marco Legal de CT&I:** Leis 10.973/2004 e 13.243/2016 e instrumentos regionais.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Propósito formativo]{.pitch-card-index}
+[Objetivo da aula]{.pitch-heading}
 
 Examinar os mecanismos de **governança territorial da inovação**, o papel do Estado e das universidades na criação de mercados e a efetividade de parques tecnológicos, incubadoras e políticas públicas de CT&I.
+:::
+
+::: {.pitch-pill-row}
+[Hélice Quíntupla]{.pitch-pill}
+[Missões · Mazzucato]{.pitch-pill .pitch-pill--gold}
+[Marco Legal CT&I]{.pitch-pill}
+:::
+
+::: {.pitch-band}
+**Questão crítica:** Como evitar que habitats de inovação e investimentos públicos se convertam em enclaves isolados da estrutura produtiva regional?
 :::
 :::
 :::
 
 # 1 · Modelos em Hélice {.section-header rotulo="Hélices"}
 
-## Da Hélice Trípode à Hélice Quádrupla/Quíntupla {.smaller-text .lesson-slide}
+## [Conceito]{.pitch-tag} Da Hélice Tríplice à Quádrupla e Quíntupla {#helices-governanca .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Hélice Trípode (Etzkowitz & Leydesdorff, 2000)
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Etzkowitz & Leydesdorff (2000)]{.pitch-card-index}
+[Hélice Tríplice]{.pitch-heading}
 
 - **Universidade:** geração de conhecimento, talento e *spin-offs* (Universidade Empreendedora).
 - **Empresa:** produção, absorção tecnológica e escala de mercado.
@@ -75,54 +104,64 @@ Examinar os mecanismos de **governança territorial da inovação**, o papel do 
 - **Espaços de consenso e inovação:** zonas híbridas onde as três esferas assumem papéis umas das outras.
 :::
 
-::: {.column width="50%"}
-### Hélice Quádrupla e Quíntupla (Carayannis & Campbell, 2009; 2010)
+::: {.pitch-card .pitch-card--teal}
+[Carayannis & Campbell (2009; 2010)]{.pitch-card-index}
+[Hélice Quádrupla e Quíntupla]{.pitch-heading}
 
-- **4ª Hélice:** **Sociedade civil / usuários / mídia e cultura** — legitima demandas sociais e cocria soluções (*Living Labs*).
-- **5ª Hélice:** **Ambiente natural e sustentabilidade socioecológica** — orienta a inovação para a transição ecológica.
-
-::: {.highlight-box}
-**Leitura PPGPT:** Sem a 4ª e a 5ª hélices, parques e polos tecnológicos correm o risco de se tornarem **enclaves desconectados** do território onde estão instalados.
-:::
+- **4ª Hélice — Sociedade civil, usuários, mídia e cultura:** legitima demandas sociais e cocria soluções (*Living Labs*).
+- **5ª Hélice — Ambiente natural e sustentabilidade socioecológica:** orienta a inovação para a transição ecológica.
 :::
 :::
 
-## Esquema: Da Hélice Trípode à Hélice Quíntupla {.smaller-text .lesson-slide}
+::: {.pitch-band}
+**Leitura PLANTERR:** Sem a 4ª e a 5ª hélices, parques e polos tecnológicos correm o risco de se tornarem **enclaves desconectados** do território onde estão instalados.
+:::
 
-![Modelo de governança territorial da inovação integrando Universidade, Empresa, Governo, Sociedade Civil (4ª hélice) e Ambiente Natural (5ª hélice).](img/et_helice_quadrupla_quintupla.png){.fig-full}
+## [Síntese]{.pitch-tag .pitch-tag--teal} Da Hélice Tríplice à Hélice Quíntupla {#esquema-helices .smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--tall}
+![Modelo de governança territorial da inovação integrando Universidade, Empresa, Governo, Sociedade Civil (4ª hélice) e Ambiente Natural (5ª hélice).](img/et_helice_quadrupla_quintupla.png)
+
+[Governança territorial: da Hélice Tríplice à Hélice Quíntupla]{.pitch-caption}
+[Integração entre Universidade, Empresa, Governo, Sociedade Civil (4ª hélice) e Ambiente Natural (5ª hélice)]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band .pitch-band--teal}
+A 4ª e a 5ª hélices deslocam o foco da mera transferência tecnológica para a legitimidade territorial e a transição socioecológica.
+:::
 
 # 2 · O Estado Empreendedor {.section-header rotulo="Estado"}
 
-## Financiamento de Risco e Políticas Orientadas por Missões {.smaller-text .lesson-slide}
+## [Conceito]{.pitch-tag} Financiamento de risco e políticas por missões {#estado-empreendedor-missoes .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### A Tese de Mariana Mazzucato (2014)
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Mariana Mazzucato (2014)]{.pitch-card-index}
+[O Estado criador de mercados]{.pitch-heading}
 
 - O Estado não apenas "corrige falhas de mercado": ele **cria e molda mercados** assumindo o risco tecnológico inicial que o capital privado evita.
 - **Exemplos históricos:** internet, GPS, telas sensíveis ao toque, biotecnologia inicial e transição energética.
 - **Problema da assimetria:** socialização dos riscos na fase de P&D e privatização dos retornos na fase comercial.
 :::
 
-::: {.column width="50%"}
-### Políticas Orientadas por Missões (*Missions*)
+::: {.pitch-card .pitch-card--gold}
+[Direcionalidade territorial]{.pitch-card-index}
+[Políticas orientadas por missões (*Missions*)]{.pitch-heading}
 
-- Em vez de subsídios genéricos, definir **missões territoriais claras** (ex.: descarbonização de cadeias locais, segurança hídrica no Semiárido, bioeconomia florestal).
+- Em vez de subsídios genéricos, definir **missões territoriais claras** (descarbonização de cadeias locais, segurança hídrica no Semiárido, bioeconomia florestal).
 - **Instrumentos:**
   - Compras públicas de inovação (Encomenda Tecnológica — ETEC);
-  - Subvenção econômica direta a empresas (FINEP, EMBRAPII, FAPs);
+  - Subvenção econômica direta (FINEP, EMBRAPII, FAPs);
   - Crédito direcionado e fundos de garantia.
 :::
 :::
 
 # 3 · Parques Tecnológicos, Incubadoras e NITs {.section-header rotulo="Infraestrutura"}
 
-## Habitats de Inovação e Marco Legal Brasileiro {.smaller-text .lesson-slide}
+## [Método]{.pitch-tag .pitch-tag--teal} Habitats de inovação e Marco Legal de CT&I {#habitats-marco-legal .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
-### Tipologia de Habitats de Inovação
-
+::: {.pitch-grid-55}
+::: {.pitch-table-box}
 | Habitat | Público-Alvo | Função Territorial |
 |---------|--------------|--------------------|
 | **Pré-incubadora** | Ideias, projetos acadêmicos | Validação inicial e modelagem |
@@ -131,8 +170,9 @@ Examinar os mecanismos de **governança territorial da inovação**, o papel do 
 | **Parque Tecnológico** | Empresas de P&D, ICTs, *spin-offs* | Adensamento de P&D e atração de talentos |
 :::
 
-::: {.column width="45%"}
-### Marco Legal de CT&I (Lei 10.973/2004 e Lei 13.243/2016)
+::: {.pitch-card .pitch-card--teal}
+[Lei 10.973/2004 e Lei 13.243/2016]{.pitch-card-index}
+[Marco Legal de CT&I no Brasil]{.pitch-heading}
 
 - Institucionaliza os **Núcleos de Inovação Tecnológica (NITs)** nas universidades e ICTs.
 - Permite compartilhamento de laboratórios com empresas, prestação de serviços de P&D e participação minoritária em *spin-offs*.
@@ -142,30 +182,34 @@ Examinar os mecanismos de **governança territorial da inovação**, o papel do 
 
 # 4 · Debate e Caso Comparado {.section-header rotulo="Debate"}
 
-## Contraponto Crítico (Eixo 3): Socialização do Risco e Isomorfismo {.smaller-text .lesson-slide}
+## [Crítica]{.pitch-tag .pitch-tag--alert} Socialização do risco e isomorfismo institucional {#critica-estado-isomorfismo .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### 1. Além das "Falhas de Mercado" (Mazzucato vs. Visão Neoclássica)
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--alert}
+[1 · Mazzucato vs. visão neoclássica]{.pitch-card-index}
+[Além das “falhas de mercado”]{.pitch-heading}
 
 - A teoria convencional restringe o Estado a mero regulador ou corretor de falhas de mercado.
 - **Crítica de Mazzucato:** o Estado atua como investidor de primeiro recurso e direcionador de missões sociotécnicas.
 - **Contradição estrutural:** ocorre **socialização do risco** nas fases mais incertas da ciência/tecnologia e **privatização dos lucros** por fundos e corporações na fase comercial.
 :::
 
-::: {.column width="50%"}
-### 2. Crítica ao "Isomorfismo do Vale do Silício" (Foray, 2015)
+::: {.pitch-card .pitch-card--alert}
+[2 · Especialização Inteligente (Foray, 2015)]{.pitch-card-index}
+[Crítica ao “isomorfismo do Vale do Silício”]{.pitch-heading}
 
 - Tentar clonar parques tecnológicos e fundos de *venture capital* de países centrais em regiões periféricas produz "elefantes brancos" desconectados da estrutura produtiva local.
 - A **Especialização Inteligente (*Smart Specialisation*)** exige **descoberta empreendedora endógena** baseada nas vocações reais do território e regulada pela Sociedade Civil (4ª Hélice) e pela Sustentabilidade Ecológica (5ª Hélice).
 :::
 :::
 
-## Parques Tecnológicos: Sucesso vs. "Catedrais no Deserto" {.smaller-text .lesson-slide}
+## [Território]{.pitch-tag .pitch-tag--gold} Parques tecnológicos e leituras (Eixos 3 e 4) {#parques-sucesso-leituras .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Condições de Sucesso Territorial
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Governança de longo prazo]{.pitch-card-index}
+[Sucesso vs. “catedrais no deserto”]{.pitch-heading}
 
 1. Ancoragem em **competências científicas reais** da região.
 2. Articulação orgânica com cadeias produtivas locais (não apenas aluguel de salas).
@@ -173,8 +217,14 @@ Examinar os mecanismos de **governança territorial da inovação**, o papel do 
 4. Fluxo contínuo de projetos vindos de universidades e empresas locais.
 :::
 
-::: {.column width="50%"}
-### Leituras da Aula 04 e Próxima Aula (Eixos 3 e 4)
+::: {.pitch-band .pitch-band--navy}
+Sem demanda produtiva endógena e articulação institucional, infraestrutura física vira imobiliário público ocioso.
+:::
+:::
+
+::: {.pitch-card}
+[Bibliografia fundamental]{.pitch-card-index}
+[Leituras da Aula 04 e próxima aula (Eixos 3 e 4)]{.pitch-heading}
 
 - **ETZKOWITZ, H.; LEYDESDORFF, L.** *The dynamics of innovation: Triple Helix*. Research Policy, 2000.
 - **MAZZUCATO, M.** *O Estado empreendedor: desmascarando o mito do setor público vs. setor privado*, 2014.

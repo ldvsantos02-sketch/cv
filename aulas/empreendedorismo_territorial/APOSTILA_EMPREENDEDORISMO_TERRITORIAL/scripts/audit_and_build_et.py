@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Auditoria pedagógica, sintática e compilação dos PDFs (por unidade e apostila completa)
-da Apostila de Empreendedorismo Tecnológico e Desenvolvimento Territorial (PPGPT/UEFS).
+da Apostila de Empreendedorismo Tecnológico e Desenvolvimento Territorial (PLANTERR/UEFS).
 Salva diretamente na pasta do site indicada pelo usuário.
 """
 import os
@@ -121,13 +121,10 @@ def run_xelatex(tex_path, jobname, out_pdf_path):
 
 
 def build_all(build_units=True):
-    pdf_name = "APOSTILA_EMPREENDEDORISMO_TERRITORIAL_PPGPT_UEFS.pdf"
+    pdf_name = "APOSTILA_EMPREENDEDORISMO_TERRITORIAL_PLANTERR_UEFS.pdf"
     final_pdf = os.path.join(ROOT, pdf_name)
-    if not run_xelatex(os.path.join(ROOT, "main.tex"), "APOSTILA_EMPREENDEDORISMO_TERRITORIAL_PPGPT_UEFS", final_pdf):
+    if not run_xelatex(os.path.join(ROOT, "main.tex"), "APOSTILA_EMPREENDEDORISMO_TERRITORIAL_PLANTERR_UEFS", final_pdf):
         return False
-    site_copy = os.path.join(SITE_DISCIPLINA, pdf_name)
-    shutil.copy2(final_pdf, site_copy)
-    print(f"[CÓPIA NO SITE] {site_copy}")
     if build_units:
         for slug, title, includes in UNITS:
             wrapper_path = os.path.join(BUILD_DIR, f"{slug}.tex")

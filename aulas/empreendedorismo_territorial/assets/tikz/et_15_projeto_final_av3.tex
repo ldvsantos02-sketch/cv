@@ -1,0 +1,116 @@
+\documentclass[border=10pt]{standalone}
+\input{et_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título
+\node[etTitle, font=\large\bfseries\sffamily, text=etNavy] (title) at (7.75, 6.85)
+  {Rubrica Oficial AV3 (50\%) e Tripé Integrador do Projeto Final};
+
+% Zona esquerda: Painel Donut da Rubrica AV3
+\node[
+  draw=etBorder, fill=white, rounded corners=8pt, line width=1.15pt,
+  minimum width=6.60cm, minimum height=6.40cm, anchor=north west
+] (leftPanel) at (0.30, 6.20) {};
+
+\node[font=\small\bfseries\sffamily, text=etNavy, anchor=north] at ([yshift=-0.26cm]leftPanel.north)
+  {Composição da Avaliação Final (AV3)};
+
+% Donut ring centrado em (3.60, 3.85) com folga superior e inferior
+% 30% = 108 deg, 30% = 108 deg, 25% = 90 deg, 15% = 54 deg
+\begin{scope}[shift={(3.60, 3.85)}]
+  \def\Rin{0.76}
+  \def\Rout{1.44}
+  \def\Rmid{1.10}
+
+  % Fatia 1: Leitura Territorial 30% (90 -> -18)
+  \fill[etNavy] (90:\Rout) arc (90:-18:\Rout) -- (-18:\Rin) arc (-18:90:\Rin) -- cycle;
+  \draw[white, line width=1.6pt] (90:\Rin) -- (90:\Rout);
+  \node[font=\footnotesize\bfseries\sffamily, text=white] at (36:\Rmid) {30\%};
+
+  % Fatia 2: Estratégia & Modelo 30% (-18 -> -126)
+  \fill[etTeal] (-18:\Rout) arc (-18:-126:\Rout) -- (-126:\Rin) arc (-126:-18:\Rin) -- cycle;
+  \draw[white, line width=1.6pt] (-18:\Rin) -- (-18:\Rout);
+  \node[font=\footnotesize\bfseries\sffamily, text=white] at (-72:\Rmid) {30\%};
+
+  % Fatia 3: Viabilidade & Valuation 25% (-126 -> -216)
+  \fill[etGold] (-126:\Rout) arc (-126:-216:\Rout) -- (-216:\Rin) arc (-216:-126:\Rin) -- cycle;
+  \draw[white, line width=1.6pt] (-126:\Rin) -- (-126:\Rout);
+  \node[font=\footnotesize\bfseries\sffamily, text=white] at (-171:\Rmid) {25\%};
+
+  % Fatia 4: Comunicação & Defesa 15% (-216 -> -270)
+  \fill[etAlert] (-216:\Rout) arc (-216:-270:\Rout) -- (-270:\Rin) arc (-270:-216:\Rin) -- cycle;
+  \draw[white, line width=1.6pt] (-216:\Rin) -- (-216:\Rout);
+  \node[font=\footnotesize\bfseries\sffamily, text=white] at (-243:\Rmid) {15\%};
+
+  % Centro do donut
+  \node[align=center, font=\small\bfseries\sffamily, text=etNavy] at (0, 0.11) {AV3};
+  \node[align=center, font=\scriptsize\sffamily, text=etMuted] at (0, -0.22) {50\% da nota};
+\end{scope}
+
+% Legenda em barras limpas abaixo do donut (y = 1.85 até 0.29, painel vai até -0.20)
+\tikzset{
+  legRow/.style={
+    draw=#1!40, fill=#1!7!white, rounded corners=4pt, line width=0.8pt,
+    minimum width=5.75cm, minimum height=0.43cm, inner sep=0pt
+  }
+}
+\node[legRow=etNavy]  (l1) at (3.60, 1.85) {};
+\fill[etNavy, rounded corners=2pt] ([xshift=0.14cm, yshift=-0.10cm]l1.north west) rectangle ([xshift=0.38cm, yshift=0.10cm]l1.south west);
+\node[anchor=west, font=\scriptsize\bfseries\sffamily, text=etInk] at ([xshift=0.50cm]l1.west) {Leitura Territorial};
+\node[anchor=east, font=\scriptsize\bfseries\sffamily, text=etNavy] at ([xshift=-0.20cm]l1.east) {30\%};
+
+\node[legRow=etTeal]  (l2) at (3.60, 1.33) {};
+\fill[etTeal, rounded corners=2pt] ([xshift=0.14cm, yshift=-0.10cm]l2.north west) rectangle ([xshift=0.38cm, yshift=0.10cm]l2.south west);
+\node[anchor=west, font=\scriptsize\bfseries\sffamily, text=etInk] at ([xshift=0.50cm]l2.west) {Estratégia \& Modelo};
+\node[anchor=east, font=\scriptsize\bfseries\sffamily, text=etTeal] at ([xshift=-0.20cm]l2.east) {30\%};
+
+\node[legRow=etGold]  (l3) at (3.60, 0.81) {};
+\fill[etGold, rounded corners=2pt] ([xshift=0.14cm, yshift=-0.10cm]l3.north west) rectangle ([xshift=0.38cm, yshift=0.10cm]l3.south west);
+\node[anchor=west, font=\scriptsize\bfseries\sffamily, text=etInk] at ([xshift=0.50cm]l3.west) {Viabilidade \& Valuation};
+\node[anchor=east, font=\scriptsize\bfseries\sffamily, text=etGoldDark] at ([xshift=-0.20cm]l3.east) {25\%};
+
+\node[legRow=etAlert] (l4) at (3.60, 0.29) {};
+\fill[etAlert, rounded corners=2pt] ([xshift=0.14cm, yshift=-0.10cm]l4.north west) rectangle ([xshift=0.38cm, yshift=0.10cm]l4.south west);
+\node[anchor=west, font=\scriptsize\bfseries\sffamily, text=etInk] at ([xshift=0.50cm]l4.west) {Comunicação \& Defesa};
+\node[anchor=east, font=\scriptsize\bfseries\sffamily, text=etAlert] at ([xshift=-0.20cm]l4.east) {15\%};
+
+% Zona direita: Arquitetura vertical em 3 etapas integradoras
+\node[
+  draw=etBorder, fill=white, rounded corners=8pt, line width=1.15pt,
+  minimum width=7.95cm, minimum height=6.40cm, anchor=north west
+] (rightPanel) at (7.25, 6.20) {};
+
+\node[font=\small\bfseries\sffamily, text=etNavy, anchor=north] at ([yshift=-0.26cm]rightPanel.north)
+  {Tripé Integrador do Projeto Final};
+
+\tikzset{
+  triCard/.style={
+    draw=#1, fill=#1!6!white, rounded corners=6pt, line width=1.2pt,
+    minimum width=7.15cm, minimum height=1.22cm, inner xsep=11pt, inner ysep=8pt,
+    align=left, font=\footnotesize\sffamily, text=etInk, text width=6.60cm
+  }
+}
+
+\node[triCard=etNavy] (u1) at (11.225, 4.62) {\raggedright\hyphenpenalty=10000%
+  \textcolor{etNavy}{\textbf{Unidade I \textperiodcentered~Diagnóstico Territorial}}\\[4pt]
+  \textit{Superar isomorfismo \textperiodcentered~ler APL, SRI e Hélice \mbox{Quíntupla}}
+};
+
+\node[triCard=etTeal] (u2) at (11.225, 2.75) {\raggedright\hyphenpenalty=10000%
+  \textcolor{etTeal}{\textbf{Unidade II \textperiodcentered~Estratégia \& Modelo}}\\[4pt]
+  \textit{Oportunidade, PI, Pitch Canvas e Fomento Regional}
+};
+
+\node[triCard=etGold] (u3) at (11.225, 0.88) {\raggedright\hyphenpenalty=10000%
+  \textcolor{etGoldDark}{\textbf{Unidade III \textperiodcentered~Viabilidade \& Retenção}}\\[4pt]
+  \textit{Localização, VPL/TIR, Valuation e IRV local}
+};
+
+% Setas verticais conectoras
+\draw[etArrow, etNavy] (u1.south) -- (u2.north);
+\draw[etArrow, etTeal] (u2.south) -- (u3.north);
+
+\end{tikzpicture}
+\end{document}

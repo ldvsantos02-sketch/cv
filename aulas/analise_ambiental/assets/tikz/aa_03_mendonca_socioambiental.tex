@@ -1,0 +1,67 @@
+\documentclass[tikz,border=8pt]{standalone}
+\input{../../apostila/figures/tikz/aa_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título principal
+\node[font=\large\bfseries\sffamily, text=uefsNavy, align=center] at (0, 4.45)
+  {Matrizes da Geografia Ambiental Brasileira (Ab'Sáber $\cdot$ Monteiro $\cdot$ Mendonça $\cdot$ Suertegaray)};
+
+% =========================================================
+% NÚCLEO CENTRAL DE SÍNTESE
+% =========================================================
+\node[draw=uefsGold, fill=uefsNavy, rounded corners=8pt, line width=1.6pt,
+      text width=4.6cm, minimum height=1.75cm, inner sep=8pt, align=center,
+      font=\small\bfseries\sffamily, text=white] (hub) at (0, 0.85)
+  {Análise Ambiental\\Geográfica Integrada\\[3pt]
+   \normalsize\color{uefsGold}$(S \leftrightarrow N)$};
+
+% =========================================================
+% 4 CARDS DAS MATRIZES
+% =========================================================
+% Card 1: Aziz Ab'Sáber (Superior Esquerdo)
+\node[draw=uefsForest, fill=bgForest, rounded corners=6pt, line width=1.2pt,
+      text width=5.6cm, minimum height=2.25cm, inner sep=8pt, align=left,
+      font=\footnotesize\sffamily, text=uefsInk] (absaber) at (-5.65, 2.7)
+  {\textbf{\small\color{uefsForest}Aziz Ab'Sáber (1969, 2003)}\\[4pt]
+   3 níveis de pesquisa (compartimentação, estrutura superficial, fisiologia) e Domínios Morfoclimáticos.};
+
+% Card 2: C. A. F. Monteiro (Superior Direito)
+\node[draw=uefsTeal, fill=bgTeal, rounded corners=6pt, line width=1.2pt,
+      text width=5.6cm, minimum height=2.25cm, inner sep=8pt, align=left,
+      font=\footnotesize\sffamily, text=uefsInk] (monteiro) at (5.65, 2.7)
+  {\textbf{\small\color{uefsTeal}C. A. F. Monteiro (1976, 2000)}\\[4pt]
+   Ritmo climático e Sistema Clima Urbano (SCU); geossistemas integrados.};
+
+% Card 3: Francisco Mendonça (Inferior Esquerdo)
+\node[draw=uefsNavy, fill=bgNavy, rounded corners=6pt, line width=1.2pt,
+      text width=5.7cm, minimum height=2.25cm, inner sep=8pt, align=left,
+      font=\footnotesize\sffamily, text=uefsInk] (mendonca) at (-5.65, -1.0)
+  {\textbf{\small\color{uefsNavy}Francisco Mendonça (2001)}\\[4pt]
+   Geografia Socioambiental ($S \leftrightarrow N$)\\superando a dicotomia Física vs. Humana.};
+
+% Card 4: Dirce Suertegaray (Inferior Direito)
+\node[draw=uefsGoldDark, fill=bgGold, rounded corners=6pt, line width=1.2pt,
+      text width=5.6cm, minimum height=2.25cm, inner sep=8pt, align=left,
+      font=\footnotesize\sffamily, text=uefsInk] (suertegaray) at (5.65, -1.0)
+  {\textbf{\small\color{uefsGoldDark}Dirce Suertegaray (2001)}\\[4pt]
+   Interfaces transdisciplinares e leitura espacial da degradação (arenização/erosão).};
+
+% =========================================================
+% SETAS CONVERGENTES PARA O NÚCLEO CENTRAL
+% =========================================================
+\draw[aaArrow, line width=1.6pt, uefsForest, shorten >=3pt, shorten <=3pt]
+  (absaber.east) .. controls (-2.3, 2.7) and (-1.6, 2.3) .. ([xshift=-0.7cm]hub.north);
+
+\draw[aaArrow, line width=1.6pt, uefsTeal, shorten >=3pt, shorten <=3pt]
+  (monteiro.west) .. controls (2.3, 2.7) and (1.6, 2.3) .. ([xshift=0.7cm]hub.north);
+
+\draw[aaArrow, line width=1.6pt, uefsNavy, shorten >=3pt, shorten <=3pt]
+  (mendonca.east) .. controls (-2.3, -1.0) and (-1.6, -0.6) .. ([xshift=-0.7cm]hub.south);
+
+\draw[aaArrow, line width=1.6pt, uefsGoldDark, shorten >=3pt, shorten <=3pt]
+  (suertegaray.west) .. controls (2.3, -1.0) and (1.6, -0.6) .. ([xshift=0.7cm]hub.south);
+
+\end{tikzpicture}
+\end{document}

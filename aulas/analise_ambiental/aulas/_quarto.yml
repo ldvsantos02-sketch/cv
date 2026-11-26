@@ -15,7 +15,9 @@ academico:
 format:
   revealjs:
     theme: ../../assets/academico/academico.scss
-    css: ../../assets/academico/academico.css
+    css:
+      - ../../assets/academico/academico.css
+      - ../assets/analise-slides.css
     include-after-body:
       - ../../assets/academico/academico.html
     width: 1280
@@ -31,6 +33,8 @@ format:
     navigation-mode: linear
     embed-resources: true
     auto-stretch: false
+    pdf-separate-fragments: false
+    pdf-max-pages-per-slide: 1
     min-scale: 0.1
     max-scale: 2.0
     margin: 0

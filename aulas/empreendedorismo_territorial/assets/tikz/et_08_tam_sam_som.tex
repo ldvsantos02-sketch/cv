@@ -1,0 +1,78 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{et_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Title
+\node[etTitle] (title) at (0, 4.45) {Dimensionamento de Mercado (TAM · SAM · SOM) e Triagem de PI};
+
+% ==================== LEFT ZONE: CONCENTRIC / TANGENT CIRCLES ====================
+\begin{scope}[shift={(-3.9, 0)}]
+  % TAM outer circle: center (0,0), r=3.40 -> spans y = [-3.40, +3.40]
+  \draw[fill=bgNavy, draw=etNavy, line width=1.4pt] (0, 0) circle (3.40cm);
+
+  % SAM middle circle: center (0,-0.68), r=2.42 -> spans y = [-3.10, +1.74]
+  \draw[fill=bgTeal, draw=etTeal, line width=1.4pt] (0, -0.68) circle (2.42cm);
+
+  % SOM inner circle: center (0,-1.52), r=1.30 -> spans y = [-2.82, -0.22]
+  \draw[fill=etNavy, draw=etNavyDark, line width=1.4pt] (0, -1.52) circle (1.30cm);
+
+  % Labels strictly inside their own non-overlapping bands
+  % TAM band: y in [+1.74, +3.40] -> center at y=+2.55
+  \node[align=center, text=etNavyDark, font=\footnotesize\sffamily] at (0, 2.55) {%
+    \textbf{\normalsize TAM}\\
+    \textit{Mercado Total Endereçável}
+  };
+
+  % SAM band: y in [-0.22, +1.74] -> center at y=+0.76
+  \node[align=center, text=etTeal!85!black, font=\footnotesize\sffamily] at (0, 0.76) {%
+    \textbf{\normalsize SAM}\\
+    \textit{Mercado Segmentado}\\[-1pt]
+    \textit{e Acessível}
+  };
+
+  % SOM core: y in [-2.82, -0.22] -> center at y=-1.52
+  \node[align=center, text=white, font=\footnotesize\sffamily] at (0, -1.52) {%
+    \textbf{\normalsize SOM}\\
+    \textit{Mercado Alcançável}\\[-1pt]
+    \textit{no Horizonte}
+  };
+\end{scope}
+
+% ==================== RIGHT ZONE: TRIAGEM DE OPORTUNIDADE E PI ====================
+\node[draw=etTeal, fill=bgTeal, rounded corners=7pt, line width=1.25pt,
+      minimum width=7.4cm, minimum height=6.7cm, anchor=center]
+  (piPanel) at (3.75, 0) {};
+
+\node[etBadge=etTeal, anchor=north, inner xsep=11pt, inner ysep=4.5pt]
+  (piBadge) at ([yshift=-11pt]piPanel.north) {Triagem de Oportunidade e PI};
+
+% 3 numbered milestone sub-blocks
+\node[etBox=etTeal, text width=5.95cm, minimum height=1.32cm, align=left, anchor=north, inner xsep=12pt]
+  (m1) at ([yshift=-14pt]piBadge.south) {%
+  \textbf{\color{etNavy}1. Busca de Anterioridade:}\\
+  INPI, Espacenet, Patentscope
+};
+
+\node[etBox=etTeal, text width=5.95cm, minimum height=1.32cm, align=left, anchor=north, inner xsep=12pt]
+  (m2) at ([yshift=-12pt]m1.south) {%
+  \textbf{\color{etTeal}2. Freedom to Operate (FTO):}\\
+  evitar infração de patentes ativas
+};
+
+\node[etBox=etTeal, text width=5.95cm, minimum height=1.52cm, align=left, anchor=north, inner xsep=12pt]
+  (m3) at ([yshift=-12pt]m2.south) {%
+  \textbf{\color{etGoldDark}3. Estratégia de Proteção:}\\
+  Patente (PI/MU) vs. Segredo Industrial · Marca, Cultivar, Software ou IG
+};
+
+% Subtle downward connectors between milestones
+\draw[etArrow, etTeal] (m1.south) -- (m2.north);
+\draw[etArrow, etTeal] (m2.south) -- (m3.north);
+
+% Connecting arrow from SOM/Market Sizing to PI Screening
+\draw[etArrow, etNavy, line width=1.4pt] (-0.42, 0) -- (piPanel.west);
+
+\end{tikzpicture}
+\end{document}

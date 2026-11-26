@@ -1,0 +1,78 @@
+\documentclass[border=12pt]{standalone}
+\input{et_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+
+  % Título principal
+  \node[etTitle] (title) at (0, 2.75)
+    {Teoria da Mudança e Espectro dos Negócios de Impacto Territorial};
+
+  % Cadeia horizontal superior (5 cards igualmente espaçados)
+  \node[etTint=etNavy, text width=2.45cm, minimum height=1.85cm] (c1) at (-6.8, 1.0) {
+    \textbf{\textcolor{etNavy}{Insumos\\(Inputs)}}\\[3pt]
+    {\scriptsize\textcolor{etMuted}{Recursos e\\ativos locais}}
+  };
+
+  \node[etTint=etNavy, text width=2.45cm, minimum height=1.85cm] (c2) at (-3.4, 1.0) {
+    \textbf{\textcolor{etNavy}{Atividades}}\\[3pt]
+    {\scriptsize\textcolor{etMuted}{Ações, processos\\e capacitação}}
+  };
+
+  \node[etTint=etGold, text width=2.45cm, minimum height=1.85cm] (c3) at (0, 1.0) {
+    \textbf{\textcolor{etGoldDark}{Produtos\\(Outputs)}}\\[3pt]
+    {\scriptsize\textcolor{etMuted}{Bens e serviços\\entregues}}
+  };
+
+  \node[etTint=etTeal, text width=2.45cm, minimum height=1.85cm] (c4) at (3.4, 1.0) {
+    \textbf{\textcolor{etTeal}{Resultados\\(Outcomes)}}\\[3pt]
+    {\scriptsize\textcolor{etMuted}{Mudanças nos\\beneficiários}}
+  };
+
+  \node[etTint=etForest, text width=2.45cm, minimum height=1.85cm] (c5) at (6.8, 1.0) {
+    \textbf{\textcolor{etForest}{Impacto\\Territorial}}\\[3pt]
+    {\scriptsize\textcolor{etMuted}{Transformação\\estrutural}}
+  };
+
+  \draw[etArrow, etNavy] (c1.east) -- (c2.west);
+  \draw[etArrow, etNavy] (c2.east) -- (c3.west);
+  \draw[etArrow, etGold] (c3.east) -- (c4.west);
+  \draw[etArrow, etTeal] (c4.east) -- (c5.west);
+
+  % Divisor sutil e subtítulo do espectro inferior
+  \node[font=\footnotesize\bfseries\sffamily, text=etNavy] at (0, -0.75)
+    {Espectro Institucional: do Foco Social Exclusivo ao Mercado Tradicional};
+
+  % Barra contínua de seta dupla (atrás dos 3 cards do espectro)
+  \draw[etDArrow, etNavy, line width=1.7pt] (-8.45, -2.05) -- (8.45, -2.05);
+
+  % 3 cards sobre a barra contínua
+  \node[
+    draw=etNavy, fill=bgNavy, rounded corners=6pt, line width=1.15pt,
+    inner sep=8pt, align=center, text width=3.9cm, minimum height=1.55cm,
+    font=\footnotesize\sffamily, text=etInk
+  ] (s1) at (-5.5, -2.05) {
+    \textbf{\textcolor{etNavy}{Filantropia / ONG}}\\[4pt]
+    {\scriptsize 100\% foco social \textperiodcentered\ Doações e editais}
+  };
+
+  \node[
+    draw=etTeal, fill=bgTeal, rounded corners=6pt, line width=1.65pt,
+    inner sep=9pt, align=center, text width=4.65cm, minimum height=1.75cm,
+    font=\footnotesize\sffamily, text=etInk
+  ] (s2) at (0, -2.05) {
+    \textbf{\textcolor{etTeal}{Negócio de Impacto}}\\[4pt]
+    {\scriptsize Missão no \textit{core business} + Sustentabilidade financeira}
+  };
+
+  \node[
+    draw=etMuted, fill=white, rounded corners=6pt, line width=1.15pt,
+    inner sep=8pt, align=center, text width=3.9cm, minimum height=1.55cm,
+    font=\footnotesize\sffamily, text=etInk
+  ] (s3) at (5.5, -2.05) {
+    \textbf{\textcolor{etInk}{Empresa Tradicional}}\\[4pt]
+    {\scriptsize Maximização de lucro \textperiodcentered\\Impacto como externalidade}
+  };
+
+\end{tikzpicture}
+\end{document}

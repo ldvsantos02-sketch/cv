@@ -6,14 +6,16 @@ lang: pt-BR
 academico:
   cabecalho:
     - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
-    - "PPGPT · Empreendedorismo Tecnológico e Desenvolvimento Territorial"
-    - "Aula 12 · 4 horas"
-  rodape: "UEFS · PPGPT · Aula 12 · Elaboração de Projetos e Localização"
+    - "PLANTERR · Programa de Pós-Graduação em Planejamento Territorial"
+    - "Empreendedorismo Tecnológico e Desenvolvimento Territorial · Aula 12 · 4 horas"
+  rodape: "UEFS · PLANTERR · Aula 12 · Elaboração de Projetos e Localização"
   local: "Feira de Santana – Bahia"
 format:
   revealjs:
     theme: ../../../assets/academico/academico.scss
-    css: ../../../assets/academico/academico.css
+    css:
+      - ../../../assets/academico/academico.css
+      - ../../assets/planterr-slides.css
     include-after-body:
       - ../../../assets/academico/academico.html
     slide-number: false
@@ -27,6 +29,9 @@ format:
     embed-resources: true
     transition: fade
     background-transition: none
+    auto-stretch: false
+    pdf-separate-fragments: false
+    pdf-max-pages-per-slide: 1
   beamer:
     pdf-engine: xelatex
     aspectratio: 169
@@ -39,124 +44,183 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text .lesson-slide}
+## [Unidade III]{.pitch-tag} Visão Geral da Aula {#visao-geral-12 .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
-
-- [1]{.circle} Ciclo de elaboração de projetos de investimento (Woiler & Mathias, 2008)
-- [2]{.circle} Estudo de mercado e dimensionamento de escala/tamanho
-- [3]{.circle} **Decisão locacional no território** (macrolocalização e microlocalização)
-- [4]{.circle} Engenharia do projeto, investimentos fixos (CAPEX) e capital de giro
-- [5]{.circle} Estruturação de custos, despesas e receitas projetadas (OPEX)
+::: {.pitch-grid-55}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**01 · Ciclo do Projeto:** Elaboração de projetos de investimento (Woiler & Mathias, 2008).
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-milestone-item}
+**02 · Mercado e Escala:** Estudo de mercado e dimensionamento de tamanho/capacidade.
+:::
+
+::: {.pitch-milestone-item}
+**03 · Decisão Locacional:** Macrolocalização e microlocalização no território.
+:::
+
+::: {.pitch-milestone-item}
+**04 · Investimento Inicial:** Engenharia do projeto, investimentos fixos (CAPEX) e capital de giro.
+:::
+
+::: {.pitch-milestone-item}
+**05 · Orçamento Operacional:** Estruturação de custos, despesas e receitas projetadas (OPEX).
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Objetivo da Aula]{.pitch-card-index}
+[Engenharia econômica e território]{.pitch-heading}
 
 Dominar as etapas técnicas de **elaboração de projetos de investimento**, destacando a **decisão locacional** como ponte direta entre a engenharia econômica e o planejamento territorial.
+:::
+
+::: {.pitch-pill-row}
+[Ciclo de Projeto]{.pitch-pill}
+[Decisão Locacional]{.pitch-pill .pitch-pill--gold}
+[CAPEX & OPEX]{.pitch-pill}
 :::
 :::
 :::
 
 # 1 · Ciclo do Projeto de Investimento {.section-header rotulo="Ciclo"}
 
-## Da Ideia ao Projeto Executivo (Woiler & Mathias, 2008) {.smaller-text .lesson-slide}
+## [Método]{.pitch-tag .pitch-tag--teal} Da Ideia ao Projeto Executivo (Woiler & Mathias, 2008) {#ciclo-projeto .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Fases do Projeto
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[01 · Perfil]{.pitch-card-index}
+[Identificação]{.pitch-heading}
 
-1. **Identificação / Perfil:** definição preliminar do problema, produto e escopo.
-2. **Estudo de Pré-Viabilidade:** análise preliminar de mercado, tecnologia e custos para filtrar alternativas.
-3. **Estudo de Viabilidade (Técnica, Econômica, Ambiental e Territorial):** detalhamento completo para decisão de investimento.
-4. **Projeto Executivo e Implantação:** engenharia detalhada, obras, aquisição e *start-up*.
+Definição preliminar do problema, produto e escopo inicial do empreendimento.
 :::
 
-::: {.column width="50%"}
-### Os 5 Estudos Básicos da Viabilidade
+::: {.pitch-card .pitch-card--gold}
+[02 · Filtro]{.pitch-card-index}
+[Pré-Viabilidade]{.pitch-heading}
 
-- Estudo de **Mercado** (demanda, oferta, preços, comercialização);
-- Estudo de **Tamanho / Escala** (capacidade instalada vs. demanda);
-- Estudo de **Localização** (macrorregião e sítio específico);
-- **Engenharia do Projeto** (processo produtivo, *layout*, cronograma físico);
-- **Análise Econômico-Financeira e Socioambiental**.
+Análise preliminar de mercado, tecnologia e custos para selecionar alternativas.
 :::
+
+::: {.pitch-card .pitch-card--teal}
+[03 · Decisão]{.pitch-card-index}
+[Viabilidade Completa]{.pitch-heading}
+
+Detalhamento técnico, econômico, ambiental e territorial para decidir o investimento.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[04 · Execução]{.pitch-card-index}
+[Projeto Executivo]{.pitch-heading}
+
+Engenharia detalhada, obras, aquisição de ativos e *start-up* operacional.
+:::
+:::
+
+::: {.pitch-band .pitch-band--navy}
+**Os 5 Estudos Básicos da Viabilidade:** (1) **Mercado** (demanda, oferta, preços); (2) **Tamanho / Escala** (capacidade instalada); (3) **Localização** (macrorregião e sítio); (4) **Engenharia do Projeto** (processo, *layout*, cronograma); e (5) **Análise Econômico-Financeira e Socioambiental**.
 :::
 
 # 2 · Decisão Locacional no Território {.section-header rotulo="Localização"}
 
-## Fatores Locacionais: Ponte com o Planejamento Territorial {.smaller-text .lesson-slide}
+## [Território]{.pitch-tag .pitch-tag--gold} Fatores Locacionais: Ponte com o Planejamento Territorial {#fatores-locacionais .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
-### Macrolocalização vs. Microlocalização
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Escala Regional / Municipal]{.pitch-card-index}
+[Macrolocalização]{.pitch-heading}
 
-- **Macrolocalização (escala regional/municipal):**
-  - Proximidade de matérias-primas vs. mercado consumidor (orientação por peso/custo de transporte — Weber);
-  - Disponibilidade e qualificação de mão de obra;
-  - Infraestrutura energética, hídrica, logística e conectividade digital;
-  - Incentivos fiscais (SUDENE, estados, municípios) e **ecossistema de CT&I**.
-- **Microlocalização (sítio específico):**
-  - Zoneamento urbano/ambiental (Plano Diretor, ZEE, APPs);
-  - Custo do terreno, topografia, drenagem e licenciamento ambiental.
+- Proximidade de matérias-primas vs. mercado consumidor (orientação por peso e frete — Weber);
+- Disponibilidade e qualificação de mão de obra;
+- Infraestrutura energética, hídrica, logística e conectividade digital;
+- Incentivos fiscais (SUDENE, estados, municípios) e **ecossistema de CT&I**.
 :::
 
-::: {.column width="45%"}
-### Método de Ponderação Locacional
+::: {.pitch-card .pitch-card--teal}
+[Sítio Específico]{.pitch-card-index}
+[Microlocalização]{.pitch-heading}
 
-Para comparar 2 ou 3 municípios candidatos:
+- Zoneamento urbano e ambiental (Plano Diretor, ZEE, APPs);
+- Custo do terreno, topografia, drenagem e licenciamento ambiental.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Ponderação Locacional** (comparando municípios candidatos):
 
 $$\text{Nota}_j = \sum_{i=1}^{n} w_i \cdot s_{ij}$$
 
-onde $w_i$ é o peso do fator locacional $i$ ($\sum w_i = 1$) e $s_{ij}$ é a pontuação do município $j$ no fator $i$.
+onde $w_i$ é o peso do fator $i$ ($\sum w_i = 1$) e $s_{ij}$ é a pontuação do município $j$ no fator $i$.
+:::
 
-::: {.highlight-box}
-**Visão Crítica (PPGPT):** A decisão locacional privada nem sempre internaliza externalidades (tráfego, pressão hídrica, segregação socioespacial); cabe ao planejamento territorial orientá-la.
+::: {.pitch-card .pitch-card--alert}
+[Visão Crítica (PLANTERR)]{.pitch-card-index}
+[Externalidades Territoriais]{.pitch-heading}
+
+A decisão locacional privada nem sempre internaliza externalidades (tráfego, pressão hídrica, segregação socioespacial); cabe ao planejamento territorial orientá-la.
 :::
 :::
 :::
 
-## Esquema: Ciclo de Projetos e Decisão Locacional {.smaller-text .lesson-slide}
+## [Decisão]{.pitch-tag} Esquema: Ciclo de Projetos e Decisão Locacional {#diagrama-locacional .smaller-text .lesson-slide}
 
-![Articulação entre estudo de mercado, escala, macrolocalização/microlocalização territorial e estruturação de CAPEX/OPEX.](img/et_decisao_locacional_projeto.png){.fig-full}
+::: {.pitch-media-card .pitch-media-card--wide}
+![Articulação entre estudo de mercado, escala, macrolocalização/microlocalização territorial e estruturação de CAPEX/OPEX.](img/et_decisao_locacional_projeto.png)
+
+[Articulação entre ciclo de elaboração de projetos e decisão locacional]{.pitch-caption}
+[Estudo de mercado, dimensionamento de escala, macro/microlocalização territorial e CAPEX/OPEX]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band}
+A escolha do sítio e da escala redefine diretamente custos logísticos, exigências ambientais e investimentos iniciais do projeto.
+:::
 
 # 3 · Estrutura Econômica do Projeto {.section-header rotulo="Orçamento"}
 
-## CAPEX, Capital de Giro e OPEX {.smaller-text .lesson-slide}
+## [Método]{.pitch-tag .pitch-tag--teal} CAPEX, Capital de Giro e OPEX {#capex-opex .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Investimento Inicial (Ano 0)
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Investimento Inicial · Ano 0]{.pitch-card-index}
+[CAPEX e Capital de Giro Líquido]{.pitch-heading}
 
 - **CAPEX (Investimentos Fixos):** terrenos, edificações, máquinas, equipamentos, P&D capitalizado, licenças e software.
-- **Capital de Giro Líquido (CGL):** recursos necessários para financiar o ciclo operacional (estoques + contas a receber $-$ fornecedores).
-- **Erro comum:** esquecer o capital de giro ou sua variação nos anos de crescimento da receita.
+- **Capital de Giro Líquido (CGL):** recursos para financiar o ciclo operacional (estoques + contas a receber $-$ fornecedores).
+- **Erro comum:** esquecer o capital de giro ou sua variação ($\Delta \text{CGL}$) nos anos de crescimento da receita.
 :::
 
-::: {.column width="50%"}
-### Custos, Despesas e Depreciação (OPEX)
+::: {.pitch-card .pitch-card--gold}
+[Custos e Benefício Fiscal]{.pitch-card-index}
+[OPEX e Depreciação]{.pitch-heading}
 
 - **Custos Variáveis** (proporcionais ao volume produzido) vs. **Custos Fixos**.
-- **Depreciação:** não é saída de caixa, mas **reduz a base de cálculo do Imposto de Renda** (benefício fiscal da depreciação: $+ D \cdot T$).
+- **Depreciação:** não representa saída de caixa, mas **reduz a base de cálculo do Imposto de Renda**, gerando o benefício fiscal da depreciação ($+ D \cdot T$).
 :::
+:::
+
+::: {.pitch-band .pitch-band--teal}
+CAPEX, variação do CGL e benefício fiscal da depreciação alimentam diretamente o **Fluxo de Caixa Livre da Firma (FCFF)** analisado na próxima aula.
 :::
 
 # 4 · Oficina e Leituras {.section-header rotulo="Oficina"}
 
-## Matriz Locacional + Leituras {.smaller-text .lesson-slide}
+## [Síntese]{.pitch-tag .pitch-tag--teal} Matriz Locacional e Leituras {#oficina-locacional .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
-### Exercício Prático (35 min)
+::: {.pitch-grid-55}
+::: {.pitch-card .pitch-card--gold}
+[Exercício Prático · 35 min]{.pitch-card-index}
+[Matriz de Ponderação Locacional]{.pitch-heading}
 
 Para o projeto escolhido pelo grupo, defina **5 critérios locacionais** (com pesos somando 100%) e compare **2 municípios ou zonas territoriais** candidatas a receber o empreendimento, justificando os trade-offs socioambientais e logísticos.
 :::
 
-::: {.column width="45%"}
-### Leituras para a Próxima Aula
+::: {.pitch-card}
+[Próxima Aula]{.pitch-card-index}
+[Leituras Recomendadas]{.pitch-heading}
 
 - **CASAROTTO FILHO, N.; KOPITTKE, B. H.** *Análise de investimentos* (Caps. sobre VPL, TIR, Payback e Análise de Risco).
 - **ASSAF NETO, A.** *Finanças corporativas e valor* (Caps. sobre Custo de Capital e Decisões de Investimento).

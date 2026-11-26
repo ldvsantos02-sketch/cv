@@ -1,0 +1,65 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{et_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Title
+\node[etTitle] (title) at (0, 0) {Inovação Social no Território: Tecnologia Social e Indicações Geográficas};
+
+% Card dimensions
+\def\cardW{7.1cm}
+\def\cardH{4.55cm}
+
+% Left Card: Tecnologia Social
+\node[draw=etTeal, fill=bgTeal, rounded corners=6pt, line width=1.25pt,
+      minimum width=\cardW, minimum height=\cardH, anchor=north east]
+  (tsCard) at (-0.35, -0.75) {};
+
+\node[etBadge=etTeal, anchor=north, inner xsep=10pt, inner ysep=4pt]
+  (tsBadge) at ([yshift=-9pt]tsCard.north) {Tecnologia Social (Dagnino, 2014)};
+
+\node[anchor=north west, text width=6.4cm, align=left, font=\footnotesize\sffamily, text=etInk]
+  at ([xshift=10pt, yshift=-7pt]tsBadge.south -| tsCard.west) {%
+  \begin{itemize}\setlength{\itemsep}{4.5pt}\setlength{\leftmargini}{1.2em}
+    \item Adequada a pequenos empreendimentos e cooperativas
+    \item Baixo custo e apropriação local
+    \item Coproduzida com a comunidade (não alienada)
+    \item \textbf{Exemplos:} cisternas de placas, bioágua, agroecologia
+  \end{itemize}
+};
+
+% Right Card: Indicações Geográficas
+\node[draw=etGold, fill=bgGold, rounded corners=6pt, line width=1.25pt,
+      minimum width=\cardW, minimum height=\cardH, anchor=north west]
+  (igCard) at (0.35, -0.75) {};
+
+\node[etBadge=etGold, anchor=north, inner xsep=10pt, inner ysep=4pt]
+  (igBadge) at ([yshift=-9pt]igCard.north) {Indicações Geográficas (Lei 9.279/1996)};
+
+\node[anchor=north west, text width=6.4cm, align=left, font=\footnotesize\sffamily, text=etInk]
+  at ([xshift=10pt, yshift=-7pt]igBadge.south -| igCard.west) {%
+  \begin{itemize}\setlength{\itemsep}{4.5pt}\setlength{\leftmargini}{1.2em}
+    \item PI coletiva vinculada ao território
+    \item \textbf{IP} (Indicação de Procedência): notoriedade do local
+    \item \textbf{DO} (Denominação de Origem): qualidade pelo meio natural/humano
+    \item Retenção de valor agregado na cadeia regional
+  \end{itemize}
+};
+
+% Bottom Synthesis Banner (full width aligned with outer edges of both cards)
+\node[draw=etNavyDark, fill=etNavy, rounded corners=6pt, line width=1.2pt,
+      minimum width=14.9cm, inner xsep=12pt, inner ysep=10pt,
+      text width=14.2cm, align=center, text=white, font=\footnotesize\sffamily,
+      anchor=north]
+  (synth) at (0, -6.25) {%
+  \textbf{Síntese Territorial:} combinar Tecnologia Social, Economia Solidária e Indicações Geográficas\\
+  fortalece a bioeconomia regional sem depender exclusivamente de tecnologias exógenas.%
+};
+
+% Clean arrows from both cards to synthesis banner
+\draw[etArrow, etTeal] (tsCard.south) -- (tsCard.south |- synth.north);
+\draw[etArrow, etGold] (igCard.south) -- (igCard.south |- synth.north);
+
+\end{tikzpicture}
+\end{document}

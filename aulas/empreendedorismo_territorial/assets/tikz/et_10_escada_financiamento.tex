@@ -1,0 +1,70 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{et_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Title
+\node[etTitle] (title) at (8.15, 7.05) {Escada de Financiamento e Fomento Regional por Estágio};
+
+% Baseline
+\draw[draw=etBorder, line width=1pt] (-0.25, 0) -- (16.55, 0);
+
+% Step dimensions: 4 columns of width 3.75cm, gap 0.43cm
+% Col 1: x in [0.00, 3.75] (center 1.875)
+% Col 2: x in [4.18, 7.93] (center 6.055)
+% Col 3: x in [8.36, 12.11] (center 10.235)
+% Col 4: x in [12.54, 16.29] (center 14.415)
+
+% Step 1: Ideação / P&D (TRL 1–3) - height 2.55cm
+\draw[draw=etMuted, fill=bgNavy, line width=1.2pt, rounded corners=5pt]
+  (0.00, 0.00) rectangle (3.75, 2.55);
+\node[etBadge=etMuted, rounded corners=6pt, anchor=north, inner xsep=10pt, inner ysep=4pt]
+  at (1.875, 2.40) {TRL 1–3};
+\node[text=etNavyDark, font=\footnotesize\bfseries\sffamily, anchor=north]
+  at (1.875, 1.72) {Ideação / P\&D};
+\node[text=etInk, font=\scriptsize\sffamily, text width=3.35cm, align=center, anchor=north]
+  at (1.875, 1.22) {Bootstrapping\\Editais (Centelha, FAPs)};
+
+% Step 2: Prova de Conceito (TRL 4–5) - height 3.65cm
+\draw[draw=etTeal, fill=bgTeal, line width=1.25pt, rounded corners=5pt]
+  (4.18, 0.00) rectangle (7.93, 3.65);
+\node[etBadge=etTeal, rounded corners=6pt, anchor=north, inner xsep=10pt, inner ysep=4pt]
+  at (6.055, 3.50) {TRL 4–5};
+\node[text=etTeal!85!black, font=\footnotesize\bfseries\sffamily, anchor=north]
+  at (6.055, 2.82) {Prova de Conceito};
+\node[text=etInk, font=\scriptsize\sffamily, text width=3.35cm, align=center, anchor=north]
+  at (6.055, 2.28) {Subvenção Econômica\\(FINEP, PIPE, EMBRAPII)};
+
+% Step 3: Validação / Tração (TRL 6–7) - height 4.75cm
+\draw[draw=etGold, fill=bgGold, line width=1.25pt, rounded corners=5pt]
+  (8.36, 0.00) rectangle (12.11, 4.75);
+\node[etBadge=etGold, rounded corners=6pt, anchor=north, inner xsep=10pt, inner ysep=4pt]
+  at (10.235, 4.60) {TRL 6–7};
+\node[text=etGoldDark, font=\footnotesize\bfseries\sffamily, anchor=north]
+  at (10.235, 3.92) {Validação / Tração};
+\node[text=etInk, font=\scriptsize\sffamily, text width=3.35cm, align=center, anchor=north]
+  at (10.235, 3.32) {Investidor-Anjo\\Aceleradoras · Seed};
+
+% Step 4: Escala Territorial (TRL 8–9) - height 5.85cm
+\draw[draw=etNavy, fill=bgNavy, line width=1.35pt, rounded corners=5pt]
+  (12.54, 0.00) rectangle (16.29, 5.85);
+\node[etBadge=etNavy, rounded corners=6pt, anchor=north, inner xsep=10pt, inner ysep=4pt]
+  at (14.415, 5.70) {TRL 8–9};
+\node[text=etNavyDark, font=\footnotesize\bfseries\sffamily, anchor=north]
+  at (14.415, 5.02) {Escala Territorial};
+\node[text=etInk, font=\scriptsize\sffamily, text width=3.35cm, align=center, anchor=north]
+  at (14.415, 4.42) {Venture Capital · BNDES\\FNE Inovação (BNB)};
+
+% Stepped progression arrows above tops
+\draw[etArrow, etTeal] (1.875, 2.70) |- (4.08, 3.35);
+\draw[etArrow, etGoldDark] (6.055, 3.80) |- (8.26, 4.45);
+\draw[etArrow, etNavy] (10.235, 4.90) |- (12.44, 5.55);
+
+% Bottom full-width TRL maturity arrow + caption cleanly below
+\draw[etArrow, etNavy, line width=1.6pt] (0.00, -0.58) -- (16.29, -0.58);
+\node[text=etNavy, font=\footnotesize\bfseries\sffamily, anchor=north]
+  at (8.145, -0.78) {Maturidade Tecnológica (TRL) e Redução de Incerteza Tecnológica $\rightarrow$};
+
+\end{tikzpicture}
+\end{document}

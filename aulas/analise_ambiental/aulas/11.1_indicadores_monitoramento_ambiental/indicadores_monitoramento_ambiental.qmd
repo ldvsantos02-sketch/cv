@@ -10,12 +10,12 @@ academico:
   rodape: "UEFS · Análise Ambiental · Aula 11.1"
 ---
 
+## [Abertura]{.pitch-tag} Visão Geral da Aula {.smaller-text .lesson-slide}
 
-## Visão Geral da Aula {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
+::: {.pitch-grid-60}
+::: {.pitch-card}
+[Roteiro da Unidade III]{.pitch-card-index}
+[Tópicos]{.pitch-heading}
 
 - [1]{.circle} Dado, parâmetro, indicador e índice agregado (pirâmide da informação ambiental)
 - [2]{.circle} Matrizes Causais: **PER** (OCDE, 1993) e **FPEIR / DPSIR** (EEA, 1999)
@@ -25,296 +25,523 @@ academico:
 - [6]{.circle} **QA/QC, Gestão Adaptativa**, Índices Orbitais (**NDVI, SAVI, NDWI**) e Indicadores Técnicos vs. Científicos
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Objetivo da Aula]{.pitch-card-index}
+[Monitoramento auditável e normativo]{.pitch-heading}
 
-Capacitar o estudante a selecionar, auditar (QA/QC) e interpretar **indicadores e índices ambientais** físicos, químicos, biológicos e orbitais dentro do modelo **FPEIR (DPSIR)** e da **Gestão Adaptativa**, confrontando-os com os padrões normativos brasileiros (**CONAMA 357/2005, 430/2011 e 506/2024**).
+Capacitar o estudante a selecionar, auditar (**QA/QC**) e interpretar **indicadores e índices ambientais** físicos, químicos, biológicos e orbitais dentro do modelo **FPEIR (DPSIR)** e da **Gestão Adaptativa**, confrontando-os com os padrões normativos brasileiros (**CONAMA 357/2005, 430/2011 e 506/2024**).
+:::
+
+::: {.pitch-pill-row}
+[FPEIR / DPSIR]{.pitch-pill}
+[IQA & IET]{.pitch-pill .pitch-pill--gold}
+[CONAMA 357 · 430 · 506]{.pitch-pill}
+[QA/QC & Satélite]{.pitch-pill .pitch-pill--gold}
 :::
 :::
 :::
 
 # 1 · Fundamentos e Modelo FPEIR (DPSIR) {.section-header rotulo="FPEIR / DPSIR"}
 
-## O que é Monitoramento Ambiental e por que usar Indicadores? {.smaller-text}
+## [Fundamentos]{.pitch-tag .pitch-tag--teal} O que é Monitoramento e por que usar Indicadores? {.smaller-text .lesson-slide}
 
-- **Diagnóstico vs. Monitoramento:** o diagnóstico retrata um estado em um momento específico; o **monitoramento** acompanha séries temporais padronizadas para verificar tendências de degradação ou recuperação e aferir a eficácia de políticas, licenciamentos e PRADs.
-- **Fotografia vs. Filme (Química vs. Biologia):** uma análise química de água ou solo funciona como uma **fotografia** instantânea — mostra o que estava presente no exato segundo da coleta (um pulso poluente pode já ter sido levado pela correnteza). Já os **bioindicadores e biomarcadores** funcionam como um **filme**, revelando o impacto **cumulativo e sinérgico** dos estressores ao longo do tempo.
-- **Por que não basta apenas medir?** Leituras isoladas de campo ou de satélite (ex.: $12\text{ mg/L}$ de sólido ou $\text{pH} = 6{,}4$) pouco dizem sem um **padrão de referência** (área testemunha conservada, *baseline* ou limite legal).
-- **Papel dos indicadores:** traduzir fenômenos ambientais complexos em sinais claros, auditáveis e comparáveis no tempo e no espaço para orientar a gestão territorial.
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[01 · Dimensão temporal]{.pitch-card-index}
+[Diagnóstico vs. Monitoramento]{.pitch-heading}
 
-## Da Medição Bruta ao Índice Sintético {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-### A Pirâmide da Informação Ambiental (Hammond et al., 1995; Siche et al., 2007)
-
-```text
-4. Índice Agregado (Ex.: IQA = 34 [Ruim]; IDH; IET)
-Agregação matemática ponderada de múltiplos indicadores para decisão.
-↑
-3. Indicador Ambiental (Ex.: Déficit de OD em relação ao limite CONAMA 357)
-Parâmetro contextualizado frente a uma meta, limiar crítico ou série histórica.
-↑
-2. Parâmetro / Variável (Ex.: Concentração média de OD = 3,2 mg/L)
-Propriedade física, química ou biológica estatisticamente tratada.
-↑
-1. Dado Bruto / Medição Primária (Ex.: Leituras da sonda multiparâmetro em campo)
-Observações pontuais coletadas em campanhas amostrais ou sensores orbitais.
-```
+O **diagnóstico** retrata um estado em um momento específico; o **monitoramento** acompanha séries temporais padronizadas para verificar tendências de degradação ou recuperação e aferir a eficácia de políticas, licenciamentos e PRADs.
 :::
 
-::: {.column width="50%"}
-### Critérios SMART para Seleção de Bons Indicadores (Fidalgo, 2003)
+::: {.pitch-card .pitch-card--teal}
+[02 · Química vs. Biologia]{.pitch-card-index}
+[Fotografia vs. Filme]{.pitch-heading}
 
-1. **Relevância causal e sensibilidade**: responder rapidamente ao tensor antrópico ou à medida de recuperação implantada.
-2. **Auditabilidade e reprodutibilidade**: protocolo padronizado (ex.: *Standard Methods* — APHA; Embrapa) que permita repetição por outro analista.
-3. **Existência de valor de referência (*Baseline* ou Padrão Legal)**: permitir comparação com área testemunha conservada ou resolução CONAMA.
-4. **Viabilidade operacional e custo-efetividade**: compatível com o cronograma e orçamento do monitoramento (PBA/PRAD).
-5. **Comunicabilidade pública**: compreensível por gestores, comitês de bacia e comunidades locais.
+Análise química é uma **fotografia** instantânea (um pulso poluente pode já ter passado). **Bioindicadores e biomarcadores** funcionam como um **filme**, revelando o impacto **cumulativo e sinérgico** dos estressores ao longo do tempo.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[03 · Comparabilidade]{.pitch-card-index}
+[Por que não basta apenas medir?]{.pitch-heading}
+
+Leituras isoladas (ex.: $12\text{ mg/L}$ de sólido ou $\text{pH} = 6{,}4$) pouco informam sem um **padrão de referência** — seja área testemunha conservada, *baseline* histórico ou limite legal.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[04 · Função decisória]{.pitch-card-index}
+[Papel dos indicadores]{.pitch-heading}
+
+Traduzir fenômenos ambientais complexos em sinais claros, **auditáveis e comparáveis** no tempo e no espaço para orientar a gestão territorial.
 :::
 :::
 
-## Matriz FPEIR (DPSIR), IQA e Enquadramento CONAMA 357/2005 {.smaller-text}
+## [Informação]{.pitch-tag .pitch-tag--teal} Da Medição Bruta ao Índice Sintético {.smaller-text .lesson-slide}
 
-![Articulação entre a matriz causal FPEIR (DPSIR), os 9 parâmetros do Índice de Qualidade das Águas (IQA) e as classes de enquadramento da Resolução CONAMA nº 357/2005.](img/aa_dpsir_iqa_conama357.png){.fig-full}
-
-## Aplicação Completa da Matriz FPEIR em uma Bacia Hidrográfica {.smaller-text}
-
-::: {.columns}
-::: {.column width="100%"}
-### Exemplo Prático: Sub-bacia do Rio Subaé / Rio Jacuípe (Bahia)
-
-| Elo da Cadeia FPEIR | Pergunta Diagnóstica | Exemplo de Indicador Quantitativo Auditável | Unidade de Medida |
-|---------------------|----------------------|---------------------------------------------|-------------------|
-| **F · Força Motriz (*Driving Force*)** | *Quais processos socioeconômicos macroestruturais geram demanda sobre a bacia?* | Taxa de crescimento urbano periférico sem rede coletora; expansão da área de pastagem/monocultura. | $\% \cdot \text{ano}^{-1}$ ou $\text{ha}\cdot\text{ano}^{-1}$ (IBGE / MapBiomas) |
-| **P · Pressão (*Pressure*)** | *Quais cargas diretas de matéria/energia ou supressões são impostas ao meio?* | Vazão de esgoto doméstico *in natura* lançado; taxa de desmatamento em APP; carga de fertilizantes nitrogenados/fosfatados. | $\text{kg DBO}\cdot\text{dia}^{-1}$; $\%$ de déficit de APP no CAR |
-| **E · Estado (*State*)** | *Qual é a condição física, química e biológica atual dos compartimentos?* | Concentração de Oxigênio Dissolvido (OD), Fósforo Total, Coliformes, Turbidez, **IQA** e **IET**. | $\text{mg}\cdot\text{L}^{-1}$; $\text{NMP}/100\text{ mL}$; $\text{NTU}$; adimensional ($0\text{–}100$) |
-| **I · Impacto (*Impact*)** | *Quais são os efeitos ecológicos, econômicos e à saúde humana resultantes?* | Floração de cianobactérias tóxicas; mortandade de peixes; internações por doenças de veiculação hídrica; custo de tratamento na ETA. | $\text{células}\cdot\text{mL}^{-1}$; casos/$10.000\text{ hab.}$; $\text{R\$}/1.000\text{ m}^3$ |
-| **R · Resposta (*Response*)** | *Quais ações políticas, legais e técnicas a sociedade adota para corrigir o quadro?* | Percentual de esgoto tratado (ETE c/ remoção terciária de $P$); hectares de APP restaurados via PRAD; enquadramento e outorga pelo INEMA/CBH. | $\%$ de atendimento; $\text{ha}$ recuperados; $\text{R\$}$ investidos |
+::: {.pitch-grid-50}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**04 · Índice Agregado:** agregação matemática ponderada de múltiplos indicadores para decisão (ex.: $\text{IQA} = 34$ [Ruim]; IDH; IET).
 :::
+
+::: {.pitch-milestone-item}
+**03 · Indicador Ambiental:** parâmetro contextualizado frente a uma meta, limiar crítico ou série histórica (ex.: déficit de OD frente à CONAMA 357).
+:::
+
+::: {.pitch-milestone-item}
+**02 · Parâmetro / Variável:** propriedade física, química ou biológica estatisticamente tratada (ex.: concentração média de $\text{OD} = 3{,}2\text{ mg/L}$).
+:::
+
+::: {.pitch-milestone-item}
+**01 · Dado Bruto / Medição Primária:** observações pontuais coletadas em campanhas amostrais ou sensores orbitais (ex.: leituras de sonda em campo).
+:::
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Critérios SMART · Fidalgo (2003)]{.pitch-card-index}
+[Seleção de Bons Indicadores (Hammond et al., 1995; Siche et al., 2007)]{.pitch-heading}
+
+1. **Relevância causal e sensibilidade:** responder rapidamente ao tensor antrópico ou à medida implantada.
+2. **Auditabilidade e reprodutibilidade:** protocolo padronizado (*Standard Methods* — APHA; Embrapa) repetível por outro analista.
+3. **Valor de referência (*Baseline* ou Padrão Legal):** permitir confronto com área testemunha ou resolução CONAMA.
+4. **Viabilidade operacional e custo-efetividade:** compatível com o cronograma e orçamento (PBA/PRAD).
+5. **Comunicabilidade pública:** compreensível por gestores, comitês de bacia e comunidades locais.
+:::
+:::
+
+## [FPEIR / DPSIR]{.pitch-tag .pitch-tag--teal} Matriz FPEIR (DPSIR), IQA e CONAMA 357/2005 {.smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--wide}
+![Articulação entre a matriz causal FPEIR (DPSIR), os 9 parâmetros do Índice de Qualidade das Águas (IQA) e as classes de enquadramento da Resolução CONAMA nº 357/2005.](img/aa_dpsir_iqa_conama357.png)
+
+[Matriz Causal FPEIR (DPSIR), IQA e Enquadramento CONAMA 357/2005]{.pitch-caption}
+[Integração entre forças motrizes socioeconômicas, estado físico-químico hídrico e respostas normativas]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band}
+A matriz **FPEIR / DPSIR** (EEA, 1999) estrutura a cadeia causal completa entre pressões antrópicas e instrumentos de gestão hídrica.
+:::
+
+## [Semiárido]{.pitch-tag .pitch-tag--teal} Modelo PEIR Aplicado ao Semiárido Baiano {.smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--wide}
+![Modelo PEIR (OCDE / PNUMA) aplicado à inserção eólica e energética no Semiárido baiano.](img/aa_modelo_peir_semiarido.png)
+
+[Modelo PEIR (OCDE, 1993 / PNUMA) em Empreendimentos Energéticos no Semiárido]{.pitch-caption}
+[Ciclo Pressão–Estado–Impacto–Resposta aplicado a acessos, Caatinga, erosão e PRAD]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band .pitch-band--teal}
+Enquanto o modelo **PER/PEIR** (OCDE, 1993) parte diretamente da Pressão sobre o meio, o **FPEIR/DPSIR** (EEA, 1999) explicita as **Forças Motrizes** socioeconômicas que originam essas pressões.
+:::
+
+## [FPEIR na Bacia]{.pitch-tag .pitch-tag--teal} Aplicação da Matriz FPEIR em uma Bacia Hidrográfica {.smaller-text .lesson-slide}
+
+::: {.pitch-table-box}
+| Elo da Cadeia FPEIR | Pergunta Diagnóstica (Sub-bacia Rio Subaé / Jacuípe, BA) | Indicador Quantitativo Auditável | Unidade de Medida |
+|---|---|---|---|
+| **F · Força Motriz** | *Que processos macroestruturais geram demanda na bacia?* | Expansão urbana periférica sem rede coletora; avanço de pastagem/monocultura | $\%\cdot\text{ano}^{-1}$; $\text{ha}\cdot\text{ano}^{-1}$ |
+| **P · Pressão** | *Que cargas ou supressões incidem diretamente no meio?* | Vazão de esgoto *in natura*; desmatamento em APP; carga de fertilizantes N/P | $\text{kg DBO}\cdot\text{dia}^{-1}$; $\%$ déficit APP |
+| **E · Estado** | *Qual a condição físico-química e biológica atual?* | Concentração de OD, Fósforo Total, Coliformes, Turbidez, **IQA** e **IET** | $\text{mg}\cdot\text{L}^{-1}$; $\text{NMP}/100\text{ mL}$; $\text{NTU}$; $0\text{–}100$ |
+| **I · Impacto** | *Quais efeitos ecológicos, econômicos e sanitários ocorrem?* | Floração de cianobactérias; mortandade de peixes; internações; custo na ETA | $\text{cél.}\cdot\text{mL}^{-1}$; casos/$10\text{ mil}$; $\text{R\$}/10^3\text{ m}^3$ |
+| **R · Resposta** | *Que ações políticas, legais e técnicas corrigem o quadro?* | Esgoto tratado (ETE terciária); ha de APP em PRAD; enquadramento e outorga | $\%$ atend.; $\text{ha}$ recup.; $\text{R\$}$ invest. |
 :::
 
 # 2 · Indicadores Hídricos e CONAMA 357/2005 {.section-header rotulo="Água e CONAMA"}
 
-## Por que Monitorar a Água e como Funciona um Índice Sintético? {.smaller-text}
+## [Qualidade da Água]{.pitch-tag .pitch-tag--teal} Por que Monitorar a Água e como Funciona um Índice? {.smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
-- **A água como integrador da bacia:** a qualidade de um rio reflete diretamente o uso e a cobertura da terra a montante (esgotos domésticos, efluentes industriais, erosão agrícola e remoção de mata ciliar).
-- **Por que criar um índice agregado?** Avaliar dezenas de variáveis físico-químicas e microbiológicas separadamente dificulta a comparação entre campanhas e a comunicação com gestores e comitês de bacia.
-- **Lógica do IQA (NSF / CETESB):** desenvolvido pela *National Sanitation Foundation* (EUA) e adaptado no Brasil pela CETESB, o índice converte 9 parâmetros em notas adimensionais ($q_i$, de $0$ a $100$) e as combina por pesos ($w_i$) conforme sua relevância sanitária e ecológica.
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Integrador da bacia]{.pitch-card-index}
+[Espelho do uso e cobertura da terra]{.pitch-heading}
+
+A qualidade de um rio reflete diretamente as dinâmicas a montante: lançamento de esgotos domésticos, efluentes industriais, erosão agrícola e supressão de mata ciliar.
 :::
 
-::: {.column width="45%"}
-![Coleta e medição de parâmetros físicos da água em campo. Fonte: Wikimedia Commons (domínio público / CC).](img/aa_coleta_agua_campo.jpg){fig-align="center" width="100%"}
+::: {.pitch-card .pitch-card--teal}
+[Lógica do IQA (NSF / CETESB)]{.pitch-card-index}
+[Síntese ponderada de nove variáveis]{.pitch-heading}
+
+Avaliar dezenas de variáveis isoladas dificulta comparar campanhas. Desenvolvido pela *National Sanitation Foundation* e adaptado pela CETESB, o **IQA** converte 9 parâmetros em notas adimensionais ($q_i$, $0\text{–}100$) e os combina por pesos ($w_i$).
 :::
 :::
 
-## IQA: parâmetros, pesos e cálculo {.smaller-text}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
+![Coleta e medição de parâmetros físicos da água em campo.](img/aa_coleta_agua_campo.jpg)
 
-$$IQA=\prod_{i=1}^{9}q_i^{w_i},\qquad \sum w_i=1.$$
+[Coleta e medição físico-química em campo]{.pitch-caption}
+[Fonte: Wikimedia Commons (domínio público / CC) · exibição recortada]{.pitch-caption-sub}
+:::
+:::
 
-| Parâmetro | Peso | Parâmetro | Peso |
-|---|---|---|---|
-| Oxigênio dissolvido | 0,17 | Nitrogênio total | 0,10 |
-| Coliformes termotolerantes | 0,15 | Fósforo total | 0,10 |
-| pH | 0,12 | Turbidez | 0,08 |
-| DBO$_{5,20}$ | 0,10 | Resíduo total | 0,08 |
-| Temperatura | 0,10 | **Soma** | **1,00** |
+## [IQA]{.pitch-tag .pitch-tag--gold} IQA: parâmetros, pesos e cálculo {.smaller-text .lesson-slide}
 
-Cada medida é convertida em $q_i$ pela curva do método. Não inserir diretamente concentração ou pH no produtório.
+::: {.pitch-formula}
+$$\text{IQA} = \prod_{i=1}^{9} q_i^{w_i}, \qquad \sum_{i=1}^{9} w_i = 1$$
+:::
 
-## IQA: interpretação e limites {.smaller-text}
+::: {.pitch-table-box}
+| Parâmetro | Peso ($w_i$) | Parâmetro | Peso ($w_i$) |
+|---|:---:|---|:---:|
+| Oxigênio dissolvido (OD) | $0{,}17$ | Nitrogênio total | $0{,}10$ |
+| Coliformes termotolerantes | $0{,}15$ | Fósforo total | $0{,}10$ |
+| pH | $0{,}12$ | Turbidez | $0{,}08$ |
+| DBO$_{5,20}$ | $0{,}10$ | Resíduo total (sólidos) | $0{,}08$ |
+| Temperatura | $0{,}10$ | **Soma dos pesos** | **$1{,}00$** |
+:::
 
-O IQA foi concebido para sintetizar condições da água bruta para abastecimento após tratamento, com forte presença de indicadores de esgoto.
+::: {.pitch-band .pitch-band--navy}
+**Regra de cálculo:** cada concentração ou leitura é convertida primeiro em nota de qualidade $q_i$ ($0$ a $100$) pela curva do método — nunca inserir diretamente concentração ou pH no produtório.
+:::
 
-- Não avalia todas as substâncias tóxicas, agrotóxicos ou patógenos.
-- Não substitui avaliação de potabilidade nem atendimento aos parâmetros legais.
-- As faixas de classificação variam entre os sistemas estaduais; informar a tabela adotada.
-- Médias anuais podem ocultar eventos críticos e mudanças sazonais.
+## [IQA]{.pitch-tag .pitch-tag--gold} IQA: interpretação e limites {.smaller-text .lesson-slide}
 
-[ANA: parâmetros, curvas, pesos e faixas do IQA](https://www.ana.gov.br/portalpnqa/indicadores-indice-aguas.aspx).
+::: {.pitch-band .pitch-band--navy}
+O IQA sintetiza condições da **água bruta para abastecimento após tratamento**, com forte peso de indicadores ligados a esgotos domésticos.
+:::
 
-## IET: nutrientes e resposta biológica {.smaller-text}
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--alert}
+[01 · Escopo sanitário limitado]{.pitch-card-index}
+[O que o IQA não mede]{.pitch-heading}
 
-Na formulação de Lamparelli utilizada pela CETESB, o estado trófico é avaliado por **fósforo total e clorofila-a**, com equações próprias para rios e reservatórios.
+- Não avalia substâncias tóxicas persistentes, metais pesados, agrotóxicos ou patógenos específicos.
+- Não substitui a verificação de **potabilidade** nem o atendimento integral aos padrões legais de classe.
+:::
 
-- Fósforo representa uma dimensão do potencial de enriquecimento.
-- Clorofila-a indica a resposta fitoplanctônica.
-- Transparência pode sofrer interferência de partículas minerais.
-- O mesmo teor de nutrientes não produz a mesma resposta em ambientes com luz, residência e mistura diferentes.
+::: {.pitch-card .pitch-card--gold}
+[02 · Comparação e temporalidade]{.pitch-card-index}
+[Cuidados na interpretação]{.pitch-heading}
 
-Registrar método, unidades, tipo de ambiente e critério de combinação. Nitrogênio é relevante ao diagnóstico, mas não substitui as variáveis dessa formulação.
+- As faixas de classificação (Ótima a Péssima) variam entre sistemas estaduais — declarar sempre a tabela adotada.
+- Médias anuais podem ocultar eventos críticos agudos e variações sazonais marcantes.
+:::
+:::
 
-## Água: classe, condição medida e lançamento {.smaller-text}
+::: {.pitch-band}
+**Referência técnica:** [ANA — parâmetros, curvas, pesos e faixas do IQA](https://www.ana.gov.br/portalpnqa/indicadores-indice-aguas.aspx).
+:::
 
-| Instrumento | Pergunta |
+## [IET]{.pitch-tag .pitch-tag--gold} IET: nutrientes e resposta biológica {.smaller-text .lesson-slide}
+
+::: {.pitch-formula}
+**Índice de Estado Trófico (Lamparelli / CETESB):**
+
+$$\text{IET} = \frac{\text{IET}(PT) + \text{IET}(CL)}{2}$$
+
+Equações específicas por ambiente (**rios** vs. **reservatórios**) a partir de **Fósforo Total ($PT$)** e **Clorofila-a ($CL$)**.
+:::
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[01 · Causa vs. Resposta]{.pitch-card-index}
+[Significado ecológico]{.pitch-heading}
+
+- **Fósforo total** representa o potencial de enriquecimento nutricional.
+- **Clorofila-a** indica a resposta biológica efetiva do fitoplâncton.
+- **Transparência** sofre interferência de partículas minerais em suspensão.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[02 · Condições hidrodinâmicas]{.pitch-card-index}
+[Cuidados metodológicos]{.pitch-heading}
+
+O mesmo teor de nutrientes produz respostas distintas conforme luz, tempo de residência e mistura vertical. Registrar método, unidades e tipo de ambiente (nitrogênio auxilia o diagnóstico, mas não substitui $PT$ e $CL$ nessa formulação).
+:::
+:::
+
+## [CONAMA]{.pitch-tag} Água: classe, condição medida e lançamento {.smaller-text .lesson-slide}
+
+::: {.pitch-table-box}
+| Instrumento normativo / técnico | Pergunta que responde |
 |---|---|
-| CONAMA 357/2005 | Qual a classe e quais padrões e usos se aplicam ao corpo receptor? |
-| CONAMA 430/2011 | Quais condições e padrões se aplicam ao lançamento de efluentes? |
-| Monitoramento | Qual é a condição observada, em que datas e locais? |
-| Enquadramento | Qual a meta de qualidade para os usos pretendidos? |
+| **CONAMA nº 357/2005** | Qual a classe de qualidade e quais padrões e usos se aplicam ao corpo receptor? |
+| **CONAMA nº 430/2011** | Quais condições e padrões de emissão se aplicam ao lançamento de efluentes? |
+| **Monitoramento ambiental** | Qual é a condição observada no rio, em quais datas e estações amostrais? |
+| **Enquadramento (PNRH)** | Qual a meta de qualidade pactuada no comitê para os usos pretendidos? |
+:::
 
-Uma coleta fora do padrão não muda automaticamente o enquadramento. Na ausência de enquadramento aprovado, o art. 42 prevê águas doces como classe 2, **salvo condição atual melhor, para a qual se aplica a classe mais rigorosa correspondente**.
+::: {.pitch-card .pitch-card--gold}
+[Art. 42 da CONAMA 357/2005]{.pitch-card-index}
+[Não confundir condição observada com classe legal]{.pitch-heading}
 
-## Águas doces: exemplos de padrões {.smaller-text}
+Uma coleta fora do padrão não altera automaticamente o enquadramento do rio. Na ausência de enquadramento aprovado, o **art. 42** prevê águas doces como **Classe 2**, *salvo condição atual melhor, para a qual se aplica a classe mais rigorosa correspondente*.
+:::
 
+## [CONAMA 357]{.pitch-tag} Águas doces: exemplos de padrões {.smaller-text .lesson-slide}
+
+::: {.pitch-table-box}
 | Classe | OD mínimo (mg/L) | DBO$_{5,20}$ máxima (mg/L) | Turbidez máxima (UNT) |
-|---|---|---|---|
-| 1 | 6 | 3 | 40 |
-| 2 | 5 | 5 | 100 |
-| 3 | 4 | 10 | 100 |
-| 4 | Maior que 2 | Consultar norma | Consultar norma |
+|:---:|:---:|:---:|:---:|
+| **Classe 1** | $6$ | $3$ | $40$ |
+| **Classe 2** | $5$ | $5$ | $100$ |
+| **Classe 3** | $4$ | $10$ | $100$ |
+| **Classe 4** | $> 2$ | Consultar norma | Consultar norma |
+:::
 
-Síntese parcial da CONAMA 357/2005. Conferir usos, exceções e frequência amostral no texto integral. Classe especial preserva as condições naturais; não se aplica uma tabela de limites artificiais.
+::: {.pitch-band}
+**Síntese parcial da CONAMA nº 357/2005:** conferir usos preponderantes, exceções e frequência amostral no texto integral. A **Classe Especial** preserva as condições naturais, não se aplicando tabela de limites artificiais.
+:::
 
-## Qualidade do ar: atualização normativa {.smaller-text}
+## [CONAMA 506]{.pitch-tag} Qualidade do ar: atualização normativa {.smaller-text .lesson-slide}
 
-A **CONAMA 506/2024** estabelece os padrões nacionais atuais e revoga parte dos dispositivos da 491/2018.
+::: {.pitch-card}
+[Marco regulatório vigente]{.pitch-card-index}
+[Resolução CONAMA nº 506/2024]{.pitch-heading}
 
-- A etapa **PI-2** entrou em vigor em 1º de janeiro de 2025.
-- Comparar cada poluente com o tempo de média e a etapa aplicáveis.
-- Não comparar diretamente média anual com limite de 24 horas.
-- Registrar cobertura temporal, estação, método e ocorrências excepcionais.
+Estabelece os padrões nacionais atuais de qualidade do ar e revoga parte dos dispositivos da Resolução CONAMA nº 491/2018, com entrada em vigor da etapa **PI-2** em **1º de janeiro de 2025**.
+:::
 
-[MMA: padrões de qualidade do ar](https://www.gov.br/mma/pt-br/assuntos/meio-ambiente-urbano-recursos-hidricos-qualidade-ambiental/qualidade-do-ar/padroes-de-qualidade-do-ar/padroes-de-qualidade-do-ar/).
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**01 · Tempo de média e etapa:** confrontar cada poluente ($\text{MP}_{2{,}5}, \text{MP}_{10}, \text{O}_3, \text{SO}_2, \text{NO}_2, \text{CO}$) exatamente com seu tempo de média e etapa vigentes.
+:::
+
+::: {.pitch-milestone-item}
+**02 · Incompatibilidade temporal:** nunca comparar diretamente uma média anual observada com um limite normativo de 24 horas.
+:::
+
+::: {.pitch-milestone-item}
+**03 · Rastreabilidade da estação:** registrar cobertura temporal da série, localização da estação, método analítico e ocorrências excepcionais.
+:::
+:::
+
+::: {.pitch-band}
+**Referência normativa:** [MMA — Padrões de Qualidade do Ar](https://www.gov.br/mma/pt-br/assuntos/meio-ambiente-urbano-recursos-hidricos-qualidade-ambiental/qualidade-do-ar/padroes-de-qualidade-do-ar/padroes-de-qualidade-do-ar/).
+:::
 
 # 3 · Bioindicadores, Biomarcadores e Índices Orbitais {.section-header rotulo="Biota e Satélite"}
 
-## Os 5 Pilares da Avaliação Ambiental e Alerta Precoce {.smaller-text}
+## [Bioindicadores]{.pitch-tag .pitch-tag--forest} Os 5 Pilares da Avaliação e Alerta Precoce {.smaller-text .lesson-slide}
 
-O estresse ambiental nunca começa matando o ecossistema inteiro de uma só vez; ele percorre uma **cascata de falhas** em cinco níveis crescentes de complexidade:
-
+::: {.pitch-table-box}
 | Nível / Pilar | O que mede | Caráter da resposta |
 |---|---|---|
 | **1. Químico** | Concentração de contaminantes nos compartimentos (água, solo, ar) | Exposição externa instantânea |
 | **2. Bioacumulação** | Dose crítica interna retida nos tecidos da biota | Exposição acumulada no tempo |
-| **3. Efeito Biológico (Biomarcadores)** | Alterações bioquímicas, moleculares (DNA/proteínas), subcelulares e celulares | **Sinal prévio reversível** (alerta precoce) |
+| **3. Efeito Biológico (Biomarcadores)** | Alterações bioquímicas, moleculares (DNA/proteínas) e celulares | **Sinal prévio reversível** (alerta precoce) |
 | **4. Saúde do Organismo** | Necrose tecidual, tumores, doenças crônicas e falência de órgãos | **Efeito tardio irreversível** |
 | **5. Ecossistema** | Queda de densidade, perda de riqueza e colapso das funções | Dano sistêmico consolidado |
-
-::: {.info-box}
-**Exemplo de Biomarcador Precoce (*Tradescantia pallida*):** o teste de **micronúcleos** detecta fragmentos de DNA perdidos durante a divisão celular antes que qualquer dano macroscópico apareça na planta, funcionando como "canário na mina de carvão" para riscos mutagênicos.
 :::
 
-## Bioindicadores na Paisagem e Regra Trófica {.smaller-text}
+::: {.pitch-card .pitch-card--teal}
+[Exemplo de Biomarcador Precoce · *Tradescantia pallida*]{.pitch-card-index}
+[O "canário na mina de carvão" para mutagenicidade]{.pitch-heading}
 
-::: {.columns}
-::: {.column width="52%"}
-- **Flora e Líquens (qualidade do ar):** sem raízes para retirar nutrientes do solo, os líquens absorvem umidade e gases diretamente da atmosfera como "esponjas vivas", desaparecendo rapidamente diante de $\text{SO}_2$ e poluentes industriais.
-- **Fauna Edáfica (minhocas):** indicam contaminação por metais pesados e agrotóxicos via contato direto da cutícula e ingestão de serapilheira.
-- **Macroinvertebrados Bentônicos (BMWP e EPT):** respondem à qualidade da água, substrato, vazão e conectividade; exigir padronização de esforço, época e micro-hábitat.
+O ensaio de **micronúcleos** detecta fragmentos de DNA perdidos durante a divisão celular antes que qualquer dano macroscópico apareça na planta, antecipando o risco antes do colapso ecológico.
 :::
 
-::: {.column width="48%"}
-- **Regra Trófica:** priorizar organismos na **base da cadeia alimentar** (plâncton, moluscos filtradores, invertebrados) permite detectar bioacumulação antes que atinja predadores de topo em doses letais.
-- **Nem todo bioindicador morre:** na **maré vermelha** (*Gonyaulax catenella*) ou floração de cianobactérias, o indicador é a **proliferação patológica** desencadeada por excesso de nutrientes (esgoto) e mudanças térmicas.
-- **Critérios de um biomonitor ideal (van der Oost):** fácil taxonomia, abundância ampla, acúmulo mensurável, sensibilidade precoce, estabilidade sazonal e confiabilidade QA/QC.
+## [Bioindicadores]{.pitch-tag .pitch-tag--forest} Bioindicadores na Paisagem e Regra Trófica {.smaller-text .lesson-slide}
+
+::: {.pitch-cards}
+::: {.pitch-card .pitch-card--forest}
+[01 · Ar e solo]{.pitch-card-index}
+[Líquens e Fauna Edáfica]{.pitch-heading}
+
+- **Líquens:** sem raízes, absorvem umidade e gases diretamente da atmosfera, desaparecendo diante de $\text{SO}_2$ e poluentes industriais.
+- **Minhocas:** indicam contaminação por metais e agrotóxicos via cutícula e ingestão de serapilheira.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[02 · Ecossistemas aquáticos]{.pitch-card-index}
+[Bentônicos (BMWP e EPT)]{.pitch-heading}
+
+Macroinvertebrados bentônicos integram qualidade da água, substrato, vazão e conectividade ripária. Exigem padronização rigorosa de esforço amostral, época e micro-hábitat.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[03 · Ecologia trófica]{.pitch-card-index}
+[Regra Trófica e Proliferação]{.pitch-heading}
+
+- Priorizar organismos na **base da cadeia** (plâncton, filtradores) detecta bioacumulação antes dos predadores de topo.
+- Nem todo bioindicador morre: na **maré vermelha** (*Gonyaulax catenella*) ou em cianobactérias, o sinal é a **proliferação patológica**.
 :::
 :::
 
-## Monitoramento Orbital: como Alvos da Superfície Refletem a Luz {.smaller-text}
-
-::: {.columns}
-::: {.column width="52%"}
-- **Por que usar satélite junto com o campo?** O monitoramento em campo oferece alta precisão pontual, enquanto sensores orbitais (Landsat, Sentinel-2) permitem acompanhar áreas extensas e séries históricas contínuas na bacia.
-- **Comportamento espectral dos alvos:**
-  - **Vegetação sadia:** absorve fortemente a luz vermelha (`RED`) na fotossíntese e reflete intensamente o infravermelho próximo (`NIR`) pela estrutura celular das folhas.
-  - **Água limpa:** absorve quase toda a energia no `NIR` e reflete relativamente mais no verde (`GREEN`).
-  - **Solo exposto:** pode mascarar o sinal da vegetação rala no Semiárido (motivando índices ajustados ao solo, como o SAVI).
+::: {.pitch-band}
+**Biomonitor ideal (van der Oost et al., 2003):** fácil taxonomia, abundância ampla, acúmulo mensurável, sensibilidade precoce, estabilidade sazonal e confiabilidade QA/QC.
 :::
 
-::: {.column width="48%"}
-![Resposta espectral da vegetação sadia vs. esparsa no visível e no infravermelho próximo (NDVI). Fonte: NASA Earth Observatory / Robert Simmon (domínio público).](img/aa_nasa_ndvi_espectro.jpg){fig-align="center" width="100%"}
+## [Orbital]{.pitch-tag .pitch-tag--teal} Monitoramento Orbital: Alvos e Comportamento Espectral {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Integração satélite + campo]{.pitch-card-index}
+[Escala espacial e séries históricas]{.pitch-heading}
+
+O campo garante alta precisão pontual, enquanto sensores orbitais (**Landsat**, **Sentinel-2**) permitem acompanhar bacias inteiras e séries temporais contínuas.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Assinatura espectral dos alvos]{.pitch-card-index}
+[Reflectância no visível e infravermelho]{.pitch-heading}
+
+- **Vegetação sadia:** absorve luz vermelha (`RED`) na fotossíntese e reflete fortemente o infravermelho próximo (`NIR`).
+- **Água limpa:** absorve quase toda energia no `NIR` e reflete relativamente mais no verde (`GREEN`).
+- **Solo exposto:** mascara vegetação rala no Semiárido, motivando o ajuste pelo **SAVI**.
 :::
 :::
 
-## Índices espectrais: vegetação e água {.smaller-text}
+::: {.pitch-media-card}
+![Resposta espectral da vegetação sadia vs. esparsa no visível e no infravermelho próximo (NDVI).](img/aa_nasa_ndvi_espectro.jpg)
 
-| Índice | Expressão com reflectâncias | Aplicação |
+[Comportamento Espectral e Cálculo do NDVI]{.pitch-caption}
+[NASA Earth Observatory / Robert Simmon · domínio público]{.pitch-caption-sub}
+:::
+:::
+
+## [Índices Orbitais]{.pitch-tag .pitch-tag--teal} Índices espectrais: vegetação e água {.smaller-text .lesson-slide}
+
+::: {.pitch-formula}
+$$\text{NDVI} = \frac{NIR - RED}{NIR + RED} \qquad \text{SAVI} = \frac{(1+L)(NIR - RED)}{NIR + RED + L}$$
+:::
+
+::: {.pitch-table-box}
+| Índice | Expressão com reflectâncias | Aplicação principal |
 |---|---|---|
-| NDVI | $(NIR-RED)/(NIR+RED)$ | Contraste espectral associado à vegetação |
-| SAVI | $(1+L)(NIR-RED)/(NIR+RED+L)$ | Atenuar efeito do fundo do solo; justificar $L$ |
-| NDWI de McFeeters | $(GREEN-NIR)/(GREEN+NIR)$ | Identificação de água superficial |
-| NDMI | $(NIR-SWIR)/(NIR+SWIR)$ | Sensibilidade à umidade da vegetação |
+| **NDVI** | $(NIR - RED)/(NIR + RED)$ | Contraste espectral associado ao vigor vegetal |
+| **SAVI** | $(1+L)(NIR - RED)/(NIR + RED + L)$ | Atenuar o efeito do fundo do solo; justificar fator $L$ |
+| **NDWI (McFeeters)** | $(GREEN - NIR)/(GREEN + NIR)$ | Identificação de espelhos e corpos d'água superficiais |
+| **NDMI** | $(NIR - SWIR)/(NIR + SWIR)$ | Sensibilidade ao teor de umidade na vegetação |
+:::
 
-Não atribuir classes universais de bioma a limiares de NDVI. Comparar sensores, correção atmosférica, nuvens e estação do ano. [USGS: NDMI](https://www.usgs.gov/landsat-missions/normalized-difference-moisture-index).
+::: {.pitch-band}
+**Cautela orbital:** não atribuir classes universais de bioma a limiares fixos de NDVI; controlar sensor, correção atmosférica, nuvens e estação ([USGS: NDMI](https://www.usgs.gov/landsat-missions/normalized-difference-moisture-index)).
+:::
 
+## [Seleção]{.pitch-tag .pitch-tag--teal} Selecionar indicadores para uma pergunta {.smaller-text .lesson-slide}
 
-## Selecionar indicadores para uma pergunta {.smaller-text}
+::: {.pitch-band .pitch-band--navy}
+**Pergunta operacional:** uma intervenção de manejo reduziu efetivamente a entrega de sedimento de uma encosta para o canal?
+:::
 
-Pergunta: uma intervenção reduziu a entrega de sedimento de uma encosta?
-
-| Registro | Papel e limite |
+::: {.pitch-table-box}
+| Registro monitorado | Papel no diagnóstico e limite analítico |
 |---|---|
-| Chuva e umidade antecedente | Contextualizam a força dos eventos |
-| Cobertura do solo | Resposta da área tratada |
-| Pinos / seções | Mudança local da superfície |
-| Turbidez e vazão | Resposta no canal; turbidez requer calibração para massa |
-| Manutenção e falhas | Explicam diferenças no desempenho |
-
-Comparar períodos e áreas com condições documentadas. Uma redução de turbidez em ano seco não demonstra sozinha eficácia da intervenção.
-
-## Correlação vs. Causalidade e Arquitetura da Qualidade (QA/QC) {.smaller-text}
-
-::: {.columns}
-::: {.column width="52%"}
-- **Armadilha da causalidade:** se a turbidez de um rio sobe próximo a uma obra, multar a construtora sem **área de referência (controle a montante)** confunde correlação com causalidade — o pico pode vir de chuva intensa 18 km acima em encosta desmatada.
-- **Desenho amostral rigoroso:** unidades espaciais fixas, locais de referência conservados e frequência temporal padronizada (evitar deslocar pontos sem registro, o que invalida séries de 10+ anos).
+| **Chuva e umidade antecedente** | Contextualizam a energia erosiva e a força dos eventos |
+| **Cobertura do solo** | Mede a resposta direta de proteção na área tratada |
+| **Pinos de erosão / seções** | Quantificam alteração geométrica local da superfície |
+| **Turbidez e vazão** | Capturam a resposta no canal; turbidez exige calibração para massa de sedimentos |
+| **Manutenção e falhas** | Explicam diferenças de desempenho entre áreas ou campanhas |
 :::
 
-::: {.column width="48%"}
-- **Protocolo QA/QC em campo e laboratório:**
-  - Inserir **amostras em branco** (*field blanks*) para descartar contaminação do frasco/reagente.
-  - Coletar **duplicatas físicas** e manter **cadeia de custódia** assinada e preservação térmica.
-  - **Regra de ouro QA/QC:** dados anômalos ou inválidos **nunca devem ser deletados silenciosamente**; investigar a causa raiz revela falhas de calibração ou gargalos reais de processo.
+::: {.pitch-band}
+Comparar períodos e áreas sob condições climáticas documentadas: redução de turbidez em **ano seco** não demonstra sozinha eficácia da intervenção.
+:::
+
+## [QA/QC]{.pitch-tag .pitch-tag--alert} Correlação vs. Causalidade e Arquitetura QA/QC {.smaller-text .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[01 · Controle espacial]{.pitch-card-index}
+[Armadilha da causalidade e Desenho]{.pitch-heading}
+
+- **Controle a montante:** se a turbidez sobe perto de uma obra, multar sem área de referência a montante confunde correlação com causalidade (o pico pode vir de chuva 18 km acima).
+- **Desenho amostral:** unidades espaciais fixas, áreas-referência conservadas e frequência padronizada (deslocar pontos sem registro invalida séries de 10+ anos).
+:::
+
+::: {.pitch-card .pitch-card--alert}
+[02 · Garantia e Controle de Qualidade]{.pitch-card-index}
+[Protocolo QA/QC em campo e laboratório]{.pitch-heading}
+
+- Inserir **amostras em branco** (*field blanks*) para descartar contaminação de frasco ou reagente.
+- Coletar **duplicatas físicas** e manter **cadeia de custódia** assinada com preservação térmica.
+- **Regra de ouro QA/QC:** dados anômalos **nunca devem ser deletados silenciosamente** — investigar a causa raiz revela falhas de calibração ou processos reais.
 :::
 :::
 
-## Gestão Adaptativa: Fechando o Loop Decisório {.smaller-text}
+## [Gestão]{.pitch-tag .pitch-tag--gold} Gestão Adaptativa: Fechando o Loop Decisório {.smaller-text .lesson-slide}
 
+::: {.pitch-band}
 Monitoramento ambiental **não é arquivo de gaveta**: o dado coletado deve acionar uma decisão quando cruza o **Limite de Ação Operacional (*Threshold*)**.
+:::
 
+::: {.pitch-table-box}
 | Situação observada | Diagnóstico da causa raiz | Ação obrigatória |
 |---|---|---|
 | **Dentro da faixa esperada** | Sistema alinhado ao estado desejável | Manter plano de monitoramento e frequência vigente |
-| **Desvio por erro metodológico** | Falha na cadeia QA/QC, desvio de calibração ou troca de método/sensor | Recalibrar equipamentos, revisar protocolo e retreinar equipe |
-| **Desvio por resposta ambiental real** | Aumento de pressão externa ou falha de manejo em campo | Ativar **Manejo Adaptativo imediato** (ex.: replantio, controle de invasoras, contenção de carga) |
-
-## Indicadores Técnicos vs. Científicos e o Desafio Climático {.smaller-text}
-
-::: {.columns}
-::: {.column width="52%"}
-- **Indicadores Técnicos (conformidade rápida):** métricas visuais e estruturais usadas por órgãos ambientais (cobertura do solo, presença de exóticas invasoras como braquiária, estratificação do dossel).
-- **Indicadores Científicos (processos de longo prazo):** chuva de sementes (poleiros artificiais), retorno reprodutivo da fauna e fluxo gênico entre fragmentos.
-- **Dimensão Socioeconômica (Rigueira & Mariano-Neto):** a sustentabilidade de áreas recuperadas exige cruzar flora, fauna e solo com a **função social** (adesão comunitária, renda e capacitação).
+| **Desvio por erro metodológico** | Falha na cadeia QA/QC, desvio de calibração ou troca de sensor | Recalibrar equipamentos, revisar protocolo e retreinar equipe |
+| **Desvio por resposta ambiental real** | Aumento de pressão externa ou falha de manejo em campo | Ativar **Manejo Adaptativo imediato** (replantio, controle de invasoras, contenção de carga) |
 :::
 
-::: {.column width="48%"}
-::: {.info-box}
-**Desafio do Século XXI — *Shifting Baselines* (Referências Móveis):**
-
-Sob mudanças climáticas globais severas, os próprios remanescentes usados como **áreas de referência** sofrem alterações de temperatura e regime hídrico. Monitorar exige distinguir variação climática regional de falha local de manejo.
+::: {.pitch-band .pitch-band--teal}
+A decisão corretiva retroalimenta o elo **Resposta ($R$)** da matriz FPEIR antes que o dano avance na cascata ecológica.
 :::
+
+## [Síntese Aplicada]{.pitch-tag .pitch-tag--teal} Indicadores Técnicos vs. Científicos e Clima {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Conformidade vs. Processos]{.pitch-card-index}
+[Indicadores Técnicos vs. Científicos]{.pitch-heading}
+
+- **Técnicos (conformidade rápida):** cobertura do solo, invasoras (ex.: braquiária) e estratificação do dossel.
+- **Científicos (longo prazo):** chuva de sementes (poleiros), retorno reprodutivo da fauna e fluxo gênico entre fragmentos.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[Sustentabilidade social]{.pitch-card-index}
+[Dimensão Socioeconômica (Rigueira & Mariano-Neto, 2013)]{.pitch-heading}
+
+A sustentabilidade de áreas recuperadas exige cruzar flora, fauna e solo com a **função social** (adesão comunitária, renda e capacitação).
+:::
+:::
+
+::: {.pitch-card .pitch-card--alert}
+[Desafio do Século XXI]{.pitch-card-index}
+[*Shifting Baselines* (Referências Móveis)]{.pitch-heading}
+
+Sob mudanças climáticas globais severas, os próprios remanescentes usados como **áreas de referência** sofrem alterações térmicas e hídricas.
+
+Monitorar exige distinguir **variação climática regional** de **falha local de manejo**.
 :::
 :::
 
 # 4 · Síntese e Referências {.section-header rotulo="Síntese"}
 
-## Pontos Essenciais para Fixação {.smaller-text}
+## [Síntese]{.pitch-tag} Pontos Essenciais para Fixação {.smaller-text .lesson-slide}
 
-1. A matriz **FPEIR (DPSIR)** impede que o analista liste indicadores desconexos, obrigando a vincular **Força Motriz $\rightarrow$ Pressão $\rightarrow$ Estado $\rightarrow$ Impacto $\rightarrow$ Resposta**.
-2. A análise química é uma **fotografia** instantânea; **biomarcadores precoces e bioindicadores** funcionam como um **filme** do impacto cumulativo (com atenção à regra trófica e proliferações patológicas).
-3. Sem **área de referência**, **QA/QC** (brancos, duplicatas, cadeia de custódia) e **Gestão Adaptativa**, o monitoramento vira acúmulo de planilhas sem poder causal ou corretivo.
-4. No Semiárido baiano, a combinação de **SAVI** (satélite), **IQA/IET** (água), **CONAMA 357/430/506** e **bioindicadores** oferece diagnóstico robusto e multiescalar.
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**01 · Cadeia causal:** a matriz **FPEIR (DPSIR)** impede listas desconexas de variáveis, vinculando **Força Motriz $\rightarrow$ Pressão $\rightarrow$ Estado $\rightarrow$ Impacto $\rightarrow$ Resposta**.
+:::
 
-## Referências Bibliográficas {.smaller-text}
+::: {.pitch-milestone-item}
+**02 · Complementaridade temporal:** a química é uma **fotografia** instantânea; **biomarcadores precoces e bioindicadores** funcionam como um **filme** do impacto cumulativo (regra trófica e proliferações).
+:::
+
+::: {.pitch-milestone-item}
+**03 · Rigor operacional:** sem **área de referência**, **QA/QC** (brancos, duplicatas, cadeia de custódia) e **Gestão Adaptativa**, o monitoramento vira acúmulo de planilhas sem poder causal.
+:::
+
+::: {.pitch-milestone-item}
+**04 · Síntese no Semiárido:** combinar **SAVI** (satélite), **IQA/IET** (água), **CONAMA 357/430/506** e **bioindicadores** garante diagnóstico multiescalar robusto.
+:::
+:::
+
+## [Referências]{.pitch-tag} Referências Bibliográficas {.smaller-text .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Normas e marcos institucionais]{.pitch-card-index}
+[Legislação e padrões]{.pitch-heading}
 
 - ANA (Agência Nacional de Águas e Saneamento Básico). **Indicadores de Qualidade — Índice de Qualidade das Águas (IQA)**. Brasília: ANA, 2020.
 - CONAMA. **Resolução nº 357, de 17 de março de 2005**; **Resolução nº 430, de 13 de maio de 2011**; **Resolução nº 506, de 5 de julho de 2024**.
 - EEA (European Environment Agency). **Environmental indicators: Typology and overview** (DPSIR Framework). Copenhagen: EEA, 1999.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Literatura científica de base]{.pitch-card-index}
+[Indicadores e biomarcadores]{.pitch-heading}
+
 - MAGALHÃES JR., A. P. **Indicadores Ambientais e Recursos Hídricos**. Rio de Janeiro: Bertrand Brasil, 2007.
 - RIGUEIRA, D. M. G.; MARIANO-NETO, E. Monitoramento: uma proposta integrada para avaliação do sucesso em projetos de restauração ecológica em áreas florestais. **Revista Caititu**, n. 1, p. 73–88, 2013.
 - SICHE, R. et al. Índices versus indicadores: precisões conceituais na discussão da sustentabilidade de países. **Ambiente & Sociedade**, v. 10, n. 2, p. 137–148, 2007.
 - VAN DER OOST, R.; BEYER, J.; VERMEULEN, N. P. E. Fish bioaccumulation and biomarkers in environmental risk assessment: a review. **Environmental Toxicology and Pharmacology**, v. 13, n. 2, p. 57–149, 2003.
+:::
+:::

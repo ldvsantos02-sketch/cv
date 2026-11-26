@@ -1,0 +1,60 @@
+\documentclass[tikz,border=8pt]{standalone}
+\input{../../apostila/figures/tikz/aa_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título principal
+\node[font=\large\bfseries\sffamily, text=uefsNavy, align=center] at (0, 3.85)
+  {Suscetibilidade, Fragilidade, Vulnerabilidade e Risco Socioambiental};
+
+% =========================================================
+% LINHA SUPERIOR: 3 DIMENSÕES
+% =========================================================
+\node[draw=uefsAlert, fill=bgAlert, rounded corners=6pt, line width=1.2pt,
+      text width=4.95cm, minimum height=2.55cm, inner sep=8pt, align=center,
+      font=\footnotesize\sffamily, text=uefsInk] (perigo) at (-5.75, 1.75)
+  {\textbf{\small\color{uefsAlert}Perigo / Ameaça ($P$)\\[-1pt]e Suscetibilidade}\\[4pt]
+   \textit{\color{uefsMuted}(dimensão físico-natural)}\\[4pt]
+   Predisposição do meio e probabilidade de evento físico adverso.};
+
+\node[draw=uefsGoldDark, fill=bgGold, rounded corners=6pt, line width=1.2pt,
+      text width=4.95cm, minimum height=2.55cm, inner sep=8pt, align=center,
+      font=\footnotesize\sffamily, text=uefsInk] (frag) at (0, 1.75)
+  {\textbf{\small\color{uefsGoldDark}Fragilidade Ambiental\\[-1pt](Ross; Crepani)}\\[4pt]
+   \textit{\color{uefsMuted}(potencial vs. emergente)}\\[4pt]
+   Sensibilidade intrínseca do meio modulada pelo uso da terra.};
+
+\node[draw=uefsWater, fill=bgNavy, rounded corners=6pt, line width=1.2pt,
+      text width=4.95cm, minimum height=2.55cm, inner sep=8pt, align=center,
+      font=\footnotesize\sffamily, text=uefsInk] (vuln) at (5.75, 1.75)
+  {\textbf{\small\color{uefsNavy}Exposição ($E$) e\\[-1pt]Vulnerabilidade ($V$)}\\[4pt]
+   \textit{\color{uefsMuted}(dimensão socioespacial)}\\[4pt]
+   População e bens expostos somados à fragilidade social de resposta.};
+
+% =========================================================
+% SETAS VERTICAIS PARA O BANNER DE RISCO
+% =========================================================
+\draw[->, >=Stealth, line width=1.8pt, uefsAlert] (perigo.south) -- (-5.75, -0.25);
+\draw[->, >=Stealth, line width=1.8pt, uefsGoldDark] (frag.south) -- (0, -0.25);
+\draw[->, >=Stealth, line width=1.8pt, uefsNavy] (vuln.south) -- (5.75, -0.25);
+
+% =========================================================
+% BANNER CENTRAL ESCURO: FÓRMULA DO RISCO
+% =========================================================
+\node[draw=uefsGold, fill=uefsNavy, rounded corners=7pt, line width=1.5pt,
+      text width=16.2cm, minimum height=1.55cm, inner sep=9pt, align=center,
+      text=white] (risco) at (0, -1.1)
+  {\normalsize\bfseries\color{uefsGold}Risco Socioambiental: \quad $R = P \times E \times V$\\[5pt]
+   \footnotesize\normalfont\itshape\color{white}Sem exposição ($E=0$), há perigo natural, mas não há risco social $\cdot$ Graus IPT R1 a R4};
+
+% =========================================================
+% PÍLULA INFERIOR: CAPACIDADE DE SUPORTE
+% =========================================================
+\node[draw=uefsTeal, fill=bgTeal, rounded corners=11pt, line width=1.2pt,
+      text width=16.2cm, minimum height=0.85cm, inner sep=7pt, align=center,
+      font=\small\sffamily, text=uefsForest] at (0, -2.55)
+  {\textbf{\color{uefsTeal}Capacidade de Suporte:} limite máximo de pressão suportado antes do colapso da resiliência.};
+
+\end{tikzpicture}
+\end{document}

@@ -6,14 +6,16 @@ lang: pt-BR
 academico:
   cabecalho:
     - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
-    - "PPGPT · Empreendedorismo Tecnológico e Desenvolvimento Territorial"
-    - "Aula 03 · 4 horas"
-  rodape: "UEFS · PPGPT · Aula 03 · Ecossistemas Empreendedores"
+    - "PLANTERR · Programa de Pós-Graduação em Planejamento Territorial"
+    - "Empreendedorismo Tecnológico e Desenvolvimento Territorial · Aula 03 · 4 horas"
+  rodape: "UEFS · PLANTERR · Aula 03 · Ecossistemas Empreendedores"
   local: "Feira de Santana – Bahia"
 format:
   revealjs:
     theme: ../../../assets/academico/academico.scss
-    css: ../../../assets/academico/academico.css
+    css:
+      - ../../../assets/academico/academico.css
+      - ../../assets/planterr-slides.css
     include-after-body:
       - ../../../assets/academico/academico.html
     slide-number: false
@@ -27,6 +29,9 @@ format:
     embed-resources: true
     transition: fade
     background-transition: none
+    auto-stretch: false
+    pdf-separate-fragments: false
+    pdf-max-pages-per-slide: 1
   beamer:
     pdf-engine: xelatex
     aspectratio: 169
@@ -39,119 +44,163 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text .lesson-slide}
+## [Unidade I]{.pitch-tag} Visão geral da aula {#visao-geral .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
-
-- [1]{.circle} Dos Sistemas de Inovação (SNI/SRI) aos Ecossistemas Empreendedores
-- [2]{.circle} Os 6 domínios de Isenberg (2010; 2011)
-- [3]{.circle} O modelo causal de Stam (2015) e Stam & van de Ven (2021)
-- [4]{.circle} O Paradoxo da Proximidade e riscos de *lock-in* regional (Boschma, 2005)
-- [5]{.circle} Crítica ao viés das *gazelles* e diagnóstico de ecossistemas periféricos
+::: {.pitch-grid-55}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**01 · Evolução conceitual:** Dos Sistemas de Inovação (SNI/SRI) aos Ecossistemas Empreendedores.
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-milestone-item}
+**02 · Isenberg (2010; 2011):** Os 6 domínios e os princípios de intervenção territorial.
+:::
+
+::: {.pitch-milestone-item}
+**03 · Stam (2015; 2021):** Condições estruturais, sistêmicas, *outputs* e *outcomes*.
+:::
+
+::: {.pitch-milestone-item}
+**04 · Boschma (2005):** O Paradoxo da Proximidade e os riscos de *lock-in* regional.
+:::
+
+::: {.pitch-milestone-item}
+**05 · Crítica periférica:** Viés das *gazelles* e diagnóstico de ecossistemas fora do centro.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Propósito formativo]{.pitch-card-index}
+[Objetivo da aula]{.pitch-heading}
 
 Compreender a arquitetura conceitual e empírica dos **ecossistemas empreendedores** e dos **Sistemas Regionais de Inovação (SRI)**, diferenciando seus elementos estruturais, mecanismos de retroalimentação e implicações para políticas territoriais.
+:::
+
+::: {.pitch-pill-row}
+[SRI · Cooke]{.pitch-pill}
+[Isenberg & Stam]{.pitch-pill .pitch-pill--gold}
+[Proximidade · Boschma]{.pitch-pill}
+:::
+
+::: {.pitch-band}
+**Pergunta-chave:** Por que instituições científicas fortes não bastam, sozinhas, para gerar um ecossistema empreendedor dinâmico no território?
 :::
 :::
 :::
 
 # 1 · Evolução Conceitual {.section-header rotulo="Conceito"}
 
-## Sistemas de Inovação vs. Ecossistemas Empreendedores {.smaller-text .lesson-slide}
+## [Conceito]{.pitch-tag} Sistemas de Inovação vs. Ecossistemas Empreendedores {#sri-vs-ecossistemas .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Sistemas Regionais de Inovação (Cooke et al., 1997)
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Cooke et al. (1997)]{.pitch-card-index}
+[Sistemas Regionais de Inovação (SRI)]{.pitch-heading}
 
 - Foco nas **instituições de P&D, firmas estabelecidas e políticas tecnológicas**.
 - Ênfase na geração e difusão de conhecimento em rede.
 - O empreendedor aparece muitas vezes como ator secundário diante de grandes empresas e laboratórios.
 :::
 
-::: {.column width="50%"}
-### Ecossistemas Empreendedores (Spigel, 2017; Stam, 2015)
+::: {.pitch-card .pitch-card--gold}
+[Spigel (2017); Stam (2015)]{.pitch-card-index}
+[Ecossistemas Empreendedores]{.pitch-heading}
 
 - Coloca o **empreendedor inovador no centro** do sistema, não apenas como resultado, mas como agente construtor.
 - Conjunto de atores interdependentes e fatores coordenados de modo a permitir o **empreendedorismo produtivo** (*ambitious entrepreneurship*) em um território específico.
+:::
+:::
 
-::: {.highlight-box}
+::: {.pitch-band .pitch-band--navy}
 **Síntese:** Enquanto o SRI explica a capacidade de *produzir conhecimento*, o Ecossistema Empreendedor explica a capacidade do território de *transformar conhecimento em novos negócios escaláveis*.
-:::
-:::
 :::
 
 # 2 · Modelos Analíticos de Ecossistemas {.section-header rotulo="Modelos"}
 
-## Os 6 Domínios de Isenberg (2011) {.smaller-text .lesson-slide}
+## [Conceito]{.pitch-tag} Os 6 domínios de Isenberg (2011) {#seis-dominios-isenberg .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
-### Babson Entrepreneurship Ecosystem Project
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Babson Entrepreneurship Ecosystem Project]{.pitch-card-index}
+[Os 6 domínios interdependentes]{.pitch-heading}
 
 1. **Políticas (*Policy*):** liderança governamental e marco regulatório.
 2. **Finanças (*Finance*):** microcrédito, anjos, *venture capital*, fomento.
 3. **Cultura (*Culture*):** tolerância ao risco/erro, histórias de sucesso, status social.
-4. **Suporte (*Supports*):** infraestrutura, incubadoras, serviços jurídicos/contábeis.
+4. **Suporte (*Supports*):** infraestrutura, incubadoras, serviços jurídicos e contábeis.
 5. **Capital Humano (*Human Capital*):** universidades, formação técnica, empreendedores seriais.
 6. **Mercados (*Markets*):** redes de clientes iniciais (*early adopters*) e canais de distribuição.
 :::
 
-::: {.column width="45%"}
-### Princípios de Intervenção (Isenberg, 2010)
+::: {.pitch-stack-2}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**01 · Não copie o Vale do Silício:** cada território deve construir sobre suas vocações e ativos locais (Isenberg, 2010).
+:::
 
-- **Pare de tentar copiar o Vale do Silício:** cada território deve construir sobre suas vocações locais.
-- **Não crie "elefantes brancos":** infraestrutura física sem demanda empreendedora real fracassa.
-- **Reciclagem empreendedora:** empreendedores bem-sucedidos reinvestem capital, mentoria e reputação no próprio território.
+::: {.pitch-milestone-item}
+**02 · Evite "elefantes brancos":** infraestrutura física sem demanda empreendedora real fracassa.
+:::
+
+::: {.pitch-milestone-item}
+**03 · Reciclagem empreendedora:** empreendedores bem-sucedidos reinvestem capital, mentoria e reputação no próprio território.
 :::
 :::
 
-## Esquema: Modelo Causal de Ecossistema Empreendedor {.smaller-text .lesson-slide}
-
-![Estrutura integrativa de Stam (2015) e Stam & van de Ven (2021): condições estruturais, condições sistêmicas, *outputs* empreendedores e *outcomes* regionais.](img/et_ecossistema_stam_isenberg.png){.fig-full}
-
-## O Modelo Integrativo de Stam (2015) e Stam & van de Ven (2021) {.smaller-text .lesson-slide}
-
-::: {.columns}
-::: {.column width="50%"}
-### Condições Estruturais × Condições Sistêmicas
-
-- **Condições Estruturais (Framework):** instituições formais, cultura, infraestrutura física, demanda de mercado.
-- **Condições Sistêmicas (Coração do Ecossistema):**
-  1. Redes de empreendedores;
-  2. Liderança;
-  3. Finanças;
-  4. Talento;
-  5. Conhecimento;
-  6. Serviços intermediários.
+::: {.pitch-band .pitch-band--teal}
+Os seis domínios atuam como sistema acoplado: avançar em apenas um pilar sem os demais gera gargalos.
+:::
+:::
 :::
 
-::: {.column width="50%"}
-### Saídas (*Outputs*) e Resultados (*Outcomes*)
+## [Síntese]{.pitch-tag .pitch-tag--teal} Modelo causal de ecossistema empreendedor {#esquema-stam-isenberg .smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--tall}
+![Estrutura integrativa de Stam (2015) e Stam & van de Ven (2021): condições estruturais, condições sistêmicas, outputs empreendedores e outcomes regionais.](img/et_ecossistema_stam_isenberg.png)
+
+[Modelo causal de ecossistema empreendedor (Stam, 2015; Stam & van de Ven, 2021)]{.pitch-caption}
+[Integração entre condições estruturais, condições sistêmicas, empreendedorismo produtivo e retroalimentação regional]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band}
+A criação de valor agregado realimenta as condições sistêmicas ao longo do tempo por meio da reciclagem empreendedora.
+:::
+
+## [Conceito]{.pitch-tag} O modelo integrativo de Stam (2015; 2021) {#modelo-integrativo-stam .smaller-text .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Arquitetura em dois níveis]{.pitch-card-index}
+[Condições estruturais × sistêmicas]{.pitch-heading}
+
+- **Condições estruturais (*Framework*):** instituições formais, cultura, infraestrutura física e demanda de mercado.
+- **Condições sistêmicas (Coração do ecossistema):**
+  1. Redes de empreendedores; 2. Liderança;
+  3. Finanças; 4. Talento;
+  5. Conhecimento; 6. Serviços intermediários.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Dinâmica de resultados]{.pitch-card-index}
+[Outputs, outcomes e retroalimentação]{.pitch-heading}
 
 - ***Outputs*:** empreendedorismo produtivo (novas firmas inovadoras, de alto crescimento ou alto impacto).
 - ***Outcomes*:** criação agregada de valor, produtividade e desenvolvimento econômico regional.
 - **Causalidade ascendente e descendente:** retroalimentação contínua entre resultados e condições sistêmicas.
+:::
+:::
 
-::: {.info-box}
-**Vantagem Metodológica:** O modelo de Stam permite construir **índices compostos comparativos** entre municípios ou regiões (ex.: Índice de Ecossistemas Empreendedores).
-:::
-:::
+::: {.pitch-band}
+**Vantagem metodológica:** O modelo de Stam permite construir **índices compostos comparativos** entre municípios ou regiões (ex.: Índice de Ecossistemas Empreendedores).
 :::
 
 # 3 · Proximidade e Território {.section-header rotulo="Proximidade"}
 
-## As 5 Dimensões da Proximidade (Boschma, 2005) {.smaller-text .lesson-slide}
+## [Território]{.pitch-tag .pitch-tag--gold} As 5 dimensões da proximidade (Boschma, 2005) {#cinco-dimensoes-proximidade .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="60%"}
-### Proximidade Geográfica Não Basta Sozinha
-
+::: {.pitch-grid-60}
+::: {.pitch-table-box}
 | Dimensão | O que significa | Risco do Excesso (*Lock-in*) |
 |----------|-----------------|------------------------------|
 | **Geográfica** | Distância física entre atores | Isolamento de fluxos externos |
@@ -161,27 +210,35 @@ Compreender a arquitetura conceitual e empírica dos **ecossistemas empreendedor
 | **Institucional** | Regras formais e informais comuns | Inércia institucional |
 :::
 
-::: {.column width="40%"}
-### Implicação para o Planejamento
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Implicação para o planejamento]{.pitch-card-index}
+[Proximidade geográfica não basta]{.pitch-heading}
 
-- A proximidade geográfica facilita o encontro, mas a cooperação tecnológica exige **proximidade cognitiva e institucional** mínima.
-- Políticas territoriais devem construir **"pontes externas"** (*pipelines* globais) para evitar o aprisionamento regional (*regional lock-in*).
+A proximidade física facilita o encontro, mas a cooperação tecnológica exige **proximidade cognitiva e institucional** mínima entre os atores.
+:::
+
+::: {.pitch-band .pitch-band--navy}
+Políticas territoriais devem construir **“pontes externas” (*pipelines* globais)** para evitar o aprisionamento regional (*regional lock-in*).
 :::
 :::
+:::
 
-## Contraponto Crítico (Eixo 2): O Paradoxo da Proximidade e Limites das *Gazelles* {.smaller-text .lesson-slide}
+## [Crítica]{.pitch-tag .pitch-tag--alert} Paradoxo da proximidade e viés das gazelles {#critica-proximidade-gazelles .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### 1. O Paradoxo da Proximidade (Boschma, 2005) e o *Lock-in* de Dosi (1982)
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--alert}
+[1 · Boschma (2005) e Dosi (1982)]{.pitch-card-index}
+[O paradoxo da proximidade e o lock-in]{.pitch-heading}
 
 - Estar junto fisicamente não garante inovação e pode produzir **estagnação territorial**.
-- **Conexão Kuhn–Dosi–Boschma:** quando todas as firmas, cursos técnicos e órgãos públicos de uma região operam apenas na "ciência normal" de uma trajetória tecnológica antiga (ex.: petroquímica fóssil ou monocultura convencional), o excesso de proximidade cognitiva e institucional gera **cegueira tecnológica (*lock-in*)**.
-- Transitar para uma nova matriz (ex.: **bioeconomia ou energias renováveis na Bahia**) exige romper o *lock-in* combinando ativos locais com novos paradigmas científicos e *pipelines* globais.
+- **Conexão Kuhn–Dosi–Boschma:** quando firmas, ensino técnico e órgãos públicos operam apenas na "ciência normal" de uma trajetória antiga (petroquímica fóssil ou monocultura convencional), o excesso de proximidade cognitiva e institucional gera **cegueira tecnológica (*lock-in*)**.
+- Transitar para **bioeconomia ou energias renováveis na Bahia** exige combinar ativos locais com novos paradigmas e *pipelines* globais.
 :::
 
-::: {.column width="50%"}
-### 2. Crítica ao Viés das *Gazelles* (Stam vs. Periferias)
+::: {.pitch-card .pitch-card--alert}
+[2 · Stam vs. periferias]{.pitch-card-index}
+[Crítica ao viés das gazelles]{.pitch-heading}
 
 - Modelos canônicos de ecossistemas (Isenberg; Stam) medem sucesso quase exclusivamente pela geração de *startups* de hipercrescimento (*gazelles* / unicórnios).
 - Em regiões periféricas e no interior brasileiro, esse viés ignora cooperativas inovadoras, PMEs intensivas em conhecimento local e negócios de impacto que retêm renda e emprego no território.
@@ -190,26 +247,27 @@ Compreender a arquitetura conceitual e empírica dos **ecossistemas empreendedor
 
 # 4 · Oficina de Diagnóstico {.section-header rotulo="Oficina"}
 
-## Mapeamento Rápido de Ecossistema (45 min) {.smaller-text .lesson-slide}
+## [Método]{.pitch-tag .pitch-tag--teal} Mapeamento de ecossistema e leituras {#oficina-leituras .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
-### Roteiro Prático — Feira de Santana / Território Portal do Sertão
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--teal}
+[Oficina diagnóstica (45 min)]{.pitch-card-index}
+[Feira de Santana / Portal do Sertão]{.pitch-heading}
 
 Em grupos, avaliem de **1 a 5** os 6 elementos sistêmicos de Stam (2021) para o território escolhido:
 
-1. Redes e eventos empreendedores;
-2. Liderança articuladora;
-3. Acesso a financiamento e fomento;
-4. Talento e formação superior/técnica;
-5. Produção de conhecimento (P&D/PI);
-6. Serviços de suporte (incubadoras, contabilidade, NITs).
-
-**Entregável:** Identificar o **principal gargalo sistêmico** e propor 1 ação de governança territorial.
+1. Redes e eventos empreendedores · 2. Liderança articuladora · 3. Financiamento e fomento · 4. Talento e formação superior/técnica · 5. Produção de conhecimento (P&D/PI) · 6. Serviços de suporte (incubadoras, contabilidade, NITs).
 :::
 
-::: {.column width="45%"}
-### Leituras da Aula 03 e Próxima Aula (Eixos 2 e 3)
+::: {.pitch-band .pitch-band--navy}
+**Entregável:** Identificar o **principal gargalo sistêmico** e propor 1 ação concreta de governança territorial.
+:::
+:::
+
+::: {.pitch-card}
+[Bibliografia fundamental]{.pitch-card-index}
+[Leituras da Aula 03 e próxima aula (Eixos 2 e 3)]{.pitch-heading}
 
 - **ISENBERG, D.** *How to start an entrepreneurial revolution*. HBR, 2010; **LUNDVALL, B.-Å.** *National systems of innovation*, 1992.
 - **STAM, E.; VAN DE VEN, A.** *Entrepreneurial ecosystem elements*. Small Business Economics, 2021.

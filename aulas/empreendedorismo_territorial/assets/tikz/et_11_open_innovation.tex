@@ -1,0 +1,80 @@
+\documentclass[border=10pt]{standalone}
+\input{et_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título
+\node[etTitle, font=\large\bfseries\sffamily, text=etNavy] (title) at (8.0, 5.05)
+  {Inovação Aberta (\textit{Open Innovation}) e Trajetória de \textit{Spin-offs} Acadêmicas};
+
+% Estilo local para cards em 4 colunas
+\tikzset{
+  oiCard/.style={
+    draw=#1, fill=white, rounded corners=6pt, line width=1.2pt,
+    minimum width=3.70cm, minimum height=2.95cm, inner sep=0pt, anchor=north
+  },
+  oiHead/.style={
+    fill=#1, text=white, rounded corners=4pt,
+    minimum width=3.44cm, minimum height=0.66cm,
+    align=center, font=\scriptsize\bfseries\sffamily
+  },
+  oiBody/.style={
+    text width=3.26cm, align=left, font=\scriptsize\sffamily, text=etInk,
+    inner sep=2pt
+  }
+}
+
+% Card 1
+\node[oiCard=etNavy] (c1) at (1.95, 4.30) {};
+\node[oiHead=etNavy, anchor=north] (h1) at ([yshift=-0.13cm]c1.north) {1. Pesquisa \& NIT};
+\node[oiBody, anchor=north] at ([yshift=-0.22cm]h1.south) {\raggedright\hyphenpenalty=10000%
+  \textbullet~Pesquisa universitária\\[5pt]
+  \textbullet~Proteção de PI (INPI)\\[5pt]
+  \textbullet~Marco Legal de CT\&I
+};
+
+% Card 2
+\node[oiCard=etGold] (c2) at (5.98, 4.30) {};
+\node[oiHead=etGold, anchor=north] (h2) at ([yshift=-0.13cm]c2.north) {2. Validação \& Fomento};
+\node[oiBody, anchor=north] at ([yshift=-0.22cm]h2.south) {\raggedright\hyphenpenalty=10000%
+  \textbullet~Prova de conceito (TRL)\\[5pt]
+  \textbullet~Incubadora / Parque Tec.\\[5pt]
+  \textbullet~Subvenção (FINEP/FAPs)
+};
+
+% Card 3
+\node[oiCard=etTeal] (c3) at (10.02, 4.30) {};
+\node[oiHead=etTeal, anchor=north] (h3) at ([yshift=-0.13cm]c3.north) {3. \textit{Spin-off} / Licenciamento};
+\node[oiBody, anchor=north] at ([yshift=-0.22cm]h3.south) {\raggedright\hyphenpenalty=10000%
+  \textbullet~Nova EBT ou transferência\\[5pt]
+  \textbullet~Royalties ou participação (\textit{Equity})
+};
+
+% Card 4
+\node[oiCard=etNavyDark] (c4) at (14.05, 4.30) {};
+\node[oiHead=etNavyDark, anchor=north] (h4) at ([yshift=-0.13cm]c4.north) {4. Impacto Territorial};
+\node[oiBody, anchor=north] at ([yshift=-0.22cm]h4.south) {\raggedright\hyphenpenalty=10000%
+  \textbullet~Empregos qualificados\\[5pt]
+  \textbullet~Adensamento de cadeia\\[5pt]
+  \textbullet~Retenção de talentos
+};
+
+% Setas sequenciais
+\draw[etArrow, etNavy] (c1.east) -- (c2.west);
+\draw[etArrow, etGoldDark] (c2.east) -- (c3.west);
+\draw[etArrow, etTeal] (c3.east) -- (c4.west);
+
+% Banner inferior
+\node[
+  draw=etNavy, fill=bgNavy, rounded corners=6pt, line width=1.15pt,
+  text width=15.05cm, inner xsep=14pt, inner ysep=9pt,
+  align=left, font=\footnotesize\sffamily, text=etInk, anchor=north
+] (banner) at (8.0, 0.92) {%
+  \textcolor{etNavy}{\textbf{Open Innovation (Chesbrough, 2003):}} fronteiras permeáveis permitem que ideias internas gerem novas empresas (\textit{spin-offs}, \textit{inside-out}) e tecnologias externas entrem via parcerias (\textit{outside-in}).
+};
+% Barra lateral de destaque no banner
+\fill[etNavy, rounded corners=2pt] ([xshift=1.5pt, yshift=-3pt]banner.north west) rectangle ([xshift=5.5pt, yshift=3pt]banner.south west);
+
+\end{tikzpicture}
+\end{document}

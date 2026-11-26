@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Gera todas as 15 figuras vetoriais (PDF) de alta resolução para a
-Apostila Completa de Empreendedorismo Tecnológico e Desenvolvimento Territorial (PPGPT/UEFS).
+Apostila Completa de Empreendedorismo Tecnológico e Desenvolvimento Territorial (PLANTERR/UEFS).
 """
 import os
 import numpy as np

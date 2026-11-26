@@ -6,14 +6,16 @@ lang: pt-BR
 academico:
   cabecalho:
     - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
-    - "PPGPT · Empreendedorismo Tecnológico e Desenvolvimento Territorial"
-    - "Aula 15 · 4 horas"
-  rodape: "UEFS · PPGPT · Aula 15 · Seminário Final"
+    - "PLANTERR · Programa de Pós-Graduação em Planejamento Territorial"
+    - "Empreendedorismo Tecnológico e Desenvolvimento Territorial · Aula 15 · 4 horas"
+  rodape: "UEFS · PLANTERR · Aula 15 · Seminário Final"
   local: "Feira de Santana – Bahia"
 format:
   revealjs:
     theme: ../../../assets/academico/academico.scss
-    css: ../../../assets/academico/academico.css
+    css:
+      - ../../../assets/academico/academico.css
+      - ../../assets/planterr-slides.css
     include-after-body:
       - ../../../assets/academico/academico.html
     slide-number: false
@@ -27,6 +29,9 @@ format:
     embed-resources: true
     transition: fade
     background-transition: none
+    auto-stretch: false
+    pdf-separate-fragments: false
+    pdf-max-pages-per-slide: 1
   beamer:
     pdf-engine: xelatex
     aspectratio: 169
@@ -39,65 +44,96 @@ execute:
   echo: false
 ---
 
-## Visão Geral do Encerramento {.smaller-text .lesson-slide}
+## [Síntese]{.pitch-tag .pitch-tag--teal} Visão Geral do Encerramento {#visao-geral-15 .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Dinâmica do Seminário (4 horas)
-
-- [1]{.circle} Apresentações dos Projetos Finais (20 min por equipe)
-- [2]{.circle} Arguição técnica e debate entre pares (10 min por equipe)
-- [3]{.circle} Síntese integradora: território, inovação e sustentabilidade financeira
-- [4]{.circle} Balanço da disciplina e encaminhamentos para publicação/pesquisa
+::: {.pitch-grid-55}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**01 · Defesas:** Apresentações dos Projetos Finais (20 min por equipe).
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-milestone-item}
+**02 · Debate:** Arguição técnica e discussão entre pares (10 min por equipe).
+:::
+
+::: {.pitch-milestone-item}
+**03 · Integração:** Síntese entre território, inovação e sustentabilidade financeira.
+:::
+
+::: {.pitch-milestone-item}
+**04 · Encaminhamentos:** Balanço da disciplina e próximos passos para pesquisa e publicação.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Objetivo da Aula]{.pitch-card-index}
+[Defesa pública dos projetos]{.pitch-heading}
 
 Consolidar a aprendizagem das Unidades I, II e III por meio da **defesa pública dos projetos aplicados**, avaliando a coerência entre diagnóstico territorial, estratégia de negócio/impacto e viabilidade econômico-financeira.
+:::
+
+::: {.pitch-pill-row}
+[Unidade I · Território]{.pitch-pill}
+[Unidade II · Estratégia]{.pitch-pill .pitch-pill--gold}
+[Unidade III · Viabilidade]{.pitch-pill}
 :::
 :::
 :::
 
 # 1 · Critérios de Avaliação do Seminário {.section-header rotulo="Avaliação"}
 
-## Matriz de Rubrica (AV3 — 50% da Nota Final) {.smaller-text .lesson-slide}
+## [Rubrica]{.pitch-tag .pitch-tag--gold} Matriz de Rubrica (AV3 — 50% da Nota Final) {#matriz-rubrica .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="60%"}
-### Dimensões Avaliadas
-
+::: {.pitch-grid-60}
+::: {.pitch-table-box}
 | Critério | Peso | O que se espera |
-|---|---|---|
-| **Leitura Territorial e Ecossistêmica** | 30% | Diagnóstico rigoroso de atores, gargalos, APL/SRI, contrapontos críticos (lock-in, Estado, emancipação) e aderência ao território |
+|---|---:|---|
+| **Leitura Territorial e Ecossistêmica** | 30% | Diagnóstico rigoroso de atores, gargalos, APL/SRI, contrapontos críticos (*lock-in*, Estado, emancipação) e aderência ao território |
 | **Estratégia, Oportunidade e Modelo** | 30% | Coerência do *Canvas*, proposta de valor, barreiras de entrada e PI/impacto |
 | **Viabilidade e *Valuation*** | 25% | Clareza na decisão locacional, premissas de fluxo de caixa, VPL/TIR e riscos |
 | **Comunicação e Defesa Técnica** | 15% | Domínio conceitual, síntese visual e consistência nas respostas à arguição |
 :::
 
-::: {.column width="40%"}
-### Encaminhamentos Pós-Disciplina
+::: {.pitch-card .pitch-card--teal}
+[Encaminhamentos Pós-Disciplina]{.pitch-card-index}
+[Pesquisa e Publicação]{.pitch-heading}
 
-- Trabalhos com alto potencial analítico podem ser amadurecidos para submissão em periódicos de **Planejamento Urbano e Regional / Desenvolvimento Territorial** ou eventos (ANPUR, ENANPAD, ENGEMA).
-- **Contato:** `ldvsantos@uefs.br`
+Trabalhos com alto potencial analítico podem ser amadurecidos para submissão em periódicos de **Planejamento Urbano e Regional / Desenvolvimento Territorial** ou eventos científicos (ANPUR, ENANPAD, ENGEMA).
+
+**Contato:** `ldvsantos@uefs.br`
 :::
 :::
 
-## Articulação Epistemológica do Projeto Final (AV3) {.smaller-text .lesson-slide}
+## [Território]{.pitch-tag .pitch-tag--gold} Articulação Epistemológica do Projeto Final (AV3) {#articulacao-epistemologica .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Da Crítica Sociológica (Unidade I) à Estratégia (Unidade II)
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Unidades I → II]{.pitch-card-index}
+[Da Crítica Sociológica à Estratégia]{.pitch-heading}
 
 1. **Superação do Isomorfismo:** o projeto respeita as vocações e capacitações endógenas do território (*Smart Specialisation*) ou tenta importar um modelo desenraizado?
 2. **Enraizamento e Governança:** como o empreendimento interage com APLs, universidades/ICTs, políticas públicas e a sociedade civil (Hélice Quádrupla/Quíntupla)?
 :::
 
-::: {.column width="50%"}
-### Da Viabilidade Financeira (Unidade III) ao Valor Territorial
+::: {.pitch-card .pitch-card--teal}
+[Unidade III → Território]{.pitch-card-index}
+[Da Viabilidade Financeira ao Valor Territorial]{.pitch-heading}
 
 3. **Decisão Locacional e Fluxo de Caixa:** os indicadores de viabilidade (VPL, TIR, *Payback*, *Valuation*) consideram as restrições logísticas e infraestruturais reais da região?
 4. **Retenção de Valor e Emancipação:** o excedente gerado permanece no território (via Tecnologia Social, Economia Solidária, IGs ou *spin-offs* locais) ou é drenado para fora?
 :::
+:::
+
+## [Síntese]{.pitch-tag .pitch-tag--teal} Síntese Integradora do Projeto Final (AV3) {#diagrama-av3 .smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--wide}
+![Síntese integradora do Projeto Final (AV3) articulando as Unidades I, II e III.](img/et_projeto_final_av3.png)
+
+[Arquitetura Integradora do Projeto Final (AV3)]{.pitch-caption}
+[Conexão entre diagnóstico territorial (Unidade I), estratégia e modelo (Unidade II) e viabilidade financeira (Unidade III)]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band .pitch-band--navy}
+O seminário final avalia a consistência completa do percurso: da leitura crítica do território à engenharia econômica do projeto aplicado.
 :::

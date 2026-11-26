@@ -1,0 +1,92 @@
+\documentclass[border=10pt]{standalone}
+\input{et_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título
+\node[etTitle, font=\large\bfseries\sffamily, text=etNavy] (title) at (7.5, 6.45)
+  {Estrutura do \textit{Valuation} por FCD, \textit{Venture Capital} e Opções Reais};
+
+% Fluxo superior (3 cards conectados)
+\tikzset{
+  fcdCard/.style={
+    draw=#1, fill=white, rounded corners=6pt, line width=1.2pt,
+    minimum width=4.35cm, minimum height=2.05cm, inner sep=0pt, anchor=north
+  },
+  fcdHead/.style={
+    fill=#1, text=white, rounded corners=4pt,
+    minimum width=4.11cm, minimum height=0.60cm,
+    align=center, font=\footnotesize\bfseries\sffamily
+  },
+  fcdBody/.style={
+    text width=3.95cm, align=center, font=\footnotesize\sffamily, text=etInk,
+    inner sep=2pt
+  }
+}
+
+\node[fcdCard=etNavy] (f1) at (2.4, 5.75) {};
+\node[fcdHead=etNavy, anchor=north] (fh1) at ([yshift=-0.12cm]f1.north) {Fluxos Explícitos (Anos $1$ a $n$)};
+\node[fcdBody, anchor=center] at ([yshift=-0.30cm]f1.center)
+  {$\displaystyle \sum_{t=1}^{n} \frac{\text{FCFF}_t}{(1 + \text{WACC})^t}$};
+
+\node[fcdCard=etNavyDark] (f2) at (7.5, 5.75) {};
+\node[fcdHead=etNavyDark, anchor=north] (fh2) at ([yshift=-0.12cm]f2.north) {Valor Terminal (Gordon)};
+\node[fcdBody, anchor=center] at ([yshift=-0.30cm]f2.center)
+  {$\displaystyle \frac{\text{FCFF}_{n+1}}{\text{WACC} - g}$};
+
+\node[fcdCard=etForest] (f3) at (12.6, 5.75) {};
+\node[fcdHead=etForest, anchor=north] (fh3) at ([yshift=-0.12cm]f3.north) {Ponte para o Acionista};
+\node[fcdBody, anchor=center] at ([yshift=-0.30cm]f3.center)
+  {$\text{EV} - \text{Dívida Bruta} + \text{Caixa}$\\[3pt]$\mathbf{= \text{Equity Value}}$};
+
+% Operadores entre os cards superiores
+\node[circle, draw=etNavy, fill=bgNavy, inner sep=2.5pt, font=\small\bfseries\sffamily, text=etNavy]
+  at ($(f1.east)!0.5!(f2.west)$) {$+$};
+\draw[etArrow, etNavyDark] (f2.east) -- (f3.west);
+
+% Faixa intermediária de transição (rounded corners=6pt evita artefato nas pontas)
+\node[
+  draw=etBorder, fill=bgNavy!60!white, rounded corners=6pt, line width=0.9pt,
+  inner xsep=14pt, inner ysep=5pt, font=\footnotesize\bfseries\sffamily, text=etNavy
+] (mid) at (7.5, 3.05) {Quando o FCD tradicional encontra alta incerteza};
+
+% Cards inferiores lado a lado
+\tikzset{
+  altCard/.style={
+    draw=#1, fill=#1!5!white, rounded corners=6pt, line width=1.25pt,
+    minimum width=6.65cm, minimum height=2.25cm, inner sep=0pt, anchor=north
+  },
+  altHead/.style={
+    fill=#1, text=white, rounded corners=4pt,
+    minimum width=6.37cm, minimum height=0.60cm,
+    align=center, font=\small\bfseries\sffamily
+  },
+  altBody/.style={
+    text width=6.12cm, align=left, font=\footnotesize\sffamily, text=etInk,
+    inner sep=2pt
+  }
+}
+
+\node[altCard=etGold] (vc) at (4.0, 2.15) {};
+\node[altHead=etGold, anchor=north] (vch) at ([yshift=-0.12cm]vc.north)
+  {Método de \textit{Venture Capital} (VC)};
+\node[altBody, anchor=north] at ([yshift=-0.20cm]vch.south) {\raggedright\hyphenpenalty=10000%
+  \textbullet~\textit{Exit Value} futuro descontado pela taxa-alvo do fundo\\[5pt]
+  \textbullet~Definição de \textit{Post-Money} e \textit{Pre-Money}
+};
+
+\node[altCard=etTeal] (or) at (11.0, 2.15) {};
+\node[altHead=etTeal, anchor=north] (orh) at ([yshift=-0.12cm]or.north)
+  {Opções Reais (Dixit \& Pindyck)};
+\node[altBody, anchor=north] at ([yshift=-0.20cm]orh.south) {\raggedright\hyphenpenalty=10000%
+  \textbullet~$\text{VPL}_{\text{expandido}} = \text{VPL}_{\text{estático}} + \text{Flexibilidade}$\\[5pt]
+  \textbullet~Opções de esperar, escalar por fases ou \mbox{abandonar}
+};
+
+% Setas da faixa intermediária para os cards alternativos
+\draw[etArrow, etGoldDark] ([xshift=-1.6cm]mid.south) |- ([yshift=0.35cm]vc.north) -- (vc.north);
+\draw[etArrow, etTeal] ([xshift=1.6cm]mid.south) |- ([yshift=0.35cm]or.north) -- (or.north);
+
+\end{tikzpicture}
+\end{document}

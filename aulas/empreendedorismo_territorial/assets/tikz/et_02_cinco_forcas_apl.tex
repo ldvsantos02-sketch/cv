@@ -1,0 +1,80 @@
+\documentclass[border=12pt]{standalone}
+\input{et_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+
+  % Título principal
+  \node[etTitle] (title) at (3.55, 4.45)
+    {Cinco Forças de Porter e Redução de Barreiras via APLs};
+
+  % Zona esquerda: Cruz das 5 Forças de Porter
+  \node[etTint=etNavy, text width=3.1cm, minimum height=1.25cm, line width=1.35pt] (riv) at (0, 0) {
+    \textbf{\textcolor{etNavyDark}{Rivalidade entre\\Concorrentes}}
+  };
+
+  \node[etTint=etGold, text width=3.45cm, minimum height=1.25cm, line width=1.25pt] (entr) at (0, 2.75) {
+    \textbf{\textcolor{etGoldDark}{Ameaça de\\Novos Entrantes}}\\[2pt]
+    {\scriptsize\textcolor{etInk}{(Barreiras de Entrada)}}
+  };
+
+  \node[etBox=etNavy, text width=3.3cm, minimum height=1.15cm] (subs) at (0, -2.75) {
+    \textbf{\textcolor{etNavy}{Produtos / Serviços\\Substitutos}}
+  };
+
+  \node[etBox=etNavy, text width=2.7cm, minimum height=1.15cm] (forn) at (-4.35, 0) {
+    \textbf{\textcolor{etNavy}{Poder dos\\Fornecedores}}
+  };
+
+  \node[etBox=etNavy, text width=2.7cm, minimum height=1.15cm] (comp) at (4.35, 0) {
+    \textbf{\textcolor{etNavy}{Poder dos\\Compradores}}
+  };
+
+  % Setas curtas e limpas (sem sobrepor rótulos)
+  \draw[etArrow, etGold] (entr.south) -- (riv.north);
+  \draw[etArrow, etNavy] (subs.north) -- (riv.south);
+  \draw[etArrow, etNavy] (forn.east) -- (riv.west);
+  \draw[etArrow, etNavy] (comp.west) -- (riv.east);
+
+  % Zona direita: Eficiência Coletiva no Território
+  \node[font=\small\bfseries\sffamily, text=etTeal, align=center] (apl_hdr) at (9.85, 2.45)
+    {Eficiência Coletiva no Território\\{\scriptsize\normalfont\textcolor{etMuted}{(Schmitz; RedeSist)}}};
+
+  \node[
+    draw=etTeal!70!white, fill=white, rounded corners=5pt, line width=1pt,
+    inner sep=8pt, align=left, text width=5.6cm, font=\footnotesize\sffamily, text=etInk
+  ] (apl_inc) at (9.85, 0.85) {
+    \textbf{\textcolor{etTeal}{1. Economias Externas Incidentais}}\\[3pt]
+    \textbullet\ Pool de mão de obra especializada\\[1pt]
+    \textbullet\ Fornecedores locais especializados
+  };
+
+  \node[
+    draw=etTeal!70!white, fill=white, rounded corners=5pt, line width=1pt,
+    inner sep=8pt, align=left, text width=5.6cm, font=\footnotesize\sffamily, text=etInk
+  ] (apl_del) at (9.85, -1.05) {
+    \textbf{\textcolor{etTeal}{2. Ação Conjunta Deliberada}}\\[3pt]
+    \textbullet\ Consórcios de P\&D e exportação\\[1pt]
+    \textbullet\ Certificações compartilhadas
+  };
+
+  \node[etBadge=etTeal, text width=5.8cm, align=center, inner ysep=5pt, rounded corners=6pt] (apl_res) at (9.85, -2.55) {
+    \textit{Resultado: reduz barreiras de escala\\para PMEs e startups locais.}
+  };
+
+  \begin{scope}[on background layer]
+    \node[
+      draw=etTeal, fill=bgTeal, rounded corners=7pt, line width=1.3pt,
+      inner sep=10pt, fit=(apl_hdr)(apl_inc)(apl_del)(apl_res)
+    ] (apl_card) {};
+  \end{scope}
+
+  % Conector curvo limpo de Ameaça de Novos Entrantes até Eficiência Coletiva
+  \draw[etArrow, etTeal, line width=1.55pt]
+    (entr.east) to[out=8, in=155]
+    node[above, midway, font=\scriptsize\bfseries\sffamily, text=etTeal, fill=white, inner sep=2pt, rounded corners=2pt]
+      {Mitigação via APL}
+    (apl_card.north west);
+
+\end{tikzpicture}
+\end{document}

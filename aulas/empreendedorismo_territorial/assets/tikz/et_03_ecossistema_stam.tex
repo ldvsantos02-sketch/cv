@@ -1,0 +1,84 @@
+\documentclass[border=12pt]{standalone}
+\input{et_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[
+  pill/.style={
+    draw=#1!60!white, fill=white, rounded corners=4pt, line width=0.9pt,
+    inner xsep=8pt, inner ysep=4.5pt, text width=4.1cm, align=center,
+    font=\footnotesize\sffamily, text=etInk
+  }
+]
+
+  % Título principal
+  \node[etTitle] (title) at (0, 4.15)
+    {Modelo Causal de Ecossistema Empreendedor (Stam, 2015; Stam \& van de Ven, 2021)};
+
+  % Coluna 1: Condições Estruturais (Framework)
+  \node[font=\footnotesize\bfseries\sffamily, text=etNavy, align=center] (fw_hdr) at (-6.35, 2.75)
+    {Condições Estruturais\\{\scriptsize\normalfont\textcolor{etMuted}{(Framework)}}};
+  \node[pill=etNavy, inner ysep=7.5pt] (fw1) at (-6.35, 1.65) {Instituições Formais};
+  \node[pill=etNavy, inner ysep=7.5pt] (fw2) at (-6.35, 0.50) {Cultura Empreendedora};
+  \node[pill=etNavy, inner ysep=7.5pt] (fw3) at (-6.35, -0.65) {Infraestrutura Física};
+  \node[pill=etNavy, inner ysep=7.5pt] (fw4) at (-6.35, -1.80) {Demanda de Mercado};
+
+  \begin{scope}[on background layer]
+    \node[
+      draw=etNavy, fill=bgNavy, rounded corners=6pt, line width=1.25pt,
+      inner sep=9pt, fit=(fw_hdr)(fw1)(fw4)
+    ] (framework) {};
+  \end{scope}
+
+  % Coluna 2: Condições Sistêmicas (Coração)
+  \node[font=\footnotesize\bfseries\sffamily, text=etNavyDark, align=center] (sy_hdr) at (0, 2.75)
+    {Condições Sistêmicas\\{\scriptsize\normalfont\textcolor{etMuted}{(Coração do Ecossistema)}}};
+  \node[pill=etNavyDark] (sy1) at (0, 1.85) {Redes de Empreendedores};
+  \node[pill=etNavyDark] (sy2) at (0, 1.12) {Liderança Territorial};
+  \node[pill=etNavyDark] (sy3) at (0, 0.39) {Finanças e Capital};
+  \node[pill=etNavyDark] (sy4) at (0, -0.34) {Talento e Qualificação};
+  \node[pill=etNavyDark] (sy5) at (0, -1.07) {Conhecimento (P\&D)};
+  \node[pill=etNavyDark] (sy6) at (0, -1.80) {Serviços Intermediários};
+
+  \begin{scope}[on background layer]
+    \node[
+      draw=etNavyDark, fill=etNavy!11!white, rounded corners=6pt, line width=1.35pt,
+      inner sep=9pt, fit=(sy_hdr)(sy1)(sy6)
+    ] (systemic) {};
+  \end{scope}
+
+  % Coluna 3: Outputs e Outcomes empilhados
+  \node[
+    draw=etGold, fill=bgGold, rounded corners=6pt, line width=1.3pt,
+    inner sep=10pt, align=center, text width=4.3cm, minimum height=2.0cm,
+    font=\footnotesize\sffamily, text=etInk
+  ] (outputs) at (6.45, 1.50) {
+    \textbf{\textcolor{etGoldDark}{Outputs: Empreendedorismo\\Produtivo}}\\[5pt]
+    {\scriptsize\textit{Startups e firmas escaláveis}}
+  };
+
+  \node[
+    draw=etTeal, fill=bgTeal, rounded corners=6pt, line width=1.3pt,
+    inner sep=10pt, align=center, text width=4.3cm, minimum height=2.0cm,
+    font=\footnotesize\sffamily, text=etInk
+  ] (outcomes) at (6.45, -1.25) {
+    \textbf{\textcolor{etTeal}{Outcomes: Criação de Valor\\Agregado}}\\[5pt]
+    {\scriptsize\textit{Desenvolvimento Regional}}
+  };
+
+  % Setas diretas (fluxo causal)
+  \draw[etArrow, etNavy] (framework.east) -- (systemic.west);
+  \draw[etArrow, etGold] (systemic.east |- outputs.west) -- (outputs.west);
+  \draw[etArrow, etTeal] (outputs.south) -- (outcomes.north);
+
+  % Seta de retroalimentação limpa ABAIXO de todas as caixas
+  \coordinate (fb_y) at (0, -3.40);
+  \draw[etArrow, etTeal, line width=1.45pt]
+    (outcomes.south) -- (outcomes.south |- fb_y)
+    -- node[
+      fill=white, draw=etTeal, rounded corners=8pt, inner xsep=8pt, inner ysep=3pt,
+      font=\scriptsize\bfseries\sffamily, text=etTeal
+    ] {Retroalimentação (Reciclagem Empreendedora)}
+    (systemic.south |- fb_y) -- (systemic.south);
+
+\end{tikzpicture}
+\end{document}

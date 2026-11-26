@@ -1,0 +1,85 @@
+\documentclass[tikz,border=8pt]{standalone}
+\input{../../apostila/figures/tikz/aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}[
+  piBox/.style={
+    draw=uefsNavy!75, fill=bgGray, rounded corners=4pt, line width=1pt,
+    text width=4.65cm, minimum height=0.84cm, inner sep=5pt,
+    align=left, font=\footnotesize\sffamily, text=uefsInk
+  },
+  outCard/.style={
+    draw=#1, fill=white, rounded corners=5pt, line width=1.4pt,
+    text width=4.95cm, minimum height=2.15cm, inner sep=7pt,
+    align=left, font=\footnotesize\sffamily, text=uefsInk
+  }
+]
+
+% Título principal
+\node[aaTitle] at (7.45, 5.85)
+  {Modelagem Cartográfica em SIG: Fragilidade (Ross, 1994) vs. Vulnerabilidade (Crepani et al., 2001)};
+
+% Coluna Esquerda: 5 Planos de Informação (PI)
+\node[font=\footnotesize\bfseries\sffamily, text=uefsMuted] at (2.15, 5.18)
+  {PLANOS DE INFORMAÇÃO (ENTRADA)};
+
+\node[piBox] (pi1) at (2.15, 4.40)
+  {\textbf{\color{uefsNavy}PI 1 ·} Geomorfologia / Declividade};
+\node[piBox] (pi2) at (2.15, 3.35)
+  {\textbf{\color{uefsNavy}PI 2 ·} Pedologia (SiBCS)};
+\node[piBox] (pi3) at (2.15, 2.30)
+  {\textbf{\color{uefsNavy}PI 3 ·} Geologia / Litologia};
+\node[piBox] (pi4) at (2.15, 1.25)
+  {\textbf{\color{uefsNavy}PI 4 ·} Clima (Pluviosidade)};
+\node[piBox, draw=uefsForest, fill=bgForest] (pi5) at (2.15, 0.20)
+  {\textbf{\color{uefsForest}PI 5 ·} Uso e Cobertura da Terra};
+
+% Nó Central: Álgebra de Mapas (SIG)
+\node[
+  draw=uefsNavy, fill=bgNavy, rounded corners=6pt, line width=1.6pt,
+  text width=4.35cm, minimum height=3.10cm, inner sep=8pt,
+  align=center, font=\footnotesize\sffamily, text=uefsInk
+] (sig) at (7.75, 2.30) {%
+  {\small\bfseries\color{uefsNavy}ÁLGEBRA DE MAPAS (SIG)}\\[6pt]
+  \tikz{\draw[uefsNavy!35, line width=0.8pt] (0,0) -- (3.8,0);}\\[6pt]
+  {\bfseries\color{uefsForest}Crepani et al. (2001):}\\[2pt]
+  $V = \dfrac{G + R + S + Vg + C}{5}$\\[7pt]
+  {\bfseries\color{uefsGoldDark}Ross (1994):}\\[2pt]
+  Hierarquia matricial\\
+  (classes \textbf{1} a \textbf{5})
+};
+
+% Coluna Direita: 2 Cartas Síntese de Saída
+\node[font=\footnotesize\bfseries\sffamily, text=uefsMuted] at (13.35, 5.18)
+  {PRODUTOS CARTOGRÁFICOS (SAÍDA)};
+
+\node[outCard=uefsGold, fill=bgGold] (ross) at (13.35, 3.55) {%
+  {\small\bfseries\color{uefsGoldDark}Carta de Fragilidade Emergente (Ross)}\\[4pt]
+  \textbullet\enspace Escala ordinal: \textbf{1 (Muito Fraca)} a \textbf{5 (Muito Forte)}\\
+  \textbullet\enspace Cruza Fragilidade Potencial (PIs 1–4) com Proteção do Uso (PI 5)
+};
+
+\node[outCard=uefsForest, fill=bgForest] (crep) at (13.35, 1.05) {%
+  {\small\bfseries\color{uefsForest}Vulnerabilidade Natural (Crepani)}\\[4pt]
+  \textbullet\enspace Média aritmética: \textbf{1,0–1,3 (Estável)} a \textbf{2,7–3,0 (Vulnerável)}\\
+  \textbullet\enspace Baseada na ecodinâmica de Tricart (morfogênese/pedogênese)
+};
+
+% Conectores Esquerda -> Centro (barramento limpo sem cruzamentos)
+\coordinate (busL) at (4.95, 2.30);
+\foreach \n in {pi1, pi2, pi3, pi4, pi5} {
+  \draw[uefsNavy!70, line width=1pt] (\n.east) -- (4.95, 0 |- \n.east);
+}
+\draw[uefsNavy!70, line width=1pt] (4.95, 0 |- pi1.east) -- (4.95, 0 |- pi5.east);
+\draw[aaArrow, color=uefsNavy, line width=1.6pt] (busL) -- ([xshift=-3pt]sig.west);
+
+% Conectores Centro -> Direita (ramificação ortogonal limpa)
+\coordinate (busR) at (10.35, 2.30);
+\draw[uefsNavy, line width=1.5pt] (sig.east) -- (busR);
+\draw[aaArrow, color=uefsGoldDark, line width=1.5pt]
+  (busR) |- ([xshift=-3pt]ross.west);
+\draw[aaArrow, color=uefsForest, line width=1.5pt]
+  (busR) |- ([xshift=-3pt]crep.west);
+
+\end{tikzpicture}
+\end{document}

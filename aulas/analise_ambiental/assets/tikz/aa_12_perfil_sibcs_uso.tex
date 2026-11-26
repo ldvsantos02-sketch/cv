@@ -1,0 +1,155 @@
+\documentclass[tikz,border=8pt]{standalone}
+\input{../../apostila/figures/tikz/aa_tikz_style.tex}
+
+\definecolor{horO}{HTML}{3E2723}
+\definecolor{horA}{HTML}{5D4037}
+\definecolor{horE}{HTML}{E6D5B8}
+\definecolor{horBt}{HTML}{B85D3B}
+\definecolor{horC}{HTML}{D7C4A3}
+\definecolor{horR}{HTML}{6E7781}
+
+\definecolor{cap1}{HTML}{2D6A4F}
+\definecolor{cap2}{HTML}{40916C}
+\definecolor{cap3}{HTML}{E9C46A}
+\definecolor{cap4}{HTML}{F4A261}
+\definecolor{cap5}{HTML}{E76F51}
+\definecolor{cap6}{HTML}{D64550}
+\definecolor{cap7}{HTML}{9B2226}
+\definecolor{cap8}{HTML}{1B2A4A}
+
+\begin{document}
+\begin{tikzpicture}
+
+% Título
+\node[aaTitle] at (8.10, 7.75)
+  {Horizontes Pedológicos (SiBCS) e Capacidade de Uso das Terras (Lepsch, 2015)};
+
+% =========================================================================
+% ZONA ESQUERDA: Perfis de Solo (Conservado vs. Degradado)
+% =========================================================================
+\node[font=\footnotesize\bfseries\sffamily, text=uefsNavy] at (3.10, 7.05)
+  {PERFIS PEDOLÓGICOS (SiBCS)};
+
+\node[font=\scriptsize\bfseries\sffamily, text=uefsForest] at (1.38, 6.45)
+  {Solo Conservado};
+\node[font=\scriptsize\bfseries\sffamily, text=uefsAlert] at (4.85, 6.45)
+  {Solo Degradado / Decapitado};
+
+% Coluna 1: Solo Conservado (x = 0.05..2.70, largura 2.65cm)
+\filldraw[fill=horO, draw=white, line width=1pt] (0.05, 5.50) rectangle (2.70, 6.05);
+\node[font=\scriptsize\bfseries\sffamily, text=white] at (1.375, 5.775) {O · Serrapilheira};
+
+\filldraw[fill=horA, draw=white, line width=1pt] (0.05, 4.45) rectangle (2.70, 5.50);
+\node[font=\scriptsize\bfseries\sffamily, text=white] at (1.375, 4.975) {A · Mineral + húmus};
+
+\filldraw[fill=horE, draw=white, line width=1pt] (0.05, 3.70) rectangle (2.70, 4.45);
+\node[font=\scriptsize\bfseries\sffamily, text=uefsInk] at (1.375, 4.075) {E · Eluviação};
+
+\filldraw[fill=horBt, draw=white, line width=1pt] (0.05, 2.05) rectangle (2.70, 3.70);
+\node[font=\scriptsize\bfseries\sffamily, text=white] at (1.375, 2.875) {Bt · Argila iluvial};
+
+\filldraw[fill=horC, draw=white, line width=1pt] (0.05, 0.90) rectangle (2.70, 2.05);
+\node[font=\scriptsize\bfseries\sffamily, text=uefsInk] at (1.375, 1.475) {C · Saprólito};
+
+\filldraw[fill=horR, draw=white, line width=1pt] (0.05, 0.00) rectangle (2.70, 0.90);
+\node[font=\scriptsize\bfseries\sffamily, text=white] at (1.375, 0.45) {R · Rocha matriz};
+
+\draw[lineGray, line width=1pt] (0.05, 0.00) rectangle (2.70, 6.05);
+
+% Coluna 2: Solo Degradado (x = 3.55..6.20, largura 2.65cm)
+\draw[dashed, color=uefsAlert, line width=1.1pt, fill=bgAlert!70]
+  (3.55, 3.70) rectangle (6.20, 6.05);
+\node[align=center, text width=2.35cm, font=\scriptsize\bfseries\sffamily, text=uefsAlert]
+  at (4.875, 4.88) {Horizontes O, A e E\\removidos por erosão};
+
+\filldraw[fill=horBt, draw=white, line width=1pt] (3.55, 2.05) rectangle (6.20, 3.70);
+\node[align=center, font=\scriptsize\bfseries\sffamily, text=white]
+  at (4.875, 2.875) {Bt exposto\\[-1pt]\tiny(baixa infiltração)};
+
+\filldraw[fill=horC, draw=white, line width=1pt] (3.55, 0.90) rectangle (6.20, 2.05);
+\node[font=\scriptsize\bfseries\sffamily, text=uefsInk] at (4.875, 1.475) {C · Saprólito};
+
+\filldraw[fill=horR, draw=white, line width=1pt] (3.55, 0.00) rectangle (6.20, 0.90);
+\node[font=\scriptsize\bfseries\sffamily, text=white] at (4.875, 0.45) {R · Rocha matriz};
+
+\draw[lineGray, line width=1pt] (3.55, 0.00) rectangle (6.20, 3.70);
+
+% =========================================================================
+% ZONA DIREITA: Capacidade de Uso (Classes I a VIII)
+% =========================================================================
+\node[font=\footnotesize\bfseries\sffamily, text=uefsNavy] at (11.65, 7.05)
+  {CLASSES DE CAPACIDADE DE USO (LEPSCH, 2015)};
+
+\def\rx{8.05}
+\def\rw{8.15}
+\def\rh{0.58}
+
+% Grupo A (Classes I-IV): retângulo exato alinhado com y=4.10..6.60
+\filldraw[fill=bgForest, draw=uefsForest, line width=1pt, rounded corners=3pt]
+  (7.15, 4.10) rectangle (7.75, 6.60);
+\node[rotate=90, font=\scriptsize\bfseries\sffamily, text=uefsForest]
+  at (7.45, 5.35) {Grupo A · Cultivos};
+
+\foreach \y/\col/\fg/\cls/\desc in {
+  6.02/cap1/white/I/{Sem limitações severas · culturas anuais livres},
+  5.38/cap2/white/II/{Limitações moderadas · manejo conservacionista},
+  4.74/cap3/uefsInk/III/{Limitações severas · terraceamento e rotação intensiva},
+  4.10/cap4/uefsInk/IV/{Limitações muito severas · cultivos ocasionais / perenes}%
+}{
+  \filldraw[fill=\col, draw=white, line width=0.8pt, rounded corners=3pt]
+    (\rx, \y) rectangle (\rx + 0.85, \y + \rh);
+  \node[font=\footnotesize\bfseries\sffamily, text=\fg] at (\rx + 0.425, \y + 0.5*\rh) {\cls};
+  \filldraw[fill=bgGray, draw=lineGray, line width=0.8pt, rounded corners=3pt]
+    (\rx + 0.95, \y) rectangle (\rx + \rw, \y + \rh);
+  \node[anchor=west, font=\scriptsize\sffamily, text=uefsInk]
+    at (\rx + 1.12, \y + 0.5*\rh) {\desc};
+}
+
+% Grupo B (Classes V-VII): retângulo exato alinhado com y=1.90..3.76
+\filldraw[fill=bgGold, draw=uefsGoldDark, line width=1pt, rounded corners=3pt]
+  (7.15, 1.90) rectangle (7.75, 3.76);
+\node[rotate=90, font=\tiny\bfseries\sffamily, text=uefsGoldDark]
+  at (7.45, 2.83) {Grupo B · Pasto};
+
+\foreach \y/\col/\fg/\cls/\desc in {
+  3.18/cap5/white/V/{Plana, porém com excesso de água ou pedregosidade},
+  2.54/cap6/white/VI/{Declive acentuado / raso · pastagem manejada e floresta},
+  1.90/cap7/white/VII/{Severas restrições · cobertura permanente / silvicultura}%
+}{
+  \filldraw[fill=\col, draw=white, line width=0.8pt, rounded corners=3pt]
+    (\rx, \y) rectangle (\rx + 0.85, \y + \rh);
+  \node[font=\footnotesize\bfseries\sffamily, text=\fg] at (\rx + 0.425, \y + 0.5*\rh) {\cls};
+  \filldraw[fill=bgGray, draw=lineGray, line width=0.8pt, rounded corners=3pt]
+    (\rx + 0.95, \y) rectangle (\rx + \rw, \y + \rh);
+  \node[anchor=west, font=\scriptsize\sffamily, text=uefsInk]
+    at (\rx + 1.12, \y + 0.5*\rh) {\desc};
+}
+
+% Grupo C (Classe VIII): retângulo exato alinhado com y=0.98..1.56
+\filldraw[fill=bgNavy, draw=uefsNavy, line width=1pt, rounded corners=3pt]
+  (6.95, 0.98) rectangle (7.92, 1.56);
+\node[font=\scriptsize\bfseries\sffamily, text=uefsNavy]
+  at (7.435, 1.27) {Grp. C};
+
+\filldraw[fill=cap8, draw=white, line width=0.8pt, rounded corners=3pt]
+  (\rx, 0.98) rectangle (\rx + 0.85, 0.98 + \rh);
+\node[font=\footnotesize\bfseries\sffamily, text=white] at (\rx + 0.425, 0.98 + 0.5*\rh) {VIII};
+\filldraw[fill=bgNavy, draw=uefsNavy!50, line width=0.8pt, rounded corners=3pt]
+  (\rx + 0.95, 0.98) rectangle (\rx + \rw, 0.98 + \rh);
+\node[anchor=west, font=\scriptsize\sffamily, text=uefsInk]
+  at (\rx + 1.12, 0.98 + 0.5*\rh) {Preservação ambiental · inapta para uso agrossilvipastoril};
+
+% Pílula espaçosa inferior: Subclasses de Limitação em uma linha limpa
+\node[
+  draw=uefsNavy, fill=bgNavy, rounded corners=5pt, line width=1.1pt,
+  text width=9.25cm, minimum height=0.58cm, inner sep=5pt,
+  align=center, font=\scriptsize\sffamily, text=uefsInk
+] at (11.58, 0.32)
+  {\textbf{\color{uefsNavy}Subclasses:}\;
+   \textbf{e} (erosão) \;·\;
+   \textbf{s} (solo) \;·\;
+   \textbf{a} (excesso de água) \;·\;
+   \textbf{c} (clima)};
+
+\end{tikzpicture}
+\end{document}

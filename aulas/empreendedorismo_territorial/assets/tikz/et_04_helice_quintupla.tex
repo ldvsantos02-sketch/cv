@@ -1,0 +1,68 @@
+\documentclass[border=12pt]{standalone}
+\input{et_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+
+  % Título principal
+  \node[etTitle] (title) at (1.1, 4.30)
+    {Governança Territorial: Da Hélice Tríplice à Hélice Quíntupla};
+
+  % Zona esquerda: Tríade Venn (Hélice Tríplice)
+  \begin{scope}
+    \fill[etNavy, fill opacity=0.16] (-3.2, 1.25) circle (2.25cm);
+    \fill[etGold, fill opacity=0.16] (-4.45, -0.90) circle (2.25cm);
+    \fill[etTeal, fill opacity=0.16] (-1.95, -0.90) circle (2.25cm);
+
+    \draw[etNavy, line width=1.35pt] (-3.2, 1.25) circle (2.25cm);
+    \draw[etGold, line width=1.35pt] (-4.45, -0.90) circle (2.25cm);
+    \draw[etTeal, line width=1.35pt] (-1.95, -0.90) circle (2.25cm);
+  \end{scope}
+
+  % Rótulos internos das 3 hélices (bem dentro das regiões sem sobreposição)
+  \node[align=center, font=\small\bfseries\sffamily, text=etNavyDark] at (-3.2, 2.35)
+    {Universidade\\{\scriptsize\normalfont\textcolor{etInk}{Pesquisa \& P\&D}}};
+
+  \node[align=center, text width=2.2cm, font=\small\bfseries\sffamily, text=etGoldDark] at (-5.15, -1.35)
+    {Governo\\{\scriptsize\normalfont\textcolor{etInk}{Fomento \&\\Regulação}}};
+
+  \node[align=center, text width=2.2cm, font=\small\bfseries\sffamily, text=etTeal] at (-1.25, -1.35)
+    {Empresa\\{\scriptsize\normalfont\textcolor{etInk}{Mercado \&\\Produção}}};
+
+  % Pílula explícita na interseção central
+  \node[
+    fill=white, draw=etNavy, rounded corners=7pt, line width=1.1pt,
+    inner xsep=7pt, inner ysep=4pt, align=center,
+    font=\scriptsize\bfseries\sffamily, text=etNavyDark
+  ] (espaco) at (-3.2, -0.18) {Espaço de\\Inovação};
+
+  % Legenda discreta abaixo da tríade
+  \node[etSub] at (-3.2, -3.65) {\textit{Hélice Tríplice (Etzkowitz \& Leydesdorff)}};
+
+  % Zona direita: 2 cards horizontais alinhados
+  \node[
+    draw=etGold, fill=bgGold, rounded corners=6pt, line width=1.25pt,
+    inner sep=10pt, align=left, text width=6.6cm, font=\footnotesize\sffamily, text=etInk
+  ] (h4) at (4.9, 1.25) {
+    \textbf{\textcolor{etGoldDark}{4ª Hélice: Sociedade Civil e Cultura}}\\[4pt]
+    \textbullet\ Usuários, \textit{Living Labs} e demandas locais\\[2pt]
+    \textbullet\ Controle social e legitimidade territorial\\[2pt]
+    \textbullet\ Evita enclaves tecnológicos desconectados
+  };
+
+  \node[
+    draw=etForest, fill=bgForest, rounded corners=6pt, line width=1.25pt,
+    inner sep=10pt, align=left, text width=6.6cm, font=\footnotesize\sffamily, text=etInk
+  ] (h5) at (4.9, -1.35) {
+    \textbf{\textcolor{etForest}{5ª Hélice: Ambiente Natural}}\\[4pt]
+    \textbullet\ Transição ecológica e clima\\[2pt]
+    \textbullet\ Bioeconomia e serviços ecossistêmicos\\[2pt]
+    \textbullet\ Sustentabilidade socioambiental
+  };
+
+  % Setas limpas a partir da borda direita da tríade sem cruzar rótulos
+  \draw[etArrow, etGold, line width=1.45pt] (-0.95, 1.25) -- (h4.west);
+  \draw[etArrow, etForest, line width=1.45pt] (0.25, -1.35) -- (h5.west);
+
+\end{tikzpicture}
+\end{document}

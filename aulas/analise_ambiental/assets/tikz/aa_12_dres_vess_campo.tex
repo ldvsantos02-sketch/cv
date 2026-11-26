@@ -1,0 +1,53 @@
+\documentclass[tikz,border=8pt]{standalone}
+\input{../../apostila/figures/tikz/aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}
+
+% Título principal
+\node[aaTitle] at (7.65, 6.25)
+  {Avaliação Visual da Estrutura do Solo em Campo: DRES vs. VESS};
+
+% Cartão Esquerdo: Estrutura Conservada
+\node[
+  draw=uefsForest, fill=bgForest, rounded corners=6pt, line width=1.5pt,
+  text width=6.90cm, minimum height=3.65cm, inner sep=9pt,
+  align=left, font=\footnotesize\sffamily, text=uefsInk, anchor=north
+] (good) at (3.70, 5.55) {%
+  {\small\bfseries\color{uefsForest}Estrutura Conservada (Boa Qualidade)}\\[8pt]
+  \textbullet\enspace Agregados porosos, granulares e friáveis\\[4pt]
+  \textbullet\enspace Raízes livres, profundas e bem ramificadas\\[4pt]
+  \textbullet\enspace Alta infiltração de água e aeração adequada\\[4pt]
+  \textbullet\enspace Baixa suscetibilidade ao selamento e à erosão\\[12pt]
+  \colorbox{uefsForest}{\color{white}\,\textbf{DRES $\approx$ 6} (Ótima)\,}\;\;
+  \colorbox{uefsNavy}{\color{white}\,\textbf{VESS $\approx$ 1} (Intacta)\,}
+};
+
+% Cartão Direito: Estrutura Degradada / Compactada
+\node[
+  draw=uefsAlert, fill=bgAlert, rounded corners=6pt, line width=1.5pt,
+  text width=6.90cm, minimum height=3.65cm, inner sep=9pt,
+  align=left, font=\footnotesize\sffamily, text=uefsInk, anchor=north
+] (bad) at (11.60, 5.55) {%
+  {\small\bfseries\color{uefsAlert}Estrutura Degradada / Compactada}\\[8pt]
+  \textbullet\enspace Blocos duros, angulares ou estrutura maciça\\[4pt]
+  \textbullet\enspace Raízes superficiais, tortas ou confinadas em fendas\\[4pt]
+  \textbullet\enspace Baixa infiltração e predomínio de escoamento\\[4pt]
+  \textbullet\enspace Maior risco de encrostamento e perda de solo\\[12pt]
+  \colorbox{uefsAlert}{\color{white}\,\textbf{DRES $\approx$ 1} (Péssima)\,}\;\;
+  \colorbox{uefsNavy}{\color{white}\,\textbf{VESS $\approx$ 5} (Compactada)\,}
+};
+
+% Barra inferior de alerta metodológico
+\node[
+  draw=uefsGold, fill=bgGold, rounded corners=6pt, line width=1.5pt,
+  text width=14.80cm, minimum height=1.05cm, inner sep=8pt,
+  align=center, font=\footnotesize\sffamily, text=uefsInk
+] (warn) at (7.65, 0.90) {%
+  {\bfseries\color{uefsGoldDark}Atenção metodológica:} as escalas têm sentidos opostos
+  (\textbf{DRES}: 1 pior $\rightarrow$ 6 melhor;\; \textbf{VESS}: 1 melhor $\rightarrow$ 5 pior).\\
+  Nunca misturar nem calcular média entre protocolos distintos!
+};
+
+\end{tikzpicture}
+\end{document}

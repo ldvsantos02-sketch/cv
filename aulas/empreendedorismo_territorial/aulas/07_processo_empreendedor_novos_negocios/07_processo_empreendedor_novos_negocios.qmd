@@ -6,14 +6,16 @@ lang: pt-BR
 academico:
   cabecalho:
     - "UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA"
-    - "PPGPT · Empreendedorismo Tecnológico e Desenvolvimento Territorial"
-    - "Aula 07 · 4 horas"
-  rodape: "UEFS · PPGPT · Aula 07 · Processo Empreendedor"
+    - "PLANTERR · Programa de Pós-Graduação em Planejamento Territorial"
+    - "Empreendedorismo Tecnológico e Desenvolvimento Territorial · Aula 07 · 4 horas"
+  rodape: "UEFS · PLANTERR · Aula 07 · Processo Empreendedor"
   local: "Feira de Santana – Bahia"
 format:
   revealjs:
     theme: ../../../assets/academico/academico.scss
-    css: ../../../assets/academico/academico.css
+    css:
+      - ../../../assets/academico/academico.css
+      - ../../assets/planterr-slides.css
     include-after-body:
       - ../../../assets/academico/academico.html
     slide-number: false
@@ -27,6 +29,9 @@ format:
     embed-resources: true
     transition: fade
     background-transition: none
+    auto-stretch: false
+    pdf-separate-fragments: false
+    pdf-max-pages-per-slide: 1
   beamer:
     pdf-engine: xelatex
     aspectratio: 169
@@ -39,63 +44,69 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text .lesson-slide}
+## [Unidade II]{.pitch-tag} Visão Geral da Aula {#visao-geral .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Roteiro da aula · 4 horas]{.pitch-card-index}
+[Tópicos estruturantes]{.pitch-heading}
 
-- [1]{.circle} O campo científico do empreendedorismo (Shane & Venkataraman, 2000)
-- [2]{.circle} *Causation* vs. *Effectuation* (Sarasvathy, 2001)
-- [3]{.circle} *Bricolagem* empreendedora em contextos de escassez (Baker & Nelson, 2005)
-- [4]{.circle} Estágios de criação de novos negócios tecnológicos e "Vale da Morte"
-- [5]{.circle} Equipes fundadoras e capital social no território
+1. O campo científico do empreendedorismo (Shane & Venkataraman, 2000).
+2. *Causation* vs. *Effectuation* (Sarasvathy, 2001).
+3. *Bricolagem* empreendedora em contextos de escassez (Baker & Nelson, 2005).
+4. Estágios de criação de novos negócios tecnológicos e "Vale da Morte".
+5. Equipes fundadoras e capital social no território.
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Objetivo central]{.pitch-card-index}
+[Decisão sob incerteza]{.pitch-heading}
 
 Examinar o **processo empreendedor** sob a ótica teórica contemporânea, contrapondo modelos preditivos (*causation*) a lógicas adaptativas (*effectuation* e bricolagem) na criação de novos negócios em ambientes de incerteza e restrição de recursos.
+:::
+
+::: {.pitch-band .pitch-band--teal}
+**Foco da Unidade II:** da teoria da oportunidade à execução prática em territórios com restrição de capital.
 :::
 :::
 :::
 
 # 1 · O Nexo Indivíduo–Oportunidade {.section-header rotulo="Teoria"}
 
-## Shane & Venkataraman (2000) {.smaller-text .lesson-slide}
+## [Conceito]{.pitch-tag} O campo científico em Shane & Venkataraman (2000) {#shane-venkataraman .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Definição do Campo
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Fundamento epistemológico]{.pitch-card-index}
+[Definição do campo]{.pitch-heading}
 
 - Empreendedorismo não é apenas "traço de personalidade" nem apenas "gestão de pequenas empresas".
 - É o estudo acadêmico de **como, por quem e com que efeitos** as oportunidades para criar novos bens e serviços são **descobertas, avaliadas e exploradas**.
 - **Dois elementos inseparáveis:** a existência de **oportunidades lucrativas/de valor** e a presença de **indivíduos empreendedores** capazes de percebê-las e agir.
 :::
 
-::: {.column width="50%"}
-### Modos de Exploração da Oportunidade
+::: {.pitch-card .pitch-card--gold}
+[Formas organizacionais]{.pitch-card-index}
+[Modos de exploração da oportunidade]{.pitch-heading}
 
 1. **Criação de uma nova firma** (foco clássico de *startups* e *spin-offs*).
-2. **Venda/licenciamento da oportunidade** a firmas existentes (comum quando ativos complementares de manufatura/distribuição são caros).
+2. **Venda/licenciamento da oportunidade** a firmas existentes (comum quando ativos complementares de manufatura e distribuição são caros).
+:::
+:::
 
-::: {.info-box}
-**Questão Territorial:** Em regiões com baixa densidade de grandes empresas locais, a criação de novas firmas exige maior suporte institucional inicial.
-:::
-:::
+::: {.pitch-band .pitch-band--navy}
+**Questão Territorial:** em regiões com baixa densidade de grandes empresas locais, a criação de novas firmas exige maior suporte institucional inicial.
 :::
 
 # 2 · Causation vs. Effectuation e Bricolagem {.section-header rotulo="Lógicas"}
 
-## Lógicas de Tomada de Decisão (Sarasvathy, 2001) {.smaller-text .lesson-slide}
+## [Método]{.pitch-tag .pitch-tag--teal} Lógicas de decisão: Sarasvathy (2001) e Bricolagem {#logicas-decisao .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="60%"}
-### Comparação Analítica
-
+::: {.pitch-grid-60}
+::: {.pitch-table-box}
 | Dimensão | *Causation* (Causal) | *Effectuation* (Efetual) |
-|----------|----------------------|--------------------------|
+|---|---|---|
 | **Ponto de partida** | Um objetivo/meta dado | Os **meios disponíveis** (*quem sou, o que sei, quem conheço*) |
 | **Critério de decisão** | Retorno esperado máximo | **Perda aceitável** (*affordable loss*) |
 | **Relação com atores** | Análise competitiva | **Alianças estratégicas** e pré-compromissos |
@@ -103,57 +114,95 @@ Examinar o **processo empreendedor** sob a ótica teórica contemporânea, contr
 | **Contingências** | Evitar surpresas | Alavancar surpresas |
 :::
 
-::: {.column width="40%"}
-### Bricolagem (Baker & Nelson, 2005)
+::: {.pitch-card .pitch-card--gold}
+[Baker & Nelson, 2005]{.pitch-card-index}
+[Bricolagem empreendedora]{.pitch-heading}
 
 - **"Fazer com o que está à mão"**: recombinar recursos subutilizados, locais ou descartados para resolver novos problemas.
 - Extremamente relevante para empreendedores tecnológicos e sociais em **territórios periféricos** com escassez de *venture capital*.
 :::
 :::
 
-## Esquema: Lógicas Empreendedoras e o Vale da Morte {.smaller-text .lesson-slide}
+::: {.pitch-band}
+*Causation* pressupõe mercados previsíveis; *Effectuation* e *Bricolagem* viabilizam ação sob incerteza knightiana e restrição de recursos.
+:::
 
-![Comparação entre *Causation* e *Effectuation* (Sarasvathy) e curva de fluxo de caixa acumulado ao longo da maturidade tecnológica (TRL 1–9).](img/et_causation_effectuation.png){.fig-full}
+## [Síntese]{.pitch-tag .pitch-tag--teal} Esquema: Causation vs. Effectuation (Sarasvathy, 2001) {#esquema-causation-effectuation .smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--tall}
+![Comparação entre as lógicas Causation (planejamento preditivo) e Effectuation (meios disponíveis, perda aceitável e alianças).](img/et_causation_effectuation.png)
+
+[Arquitetura decisória na criação de novos negócios (Sarasvathy, 2001)]{.pitch-caption}
+[Da lógica preditiva baseada em metas à construção emergente com parceiros comprometidos]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band .pitch-band--navy}
+Em projetos de *deep tech* nascente e *spin-offs* acadêmicas, a lógica efetual reduz o risco de imobilizar recursos em planos rígidos antes da validação.
+:::
 
 # 3 · Ciclo de Vida e "Vale da Morte" {.section-header rotulo="Ciclo"}
 
-## Da Pesquisa ao Mercado: O "Vale da Morte" Tecnológico {.smaller-text .lesson-slide}
+## [Território]{.pitch-tag .pitch-tag--gold} Da pesquisa ao mercado: etapas e capital social {#etapas-equipe .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Etapas do Processo Empreendedor
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Maturação TRL 1–9]{.pitch-card-index}
+[Etapas do processo empreendedor]{.pitch-heading}
 
 1. **Ideação e Descoberta:** pesquisa, observação de mercado ou problema territorial.
-2. **Prova de Conceito e Prototipagem (TRL 1–4):** alto risco técnico; financiamento público/acadêmico.
+2. **Prova de Conceito e Prototipagem (TRL 1–4):** alto risco técnico; financiamento público e acadêmico.
 3. **Validação e Tração Inicial (TRL 5–7):** **Vale da Morte** — recursos de pesquisa acabam antes de haver receita recorrente.
 4. **Escala e Crescimento (TRL 8–9):** expansão comercial, padronização e governança corporativa.
 :::
 
-::: {.column width="50%"}
-### Equipes e Capital Social
+::: {.pitch-card .pitch-card--teal}
+[Granovetter · Redes]{.pitch-card-index}
+[Equipes e capital social]{.pitch-heading}
 
 - Negócios de base tecnológica raramente sobrevivem com fundador solo: exigem **complementaridade técnica + comercial/gestão**.
-- **Laços fortes vs. laços fracos (Granovetter):** laços locais garantem confiança inicial; laços externos conectam a mercados e tecnologia de fronteira.
+- **Laços fortes vs. laços fracos (Granovetter):** laços locais garantem confiança inicial; laços externos conectam o empreendimento a mercados e tecnologia de fronteira.
 :::
+:::
+
+::: {.pitch-band}
+A travessia do **Vale da Morte** depende tanto de engenharia financeira quanto da densidade de laços institucionais e comerciais da equipe.
+:::
+
+## [Crítica]{.pitch-tag .pitch-tag--alert} O "Vale da Morte" tecnológico e o fluxo de caixa {#vale-da-morte .smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--tall}
+![Curva de caixa acumulado ao longo dos estágios de pesquisa, prototipagem, tração e escala, destacando o Vale da Morte e o break-even.](img/et_vale_da_morte.png)
+
+[Transição bancada → mercado e déficit acumulado de caixa]{.pitch-caption}
+[Ponto de mínimo financeiro entre TRL 4–7 antes de atingir o equilíbrio operacional (break-even)]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band .pitch-band--navy}
+Sem subvenção pública (FINEP, FAPs), infraestrutura de incubação ou clientes-piloto, projetos promissores sucumbem no ponto de mínimo antes da escala.
 :::
 
 # 4 · Oficina e Leituras {.section-header rotulo="Oficina"}
 
-## Exercício: Inventário Efetual (35 min) {.smaller-text .lesson-slide}
+## [Método]{.pitch-tag .pitch-tag--teal} Exercício: Inventário Efetual (35 min) e Leituras {#oficina-efetual .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
-### Aplicação ao Projeto da Disciplina
-
-Partindo da lógica **efetual**, mapeie para o seu projeto ou caso territorial:
-
-1. **Quem somos / O que sabemos:** competências técnicas e acadêmicas disponíveis;
-2. **Quem conhecemos:** redes locais (universidades, cooperativas, prefeituras, empresas);
-3. **Perda aceitável:** qual o mínimo viável de recursos e tempo para testar a ideia em 60 dias?
+::: {.pitch-grid-55}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**01 · Quem somos / O que sabemos:** mapeie as competências técnicas, laboratoriais e acadêmicas já disponíveis na equipe.
 :::
 
-::: {.column width="45%"}
-### Leituras para a Próxima Aula
+::: {.pitch-milestone-item}
+**02 · Quem conhecemos:** identifique redes locais mobilizáveis (universidades, cooperativas, prefeituras, empresas e ICTs).
+:::
+
+::: {.pitch-milestone-item}
+**03 · Perda aceitável (60 dias):** defina o mínimo viável de recursos financeiros, horas e materiais para testar a ideia em campo.
+:::
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Preparação · Aula 08]{.pitch-card-index}
+[Leituras para a próxima aula]{.pitch-heading}
 
 - **SHANE, S.** *Prior knowledge and the discovery of entrepreneurial opportunities*. Organization Science, 2000.
 - **BARON, R. A.** *Opportunity recognition as pattern recognition*. AMP, 2006.

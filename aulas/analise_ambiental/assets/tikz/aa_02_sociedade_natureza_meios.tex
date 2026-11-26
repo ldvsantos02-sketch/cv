@@ -1,0 +1,75 @@
+\documentclass[tikz,border=8pt]{standalone}
+\input{../../apostila/figures/tikz/aa_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Título principal
+\node[font=\large\bfseries\sffamily, text=uefsNavy, align=center] at (0, 3.65)
+  {Produção do Espaço Geográfico: Meios Geográficos (Milton Santos, 1996)};
+
+% =========================================================
+% PAINEL 1: Meio Natural (Primeira Natureza)
+% =========================================================
+\begin{scope}[shift={(-5.8, 1.05)}]
+  \draw[draw=uefsForest, fill=bgForest, rounded corners=6pt, line width=1.2pt] (-2.45, -1.75) rectangle (2.45, 1.85);
+  \fill[uefsForest, rounded corners=5pt] (-2.45, 1.05) rectangle (2.45, 1.85);
+  \fill[uefsForest] (-2.45, 1.05) rectangle (2.45, 1.35);
+  \node[align=center, font=\small\bfseries\sffamily, text=white] at (0, 1.45)
+    {1. Meio Natural\\[-1pt]\footnotesize\normalfont(Primeira Natureza)};
+
+  \node[anchor=north west, text width=4.4cm, align=left, font=\footnotesize\sffamily, text=uefsInk] at (-2.25, 0.85) {%
+    $\bullet$ Dinâmica regida por leis\\[-1pt]\hspace{0.55em}físico-biológicas\\[5pt]
+    $\bullet$ Trabalho adapta-se aos\\[-1pt]\hspace{0.55em}ritmos naturais\\[5pt]
+    $\bullet$ Baixa densidade técnica
+  };
+\end{scope}
+
+% =========================================================
+% PAINEL 2: Meio Técnico (Segunda Natureza)
+% =========================================================
+\begin{scope}[shift={(0, 1.05)}]
+  \draw[draw=uefsGoldDark, fill=bgGold, rounded corners=6pt, line width=1.2pt] (-2.45, -1.75) rectangle (2.45, 1.85);
+  \fill[uefsGoldDark, rounded corners=5pt] (-2.45, 1.05) rectangle (2.45, 1.85);
+  \fill[uefsGoldDark] (-2.45, 1.05) rectangle (2.45, 1.35);
+  \node[align=center, font=\small\bfseries\sffamily, text=white] at (0, 1.45)
+    {2. Meio Técnico\\[-1pt]\footnotesize\normalfont(Segunda Natureza)};
+
+  \node[anchor=north west, text width=4.4cm, align=left, font=\footnotesize\sffamily, text=uefsInk] at (-2.25, 0.85) {%
+    $\bullet$ Natureza transformada pela\\[-1pt]\hspace{0.55em}indústria e capital\\[5pt]
+    $\bullet$ Infraestruturas, barragens,\\[-1pt]\hspace{0.55em}cidades\\[5pt]
+    $\bullet$ Racionalidade instrumental
+  };
+\end{scope}
+
+% =========================================================
+% PAINEL 3: Meio Técnico-Científico-Informacional
+% =========================================================
+\begin{scope}[shift={(5.8, 1.05)}]
+  \draw[draw=uefsNavy, fill=bgNavy, rounded corners=6pt, line width=1.2pt] (-2.45, -1.75) rectangle (2.45, 1.85);
+  \fill[uefsNavy, rounded corners=5pt] (-2.45, 1.05) rectangle (2.45, 1.85);
+  \fill[uefsNavy] (-2.45, 1.05) rectangle (2.45, 1.35);
+  \node[align=center, font=\small\bfseries\sffamily, text=white] at (0, 1.45)
+    {3. Meio Técnico-Científico-\\[-1pt]Informacional};
+
+  \node[anchor=north west, text width=4.4cm, align=left, font=\footnotesize\sffamily, text=uefsInk] at (-2.25, 0.85) {%
+    $\bullet$ Ciência, tecnologia e dados\\[-1pt]\hspace{0.55em}comandam o território\\[5pt]
+    $\bullet$ Redes globais, satélites,\\[-1pt]\hspace{0.55em}biotecnologia\\[5pt]
+    $\bullet$ Conflitos socioambientais
+  };
+\end{scope}
+
+% Setas horizontais de transição histórica
+\draw[->, >=Stealth, line width=2pt, uefsForest] (-3.25, 1.05) -- (-2.55, 1.05);
+\draw[->, >=Stealth, line width=2pt, uefsGoldDark] (2.55, 1.05) -- (3.25, 1.05);
+
+% =========================================================
+% BANNER / PÍLULA INFERIOR DE SÍNTESE
+% =========================================================
+\node[draw=uefsTeal, fill=bgTeal, rounded corners=12pt, line width=1.3pt,
+      text width=16.0cm, minimum height=0.95cm, inner sep=8pt, align=center,
+      font=\small\sffamily, text=uefsNavy] at (0, -1.65)
+  {\textbf{\color{uefsTeal}Porto-Gonçalves \& Enrique Leff:} a crise ambiental nasce da apropriação desigual dos territórios.};
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,91 @@
+\documentclass[border=10pt]{standalone}
+\input{et_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+\begin{axis}[
+  width=14.2cm,
+  height=8.4cm,
+  title={\large\bfseries\sffamily\color{etNavy} Perfil do VPL $\times$ Taxa de Desconto (Conflito VPL \textit{vs.} TIR)},
+  title style={yshift=6pt},
+  xlabel={Taxa de Desconto (\% ao ano)},
+  ylabel={Valor Presente Líquido (R\$ mil)},
+  label style={font=\small\bfseries\sffamily, text=etInk},
+  tick label style={font=\footnotesize\sffamily, text=etMuted},
+  xmin=0, xmax=30,
+  ymin=-120, ymax=460,
+  xtick={0,5,10,15,20,25,30},
+  ytick={-100,0,100,200,300,400},
+  grid=major,
+  grid style={color=etBorder!80, line width=0.45pt},
+  axis line style={color=etInk!70, line width=0.8pt},
+  tick style={color=etInk!60},
+  legend style={
+    at={(0.97,0.97)}, anchor=north east,
+    draw=etBorder, fill=white, fill opacity=0.95, text opacity=1,
+    rounded corners=4pt, inner sep=5pt,
+    font=\scriptsize\sffamily, cells={anchor=west}
+  },
+  clip=false
+]
+
+% Linha horizontal zero (eixo de decisão VPL = 0)
+\draw[etInk!85, line width=1.0pt] (axis cs:0,0) -- (axis cs:30,0);
+
+% Linha vertical da TMA = 10% a.a.
+\draw[etForest, dotted, line width=1.6pt] (axis cs:10,-120) -- (axis cs:10,450);
+
+% Curva Projeto A (Maior escala)
+\addplot[
+  color=etNavy, line width=2.2pt, smooth
+] coordinates {
+  (0,420) (5,286) (10,174) (16,74) (21.8,0) (30,-94)
+};
+\addlegendentry{\textbf{Projeto A} — Maior Escala (VPL maior para TMA $< 16\%$)}
+
+% Curva Projeto B (Menor escala, TIR maior)
+\addplot[
+  color=etTeal, dashed, line width=2.2pt, smooth
+] coordinates {
+  (0,240) (5,176) (10,122) (16,74) (26.8,0) (30,-16)
+};
+\addlegendentry{\textbf{Projeto B} — Menor Escala (TIR maior)}
+
+% Pontos marcadores principais
+\addplot[only marks, mark=*, mark size=3.2pt, color=etGoldDark, fill=etGold] coordinates {(16,74)};
+\addplot[only marks, mark=*, mark size=3.2pt, color=etNavy, fill=etNavy] coordinates {(21.8,0)};
+\addplot[only marks, mark=*, mark size=3.2pt, color=etTeal, fill=etTeal] coordinates {(26.8,0)};
+\addplot[only marks, mark=*, mark size=2.8pt, color=etForest, fill=etForest] coordinates {(10,174) (10,122)};
+
+% Callout TMA = 10% a.a. (posicionado à esquerda da reta vertical, livre da legenda)
+\node[
+  draw=etForest, fill=bgForest, rounded corners=4pt, inner sep=5pt,
+  font=\scriptsize\bfseries\sffamily, text=etForest, align=center
+] (tma_box) at (axis cs:5.1, 345) {TMA $= 10\%$ a.a.\\[-1pt]\normalfont\scriptsize Aceitar se $\text{VPL} > 0$};
+\draw[->, >=Stealth, line width=1.1pt, color=etForest] (tma_box.east) -- (axis cs:9.8, 325);
+
+% Callout Taxa de Fisher (~16%)
+\node[
+  draw=etGold, fill=bgGold, rounded corners=4pt, inner sep=5pt,
+  font=\scriptsize\bfseries\sffamily, text=etGoldDark, align=center
+] (fisher_box) at (axis cs:19.2, 185) {Taxa de Fisher $\approx 16\%$\\[-1pt]\normalfont\scriptsize $\text{VPL}_A = \text{VPL}_B$};
+\draw[->, >=Stealth, line width=1.1pt, color=etGoldDark] (fisher_box.south west) -- (axis cs:16.3, 81);
+
+% Callout TIR A (~21,8%)
+\node[
+  draw=etNavy, fill=bgNavy, rounded corners=4pt, inner sep=4.5pt,
+  font=\scriptsize\bfseries\sffamily, text=etNavy, align=center
+] (tira_box) at (axis cs:17.2, -62) {$\text{TIR}_A \approx 21,8\%$};
+\draw[->, >=Stealth, line width=1.1pt, color=etNavy] (tira_box.north east) -- (axis cs:21.4, -7);
+
+% Callout TIR B (~26,8%)
+\node[
+  draw=etTeal, fill=bgTeal, rounded corners=4pt, inner sep=4.5pt,
+  font=\scriptsize\bfseries\sffamily, text=etTeal, align=center
+] (tirb_box) at (axis cs:26.0, 92) {$\text{TIR}_B \approx 26,8\%$};
+\draw[->, >=Stealth, line width=1.1pt, color=etTeal] (tirb_box.south) -- (axis cs:26.7, 9);
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

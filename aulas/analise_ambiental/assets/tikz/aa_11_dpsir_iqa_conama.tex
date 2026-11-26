@@ -1,0 +1,92 @@
+\documentclass[tikz,border=8pt]{standalone}
+\input{../../apostila/figures/tikz/aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}[
+  fpeir/.style={
+    draw=#1, rounded corners=5pt, line width=1.3pt,
+    text width=2.45cm, minimum height=1.75cm, inner sep=5pt,
+    align=center, font=\scriptsize\sffamily, text=uefsInk
+  }
+]
+
+% Título bem acima da alça de retroalimentação
+\node[aaTitle] at (6.70, 8.20)
+  {Matriz Causal FPEIR (DPSIR), IQA e Enquadramento CONAMA 357/2005};
+
+% Cadeia superior: 5 cartões espaçados uniformemente
+\node[fpeir=uefsMuted, fill=bgGray] (F) at (0.00, 5.15) {%
+  {\footnotesize\bfseries\color{uefsNavy}F · Força Motriz}\\[4pt]
+  Expansão urbana,\\agropecuária e\\uso da terra
+};
+
+\node[fpeir=uefsGoldDark, fill=bgGold] (P) at (3.35, 5.15) {%
+  {\footnotesize\bfseries\color{uefsGoldDark}P · Pressão}\\[4pt]
+  Lançamento de\\efluentes, captação\\e supressão ciliar
+};
+
+\node[fpeir=uefsTeal, fill=bgTeal] (E) at (6.70, 5.15) {%
+  {\footnotesize\bfseries\color{uefsTeal}E · Estado}\\[4pt]
+  Qualidade físico-\\química (IQA) e\\integridade fluvial
+};
+
+\node[fpeir=uefsAlert, fill=bgAlert] (I) at (10.05, 5.15) {%
+  {\footnotesize\bfseries\color{uefsAlert}I · Impacto}\\[4pt]
+  Eutrofização,\\perda de biota e\\risco sanitário
+};
+
+\node[fpeir=uefsForest, fill=bgForest] (R) at (13.40, 5.15) {%
+  {\footnotesize\bfseries\color{uefsForest}R · Resposta}\\[4pt]
+  Enquadramento,\\outorga, ETEs e\\recomposição
+};
+
+% Setas da cadeia F -> P -> E -> I -> R
+\draw[aaArrow, color=uefsNavy] ([xshift=2pt]F.east) -- ([xshift=-2pt]P.west);
+\draw[aaArrow, color=uefsNavy] ([xshift=2pt]P.east) -- ([xshift=-2pt]E.west);
+\draw[aaArrow, color=uefsNavy] ([xshift=2pt]E.east) -- ([xshift=-2pt]I.west);
+\draw[aaArrow, color=uefsNavy] ([xshift=2pt]I.east) -- ([xshift=-2pt]R.west);
+
+% Arco de retroalimentação R -> P bem acima dos cartões e abaixo do título
+\draw[aaArrow, color=uefsForest, line width=1.5pt, rounded corners=8pt]
+  (R.north) -- (13.40, 7.05) -- (3.35, 7.05) -- (P.north);
+\node[
+  fill=white, draw=uefsForest!55, rounded corners=3pt, inner sep=3pt,
+  font=\scriptsize\bfseries\sffamily, text=uefsForest
+] at (8.38, 7.05) {Retroalimentação de gestão e controle ambiental};
+
+% Linha inferior: 2 cartões equilibrados lado a lado com mesma altura e topo alinhado
+\node[
+  draw=uefsNavy, fill=bgNavy, rounded corners=5pt, line width=1.4pt,
+  text width=7.25cm, minimum height=4.05cm, inner sep=8pt,
+  align=left, font=\scriptsize\sffamily, text=uefsInk, anchor=north
+] (iqa) at (2.55, 3.80) {%
+  {\small\bfseries\color{uefsNavy}IQA — 9 Parâmetros e Pesos ($w_i$)}\\[7pt]
+  \begin{tabular}{@{}l@{\hspace{10pt}}l@{\hspace{10pt}}l@{}}
+    \textbf{OD:} 0,17 & \textbf{DBO$_{5,20}$:} 0,10 & \textbf{Fósforo total:} 0,10 \\
+    \textbf{Coliformes:} 0,15 & \textbf{Temperatura:} 0,10 & \textbf{Turbidez:} 0,08 \\
+    \textbf{pH:} 0,12 & \textbf{Nitrogênio total:} 0,10 & \textbf{Sólidos totais:} 0,08 \\
+  \end{tabular}\\[10pt]
+  \textbf{\color{uefsNavy}Faixas ANA (0–100):}\\[5pt]
+  \colorbox{uefsTeal!20}{\textbf{Ótima} 80–100}\;\;
+  \colorbox{uefsForest!20}{\textbf{Boa} 52–79}\;\;
+  \colorbox{uefsGold!28}{\textbf{Razoável} 37–51}\\[4pt]
+  \colorbox{uefsOrange!25}{\textbf{Ruim} 20–36}\;\;
+  \colorbox{uefsAlert!20}{\textbf{Péssima} 0–19}
+};
+
+\node[
+  draw=uefsGold, fill=bgGold, rounded corners=5pt, line width=1.4pt,
+  text width=7.25cm, minimum height=4.05cm, inner sep=8pt,
+  align=left, font=\scriptsize\sffamily, text=uefsInk, anchor=north
+] (conama) at (10.85, 3.80) {%
+  {\small\bfseries\color{uefsGoldDark}Classes de Águas Doces — CONAMA 357/2005}\\[6pt]
+  \textbf{\color{uefsTeal}Especial:} preservação natural / abastecimento só com desinfecção\\[3pt]
+  \textbf{\color{uefsForest}Classe 1:} abastecimento (trat. simplificado), proteção aquática, recreação\\[3pt]
+  \textbf{\color{uefsNavy}Classe 2:} abastecimento (trat. convencional), hortaliças, aquicultura\\[3pt]
+  \textbf{\color{uefsGoldDark}Classe 3:} abastecimento (trat. avançado), dessedentação, irrig. arbórea\\[3pt]
+  \textbf{\color{uefsAlert}Classe 4:} navegação e harmonia paisagística (menor exigência)\\[6pt]
+  \textbf{\color{uefsGoldDark}Articulação:} CONAMA 430/2011 (efluentes) e CONAMA 506/2024
+};
+
+\end{tikzpicture}
+\end{document}

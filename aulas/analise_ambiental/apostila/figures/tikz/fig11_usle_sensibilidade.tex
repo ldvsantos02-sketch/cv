@@ -1,0 +1,76 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+  width=15.8cm,
+  height=8.2cm,
+  xmin=0.35, xmax=5.65,
+  ymin=0, ymax=315,
+  ytick={0,50,100,150,200,250,300},
+  ylabel={Perda de solo estimada $A$ (t/ha$\cdot$ano)},
+  ylabel style={font=\small\sffamily, text=uefsInk},
+  title={Exemplo Didático da USLE ($A = R \cdot K \cdot L \cdot S \cdot C \cdot P$): Efeito Protetor da Cobertura Vegetal},
+  title style={font=\normalsize\bfseries\sffamily, text=uefsNavy, yshift=4pt},
+  axis lines*=left,
+  axis line style={color=lineGray, line width=0.9pt},
+  tick style={color=uefsMuted},
+  xtick={1,2,3,4,5},
+  xticklabels={
+    {Solo exposto\\($C = 1,00$)},
+    {Cultivo morro abaixo\\($C = 0,40$)},
+    {Pastagem degradada\\($C = 0,15$)},
+    {Manejo conservacionista\\($C = 0,05 \mid P = 0,50$)},
+    {Caatinga / Mata densa\\($C = 0,005$)}
+  },
+  xticklabel style={
+    font=\footnotesize\sffamily,
+    text=uefsInk,
+    align=right,
+    rotate=20,
+    anchor=north east,
+    yshift=-4pt
+  },
+  yticklabel style={font=\footnotesize\sffamily, text=uefsInk},
+  legend style={
+    at={(0.98,0.96)},
+    anchor=north east,
+    draw=lineGray,
+    fill=white,
+    rounded corners=3pt,
+    font=\footnotesize\sffamily,
+    text=uefsInk
+  },
+  clip=false
+]
+
+% Entrada de legenda para a linha de tolerância
+\addlegendimage{line legend, dashed, color=uefsNavy, line width=1.4pt}
+\addlegendentry{Limite ilustrativo de tolerância de perda de solo (12 t/ha$\cdot$ano)}
+
+% Barras individuais perfeitamente centradas em x=1..5 (bar shift=0pt)
+\addplot[ybar, bar shift=0pt, bar width=1.45cm, fill=uefsAlert, draw=none, forget plot] coordinates {(1, 270.0)};
+\addplot[ybar, bar shift=0pt, bar width=1.45cm, fill=uefsOrange, draw=none, forget plot] coordinates {(2, 108.0)};
+\addplot[ybar, bar shift=0pt, bar width=1.45cm, fill=uefsGold, draw=none, forget plot] coordinates {(3, 40.5)};
+\addplot[ybar, bar shift=0pt, bar width=1.45cm, fill=uefsTeal, draw=none, forget plot] coordinates {(4, 6.8)};
+\addplot[ybar, bar shift=0pt, bar width=1.45cm, fill=uefsForest, draw=none, forget plot] coordinates {(5, 1.4)};
+
+% Linha tracejada horizontal de tolerância em y = 12 t/ha·ano
+\draw[dashed, color=uefsNavy, line width=1.4pt] (axis cs:0.35, 12) -- (axis cs:5.65, 12);
+
+% Rótulos das barras grandes acima do topo
+\node[above=3pt, font=\small\bfseries\sffamily, text=uefsInk] at (axis cs:1, 270.0) {270,0};
+\node[above=3pt, font=\small\bfseries\sffamily, text=uefsInk] at (axis cs:2, 108.0) {108,0};
+\node[above=3pt, font=\small\bfseries\sffamily, text=uefsInk] at (axis cs:3, 40.5)  {40,5};
+
+% Rótulos de 6,8 e 1,4 bem acima da linha tracejada de 12 t/ha·ano, com haste até a barra
+\node[font=\small\bfseries\sffamily, text=uefsTeal, fill=white, inner sep=1.5pt] (lbl4) at (axis cs:4, 29) {6,8};
+\draw[color=uefsTeal, line width=0.9pt] (lbl4.south) -- (axis cs:4, 7.2);
+
+\node[font=\small\bfseries\sffamily, text=uefsForest, fill=white, inner sep=1.5pt] (lbl5) at (axis cs:5, 29) {1,4};
+\draw[color=uefsForest, line width=0.9pt] (lbl5.south) -- (axis cs:5, 1.8);
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

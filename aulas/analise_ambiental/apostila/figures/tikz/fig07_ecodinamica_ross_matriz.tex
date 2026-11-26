@@ -1,0 +1,142 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\definecolor{ross1}{HTML}{D8F3DC}
+\definecolor{ross2}{HTML}{95D5B2}
+\definecolor{ross3}{HTML}{FFE066}
+\definecolor{ross4}{HTML}{FFA94D}
+\definecolor{ross5}{HTML}{E03131}
+
+\begin{document}
+\begin{tikzpicture}
+
+% =========================================================================
+% Painel (a): Ecodinâmica de Tricart (1977)
+% =========================================================================
+\begin{scope}
+  \begin{axis}[
+    width=7.1cm,
+    height=6.7cm,
+    ybar=4pt,
+    bar width=16pt,
+    title={(a) Ecodinâmica de Tricart (1977)\\Morfogênese vs. Pedogênese},
+    title style={align=center, font=\small\bfseries\sffamily, text=uefsNavy, yshift=2pt},
+    axis lines=left,
+    axis line style={lineGray, line width=1pt},
+    tick style={uefsMuted},
+    ymin=0, ymax=112,
+    ytick={0,20,40,60,80,100},
+    yticklabel style={font=\scriptsize\sffamily, text=uefsInk},
+    ylabel={\textbf{Predomínio relativo (\%)}},
+    label style={font=\footnotesize\sffamily, text=uefsInk},
+    symbolic x coords={Estáveis, Intergrades, Fort. Instáveis},
+    xtick=data,
+    xticklabels={{Meios\\Estáveis}, {Meios\\Intergrades}, {Meios Fort.\\Instáveis}},
+    xticklabel style={align=center, font=\scriptsize\bfseries\sffamily, text=uefsInk},
+    enlarge x limits=0.25,
+    nodes near coords={\pgfmathprintnumber{\pgfplotspointmeta}\%},
+    every node near coord/.append style={font=\tiny\bfseries\sffamily, text=uefsInk, yshift=1pt},
+    legend style={
+      at={(0.5,0.99)}, anchor=north,
+      font=\scriptsize\sffamily, fill=white, fill opacity=0.95,
+      draw=lineGray, rounded corners=3pt, inner sep=3pt,
+      cells={anchor=west}
+    }
+  ]
+    \addplot[fill=uefsForest, draw=none] coordinates {
+      (Estáveis, 80) (Intergrades, 50) (Fort. Instáveis, 18)
+    };
+    \addlegendentry{Pedogênese (formação de solo)}
+
+    \addplot[fill=uefsAlert, draw=none] coordinates {
+      (Estáveis, 20) (Intergrades, 50) (Fort. Instáveis, 82)
+    };
+    \addlegendentry{Morfogênese (erosão / remoção)}
+  \end{axis}
+\end{scope}
+
+% =========================================================================
+% Painel (b): Matriz de Fragilidade Emergente (Ross, 1994)
+% =========================================================================
+\begin{scope}[xshift=8.65cm, yshift=0.15cm]
+  \def\cw{1.42}
+  \def\ch{1.00}
+
+  \node[font=\small\bfseries\sffamily, text=uefsNavy] at ({2.5*\cw}, {5*\ch + 0.45})
+    {(b) Matriz de Fragilidade Emergente (Ross, 1994)};
+
+  % Desenho das 25 células (linha 1 embaixo até linha 5 em cima)
+  \foreach \r/\c/\val/\bg/\fg/\lbl in {
+    % Linha 1 (1 M. Fraca)
+    0/0/1/ross1/uefsInk/M. Fraca,
+    0/1/1/ross1/uefsInk/M. Fraca,
+    0/2/2/ross2/uefsInk/Fraca,
+    0/3/2/ross2/uefsInk/Fraca,
+    0/4/3/ross3/uefsInk/Média,
+    % Linha 2 (2 Fraca)
+    1/0/1/ross1/uefsInk/M. Fraca,
+    1/1/2/ross2/uefsInk/Fraca,
+    1/2/2/ross2/uefsInk/Fraca,
+    1/3/3/ross3/uefsInk/Média,
+    1/4/4/ross4/uefsInk/Forte,
+    % Linha 3 (3 Média)
+    2/0/2/ross2/uefsInk/Fraca,
+    2/1/2/ross2/uefsInk/Fraca,
+    2/2/3/ross3/uefsInk/Média,
+    2/3/4/ross4/uefsInk/Forte,
+    2/4/4/ross4/uefsInk/Forte,
+    % Linha 4 (4 Forte)
+    3/0/2/ross2/uefsInk/Fraca,
+    3/1/3/ross3/uefsInk/Média,
+    3/2/4/ross4/uefsInk/Forte,
+    3/3/4/ross4/uefsInk/Forte,
+    3/4/5/ross5/white/M. Forte,
+    % Linha 5 (5 M. Forte)
+    4/0/3/ross3/uefsInk/Média,
+    4/1/4/ross4/uefsInk/Forte,
+    4/2/4/ross4/uefsInk/Forte,
+    4/3/5/ross5/white/M. Forte,
+    4/4/5/ross5/white/M. Forte%
+  }{
+    \filldraw[fill=\bg, draw=white, line width=1.4pt]
+      ({\c*\cw}, {\r*\ch}) rectangle ({(\c+1)*\cw}, {(\r+1)*\ch});
+    \node[align=center, text=\fg, font=\scriptsize\bfseries\sffamily]
+      at ({(\c+0.5)*\cw}, {(\r+0.5)*\ch}) {\val\\[-1pt]\lbl};
+  }
+
+  % Moldura externa sutil
+  \draw[lineGray, line width=1pt] (0,0) rectangle ({5*\cw}, {5*\ch});
+
+  % Rótulos do eixo X (Uso e Cobertura)
+  \foreach \c/\num/\txt in {
+    0/1/Mata densa,
+    1/2/Capoeira,
+    2/3/Pastagem,
+    3/4/Cultivo,
+    4/5/Solo exp.%
+  }{
+    \draw[uefsMuted] ({(\c+0.5)*\cw}, 0) -- ({(\c+0.5)*\cw}, -0.09);
+    \node[anchor=north, align=center, font=\scriptsize\sffamily, text=uefsInk]
+      at ({(\c+0.5)*\cw}, -0.10) {\num\\[-1pt]\txt};
+  }
+  \node[font=\footnotesize\bfseries\sffamily, text=uefsInk]
+    at ({2.5*\cw}, -0.95) {Classe de Proteção do Uso e Cobertura da Terra};
+
+  % Rótulos do eixo Y (Fragilidade Potencial)
+  \foreach \r/\txt in {
+    0/1 M. Fraca,
+    1/2 Fraca,
+    2/3 Média,
+    3/4 Forte,
+    4/5 M. Forte%
+  }{
+    \draw[uefsMuted] (0, {(\r+0.5)*\ch}) -- (-0.09, {(\r+0.5)*\ch});
+    \node[anchor=east, font=\scriptsize\sffamily, text=uefsInk]
+      at (-0.11, {(\r+0.5)*\ch}) {\txt};
+  }
+  \node[rotate=90, font=\footnotesize\bfseries\sffamily, text=uefsInk]
+    at (-1.65, {2.5*\ch}) {Fragilidade Potencial (Relevo + Solo + Clima)};
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

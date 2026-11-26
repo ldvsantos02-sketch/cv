@@ -1,0 +1,107 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}
+
+% Título (sem travessão e sem ponto de exclamação)
+\node[aaTitle] at (0, 5.15)
+  {Exemplo Didático de Índice Integrado de Qualidade do Solo\\
+   {\small\normalfont\color{uefsMuted}(Indicadores normalizados de 0 a 1, Doran \& Parkin, 1994)}};
+
+\def\R{3.35} % Raio correspondente a 1,0
+
+% Círculos concêntricos (0,2 a 1,0)
+\foreach \val/\lbl in {0.2/{0,2}, 0.4/{0,4}, 0.6/{0,6}, 0.8/{0,8}, 1.0/{1,0}}{
+  \pgfmathsetmacro{\rad}{\val*\R}
+  \draw[lineGray, line width=0.8pt] (0,0) circle (\rad cm);
+}
+
+% Eixos radiais (6 eixos a cada 60 graus)
+\foreach \ang in {0, 60, 120, 180, 240, 300}{
+  \draw[lineGray, line width=0.85pt] (0,0) -- (\ang:\R cm);
+}
+
+% Polígono 1: Referência (Caatinga conservada)
+\fill[uefsForest, opacity=0.14]
+  (0:{0.90*\R}) -- (60:{0.88*\R}) -- (120:{0.92*\R}) --
+  (180:{0.86*\R}) -- (240:{0.85*\R}) -- (300:{0.95*\R}) -- cycle;
+\draw[uefsForest, line width=1.7pt]
+  (0:{0.90*\R}) -- (60:{0.88*\R}) -- (120:{0.92*\R}) --
+  (180:{0.86*\R}) -- (240:{0.85*\R}) -- (300:{0.95*\R}) -- cycle;
+\foreach \ang/\val in {0/0.90, 60/0.88, 120/0.92, 180/0.86, 240/0.85, 300/0.95}{
+  \fill[uefsForest] (\ang:{\val*\R}) circle (3.2pt);
+}
+
+% Polígono 2: Área em recuperação (bioengenharia)
+\fill[uefsTeal, opacity=0.12]
+  (0:{0.68*\R}) -- (60:{0.72*\R}) -- (120:{0.75*\R}) --
+  (180:{0.70*\R}) -- (240:{0.68*\R}) -- (300:{0.78*\R}) -- cycle;
+\draw[uefsTeal, dashed, line width=1.6pt]
+  (0:{0.68*\R}) -- (60:{0.72*\R}) -- (120:{0.75*\R}) --
+  (180:{0.70*\R}) -- (240:{0.68*\R}) -- (300:{0.78*\R}) -- cycle;
+\foreach \ang/\val in {0/0.68, 60/0.72, 120/0.75, 180/0.70, 240/0.68, 300/0.78}{
+  \node[fill=uefsTeal, minimum size=5.5pt, inner sep=0pt] at (\ang:{\val*\R}) {};
+}
+
+% Polígono 3: Área degradada (solo exposto/compactado)
+\fill[uefsAlert, opacity=0.14]
+  (0:{0.28*\R}) -- (60:{0.35*\R}) -- (120:{0.22*\R}) --
+  (180:{0.30*\R}) -- (240:{0.32*\R}) -- (300:{0.18*\R}) -- cycle;
+\draw[uefsAlert, line width=1.7pt]
+  (0:{0.28*\R}) -- (60:{0.35*\R}) -- (120:{0.22*\R}) --
+  (180:{0.30*\R}) -- (240:{0.32*\R}) -- (300:{0.18*\R}) -- cycle;
+\foreach \ang/\val in {0/0.28, 60/0.35, 120/0.22, 180/0.30, 240/0.32, 300/0.18}{
+  \node[regular polygon, regular polygon sides=3, fill=uefsAlert, minimum size=7pt, inner sep=0pt]
+    at (\ang:{\val*\R}) {};
+}
+
+% Rótulos numéricos dos anéis (em 28°, fundo branco sutil para leitura limpa)
+\foreach \val/\lbl in {0.2/{0,2}, 0.4/{0,4}, 0.6/{0,6}, 0.8/{0,8}, 1.0/{1,0}}{
+  \node[font=\scriptsize\sffamily, text=uefsMuted, fill=white, fill opacity=0.85, text opacity=1, inner sep=1pt]
+    at (28:{\val*\R}) {\lbl};
+}
+
+% Rótulos dos 6 eixos posicionados confortavelmente FORA do anel 1,0
+\node[anchor=west, align=left, font=\footnotesize\bfseries\sffamily, text=uefsNavy]
+  at (0:{\R + 0.35}) {Matéria\\Orgânica};
+
+\node[anchor=south west, align=left, font=\footnotesize\bfseries\sffamily, text=uefsNavy]
+  at (60:{\R + 0.32}) {Porosidade\\Total};
+
+\node[anchor=south east, align=right, font=\footnotesize\bfseries\sffamily, text=uefsNavy]
+  at (120:{\R + 0.32}) {Taxa de\\Infiltração};
+
+\node[anchor=east, align=right, font=\footnotesize\bfseries\sffamily, text=uefsNavy]
+  at (180:{\R + 0.35}) {Estabilidade\\de Agregados};
+
+\node[anchor=north east, align=right, font=\footnotesize\bfseries\sffamily, text=uefsNavy]
+  at (240:{\R + 0.32}) {Baixa Densidade\\(1/Ds)};
+
+\node[anchor=north west, align=left, font=\footnotesize\bfseries\sffamily, text=uefsNavy]
+  at (300:{\R + 0.32}) {Cobertura\\Vegetal};
+
+% Legenda inferior limpa
+\node[draw=lineGray, fill=white, rounded corners=4pt, line width=0.8pt, inner sep=6pt]
+  at (0, -4.65) {
+  \begin{tikzpicture}[baseline=-0.5ex]
+    \draw[uefsForest, line width=1.6pt] (0,0) -- (0.6,0);
+    \fill[uefsForest] (0.3,0) circle (3pt);
+    \node[anchor=west, font=\footnotesize\sffamily, text=uefsInk] at (0.72, 0)
+      {Referência (Caatinga conservada)};
+
+    \draw[uefsTeal, dashed, line width=1.6pt] (0,-0.48) -- (0.6,-0.48);
+    \node[fill=uefsTeal, minimum size=5.2pt, inner sep=0pt] at (0.3,-0.48) {};
+    \node[anchor=west, font=\footnotesize\sffamily, text=uefsInk] at (0.72, -0.48)
+      {Área em recuperação (bioengenharia)};
+
+    \draw[uefsAlert, line width=1.6pt] (0,-0.96) -- (0.6,-0.96);
+    \node[regular polygon, regular polygon sides=3, fill=uefsAlert, minimum size=6.5pt, inner sep=0pt]
+      at (0.3,-0.96) {};
+    \node[anchor=west, font=\footnotesize\sffamily, text=uefsInk] at (0.72, -0.96)
+      {Área degradada (solo exposto/compactado)};
+  \end{tikzpicture}
+};
+
+\end{tikzpicture}
+\end{document}

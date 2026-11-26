@@ -1,0 +1,131 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Macro para árvore estilizada da Caatinga (copa + tronco)
+\newcommand{\arvore}[2]{%
+  \draw[brown!65!black, line width=2.2pt] (#1,#2) -- (#1,#2+0.42);
+  \fill[uefsForest!85] (#1,#2+0.72) ellipse (0.36cm and 0.42cm);
+  \draw[uefsForest!95!black, line width=0.6pt] (#1,#2+0.72) ellipse (0.36cm and 0.42cm);
+}
+
+% =========================================================
+% PAINEL (a) Microbacia A: Caatinga Manejada (580 mm/ano)
+% =========================================================
+\begin{scope}[shift={(0,0)}]
+  % Moldura do painel
+  \draw[draw=uefsForest, fill=bgGray, rounded corners=6pt, line width=1.2pt] (0,0) rectangle (9.6, 7.6);
+  \node[font=\normalsize\bfseries, text=uefsForest] at (4.8, 7.05) {(a) Microbacia A: Caatinga Manejada (580 mm/ano)};
+
+  % Chuva
+  \node[font=\footnotesize\bfseries, text=uefsWater] at (4.2, 6.42) {Chuva: 580 mm/ano};
+  \foreach \x in {1.6, 3.2, 4.8, 6.4} {
+    \draw[->, >=Stealth, dashed, line width=1.1pt, uefsWater] (\x, 6.1) -- (\x-0.15, 4.95);
+  }
+
+  % Subsolo (zona não saturada + aquífero elevado)
+  \fill[uefsForest!14]
+    (0.3, 3.65) .. controls (2.8, 3.45) and (5.5, 2.8) .. (9.3, 2.35)
+    -- (9.3, 1.3) -- (0.3, 1.85) -- cycle;
+
+  % Aquífero (lençol freático elevado)
+  \fill[uefsWater!16]
+    (0.3, 1.85) -- (9.3, 1.3) -- (9.3, 0.35) -- (0.3, 0.35) -- cycle;
+
+  % Linha do lençol freático
+  \draw[dash dot, line width=1.3pt, uefsWater!90!black] (0.3, 1.85) -- (9.3, 1.3);
+  \node[font=\footnotesize\bfseries, text=uefsWater!85!black, align=center] at (3.4, 0.95)
+    {Lençol freático elevado\\e recarga contínua};
+
+  % Superfície do terreno
+  \draw[line width=1.6pt, uefsForest!90!black]
+    (0.3, 3.65) .. controls (2.8, 3.45) and (5.5, 2.8) .. (9.3, 2.35);
+
+  % Árvores bem afastadas da cacimba (x <= 6.2)
+  \arvore{1.05}{3.6}
+  \arvore{2.1}{3.48}
+  \arvore{3.15}{3.28}
+  \arvore{4.2}{3.08}
+  \arvore{5.25}{2.88}
+  \arvore{6.25}{2.72}
+
+  \node[font=\footnotesize\bfseries, text=uefsForest, align=center, fill=bgGray, fill opacity=0.85, text opacity=1, inner sep=2pt]
+    at (3.55, 4.55) {Cobertura vegetal densa\\e mata ciliar};
+
+  % Setas de alta infiltração
+  \foreach \x/\ytop/\ybot in {1.6/3.42/1.9, 3.4/3.12/1.75, 5.1/2.82/1.65} {
+    \draw[->, >=Stealth, line width=1.3pt, uefsWater] (\x, \ytop) -- (\x, \ybot);
+  }
+  \node[font=\footnotesize\bfseries, text=uefsForest, fill=uefsForest!14, inner sep=2.5pt] at (3.4, 2.42) {Alta infiltração};
+
+  % Cacimba cheia na seca (entre x=7.7 e 8.7)
+  \fill[uefsWater!75] (7.75, 1.15) rectangle (8.75, 2.38);
+  \draw[uefsNavy, line width=1.1pt] (7.75, 2.52) -- (7.75, 1.15) -- (8.75, 1.15) -- (8.75, 2.42);
+  \draw[uefsWater!95!black, line width=0.9pt] (7.75, 2.38) -- (8.75, 2.38);
+
+  % Rótulo da cacimba em área livre acima da cacimba
+  \node[draw=uefsNavy!60, fill=white, rounded corners=3pt, inner sep=3.5pt,
+        font=\scriptsize\bfseries, text=uefsNavy, align=center]
+    at (8.25, 3.35) {Cacimba\\cheia na seca};
+\end{scope}
+
+% =========================================================
+% PAINEL (b) Microbacia B: Solo Degradado (580 mm/ano)
+% =========================================================
+\begin{scope}[shift={(10.2, 0)}]
+  % Moldura do painel
+  \draw[draw=uefsOrange, fill=bgGray, rounded corners=6pt, line width=1.2pt] (0,0) rectangle (9.6, 7.6);
+  \node[font=\normalsize\bfseries, text=uefsOrange] at (4.8, 7.05) {(b) Microbacia B: Solo Degradado (580 mm/ano)};
+
+  % Chuva
+  \node[font=\footnotesize\bfseries, text=uefsWater] at (4.4, 6.42) {Mesma chuva: 580 mm/ano};
+  \foreach \x in {1.6, 3.2, 4.8, 6.4} {
+    \draw[->, >=Stealth, dashed, line width=1.1pt, uefsWater] (\x, 6.1) -- (\x-0.15, 4.95);
+  }
+
+  % Subsolo degradado
+  \fill[uefsOrange!16]
+    (0.3, 3.65) .. controls (2.8, 3.45) and (5.5, 2.8) .. (9.3, 2.35)
+    -- (9.3, 0.9) -- (0.3, 1.1) -- cycle;
+
+  % Aquífero rebaixado
+  \fill[uefsMuted!14]
+    (0.3, 1.1) -- (9.3, 0.9) -- (9.3, 0.35) -- (0.3, 0.35) -- cycle;
+
+  % Linha do lençol freático rebaixado
+  \draw[dotted, line width=1.3pt, uefsWater!70!black] (0.3, 1.1) -- (9.3, 0.9);
+  \node[font=\footnotesize\bfseries, text=uefsInk] at (3.8, 0.65) {Lençol freático rebaixado};
+
+  % Superfície do terreno exposta
+  \draw[line width=1.6pt, uefsOrange!90!black]
+    (0.3, 3.65) .. controls (2.8, 3.45) and (5.5, 2.8) .. (9.3, 2.35);
+
+  % Pequenos sulcos de erosão na encosta
+  \draw[uefsOrange!80!black, line width=1pt] (1.3, 3.56) -- (1.42, 3.36) -- (1.54, 3.53);
+  \draw[uefsOrange!80!black, line width=1pt] (2.7, 3.36) -- (2.82, 3.16) -- (2.94, 3.33);
+  \draw[uefsOrange!80!black, line width=1pt] (4.3, 3.04) -- (4.42, 2.84) -- (4.54, 3.01);
+
+  % Seta de escoamento superficial rápido (sem tocar textos)
+  \draw[->, >=Stealth, line width=2pt, uefsWater!90!black] (0.95, 3.72) -- (6.95, 2.74);
+
+  % Rótulo bem posicionado acima da seta de escoamento
+  \node[font=\footnotesize\bfseries, text=uefsOrange!90!black, align=center]
+    at (3.95, 4.35) {Escoamento superficial rápido\\+ erosão e transporte de sedimentos};
+
+  % Açude raso assoreado (trapézio)
+  % Sedimentos no fundo (areia/silte)
+  \fill[uefsSand!90!uefsOrange] (7.45, 2.15) -- (8.95, 2.15) -- (8.72, 1.35) -- (7.68, 1.35) -- cycle;
+  % Lâmina rasa de água turva no topo
+  \fill[uefsWater!60!uefsMuted] (7.38, 2.38) -- (9.02, 2.38) -- (8.95, 2.15) -- (7.45, 2.15) -- cycle;
+  % Contorno do açude
+  \draw[uefsNavy, line width=1.2pt] (7.35, 2.48) -- (7.68, 1.35) -- (8.72, 1.35) -- (9.05, 2.48);
+
+  \node[font=\scriptsize\bfseries, text=uefsOrange!90!black, align=center]
+    at (8.2, 3.25) {Açude raso\\assoreado};
+  \node[font=\tiny\bfseries, text=uefsInk] at (8.2, 1.72) {Sedimentos};
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

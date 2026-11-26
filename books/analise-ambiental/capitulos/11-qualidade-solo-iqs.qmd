@@ -1,631 +1,425 @@
-# Indicadores de Qualidade do Solo e Funcionalidade Edáfica
+# Indicadores de Qualidade do Solo e Funcionalidade Edáfica {#cap:qualidade_solo}
 
-\noindent`TRABALHO PRÁTICO FINAL`
+Qualidade do solo expressa a capacidade de um solo específico funcionar, dentro dos limites de seu ecossistema e de seu uso, para regular o fluxo de água, ciclar nutrientes, estocar carbono e sustentar a atividade biológica. Um solo quimicamente adubado pode continuar degradado se estiver compactado, sem cobertura vegetal e incapaz de absorver a água da chuva. Por isso, a avaliação ambiental integra atributos físicos, químicos e biológicos, sempre comparados a uma área de referência na mesma classe de solo, profundidade e época de amostragem.
 
-::: {.callout-note}
-## Etapa 1 — O que você vai aprender neste capítulo
-
-Ao concluir este capítulo, você será capaz de:
-
-- Compreender o conceito de **Qualidade do Solo** sob a perspectiva da funcionalidade ecossistêmica e não apenas da produtividade agrícola imediata (Doran; Parkin, 1994; Karlen et al., 1997; Vezzani; Mielniczuk, 2009).
-- Selecionar um **Conjunto Mínimo de Dados** (*Minimum Data Set*, MDS) equilibrado entre indicadores físicos, químicos e biológicos para diagnósticos ambientais.
-- Calcular e interpretar rigorosamente densidade do solo ($D_s$), porosidade total ($P_t$), macro e microporosidade, matéria orgânica ($MO$), carbono orgânico total ($CO$) pelo fator de van Bemmelen, estoque de carbono, soma de bases ($SB$), $CTC$ e saturação por bases ($V%$).
-- Normalizar indicadores edáficos na escala de $0$ a $1$ segundo funções de desempenho ("quanto maior melhor" e "quanto menor melhor") e computar passo a passo um **Índice de Qualidade do Solo (IQS)**.
-- Interpretar gráficos radar multivariados comparando áreas de referência, áreas em recuperação com bioengenharia e áreas degradadas para fundamentar o Trabalho Prático Final.
-
+::: {.callout-note title="O que você vai aprender neste capítulo"}
+O capítulo desenvolve a interpretação de indicadores físicos, químicos e biológicos e a construção de índices de qualidade do solo (IQS). Ao longo da leitura, diagramas explicativos, fotografias de campo, gráficos e exemplos resolvidos acompanham cada conceito passo a passo.
 :::
 
-::: {.callout-tip}
-## Etapa 2 — Revisando o que você precisa saber
-
-Antes de avançar nos indicadores edáficos quantitativos, revise três bases anteriores da apostila:
-
-- **Critérios de indicadores e modelo PEIR (Capítulo 10):** os atributos do solo funcionam como indicadores de **Estado (E)** altamente sensíveis às pressões de uso da terra (compactação, desmatamento, manejo intensivo) e permitem monitorar a resposta de projetos de recuperação.
-- **Morfopedologia e dinâmica água--solo--relevo (Capítulo 8):** a infiltração de água no perfil controla diretamente a partição entre recarga subsuperficial e escoamento superficial erosivo.
-- **Fragilidade ambiental emergente (Capítulo 9):** solos rasos ou degradados fisicamente perdem capacidade de amortecer chuvas intensas, deslocando o sistema para a instabilidade ecodinâmica.
-
+::: {.callout-tip title="Revisando o que você precisa saber"}
+A leitura retoma massa, volume, porosidade e matéria orgânica. Uma amostra indeformada preserva a organização natural dos poros necessária à determinação da densidade do solo, enquanto as análises químicas dependem do registro exato das unidades do laudo ($CO$ ou $MO$) e dos critérios de preparo.
 :::
 
-## Etapa 3: Fundamentação Teórica: Funcionalidade Edáfica, MDS e Cálculo do IQS
-
-::: {.callout-note}
 ## Vocabulário Técnico e Símbolos do Capítulo 11
 
-- **Qualidade do Solo (QS):** capacidade de um tipo específico de solo funcionar, dentro dos limites do ecossistema natural ou manejado, para sustentar a produtividade biológica, manter ou melhorar a qualidade da água e do ar e suportar a saúde humana e dos habitats (Karlen et al., 1997).
-- **MDS (*Minimum Data Set*):** conjunto mínimo e não redundante de atributos físicos, químicos e biológicos capaz de representar a funcionalidade integral do solo com viabilidade analítica.
-- $D_s$ e $D_p$: densidade do solo (massa de solo seco dividida pelo volume total, em $\text{g}\cdot\text{cm}^{-3}$) e densidade de partículas (massa de sólidos dividida pelo volume apenas de sólidos, usualmente $2{,}65\text{ g}\cdot\text{cm}^{-3}$ para solos minerais quartzosos).
-- $P_t$, $P_{\text{macro}}$ e $P_{\text{micro}}$: porosidade total, macroporosidade e microporosidade ($%$ em volume).
-- $MO$ e $CO$: matéria orgânica do solo e carbono orgânico total ($\text{g}\cdot\text{kg}^{-1}$ ou $%$), relacionados pelo fator de van Bemmelen ($1{,}724$).
-- $SB$, $CTC$ e $V%$: soma de bases trocáveis ($\text{cmol}_c\cdot\text{dm}^{-3}$), capacidade de troca catiônica a pH $7{,}0$ ($\text{cmol}_c\cdot\text{dm}^{-3}$) e saturação por bases ($%$).
-- $TIB$ e $RP$: taxa de infiltração básica ($\text{mm}\cdot\text{h}^{-1}$) e resistência do solo à penetração ($\text{MPa}$).
-- $S_i$, $w_i$ e $\text{IQS}$: pontuação normalizada ($0$ a $1$) do indicador $i$, peso atribuído ao indicador ($\sum w_i = 1$) e Índice de Qualidade do Solo ($0$ a $1$).
+**Qualidade do Solo (QS).** Capacidade de um solo funcionar, dentro dos limites do ecossistema natural ou manejado, para sustentar a produtividade biológica, manter a qualidade da água e do ar e suportar a saúde dos habitats (Karlen et al., 1997). **MDS (*Minimum Data Set*),** conjunto mínimo e não redundante de atributos físicos, químicos e biológicos capaz de representar a funcionalidade do solo com viabilidade analítica.
 
+$D_s$ e $D_p$, densidade do solo (massa de solo seco dividida pelo volume total do anel, em $\text{g}\cdot\text{cm}^{-3}$) e densidade de partículas (massa de sólidos dividida apenas pelo volume das partículas minerais e orgânicas, usualmente $2{,}65\text{ g}\cdot\text{cm}^{-3}$ para solos minerais quartzosos). $P_t$, $P_{\text{macro}}$ e $P_{\text{micro}}$, porosidade total, macroporosidade e microporosidade ($\%$ em volume). $MO$ e $CO$, matéria orgânica do solo e carbono orgânico total ($\text{g}\cdot\text{kg}^{-1}$ ou $\%$), relacionados pelo fator de van Bemmelen ($1{,}724$). $SB$, $CTC$ e $V\%$, soma de bases trocáveis ($\text{cmol}_c\cdot\text{dm}^{-3}$), capacidade de troca catiônica a pH $7{,}0$ ($\text{cmol}_c\cdot\text{dm}^{-3}$) e saturação por bases ($\%$).
+
+$TIB$ e $RP$, taxa de infiltração básica ($\text{mm}\cdot\text{h}^{-1}$) e resistência do solo à penetração ($\text{MPa}$). $S_i$, $w_i$ e $\text{IQS}$, pontuação normalizada ($0$ a $1$) do indicador $i$, peso atribuído ao indicador ($\sum w_i = 1$) e Índice de Qualidade do Solo ($0$ a $1$).
+
+## Conceito de Qualidade do Solo, Propriedades Inerentes e Tríade do MDS
+
+Durante décadas, a ciência do solo concentrou-se na fertilidade química voltada à resposta imediata de lavouras a fertilizantes minerais. Na Análise Ambiental, essa abordagem isolada mostra-se insuficiente porque um solo rico em fósforo e potássio pode sofrer compactação severa sob tráfego de máquinas ou pisoteio, perdendo sua rede de poros maiores. Quando isso ocorre, a água da chuva encontra resistência na superfície, forma enxurrada erosiva, arrasta sedimentos para os rios e reduz a recarga do lençol freático.
+
+A partir da década de 1990, Doran e Parkin (1994) e Karlen et al. (1997) consolidaram o conceito moderno de **Qualidade do Solo**, centrado em cinco funções ecossistêmicas interdependentes. O solo regula e particiona o fluxo de água (controlando infiltração, armazenamento e drenagem), sustenta a biodiversidade e a atividade microbiana, filtra e tampona poluentes orgânicos e inorgânicos, cicla nutrientes enquanto estoca carbono orgânico, e oferece suporte físico estável às raízes e às obras humanas. No Brasil, Vezzani e Mielniczuk (2009) destacam que essa qualidade emerge da interação contínua entre a arquitetura física dos agregados, a dinâmica da matéria orgânica e os organismos vivos, exigindo comparação direta com um **solo de referência** sob vegetação nativa na mesma classe pedológica e condição climática.
+
+Para diagnosticar se um solo perdeu funcionalidade por ação humana ou se determinada característica é natural daquele ambiente, distingue-se o potencial natural herdado da condição dinâmica atual (@fig-triade-mds-funcoes). As **propriedades inerentes** (textura areia-silte-argila, mineralogia da fração argila, profundidade efetiva e posição na vertente) mudam apenas em escalas geológicas e determinam qual solo de referência deve ser adotado. Já as **propriedades dinâmicas** (densidade, porosidade, matéria orgânica, infiltração e atividade microbiana) alteram-se em meses ou poucos anos conforme o manejo, formando o **Conjunto Mínimo de Dados (MDS)** dividido entre indicadores físicos, químicos e biológicos.
+
+![Relação entre propriedades inerentes do solo, tríade de indicadores dinâmicos do Conjunto Mínimo de Dados (MDS) e as cinco funções ecossistêmicas avaliadas.](../img/fig_cap11_triade_mds_funcoes.png){#fig-triade-mds-funcoes fig-alt="Diagrama mostrando propriedades inerentes no topo, três blocos de indicadores físicos, químicos e biológicos no centro e cinco funções ecossistêmicas na base"}
+
+## Indicadores Físicos (Arquitetura Porosa e Fluxo Hídrico)
+
+Os atributos físicos governam a circulação de água, ar e raízes no perfil edáfico e respondem rapidamente à degradação mecânica observada em pastagens sobrepastoreadas, áreas agrícolas convencionais e acessos de obras civis ou parques eólicos.
+
+A **densidade do solo ($D_s$)** mede a massa de solo seco contida em um volume conhecido de solo estruturado. Para preservar os poros originais sem esmagá-los, coleta-se uma amostra indeformada cravando um cilindro metálico de volume conhecido $V_t$ (anel de Kopecky) no perfil, levando-o à estufa a $105\,^\circ\text{C}$ até massa constante ($m_s$). Quanto maior a compactação imposta pelo tráfego ou pisoteio, mais partículas sólidas são comprimidas no mesmo volume e maior fica $D_s$. Solos minerais conservados exibem tipicamente valores entre $1{,}00$ e $1{,}35\text{ g}\cdot\text{cm}^{-3}$ (menores em solos argilosos estruturados e ligeiramente maiores em solos arenosos); valores acima de $1{,}55$–$1{,}65\text{ g}\cdot\text{cm}^{-3}$ em solos de textura média a argilosa costumam impor restrição severa ao crescimento radicular.
+
+Para compreender o efeito real dessa compactação sobre a água e o ar, analisa-se a **porosidade total ($P_t$)** em conjunto com a separação entre **macroporosidade e microporosidade** (@fig-porosidade-compactacao). Em laboratório, a mesa de tensão aplica uma sucção de $6\text{ kPa}$ ao anel saturado para separar duas famílias funcionais de poros: os **macroporos** ($> 50\,\mu\text{m}$, drenados a $6\text{ kPa}$) garantem a aeração das raízes e a infiltração rápida durante chuvas intensas, enquanto os **microporos** ($< 50\,\mu\text{m}$, que retêm água após $6\text{ kPa}$) armazenam umidade disponível às plantas. Sob pressão mecânica, os macroporos colapsam primeiro; quando a macroporosidade cai abaixo de $10\%$ do volume total do solo, a oxigenação radicular torna-se crítica.
+
+![Impacto da compactação na proporção volumétrica entre sólidos, microporos e macroporos, comparando Caatinga conservada e acesso compactado.](../img/fig_cap11_porosidade_compactacao.png){#fig-porosidade-compactacao fig-alt="Barras proporcionais comparando solo conservado com 46% sólidos, 34% microporos e 20% macroporos frente a solo compactado com 66% sólidos, 28% microporos e 6% macroporos"}
+
+A integridade dessa arquitetura porosa depende da **estabilidade de agregados em água**, medida pelo Diâmetro Médio Ponderado (DMP) em peneiramento úmido, que indica a resistência dos torrões ao impacto das gotas de chuva (*splash*), prevenindo o selamento superficial. Quando o selamento ocorre ou os macroporos diminuem, cai abruptamente a **Taxa de Infiltração Básica ($TIB$)**, medida em campo com infiltrômetro de anéis concêntricos ($\text{mm}\cdot\text{h}^{-1}$), convertendo chuvas moderadas em escoamento superficial concentrado e sulcos erosivos (@fig-solo-compactado-sulco). Complementando essa leitura, a **Resistência do solo à penetração ($RP$)**, medida com penetrômetro ($\text{MPa}$), quantifica o esforço mecânico enfrentado pelas raízes; na capacidade de campo, valores acima de $2{,}0$–$2{,}5\text{ MPa}$ impõem impedimento físico severo.
+
+![Superfície de solo compactado em acesso rural com selamento superficial, perda de macroporosidade e formação de sulco erosivo por escoamento superficial concentrado. Fonte acervo didático da disciplina.](../img/foto_estrada_sulco_erosivo.jpg){#fig-solo-compactado-sulco fig-alt="Estrada de terra compactada apresentando sulco erosivo profundo escavado pelo escoamento superficial concentrado"}
+
+As equações físicas abaixo permitem calcular a densidade do solo, a porosidade total e as frações de macro e microporos a partir das pesagens do anel volumétrico saturado ($m_{\text{sat}}$), drenado a $6\text{ kPa}$ ($m_{6\text{kPa}}$) e seco em estufa ($m_s$), adotando $\rho_{\text{água}} = 1{,}0\text{ g}\cdot\text{cm}^{-3}$:
+
+$$
+D_s = \frac{m_s}{V_t} \quad (\text{g}\cdot\text{cm}^{-3}) \qquad\qquad P_t = \left(1 - \frac{D_s}{D_p}\right) \times 100\%
+$$
+
+$$
+P_{\text{micro}} = \frac{m_{6\text{kPa}} - m_s}{\rho_{\text{água}} \cdot V_t}\times 100\% \qquad\qquad P_{\text{macro}} = \frac{m_{\text{sat}} - m_{6\text{kPa}}}{\rho_{\text{água}} \cdot V_t}\times 100\%
+$$
+
+O Exemplo 11.1 aplica diretamente essas expressões aos dados representados na @fig-porosidade-compactacao.
+
+::: {.callout-tip appearance="simple"}
+### Exemplo 11.1 (Básico). Cálculo de Densidade do Solo e Porosidade Total em Anel Volumétrico
+
+**Situação e dados.** Durante campanha da disciplina CHF662 na camada $0$–$10\text{ cm}$ ($V_t = 100\text{ cm}^3$; $D_p = 2{,}65\text{ g}\cdot\text{cm}^{-3}$), uma amostra sob Caatinga conservada apresentou massa seca $m_{s,1} = 122\text{ g}$ e outra na borda compactada de um acesso eólico apresentou $m_{s,2} = 175\text{ g}$.
+
+**Cálculo passo a passo.** Para a Caatinga conservada, $D_{s,1} = \frac{122}{100} = 1{,}22\text{ g}\cdot\text{cm}^{-3}$ e $P_{t,1} = \left(1 - \frac{1{,}22}{2{,}65}\right)\times 100\% = 53{,}96\%$. Para o acesso compactado, $D_{s,2} = \frac{175}{100} = 1{,}75\text{ g}\cdot\text{cm}^{-3}$ e $P_{t,2} = \left(1 - \frac{1{,}75}{2{,}65}\right)\times 100\% = 33{,}96\%$.
+
+**Interpretação.** A compactação elevou $D_s$ em $0{,}53\text{ g}\cdot\text{cm}^{-3}$ e eliminou exatamente $20{,}00$ pontos percentuais de porosidade ($37{,}1\%$ de perda relativa), colapsando prioritariamente os macroporos de drenagem rápida.
 :::
 
-## Conceito de Qualidade do Solo e Funcionalidade Edáfica
+Quando o diagnóstico físico inclui medições em mesa de tensão, quantifica-se separadamente quanto dessa porosidade total permanece disponível para aeração radicular, conforme detalhado no Exemplo 11.4.
 
-Historicamente, a ciência do solo privilegiou a avaliação da fertilidade química voltada à resposta de culturas agrícolas a fertilizantes minerais. Essa visão revelou-se insuficiente para a Análise Ambiental porque um solo quimicamente adubado pode apresentar compactação severa, baixíssima infiltração de água, intensa perda por erosão e colapso da biota edáfica.
+::: {.callout-tip appearance="simple"}
+### Exemplo 11.4 (Avançado). Separação de Macro e Microporosidade em Mesa de Tensão
 
-A partir da década de 1990, Doran e Parkin (1994) e Karlen et al. (1997) consolidaram o conceito moderno de **Qualidade do Solo**, centrado nas **funções ecossistêmicas** que o solo desempenha na paisagem: (i) regular e particionar o fluxo de água (infiltração, armazenamento e drenagem); (ii) sustentar a biodiversidade e a atividade biológica; (iii) filtrar, tamponar e degradar poluentes orgânicos e inorgânicos; (iv) ciclar nutrientes e estocar carbono orgânico; e (v) oferecer suporte físico estável a plantas e estruturas. No Brasil, Vezzani e Mielniczuk (2009) enfatizam que a qualidade do solo emerge como propriedade sistêmica da interação entre estrutura física (agregação), dinâmica da matéria orgânica e organismos vivos, exigindo avaliação integrada e comparada a um **solo de referência** sob vegetação nativa da mesma classe pedológica e condição climática.
+**Situação e dados.** Uma amostra indeformada ($V_t = 100\text{ cm}^3$; $\rho_{\text{água}} = 1{,}0\text{ g}\cdot\text{cm}^{-3}$) em área sob bioengenharia registrou massa saturada $m_{\text{sat}} = 174\text{ g}$, massa após equilíbrio a $6\text{ kPa}$ de $m_{6\text{kPa}} = 158\text{ g}$ e massa seca $m_s = 128\text{ g}$.
 
-::: {.callout-note}
-## Propriedades Inerentes vs. Propriedades Dinâmicas do Solo
+**Cálculo passo a passo.** Como cada $1\text{ g}$ de água ocupa $1\text{ cm}^3$ de poro:
 
-Todo diagnóstico edáfico deve distinguir dois grupos de atributos:
+$$
+P_t^{\text{sat}} = \frac{174 - 128}{100}\times 100\% = 46{,}0\% \qquad P_{\text{micro}} = \frac{158 - 128}{100}\times 100\% = 30{,}0\% \qquad P_{\text{macro}} = \frac{174 - 158}{100}\times 100\% = 16{,}0\%
+$$
 
-- **Propriedades inerentes (estáticas):** determinadas pelos fatores de formação do solo (rocha-mãe, relevo, clima, tempo), como textura (proporção areia--silte--argila), mineralogia da fração argila e profundidade efetiva. Mudam apenas em escalas geológicas e definem o *potencial natural* do solo.
-- **Propriedades dinâmicas (sensíveis ao manejo):** modificam-se em meses ou anos em resposta ao desmatamento, pisoteio, tráfego de máquinas, queimadas ou práticas conservacionistas. Incluem densidade do solo, porosidade, estabilidade de agregados, matéria orgânica, infiltração e atividade microbiana. São essas propriedades que compõem o **Conjunto Mínimo de Dados (MDS)**.
-
+**Interpretação.** A soma confere ($30{,}0\% + 16{,}0\% = 46{,}0\%$), e a macroporosidade de $16{,}0\%$ supera o limiar crítico de $10\%$, indicando boa aeração radicular aliada à retenção hídrica.
 :::
 
-## Indicadores Físicos, Químicos e Biológicos do MDS
+Na leitura de campo dos indicadores físicos, dois erros frequentes comprometem os laudos ambientais: comparar solos de texturas diferentes sem referência local e medir resistência à penetração sem registrar a umidade.
 
-### Indicadores Físicos (Arquitetura Porosa e Fluxo Hídrico)
+::: {.callout-warning appearance="simple"}
+### Erro 1, Comparar Áreas em Solos de Texturas Distintas Sem Referência Local
 
-Os atributos físicos governam a circulação de água, ar e raízes no perfil do solo e respondem rapidamente à degradação mecânica observada em pastagens sobrepastoreadas, áreas agrícolas convencionais e acessos de obras civis ou parques eólicos:
+**Equívoco frequente.** Classificar um Neossolo Quartzarênico arenoso ($D_s = 1{,}45\text{ g}\cdot\text{cm}^{-3}$) como degradado comparando-o a um Latossolo argiloso conservado ($D_s = 1{,}05\text{ g}\cdot\text{cm}^{-3}$).
 
-- **Densidade do solo ($D_s$):** obtida preferencialmente com anel volumétrico indeformado (anel de Kopecky) de volume conhecido $V_t$ após secagem em estufa a $105\,^\circ\text{C}$ até massa constante ($m_s$). Quanto maior a compactação, maior o valor de $D_s$. Valores típicos em solos minerais conservados situam-se entre $1{,}00$ e $1{,}35\text{ g}\cdot\text{cm}^{-3}$ (mais baixos em solos argilosos estruturados e ligeiramente maiores em solos arenosos); valores acima de $1{,}55$--$1{,}65\text{ g}\cdot\text{cm}^{-3}$ em solos de textura média a argilosa costumam indicar restrição severa ao crescimento radicular.
-- **Porosidade total ($P_t$), macroporosidade e microporosidade:** a porosidade total expressa a fração do volume do solo ocupada por água e ar. Em laboratório, a separação entre **macroporos** (poros com diâmetro $> 50\,\mu\text{m}$, drenados na mesa de tensão a $6\text{ kPa}$, responsáveis pela aeração e drenagem rápida) e **microporos** (poros $< 50\,\mu\text{m}$, responsáveis pela retenção de água disponível às plantas) revela diagnósticos que $P_t$ isoladamente não capta. Macroporosidade inferior a $10%$ do volume total do solo é considerada crítica para a oxigenação radicular.
-- **Estabilidade de agregados em água:** medida pelo Diâmetro Médio Ponderado (DMP) ou percentual de agregados estáveis em água por peneiramento úmido. Agregados estáveis resistem ao impacto das gotas de chuva (*splash*), prevenindo o selamento superficial e a erosão laminar.
-- **Taxa de Infiltração Básica ($TIB$):** velocidade constante de entrada de água no solo após saturação inicial da camada superficial, medida em campo com infiltrômetro de anéis concêntricos ($\text{mm}\cdot\text{h}^{-1}$). Solos compactados ou selados exibem queda drástica na $TIB$, gerando enxurrada mesmo em chuvas moderadas.
-- **Resistência do solo à penetração ($RP$):** medida em campo por penetrômetro de impacto ou eletrônico ($\text{MPa}$), sempre acompanhada da umidade do solo no instante da leitura (pois um solo seco oferece resistência muito maior que o mesmo solo úmido). Na capacidade de campo, valores acima de $2{,}0$--$2{,}5\text{ MPa}$ impõem forte impedimento mecânico às raízes.
-
-### Indicadores Químicos (Matéria Orgânica, Acidez e Troca Catiônica)
-
-Os atributos químicos determinam a disponibilidade de nutrientes, o poder tampão e a estabilidade coloidal do solo:
-
-- **Carbono Orgânico Total ($CO$) e Matéria Orgânica ($MO$):** a matéria orgânica é o grande elo integrador entre a física, a química e a biologia do solo, pois atua como agente cimentante de agregados, eleva a retenção de água e fornece sítios de carga negativa para a $CTC$. Como os métodos laboratoriais (oxidação úmida Walkley--Black ou combustão seca) quantificam diretamente o carbono orgânico ($CO$), estima-se a matéria orgânica multiplicando $CO$ pelo \textbf{fator de van Bemmelen ($1{,}724$)}. Esse valor origina-se da hipótese clássica de que a matéria orgânica humificada do solo contém aproximadamente $58%$ de carbono em massa, de modo que $1 / 0{,}58 = 1{,}7241\dots \approx 1{,}724$. Embora estudos recentes indiquem que a proporção real de carbono na $MO$ varia conforme o ecossistema e o grau de decomposição (podendo demandar fatores próximos a $1{,}9$ ou $2{,}0$ em horizontes subsuperficiais), o fator $1{,}724$ permanece a convenção padrão em laudos de rotina e avaliações acadêmicas, devendo sempre ter sua premissa declarada.
-- **Potencial hidrogeniônico (pH):** indica acidez ou alcalinidade ativa do solo, influenciando a solubilidade de nutrientes e a toxicidade do alumínio trocável ($Al^{3+}$) em pH inferior a $5{,}5$. No Semiárido Baiano, Luvissolos e Neossolos pouco intemperizados tendem a apresentar pH levemente ácido a neutro ($6{,}0$--$7{,}2$), enquanto Latossolos profundos de tabuleiros e chapadas costumam ser ácidos ($4{,}5$--$5{,}5$).
-- **Soma de Bases ($SB$), $CTC$ e Saturação por Bases ($V%$):** $SB$ reúne os cátions básicos trocáveis ($Ca^{2+} + Mg^{2+} + K^+ + Na^+$); somando-se a acidez potencial ($H^+ + Al^{3+}$), obtém-se a $CTC$ a pH $7{,}0$. A razão $V% = (SB / CTC) \times 100%$ indica a proporção das cargas negativas ocupadas por bases: solos com $V% \ge 50%$ são classificados como **eutróficos** (alta fertilidade natural), e solos com $V% < 50%$ são **distróficos** (baixa fertilidade natural).
-
-### Indicadores Biológicos (Motor Vivo da Funcionalidade Edáfica)
-
-Os indicadores biológicos costumam ser os mais sensíveis às perturbações iniciais e às respostas de recuperação:
-
-- \textbf{Carbono da Biomassa Microbiana ($C\text{-BM}$):} fração viva da matéria orgânica (fungos, bactérias e actinomicetos, geralmente $1%$ a $4%$ do $CO$ total). Responde muito mais rapidamente ao desmatamento ou à revegetação do que o $CO$ total.
-- **Respiração Basal do Solo ($RBS$):** taxa de liberação de $\text{CO}_2$ pela atividade metabólica microbiana. Interpretada em conjunto com a biomassa pelo quociente metabólico ($q\text{CO}_2 = RBS / C\text{-BM}$): valores elevados de $q\text{CO}_2$ sinalizam estresse ambiental, pois os micro-organismos gastam mais energia para manutenção do que para crescimento.
-- **Fauna edáfica e cobertura vegetal:** riqueza e abundância de macrofauna (minhocas, térmitas, formigas e coleópteros, considerados engenheiros do ecossistema por construírem bioporos) e percentual de cobertura do solo por serapilheira e vegetação viva, fundamental para amortecer a temperatura superficial no Semiárido e proteger o solo contra a erosão.
-
-::: {.callout-tip}
-## Equações Fundamentais de Qualidade do Solo e Cálculo do IQS
-
-**1. Atributos Físicos (Anel Volumétrico e Porosidade):**
-
-$$
-
-D_s = \frac{m_s}{V_t}   (\text{g}\cdot\text{cm}^{-3})    P_t = \left(1 - \frac{D_s}{D_p}\right) \times 100%
-
-$$
-
-Para anel saturado ($m_{\text{sat}}$), drenado a $6\text{ kPa}$ ($m_{6\text{kPa}}$) e seco em estufa ($m_s$), com $\rho_{\text{água}} = 1{,}0\text{ g}\cdot\text{cm}^{-3}$:
-
-$$
-
-P_{\text{micro}} = \frac{m_{6\text{kPa}} - m_s}{\rho_{\text{água}} \cdot V_t}\times 100%    P_{\text{macro}} = \frac{m_{\text{sat}} - m_{6\text{kPa}}}{\rho_{\text{água}} \cdot V_t}\times 100%
-
-$$
-
-**2. Matéria Orgânica, Carbono Orgânico (van Bemmelen) e Estoque de Carbono:**
-
-$$
-
-CO = \frac{MO}{1{,}724}   \Longleftrightarrow   MO = CO \times 1{,}724    EC = \left(\frac{CO_{\text{g/kg}}}{1000}\right) \cdot D_s \cdot (10.000 \cdot h_{\text{m}})
-
-$$
-
-onde $EC$ é o estoque de carbono na camada de espessura $h_{\text{m}}$ (em metros), expresso em $\text{Mg C}\cdot\text{ha}^{-1}$ (toneladas de carbono por hectare), utilizando a equivalência $1\text{ g}\cdot\text{cm}^{-3} = 1\text{ Mg}\cdot\text{m}^{-3}$ para a densidade do solo $D_s$.
-
-**3. Fertilidade Química (Bases e Saturação):**
-
-$$
-
-SB = Ca^{2+} + Mg^{2+} + K^+ + Na^+   CTC = SB + (H^+ + Al^{3+})   V% = \frac{SB}{CTC}\times 100%
-
-$$
-
-**4. Normalização Linear ($0$ a $1$) e Índice de Qualidade do Solo (IQS):**
-Como cada indicador possui unidade distinta ($\text{g}\cdot\text{kg}^{-1}$, $\text{mm}\cdot\text{h}^{-1}$, $\text{g}\cdot\text{cm}^{-3}$), converte-se cada valor bruto $x_i$ em uma nota adimensional $S_i \in [0, 1]$:
-
-- **Função "quanto maior melhor"** (ex.: $MO$, $P_t$, $TIB$, estabilidade de agregados, cobertura vegetal): $S_i = \min\!\left(1;\; \dfrac{x_i}{x_{\text{ref}}}\right)$, onde $x_{\text{ref}}$ é o valor ótimo ou da área de referência (o operador $\min(1; \dots)$ limita a nota máxima em $1{,}0$ para impedir que um indicador acima da referência compense outro degradado).
-- **Função "quanto menor melhor"** (ex.: densidade do solo $D_s$, resistência à penetração $RP$, para $x_i > 0$): $S_i = \min\!\left(1;\; \dfrac{x_{\text{ref}}}{x_i}\right)$, onde $x_{\text{ref}}$ é o menor valor desejável (área de referência).
-
-A partir das pontuações normalizadas $S_i$, calcula-se o **Índice de Qualidade do Solo**:
-
-$$
-
-\text{IQS}_{\text{simples}} = \frac{1}{n}\sum_{i=1}^{n} S_i   \text{ou}   \text{IQS}_{\text{ponderado}} = \sum_{i=1}^{n} w_i \, S_i   \left(\text{com } \sum_{i=1}^{n} w_i = 1\right)
-
-$$
-
+**Correção técnica.** Solos arenosos possuem naturalmente maior densidade e menor $CTC$ do que solos argilosos bem estruturados. A área de referência sob vegetação nativa deve pertencer à **mesma classe de solo, textura e posição geomorfológica** da área diagnosticada.
 :::
 
-## Visualização Multivariada da Qualidade do Solo
+No Semiárido, a sazonalidade hídrica amplia drasticamente a coesão aparente do solo seco, exigindo cuidado adicional nas leituras de penetrômetro.
 
-A integração dos indicadores normalizados em um **gráfico radar** (ou gráfico de teia) constitui um dos recursos mais eficazes em relatórios técnicos ambientais porque preserva simultaneamente a visão global (área do polígono proporcional ao IQS) e o diagnóstico individual de cada gargalo (eixos recolhidos próximo ao centro).
+::: {.callout-warning appearance="simple"}
+### Erro 2, Avaliar Resistência à Penetração ($RP$) Sem Registrar a Umidade do Solo
 
-![Comparação multivariada de seis indicadores normalizados de qualidade do solo ($0$ a $1$) entre área de referência sob Caatinga conservada, área em recuperação com técnicas de bioengenharia e área degradada com solo exposto e compactado.](../img/fig09_qualidade_solo_radar.png)
+**Equívoco frequente.** Medir $RP$ na estação seca no Semiárido, obter valores acima de $4{,}0\text{ MPa}$ e diagnosticar compactação antrópica irreversível.
 
-Observando os dados plotados na Figura indicada acima, nota-se um gradiente nítido de funcionalidade edáfica entre os três cenários:
-
-- **Referência (Caatinga conservada):** escores de $0{,}90$ (MO), $0{,}88$ (porosidade total), $0{,}92$ (taxa de infiltração), $0{,}86$ (estabilidade de agregados), $0{,}85$ (baixa densidade) e $0{,}95$ (cobertura vegetal), resultando em $\text{IQS} = (0{,}90+0{,}88+0{,}92+0{,}86+0{,}85+0{,}95)/6 = \mathbf{0{,}893}$ (qualidade muito alta).
-- **Área em recuperação (bioengenharia):** escores entre $0{,}68$ e $0{,}78$, com $\text{IQS} = (0{,}68+0{,}72+0{,}75+0{,}70+0{,}68+0{,}78)/6 = \mathbf{0{,}718}$ (qualidade boa em trajetória ascendente, mas com matéria orgânica e densidade ainda em consolidação).
-- **Área degradada (solo exposto e compactado):** escores colapsados entre $0{,}18$ (cobertura vegetal) e $0{,}35$ (porosidade total), produzindo $\text{IQS} = (0{,}28+0{,}35+0{,}22+0{,}30+0{,}32+0{,}18)/6 = \mathbf{0{,}275}$ (qualidade crítica, exigindo intervenção prioritária na cobertura superficial e descompactação biológica).
-
-## Etapa 4: Estudos de Caso e Exemplos Resolvidos Passo a Passo
-
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 11.1 (Básico) — Cálculo de Densidade do Solo e Porosidade Total em Anel Volumétrico
-
-**1. Situação-problema / Enunciado:** Durante uma campanha prática da disciplina CHF662, foram coletadas amostras indeformadas (camada $0$--$10\text{ cm}$) utilizando anéis de Kopecky de $100\text{ cm}^3$ em dois pontos contíguos sobre o mesmo tipo de solo mineral ($D_p = 2{,}65\text{ g}\cdot\text{cm}^{-3}$): um fragmento de Caatinga conservada e a borda compactada de um acesso de parque eólico.
-
-**2. Dados e informações fornecidas:** Volume do anel $V_t = 100\text{ cm}^3$; densidade de partículas $D_p = 2{,}65\text{ g}\cdot\text{cm}^{-3}$. Massa de solo seco em estufa ($105\,^\circ\text{C}$): ponto Caatinga $m_{s,1} = 122\text{ g}$; ponto acesso compactado $m_{s,2} = 175\text{ g}$.
-
-**3. O que a análise solicita:** Calcular a densidade do solo ($D_s$) e a porosidade total ($P_t$) em ambos os pontos e interpretar o contraste físico.
-
-**4. Referencial e método adotado:** Aplicação direta das expressões $D_s = m_s / V_t$ e $P_t = (1 - D_s / D_p)\times 100%$.
-
-**5. Desenvolvimento passo a passo:**
-
-**Ponto 1 — Caatinga conservada:**
-
-$$
-
-D_{s,1} = \frac{122\text{ g}}{100\text{ cm}^3} = 1{,}22\text{ g}\cdot\text{cm}^{-3}
-
-$$
-
-$$
-
-P_{t,1} = \left(1 - \frac{1{,}22}{2{,}65}\right)\times 100% = (1 - 0{,}4604)\times 100% = 53{,}96%
-
-$$
-
-**Ponto 2 — Acesso compactado:**
-
-$$
-
-D_{s,2} = \frac{175\text{ g}}{100\text{ cm}^3} = 1{,}75\text{ g}\cdot\text{cm}^{-3}
-
-$$
-
-$$
-
-P_{t,2} = \left(1 - \frac{1{,}75}{2{,}65}\right)\times 100% = (1 - 0{,}6604)\times 100% = 33{,}96%
-
-$$
-
-**Diferença de porosidade:** $P_{t,2} - P_{t,1} = 33{,}96% - 53{,}96% = -20{,}00$ pontos percentuais (perda relativa de $37{,}1%$ do espaço poroso original).}
-
-**6. Síntese / Resposta:** Caatinga conservada: $D_s = 1{,}22\text{ g}\cdot\text{cm}^{-3}$ e $P_t = 53{,}96%$. Acesso compactado: $D_s = 1{,}75\text{ g}\cdot\text{cm}^{-3}$ e $P_t = 33{,}96%$.
-
-**7. Verificação crítica:** A compactação aumentou a densidade em $0{,}53\text{ g}\cdot\text{cm}^{-3}$ e eliminou exatamente $20$ pontos percentuais de porosidade, colapsando prioritariamente os macroporos de drenagem rápida e explicando o aumento imediato de escoamento superficial na borda do acesso.
-
+**Correção técnica.** A resistência mecânica à penetração aumenta exponencialmente à medida que o solo seca, devido à coesão entre partículas e à sucção matricial. Leituras de penetrômetro são comparáveis apenas quando obtidas sob umidade controlada (próxima à capacidade de campo) ou acompanhadas do teor gravimétrico de umidade.
 :::
 
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 11.2 (Básico/Intermediário) — Fator de van Bemmelen e Estoque de Carbono na Camada 0--20 cm
+## Indicadores Químicos (Matéria Orgânica, Acidez e Troca Catiônica)
 
-**1. Situação-problema / Enunciado:** Um laudo laboratorial reportou carbono orgânico total de $18{,}0\text{ g}\cdot\text{kg}^{-1}$ em um solo sob Caatinga preservada (Área A, com $D_s = 1{,}25\text{ g}\cdot\text{cm}^{-3}$). Em uma pastagem degradada adjacente no mesmo solo (Área B, com $D_s = 1{,}60\text{ g}\cdot\text{cm}^{-3}$), outro laboratório expressou o resultado em matéria orgânica total: $MO = 12{,}068\text{ g}\cdot\text{kg}^{-1}$.
-
-**2. Dados e informações fornecidas:** Camada amostrada: $h = 20\text{ cm} = 0{,}20\text{ m}$. Área A: $CO_A = 18{,}0\text{ g}\cdot\text{kg}^{-1}$, $D_{s,A} = 1{,}25\text{ g}\cdot\text{cm}^{-3}$. Área B: $MO_B = 12{,}068\text{ g}\cdot\text{kg}^{-1}$, $D_{s,B} = 1{,}60\text{ g}\cdot\text{cm}^{-3}$. Fator de van Bemmelen: $1{,}724$.
-
-**3. O que a análise solicita:** Calcular (a) o teor de $MO$ na Área A e o teor de $CO$ na Área B; (b) o estoque de carbono ($EC$, em $\text{Mg C}\cdot\text{ha}^{-1}$) na camada $0$--$20\text{ cm}$ das duas áreas e a perda líquida de carbono.
-
-**4. Referencial e método adotado:** Conversão via fator de van Bemmelen ($MO = 1{,}724 \cdot CO$) e cálculo da massa total de solo por hectare na camada de $0{,}20\text{ m}$ ($1\text{ ha} = 10.000\text{ m}^2$, lembrando que $1\text{ g}\cdot\text{cm}^{-3} = 1\text{ Mg}\cdot\text{m}^{-3}$).
-
-**5. Desenvolvimento passo a passo:**
-
-**Etapa 1 — Conversão pelo fator de van Bemmelen:**
+Os atributos químicos determinam a disponibilidade de nutrientes, o poder tampão e a estabilidade coloidal do solo. A **Matéria Orgânica ($MO$)** e o **Carbono Orgânico Total ($CO$)** integram física, química e biologia porque cimentam agregados, elevam a retenção de água e fornecem a maior parte das cargas negativas da $CTC$ em solos tropicais intemperizados. Como os métodos laboratoriais (Walkley-Black ou combustão seca) quantificam diretamente o carbono orgânico ($CO$), estima-se a matéria orgânica multiplicando $CO$ pelo **fator de van Bemmelen ($1{,}724$)**, baseado na convenção clássica de que a matéria orgânica humificada contém aproximadamente $58\%$ de carbono em massa ($1 / 0{,}58 \approx 1{,}724$). As expressões abaixo relacionam $CO$, $MO$ e o estoque de carbono ($EC$, em $\text{Mg C}\cdot\text{ha}^{-1}$) na camada de espessura $h_{\text{m}}$ (adotando $1\text{ g}\cdot\text{cm}^{-3} = 1\text{ Mg}\cdot\text{m}^{-3}$):
 
 $$
-
-MO_A = 18{,}0 \times 1{,}724 = 31{,}032\text{ g}\cdot\text{kg}^{-1}   (\text{ou } 3{,}10%)
-
+CO = \frac{MO}{1{,}724} \quad \Longleftrightarrow \quad MO = CO \times 1{,}724 \qquad\qquad EC = \left(\frac{CO_{\text{g/kg}}}{1000}\right) \cdot D_s \cdot (10.000 \cdot h_{\text{m}})
 $$
 
-$$
+O Exemplo 11.2 demonstra como padronizar laudos expressos em grandezas distintas e quantificar a perda de carbono por hectare.
 
-CO_B = \frac{12{,}068}{1{,}724} = 7{,}00\text{ g}\cdot\text{kg}^{-1}   (\text{ou } 0{,}70%)
+::: {.callout-tip appearance="simple"}
+### Exemplo 11.2 (Básico/Intermediário). Fator de van Bemmelen e Estoque de Carbono na Camada 0 a 20 cm
 
-$$
+**Situação e dados.** Na camada $h = 0{,}20\text{ m}$, um laudo reportou $CO_A = 18{,}0\text{ g}\cdot\text{kg}^{-1}$ sob Caatinga preservada ($D_{s,A} = 1{,}25\text{ g}\cdot\text{cm}^{-3}$), enquanto outro laboratório reportou $MO_B = 12{,}068\text{ g}\cdot\text{kg}^{-1}$ em pastagem degradada adjacente ($D_{s,B} = 1{,}60\text{ g}\cdot\text{cm}^{-3}$).
 
-\textbf{Etapa 2 — Volume de solo por hectare na camada de $0{,}20\text{ m}$:}
+**Cálculo passo a passo.** Pelo fator de van Bemmelen, $MO_A = 18{,}0 \times 1{,}724 = 31{,}032\text{ g}\cdot\text{kg}^{-1}$ e $CO_B = 12{,}068 / 1{,}724 = 7{,}00\text{ g}\cdot\text{kg}^{-1}$. Em $1\text{ ha}$, o volume da camada é $V_{\text{ha}} = 10.000 \times 0{,}20 = 2.000\text{ m}^3\cdot\text{ha}^{-1}$. Na Área A, a massa de solo é $2.000 \times 1{,}25 = 2.500\text{ Mg}\cdot\text{ha}^{-1}$ e $EC_A = 2.500 \times 0{,}018 = 45{,}00\text{ Mg C}\cdot\text{ha}^{-1}$. Na Área B, a massa é $2.000 \times 1{,}60 = 3.200\text{ Mg}\cdot\text{ha}^{-1}$ e $EC_B = 3.200 \times 0{,}007 = 22{,}40\text{ Mg C}\cdot\text{ha}^{-1}$, indicando perda de $22{,}60\text{ Mg C}\cdot\text{ha}^{-1}$ ($-50{,}2\%$).
 
-$$
-
-V_{\text{ha}} = 10.000\text{ m}^2 \times 0{,}20\text{ m} = 2.000\text{ m}^3\cdot\text{ha}^{-1}
-
-$$
-
-**Etapa 3 — Massa de solo e estoque de carbono ($EC$):**
-Na Área A: massa de solo $= 2.000\text{ m}^3 \times 1{,}25\text{ Mg}\cdot\text{m}^{-3} = 2.500\text{ Mg}\cdot\text{ha}^{-1}$. Como $CO_A = 18{,}0\text{ g}\cdot\text{kg}^{-1} = 0{,}018$:
-
-$$
-
-EC_A = 2.500 \times 0{,}018 = 45{,}00\text{ Mg C}\cdot\text{ha}^{-1}
-
-$$
-
-Na Área B: massa de solo $= 2.000\text{ m}^3 \times 1{,}60\text{ Mg}\cdot\text{m}^{-3} = 3.200\text{ Mg}\cdot\text{ha}^{-1}$. Como $CO_B = 7{,}00\text{ g}\cdot\text{kg}^{-1} = 0{,}007$:
-
-$$
-
-EC_B = 3.200 \times 0{,}007 = 22{,}40\text{ Mg C}\cdot\text{ha}^{-1}
-
-$$
-
-**Etapa 4 — Perda líquida de carbono na camada fixa:**
-
-$$
-
-\Delta EC = 45{,}00 - 22{,}40 = 22{,}60\text{ Mg C}\cdot\text{ha}^{-1}   (\text{redução de } 50{,}2%)
-
-$$
-
-**6. Síntese / Resposta:** Área A: $MO = 31{,}032\text{ g}\cdot\text{kg}^{-1}$ e $EC = 45{,}00\text{ Mg C}\cdot\text{ha}^{-1}$. Área B: $CO = 7{,}00\text{ g}\cdot\text{kg}^{-1}$ e $EC = 22{,}40\text{ Mg C}\cdot\text{ha}^{-1}$. Perda líquida de $22{,}60\text{ Mg C}\cdot\text{ha}^{-1}$.
-
-**7. Verificação crítica:** Observe um cuidado avançado muito valorizado em estudos científicos: devido à compactação da Área B ($D_s = 1{,}60$ vs. $1{,}25$), uma mesma profundidade fixa de $20\text{ cm}$ contém maior massa de solo na área degradada ($3.200\text{ Mg}$ vs. $2.500\text{ Mg}$). Em pesquisas de estoques de carbono de alta precisão, corrige-se essa diferença pelo método da massa equivalente de solo; ainda assim, a perda aqui já ultrapassa metade do estoque original.
-
+**Interpretação.** Mesmo com maior massa de solo em $20\text{ cm}$ na Área B devido à compactação ($3.200$ vs. $2.500\text{ Mg}$), a degradação já eliminou metade do estoque original de carbono.
 :::
 
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 11.3 (Intermediário) — Diagnóstico Químico: Soma de Bases, CTC e Saturação por Bases ($V%$)
+Na leitura comparativa de análises laboratoriais, trocar carbono orgânico por matéria orgânica sem conversão prévia distorce qualquer diagnóstico ambiental.
 
-**1. Situação-problema / Enunciado:** Compare os laudos químicos de rotina (camada $0$--$20\text{ cm}$) de dois solos baianos: Solo 1 (Luvissolo Crômico sob Caatinga no Semiárido) e Solo 2 (Latossolo Amarelo sob pastagem degradada nos Tabuleiros Costeiros).
+::: {.callout-warning appearance="simple"}
+### Erro 3, Confundir Carbono Orgânico ($CO$) com Matéria Orgânica ($MO$)
 
-**2. Dados e informações fornecidas:** Valores em $\text{cmol}_c\cdot\text{dm}^{-3}$:
+**Equívoco frequente.** Comparar diretamente um laudo expresso em $CO$ ($\text{g}\cdot\text{kg}^{-1}$) com outro expresso em $MO$ ($\text{g}\cdot\text{kg}^{-1}$) sem conversão prévia.
 
-- Solo 1: $Ca^{2+} = 5{,}40$; $Mg^{2+} = 2{,}60$; $K^+ = 0{,}45$; $Na^+ = 0{,}15$; $H^+ + Al^{3+} = 2{,}40$.
-- Solo 2: $Ca^{2+} = 1{,}20$; $Mg^{2+} = 0{,}60$; $K^+ = 0{,}15$; $Na^+ = 0{,}05$; $H^+ + Al^{3+} = 4{,}00$.
-
-**3. O que a análise solicita:** Calcular $SB$, $CTC$ a pH $7{,}0$ e $V%$ para os dois solos e classificá-los quanto ao caráter eutrófico ou distrófico.
-
-**4. Referencial e método adotado:** Aplicação das equações aditivas de $SB$ e $CTC$ e cálculo da razão percentual $V% = (SB / CTC)\times 100%$.
-
-**5. Desenvolvimento passo a passo:**
-
-**Solo 1 (Luvissolo — Semiárido):**
-
-$$
-
-SB_1 = 5{,}40 + 2{,}60 + 0{,}45 + 0{,}15 = 8{,}60\text{ cmol}_c\cdot\text{dm}^{-3}
-
-$$
-
-$$
-
-CTC_1 = 8{,}60 + 2{,}40 = 11{,}00\text{ cmol}_c\cdot\text{dm}^{-3}
-
-$$
-
-$$
-
-V%_1 = \frac{8{,}60}{11{,}00}\times 100% = 78{,}18%   (\ge 50% \Rightarrow **Eutrófico**)
-
-$$
-
-**Solo 2 (Latossolo degradado — Tabuleiro):**
-
-$$
-
-SB_2 = 1{,}20 + 0{,}60 + 0{,}15 + 0{,}05 = 2{,}00\text{ cmol}_c\cdot\text{dm}^{-3}
-
-$$
-
-$$
-
-CTC_2 = 2{,}00 + 4{,}00 = 6{,}00\text{ cmol}_c\cdot\text{dm}^{-3}
-
-$$
-
-$$
-
-V%_2 = \frac{2{,}00}{6{,}00}\times 100% = 33{,}33%   (< 50% \Rightarrow **Distrófico**)
-
-$$
-
-**6. Síntese / Resposta:** Solo 1: $SB = 8{,}60$, $CTC = 11{,}00\text{ cmol}_c\cdot\text{dm}^{-3}$ e $V% = 78{,}18%$ (eutrófico). Solo 2: $SB = 2{,}00$, $CTC = 6{,}00\text{ cmol}_c\cdot\text{dm}^{-3}$ e $V% = 33{,}33%$ (distrófico).
-
-**7. Verificação crítica:** O resultado é plenamente coerente com a pedogênese regional: no Semiárido, a menor lixiviação preserva bases trocáveis (solos eutróficos, cuja maior limitação costuma ser hídrica e de profundidade física), enquanto nos ambientes úmidos a intensa lixiviação combinada à perda de matéria orgânica reduz $SB$, $CTC$ e $V%$.
-
+**Correção técnica.** A matéria orgânica contém carbono, oxigênio, hidrogênio e nitrogênio; portanto, $MO$ é sempre numericamente maior que $CO$ ($MO = 1{,}724 \times CO$). Padronize todas as amostras na mesma grandeza antes de comparar resultados ou calcular estoques de carbono.
 :::
 
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 11.4 (Avançado) — Separação de Macro e Microporosidade em Mesa de Tensão
-
-**1. Situação-problema / Enunciado:** Uma amostra indeformada de solo ($V_t = 100\text{ cm}^3$) proveniente de uma área em recuperação com bioengenharia foi saturada por capilaridade, submetida à tensão de $6\text{ kPa}$ em mesa de tensão para drenar os macroporos e, finalmente, seca em estufa a $105\,^\circ\text{C}$.
-
-**2. Dados e informações fornecidas:** Volume total $V_t = 100\text{ cm}^3$; densidade da água $\rho_{\text{água}} = 1{,}0\text{ g}\cdot\text{cm}^{-3}$. Massas medidas (já descontada a tara do anel metálico): massa saturada $m_{\text{sat}} = 174\text{ g}$; massa após equilíbrio a $6\text{ kPa}$: $m_{6\text{kPa}} = 158\text{ g}$; massa seca em estufa: $m_s = 128\text{ g}$.
-
-**3. O que a análise solicita:** Determinar a porosidade total por saturação ($P_t^{\text{sat}}$), a microporosidade ($P_{\text{micro}}$) e a macroporosidade ($P_{\text{macro}}$), avaliando se há restrição de aeração radicular.
-
-**4. Referencial e método adotado:** Cálculo dos volumes de água retidos em cada estado energético (como $\rho_{\text{água}} = 1{,}0\text{ g}\cdot\text{cm}^{-3}$, cada $1\text{ g}$ de água ocupa $1\text{ cm}^3$ de poro) divididos pelo volume total do anel.
-
-**5. Desenvolvimento passo a passo:**
-
-**Etapa 1 — Porosidade total por saturação (água total no anel saturado):**
+O **potencial hidrogeniônico (pH)** controla a solubilidade de nutrientes e a toxicidade do alumínio trocável ($Al^{3+}$) abaixo de pH $5{,}5$. No Semiárido Baiano, Luvissolos e Neossolos pouco intemperizados tendem a apresentar pH levemente ácido a neutro ($6{,}0$–$7{,}2$), enquanto Latossolos profundos de tabuleiros costumam ser mais ácidos ($4{,}5$–$5{,}5$). Associando a **Soma de Bases ($SB$)** à acidez potencial ($H^+ + Al^{3+}$), obtém-se a $CTC$ a pH $7{,}0$ e a **Saturação por Bases ($V\%$)**. Solos com $V\% \ge 50\%$ são **eutróficos** (alta fertilidade natural), enquanto solos com $V\% < 50\%$ são **distróficos** (baixa fertilidade natural):
 
 $$
-
-P_t^{\text{sat}} = \frac{174 - 128}{1{,}0 \times 100}\times 100% = \frac{46}{100}\times 100% = 46{,}0%
-
+SB = Ca^{2+} + Mg^{2+} + K^+ + Na^+ \qquad CTC = SB + (H^+ + Al^{3+}) \qquad V\% = \frac{SB}{CTC}\times 100\%
 $$
 
-\textbf{Etapa 2 — Microporosidade (água retida após drenagem a $6\text{ kPa}$):}
+O Exemplo 11.3 contrasta essas duas condições pedológicas na Bahia.
 
-$$
+::: {.callout-tip appearance="simple"}
+### Exemplo 11.3 (Intermediário). Diagnóstico Químico, Soma de Bases, CTC e Saturação por Bases ($V\%$)
 
-P_{\text{micro}} = \frac{158 - 128}{1{,}0 \times 100}\times 100% = \frac{30}{100}\times 100% = 30{,}0%
+**Situação e dados.** Compare dois laudos ($0$–$20\text{ cm}$, valores em $\text{cmol}_c\cdot\text{dm}^{-3}$): **Solo 1** (Luvissolo Crômico sob Caatinga no Semiárido: $Ca^{2+}=5{,}40$; $Mg^{2+}=2{,}60$; $K^+=0{,}45$; $Na^+=0{,}15$; $H^++Al^{3+}=2{,}40$) e **Solo 2** (Latossolo Amarelo sob pastagem degradada nos Tabuleiros Costeiros: $Ca^{2+}=1{,}20$; $Mg^{2+}=0{,}60$; $K^+=0{,}15$; $Na^+=0{,}05$; $H^++Al^{3+}=4{,}00$).
 
-$$
+**Cálculo passo a passo.** Para o Solo 1, $SB_1 = 8{,}60$, $CTC_1 = 11{,}00\text{ cmol}_c\cdot\text{dm}^{-3}$ e $V\%_1 = (8{,}60/11{,}00)\times 100\% = \mathbf{78{,}18\%}$ (**eutrófico**). Para o Solo 2, $SB_2 = 2{,}00$, $CTC_2 = 6{,}00\text{ cmol}_c\cdot\text{dm}^{-3}$ e $V\%_2 = (2{,}00/6{,}00)\times 100\% = \mathbf{33{,}33\%}$ (**distrófico**).
 
-\textbf{Etapa 3 — Macroporosidade (água drenada entre saturação e $6\text{ kPa}$):}
-
-$$
-
-P_{\text{macro}} = \frac{174 - 158}{1{,}0 \times 100}\times 100% = \frac{16}{100}\times 100% = 16{,}0%
-
-$$
-
-**Conferência aditiva:** $P_{\text{micro}} + P_{\text{macro}} = 30{,}0% + 16{,}0% = 46{,}0% = P_t^{\text{sat}}$.}
-
-**6. Síntese / Resposta:** $P_t^{\text{sat}} = 46{,}0%$, $P_{\text{micro}} = 30{,}0%$ e $P_{\text{macro}} = 16{,}0%$. Não há restrição crítica de aeração, pois a macroporosidade supera o limiar mínimo de $10%$.
-
-**7. Verificação crítica:** A proporção observada (cerca de um terço de macroporos e dois terços de microporos) aproxima-se do equilíbrio físico desejável para armazenamento hídrico aliado à drenagem interna e oxigenação de raízes.
-
+**Interpretação.** O resultado reflete a pedogênese regional: a menor lixiviação no Semiárido preserva bases trocáveis, enquanto nos tabuleiros úmidos a lixiviação intensa e a perda de matéria orgânica reduzem $SB$, $CTC$ e $V\%$.
 :::
 
-::: {.callout-tip}
-## Estudo de Caso / Exemplo 11.5 (Avançado) — Normalização Linear e Cálculo Completo do Índice de Qualidade do Solo (IQS)
+## Indicadores Biológicos e Dinâmica Degradada em Campo
 
-**1. Situação-problema / Enunciado:** Para o Trabalho Prático Final, um grupo selecionou um Conjunto Mínimo de Dados com quatro indicadores para avaliar uma encosta submetida à recuperação ambiental, comparando-a a uma mata de referência no mesmo solo.
+Os indicadores biológicos costumam responder às perturbações iniciais e às ações de recuperação antes que os estoques totais de carbono ou a densidade exibam mudanças mensuráveis. O **Carbono da Biomassa Microbiana ($C\text{-BM}$)** representa a fração viva da matéria orgânica (fungos, bactérias e actinomicetos, geralmente $1\%$ a $4\%$ do $CO$ total) e reage em poucos meses ao manejo. Analisada junto à **Respiração Basal do Solo ($RBS$)**, que mede a liberação de $\text{CO}_2$ pelo metabolismo microbiano, a razão $q\text{CO}_2 = RBS / C\text{-BM}$ (quociente metabólico) funciona como termômetro de estresse ecológico: valores elevados revelam que os microrganismos gastam mais energia para sobreviver do que para formar nova biomassa.
 
-**2. Dados e informações fornecidas:** Valores medidos na área avaliada e valores da área de referência:
+Completam esse eixo biológico a riqueza de **macrofauna edáfica** (minhocas, térmitas e formigas que constroem bioporos) e a **cobertura vegetal com serapilheira**. Quando uma pastagem perde cobertura viva e proteção superficial, a temperatura do solo sobe, a biota entra em colapso e o solo descoberto evolui rapidamente para ravinas (@fig-pastagem-ravinas).
 
-- Matéria Orgânica ($MO$, "maior melhor"): avaliada $= 16{,}0\text{ g}\cdot\text{kg}^{-1}$; referência $= 32{,}0\text{ g}\cdot\text{kg}^{-1}$; peso $w_1 = 0{,}30$.
-- Taxa de Infiltração Básica ($TIB$, "maior melhor"): avaliada $= 24{,}0\text{ mm}\cdot\text{h}^{-1}$; referência $= 60{,}0\text{ mm}\cdot\text{h}^{-1}$; peso $w_2 = 0{,}30$.
-- Densidade do Solo ($D_s$, "menor melhor"): avaliada $= 1{,}50\text{ g}\cdot\text{cm}^{-3}$; referência $= 1{,}20\text{ g}\cdot\text{cm}^{-3}$; peso $w_3 = 0{,}20$.
-- Estabilidade de Agregados ($DMP$, "maior melhor"): avaliada $= 1{,}25\text{ mm}$; referência $= 2{,}50\text{ mm}$; peso $w_4 = 0{,}20$.
+![Pastagem degradada com perda de cobertura vegetal, exposição do horizonte mineral e evolução de ravinas em vertente. Fonte acervo didático da disciplina.](../img/foto_pastagem_ravinas.jpg){#fig-pastagem-ravinas fig-alt="Encosta com pastagem rala e solo exposto apresentando ravinas erosivas ramificadas"}
 
-**3. O que a análise solicita:** Calcular (a) a pontuação normalizada $S_i$ de cada indicador; (b) o $\text{IQS}_{\text{simples}}$ (média aritmética); e (c) o $\text{IQS}_{\text{ponderado}}$, indicando qual atributo representa o gargalo prioritário.
+Essa perda progressiva de cobertura e agregação acelera o ciclo de degradação física e hídrica da bacia (@fig-ciclo-solo-agua-uso).
 
-**4. Referencial e método adotado:** Normalização linear $S_i = x_i / x_{\text{ref}}$ para indicadores "maior melhor" e $S_i = x_{\text{ref}} / x_i$ para indicadores "menor melhor", seguida das médias aritmética e ponderada.
+![Retroalimentação positiva entre mudança no uso da terra, degradação física do solo, dinâmica erosiva e escassez hídrica. Fonte acervo didático da disciplina.](../img/esquema_solo_agua_uso.png){#fig-ciclo-solo-agua-uso fig-alt="Fluxograma em quatro etapas ligando mudança no uso da terra, degradação do solo, erosão e escassez hídrica com seta de retroalimentação"}
 
-**5. Desenvolvimento passo a passo:**
+## Normalização Linear, Cálculo do IQS e Visualização Multivariada
 
-**Etapa 1 — Normalização individual (escala $0$ a $1$):**
+Como cada indicador possui unidade própria ($\text{g}\cdot\text{kg}^{-1}$, $\text{mm}\cdot\text{h}^{-1}$, $\text{g}\cdot\text{cm}^{-3}$), não é possível somá-los diretamente. A normalização linear converte cada valor bruto $x_i$ em uma nota adimensional $S_i$ entre $0$ e $1$, respeitando o sentido ecológico do atributo (@fig-curvas-normalizacao). Para atributos do tipo **“quanto maior melhor”** ($MO$, $P_t$, $TIB$, $DMP$), aplica-se $S_i = \min(1;\; x_i / x_{\text{ref}})$, travando a nota máxima em $1{,}0$. Para atributos do tipo **“quanto menor melhor”** ($D_s$ e $RP$), inverte-se a razão, $S_i = \min(1;\; x_{\text{ref}} / x_i)$, de modo que solos mais compactados recebam notas menores.
 
-$$
-\begin{aligned}
-  S_{MO} &= \frac{16{,}0}{32{,}0} = 0{,}50   \text{(maior melhor)} \
-$$
-3pt]
-  S_{TIB} &= \frac{24{,}0}{60{,}0} = 0{,}40   \text{(maior melhor)} \
-$$
-3pt]
-  S_{D_s} &= \frac{1{,}20}{1{,}50} = 0{,}80   \text{(menor melhor — razão invertida!)} \
-$$
-3pt]
-  S_{DMP} &= \frac{1{,}25}{2{,}50} = 0{,}50   \text{(maior melhor)}
-\end{aligned}
-$$
+![Curvas das funções de normalização linear para indicadores "quanto maior melhor" (A) e "quanto menor melhor" (B), mostrando os pontos de referência e o comportamento fora da faixa ótima.](../img/fig_cap11_curvas_normalizacao.png){#fig-curvas-normalizacao fig-alt="Dois gráficos cartesianos mostrando a reta crescente até platô 1,0 no painel A e o platô 1,0 seguido de queda hiperbólica no painel B"}
 
-**Etapa 2 — Cálculo do IQS simples:**
+Agregando as pontuações normalizadas $S_i$, calcula-se o Índice de Qualidade do Solo simples ou ponderado:
 
 $$
-
-\text{IQS}_{\text{simples}} = \frac{0{,}50 + 0{,}40 + 0{,}80 + 0{,}50}{4} = \frac{2{,}20}{4} = 0{,}550
-
+\text{IQS}_{\text{simples}} = \frac{1}{n}\sum_{i=1}^{n} S_i \qquad \text{ou} \qquad \text{IQS}_{\text{ponderado}} = \sum_{i=1}^{n} w_i \, S_i \quad \left(\text{com } \sum_{i=1}^{n} w_i = 1\right)
 $$
 
-\textbf{Etapa 3 — Cálculo do IQS ponderado ($\sum w_i = 0{,}30 + 0{,}30 + 0{,}20 + 0{,}20 = 1{,}00$):}
+A integração dessas notas em um **gráfico radar** preserva simultaneamente a visão global (área do polígono proporcional ao IQS) e o diagnóstico individual de cada gargalo nos eixos recolhidos próximo ao centro (@fig-qualidade_solo_radar).
+
+![Comparação multivariada de seis indicadores normalizados de qualidade do solo ($0$ a $1$) entre área de referência sob Caatinga conservada, área em recuperação com técnicas de bioengenharia e área degradada com solo exposto e compactado.](../img/fig09_qualidade_solo_radar.png "fig:"){#fig-qualidade_solo_radar}
+
+Observando os três cenários plotados (@fig-qualidade_solo_radar), a **Caatinga conservada (referência)** apresenta escores entre $0{,}85$ e $0{,}95$, resultando em $\text{IQS} = (0{,}90+0{,}88+0{,}92+0{,}86+0{,}85+0{,}95)/6 = \mathbf{0{,}893}$ (qualidade muito alta). A **área em recuperação com bioengenharia** alcança escores entre $0{,}68$ e $0{,}78$, com $\text{IQS} = \mathbf{0{,}718}$ (trajetória ascendente, com matéria orgânica e densidade ainda em consolidação). Já a **área degradada** exibe escores colapsados entre $0{,}18$ (cobertura vegetal) e $0{,}35$ (porosidade total), produzindo $\text{IQS} = \mathbf{0{,}275}$ (qualidade crítica, exigindo cobertura superficial e descompactação biológica).
+
+O Exemplo 11.5 executa passo a passo as duas fórmulas de normalização e o cálculo completo do IQS.
+
+::: {.callout-tip appearance="simple"}
+### Exemplo 11.5 (Avançado). Normalização Linear e Cálculo Completo do Índice de Qualidade do Solo (IQS)
+
+**Situação e dados.** Para avaliar uma encosta em recuperação ambiental frente a uma mata de referência, um grupo utilizou quatro indicadores: $MO$ (avaliada $= 16{,}0$; referência $= 32{,}0\text{ g}\cdot\text{kg}^{-1}$; $w_1 = 0{,}30$), $TIB$ (avaliada $= 24{,}0$; referência $= 60{,}0\text{ mm}\cdot\text{h}^{-1}$; $w_2 = 0{,}30$), $D_s$ (avaliada $= 1{,}50$; referência $= 1{,}20\text{ g}\cdot\text{cm}^{-3}$; $w_3 = 0{,}20$) e $DMP$ (avaliada $= 1{,}25$; referência $= 2{,}50\text{ mm}$; $w_4 = 0{,}20$).
+
+**Cálculo passo a passo.** Normalização individual (escala $0$ a $1$):
 
 $$
-
-\text{IQS}_{\text{ponderado}} = (0{,}30 \times 0{,}50) + (0{,}30 \times 0{,}40) + (0{,}20 \times 0{,}80) + (0{,}20 \times 0{,}50)
-
+S_{MO} = \frac{16{,}0}{32{,}0} = 0{,}50 \qquad S_{TIB} = \frac{24{,}0}{60{,}0} = 0{,}40 \qquad S_{D_s} = \frac{1{,}20}{1{,}50} = 0{,}80 \quad (\text{razão invertida}) \qquad S_{DMP} = \frac{1{,}25}{2{,}50} = 0{,}50
 $$
 
-$$
-
-\text{IQS}_{\text{ponderado}} = 0{,}150 + 0{,}120 + 0{,}160 + 0{,}100 = 0{,}530
+Agregação simples e ponderada:
 
 $$
+\text{IQS}_{\text{simples}} = \frac{0{,}50 + 0{,}40 + 0{,}80 + 0{,}50}{4} = 0{,}550 \qquad \text{IQS}_{\text{ponderado}} = (0{,}30 \times 0{,}50) + (0{,}30 \times 0{,}40) + (0{,}20 \times 0{,}80) + (0{,}20 \times 0{,}50) = 0{,}530
+$$
 
-**6. Síntese / Resposta:** Pontuações: $S_{MO}=0{,}50$, $S_{TIB}=0{,}40$, $S_{D_s}=0{,}80$, $S_{DMP}=0{,}50$. $\text{IQS}_{\text{simples}} = 0{,}550$ e $\text{IQS}_{\text{ponderado}} = 0{,}530$ (qualidade moderada). O gargalo prioritário é a taxa de infiltração básica ($S_{TIB} = 0{,}40$).
-
-**7. Verificação crítica:** O $\text{IQS}_{\text{ponderado}}$ ($0{,}530$) ficou ligeiramente abaixo do simples ($0{,}550$) porque os maiores pesos ($0{,}30$ cada) recaíram justamente sobre a infiltração e a matéria orgânica, que apresentaram os piores desempenhos. Em campo, isso orienta ações focadas em cobertura morta, descompactação superficial e aporte orgânico.
-
+**Interpretação.** O $\text{IQS}_{\text{ponderado}}$ ($0{,}530$) ficou abaixo do simples ($0{,}550$) porque os maiores pesos ($0{,}30$) recaíram sobre infiltração e matéria orgânica, apontando a infiltração básica ($S_{TIB} = 0{,}40$) como gargalo prioritário para manejo.
 :::
 
-## Etapa 5: Erros Mais Comuns e Como Evitá-los
+Ao executar a normalização em planilhas, um erro comum é aplicar a razão direta em indicadores onde valores maiores representam degradação física.
 
-::: {.callout-warning}
-## Erro 1 — Usar a Fórmula "Quanto Maior Melhor" para Densidade do Solo ($D_s$)
+::: {.callout-warning appearance="simple"}
+### Erro 4, Usar a Fórmula “Quanto Maior Melhor” para Densidade do Solo ($D_s$)
 
-**Equívoco frequente:** Normalizar $D_s$ dividindo o valor da área degradada ($1{,}75$) pelo da referência ($1{,}20$), obtendo escore superior a $1{,}0$ e premiando um solo severamente compactado.
+**Equívoco frequente.** Normalizar $D_s$ dividindo o valor da área degradada ($1{,}75$) pelo da referência ($1{,}20$), obtendo escore superior a $1{,}0$ e premiando um solo severamente compactado.
 
-**Correção técnica:** Para densidade do solo e resistência à penetração, valores maiores indicam pior qualidade física. Deve-se aplicar obrigatoriamente a função **"quanto menor melhor"**: $S_{D_s} = \min(1;\; D_{s,\text{ref}} / D_{s,\text{avaliado}})$.
-
+**Correção técnica.** Para densidade do solo e resistência à penetração, valores maiores indicam pior qualidade física. Aplica-se obrigatoriamente a função **“quanto menor melhor”**, $S_{D_s} = \min(1;\; D_{s,\text{ref}} / D_{s,\text{avaliado}})$.
 :::
 
-::: {.callout-warning}
-## Erro 2 — Confundir Carbono Orgânico ($CO$) com Matéria Orgânica ($MO$)
+## Amostragem, Referência e Materiais Audiovisuais de Apoio
 
-**Equívoco frequente:** Comparar diretamente um laudo expresso em $CO$ ($\text{g}\cdot\text{kg}^{-1}$) com outro expresso em $MO$ ($\text{g}\cdot\text{kg}^{-1}$) sem conversão prévia.
+A comparação entre área manejada e referência exige condições pedológicas e topográficas compatíveis, separando faixas compactadas por tráfego de entrelinhas vegetadas. Amostras compostas atendem bem a certas análises químicas de rotina, ao passo que propriedades físicas ($D_s$ e macroporosidade) exigem preservação de unidades indeformadas com réplicas, seguindo protocolos como o [Manual de métodos de análise de solo da Embrapa](https://www.infoteca.cnptia.embrapa.br/handle/doc/1085209).
 
-**Correção técnica:** A matéria orgânica contém carbono, oxigênio, hidrogênio, nitrogênio e outros elementos; portanto, $MO$ é sempre numericamente maior que $CO$ ($MO = 1{,}724 \times CO$ pelo fator de van Bemmelen). Padronize todas as amostras na mesma grandeza antes de comparar ou calcular estoques de carbono.
+Para consolidar a visualização desses indicadores em campo e laboratório, recomenda-se assistir aos vídeos selecionados na disciplina: o vídeo [Análise da Saúde do Solo (~7 min)](https://www.youtube.com/watch?v=D8jI-ltuzVI) sintetiza matéria orgânica, densidade, porosidade e biologia edáfica; o vídeo [Saúde do Solo: Qualidade Biológica](https://www.youtube.com/watch?v=WHh50dAM4as) aprofunda os indicadores biológicos tropicais; e o vídeo [Degradação dos Solos (~17 min)](https://www.youtube.com/watch?v=QujBcIOl3qQ) ilustra processos de lixiviação, erosão, laterização e salinização.
 
-:::
+## Exercícios de fixação
 
-::: {.callout-warning}
-## Erro 3 — Comparar Áreas em Solos de Texturas Distintas Sem Referência Local
-
-**Equívoco frequente:** Classificar um Neossolo Quartzarênico arenoso ($D_s = 1{,}45\text{ g}\cdot\text{cm}^{-3}$) como degradado comparando-o a um Latossolo argiloso conservado ($D_s = 1{,}05\text{ g}\cdot\text{cm}^{-3}$).
-
-**Correção técnica:** Solos arenosos possuem naturalmente maior densidade e menor $CTC$ do que solos argilosos bem estruturados. A área de referência (vegetação nativa) deve sempre pertencer à **mesma classe de solo, textura e posição geomorfológica** da área diagnosticada.
-
-:::
-
-::: {.callout-warning}
-## Erro 4 — Avaliar Resistência à Penetração ($RP$) Sem Registrar a Umidade do Solo
-
-**Equívoco frequente:** Medir $RP$ na estação seca no Semiárido, obter valores acima de $4{,}0\text{ MPa}$ e diagnosticar compactação antrópica irreversível.
-
-**Correção técnica:** A resistência mecânica à penetração aumenta exponencialmente à medida que o solo seca, devido à coesão entre partículas e à sucção matricial. Leituras de penetrômetro só são comparáveis quando realizadas sob umidade controlada (idealmente próxima à capacidade de campo) ou acompanhadas do teor gravimétrico de umidade.
-
-:::
-
-## Etapa 6: Exercícios de Fixação
-
-### Nível Básico (Conceitos de Funcionalidade Edáfica e MDS)
+#### Nível Básico (Conceitos de Funcionalidade Edáfica e MDS)
 
 1. Explique por que o conceito contemporâneo de **Qualidade do Solo** (Doran; Parkin, 1994; Karlen et al., 1997) é mais abrangente do que a noção tradicional de fertilidade química agrícola.
-  
-*Espaço reservado para resolução na versão impressa.*
+
 2. Diferencie **propriedades inerentes** de **propriedades dinâmicas** do solo, citando dois exemplos de cada grupo.
-  
-*Espaço reservado para resolução na versão impressa.*
-3. Qual é o significado físico e matemático do \textbf{fator de van Bemmelen ($1{,}724$)} na conversão entre carbono orgânico total ($CO$) e matéria orgânica ($MO$)?
-  
-*Espaço reservado para resolução na versão impressa.*
+
+3. Qual é o significado físico e matemático do **fator de van Bemmelen ($1{,}724$)** na conversão entre carbono orgânico total ($CO$) e matéria orgânica ($MO$)?
+
 4. Por que a **macroporosidade** é mais sensível à compactação do solo do que a porosidade total ($P_t$), e qual é o seu limiar crítico de aeração radicular?
-  
-*Espaço reservado para resolução na versão impressa.*
-5. Explique por que o \textbf{Carbono da Biomassa Microbiana ($C\text{-BM}$)} e o quociente metabólico ($q\text{CO}_2$) são indicadores precoces valiosos no monitoramento de áreas degradadas em recuperação.
-  
-*Espaço reservado para resolução na versão impressa.*
 
-### Nível Intermediário (Cálculos Físicos, Químicos e IQS)
+5. Explique por que o **Carbono da Biomassa Microbiana ($C\text{-BM}$)** e o quociente metabólico ($q\text{CO}_2$) são indicadores precoces valiosos no monitoramento de áreas degradadas em recuperação.
 
-1. Uma amostra indeformada coletada em anel volumétrico de $100\text{ cm}^3$ apresentou massa de solo seco em estufa de $159\text{ g}$. Considerando densidade de partículas $D_p = 2{,}65\text{ g}\cdot\text{cm}^{-3}$, calcule a densidade do solo ($D_s$) e a porosidade total ($P_t$).
-  
-*Espaço reservado para resolução na versão impressa.*
-2. Um solo sob Caatinga em regeneração apresentou teor de matéria orgânica $MO = 25{,}86\text{ g}\cdot\text{kg}^{-1}$ e densidade do solo $D_s = 1{,}30\text{ g}\cdot\text{cm}^{-3}$ na camada $0$--$20\text{ cm}$. Calcule o teor de carbono orgânico total ($CO$, em $\text{g}\cdot\text{kg}^{-1}$) usando o fator de van Bemmelen e o estoque de carbono ($EC$, em $\text{Mg C}\cdot\text{ha}^{-1}$) nessa camada.
-  
-*Espaço reservado para resolução na versão impressa.*
-3. Um laudo químico forneceu os seguintes valores (em $\text{cmol}_c\cdot\text{dm}^{-3}$): $Ca^{2+} = 4{,}20$; $Mg^{2+} = 1{,}80$; $K^+ = 0{,}30$; $Na^+ = 0{,}10$; e $H^+ + Al^{3+} = 3{,}60$. Calcule $SB$, $CTC$ e $V%$, classificando o solo como eutrófico ou distrófico.
-  
-*Espaço reservado para resolução na versão impressa.*
-4. Em ensaio de mesa de tensão com anel de $100\text{ cm}^3$ ($\rho_{\text{água}} = 1{,}0\text{ g}\cdot\text{cm}^{-3}$), obtiveram-se as massas (sem a tara do anel): $m_{\text{sat}} = 165\text{ g}$, $m_{6\text{kPa}} = 157\text{ g}$ e $m_s = 130\text{ g}$. Calcule $P_t^{\text{sat}}$, $P_{\text{micro}}$ e $P_{\text{macro}}$, indicando se há risco físico à aeração das raízes.
-  
-*Espaço reservado para resolução na versão impressa.*
-5. Calcule o $\text{IQS}_{\text{simples}}$ de uma parcela degradada a partir dos três indicadores abaixo e identifique o indicador de menor desempenho:
-  
+#### Nível Intermediário (Cálculos Físicos, Químicos e IQS)
 
-  
-*Espaço reservado para resolução na versão impressa.*
+6. Uma amostra indeformada coletada em anel volumétrico de $100\text{ cm}^3$ apresentou massa de solo seco em estufa de $159\text{ g}$. Considerando densidade de partículas $D_p = 2{,}65\text{ g}\cdot\text{cm}^{-3}$, calcule a densidade do solo ($D_s$) e a porosidade total ($P_t$).
 
-### Nível Aplicado (Questões Objetivas A--E)
+7. Um solo sob Caatinga em regeneração apresentou teor de matéria orgânica $MO = 25{,}86\text{ g}\cdot\text{kg}^{-1}$ e densidade do solo $D_s = 1{,}30\text{ g}\cdot\text{cm}^{-3}$ na camada $0$–$20\text{ cm}$. Calcule o teor de carbono orgânico total ($CO$, em $\text{g}\cdot\text{kg}^{-1}$) usando o fator de van Bemmelen e o estoque de carbono ($EC$, em $\text{Mg C}\cdot\text{ha}^{-1}$) nessa camada.
 
-1. A respeito do Conjunto Mínimo de Dados (MDS) para avaliação da qualidade do solo (Doran; Parkin, 1994; Vezzani; Mielniczuk, 2009), assinale a alternativa correta:
-  
+8. Um laudo químico forneceu os seguintes valores (em $\text{cmol}_c\cdot\text{dm}^{-3}$), $Ca^{2+} = 4{,}20$; $Mg^{2+} = 1{,}80$; $K^+ = 0{,}30$; $Na^+ = 0{,}10$; e $H^+ + Al^{3+} = 3{,}60$. Calcule $SB$, $CTC$ e $V\%$, classificando o solo como eutrófico ou distrófico.
 
-7. Um solo mineral com densidade de partículas $D_p = 2{,}65\text{ g}\cdot\text{cm}^{-3}$ e densidade do solo $D_s = 1{,}325\text{ g}\cdot\text{cm}^{-3}$ apresenta porosidade total ($P_t$) exatamente igual a:
-  
+9. Em ensaio de mesa de tensão com anel de $100\text{ cm}^3$ ($\rho_{\text{água}} = 1{,}0\text{ g}\cdot\text{cm}^{-3}$), obtiveram-se as massas (sem a tara do anel), $m_{\text{sat}} = 165\text{ g}$, $m_{6\text{kPa}} = 157\text{ g}$ e $m_s = 130\text{ g}$. Calcule $P_t^{\text{sat}}$, $P_{\text{micro}}$ e $P_{\text{macro}}$, indicando se há risco físico à aeração das raízes.
 
-13. Sobre a normalização de indicadores no cálculo do Índice de Qualidade do Solo (IQS), é correto afirmar que:
-  
+10. Calcule o $\text{IQS}_{\text{simples}}$ de uma parcela degradada a partir dos três indicadores abaixo e identifique o indicador de menor desempenho,
 
-19. Se uma amostra de solo apresenta teor de carbono orgânico total $CO = 10{,}0\text{ g}\cdot\text{kg}^{-1}$, o teor estimado de matéria orgânica ($MO$) pelo fator de van Bemmelen ($1{,}724$) é:
-  
+    - $MO$ (maior melhor), parcela $= 20\text{ g}\cdot\text{kg}^{-1}$; referência $= 40\text{ g}\cdot\text{kg}^{-1}$.
 
-25. Na interpretação do gráfico radar de qualidade do solo (Figura indicada acima), uma área degradada que apresenta valores normalizados muito baixos em *cobertura vegetal* ($0{,}18$) e *taxa de infiltração* ($0{,}22$) sinaliza prioritariamente:
-  
+    - $TIB$ (maior melhor), parcela $= 36\text{ mm}\cdot\text{h}^{-1}$; referência $= 60\text{ mm}\cdot\text{h}^{-1}$.
 
-## Etapa 7: Questões no Estilo ENADE e Concursos Ambientais
+    - $D_s$ (menor melhor), parcela $= 1{,}60\text{ g}\cdot\text{cm}^{-3}$; referência $= 1{,}20\text{ g}\cdot\text{cm}^{-3}$.
 
-::: {.callout-tip}
-## Atenção às Armadilhas em Questões de Solos
+#### Nível Aplicado (Questões Objetivas A-E) {#11-qualidade-solo-iqs-nível-aplicado-questões-objetivas-ae}
 
-Em provas de Geografia e concursos ambientais, dois detalhes costumam decidir questões: (1) verificar se a tabela fornece **Carbono Orgânico ($CO$)** ou **Matéria Orgânica ($MO$)** antes de multiplicar ou dividir por $1{,}724$; e (2) observar o sentido da normalização ("maior melhor" vs. "menor melhor") em indicadores como $D_s$ e $RP$.
+11. A respeito do Conjunto Mínimo de Dados (MDS) para avaliação da qualidade do solo (Doran; Parkin, 1994; Vezzani; Mielniczuk, 2009), assinale a alternativa correta,
 
-:::
+    (A) Deve conter apenas variáveis químicas de rotina, pois atributos físicos e biológicos não se alteram com o manejo da terra.
 
-1. **[Questão Autoral — Estilo ENADE / Geografia]** Dois talhões localizados sobre a mesma classe de solo no Semiárido Baiano foram avaliados quanto à funcionalidade edáfica. O Talhão X (Caatinga conservada) exibiu $D_s = 1{,}20\text{ g}\cdot\text{cm}^{-3}$, $P_{\text{macro}} = 18%$, $MO = 30\text{ g}\cdot\text{kg}^{-1}$ e $TIB = 65\text{ mm}\cdot\text{h}^{-1}$. O Talhão Y (área de empréstimo de terra após obra viária) apresentou $D_s = 1{,}72\text{ g}\cdot\text{cm}^{-3}$, $P_{\text{macro}} = 6%$, $MO = 7\text{ g}\cdot\text{kg}^{-1}$ e $TIB = 9\text{ mm}\cdot\text{h}^{-1}$. Com base nesses resultados, analise as asserções:
-  \begin{quote}
-    **I.** O Talhão Y encontra-se fisicamente degradado e sob elevada suscetibilidade ao escoamento superficial concentrado e à erosão hídrica.
+    (B) Deve integrar um número enxuto e representativo de indicadores físicos, químicos e biológicos sensíveis às mudanças de uso da terra.
 
-    **PORQUE**
+    (C) Exige a medição simultânea de todos os 50 atributos laboratoriais existentes, independentemente de redundância ou custo.
 
-    **II.** A perda de matéria orgânica e o colapso da macroporosidade abaixo de $10%$ comprometem a estabilidade dos agregados e reduzem drasticamente a taxa de infiltração básica do solo.
-  \end{quote}
-  A respeito dessas asserções, assinale a opção correta:
-  
+    (D) Dispensa a adoção de áreas de referência sob vegetação nativa por utilizar valores absolutos idênticos para qualquer textura de solo.
 
-7. **[Questão Autoral — Estilo Concurso Analista Ambiental]** Em um diagnóstico pedológico para elaboração de PRAD, a análise química da camada superficial de uma área degradada revelou Soma de Bases $SB = 3{,}20\text{ cmol}_c\cdot\text{dm}^{-3}$ e Capacidade de Troca Catiônica a pH $7{,}0$ de $CTC = 8{,}00\text{ cmol}_c\cdot\text{dm}^{-3}$. Com base nesses valores, a saturação por bases ($V%$) e a classificação química do solo são, respectivamente:
-  
+    (E) Restringe-se ao estudo de solos hidromórficos de várzea.
 
-13. **[Questão Autoral — Estilo Concurso Perito / Geógrafo Ambiental]** Sobre a escolha e o uso de indicadores biológicos na avaliação da qualidade do solo (Vezzani; Mielniczuk, 2009; Karlen et al., 1997), assinale a alternativa **INCORRETA**:
-  
+12. Um solo mineral com densidade de partículas $D_p = 2{,}65\text{ g}\cdot\text{cm}^{-3}$ e densidade do solo $D_s = 1{,}325\text{ g}\cdot\text{cm}^{-3}$ apresenta porosidade total ($P_t$) exatamente igual a,
 
-## Etapa 8: Gabarito Comentado do Capítulo 11
+    (A) $25{,}0\%$.
 
-::: {.callout-note collapse=\"true\"}
-## Resoluções Completas — Exercícios de Fixação (1 a 15)
+    (B) $40{,}0\%$.
+
+    (C) $45{,}0\%$.
+
+    (D) $50{,}0\%$.
+
+    (E) $60{,}0\%$.
+
+13. Sobre a normalização de indicadores no cálculo do Índice de Qualidade do Solo (IQS), é correto afirmar que,
+
+    (A) Indicadores como taxa de infiltração básica e matéria orgânica seguem a função “quanto menor melhor”.
+
+    (B) A normalização converte grandezas com unidades diferentes para uma escala adimensional comum (como $0$ a $1$), possibilitando a agregação matemática.
+
+    (C) A densidade do solo deve ser normalizada pela razão $D_{s,\text{avaliado}} / D_{s,\text{referência}}$ para que solos mais compactados recebam notas maiores.
+
+    (D) O uso de pesos diferenciados ($w_i$) é proibido em índices de qualidade ambiental.
+
+    (E) Um IQS igual a $0{,}25$ indica funcionalidade edáfica superior à da área de referência.
+
+14. Se uma amostra de solo apresenta teor de carbono orgânico total $CO = 10{,}0\text{ g}\cdot\text{kg}^{-1}$, o teor estimado de matéria orgânica ($MO$) pelo fator de van Bemmelen ($1{,}724$) é,
+
+    (A) $5{,}80\text{ g}\cdot\text{kg}^{-1}$.
+
+    (B) $10{,}00\text{ g}\cdot\text{kg}^{-1}$.
+
+    (C) $15{,}80\text{ g}\cdot\text{kg}^{-1}$.
+
+    (D) $17{,}24\text{ g}\cdot\text{kg}^{-1}$.
+
+    (E) $27{,}24\text{ g}\cdot\text{kg}^{-1}$.
+
+15. Na interpretação do gráfico radar de qualidade do solo (@fig-qualidade_solo_radar), uma área degradada que apresenta valores normalizados muito baixos em *cobertura vegetal* ($0{,}18$) e *taxa de infiltração* ($0{,}22$) sinaliza prioritariamente,
+
+    (A) Alta resiliência física da superfície do solo frente a chuvas intensas.
+
+    (B) Predomínio de drenagem profunda com risco nulo de escoamento superficial.
+
+    (C) Forte vulnerabilidade ao impacto da gota de chuva, selamento superficial e geração de enxurrada erosiva.
+
+    (D) Excesso de matéria orgânica humificada na camada superficial.
+
+    (E) Equivalência funcional plena em relação à Caatinga conservada.
+
+## Questões de aplicação
+
+### Atenção às Armadilhas em Questões de Solos
+
+Em provas de Geografia e concursos ambientais, dois detalhes costumam decidir questões, verificar se a tabela fornece **Carbono Orgânico ($CO$)** ou **Matéria Orgânica ($MO$)** antes de multiplicar ou dividir por $1{,}724$, e observar o sentido da normalização (“maior melhor” vs. “menor melhor”) em indicadores como $D_s$ e $RP$.
+
+16. **\[Questão Autoral, Estilo ENADE / Geografia\]** Dois talhões localizados sobre a mesma classe de solo no Semiárido Baiano foram avaliados quanto à funcionalidade edáfica. O Talhão X (Caatinga conservada) exibiu $D_s = 1{,}20\text{ g}\cdot\text{cm}^{-3}$, $P_{\text{macro}} = 18\%$, $MO = 30\text{ g}\cdot\text{kg}^{-1}$ e $TIB = 65\text{ mm}\cdot\text{h}^{-1}$. O Talhão Y (área de empréstimo de terra após obra viária) apresentou $D_s = 1{,}72\text{ g}\cdot\text{cm}^{-3}$, $P_{\text{macro}} = 6\%$, $MO = 7\text{ g}\cdot\text{kg}^{-1}$ e $TIB = 9\text{ mm}\cdot\text{h}^{-1}$. Com base nesses resultados, analise as asserções,
+
+    > **I.** O Talhão Y encontra-se fisicamente degradado e sob elevada suscetibilidade ao escoamento superficial concentrado e à erosão hídrica.\
+    > **PORQUE**\
+    > **II.** A perda de matéria orgânica e o colapso da macroporosidade abaixo de $10\%$ comprometem a estabilidade dos agregados e reduzem drasticamente a taxa de infiltração básica do solo.
+
+    A respeito dessas asserções, assinale a opção correta,
+
+    (A) As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.
+
+    (B) As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.
+
+    (C) A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.
+
+    (D) A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.
+
+    (E) As asserções I e II são proposições falsas.
+
+17. **\[Questão Autoral, Estilo Concurso Analista Ambiental\]** Em um diagnóstico pedológico para elaboração de PRAD, a análise química da camada superficial de uma área degradada revelou Soma de Bases $SB = 3{,}20\text{ cmol}_c\cdot\text{dm}^{-3}$ e Capacidade de Troca Catiônica a pH $7{,}0$ de $CTC = 8{,}00\text{ cmol}_c\cdot\text{dm}^{-3}$. Com base nesses valores, a saturação por bases ($V\%$) e a classificação química do solo são, respectivamente,
+
+    (A) $25{,}0\%$, eutrófico.
+
+    (B) $40{,}0\%$, distrófico.
+
+    (C) $40{,}0\%$, eutrófico.
+
+    (D) $60{,}0\%$, distrófico.
+
+    (E) $60{,}0\%$, eutrófico.
+
+18. **\[Questão Autoral, Estilo Concurso Perito / Geógrafo Ambiental\]** Sobre a escolha e o uso de indicadores biológicos na avaliação da qualidade do solo (Vezzani; Mielniczuk, 2009; Karlen et al., 1997), assinale a alternativa **INCORRETA**,
+
+    (A) A fauna edáfica (como minhocas, formigas e térmitas) contribui para a formação de bioporos que aumentam a infiltração de água e a aeração do perfil.
+
+    (B) O carbono da biomassa microbiana tende a responder mais rapidamente a mudanças de uso da terra do que o estoque total de carbono orgânico.
+
+    (C) Valores muito elevados de quociente metabólico ($q\text{CO}_2$) em áreas degradadas podem indicar estresse sobre a comunidade microbiana, que despende maior proporção de carbono em respiração de manutenção.
+
+    (D) A cobertura vegetal e a serapilheira modulam a temperatura e a umidade do solo, favorecendo a atividade biológica em ambientes tropicais e semiáridos.
+
+    (E) Indicadores biológicos dispensam totalmente a avaliação de densidade do solo e infiltração, pois a presença de micro-organismos elimina a compactação mecânica em poucos dias.
+
+## Gabarito comentado {.unnumbered}
+
+::: {.callout-tip collapse="true" title="Clique para abrir o Gabarito Comentado"}
+### Resoluções Completas, Exercícios de Fixação (1 a 15)
 
 1. A fertilidade química clássica foca na disponibilidade imediata de nutrientes para produção vegetal. Já a **Qualidade do Solo** avalia o conjunto das funções ecossistêmicas (regulação hídrica, filtragem de poluentes, estocagem de carbono, sustentação da biodiversidade e resistência à erosão), exigindo integração de atributos físicos, químicos e biológicos.
-2. **Propriedades inerentes:** dependem dos fatores de formação e variam pouco em escala humana (ex.: textura do solo e mineralogia da fração argila). **Propriedades dinâmicas:** respondem em curto e médio prazo ao manejo e à degradação (ex.: densidade do solo, matéria orgânica, estabilidade de agregados e taxa de infiltração básica).
-3. O fator $1{,}724$ deriva da premissa clássica de que a matéria orgânica do solo contém aproximadamente $58%$ de carbono em sua composição mássica ($1 / 0{,}58 = 1{,}7241\dots$). Assim, $MO = 1{,}724 \times CO$ e $CO = MO / 1{,}724$.
-4. Sob pressão mecânica (máquinas, pisoteio), os poros maiores (macroporos, $>50\,\mu\text{m}$) são os primeiros a colapsar, muitas vezes transformando-se em microporos; logo, $P_{\text{macro}}$ cai muito mais intensamente do que $P_t$. O limiar crítico clássico para aeração adequada das raízes é de $\mathbf{10%}$ do volume do solo.
+
+2. **Propriedades inerentes.** Dependem dos fatores de formação e variam pouco em escala humana (por exemplo, textura do solo e mineralogia da fração argila). **Propriedades dinâmicas.** Respondem em curto e médio prazo ao manejo e à degradação (por exemplo, densidade do solo, matéria orgânica, estabilidade de agregados e taxa de infiltração básica).
+
+3. O fator $1{,}724$ deriva da premissa clássica de que a matéria orgânica do solo contém aproximadamente $58\%$ de carbono em sua composição mássica ($1 / 0{,}58 = 1{,}7241\dots$). Assim, $MO = 1{,}724 \times CO$ e $CO = MO / 1{,}724$.
+
+4. Sob pressão mecânica (máquinas, pisoteio), os poros maiores (macroporos, $>50\,\mu\text{m}$) são os primeiros a colapsar, muitas vezes transformando-se em microporos; logo, $P_{\text{macro}}$ cai muito mais intensamente do que $P_t$. O limiar crítico clássico para aeração adequada das raízes é de $\mathbf{10\%}$ do volume do solo.
+
 5. O $C\text{-BM}$ representa a fração viva e ativa do carbono do solo, reagindo em poucos meses ao manejo antes que alterações sejam mensuráveis no $CO$ total. O $q\text{CO}_2$ ($RBS / C\text{-BM}$) complementa essa leitura ao revelar se a biota está em equilíbrio eficiente ou sob estresse energético.
-6. **Passo a passo:**
-  $D_s = 159\text{ g} / 100\text{ cm}^3 = \mathbf{1{,}59\text{ g}\cdot\text{cm}^{-3}}$.
-  $P_t = (1 - 1{,}59 / 2{,}65)\times 100% = (1 - 0{,}60)\times 100% = \mathbf{40{,}0%}$.
-7. **Passo a passo:**
-  $CO = 25{,}86 / 1{,}724 = \mathbf{15{,}00\text{ g}\cdot\text{kg}^{-1}}$ (ou $0{,}015\text{ kg C}\cdot\text{kg}^{-1}$ solo).
-  Volume de solo na camada $0$--$20\text{ cm}$ em $1\text{ ha}$: $10.000\text{ m}^2 \times 0{,}20\text{ m} = 2.000\text{ m}^3$.
-  Massa de solo: $2.000\text{ m}^3 \times 1{,}30\text{ Mg}\cdot\text{m}^{-3} = 2.600\text{ Mg}\cdot\text{ha}^{-1}$.
-  Estoque de carbono: $EC = 2.600 \times 0{,}015 = \mathbf{39{,}00\text{ Mg C}\cdot\text{ha}^{-1}}$.
-8. **Passo a passo:**
-  $SB = 4{,}20 + 1{,}80 + 0{,}30 + 0{,}10 = \mathbf{6{,}40\text{ cmol}_c\cdot\text{dm}^{-3}}$.
-  $CTC = 6{,}40 + 3{,}60 = \mathbf{10{,}00\text{ cmol}_c\cdot\text{dm}^{-3}}$.
-  $V% = (6{,}40 / 10{,}00)\times 100% = \mathbf{64{,}0%}$. Como $V% \ge 50%$, o solo é classificado como **eutrófico**.
-9. **Passo a passo:**
-  $P_t^{\text{sat}} = (165 - 130)/100 \times 100% = \mathbf{35{,}0%}$.
-  $P_{\text{micro}} = (157 - 130)/100 \times 100% = \mathbf{27{,}0%}$.
-  $P_{\text{macro}} = (165 - 157)/100 \times 100% = \mathbf{8{,}0%}$.
-  Como $P_{\text{macro}} = 8{,}0% < 10%$, há **risco físico de restrição à aeração radicular** e à drenagem rápida.
-10. **Passo a passo:**
-  $S_{MO} = 20 / 40 = 0{,}50$ (maior melhor); $S_{TIB} = 36 / 60 = 0{,}60$ (maior melhor); $S_{D_s} = 1{,}20 / 1{,}60 = 0{,}75$ (menor melhor).
-  $\text{IQS}_{\text{simples}} = (0{,}50 + 0{,}60 + 0{,}75) / 3 = 1{,}85 / 3 \approx \mathbf{0{,}617}$.
-  O indicador de menor desempenho é a \textbf{matéria orgânica ($S_{MO} = 0{,}50$)}.
-11. **Gabarito: (B).** O MDS seleciona um conjunto enxuto, sensível e multidisciplinar (físico, químico e biológico), sempre calibrado em relação a um solo de referência local.
-12. **Gabarito: (D).** $P_t = (1 - 1{,}325 / 2{,}65)\times 100% = (1 - 0{,}50)\times 100% = \mathbf{50{,}0%}$.
-13. **Gabarito: (B).** A normalização coloca indicadores heterogêneos na mesma escala adimensional ($0$ a $1$). (A) inverte o sentido de $TIB$ e $MO$; (C) inverte o sentido de $D_s$; (D) é falsa pois índices ponderados são amplamente usados; (E) é falsa pois $0{,}25$ representa qualidade muito baixa.
-14. **Gabarito: (D).** $MO = 10{,}0 \times 1{,}724 = \mathbf{17{,}24\text{ g}\cdot\text{kg}^{-1}}$.
-15. **Gabarito: (C).** Cobertura vegetal mínima ($0{,}18$) expõe o solo ao impacto direto das gotas, agravando o selamento e derrubando a infiltração ($0{,}22$), o que amplifica o escoamento superficial erosivo.
 
+6. **Passo a passo,** $D_s = 159\text{ g} / 100\text{ cm}^3 = \mathbf{1{,}59\text{ g}\cdot\text{cm}^{-3}}$. $P_t = (1 - 1{,}59 / 2{,}65)\times 100\% = (1 - 0{,}60)\times 100\% = \mathbf{40{,}0\%}$.
+
+7. **Passo a passo,** $CO = 25{,}86 / 1{,}724 = \mathbf{15{,}00\text{ g}\cdot\text{kg}^{-1}}$ (ou $0{,}015\text{ kg C}\cdot\text{kg}^{-1}$ solo). Volume de solo na camada $0$–$20\text{ cm}$ em $1\text{ ha}$, $10.000\text{ m}^2 \times 0{,}20\text{ m} = 2.000\text{ m}^3$. Massa de solo, $2.000\text{ m}^3 \times 1{,}30\text{ Mg}\cdot\text{m}^{-3} = 2.600\text{ Mg}\cdot\text{ha}^{-1}$. Estoque de carbono, $EC = 2.600 \times 0{,}015 = \mathbf{39{,}00\text{ Mg C}\cdot\text{ha}^{-1}}$.
+
+8. **Passo a passo,** $SB = 4{,}20 + 1{,}80 + 0{,}30 + 0{,}10 = \mathbf{6{,}40\text{ cmol}_c\cdot\text{dm}^{-3}}$. $CTC = 6{,}40 + 3{,}60 = \mathbf{10{,}00\text{ cmol}_c\cdot\text{dm}^{-3}}$. $V\% = (6{,}40 / 10{,}00)\times 100\% = \mathbf{64{,}0\%}$. Como $V\% \ge 50\%$, o solo é classificado como **eutrófico**.
+
+9. **Passo a passo,** $P_t^{\text{sat}} = (165 - 130)/100 \times 100\% = \mathbf{35{,}0\%}$. $P_{\text{micro}} = (157 - 130)/100 \times 100\% = \mathbf{27{,}0\%}$. $P_{\text{macro}} = (165 - 157)/100 \times 100\% = \mathbf{8{,}0\%}$. Como $P_{\text{macro}} = 8{,}0\% < 10\%$, há **risco físico de restrição à aeração radicular** e à drenagem rápida.
+
+10. **Passo a passo,** $S_{MO} = 20 / 40 = 0{,}50$ (maior melhor); $S_{TIB} = 36 / 60 = 0{,}60$ (maior melhor); $S_{D_s} = 1{,}20 / 1{,}60 = 0{,}75$ (menor melhor). $\text{IQS}_{\text{simples}} = (0{,}50 + 0{,}60 + 0{,}75) / 3 = 1{,}85 / 3 \approx \mathbf{0{,}617}$. O indicador de menor desempenho é a **matéria orgânica ($S_{MO} = 0{,}50$)**.
+
+11. **Gabarito, (B).** O MDS seleciona um conjunto enxuto, sensível e multidisciplinar (físico, químico e biológico), sempre calibrado em relação a um solo de referência local.
+
+12. **Gabarito, (D).** $P_t = (1 - 1{,}325 / 2{,}65)\times 100\% = (1 - 0{,}50)\times 100\% = \mathbf{50{,}0\%}$.
+
+13. **Gabarito, (B).** A normalização coloca indicadores heterogêneos na mesma escala adimensional ($0$ a $1$). (A) inverte o sentido de $TIB$ e $MO$; (C) inverte o sentido de $D_s$; (D) é falsa pois índices ponderados são amplamente usados; (E) é falsa pois $0{,}25$ representa qualidade muito baixa.
+
+14. **Gabarito, (D).** $MO = 10{,}0 \times 1{,}724 = \mathbf{17{,}24\text{ g}\cdot\text{kg}^{-1}}$.
+
+15. **Gabarito, (C).** Cobertura vegetal mínima ($0{,}18$) expõe o solo ao impacto direto das gotas, agravando o selamento e derrubando a infiltração ($0{,}22$), o que amplifica o escoamento superficial erosivo.
+
+### Resoluções Completas, Questões ENADE e Concursos (16 a 18)
+
+16. **Gabarito, (A).** Ambas as asserções são verdadeiras e mantêm nexo causal rigoroso, a elevação da densidade ($1{,}72\text{ g}\cdot\text{cm}^{-3}$), o colapso da macroporosidade ($6\% < 10\%$) e a queda acentuada da matéria orgânica reduzem drasticamente a infiltração ($9\text{ mm}\cdot\text{h}^{-1}$), tornando o Talhão Y altamente suscetível ao escoamento superficial erosivo.
+
+17. **Gabarito, (B).** $V\% = (3{,}20 / 8{,}00)\times 100\% = \mathbf{40{,}0\%}$. Como $V\% < 50\%$, o solo é **distrófico**.
+
+18. **Gabarito, (E).** A alternativa (E) é incorreta porque a recuperação biológica da estrutura física do solo compactado ocorre gradualmente (meses a anos) e requer diagnóstico conjunto com indicadores físicos ($D_s$, $P_{\text{macro}}$, $TIB$ e $RP$).
 :::
 
-::: {.callout-note collapse=\"true\"}
-## Resoluções Completas — Questões ENADE e Concursos (1 a 3)
+## Síntese conceitual {.unnumbered}
 
-1. **Gabarito: (A).** Ambas as asserções são verdadeiras e mantêm nexo causal rigoroso: a elevação da densidade ($1{,}72\text{ g}\cdot\text{cm}^{-3}$), o colapso da macroporosidade ($6% < 10%$) e a queda acentuada da matéria orgânica reduzem drasticamente a infiltração ($9\text{ mm}\cdot\text{h}^{-1}$), tornando o Talhão Y altamente suscetível ao escoamento superficial erosivo.
-2. **Gabarito: (B).** $V% = (3{,}20 / 8{,}00)\times 100% = \mathbf{40{,}0%}$. Como $V% < 50%$, o solo é **distrófico**.
-3. **Gabarito: (E).** A alternativa (E) é incorreta porque a recuperação biológica da estrutura física do solo compactado ocorre gradualmente (meses a anos) e requer diagnóstico conjunto com indicadores físicos ($D_s$, $P_{\text{macro}}$, $TIB$ e $RP$).
-
+::: {.callout-important title="Síntese Conceitual do Capítulo"}
+**Funcionalidade edáfica.** A qualidade do solo mede sua capacidade de infiltrar água, ciclar nutrientes, estocar carbono e sustentar vida, avaliada sempre contra um solo de referência da mesma classe pedológica. **Tríade do MDS.** Indicadores **físicos** ($D_s$, $P_t$, $P_{\text{macro}}$, $DMP$, $TIB$, $RP$), **químicos** ($CO$, $MO = 1{,}724 \cdot CO$, pH, $SB$, $CTC$, $V\%$) e **biológicos** ($C\text{-BM}$, $RBS$, $q\text{CO}_2$, fauna e cobertura vegetal). **Cálculo do IQS.** Padronize cada atributo entre $0$ e $1$ respeitando a direção (“maior melhor” $= x_i/x_{\text{ref}}$; “menor melhor” $= x_{\text{ref}}/x_i$) e agregue via média simples ou ponderada, mantendo o gráfico radar para evidenciar gargalos individuais.
 :::
 
-::: {.callout-note}
-## Etapa 9 — Resumo do capítulo e síntese conceitual
+## Autoavaliação {.unnumbered}
 
-- **Funcionalidade edáfica:** a qualidade do solo mede sua capacidade de infiltrar água, ciclar nutrientes, estocar carbono e sustentar vida, avaliada sempre contra um solo de referência da mesma classe pedológica.
-- **Tríade do MDS:** indicadores **físicos** ($D_s$, $P_t$, $P_{\text{macro}}$, $DMP$, $TIB$, $RP$), **químicos** ($CO$, $MO = 1{,}724 \cdot CO$, pH, $SB$, $CTC$, $V%$) e **biológicos** ($C\text{-BM}$, $RBS$, $q\text{CO}_2$, fauna e cobertura vegetal).
-- **Cálculo do IQS:** padronize cada atributo entre $0$ e $1$ respeitando a direção ("maior melhor" $= x_i/x_{\text{ref}}$; "menor melhor" $= x_{\text{ref}}/x_i$) e agregue via média simples ou ponderada, mantendo o gráfico radar para evidenciar gargalos individuais.
+::: {.callout-caution title="Autoavaliação e Checkpoint"}
+Marque **V** (Verdadeiro) ou **F** (Falso) e confira o gabarito,
 
-:::
+1. ( ) Quanto maior a densidade do solo ($D_s$) para uma mesma densidade de partículas ($D_p$), menor será a porosidade total ($P_t$).
 
-::: {.callout-important}
-## Etapa 10 — Teste de aprendizagem (Checkpoint)
+2. ( ) Pelo fator de van Bemmelen ($1{,}724$), um solo com $17{,}24\text{ g}\cdot\text{kg}^{-1}$ de matéria orgânica possui aproximadamente $10{,}0\text{ g}\cdot\text{kg}^{-1}$ de carbono orgânico total.
 
-Marque **V** (Verdadeiro) ou **F** (Falso) e confira o gabarito:
+3. ( ) Um solo com saturação por bases $V\% = 72\%$ é classificado como distrófico devido à predominância de alumínio trocável.
 
-1. (   ) Quanto maior a densidade do solo ($D_s$) para uma mesma densidade de partículas ($D_p$), menor será a porosidade total ($P_t$).
-2. (   ) Pelo fator de van Bemmelen ($1{,}724$), um solo com $17{,}24\text{ g}\cdot\text{kg}^{-1}$ de matéria orgânica possui aproximadamente $10{,}0\text{ g}\cdot\text{kg}^{-1}$ de carbono orgânico total.
-3. (   ) Um solo com saturação por bases $V% = 72%$ é classificado como distrófico devido à predominância de alumínio trocável.
-4. (   ) No cálculo do IQS, a densidade do solo ($D_s$) segue a função "quanto menor melhor", enquanto a taxa de infiltração básica ($TIB$) segue "quanto maior melhor".
+4. ( ) No cálculo do IQS, a densidade do solo ($D_s$) segue a função “quanto menor melhor”, enquanto a taxa de infiltração básica ($TIB$) segue “quanto maior melhor”.
 
-{\footnotesize**Gabarito do Checkpoint:** 1-**V**  |  2-**V**  |  3-**F**\ ($V% \ge 50%$ caracteriza solo eutrófico)  |  4-**V**.}
-
+**Gabarito da verificação da aprendizagem,** 1-**V** | 2-**V** | 3-**F** ($V\% \ge 50\%$ caracteriza solo eutrófico) | 4-**V**.
 :::

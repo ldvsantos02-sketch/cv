@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Apostila completa do componente curricular CHF662 (Análise Ambiental), Curso de Geografia da UEFS, organizada em cinco módulos, 15 capítulos em 10 etapas, simulados comentados, formulário e glossário.">
+
+<title>11&nbsp; Indicadores de Qualidade do Solo e Funcionalidade Edáfica - Análise Ambiental (CHF662)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/12-degradacao-erosao-usle.html" rel="next">
+<link href="../capitulos/10-indicadores-ambientais-peir.html" rel="prev">
+<link href="../img/capa_analise_ambiental.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-679673b8a27c868cce7048b2deb5a79d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Pular para o conteúdo principal</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Barra de ferramentas">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/10-indicadores-ambientais-peir.html">Módulo 4. Indicadores, qualidade do solo e degradação</a></li><li class="breadcrumb-item"><a href="../capitulos/11-qualidade-solo-iqs.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Análise Ambiental (CHF662)</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos02-sketch/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../APOSTILA_ANALISE_AMBIENTAL_CHF662_UEFS.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Apresentação e orientação de estudo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Módulo 1. Fundamentos epistemológicos e conceituais</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-questao-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Questão Ambiental Contemporânea e o Papel da Geografia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-sociedade-natureza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Modernidade, a Geografia e a Relação Sociedade-Natureza</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-geografia-socioambiental-gtp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Abordagens Ambientais no Pensamento Geográfico Moderno</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-conceitos-operacionais-risco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos e Definições Operacionais da Análise Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod1-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Módulo 2. AIA e análise ambiental integrada</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-avaliacao-impacto-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-analise-ambiental-integrada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod2-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-bacias-hidrograficas-morfometria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bacia Hidrográfica como Unidade de Análise Ambiental Integrada</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-morfopedologia-vertentes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Morfopedologia e Processos Interativos Relevo, Solo e Água</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-geossistemas-ecodinamica-ross.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geossistemas, Ecodinâmica e Análise Empírica da Fragilidade Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod3-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado Preparatório para a Avaliação Teórica, Módulos 1 a 3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">Módulo 4. Indicadores, qualidade do solo e degradação</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-indicadores-ambientais-peir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-qualidade-solo-iqs.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-degradacao-erosao-usle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagnóstico de Processos de Degradação Ambiental e Erosão Linear</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod4-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 4</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-bioengenharia-agua-solo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-legislacao-ambiental-prad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-diagnostico-ambiental-aplicado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Manual Prático do Diagnóstico Ambiental Aplicado e Produtos Técnicos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod5-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 5</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">Encerramento, Formulário e Referências</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-avaliacao-geral-final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avaliação Geral Integrada, Simulado Final Completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-formulario-glossario-referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formulário Técnico, Glossário e Referências Oficiais</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul class="collapse">
+  <li><a href="#vocabulário-técnico-e-símbolos-do-capítulo-11" id="toc-vocabulário-técnico-e-símbolos-do-capítulo-11" class="nav-link active" data-scroll-target="#vocabulário-técnico-e-símbolos-do-capítulo-11">Vocabulário Técnico e Símbolos do Capítulo 11</a></li>
+  <li><a href="#conceito-de-qualidade-do-solo-propriedades-inerentes-e-tríade-do-mds" id="toc-conceito-de-qualidade-do-solo-propriedades-inerentes-e-tríade-do-mds" class="nav-link" data-scroll-target="#conceito-de-qualidade-do-solo-propriedades-inerentes-e-tríade-do-mds">Conceito de Qualidade do Solo, Propriedades Inerentes e Tríade do MDS</a></li>
+  <li><a href="#indicadores-físicos-arquitetura-porosa-e-fluxo-hídrico" id="toc-indicadores-físicos-arquitetura-porosa-e-fluxo-hídrico" class="nav-link" data-scroll-target="#indicadores-físicos-arquitetura-porosa-e-fluxo-hídrico">Indicadores Físicos (Arquitetura Porosa e Fluxo Hídrico)</a></li>
+  <li><a href="#indicadores-químicos-matéria-orgânica-acidez-e-troca-catiônica" id="toc-indicadores-químicos-matéria-orgânica-acidez-e-troca-catiônica" class="nav-link" data-scroll-target="#indicadores-químicos-matéria-orgânica-acidez-e-troca-catiônica">Indicadores Químicos (Matéria Orgânica, Acidez e Troca Catiônica)</a></li>
+  <li><a href="#indicadores-biológicos-e-dinâmica-degradada-em-campo" id="toc-indicadores-biológicos-e-dinâmica-degradada-em-campo" class="nav-link" data-scroll-target="#indicadores-biológicos-e-dinâmica-degradada-em-campo">Indicadores Biológicos e Dinâmica Degradada em Campo</a></li>
+  <li><a href="#normalização-linear-cálculo-do-iqs-e-visualização-multivariada" id="toc-normalização-linear-cálculo-do-iqs-e-visualização-multivariada" class="nav-link" data-scroll-target="#normalização-linear-cálculo-do-iqs-e-visualização-multivariada">Normalização Linear, Cálculo do IQS e Visualização Multivariada</a></li>
+  <li><a href="#amostragem-referência-e-materiais-audiovisuais-de-apoio" id="toc-amostragem-referência-e-materiais-audiovisuais-de-apoio" class="nav-link" data-scroll-target="#amostragem-referência-e-materiais-audiovisuais-de-apoio">Amostragem, Referência e Materiais Audiovisuais de Apoio</a></li>
+  <li><a href="#exercícios-de-fixação" id="toc-exercícios-de-fixação" class="nav-link" data-scroll-target="#exercícios-de-fixação">Exercícios de fixação</a></li>
+  <li><a href="#questões-de-aplicação" id="toc-questões-de-aplicação" class="nav-link" data-scroll-target="#questões-de-aplicação">Questões de aplicação</a></li>
+  <li><a href="#gabarito-comentado" id="toc-gabarito-comentado" class="nav-link" data-scroll-target="#gabarito-comentado">Gabarito comentado</a></li>
+  <li><a href="#síntese-conceitual" id="toc-síntese-conceitual" class="nav-link" data-scroll-target="#síntese-conceitual">Síntese conceitual</a></li>
+  <li><a href="#autoavaliação" id="toc-autoavaliação" class="nav-link" data-scroll-target="#autoavaliação">Autoavaliação</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main data-book-tables="true" class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/10-indicadores-ambientais-peir.html">Módulo 4. Indicadores, qualidade do solo e degradação</a></li><li class="breadcrumb-item"><a href="../capitulos/11-qualidade-solo-iqs.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="cap:qualidade_solo" class="quarto-section-identifier"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Qualidade do solo expressa a capacidade de um solo específico funcionar, dentro dos limites de seu ecossistema e de seu uso, para regular o fluxo de água, ciclar nutrientes, estocar carbono e sustentar a atividade biológica. Um solo quimicamente adubado pode continuar degradado se estiver compactado, sem cobertura vegetal e incapaz de absorver a água da chuva. Por isso, a avaliação ambiental integra atributos físicos, químicos e biológicos, sempre comparados a uma área de referência na mesma classe de solo, profundidade e época de amostragem.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>O que você vai aprender neste capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O capítulo desenvolve a interpretação de indicadores físicos, químicos e biológicos e a construção de índices de qualidade do solo (IQS). Ao longo da leitura, diagramas explicativos, fotografias de campo, gráficos e exemplos resolvidos acompanham cada conceito passo a passo.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Revisando o que você precisa saber
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A leitura retoma massa, volume, porosidade e matéria orgânica. Uma amostra indeformada preserva a organização natural dos poros necessária à determinação da densidade do solo, enquanto as análises químicas dependem do registro exato das unidades do laudo (<span class="math inline">\(CO\)</span> ou <span class="math inline">\(MO\)</span>) e dos critérios de preparo.</p>
+</div>
+</div>
+<section id="vocabulário-técnico-e-símbolos-do-capítulo-11" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulário-técnico-e-símbolos-do-capítulo-11">Vocabulário Técnico e Símbolos do Capítulo 11</h2>
+<p><strong>Qualidade do Solo (QS).</strong> Capacidade de um solo funcionar, dentro dos limites do ecossistema natural ou manejado, para sustentar a produtividade biológica, manter a qualidade da água e do ar e suportar a saúde dos habitats (Karlen et al., 1997). <strong>MDS (<em>Minimum Data Set</em>),</strong> conjunto mínimo e não redundante de atributos físicos, químicos e biológicos capaz de representar a funcionalidade do solo com viabilidade analítica.</p>
+<p><span class="math inline">\(D_s\)</span> e <span class="math inline">\(D_p\)</span>, densidade do solo (massa de solo seco dividida pelo volume total do anel, em <span class="math inline">\(\text{g}\cdot\text{cm}^{-3}\)</span>) e densidade de partículas (massa de sólidos dividida apenas pelo volume das partículas minerais e orgânicas, usualmente <span class="math inline">\(2{,}65\text{ g}\cdot\text{cm}^{-3}\)</span> para solos minerais quartzosos). <span class="math inline">\(P_t\)</span>, <span class="math inline">\(P_{\text{macro}}\)</span> e <span class="math inline">\(P_{\text{micro}}\)</span>, porosidade total, macroporosidade e microporosidade (<span class="math inline">\(\%\)</span> em volume). <span class="math inline">\(MO\)</span> e <span class="math inline">\(CO\)</span>, matéria orgânica do solo e carbono orgânico total (<span class="math inline">\(\text{g}\cdot\text{kg}^{-1}\)</span> ou <span class="math inline">\(\%\)</span>), relacionados pelo fator de van Bemmelen (<span class="math inline">\(1{,}724\)</span>). <span class="math inline">\(SB\)</span>, <span class="math inline">\(CTC\)</span> e <span class="math inline">\(V\%\)</span>, soma de bases trocáveis (<span class="math inline">\(\text{cmol}_c\cdot\text{dm}^{-3}\)</span>), capacidade de troca catiônica a pH <span class="math inline">\(7{,}0\)</span> (<span class="math inline">\(\text{cmol}_c\cdot\text{dm}^{-3}\)</span>) e saturação por bases (<span class="math inline">\(\%\)</span>).</p>
+<p><span class="math inline">\(TIB\)</span> e <span class="math inline">\(RP\)</span>, taxa de infiltração básica (<span class="math inline">\(\text{mm}\cdot\text{h}^{-1}\)</span>) e resistência do solo à penetração (<span class="math inline">\(\text{MPa}\)</span>). <span class="math inline">\(S_i\)</span>, <span class="math inline">\(w_i\)</span> e <span class="math inline">\(\text{IQS}\)</span>, pontuação normalizada (<span class="math inline">\(0\)</span> a <span class="math inline">\(1\)</span>) do indicador <span class="math inline">\(i\)</span>, peso atribuído ao indicador (<span class="math inline">\(\sum w_i = 1\)</span>) e Índice de Qualidade do Solo (<span class="math inline">\(0\)</span> a <span class="math inline">\(1\)</span>).</p>
+</section>
+<section id="conceito-de-qualidade-do-solo-propriedades-inerentes-e-tríade-do-mds" class="level2">
+<h2 class="anchored" data-anchor-id="conceito-de-qualidade-do-solo-propriedades-inerentes-e-tríade-do-mds">Conceito de Qualidade do Solo, Propriedades Inerentes e Tríade do MDS</h2>
+<p>Durante décadas, a ciência do solo concentrou-se na fertilidade química voltada à resposta imediata de lavouras a fertilizantes minerais. Na Análise Ambiental, essa abordagem isolada mostra-se insuficiente porque um solo rico em fósforo e potássio pode sofrer compactação severa sob tráfego de máquinas ou pisoteio, perdendo sua rede de poros maiores. Quando isso ocorre, a água da chuva encontra resistência na superfície, forma enxurrada erosiva, arrasta sedimentos para os rios e reduz a recarga do lençol freático.</p>
+<p>A partir da década de 1990, Doran e Parkin (1994) e Karlen et al.&nbsp;(1997) consolidaram o conceito moderno de <strong>Qualidade do Solo</strong>, centrado em cinco funções ecossistêmicas interdependentes. O solo regula e particiona o fluxo de água (controlando infiltração, armazenamento e drenagem), sustenta a biodiversidade e a atividade microbiana, filtra e tampona poluentes orgânicos e inorgânicos, cicla nutrientes enquanto estoca carbono orgânico, e oferece suporte físico estável às raízes e às obras humanas. No Brasil, Vezzani e Mielniczuk (2009) destacam que essa qualidade emerge da interação contínua entre a arquitetura física dos agregados, a dinâmica da matéria orgânica e os organismos vivos, exigindo comparação direta com um <strong>solo de referência</strong> sob vegetação nativa na mesma classe pedológica e condição climática.</p>
+<p>Para diagnosticar se um solo perdeu funcionalidade por ação humana ou se determinada característica é natural daquele ambiente, distingue-se o potencial natural herdado da condição dinâmica atual (<a href="#fig-triade-mds-funcoes" class="quarto-xref">Figura&nbsp;<span>11.1</span></a>). As <strong>propriedades inerentes</strong> (textura areia-silte-argila, mineralogia da fração argila, profundidade efetiva e posição na vertente) mudam apenas em escalas geológicas e determinam qual solo de referência deve ser adotado. Já as <strong>propriedades dinâmicas</strong> (densidade, porosidade, matéria orgânica, infiltração e atividade microbiana) alteram-se em meses ou poucos anos conforme o manejo, formando o <strong>Conjunto Mínimo de Dados (MDS)</strong> dividido entre indicadores físicos, químicos e biológicos.</p>
+<div id="fig-triade-mds-funcoes" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagrama mostrando propriedades inerentes no topo, três blocos de indicadores físicos, químicos e biológicos no centro e cinco funções ecossistêmicas na base">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-triade-mds-funcoes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap11_triade_mds_funcoes.png" class="img-fluid figure-img" alt="Diagrama mostrando propriedades inerentes no topo, três blocos de indicadores físicos, químicos e biológicos no centro e cinco funções ecossistêmicas na base">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-triade-mds-funcoes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;11.1: Relação entre propriedades inerentes do solo, tríade de indicadores dinâmicos do Conjunto Mínimo de Dados (MDS) e as cinco funções ecossistêmicas avaliadas.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="indicadores-físicos-arquitetura-porosa-e-fluxo-hídrico" class="level2">
+<h2 class="anchored" data-anchor-id="indicadores-físicos-arquitetura-porosa-e-fluxo-hídrico">Indicadores Físicos (Arquitetura Porosa e Fluxo Hídrico)</h2>
+<p>Os atributos físicos governam a circulação de água, ar e raízes no perfil edáfico e respondem rapidamente à degradação mecânica observada em pastagens sobrepastoreadas, áreas agrícolas convencionais e acessos de obras civis ou parques eólicos.</p>
+<p>A <strong>densidade do solo (<span class="math inline">\(D_s\)</span>)</strong> mede a massa de solo seco contida em um volume conhecido de solo estruturado. Para preservar os poros originais sem esmagá-los, coleta-se uma amostra indeformada cravando um cilindro metálico de volume conhecido <span class="math inline">\(V_t\)</span> (anel de Kopecky) no perfil, levando-o à estufa a <span class="math inline">\(105\,^\circ\text{C}\)</span> até massa constante (<span class="math inline">\(m_s\)</span>). Quanto maior a compactação imposta pelo tráfego ou pisoteio, mais partículas sólidas são comprimidas no mesmo volume e maior fica <span class="math inline">\(D_s\)</span>. Solos minerais conservados exibem tipicamente valores entre <span class="math inline">\(1{,}00\)</span> e <span class="math inline">\(1{,}35\text{ g}\cdot\text{cm}^{-3}\)</span> (menores em solos argilosos estruturados e ligeiramente maiores em solos arenosos); valores acima de <span class="math inline">\(1{,}55\)</span>-<span class="math inline">\(1{,}65\text{ g}\cdot\text{cm}^{-3}\)</span> em solos de textura média a argilosa costumam impor restrição severa ao crescimento radicular.</p>
+<p>Para compreender o efeito real dessa compactação sobre a água e o ar, analisa-se a <strong>porosidade total (<span class="math inline">\(P_t\)</span>)</strong> em conjunto com a separação entre <strong>macroporosidade e microporosidade</strong> (<a href="#fig-porosidade-compactacao" class="quarto-xref">Figura&nbsp;<span>11.2</span></a>). Em laboratório, a mesa de tensão aplica uma sucção de <span class="math inline">\(6\text{ kPa}\)</span> ao anel saturado para separar duas famílias funcionais de poros: os <strong>macroporos</strong> (<span class="math inline">\(&gt; 50\,\mu\text{m}\)</span>, drenados a <span class="math inline">\(6\text{ kPa}\)</span>) garantem a aeração das raízes e a infiltração rápida durante chuvas intensas, enquanto os <strong>microporos</strong> (<span class="math inline">\(&lt; 50\,\mu\text{m}\)</span>, que retêm água após <span class="math inline">\(6\text{ kPa}\)</span>) armazenam umidade disponível às plantas. Sob pressão mecânica, os macroporos colapsam primeiro; quando a macroporosidade cai abaixo de <span class="math inline">\(10\%\)</span> do volume total do solo, a oxigenação radicular torna-se crítica.</p>
+<div id="fig-porosidade-compactacao" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Barras proporcionais comparando solo conservado com 46% sólidos, 34% microporos e 20% macroporos frente a solo compactado com 66% sólidos, 28% microporos e 6% macroporos">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-porosidade-compactacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap11_porosidade_compactacao.png" class="img-fluid figure-img" alt="Barras proporcionais comparando solo conservado com 46% sólidos, 34% microporos e 20% macroporos frente a solo compactado com 66% sólidos, 28% microporos e 6% macroporos">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-porosidade-compactacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;11.2: Impacto da compactação na proporção volumétrica entre sólidos, microporos e macroporos, comparando Caatinga conservada e acesso compactado.
+</figcaption>
+</figure>
+</div>
+<p>A integridade dessa arquitetura porosa depende da <strong>estabilidade de agregados em água</strong>, medida pelo Diâmetro Médio Ponderado (DMP) em peneiramento úmido, que indica a resistência dos torrões ao impacto das gotas de chuva (<em>splash</em>), prevenindo o selamento superficial. Quando o selamento ocorre ou os macroporos diminuem, cai abruptamente a <strong>Taxa de Infiltração Básica (<span class="math inline">\(TIB\)</span>)</strong>, medida em campo com infiltrômetro de anéis concêntricos (<span class="math inline">\(\text{mm}\cdot\text{h}^{-1}\)</span>), convertendo chuvas moderadas em escoamento superficial concentrado e sulcos erosivos (<a href="#fig-solo-compactado-sulco" class="quarto-xref">Figura&nbsp;<span>11.3</span></a>). Complementando essa leitura, a <strong>Resistência do solo à penetração (<span class="math inline">\(RP\)</span>)</strong>, medida com penetrômetro (<span class="math inline">\(\text{MPa}\)</span>), quantifica o esforço mecânico enfrentado pelas raízes; na capacidade de campo, valores acima de <span class="math inline">\(2{,}0\)</span>-<span class="math inline">\(2{,}5\text{ MPa}\)</span> impõem impedimento físico severo.</p>
+<div id="fig-solo-compactado-sulco" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Estrada de terra compactada apresentando sulco erosivo profundo escavado pelo escoamento superficial concentrado">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-solo-compactado-sulco-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/foto_estrada_sulco_erosivo.jpg" class="img-fluid figure-img" alt="Estrada de terra compactada apresentando sulco erosivo profundo escavado pelo escoamento superficial concentrado">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-solo-compactado-sulco-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;11.3: Superfície de solo compactado em acesso rural com selamento superficial, perda de macroporosidade e formação de sulco erosivo por escoamento superficial concentrado. Fonte acervo didático da disciplina.
+</figcaption>
+</figure>
+</div>
+<p>As equações físicas abaixo permitem calcular a densidade do solo, a porosidade total e as frações de macro e microporos a partir das pesagens do anel volumétrico saturado (<span class="math inline">\(m_{\text{sat}}\)</span>), drenado a <span class="math inline">\(6\text{ kPa}\)</span> (<span class="math inline">\(m_{6\text{kPa}}\)</span>) e seco em estufa (<span class="math inline">\(m_s\)</span>), adotando <span class="math inline">\(\rho_{\text{água}} = 1{,}0\text{ g}\cdot\text{cm}^{-3}\)</span>:</p>
+<p><span class="math display">\[
+D_s = \frac{m_s}{V_t} \quad (\text{g}\cdot\text{cm}^{-3}) \qquad\qquad P_t = \left(1 - \frac{D_s}{D_p}\right) \times 100\%
+\]</span></p>
+<p><span class="math display">\[
+P_{\text{micro}} = \frac{m_{6\text{kPa}} - m_s}{\rho_{\text{água}} \cdot V_t}\times 100\% \qquad\qquad P_{\text{macro}} = \frac{m_{\text{sat}} - m_{6\text{kPa}}}{\rho_{\text{água}} \cdot V_t}\times 100\%
+\]</span></p>
+<p>O Exemplo 11.1 aplica diretamente essas expressões aos dados representados na <a href="#fig-porosidade-compactacao" class="quarto-xref">Figura&nbsp;<span>11.2</span></a>.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 11.1 (Básico). Cálculo de Densidade do Solo e Porosidade Total em Anel Volumétrico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação e dados.</strong> Durante campanha da disciplina CHF662 na camada <span class="math inline">\(0\)</span>-<span class="math inline">\(10\text{ cm}\)</span> (<span class="math inline">\(V_t = 100\text{ cm}^3\)</span>; <span class="math inline">\(D_p = 2{,}65\text{ g}\cdot\text{cm}^{-3}\)</span>), uma amostra sob Caatinga conservada apresentou massa seca <span class="math inline">\(m_{s,1} = 122\text{ g}\)</span> e outra na borda compactada de um acesso eólico apresentou <span class="math inline">\(m_{s,2} = 175\text{ g}\)</span>.</p>
+<p><strong>Cálculo passo a passo.</strong> Para a Caatinga conservada, <span class="math inline">\(D_{s,1} = \frac{122}{100} = 1{,}22\text{ g}\cdot\text{cm}^{-3}\)</span> e <span class="math inline">\(P_{t,1} = \left(1 - \frac{1{,}22}{2{,}65}\right)\times 100\% = 53{,}96\%\)</span>. Para o acesso compactado, <span class="math inline">\(D_{s,2} = \frac{175}{100} = 1{,}75\text{ g}\cdot\text{cm}^{-3}\)</span> e <span class="math inline">\(P_{t,2} = \left(1 - \frac{1{,}75}{2{,}65}\right)\times 100\% = 33{,}96\%\)</span>.</p>
+<p><strong>Interpretação.</strong> A compactação elevou <span class="math inline">\(D_s\)</span> em <span class="math inline">\(0{,}53\text{ g}\cdot\text{cm}^{-3}\)</span> e eliminou exatamente <span class="math inline">\(20{,}00\)</span> pontos percentuais de porosidade (<span class="math inline">\(37{,}1\%\)</span> de perda relativa), colapsando prioritariamente os macroporos de drenagem rápida.</p>
+</div>
+</div>
+<p>Quando o diagnóstico físico inclui medições em mesa de tensão, quantifica-se separadamente quanto dessa porosidade total permanece disponível para aeração radicular, conforme detalhado no Exemplo 11.4.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 11.4 (Avançado). Separação de Macro e Microporosidade em Mesa de Tensão
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação e dados.</strong> Uma amostra indeformada (<span class="math inline">\(V_t = 100\text{ cm}^3\)</span>; <span class="math inline">\(\rho_{\text{água}} = 1{,}0\text{ g}\cdot\text{cm}^{-3}\)</span>) em área sob bioengenharia registrou massa saturada <span class="math inline">\(m_{\text{sat}} = 174\text{ g}\)</span>, massa após equilíbrio a <span class="math inline">\(6\text{ kPa}\)</span> de <span class="math inline">\(m_{6\text{kPa}} = 158\text{ g}\)</span> e massa seca <span class="math inline">\(m_s = 128\text{ g}\)</span>.</p>
+<p><strong>Cálculo passo a passo.</strong> Como cada <span class="math inline">\(1\text{ g}\)</span> de água ocupa <span class="math inline">\(1\text{ cm}^3\)</span> de poro:</p>
+<p><span class="math display">\[
+P_t^{\text{sat}} = \frac{174 - 128}{100}\times 100\% = 46{,}0\% \qquad P_{\text{micro}} = \frac{158 - 128}{100}\times 100\% = 30{,}0\% \qquad P_{\text{macro}} = \frac{174 - 158}{100}\times 100\% = 16{,}0\%
+\]</span></p>
+<p><strong>Interpretação.</strong> A soma confere (<span class="math inline">\(30{,}0\% + 16{,}0\% = 46{,}0\%\)</span>), e a macroporosidade de <span class="math inline">\(16{,}0\%\)</span> supera o limiar crítico de <span class="math inline">\(10\%\)</span>, indicando boa aeração radicular aliada à retenção hídrica.</p>
+</div>
+</div>
+<p>Na leitura de campo dos indicadores físicos, dois erros frequentes comprometem os laudos ambientais: comparar solos de texturas diferentes sem referência local e medir resistência à penetração sem registrar a umidade.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 1, Comparar Áreas em Solos de Texturas Distintas Sem Referência Local
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Classificar um Neossolo Quartzarênico arenoso (<span class="math inline">\(D_s = 1{,}45\text{ g}\cdot\text{cm}^{-3}\)</span>) como degradado comparando-o a um Latossolo argiloso conservado (<span class="math inline">\(D_s = 1{,}05\text{ g}\cdot\text{cm}^{-3}\)</span>).</p>
+<p><strong>Correção técnica.</strong> Solos arenosos possuem naturalmente maior densidade e menor <span class="math inline">\(CTC\)</span> do que solos argilosos bem estruturados. A área de referência sob vegetação nativa deve pertencer à <strong>mesma classe de solo, textura e posição geomorfológica</strong> da área diagnosticada.</p>
+</div>
+</div>
+<p>No Semiárido, a sazonalidade hídrica amplia drasticamente a coesão aparente do solo seco, exigindo cuidado adicional nas leituras de penetrômetro.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 2, Avaliar Resistência à Penetração (<span class="math inline">\(RP\)</span>) Sem Registrar a Umidade do Solo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Medir <span class="math inline">\(RP\)</span> na estação seca no Semiárido, obter valores acima de <span class="math inline">\(4{,}0\text{ MPa}\)</span> e diagnosticar compactação antrópica irreversível.</p>
+<p><strong>Correção técnica.</strong> A resistência mecânica à penetração aumenta exponencialmente à medida que o solo seca, devido à coesão entre partículas e à sucção matricial. Leituras de penetrômetro são comparáveis apenas quando obtidas sob umidade controlada (próxima à capacidade de campo) ou acompanhadas do teor gravimétrico de umidade.</p>
+</div>
+</div>
+</section>
+<section id="indicadores-químicos-matéria-orgânica-acidez-e-troca-catiônica" class="level2">
+<h2 class="anchored" data-anchor-id="indicadores-químicos-matéria-orgânica-acidez-e-troca-catiônica">Indicadores Químicos (Matéria Orgânica, Acidez e Troca Catiônica)</h2>
+<p>Os atributos químicos determinam a disponibilidade de nutrientes, o poder tampão e a estabilidade coloidal do solo. A <strong>Matéria Orgânica (<span class="math inline">\(MO\)</span>)</strong> e o <strong>Carbono Orgânico Total (<span class="math inline">\(CO\)</span>)</strong> integram física, química e biologia porque cimentam agregados, elevam a retenção de água e fornecem a maior parte das cargas negativas da <span class="math inline">\(CTC\)</span> em solos tropicais intemperizados. Como os métodos laboratoriais (Walkley-Black ou combustão seca) quantificam diretamente o carbono orgânico (<span class="math inline">\(CO\)</span>), estima-se a matéria orgânica multiplicando <span class="math inline">\(CO\)</span> pelo <strong>fator de van Bemmelen (<span class="math inline">\(1{,}724\)</span>)</strong>, baseado na convenção clássica de que a matéria orgânica humificada contém aproximadamente <span class="math inline">\(58\%\)</span> de carbono em massa (<span class="math inline">\(1 / 0{,}58 \approx 1{,}724\)</span>). As expressões abaixo relacionam <span class="math inline">\(CO\)</span>, <span class="math inline">\(MO\)</span> e o estoque de carbono (<span class="math inline">\(EC\)</span>, em <span class="math inline">\(\text{Mg C}\cdot\text{ha}^{-1}\)</span>) na camada de espessura <span class="math inline">\(h_{\text{m}}\)</span> (adotando <span class="math inline">\(1\text{ g}\cdot\text{cm}^{-3} = 1\text{ Mg}\cdot\text{m}^{-3}\)</span>):</p>
+<p><span class="math display">\[
+CO = \frac{MO}{1{,}724} \quad \Longleftrightarrow \quad MO = CO \times 1{,}724 \qquad\qquad EC = \left(\frac{CO_{\text{g/kg}}}{1000}\right) \cdot D_s \cdot (10.000 \cdot h_{\text{m}})
+\]</span></p>
+<p>O Exemplo 11.2 demonstra como padronizar laudos expressos em grandezas distintas e quantificar a perda de carbono por hectare.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 11.2 (Básico/Intermediário). Fator de van Bemmelen e Estoque de Carbono na Camada 0 a 20 cm
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação e dados.</strong> Na camada <span class="math inline">\(h = 0{,}20\text{ m}\)</span>, um laudo reportou <span class="math inline">\(CO_A = 18{,}0\text{ g}\cdot\text{kg}^{-1}\)</span> sob Caatinga preservada (<span class="math inline">\(D_{s,A} = 1{,}25\text{ g}\cdot\text{cm}^{-3}\)</span>), enquanto outro laboratório reportou <span class="math inline">\(MO_B = 12{,}068\text{ g}\cdot\text{kg}^{-1}\)</span> em pastagem degradada adjacente (<span class="math inline">\(D_{s,B} = 1{,}60\text{ g}\cdot\text{cm}^{-3}\)</span>).</p>
+<p><strong>Cálculo passo a passo.</strong> Pelo fator de van Bemmelen, <span class="math inline">\(MO_A = 18{,}0 \times 1{,}724 = 31{,}032\text{ g}\cdot\text{kg}^{-1}\)</span> e <span class="math inline">\(CO_B = 12{,}068 / 1{,}724 = 7{,}00\text{ g}\cdot\text{kg}^{-1}\)</span>. Em <span class="math inline">\(1\text{ ha}\)</span>, o volume da camada é <span class="math inline">\(V_{\text{ha}} = 10.000 \times 0{,}20 = 2.000\text{ m}^3\cdot\text{ha}^{-1}\)</span>. Na Área A, a massa de solo é <span class="math inline">\(2.000 \times 1{,}25 = 2.500\text{ Mg}\cdot\text{ha}^{-1}\)</span> e <span class="math inline">\(EC_A = 2.500 \times 0{,}018 = 45{,}00\text{ Mg C}\cdot\text{ha}^{-1}\)</span>. Na Área B, a massa é <span class="math inline">\(2.000 \times 1{,}60 = 3.200\text{ Mg}\cdot\text{ha}^{-1}\)</span> e <span class="math inline">\(EC_B = 3.200 \times 0{,}007 = 22{,}40\text{ Mg C}\cdot\text{ha}^{-1}\)</span>, indicando perda de <span class="math inline">\(22{,}60\text{ Mg C}\cdot\text{ha}^{-1}\)</span> (<span class="math inline">\(-50{,}2\%\)</span>).</p>
+<p><strong>Interpretação.</strong> Mesmo com maior massa de solo em <span class="math inline">\(20\text{ cm}\)</span> na Área B devido à compactação (<span class="math inline">\(3.200\)</span> vs.&nbsp;<span class="math inline">\(2.500\text{ Mg}\)</span>), a degradação já eliminou metade do estoque original de carbono.</p>
+</div>
+</div>
+<p>Na leitura comparativa de análises laboratoriais, trocar carbono orgânico por matéria orgânica sem conversão prévia distorce qualquer diagnóstico ambiental.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 3, Confundir Carbono Orgânico (<span class="math inline">\(CO\)</span>) com Matéria Orgânica (<span class="math inline">\(MO\)</span>)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Comparar diretamente um laudo expresso em <span class="math inline">\(CO\)</span> (<span class="math inline">\(\text{g}\cdot\text{kg}^{-1}\)</span>) com outro expresso em <span class="math inline">\(MO\)</span> (<span class="math inline">\(\text{g}\cdot\text{kg}^{-1}\)</span>) sem conversão prévia.</p>
+<p><strong>Correção técnica.</strong> A matéria orgânica contém carbono, oxigênio, hidrogênio e nitrogênio; portanto, <span class="math inline">\(MO\)</span> é sempre numericamente maior que <span class="math inline">\(CO\)</span> (<span class="math inline">\(MO = 1{,}724 \times CO\)</span>). Padronize todas as amostras na mesma grandeza antes de comparar resultados ou calcular estoques de carbono.</p>
+</div>
+</div>
+<p>O <strong>potencial hidrogeniônico (pH)</strong> controla a solubilidade de nutrientes e a toxicidade do alumínio trocável (<span class="math inline">\(Al^{3+}\)</span>) abaixo de pH <span class="math inline">\(5{,}5\)</span>. No Semiárido Baiano, Luvissolos e Neossolos pouco intemperizados tendem a apresentar pH levemente ácido a neutro (<span class="math inline">\(6{,}0\)</span>-<span class="math inline">\(7{,}2\)</span>), enquanto Latossolos profundos de tabuleiros costumam ser mais ácidos (<span class="math inline">\(4{,}5\)</span>-<span class="math inline">\(5{,}5\)</span>). Associando a <strong>Soma de Bases (<span class="math inline">\(SB\)</span>)</strong> à acidez potencial (<span class="math inline">\(H^+ + Al^{3+}\)</span>), obtém-se a <span class="math inline">\(CTC\)</span> a pH <span class="math inline">\(7{,}0\)</span> e a <strong>Saturação por Bases (<span class="math inline">\(V\%\)</span>)</strong>. Solos com <span class="math inline">\(V\% \ge 50\%\)</span> são <strong>eutróficos</strong> (alta fertilidade natural), enquanto solos com <span class="math inline">\(V\% &lt; 50\%\)</span> são <strong>distróficos</strong> (baixa fertilidade natural):</p>
+<p><span class="math display">\[
+SB = Ca^{2+} + Mg^{2+} + K^+ + Na^+ \qquad CTC = SB + (H^+ + Al^{3+}) \qquad V\% = \frac{SB}{CTC}\times 100\%
+\]</span></p>
+<p>O Exemplo 11.3 contrasta essas duas condições pedológicas na Bahia.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 11.3 (Intermediário). Diagnóstico Químico, Soma de Bases, CTC e Saturação por Bases (<span class="math inline">\(V\%\)</span>)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação e dados.</strong> Compare dois laudos (<span class="math inline">\(0\)</span>-<span class="math inline">\(20\text{ cm}\)</span>, valores em <span class="math inline">\(\text{cmol}_c\cdot\text{dm}^{-3}\)</span>): <strong>Solo 1</strong> (Luvissolo Crômico sob Caatinga no Semiárido: <span class="math inline">\(Ca^{2+}=5{,}40\)</span>; <span class="math inline">\(Mg^{2+}=2{,}60\)</span>; <span class="math inline">\(K^+=0{,}45\)</span>; <span class="math inline">\(Na^+=0{,}15\)</span>; <span class="math inline">\(H^++Al^{3+}=2{,}40\)</span>) e <strong>Solo 2</strong> (Latossolo Amarelo sob pastagem degradada nos Tabuleiros Costeiros: <span class="math inline">\(Ca^{2+}=1{,}20\)</span>; <span class="math inline">\(Mg^{2+}=0{,}60\)</span>; <span class="math inline">\(K^+=0{,}15\)</span>; <span class="math inline">\(Na^+=0{,}05\)</span>; <span class="math inline">\(H^++Al^{3+}=4{,}00\)</span>).</p>
+<p><strong>Cálculo passo a passo.</strong> Para o Solo 1, <span class="math inline">\(SB_1 = 8{,}60\)</span>, <span class="math inline">\(CTC_1 = 11{,}00\text{ cmol}_c\cdot\text{dm}^{-3}\)</span> e <span class="math inline">\(V\%_1 = (8{,}60/11{,}00)\times 100\% = \mathbf{78{,}18\%}\)</span> (<strong>eutrófico</strong>). Para o Solo 2, <span class="math inline">\(SB_2 = 2{,}00\)</span>, <span class="math inline">\(CTC_2 = 6{,}00\text{ cmol}_c\cdot\text{dm}^{-3}\)</span> e <span class="math inline">\(V\%_2 = (2{,}00/6{,}00)\times 100\% = \mathbf{33{,}33\%}\)</span> (<strong>distrófico</strong>).</p>
+<p><strong>Interpretação.</strong> O resultado reflete a pedogênese regional: a menor lixiviação no Semiárido preserva bases trocáveis, enquanto nos tabuleiros úmidos a lixiviação intensa e a perda de matéria orgânica reduzem <span class="math inline">\(SB\)</span>, <span class="math inline">\(CTC\)</span> e <span class="math inline">\(V\%\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="indicadores-biológicos-e-dinâmica-degradada-em-campo" class="level2">
+<h2 class="anchored" data-anchor-id="indicadores-biológicos-e-dinâmica-degradada-em-campo">Indicadores Biológicos e Dinâmica Degradada em Campo</h2>
+<p>Os indicadores biológicos costumam responder às perturbações iniciais e às ações de recuperação antes que os estoques totais de carbono ou a densidade exibam mudanças mensuráveis. O <strong>Carbono da Biomassa Microbiana (<span class="math inline">\(C\text{-BM}\)</span>)</strong> representa a fração viva da matéria orgânica (fungos, bactérias e actinomicetos, geralmente <span class="math inline">\(1\%\)</span> a <span class="math inline">\(4\%\)</span> do <span class="math inline">\(CO\)</span> total) e reage em poucos meses ao manejo. Analisada junto à <strong>Respiração Basal do Solo (<span class="math inline">\(RBS\)</span>)</strong>, que mede a liberação de <span class="math inline">\(\text{CO}_2\)</span> pelo metabolismo microbiano, a razão <span class="math inline">\(q\text{CO}_2 = RBS / C\text{-BM}\)</span> (quociente metabólico) funciona como termômetro de estresse ecológico: valores elevados revelam que os microrganismos gastam mais energia para sobreviver do que para formar nova biomassa.</p>
+<p>Completam esse eixo biológico a riqueza de <strong>macrofauna edáfica</strong> (minhocas, térmitas e formigas que constroem bioporos) e a <strong>cobertura vegetal com serapilheira</strong>. Quando uma pastagem perde cobertura viva e proteção superficial, a temperatura do solo sobe, a biota entra em colapso e o solo descoberto evolui rapidamente para ravinas (<a href="#fig-pastagem-ravinas" class="quarto-xref">Figura&nbsp;<span>11.4</span></a>).</p>
+<div id="fig-pastagem-ravinas" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Encosta com pastagem rala e solo exposto apresentando ravinas erosivas ramificadas">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pastagem-ravinas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/foto_pastagem_ravinas.jpg" class="img-fluid figure-img" alt="Encosta com pastagem rala e solo exposto apresentando ravinas erosivas ramificadas">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pastagem-ravinas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;11.4: Pastagem degradada com perda de cobertura vegetal, exposição do horizonte mineral e evolução de ravinas em vertente. Fonte acervo didático da disciplina.
+</figcaption>
+</figure>
+</div>
+<p>Essa perda progressiva de cobertura e agregação acelera o ciclo de degradação física e hídrica da bacia (<a href="#fig-ciclo-solo-agua-uso" class="quarto-xref">Figura&nbsp;<span>11.5</span></a>).</p>
+<div id="fig-ciclo-solo-agua-uso" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Fluxograma em quatro etapas ligando mudança no uso da terra, degradação do solo, erosão e escassez hídrica com seta de retroalimentação">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ciclo-solo-agua-uso-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/esquema_solo_agua_uso.png" class="img-fluid figure-img" alt="Fluxograma em quatro etapas ligando mudança no uso da terra, degradação do solo, erosão e escassez hídrica com seta de retroalimentação">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ciclo-solo-agua-uso-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;11.5: Retroalimentação positiva entre mudança no uso da terra, degradação física do solo, dinâmica erosiva e escassez hídrica. Fonte acervo didático da disciplina.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="normalização-linear-cálculo-do-iqs-e-visualização-multivariada" class="level2">
+<h2 class="anchored" data-anchor-id="normalização-linear-cálculo-do-iqs-e-visualização-multivariada">Normalização Linear, Cálculo do IQS e Visualização Multivariada</h2>
+<p>Como cada indicador possui unidade própria (<span class="math inline">\(\text{g}\cdot\text{kg}^{-1}\)</span>, <span class="math inline">\(\text{mm}\cdot\text{h}^{-1}\)</span>, <span class="math inline">\(\text{g}\cdot\text{cm}^{-3}\)</span>), não é possível somá-los diretamente. A normalização linear converte cada valor bruto <span class="math inline">\(x_i\)</span> em uma nota adimensional <span class="math inline">\(S_i\)</span> entre <span class="math inline">\(0\)</span> e <span class="math inline">\(1\)</span>, respeitando o sentido ecológico do atributo (<a href="#fig-curvas-normalizacao" class="quarto-xref">Figura&nbsp;<span>11.6</span></a>). Para atributos do tipo <strong>“quanto maior melhor”</strong> (<span class="math inline">\(MO\)</span>, <span class="math inline">\(P_t\)</span>, <span class="math inline">\(TIB\)</span>, <span class="math inline">\(DMP\)</span>), aplica-se <span class="math inline">\(S_i = \min(1;\; x_i / x_{\text{ref}})\)</span>, travando a nota máxima em <span class="math inline">\(1{,}0\)</span>. Para atributos do tipo <strong>“quanto menor melhor”</strong> (<span class="math inline">\(D_s\)</span> e <span class="math inline">\(RP\)</span>), inverte-se a razão, <span class="math inline">\(S_i = \min(1;\; x_{\text{ref}} / x_i)\)</span>, de modo que solos mais compactados recebam notas menores.</p>
+<div id="fig-curvas-normalizacao" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Dois gráficos cartesianos mostrando a reta crescente até platô 1,0 no painel A e o platô 1,0 seguido de queda hiperbólica no painel B">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-curvas-normalizacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap11_curvas_normalizacao.png" class="img-fluid figure-img" alt="Dois gráficos cartesianos mostrando a reta crescente até platô 1,0 no painel A e o platô 1,0 seguido de queda hiperbólica no painel B">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-curvas-normalizacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;11.6: Curvas das funções de normalização linear para indicadores “quanto maior melhor” (A) e “quanto menor melhor” (B), mostrando os pontos de referência e o comportamento fora da faixa ótima.
+</figcaption>
+</figure>
+</div>
+<p>Agregando as pontuações normalizadas <span class="math inline">\(S_i\)</span>, calcula-se o Índice de Qualidade do Solo simples ou ponderado:</p>
+<p><span class="math display">\[
+\text{IQS}_{\text{simples}} = \frac{1}{n}\sum_{i=1}^{n} S_i \qquad \text{ou} \qquad \text{IQS}_{\text{ponderado}} = \sum_{i=1}^{n} w_i \, S_i \quad \left(\text{com } \sum_{i=1}^{n} w_i = 1\right)
+\]</span></p>
+<p>A integração dessas notas em um <strong>gráfico radar</strong> preserva simultaneamente a visão global (área do polígono proporcional ao IQS) e o diagnóstico individual de cada gargalo nos eixos recolhidos próximo ao centro (<a href="#fig-qualidade_solo_radar" class="quarto-xref">Figura&nbsp;<span>11.7</span></a>).</p>
+<div id="fig-qualidade_solo_radar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-qualidade_solo_radar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig09_qualidade_solo_radar.png" title="fig:" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-qualidade_solo_radar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;11.7: Comparação multivariada de seis indicadores normalizados de qualidade do solo (<span class="math inline">\(0\)</span> a <span class="math inline">\(1\)</span>) entre área de referência sob Caatinga conservada, área em recuperação com técnicas de bioengenharia e área degradada com solo exposto e compactado.
+</figcaption>
+</figure>
+</div>
+<p>Observando os três cenários plotados (<a href="#fig-qualidade_solo_radar" class="quarto-xref">Figura&nbsp;<span>11.7</span></a>), a <strong>Caatinga conservada (referência)</strong> apresenta escores entre <span class="math inline">\(0{,}85\)</span> e <span class="math inline">\(0{,}95\)</span>, resultando em <span class="math inline">\(\text{IQS} = (0{,}90+0{,}88+0{,}92+0{,}86+0{,}85+0{,}95)/6 = \mathbf{0{,}893}\)</span> (qualidade muito alta). A <strong>área em recuperação com bioengenharia</strong> alcança escores entre <span class="math inline">\(0{,}68\)</span> e <span class="math inline">\(0{,}78\)</span>, com <span class="math inline">\(\text{IQS} = \mathbf{0{,}718}\)</span> (trajetória ascendente, com matéria orgânica e densidade ainda em consolidação). Já a <strong>área degradada</strong> exibe escores colapsados entre <span class="math inline">\(0{,}18\)</span> (cobertura vegetal) e <span class="math inline">\(0{,}35\)</span> (porosidade total), produzindo <span class="math inline">\(\text{IQS} = \mathbf{0{,}275}\)</span> (qualidade crítica, exigindo cobertura superficial e descompactação biológica).</p>
+<p>O Exemplo 11.5 executa passo a passo as duas fórmulas de normalização e o cálculo completo do IQS.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 11.5 (Avançado). Normalização Linear e Cálculo Completo do Índice de Qualidade do Solo (IQS)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação e dados.</strong> Para avaliar uma encosta em recuperação ambiental frente a uma mata de referência, um grupo utilizou quatro indicadores: <span class="math inline">\(MO\)</span> (avaliada <span class="math inline">\(= 16{,}0\)</span>; referência <span class="math inline">\(= 32{,}0\text{ g}\cdot\text{kg}^{-1}\)</span>; <span class="math inline">\(w_1 = 0{,}30\)</span>), <span class="math inline">\(TIB\)</span> (avaliada <span class="math inline">\(= 24{,}0\)</span>; referência <span class="math inline">\(= 60{,}0\text{ mm}\cdot\text{h}^{-1}\)</span>; <span class="math inline">\(w_2 = 0{,}30\)</span>), <span class="math inline">\(D_s\)</span> (avaliada <span class="math inline">\(= 1{,}50\)</span>; referência <span class="math inline">\(= 1{,}20\text{ g}\cdot\text{cm}^{-3}\)</span>; <span class="math inline">\(w_3 = 0{,}20\)</span>) e <span class="math inline">\(DMP\)</span> (avaliada <span class="math inline">\(= 1{,}25\)</span>; referência <span class="math inline">\(= 2{,}50\text{ mm}\)</span>; <span class="math inline">\(w_4 = 0{,}20\)</span>).</p>
+<p><strong>Cálculo passo a passo.</strong> Normalização individual (escala <span class="math inline">\(0\)</span> a <span class="math inline">\(1\)</span>):</p>
+<p><span class="math display">\[
+S_{MO} = \frac{16{,}0}{32{,}0} = 0{,}50 \qquad S_{TIB} = \frac{24{,}0}{60{,}0} = 0{,}40 \qquad S_{D_s} = \frac{1{,}20}{1{,}50} = 0{,}80 \quad (\text{razão invertida}) \qquad S_{DMP} = \frac{1{,}25}{2{,}50} = 0{,}50
+\]</span></p>
+<p>Agregação simples e ponderada:</p>
+<p><span class="math display">\[
+\text{IQS}_{\text{simples}} = \frac{0{,}50 + 0{,}40 + 0{,}80 + 0{,}50}{4} = 0{,}550 \qquad \text{IQS}_{\text{ponderado}} = (0{,}30 \times 0{,}50) + (0{,}30 \times 0{,}40) + (0{,}20 \times 0{,}80) + (0{,}20 \times 0{,}50) = 0{,}530
+\]</span></p>
+<p><strong>Interpretação.</strong> O <span class="math inline">\(\text{IQS}_{\text{ponderado}}\)</span> (<span class="math inline">\(0{,}530\)</span>) ficou abaixo do simples (<span class="math inline">\(0{,}550\)</span>) porque os maiores pesos (<span class="math inline">\(0{,}30\)</span>) recaíram sobre infiltração e matéria orgânica, apontando a infiltração básica (<span class="math inline">\(S_{TIB} = 0{,}40\)</span>) como gargalo prioritário para manejo.</p>
+</div>
+</div>
+<p>Ao executar a normalização em planilhas, um erro comum é aplicar a razão direta em indicadores onde valores maiores representam degradação física.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 4, Usar a Fórmula “Quanto Maior Melhor” para Densidade do Solo (<span class="math inline">\(D_s\)</span>)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Normalizar <span class="math inline">\(D_s\)</span> dividindo o valor da área degradada (<span class="math inline">\(1{,}75\)</span>) pelo da referência (<span class="math inline">\(1{,}20\)</span>), obtendo escore superior a <span class="math inline">\(1{,}0\)</span> e premiando um solo severamente compactado.</p>
+<p><strong>Correção técnica.</strong> Para densidade do solo e resistência à penetração, valores maiores indicam pior qualidade física. Aplica-se obrigatoriamente a função <strong>“quanto menor melhor”</strong>, <span class="math inline">\(S_{D_s} = \min(1;\; D_{s,\text{ref}} / D_{s,\text{avaliado}})\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="amostragem-referência-e-materiais-audiovisuais-de-apoio" class="level2">
+<h2 class="anchored" data-anchor-id="amostragem-referência-e-materiais-audiovisuais-de-apoio">Amostragem, Referência e Materiais Audiovisuais de Apoio</h2>
+<p>A comparação entre área manejada e referência exige condições pedológicas e topográficas compatíveis, separando faixas compactadas por tráfego de entrelinhas vegetadas. Amostras compostas atendem bem a certas análises químicas de rotina, ao passo que propriedades físicas (<span class="math inline">\(D_s\)</span> e macroporosidade) exigem preservação de unidades indeformadas com réplicas, seguindo protocolos como o <a href="https://www.infoteca.cnptia.embrapa.br/handle/doc/1085209">Manual de métodos de análise de solo da Embrapa</a>.</p>
+<p>Para consolidar a visualização desses indicadores em campo e laboratório, recomenda-se assistir aos vídeos selecionados na disciplina: o vídeo <a href="https://www.youtube.com/watch?v=D8jI-ltuzVI">Análise da Saúde do Solo (~7 min)</a> sintetiza matéria orgânica, densidade, porosidade e biologia edáfica; o vídeo <a href="https://www.youtube.com/watch?v=WHh50dAM4as">Saúde do Solo: Qualidade Biológica</a> aprofunda os indicadores biológicos tropicais; e o vídeo <a href="https://www.youtube.com/watch?v=QujBcIOl3qQ">Degradação dos Solos (~17 min)</a> ilustra processos de lixiviação, erosão, laterização e salinização.</p>
+</section>
+<section id="exercícios-de-fixação" class="level2">
+<h2 class="anchored" data-anchor-id="exercícios-de-fixação">Exercícios de fixação</h2>
+<section id="nível-básico-conceitos-de-funcionalidade-edáfica-e-mds" class="level4">
+<h4 class="anchored" data-anchor-id="nível-básico-conceitos-de-funcionalidade-edáfica-e-mds">Nível Básico (Conceitos de Funcionalidade Edáfica e MDS)</h4>
+<ol type="1">
+<li><p>Explique por que o conceito contemporâneo de <strong>Qualidade do Solo</strong> (Doran; Parkin, 1994; Karlen et al., 1997) é mais abrangente do que a noção tradicional de fertilidade química agrícola.</p></li>
+<li><p>Diferencie <strong>propriedades inerentes</strong> de <strong>propriedades dinâmicas</strong> do solo, citando dois exemplos de cada grupo.</p></li>
+<li><p>Qual é o significado físico e matemático do <strong>fator de van Bemmelen (<span class="math inline">\(1{,}724\)</span>)</strong> na conversão entre carbono orgânico total (<span class="math inline">\(CO\)</span>) e matéria orgânica (<span class="math inline">\(MO\)</span>)?</p></li>
+<li><p>Por que a <strong>macroporosidade</strong> é mais sensível à compactação do solo do que a porosidade total (<span class="math inline">\(P_t\)</span>), e qual é o seu limiar crítico de aeração radicular?</p></li>
+<li><p>Explique por que o <strong>Carbono da Biomassa Microbiana (<span class="math inline">\(C\text{-BM}\)</span>)</strong> e o quociente metabólico (<span class="math inline">\(q\text{CO}_2\)</span>) são indicadores precoces valiosos no monitoramento de áreas degradadas em recuperação.</p></li>
+</ol>
+</section>
+<section id="nível-intermediário-cálculos-físicos-químicos-e-iqs" class="level4">
+<h4 class="anchored" data-anchor-id="nível-intermediário-cálculos-físicos-químicos-e-iqs">Nível Intermediário (Cálculos Físicos, Químicos e IQS)</h4>
+<ol start="6" type="1">
+<li><p>Uma amostra indeformada coletada em anel volumétrico de <span class="math inline">\(100\text{ cm}^3\)</span> apresentou massa de solo seco em estufa de <span class="math inline">\(159\text{ g}\)</span>. Considerando densidade de partículas <span class="math inline">\(D_p = 2{,}65\text{ g}\cdot\text{cm}^{-3}\)</span>, calcule a densidade do solo (<span class="math inline">\(D_s\)</span>) e a porosidade total (<span class="math inline">\(P_t\)</span>).</p></li>
+<li><p>Um solo sob Caatinga em regeneração apresentou teor de matéria orgânica <span class="math inline">\(MO = 25{,}86\text{ g}\cdot\text{kg}^{-1}\)</span> e densidade do solo <span class="math inline">\(D_s = 1{,}30\text{ g}\cdot\text{cm}^{-3}\)</span> na camada <span class="math inline">\(0\)</span>-<span class="math inline">\(20\text{ cm}\)</span>. Calcule o teor de carbono orgânico total (<span class="math inline">\(CO\)</span>, em <span class="math inline">\(\text{g}\cdot\text{kg}^{-1}\)</span>) usando o fator de van Bemmelen e o estoque de carbono (<span class="math inline">\(EC\)</span>, em <span class="math inline">\(\text{Mg C}\cdot\text{ha}^{-1}\)</span>) nessa camada.</p></li>
+<li><p>Um laudo químico forneceu os seguintes valores (em <span class="math inline">\(\text{cmol}_c\cdot\text{dm}^{-3}\)</span>), <span class="math inline">\(Ca^{2+} = 4{,}20\)</span>; <span class="math inline">\(Mg^{2+} = 1{,}80\)</span>; <span class="math inline">\(K^+ = 0{,}30\)</span>; <span class="math inline">\(Na^+ = 0{,}10\)</span>; e <span class="math inline">\(H^+ + Al^{3+} = 3{,}60\)</span>. Calcule <span class="math inline">\(SB\)</span>, <span class="math inline">\(CTC\)</span> e <span class="math inline">\(V\%\)</span>, classificando o solo como eutrófico ou distrófico.</p></li>
+<li><p>Em ensaio de mesa de tensão com anel de <span class="math inline">\(100\text{ cm}^3\)</span> (<span class="math inline">\(\rho_{\text{água}} = 1{,}0\text{ g}\cdot\text{cm}^{-3}\)</span>), obtiveram-se as massas (sem a tara do anel), <span class="math inline">\(m_{\text{sat}} = 165\text{ g}\)</span>, <span class="math inline">\(m_{6\text{kPa}} = 157\text{ g}\)</span> e <span class="math inline">\(m_s = 130\text{ g}\)</span>. Calcule <span class="math inline">\(P_t^{\text{sat}}\)</span>, <span class="math inline">\(P_{\text{micro}}\)</span> e <span class="math inline">\(P_{\text{macro}}\)</span>, indicando se há risco físico à aeração das raízes.</p></li>
+<li><p>Calcule o <span class="math inline">\(\text{IQS}_{\text{simples}}\)</span> de uma parcela degradada a partir dos três indicadores abaixo e identifique o indicador de menor desempenho,</p>
+<ul>
+<li><p><span class="math inline">\(MO\)</span> (maior melhor), parcela <span class="math inline">\(= 20\text{ g}\cdot\text{kg}^{-1}\)</span>; referência <span class="math inline">\(= 40\text{ g}\cdot\text{kg}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(TIB\)</span> (maior melhor), parcela <span class="math inline">\(= 36\text{ mm}\cdot\text{h}^{-1}\)</span>; referência <span class="math inline">\(= 60\text{ mm}\cdot\text{h}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(D_s\)</span> (menor melhor), parcela <span class="math inline">\(= 1{,}60\text{ g}\cdot\text{cm}^{-3}\)</span>; referência <span class="math inline">\(= 1{,}20\text{ g}\cdot\text{cm}^{-3}\)</span>.</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="11-qualidade-solo-iqs-nível-aplicado-questões-objetivas-ae" class="level4">
+<h4 class="anchored" data-anchor-id="11-qualidade-solo-iqs-nível-aplicado-questões-objetivas-ae">Nível Aplicado (Questões Objetivas A-E)</h4>
+<ol start="11" type="1">
+<li><p>A respeito do Conjunto Mínimo de Dados (MDS) para avaliação da qualidade do solo (Doran; Parkin, 1994; Vezzani; Mielniczuk, 2009), assinale a alternativa correta,</p>
+<ol type="A">
+<li><p>Deve conter apenas variáveis químicas de rotina, pois atributos físicos e biológicos não se alteram com o manejo da terra.</p></li>
+<li><p>Deve integrar um número enxuto e representativo de indicadores físicos, químicos e biológicos sensíveis às mudanças de uso da terra.</p></li>
+<li><p>Exige a medição simultânea de todos os 50 atributos laboratoriais existentes, independentemente de redundância ou custo.</p></li>
+<li><p>Dispensa a adoção de áreas de referência sob vegetação nativa por utilizar valores absolutos idênticos para qualquer textura de solo.</p></li>
+<li><p>Restringe-se ao estudo de solos hidromórficos de várzea.</p></li>
+</ol></li>
+<li><p>Um solo mineral com densidade de partículas <span class="math inline">\(D_p = 2{,}65\text{ g}\cdot\text{cm}^{-3}\)</span> e densidade do solo <span class="math inline">\(D_s = 1{,}325\text{ g}\cdot\text{cm}^{-3}\)</span> apresenta porosidade total (<span class="math inline">\(P_t\)</span>) exatamente igual a,</p>
+<ol type="A">
+<li><p><span class="math inline">\(25{,}0\%\)</span>.</p></li>
+<li><p><span class="math inline">\(40{,}0\%\)</span>.</p></li>
+<li><p><span class="math inline">\(45{,}0\%\)</span>.</p></li>
+<li><p><span class="math inline">\(50{,}0\%\)</span>.</p></li>
+<li><p><span class="math inline">\(60{,}0\%\)</span>.</p></li>
+</ol></li>
+<li><p>Sobre a normalização de indicadores no cálculo do Índice de Qualidade do Solo (IQS), é correto afirmar que,</p>
+<ol type="A">
+<li><p>Indicadores como taxa de infiltração básica e matéria orgânica seguem a função “quanto menor melhor”.</p></li>
+<li><p>A normalização converte grandezas com unidades diferentes para uma escala adimensional comum (como <span class="math inline">\(0\)</span> a <span class="math inline">\(1\)</span>), possibilitando a agregação matemática.</p></li>
+<li><p>A densidade do solo deve ser normalizada pela razão <span class="math inline">\(D_{s,\text{avaliado}} / D_{s,\text{referência}}\)</span> para que solos mais compactados recebam notas maiores.</p></li>
+<li><p>O uso de pesos diferenciados (<span class="math inline">\(w_i\)</span>) é proibido em índices de qualidade ambiental.</p></li>
+<li><p>Um IQS igual a <span class="math inline">\(0{,}25\)</span> indica funcionalidade edáfica superior à da área de referência.</p></li>
+</ol></li>
+<li><p>Se uma amostra de solo apresenta teor de carbono orgânico total <span class="math inline">\(CO = 10{,}0\text{ g}\cdot\text{kg}^{-1}\)</span>, o teor estimado de matéria orgânica (<span class="math inline">\(MO\)</span>) pelo fator de van Bemmelen (<span class="math inline">\(1{,}724\)</span>) é,</p>
+<ol type="A">
+<li><p><span class="math inline">\(5{,}80\text{ g}\cdot\text{kg}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(10{,}00\text{ g}\cdot\text{kg}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(15{,}80\text{ g}\cdot\text{kg}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(17{,}24\text{ g}\cdot\text{kg}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(27{,}24\text{ g}\cdot\text{kg}^{-1}\)</span>.</p></li>
+</ol></li>
+<li><p>Na interpretação do gráfico radar de qualidade do solo (<a href="#fig-qualidade_solo_radar" class="quarto-xref">Figura&nbsp;<span>11.7</span></a>), uma área degradada que apresenta valores normalizados muito baixos em <em>cobertura vegetal</em> (<span class="math inline">\(0{,}18\)</span>) e <em>taxa de infiltração</em> (<span class="math inline">\(0{,}22\)</span>) sinaliza prioritariamente,</p>
+<ol type="A">
+<li><p>Alta resiliência física da superfície do solo frente a chuvas intensas.</p></li>
+<li><p>Predomínio de drenagem profunda com risco nulo de escoamento superficial.</p></li>
+<li><p>Forte vulnerabilidade ao impacto da gota de chuva, selamento superficial e geração de enxurrada erosiva.</p></li>
+<li><p>Excesso de matéria orgânica humificada na camada superficial.</p></li>
+<li><p>Equivalência funcional plena em relação à Caatinga conservada.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="questões-de-aplicação" class="level2">
+<h2 class="anchored" data-anchor-id="questões-de-aplicação">Questões de aplicação</h2>
+<section id="atenção-às-armadilhas-em-questões-de-solos" class="level3">
+<h3 class="anchored" data-anchor-id="atenção-às-armadilhas-em-questões-de-solos">Atenção às Armadilhas em Questões de Solos</h3>
+<p>Em provas de Geografia e concursos ambientais, dois detalhes costumam decidir questões, verificar se a tabela fornece <strong>Carbono Orgânico (<span class="math inline">\(CO\)</span>)</strong> ou <strong>Matéria Orgânica (<span class="math inline">\(MO\)</span>)</strong> antes de multiplicar ou dividir por <span class="math inline">\(1{,}724\)</span>, e observar o sentido da normalização (“maior melhor” vs.&nbsp;“menor melhor”) em indicadores como <span class="math inline">\(D_s\)</span> e <span class="math inline">\(RP\)</span>.</p>
+<ol start="16" type="1">
+<li><p><strong>[Questão Autoral, Estilo ENADE / Geografia]</strong> Dois talhões localizados sobre a mesma classe de solo no Semiárido Baiano foram avaliados quanto à funcionalidade edáfica. O Talhão X (Caatinga conservada) exibiu <span class="math inline">\(D_s = 1{,}20\text{ g}\cdot\text{cm}^{-3}\)</span>, <span class="math inline">\(P_{\text{macro}} = 18\%\)</span>, <span class="math inline">\(MO = 30\text{ g}\cdot\text{kg}^{-1}\)</span> e <span class="math inline">\(TIB = 65\text{ mm}\cdot\text{h}^{-1}\)</span>. O Talhão Y (área de empréstimo de terra após obra viária) apresentou <span class="math inline">\(D_s = 1{,}72\text{ g}\cdot\text{cm}^{-3}\)</span>, <span class="math inline">\(P_{\text{macro}} = 6\%\)</span>, <span class="math inline">\(MO = 7\text{ g}\cdot\text{kg}^{-1}\)</span> e <span class="math inline">\(TIB = 9\text{ mm}\cdot\text{h}^{-1}\)</span>. Com base nesses resultados, analise as asserções,</p>
+<blockquote class="blockquote">
+<p><strong>I.</strong> O Talhão Y encontra-se fisicamente degradado e sob elevada suscetibilidade ao escoamento superficial concentrado e à erosão hídrica.<br>
+<strong>PORQUE</strong><br>
+<strong>II.</strong> A perda de matéria orgânica e o colapso da macroporosidade abaixo de <span class="math inline">\(10\%\)</span> comprometem a estabilidade dos agregados e reduzem drasticamente a taxa de infiltração básica do solo.</p>
+</blockquote>
+<p>A respeito dessas asserções, assinale a opção correta,</p>
+<ol type="A">
+<li><p>As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.</p></li>
+<li><p>As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.</p></li>
+<li><p>A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.</p></li>
+<li><p>A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</p></li>
+<li><p>As asserções I e II são proposições falsas.</p></li>
+</ol></li>
+<li><p><strong>[Questão Autoral, Estilo Concurso Analista Ambiental]</strong> Em um diagnóstico pedológico para elaboração de PRAD, a análise química da camada superficial de uma área degradada revelou Soma de Bases <span class="math inline">\(SB = 3{,}20\text{ cmol}_c\cdot\text{dm}^{-3}\)</span> e Capacidade de Troca Catiônica a pH <span class="math inline">\(7{,}0\)</span> de <span class="math inline">\(CTC = 8{,}00\text{ cmol}_c\cdot\text{dm}^{-3}\)</span>. Com base nesses valores, a saturação por bases (<span class="math inline">\(V\%\)</span>) e a classificação química do solo são, respectivamente,</p>
+<ol type="A">
+<li><p><span class="math inline">\(25{,}0\%\)</span>, eutrófico.</p></li>
+<li><p><span class="math inline">\(40{,}0\%\)</span>, distrófico.</p></li>
+<li><p><span class="math inline">\(40{,}0\%\)</span>, eutrófico.</p></li>
+<li><p><span class="math inline">\(60{,}0\%\)</span>, distrófico.</p></li>
+<li><p><span class="math inline">\(60{,}0\%\)</span>, eutrófico.</p></li>
+</ol></li>
+<li><p><strong>[Questão Autoral, Estilo Concurso Perito / Geógrafo Ambiental]</strong> Sobre a escolha e o uso de indicadores biológicos na avaliação da qualidade do solo (Vezzani; Mielniczuk, 2009; Karlen et al., 1997), assinale a alternativa <strong>INCORRETA</strong>,</p>
+<ol type="A">
+<li><p>A fauna edáfica (como minhocas, formigas e térmitas) contribui para a formação de bioporos que aumentam a infiltração de água e a aeração do perfil.</p></li>
+<li><p>O carbono da biomassa microbiana tende a responder mais rapidamente a mudanças de uso da terra do que o estoque total de carbono orgânico.</p></li>
+<li><p>Valores muito elevados de quociente metabólico (<span class="math inline">\(q\text{CO}_2\)</span>) em áreas degradadas podem indicar estresse sobre a comunidade microbiana, que despende maior proporção de carbono em respiração de manutenção.</p></li>
+<li><p>A cobertura vegetal e a serapilheira modulam a temperatura e a umidade do solo, favorecendo a atividade biológica em ambientes tropicais e semiáridos.</p></li>
+<li><p>Indicadores biológicos dispensam totalmente a avaliação de densidade do solo e infiltração, pois a presença de micro-organismos elimina a compactação mecânica em poucos dias.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="gabarito-comentado" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="gabarito-comentado">Gabarito comentado</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Clique para abrir o Gabarito Comentado
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="resoluções-completas-exercícios-de-fixação-1-a-15" class="level3">
+<h3 class="anchored" data-anchor-id="resoluções-completas-exercícios-de-fixação-1-a-15">Resoluções Completas, Exercícios de Fixação (1 a 15)</h3>
+<ol type="1">
+<li><p>A fertilidade química clássica foca na disponibilidade imediata de nutrientes para produção vegetal. Já a <strong>Qualidade do Solo</strong> avalia o conjunto das funções ecossistêmicas (regulação hídrica, filtragem de poluentes, estocagem de carbono, sustentação da biodiversidade e resistência à erosão), exigindo integração de atributos físicos, químicos e biológicos.</p></li>
+<li><p><strong>Propriedades inerentes.</strong> Dependem dos fatores de formação e variam pouco em escala humana (por exemplo, textura do solo e mineralogia da fração argila). <strong>Propriedades dinâmicas.</strong> Respondem em curto e médio prazo ao manejo e à degradação (por exemplo, densidade do solo, matéria orgânica, estabilidade de agregados e taxa de infiltração básica).</p></li>
+<li><p>O fator <span class="math inline">\(1{,}724\)</span> deriva da premissa clássica de que a matéria orgânica do solo contém aproximadamente <span class="math inline">\(58\%\)</span> de carbono em sua composição mássica (<span class="math inline">\(1 / 0{,}58 = 1{,}7241\dots\)</span>). Assim, <span class="math inline">\(MO = 1{,}724 \times CO\)</span> e <span class="math inline">\(CO = MO / 1{,}724\)</span>.</p></li>
+<li><p>Sob pressão mecânica (máquinas, pisoteio), os poros maiores (macroporos, <span class="math inline">\(&gt;50\,\mu\text{m}\)</span>) são os primeiros a colapsar, muitas vezes transformando-se em microporos; logo, <span class="math inline">\(P_{\text{macro}}\)</span> cai muito mais intensamente do que <span class="math inline">\(P_t\)</span>. O limiar crítico clássico para aeração adequada das raízes é de <span class="math inline">\(\mathbf{10\%}\)</span> do volume do solo.</p></li>
+<li><p>O <span class="math inline">\(C\text{-BM}\)</span> representa a fração viva e ativa do carbono do solo, reagindo em poucos meses ao manejo antes que alterações sejam mensuráveis no <span class="math inline">\(CO\)</span> total. O <span class="math inline">\(q\text{CO}_2\)</span> (<span class="math inline">\(RBS / C\text{-BM}\)</span>) complementa essa leitura ao revelar se a biota está em equilíbrio eficiente ou sob estresse energético.</p></li>
+<li><p><strong>Passo a passo,</strong> <span class="math inline">\(D_s = 159\text{ g} / 100\text{ cm}^3 = \mathbf{1{,}59\text{ g}\cdot\text{cm}^{-3}}\)</span>. <span class="math inline">\(P_t = (1 - 1{,}59 / 2{,}65)\times 100\% = (1 - 0{,}60)\times 100\% = \mathbf{40{,}0\%}\)</span>.</p></li>
+<li><p><strong>Passo a passo,</strong> <span class="math inline">\(CO = 25{,}86 / 1{,}724 = \mathbf{15{,}00\text{ g}\cdot\text{kg}^{-1}}\)</span> (ou <span class="math inline">\(0{,}015\text{ kg C}\cdot\text{kg}^{-1}\)</span> solo). Volume de solo na camada <span class="math inline">\(0\)</span>-<span class="math inline">\(20\text{ cm}\)</span> em <span class="math inline">\(1\text{ ha}\)</span>, <span class="math inline">\(10.000\text{ m}^2 \times 0{,}20\text{ m} = 2.000\text{ m}^3\)</span>. Massa de solo, <span class="math inline">\(2.000\text{ m}^3 \times 1{,}30\text{ Mg}\cdot\text{m}^{-3} = 2.600\text{ Mg}\cdot\text{ha}^{-1}\)</span>. Estoque de carbono, <span class="math inline">\(EC = 2.600 \times 0{,}015 = \mathbf{39{,}00\text{ Mg C}\cdot\text{ha}^{-1}}\)</span>.</p></li>
+<li><p><strong>Passo a passo,</strong> <span class="math inline">\(SB = 4{,}20 + 1{,}80 + 0{,}30 + 0{,}10 = \mathbf{6{,}40\text{ cmol}_c\cdot\text{dm}^{-3}}\)</span>. <span class="math inline">\(CTC = 6{,}40 + 3{,}60 = \mathbf{10{,}00\text{ cmol}_c\cdot\text{dm}^{-3}}\)</span>. <span class="math inline">\(V\% = (6{,}40 / 10{,}00)\times 100\% = \mathbf{64{,}0\%}\)</span>. Como <span class="math inline">\(V\% \ge 50\%\)</span>, o solo é classificado como <strong>eutrófico</strong>.</p></li>
+<li><p><strong>Passo a passo,</strong> <span class="math inline">\(P_t^{\text{sat}} = (165 - 130)/100 \times 100\% = \mathbf{35{,}0\%}\)</span>. <span class="math inline">\(P_{\text{micro}} = (157 - 130)/100 \times 100\% = \mathbf{27{,}0\%}\)</span>. <span class="math inline">\(P_{\text{macro}} = (165 - 157)/100 \times 100\% = \mathbf{8{,}0\%}\)</span>. Como <span class="math inline">\(P_{\text{macro}} = 8{,}0\% &lt; 10\%\)</span>, há <strong>risco físico de restrição à aeração radicular</strong> e à drenagem rápida.</p></li>
+<li><p><strong>Passo a passo,</strong> <span class="math inline">\(S_{MO} = 20 / 40 = 0{,}50\)</span> (maior melhor); <span class="math inline">\(S_{TIB} = 36 / 60 = 0{,}60\)</span> (maior melhor); <span class="math inline">\(S_{D_s} = 1{,}20 / 1{,}60 = 0{,}75\)</span> (menor melhor). <span class="math inline">\(\text{IQS}_{\text{simples}} = (0{,}50 + 0{,}60 + 0{,}75) / 3 = 1{,}85 / 3 \approx \mathbf{0{,}617}\)</span>. O indicador de menor desempenho é a <strong>matéria orgânica (<span class="math inline">\(S_{MO} = 0{,}50\)</span>)</strong>.</p></li>
+<li><p><strong>Gabarito, (B).</strong> O MDS seleciona um conjunto enxuto, sensível e multidisciplinar (físico, químico e biológico), sempre calibrado em relação a um solo de referência local.</p></li>
+<li><p><strong>Gabarito, (D).</strong> <span class="math inline">\(P_t = (1 - 1{,}325 / 2{,}65)\times 100\% = (1 - 0{,}50)\times 100\% = \mathbf{50{,}0\%}\)</span>.</p></li>
+<li><p><strong>Gabarito, (B).</strong> A normalização coloca indicadores heterogêneos na mesma escala adimensional (<span class="math inline">\(0\)</span> a <span class="math inline">\(1\)</span>). (A) inverte o sentido de <span class="math inline">\(TIB\)</span> e <span class="math inline">\(MO\)</span>; (C) inverte o sentido de <span class="math inline">\(D_s\)</span>; (D) é falsa pois índices ponderados são amplamente usados; (E) é falsa pois <span class="math inline">\(0{,}25\)</span> representa qualidade muito baixa.</p></li>
+<li><p><strong>Gabarito, (D).</strong> <span class="math inline">\(MO = 10{,}0 \times 1{,}724 = \mathbf{17{,}24\text{ g}\cdot\text{kg}^{-1}}\)</span>.</p></li>
+<li><p><strong>Gabarito, (C).</strong> Cobertura vegetal mínima (<span class="math inline">\(0{,}18\)</span>) expõe o solo ao impacto direto das gotas, agravando o selamento e derrubando a infiltração (<span class="math inline">\(0{,}22\)</span>), o que amplifica o escoamento superficial erosivo.</p></li>
+</ol>
+</section>
+<section id="resoluções-completas-questões-enade-e-concursos-16-a-18" class="level3">
+<h3 class="anchored" data-anchor-id="resoluções-completas-questões-enade-e-concursos-16-a-18">Resoluções Completas, Questões ENADE e Concursos (16 a 18)</h3>
+<ol start="16" type="1">
+<li><p><strong>Gabarito, (A).</strong> Ambas as asserções são verdadeiras e mantêm nexo causal rigoroso, a elevação da densidade (<span class="math inline">\(1{,}72\text{ g}\cdot\text{cm}^{-3}\)</span>), o colapso da macroporosidade (<span class="math inline">\(6\% &lt; 10\%\)</span>) e a queda acentuada da matéria orgânica reduzem drasticamente a infiltração (<span class="math inline">\(9\text{ mm}\cdot\text{h}^{-1}\)</span>), tornando o Talhão Y altamente suscetível ao escoamento superficial erosivo.</p></li>
+<li><p><strong>Gabarito, (B).</strong> <span class="math inline">\(V\% = (3{,}20 / 8{,}00)\times 100\% = \mathbf{40{,}0\%}\)</span>. Como <span class="math inline">\(V\% &lt; 50\%\)</span>, o solo é <strong>distrófico</strong>.</p></li>
+<li><p><strong>Gabarito, (E).</strong> A alternativa (E) é incorreta porque a recuperação biológica da estrutura física do solo compactado ocorre gradualmente (meses a anos) e requer diagnóstico conjunto com indicadores físicos (<span class="math inline">\(D_s\)</span>, <span class="math inline">\(P_{\text{macro}}\)</span>, <span class="math inline">\(TIB\)</span> e <span class="math inline">\(RP\)</span>).</p></li>
+</ol>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section id="síntese-conceitual" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="síntese-conceitual">Síntese conceitual</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Síntese Conceitual do Capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Funcionalidade edáfica.</strong> A qualidade do solo mede sua capacidade de infiltrar água, ciclar nutrientes, estocar carbono e sustentar vida, avaliada sempre contra um solo de referência da mesma classe pedológica. <strong>Tríade do MDS.</strong> Indicadores <strong>físicos</strong> (<span class="math inline">\(D_s\)</span>, <span class="math inline">\(P_t\)</span>, <span class="math inline">\(P_{\text{macro}}\)</span>, <span class="math inline">\(DMP\)</span>, <span class="math inline">\(TIB\)</span>, <span class="math inline">\(RP\)</span>), <strong>químicos</strong> (<span class="math inline">\(CO\)</span>, <span class="math inline">\(MO = 1{,}724 \cdot CO\)</span>, pH, <span class="math inline">\(SB\)</span>, <span class="math inline">\(CTC\)</span>, <span class="math inline">\(V\%\)</span>) e <strong>biológicos</strong> (<span class="math inline">\(C\text{-BM}\)</span>, <span class="math inline">\(RBS\)</span>, <span class="math inline">\(q\text{CO}_2\)</span>, fauna e cobertura vegetal). <strong>Cálculo do IQS.</strong> Padronize cada atributo entre <span class="math inline">\(0\)</span> e <span class="math inline">\(1\)</span> respeitando a direção (“maior melhor” <span class="math inline">\(= x_i/x_{\text{ref}}\)</span>; “menor melhor” <span class="math inline">\(= x_{\text{ref}}/x_i\)</span>) e agregue via média simples ou ponderada, mantendo o gráfico radar para evidenciar gargalos individuais.</p>
+</div>
+</div>
+</section>
+<section id="autoavaliação" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="autoavaliação">Autoavaliação</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Autoavaliação e Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Marque <strong>V</strong> (Verdadeiro) ou <strong>F</strong> (Falso) e confira o gabarito,</p>
+<ol type="1">
+<li><p>( ) Quanto maior a densidade do solo (<span class="math inline">\(D_s\)</span>) para uma mesma densidade de partículas (<span class="math inline">\(D_p\)</span>), menor será a porosidade total (<span class="math inline">\(P_t\)</span>).</p></li>
+<li><p>( ) Pelo fator de van Bemmelen (<span class="math inline">\(1{,}724\)</span>), um solo com <span class="math inline">\(17{,}24\text{ g}\cdot\text{kg}^{-1}\)</span> de matéria orgânica possui aproximadamente <span class="math inline">\(10{,}0\text{ g}\cdot\text{kg}^{-1}\)</span> de carbono orgânico total.</p></li>
+<li><p>( ) Um solo com saturação por bases <span class="math inline">\(V\% = 72\%\)</span> é classificado como distrófico devido à predominância de alumínio trocável.</p></li>
+<li><p>( ) No cálculo do IQS, a densidade do solo (<span class="math inline">\(D_s\)</span>) segue a função “quanto menor melhor”, enquanto a taxa de infiltração básica (<span class="math inline">\(TIB\)</span>) segue “quanto maior melhor”.</p></li>
+</ol>
+<p><strong>Gabarito da verificação da aprendizagem,</strong> 1-<strong>V</strong> | 2-<strong>V</strong> | 3-<strong>F</strong> (<span class="math inline">\(V\% \ge 50\%\)</span> caracteriza solo eutrófico) | 4-<strong>V</strong>.</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/analise-ambiental\/");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Código deslocável","output":"Saída deslocável"};
+  </script>
+<nav class="page-navigation" aria-label="Página">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/10-indicadores-ambientais-peir.html" class="pagination-link" aria-label="Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/12-degradacao-erosao-usle.html" class="pagination-link" aria-label="Diagnóstico de Processos de Degradação Ambiental e Erosão Linear">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagnóstico de Processos de Degradação Ambiental e Erosão Linear</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026 (DCHF/UEFS). <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

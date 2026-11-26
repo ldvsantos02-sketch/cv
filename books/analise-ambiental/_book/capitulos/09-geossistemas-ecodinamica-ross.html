@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Apostila completa do componente curricular CHF662 (Análise Ambiental), Curso de Geografia da UEFS, organizada em cinco módulos, 15 capítulos em 10 etapas, simulados comentados, formulário e glossário.">
+
+<title>9&nbsp; Geossistemas, Ecodinâmica e Análise Empírica da Fragilidade Ambiental - Análise Ambiental (CHF662)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/mod3-simulado.html" rel="next">
+<link href="../capitulos/08-morfopedologia-vertentes.html" rel="prev">
+<link href="../img/capa_analise_ambiental.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-679673b8a27c868cce7048b2deb5a79d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Pular para o conteúdo principal</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Barra de ferramentas">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/07-bacias-hidrograficas-morfometria.html">Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade</a></li><li class="breadcrumb-item"><a href="../capitulos/09-geossistemas-ecodinamica-ross.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geossistemas, Ecodinâmica e Análise Empírica da Fragilidade Ambiental</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Análise Ambiental (CHF662)</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos02-sketch/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../APOSTILA_ANALISE_AMBIENTAL_CHF662_UEFS.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Apresentação e orientação de estudo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Módulo 1. Fundamentos epistemológicos e conceituais</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-questao-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Questão Ambiental Contemporânea e o Papel da Geografia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-sociedade-natureza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Modernidade, a Geografia e a Relação Sociedade-Natureza</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-geografia-socioambiental-gtp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Abordagens Ambientais no Pensamento Geográfico Moderno</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-conceitos-operacionais-risco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos e Definições Operacionais da Análise Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod1-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Módulo 2. AIA e análise ambiental integrada</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-avaliacao-impacto-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-analise-ambiental-integrada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod2-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-bacias-hidrograficas-morfometria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bacia Hidrográfica como Unidade de Análise Ambiental Integrada</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-morfopedologia-vertentes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Morfopedologia e Processos Interativos Relevo, Solo e Água</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-geossistemas-ecodinamica-ross.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geossistemas, Ecodinâmica e Análise Empírica da Fragilidade Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod3-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado Preparatório para a Avaliação Teórica, Módulos 1 a 3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">Módulo 4. Indicadores, qualidade do solo e degradação</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-indicadores-ambientais-peir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-qualidade-solo-iqs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-degradacao-erosao-usle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagnóstico de Processos de Degradação Ambiental e Erosão Linear</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod4-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 4</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-bioengenharia-agua-solo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-legislacao-ambiental-prad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-diagnostico-ambiental-aplicado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Manual Prático do Diagnóstico Ambiental Aplicado e Produtos Técnicos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod5-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 5</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">Encerramento, Formulário e Referências</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-avaliacao-geral-final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avaliação Geral Integrada, Simulado Final Completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-formulario-glossario-referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formulário Técnico, Glossário e Referências Oficiais</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul class="collapse">
+  <li><a href="#vocabulário-técnico-e-símbolos-do-capítulo-9" id="toc-vocabulário-técnico-e-símbolos-do-capítulo-9" class="nav-link active" data-scroll-target="#vocabulário-técnico-e-símbolos-do-capítulo-9">Vocabulário Técnico e Símbolos do Capítulo 9</a></li>
+  <li><a href="#teoria-geral-dos-sistemas-bertalanffy-2010-na-análise-ambiental" id="toc-teoria-geral-dos-sistemas-bertalanffy-2010-na-análise-ambiental" class="nav-link" data-scroll-target="#teoria-geral-dos-sistemas-bertalanffy-2010-na-análise-ambiental">Teoria Geral dos Sistemas (Bertalanffy, 2010) na Análise Ambiental</a></li>
+  <li><a href="#geossistema-taxonomia-da-paisagem-e-compartimentação-geoambiental" id="toc-geossistema-taxonomia-da-paisagem-e-compartimentação-geoambiental" class="nav-link" data-scroll-target="#geossistema-taxonomia-da-paisagem-e-compartimentação-geoambiental">Geossistema, Taxonomia da Paisagem e Compartimentação Geoambiental</a></li>
+  <li><a href="#ecodinâmica-de-tricart-1977-balanço-morfogênese-vs.-pedogênese" id="toc-ecodinâmica-de-tricart-1977-balanço-morfogênese-vs.-pedogênese" class="nav-link" data-scroll-target="#ecodinâmica-de-tricart-1977-balanço-morfogênese-vs.-pedogênese">Ecodinâmica de Tricart (1977), Balanço Morfogênese vs.&nbsp;Pedogênese</a></li>
+  <li><a href="#análise-empírica-da-fragilidade-ambiental-ross-1994" id="toc-análise-empírica-da-fragilidade-ambiental-ross-1994" class="nav-link" data-scroll-target="#análise-empírica-da-fragilidade-ambiental-ross-1994">Análise Empírica da Fragilidade Ambiental (Ross, 1994)</a></li>
+  <li><a href="#síntese-aplicada-compartimentação-geoambiental-e-zoneamento-de-microbacia" id="toc-síntese-aplicada-compartimentação-geoambiental-e-zoneamento-de-microbacia" class="nav-link" data-scroll-target="#síntese-aplicada-compartimentação-geoambiental-e-zoneamento-de-microbacia">Síntese Aplicada, Compartimentação Geoambiental e Zoneamento de Microbacia</a></li>
+  <li><a href="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio" id="toc-armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="nav-link" data-scroll-target="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</a></li>
+  <li><a href="#exercícios-de-fixação" id="toc-exercícios-de-fixação" class="nav-link" data-scroll-target="#exercícios-de-fixação">Exercícios de fixação</a></li>
+  <li><a href="#questões-de-aplicação" id="toc-questões-de-aplicação" class="nav-link" data-scroll-target="#questões-de-aplicação">Questões de aplicação</a></li>
+  <li><a href="#gabarito-comentado" id="toc-gabarito-comentado" class="nav-link" data-scroll-target="#gabarito-comentado">Gabarito comentado</a></li>
+  <li><a href="#síntese-conceitual" id="toc-síntese-conceitual" class="nav-link" data-scroll-target="#síntese-conceitual">Síntese conceitual</a></li>
+  <li><a href="#autoavaliação" id="toc-autoavaliação" class="nav-link" data-scroll-target="#autoavaliação">Autoavaliação</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main data-book-tables="true" class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/07-bacias-hidrograficas-morfometria.html">Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade</a></li><li class="breadcrumb-item"><a href="../capitulos/09-geossistemas-ecodinamica-ross.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geossistemas, Ecodinâmica e Análise Empírica da Fragilidade Ambiental</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="cap:geossistemas_fragilidade" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geossistemas, Ecodinâmica e Análise Empírica da Fragilidade Ambiental</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Geossistemas e ecodinâmica oferecem formas de interpretar a organização e a transformação das unidades ambientais. A análise de fragilidade acrescenta uma síntese das condições que favorecem processos degradacionais, dependendo da explicação dos critérios e da verificação dos processos no território.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>O que você vai aprender neste capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O capítulo desenvolve a interpretação dos meios ecodinâmicos, a taxonomia da paisagem de Bertrand e a construção de sínteses de fragilidade pelo método de Ross (1994). O estudante deve reconhecer a natureza ordinal das classes e justificar como relevo, solo, clima e cobertura influenciam a suscetibilidade observada.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Revisando o que você precisa saber
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A leitura retoma formação do solo, mobilização de materiais, cobertura vegetal e dinâmica de vertentes. Pedogênese e morfogênese interagem durante períodos distintos, enquanto intervenções humanas podem modificar rapidamente as condições de proteção e circulação da água.</p>
+</div>
+</div>
+<section id="vocabulário-técnico-e-símbolos-do-capítulo-9" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulário-técnico-e-símbolos-do-capítulo-9">Vocabulário Técnico e Símbolos do Capítulo 9</h2>
+<p>Um <strong>sistema (Bertalanffy, 2010)</strong> corresponde a um conjunto de elementos interdependentes em interação dinâmica, organizado como totalidade funcional capaz de receber entradas (<em>inputs</em>), processá-las e emitir saídas (<em>outputs</em>). Na escala geográfica, o <strong>geossistema (Bertrand, 2004)</strong> designa uma unidade espacial homogênea resultante da combinação dinâmica entre potencial ecológico (clima, relevo, hidrologia), exploração biológica (vegetação, solo, fauna) e ação antrópica, subdividindo-se em <strong>geofácies</strong> (setor fisionomicamente homogêneo, como uma encosta de Caatinga conservada) e em <strong>geótopo</strong> (menor unidade espacial, como uma ravina ou afloramento rochoso).</p>
+<p>Para diagnosticar o estado dinâmico dessas unidades, a <strong>Ecodinâmica (Tricart, 1977)</strong> avalia o balanço entre processos de remoção e erosão (<strong>morfogênese</strong>) e processos de formação de solo (<strong>pedogênese</strong>). Operacionalmente, a <strong>Fragilidade Potencial (<span class="math inline">\(FP\)</span>)</strong> expressa a suscetibilidade natural intrínseca do ambiente à degradação e à erosão, determinada pelos fatores físicos (<span class="math inline">\(D_R\)</span>, Relevo/Declividade; <span class="math inline">\(D_S\)</span>, Solos; <span class="math inline">\(D_C\)</span>, Clima/Pluviosidade), ao passo que a <strong>Fragilidade Emergente (<span class="math inline">\(FE\)</span>)</strong> traduz a fragilidade real atual, obtida pelo cruzamento de <span class="math inline">\(FP\)</span> com o grau de proteção conferido pelo Uso da Terra e Cobertura Vegetal (<span class="math inline">\(D_U\)</span>). Essa informação é sintetizada no <strong>Código Numérico de Ross</strong>, notação posicional formada pelos dígitos das classes de <span class="math inline">\(1\)</span> a <span class="math inline">\(5\)</span>, com três dígitos para <span class="math inline">\(FP\)</span> (<span class="math inline">\(D_R D_S D_C\)</span>) e quatro dígitos para <span class="math inline">\(FE\)</span> (<span class="math inline">\(D_R D_S D_C D_U\)</span>), acompanhada da classe síntese (<span class="math inline">\(1\)</span> a <span class="math inline">\(5\)</span>).</p>
+</section>
+<section id="teoria-geral-dos-sistemas-bertalanffy-2010-na-análise-ambiental" class="level2">
+<h2 class="anchored" data-anchor-id="teoria-geral-dos-sistemas-bertalanffy-2010-na-análise-ambiental">Teoria Geral dos Sistemas (Bertalanffy, 2010) na Análise Ambiental</h2>
+<p>Até meados do século XX, grande parte das ciências naturais operava de modo analítico-reducionista, isolando o solo da rocha, a vegetação do clima e o rio das encostas. Ao formular a <strong>Teoria Geral dos Sistemas (TGS)</strong>, o biólogo <strong>Ludwig von Bertalanffy (2010)</strong> indicou que sistemas complexos exigem compreensão para além da soma de suas partes isoladas, pois suas propriedades estruturais emergem das <strong>relações e interações</strong> entre os componentes.</p>
+<p>Na Análise Ambiental, a adoção da TGS traduz-se em quatro princípios operacionais articulados. Pelo princípio da <strong>totalidade e interdependência</strong>, alterar qualquer componente, como remover a cobertura vegetal de uma encosta, modifica imediatamente a infiltração, o escoamento superficial, a temperatura do solo, a erosão e o regime de sedimentos do rio a jusante. Paisagens e bacias hidrográficas operam como <strong>sistemas abertos e de fluxos contínuos</strong>, recebendo energia solar e precipitação (<em>inputs</em>), transformando esses fluxos internamente e exportando água, sedimentos, calor e nutrientes (<em>outputs</em>). Sob condições conservadas, esses sistemas mantêm um <strong>equilíbrio dinâmico (homeostase)</strong> próximo a um estado estacionário graças a mecanismos de autorregulação (<em>feedback</em> negativo), mas quando perturbações antrópicas ultrapassam a capacidade de suporte, instala-se a retroalimentação positiva e a degradação acelera-se. Dessa interação conjunta nasce a <strong>propriedade emergente</strong>, razão pela qual a <strong>fragilidade ambiental</strong> resulta da combinação simultânea entre os fatores físicos e o uso humano da terra.</p>
+</section>
+<section id="geossistema-taxonomia-da-paisagem-e-compartimentação-geoambiental" class="level2">
+<h2 class="anchored" data-anchor-id="geossistema-taxonomia-da-paisagem-e-compartimentação-geoambiental">Geossistema, Taxonomia da Paisagem e Compartimentação Geoambiental</h2>
+<p>Inspirado na TGS e na escola russo-soviética (Sochava), o geógrafo francês <strong>Georges Bertrand (2004)</strong> propôs o conceito de <strong>geossistema</strong> como unidade analítica para a Geografia Física integrada. Enquanto o ecossistema privilegia as relações tróficas biológicas em escalas variáveis, o <strong>geossistema constitui uma unidade territorial concreta</strong>, situada em uma escala definida (da ordem de alguns quilômetros quadrados a centenas de quilômetros quadrados), onde interagem três conjuntos de forças. O <strong>Potencial Ecológico</strong> fornece a base abiótica formada por geologia, geomorfologia, clima e hidrologia; a <strong>Exploração Biológica</strong> reúne vegetação, solos e fauna que colonizam e protegem essa base; e a <strong>Ação Antrópica</strong> expressa a organização socioeconômica, o uso da terra e as intervenções técnicas que transformam ou conservam o conjunto.</p>
+<p>Para evitar a confusão entre escalas regionais e locais (a falácia de escala examinada no Capítulo 6), Bertrand (2004) estruturou uma <strong>taxonomia hierárquica da paisagem</strong> em seis níveis, organizados das unidades superiores (zonais e estruturais) às unidades inferiores (dinâmicas e locais), permitindo situar com rigor desde grandes domínios morfoclimáticos até feições erosivas de detalhe (<a href="#tbl-taxonomia_bertrand" class="quarto-xref">Tabela&nbsp;<span>9.1</span></a>).</p>
+<div id="tbl-taxonomia_bertrand" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-taxonomia_bertrand-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;9.1: Taxonomia hierárquica da paisagem segundo Bertrand (2004) e articulação escalar (Rodriguez; Silva; Cavalcanti, 2017).
+</figcaption>
+<div aria-describedby="tbl-taxonomia_bertrand-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="book-table-scroll" role="region" aria-label="Tabela 1" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Unidade</strong></th>
+<th style="text-align: left;"><strong>Ordem (Escala G)</strong></th>
+<th style="text-align: left;"><strong>Escala Cartográfica</strong></th>
+<th style="text-align: left;"><strong>Critério Definidor Principal</strong></th>
+<th style="text-align: left;"><strong>Exemplo no Brasil / Semiárido</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1. Zona (<em>Superior</em>)</td>
+<td style="text-align: left;"><span class="math inline">\(G\text{I}\)</span> (<span class="math inline">\(&gt;10^7\text{ km}^2\)</span>)</td>
+<td style="text-align: left;"><span class="math inline">\(&lt; 1:10.000.000\)</span></td>
+<td style="text-align: left;">Grandes faixas climáticas planetárias</td>
+<td style="text-align: left;">Zona Intertropical.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2. Domínio (<em>Superior</em>)</td>
+<td style="text-align: left;"><span class="math inline">\(G\text{II}\)</span> (<span class="math inline">\(10^6\text{ km}^2\)</span>)</td>
+<td style="text-align: left;"><span class="math inline">\(1:5.000.000\)</span></td>
+<td style="text-align: left;">Macroestrutura climática, relevo e bioma</td>
+<td style="text-align: left;">Domínio das Caatingas / Depressões Sertanejas.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3. Região Natural (<em>Superior</em>)</td>
+<td style="text-align: left;"><span class="math inline">\(G\text{III}\)</span> a <span class="math inline">\(G\text{IV}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(1:1.000.000\)</span></td>
+<td style="text-align: left;">Compartimento geomorfológico e clima regional</td>
+<td style="text-align: left;">Piemonte da Diamantina / Bacia do Rio Jacuípe.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4. Geossistema (<em>Inferior</em>)</td>
+<td style="text-align: left;"><span class="math inline">\(G\text{V}\)</span> (<span class="math inline">\(10^1\text{-}10^2\text{ km}^2\)</span>)</td>
+<td style="text-align: left;"><span class="math inline">\(1:50.000\)</span> a <span class="math inline">\(1:100.000\)</span></td>
+<td style="text-align: left;">Combinação potencial ecológico + exploração biológica + antrópica</td>
+<td style="text-align: left;">Geossistema da Serra de São José (Feira de Santana/BA) ou Sub-bacia do Vaza-Barris.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5. Geofácies (<em>Inferior</em>)</td>
+<td style="text-align: left;"><span class="math inline">\(G\text{VI}\)</span> (<span class="math inline">\(10^{-1}\text{-}10^0\text{ km}^2\)</span>)</td>
+<td style="text-align: left;"><span class="math inline">\(1:10.000\)</span> a <span class="math inline">\(1:25.000\)</span></td>
+<td style="text-align: left;">Fisionomia homogênea de relevo, solo e cobertura vegetal</td>
+<td style="text-align: left;">Meia encosta com Caatinga arbustiva raleada sobre Neossolo Litólico.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">6. Geótopo (<em>Inferior</em>)</td>
+<td style="text-align: left;"><span class="math inline">\(G\text{VII}\)</span> (<span class="math inline">\(&lt;10^{-2}\text{ km}^2\)</span>)</td>
+<td style="text-align: left;"><span class="math inline">\(&gt; 1:5.000\)</span></td>
+<td style="text-align: left;">Microunidade de detalhe extremo e microclima próprio</td>
+<td style="text-align: left;">Parede de voçoroca ativa, lajedo ou talude rodoviário.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</figure>
+</div>
+<p>Na prática da Análise Ambiental no Brasil, <strong>Rodriguez, Silva e Cavalcanti (2017)</strong> avançam da taxonomia descritiva para a <strong>compartimentação geoambiental</strong>. Compartimentar significa delimitar sobre o mapa <strong>unidades geoambientais</strong> relativamente homogêneas quanto à sua gênese, morfologia, pedologia, drenagem e uso atual, de modo que cada compartimento receba diretrizes próprias de conservação, recuperação ou uso produtivo no ordenamento territorial. O Exemplo 9.1 mostra como enquadrar recortes territoriais de diferentes extensões na taxonomia de Bertrand.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 9.1 (Básico). Enquadramento na Taxonomia da Paisagem de Bertrand
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Uma equipe de Análise Ambiental da UEFS está diagnosticando processos erosivos em uma propriedade rural próxima a Feira de Santana (BA). Durante o trabalho, os estudantes precisam situar espacialmente quatro recortes distintos, correspondentes ao Domínio das Caatingas (I), à sub-bacia do Rio Jacuípe na escala <span class="math inline">\(1:100.000\)</span> (II), a uma vertente homogênea de pastagem sobre Argissolo em <span class="math inline">\(1:15.000\)</span> (III) e a uma voçoroca ativa com <span class="math inline">\(40\,\text{m}\)</span> de comprimento em <span class="math inline">\(1:1.000\)</span> (IV).</p>
+<p><strong>Dados disponíveis.</strong> Quatro recortes espaciais com escalas variando de continental e regional (<span class="math inline">\(G\text{II}\)</span>) até o detalhe local (<span class="math inline">\(G\text{VII}\)</span>).</p>
+<p><strong>Problema a resolver.</strong> Enquadrar corretamente cada recorte (I a IV) nas unidades taxonômicas de Bertrand (2004).</p>
+<p><strong>Fundamento da análise.</strong> Aplicação direta da <a href="#tbl-taxonomia_bertrand" class="quarto-xref">Tabela&nbsp;<span>9.1</span></a> (unidades superiores e inferiores segundo ordem de grandeza e critério definidor).</p>
+<p><strong>Desenvolvimento.</strong> O <strong>Recorte I</strong> (Domínio das Caatingas) opera em escala regional e subcontinental (<span class="math inline">\(G\text{II}\)</span>, <span class="math inline">\(\sim 10^6\text{ km}^2\)</span>) definida por macroclima e bioma, correspondendo ao <strong>Domínio</strong>. O <strong>Recorte II</strong> (Sub-bacia em <span class="math inline">\(1:100.000\)</span>) constitui unidade funcional concreta (<span class="math inline">\(G\text{V}\)</span>, dezenas a centenas de <span class="math inline">\(\text{km}^2\)</span>) que integra potencial ecológico, exploração biológica e ação antrópica, caracterizando um <strong>Geossistema</strong>. O <strong>Recorte III</strong> (Vertente homogênea em <span class="math inline">\(1:15.000\)</span>) representa setor fisionomicamente uniforme dentro do geossistema (<span class="math inline">\(G\text{VI}\)</span>), enquadrando-se como <strong>Geofácies</strong>. O <strong>Recorte IV</strong> (Voçoroca de <span class="math inline">\(40\,\text{m}\)</span> em <span class="math inline">\(1:1.000\)</span>) define a menor unidade espacial de detalhe extremo (<span class="math inline">\(G\text{VII}\)</span>), correspondendo a um <strong>Geótopo</strong>.</p>
+<p><strong>Interpretação do resultado.</strong> I = Domínio; II = Geossistema; III = Geofácies; IV = Geótopo.</p>
+<p><strong>Condições de validade.</strong> A sequência segue exatamente a ordem decrescente de grandeza espacial da taxonomia de Bertrand (<span class="math inline">\(G\text{II} \to G\text{V} \to G\text{VI} \to G\text{VII}\)</span>), evitando misturar unidades regionais com feições pontuais de campo.</p>
+</div>
+</div>
+</section>
+<section id="ecodinâmica-de-tricart-1977-balanço-morfogênese-vs.-pedogênese" class="level2">
+<h2 class="anchored" data-anchor-id="ecodinâmica-de-tricart-1977-balanço-morfogênese-vs.-pedogênese">Ecodinâmica de Tricart (1977), Balanço Morfogênese vs.&nbsp;Pedogênese</h2>
+<p>Enquanto Bertrand organizou a paisagem em níveis espaciais, o geomorfólogo francês <strong>Jean Tricart (1977)</strong> propôs classificar os ambientes segundo o seu <strong>grau de estabilidade dinâmica</strong>. O critério central da <strong>Ecodinâmica</strong> reside no balanço energético entre dois processos opostos que atuam simultaneamente em qualquer vertente. De um lado, a <strong>pedogênese</strong> reúne os processos físicos, químicos e biológicos que promovem o intemperismo das rochas, a infiltração da água e a formação ou espessamento dos horizontes do solo; de outro, a <strong>morfogênese</strong> agrupa os processos erosivos, gravitacionais e de escoamento que removem partículas da superfície, rebaixam o manto de alteração e modelam o relevo.</p>
+<p>A partir dessa competição contínua, Tricart (1977) estabelece <strong>três grandes tipos de meios ecodinâmicos</strong> (<a href="#tbl-ecodinamica_tricart" class="quarto-xref">Tabela&nbsp;<span>9.2</span></a>). Nos <strong>meios estáveis</strong>, a cobertura vegetal densa e o relevo suave permitem que a infiltração domine o balanço hídrico, de modo que a pedogênese supera amplamente a morfogênese (<span class="math inline">\(P \gg M\)</span>). Nos <strong>meios intergrades (ou de transição)</strong>, instala-se um equilíbrio dinâmico tenso (<span class="math inline">\(P \approx M\)</span>), no qual a infiltração e o escoamento superficial competem continuamente, tornando o ambiente suscetível a desequilíbrios rápidos caso o manejo seja inadequado. Já nos <strong>meios fortemente instáveis</strong>, a combinação de declividades acentuadas, solos rasos ou expostos e chuvas concentradas faz a morfogênese predominar francamente sobre a pedogênese (<span class="math inline">\(M \gg P\)</span>), disparando erosão linear e movimentos de massa.</p>
+<div id="tbl-ecodinamica_tricart" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ecodinamica_tricart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;9.2: Classificação ecodinâmica dos ambientes segundo Tricart (1977) e implicações para o planejamento.
+</figcaption>
+<div aria-describedby="tbl-ecodinamica_tricart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="book-table-scroll" role="region" aria-label="Tabela 2" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Meio Ecodinâmico</strong></th>
+<th style="text-align: left;"><strong>Balanço Morfogênese vs.&nbsp;Pedogênese</strong></th>
+<th style="text-align: left;"><strong>Características Típicas</strong></th>
+<th style="text-align: left;"><strong>Manejo e Fragilidade</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Meios Estáveis</strong></td>
+<td style="text-align: left;"><strong>Pedogênese supera amplamente a morfogênese</strong> (<span class="math inline">\(P \gg M\)</span>)</td>
+<td style="text-align: left;">Cobertura vegetal densa e contínua; relevo suave ou plano; solos profundos (Latossolos); dissecação incipiente; ausência de erosão acelerada.</td>
+<td style="text-align: left;">Baixa fragilidade natural. Suportam uso agrícola tecnificado com práticas conservacionistas preventivas; o desmatamento pode romper a estabilidade.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Meios Intergrades (de Transição)</strong></td>
+<td style="text-align: left;"><strong>Equilíbrio dinâmico tenso</strong> (<span class="math inline">\(P \approx M\)</span>)</td>
+<td style="text-align: left;">Interferência permanente entre infiltração/pedogênese e escoamento/morfogênese; vertentes moderadamente inclinadas ou áreas com vegetação rala ou alterada.</td>
+<td style="text-align: left;">Suscetíveis a desequilíbrios rápidos se manejados sem critério. Exigem práticas rigorosas de conservação do solo (curvas de nível, cobertura morta, manejo de pastagem).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Meios Fortemente Instáveis</strong></td>
+<td style="text-align: left;"><strong>Morfogênese predomina francamente</strong> (<span class="math inline">\(M \gg P\)</span>)</td>
+<td style="text-align: left;">Declividades elevadas (<span class="math inline">\(&gt;20\text{-}30\%\)</span>); solos rasos (Neossolos Litólicos) ou expostos; clima agressivo/torrencial; ocorrência de ravinas, voçorocas ou movimentos de massa.</td>
+<td style="text-align: left;">Máxima restrição ao uso intensivo. Prioridade absoluta para preservação, bioengenharia de solos, controle de drenagem e recuperação ambiental.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</figure>
+</div>
+<p>Essa leitura qualitativa do balanço entre pedogênese e morfogênese fornece a base conceitual direta para a operacionalização cartográfica em classes hierárquicas (<a href="#fig-ecodinamica_ross" class="quarto-xref">Figura&nbsp;<span>9.1</span></a>). Enquanto o painel (a) expressa o contínuo dinâmico proposto por Tricart, o painel (b) mostra como a Matriz de Fragilidade Emergente de Ross cruza a suscetibilidade física com a proteção do uso da terra para classificar o risco real de degradação.</p>
+<div id="fig-ecodinamica_ross" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecodinamica_ross-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig07_ecodinamica_ross_matriz.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecodinamica_ross-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;9.1: Integração metodológica entre a Ecodinâmica de Tricart (1977), expressa pelo balanço relativo entre pedogênese e morfogênese nos três tipos de meios (a), e a Matriz de Fragilidade Emergente de Ross (1994), obtida pelo cruzamento da Fragilidade Potencial com o grau de proteção do Uso da Terra (b).
+</figcaption>
+</figure>
+</div>
+<p>O Exemplo 9.2 aplica essa classificação ecodinâmica a três compartimentos contrastantes observados em uma sub-bacia do Piemonte da Chapada Diamantina.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 9.2 (Básico-Intermediário). Diagnóstico Ecodinâmico de Tricart em Três Setores de Sub-bacia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Ao percorrer uma sub-bacia do Piemonte da Chapada Diamantina, um geógrafo observou três compartimentos distintos. O <strong>Setor X</strong> compreende chapada plana com vegetação arbórea conservada, Latossolo profundo e ausência de sulcos; o <strong>Setor Y</strong> corresponde a rampa suave (<span class="math inline">\(9\%\)</span>) com pastagem manejada, onde ocorrem infiltração moderada e leve escoamento laminar após chuvas fortes; e o <strong>Setor Z</strong> abrange encosta íngreme (<span class="math inline">\(35\%\)</span>) desmatada, com Neossolo Litólico raso, ravinas profundas e blocos rolados.</p>
+<p><strong>Dados disponíveis.</strong> Setor X (plano, florestado, solo profundo); Setor Y (<span class="math inline">\(S=9\%\)</span>, pastagem, erosão laminar leve); Setor Z (<span class="math inline">\(S=35\%\)</span>, desmatado, solo raso, ravinas).</p>
+<p><strong>Problema a resolver.</strong> Classificar cada setor segundo a Ecodinâmica de Tricart (1977), explicando o balanço morfogênese versus pedogênese.</p>
+<p><strong>Fundamento da análise.</strong> Comparação dos processos dominantes com os critérios da <a href="#tbl-ecodinamica_tricart" class="quarto-xref">Tabela&nbsp;<span>9.2</span></a> e do painel (a) da <a href="#fig-ecodinamica_ross" class="quarto-xref">Figura&nbsp;<span>9.1</span></a>.</p>
+<p><strong>Desenvolvimento.</strong> No <strong>Setor X</strong>, a cobertura arbórea e o relevo plano maximizam a infiltração e o intemperismo químico profundo, bloqueando a erosão superficial (<span class="math inline">\(P \gg M\)</span>), o que caracteriza um <strong>Meio Estável</strong>. No <strong>Setor Y</strong>, há competição equilibrada entre infiltração sob pastagem e remoção laminar nas chuvas intensas (<span class="math inline">\(P \approx M\)</span>), definindo um <strong>Meio Intergrade (de Transição)</strong>. No <strong>Setor Z</strong>, a alta declividade aliada à remoção da vegetação dispara erosão linear e perda acelerada de solo (<span class="math inline">\(M \gg P\)</span>), enquadrando-o como <strong>Meio Fortemente Instável</strong>.</p>
+<p><strong>Interpretação do resultado.</strong> Setor X = Meio Estável; Setor Y = Meio Intergrade; Setor Z = Meio Fortemente Instável.</p>
+<p><strong>Condições de validade.</strong> O diagnóstico orienta diretamente a gestão, pois no Setor Z a prioridade recai sobre contenção erosiva e revegetação, enquanto no Setor Y o manejo conservacionista impede a migração do meio intergrade para a instabilidade forte.</p>
+</div>
+</div>
+<p>Na aplicação dessa tipologia, um equívoco recorrente consiste em supor que setores classificados como de transição encontram-se livres de degradação acelerada, conforme detalhado no alerta a seguir.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 1, Tratar “Meio Intergrade” como Sinônimo de “Meio Sem Risco”
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Concluir que ambientes intergrades de Tricart são estáveis e dispensam práticas de manejo.</p>
+<p><strong>Correção técnica.</strong> O meio intergrade constitui uma <strong>zona de transição dinâmica</strong> (<span class="math inline">\(P \approx M\)</span>). Basta uma intervenção inadequada (queimada, sobrepastejo ou corte de talude) para que a morfogênese supere a pedogênese e o setor passe rapidamente a fortemente instável.</p>
+</div>
+</div>
+</section>
+<section id="análise-empírica-da-fragilidade-ambiental-ross-1994" class="level2">
+<h2 class="anchored" data-anchor-id="análise-empírica-da-fragilidade-ambiental-ross-1994">Análise Empírica da Fragilidade Ambiental (Ross, 1994)</h2>
+<p>Na década de 1990, o geógrafo brasileiro <strong>Jurandyr Luciano Sanches Ross (1994)</strong> operacionalizou os princípios dos Geossistemas e da Ecodinâmica de Tricart em uma metodologia cartográfica e quantitativa padronizada, denominada <strong>Análise Empírica da Fragilidade dos Ambientes Naturais e Antropizados</strong>. Para manter a coerência com Tricart, Ross adotou as categorias de <strong>Unidades Ecodinâmicas Estáveis</strong> e <strong>Unidades Ecodinâmicas de Instabilidade Potencial ou Emergente</strong>, classificadas em <strong>cinco graus hierárquicos</strong>,</p>
+<p><span class="math display">\[
+1 = \text{Muito Fraca} \quad;\quad 2 = \text{Fraca} \quad;\quad 3 = \text{Média} \quad;\quad 4 = \text{Forte} \quad;\quad 5 = \text{Muito Forte}.
+\]</span></p>
+<p>A metodologia separa analiticamente a base física natural do efeito modificador das atividades humanas (<a href="#fig-ross-hierarquia" class="quarto-xref">Figura&nbsp;<span>9.2</span></a>). Na primeira etapa, a <strong>Fragilidade Potencial (<span class="math inline">\(FP\)</span>)</strong> expressa a suscetibilidade <em>natural e intrínseca</em> do terreno antes de considerar a vegetação atual, combinando exclusivamente os fatores do meio físico, isto é, <strong>Relevo/Declividade (<span class="math inline">\(D_R\)</span>)</strong>, <strong>Solos (<span class="math inline">\(D_S\)</span>)</strong> e <strong>Clima/Pluviosidade (<span class="math inline">\(D_C\)</span>)</strong>. Essa métrica responde quão vulnerável o terreno seria caso perdesse sua cobertura vegetal. Na etapa seguinte, a <strong>Fragilidade Emergente (<span class="math inline">\(FE\)</span>)</strong> traduz a suscetibilidade <em>real e atual</em> do ambiente, resultando do cruzamento entre a <strong>Fragilidade Potencial (<span class="math inline">\(FP\)</span>)</strong> e o grau de proteção oferecido pelo <strong>Uso da Terra e Cobertura Vegetal (<span class="math inline">\(D_U\)</span>)</strong>, permitindo vincular diretamente as classes obtidas aos meios estáveis (<span class="math inline">\(FE\)</span> 1-2), intergrades (<span class="math inline">\(FE\)</span> 3) e fortemente instáveis (<span class="math inline">\(FE\)</span> 4-5) de Tricart.</p>
+<div id="fig-ross-hierarquia" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Fluxograma horizontal em quatro blocos mostrando Variáveis Naturais (1 a 5), Fragilidade Potencial (FP), Uso e Cobertura (1 a 5) e Fragilidade Emergente (FE), conectados abaixo aos Meios Estáveis, Intergrades e Fortemente Instáveis">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ross-hierarquia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap09_ross_hierarquia.png" class="img-fluid figure-img" alt="Fluxograma horizontal em quatro blocos mostrando Variáveis Naturais (1 a 5), Fragilidade Potencial (FP), Uso e Cobertura (1 a 5) e Fragilidade Emergente (FE), conectados abaixo aos Meios Estáveis, Intergrades e Fortemente Instáveis">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ross-hierarquia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;9.2: Chave hierárquica de Fragilidade Ambiental de Ross (1994), articulando as variáveis naturais na Fragilidade Potencial (<span class="math inline">\(FP\)</span>), a incorporação do uso e cobertura na Fragilidade Emergente (<span class="math inline">\(FE\)</span>) e o enquadramento nos meios ecodinâmicos de Tricart.
+</figcaption>
+</figure>
+</div>
+<section id="critérios-das-cinco-classes-hierárquicas-de-ross-1994" class="level3">
+<h3 class="anchored" data-anchor-id="critérios-das-cinco-classes-hierárquicas-de-ross-1994">Critérios das Cinco Classes Hierárquicas de Ross (1994)</h3>
+<p>Em estudos de detalhe (microbacias e municípios, escalas de <span class="math inline">\(1:10.000\)</span> a <span class="math inline">\(1:50.000\)</span>), adota-se a <strong>declividade (<span class="math inline">\(S\%\)</span>)</strong> como indicador do relevo, enquanto em estudos regionais (escalas menores que <span class="math inline">\(1:100.000\)</span>) utilizam-se os índices de dissecação do relevo baseados no entalhamento de vales e na dimensão interfluvial. Esses critérios físicos para relevo e solos encontram-se sistematizados na <a href="#tbl-ross_relevo_solos" class="quarto-xref">Tabela&nbsp;<span>9.3</span></a>.</p>
+<div id="tbl-ross_relevo_solos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ross_relevo_solos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;9.3: Classes hierárquicas de fragilidade para Relevo/Declividade (<span class="math inline">\(D_R\)</span>) e Solos (<span class="math inline">\(D_S\)</span>) segundo Ross (1994).
+</figcaption>
+<div aria-describedby="tbl-ross_relevo_solos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="book-table-scroll" role="region" aria-label="Tabela 3" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Classe / Grau</strong></th>
+<th style="text-align: left;"><strong>Declividade (<span class="math inline">\(D_R\)</span>)</strong></th>
+<th style="text-align: left;"><strong>Dissecação Regional (<span class="math inline">\(D_R\)</span>)</strong></th>
+<th style="text-align: left;"><strong>Classes de Solos / Erodibilidade (<span class="math inline">\(D_S\)</span>)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>1, Muito Fraca</strong></td>
+<td style="text-align: left;"><span class="math inline">\(&lt; 6\%\)</span></td>
+<td style="text-align: left;">Muito fraca (vales muito rasos, interflúvios amplos)</td>
+<td style="text-align: left;">Latossolos Roxos e Vermelho-Escuros de textura argilosa (muito profundos e bem estruturados).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2, Fraca</strong></td>
+<td style="text-align: left;"><span class="math inline">\(6\text{ a } 12\%\)</span></td>
+<td style="text-align: left;">Fraca (entalhamento e densidade baixos)</td>
+<td style="text-align: left;">Latossolos Vermelho-Amarelos de textura média/argilosa; Nitossolos profundos.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>3, Média</strong></td>
+<td style="text-align: left;"><span class="math inline">\(12\text{ a } 20\%\)</span></td>
+<td style="text-align: left;">Média (vertentes moderadamente dissecadas)</td>
+<td style="text-align: left;">Latossolos Amarelos/Vermelho-Amarelos arenosos; Argissolos profundos; Cambissolos profundos.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>4, Forte</strong></td>
+<td style="text-align: left;"><span class="math inline">\(20\text{ a } 30\%\)</span></td>
+<td style="text-align: left;">Forte (vales entalhados e interflúvios estreitos)</td>
+<td style="text-align: left;">Argissolos com mudança textural abrupta; Planossolos (comuns no Semiárido); Cambissolos rasos/siltosos.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>5, Muito Forte</strong></td>
+<td style="text-align: left;"><span class="math inline">\(&gt; 30\%\)</span></td>
+<td style="text-align: left;">Muito forte (escarpas, vales muito profundos)</td>
+<td style="text-align: left;">Neossolos Litólicos (solos rasos sobre rocha), Neossolos Quartzarênicos (areias quartzosas), Gleissolos e Organossolos em áreas instáveis.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</figure>
+</div>
+<p>Definidos os graus de vulnerabilidade intrínseca do relevo e dos solos na <a href="#tbl-ross_relevo_solos" class="quarto-xref">Tabela&nbsp;<span>9.3</span></a>, o analista incorpora a agressividade climática (erosividade das chuvas) e o efeito protetor ou degradante da cobertura vegetal por meio dos critérios da <a href="#tbl-ross_clima_uso" class="quarto-xref">Tabela&nbsp;<span>9.4</span></a>. Em todas as quatro variáveis, a escala numérica de <span class="math inline">\(1\)</span> a <span class="math inline">\(5\)</span> acompanha o sentido crescente da fragilidade, atribuindo grau <span class="math inline">\(1\)</span> às condições mais resistentes ou protegidas e grau <span class="math inline">\(5\)</span> às mais suscetíveis ou expostas.</p>
+<div id="tbl-ross_clima_uso" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ross_clima_uso-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;9.4: Classes hierárquicas de fragilidade para Clima/Pluviosidade (<span class="math inline">\(D_C\)</span>) e Uso da Terra / Cobertura Vegetal (<span class="math inline">\(D_U\)</span>) segundo Ross (1994).
+</figcaption>
+<div aria-describedby="tbl-ross_clima_uso-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="book-table-scroll" role="region" aria-label="Tabela 4" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Classe / Grau</strong></th>
+<th style="text-align: left;"><strong>Clima / Pluviosidade (<span class="math inline">\(D_C\)</span>, Erosividade)</strong></th>
+<th style="text-align: left;"><strong>Uso da Terra / Cobertura Vegetal (<span class="math inline">\(D_U\)</span>, Grau de Proteção)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>1, Muito Fraca</strong></td>
+<td style="text-align: left;">Pluviosidade regular ao longo do ano, baixa intensidade horária, sem concentração extrema.</td>
+<td style="text-align: left;"><strong>Proteção Muito Alta.</strong> Florestas naturais primárias, matas ciliares densas e Caatinga arbórea fechada.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2, Fraca</strong></td>
+<td style="text-align: left;">Precipitação moderada (<span class="math inline">\(1.000\text{-}1.300\text{ mm/ano}\)</span>) com estação seca curta e chuvas pouco torrenciais.</td>
+<td style="text-align: left;"><strong>Proteção Alta.</strong> Florestas secundárias avançadas (capoeirões), Caatinga arbustivo-arbórea densa, silvicultura bem manejada.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>3, Média</strong></td>
+<td style="text-align: left;">Estação seca definida (<span class="math inline">\(3\text{-}6\)</span> meses) e chuvas concentradas no verão/outono com eventos erosivos moderados.</td>
+<td style="text-align: left;"><strong>Proteção Média.</strong> Pastagens bem manejadas com boa cobertura, sistemas agroflorestais (SAFs), culturas perenes (café, cacau em cabruca).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>4, Forte</strong></td>
+<td style="text-align: left;">Forte concentração pluviométrica sazonal (ou totais <span class="math inline">\(&gt;2.000\text{ mm/ano}\)</span> com aguaceiros intensos).</td>
+<td style="text-align: left;"><strong>Proteção Baixa.</strong> Culturas temporárias de ciclo curto (milho, feijão, mandioca), pastagens degradadas/raleadas e áreas de queimada antiga.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>5, Muito Forte</strong></td>
+<td style="text-align: left;">Chuvas altamente concentradas e torrenciais (típico do Semiárido com aguaceiros sobre solo seco, ou áreas de extrema erosividade).</td>
+<td style="text-align: left;"><strong>Proteção Muito Baixa / Nula.</strong> Solo exposto, áreas terraplanadas, mineração, queimada recente, área urbana sem drenagem.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</figure>
+</div>
+</section>
+<section id="cálculo-e-leitura-do-código-numérico-de-ross-fp-e-fe" class="level3">
+<h3 class="anchored" data-anchor-id="cálculo-e-leitura-do-código-numérico-de-ross-fp-e-fe">Cálculo e Leitura do Código Numérico de Ross (<span class="math inline">\(FP\)</span> e <span class="math inline">\(FE\)</span>)</h3>
+<p>Na metodologia de Ross (1994), cada unidade geoambiental recebe um <strong>código numérico posicional</strong> que preserva a memória individual de cada variável, impedindo que a causa específica da instabilidade desapareça em uma média simples. O <strong>Código da Fragilidade Potencial (<span class="math inline">\(FP\)</span>)</strong> é formado por <strong>três dígitos</strong> na ordem fixa <span class="math inline">\(\mathbf{D_R\,D_S\,D_C}\)</span> (Relevo, Solos e Clima), enquanto o <strong>Código da Fragilidade Emergente (<span class="math inline">\(FE\)</span>)</strong> acrescenta o fator antrópico e passa a contar com <strong>quatro dígitos</strong> na ordem fixa <span class="math inline">\(\mathbf{D_R\,D_S\,D_C\,D_U}\)</span> (Relevo, Solos, Clima e Uso da Terra).</p>
+<p><span class="math display">\[
+\text{Código } FP = D_R\,D_S\,D_C \qquad\text{e}\qquad \text{Código } FE = D_R\,D_S\,D_C\,D_U
+\]</span></p>
+<p><span class="math display">\[
+I_{FP} = \frac{D_R + D_S + D_C}{3} \quad \xrightarrow{\text{arredondamento}} \quad \text{Classe } FP \in \{1, 2, 3, 4, 5\}
+\]</span></p>
+<p>Nessas expressões, <span class="math inline">\(D_R\)</span>, <span class="math inline">\(D_S\)</span>, <span class="math inline">\(D_C\)</span> e <span class="math inline">\(D_U\)</span> assumem valores inteiros de <span class="math inline">\(1\)</span> (fragilidade muito fraca) a <span class="math inline">\(5\)</span> (fragilidade muito forte) obtidos nas Tabelas <a href="#tbl-ross_relevo_solos" class="quarto-xref">Tabela&nbsp;<span>9.3</span></a> e <a href="#tbl-ross_clima_uso" class="quarto-xref">Tabela&nbsp;<span>9.4</span></a>. Em empates de <span class="math inline">\(0{,}5\)</span> no cálculo de <span class="math inline">\(I_{FP}\)</span>, adota-se o inteiro mais conservador ou o peso dominante do relevo (<span class="math inline">\(D_R\)</span>).</p>
+<p>Para determinar a <strong>Classe Síntese de <span class="math inline">\(FE\)</span> (1 a 5)</strong>, cruza-se a Classe <span class="math inline">\(FP\)</span> (linha) com o dígito do Uso da Terra <span class="math inline">\(D_U\)</span> (coluna) na adaptação didático-operacional da matriz de Ross (1994) e Spörl e Ross (2004), já representada visualmente no painel (b) da <a href="#fig-ecodinamica_ross" class="quarto-xref">Figura&nbsp;<span>9.1</span></a> e detalhada numericamente na <a href="#tbl-matriz_ross_fe" class="quarto-xref">Tabela&nbsp;<span>9.5</span></a>. Nos casos em que <span class="math inline">\((FP + D_U)/2\)</span> resulta em fração <span class="math inline">\(0{,}5\)</span>, a matriz pondera o efeito protetor da cobertura vegetal densa (<span class="math inline">\(D_U \le 2\)</span>, arredondando para baixo) em contraste com o agravamento imposto por usos antrópicos expostos (<span class="math inline">\(D_U \ge 3\)</span>, arredondando para cima).</p>
+<div id="tbl-matriz_ross_fe" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-matriz_ross_fe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;9.5: Matriz operacional de cruzamento entre Fragilidade Potencial (<span class="math inline">\(FP\)</span>) e Uso da Terra (<span class="math inline">\(D_U\)</span>) para obtenção da Fragilidade Emergente (<span class="math inline">\(FE\)</span>).
+</figcaption>
+<div aria-describedby="tbl-matriz_ross_fe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="book-table-scroll" role="region" aria-label="Tabela 5" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Fragilidade Potencial (<span class="math inline">\(FP\)</span>)</strong> <span class="math inline">\(\backslash\)</span> <strong>Uso (<span class="math inline">\(D_U\)</span>)</strong></th>
+<th style="text-align: left;"><strong>1 (M. Alta Prot.)</strong></th>
+<th style="text-align: left;"><strong>2 (Alta)</strong></th>
+<th style="text-align: left;"><strong>3 (Média)</strong></th>
+<th style="text-align: left;"><strong>4 (Baixa)</strong></th>
+<th style="text-align: left;"><strong>5 (Nula)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>1, Muito Fraca</strong></td>
+<td style="text-align: left;">1 (M. Fraca)</td>
+<td style="text-align: left;">1 (M. Fraca)</td>
+<td style="text-align: left;">2 (Fraca)</td>
+<td style="text-align: left;">2 (Fraca)</td>
+<td style="text-align: left;">3 (Média)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2, Fraca</strong></td>
+<td style="text-align: left;">1 (M. Fraca)</td>
+<td style="text-align: left;">2 (Fraca)</td>
+<td style="text-align: left;">2 (Fraca)</td>
+<td style="text-align: left;">3 (Média)</td>
+<td style="text-align: left;">4 (Forte)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>3, Média</strong></td>
+<td style="text-align: left;">2 (Fraca)</td>
+<td style="text-align: left;">2 (Fraca)</td>
+<td style="text-align: left;">3 (Média)</td>
+<td style="text-align: left;">4 (Forte)</td>
+<td style="text-align: left;">4 (Forte)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>4, Forte</strong></td>
+<td style="text-align: left;">2 (Fraca)</td>
+<td style="text-align: left;">3 (Média)</td>
+<td style="text-align: left;">4 (Forte)</td>
+<td style="text-align: left;">4 (Forte)</td>
+<td style="text-align: left;">5 (M. Forte)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>5, Muito Forte</strong></td>
+<td style="text-align: left;">3 (Média)</td>
+<td style="text-align: left;">4 (Forte)</td>
+<td style="text-align: left;">4 (Forte)</td>
+<td style="text-align: left;">5 (M. Forte)</td>
+<td style="text-align: left;">5 (M. Forte)</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</figure>
+</div>
+<p>Considere, por exemplo, uma encosta com declividade <span class="math inline">\(S = 22\%\)</span> (<span class="math inline">\(D_R = 4\)</span>), Argissolo profundo (<span class="math inline">\(D_S = 3\)</span>), clima semiárido com chuvas torrenciais concentradas (<span class="math inline">\(D_C = 4\)</span>) e pastagem degradada (<span class="math inline">\(D_U = 4\)</span>). O Código <span class="math inline">\(FP\)</span> resulta em <span class="math inline">\(\mathbf{434}\)</span>, cuja média <span class="math inline">\(I_{FP} = (4 + 3 + 4)/3 = 11/3 \approx 3{,}67\)</span> conduz à Classe <span class="math inline">\(FP = 4\)</span> (Forte). Incorporando o uso atual, obtém-se o Código <span class="math inline">\(FE\)</span> igual a <span class="math inline">\(\mathbf{4344}\)</span>, e o cruzamento de <span class="math inline">\(FP = 4\)</span> com <span class="math inline">\(D_U = 4\)</span> na <a href="#tbl-matriz_ross_fe" class="quarto-xref">Tabela&nbsp;<span>9.5</span></a> confirma a Classe <span class="math inline">\(FE = 4\)</span> (Forte). Na leitura técnica do código <span class="math inline">\(4344\)</span>, o primeiro dígito (<span class="math inline">\(4\)</span>) alerta que a declividade (<span class="math inline">\(20\text{-}30\%\)</span>) atua como o principal motor físico da instabilidade, o terceiro dígito (<span class="math inline">\(4\)</span>) indica forte erosividade climática e o quarto dígito (<span class="math inline">\(4\)</span>) revela que a pastagem degradada deixa o solo desprotegido. O Exemplo 9.3 detalha passo a passo essa operação para uma unidade sob cultivo agrícola temporário.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 9.3 (Intermediário). Cálculo Passo a Passo da Fragilidade Potencial e Emergente
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Uma unidade geoambiental utilizada para estudo de planejamento municipal apresenta declividade média de <span class="math inline">\(S = 15\%\)</span>, solo classificado como Argissolo profundo de textura média e argilosa, clima tropical semiárido com chuvas concentradas e torrenciais (<span class="math inline">\(D_C = 4\)</span>) e uso atual por cultura temporária de mandioca em solo parcialmente descoberto.</p>
+<p><strong>Dados disponíveis.</strong> <span class="math inline">\(S = 15\%\)</span>; Argissolo profundo; <span class="math inline">\(D_C = 4\)</span>; uso por cultura temporária de ciclo curto.</p>
+<p><strong>Problema a resolver.</strong> Determinar os dígitos <span class="math inline">\(D_R\)</span>, <span class="math inline">\(D_S\)</span>, <span class="math inline">\(D_C\)</span> e <span class="math inline">\(D_U\)</span>, montar os códigos numéricos de <span class="math inline">\(FP\)</span> e <span class="math inline">\(FE\)</span> e obter as classes síntese de Fragilidade Potencial e Emergente.</p>
+<p><strong>Fundamento da análise.</strong> Enquadramento pelas Tabelas <a href="#tbl-ross_relevo_solos" class="quarto-xref">Tabela&nbsp;<span>9.3</span></a> e <a href="#tbl-ross_clima_uso" class="quarto-xref">Tabela&nbsp;<span>9.4</span></a> e aplicação do roteiro de cálculo de Ross (1994).</p>
+<p><strong>Desenvolvimento.</strong> Para o relevo (<span class="math inline">\(S = 15\%\)</span>, faixa <span class="math inline">\(12\text{-}20\%\)</span>), obtém-se <span class="math inline">\(D_R = 3\)</span> (Média); para o solo (Argissolo profundo), <span class="math inline">\(D_S = 3\)</span> (Média); o clima foi fornecido como <span class="math inline">\(D_C = 4\)</span> (Forte); e o uso da terra por cultura temporária de ciclo curto enquadra-se em <span class="math inline">\(D_U = 4\)</span> (Proteção Baixa / Fragilidade Forte). Na <strong>Fragilidade Potencial (<span class="math inline">\(FP\)</span>)</strong>, monta-se o código posicional <span class="math inline">\(\mathbf{334}\)</span> e calcula-se a média física,</p>
+<p><span class="math display">\[
+I_{FP} = \frac{3 + 3 + 4}{3} = \frac{10}{3} \approx 3{,}33 \implies \text{Classe } FP = \mathbf{3\text{ (Média)}}.
+\]</span></p>
+<p>Na <strong>Fragilidade Emergente (<span class="math inline">\(FE\)</span>)</strong>, acrescentando o dígito de uso, obtém-se o código posicional <span class="math inline">\(\mathbf{3344}\)</span>. Cruzando <span class="math inline">\(FP = 3\)</span> com <span class="math inline">\(D_U = 4\)</span> na Matriz de Ross (<a href="#tbl-matriz_ross_fe" class="quarto-xref">Tabela&nbsp;<span>9.5</span></a>), chega-se à <strong>Classe <span class="math inline">\(FE = 4\)</span> (Forte)</strong>.</p>
+<p><strong>Interpretação do resultado.</strong> Código <span class="math inline">\(FP = 334\)</span> (Classe 3, Média); Código <span class="math inline">\(FE = 3344\)</span> (Classe 4, Forte).</p>
+<p><strong>Condições de validade.</strong> O uso agrícola anual (<span class="math inline">\(D_U = 4\)</span>) agrava a instabilidade do setor, pois a unidade possui fragilidade natural média (<span class="math inline">\(3\)</span>), mas o cultivo temporário com baixa proteção eleva a fragilidade real emergente para forte (<span class="math inline">\(4\)</span>), exigindo plantio em nível e cobertura morta.</p>
+</div>
+</div>
+<p>A distinção rigorosa entre o estado físico intrínseco (<span class="math inline">\(FP\)</span>) e a condição atual sob uso (<span class="math inline">\(FE\)</span>) evita um dos erros de interpretação mais comuns em laudos ambientais.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 2, Confundir Fragilidade Potencial (<span class="math inline">\(FP\)</span>) com Fragilidade Emergente (<span class="math inline">\(FE\)</span>)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Incluir o uso da terra (<span class="math inline">\(D_U\)</span>) no cálculo da Fragilidade Potencial, ou afirmar que uma encosta íngreme florestada tem “baixa fragilidade potencial”.</p>
+<p><strong>Correção técnica.</strong> A <strong>Fragilidade Potencial (<span class="math inline">\(FP\)</span>)</strong> depende exclusivamente dos fatores físicos naturais (<span class="math inline">\(D_R, D_S, D_C\)</span>). Uma encosta de <span class="math inline">\(35\%\)</span> com solo raso continua tendo <strong>FP Muito Forte (<span class="math inline">\(5\)</span>)</strong> mesmo sob mata primária; o que a floresta reduz é a <strong>Fragilidade Emergente (<span class="math inline">\(FE\)</span>)</strong>, que passa a depender do uso atual (<span class="math inline">\(D_U\)</span>).</p>
+</div>
+</div>
+<p>Quando se comparam dois tipos de uso sobre uma mesma base física, torna-se evidente o efeito amortecedor da cobertura florestal densa frente à vulnerabilidade extrema gerada pela exposição do solo (Exemplo 9.4).</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 9.4 (Intermediário-Avançado). Efeito Amortecedor da Vegetação na Matriz de Ross
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Considere uma encosta íngreme de <span class="math inline">\(S = 24\%\)</span> (<span class="math inline">\(D_R = 4\)</span>) com Planossolo/Argissolo abrúptico (<span class="math inline">\(D_S = 4\)</span>) sob regime de chuvas intensas sazonais (<span class="math inline">\(D_C = 4\)</span>). Compare dois cenários de uso sobre essa mesma base física, opondo uma área mantida com mata nativa primária densa (Cenário 1) a uma área totalmente desmatada e terraplanada com solo exposto para loteamento sem drenagem (Cenário 2).</p>
+<p><strong>Dados disponíveis.</strong> <span class="math inline">\(D_R = 4\)</span>, <span class="math inline">\(D_S = 4\)</span>, <span class="math inline">\(D_C = 4\)</span>. Cenário 1 com mata primária densa; Cenário 2 com solo exposto por terraplanagem.</p>
+<p><strong>Problema a resolver.</strong> Calcular <span class="math inline">\(FP\)</span> e <span class="math inline">\(FE\)</span> para ambos os cenários e explicar tecnicamente a diferença obtida.</p>
+<p><strong>Fundamento da análise.</strong> Cálculo do código <span class="math inline">\(FP\)</span>, identificação de <span class="math inline">\(D_U\)</span> pela <a href="#tbl-ross_clima_uso" class="quarto-xref">Tabela&nbsp;<span>9.4</span></a> e leitura da Matriz de Fragilidade Emergente (<a href="#tbl-matriz_ross_fe" class="quarto-xref">Tabela&nbsp;<span>9.5</span></a>).</p>
+<p><strong>Desenvolvimento.</strong> A <strong>Fragilidade Potencial (<span class="math inline">\(FP\)</span>)</strong> é idêntica nos dois cenários, com código <span class="math inline">\(\mathbf{444}\)</span> e média <span class="math inline">\(I_{FP} = (4+4+4)/3 = 4{,}0\)</span>, correspondendo à <strong>Classe <span class="math inline">\(FP = 4\)</span> (Forte)</strong>. No <strong>Cenário 1 (mata nativa densa, <span class="math inline">\(D_U = 1\)</span>)</strong>, forma-se o código <span class="math inline">\(FE = \mathbf{4441}\)</span>; na <a href="#tbl-matriz_ross_fe" class="quarto-xref">Tabela&nbsp;<span>9.5</span></a>, o cruzamento <span class="math inline">\(FP = 4 \times D_U = 1\)</span> resulta em <strong>Classe <span class="math inline">\(FE = 2\)</span> (Fraca)</strong>. No <strong>Cenário 2 (solo exposto, <span class="math inline">\(D_U = 5\)</span>)</strong>, forma-se o código <span class="math inline">\(FE = \mathbf{4445}\)</span>; na <a href="#tbl-matriz_ross_fe" class="quarto-xref">Tabela&nbsp;<span>9.5</span></a>, o cruzamento <span class="math inline">\(FP = 4 \times D_U = 5\)</span> eleva o resultado para <strong>Classe <span class="math inline">\(FE = 5\)</span> (Muito Forte)</strong>.</p>
+<p><strong>Interpretação do resultado.</strong> Ambos têm <span class="math inline">\(FP = 444\)</span> (Classe 4, Forte). No Cenário 1, <span class="math inline">\(FE = 4441\)</span> (Classe 2, Fraca); no Cenário 2, <span class="math inline">\(FE = 4445\)</span> (Classe 5, Muito Forte).</p>
+<p><strong>Condições de validade.</strong> O resultado indica quantitativamente o princípio de Ross e Tricart, mostrando que a floresta densa reduz em dois graus a fragilidade emergente (<span class="math inline">\(4 \to 2\)</span>) ao preservar o equilíbrio pedogenético, enquanto a exposição do solo libera a energia potencial da encosta e eleva a fragilidade ao patamar máximo (<span class="math inline">\(5\)</span>).</p>
+</div>
+</div>
+<p>Como as classes numéricas de Ross variam sempre no sentido crescente da instabilidade ambiental, inverter o significado do dígito <span class="math inline">\(D_U\)</span> compromete todo o zoneamento subsequente.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 3, Inverter a Escala de Proteção do Uso da Terra (<span class="math inline">\(D_U\)</span>) em Ross (1994)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Atribuir classe <span class="math inline">\(5\)</span> para floresta densa (por associar <span class="math inline">\(5\)</span> ao “máximo de vegetação”) e classe <span class="math inline">\(1\)</span> para solo exposto.</p>
+<p><strong>Correção técnica.</strong> Na metodologia de Ross, <strong>todas as variáveis seguem o sentido da fragilidade</strong> (<span class="math inline">\(1\)</span> equivale à menor fragilidade e <span class="math inline">\(5\)</span> à maior fragilidade). Portanto, a floresta densa, por oferecer máxima proteção contra a erosão, recebe <strong>classe <span class="math inline">\(1\)</span></strong>, enquanto o solo exposto recebe <strong>classe <span class="math inline">\(5\)</span></strong>.</p>
+</div>
+</div>
+</section>
+<section id="limitações-escalares-regras-de-combinação-e-verificação-em-campo" class="level3">
+<h3 class="anchored" data-anchor-id="limitações-escalares-regras-de-combinação-e-verificação-em-campo">Limitações Escalares, Regras de Combinação e Verificação em Campo</h3>
+<p>Classes de <span class="math inline">\(1\)</span> a <span class="math inline">\(5\)</span> organizam níveis ordinais de suscetibilidade segundo uma convenção cartográfica. A distância entre duas classes consecutivas não representa necessariamente o mesmo incremento físico de perda de solo, razão pela qual o cruzamento de classes precisa ser apresentado junto à regra de combinação e às condições que justificam sua utilização. As médias, matrizes e regras de arredondamento empregadas nesta apostila constituem adaptações didáticas operacionais, de modo que sua aplicação em laudos exige explicitar os pesos adotados e realizar análise de sensibilidade quando os parâmetros mudam.</p>
+<p>A cobertura vegetal reduz o impacto direto das gotas de chuva e protege a superfície contra o salpicamento, enquanto processos de ruptura profundos dependem também de propriedades geotécnicas dos materiais, poropressão e geometria da encosta. Assim, uma classe emergente mais baixa por efeito da cobertura deve ser interpretada conforme o processo erosivo analisado, sem substituir investigações de estabilidade geotécnica. A conferência em campo confronta o mapa com incisões ativas, surgências de água, depósitos recentes e alterações da drenagem, permitindo revisar o modelo sempre que a escala cartográfica ocultar uma condição local relevante.</p>
+</section>
+</section>
+<section id="síntese-aplicada-compartimentação-geoambiental-e-zoneamento-de-microbacia" class="level2">
+<h2 class="anchored" data-anchor-id="síntese-aplicada-compartimentação-geoambiental-e-zoneamento-de-microbacia">Síntese Aplicada, Compartimentação Geoambiental e Zoneamento de Microbacia</h2>
+<p>A integração final entre a taxonomia de Bertrand, o balanço ecodinâmico de Tricart e os códigos de Ross consolida-se na compartimentação de microbacias em Unidades Geoambientais homogêneas. O Exemplo 9.5 mostra como essa síntese fundamenta diretrizes objetivas de ordenamento territorial para o Trabalho Prático Final.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 9.5 (Avançado). Compartimentação Geoambiental e Zoneamento de Microbacia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Para elaborar o diagnóstico físico-ambiental do Trabalho Prático Final, uma microbacia do Semiárido baiano (<span class="math inline">\(D_C = 4\)</span> em toda a área) foi compartimentada em três Unidades Geoambientais (UGs). A <strong>UG1 (Topo de Tabuleiro)</strong> apresenta <span class="math inline">\(S = 3\%\)</span>, Latossolo Vermelho-Escuro argiloso e Caatinga arbustivo-arbórea densa; a <strong>UG2 (Meia Encosta Dissecada)</strong> exibe <span class="math inline">\(S = 35\%\)</span>, Neossolo Litólico e pastagem degradada; e a <strong>UG3 (Sopé Coluvial)</strong> reúne <span class="math inline">\(S = 9\%\)</span>, Planossolo e sistema agroflorestal (SAF) manejado.</p>
+<p><strong>Dados disponíveis.</strong> UG1 (<span class="math inline">\(S=3\%\)</span>, Latossolo argiloso, Caatinga densa); UG2 (<span class="math inline">\(S=35\%\)</span>, Neossolo Litólico, pastagem degradada); UG3 (<span class="math inline">\(S=9\%\)</span>, Planossolo, SAF manejado); <span class="math inline">\(D_C = 4\)</span> em toda a microbacia.</p>
+<p><strong>Problema a resolver.</strong> Calcular o código <span class="math inline">\(FP\)</span>, a classe <span class="math inline">\(FP\)</span>, o código <span class="math inline">\(FE\)</span>, a classe <span class="math inline">\(FE\)</span> e o meio ecodinâmico de Tricart para cada UG, propondo diretrizes de ordenamento.</p>
+<p><strong>Fundamento da análise.</strong> Integração das Tabelas <a href="#tbl-ecodinamica_tricart" class="quarto-xref">Tabela&nbsp;<span>9.2</span></a>, <a href="#tbl-ross_relevo_solos" class="quarto-xref">Tabela&nbsp;<span>9.3</span></a>, <a href="#tbl-ross_clima_uso" class="quarto-xref">Tabela&nbsp;<span>9.4</span></a> e <a href="#tbl-matriz_ross_fe" class="quarto-xref">Tabela&nbsp;<span>9.5</span></a>.</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>UG1 (Topo)</strong>, atribuem-se <span class="math inline">\(D_R=1\)</span>, <span class="math inline">\(D_S=1\)</span>, <span class="math inline">\(D_C=4\)</span> e <span class="math inline">\(D_U=2\)</span>; o código <span class="math inline">\(FP\)</span> resulta em <span class="math inline">\(\mathbf{114}\)</span>, com <span class="math inline">\(I_{FP} = (1+1+4)/3 = 2{,}0\)</span>, indicando <span class="math inline">\(FP = \mathbf{2}\)</span> (Fraca), enquanto o código <span class="math inline">\(FE\)</span> é <span class="math inline">\(\mathbf{1142}\)</span> e o cruzamento <span class="math inline">\(FP=2 \times D_U=2\)</span> resulta em <span class="math inline">\(FE = \mathbf{2}\)</span> (Fraca), caracterizando um Meio <strong>Estável</strong>. Na <strong>UG2 (Meia Encosta)</strong>, atribuem-se <span class="math inline">\(D_R=5\)</span>, <span class="math inline">\(D_S=5\)</span>, <span class="math inline">\(D_C=4\)</span> e <span class="math inline">\(D_U=4\)</span>; o código <span class="math inline">\(FP\)</span> resulta em <span class="math inline">\(\mathbf{554}\)</span>, com <span class="math inline">\(I_{FP} = (5+5+4)/3 = 14/3 \approx 4{,}67\)</span>, conduzindo a <span class="math inline">\(FP = \mathbf{5}\)</span> (Muito Forte), enquanto o código <span class="math inline">\(FE\)</span> é <span class="math inline">\(\mathbf{5544}\)</span> e o cruzamento <span class="math inline">\(FP=5 \times D_U=4\)</span> mantém <span class="math inline">\(FE = \mathbf{5}\)</span> (Muito Forte), caracterizando um Meio <strong>Fortemente Instável</strong>. Na <strong>UG3 (Sopé)</strong>, atribuem-se <span class="math inline">\(D_R=2\)</span>, <span class="math inline">\(D_S=4\)</span>, <span class="math inline">\(D_C=4\)</span> e <span class="math inline">\(D_U=3\)</span>; o código <span class="math inline">\(FP\)</span> resulta em <span class="math inline">\(\mathbf{244}\)</span>, com <span class="math inline">\(I_{FP} = (2+4+4)/3 = 10/3 \approx 3{,}33\)</span>, conduzindo a <span class="math inline">\(FP = \mathbf{3}\)</span> (Média), enquanto o código <span class="math inline">\(FE\)</span> é <span class="math inline">\(\mathbf{2443}\)</span> e o cruzamento <span class="math inline">\(FP=3 \times D_U=3\)</span> resulta em <span class="math inline">\(FE = \mathbf{3}\)</span> (Média), caracterizando um Meio <strong>Intergrade</strong>.</p>
+<p><strong>Interpretação do resultado.</strong> UG1, <span class="math inline">\(FP=114\)</span> (2), <span class="math inline">\(FE=1142\)</span> (2, Fraca, Estável); UG2, <span class="math inline">\(FP=554\)</span> (5), <span class="math inline">\(FE=5544\)</span> (5, Muito Forte, Fortemente Instável); UG3, <span class="math inline">\(FP=244\)</span> (3), <span class="math inline">\(FE=2443\)</span> (3, Média, Intergrade).</p>
+<p><strong>Condições de validade.</strong> O zoneamento resultante orienta decisões territoriais coerentes, pois a UG1 comporta uso sustentável controlado, a UG3 exige manejo conservacionista com manutenção do SAF e drenagem do Planossolo, e a UG2 deve ser destinada à preservação e recuperação mediante exclusão do gado e bioengenharia para conter ravinas.</p>
+</div>
+</div>
+</section>
+<section id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="level2">
+<h2 class="anchored" data-anchor-id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</h2>
+<p>Mesmo quando um estudo combina corretamente as classes de Tricart e Ross, imprecisões na definição de escala espacial costumam comprometer a delimitação das unidades geoambientais, conforme alertado a seguir.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 4, Usar Geossistema e Ecossistema como Termos Idênticos sem Critério Escalar
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Chamar qualquer parcela de <span class="math inline">\(10\text{ m}^2\)</span> ou um bioma continental inteiro de “geossistema”.</p>
+<p><strong>Correção técnica.</strong> Na taxonomia de Bertrand (2004), o geossistema ocupa a ordem <span class="math inline">\(G\text{V}\)</span> (escala de dezenas a centenas de <span class="math inline">\(\text{km}^2\)</span>, cartas de <span class="math inline">\(1:50.000\)</span> a <span class="math inline">\(1:100.000\)</span>). Unidades continentais pertencem à Zona ou ao Domínio (<span class="math inline">\(G\text{I}\)</span> a <span class="math inline">\(G\text{II}\)</span>), e unidades pontuais de campo pertencem ao Geótopo (<span class="math inline">\(G\text{VII}\)</span>).</p>
+</div>
+</div>
+<p>Para aprofundar a compreensão sobre o balanço ecodinâmico e a análise geossistêmica da paisagem, assista às videoaulas selecionadas na página da disciplina, iniciando por <a href="https://www.youtube.com/watch?v=phwn5sMUHx8">Ecodinâmica de Tricart: Avaliação Integrada (Cap. 4)</a>, que articula morfodinâmica e funções de gestão territorial, e prosseguindo com <a href="https://www.youtube.com/watch?v=9h5kdKYc2OM">Análise Geossistêmica e Estudos Integrados da Paisagem - Parte 1</a>, dedicada aos fundamentos aplicados da teoria dos geossistemas.</p>
+</section>
+<section id="exercícios-de-fixação" class="level2">
+<h2 class="anchored" data-anchor-id="exercícios-de-fixação">Exercícios de fixação</h2>
+<section id="nível-básico-exercícios-1-a-5" class="level4">
+<h4 class="anchored" data-anchor-id="nível-básico-exercícios-1-a-5">Nível Básico (Exercícios 1 a 5)</h4>
+<ol type="1">
+<li><p>Explique, com base na Teoria Geral dos Sistemas (Bertalanffy, 2010), por que a fragilidade ambiental é considerada uma <strong>propriedade emergente</strong> da paisagem e não uma característica isolada de um único elemento físico.</p></li>
+<li><p>Liste em ordem decrescente de escala espacial as seis unidades taxonômicas da paisagem propostas por Bertrand (2004), separando as unidades superiores das unidades inferiores.</p></li>
+<li><p>Defina <strong>morfogênese</strong> e <strong>pedogênese</strong> segundo Tricart (1977) e indique qual processo predomina nos meios estáveis e nos meios fortemente instáveis.</p></li>
+<li><p>Um terreno possui <span class="math inline">\(D_R = 2\)</span> (declividade <span class="math inline">\(8\%\)</span>), <span class="math inline">\(D_S = 2\)</span> (Latossolo Vermelho-Amarelo argiloso) e <span class="math inline">\(D_C = 2\)</span>. Calcule o código numérico e a classe da <strong>Fragilidade Potencial (<span class="math inline">\(FP\)</span>)</strong>.</p></li>
+<li><p>Por que a floresta primária densa recebe dígito <span class="math inline">\(D_U = 1\)</span> e o solo exposto recebe dígito <span class="math inline">\(D_U = 5\)</span> na tabela de Ross (1994)?</p></li>
+</ol>
+</section>
+<section id="nível-intermediário-exercícios-6-a-10" class="level4">
+<h4 class="anchored" data-anchor-id="nível-intermediário-exercícios-6-a-10">Nível Intermediário (Exercícios 6 a 10)</h4>
+<ol start="6" type="1">
+<li><p>Uma unidade geoambiental apresenta <span class="math inline">\(S = 25\%\)</span>, Planossolo (<span class="math inline">\(D_S = 4\)</span>), clima semiárido com chuvas torrenciais (<span class="math inline">\(D_C = 4\)</span>) e uso atual com pastagem bem manejada (<span class="math inline">\(D_U = 3\)</span>). Determine os códigos numéricos e as classes de <span class="math inline">\(FP\)</span> e <span class="math inline">\(FE\)</span>.</p></li>
+<li><p>Considere duas áreas vizinhas com mesma Fragilidade Potencial (<span class="math inline">\(FP = 343\)</span>, Classe 3, Média), a Área A possui Caatinga arbórea densa (<span class="math inline">\(D_U = 1\)</span>) e a Área B sofreu corte raso e queimada recente (<span class="math inline">\(D_U = 5\)</span>). Calcule <span class="math inline">\(FE\)</span> para ambas e interprete a diferença à luz da Ecodinâmica de Tricart.</p></li>
+<li><p>Explique a diferença conceitual e prática entre <strong>Geossistema</strong>, <strong>Geofácies</strong> e <strong>Geótopo</strong>, dando um exemplo de cada um em uma bacia hidrográfica do Semiárido baiano.</p></li>
+<li><p>Uma encosta com <span class="math inline">\(S = 14\%\)</span>, Neossolo Litólico (<span class="math inline">\(D_S = 5\)</span>) e <span class="math inline">\(D_C = 3\)</span> é utilizada para cultivo temporário de milho (<span class="math inline">\(D_U = 4\)</span>). Determine <span class="math inline">\(FP\)</span> e <span class="math inline">\(FE\)</span> e explique por que o dígito <span class="math inline">\(5\)</span> do solo exige atenção especial mesmo quando a média <span class="math inline">\(I_{FP}\)</span> é intermediária.</p></li>
+<li><p>Como a <strong>compartimentação geoambiental</strong> (Rodriguez; Silva; Cavalcanti, 2017) transforma a análise teórica de geossistemas em instrumento prático para o Zoneamento Ecológico-Econômico (ZEE)?</p></li>
+</ol>
+</section>
+<section id="questões-objetivas-exercícios-11-a-15" class="level4">
+<h4 class="anchored" data-anchor-id="questões-objetivas-exercícios-11-a-15">Questões Objetivas (Exercícios 11 a 15)</h4>
+<ol start="11" type="1">
+<li><p>Na taxonomia da paisagem de Bertrand (2004), uma unidade territorial de escala <span class="math inline">\(1:50.000\)</span> definida pela interação dinâmica entre potencial ecológico, exploração biológica e ação antrópica denomina-se,</p>
+<ol type="A">
+<li><p>Zona.</p></li>
+<li><p>Domínio.</p></li>
+<li><p>Geossistema.</p></li>
+<li><p>Geótopo.</p></li>
+<li><p>Bioma zonal.</p></li>
+</ol></li>
+<li><p>Segundo a Ecodinâmica de Tricart (1977), um ambiente com vegetação densa, relevo suave, solos profundos e predomínio nítido da infiltração e formação de solo sobre a erosão classifica-se como,</p>
+<ol type="A">
+<li><p>Meio fortemente instável.</p></li>
+<li><p>Meio estável.</p></li>
+<li><p>Meio degradado irreversível.</p></li>
+<li><p>Meio estritamente morfogenético.</p></li>
+<li><p>Meio abiótico residual.</p></li>
+</ol></li>
+<li><p>Na metodologia de Ross (1994), uma unidade com declividade de <span class="math inline">\(22\%\)</span> (<span class="math inline">\(D_R = 4\)</span>), Argissolo abrúptico (<span class="math inline">\(D_S = 4\)</span>), clima com chuvas concentradas (<span class="math inline">\(D_C = 4\)</span>) e cobertura florestal primária (<span class="math inline">\(D_U = 1\)</span>) possui,</p>
+<ol type="A">
+<li><p>Código <span class="math inline">\(FP = 444\)</span> (Classe 4, Forte) e código <span class="math inline">\(FE = 4441\)</span> (Classe 2, Fraca).</p></li>
+<li><p>Código <span class="math inline">\(FP = 111\)</span> (Classe 1, Muito Fraca) e código <span class="math inline">\(FE = 1114\)</span> (Classe 4, Forte).</p></li>
+<li><p>Código <span class="math inline">\(FP = 444\)</span> (Classe 4, Forte) e código <span class="math inline">\(FE = 4441\)</span> (Classe 5, Muito Forte).</p></li>
+<li><p>Código <span class="math inline">\(FP = 441\)</span> (Classe 3, Média) e código <span class="math inline">\(FE = 4411\)</span> (Classe 1, Muito Fraca).</p></li>
+<li><p>Código <span class="math inline">\(FP = 555\)</span> (Classe 5, Muito Forte) e código <span class="math inline">\(FE = 5555\)</span> (Classe 5, Muito Forte).</p></li>
+</ol></li>
+<li><p>Sobre as cinco classes de Uso da Terra e Cobertura Vegetal (<span class="math inline">\(D_U\)</span>) propostas por Ross (1994), é correto afirmar que,</p>
+<ol type="A">
+<li><p>Quanto maior a densidade e a proteção da cobertura vegetal, maior é o número atribuído à classe (<span class="math inline">\(5\)</span> para floresta).</p></li>
+<li><p>Culturas temporárias de ciclo curto e solo exposto recebem classes baixas (<span class="math inline">\(1\)</span> e <span class="math inline">\(2\)</span>) por terem menor biomassa.</p></li>
+<li><p>A classe <span class="math inline">\(1\)</span> corresponde à proteção muito alta (florestas densas) e a classe <span class="math inline">\(5\)</span> corresponde à proteção muito baixa ou nula (solo exposto).</p></li>
+<li><p>O uso da terra entra exclusivamente no cálculo da Fragilidade Potencial (<span class="math inline">\(FP\)</span>).</p></li>
+<li><p>Pastagens degradadas conferem proteção superior à das florestas primárias.</p></li>
+</ol></li>
+<li><p>O código numérico posicional adotado por Ross (1994), como <span class="math inline">\(5545\)</span>, é preferível a uma nota média única sem código porque,</p>
+<ol type="A">
+<li><p>Permite identificar qual fator específico (relevo, solo, clima ou uso) é o principal responsável pela fragilidade da unidade.</p></li>
+<li><p>Dispensa qualquer mapeamento de declividade ou de solos em SIG.</p></li>
+<li><p>Garante que todas as unidades tenham sempre o mesmo valor de fragilidade.</p></li>
+<li><p>Substitui a legislação ambiental e o licenciamento de obras.</p></li>
+<li><p>Elimina a necessidade de trabalho de campo na Análise Ambiental.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="questões-de-aplicação" class="level2">
+<h2 class="anchored" data-anchor-id="questões-de-aplicação">Questões de aplicação</h2>
+<ol start="16" type="1">
+<li><p><strong>(Questão autoral, estilo ENADE / Geografia)</strong> A concepção sistêmica aplicada à análise da paisagem (Bertalanffy, 2010; Bertrand, 2004) superou a abordagem setorial clássica da Geografia Física. Nessa perspectiva integrada, o conceito de <strong>geossistema</strong> destaca-se metodologicamente porque,</p>
+<ol type="A">
+<li><p>Analisa apenas a geologia estrutural, desconsiderando a cobertura vegetal e a ação humana.</p></li>
+<li><p>Integra o potencial ecológico (meio físico), a exploração biológica (solos e biota) e a ação antrópica em uma unidade espacial concreta e cartografável.</p></li>
+<li><p>Aplica-se exclusivamente a ambientes polares e desérticos sem ocupação humana.</p></li>
+<li><p>Reduz a dinâmica ambiental a fenômenos puramente econômicos, sem base geomorfológica.</p></li>
+<li><p>Confunde-se com o geótopo por possuir área inferior a alguns metros quadrados.</p></li>
+</ol></li>
+<li><p><strong>(Questão autoral, estilo Concurso Analista Ambiental / Planejamento Territorial)</strong> Em um estudo de Fragilidade Ambiental segundo Ross (1994), um município identificou duas áreas de mesma <strong>Fragilidade Potencial Forte (<span class="math inline">\(FP = 4\)</span>)</strong>. A Área 1 permanece coberta por mata nativa conservada (<span class="math inline">\(D_U = 1\)</span>), enquanto a Área 2 foi convertida em solo exposto para extração mineral irregular (<span class="math inline">\(D_U = 5\)</span>). Comparando os dois casos na Matriz de Ross, conclui-se corretamente que,</p>
+<ol type="A">
+<li><p>A Área 1 apresenta Fragilidade Emergente Fraca (<span class="math inline">\(FE = 2\)</span>) devido ao efeito protetor da floresta, enquanto a Área 2 atinge Fragilidade Emergente Muito Forte (<span class="math inline">\(FE = 5\)</span>).</p></li>
+<li><p>A Área 1 apresenta <span class="math inline">\(FE = 5\)</span> por ter maior biomassa, enquanto a Área 2 tem <span class="math inline">\(FE = 1\)</span>.</p></li>
+<li><p>Ambas possuem <span class="math inline">\(FE = 4\)</span>, pois o uso da terra não altera a fragilidade emergente.</p></li>
+<li><p>A Área 1 perdeu sua fragilidade potencial natural ao ser protegida por lei.</p></li>
+<li><p>O código numérico da Área 2 deve ser invertido para priorizar a mineração.</p></li>
+</ol></li>
+<li><p><strong>(Questão autoral, estilo Concurso Perito Ambiental / Ecodinâmica)</strong> Durante uma perícia em encosta rural ocupada por pecuária extensiva sobre Neossolos Litólicos (<span class="math inline">\(S = 28\%\)</span>), verificou-se remoção intensa do horizonte superficial, ravinamento ativo e exposição de fragmentos rochosos, com perda quase total da capacidade de formação de novo solo. À luz de Tricart (1977), essa área encontra-se em,</p>
+<ol type="A">
+<li><p>Meio estável, com amplo predomínio da pedogênese sobre a morfogênese.</p></li>
+<li><p>Meio fortemente instável, com nítido predomínio da morfogênese sobre a pedogênese.</p></li>
+<li><p>Equilíbrio climático estático, sem risco de perda produtiva ou assoreamento.</p></li>
+<li><p>Estágio de pedogênese acelerada favorável ao pisoteio bovino intensivo.</p></li>
+<li><p>Unidade zonal de escala <span class="math inline">\(G\text{I}\)</span> imune a intervenções locais de manejo.</p></li>
+</ol></li>
+</ol>
+<section id="conexão-direta-com-a-avaliação-teórica-semana-10-e-com-o-trabalho-prático-final" class="level3">
+<h3 class="anchored" data-anchor-id="conexão-direta-com-a-avaliação-teórica-semana-10-e-com-o-trabalho-prático-final">Conexão Direta com a Avaliação Teórica (Semana 10) e com o Trabalho Prático Final</h3>
+<p>Você completou o <strong>Módulo 3</strong>! Na Semana 10, a Avaliação Teórica cobrará exatamente a articulação entre os fundamentos socioambientais (Módulo 1), a AIA e os sistemas abertos (Módulo 2) e o tripé técnico-geográfico <strong>Bacias + Morfopedologia + Geossistemas/Tricart/Ross</strong> (Módulo 3). Use o <strong>Simulado Preparatório</strong> logo após este capítulo como treino integral em condições reais de prova!</p>
+</section>
+</section>
+<section id="gabarito-comentado" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="gabarito-comentado">Gabarito comentado</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Clique para abrir o Gabarito Comentado
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<section id="resoluções-e-justificativas-capítulo-9" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="resoluções-e-justificativas-capítulo-9">Resoluções e Justificativas, Capítulo 9</h3>
+<ol type="1">
+<li><p><strong>Propriedade emergente (TGS).</strong> A fragilidade ambiental resulta da interação simultânea entre relevo, solo, clima e cobertura vegetal/uso da terra. Nenhum elemento isolado define o risco final; uma declividade alta pode ser estabilizada por floresta densa, enquanto um solo frágil em clima torrencial degrada-se ao perder a vegetação.</p></li>
+<li><p><strong>Taxonomia de Bertrand (2004),</strong> <em>Unidades superiores,</em> (1) Zona, (2) Domínio, (3) Região Natural. <em>Unidades inferiores,</em> (4) Geossistema, (5) Geofácies, (6) Geótopo.</p></li>
+<li><p><strong>Tricart (1977),</strong> <em>pedogênese</em> é o conjunto de processos que formam e aprofundam o solo; <em>morfogênese</em> engloba os processos erosivos e de remoção que modelam o relevo. Nos <strong>meios estáveis</strong> predomina a pedogênese (<span class="math inline">\(P \gg M\)</span>); nos <strong>meios fortemente instáveis</strong> predomina a morfogênese (<span class="math inline">\(M \gg P\)</span>).</p></li>
+<li><p><strong>Cálculo de <span class="math inline">\(FP\)</span>.</strong> Código <span class="math inline">\(FP = \mathbf{222}\)</span>. Média <span class="math inline">\(I_{FP} = (2+2+2)/3 = 2{,}0 \implies\)</span> <strong>Classe <span class="math inline">\(FP = 2\)</span> (Fraca)</strong>.</p></li>
+<li><p><strong>Sentido da escala de Ross.</strong> Em Ross (1994), a escala numérica de <span class="math inline">\(1\)</span> a <span class="math inline">\(5\)</span> mede sempre o <strong>grau de fragilidade</strong> (de Muito Fraca a Muito Forte). Como a floresta densa protege maximamente o solo contra o impacto da chuva e o escoamento, ela gera a menor fragilidade (<span class="math inline">\(D_U = 1\)</span>); o solo exposto oferece proteção nula, gerando a maior fragilidade (<span class="math inline">\(D_U = 5\)</span>).</p></li>
+<li><p><strong>Cálculo completo (<span class="math inline">\(S=25\%\)</span>, Planossolo, <span class="math inline">\(D_C=4\)</span>, pastagem manejada),</strong> <span class="math inline">\(D_R=4\)</span> (<span class="math inline">\(20\text{-}30\%\)</span>), <span class="math inline">\(D_S=4\)</span>, <span class="math inline">\(D_C=4\)</span>, <span class="math inline">\(D_U=3\)</span>. Código <span class="math inline">\(FP = \mathbf{444}\)</span>, <span class="math inline">\(I_{FP} = (4+4+4)/3 = 4{,}0 \implies\)</span> <strong>Classe <span class="math inline">\(FP = 4\)</span> (Forte)</strong>. Código <span class="math inline">\(FE = \mathbf{4443}\)</span>; cruzando <span class="math inline">\(FP=4 \times D_U=3\)</span> na Matriz de Ross <span class="math inline">\(\implies\)</span> <strong>Classe <span class="math inline">\(FE = 4\)</span> (Forte)</strong>.</p></li>
+<li><p><strong>Comparação Área A vs.&nbsp;Área B (<span class="math inline">\(FP = 343\)</span>, Classe 3),</strong></p>
+<ul>
+<li><p><strong>Área A (<span class="math inline">\(D_U=1\)</span>),</strong> <span class="math inline">\(FE = \mathbf{3431} \implies\)</span> cruzando <span class="math inline">\(FP=3 \times D_U=1\)</span> na matriz resulta <strong>Classe <span class="math inline">\(FE = 2\)</span> (Fraca)</strong>, comportamento próximo ao meio estável ou intergrade protegido.</p></li>
+<li><p><strong>Área B (<span class="math inline">\(D_U=5\)</span>),</strong> <span class="math inline">\(FE = \mathbf{3435} \implies\)</span> cruzando <span class="math inline">\(FP=3 \times D_U=5\)</span> na matriz resulta <strong>Classe <span class="math inline">\(FE = 4\)</span> (Forte)</strong>, ruptura do equilíbrio dinâmico, migrando para forte instabilidade morfogenética.</p></li>
+</ul></li>
+<li><p><strong>Diferenciação escalar no Semiárido,</strong> <em>Geossistema</em> (<span class="math inline">\(1:50.000\)</span> a <span class="math inline">\(1:100.000\)</span>), uma sub-bacia do Semiárido com suas serras, depressões e usos rurais; <em>Geofácies</em> (<span class="math inline">\(1:10.000\)</span> a <span class="math inline">\(1:25.000\)</span>), uma meia encosta homogênea com Caatinga arbustiva sobre Neossolo; <em>Geótopo</em> (<span class="math inline">\(&gt;1:5.000\)</span>), uma voçoroca ativa ou lajedo específico dentro dessa encosta.</p></li>
+<li><p><strong>Cálculo (<span class="math inline">\(S=14\%\)</span>, Neossolo Litólico, <span class="math inline">\(D_C=3\)</span>, milho),</strong> <span class="math inline">\(D_R=3\)</span>, <span class="math inline">\(D_S=5\)</span>, <span class="math inline">\(D_C=3\)</span>, <span class="math inline">\(D_U=4\)</span>. Código <span class="math inline">\(FP = \mathbf{353}\)</span>, <span class="math inline">\(I_{FP} = (3+5+3)/3 = 11/3 \approx 3{,}67 \implies\)</span> <strong>Classe <span class="math inline">\(FP = 4\)</span> (Forte)</strong>. Código <span class="math inline">\(FE = \mathbf{3534}\)</span>; cruzando <span class="math inline">\(FP=4 \times D_U=4 \implies\)</span> <strong>Classe <span class="math inline">\(FE = 4\)</span> (Forte)</strong>. O dígito <span class="math inline">\(5\)</span> em <span class="math inline">\(D_S\)</span> alerta que o solo é muito raso (Neossolo Litólico), logo qualquer perda erosiva expõe rapidamente a rocha.</p></li>
+<li><p><strong>Compartimentação e ZEE.</strong> Ao delimitar unidades geoambientais homogêneas (em termos de relevo, solo, clima, ecodinâmica e uso), a compartimentação fornece a base cartográfica direta para definir zonas de preservação, recuperação ou uso produtivo sustentável no ZEE.</p></li>
+<li><p><strong>Gabarito, (C).</strong> O Geossistema corresponde à unidade de ordem <span class="math inline">\(G\text{V}\)</span> (escala <span class="math inline">\(1:50.000\)</span> a <span class="math inline">\(1:100.000\)</span>) que sintetiza potencial ecológico, exploração biológica e ação antrópica.</p></li>
+<li><p><strong>Gabarito, (B).</strong> Predomínio da pedogênese sobre a morfogênese sob vegetação densa e relevo suave define o Meio Estável de Tricart (1977).</p></li>
+<li><p><strong>Gabarito, (A).</strong> <span class="math inline">\(D_R=4, D_S=4, D_C=4 \implies FP = 444\)</span> (Classe 4, Forte). Com mata primária (<span class="math inline">\(D_U=1\)</span>), <span class="math inline">\(FE = 4441\)</span> e o cruzamento <span class="math inline">\(4 \times 1\)</span> na Matriz de Ross resulta em Classe 2, Fraca.</p></li>
+<li><p><strong>Gabarito, (C).</strong> Em Ross (1994), <span class="math inline">\(1\)</span> indica menor fragilidade (proteção muito alta da floresta) e <span class="math inline">\(5\)</span> indica maior fragilidade (proteção nula do solo exposto).</p></li>
+<li><p><strong>Gabarito, (A).</strong> A notação posicional mantém visível a contribuição individual de cada fator (<span class="math inline">\(D_R, D_S, D_C, D_U\)</span>), orientando ações corretivas específicas.</p></li>
+<li><p><strong>Gabarito, (B).</strong> Bertrand (2004) concebe o geossistema como unidade territorial concreta e cartografável resultante da interação entre fatores abióticos, bióticos e antrópicos.</p></li>
+<li><p><strong>Gabarito, (A).</strong> Na Matriz de Fragilidade Emergente de Ross (<a href="#tbl-matriz_ross_fe" class="quarto-xref">Tabela&nbsp;<span>9.5</span></a>), <span class="math inline">\(FP=4 \times D_U=1 \implies FE=2\)</span> (Fraca), enquanto <span class="math inline">\(FP=4 \times D_U=5 \implies FE=5\)</span> (Muito Forte).</p></li>
+<li><p><strong>Gabarito, (B).</strong> Declividade acentuada (<span class="math inline">\(28\%\)</span>), solo raso (Neossolo Litólico), ravinamento ativo e perda de solo caracterizam amplo predomínio da morfogênese sobre a pedogênese (Meio Fortemente Instável).</p></li>
+</ol>
+</section>
+</div>
+</div>
+</section>
+<section id="síntese-conceitual" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="síntese-conceitual">Síntese conceitual</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Síntese Conceitual do Capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>TGS (Bertalanffy, 2010).</strong> Paisagens são sistemas abertos interdependentes; a fragilidade ambiental é uma propriedade emergente da interação entre componentes físicos e uso humano. <strong>Taxonomia de Bertrand (2004),</strong> Unidades Superiores (Zona <span class="math inline">\(\to\)</span> Domínio <span class="math inline">\(\to\)</span> Região Natural) e Unidades Inferiores (Geossistema <span class="math inline">\(\to\)</span> Geofácies <span class="math inline">\(\to\)</span> Geótopo). <strong>Ecodinâmica (Tricart, 1977),</strong> Meios Estáveis (<span class="math inline">\(P \gg M\)</span>), Meios Intergrades (<span class="math inline">\(P \approx M\)</span>) e Meios Fortemente Instáveis (<span class="math inline">\(M \gg P\)</span>). <strong>Fragilidade Ambiental (Ross, 1994).</strong> Classes de <span class="math inline">\(1\)</span> (Muito Fraca) a <span class="math inline">\(5\)</span> (Muito Forte) para <span class="math inline">\(D_R\)</span>, <span class="math inline">\(D_S\)</span>, <span class="math inline">\(D_C\)</span> e <span class="math inline">\(D_U\)</span>.</p>
+<p><strong>Códigos de Ross,</strong> Fragilidade Potencial (<span class="math inline">\(FP = D_R D_S D_C\)</span>, média física) e Fragilidade Emergente (<span class="math inline">\(FE = D_R D_S D_C D_U\)</span>, cruzamento de <span class="math inline">\(FP \times D_U\)</span> na Matriz de Ross).</p>
+</div>
+</div>
+</section>
+<section id="autoavaliação" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="autoavaliação">Autoavaliação</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Autoavaliação e Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Responda rapidamente (<strong>V</strong> ou <strong>F</strong>) e confira no gabarito abaixo,</p>
+<ol type="1">
+<li><p>() Na metodologia de Ross (1994), a Fragilidade Potencial (<span class="math inline">\(FP\)</span>) inclui o grau de proteção da cobertura vegetal e do uso atual da terra.</p></li>
+<li><p>() Em Ross (1994), uma floresta primária densa recebe dígito <span class="math inline">\(D_U = 1\)</span> (proteção muito alta / fragilidade muito fraca), enquanto solo exposto recebe <span class="math inline">\(D_U = 5\)</span>.</p></li>
+<li><p>() Nos Meios Estáveis de Tricart (1977), a pedogênese supera amplamente a morfogênese.</p></li>
+<li><p>() Na taxonomia de Bertrand (2004), o Geótopo representa a menor unidade espacial, de detalhe extremo (como uma voçoroca ou afloramento).</p></li>
+</ol>
+<p><strong>Gabarito da verificação da aprendizagem,</strong> 1-<strong>F</strong> (<span class="math inline">\(FP\)</span> considera apenas <span class="math inline">\(D_R, D_S, D_C\)</span>; o uso <span class="math inline">\(D_U\)</span> entra apenas na Fragilidade Emergente <span class="math inline">\(FE\)</span>); 2-<strong>V</strong>; 3-<strong>V</strong>; 4-<strong>V</strong>.</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/analise-ambiental\/");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Código deslocável","output":"Saída deslocável"};
+  </script>
+<nav class="page-navigation" aria-label="Página">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/08-morfopedologia-vertentes.html" class="pagination-link" aria-label="Morfopedologia e Processos Interativos Relevo, Solo e Água">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Morfopedologia e Processos Interativos Relevo, Solo e Água</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/mod3-simulado.html" class="pagination-link" aria-label="Simulado Preparatório para a Avaliação Teórica, Módulos 1 a 3">
+        <span class="nav-page-text">Simulado Preparatório para a Avaliação Teórica, Módulos 1 a 3</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026 (DCHF/UEFS). <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

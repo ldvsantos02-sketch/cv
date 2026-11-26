@@ -1,0 +1,74 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}
+
+\def\cardW{3.85}
+\def\cardH{3.45}
+\def\hdrH{0.92}
+\def\gap{0.75}
+
+% 1. Ação do Projeto
+\pgfmathsetmacro{\xa}{0}
+\begin{scope}
+  \clip[rounded corners=4pt] (\xa,0) rectangle (\xa+\cardW,\cardH);
+  \fill[bgNavy] (\xa,0) rectangle (\xa+\cardW,\cardH);
+  \fill[uefsNavy] (\xa,\cardH-\hdrH) rectangle (\xa+\cardW,\cardH);
+\end{scope}
+\draw[uefsNavy, line width=1.1pt, rounded corners=4pt] (\xa,0) rectangle (\xa+\cardW,\cardH);
+\node[text width=3.45cm, align=center, font=\footnotesize\bfseries\sffamily, text=white]
+  at (\xa+\cardW/2, \cardH-\hdrH/2) {Ação do Projeto};
+\node[text width=3.35cm, align=center, font=\footnotesize\sffamily, text=uefsInk]
+  at (\xa+\cardW/2, {(\cardH-\hdrH)/2})
+  {Abertura de estrada em encosta sem drenagem pluvial};
+
+% 2. Impacto Direto (1ª ordem)
+\pgfmathsetmacro{\xb}{\cardW+\gap}
+\begin{scope}
+  \clip[rounded corners=4pt] (\xb,0) rectangle (\xb+\cardW,\cardH);
+  \fill[bgNavy] (\xb,0) rectangle (\xb+\cardW,\cardH);
+  \fill[uefsWater] (\xb,\cardH-\hdrH) rectangle (\xb+\cardW,\cardH);
+\end{scope}
+\draw[uefsWater, line width=1.1pt, rounded corners=4pt] (\xb,0) rectangle (\xb+\cardW,\cardH);
+\node[text width=3.45cm, align=center, font=\footnotesize\bfseries\sffamily, text=white]
+  at (\xb+\cardW/2, \cardH-\hdrH/2) {Impacto Direto (1\textsuperscript{a} ordem)};
+\node[text width=3.35cm, align=center, font=\footnotesize\sffamily, text=uefsInk]
+  at (\xb+\cardW/2, {(\cardH-\hdrH)/2})
+  {Remoção da Caatinga e compactação ou exposição do horizonte superficial};
+
+% 3. Impacto Indireto (2ª ordem)
+\pgfmathsetmacro{\xc}{2*(\cardW+\gap)}
+\begin{scope}
+  \clip[rounded corners=4pt] (\xc,0) rectangle (\xc+\cardW,\cardH);
+  \fill[bgTeal] (\xc,0) rectangle (\xc+\cardW,\cardH);
+  \fill[uefsTeal] (\xc,\cardH-\hdrH) rectangle (\xc+\cardW,\cardH);
+\end{scope}
+\draw[uefsTeal, line width=1.1pt, rounded corners=4pt] (\xc,0) rectangle (\xc+\cardW,\cardH);
+\node[text width=3.45cm, align=center, font=\footnotesize\bfseries\sffamily, text=white]
+  at (\xc+\cardW/2, \cardH-\hdrH/2) {Impacto Indireto (2\textsuperscript{a} ordem)};
+\node[text width=3.35cm, align=center, font=\footnotesize\sffamily, text=uefsInk]
+  at (\xc+\cardW/2, {(\cardH-\hdrH)/2})
+  {Escoamento concentrado, sulcos, ravinas e carreamento de sedimentos};
+
+% 4. Impacto Indireto (3ª ordem)
+\pgfmathsetmacro{\xd}{3*(\cardW+\gap)}
+\begin{scope}
+  \clip[rounded corners=4pt] (\xd,0) rectangle (\xd+\cardW,\cardH);
+  \fill[bgGold] (\xd,0) rectangle (\xd+\cardW,\cardH);
+  \fill[uefsOrange] (\xd,\cardH-\hdrH) rectangle (\xd+\cardW,\cardH);
+\end{scope}
+\draw[uefsOrange, line width=1.1pt, rounded corners=4pt] (\xd,0) rectangle (\xd+\cardW,\cardH);
+\node[text width=3.45cm, align=center, font=\footnotesize\bfseries\sffamily, text=white]
+  at (\xd+\cardW/2, \cardH-\hdrH/2) {Impacto Indireto (3\textsuperscript{a} ordem)};
+\node[text width=3.35cm, align=center, font=\footnotesize\sffamily, text=uefsInk]
+  at (\xd+\cardW/2, {(\cardH-\hdrH)/2})
+  {Assoreamento de açude comunitário e escassez hídrica na estiagem};
+
+% Setas entre cartões
+\draw[aaArrow, color=uefsNavy] (\xa+\cardW+0.08, \cardH/2) -- (\xb-0.08, \cardH/2);
+\draw[aaArrow, color=uefsWater] (\xb+\cardW+0.08, \cardH/2) -- (\xc-0.08, \cardH/2);
+\draw[aaArrow, color=uefsTeal] (\xc+\cardW+0.08, \cardH/2) -- (\xd-0.08, \cardH/2);
+
+\end{tikzpicture}
+\end{document}

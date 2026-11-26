@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Apostila completa do componente curricular CHF662 (Análise Ambiental), Curso de Geografia da UEFS, organizada em cinco módulos, 15 capítulos em 10 etapas, simulados comentados, formulário e glossário.">
+
+<title>6&nbsp; Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial - Análise Ambiental (CHF662)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/mod2-simulado.html" rel="next">
+<link href="../capitulos/05-avaliacao-impacto-ambiental.html" rel="prev">
+<link href="../img/capa_analise_ambiental.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-679673b8a27c868cce7048b2deb5a79d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Pular para o conteúdo principal</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Barra de ferramentas">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/05-avaliacao-impacto-ambiental.html">Módulo 2. AIA e análise ambiental integrada</a></li><li class="breadcrumb-item"><a href="../capitulos/06-analise-ambiental-integrada.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Análise Ambiental (CHF662)</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos02-sketch/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../APOSTILA_ANALISE_AMBIENTAL_CHF662_UEFS.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Apresentação e orientação de estudo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Módulo 1. Fundamentos epistemológicos e conceituais</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-questao-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Questão Ambiental Contemporânea e o Papel da Geografia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-sociedade-natureza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Modernidade, a Geografia e a Relação Sociedade-Natureza</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-geografia-socioambiental-gtp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Abordagens Ambientais no Pensamento Geográfico Moderno</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-conceitos-operacionais-risco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos e Definições Operacionais da Análise Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod1-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Módulo 2. AIA e análise ambiental integrada</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-avaliacao-impacto-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-analise-ambiental-integrada.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod2-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-bacias-hidrograficas-morfometria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bacia Hidrográfica como Unidade de Análise Ambiental Integrada</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-morfopedologia-vertentes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Morfopedologia e Processos Interativos Relevo, Solo e Água</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-geossistemas-ecodinamica-ross.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geossistemas, Ecodinâmica e Análise Empírica da Fragilidade Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod3-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado Preparatório para a Avaliação Teórica, Módulos 1 a 3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">Módulo 4. Indicadores, qualidade do solo e degradação</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-indicadores-ambientais-peir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-qualidade-solo-iqs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-degradacao-erosao-usle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagnóstico de Processos de Degradação Ambiental e Erosão Linear</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod4-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 4</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-bioengenharia-agua-solo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-legislacao-ambiental-prad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-diagnostico-ambiental-aplicado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Manual Prático do Diagnóstico Ambiental Aplicado e Produtos Técnicos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod5-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 5</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">Encerramento, Formulário e Referências</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-avaliacao-geral-final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avaliação Geral Integrada, Simulado Final Completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-formulario-glossario-referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formulário Técnico, Glossário e Referências Oficiais</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul class="collapse">
+  <li><a href="#elementos-dos-meios-físico-biótico-e-antrópico-e-suas-interações" id="toc-elementos-dos-meios-físico-biótico-e-antrópico-e-suas-interações" class="nav-link active" data-scroll-target="#elementos-dos-meios-físico-biótico-e-antrópico-e-suas-interações">Elementos dos Meios Físico, Biótico e Antrópico e suas Interações</a></li>
+  <li><a href="#sistemas-ambientais-abertos-limiares-e-retroalimentação" id="toc-sistemas-ambientais-abertos-limiares-e-retroalimentação" class="nav-link" data-scroll-target="#sistemas-ambientais-abertos-limiares-e-retroalimentação">Sistemas Ambientais Abertos, Limiares e Retroalimentação</a></li>
+  <li><a href="#escalas-espaciais-escalas-temporais-e-a-falácia-de-escala" id="toc-escalas-espaciais-escalas-temporais-e-a-falácia-de-escala" class="nav-link" data-scroll-target="#escalas-espaciais-escalas-temporais-e-a-falácia-de-escala">Escalas Espaciais, Escalas Temporais e a Falácia de Escala</a></li>
+  <li><a href="#planejamento-ambiental-planejamento-territorial-e-ordenamento-territorial" id="toc-planejamento-ambiental-planejamento-territorial-e-ordenamento-territorial" class="nav-link" data-scroll-target="#planejamento-ambiental-planejamento-territorial-e-ordenamento-territorial">Planejamento Ambiental, Planejamento Territorial e Ordenamento Territorial</a></li>
+  <li><a href="#zoneamento-ecológico-econômico-zee-e-aplicação-em-reservatório" id="toc-zoneamento-ecológico-econômico-zee-e-aplicação-em-reservatório" class="nav-link" data-scroll-target="#zoneamento-ecológico-econômico-zee-e-aplicação-em-reservatório">Zoneamento Ecológico-Econômico (ZEE) e Aplicação em Reservatório</a></li>
+  <li><a href="#síntese-aplicada-em-ordenamento-territorial-zee" id="toc-síntese-aplicada-em-ordenamento-territorial-zee" class="nav-link" data-scroll-target="#síntese-aplicada-em-ordenamento-territorial-zee">Síntese Aplicada em Ordenamento Territorial (ZEE)</a></li>
+  <li><a href="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio" id="toc-armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="nav-link" data-scroll-target="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</a></li>
+  <li><a href="#exercícios-de-fixação" id="toc-exercícios-de-fixação" class="nav-link" data-scroll-target="#exercícios-de-fixação">Exercícios de fixação</a></li>
+  <li><a href="#questões-de-aplicação" id="toc-questões-de-aplicação" class="nav-link" data-scroll-target="#questões-de-aplicação">Questões de aplicação</a></li>
+  <li><a href="#gabarito-comentado" id="toc-gabarito-comentado" class="nav-link" data-scroll-target="#gabarito-comentado">Gabarito comentado</a></li>
+  <li><a href="#síntese-conceitual" id="toc-síntese-conceitual" class="nav-link" data-scroll-target="#síntese-conceitual">Síntese conceitual</a></li>
+  <li><a href="#autoavaliação" id="toc-autoavaliação" class="nav-link" data-scroll-target="#autoavaliação">Autoavaliação</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main data-book-tables="true" class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/05-avaliacao-impacto-ambiental.html">Módulo 2. AIA e análise ambiental integrada</a></li><li class="breadcrumb-item"><a href="../capitulos/06-analise-ambiental-integrada.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="cap:analise_integrada" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>A análise integrada procura explicar como mudanças em um componente ambiental se propagam pelos demais. Água, sedimentos, energia e decisões de uso atravessam limites administrativos e unidades de paisagem. A delimitação do sistema e do período de análise define quais dessas transferências entram no diagnóstico.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>O que você vai aprender neste capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O capítulo desenvolve a integração funcional entre os meios físico, biótico e antrópico, a formulação de balanços em sistemas ambientais abertos, o acoplamento entre escalas espaciais e temporais, os riscos da falácia de escala e a distinção entre planejamento ambiental, planejamento territorial e ordenamento territorial, com foco no Zoneamento Ecológico-Econômico (ZEE).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Revisando o que você precisa saber
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A leitura retoma os conceitos de Geografia Socioambiental, resiliência, fragilidade e delimitação de áreas de influência (ADA, AID e AII). Uma redução de volume em um reservatório resulta da combinação entre entradas, saídas e variação do estoque interno, exigindo dados de período, escala e unidade compatíveis.</p>
+</div>
+</div>
+<section id="elementos-dos-meios-físico-biótico-e-antrópico-e-suas-interações" class="level2">
+<h2 class="anchored" data-anchor-id="elementos-dos-meios-físico-biótico-e-antrópico-e-suas-interações">Elementos dos Meios Físico, Biótico e Antrópico e suas Interações</h2>
+<p>Um problema recorrente em relatórios ambientais consiste em tratar o diagnóstico como uma coleção de capítulos isolados sobre rochas, plantas e população, sem explicitar como esses compartimentos interagem na paisagem. A <strong>Análise Ambiental Integrada</strong> (Castro; Lemos, 2016; Drew, 1989) supera essa compartimentação ao investigar tanto os elementos constituintes quanto as <strong>relações funcionais</strong> que conectam os três subsistemas territoriais.</p>
+<p>O <strong>meio físico (abiótico)</strong> engloba o substrato geológico, as formas de relevo e declividade, os tipos e propriedades dos solos, o regime climático (precipitação, radiação e evapotranspiração) e a dinâmica hidrológica superficial e subterrânea, fornecendo a matriz energética e material do sistema. Sobre essa base atua o <strong>meio biótico</strong>, formado pelas coberturas vegetais, fauna, microrganismos edáficos, teias tróficas e fluxos gênicos, que regula o meio físico ao interceptar gotas de chuva, elevar a rugosidade superficial, estruturar agregados com matéria orgânica e raízes e ciclar nutrientes. Por sua vez, o <strong>meio antrópico (socioeconômico e cultural)</strong> reúne uso e cobertura da terra, sistemas agropecuários, urbanização, infraestrutura viária e energética, estrutura fundiária e instituições, operando simultaneamente como agente transformador dos fluxos de matéria e energia e como receptor das alterações ambientais desencadeadas.</p>
+<p>No Semiárido baiano, esse acoplamento manifesta-se com clareza em uma única encosta de Caatinga. A retirada da vegetação lenhosa (ação antrópica sobre o meio biótico) expõe um Neossolo ou Argissolo raso (meio físico) ao impacto direto de chuvas convectivas intensas, reduz a matéria orgânica e a infiltração, acelera o escoamento superficial, abre sulcos e ravinas, assoreia o barreiro ou açude comunitário e agrava a escassez hídrica na estiagem, gerando retorno direto sobre as condições produtivas do meio socioeconômico.</p>
+</section>
+<section id="sistemas-ambientais-abertos-limiares-e-retroalimentação" class="level2">
+<h2 class="anchored" data-anchor-id="sistemas-ambientais-abertos-limiares-e-retroalimentação">Sistemas Ambientais Abertos, Limiares e Retroalimentação</h2>
+<p>A fundamentação sistêmica da Análise Ambiental apoia-se na Teoria Geral dos Sistemas (Bertalanffy, 2010) e na análise dos sistemas ambientais (Drew, 1989; Christofoletti, 1999). Paisagens, vertentes e bacias hidrográficas funcionam como <strong>sistemas ambientais abertos</strong>, recebendo fluxos externos de matéria e energia (<strong>entradas</strong> ou <em>inputs</em>, como radiação solar, chuva, insumos agrícolas e trabalho humano), transformando e armazenando parte desses fluxos em <strong>estoques internos</strong> (solo, água subterrânea, biomassa e nutrientes) por meio de <strong>processos</strong> (infiltração, intemperismo, fotossíntese e erosão) e exportando fluxos (<strong>saídas</strong> ou <em>outputs</em>, como vazão fluvial, sedimentos, evapotranspiração e produção agrícola), arquitetura sintetizada no Painel (a) da <a href="#fig-sistema_escalas" class="quarto-xref">Figura&nbsp;<span>6.1</span></a>.</p>
+<div id="fig-sistema_escalas" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Esquema em dois painéis mostrando fluxos de entrada, estoque, saída e feedback no painel a e relação escala espacial versus temporal no painel b">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sistema_escalas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig04_sistema_aberto_escalas.png" class="img-fluid figure-img" alt="Esquema em dois painéis mostrando fluxos de entrada, estoque, saída e feedback no painel a e relação escala espacial versus temporal no painel b">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sistema_escalas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.1: Sistema ambiental aberto com entradas, estoques, processos, saídas e retroalimentação (a) e acoplamento entre escalas espaciais e temporais na dinâmica geoambiental (b). Fonte: elaboração didática CHF662 com base em Drew (1989) e Castro e Lemos (2016).
+</figcaption>
+</figure>
+</div>
+<p>Em termos quantitativos, um balanço de água ou matéria relaciona entradas (<span class="math inline">\(E\)</span>), saídas (<span class="math inline">\(S_{\text{out}}\)</span>) e variação do armazenamento (<span class="math inline">\(\Delta S\)</span>) durante um intervalo definido. Na comparação de fluxos hídricos, a precipitação medida em milímetros expressa uma lâmina vertical, enquanto a vazão em metros cúbicos por segundo indica volume por unidade de tempo, exigindo converter a lâmina em volume pela área da bacia e integrar a vazão ao longo do período analisado. Para o balanço hídrico anual de uma microbacia (em <span class="math inline">\(\text{mm/ano}\)</span>), combinam-se precipitação (<span class="math inline">\(P\)</span>), evapotranspiração real (<span class="math inline">\(ET\)</span>), escoamento superficial direto (<span class="math inline">\(Q_s\)</span>) e escoamento de base (<span class="math inline">\(Q_b\)</span>):</p>
+<p><span class="math display">\[
+\begin{aligned}
+\Delta S &amp;= E - S_{\text{out}} \\
+\Delta S &amp;= P - \left(ET + Q_s + Q_b\right)
+\end{aligned}
+\]</span></p>
+<p>Valores nulos (<span class="math inline">\(\Delta S = 0\)</span>) apontam equilíbrio dinâmico, valores negativos (<span class="math inline">\(\Delta S &lt; 0\)</span>) indicam depleção do estoque do solo ou aquífero e valores positivos (<span class="math inline">\(\Delta S &gt; 0\)</span>) correspondem à recarga. O Exemplo 6.1 aplica esse balanço anual a uma microbacia experimental no domínio da Caatinga.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 6.1 (Básico). Balanço Hídrico em Sistema Ambiental Aberto no Semiárido
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Uma microbacia experimental inserida no domínio da Caatinga foi monitorada durante um ano hidrológico completo. Deseja-se avaliar se o sistema hídrico local operou em equilíbrio dinâmico, recarga ou depleção de estoque.</p>
+<p><strong>Dados disponíveis.</strong> Entrada anual de precipitação <span class="math inline">\(P = 680\text{ mm/ano}\)</span>. Saídas anuais medidas: evapotranspiração real <span class="math inline">\(ET = 545\text{ mm/ano}\)</span>; escoamento superficial direto <span class="math inline">\(Q_s = 115\text{ mm/ano}\)</span>; escoamento de base e drenagem profunda <span class="math inline">\(Q_b = 35\text{ mm/ano}\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular o total de saídas (<span class="math inline">\(S_{\text{out}}\)</span>), a variação do estoque hídrico interno (<span class="math inline">\(\Delta S\)</span>) e interpretar o estado funcional do sistema nesse ano hidrológico.</p>
+<p><strong>Fundamento da análise.</strong> Aplicação da equação de conservação de massa em sistema ambiental aberto, <span class="math inline">\(\Delta S = P - (ET + Q_s + Q_b)\)</span>.</p>
+<p><strong>Desenvolvimento.</strong> Somando as parcelas de saída e subtraindo da entrada pluviométrica anual, obtém-se:</p>
+<p><span class="math display">\[
+\begin{aligned}
+S_{\text{out}} &amp;= ET + Q_s + Q_b = 545 + 115 + 35 = 695\text{ mm/ano} \\
+\Delta S &amp;= P - S_{\text{out}} = 680 - 695 = -15\text{ mm/ano}.
+\end{aligned}
+\]</span></p>
+<p>O sinal negativo (<span class="math inline">\(\Delta S = -15\text{ mm/ano}\)</span>) indica que as saídas superaram as entradas em <span class="math inline">\(15\text{ mm}\)</span>, consumindo parte da água armazenada previamente no solo e nos reservatórios subterrâneos rasos.</p>
+<p><strong>Interpretação do resultado.</strong> Total de saídas <span class="math inline">\(S_{\text{out}} = 695\text{ mm/ano}\)</span> e variação do estoque <span class="math inline">\(\Delta S = -15\text{ mm/ano}\)</span>, caracterizando depleção moderada do estoque hídrico interno nesse ano.</p>
+<p><strong>Condições de validade.</strong> O resultado é fisicamente coerente para o Semiárido baiano, onde a evapotranspiração consome cerca de <span class="math inline">\(80{,}15\%\)</span> da chuva (<span class="math inline">\(545/680\)</span>), e déficits interanuais moderados compensam-se em anos mais chuvosos quando a cobertura vegetal preserva a infiltração.</p>
+</div>
+</div>
+<section id="equilíbrio-dinâmico-limiares-e-retroalimentação" class="level3">
+<h3 class="anchored" data-anchor-id="equilíbrio-dinâmico-limiares-e-retroalimentação">Equilíbrio Dinâmico, Limiares e Retroalimentação</h3>
+<p>Em um sistema ambiental aberto, o <strong>equilíbrio dinâmico (<em>steady state</em>)</strong> manifesta-se quando entradas e saídas se compensam em média ao longo do tempo (<span class="math inline">\(\Delta S \approx 0\)</span>), preservando os estoques mediante autorregulação contínua dos fluxos de água, energia e matéria. Essa estabilidade apoia-se na <strong>retroalimentação negativa (<em>feedback</em> negativo)</strong>, mecanismo estabilizador que amortece desvios iniciais e reconduz o sistema à condição de referência. Em uma vertente bem vegetada, um aumento moderado de chuva eleva a umidade do solo, estimula o crescimento herbáceo, amplia a interceptação e a infiltração e, por consequência, contém o escoamento erosivo.</p>
+<p>Em sentido oposto, a <strong>retroalimentação positiva (<em>feedback</em> positivo)</strong> opera como circuito amplificador que reforça o desvio inicial e pode conduzir o sistema à degradação acelerada. Na dinâmica de desertificação ou erosão linear, o sobrepastejo reduz a cobertura vegetal, eleva o selamento e a compactação superficial, derruba a infiltração e amplia a enxurrada; esse fluxo superficial carreia matéria orgânica e sementes, dificulta a regeneração vegetal e acelera a abertura de ravinas e voçorocas.</p>
+<p>A mudança entre regimes ocorre quando o sistema ultrapassa <strong>limiares (<em>thresholds</em>)</strong>, definidos como patamares críticos de ruptura. Os <strong>limiares extrínsecos</strong> são disparados por forçantes externas que excedem a resistência do meio, como uma chuva cuja intensidade ultrapassa a capacidade máxima de infiltração do solo (<span class="math inline">\(I &gt; f_c\)</span>). Já os <strong>limiares intrínsecos</strong> resultam do enfraquecimento interno gradual do próprio sistema ao longo do tempo, a exemplo da perda progressiva de coesão em um barranco fluvial até seu desmoronamento súbito. O Exemplo 6.3 contrasta os efeitos de um mesmo evento pluviométrico sobre duas vertentes em lados opostos desse limiar.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 6.3 (Intermediário). Limiar de Infiltração e Retroalimentação Positiva versus Negativa
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Duas vertentes vizinhas com mesma litologia e declividade no Semiárido baiano recebem a mesma chuva convectiva intensa de <span class="math inline">\(I = 65{,}0\text{ mm/h}\)</span> durante <span class="math inline">\(1\)</span> hora. A <strong>Vertente 1</strong> possui Caatinga conservada com serapilheira e capacidade de infiltração estável <span class="math inline">\(f_{c1} = 78{,}0\text{ mm/h}\)</span>. A <strong>Vertente 2</strong> foi submetida a sobrepastejo contínuo, apresentando solo compactado com capacidade de infiltração reduzida para <span class="math inline">\(f_{c2} = 22{,}0\text{ mm/h}\)</span>.</p>
+<p><strong>Dados disponíveis.</strong> Intensidade da chuva <span class="math inline">\(I = 65{,}0\text{ mm/h}\)</span>; limiar de infiltração da Vertente 1, <span class="math inline">\(f_{c1} = 78{,}0\text{ mm/h}\)</span>; limiar de infiltração da Vertente 2, <span class="math inline">\(f_{c2} = 22{,}0\text{ mm/h}\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular o excesso de precipitação convertido em escoamento superficial (<span class="math inline">\(R = \max(0, I - f_c)\)</span>) e o percentual da chuva que escoa superficialmente em cada vertente, identificando em qual delas o limiar extrínseco foi rompido e qual retroalimentação predomina.</p>
+<p><strong>Fundamento da análise.</strong> Comparação direta entre a entrada pluviométrica (<span class="math inline">\(I\)</span>) e o limiar interno de infiltração (<span class="math inline">\(f_c\)</span>), associada à leitura dos circuitos de retroalimentação.</p>
+<p><strong>Desenvolvimento.</strong> Na Vertente 1 (Caatinga conservada), como <span class="math inline">\(I = 65{,}0\text{ mm/h} &lt; f_{c1} = 78{,}0\text{ mm/h}\)</span>, o limiar permanece intacto (<span class="math inline">\(R_1 = 0{,}0\text{ mm/h}\)</span>, ou <span class="math inline">\(0\%\)</span> de escoamento hortoniano), e toda a chuva infiltra sustentando a vegetação em retroalimentação negativa. Na Vertente 2 (pastagem compactada), <span class="math inline">\(I = 65{,}0\text{ mm/h} &gt; f_{c2} = 22{,}0\text{ mm/h}\)</span> rompe o limiar de infiltração:</p>
+<p><span class="math display">\[
+\begin{aligned}
+R_2 &amp;= 65{,}0 - 22{,}0 = 43{,}0\text{ mm/h} \\
+\frac{R_2}{I} \times 100\% &amp;= \frac{43{,}0}{65{,}0} \times 100\% \approx 66{,}15\%.
+\end{aligned}
+\]</span></p>
+<p>Mais de dois terços da chuva escoam rapidamente pela superfície, removendo solo fértil e sementes e reduzindo ainda mais <span class="math inline">\(f_c\)</span> nos eventos seguintes (retroalimentação positiva).</p>
+<p><strong>Interpretação do resultado.</strong> Vertente 1, <span class="math inline">\(R_1 = 0{,}0\text{ mm/h}\)</span> (<span class="math inline">\(0\%\)</span>, abaixo do limiar, retroalimentação negativa). Vertente 2, <span class="math inline">\(R_2 = 43{,}0\text{ mm/h}\)</span> (<span class="math inline">\(66{,}15\%\)</span> da chuva transformada em enxurrada, limiar rompido, retroalimentação positiva degradativa).</p>
+<p><strong>Condições de validade.</strong> O contraste entre <span class="math inline">\(0\text{ mm/h}\)</span> e <span class="math inline">\(43{,}0\text{ mm/h}\)</span> sob idêntica chuva mostra que a degradação no Semiárido resulta da interação conjunta entre o evento climático (meio físico) e o manejo do solo e da vegetação (meios biótico e antrópico).</p>
+</div>
+</div>
+<p>Na terminologia sistêmica, o uso cotidiano das palavras “positivo” e “negativo” gera interpretações invertidas que devem ser evitadas nos diagnósticos.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 1. Confundir Retroalimentação Positiva com Algo Ambientalmente Desejável
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Interpretar “retroalimentação positiva” como processo ecologicamente benéfico e “retroalimentação negativa” como processo prejudicial.</p>
+<p><strong>Correção técnica.</strong> Na Teoria dos Sistemas, os adjetivos <em>positivo</em> e <em>negativo</em> possuem sentido matemático e cibernético, desligado de juízo moral. A retroalimentação <strong>negativa</strong> opõe-se ao desvio inicial e estabiliza o sistema, enquanto a retroalimentação <strong>positiva</strong> soma-se ao desvio inicial e o amplifica, impulsionando processos de ravinamento, voçorocamento e desertificação.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="escalas-espaciais-escalas-temporais-e-a-falácia-de-escala" class="level2">
+<h2 class="anchored" data-anchor-id="escalas-espaciais-escalas-temporais-e-a-falácia-de-escala">Escalas Espaciais, Escalas Temporais e a Falácia de Escala</h2>
+<p>Todo processo geoambiental manifesta-se em uma escala característica. Como ilustra o Painel (b) da <a href="#fig-sistema_escalas" class="quarto-xref">Figura&nbsp;<span>6.1</span></a>, existe um <strong>acoplamento entre escala espacial e escala temporal</strong>, no qual processos pontuais como o impacto de gotas de chuva ocorrem em minutos ou horas, ao passo que transformações em bacias regionais e biomas desdobram-se ao longo de décadas, séculos ou milênios.</p>
+<div class="book-table-scroll" role="region" aria-label="Tabela 1" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Escala Espacial</strong></th>
+<th style="text-align: left;"><strong>Ordem de Área</strong></th>
+<th style="text-align: left;"><strong>Escala Temporal</strong></th>
+<th style="text-align: left;"><strong>Processos e Aplicações</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Parcela</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\text{cm}^2\)</span> a <span class="math inline">\(10^2\text{ m}^2\)</span></td>
+<td style="text-align: left;">Minutos a horas</td>
+<td style="text-align: left;"><em>Splash</em>, selamento e infiltração pontual.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Vertente</strong></td>
+<td style="text-align: left;"><span class="math inline">\(10^2\text{ m}^2\)</span> a <span class="math inline">\(\text{ha}\)</span></td>
+<td style="text-align: left;">Chuvas a ciclos sazonais</td>
+<td style="text-align: left;">Sulcos, ravinas e estabilidade de taludes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Microbacia</strong></td>
+<td style="text-align: left;"><span class="math inline">\(1\)</span> a <span class="math inline">\(50\text{ km}^2\)</span></td>
+<td style="text-align: left;">Meses a anos</td>
+<td style="text-align: left;">Voçorocas, conectividade e PRAD.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Bacia Regional</strong></td>
+<td style="text-align: left;"><span class="math inline">\(10^2\)</span> a <span class="math inline">\(10^5\text{ km}^2\)</span></td>
+<td style="text-align: left;">Anos a décadas</td>
+<td style="text-align: left;">Assoreamento de reservatórios e ZEE estadual.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Bioma</strong></td>
+<td style="text-align: left;"><span class="math inline">\(&gt; 10^5\text{ km}^2\)</span></td>
+<td style="text-align: left;">Décadas a milênios</td>
+<td style="text-align: left;">Desertificação, clima e políticas territoriais.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Desconsiderar esse acoplamento escalar produz a <strong>falácia de escala</strong>, erro que opera em duas direções. Na <strong>extrapolação ascendente indevida (micro para macro)</strong>, multiplica-se linearmente uma taxa de perda de solo medida em parcela de <span class="math inline">\(10\text{ m}^2\)</span> pela área inteira de uma bacia de <span class="math inline">\(1.000\text{ ha}\)</span>; na realidade, grande parte do solo erodido deposita-se em sopés côncavos, depressões, barreiras vegetais e planícies aluviais antes de alcançar o exutório, tornando a <strong>Razão de Entrega de Sedimentos (<span class="math inline">\(\text{SDR} = Y / E_b\)</span>)</strong> menor que <span class="math inline">\(1\)</span>. Na <strong>inferência descendente indevida (macro para micro)</strong>, utiliza-se uma carta regional de pequena escala (<span class="math inline">\(1:250.000\)</span>) para localizar uma ravina de <span class="math inline">\(4\text{ m}\)</span> ou projetar uma paliçada. Em escala cartográfica <span class="math inline">\(1:D\)</span>, considerando o erro gráfico mínimo de <span class="math inline">\(0{,}2\text{ mm}\)</span> no papel (<span class="math inline">\(0{,}0002\text{ m}\)</span>), feições menores que <span class="math inline">\(d_{\min} = 0{,}0002 \times D\)</span> metros desaparecem da representação gráfica.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{SDR} &amp;= \frac{Y}{E_b}, \qquad Y = E_b \times \text{SDR}, \qquad 0 &lt; \text{SDR} \le 1 \\
+\text{Erro (\%)} &amp;= \frac{E_{b,\text{tot}} - Y_{\text{tot}}}{Y_{\text{tot}}} \times 100\% = \left(\frac{1}{\text{SDR}} - 1\right) \times 100\% \\
+d_{\min}\,(\text{m}) &amp;= 0{,}0002 \times D
+\end{aligned}
+\]</span></p>
+<p>Nessas relações, <span class="math inline">\(E_b\)</span> é a erosão bruta nas vertentes (<span class="math inline">\(\text{t/(ha}\cdot\text{ano)}\)</span>), <span class="math inline">\(Y\)</span> é a produção específica no exutório (<span class="math inline">\(\text{t/(ha}\cdot\text{ano)}\)</span>), <span class="math inline">\(E_{b,\text{tot}} = E_b \cdot A\)</span> e <span class="math inline">\(Y_{\text{tot}} = Y \cdot A\)</span> são os totais anuais na bacia de área <span class="math inline">\(A\)</span> (<span class="math inline">\(\text{ha}\)</span>), sendo <span class="math inline">\(R_{\text{sed}} = (E_b - Y)\cdot A\)</span> a massa retida internamente. Os Exemplos 6.2 e 6.4 demonstram numericamente como quantificar a falácia de escala tanto na transferência hidrossedimentológica quanto na escolha da escala cartográfica.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 6.2 (Básico e Intermediário). Quantificando a Falácia de Escala pela Razão de Entrega de Sedimentos (SDR)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Em uma parcela experimental de <span class="math inline">\(20\text{ m}^2\)</span> de solo exposto em microbacia do Piemonte da Diamantina, mediu-se erosão bruta de <span class="math inline">\(E_b = 24{,}0\text{ t/(ha}\cdot\text{ano)}\)</span>. Para estimar o assoreamento de um açude no exutório da bacia (área <span class="math inline">\(A = 1.500\text{ ha}\)</span>), um técnico multiplicou a taxa da parcela pela área da bacia, mas o monitoramento no exutório registrou chegada efetiva de <span class="math inline">\(Y_{\text{tot}} = 9.720\text{ t/ano}\)</span>.</p>
+<p><strong>Dados disponíveis.</strong> <span class="math inline">\(E_b = 24{,}0\text{ t/(ha}\cdot\text{ano)}\)</span>; área da bacia <span class="math inline">\(A = 1.500\text{ ha}\)</span>; produção medida no exutório <span class="math inline">\(Y_{\text{tot}} = 9.720\text{ t/ano}\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular a erosão bruta total estimada pela extrapolação linear, a produção específica real <span class="math inline">\(Y\)</span>, a Razão de Entrega de Sedimentos (SDR), a massa anual retida nas vertentes e planícies e o erro percentual da falácia de escala.</p>
+<p><strong>Fundamento da análise.</strong> Aplicação das relações de escala hidrossedimentológica, <span class="math inline">\(E_{b,\text{tot}} = E_b \cdot A\)</span>, <span class="math inline">\(Y = Y_{\text{tot}}/A\)</span>, <span class="math inline">\(\text{SDR} = Y / E_b\)</span>, <span class="math inline">\(R_{\text{sed}} = E_{b,\text{tot}} - Y_{\text{tot}}\)</span> e <span class="math inline">\(\text{Erro (\%)} = (E_{b,\text{tot}} - Y_{\text{tot}})/Y_{\text{tot}} \times 100\%\)</span>.</p>
+<p><strong>Desenvolvimento.</strong> Calculando sequencialmente a extrapolação bruta, o aporte real e o erro relativo cometido:</p>
+<p><span class="math display">\[
+\begin{aligned}
+E_{b,\text{tot}} &amp;= 24{,}0 \times 1.500 = 36.000\text{ t/ano} \\
+Y &amp;= \frac{9.720}{1.500} = 6{,}48\text{ t/(ha}\cdot\text{ano)} \\
+\text{SDR} &amp;= \frac{6{,}48}{24{,}0} = 0{,}27 \quad (27\%) \\
+R_{\text{sed}} &amp;= 36.000 - 9.720 = 26.280\text{ t/ano} \\
+\text{Erro (\%)} &amp;= \frac{36.000 - 9.720}{9.720} \times 100\% \approx 270{,}37\%.
+\end{aligned}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> <span class="math inline">\(E_{b,\text{tot}} = 36.000\text{ t/ano}\)</span>; <span class="math inline">\(Y = 6{,}48\text{ t/(ha}\cdot\text{ano)}\)</span>; <span class="math inline">\(\text{SDR} = 0{,}27\)</span>; sedimentos retidos <span class="math inline">\(= 26.280\text{ t/ano}\)</span>; erro de superestimativa <span class="math inline">\(= 270{,}37\%\)</span>.</p>
+<p><strong>Condições de validade.</strong> Pela expressão equivalente, <span class="math inline">\((1/0{,}27 - 1)\times 100\% \approx 270{,}37\%\)</span>. A retenção de <span class="math inline">\(73\%\)</span> dos sedimentos em sopés, depressões e matas ciliares explica por que taxas de parcela de <span class="math inline">\(20\text{ m}^2\)</span> não se transferem diretamente para uma bacia de <span class="math inline">\(1.500\text{ ha}\)</span>.</p>
+</div>
+</div>
+<p>Na direção inversa do raciocínio escalar, o Exemplo 6.4 verifica qual base cartográfica possui resolução suficiente para mapear feições lineares locais sem omitir processos erosivos.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 6.4 (Intermediário e Avançado). Escolha de Escala Cartográfica e Erro Gráfico Mínimo em Diagnósticos
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Uma equipe de Geografia precisa mapear ravinas com largura média de <span class="math inline">\(4{,}0\text{ m}\)</span> e faixas de mata ciliar de <span class="math inline">\(15{,}0\text{ m}\)</span> em uma microbacia de <span class="math inline">\(850\text{ ha}\)</span> (<span class="math inline">\(8{,}5\text{ km}^2\)</span>) próxima a Feira de Santana. Há três bases disponíveis: uma carta regional do ZEE (<span class="math inline">\(1:250.000\)</span>), uma carta topográfica sistemática (<span class="math inline">\(1:50.000\)</span>) e um ortomosaico detalhado (<span class="math inline">\(1:10.000\)</span>).</p>
+<p><strong>Dados disponíveis.</strong> Erro gráfico mínimo no papel <span class="math inline">\(= 0{,}2\text{ mm} = 0{,}0002\text{ m}\)</span>; denominadores de escala <span class="math inline">\(D_1 = 250.000\)</span>, <span class="math inline">\(D_2 = 50.000\)</span> e <span class="math inline">\(D_3 = 10.000\)</span>; larguras dos alvos, ravinas (<span class="math inline">\(4{,}0\text{ m}\)</span>) e mata ciliar (<span class="math inline">\(15{,}0\text{ m}\)</span>).</p>
+<p><strong>Problema a resolver.</strong> Calcular a menor feição representável no terreno (<span class="math inline">\(d_{\min}\)</span>) em cada escala e determinar qual base atende ao mapeamento dos dois alvos.</p>
+<p><strong>Fundamento da análise.</strong> Aplicação da relação de resolução gráfica <span class="math inline">\(d_{\min} = 0{,}0002 \times D\)</span> e comparação com a largura real dos alvos.</p>
+<p><strong>Desenvolvimento.</strong> Calculando o limite mínimo de representação para cada denominador de escala:</p>
+<p><span class="math display">\[
+\begin{aligned}
+d_{\min,1} &amp;= 0{,}0002 \times 250.000 = 50{,}0\text{ m} \\
+d_{\min,2} &amp;= 0{,}0002 \times 50.000 = 10{,}0\text{ m} \\
+d_{\min,3} &amp;= 0{,}0002 \times 10.000 = 2{,}0\text{ m}.
+\end{aligned}
+\]</span></p>
+<p>Na carta <span class="math inline">\(1:250.000\)</span>, tanto a mata ciliar (<span class="math inline">\(15{,}0\text{ m} &lt; 50{,}0\text{ m}\)</span>) quanto as ravinas (<span class="math inline">\(4{,}0\text{ m} &lt; 50{,}0\text{ m}\)</span>) ficam abaixo do limite gráfico. Na carta <span class="math inline">\(1:50.000\)</span>, a mata ciliar torna-se representável (<span class="math inline">\(15{,}0\text{ m} &gt; 10{,}0\text{ m}\)</span>), enquanto as ravinas continuam invisíveis (<span class="math inline">\(4{,}0\text{ m} &lt; 10{,}0\text{ m}\)</span>). Somente o ortomosaico <span class="math inline">\(1:10.000\)</span> (<span class="math inline">\(2{,}0\text{ m}\)</span>) representa ambos os alvos.</p>
+<p><strong>Interpretação do resultado.</strong> As menores feições representáveis são <span class="math inline">\(50{,}0\text{ m}\)</span> (<span class="math inline">\(1:250.000\)</span>), <span class="math inline">\(10{,}0\text{ m}\)</span> (<span class="math inline">\(1:50.000\)</span>) e <span class="math inline">\(2{,}0\text{ m}\)</span> (<span class="math inline">\(1:10.000\)</span>). Apenas a escala <span class="math inline">\(1:10.000\)</span> (ou maior detalhe, como <span class="math inline">\(1:5.000\)</span> por VANT) permite mapear simultaneamente ravinas de <span class="math inline">\(4{,}0\text{ m}\)</span> e mata ciliar de <span class="math inline">\(15{,}0\text{ m}\)</span>.</p>
+<p><strong>Condições de validade.</strong> Concluir que não existem ravinas na microbacia após inspecionar uma carta <span class="math inline">\(1:250.000\)</span> constitui falácia de escala descendente, pois a ausência no mapa decorre da resolução cartográfica e da unidade mínima de mapeamento.</p>
+</div>
+</div>
+<p>A transição inadequada entre escalas de medição e bases cartográficas figura entre os desvios metodológicos mais recorrentes nos estudos de bacia, conforme sintetizado a seguir.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 2. Praticar a Falácia de Escala ao Extrapolar Parcelas ou Ampliar Cartas Regionais
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Multiplicar a perda de solo medida em parcela de <span class="math inline">\(10\text{ m}^2\)</span> pela área inteira de uma bacia de <span class="math inline">\(5.000\text{ ha}\)</span> supondo entrega integral ao rio, ou ampliar visualmente um mapa regional (<span class="math inline">\(1:250.000\)</span>) para delimitar APPs e feições erosivas locais.</p>
+<p><strong>Correção técnica.</strong> A ampliação gráfica de uma carta regional não acrescenta detalhe espacial, e a transferência de parcelas para bacias exige considerar a deposição intermediária (<span class="math inline">\(\text{SDR} &lt; 1\)</span>). Explicite sempre a escala espacial, o período de coleta, o sistema de referência e a unidade mínima de mapeamento compatíveis com o fenômeno.</p>
+</div>
+</div>
+<section id="compatibilidade-cartográfica-e-síntese-multiescalar-em-sig" class="level3">
+<h3 class="anchored" data-anchor-id="compatibilidade-cartográfica-e-síntese-multiescalar-em-sig">Compatibilidade Cartográfica e Síntese Multiescalar em SIG</h3>
+<p>Para superar diagnósticos fragmentados, a integração espacial exige coerência entre fontes, datas, sistemas geodésicos e resoluções das camadas temáticas antes de qualquer operação de álgebra de mapas. Em ambientes de Sistema de Informação Geográfica (SIG), a compatibilização no mesmo datum (como SIRGAS 2000) permite cruzar variáveis dos meios físico, biótico e socioeconômico por meio de índices de síntese ponderada (<span class="math inline">\(I_S = \sum w_k \cdot C_k\)</span>), respeitando a correspondência entre escala regional (macrozoneamento), escala de bacia (planejamento hídrico e uso do solo) e escala local (projetos executivos de PRAD e bioengenharia), fluxo operacional esquematizado na <a href="#fig-matriz_integrada_escalas" class="quarto-xref">Figura&nbsp;<span>6.2</span></a>.</p>
+<div id="fig-matriz_integrada_escalas" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Fluxograma em três colunas mostrando camadas temáticas, síntese cartográfica em SIG com índice ponderado e zoneamento por faixas de escala">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-matriz_integrada_escalas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap06_matriz_integrada_escalas.png" class="img-fluid figure-img" alt="Fluxograma em três colunas mostrando camadas temáticas, síntese cartográfica em SIG com índice ponderado e zoneamento por faixas de escala">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-matriz_integrada_escalas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.2: Fluxo operacional da Análise Ambiental Integrada multiescalar, articulando camadas temáticas dos três meios, síntese cartográfica em SIG e zoneamento por faixas de escala. Fonte: elaboração didática CHF662.
+</figcaption>
+</figure>
+</div>
+<p>O registro sistemático da fonte, data, unidade e método de cada camada garante rastreabilidade ao diagnóstico, facilita a seleção de pontos para conferência em campo e impede que a análise ambiental se reduza a capítulos desconexos, erro destacado abaixo.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 3. Reduzir a Análise Ambiental Integrada à Soma de Relatórios Setoriais Desconexos
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Elaborar um diagnóstico com seções isoladas de geologia, vegetação e população que nunca dialogam entre si.</p>
+<p><strong>Correção técnica.</strong> Sem explicitar como a declividade e o solo respondem à supressão vegetal e como essa resposta repercute no escoamento, no assoreamento e na disponibilidade hídrica comunitária, o documento permanece um inventário descritivo fragmentado. Empregue verbos de processo e fluxo (infiltra, concentra, carreia, deposita, restringe) para articular os três subsistemas.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="planejamento-ambiental-planejamento-territorial-e-ordenamento-territorial" class="level2">
+<h2 class="anchored" data-anchor-id="planejamento-ambiental-planejamento-territorial-e-ordenamento-territorial">Planejamento Ambiental, Planejamento Territorial e Ordenamento Territorial</h2>
+<p>A compreensão da <strong>dinâmica geoambiental</strong>, entendida como o comportamento integrado das paisagens frente às pressões climáticas e socioeconômicas, fundamenta decisões públicas sobre o uso do espaço. Na literatura técnica e em exames profissionais, três conceitos correlatos exigem separação precisa: <strong>planejamento ambiental</strong>, <strong>planejamento territorial</strong> e <strong>ordenamento territorial</strong> (Arruda, 2013; IBGE, 2018), sintetizados na tabela comparativa a seguir.</p>
+<div class="book-table-scroll" role="region" aria-label="Tabela 2" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Conceito</strong></th>
+<th style="text-align: left;"><strong>Foco central</strong></th>
+<th style="text-align: left;"><strong>Função operativa</strong></th>
+<th style="text-align: left;"><strong>Instrumentos</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Planejamento Ambiental</strong></td>
+<td style="text-align: left;">Ecossistemas, recursos naturais, fragilidades e riscos.</td>
+<td style="text-align: left;">Diagnosticar, prognosticar e propor diretrizes de conservação e suporte.</td>
+<td style="text-align: left;">AIA, Planos de Bacia, Planos de Manejo e PRAD.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Planejamento Territorial</strong></td>
+<td style="text-align: left;">Organização socioespacial, economia, infraestrutura e mobilidade.</td>
+<td style="text-align: left;">Articular políticas setoriais, cenários e prioridades de investimento.</td>
+<td style="text-align: left;">Planos Diretores e Planos Regionais.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Ordenamento Territorial</strong></td>
+<td style="text-align: left;">Regulação espacial da distribuição de usos e ocupação do solo.</td>
+<td style="text-align: left;">Estabelecer normas cartográficas vinculantes para compatibilizar usos.</td>
+<td style="text-align: left;"><strong>ZEE</strong>, macrozoneamento e zoneamento costeiro.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Em síntese funcional, o <strong>planejamento ambiental</strong> estabelece os limites, potenciais e fragilidades dos sistemas naturais; o <strong>planejamento territorial</strong> compatibiliza esses condicionantes às demandas econômicas, sociais e de infraestrutura; e o <strong>ordenamento territorial</strong> converte essas diretrizes em normas espaciais e zoneamentos concretos para regulação do uso da terra.</p>
+</section>
+<section id="zoneamento-ecológico-econômico-zee-e-aplicação-em-reservatório" class="level2">
+<h2 class="anchored" data-anchor-id="zoneamento-ecológico-econômico-zee-e-aplicação-em-reservatório">Zoneamento Ecológico-Econômico (ZEE) e Aplicação em Reservatório</h2>
+<p>Previsto na Política Nacional do Meio Ambiente (Lei nº 6.938/1981) e regulamentado pelo <strong>Decreto Federal nº 4.297/2002</strong>, o <strong>Zoneamento Ecológico-Econômico (ZEE)</strong> constitui o principal instrumento técnico-político de ordenamento territorial no Brasil. Como processo participativo e multidisciplinar, o ZEE integra a <strong>potencialidade socioeconômica</strong> com a <strong>vulnerabilidade e fragilidade natural</strong> dos sistemas geoambientais (IBGE, 2018; Arruda, 2013).</p>
+<p>Desse cruzamento resultam <strong>zonas homogêneas</strong> com diretrizes próprias de uso, manejo e investimento público. As <strong>Zonas de Consolidação Produtiva</strong> reúnem áreas de elevada aptidão e baixa fragilidade natural onde atividades agropecuárias, industriais ou urbanas operam com práticas conservacionistas de solo e água. As <strong>Zonas de Uso Restrito ou Manejo Sustentável</strong> abrangem setores de fragilidade média a alta compatíveis com extrativismo sustentável, sistemas agroflorestais, ecoturismo e manejo da Caatinga. Em terras já degradadas por erosão acelerada, desertificação ou perda de mata ciliar, definem-se <strong>Zonas de Recuperação Ambiental</strong>, prioritárias para PRAD e bioengenharia. Por último, as <strong>Zonas de Proteção e Conservação</strong> resguardam áreas de altíssima fragilidade, mananciais, APPs, Unidades de Conservação e corredores ecológicos. Quando disponível em escala compatível, o ZEE agiliza e qualifica a triagem e a escolha de alternativas locacionais na AIA (Capítulo 5).</p>
+<p>Essa mesma lógica de integração multivariável orienta o zoneamento de aptidão em corpos hídricos e reservatórios. No segmento II do reservatório da Usina Hidrelétrica de Xingó (Baixo São Francisco), Holanda et al.&nbsp;(2020) analisaram pistas de vento e processos erosivos marginais, abordagem posteriormente integrada por Santos, Holanda e Wanderley ao cruzamento de comprimento de <em>fetch</em>, altura significativa de onda (<span class="math inline">\(H_s\)</span>), batimetria e restrições operacionais para mapear zonas ótimas, adequadas e de exclusão para implantação de sistemas fotovoltaicos flutuantes (<a href="#fig-xingo_zoneamento" class="quarto-xref">Figura&nbsp;<span>6.3</span></a>). A transposição desse modelo para outro reservatório, como Sobradinho, exige recalcular todas as variáveis hidrodinâmicas e batimétricas na escala local do novo corpo d’água.</p>
+<div id="fig-xingo_zoneamento" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Mapa de zoneamento de aptidão no reservatório de Xingó com zonas ótima, adequada e de exclusão e sítios R1 a R5">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-xingo_zoneamento-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/artigo_xingo_zoneamento.jpg" class="img-fluid figure-img" alt="Mapa de zoneamento de aptidão no reservatório de Xingó com zonas ótima, adequada e de exclusão e sítios R1 a R5">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-xingo_zoneamento-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.3: Zoneamento de aptidão para fotovoltaica flutuante no reservatório da UHE Xingó integrando altura de onda (<span class="math inline">\(H_s\)</span>), batimetria, <em>fetch</em> e zonas de exclusão. Fonte: acervo Santos, Holanda e Wanderley com base na metodologia de pistas de vento de Holanda et al.&nbsp;(2020).
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="síntese-aplicada-em-ordenamento-territorial-zee" class="level2">
+<h2 class="anchored" data-anchor-id="síntese-aplicada-em-ordenamento-territorial-zee">Síntese Aplicada em Ordenamento Territorial (ZEE)</h2>
+<p>A tradução das diretrizes de integração sistêmica e escalar para a gestão municipal exige quantificar o fechamento territorial das zonas propostas e explicitar o papel articulado dos instrumentos de planejamento, como desenvolvido no Exemplo 6.5.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 6.5 (Avançado). Zoneamento Ecológico-Econômico (ZEE) e Articulação com o Ordenamento Territorial
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Após integrar levantamentos de solos, declividade, remanescentes de Caatinga, recursos hídricos e uso agropecuário, um município baiano de <span class="math inline">\(1.200\text{ km}^2\)</span> elaborou sua proposta de Zoneamento Ecológico-Econômico (ZEE), distribuindo o território em quatro zonas.</p>
+<p><strong>Dados disponíveis.</strong> Área total do município <span class="math inline">\(= 1.200\text{ km}^2\)</span>: <span class="math inline">\(Z_1\)</span>, Zona de Consolidação Produtiva (<span class="math inline">\(420\text{ km}^2\)</span>); <span class="math inline">\(Z_2\)</span>, Zona de Expansão com Manejo Sustentável (<span class="math inline">\(330\text{ km}^2\)</span>); <span class="math inline">\(Z_3\)</span>, Zona de Recuperação Ambiental (<span class="math inline">\(210\text{ km}^2\)</span>); <span class="math inline">\(Z_4\)</span>, Zona de Proteção e Conservação (<span class="math inline">\(240\text{ km}^2\)</span>).</p>
+<p><strong>Problema a resolver.</strong> Verificar o fechamento territorial das áreas, calcular o percentual de cada zona, determinar o percentual conjunto destinado à conservação e recuperação (<span class="math inline">\(Z_3 + Z_4\)</span>) e distinguir o papel do planejamento ambiental, do planejamento territorial e do ordenamento territorial nesse caso.</p>
+<p><strong>Fundamento da análise.</strong> Cálculo da participação percentual (<span class="math inline">\(A_k / A_{\text{total}} \times 100\%\)</span>) e enquadramento conceitual segundo Arruda (2013) e IBGE (2018).</p>
+<p><strong>Desenvolvimento.</strong> A soma das áreas fecha exatamente em <span class="math inline">\(420 + 330 + 210 + 240 = 1.200\text{ km}^2\)</span> (<span class="math inline">\(100{,}0\%\)</span>). Calculando a proporção de cada zona e o total de recuperação e proteção (<span class="math inline">\(Z_3 + Z_4\)</span>):</p>
+<p><span class="math display">\[
+\begin{aligned}
+\%Z_1 &amp;= \frac{420}{1.200} \times 100\% = 35{,}0\%, &amp; \%Z_2 &amp;= \frac{330}{1.200} \times 100\% = 27{,}5\% \\
+\%Z_3 &amp;= \frac{210}{1.200} \times 100\% = 17{,}5\%, &amp; \%Z_4 &amp;= \frac{240}{1.200} \times 100\% = 20{,}0\% \\
+A_{3+4} &amp;= 210 + 240 = 450\text{ km}^2, &amp; \%Z_{3+4} &amp;= \frac{450}{1.200} \times 100\% = 37{,}5\%.
+\end{aligned}
+\]</span></p>
+<p>Nessa articulação, o <strong>planejamento ambiental</strong> forneceu o diagnóstico de solos, nascentes, fragilidades e passivos (<span class="math inline">\(Z_3\)</span> e <span class="math inline">\(Z_4\)</span>); o <strong>planejamento territorial</strong> integrou esses limites às metas produtivas, viárias e urbanas (<span class="math inline">\(Z_1\)</span> e <span class="math inline">\(Z_2\)</span>); e o <strong>ordenamento territorial</strong> converteu o mapa do ZEE em norma vinculante para licenciamento, crédito rural e investimentos.</p>
+<p><strong>Interpretação do resultado.</strong> <span class="math inline">\(Z_1 = 35{,}0\%\)</span>, <span class="math inline">\(Z_2 = 27{,}5\%\)</span>, <span class="math inline">\(Z_3 = 17{,}5\%\)</span> e <span class="math inline">\(Z_4 = 20{,}0\%\)</span>; conservação e recuperação somam <span class="math inline">\(450\text{ km}^2\)</span> (<span class="math inline">\(37{,}5\%\)</span> do município). O ZEE concretiza o ordenamento territorial apoiado pelos planejamentos ambiental e territorial.</p>
+<p><strong>Condições de validade.</strong> A soma percentual fecha em <span class="math inline">\(100{,}0\%\)</span>, e a reserva de <span class="math inline">\(37{,}5\%\)</span> para proteção e recuperação aliada a <span class="math inline">\(62{,}5\%\)</span> para produção consolidada e manejo sustentável orienta o desenvolvimento econômico para áreas dotadas de capacidade de suporte adequada.</p>
+</div>
+</div>
+</section>
+<section id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="level2">
+<h2 class="anchored" data-anchor-id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</h2>
+<p>Mesmo quando um diagnóstico integra corretamente os compartimentos físico, biótico e antrópico na escala adequada, a confusão entre instrumentos diagnósticos, estratégicos e normativos compromete a validade jurídica das propostas territoriais.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 4. Tratar Planejamento Ambiental, Planejamento Territorial e Ordenamento Territorial como Sinônimos
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Empregar os três termos de modo intercambiável em provas ou reduzir o ZEE à criação de Unidades de Conservação.</p>
+<p><strong>Correção técnica.</strong> Cada conceito cumpre uma função distinta e complementar: o planejamento ambiental avalia processos, limites e potencialidades ecológicas; o planejamento territorial articula todas as dimensões socioespaciais e de infraestrutura; e o ordenamento territorial estabelece a regulação espacial normativa do uso da terra, tendo no ZEE um instrumento que integra zonas produtivas, de manejo, de recuperação e de proteção.</p>
+</div>
+</div>
+<p>Para aprofundar os vínculos entre degradação sistêmica, planejamento e ordenamento territorial no Brasil, assista às videoaulas selecionadas na página da disciplina. O vídeo <a href="https://www.youtube.com/watch?v=5EFxN7jGob8">Degradação Ambiental</a> relaciona vulnerabilidade, fragilidade e resiliência em sistemas abertos, enquanto o vídeo <a href="https://www.youtube.com/watch?v=hSqqiMt2CjI">Ordenamento territorial do Brasil, potencialidades naturais e vulnerabilidades sociais</a> discute o papel do planejamento e do zoneamento na gestão do território.</p>
+</section>
+<section id="exercícios-de-fixação" class="level2">
+<h2 class="anchored" data-anchor-id="exercícios-de-fixação">Exercícios de fixação</h2>
+<section id="nível-1.-básico-sistemas-abertos-escalas-e-ordenamento" class="level4">
+<h4 class="anchored" data-anchor-id="nível-1.-básico-sistemas-abertos-escalas-e-ordenamento">Nível 1. Básico (Sistemas Abertos, Escalas e Ordenamento)</h4>
+<ol type="1">
+<li><p>Explique por que uma bacia hidrográfica é classificada como um <strong>sistema ambiental aberto</strong>, exemplificando duas entradas, dois estoques internos, dois processos e duas saídas.</p></li>
+<li><p>Diferencie <strong>retroalimentação negativa</strong> e <strong>retroalimentação positiva</strong> em sistemas ambientais, apresentando um exemplo concreto de cada mecanismo na dinâmica erosiva de uma encosta.</p></li>
+<li><p>Um açude no Semiárido baiano recebeu em um ano <span class="math inline">\(E = 12.500\text{ t/ano}\)</span> de sedimentos transportados pelos riachos afluentes e exportou pelo vertedouro <span class="math inline">\(S_{\text{out}} = 3.200\text{ t/ano}\)</span>. Calcule a variação do estoque de sedimentos retidos no reservatório (<span class="math inline">\(\Delta S\)</span>) e a eficiência percentual de retenção de sedimentos do açude.</p></li>
+<li><p>O que é <strong>falácia de escala</strong> na Análise Ambiental? Dê um exemplo de erro cometido ao passar da microescala para a macroescala e outro ao passar da macroescala para a microescala.</p></li>
+<li><p>Estabeleça a diferença conceitual entre <strong>planejamento ambiental</strong>, <strong>planejamento territorial</strong> e <strong>ordenamento territorial</strong>, situando o papel do Zoneamento Ecológico-Econômico (ZEE).</p></li>
+</ol>
+</section>
+<section id="nível-2.-intermediário-cálculos-sistêmicos-escalas-e-zee" class="level4">
+<h4 class="anchored" data-anchor-id="nível-2.-intermediário-cálculos-sistêmicos-escalas-e-zee">Nível 2. Intermediário (Cálculos Sistêmicos, Escalas e ZEE)</h4>
+<ol start="6" type="1">
+<li><p>Em uma microbacia de <span class="math inline">\(800\text{ ha}\)</span>, a erosão bruta média das vertentes estimada por parcelas é <span class="math inline">\(E_b = 18{,}0\text{ t/(ha}\cdot\text{ano)}\)</span>. Sabe-se que a Razão de Entrega de Sedimentos da microbacia é <span class="math inline">\(\text{SDR} = 0{,}32\)</span>. Calcule a erosão bruta total (<span class="math inline">\(E_{b,\text{tot}}\)</span>), a produção específica (<span class="math inline">\(Y\)</span>) e total (<span class="math inline">\(Y_{\text{tot}}\)</span>) de sedimentos no exutório, a massa anual retida nas vertentes e planícies e o erro percentual de superestimativa caso um analista assumisse <span class="math inline">\(\text{SDR} = 1\)</span>.</p></li>
+<li><p>Uma mesma microbacia recebeu precipitação anual de <span class="math inline">\(P = 750\text{ mm/ano}\)</span> em dois cenários de cobertura do solo:</p>
+<ul>
+<li><p><strong>Cenário 1 (Vegetação nativa conservada):</strong> <span class="math inline">\(ET = 590\text{ mm}\)</span>, <span class="math inline">\(Q_s = 90\text{ mm}\)</span>, <span class="math inline">\(Q_b = 70\text{ mm}\)</span>.</p></li>
+<li><p><strong>Cenário 2 (Após desmatamento e compactação):</strong> <span class="math inline">\(ET = 430\text{ mm}\)</span>, <span class="math inline">\(Q_s = 340\text{ mm}\)</span>, <span class="math inline">\(Q_b = 25\text{ mm}\)</span>.</p></li>
+</ul>
+<p>Calcule <span class="math inline">\(\Delta S\)</span> em ambos os cenários, determine que percentual da chuva virou escoamento superficial (<span class="math inline">\(Q_s/P\)</span>) no Cenário 2 e interprete as consequências para a vazão na estiagem (<span class="math inline">\(Q_b\)</span>) e para a erosão.</p></li>
+<li><p>Utilizando o erro gráfico mínimo de <span class="math inline">\(0{,}2\text{ mm}\)</span> no papel (<span class="math inline">\(d_{\min} = 0{,}0002 \times D\)</span>), calcule a menor feição representável no terreno para as escalas <span class="math inline">\(1:100.000\)</span>, <span class="math inline">\(1:25.000\)</span> e <span class="math inline">\(1:5.000\)</span>. Em seguida, informe quais dessas escalas conseguem representar uma faixa de mata ciliar de <span class="math inline">\(15{,}0\text{ m}\)</span> de largura e uma ravina incipiente de <span class="math inline">\(1{,}5\text{ m}\)</span> de largura.</p></li>
+<li><p>Explique a diferença entre <strong>limiar extrínseco</strong> e <strong>limiar intrínseco</strong> na dinâmica geoambiental, ilustrando cada tipo com um processo real de instabilidade de encostas ou erosão no Brasil.</p></li>
+<li><p>O ZEE de uma sub-bacia hidrográfica de <span class="math inline">\(2.500\text{ km}^2\)</span> definiu a seguinte repartição percentual: <span class="math inline">\(40\%\)</span> de Zona de Consolidação Produtiva, <span class="math inline">\(26\%\)</span> de Zona de Manejo Sustentável, <span class="math inline">\(16\%\)</span> de Zona de Recuperação Ambiental e <span class="math inline">\(18\%\)</span> de Zona de Proteção e Conservação. Calcule a área em <span class="math inline">\(\text{km}^2\)</span> de cada zona e verifique se o plano atende a uma diretriz estadual que exige no mínimo <span class="math inline">\(30\%\)</span> do território sob conservação ou recuperação.</p></li>
+</ol>
+</section>
+<section id="06-analise-ambiental-integrada-nível-3-questões-objetivas-de-fixação-ae" class="level4">
+<h4 class="anchored" data-anchor-id="06-analise-ambiental-integrada-nível-3-questões-objetivas-de-fixação-ae">Nível 3. Questões Objetivas de Fixação (A a E)</h4>
+<ol start="11" type="1">
+<li><p><strong>[Autoral, CHF662]</strong> Em uma vertente degradada do Semiárido, a remoção da Caatinga expõe o solo ao impacto das gotas de chuva, gerando crosta superficial, redução da infiltração, aumento da enxurrada e carreamento de matéria orgânica, o que impede a germinação de novas plantas e intensifica ainda mais a erosão. Na teoria dos sistemas ambientais, esse encadeamento caracteriza:</p>
+<ol type="A">
+<li><p>Sistema fechado em equilíbrio termodinâmico estático.</p></li>
+<li><p>Retroalimentação negativa de autorregulação ecológica.</p></li>
+<li><p>Retroalimentação positiva amplificadora da degradação.</p></li>
+<li><p>Neutralidade escalar sem rompimento de limiar.</p></li>
+<li><p>Ciclo biogeoquímico conservativo com ganho de estoque edáfico.</p></li>
+</ol></li>
+<li><p><strong>[Autoral, CHF662]</strong> Sobre o acoplamento entre escalas espaciais e temporais na Análise Ambiental Integrada, assinale a alternativa correta:</p>
+<ol type="A">
+<li><p>Processos como o impacto da gota de chuva (<em>splash</em>) e o selamento superficial atuam na macroescala continental ao longo de milênios.</p></li>
+<li><p>A dinâmica de uma microbacia ou a evolução de voçorocas manifestam-se tipicamente na escala local a mesoescala, ao longo de meses e anos.</p></li>
+<li><p>A escala temporal é independente da escala espacial, podendo qualquer processo ser monitorado em um único dia de campo.</p></li>
+<li><p>Cartas na escala <span class="math inline">\(1:1.000.000\)</span> são ideais para medir a largura de sulcos erosivos em pequenas propriedades rurais.</p></li>
+<li><p>O estudo de biomas prescinde de séries históricas pluridecadais por depender apenas de eventos horários isolados.</p></li>
+</ol></li>
+<li><p><strong>[Autoral, CHF662]</strong> Qual alternativa distingue corretamente <strong>ordenamento territorial</strong> de <strong>planejamento ambiental</strong>?</p>
+<ol type="A">
+<li><p>O ordenamento territorial restringe-se ao monitoramento químico da água, enquanto o planejamento ambiental define a malha rodoviária.</p></li>
+<li><p>O planejamento ambiental diagnostica fragilidades, riscos e capacidades de suporte dos ecossistemas, ao passo que o ordenamento territorial traduz diretrizes socioespaciais e ambientais em regulação normativa e espacial dos usos da terra (como o ZEE).</p></li>
+<li><p>O ordenamento territorial é facultativo e exclusivamente acadêmico, enquanto o planejamento ambiental dispensa mapas.</p></li>
+<li><p>O planejamento ambiental proíbe qualquer atividade produtiva, enquanto o ordenamento territorial dispensa critérios ecológicos.</p></li>
+<li><p>Ambos são sinônimos perfeitos de licenciamento ambiental de obras pontuais.</p></li>
+</ol></li>
+<li><p><strong>[Autoral, CHF662]</strong> Em uma bacia de <span class="math inline">\(600\text{ ha}\)</span>, medições em parcela indicaram erosão bruta de <span class="math inline">\(15{,}0\text{ t/(ha}\cdot\text{ano)}\)</span>. Sabendo que a Razão de Entrega de Sedimentos da bacia é <span class="math inline">\(\text{SDR} = 0{,}40\)</span>, a produção anual de sedimentos que efetivamente chega ao exutório e a massa retida internamente nas vertentes e planícies são, respectivamente:</p>
+<ol type="A">
+<li><p><span class="math inline">\(9.000\text{ t/ano}\)</span> e <span class="math inline">\(0\text{ t/ano}\)</span>.</p></li>
+<li><p><span class="math inline">\(5.400\text{ t/ano}\)</span> e <span class="math inline">\(3.600\text{ t/ano}\)</span>.</p></li>
+<li><p><span class="math inline">\(3.600\text{ t/ano}\)</span> e <span class="math inline">\(5.400\text{ t/ano}\)</span>.</p></li>
+<li><p><span class="math inline">\(2.400\text{ t/ano}\)</span> e <span class="math inline">\(6.600\text{ t/ano}\)</span>.</p></li>
+<li><p><span class="math inline">\(6.000\text{ t/ano}\)</span> e <span class="math inline">\(3.000\text{ t/ano}\)</span>.</p></li>
+</ol></li>
+<li><p><strong>[Autoral, CHF662]</strong> De acordo com o Decreto Federal nº 4.297/2002 e os fundamentos do IBGE (2018), o <strong>Zoneamento Ecológico-Econômico (ZEE)</strong> caracteriza-se por:</p>
+<ol type="A">
+<li><p>Ser um mapa exclusivamente voltado à demarcação de parques nacionais, excluindo áreas agrícolas e urbanas.</p></li>
+<li><p>Integrar potencialidades socioeconômicas e vulnerabilidades ou fragilidades geoambientais para dividir o território em zonas com diretrizes específicas de uso, manejo, recuperação e proteção.</p></li>
+<li><p>Substituir a obrigatoriedade do Estudo de Impacto Ambiental (EIA) para grandes hidrelétricas e minerações.</p></li>
+<li><p>Operar apenas na escala de parcela experimental (<span class="math inline">\(1:500\)</span>), sendo inviável em estados ou bacias regionais.</p></li>
+<li><p>Utilizar apenas variáveis climáticas, dispensando informações de solos, relevo e estrutura social.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="questões-de-aplicação" class="level2">
+<h2 class="anchored" data-anchor-id="questões-de-aplicação">Questões de aplicação</h2>
+<ol start="16" type="1">
+<li><p><strong>[Autoral, Estilo ENADE / Geografia]</strong> A abordagem sistêmica aplicada à Análise Ambiental Integrada (Drew, 1989; Castro; Lemos, 2016) compreende a paisagem como resultado de interações dinâmicas entre fluxos de matéria, energia e decisões humanas. Avalie as asserções a seguir e a relação proposta entre elas:</p>
+<blockquote class="blockquote">
+<p><strong>I.</strong> A extrapolação linear de taxas de perda de solo obtidas em pequenas parcelas experimentais para grandes bacias hidrográficas costuma superestimar significativamente o aporte real de sedimentos no exutório.</p>
+<p><strong>PORQUE</strong></p>
+<p><strong>II.</strong> Ao mudar da escala de parcela para a escala de bacia, emergem processos intermediários de desconectividade e deposição em sopés, depressões, barreiras vegetais e planícies aluviais, fazendo com que a Razão de Entrega de Sedimentos (SDR) seja inferior a <span class="math inline">\(1\)</span>.</p>
+</blockquote>
+<p>A respeito dessas asserções, assinale a opção correta:</p>
+<ol type="A">
+<li><p>As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.</p></li>
+<li><p>As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.</p></li>
+<li><p>A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.</p></li>
+<li><p>A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</p></li>
+<li><p>As asserções I e II são proposições falsas.</p></li>
+</ol></li>
+<li><p><strong>[Autoral, Estilo Concurso Geógrafo / Planejamento Territorial]</strong> Considere o balanço de um sistema ambiental aberto sujeito a intervenções humanas. Analise as proposições abaixo:</p>
+<ol type="I">
+<li><p>Quando a entrada de energia ou matéria ultrapassa um limiar (<em>threshold</em>) crítico do sistema, como uma chuva cuja intensidade excede a capacidade de infiltração de um solo compactado, ocorre mudança brusca no comportamento hidrológico da vertente.</p></li>
+<li><p>No equilíbrio dinâmico (<em>steady state</em>), os fluxos de entrada e saída cessam completamente, impedindo qualquer troca com o entorno.</p></li>
+<li><p>A substituição de vegetação nativa por superfícies impermeabilizadas tende a elevar o escoamento superficial direto (<span class="math inline">\(Q_s\)</span>) e a reduzir a recarga subterrânea e o escoamento de base (<span class="math inline">\(Q_b\)</span>).</p></li>
+</ol>
+<p>Está correto o que se afirma apenas em:</p>
+<ol type="A">
+<li><ol type="I">
+<li></li>
+</ol></li>
+<li><ol start="2" type="I">
+<li></li>
+</ol></li>
+<li><p>I e II.</p></li>
+<li><p>I e III.</p></li>
+<li><p>I, II e III.</p></li>
+</ol></li>
+<li><p><strong>[Autoral, Estilo Concurso Analista Ambiental / IBAMA e INEMA]</strong> Na gestão pública brasileira, um governo estadual contratou estudos integrados de relevo, solos, vegetação, clima, estrutura fundiária e cadeias produtivas para definir zonas de consolidação agropecuária, zonas de manejo sustentável da Caatinga, zonas prioritárias para recuperação de terras degradadas e zonas de proteção de mananciais, com força normativa para orientar licenciamentos e políticas públicas. O instrumento de ordenamento territorial descrito corresponde ao:</p>
+<ol type="A">
+<li><p>Relatório de Impacto Ambiental (RIMA) de obra linear.</p></li>
+<li><p>Zoneamento Ecológico-Econômico (ZEE).</p></li>
+<li><p>Inventário Florestal de Parcela Permanente.</p></li>
+<li><p>Programa de Monitoramento de Ruído em Canteiro de Obras.</p></li>
+<li><p>Termo de Referência simplificado de triagem.</p></li>
+</ol></li>
+</ol>
+<section id="ponte-entre-o-módulo-2-e-o-módulo-3-bacias-morfopedologia-e-ross" class="level3">
+<h3 class="anchored" data-anchor-id="ponte-entre-o-módulo-2-e-o-módulo-3-bacias-morfopedologia-e-ross">Ponte entre o Módulo 2 e o Módulo 3 (Bacias, Morfopedologia e Ross)</h3>
+<p>Os conceitos deste capítulo (sistema aberto, balanço de fluxos, escalas e interações entre os três meios) fornecem a base direta do <strong>Módulo 3</strong>. A partir da Semana 7, você aplicará essa abordagem sistêmica à <strong>bacia hidrográfica</strong> como unidade operacional (Cap. 7), à <strong>morfopedologia de vertentes</strong> (Cap. 8) e aos modelos de <strong>geossistema, ecodinâmica de Tricart e fragilidade de Ross</strong> (Cap. 9), avaliados na Prova Teórica da Semana 10.</p>
+</section>
+</section>
+<section id="gabarito-comentado" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="gabarito-comentado">Gabarito comentado</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Clique para abrir o Gabarito Comentado
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="resoluções-dos-exercícios-1-a-10-básicos-e-intermediários" class="level3">
+<h3 class="anchored" data-anchor-id="resoluções-dos-exercícios-1-a-10-básicos-e-intermediários">Resoluções dos Exercícios 1 a 10 (Básicos e Intermediários)</h3>
+<ol type="1">
+<li><p><strong>Bacia hidrográfica como sistema aberto.</strong> Troca continuamente energia e matéria com o entorno. Como <em>entradas</em>, destacam-se precipitação e radiação solar; como <em>estoques internos</em>, água no solo/aquífero e biomassa; como <em>processos</em>, infiltração e erosão/intemperismo; e como <em>saídas</em>, vazão fluvial no exutório, sedimentos exportados e evapotranspiração.</p></li>
+<li><p><strong>Retroalimentação negativa versus positiva.</strong> A <em>negativa</em> amortece perturbações e devolve estabilidade (aumento da cobertura vegetal amplia a infiltração, reduz a enxurrada e conserva o solo). A <em>positiva</em> amplifica o desvio inicial (perda de cobertura vegetal amplia compactação e escoamento, remove nutrientes e sementes e acelera a abertura de ravinas e voçorocas).</p></li>
+<li><p><strong>Balanço de sedimentos no açude.</strong> Variação do estoque retido (assoreamento anual): <span class="math inline">\(\Delta S = E - S_{\text{out}} = 12.500 - 3.200 = \mathbf{+9.300\text{ t/ano}}\)</span>. Eficiência de retenção do reservatório: <span class="math inline">\(\frac{9.300}{12.500} \times 100\% = \mathbf{74{,}40\%}\)</span>. Quase três quartos do sedimento afluente depositam-se no fundo do açude, reduzindo sua capacidade de armazenamento.</p></li>
+<li><p><strong>Falácia de escala.</strong> Erro de transpor taxas, padrões ou conclusões entre escalas sem considerar mecanismos intermediários. De micro para macro, multiplicar a erosão de parcela de <span class="math inline">\(10\text{ m}^2\)</span> pela área de uma bacia inteira sem aplicar a SDR; de macro para micro, usar carta <span class="math inline">\(1:250.000\)</span> (<span class="math inline">\(d_{\min} = 50\text{ m}\)</span>) para projetar intervenção em ravina de <span class="math inline">\(4\text{ m}\)</span>.</p></li>
+<li><p><strong>Distinção conceitual.</strong> O <em>planejamento ambiental</em> analisa limites, fragilidades e serviços dos sistemas naturais; o <em>planejamento territorial</em> articula esses condicionantes com economia, infraestrutura e políticas socioespaciais; o <em>ordenamento territorial</em> normatiza espacialmente a distribuição dos usos do solo. O <strong>ZEE</strong> é o instrumento de ordenamento que espacializa potencialidades e fragilidades em zonas com diretrizes vinculantes.</p></li>
+<li><p><strong>SDR e falácia de escala (<span class="math inline">\(800\text{ ha}\)</span>).</strong> Erosão bruta total: <span class="math inline">\(E_{b,\text{tot}} = 18{,}0 \times 800 = \mathbf{14.400\text{ t/ano}}\)</span>. Produção específica: <span class="math inline">\(Y = E_b \times \text{SDR} = 18{,}0 \times 0{,}32 = \mathbf{5{,}76\text{ t/(ha}\cdot\text{ano)}}\)</span>, com produção total no exutório <span class="math inline">\(Y_{\text{tot}} = 5{,}76 \times 800 = \mathbf{4.608\text{ t/ano}}\)</span>. Massa retida internamente: <span class="math inline">\(R_{\text{sed}} = 14.400 - 4.608 = \mathbf{9.792\text{ t/ano}}\)</span> (<span class="math inline">\(68\%\)</span> do total). Erro percentual caso assumisse <span class="math inline">\(\text{SDR} = 1\)</span>: <span class="math inline">\(\frac{14.400 - 4.608}{4.608} \times 100\% = \mathbf{212{,}50\%}\)</span> de superestimativa.</p></li>
+<li><p><strong>Balanço hídrico nos dois cenários (<span class="math inline">\(P = 750\text{ mm/ano}\)</span>).</strong> No Cenário 1 (conservado), <span class="math inline">\(S_{\text{out},1} = 590 + 90 + 70 = 750\text{ mm} \implies \Delta S_1 = \mathbf{0\text{ mm/ano}}\)</span> (equilíbrio dinâmico). No Cenário 2 (desmatado/compactado), <span class="math inline">\(S_{\text{out},2} = 430 + 340 + 25 = 795\text{ mm} \implies \Delta S_2 = \mathbf{-45\text{ mm/ano}}\)</span> (depleção de estoque), com <span class="math inline">\(\frac{340}{750} \times 100\% \approx \mathbf{45{,}33\%}\)</span> da chuva convertida em escoamento superficial (contra <span class="math inline">\(12{,}0\%\)</span> no Cenário 1). A elevação do escoamento superficial intensifica cheias rápidas e erosão linear, enquanto a queda da recarga (<span class="math inline">\(70 \to 25\text{ mm}\)</span>) reduz a vazão de estiagem.</p></li>
+<li><p><strong>Resolução gráfica por escala (<span class="math inline">\(d_{\min} = 0{,}0002 \times D\)</span>).</strong> Na escala <span class="math inline">\(1:100.000\)</span>, <span class="math inline">\(d_{\min} = \mathbf{20{,}0\text{ m}}\)</span>; em <span class="math inline">\(1:25.000\)</span>, <span class="math inline">\(d_{\min} = \mathbf{5{,}0\text{ m}}\)</span>; e em <span class="math inline">\(1:5.000\)</span>, <span class="math inline">\(d_{\min} = \mathbf{1{,}0\text{ m}}\)</span>. A mata ciliar de <span class="math inline">\(15{,}0\text{ m}\)</span> é representável em <span class="math inline">\(1:25.000\)</span> e <span class="math inline">\(1:5.000\)</span> (invisível em <span class="math inline">\(1:100.000\)</span>), enquanto a ravina de <span class="math inline">\(1{,}5\text{ m}\)</span> é representável somente em <span class="math inline">\(1:5.000\)</span>.</p></li>
+<li><p><strong>Limiar extrínseco versus intrínseco.</strong> O <em>limiar extrínseco</em> decorre de uma força externa que excede a resistência do sistema (chuva convectiva extrema com <span class="math inline">\(I &gt; f_c\)</span> deflagrando enxurrada e deslizamento). O <em>limiar intrínseco</em> resulta do enfraquecimento interno lento que reduz a estabilidade até o colapso sem evento externo extremo (intemperismo gradual e solapamento progressivo de barranco fluvial até seu desmoronamento).</p></li>
+<li><p><strong>Distribuição de áreas no ZEE (<span class="math inline">\(2.500\text{ km}^2\)</span>).</strong> Consolidação Produtiva (<span class="math inline">\(40\%\)</span>): <span class="math inline">\(\mathbf{1.000\text{ km}^2}\)</span>; Manejo Sustentável (<span class="math inline">\(26\%\)</span>): <span class="math inline">\(\mathbf{650\text{ km}^2}\)</span>; Recuperação Ambiental (<span class="math inline">\(16\%\)</span>): <span class="math inline">\(\mathbf{400\text{ km}^2}\)</span>; Proteção e Conservação (<span class="math inline">\(18\%\)</span>): <span class="math inline">\(\mathbf{450\text{ km}^2}\)</span> (soma <span class="math inline">\(= 2.500\text{ km}^2\)</span>). A soma de Recuperação e Conservação atinge <span class="math inline">\(16\% + 18\% = \mathbf{34\%}\)</span> (<span class="math inline">\(850\text{ km}^2\)</span>), <strong>atendendo</strong> à diretriz mínima de <span class="math inline">\(30\%\)</span> com folga de <span class="math inline">\(4\)</span> pontos percentuais (<span class="math inline">\(100\text{ km}^2\)</span>).</p></li>
+</ol>
+</section>
+<section id="gabarito-comentado-das-questões-objetivas-11-a-18" class="level3">
+<h3 class="anchored" data-anchor-id="gabarito-comentado-das-questões-objetivas-11-a-18">Gabarito Comentado das Questões Objetivas (11 a 18)</h3>
+<ul>
+<li><p><strong>Questão 11, Gabarito (C).</strong> Cada etapa amplifica o desvio inicial de degradação (menos cobertura, mais enxurrada, menos solo e menos cobertura), definindo <strong>retroalimentação positiva</strong>.</p></li>
+<li><p><strong>Questão 12, Gabarito (B).</strong> Microbacias e voçorocas situam-se na escala local a mesoescala com evolução em meses e anos, refletindo o acoplamento espaço-temporal da <a href="#fig-sistema_escalas" class="quarto-xref">Figura&nbsp;<span>6.1</span></a>.</p></li>
+<li><p><strong>Questão 13, Gabarito (B).</strong> O planejamento ambiental diagnostica limites e fragilidades ecológicas; o ordenamento territorial traduz as diretrizes territoriais e ambientais em normas espaciais vinculantes de uso do solo (como o ZEE).</p></li>
+<li><p><strong>Questão 14, Gabarito (C).</strong> Erosão bruta total <span class="math inline">\(= 15{,}0 \times 600 = 9.000\text{ t/ano}\)</span>. Com <span class="math inline">\(\text{SDR} = 0{,}40\)</span>, chega ao exutório <span class="math inline">\(Y_{\text{tot}} = 9.000 \times 0{,}40 = \mathbf{3.600\text{ t/ano}}\)</span>, ficando retidos internamente <span class="math inline">\(9.000 - 3.600 = \mathbf{5.400\text{ t/ano}}\)</span>.</p></li>
+<li><p><strong>Questão 15, Gabarito (B).</strong> O ZEE cruza potencialidades socioeconômicas e vulnerabilidades/fragilidades naturais para estruturar zonas produtivas, de manejo, de recuperação e de proteção (Decreto nº 4.297/2002; IBGE, 2018).</p></li>
+<li><p><strong>Questão 16, Gabarito (A).</strong> Ambas as asserções são verdadeiras e a II justifica causalmente a I, pois a retenção intermediária (<span class="math inline">\(\text{SDR} &lt; 1\)</span>) impede a extrapolação linear direta de parcelas para grandes bacias.</p></li>
+<li><p><strong>Questão 17, Gabarito (D).</strong> I e III estão corretas. II é falsa porque, no equilíbrio dinâmico (<em>steady state</em>), os fluxos de entrada e saída permanecem ativos e equivalentes (<span class="math inline">\(\Delta S \approx 0\)</span>).</p></li>
+<li><p><strong>Questão 18, Gabarito (B).</strong> A integração multidisciplinar de variáveis físico-bióticas e socioeconômicas para definir zonas normativas de uso produtivo, manejo, recuperação e conservação define o <strong>Zoneamento Ecológico-Econômico (ZEE)</strong>.</p></li>
+</ul>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section id="síntese-conceitual" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="síntese-conceitual">Síntese conceitual</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Síntese Conceitual do Capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A <strong>Análise Ambiental Integrada</strong> investiga as conexões funcionais entre os meios <strong>físico</strong>, <strong>biótico</strong> e <strong>antrópico</strong> (Castro; Lemos, 2016; Drew, 1989). Paisagens operam como <strong>sistemas ambientais abertos</strong> regidos pelo balanço <span class="math inline">\(\Delta S = E - S_{\text{out}}\)</span>, nos quais a retroalimentação negativa estabiliza os fluxos, a positiva amplifica desvios e os limiares marcam rupturas de regime. O acoplamento entre escalas espaciais e temporais exige evitar a falácia de escala mediante a <strong>Razão de Entrega de Sedimentos (<span class="math inline">\(\text{SDR} = Y / E_b\)</span>)</strong> e a compatibilidade cartográfica (<span class="math inline">\(d_{\min} = 0{,}0002 \times D\)</span>). Na gestão do território, planejamento ambiental, planejamento territorial e ordenamento territorial articulam-se no <strong>ZEE</strong> e em zoneamentos integrados de aptidão, como o do reservatório de Xingó.</p>
+</div>
+</div>
+</section>
+<section id="autoavaliação" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="autoavaliação">Autoavaliação</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Autoavaliação e Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Assinale Verdadeiro (<strong>V</strong>) ou Falso (<strong>F</strong>) para confirmar o domínio do Capítulo 6 antes de iniciar o Simulado do Módulo 2:</p>
+<ol type="1">
+<li><p>( ) Em um sistema ambiental aberto, equilíbrio dinâmico significa que as entradas igualam as saídas em média (<span class="math inline">\(\Delta S \approx 0\)</span>), com circulação contínua de matéria e energia.</p></li>
+<li><p>( ) A retroalimentação positiva atua sempre na conservação ambiental, freando processos erosivos em encostas degradadas.</p></li>
+<li><p>( ) Em uma carta topográfica na escala <span class="math inline">\(1:50.000\)</span> (erro gráfico de <span class="math inline">\(0{,}2\text{ mm}\)</span>), a menor feição representável no terreno é de <span class="math inline">\(10{,}0\text{ m}\)</span>.</p></li>
+<li><p>( ) O Zoneamento Ecológico-Econômico (ZEE) é um instrumento de ordenamento territorial que articula zonas produtivas, de manejo sustentável, de recuperação e de proteção.</p></li>
+</ol>
+<p><strong>Gabarito da verificação da aprendizagem.</strong> 1. <strong>V</strong>; 2. <strong>F</strong> (retroalimentação positiva amplifica o desvio inicial, como na erosão acelerada; quem estabiliza é a negativa); 3. <strong>V</strong> (<span class="math inline">\(0{,}0002 \times 50.000 = 10{,}0\text{ m}\)</span>); 4. <strong>V</strong>.</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/analise-ambiental\/");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Código deslocável","output":"Saída deslocável"};
+  </script>
+<nav class="page-navigation" aria-label="Página">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/05-avaliacao-impacto-ambiental.html" class="pagination-link" aria-label="Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/mod2-simulado.html" class="pagination-link" aria-label="Simulado e Revisão Integrada, Módulo 2">
+        <span class="nav-page-text">Simulado e Revisão Integrada, Módulo 2</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026 (DCHF/UEFS). <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

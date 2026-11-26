@@ -1,0 +1,58 @@
+\usepackage[no-math]{fontspec}
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amssymb}
+\IfFileExists{C:/Windows/Fonts/Lato_Regular.ttf}{%
+  \setmainfont{Lato}[
+    Path = C:/Windows/Fonts/,
+    UprightFont = Lato_Regular.ttf,
+    BoldFont = Lato_Bold.ttf,
+    ItalicFont = Lato_Italic.ttf,
+    BoldItalicFont = Lato_BoldItalic.ttf
+  ]
+  \setsansfont{Lato}[
+    Path = C:/Windows/Fonts/,
+    UprightFont = Lato_Regular.ttf,
+    BoldFont = Lato_Bold.ttf,
+    ItalicFont = Lato_Italic.ttf,
+    BoldItalicFont = Lato_BoldItalic.ttf
+  ]
+}{%
+  \RequirePackage[default]{lato}
+}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,backgrounds,calc,decorations.pathreplacing,patterns}
+
+% Paleta institucional UEFS / CHF662
+\definecolor{uefsNavy}{HTML}{1B2A4A}
+\definecolor{uefsTeal}{HTML}{0E7C7B}
+\definecolor{uefsForest}{HTML}{2D6A4F}
+\definecolor{uefsGold}{HTML}{C4983B}
+\definecolor{uefsGoldDark}{HTML}{8F6B1E}
+\definecolor{uefsAlert}{HTML}{B02A37}
+\definecolor{uefsOrange}{HTML}{D95F02}
+\definecolor{uefsInk}{HTML}{22252A}
+\definecolor{uefsMuted}{HTML}{5C6470}
+\definecolor{uefsWater}{HTML}{2E86AB}
+\definecolor{uefsSand}{HTML}{D9B382}
+\definecolor{bgNavy}{HTML}{F2F5F9}
+\definecolor{bgTeal}{HTML}{E9F5F4}
+\definecolor{bgForest}{HTML}{EEF5F0}
+\definecolor{bgGold}{HTML}{FCF7EB}
+\definecolor{bgAlert}{HTML}{FDF2F2}
+\definecolor{bgGray}{HTML}{F8FAFC}
+\definecolor{lineGray}{HTML}{CFD8DC}
+
+\tikzset{
+  >=Stealth,
+  aaCard/.style={draw=#1, fill=white, rounded corners=4pt, line width=1pt, inner sep=6pt, align=center, font=\small},
+  aaBox/.style={draw=#1, rounded corners=4pt, line width=1.1pt, inner sep=6pt, align=center, font=\footnotesize\sffamily, text=uefsInk},
+  aaTitle/.style={font=\normalsize\bfseries\sffamily, text=uefsNavy, align=center},
+  aaSub/.style={font=\footnotesize\sffamily, text=uefsMuted, align=center},
+  aaArrow/.style={->, >=Stealth, line width=1.4pt},
+  aaDArrow/.style={<->, >=Stealth, line width=1.4pt}
+}

@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Apostila completa do componente curricular CHF662 (Análise Ambiental), Curso de Geografia da UEFS, organizada em cinco módulos, 15 capítulos em 10 etapas, simulados comentados, formulário e glossário.">
+
+<title>5&nbsp; Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental - Análise Ambiental (CHF662)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/06-analise-ambiental-integrada.html" rel="next">
+<link href="../capitulos/mod1-simulado.html" rel="prev">
+<link href="../img/capa_analise_ambiental.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-679673b8a27c868cce7048b2deb5a79d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Pular para o conteúdo principal</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Barra de ferramentas">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/05-avaliacao-impacto-ambiental.html">Módulo 2. AIA e análise ambiental integrada</a></li><li class="breadcrumb-item"><a href="../capitulos/05-avaliacao-impacto-ambiental.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Análise Ambiental (CHF662)</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos02-sketch/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../APOSTILA_ANALISE_AMBIENTAL_CHF662_UEFS.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Apresentação e orientação de estudo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Módulo 1. Fundamentos epistemológicos e conceituais</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-questao-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Questão Ambiental Contemporânea e o Papel da Geografia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-sociedade-natureza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Modernidade, a Geografia e a Relação Sociedade-Natureza</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-geografia-socioambiental-gtp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Abordagens Ambientais no Pensamento Geográfico Moderno</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-conceitos-operacionais-risco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos e Definições Operacionais da Análise Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod1-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Módulo 2. AIA e análise ambiental integrada</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-avaliacao-impacto-ambiental.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-analise-ambiental-integrada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod2-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-bacias-hidrograficas-morfometria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bacia Hidrográfica como Unidade de Análise Ambiental Integrada</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-morfopedologia-vertentes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Morfopedologia e Processos Interativos Relevo, Solo e Água</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-geossistemas-ecodinamica-ross.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geossistemas, Ecodinâmica e Análise Empírica da Fragilidade Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod3-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado Preparatório para a Avaliação Teórica, Módulos 1 a 3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">Módulo 4. Indicadores, qualidade do solo e degradação</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-indicadores-ambientais-peir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-qualidade-solo-iqs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-degradacao-erosao-usle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagnóstico de Processos de Degradação Ambiental e Erosão Linear</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod4-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 4</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-bioengenharia-agua-solo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-legislacao-ambiental-prad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-diagnostico-ambiental-aplicado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Manual Prático do Diagnóstico Ambiental Aplicado e Produtos Técnicos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod5-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 5</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">Encerramento, Formulário e Referências</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-avaliacao-geral-final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avaliação Geral Integrada, Simulado Final Completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-formulario-glossario-referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formulário Técnico, Glossário e Referências Oficiais</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul class="collapse">
+  <li><a href="#conceito-natureza-preventiva-e-papel-da-aia-no-planejamento" id="toc-conceito-natureza-preventiva-e-papel-da-aia-no-planejamento" class="nav-link active" data-scroll-target="#conceito-natureza-preventiva-e-papel-da-aia-no-planejamento">Conceito, Natureza Preventiva e Papel da AIA no Planejamento</a></li>
+  <li><a href="#etapas-do-processo-de-avaliação-de-impacto-ambiental" id="toc-etapas-do-processo-de-avaliação-de-impacto-ambiental" class="nav-link" data-scroll-target="#etapas-do-processo-de-avaliação-de-impacto-ambiental">Etapas do Processo de Avaliação de Impacto Ambiental</a></li>
+  <li><a href="#aplicação-integrada-auditoria-de-monitoramento-no-pba" id="toc-aplicação-integrada-auditoria-de-monitoramento-no-pba" class="nav-link" data-scroll-target="#aplicação-integrada-auditoria-de-monitoramento-no-pba">Aplicação Integrada, Auditoria de Monitoramento no PBA</a></li>
+  <li><a href="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio" id="toc-armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="nav-link" data-scroll-target="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</a></li>
+  <li><a href="#exercícios-de-fixação" id="toc-exercícios-de-fixação" class="nav-link" data-scroll-target="#exercícios-de-fixação">Exercícios de fixação</a></li>
+  <li><a href="#questões-de-aplicação" id="toc-questões-de-aplicação" class="nav-link" data-scroll-target="#questões-de-aplicação">Questões de aplicação</a></li>
+  <li><a href="#gabarito-comentado" id="toc-gabarito-comentado" class="nav-link" data-scroll-target="#gabarito-comentado">Gabarito comentado</a></li>
+  <li><a href="#síntese-conceitual" id="toc-síntese-conceitual" class="nav-link" data-scroll-target="#síntese-conceitual">Síntese conceitual</a></li>
+  <li><a href="#autoavaliação" id="toc-autoavaliação" class="nav-link" data-scroll-target="#autoavaliação">Autoavaliação</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main data-book-tables="true" class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/05-avaliacao-impacto-ambiental.html">Módulo 2. AIA e análise ambiental integrada</a></li><li class="breadcrumb-item"><a href="../capitulos/05-avaliacao-impacto-ambiental.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="cap:aia" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>A avaliação de impacto ambiental examina as consequências de uma intervenção enquanto alternativas ainda podem ser consideradas. O diagnóstico estabelece as condições de referência, o prognóstico explicita as mudanças esperadas e o monitoramento permite verificar a resposta do sistema após a decisão.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>O que você vai aprender neste capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O capítulo desenvolve o conceito preventivo da Avaliação de Impacto Ambiental (AIA), a sequência completa de suas etapas, a delimitação espacial de áreas de influência e os principais métodos de identificação e valoração de impactos. Ao longo do texto, figuras esquemáticas, fotografia de campo e exemplos resolvidos acompanham a aplicação da Matriz de Leopold Ponderada, da Hierarquia de Mitigação e da auditoria do Plano Básico Ambiental (PBA).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Revisando o que você precisa saber
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A leitura retoma a distinção entre atividade geradora, aspecto ambiental e impacto (adverso ou benéfico), além das noções de degradação, vulnerabilidade e fragilidade construídas no Módulo 1. A delimitação espacial do estudo acompanha os processos físicos, bióticos e sociais examinados, incluindo deslocamento de sedimentos, conectividade de habitats e circulação regional.</p>
+</div>
+</div>
+<section id="conceito-natureza-preventiva-e-papel-da-aia-no-planejamento" class="level2">
+<h2 class="anchored" data-anchor-id="conceito-natureza-preventiva-e-papel-da-aia-no-planejamento">Conceito, Natureza Preventiva e Papel da AIA no Planejamento</h2>
+<p>A <strong>Avaliação de Impacto Ambiental (AIA)</strong> opera como um instrumento de política e planejamento ambiental de caráter preventivo. Como sintetiza Sánchez (2013, cap. 7), avaliar impactos ambientais significa identificar, prever, interpretar e comunicar, <em>antes</em> que uma obra, atividade ou política seja implantada, as alterações que ela poderá provocar nos meios físico, biótico e socioeconômico, propondo medidas capazes de evitar ou reduzir danos e ampliar benefícios.</p>
+<p>No Brasil, a AIA integra os instrumentos da Política Nacional do Meio Ambiente (Lei nº 6.938/1981) e articula-se diretamente ao licenciamento ambiental (Brasil/MMA, 2016; Vital et al., 2020). O <strong>Estudo de Impacto Ambiental (EIA)</strong>, documento técnico completo, acompanhado pelo <strong>Relatório de Impacto Ambiental (RIMA)</strong> em linguagem acessível à sociedade, representa a modalidade exigida para empreendimentos potencialmente causadores de significativa degradação ambiental conforme a Resolução CONAMA nº 001/1986. Além do EIA/RIMA, o processo de AIA abrange estudos simplificados (como o Relatório Ambiental Simplificado, o Plano de Controle Ambiental e o Estudo Ambiental Preliminar), o exame técnico pelo órgão licenciador, as audiências públicas e o acompanhamento posterior à licença.</p>
+<p>Na leitura técnica das etapas e matrizes deste capítulo, o <strong>Termo de Referência (TR)</strong> fixa o escopo exigido pelo órgão ambiental, enquanto a <strong>Área Diretamente Afetada (ADA)</strong>, a <strong>Área de Influência Direta (AID)</strong> e a <strong>Área de Influência Indireta (AII)</strong> organizam a extensão espacial do diagnóstico. Na fase executiva, o <strong>Plano Básico Ambiental (PBA)</strong> detalha os programas de controle e monitoramento. Nas matrizes ponderadas adaptadas de Leopold, cada interação entre o fator <span class="math inline">\(i\)</span> e a ação <span class="math inline">\(j\)</span> recebe sinal (<span class="math inline">\(s_{ij}\)</span>), magnitude (<span class="math inline">\(M_{ij}\)</span>, de <span class="math inline">\(1\)</span> a <span class="math inline">\(10\)</span>), importância (<span class="math inline">\(I_{ij}\)</span>, de <span class="math inline">\(1\)</span> a <span class="math inline">\(10\)</span>) e pontuação ponderada <span class="math inline">\(P_{ij} = s_{ij} \cdot M_{ij} \cdot I_{ij}\)</span>, ao passo que a parcela inevitável remanescente após todas as intervenções de controle recebe o nome de <strong>impacto residual</strong>.</p>
+<section id="a-aia-como-instrumento-do-planejamento-ambiental" class="level3">
+<h3 class="anchored" data-anchor-id="a-aia-como-instrumento-do-planejamento-ambiental">A AIA como Instrumento do Planejamento Ambiental</h3>
+<p>Quando reduzida a um rito cartorial executado depois que todas as decisões de engenharia já estão fechadas, a AIA perde sua função preventiva e converte-se em justificativa documental tardia. Para cumprir seu papel no <strong>planejamento ambiental</strong>, o estudo precisa atuar desde a concepção do projeto, orientando três decisões estruturantes. No plano espacial, subsidia a comparação de <strong>alternativas locacionais</strong>, definindo onde instalar a infraestrutura para resguardar nascentes, Áreas de Preservação Permanente (APPs), solos suscetíveis à erosão e territórios de elevado valor sociocultural. De forma complementar, orienta a seleção de <strong>alternativas tecnológicas</strong>, contrastando métodos construtivos e processos produtivos para escolher aqueles que geram menor volume de rejeitos, menor supressão vegetal e menor demanda hídrica. Simultaneamente, exige a avaliação da <strong>alternativa zero</strong>, referente à manutenção do território sem a obra, verificando se o interesse público e o balanço socioambiental justificam a intervenção proposta.</p>
+<p>A distinção entre o processo amplo de avaliação e suas peças documentais previne equívocos frequentes no licenciamento, conforme destacado a seguir.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 1. Confundir AIA com EIA/RIMA ou Tratar o Licenciamento como Burocracia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Afirmar que “todo licenciamento exige EIA/RIMA” ou empregar AIA e EIA como sinônimos exatos.</p>
+<p><strong>Correção técnica.</strong> A AIA corresponde ao <em>processo amplo</em> de avaliação prévia de impactos (triagem, escopo, estudos, decisão e acompanhamento), enquanto o EIA/RIMA constitui uma de suas <em>modalidades documentais</em>, exigida quando há potencial de significativa degradação ambiental. Empreendimentos de menor porte ou potencial poluidor passam pela etapa de triagem e apresentam estudos simplificados, como o Relatório Ambiental Simplificado (RAS) ou o Plano de Controle Ambiental (PCA).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="etapas-do-processo-de-avaliação-de-impacto-ambiental" class="level2">
+<h2 class="anchored" data-anchor-id="etapas-do-processo-de-avaliação-de-impacto-ambiental">Etapas do Processo de Avaliação de Impacto Ambiental</h2>
+<p>A literatura internacional e os manuais brasileiros de referência (Sánchez, 2013; Brasil/MMA, 2016) organizam a AIA em um encadeamento lógico e iterativo de etapas no qual cada fase condiciona a consistência da etapa seguinte, como se observa no Painel (a) da <a href="#fig-aia_mitigacao" class="quarto-xref">Figura&nbsp;<span>5.1</span></a>.</p>
+<div id="fig-aia_mitigacao" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagrama com o fluxo sequencial da AIA no painel a e os quatro degraus da Hierarquia de Mitigação no painel b">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-aia_mitigacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig03_etapas_aia_mitigacao.png" class="img-fluid figure-img" alt="Diagrama com o fluxo sequencial da AIA no painel a e os quatro degraus da Hierarquia de Mitigação no painel b">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-aia_mitigacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.1: Fluxo metodológico da Avaliação de Impacto Ambiental (a) e ordem de prioridade técnica da Hierarquia de Mitigação (b). Fonte: elaboração didática CHF662 com base em Sánchez (2013) e Brasil/MMA (2016).
+</figcaption>
+</figure>
+</div>
+<section id="triagem-e-definição-de-escopo-termo-de-referência" class="level3">
+<h3 class="anchored" data-anchor-id="triagem-e-definição-de-escopo-termo-de-referência">Triagem e Definição de Escopo (Termo de Referência)</h3>
+<p>A <strong>triagem (<em>screening</em>)</strong> abre o processo ao responder se o projeto requer EIA/RIMA completo, estudo ambiental simplificado ou dispensa de AIA. Essa decisão combina a tipologia da atividade (rodovias, parques eólicos, mineração ou barragens), o porte do empreendimento (área ocupada, potência instalada ou vazão captada) e a <strong>sensibilidade ambiental do sítio</strong>, avaliando a proximidade de Unidades de Conservação, terras indígenas, comunidades tradicionais, nascentes ou remanescentes de Caatinga conservada.</p>
+<p>Confirmada a exigência de estudo ambiental, a <strong>definição de escopo (<em>scoping</em>)</strong> delimita os temas e processos que exigem investigação aprofundada, evitando relatórios extensos repletos de dados secundários desconexos e estudos omissos quanto aos riscos principais. O produto formal dessa etapa é o <strong>Termo de Referência (TR)</strong>, emitido pelo órgão ambiental competente (como o INEMA na Bahia ou o IBAMA na esfera federal) ou estruturado como proposta técnica pelo consultor para validação prévia.</p>
+<p>Na prática profissional, uma proposta consistente de Termo de Referência encadeia cinco blocos integrados. O bloco inicial fixa a abrangência do estudo (EIA, RIMA e, quando houver risco químico ou tecnológico, Estudo de Análise de Risco) e exige levantamentos primários em campo articulados a bases oficiais recentes (IBGE, INEMA, ANA e universidades), com protocolos explícitos de amostragem. O bloco seguinte caracteriza o empreendimento por meio de cadastro técnico, histórico da área, mapa de localização em escala de detalhe (como <span class="math inline">\(1:10.000\)</span>) inserido na bacia hidrográfica, mapa de restrições legais e descrição operacional de insumos, resíduos sólidos (ABNT NBR 10004 a 10007), efluentes, ruído e tráfego.</p>
+<p>Em seguida, o TR especifica os parâmetros mínimos do diagnóstico na AID e na AII em escalas cartográficas compatíveis, usualmente <span class="math inline">\(1:25.000\)</span> para a AID e <span class="math inline">\(1:50.000\)</span> para a AII. Esse diagnóstico cobre geologia, geomorfologia, hidrografia e qualidade do ar no meio físico; inventários florísticos e faunísticos com curvas de suficiência amostral no meio biótico; e dinâmica demográfica, uso do solo, anuência do IPHAN para patrimônio arqueológico e levantamento específico de povos indígenas e comunidades quilombolas segundo registros da Fundação Cultural Palmares e do INCRA no meio socioeconômico. No bloco final, o documento define o método de valoração de impactos, os programas ambientais do PBA com cronograma e orçamento, as cartas temáticas sobre base planialtimétrica comum, as diretrizes de redação acessível do RIMA, as Anotações de Responsabilidade Técnica (ARTs) da equipe e os procedimentos de consulta pública.</p>
+</section>
+<section id="diagnóstico-ambiental-linha-de-base-e-áreas-de-influência" class="level3">
+<h3 class="anchored" data-anchor-id="diagnóstico-ambiental-linha-de-base-e-áreas-de-influência">Diagnóstico Ambiental (Linha de Base) e Áreas de Influência</h3>
+<p>O diagnóstico constrói a <strong>linha de base (<em>baseline</em>)</strong>, retratando de modo qualiquantitativo as condições do ambiente antes da intervenção. No <strong>meio físico</strong>, levantam-se clima, geologia, geomorfologia, solos, recursos hídricos superficiais e subterrâneos, qualidade do ar e ruído de fundo para aferir a suscetibilidade do substrato à erosão e às alterações hidrológicas. No <strong>meio biótico</strong>, inventariam-se fitofisionomias, flora (com atenção a espécies endêmicas e ameaçadas), fauna terrestre e aquática e corredores ecológicos. No <strong>meio socioeconômico</strong>, analisam-se demografia, uso e ocupação da terra, estrutura produtiva, serviços públicos, comunidades quilombolas, indígenas e de fundo de pasto e patrimônio cultural, revelando como os grupos locais dependem dos recursos afetados.</p>
+<p>Para espacializar esses levantamentos, o diagnóstico delimita três escalas geográficas fundamentadas em processos físicos, ecológicos e territoriais reais, superando o traçado arbitrário de círculos no mapa. A <strong>Área Diretamente Afetada (ADA)</strong> corresponde à superfície efetivamente ocupada pelas estruturas físicas do projeto, incluindo canteiros, estradas de acesso, jazidas e áreas de bota-fora, a exemplo da poligonal das bases de torres eólicas e das vias abertas na Caatinga. A <strong>Área de Influência Direta (AID)</strong> abrange o espaço submetido aos impactos primários de implantação e operação; no meio físico, acompanha os divisores topográficos da microbacia drenada pela ADA e a direção do escoamento superficial até o exutório afetado, enquanto nos meios biótico e socioeconômico acompanha manchas de ruído, dispersão de poeira, áreas de afugentamento de fauna e povoados lindeiros. A <strong>Área de Influência Indireta (AII)</strong> engloba o espaço atingido por desdobramentos secundários, como municípios receptores de tráfego pesado e arrecadação tributária ou a sub-bacia regional a jusante.</p>
+<p>Traçar círculos concêntricos arbitrários ignora a direção natural da drenagem e deixa setores vulneráveis fora do monitoramento, erro contrastado com a delimitação hidrográfica correta na <a href="#fig-areas_influencia" class="quarto-xref">Figura&nbsp;<span>5.2</span></a>.</p>
+<div id="fig-areas_influencia" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Comparação entre delimitação circular arbitrária e delimitação por microbacia hidrográfica das áreas ADA, AID e AII">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-areas_influencia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap05_areas_influencia.png" class="img-fluid figure-img" alt="Comparação entre delimitação circular arbitrária e delimitação por microbacia hidrográfica das áreas ADA, AID e AII">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-areas_influencia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.2: Delimitação técnica das Áreas de Influência (ADA, AID e AII) em bacia hidrográfica: (a) traçado circular arbitrário que ignora o escoamento e (b) delimitação física orientada pelos divisores topográficos e pela rede de drenagem a jusante da ADA. Fonte: elaboração didática CHF662 com base em Sánchez (2013).
+</figcaption>
+</figure>
+</div>
+<p>O Exemplo 5.1 quantifica a proporção espacial entre ADA, AID e AII em um empreendimento solar no Semiárido baiano.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 5.1 (Básico). Delimitação Quantitativa de ADA, AID e AII em Parque Solar no Semiárido
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Uma empresa propõe a instalação de uma usina solar fotovoltaica em área rural de transição semiárida na Bahia. O projeto prevê <span class="math inline">\(45{,}0\text{ ha}\)</span> ocupados pelos arranjos de painéis solares e <span class="math inline">\(3{,}5\text{ ha}\)</span> destinados à subestação, canteiro de obras e estradas internas de acesso. A microbacia hidrográfica que drena o empreendimento possui <span class="math inline">\(620{,}0\text{ ha}\)</span>, e o município de inserção ocupa <span class="math inline">\(48.500{,}0\text{ ha}\)</span>.</p>
+<p><strong>Dados disponíveis.</strong> Área dos painéis <span class="math inline">\(= 45{,}0\text{ ha}\)</span>; áreas de apoio e acessos <span class="math inline">\(= 3{,}5\text{ ha}\)</span>; área da microbacia (AID do meio físico) <span class="math inline">\(= 620{,}0\text{ ha}\)</span>; área do município (AII socioeconômica) <span class="math inline">\(= 48.500{,}0\text{ ha}\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular a Área Diretamente Afetada (ADA) total, determinar o percentual que a ADA representa em relação à AID e à AII, e justificar por que a AID do meio físico deve acompanhar os divisores da microbacia.</p>
+<p><strong>Fundamento da análise.</strong> Soma das superfícies de intervenção direta para obtenção da ADA e cálculo das razões percentuais (<span class="math inline">\(\text{ADA}/\text{AID} \times 100\%\)</span> e <span class="math inline">\(\text{ADA}/\text{AII} \times 100\%\)</span>), segundo os critérios espaciais de Sánchez (2013).</p>
+<p><strong>Desenvolvimento.</strong> Somando as superfícies de supressão e ocupação direta, obtém-se a ADA total e suas proporções nas áreas de influência:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{ADA} &amp;= 45{,}0 + 3{,}5 = 48{,}5\text{ ha} \\
+\frac{\text{ADA}}{\text{AID}} \times 100\% &amp;= \frac{48{,}5}{620{,}0} \times 100\% \approx 7{,}82\% \\
+\frac{\text{ADA}}{\text{AII}} \times 100\% &amp;= \frac{48{,}5}{48.500{,}0} \times 100\% = 0{,}10\%.
+\end{aligned}
+\]</span></p>
+<p>Quanto ao critério físico, o escoamento superficial, o carreamento de sedimentos e eventuais vazamentos de transformadores seguem a gravidade e os divisores topográficos. Um círculo fixo de <span class="math inline">\(1\text{ km}\)</span> incluiria trechos de bacias vizinhas sem conexão hídrica com o parque e deixaria de fora o exutório a jusante que receberá os sedimentos.</p>
+<p><strong>Interpretação do resultado.</strong> <span class="math inline">\(\text{ADA} = 48{,}5\text{ ha}\)</span>, correspondendo a <span class="math inline">\(7{,}82\%\)</span> da AID (microbacia) e <span class="math inline">\(0{,}10\%\)</span> da AII (município). A AID física deve coincidir com a microbacia porque os fluxos hidrossedimentológicos seguem a drenagem natural.</p>
+<p><strong>Condições de validade.</strong> A hierarquia espacial <span class="math inline">\(\text{ADA} &lt; \text{AID} &lt; \text{AII}\)</span> (<span class="math inline">\(48{,}5 &lt; 620{,}0 &lt; 48.500{,}0\text{ ha}\)</span>) é coerente. Embora <span class="math inline">\(0{,}10\%\)</span> do município pareça pequeno na escala da AII, ocupar <span class="math inline">\(7{,}82\%\)</span> da microbacia local com superfícies compactadas altera o pico de escoamento superficial se faltarem drenagem e proteção do solo.</p>
+</div>
+</div>
+</section>
+<section id="identificação-previsão-e-valoração-de-impactos" class="level3">
+<h3 class="anchored" data-anchor-id="identificação-previsão-e-valoração-de-impactos">Identificação, Previsão e Valoração de Impactos</h3>
+<p>Nesta etapa, cruzam-se as ações do projeto (planejamento, implantação, operação e desativação) com os fatores ambientais descritos na linha de base. Cada impacto é caracterizado quanto à <strong>natureza</strong> (adverso ou benéfico), <strong>incidência</strong> (direto ou indireto), <strong>abrangência</strong> (local, regional ou estratégica), <strong>temporalidade</strong> (imediato, médio ou longo prazo), <strong>duração</strong> (temporário, permanente ou cíclico), <strong>reversibilidade</strong> (reversível ou irreversível) e <strong>cumulatividade ou sinergia</strong> com outros empreendimentos da bacia.</p>
+<p>Quatro famílias metodológicas sustentam essa identificação e valoração conforme a complexidade do projeto. As <strong>listagens de controle (<em>checklists</em>)</strong> reúnem fatores ambientais e impactos potenciais por tipologia de obra em formato simples, descritivo ou escalar, oferecendo rapidez e padronização na triagem e no escopo, ainda que sejam estáticas e tenham dificuldade para explicitar encadeamentos indiretos. As <strong>matrizes de interação</strong>, com destaque para a Matriz de Leopold (Leopold et al., 1971) e suas versões ponderadas, cruzam em tabela bidimensional as ações do empreendimento (colunas) com os fatores ambientais (linhas), avaliando cada interação por sinal, magnitude e importância para hierarquizar prioridades.</p>
+<p>Para rastrear cadeias causais complexas, empregam-se as <strong>redes de interação (<em>networks</em>)</strong>, estruturadas como grafos causa-efeito que encadeiam um impacto primário (direto) aos impactos secundários e terciários (indiretos). No Semiárido, a abertura de uma estrada sem sistema de drenagem desencadeia compactação e exposição do solo com concentração do escoamento superficial (1ª ordem), que evolui para sulcos erosivos, ravinas e carreamento de sedimentos ao riacho (2ª ordem) até assorear o açude comunitário e reduzir a oferta hídrica na estiagem (3ª ordem), encadeamento esquematizado na <a href="#fig-rede_interacao" class="quarto-xref">Figura&nbsp;<span>5.3</span></a>.</p>
+<div id="fig-rede_interacao" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Grafo causal em três ordens conectando abertura de estrada sem drenagem a sulcos, ravinas e assoreamento">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rede_interacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap05_rede_interacao.png" class="img-fluid figure-img" alt="Grafo causal em três ordens conectando abertura de estrada sem drenagem a sulcos, ravinas e assoreamento">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rede_interacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.3: Rede de interação em cascata a partir da abertura de estrada sem drenagem, conectando a compactação inicial (1ª ordem) ao ravinamento (2ª ordem) e ao assoreamento de açudes a jusante (3ª ordem). Fonte: elaboração didática CHF662.
+</figcaption>
+</figure>
+</div>
+<p>Em campo, a transição da compactação inicial para o escoamento concentrado torna-se visível assim que as primeiras chuvas intensas incidem sobre a faixa exposta da via sem caixas secas ou saídas d’água, abrindo sulcos laterais que conduzem sedimentos para as drenagens próximas (<a href="#fig-foto-estrada-sulco" class="quarto-xref">Figura&nbsp;<span>5.4</span></a>).</p>
+<div id="fig-foto-estrada-sulco" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Estrada rural não pavimentada com sulco erosivo formado ao longo da margem pela concentração de enxurrada">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-foto-estrada-sulco-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/foto_estrada_sulco_erosivo.jpg" class="img-fluid figure-img" alt="Estrada rural não pavimentada com sulco erosivo formado ao longo da margem pela concentração de enxurrada">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-foto-estrada-sulco-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.4: Registro de campo de escoamento concentrado e formação de sulco erosivo lateral em acesso rural sem drenagem pluvial. Fonte: acervo didático CHF662.
+</figcaption>
+</figure>
+</div>
+<p>Na quarta família metodológica, a <strong>sobreposição de cartas (<em>overlay</em>) e Sistemas de Informação Geográfica (SIG)</strong>, derivada do método de Ian McHarg (1969), cruza camadas georreferenciadas (declividade, solos, hidrografia, APPs, remanescentes florestais e áreas urbanas) por álgebra de mapas. Essa abordagem explicita a distribuição espacial exata dos conflitos e subsidia a comparação de alternativas locacionais, dependendo da qualidade e da escala da base cartográfica adotada, tema aprofundado no Capítulo 6. A tabela a seguir sintetiza a escolha prática entre os quatro métodos.</p>
+<div class="book-table-scroll" role="region" aria-label="Tabela 1" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Método</strong></th>
+<th style="text-align: left;"><strong>Principal vantagem</strong></th>
+<th style="text-align: left;"><strong>Principal limitação</strong></th>
+<th style="text-align: left;"><strong>Uso ideal</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Checklists</strong></td>
+<td style="text-align: left;">Rapidez e padronização inicial.</td>
+<td style="text-align: left;">Estrutura estática, sem cadeias causais.</td>
+<td style="text-align: left;">Triagem e escopo.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Matriz de Leopold</strong></td>
+<td style="text-align: left;">Liga ações a fatores e prioriza ações críticas.</td>
+<td style="text-align: left;">Pouca clareza para efeitos indiretos.</td>
+<td style="text-align: left;">Síntese de EIAs e PCAs.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Redes de Interação</strong></td>
+<td style="text-align: left;">Evidencia impactos indiretos e cumulativos.</td>
+<td style="text-align: left;">Visualmente complexa em grandes projetos.</td>
+<td style="text-align: left;">Bacias, erosão e hidrologia.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sobreposição / SIG</strong></td>
+<td style="text-align: left;">Localiza conflitos e compara traçados.</td>
+<td style="text-align: left;">Depende da escala e qualidade dos mapas.</td>
+<td style="text-align: left;">Traçados e zoneamentos.</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section id="matriz-de-leopold-ponderada-magnitude-importância-e-balanço" class="level3">
+<h3 class="anchored" data-anchor-id="matriz-de-leopold-ponderada-magnitude-importância-e-balanço">Matriz de Leopold Ponderada, Magnitude, Importância e Balanço</h3>
+<p>Na adaptação ponderada da Matriz de Leopold (Leopold et al., 1971), cada célula <span class="math inline">\((i, j)\)</span> com interação efetiva entre o <strong>fator ambiental <span class="math inline">\(i\)</span></strong> (linha) e a <strong>ação <span class="math inline">\(j\)</span></strong> (coluna) recebe três parâmetros. O <strong>sinal (<span class="math inline">\(s_{ij} \in \{-1, +1\}\)</span>)</strong> assume <span class="math inline">\(-1\)</span> para impacto adverso e <span class="math inline">\(+1\)</span> para impacto benéfico, registrando-se <span class="math inline">\(0\)</span> quando a interação é inexistente. A <strong>magnitude (<span class="math inline">\(M_{ij} \in \{1, \dots, 10\}\)</span>)</strong> mede a intensidade e extensão física da alteração sobre o fator, enquanto a <strong>importância (<span class="math inline">\(I_{ij} \in \{1, \dots, 10\}\)</span>)</strong> expressa a relevância ecológica, funcional, social ou legal do receptor atingido, atingindo notas máximas em nascentes, espécies ameaçadas ou comunidades tradicionais.</p>
+<p><span class="math display">\[
+\begin{aligned}
+P_{ij} &amp;= s_{ij} \cdot \left(M_{ij} \times I_{ij}\right), \qquad P_{ij} \in [-100, +100] \\
+T_j &amp;= \sum_{i=1}^{m} P_{ij}, \qquad F_i = \sum_{j=1}^{n} P_{ij} \\
+B &amp;= \sum_{i=1}^{m}\sum_{j=1}^{n} P_{ij} = \sum_{j=1}^{n} T_j = \sum_{i=1}^{m} F_i \\
+\Sigma^{-} &amp;= \sum_{P_{ij}&lt;0} P_{ij}, \qquad \Sigma^{+} = \sum_{P_{ij}&gt;0} P_{ij}
+\end{aligned}
+\]</span></p>
+<p>Nessas equações, <span class="math inline">\(P_{ij}\)</span> é a pontuação celular, <span class="math inline">\(T_j\)</span> mede o saldo da ação <span class="math inline">\(j\)</span> sobre os <span class="math inline">\(m\)</span> fatores, <span class="math inline">\(F_i\)</span> acumula a pressão das <span class="math inline">\(n\)</span> ações sobre o fator <span class="math inline">\(i\)</span>, <span class="math inline">\(B\)</span> é o balanço líquido global, <span class="math inline">\(\Sigma^{-}\)</span> reúne a carga adversa total e <span class="math inline">\(\Sigma^{+}\)</span> soma a carga benéfica total.</p>
+<p>Para acompanhar o cálculo em escala reduzida, considere uma mini-matriz com duas ações (<span class="math inline">\(A_1\)</span>, supressão vegetal em encosta; <span class="math inline">\(A_2\)</span>, contratação de mão de obra local) e dois fatores (<span class="math inline">\(F_1\)</span>, solo e suscetibilidade erosiva; <span class="math inline">\(F_2\)</span>, renda familiar). Na célula <span class="math inline">\((F_1, A_1)\)</span>, a supressão gera dano severo (<span class="math inline">\(s=-1\)</span>, <span class="math inline">\(M=8\)</span>, <span class="math inline">\(I=9\)</span>), resultando em <span class="math inline">\(P_{11} = -72\)</span>, enquanto em <span class="math inline">\((F_2, A_1)\)</span> o pagamento temporário pela limpeza produz efeito positivo discreto (<span class="math inline">\(s=+1\)</span>, <span class="math inline">\(M=2\)</span>, <span class="math inline">\(I=3\)</span>), com <span class="math inline">\(P_{21} = +6\)</span>. A ação <span class="math inline">\(A_2\)</span> não altera fisicamente o solo (<span class="math inline">\(P_{12} = 0\)</span>), mas eleva a renda local (<span class="math inline">\(s=+1\)</span>, <span class="math inline">\(M=6\)</span>, <span class="math inline">\(I=7\)</span>), gerando <span class="math inline">\(P_{22} = +42\)</span>. Somando colunas e linhas, tem-se <span class="math inline">\(T_1 = -66\)</span>, <span class="math inline">\(T_2 = +42\)</span>, <span class="math inline">\(F_1 = -72\)</span>, <span class="math inline">\(F_2 = +48\)</span>, carga adversa <span class="math inline">\(\Sigma^{-} = -72\)</span>, carga benéfica <span class="math inline">\(\Sigma^{+} = +48\)</span> e balanço <span class="math inline">\(B = -24\)</span>. A estrutura operacional dessa matriz em planilha eletrônica está representada na <a href="#fig-matriz_leopold_excel" class="quarto-xref">Figura&nbsp;<span>5.5</span></a>.</p>
+<div id="fig-matriz_leopold_excel" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Planilha de Matriz de Leopold Ponderada com células vermelhas negativas, verdes positivas e somas marginais">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-matriz_leopold_excel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap05_matriz_leopold_excel.png" class="img-fluid figure-img" alt="Planilha de Matriz de Leopold Ponderada com células vermelhas negativas, verdes positivas e somas marginais">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-matriz_leopold_excel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.5: Matriz de Leopold Ponderada na planilha eletrônica da disciplina, destacando impactos adversos em vermelho, benéficos em verde e os totais por ação e fator ambiental. Fonte: planilha didática <code>matriz_leopold_aia.xlsx</code> (CHF662).
+</figcaption>
+</figure>
+</div>
+<p>O Exemplo 5.2 aplica esse equacionamento completo à avaliação de um parque eólico na Caatinga baiana.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 5.2 (Básico e Intermediário). Matriz de Leopold Ponderada em Parque Eólico na Caatinga
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Durante a AIA de um parque eólico no Semiárido baiano, a equipe técnica estruturou uma matriz cruzando três ações (<span class="math inline">\(A_1\)</span>, supressão vegetal e abertura de acessos; <span class="math inline">\(A_2\)</span>, escavação e concretagem das fundações das torres; <span class="math inline">\(A_3\)</span>, operação dos aerogeradores e contratação de serviços locais) com quatro fatores ambientais (<span class="math inline">\(F_1\)</span>, solo e processos erosivos; <span class="math inline">\(F_2\)</span>, fauna e avifauna; <span class="math inline">\(F_3\)</span>, qualidade da água superficial; <span class="math inline">\(F_4\)</span>, emprego e renda local).</p>
+<p><strong>Dados disponíveis.</strong> Avaliações <span class="math inline">\((s, M, I)\)</span> atribuídas após vistorias de campo e linha de base: em <span class="math inline">\(F_1\)</span> (Solo/Erosão), <span class="math inline">\(A_1 = (-, 8, 9)\)</span>, <span class="math inline">\(A_2 = (-, 6, 8)\)</span> e <span class="math inline">\(A_3 = 0\)</span>; em <span class="math inline">\(F_2\)</span> (Fauna/Avifauna), <span class="math inline">\(A_1 = (-, 7, 8)\)</span>, <span class="math inline">\(A_2 = (-, 3, 5)\)</span> e <span class="math inline">\(A_3 = (-, 5, 9)\)</span>; em <span class="math inline">\(F_3\)</span> (Qualidade da água), <span class="math inline">\(A_1 = (-, 5, 7)\)</span>, <span class="math inline">\(A_2 = (-, 4, 7)\)</span> e <span class="math inline">\(A_3 = 0\)</span>; em <span class="math inline">\(F_4\)</span> (Emprego/Renda), <span class="math inline">\(A_1 = (+, 3, 5)\)</span>, <span class="math inline">\(A_2 = (+, 4, 5)\)</span> e <span class="math inline">\(A_3 = (+, 7, 8)\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular todas as pontuações celulares <span class="math inline">\(P_{ij}\)</span>, os totais por ação (<span class="math inline">\(T_j\)</span>), os totais por fator (<span class="math inline">\(F_i\)</span>), a carga adversa (<span class="math inline">\(\Sigma^{-}\)</span>), a carga benéfica (<span class="math inline">\(\Sigma^{+}\)</span>) e o balanço líquido (<span class="math inline">\(B\)</span>), identificando a ação mais crítica e o fator mais impactado.</p>
+<p><strong>Fundamento da análise.</strong> Aplicação das equações da Matriz de Leopold Ponderada (<span class="math inline">\(P_{ij} = s_{ij} \cdot M_{ij} \cdot I_{ij}\)</span>), com verificação cruzada pela identidade <span class="math inline">\(\sum T_j = \sum F_i = B\)</span>.</p>
+<p><strong>Desenvolvimento.</strong> Calculando cada célula por linha: em <span class="math inline">\(F_1\)</span>, <span class="math inline">\(P_{11} = -72\)</span>, <span class="math inline">\(P_{12} = -48\)</span> e <span class="math inline">\(P_{13} = 0\)</span>; em <span class="math inline">\(F_2\)</span>, <span class="math inline">\(P_{21} = -56\)</span>, <span class="math inline">\(P_{22} = -15\)</span> e <span class="math inline">\(P_{23} = -45\)</span>; em <span class="math inline">\(F_3\)</span>, <span class="math inline">\(P_{31} = -35\)</span>, <span class="math inline">\(P_{32} = -28\)</span> e <span class="math inline">\(P_{33} = 0\)</span>; e em <span class="math inline">\(F_4\)</span>, <span class="math inline">\(P_{41} = +15\)</span>, <span class="math inline">\(P_{42} = +20\)</span> e <span class="math inline">\(P_{43} = +56\)</span>. Os valores consolidam-se na matriz a seguir.</p>
+<div class="book-table-scroll" role="region" aria-label="Tabela 2" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Fator Ambiental</strong></th>
+<th style="text-align: right;"><strong><span class="math inline">\(A_1\)</span> (Acessos)</strong></th>
+<th style="text-align: right;"><strong><span class="math inline">\(A_2\)</span> (Fundações)</strong></th>
+<th style="text-align: right;"><strong><span class="math inline">\(A_3\)</span> (Operação)</strong></th>
+<th style="text-align: right;"><strong>Total <span class="math inline">\(F_i\)</span></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(F_1\)</span>, Solo / Erosão</td>
+<td style="text-align: right;"><span class="math inline">\(-72\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(-48\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: right;"><strong><span class="math inline">\(-120\)</span></strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(F_2\)</span>, Fauna / Avifauna</td>
+<td style="text-align: right;"><span class="math inline">\(-56\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(-15\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(-45\)</span></td>
+<td style="text-align: right;"><strong><span class="math inline">\(-116\)</span></strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(F_3\)</span>, Qualidade da água</td>
+<td style="text-align: right;"><span class="math inline">\(-35\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(-28\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: right;"><strong><span class="math inline">\(-63\)</span></strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(F_4\)</span>, Emprego / Renda</td>
+<td style="text-align: right;"><span class="math inline">\(+15\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(+20\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(+56\)</span></td>
+<td style="text-align: right;"><strong><span class="math inline">\(+91\)</span></strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Total da Ação (<span class="math inline">\(T_j\)</span>)</strong></td>
+<td style="text-align: right;"><strong><span class="math inline">\(-148\)</span></strong></td>
+<td style="text-align: right;"><strong><span class="math inline">\(-71\)</span></strong></td>
+<td style="text-align: right;"><strong><span class="math inline">\(+11\)</span></strong></td>
+<td style="text-align: right;"><strong><span class="math inline">\(B = -208\)</span></strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Conferindo as somas marginais e separando as cargas adversa e benéfica:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\sum F_i &amp;= (-120) + (-116) + (-63) + 91 = -208, \\
+\sum T_j &amp;= (-148) + (-71) + 11 = -208, \\
+\Sigma^{-} &amp;= -72 - 48 - 56 - 15 - 45 - 35 - 28 = -299, \\
+\Sigma^{+} &amp;= +15 + 20 + 56 = +91.
+\end{aligned}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> A ação mais impactante negativamente é <span class="math inline">\(A_1\)</span> (supressão e acessos, <span class="math inline">\(T_1 = -148\)</span>) e o fator mais vulnerável é <span class="math inline">\(F_1\)</span> (solo/erosão, <span class="math inline">\(F_1 = -120\)</span>), seguido de <span class="math inline">\(F_2\)</span> (fauna/avifauna, <span class="math inline">\(F_2 = -116\)</span>). A carga adversa vale <span class="math inline">\(\Sigma^{-} = -299\)</span>, a benéfica vale <span class="math inline">\(\Sigma^{+} = +91\)</span> e o balanço líquido fecha em <span class="math inline">\(B = -208\)</span>.</p>
+<p><strong>Condições de validade.</strong> A igualdade <span class="math inline">\(\sum F_i = \sum T_j = \Sigma^{-} + \Sigma^{+} = -208\)</span> confirma a exatidão aritmética. Mesmo com <span class="math inline">\(T_3 = +11\)</span> na operação, a célula <span class="math inline">\(P_{23} = -45\)</span> (colisão de avifauna, com importância <span class="math inline">\(I = 9\)</span>) exige monitoramento e desligamento preventivo para espécies como a arara-azul-de-lear na região de Canudos, jamais sendo anulada pelos <span class="math inline">\(+56\)</span> pontos de renda.</p>
+</div>
+</div>
+<p>A interpretação isolada do saldo líquido <span class="math inline">\(B\)</span> costuma induzir erros graves na tomada de decisão, conforme detalhado no alerta a seguir.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 2. Somar Benefícios Econômicos com Danos Ecológicos na Matriz
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Concluir que um empreendimento é ambientalmente viável porque a soma algébrica <span class="math inline">\(B = \Sigma^{+} + \Sigma^{-}\)</span> ficou positiva ou próxima de zero (por exemplo, <span class="math inline">\(+80\)</span> em arrecadação contra <span class="math inline">\(-75\)</span> em destruição de nascente).</p>
+<p><strong>Correção técnica.</strong> A pontuação da Matriz de Leopold é semiquantitativa e reúne dimensões incomensuráveis. Empregos temporários não evitam o assoreamento de mananciais nem compensam a extinção local de fauna. Por isso, deve-se reportar <span class="math inline">\(\Sigma^{-}\)</span> e <span class="math inline">\(\Sigma^{+}\)</span> separadamente, destacando toda célula adversa de alta importância (<span class="math inline">\(I \ge 8\)</span>) ou irreversível para vinculá-la a medidas concretas de mitigação.</p>
+</div>
+</div>
+</section>
+<section id="prognóstico-ambiental-e-efeitos-cumulativos" class="level3">
+<h3 class="anchored" data-anchor-id="prognóstico-ambiental-e-efeitos-cumulativos">Prognóstico Ambiental e Efeitos Cumulativos</h3>
+<p>O prognóstico projeta a evolução futura da qualidade ambiental por meio de dois cenários comparativos obrigatórios com o mesmo horizonte temporal. O <strong>cenário sem projeto (alternativa zero)</strong> retrata a trajetória provável da bacia na ausência da obra, incorporando tendências já em curso como expansão urbana, sobrepastejo, variações climáticas ou regeneração natural. O <strong>cenário com projeto</strong> projeta a trajetória com o empreendimento em dois estágios: primeiro sem medidas mitigadoras, para dimensionar o risco potencial, e em seguida com os controles propostos, revelando o impacto residual. O impacto real atribuível ao projeto corresponde à diferença dinâmica entre a trajetória futura com o projeto e a trajetória futura sem o projeto.</p>
+<p>Essa projeção deve considerar também os <strong>impactos cumulativos</strong>, que emergem quando pressões de diferentes empreendimentos convergem sobre o mesmo receptor. Estradas de parques eólicos vizinhos podem direcionar enxurradas para o mesmo riacho, enquanto captações distintas afetam a disponibilidade hídrica do mesmo trecho fluvial, exigindo definir explicitamente o receptor, a área de acumulação e o período analisado. O Exemplo 5.3 mostra como comparar alternativas locacionais no prognóstico por meio de critérios ponderados.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 5.3 (Intermediário). Prognóstico e Seleção Multicritério de Alternativas Locacionais
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> No estudo de duplicação de uma rodovia estadual na Bahia, o EIA comparou duas alternativas locacionais diante do cenário sem projeto: o <strong>Traçado A</strong> (mais curto, atravessando uma APP de nascente e um fragmento contínuo de Caatinga) e o <strong>Traçado B</strong> (<span class="math inline">\(1{,}2\text{ km}\)</span> mais extenso, contornando a APP por áreas já antropizadas de pastagem).</p>
+<p><strong>Dados disponíveis.</strong> Quatro critérios ponderados (soma dos pesos <span class="math inline">\(= 1{,}00\)</span>) em escala de <strong>severidade adversa</strong> de <span class="math inline">\(0\)</span> (nenhum dano) a <span class="math inline">\(10\)</span> (dano máximo): <span class="math inline">\(C_1\)</span>, supressão de APP e vegetação nativa (<span class="math inline">\(w_1 = 0{,}35\)</span>; A <span class="math inline">\(= 9\)</span>, B <span class="math inline">\(= 3\)</span>); <span class="math inline">\(C_2\)</span>, risco erosivo e assoreamento (<span class="math inline">\(w_2 = 0{,}30\)</span>; A <span class="math inline">\(= 8\)</span>, B <span class="math inline">\(= 4\)</span>); <span class="math inline">\(C_3\)</span>, fragmentação e atropelamento de fauna (<span class="math inline">\(w_3 = 0{,}20\)</span>; A <span class="math inline">\(= 8\)</span>, B <span class="math inline">\(= 4\)</span>); <span class="math inline">\(C_4\)</span>, custo e extensão adicional (<span class="math inline">\(w_4 = 0{,}15\)</span>; A <span class="math inline">\(= 4\)</span>, B <span class="math inline">\(= 7\)</span>).</p>
+<p><strong>Problema a resolver.</strong> Calcular o Índice de Impacto Adverso Ponderado (<span class="math inline">\(I_{\text{adv}}\)</span>) de cada alternativa, determinar a redução percentual do índice ao optar pelo melhor traçado e identificar o degrau da Hierarquia de Mitigação correspondente.</p>
+<p><strong>Fundamento da análise.</strong> Cálculo da média ponderada <span class="math inline">\(I_{\text{adv}} = \sum_{k=1}^{4} w_k \cdot C_k\)</span> e da variação relativa <span class="math inline">\((I_A - I_B)/I_A \times 100\%\)</span>.</p>
+<p><strong>Desenvolvimento.</strong> Os pesos somam <span class="math inline">\(0{,}35 + 0{,}30 + 0{,}20 + 0{,}15 = 1{,}00\)</span>. Calculando os índices ponderados e a redução relativa de severidade:</p>
+<p><span class="math display">\[
+\begin{aligned}
+I_A &amp;= (0{,}35 \times 9) + (0{,}30 \times 8) + (0{,}20 \times 8) + (0{,}15 \times 4) \\
+    &amp;= 3{,}15 + 2{,}40 + 1{,}60 + 0{,}60 = 7{,}75 \\
+I_B &amp;= (0{,}35 \times 3) + (0{,}30 \times 4) + (0{,}20 \times 4) + (0{,}15 \times 7) \\
+    &amp;= 1{,}05 + 1{,}20 + 0{,}80 + 1{,}05 = 4{,}10 \\
+\text{Redução} &amp;= \frac{7{,}75 - 4{,}10}{7{,}75} \times 100\% = \frac{3{,}65}{7{,}75} \times 100\% \approx 47{,}10\%.
+\end{aligned}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> O Traçado B é superior (<span class="math inline">\(I_B = 4{,}10\)</span> contra <span class="math inline">\(I_A = 7{,}75\)</span>), reduzindo em <span class="math inline">\(47{,}10\%\)</span> a severidade adversa global. Essa escolha representa o 1º degrau da Hierarquia de Mitigação (<strong>Evitar</strong>), por alternativa locacional.</p>
+<p><strong>Condições de validade.</strong> Como a escala mede severidade adversa, o menor valor indica melhor desempenho. Apesar do maior custo inicial no critério <span class="math inline">\(C_4\)</span> (<span class="math inline">\(7\)</span> contra <span class="math inline">\(4\)</span>), o Traçado B evita intervenções em APP, obras emergenciais contra erosão e passivos de compensação.</p>
+</div>
+</div>
+</section>
+<section id="hierarquia-de-mitigação-medidas-mitigadoras-e-compensatórias" class="level3">
+<h3 class="anchored" data-anchor-id="hierarquia-de-mitigação-medidas-mitigadoras-e-compensatórias">Hierarquia de Mitigação, Medidas Mitigadoras e Compensatórias</h3>
+<p>Diante de impactos adversos previstos, a tomada de decisão obedece a uma ordem estrita de prioridade técnica conhecida como <strong>Hierarquia de Mitigação</strong>, representada no Painel (b) da <a href="#fig-aia_mitigacao" class="quarto-xref">Figura&nbsp;<span>5.1</span></a>. No <strong>1º degrau, Evitar (prevenção na origem)</strong>, ajustam-se localização, traçado, cronograma ou tecnologia para impedir que o impacto ocorra, sendo o nível de maior eficácia ecológica. Quando a prevenção integral é inviável, aplica-se o <strong>2º degrau, Minimizar</strong>, utilizando controles de engenharia e manejo (como bacias de contenção de sedimentos, supressão seletiva e controle de poeira) para abater magnitude, duração ou extensão do dano.</p>
+<p>Nas áreas afetadas temporariamente durante a obra, como canteiros, taludes de corte e áreas de empréstimo, atua-se no <strong>3º degrau, Recuperar ou Reabilitar (<em>in situ</em>)</strong>, restabelecendo as funções do solo, da drenagem e da cobertura vegetal mediante Plano de Recuperação de Áreas Degradadas (PRAD) e bioengenharia. Somente para o dano inevitável que persiste após esses três degraus, denominado <strong>impacto residual</strong>, recorre-se ao <strong>4º degrau, Compensar</strong>, por meio de apoio a Unidades de Conservação (art. 36 da Lei nº 9.985/2000, SNUC), reposição florestal equivalente ou superior e programas comunitários. De modo paralelo, impactos benéficos recebem <strong>medidas potencializadoras</strong>, como capacitação profissional prévia para ampliar a contratação de moradores locais.</p>
+<p>O Exemplo 5.4 demonstra o abatimento sequencial (em cascata) ao longo dos quatro degraus da Hierarquia de Mitigação.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 5.4 (Intermediário e Avançado). Aplicação Sequencial da Hierarquia de Mitigação em Loteamento Periurbano
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> O anteprojeto de um loteamento periurbano previa a supressão de <span class="math inline">\(12{,}0\text{ ha}\)</span> de vegetação nativa e um aporte de <span class="math inline">\(480{,}0\text{ t/ano}\)</span> de sedimentos para um riacho a jusante. Após revisão técnica, aplicaram-se sequencialmente os quatro degraus da Hierarquia de Mitigação.</p>
+<p><strong>Dados disponíveis.</strong> No degrau <strong>Evitar</strong>, a exclusão de quadras em encostas íngremes evita <span class="math inline">\(45\%\)</span> da supressão e <span class="math inline">\(45\%\)</span> do aporte de sedimentos. No degrau <strong>Minimizar</strong>, o corte seletivo poupa <span class="math inline">\(1{,}6\text{ ha}\)</span> e bacias de contenção retêm <span class="math inline">\(60\%\)</span> do sedimento restante. No degrau <strong>Recuperar</strong>, a bioengenharia recupera <span class="math inline">\(2{,}0\text{ ha}\)</span> temporários e retém <span class="math inline">\(75\%\)</span> do sedimento remanescente. No degrau <strong>Compensar</strong>, exige-se reposição na razão <span class="math inline">\(2:1\)</span> sobre a perda permanente residual.</p>
+<p><strong>Problema a resolver.</strong> Calcular o saldo remanescente de vegetação afetada e de sedimentos em cada degrau, o abatimento percentual acumulado de sedimentos e a área de compensação ecológica no 4º degrau.</p>
+<p><strong>Fundamento da análise.</strong> Abatimento em cascata sobre o saldo remanescente de cada etapa, evitando somar percentuais diretamente sobre a carga inicial.</p>
+<p><strong>Desenvolvimento.</strong> Para a trajetória da supressão vegetal (em <span class="math inline">\(\text{ha}\)</span>) e do aporte de sedimentos (em <span class="math inline">\(\text{t/ano}\)</span>), aplicam-se os abatimentos etapa a etapa:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{Vegetação após Evitar} &amp;= 12{,}0 - (0{,}45 \times 12{,}0) = 12{,}0 - 5{,}4 = 6{,}6\text{ ha} \\
+\text{após Minimizar} &amp;= 6{,}6 - 1{,}6 = 5{,}0\text{ ha} \\
+\text{após Recuperar (residual)} &amp;= 5{,}0 - 2{,}0 = 3{,}0\text{ ha} \\
+\text{Área a Compensar (}2:1\text{)} &amp;= 2 \times 3{,}0 = 6{,}0\text{ ha}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{Sedimentos após Evitar} &amp;= 480{,}0 - (0{,}45 \times 480{,}0) = 264{,}0\text{ t/ano} \\
+\text{após Minimizar} &amp;= 264{,}0 - (0{,}60 \times 264{,}0) = 105{,}6\text{ t/ano} \\
+\text{após Recuperar (residual)} &amp;= 105{,}6 - (0{,}75 \times 105{,}6) = 26{,}4\text{ t/ano} \\
+\text{Abatimento acumulado} &amp;= \frac{480{,}0 - 26{,}4}{480{,}0} \times 100\% = 94{,}50\%.
+\end{aligned}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> O impacto residual permanente reduz-se a <span class="math inline">\(3{,}0\text{ ha}\)</span> de vegetação (exigindo <span class="math inline">\(6{,}0\text{ ha}\)</span> de compensação na razão <span class="math inline">\(2:1\)</span>) e a <span class="math inline">\(26{,}4\text{ t/ano}\)</span> de sedimentos (abatimento total de <span class="math inline">\(94{,}50\%\)</span>).</p>
+<p><strong>Condições de validade.</strong> Pelo produto em cascata, <span class="math inline">\(480{,}0 \times 0{,}55 \times 0{,}40 \times 0{,}25 = 26{,}4\text{ t/ano}\)</span>. Sem seguir a hierarquia, tentar compensar os <span class="math inline">\(12{,}0\text{ ha}\)</span> iniciais exigiria <span class="math inline">\(24{,}0\text{ ha}\)</span> de reposição e manteria o riacho assoreado com <span class="math inline">\(480\text{ t/ano}\)</span> de sedimentos.</p>
+</div>
+</div>
+<p>Propor compensação financeira antes de esgotar alternativas locacionais e medidas de engenharia viola diretamente a Hierarquia de Mitigação, como alerta o quadro a seguir.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 3. Inverter a Hierarquia de Mitigação ao Priorizar a Compensação
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Propor diretamente compensação financeira ou plantio em outro município para suprimir uma APP ou fragmento florestal sem avaliar alternativas de traçado ou tecnologia que evitassem a perda.</p>
+<p><strong>Correção técnica.</strong> A compensação ocupa o <strong>4º e último degrau</strong> da hierarquia, destinando-se exclusivamente ao impacto residual que permanece após esgotadas as etapas de evitar, minimizar e recuperar no local.</p>
+</div>
+</div>
+</section>
+<section id="plano-básico-ambiental-pba-e-monitoramento-pós-implantação" class="level3">
+<h3 class="anchored" data-anchor-id="plano-básico-ambiental-pba-e-monitoramento-pós-implantação">Plano Básico Ambiental (PBA) e Monitoramento Pós-Implantação</h3>
+<p>Na etapa decisória, o órgão ambiental emite parecer técnico pelo deferimento com condicionantes ou pelo indeferimento das licenças (Licença Prévia, Licença de Instalação e Licença de Operação). Os compromissos assumidos no EIA convertem-se em projetos executivos detalhados no <strong>Plano Básico Ambiental (PBA)</strong>, que estrutura programas de controle de erosão, monitoramento da qualidade da água, resgate de fauna, educação ambiental e PRAD. Cada programa necessita de condição inicial documentada, meta verificável, frequência de amostragem e responsável técnico.</p>
+<p>O <strong>monitoramento pós-implantação</strong> fecha o ciclo da AIA ao confrontar os indicadores medidos em operação com os valores da linha de base e interpretar desvios junto aos registros de chuva e manutenção. Caso um indicador ultrapasse o limite da condicionante ambiental, aciona-se a <strong>gestão adaptativa</strong> para corrigir imediatamente os dispositivos de controle em campo.</p>
+</section>
+</section>
+<section id="aplicação-integrada-auditoria-de-monitoramento-no-pba" class="level2">
+<h2 class="anchored" data-anchor-id="aplicação-integrada-auditoria-de-monitoramento-no-pba">Aplicação Integrada, Auditoria de Monitoramento no PBA</h2>
+<p>A verificação quantitativa de desempenho durante a obra exige descontar a condição natural registrada na linha de base antes de calcular a eficiência das medidas de controle, evitando subestimar ou superestimar o abatimento real obtido em campo, como demonstrado no Exemplo 5.5.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 5.5 (Avançado). Auditoria de Eficiência no Monitoramento Pós-Implantação do PBA
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Durante a construção de uma barragem de regularização hídrica no rio Jacuípe (Bahia), a linha de base registrou turbidez média de <span class="math inline">\(18{,}0\text{ NTU}\)</span> a jusante em estiagem. Na terraplenagem inicial sem controle, a turbidez subiu para <span class="math inline">\(112{,}0\text{ NTU}\)</span>. Após a instalação de cortinas de siltagem e diques do PBA, o monitoramento mediu <span class="math inline">\(33{,}0\text{ NTU}\)</span>. A condicionante da Licença de Instalação fixava limite máximo de <span class="math inline">\(40{,}0\text{ NTU}\)</span>.</p>
+<p><strong>Dados disponíveis.</strong> Linha de base <span class="math inline">\(T_0 = 18{,}0\text{ NTU}\)</span>; turbidez sem mitigação <span class="math inline">\(T_{\text{sem}} = 112{,}0\text{ NTU}\)</span>; turbidez com PBA <span class="math inline">\(T_{\text{com}} = 33{,}0\text{ NTU}\)</span>; limite legal <span class="math inline">\(T_{\max} = 40{,}0\text{ NTU}\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular o acréscimo de turbidez atribuível à obra sem mitigação, o acréscimo residual após o PBA, a eficiência percentual de abatimento da carga antrópica e emitir parecer técnico sobre o atendimento à condicionante.</p>
+<p><strong>Fundamento da análise.</strong> Cálculo da anomalia acima da linha de base (<span class="math inline">\(\Delta T = T - T_0\)</span>) e da eficiência de abatimento incremental <span class="math inline">\(E_f = \frac{\Delta T_{\text{sem}} - \Delta T_{\text{com}}}{\Delta T_{\text{sem}}} \times 100\%\)</span>.</p>
+<p><strong>Desenvolvimento.</strong> Descontando a turbidez natural <span class="math inline">\(T_0\)</span> da linha de base, calculam-se os acréscimos e a eficiência do PBA:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\Delta T_{\text{sem}} &amp;= 112{,}0 - 18{,}0 = 94{,}0\text{ NTU} \\
+\Delta T_{\text{com}} &amp;= 33{,}0 - 18{,}0 = 15{,}0\text{ NTU} \\
+\Delta T_{\text{abatida}} &amp;= 94{,}0 - 15{,}0 = 79{,}0\text{ NTU} \\
+E_f &amp;= \frac{79{,}0}{94{,}0} \times 100\% \approx 84{,}04\%.
+\end{aligned}
+\]</span></p>
+<p>Como <span class="math inline">\(33{,}0\text{ NTU} \le 40{,}0\text{ NTU}\)</span>, a condicionante da Licença de Instalação está atendida com folga de <span class="math inline">\(7{,}0\text{ NTU}\)</span>.</p>
+<p><strong>Interpretação do resultado.</strong> O acréscimo sem controle foi de <span class="math inline">\(94{,}0\text{ NTU}\)</span>, reduzido para <span class="math inline">\(15{,}0\text{ NTU}\)</span> residuais com eficiência de abatimento de <span class="math inline">\(84{,}04\%\)</span>. A condicionante de <span class="math inline">\(40{,}0\text{ NTU}\)</span> está atendida, mantendo-se o monitoramento contínuo na estação chuvosa.</p>
+<p><strong>Condições de validade.</strong> Descontar <span class="math inline">\(T_0 = 18{,}0\text{ NTU}\)</span> no denominador é indispensável porque o controle ambiental visa abater o acréscimo gerado pela obra sobre o fundo natural do rio; sem esse desconto, o cálculo subestimaria a eficiência real (<span class="math inline">\(79/112 = 70{,}54\%\)</span>).</p>
+</div>
+</div>
+</section>
+<section id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="level2">
+<h2 class="anchored" data-anchor-id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</h2>
+<p>Mesmo quando um estudo adota equações corretas na matriz de impacto ou no monitoramento do PBA, uma delimitação espacial mal fundamentada compromete toda a amostragem dos meios físico, biótico e socioeconômico.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 4. Delimitar ADA, AID e AII como Círculos Concêntricos Arbitrários
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Traçar raios fixos de <span class="math inline">\(500\text{ m}\)</span> (AID) e <span class="math inline">\(5\text{ km}\)</span> (AII) no mapa sem considerar divisores de bacia, direção dos ventos, rotas de fauna ou malha viária.</p>
+<p><strong>Correção técnica.</strong> Processos ambientais propagam-se segundo fluxos físicos e sociais anisotrópicos. Um efluente lançado num riacho percorre quilômetros a jusante pelo talvegue, mas permanece ausente a <span class="math inline">\(200\text{ m}\)</span> além do divisor topográfico. Delimite a AID física pela microbacia drenada, a AID biótica pelos habitats conectados e a AII pela rede territorial e municipal afetada.</p>
+</div>
+</div>
+<p>Para consolidar o entendimento sobre degradação ambiental, papel preventivo da AIA e estruturação de EIA/RIMA, assista às videoaulas selecionadas na página da disciplina. O vídeo <a href="https://www.youtube.com/watch?v=oDceh9hvPc8">O papel da Avaliação de Impacto Ambiental na gestão ambiental</a> apresenta o ciclo de diagnóstico, prognóstico e medidas mitigadoras; o vídeo <a href="https://www.youtube.com/watch?v=m8rg8SnhSfQ">EIA-RIMA, Conceitos e Definições de Impactos Ambientais</a> detalha a estrutura do Estudo e do Relatório de Impacto Ambiental; e o vídeo <a href="https://www.youtube.com/watch?v=5EFxN7jGob8">Degradação Ambiental</a> aprofunda os conceitos de degradação, vulnerabilidade, fragilidade e resiliência.</p>
+</section>
+<section id="exercícios-de-fixação" class="level2">
+<h2 class="anchored" data-anchor-id="exercícios-de-fixação">Exercícios de fixação</h2>
+<section id="nível-1.-básico-conceitos-etapas-e-cálculos-fundamentais" class="level4">
+<h4 class="anchored" data-anchor-id="nível-1.-básico-conceitos-etapas-e-cálculos-fundamentais">Nível 1. Básico (Conceitos, Etapas e Cálculos Fundamentais)</h4>
+<ol type="1">
+<li><p>Explique, com base em Sánchez (2013), qual é o papel preventivo da Avaliação de Impacto Ambiental (AIA) e por que sua inserção tardia, após a definição do projeto de engenharia, compromete sua eficácia no planejamento ambiental.</p></li>
+<li><p>Em uma matriz de interação ponderada adaptada de Leopold, uma atividade de terraplenagem apresentou três interações relevantes: solo e erosão <span class="math inline">\((-, M=7, I=8)\)</span>; qualidade do ar por poeira <span class="math inline">\((-, M=4, I=6)\)</span>; e contratação temporária de operadores locais <span class="math inline">\((+, M=6, I=5)\)</span>. Calcule a pontuação <span class="math inline">\(P_{ij}\)</span> de cada célula, a carga adversa (<span class="math inline">\(\Sigma^{-}\)</span>), a carga benéfica (<span class="math inline">\(\Sigma^{+}\)</span>) e o total <span class="math inline">\(T_j\)</span> dessa ação.</p></li>
+<li><p>Diferencie claramente as etapas de <strong>triagem (<em>screening</em>)</strong> e <strong>definição de escopo (<em>scoping</em>)</strong>, indicando qual documento oficial formaliza o resultado da definição de escopo no licenciamento ambiental brasileiro.</p></li>
+<li><p>Defina <strong>ADA</strong>, <strong>AID</strong> e <strong>AII</strong> e dê um exemplo concreto de cada uma para a implantação de um aterro sanitário regional no interior da Bahia.</p></li>
+<li><p>Compare as quatro famílias de métodos de identificação de impactos (<em>checklists</em>, Matriz de Leopold, redes de interação e sobreposição de cartas em SIG), indicando uma vantagem específica de cada método.</p></li>
+</ol>
+</section>
+<section id="nível-2.-intermediário-aplicação-quantitativa-e-análise-técnica" class="level4">
+<h4 class="anchored" data-anchor-id="nível-2.-intermediário-aplicação-quantitativa-e-análise-técnica">Nível 2. Intermediário (Aplicação Quantitativa e Análise Técnica)</h4>
+<ol start="6" type="1">
+<li><p>Um empreendimento de extração de areia em planície fluvial foi avaliado por meio de uma matriz ponderada <span class="math inline">\(3 \times 3\)</span>, com as ações <span class="math inline">\(A_1\)</span> (dragagem no leito), <span class="math inline">\(A_2\)</span> (abertura de pátio e estrada de acesso) e <span class="math inline">\(A_3\)</span> (comercialização e geração de empregos) e os fatores <span class="math inline">\(F_1\)</span> (estabilidade das margens e do leito), <span class="math inline">\(F_2\)</span> (turbidez e biota aquática) e <span class="math inline">\(F_3\)</span> (renda e arrecadação municipal):</p>
+<ul>
+<li><p><span class="math inline">\(F_1\)</span>: <span class="math inline">\(A_1=(-, 9, 9)\)</span>; <span class="math inline">\(A_2=(-, 5, 7)\)</span>; <span class="math inline">\(A_3=0\)</span>.</p></li>
+<li><p><span class="math inline">\(F_2\)</span>: <span class="math inline">\(A_1=(-, 8, 8)\)</span>; <span class="math inline">\(A_2=(-, 4, 6)\)</span>; <span class="math inline">\(A_3=0\)</span>.</p></li>
+<li><p><span class="math inline">\(F_3\)</span>: <span class="math inline">\(A_1=(+, 3, 4)\)</span>; <span class="math inline">\(A_2=(+, 2, 4)\)</span>; <span class="math inline">\(A_3=(+, 6, 6)\)</span>.</p></li>
+</ul>
+<p>Calcule todas as células <span class="math inline">\(P_{ij}\)</span>, os totais <span class="math inline">\(T_j\)</span> e <span class="math inline">\(F_i\)</span>, <span class="math inline">\(\Sigma^{-}\)</span>, <span class="math inline">\(\Sigma^{+}\)</span> e o balanço <span class="math inline">\(B\)</span>. Identifique a ação mais degradadora e o fator mais crítico.</p></li>
+<li><p>Um projeto agroindustrial previa inicialmente suprimir <span class="math inline">\(20{,}0\text{ ha}\)</span> de vegetação nativa. Aplicando a Hierarquia de Mitigação, a realocação do galpão evitou <span class="math inline">\(35\%\)</span> da supressão inicial; o ajuste das vias internas minimizou <span class="math inline">\(20\%\)</span> da área restante; e a restauração de áreas temporárias recuperou <span class="math inline">\(2{,}4\text{ ha}\)</span>. Sabendo que o órgão licenciador determinou compensação na razão <span class="math inline">\(3:1\)</span> sobre o impacto permanente residual, calcule a área remanescente em cada degrau e a área total a ser compensada.</p></li>
+<li><p>Na escolha tecnológica para uma Estação de Tratamento de Efluentes (ETE), duas opções (<span class="math inline">\(E_1\)</span> e <span class="math inline">\(E_2\)</span>) foram avaliadas em escala de <strong>desempenho ambiental positivo</strong> (<span class="math inline">\(0\)</span> = péssimo; <span class="math inline">\(10\)</span> = excelente) sob quatro critérios ponderados: eficiência de remoção de carga orgânica (<span class="math inline">\(w_1 = 0{,}35\)</span>, <span class="math inline">\(E_1=6\)</span>, <span class="math inline">\(E_2=9\)</span>), controle de odores (<span class="math inline">\(w_2 = 0{,}30\)</span>, <span class="math inline">\(E_1=5\)</span>, <span class="math inline">\(E_2=8\)</span>), possibilidade de reúso agrícola no Semiárido (<span class="math inline">\(w_3 = 0{,}20\)</span>, <span class="math inline">\(E_1=7\)</span>, <span class="math inline">\(E_2=8\)</span>) e menor custo de implantação (<span class="math inline">\(w_4 = 0{,}15\)</span>, <span class="math inline">\(E_1=9\)</span>, <span class="math inline">\(E_2=6\)</span>). Calcule a nota ponderada de cada alternativa e justifique a escolha técnica.</p></li>
+<li><p>Desenhe ou descreva textualmente uma <strong>rede de interação</strong> de três níveis (impacto primário <span class="math inline">\(\to\)</span> secundário <span class="math inline">\(\to\)</span> terciário) desencadeada pela abertura de vias de acesso sem drenagem em encosta declivosa da Caatinga, associando ao menos uma medida preventiva e uma medida corretiva do PBA para interromper a cascata.</p></li>
+<li><p>No monitoramento do PBA de uma obra rodoviária, a linha de base de Sólidos Suspensos Totais (SST) em um riacho era de <span class="math inline">\(25{,}0\text{ mg/L}\)</span>. Durante a escavação sem bacias de decantação, o valor atingiu <span class="math inline">\(145{,}0\text{ mg/L}\)</span>. Após a implantação das bacias previstas no PBA, a concentração caiu para <span class="math inline">\(43{,}0\text{ mg/L}\)</span>. Calcule o acréscimo sem controle, o acréscimo residual e a eficiência percentual de abatimento da carga antrópica.</p></li>
+</ol>
+</section>
+<section id="05-avaliacao-impacto-ambiental-nível-3-questões-objetivas-de-fixação-ae" class="level4">
+<h4 class="anchored" data-anchor-id="05-avaliacao-impacto-ambiental-nível-3-questões-objetivas-de-fixação-ae">Nível 3. Questões Objetivas de Fixação (A a E)</h4>
+<ol start="11" type="1">
+<li><p><strong>[Autoral, CHF662]</strong> No processo de Avaliação de Impacto Ambiental, o prognóstico compara o cenário com projeto ao cenário sem projeto (alternativa zero). Assinale a alternativa que interpreta corretamente o conceito de <strong>cenário sem projeto</strong>:</p>
+<ol type="A">
+<li><p>Representa a manutenção estática e imutável das condições atuais medidas na linha de base, sem qualquer variação futura.</p></li>
+<li><p>Projeta a evolução futura provável do ambiente na ausência do empreendimento, incorporando tendências climáticas, ecológicas e de uso da terra já em curso.</p></li>
+<li><p>Equivale ao cenário com projeto após a aplicação integral das medidas compensatórias previstas no PBA.</p></li>
+<li><p>É exigido apenas quando o empreendedor decide abandonar a obra antes da emissão da Licença Prévia.</p></li>
+<li><p>Dispensa a realização do diagnóstico ambiental da linha de base nos meios físico e biótico.</p></li>
+</ol></li>
+<li><p><strong>[Autoral, CHF662]</strong> Assinale a alternativa que apresenta na ordem correta, da maior para a menor prioridade técnica e ecológica, os degraus da <strong>Hierarquia de Mitigação</strong>:</p>
+<ol type="A">
+<li><p>Compensar <span class="math inline">\(\to\)</span> Recuperar <span class="math inline">\(\to\)</span> Minimizar <span class="math inline">\(\to\)</span> Evitar.</p></li>
+<li><p>Minimizar <span class="math inline">\(\to\)</span> Evitar <span class="math inline">\(\to\)</span> Compensar <span class="math inline">\(\to\)</span> Recuperar.</p></li>
+<li><p>Evitar <span class="math inline">\(\to\)</span> Recuperar <span class="math inline">\(\to\)</span> Minimizar <span class="math inline">\(\to\)</span> Compensar.</p></li>
+<li><p>Evitar <span class="math inline">\(\to\)</span> Minimizar <span class="math inline">\(\to\)</span> Recuperar <span class="math inline">\(\to\)</span> Compensar.</p></li>
+<li><p>Monitorar <span class="math inline">\(\to\)</span> Compensar <span class="math inline">\(\to\)</span> Evitar <span class="math inline">\(\to\)</span> Minimizar.</p></li>
+</ol></li>
+<li><p><strong>[Autoral, CHF662]</strong> Em uma Matriz de Leopold Ponderada (<span class="math inline">\(P_{ij} = s_{ij} \cdot M_{ij} \cdot I_{ij}\)</span>), uma ação de instalação de canteiro de obras apresentou três células preenchidas: erosão laminar <span class="math inline">\((-, M=8, I=9)\)</span>, afugentamento de fauna <span class="math inline">\((-, M=6, I=7)\)</span> e geração de empregos temporários <span class="math inline">\((+, M=5, I=4)\)</span>. Sobre o resultado dessa coluna, é correto afirmar que:</p>
+<ol type="A">
+<li><p>A pontuação líquida da ação é <span class="math inline">\(T = -94\)</span>, com carga adversa <span class="math inline">\(\Sigma^{-} = -114\)</span>, e os <span class="math inline">\(+20\)</span> pontos de emprego não eliminam a necessidade de controle erosivo.</p></li>
+<li><p>A pontuação líquida da ação é <span class="math inline">\(T = -134\)</span>, pois todas as células devem ser somadas em módulo negativo.</p></li>
+<li><p>A pontuação líquida da ação é <span class="math inline">\(T = -52\)</span>, obtida somando apenas magnitude e importância sem multiplicá-las.</p></li>
+<li><p>Como existem <span class="math inline">\(+20\)</span> pontos benéficos, o impacto de erosão laminar cai automaticamente de <span class="math inline">\(-72\)</span> para <span class="math inline">\(-52\)</span>.</p></li>
+<li><p>A pontuação líquida da ação é <span class="math inline">\(T = +114\)</span>, caracterizando a ação como ambientalmente neutra.</p></li>
+</ol></li>
+<li><p><strong>[Autoral, CHF662]</strong> Qual método de identificação e avaliação de impactos é o mais adequado para <strong>explicitar visualmente o encadeamento entre impactos primários (diretos) e impactos secundários e terciários (indiretos)</strong> em uma bacia hidrográfica?</p>
+<ol type="A">
+<li><p>Listagem de controle simples (<em>checklist</em> binário).</p></li>
+<li><p>Rede de interação (grafo causa-efeito).</p></li>
+<li><p>Inventário financeiro de compensação ambiental.</p></li>
+<li><p>Formulário cadastral de triagem administrativa.</p></li>
+<li><p>Tabela de coordenadas geográficas da ADA.</p></li>
+</ol></li>
+<li><p><strong>[Autoral, CHF662]</strong> Em relação ao <strong>Plano Básico Ambiental (PBA)</strong> e ao monitoramento pós-implantação, assinale a afirmação correta:</p>
+<ol type="A">
+<li><p>O PBA substitui o diagnóstico da linha de base, sendo entregue antes mesmo da definição de escopo.</p></li>
+<li><p>O monitoramento pós-implantação tem caráter meramente decorativo, pois as previsões do EIA nunca apresentam incertezas.</p></li>
+<li><p>O PBA detalha operacionalmente os programas de mitigação, controle, recuperação e monitoramento, cujos indicadores são comparados à linha de base para permitir gestão adaptativa.</p></li>
+<li><p>O PBA aplica-se exclusivamente à compensação financeira prevista na Lei do SNUC, não contemplando controle de erosão nem qualidade da água.</p></li>
+<li><p>O monitoramento só deve iniciar após a desativação definitiva do empreendimento.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="questões-de-aplicação" class="level2">
+<h2 class="anchored" data-anchor-id="questões-de-aplicação">Questões de aplicação</h2>
+<ol start="16" type="1">
+<li><p><strong>[Autoral, Estilo ENADE / Geografia]</strong> A implantação de grandes empreendimentos energéticos e rodoviários no Semiárido brasileiro exige estudos ambientais rigorosos no âmbito da AIA. Considere as afirmações a seguir sobre o papel do geógrafo na AIA:</p>
+<ol type="I">
+<li><p>A delimitação das áreas de influência (ADA, AID e AII) deve respeitar a dinâmica espacial específica de cada meio, como divisores de microbacias no meio físico e redes de mobilidade e serviços no meio socioeconômico, descartando raios circulares arbitrários.</p></li>
+<li><p>A sobreposição de cartas em SIG (inspirada no método de McHarg) permite integrar fragilidades do relevo, solos, APPs e uso da terra para subsidiar a escolha de alternativas locacionais que evitem impactos na origem.</p></li>
+<li><p>Na fase de prognóstico, o diagnóstico da linha de base torna-se dispensável porque a compensação ambiental corrige automaticamente todos os impactos residuais.</p></li>
+</ol>
+<p>É correto o que se afirma apenas em:</p>
+<ol type="A">
+<li><ol type="I">
+<li></li>
+</ol></li>
+<li><ol start="3" type="I">
+<li></li>
+</ol></li>
+<li><p>I e II.</p></li>
+<li><p>II e III.</p></li>
+<li><p>I, II e III.</p></li>
+</ol></li>
+<li><p><strong>[Autoral, Estilo Concurso Analista Ambiental / IBAMA e INEMA]</strong> Uma consultoria apresentou ao órgão ambiental um EIA de uma ferrovia cujo traçado original cortava um trecho de mata ciliar e uma nascente perene. No capítulo de mitigação, o estudo manteve o traçado original e propôs, como única medida, o pagamento de compensação financeira para criação de parque em outra região do Estado. À luz da teoria da AIA (Sánchez, 2013) e da Hierarquia de Mitigação, o parecer técnico do analista ambiental deve:</p>
+<ol type="A">
+<li><p>Aprovar integralmente a proposta, pois a compensação financeira ocupa o topo da Hierarquia de Mitigação.</p></li>
+<li><p>Exigir complementação do estudo com avaliação efetiva de alternativas locacionais (degrau <em>Evitar</em>) e de medidas de engenharia para redução de danos (degrau <em>Minimizar</em>), reservando a compensação estritamente a eventuais impactos residuais inevitáveis.</p></li>
+<li><p>Dispensar a etapa de monitoramento no PBA, já que o recurso financeiro foi depositado previamente.</p></li>
+<li><p>Substituir o EIA por uma listagem de controle simples, pois ferrovias não geram impactos indiretos.</p></li>
+<li><p>Aprovar a obra desde que a soma algébrica da Matriz de Leopold seja positiva devido à geração de empregos.</p></li>
+</ol></li>
+<li><p><strong>[Autoral, Estilo Concurso Órgão Ambiental Estadual]</strong> Associe corretamente cada instrumento ou etapa da AIA à sua função principal:</p>
+<div class="book-table-scroll" role="region" aria-label="Tabela 3" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(1) Termo de Referência (TR)</td>
+<td style="text-align: left;">( ) Execução operacional de programas de controle, recuperação e monitoramento na implantação e operação.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">(2) Diagnóstico (Linha de Base)</td>
+<td style="text-align: left;">( ) Definição do escopo, conteúdo técnico mínimo e profundidade exigida nos estudos ambientais.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">(3) Matriz de Leopold</td>
+<td style="text-align: left;">( ) Caracterização prévia dos meios físico, biótico e socioeconômico antes da intervenção.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">(4) Plano Básico Ambiental (PBA)</td>
+<td style="text-align: left;">( ) Cruzamento sistemático entre ações do projeto e fatores ambientais por magnitude e importância.</td>
+</tr>
+</tbody>
+</table></div>
+<p>A sequência numérica correta, de cima para baixo, é:</p>
+<ol type="A">
+<li><p>4 - 1 - 2 - 3.</p></li>
+<li><p>1 - 4 - 3 - 2.</p></li>
+<li><p>4 - 2 - 1 - 3.</p></li>
+<li><p>3 - 1 - 2 - 4.</p></li>
+<li><p>2 - 1 - 4 - 3.</p></li>
+</ol></li>
+</ol>
+<section id="conexão-com-o-estudo-orientado-eo4-e-o-trabalho-prático-final" class="level3">
+<h3 class="anchored" data-anchor-id="conexão-com-o-estudo-orientado-eo4-e-o-trabalho-prático-final">Conexão com o Estudo Orientado EO4 e o Trabalho Prático Final</h3>
+<p>No <strong>Estudo Orientado EO4</strong> (Semana 5), ao analisar o texto de Sánchez (2013, cap. 7) e o guia do MMA (2016), concentre sua argumentação na AIA como processo preventivo de decisão, na escolha justificada de métodos (matriz ponderada, rede de interação e SIG) e na aplicação rigorosa da Hierarquia de Mitigação. No <strong>Trabalho Prático Final</strong>, a mesma sequência entre linha de base, valoração de impactos e hierarquia de intervenção estruturará o plano de manejo da área de estudo.</p>
+</section>
+</section>
+<section id="gabarito-comentado" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="gabarito-comentado">Gabarito comentado</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Clique para abrir o Gabarito Comentado
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="resoluções-dos-exercícios-1-a-10-básicos-e-intermediários" class="level3">
+<h3 class="anchored" data-anchor-id="resoluções-dos-exercícios-1-a-10-básicos-e-intermediários">Resoluções dos Exercícios 1 a 10 (Básicos e Intermediários)</h3>
+<ol type="1">
+<li><p><strong>Papel preventivo da AIA.</strong> A AIA antecipa consequências físicas, bióticas e socioeconômicas <em>antes</em> da decisão de autorizar um empreendimento, orientando alternativas locacionais, tecnológicas e a alternativa zero. Quando inserida tardiamente (com traçado e engenharia já fechados), resta apenas remediar danos ou compensar perdas que poderiam ter sido evitadas na origem, desvirtuando o planejamento ambiental.</p></li>
+<li><p><strong>Cálculo de 3 células da Matriz de Leopold.</strong> Solo e erosão: <span class="math inline">\(P_1 = -1 \times (7 \times 8) = -56\)</span>. Qualidade do ar: <span class="math inline">\(P_2 = -1 \times (4 \times 6) = -24\)</span>. Contratação local: <span class="math inline">\(P_3 = +1 \times (6 \times 5) = +30\)</span>. Carga adversa: <span class="math inline">\(\Sigma^{-} = -56 + (-24) = -80\)</span>; carga benéfica: <span class="math inline">\(\Sigma^{+} = +30\)</span>; total da ação: <span class="math inline">\(T = -80 + 30 = -50\)</span>.</p></li>
+<li><p><strong>Triagem versus Definição de Escopo.</strong> A <em>triagem</em> (<em>screening</em>) decide <em>se</em> o projeto precisa de AIA e qual o grau de complexidade do estudo (EIA/RIMA, estudo simplificado ou dispensa). A <em>definição de escopo</em> (<em>scoping</em>) estabelece <em>quais</em> temas, métodos, áreas e impactos críticos devem ser aprofundados. Seu produto oficial é o <strong>Termo de Referência (TR)</strong>.</p></li>
+<li><p><strong>ADA, AID e AII para um aterro sanitário.</strong> Na <strong>ADA</strong>, situa-se a poligonal das células de resíduos, lagoas de chorume, drenagem, balança e vias internas. Na <strong>AID</strong>, incluem-se a microbacia a jusante passível de sofrer alterações hídricas caso ocorra vazamento, a área de dispersão de odores e ruído e as propriedades vizinhas diretamente expostas. Na <strong>AII</strong>, abrangem-se os municípios consorciados que enviam resíduos ao aterro e a sub-bacia hidrográfica regional.</p></li>
+<li><p><strong>Vantagem específica de cada método.</strong> <em>Checklists</em> oferecem rapidez e padronização inicial; a Matriz de Leopold estabelece vínculo explícito entre cada ação e cada fator com priorização por magnitude e importância; as redes de interação rastreiam impactos indiretos (2ª e 3ª ordens) e efeitos em cascata; e a sobreposição de cartas em SIG explicita os conflitos espaciais para subsidiar alternativas locacionais.</p></li>
+<li><p><strong>Matriz <span class="math inline">\(3 \times 3\)</span> completa (extração de areia).</strong> Linha <span class="math inline">\(F_1\)</span> (Margens/leito): <span class="math inline">\(P_{11} = -(9 \times 9) = -81\)</span>; <span class="math inline">\(P_{12} = -(5 \times 7) = -35\)</span>; <span class="math inline">\(P_{13} = 0 \implies F_1 = -81 - 35 = -116\)</span>. Linha <span class="math inline">\(F_2\)</span> (Turbidez/biota): <span class="math inline">\(P_{21} = -(8 \times 8) = -64\)</span>; <span class="math inline">\(P_{22} = -(4 \times 6) = -24\)</span>; <span class="math inline">\(P_{23} = 0 \implies F_2 = -64 - 24 = -88\)</span>. Linha <span class="math inline">\(F_3\)</span> (Renda/arrecadação): <span class="math inline">\(P_{31} = +(3 \times 4) = +12\)</span>; <span class="math inline">\(P_{32} = +(2 \times 4) = +8\)</span>; <span class="math inline">\(P_{33} = +(6 \times 6) = +36 \implies F_3 = +56\)</span>. Somas das colunas: <span class="math inline">\(T_1 = -133\)</span>; <span class="math inline">\(T_2 = -51\)</span>; <span class="math inline">\(T_3 = +36\)</span>. Cargas e balanço: <span class="math inline">\(\Sigma^{-} = -204\)</span>; <span class="math inline">\(\Sigma^{+} = +56\)</span>; <span class="math inline">\(B = -204 + 56 = -148\)</span>. A ação mais degradadora é <span class="math inline">\(A_1\)</span> (dragagem, <span class="math inline">\(T_1 = -133\)</span>) e o fator mais crítico é <span class="math inline">\(F_1\)</span> (estabilidade de margens e leito, <span class="math inline">\(F_1 = -116\)</span>).</p></li>
+<li><p><strong>Hierarquia de Mitigação (projeto agroindustrial).</strong> Partindo de <span class="math inline">\(20{,}0\text{ ha}\)</span>, o degrau Evitar (<span class="math inline">\(35\%\)</span>) poupa <span class="math inline">\(7{,}0\text{ ha}\)</span>, restando <span class="math inline">\(13{,}0\text{ ha}\)</span>. O degrau Minimizar (<span class="math inline">\(20\%\)</span> do saldo) reduz <span class="math inline">\(2{,}6\text{ ha}\)</span>, restando <span class="math inline">\(10{,}4\text{ ha}\)</span>. O degrau Recuperar restaura <span class="math inline">\(2{,}4\text{ ha}\)</span> temporários, deixando impacto permanente residual de <span class="math inline">\(8{,}0\text{ ha}\)</span>. Na razão <span class="math inline">\(3:1\)</span>, a área a compensar soma <span class="math inline">\(3 \times 8{,}0 = \mathbf{24{,}0\text{ ha}}\)</span>.</p></li>
+<li><p><strong>Seleção tecnológica da ETE (escala positiva, maior é melhor).</strong> <span class="math inline">\(E_1 = (0{,}35 \times 6) + (0{,}30 \times 5) + (0{,}20 \times 7) + (0{,}15 \times 9) = \mathbf{6{,}35}\)</span> e <span class="math inline">\(E_2 = (0{,}35 \times 9) + (0{,}30 \times 8) + (0{,}20 \times 8) + (0{,}15 \times 6) = \mathbf{8{,}05}\)</span>. A alternativa <span class="math inline">\(E_2\)</span> supera <span class="math inline">\(E_1\)</span> por <span class="math inline">\(1{,}70\)</span> ponto, sendo recomendada pela superioridade em remoção orgânica, controle de odores e reúso agrícola no Semiárido.</p></li>
+<li><p><strong>Rede de interação (3 ordens) e interrupção da cascata.</strong> A abertura de acesso sem drenagem em encosta provoca remoção da cobertura vegetal e compactação do leito da via (1ª ordem, direto), elevando o escoamento concentrado, a abertura de sulcos e ravinas e o transporte de sedimentos (2ª ordem, indireto), que culminam no assoreamento do reservatório ou riacho a jusante com perda de qualidade e oferta de água (3ª ordem, indireto). Como medida preventiva, adota-se traçado em nível com canaletas e bacias de retenção; como medida corretiva, estabilizam-se ravinas com paliçadas e bioengenharia associadas a desassoreamento controlado.</p></li>
+<li><p><strong>Monitoramento de SST no PBA.</strong> Acréscimo sem controle: <span class="math inline">\(\Delta_{\text{sem}} = 145{,}0 - 25{,}0 = 120{,}0\text{ mg/L}\)</span>. Acréscimo residual após PBA: <span class="math inline">\(\Delta_{\text{com}} = 43{,}0 - 25{,}0 = 18{,}0\text{ mg/L}\)</span>. Abatimento obtido: <span class="math inline">\(120{,}0 - 18{,}0 = 102{,}0\text{ mg/L}\)</span>. Eficiência sobre a carga antrópica: <span class="math inline">\(E_f = \frac{102{,}0}{120{,}0} \times 100\% = \mathbf{85{,}00\%}\)</span>.</p></li>
+</ol>
+</section>
+<section id="gabarito-comentado-das-questões-objetivas-11-a-18" class="level3">
+<h3 class="anchored" data-anchor-id="gabarito-comentado-das-questões-objetivas-11-a-18">Gabarito Comentado das Questões Objetivas (11 a 18)</h3>
+<ul>
+<li><p><strong>Questão 11, Gabarito (B).</strong> O cenário sem projeto é dinâmico e projeta a evolução provável da área sem o empreendimento, incorporando tendências existentes. (A) erra ao congelar a linha de base; (C) confunde com pós-compensação; (D) e (E) distorcem sua função metodológica.</p></li>
+<li><p><strong>Questão 12, Gabarito (D).</strong> A ordem universal de prioridade técnica e ecológica da Hierarquia de Mitigação é <strong>Evitar <span class="math inline">\(\to\)</span> Minimizar <span class="math inline">\(\to\)</span> Recuperar <span class="math inline">\(\to\)</span> Compensar</strong>.</p></li>
+<li><p><strong>Questão 13, Gabarito (A).</strong> Calculando célula a célula: <span class="math inline">\(-(8 \times 9) = -72\)</span>, <span class="math inline">\(-(6 \times 7) = -42\)</span> e <span class="math inline">\(+(5 \times 4) = +20\)</span>. Logo, <span class="math inline">\(\Sigma^{-} = -72 - 42 = -114\)</span>, <span class="math inline">\(\Sigma^{+} = +20\)</span> e <span class="math inline">\(T = -114 + 20 = -94\)</span>. Os <span class="math inline">\(+20\)</span> pontos de emprego pertencem a dimensão socioeconômica distinta e não mitigam a erosão.</p></li>
+<li><p><strong>Questão 14, Gabarito (B).</strong> As <strong>redes de interação</strong> foram concebidas justamente para explicitar graficamente cadeias de impactos de 1ª, 2ª e 3ª ordens (diretos e indiretos).</p></li>
+<li><p><strong>Questão 15, Gabarito (C).</strong> O PBA traduz os compromissos da AIA em programas executivos auditáveis, confrontados continuamente com a linha de base para permitir gestão adaptativa.</p></li>
+<li><p><strong>Questão 16, Gabarito (C).</strong> As afirmativas I e II estão rigorosamente corretas. A afirmativa III é falsa porque o diagnóstico da linha de base é indispensável para projetar cenários e auditar o monitoramento, e a compensação jamais substitui a prevenção ou corrige todos os impactos.</p></li>
+<li><p><strong>Questão 17, Gabarito (B).</strong> Pular diretamente para a compensação financeira sem analisar alternativas locacionais (<em>Evitar</em>) e controles de engenharia (<em>Minimizar</em>) viola a Hierarquia de Mitigação; cabe ao órgão ambiental exigir complementação do estudo.</p></li>
+<li><p><strong>Questão 18, Gabarito (A).</strong> A associação correta de cima para baixo é PBA (4), TR (1), Diagnóstico/Linha de Base (2) e Matriz de Leopold (3), resultando na sequência <strong>4 - 1 - 2 - 3</strong>.</p></li>
+</ul>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section id="síntese-conceitual" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="síntese-conceitual">Síntese conceitual</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Síntese Conceitual do Capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A <strong>AIA</strong> opera como processo preventivo anterior à implantação de projetos, integrando alternativas locacionais, tecnológicas e a alternativa zero (Sánchez, 2013; Brasil/MMA, 2016). Seu fluxo encadeia triagem (<em>screening</em>), escopo (Termo de Referência), linha de base nos três meios com delimitação física de ADA, AID e AII, identificação e valoração (checklists, Matriz de Leopold Ponderada separando <span class="math inline">\(\Sigma^{-}\)</span> e <span class="math inline">\(\Sigma^{+}\)</span>, redes de interação e SIG), prognóstico comparativo, <strong>Hierarquia de Mitigação</strong> (<strong>Evitar <span class="math inline">\(\to\)</span> Minimizar <span class="math inline">\(\to\)</span> Recuperar <span class="math inline">\(\to\)</span> Compensar</strong> apenas o impacto residual), PBA e monitoramento pós-implantação com auditoria em relação à linha de base (<span class="math inline">\(E_f = \frac{T_{\text{sem}} - T_{\text{com}}}{T_{\text{sem}} - T_0} \times 100\%\)</span>).</p>
+</div>
+</div>
+</section>
+<section id="autoavaliação" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="autoavaliação">Autoavaliação</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Autoavaliação e Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Marque Verdadeiro (<strong>V</strong>) ou Falso (<strong>F</strong>) para testar seu domínio antes de avançar ao Capítulo 6:</p>
+<ol type="1">
+<li><p>( ) A AIA equivale exatamente ao EIA/RIMA, sendo dispensada para empreendimentos que apresentam apenas PCA ou RAS.</p></li>
+<li><p>( ) Na Matriz de Leopold Ponderada, um saldo líquido positivo (<span class="math inline">\(B &gt; 0\)</span>) não isenta o empreendedor de mitigar células adversas de alta importância (<span class="math inline">\(I \ge 8\)</span>).</p></li>
+<li><p>( ) Na Hierarquia de Mitigação, a compensação ecológica deve ser aplicada somente ao impacto residual que permanece após esgotadas as etapas de evitar, minimizar e recuperar.</p></li>
+<li><p>( ) A delimitação da AID do meio físico deve acompanhar limites naturais dos processos afetados (como divisores de microbacia), descartando círculos arbitrários traçados no mapa.</p></li>
+</ol>
+<p><strong>Gabarito da verificação da aprendizagem.</strong> 1. <strong>F</strong> (o EIA/RIMA é uma modalidade dentro do processo mais amplo de AIA); 2. <strong>V</strong>; 3. <strong>V</strong>; 4. <strong>V</strong>.</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/analise-ambiental\/");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Código deslocável","output":"Saída deslocável"};
+  </script>
+<nav class="page-navigation" aria-label="Página">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/mod1-simulado.html" class="pagination-link" aria-label="Simulado e Revisão Integrada, Módulo 1">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Simulado e Revisão Integrada, Módulo 1</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/06-analise-ambiental-integrada.html" class="pagination-link" aria-label="Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026 (DCHF/UEFS). <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

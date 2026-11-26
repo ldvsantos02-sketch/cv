@@ -1,10 +1,10 @@
 \aberturaModulo{UNIDADE III}{PROJETOS E VIABILIDADE}{Encontros 12 a 14 $\bullet$ Base da AV2 (20\%) e Engenharia Financeira da AV3}{%
 Esta unidade converte a estratégia territorial e o modelo de negócios da Unidade II em engenharia econômica e modelagem financeira auditável. Ao longo de três encontros e um simulado quantitativo, o estudante aprende a estruturar projetos executivos de investimento, decidir sua localização territorial com rigor multicritério, projetar fluxos de caixa livres, aplicar métricas de viabilidade sob risco e estimar o valor econômico de empreendimentos tecnológicos e de impacto.
 \begin{itemize}[leftmargin=1.4em, itemsep=3pt]
-  \item \textbf{Capítulo 12 — Elaboração de Projetos de Investimento e Decisão Locacional:} ciclo do projeto (Woiler \& Mathias, 2008), fatores locacionais clássicos (Weber, Von Thünen), Matriz Locacional Ponderada, orçamento de CAPEX, Ciclo Financeiro / Capital de Giro (NLCG), OPEX e Ponto de Equilíbrio Contábil.
-  \item \textbf{Capítulo 13 — Métodos e Ferramentas para Análise de Investimentos:} valor do dinheiro no tempo, Fluxo de Caixa Livre (FCL), VPL, TIR (e suas anomalias), MTIR, VAUE para vidas úteis distintas, Payback Simples e Descontado, análise de sensibilidade e cenários.
-  \item \textbf{Capítulo 14 — Valuation de Empreendimentos Tecnológicos e Projetos de Impacto:} preço versus valor, Fluxo de Caixa Descontado (Damodaran, 2010), WACC, perpetuidade de Gordon, Enterprise Value e Equity Value, \textit{Dark Side of Valuation}, Método de Venture Capital e Opções Reais.
-  \item \textbf{Simulado III — Preparatório Quantitativo da AV2 (20\%):} 8 questões objetivas de cálculo integral (A--E), 2 estudos dirigidos dissertativos, gabarito passo a passo, espelho e diagnóstico.
+  \item \textbf{Capítulo 12: Elaboração de Projetos de Investimento e Decisão Locacional:} ciclo do projeto (Woiler \& Mathias, 2008), fatores locacionais clássicos (Weber, Von Thünen), Matriz Locacional Ponderada, orçamento de CAPEX, Ciclo Financeiro / Capital de Giro (NLCG), OPEX e Ponto de Equilíbrio Contábil.
+  \item \textbf{Capítulo 13: Métodos e Ferramentas para Análise de Investimentos:} valor do dinheiro no tempo, Fluxo de Caixa Livre (FCL), VPL, TIR (e suas anomalias), MTIR, VAUE para vidas úteis distintas, Payback Simples e Descontado, análise de sensibilidade e cenários.
+  \item \textbf{Capítulo 14: Valuation de Empreendimentos Tecnológicos e Projetos de Impacto:} preço versus valor, Fluxo de Caixa Descontado (Damodaran, 2010), WACC, perpetuidade de Gordon, Enterprise Value e Equity Value, \textit{Dark Side of Valuation}, Método de Venture Capital e Opções Reais.
+  \item \textbf{Simulado III: Preparatório Quantitativo da AV2 (20\%):} 8 questões objetivas de cálculo integral (A--E), 2 estudos dirigidos dissertativos, gabarito passo a passo, espelho e diagnóstico.
 \end{itemize}
 }
 
@@ -37,48 +37,29 @@ Antes de avançar para a modelagem orçamentária e locacional, relembre três f
 
 \subsection{Da ideia ao projeto executivo (Woiler \& Mathias, 2008)}
 
-Uma ideia tecnológica ou territorialmente enraizada só se torna financiável quando convertida em um \textbf{projeto de investimento}: um conjunto sistematizado de informações técnicas, mercadológicas, locacionais, jurídicas e econômico-financeiras que permite decidir se vale a pena imobilizar recursos escassos hoje em troca de benefícios futuros incertos. Na tradição brasileira de elaboração e análise de projetos sistematizada por Woiler e Mathias (2008), essa trajetória percorre estágios progressivos de redução de incerteza:
+Uma ideia tecnológica ou territorialmente enraizada só se torna financiável quando convertida em um \textbf{projeto de investimento}, isto é, um conjunto sistematizado de informações técnicas, mercadológicas, locacionais, jurídicas e econômico-financeiras que permite decidir se vale a pena imobilizar recursos escassos hoje em troca de benefícios futuros incertos. Na tradição brasileira de elaboração e análise de projetos sistematizada por Woiler e Mathias (2008), essa trajetória percorre três estágios progressivos de redução de incerteza, nos quais cada etapa filtra riscos antes de comprometer capital em engenharia dispendiosa.
 
-\begin{enumerate}[leftmargin=1.4em, itemsep=3pt]
-  \item \textbf{Identificação da Oportunidade / Estudo de Pré-Viabilidade:} delimita o problema territorial ou tecnológico, estima a demanda potencial (TAM/SAM/SOM) e verifica restrições legais ou ambientais eliminatórias antes de gastar com engenharia detalhada.
-  \item \textbf{Anteprojeto ou Estudo de Viabilidade Técnica e Econômica (EVTE):} define a escala de produção, a tecnologia de processo, a localização ótima, o cronograma físico-financeiro, o orçamento de CAPEX, Capital de Giro e OPEX, além das projeções de fluxo de caixa.
-  \item \textbf{Projeto Executivo (Final):} detalha plantas arquitetônicas, memoriais descritivos de equipamentos, especificações elétricas e hidráulicas, contratos de fornecimento e licenças ambientais definitivas, servindo de base direta para contratação de obras e liberação de crédito junto a bancos de fomento.
-\end{enumerate}
+No estágio inicial de \textbf{Identificação da Oportunidade e Estudo de Pré-Viabilidade}, você delimita o problema territorial ou tecnológico, estima a demanda potencial (TAM/SAM/SOM) e verifica restrições legais ou ambientais eliminatórias antes de gastar com engenharia detalhada. Superada essa triagem preliminar, o \textbf{Anteprojeto ou Estudo de Viabilidade Técnica e Econômica (EVTE)} define a escala de produção, a tecnologia de processo, a localização ótima, o cronograma físico-financeiro, o orçamento de CAPEX, Capital de Giro e OPEX, além das projeções de fluxo de caixa que sustentam a decisão de investir. Por sua vez, o \textbf{Projeto Executivo (Final)} detalha plantas arquitetônicas, memoriais descritivos de equipamentos, especificações elétricas e hidráulicas, contratos de fornecimento e licenças ambientais definitivas, servindo de base direta para contratação de obras e liberação de crédito junto a bancos de fomento.
 
 \begin{boxSimbolo}[Vocabulário Conceitual e Símbolos do Capítulo 12]
-\begin{itemize}[leftmargin=1.3em, itemsep=2pt]
-  \item $w_i$: peso atribuído ao critério locacional $i$ na Matriz Locacional Ponderada ($\sum_{i=1}^{m} w_i = 1$).
-  \item $n_{ij}$: nota atribuída à localidade candidata $j$ no critério $i$ (escala padronizada, por exemplo, de $0$ a $10$).
-  \item $Nota_j$: pontuação global ponderada da localidade $j$.
-  \item $IM$: Índice Material de Weber, razão entre o peso dos insumos localizados transportados e o peso do produto acabado.
-  \item \textbf{CAPEX} (\textit{Capital Expenditure}): investimento fixo em ativos de longo prazo (terrenos, obras civis, máquinas, equipamentos, licenças e softwares imobilizados).
-  \item \textbf{OPEX} (\textit{Operational Expenditure}): despesas e custos recorrentes necessários para manter a operação funcionando (matéria-prima, energia, salários, manutenção, fretes, aluguel).
-  \item $PME, PMR, PMP$: Prazo Médio de Estocagem, Prazo Médio de Recebimento de vendas e Prazo Médio de Pagamento a fornecedores (em dias).
-  \item $CF_{ciclo}$ e $NLCG$: Ciclo Financeiro (em dias) e Necessidade Líquida de Capital de Giro (em \reais{}).
-  \item $CF$: Custos e Despesas Fixas totais no período (em \reais{}); $P$: preço unitário de venda; $CV_u$: custo variável unitário; $MC_u = P - CV_u$: margem de contribuição unitária; $PE$: Ponto de Equilíbrio Contábil.
-\end{itemize}
+Na modelagem locacional, $w_i$ representa o peso atribuído ao critério $i$ na Matriz Locacional Ponderada ($\sum_{i=1}^{m} w_i = 1$), $n_{ij}$ indica a nota atribuída à localidade candidata $j$ no critério $i$ em escala padronizada (por exemplo, de $0$ a $10$), e $Nota_j$ corresponde à pontuação global ponderada da localidade $j$. Na teoria clássica de Weber, $IM$ designa o Índice Material, definido como a razão entre o peso dos insumos localizados transportados e o peso do produto acabado.
+
+Na estrutura orçamentária, \textbf{CAPEX} (\textit{Capital Expenditure}) refere-se ao investimento fixo em ativos de longo prazo (terrenos, obras civis, máquinas, equipamentos, licenças e softwares imobilizados), enquanto \textbf{OPEX} (\textit{Operational Expenditure}) reúne as despesas e os custos recorrentes necessários para manter a operação funcionando (matéria-prima, energia, salários, manutenção, fretes e aluguel). O dimensionamento do giro utiliza $PME$, $PMR$ e $PMP$, que correspondem respectivamente ao Prazo Médio de Estocagem, ao Prazo Médio de Recebimento de vendas e ao Prazo Médio de Pagamento a fornecedores (em dias), originando o Ciclo Financeiro ($CF_{ciclo}$, em dias) e a Necessidade Líquida de Capital de Giro ($NLCG$, em \reais{}). Para a análise de equilíbrio operacional, $CF$ representa os Custos e Despesas Fixas totais no período (em \reais{}), $P$ o preço unitário de venda, $CV_u$ o custo variável unitário, $MC_u = P - CV_u$ a margem de contribuição unitária e $PE$ o Ponto de Equilíbrio Contábil.
 \end{boxSimbolo}
 
 \subsection{Fatores locacionais clássicos e contemporâneos}
 
-A escolha de onde implantar uma unidade produtiva, laboratório ou centro de distribuição altera permanentemente a estrutura de custos e a capacidade de inovação do negócio. A teoria econômica espacial oferece dois marcos clássicos que dialogam com os fatores contemporâneos de base tecnológica:
+A escolha de onde implantar uma unidade produtiva, laboratório ou centro de distribuição altera permanentemente a estrutura de custos e a capacidade de inovação do negócio. A teoria econômica espacial oferece dois marcos clássicos que dialogam diretamente com os fatores contemporâneos de base tecnológica.
 
 \begin{boxConceito}[Teoria Locacional Clássica: Von Thünen e Alfred Weber]
-\begin{itemize}[leftmargin=1.4em, itemsep=3pt]
-  \item \textbf{Johann Heinrich von Thünen (1826 — Renda da Terra e Distância ao Mercado):} analisou como o custo de transporte até o centro consumidor determina o uso ótimo do solo agrícola em anéis concêntricos. Produtos perecíveis ou de frete caro por unidade de valor ocupam áreas próximas ao mercado; atividades extensivas de baixo custo de transporte deslocam-se para a periferia.
-  \item \textbf{Alfred Weber (1909 — Triângulo Locacional e Índice Material):} formulou a localização industrial de mínimo custo de transporte entre fontes de matéria-prima e mercado consumidor. Quando o processo produtivo perde muito peso (matéria-prima bruta volumosa gerando produto leve e concentrado, isto é, $IM > 1$), a fábrica tende a se localizar \textbf{junto à fonte de matéria-prima} (orientação à matéria-prima, típica de beneficiamento mineral, celulose e agroindústrias como fécula de mandioca ou desfibramento de sisal). Quando o produto ganha peso ou volume no envase/montagem (como bebidas engarrafadas com água local), a fábrica orienta-se \textbf{para o mercado consumidor}.
-\end{itemize}
+\textbf{Johann Heinrich von Thünen (1826: Renda da Terra e Distância ao Mercado)} analisou como o custo de transporte até o centro consumidor determina o uso ótimo do solo agrícola em anéis concêntricos. Produtos perecíveis ou de frete caro por unidade de valor ocupam áreas próximas ao mercado, ao passo que atividades extensivas de baixo custo de transporte deslocam-se para a periferia.
+
+\textbf{Alfred Weber (1909: Triângulo Locacional e Índice Material)} formulou a localização industrial de mínimo custo de transporte entre fontes de matéria-prima e mercado consumidor. Quando o processo produtivo perde muito peso (matéria-prima bruta volumosa gerando produto leve e concentrado, isto é, $IM > 1$), a fábrica tende a se localizar \textbf{junto à fonte de matéria-prima}, caracterizando a orientação à matéria-prima típica de beneficiamento mineral, celulose e agroindústrias como fécula de mandioca ou desfibramento de sisal. Quando o produto ganha peso ou volume no envase ou montagem (como bebidas engarrafadas com água local), a fábrica orienta-se \textbf{para o mercado consumidor}.
 \end{boxConceito}
 
-Em empreendimentos tecnológicos e agroindustriais contemporâneos no Brasil — especialmente no Nordeste e na Bahia —, a decisão locacional vai além do frete e incorpora seis vetores decisivos:
-\begin{enumerate}[leftmargin=1.4em, itemsep=2pt]
-  \item \textbf{Custos de transporte e logística multimodal:} distância a rodovias duplicadas, ferrovias (FIOL), portos (Salvador, Aratu, Ilhéus) e qualidade das vias vicinais de escoamento.
-  \item \textbf{Infraestrutura energética e hídrica:} disponibilidade de rede trifásica estável, tarifas industriais, irradiação solar e segurança hídrica para processos industriais ou bioeconomia no Semiárido.
-  \item \textbf{Densidade de P\&D e capital humano:} proximidade a universidades (como UEFS, UFBA, UFRB, UNEB, SENAI CIMATEC), institutos tecnológicos e oferta de técnicos e engenheiros.
-  \item \textbf{Incentivos fiscais e fundiários:} redução de ICMS estadual, isenção de IPTU/ISS municipal, cessão de terrenos em distritos industriais e acesso a fundos constitucionais (FNE/SUDENE).
-  \item \textbf{Aglomeração setorial e fornecedores:} presença de Arranjos Produtivos Locais (APLs) que reduzem custos de manutenção, peças de reposição e serviços especializados.
-  \item \textbf{Restrições ambientais e licenciamento:} zoneamento ecológico-econômico, outorga d'água e distância de áreas de preservação permanente.
-\end{enumerate}
+Em empreendimentos tecnológicos e agroindustriais contemporâneos no Brasil, especialmente no Nordeste e na Bahia, a decisão locacional amplia a análise do frete ao incorporar seis vetores territoriais decisivos. O primeiro vetor envolve os \textbf{custos de transporte e logística multimodal}, medidos pela distância a rodovias duplicadas, ferrovias como a FIOL, portos como Salvador, Aratu e Ilhéus, além da qualidade das vias vicinais de escoamento. O segundo vetor trata da \textbf{infraestrutura energética e hídrica}, abrangendo disponibilidade de rede trifásica estável, tarifas industriais, irradiação solar e segurança hídrica para processos industriais ou de bioeconomia no Semiárido. O terceiro vetor corresponde à \textbf{densidade de P\&D e capital humano}, traduzida na proximidade a universidades (como UEFS, UFBA, UFRB, UNEB e SENAI CIMATEC), institutos tecnológicos e oferta de técnicos e engenheiros.
+
+A esses elementos somam-se os \textbf{incentivos fiscais e fundiários}, como redução de ICMS estadual, isenção de IPTU e ISS municipal, cessão de terrenos em distritos industriais e acesso a fundos constitucionais (FNE/SUDENE). A \textbf{aglomeração setorial e a rede de fornecedores} em Arranjos Produtivos Locais (APLs) também pesam na escolha, pois reduzem custos de manutenção, peças de reposição e serviços especializados. Todo esse conjunto permanece condicionado às \textbf{restrições ambientais e de licenciamento}, que exigem compatibilidade com o zoneamento ecológico-econômico, outorga d'água e distanciamento de áreas de preservação permanente. A Figura~\ref{fig:12_ciclo} ilustra como o ciclo de elaboração de projetos articula esses vetores locacionais à estrutura orçamentária do empreendimento.
 
 \begin{figure}[H]
   \centering
@@ -95,24 +76,16 @@ Quando múltiplos critérios qualitativos e quantitativos competem entre si, o p
 \[
   Nota_j = \sum_{i=1}^{m} w_i \cdot n_{ij}, \qquad \text{com} \quad \sum_{i=1}^{m} w_i = 1
 \]
-\textbf{Passo a passo de aplicação:}
-\begin{enumerate}[leftmargin=1.4em, itemsep=2pt]
-  \item \textbf{Listar critérios eliminatórios e classificatórios:} descartar previamente locais sem licença ambiental viável ou energia mínima exigida.
-  \item \textbf{Atribuir pesos ($w_i$):} distribuir $1{,}00$ ($100\%$) entre os $m$ critérios conforme o impacto econômico-tecnológico no projeto.
-  \item \textbf{Pontuar cada alternativa ($n_{ij}$):} avaliar cada localidade $j$ em escala uniforme (ex.: $0$ a $10$) com base em dados objetivos (tarifas, distância em km, alíquotas).
-  \item \textbf{Calcular o produto ponderado e somar:} multiplicar $w_i \cdot n_{ij}$ para cada critério e somar na coluna da localidade $j$. Escolhe-se a localidade de maior $Nota_j$, verificando a sensibilidade a pequenas alterações de pesos.
-\end{enumerate}
+Para aplicar a matriz com rigor, inicia-se pela definição dos critérios eliminatórios e classificatórios, descartando previamente locais sem licença ambiental viável ou energia mínima exigida. Em seguida, atribuem-se os pesos ($w_i$), distribuindo $1{,}00$ ($100\%$) entre os $m$ critérios conforme o impacto econômico-tecnológico no projeto. Cada localidade $j$ recebe então uma pontuação ($n_{ij}$) em escala uniforme (por exemplo, $0$ a $10$) com base em dados objetivos como tarifas, distância em quilômetros e alíquotas. Multiplica-se $w_i \cdot n_{ij}$ para cada critério e soma-se a coluna da localidade $j$, escolhendo o território de maior $Nota_j$ após verificar a sensibilidade do ranking a pequenas alterações de pesos.
 \end{boxFormula}
 
 \subsection{Estrutura Orçamentária: CAPEX, Capital de Giro e OPEX}
 
-Todo projeto de investimento organiza suas saídas de caixa em três grandes blocos que não podem ser misturados na análise financeira:
+Todo projeto de investimento organiza suas saídas de caixa em três grandes blocos que exigem tratamento contábil e financeiro separado. O primeiro bloco é o \textbf{CAPEX (\textit{Capital Expenditure}, ou Investimento Fixo)}, que engloba aquisições de ativos imobilizados e intangíveis de vida útil superior a um ano, tais como terreno, terraplanagem, galpão industrial, máquinas, equipamentos de laboratório, instalações elétricas, veículos utilitários, patentes e softwares corporativos. Esse investimento sofre \textbf{depreciação} (ou amortização) contábil ao longo do tempo e é desembolsado principalmente no Ano $0$ ou em fases programadas de expansão.
 
-\begin{enumerate}[leftmargin=1.4em, itemsep=3pt]
-  \item \textbf{CAPEX (\textit{Capital Expenditure} — Investimento Fixo):} engloba aquisições de ativos imobilizados e intangíveis de vida útil superior a um ano, tais como terreno, terraplanagem, galpão industrial, máquinas, equipamentos de laboratório, instalações elétricas, veículos utilitários, patentes e softwares corporativos. O CAPEX sofre \textbf{depreciação} (ou amortização) contábil ao longo do tempo e é desembolsado principalmente no Ano $0$ (ou em fases de expansão).
-  \item \textbf{Capital de Giro e Necessidade Líquida de Capital de Giro (NLCG):} representa o recurso financeiro mantido em circulação para sustentar o descasamento temporal entre pagar fornecedores, estocar insumos, produzir, vender e receber dos clientes. Mesmo um projeto altamente lucrativo quebra se não financiar seu ciclo financeiro.
-  \item \textbf{OPEX (\textit{Operational Expenditure} — Custos e Despesas Operacionais):} são os gastos contínuos do dia a dia para operar a capacidade instalada. Dividem-se em \textbf{Custos e Despesas Fixas ($CF$)}, que não variam com o volume produzido dentro da faixa de capacidade (aluguel, folha administrativa, depreciação contábil, seguro, vigilância), e \textbf{Custos Variáveis ($CV$)}, que crescem proporcionalmente às unidades produzidas e vendidas (matéria-prima direta, embalagens, energia de processo, comissões e impostos sobre venda).
-\end{enumerate}
+O segundo bloco corresponde ao \textbf{Capital de Giro e à Necessidade Líquida de Capital de Giro (NLCG)}, representando o recurso financeiro mantido em circulação para sustentar o descasamento temporal entre pagar fornecedores, estocar insumos, produzir, vender e receber dos clientes. Mesmo um projeto altamente lucrativo perde solvência se falhar no financiamento de seu ciclo financeiro.
+
+O terceiro bloco reúne o \textbf{OPEX (\textit{Operational Expenditure}, ou Custos e Despesas Operacionais)}, composto pelos gastos contínuos do dia a dia para operar a capacidade instalada. Esses gastos dividem-se em \textbf{Custos e Despesas Fixas ($CF$)}, que permanecem constantes diante de variações no volume produzido dentro da faixa de capacidade (aluguel, folha administrativa, depreciação contábil, seguro e vigilância), e \textbf{Custos Variáveis ($CV$)}, que crescem proporcionalmente às unidades produzidas e vendidas (matéria-prima direta, embalagens, energia de processo, comissões e impostos sobre venda).
 
 \begin{boxFormula}[Ciclo Financeiro, NLCG e Ponto de Equilíbrio Contábil]
 \textbf{1. Ciclo Financeiro e Necessidade Líquida de Capital de Giro:}
@@ -216,7 +189,7 @@ onde $CF$ são os custos e despesas fixas do período, $P$ o preço unitário de
 \end{align*}
 }
 \passoResposta{O Ponto de Equilíbrio cai de \textbf{3.000 para 2.500 unidades/ano} (redução de $500$ unidades ou $16{,}7\%$), diminuindo o risco de prejuízo em cenários de baixa demanda.}
-\passoVerificacao{O incentivo territorial compensa o frete adicional porque a redução de $25\%$ no custo fixo supera a perda de $10\%$ na margem de contribuição unitária. Em contrapartida, acima de $7.500$ unidades ($60.000 / 8{,}00$), o custo variável maior faria o cenário metropolitano gerar lucro total superior — evidenciando que a decisão depende da escala esperada.}
+\passoVerificacao{O incentivo territorial compensa o frete adicional porque a redução de $25\%$ no custo fixo supera a perda de $10\%$ na margem de contribuição unitária. Acima de $7.500$ unidades ($60.000 / 8{,}00$), porém, o custo variável maior faria o cenário metropolitano gerar lucro total superior, evidenciando que a decisão depende da escala esperada.}
 \end{boxExemplo}
 
 \etapa{5}{Armadilhas Conceituais e Erros Mais Comuns}
@@ -272,7 +245,7 @@ Na defesa oral da AV3, a banca avalia se o orçamento do projeto conversa com a 
 \clearpage
 \etapa{8}{Gabarito Integralmente Comentado (Exercícios 1 a 15 + Desafios 1 a 3)}
 
-\begin{boxGabarito}[Resolução Passo a Passo — Exercícios de Fixação (1 a 15)]
+\begin{boxGabarito}[Resolução Passo a Passo: Exercícios de Fixação (1 a 15)]
 \begin{enumerate}[leftmargin=1.5em, itemsep=4pt]
   \item \textbf{Estágios do projeto:} O estudo de pré-viabilidade testa a ideia preliminarmente para descartar inviabilidades óbvias a baixo custo; o EVTE (anteprojeto) quantifica mercado, tecnologia, localização, CAPEX, giro, OPEX e retorno financeiro; o projeto executivo detalha plantas e especificações finais para execução de obra e financiamento.
   \item \textbf{Weber ($IM$):} Na polpa de frutas ou sisal, perde-se grande massa em casca, água e resíduos ($IM > 1$), logo o frete da matéria-prima bruta pesa mais e atrai a planta para a fonte rural. No refrigerante, transporta-se xarope concentrado e adiciona-se água local no destino ($IM < 1$), atraindo a fábrica para o mercado urbano.
@@ -302,7 +275,7 @@ Na defesa oral da AV3, a banca avalia se o orçamento do projeto conversa com a 
 \end{enumerate}
 \end{boxGabarito}
 
-\begin{boxGabarito}[Diretrizes de Resposta — Desafios Autorais (1 a 3)]
+\begin{boxGabarito}[Diretrizes de Resposta: Desafios Autorais (1 a 3)]
 \begin{enumerate}[leftmargin=1.5em, itemsep=3pt]
   \item \textbf{Desafio 1:} Deve apresentar matriz com $\sum w_i = 1{,}00$, notas justificadas por dados verificáveis (distância em km, tarifa elétrica, presença de ICTs) e conclusão coerente com a maior pontuação ponderada.
   \item \textbf{Desafio 2:} Deve separar claramente imobilizações (CAPEX) de gastos recorrentes (OPEX) e associar equipamentos/obras a linhas como BNDES Automático ou BNB/FNE e P\&D a subvenção/crédito FINEP ou FAPESB.

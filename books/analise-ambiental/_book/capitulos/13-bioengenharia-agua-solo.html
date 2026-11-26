@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Apostila completa do componente curricular CHF662 (Análise Ambiental), Curso de Geografia da UEFS, organizada em cinco módulos, 15 capítulos em 10 etapas, simulados comentados, formulário e glossário.">
+
+<title>13&nbsp; Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental - Análise Ambiental (CHF662)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/14-legislacao-ambiental-prad.html" rel="next">
+<link href="../capitulos/mod4-simulado.html" rel="prev">
+<link href="../img/capa_analise_ambiental.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-679673b8a27c868cce7048b2deb5a79d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Pular para o conteúdo principal</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Barra de ferramentas">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/13-bioengenharia-agua-solo.html">Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico</a></li><li class="breadcrumb-item"><a href="../capitulos/13-bioengenharia-agua-solo.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Análise Ambiental (CHF662)</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos02-sketch/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../APOSTILA_ANALISE_AMBIENTAL_CHF662_UEFS.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Apresentação e orientação de estudo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Módulo 1. Fundamentos epistemológicos e conceituais</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-questao-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Questão Ambiental Contemporânea e o Papel da Geografia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-sociedade-natureza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Modernidade, a Geografia e a Relação Sociedade-Natureza</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-geografia-socioambiental-gtp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Abordagens Ambientais no Pensamento Geográfico Moderno</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-conceitos-operacionais-risco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos e Definições Operacionais da Análise Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod1-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Módulo 2. AIA e análise ambiental integrada</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-avaliacao-impacto-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-analise-ambiental-integrada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod2-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-bacias-hidrograficas-morfometria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bacia Hidrográfica como Unidade de Análise Ambiental Integrada</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-morfopedologia-vertentes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Morfopedologia e Processos Interativos Relevo, Solo e Água</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-geossistemas-ecodinamica-ross.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geossistemas, Ecodinâmica e Análise Empírica da Fragilidade Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod3-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado Preparatório para a Avaliação Teórica, Módulos 1 a 3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">Módulo 4. Indicadores, qualidade do solo e degradação</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-indicadores-ambientais-peir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-qualidade-solo-iqs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-degradacao-erosao-usle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagnóstico de Processos de Degradação Ambiental e Erosão Linear</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod4-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 4</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-bioengenharia-agua-solo.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-legislacao-ambiental-prad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-diagnostico-ambiental-aplicado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Manual Prático do Diagnóstico Ambiental Aplicado e Produtos Técnicos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod5-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 5</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">Encerramento, Formulário e Referências</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-avaliacao-geral-final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avaliação Geral Integrada, Simulado Final Completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-formulario-glossario-referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formulário Técnico, Glossário e Referências Oficiais</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul class="collapse">
+  <li><a href="#vocabulário-técnico-e-símbolos-do-capítulo-13" id="toc-vocabulário-técnico-e-símbolos-do-capítulo-13" class="nav-link active" data-scroll-target="#vocabulário-técnico-e-símbolos-do-capítulo-13">Vocabulário Técnico e Símbolos do Capítulo 13</a></li>
+  <li><a href="#princípios-da-bioengenharia-de-solos-e-engenharia-natural" id="toc-princípios-da-bioengenharia-de-solos-e-engenharia-natural" class="nav-link" data-scroll-target="#princípios-da-bioengenharia-de-solos-e-engenharia-natural">Princípios da Bioengenharia de Solos e Engenharia Natural</a></li>
+  <li><a href="#efeitos-mecânicos-e-hidrológicos-da-vegetação-na-estabilidade" id="toc-efeitos-mecânicos-e-hidrológicos-da-vegetação-na-estabilidade" class="nav-link" data-scroll-target="#efeitos-mecânicos-e-hidrológicos-da-vegetação-na-estabilidade">Efeitos Mecânicos e Hidrológicos da Vegetação na Estabilidade</a></li>
+  <li><a href="#técnicas-vegetativas-paliçadas-permeáveis-e-biomantas-biodegradáveis" id="toc-técnicas-vegetativas-paliçadas-permeáveis-e-biomantas-biodegradáveis" class="nav-link" data-scroll-target="#técnicas-vegetativas-paliçadas-permeáveis-e-biomantas-biodegradáveis">Técnicas Vegetativas, Paliçadas Permeáveis e Biomantas Biodegradáveis</a></li>
+  <li><a href="#comparação-técnica-e-econômica-com-obras-cinzas-rígidas" id="toc-comparação-técnica-e-econômica-com-obras-cinzas-rígidas" class="nav-link" data-scroll-target="#comparação-técnica-e-econômica-com-obras-cinzas-rígidas">Comparação Técnica e Econômica com Obras Cinzas Rígidas</a></li>
+  <li><a href="#síntese-aplicada-análise-comparativa-de-custo-e-desempenho" id="toc-síntese-aplicada-análise-comparativa-de-custo-e-desempenho" class="nav-link" data-scroll-target="#síntese-aplicada-análise-comparativa-de-custo-e-desempenho">Síntese Aplicada, Análise Comparativa de Custo e Desempenho</a></li>
+  <li><a href="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio" id="toc-armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="nav-link" data-scroll-target="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</a></li>
+  <li><a href="#exercícios-de-fixação" id="toc-exercícios-de-fixação" class="nav-link" data-scroll-target="#exercícios-de-fixação">Exercícios de fixação</a></li>
+  <li><a href="#questões-de-aplicação" id="toc-questões-de-aplicação" class="nav-link" data-scroll-target="#questões-de-aplicação">Questões de aplicação</a></li>
+  <li><a href="#gabarito-comentado" id="toc-gabarito-comentado" class="nav-link" data-scroll-target="#gabarito-comentado">Gabarito comentado</a></li>
+  <li><a href="#síntese-conceitual" id="toc-síntese-conceitual" class="nav-link" data-scroll-target="#síntese-conceitual">Síntese conceitual</a></li>
+  <li><a href="#autoavaliação" id="toc-autoavaliação" class="nav-link" data-scroll-target="#autoavaliação">Autoavaliação</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main data-book-tables="true" class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/13-bioengenharia-agua-solo.html">Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico</a></li><li class="breadcrumb-item"><a href="../capitulos/13-bioengenharia-agua-solo.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="cap:bioengenharia_agua_solo" class="quarto-section-identifier"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>A bioengenharia utiliza plantas e materiais associados para modificar processos de erosão e estabilização. O funcionamento de uma intervenção depende da energia da água, das propriedades do terreno, da capacidade de estabelecimento da vegetação e da manutenção, exigindo que a escolha da técnica parta do mecanismo que se pretende controlar.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>O que você vai aprender neste capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O capítulo desenvolve a seleção de técnicas vegetativas, paliçadas permeáveis e biomantas, bem como a interpretação de seus efeitos hidráulicos, superficiais e radiculares. O estudante deve justificar a compatibilidade entre processo, material e condição do local e definir como o desempenho será acompanhado.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Revisando o que você precisa saber
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A leitura utiliza os conceitos de escoamento concentrado, tensão de cisalhamento, poropressão e resistência dos materiais. A proteção superficial atua durante o estabelecimento da vegetação, enquanto o reforço radicular depende do desenvolvimento das raízes e de sua interação com o solo.</p>
+</div>
+</div>
+<section id="vocabulário-técnico-e-símbolos-do-capítulo-13" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulário-técnico-e-símbolos-do-capítulo-13">Vocabulário Técnico e Símbolos do Capítulo 13</h2>
+<p>A <strong>Bioengenharia de Solos (Engenharia Natural)</strong> designa a disciplina técnica que emprega plantas vivas, isoladas ou associadas a materiais inertes como madeira, fibras vegetais e rocha, atuando como elementos estruturais vivos na estabilização de taludes, no controle erosivo e na recuperação de margens. Na mecânica dos solos vegetados, a resistência ao cisalhamento no plano potencial de ruptura é representada por <span class="math inline">\(\tau\)</span> (<span class="math inline">\(\text{kPa}\)</span>), resultando da combinação entre a coesão efetiva intrínseca do solo <span class="math inline">\(c'\)</span> (<span class="math inline">\(\text{kPa}\)</span>), a coesão aparente adicional conferida pela malha de raízes sob tração <span class="math inline">\(c_r\)</span> ou <span class="math inline">\(\Delta c_r\)</span> (<span class="math inline">\(\text{kPa}\)</span>), a tensão normal efetiva <span class="math inline">\(\sigma'\)</span> (<span class="math inline">\(\text{kPa}\)</span>) e o ângulo de atrito interno efetivo do solo <span class="math inline">\(\phi'\)</span> (em graus).</p>
+<p>No dimensionamento hidráulico e geométrico de estruturas lineares de contenção em ravinas e voçorocas, <span class="math inline">\(E\)</span> indica o espaçamento longitudinal entre paliçadas consecutivas (<span class="math inline">\(\text{m}\)</span>), <span class="math inline">\(h\)</span> representa a altura útil da paliçada acima do leito (<span class="math inline">\(\text{m}\)</span>) e <span class="math inline">\(S\)</span> expressa a declividade longitudinal do canal ou ravina (<span class="math inline">\(\text{m}\cdot\text{m}^{-1}\)</span>). Associam-se a esses parâmetros o comprimento da cunha de sedimentos acumulada a montante da paliçada <span class="math inline">\(L_m\)</span> (<span class="math inline">\(\text{m}\)</span>), a largura média do canal <span class="math inline">\(b\)</span> (<span class="math inline">\(\text{m}\)</span>) e o volume retido <span class="math inline">\(V\)</span> (<span class="math inline">\(\text{m}^3\)</span>).</p>
+</section>
+<section id="princípios-da-bioengenharia-de-solos-e-engenharia-natural" class="level2">
+<h2 class="anchored" data-anchor-id="princípios-da-bioengenharia-de-solos-e-engenharia-natural">Princípios da Bioengenharia de Solos e Engenharia Natural</h2>
+<p>A estabilização duradoura de taludes rodoviários, margens de cursos d’água, áreas mineradas e platôs terraplenados demanda a integração entre suporte físico imediato e regeneração biológica contínua. Quando a erosão já superou a capacidade de recuperação espontânea da paisagem, o solo exposto perde umidade, nutrientes e propágulos a cada evento chuvoso, dificultando o estabelecimento de plântulas sem proteção prévia. Na fronteira entre a engenharia geotécnica, a hidrologia de encostas e a ecologia aplicada, a <strong>Bioengenharia de Solos</strong> (também denominada <strong>Engenharia Natural</strong>) oferece soluções que conciliam estabilidade mecânica e funcionalidade ecossistêmica (GRAY; SOTIR, 1996; SCHIECHTL; STERN, 1996; DURLO; SUTILI, 2005).</p>
+<p>O princípio construtivo dessas intervenções baseia-se na transição gradual de funções ao longo do tempo. Na etapa inicial, estruturas leves ou materiais biodegradáveis, como biomantas de fibra vegetal, paliçadas de madeira e fascinas, assumem a proteção física imediata contra o impacto das gotas de chuva e o arraste pela enxurrada. À medida que esses elementos inertes se decompõem gradualmente e incorporam matéria orgânica ao substrato, o sistema radicular e a parte aérea das plantas crescem, consolidam os agregados e assumem em definitivo a função estabilizadora, tornando a obra autossustentável e integrada à dinâmica hidrológica da vertente.</p>
+<p>Segundo Durlo e Sutili (2005) e Gray e Sotir (1996), projetos consistentes de Bioengenharia apoiam-se em quatro pilares operacionais integrados que orientam desde o preparo do terreno até o estabelecimento da vegetação. A <strong>proteção superficial imediata</strong> intercepta o impacto direto das gotas de chuva (<em>splash</em>) desde o primeiro dia pós-obra por meio de coberturas mortas, biomantas ou geotêxteis naturais, preservando a porosidade superficial. Em paralelo, a <strong>dissipação da energia hidráulica</strong> reduz a velocidade e a tensão cisalhante do escoamento concentrado mediante barreiras permeáveis escalonadas, como paliçadas, retentores e fascinas, que mantêm a permeabilidade do leito. Essa proteção inicial viabiliza o <strong>reforço vivo crescente</strong>, alcançado pela seleção de espécies rústicas, nativas ou adaptadas ao bioma local, como arbustos da Caatinga e gramíneas cespitosas de enraizamento profundo, cuja resistência mecânica amplia-se com o tempo. De modo complementar, o emprego de insumos regionais de baixa pegada energética estimula a <strong>sucessão ecológica e o baixo impacto ambiental</strong>, favorecendo o retorno da fauna edáfica, a infiltração hídrica e a recomposição da vegetação ciliar ou de encosta.</p>
+</section>
+<section id="efeitos-mecânicos-e-hidrológicos-da-vegetação-na-estabilidade" class="level2">
+<h2 class="anchored" data-anchor-id="efeitos-mecânicos-e-hidrológicos-da-vegetação-na-estabilidade">Efeitos Mecânicos e Hidrológicos da Vegetação na Estabilidade</h2>
+<p>A vegetação atua simultaneamente sobre os dois lados do equilíbrio geotécnico de um talude ou margem fluvial, elevando a <strong>resistência mecânica</strong> da massa de solo e atenuando as <strong>solicitações hidrológicas</strong> que desencadeiam escorregamentos e incisões erosivas. Enquanto solos desnudos sofrem selamento superficial, saturação rápida e escoamento acelerado, solos vegetados conservam uma matriz porosa estruturada e armada por fibras biológicas vivas (<a href="#fig-efeitos_raizes_solo" class="quarto-xref">Figura&nbsp;<span>13.1</span></a>).</p>
+<div id="fig-efeitos_raizes_solo" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-efeitos_raizes_solo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig13_efeitos_raizes_solo.png" title="fig:" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-efeitos_raizes_solo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;13.1: Integração dos efeitos mecânicos (tração radicular, ancoragem em camadas estáveis e arqueamento lateral) e efeitos hidrológicos (interceptação da copa, rugosidade superficial, infiltração e evapotranspiração) da vegetação na estabilização de encostas e margens.
+</figcaption>
+</figure>
+</div>
+<p>No plano mecânico, conforme sistematizam Gray e Sotir (1996), as raízes estabilizam o solo por três mecanismos físicos complementares (<a href="#fig-efeitos_raizes_solo" class="quarto-xref">Figura&nbsp;<span>13.1</span></a>). Embora o solo possua elevada resistência à compressão, sua resistência à tração é reduzida; nesse contexto, as raízes finas e médias funcionam como fibras flexíveis de alta resistência à tração distribuídas na matriz terrosa, de modo que, quando uma zona potencial de cisalhamento tende a se deslocar, as raízes que atravessam esse plano são tensionadas e transferem parte do esforço para porções adjacentes estáveis, gerando o <strong>reforço por tração radicular (<span class="math inline">\(\Delta c_r\)</span>)</strong>. Ao mesmo tempo, raízes pivotantes profundas atravessam horizontes superficiais mais friáveis e penetram em camadas subsuperficiais mais coesas ou fraturas do saprolito, promovendo <strong>ancoragem em horizontes firmes</strong> de modo análogo a microestacas naturais. Ademais, sistemas radiculares densos de árvores e arbustos distribuídos na vertente formam núcleos de maior rigidez que redistribuem as tensões laterais por <strong>efeito de arqueamento</strong>, restringindo o deslocamento de cunhas de solo entre os troncos.</p>
+<p>No plano hidrológico, a cobertura vegetal protege o talude por uma sequência integrada de processos hidráulicos e edáficos. Inicialmente, as copas e a camada de serapilheira promovem a <strong>interceptação</strong> da chuva, amortecendo a energia cinética das gotas antes do contato com os agregados do solo e evitando a desagregação por salpicamento. Em seguida, os colmos, touceiras e detritos orgânicos aumentam a <strong>rugosidade superficial</strong> do terreno (elevando o coeficiente de rugosidade de Manning <span class="math inline">\(n\)</span>), o que reduz a velocidade média do escoamento laminar e concentrado e diminui sua capacidade de arraste sólido. Ao longo do perfil, os bioporos abertos por raízes senescentes e pela fauna edáfica estimulam a <strong>infiltração</strong> e a recarga subsuperficial, ao passo que a <strong>evapotranspiração</strong> consome água da zona radicular entre eventos chuvosos, rebaixando o grau de saturação e a poropressão positiva (<span class="math inline">\(u\)</span>) no interior do maciço.</p>
+<section id="13-bioengenharia-agua-solo-critério-de-mohrcoulomb-com-reforço-radicular-delta-c_r" class="level3">
+<h3 class="anchored" data-anchor-id="13-bioengenharia-agua-solo-critério-de-mohrcoulomb-com-reforço-radicular-delta-c_r">Critério de Mohr-Coulomb com Reforço Radicular (<span class="math inline">\(\Delta c_r\)</span>)</h3>
+<p><span class="math display">\[
+\tau = (c' + c_r) + \sigma' \tan\phi' \qquad \text{com} \quad \sigma' = \sigma - u \qquad\qquad FS = \frac{\tau}{\tau_{\text{sol}}}
+\]</span></p>
+<p>Nessa expressão, <span class="math inline">\(\tau\)</span> representa a resistência ao cisalhamento disponível no plano potencial de ruptura (<span class="math inline">\(\text{kPa}\)</span>), <span class="math inline">\(c'\)</span> é a coesão efetiva intrínseca do solo (<span class="math inline">\(\text{kPa}\)</span>, próxima de zero em solos arenosos puros), <span class="math inline">\(c_r\)</span> (<span class="math inline">\(\Delta c_r\)</span>) traduz o reforço adicional conferido pelas raízes tracionadas (<span class="math inline">\(\text{kPa}\)</span>), <span class="math inline">\(\sigma'\)</span> indica a tensão normal efetiva resultante da diferença entre a tensão total <span class="math inline">\(\sigma\)</span> e a pressão da água nos poros <span class="math inline">\(u\)</span> (<span class="math inline">\(\text{kPa}\)</span>), e <span class="math inline">\(\phi'\)</span> expressa o ângulo de atrito interno efetivo (em graus). A razão <span class="math inline">\(FS\)</span> define o Fator de Segurança simplificado frente à tensão cisalhante solicitante <span class="math inline">\(\tau_{\text{sol}}\)</span>.</p>
+<p>Em projetos aplicados de controle erosivo, o reforço geotécnico das raízes na vertente e nos taludes articula-se diretamente ao disciplinamento hidráulico do talvegue (<a href="#fig-mohr-coulomb-palicadas" class="quarto-xref">Figura&nbsp;<span>13.2</span></a>). Enquanto a vegetação eleva a resistência ao cisalhamento <span class="math inline">\(\tau_f\)</span> ao acrescentar <span class="math inline">\(c_r\)</span> e reduzir a poropressão <span class="math inline">\(u\)</span> por sucção e evapotranspiração (Painel a), alcançando patamares de segurança superiores a <span class="math inline">\(FS &gt; 1{,}30\)</span> sem impermeabilizar o terreno, as paliçadas permeáveis escalonadas pela regra pé-à-crista reduzem a declividade hidráulica efetiva do canal erodido e desaceleram o escoamento concentrado (Painel b).</p>
+<div id="fig-mohr-coulomb-palicadas" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagrama em dois painéis: (a) equação de Mohr-Coulomb com coesão radicular c_r e redução de poropressão u; (b) regra pé-à-crista E = h/tan(theta) para paliçadas">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mohr-coulomb-palicadas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap13_mohr_coulomb_palicadas.png" class="img-fluid figure-img" alt="Diagrama em dois painéis: (a) equação de Mohr-Coulomb com coesão radicular c_r e redução de poropressão u; (b) regra pé-à-crista E = h/tan(theta) para paliçadas">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mohr-coulomb-palicadas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;13.2: Integração geotécnica e hidráulica na Bioengenharia de Solos, reunindo (a) os mecanismos da equação de Mohr-Coulomb vegetada e (b) a regra pé-à-crista de dimensionamento de paliçadas permeáveis em talvegue.
+</figcaption>
+</figure>
+</div>
+<p>O Exemplo 13.1 quantifica exatamente como um incremento de coesão radicular <span class="math inline">\(c_r\)</span> altera o Fator de Segurança de um talude de corte exposto no Semiárido Baiano.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 13.1 (Básico). Reforço Radicular na Equação de Mohr-Coulomb em Talude Degradado
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Durante o diagnóstico de um talude de corte em solo argilo-arenoso ao longo de uma estrada de acesso no Semiárido Baiano, avalia-se o ganho de estabilidade proporcionado pela implantação de vegetação de enraizamento denso em comparação ao solo exposto.</p>
+<p><strong>Dados disponíveis.</strong> Coesão efetiva do solo <span class="math inline">\(c' = 8{,}0\text{ kPa}\)</span>; ângulo de atrito efetivo <span class="math inline">\(\phi' = 28^\circ\)</span> (<span class="math inline">\(\tan 28^\circ \approx 0{,}5317\)</span>); tensão normal efetiva no plano potencial de ruptura <span class="math inline">\(\sigma' = 25{,}0\text{ kPa}\)</span>; reforço radicular medido para a espécie implantada <span class="math inline">\(c_r = 6{,}5\text{ kPa}\)</span>; tensão cisalhante solicitante durante chuva intensa <span class="math inline">\(\tau_{\text{sol}} = 23{,}0\text{ kPa}\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcule a resistência ao cisalhamento sem vegetação (<span class="math inline">\(\tau_0\)</span>) e com vegetação (<span class="math inline">\(\tau_1\)</span>), o ganho percentual de resistência e o Fator de Segurança (<span class="math inline">\(FS = \tau / \tau_{\text{sol}}\)</span>) nos dois cenários.</p>
+<p><strong>Fundamento da análise.</strong> Aplicação direta do critério de Mohr-Coulomb modificado pelo reforço radicular (Gray; Sotir, 1996), <span class="math inline">\(\tau = (c' + c_r) + \sigma'\tan\phi'\)</span>.</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>Etapa 1 (Atrito interno e resistência sem raízes)</strong>, <span class="math inline">\(\sigma' \tan\phi' = 25{,}0 \times 0{,}5317 = 13{,}29\text{ kPa}\)</span> e <span class="math inline">\(\tau_0 = 8{,}0 + 13{,}29 = 21{,}29\text{ kPa}\)</span>. Na <strong>Etapa 2 (Resistência com reforço radicular e ganho relativo)</strong>,</p>
+<p><span class="math display">\[
+\tau_1 = (8{,}0 + 6{,}5) + 13{,}29 = 27{,}79\text{ kPa} \qquad\qquad \Delta_{\%} = \frac{27{,}79 - 21{,}29}{21{,}29} \times 100\% \approx 30{,}53\%
+\]</span></p>
+<p>Na <strong>Etapa 3 (Fator de Segurança <span class="math inline">\(FS\)</span>)</strong>,</p>
+<p><span class="math display">\[
+FS_0 = \frac{21{,}29}{23{,}0} \approx 0{,}93 \quad (\text{instável, } FS &lt; 1{,}0) \qquad\qquad FS_1 = \frac{27{,}79}{23{,}0} \approx 1{,}21 \quad (\text{estável, } FS &gt; 1{,}0)
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> Sem vegetação, <span class="math inline">\(\tau_0 = 21{,}29\text{ kPa}\)</span> (<span class="math inline">\(FS_0 = 0{,}93\)</span>); com reforço radicular, <span class="math inline">\(\tau_1 = 27{,}79\text{ kPa}\)</span> (<span class="math inline">\(FS_1 = 1{,}21\)</span>), representando ganho de <span class="math inline">\(30{,}53\%\)</span> na resistência ao cisalhamento.</p>
+<p><strong>Condições de validade.</strong> O resultado é coerente com a física do solo, pois um incremento modesto de coesão radicular (<span class="math inline">\(6{,}5\text{ kPa}\)</span>) converte um talude superficialmente instável (<span class="math inline">\(FS &lt; 1{,}0\)</span>) em estável (<span class="math inline">\(FS &gt; 1{,}2\)</span>) sob condição chuvosa crítica.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="técnicas-vegetativas-paliçadas-permeáveis-e-biomantas-biodegradáveis" class="level2">
+<h2 class="anchored" data-anchor-id="técnicas-vegetativas-paliçadas-permeáveis-e-biomantas-biodegradáveis">Técnicas Vegetativas, Paliçadas Permeáveis e Biomantas Biodegradáveis</h2>
+<p>A seleção das técnicas de bioengenharia depende da declividade da vertente, da presença de fluxo concentrado, da profundidade da incisão erosiva e das condições climáticas regionais. Em ambientes semiáridos, como a área de estudo da disciplina CHF662 na Bahia, o projeto deve considerar chuvas convectivas de alta intensidade seguidas por longos períodos de déficit hídrico, exigindo espécies e materiais capazes de resistir ao estresse hídrico inicial.</p>
+<section id="técnicas-vegetativas-lineares-e-de-cobertura-estacas-vivas-fascinas-e-trançados" class="level3">
+<h3 class="anchored" data-anchor-id="técnicas-vegetativas-lineares-e-de-cobertura-estacas-vivas-fascinas-e-trançados">Técnicas vegetativas lineares e de cobertura, estacas vivas, fascinas e trançados</h3>
+<p>Entre as soluções que utilizam diretamente propágulos vegetativos lenhosos, as <strong>estacas vivas (<em>live stakes</em>)</strong> consistem em segmentos lenhosos ou semilenhosos de espécies com elevada capacidade de brotação, como gliricídia, sabiá, salgueiro em áreas úmidas ou espécies nativas propagáveis por estaquia, cravados perpendicularmente à superfície do talude ou levemente inclinados para jusante. Essas estacas funcionam como pinos biológicos que drenam o excesso de umidade superficial e ancoram mecanicamente os primeiros <span class="math inline">\(0{,}4\text{ m}\)</span> a <span class="math inline">\(0{,}8\text{ m}\)</span> de solo.</p>
+<p>Quando há necessidade de barrar o transporte sólido ao longo da rampa, empregam-se <strong>fascinas vivas (<em>live fascines</em>)</strong>, formadas por feixes cilíndricos alongados de ramos vivos amarrados com arame ou corda de sisal e enterrados parcialmente em valas abertas em curva de nível na encosta ou na base de margens fluviais. Dispostas transversalmente ao escoamento, as fascinas atuam como pequenos terraços permeáveis contínuos que fragmentam o comprimento de rampa, retêm sedimentos finos e emitem raízes e brotos ao longo de todo o feixe. Em vertentes mais instáveis ou com maior mobilização superficial de solo, recorre-se aos <strong>trançados vivos (<em>wattle fences</em>)</strong>, que são cercas baixas construídas com estacas cravadas verticalmente e ramos flexíveis entrelaçados horizontalmente em curvas de nível, retendo o material erodido a montante e formando patamares de menor declividade favoráveis ao estabelecimento de mudas. O Exemplo 13.4 ilustra o dimensionamento integrado de estacas vivas e fascinas em um trecho de margem fluvial degradada.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 13.4 (Intermediário). Dimensionamento de Estacas Vivas e Fascinas em Margem Fluvial
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Um trecho de margem fluvial degradada apresenta solapamento na base e exposição do talude marginal. O projeto de recuperação combina fascinas vivas na zona de variação do nível d’água com plantio de estacas vivas na rampa superior.</p>
+<p><strong>Dados disponíveis.</strong> Extensão da margem <span class="math inline">\(L = 180\text{ m}\)</span>; largura da faixa de rampa tratada com estacas vivas <span class="math inline">\(w = 4{,}0\text{ m}\)</span> (área <span class="math inline">\(= 720\text{ m}^2\)</span>); espaçamento das estacas na rampa igual a <span class="math inline">\(0{,}80\text{ m} \times 0{,}80\text{ m}\)</span> (<span class="math inline">\(0{,}64\text{ m}^2\)</span> por estaca); <span class="math inline">\(3\)</span> linhas contínuas de fascinas na base (<span class="math inline">\(3 \times 180 = 540\text{ m}\)</span> lineares), fixadas por <span class="math inline">\(1\)</span> estaca a cada <span class="math inline">\(0{,}75\text{ m}\)</span>; taxa média de pegamento esperada em campo igual a <span class="math inline">\(75\%\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcule o número de estacas na rampa, o número de estacas de fixação das fascinas, o total de estacas necessárias e a quantidade estimada de plantas vivas estabelecidas após o primeiro ciclo chuvoso.</p>
+<p><strong>Fundamento da análise.</strong> Razão entre área ou comprimento e espaçamento unitário, seguida da aplicação da taxa de sobrevivência.</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>Etapa 1 (Estacas na rampa e nas fascinas)</strong>, obtêm-se <span class="math inline">\(N_{\text{rampa}} = 720 / 0{,}64 = 1.125\text{ estacas}\)</span> e <span class="math inline">\(N_{\text{fasc}} = 540 / 0{,}75 = 720\text{ estacas}\)</span>. Na <strong>Etapa 2 (Total e estimativa de sobrevivência a <span class="math inline">\(75\%\)</span>)</strong>,</p>
+<p><span class="math display">\[
+N_{\text{total}} = 1.125 + 720 = 1.845\text{ estacas} \qquad\qquad N_{\text{vivas}} = 1.845 \times 0{,}75 = 1.383{,}75 \approx 1.384\text{ plantas vivas}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> São necessárias <span class="math inline">\(1.125\)</span> estacas na rampa e <span class="math inline">\(720\)</span> nas fascinas (total de <span class="math inline">\(1.845\)</span> estacas), resultando em aproximadamente <span class="math inline">\(1.384\)</span> plantas vivas estabelecidas.</p>
+<p><strong>Condições de validade.</strong> Mesmo com <span class="math inline">\(25\%\)</span> de mortalidade inicial, permanecem cerca de <span class="math inline">\(1{,}17\text{ planta}\cdot\text{m}^{-2}\)</span> na rampa (<span class="math inline">\(844/720\)</span>) e <span class="math inline">\(3{,}0\text{ estacas}\cdot\text{m}^{-1}\)</span> nas fascinas ao longo da margem (<span class="math inline">\(540/180\)</span>), densidades adequadas para formar cobertura contínua na zona crítica.</p>
+</div>
+</div>
+<p>Na escolha do material propagativo para essas técnicas vivas, a seleção botânica deve respeitar a ecologia da bacia hidrográfica e as exigências normativas de restauração.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 1, Usar Espécies Exóticas Invasoras por Facilidade de Pegamento
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Fechar os taludes com espécies exóticas agressivas (como leucena ou gramíneas africanas invasoras) apenas pelo crescimento rápido compromete a sucessão ecológica nativa e viola diretrizes de PRAD em Áreas de Preservação Permanente. A escolha deve priorizar espécies nativas regionais ou coberturas anuais que cedam espaço às nativas.</p>
+</div>
+</div>
+</section>
+<section id="paliçadas-e-barragens-permeáveis-no-controle-de-ravinas-e-voçorocas" class="level3">
+<h3 class="anchored" data-anchor-id="paliçadas-e-barragens-permeáveis-no-controle-de-ravinas-e-voçorocas">Paliçadas e barragens permeáveis no controle de ravinas e voçorocas</h3>
+<p>Quando a erosão já escavou sulcos profundos, ravinas ou voçorocas, coberturas superficiais isoladas perdem eficiência diante da energia cinética do fluxo concentrado. Nessa condição, implantam-se <strong>paliçadas</strong> (ou pequenas <strong>barragens permeáveis</strong> construídas com madeira, bambu, estacas vivas ou sacaria biodegradável preenchida com solo local), cuja disposição escalonada em série encontra-se representada na <a href="#fig-bioengenharia_palicada_talude" class="quarto-xref">Figura&nbsp;<span>13.3</span></a>. Ao permitir a passagem controlada da água pelos interstícios da estrutura enquanto retém as partículas sólidas transportadas por arraste e saltação, a paliçada reduz o empuxo hidrostático a montante e previne o colapso por pressão de água observado em barreiras impermeáveis.</p>
+<div id="fig-bioengenharia_palicada_talude" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bioengenharia_palicada_talude-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig12_bioengenharia_palicada_talude.png" title="fig:" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bioengenharia_palicada_talude-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;13.3: Esquema técnico de controle de erosão linear com paliçadas permeáveis escalonadas em série, evidenciando o espaçamento <span class="math inline">\(E = h/S\)</span>, a cunha de sedimentos retidos a montante e o revestimento complementar de talude com biomanta e estacas vivas.
+</figcaption>
+</figure>
+</div>
+<p>O acúmulo progressivo de sedimentos a montante de cada paliçada (<a href="#fig-bioengenharia_palicada_talude" class="quarto-xref">Figura&nbsp;<span>13.3</span></a>) reduz a declividade efetiva do leito da ravina, originando patamares estabilizados em forma de degraus vegetados que diminuem a velocidade da enxurrada e viabilizam a colonização vegetal no interior da antiga incisão, enquanto os taludes laterais recebem proteção complementar com biomanta e estacas vivas. Em solos muito friáveis ou trechos de curvas sinuosas, recomenda-se reduzir o espaçamento teórico em <span class="math inline">\(15\%\)</span> a <span class="math inline">\(20\%\)</span> como margem de segurança construtiva, verificando também a fundação e o engastamento lateral nas margens.</p>
+<p><span class="math display">\[
+E = \frac{h}{S} \qquad\qquad V = \frac{1}{2} \cdot L_m \cdot h \cdot b \qquad\qquad M = V \cdot \rho_s
+\]</span></p>
+<p>Nessa formulação, <span class="math inline">\(E\)</span> expressa o espaçamento longitudinal entre paliçadas consecutivas (<span class="math inline">\(\text{m}\)</span>) sob o critério pé-à-crista, <span class="math inline">\(h\)</span> é a altura útil da paliçada acima do leito (<span class="math inline">\(\text{m}\)</span>) e <span class="math inline">\(S\)</span> indica a declividade longitudinal do canal em razão decimal (<span class="math inline">\(\text{m}\cdot\text{m}^{-1}\)</span>, equivalente a <span class="math inline">\(S(\%)/100\)</span>). Para o prisma triangular de sedimentos retidos a montante, <span class="math inline">\(V\)</span> representa o volume máximo retido por estrutura (<span class="math inline">\(\text{m}^3\)</span>), <span class="math inline">\(L_m\)</span> indica o comprimento da cunha (<span class="math inline">\(L_m = E\)</span> no nivelamento teórico), <span class="math inline">\(b\)</span> é a largura média do canal (<span class="math inline">\(\text{m}\)</span>), <span class="math inline">\(\rho_s\)</span> expressa a densidade aparente seca do sedimento (<span class="math inline">\(\text{t}\cdot\text{m}^{-3}\)</span>) e <span class="math inline">\(M\)</span> fornece a massa de solo retida (<span class="math inline">\(\text{t}\)</span>).</p>
+<p>O Exemplo 13.2 demonstra o dimensionamento completo de uma série de paliçadas em uma ravina instalada a jusante de um bueiro rodoviário.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 13.2 (Intermediário). Dimensionamento de Paliçadas Permeáveis e Volume de Sedimentos Retidos
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Uma ravina ativa formada a jusante de um bueiro rodoviário apresenta risco de evoluir para voçoroca e assorear um riacho intermitente. A equipe técnica propõe instalar paliçadas de madeira e bambu em série ao longo do trecho mais íngreme.</p>
+<p><strong>Dados disponíveis.</strong> Comprimento total do trecho a tratar <span class="math inline">\(L_t = 45{,}0\text{ m}\)</span>; declividade longitudinal média do leito da ravina <span class="math inline">\(S = 8\%\)</span> (<span class="math inline">\(0{,}08\text{ m}\cdot\text{m}^{-1}\)</span>); altura útil adotada para cada paliçada <span class="math inline">\(h = 0{,}60\text{ m}\)</span>; largura média da seção da ravina <span class="math inline">\(b = 2{,}50\text{ m}\)</span>; densidade aparente do sedimento retido <span class="math inline">\(\rho_s = 1{,}35\text{ t}\cdot\text{m}^{-3}\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Determine o espaçamento teórico entre paliçadas (<span class="math inline">\(E\)</span>), a quantidade de estruturas necessárias no trecho (<span class="math inline">\(n\)</span>), o volume da cunha de sedimentos retido por paliçada (<span class="math inline">\(V_1\)</span>), o volume total (<span class="math inline">\(V_{\text{total}}\)</span>) e a massa total de sedimentos retida (<span class="math inline">\(M\)</span>).</p>
+<p><strong>Fundamento da análise.</strong> Cálculo geométrico de perfil nivelado em degraus (<span class="math inline">\(E = h/S\)</span>) e volume prismático triangular de cunha sedimentar (<span class="math inline">\(V = \frac{1}{2}\cdot L_m \cdot h \cdot b\)</span>, com <span class="math inline">\(L_m = E\)</span>).</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>Etapa 1 (Espaçamento longitudinal <span class="math inline">\(E\)</span> e número de paliçadas <span class="math inline">\(n\)</span>)</strong>,</p>
+<p><span class="math display">\[
+E = \frac{h}{S} = \frac{0{,}60}{0{,}08} = 7{,}50\text{ m} \qquad\qquad n = \frac{L_t}{E} = \frac{45{,}0}{7{,}50} = 6\text{ paliçadas}
+\]</span></p>
+<p>Na <strong>Etapa 2 (Volume por paliçada, volume total e massa retida)</strong>,</p>
+<p><span class="math display">\[
+V_1 = \frac{1}{2} \cdot 7{,}50 \cdot 0{,}60 \cdot 2{,}50 = 5{,}625\text{ m}^3 \qquad V_{\text{total}} = 6 \times 5{,}625 = 33{,}75\text{ m}^3 \qquad M = 33{,}75 \times 1{,}35 = 45{,}56\text{ t}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> Espaçamento <span class="math inline">\(E = 7{,}50\text{ m}\)</span>; <span class="math inline">\(n = 6\)</span> paliçadas; <span class="math inline">\(V_1 = 5{,}625\text{ m}^3\)</span> por estrutura; volume total retido <span class="math inline">\(V_{\text{total}} = 33{,}75\text{ m}^3\)</span>, equivalente a <span class="math inline">\(45{,}56\text{ t}\)</span> de sedimentos.</p>
+<p><strong>Condições de validade.</strong> Seis estruturas de <span class="math inline">\(0{,}60\text{ m}\)</span> de altura acumulam um desnível total de <span class="math inline">\(6 \times 0{,}60 = 3{,}60\text{ m}\)</span>, igual ao desnível natural do trecho de <span class="math inline">\(45{,}0\text{ m}\)</span> a <span class="math inline">\(8\%\)</span> (<span class="math inline">\(45{,}0 \times 0{,}08 = 3{,}60\text{ m}\)</span>), fechando geometricamente o escalonamento.</p>
+</div>
+</div>
+<p>Na implantação em campo, um dos erros executivos mais destrutivos consiste em vedar completamente a seção da paliçada, convertendo-a em uma barreira estanque sujeita a transbordamento lateral.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 2, Construir Paliçadas Impermeáveis Sem Dissipação de Energia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Fechar totalmente a seção da ravina com chapas rígidas, alvenaria sem drenos ou lonas plásticas cria empuxo hidrostático excessivo a montante e transbordamento concentrado pelas laterais, provocando erosão regressiva nas ombreiras e destruição da obra logo na primeira enxurrada intensa. Paliçadas devem ser <strong>permeáveis</strong> e devidamente engastadas nas paredes laterais da ravina.</p>
+</div>
+</div>
+</section>
+<section id="biomantas-geotêxteis-biodegradáveis-e-evidências-experimentais-de-campo" class="level3">
+<h3 class="anchored" data-anchor-id="biomantas-geotêxteis-biodegradáveis-e-evidências-experimentais-de-campo">Biomantas, geotêxteis biodegradáveis e evidências experimentais de campo</h3>
+<p>Em taludes recém-conformados, platôs de obras lineares ou áreas submetidas a hidrossemeadura, as <strong>biomantas</strong> e os <strong>geotêxteis biodegradáveis</strong> oferecem proteção imediata ao solo exposto por meio de mantas tecidas ou costuradas com fibras vegetais naturais. Na realidade produtiva do Nordeste brasileiro, a <strong>fibra de sisal (<em>Agave sisalana</em>)</strong>, amplamente disponível na Bahia, destaca-se pela boa resistência mecânica inicial e decomposição moderada entre <span class="math inline">\(12\)</span> e <span class="math inline">\(24\)</span> meses, integrando a bioengenharia à economia regional do Semiárido. Em taludes mais íngremes e margens submetidas a fluxos intermitentes mais energéticos, recomenda-se a <strong>fibra de coco (<em>Cocos nucifera</em>)</strong>, cuja elevada proporção de lignina assegura longevidade funcional entre <span class="math inline">\(24\)</span> e <span class="math inline">\(48\)</span> meses. Já as mantas de <strong>fibra de taboa (<em>Typha domingensis</em>) e juta</strong> constituem materiais leves e altamente higroscópicos, indicados para reter umidade na camada superficial em climas secos e proteger encostas de baixa a média declividade até a germinação do estrato herbáceo. Associam-se às biomantas os <strong>retentores de sedimentos</strong> (biorretentores cilíndricos preenchidos com palha, fibra de coco ou casca de arroz, dispostos em curvas de nível ou na base de taludes) e a <strong>revegetação estratificada</strong>, combinando gramíneas de cobertura rápida, leguminosas fixadoras de nitrogênio e espécies arbustivo-arbóreas nativas.</p>
+<p>A eficácia desses geomateriais depende diretamente da arquitetura das fibras e da continuidade do contato com o substrato mineral (<a href="#fig-geocomposito-estrutura" class="quarto-xref">Figura&nbsp;<span>13.4</span></a>). Em um geocompósito trilayer de fibras naturais estudado experimentalmente por Santos e colaboradores, a trama estruturada estabiliza o núcleo fibroso e mantém contato íntimo com os agregados do solo, evitando o escoamento concentrado sob a manta e os descolamentos durante a degradação em campo.</p>
+<div id="fig-geocomposito-estrutura" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Painel com a organização das camadas de fibras do geocompósito trilayer e detalhe do material em contato com o solo">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-geocomposito-estrutura-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/artigo_geocomposito_estrutura.jpg" class="img-fluid figure-img" alt="Painel com a organização das camadas de fibras do geocompósito trilayer e detalhe do material em contato com o solo">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-geocomposito-estrutura-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;13.4: Arquitetura de geocompósito trilayer de fibras naturais (a) e interface de contato direto com a superfície do solo (b). Fonte, Reprodução didática de estudo experimental em campo com vetiver e geocompósito trilayer (acervo fornecido pelos autores).
+</figcaption>
+</figure>
+</div>
+<p>Quando associados ao estabelecimento de gramíneas cespitosas de enraizamento profundo, como o capim-vetiver em parcelas experimentais delimitadas com coletores de enxurrada e sedimentos na base do talude (<a href="#fig-geocomposito-campo" class="quarto-xref">Figura&nbsp;<span>13.5</span></a>), esses sistemas permitem quantificar conjuntamente a integridade do geomaterial, a taxa de sobrevivência vegetal e a redução de carga sólida frente a eventos reais de precipitação.</p>
+<div id="fig-geocomposito-campo" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Quatro fotografias de parcelas em talude, vegetação de vetiver, geomateriais e coletores na base das parcelas">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-geocomposito-campo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/artigo_geocomposito_campo.jpg" class="img-fluid figure-img" alt="Quatro fotografias de parcelas em talude, vegetação de vetiver, geomateriais e coletores na base das parcelas">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-geocomposito-campo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;13.5: Implantação de parcelas experimentais em talude degradado com capim-vetiver, geomateriais biodegradáveis e coletores hidrossedimentológicos. Fonte, Reprodução didática de estudo experimental em campo com vetiver e geocompósito trilayer (acervo fornecido pelos autores; painéis originais preservados).
+</figcaption>
+</figure>
+</div>
+<p>O Exemplo 13.3 mostra como dimensionar a aquisição de rolos de biomanta de sisal e estimar a massa anual de solo retida em um talude de corte no Semiárido.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 13.3 (Intermediário). Proteção Superficial com Biomanta de Sisal e Redução de Perda de Solo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Um talude de corte recém-terraplenado em um empreendimento eólico no Semiárido apresenta perda de solo acentuada nos primeiros meses chuvosos. Para conter a erosão laminar e viabilizar o estabelecimento de gramíneas e leguminosas, prescreve-se a aplicação de biomanta de fibra de sisal associada à hidrossemeadura.</p>
+<p><strong>Dados disponíveis.</strong> Área do talude <span class="math inline">\(A = 1.200\text{ m}^2\)</span> (<span class="math inline">\(0{,}12\text{ ha}\)</span>); taxa de perda de solo sem proteção medida por pinos de erosão igual a <span class="math inline">\(45{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>; eficiência de redução da perda de solo pela biomanta de sisal igual a <span class="math inline">\(85\%\)</span>; dimensões comerciais do rolo de biomanta iguais a <span class="math inline">\(2{,}0\text{ m} \times 25{,}0\text{ m}\)</span> (<span class="math inline">\(50{,}0\text{ m}^2\)</span> por rolo), exigindo <span class="math inline">\(10\%\)</span> de acréscimo de área para sobreposição das emendas.</p>
+<p><strong>Problema a resolver.</strong> Calcule a perda anual de solo sem proteção e com biomanta (em <span class="math inline">\(\text{t}\cdot\text{ano}^{-1}\)</span>), a massa de solo retida anualmente na encosta e o número mínimo inteiro de rolos de biomanta a adquirir.</p>
+<p><strong>Fundamento da análise.</strong> Conversão de área para hectares, aplicação do fator de atenuação erosiva (<span class="math inline">\(1 - 0{,}85 = 0{,}15\)</span>) e dimensionamento de cobertura com sobreposição.</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>Etapa 1 (Perda sem proteção <span class="math inline">\(P_0\)</span>, perda residual <span class="math inline">\(P_1\)</span> e massa retida <span class="math inline">\(\Delta P\)</span>)</strong>,</p>
+<p><span class="math display">\[
+P_0 = 0{,}12 \times 45{,}0 = 5{,}40\text{ t}\cdot\text{ano}^{-1} \qquad P_1 = 5{,}40 \times 0{,}15 = 0{,}81\text{ t}\cdot\text{ano}^{-1} \qquad \Delta P = 5{,}40 - 0{,}81 = 4{,}59\text{ t}\cdot\text{ano}^{-1}
+\]</span></p>
+<p>Na <strong>Etapa 2 (Área efetiva com <span class="math inline">\(10\%\)</span> de sobreposição e quantidade de rolos)</strong>,</p>
+<p><span class="math display">\[
+A_{\text{ef}} = 1.200 \times 1{,}10 = 1.320\text{ m}^2 \qquad\qquad N_{\text{rolos}} = \frac{1.320}{50{,}0} = 26{,}4 \rightarrow \mathbf{27\text{ rolos}}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> A perda cai de <span class="math inline">\(5{,}40\text{ t}\cdot\text{ano}^{-1}\)</span> para <span class="math inline">\(0{,}81\text{ t}\cdot\text{ano}^{-1}\)</span> (retenção de <span class="math inline">\(4{,}59\text{ t}\cdot\text{ano}^{-1}\)</span>); devem ser adquiridos <span class="math inline">\(27\)</span> rolos de biomanta de sisal.</p>
+<p><strong>Condições de validade.</strong> O arredondamento para cima (<span class="math inline">\(27\)</span> rolos) garante que não falte material nas bordas de ancoragem em valas de coroamento e pé de talude, prática obrigatória em especificações executivas.</p>
+</div>
+</div>
+<p>Na instalação dessas coberturas em taludes, o desempenho medido em experimentos só se repete em obras reais quando o substrato é previamente regularizado e grampeado de forma contínua.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 3, Aplicar Biomanta Sem Contato Íntimo com o Solo Preparado
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Estender biomantas sobre superfície irregular cheia de torrões, pedras soltas ou sulcos não regularizados deixa bolsões de ar sob a manta. A água da chuva escoa por baixo da biomanta, escava o solo invisivelmente e impede que as raízes das sementes germinadas alcancem o substrato mineral. O preparo, a regularização e o grampeamento firme ao solo são obrigatórios.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="comparação-técnica-e-econômica-com-obras-cinzas-rígidas" class="level2">
+<h2 class="anchored" data-anchor-id="comparação-técnica-e-econômica-com-obras-cinzas-rígidas">Comparação Técnica e Econômica com Obras Cinzas Rígidas</h2>
+<p>A escolha entre soluções baseadas na natureza e obras convencionais de engenharia civil pauta-se por critérios técnicos, geotécnicos e econômicos objetivos. Em encostas com risco geotécnico imediato sobre edificações críticas ou em gargantas fluviais submetidas a velocidades hidráulicas extremas, estruturas rígidas de concreto ou alvenaria mostram-se indispensáveis. Entretanto, na maior parte das áreas degradadas rurais, faixas de domínio e margens fluviais, a bioengenharia apresenta vantagens estruturais e ecológicas consistentes ao longo do ciclo de vida do projeto.</p>
+<p>No que toca à <strong>evolução do desempenho e à interação hidrológica</strong>, soluções de bioengenharia exibem resistência crescente com o tempo, pois o desenvolvimento radicular amplia <span class="math inline">\(\Delta c_r\)</span> e a cobertura aérea amortece o salpicamento, enquanto estruturas rígidas sofrem fadiga, fissuração e solapamento progressivo sem capacidade de autorreparação. Além disso, sistemas vegetados mantêm a permeabilidade do substrato, favorecem a infiltração, aliviam poropressões (<span class="math inline">\(u\)</span>) e atenuam picos de cheia a jusante, ao passo que revestimentos impermeáveis exigem redes complexas de drenos e tendem a transferir energia cinética erosiva para trechos inferiores.</p>
+<p>Sob a perspectiva de <strong>custo, manutenção e conformidade legal</strong>, obras de bioengenharia reduzem em <span class="math inline">\(30\%\)</span> a <span class="math inline">\(75\%\)</span> o investimento inicial em taludes e ravinas por mobilizarem mão de obra e insumos vegetais locais, dispensando escavações profundas, aço e concreto. Embora demandem maior atenção nos primeiros <span class="math inline">\(12\)</span> a <span class="math inline">\(24\)</span> meses para irrigação de pegamento, replantio e controle de formigas cortadeiras, sua longevidade restaura funções ecossistêmicas, conectividade ripária e metas legais de PRAD em APPs. O acompanhamento pós-obra deve registrar sobrevivência, cobertura vegetal, integridade dos materiais e alteração das seções em referências fixas após eventos de chuva, distinguindo deposição temporária de estabilização definitiva.</p>
+</section>
+<section id="síntese-aplicada-análise-comparativa-de-custo-e-desempenho" class="level2">
+<h2 class="anchored" data-anchor-id="síntese-aplicada-análise-comparativa-de-custo-e-desempenho">Síntese Aplicada, Análise Comparativa de Custo e Desempenho</h2>
+<p>Para fechar a avaliação de viabilidade de um projeto de recuperação, o analista ambiental confronta o orçamento de implantação e manutenção das alternativas frente aos benefícios hidrológicos e ecológicos esperados na área de intervenção, como exemplificado a seguir.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 13.5 (Avançado). Análise Comparativa de Custo e Desempenho, Bioengenharia vs.&nbsp;Obra Cinza
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> A prefeitura de um município baiano precisa estabilizar <span class="math inline">\(100\text{ m}\)</span> de talude marginal de uma estrada vicinal que dá acesso a uma área de captação de água, evitando o assoreamento do manancial.</p>
+<p><strong>Dados disponíveis.</strong> Extensão do trecho <span class="math inline">\(L = 100\text{ m}\)</span>; altura do talude <span class="math inline">\(h = 3{,}0\text{ m}\)</span>. Alternativa A (obra cinza rígida em muro de concreto ou gabião argamassado) com custo unitário de <span class="math inline">\(\text{R\$ }1.850{,}00\cdot\text{m}^{-1}\)</span>. Alternativa B (bioengenharia com retentores de sedimentos na base, biomanta de coco e estacas vivas nativas) com custo de implantação de <span class="math inline">\(\text{R\$ }420{,}00\cdot\text{m}^{-1}\)</span> mais plano de manutenção de <span class="math inline">\(2\)</span> anos orçado em <span class="math inline">\(\text{R\$ }8.000{,}00\)</span> no total.</p>
+<p><strong>Problema a resolver.</strong> Calcule o custo total de cada alternativa, a economia financeira absoluta e percentual proporcionada pela bioengenharia e justifique a escolha sob a ótica hidrogeomorfológica.</p>
+<p><strong>Fundamento da análise.</strong> Orçamentação linear direta e comparação relativa de custos associada à análise de serviços ecossistêmicos.</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>Etapa 1 (Custo total das alternativas)</strong>, obtêm-se <span class="math inline">\(C_A = 100 \times 1.850{,}00 = \text{R\$ }185.000{,}00\)</span> e <span class="math inline">\(C_B = (100 \times 420{,}00) + 8.000{,}00 = \text{R\$ }50.000{,}00\)</span>. Na <strong>Etapa 2 (Economia absoluta e percentual)</strong>,</p>
+<p><span class="math display">\[
+\Delta C = 185.000{,}00 - 50.000{,}00 = \text{R\$ }135.000{,}00 \qquad\qquad \Delta C_{\%} = \frac{135.000{,}00}{185.000{,}00} \times 100\% \approx 72{,}97\%
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> Alternativa A de <span class="math inline">\(\text{R\$ }185.000{,}00\)</span> e Alternativa B de <span class="math inline">\(\text{R\$ }50.000{,}00\)</span>. A bioengenharia gera economia de <span class="math inline">\(\text{R\$ }135.000{,}00\)</span> (<span class="math inline">\(72{,}97\%\)</span>), além de preservar a infiltração na zona de recarga do manancial.</p>
+<p><strong>Condições de validade.</strong> A economia de <span class="math inline">\(72{,}97\%\)</span> é compatível com a literatura de Engenharia Natural para taludes de média altura (<span class="math inline">\(3{,}0\text{ m}\)</span>) sem cargas estruturais de edificações no coroamento.</p>
+</div>
+</div>
+</section>
+<section id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="level2">
+<h2 class="anchored" data-anchor-id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</h2>
+<p>Mesmo quando o dimensionamento geotécnico e hidráulico está correto, a descontinuidade nos tratos culturais iniciais pode comprometer todo o estabelecimento vegetal em regiões sujeitas a veranicos prolongados.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 4, Ignorar o Esforço de Manutenção Pós-Plantio no Semiárido
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Em regiões de baixa pluviosidade irregular, abandonar estacas, mudas ou biomantas sem controle de formigas cortadeiras, proteção contra pisoteio de rebanhos e irrigação de salvamento nos primeiros meses leva a taxas de mortalidade superiores a <span class="math inline">\(80\%\)</span>, anulando o investimento inicial antes que o reforço radicular <span class="math inline">\(c_r\)</span> se estabeleça.</p>
+</div>
+</div>
+<p>Para aprofundar o estudo das práticas vegetativas, estruturas permeáveis e Soluções Baseadas na Natureza, assista às videoaulas selecionadas na página da disciplina, iniciando por <a href="https://www.youtube.com/watch?v=6cjHYL6yuzE">Erosão Hídrica e Processos da Erosão</a>, <a href="https://www.youtube.com/watch?v=vsKm_cG8KkI">Práticas para o controle da erosão hídrica - Parte 1</a> e <a href="https://www.youtube.com/watch?v=0w_ZhulcorU">Uso do Solo, Erosão e Técnicas de Conservação</a>, e complementando com <a href="https://www.youtube.com/watch?v=Cvd2roRDY40">Soluções Baseadas na Natureza (SbN)</a> e <a href="https://www.youtube.com/watch?v=vQtOYoXyNOI">Medidas Estruturais de Baixo Impacto: Soluções Baseadas na Natureza</a>.</p>
+</section>
+<section id="exercícios-de-fixação" class="level2">
+<h2 class="anchored" data-anchor-id="exercícios-de-fixação">Exercícios de fixação</h2>
+<section id="bloco-a-questões-conceituais-básicas-1-a-5" class="level4">
+<h4 class="anchored" data-anchor-id="bloco-a-questões-conceituais-básicas-1-a-5">Bloco A, Questões Conceituais Básicas (1 a 5)</h4>
+<ol type="1">
+<li><p>Explique o princípio da substituição gradual de funções entre materiais inertes biodegradáveis e elementos vivos na Bioengenharia de Solos.</p></li>
+<li><p>Diferencie o papel mecânico do reforço por tração radicular (<span class="math inline">\(c_r\)</span>) do mecanismo de ancoragem profunda das raízes em uma encosta inclinada.</p></li>
+<li><p>Descreva três efeitos hidrológicos da vegetação que contribuem para aumentar a estabilidade de um talude e reduzir o escoamento superficial.</p></li>
+<li><p>Compare as finalidades construtivas de estacas vivas, fascinas e trançados vivos na recuperação de vertentes degradadas.</p></li>
+<li><p>Cite três vantagens ambientais e econômicas das biomantas de fibra de sisal ou coco em comparação com o revestimento rígido em concreto projetado.</p></li>
+</ol>
+</section>
+<section id="bloco-b-questões-intermediárias-e-quantitativas-6-a-10" class="level4">
+<h4 class="anchored" data-anchor-id="bloco-b-questões-intermediárias-e-quantitativas-6-a-10">Bloco B, Questões Intermediárias e Quantitativas (6 a 10)</h4>
+<ol start="6" type="1">
+<li><p>Um solo apresenta coesão efetiva <span class="math inline">\(c' = 6{,}0\text{ kPa}\)</span>, tensão normal efetiva <span class="math inline">\(\sigma' = 20{,}0\text{ kPa}\)</span> e <span class="math inline">\(\tan\phi' = 0{,}50\)</span>. Calcule a resistência ao cisalhamento sem vegetação (<span class="math inline">\(\tau_0\)</span>) e com reforço radicular <span class="math inline">\(c_r = 5{,}0\text{ kPa}\)</span> (<span class="math inline">\(\tau_1\)</span>), indicando o ganho percentual obtido.</p></li>
+<li><p>Uma ravina com declividade longitudinal <span class="math inline">\(S = 0{,}10\text{ m}\cdot\text{m}^{-1}\)</span> (<span class="math inline">\(10\%\)</span>) será estabilizada com paliçadas de madeira de altura útil <span class="math inline">\(h = 0{,}50\text{ m}\)</span> e largura média <span class="math inline">\(b = 2{,}00\text{ m}\)</span>. Calcule o espaçamento teórico <span class="math inline">\(E\)</span> entre as paliçadas e o volume de sedimentos retido na cunha de uma paliçada (<span class="math inline">\(L_m = E\)</span>).</p></li>
+<li><p>Em um trecho de <span class="math inline">\(36{,}0\text{ m}\)</span> de uma voçoroca com declividade <span class="math inline">\(S = 0{,}05\text{ m}\cdot\text{m}^{-1}\)</span>, deseja-se instalar paliçadas com altura útil <span class="math inline">\(h = 0{,}45\text{ m}\)</span> e largura média <span class="math inline">\(b = 1{,}80\text{ m}\)</span>. Determine o espaçamento <span class="math inline">\(E\)</span>, o número de paliçadas necessárias e a massa total de sedimentos retida considerando <span class="math inline">\(\rho_s = 1{,}40\text{ t}\cdot\text{m}^{-3}\)</span>.</p></li>
+<li><p>Um talude de <span class="math inline">\(2.500\text{ m}^2\)</span> será protegido com biomanta de fibra de coco vendida em rolos de <span class="math inline">\(2{,}0\text{ m} \times 30{,}0\text{ m}\)</span> (<span class="math inline">\(60\text{ m}^2\)</span> por rolo), prevendo-se <span class="math inline">\(8\%\)</span> de perda por sobreposição de emendas e ancoragem em valas. Calcule a quantidade mínima inteira de rolos necessários.</p></li>
+<li><p>Uma faixa de margem fluvial de <span class="math inline">\(120\text{ m}\)</span> de extensão e <span class="math inline">\(5{,}0\text{ m}\)</span> de largura (<span class="math inline">\(600\text{ m}^2\)</span>) receberá estacas vivas no espaçamento de <span class="math inline">\(1{,}0\text{ m} \times 0{,}60\text{ m}\)</span> (<span class="math inline">\(0{,}60\text{ m}^2\)</span> por estaca). Sabendo que a sobrevivência esperada é de <span class="math inline">\(80\%\)</span>, quantas estacas devem ser plantadas e quantas plantas vivas deverão permanecer estabelecidas?</p></li>
+</ol>
+</section>
+<section id="bloco-c-questões-objetivas-de-múltipla-escolha-11-a-15" class="level4">
+<h4 class="anchored" data-anchor-id="bloco-c-questões-objetivas-de-múltipla-escolha-11-a-15">Bloco C, Questões Objetivas de Múltipla Escolha (11 a 15)</h4>
+<ol start="11" type="1">
+<li><p>Na equação de Mohr-Coulomb modificada para solos vegetados, <span class="math inline">\(\tau = (c' + c_r) + \sigma'\tan\phi'\)</span>, o termo <span class="math inline">\(c_r\)</span> representa,</p>
+<ol type="A">
+<li><p>A pressão neutra da água acumulada nos poros do solo durante a chuva.</p></li>
+<li><p>A redução do ângulo de atrito interno causada pelo crescimento radicular.</p></li>
+<li><p>A coesão aparente adicional conferida pela resistência à tração das raízes que cruzam o plano de ruptura.</p></li>
+<li><p>O peso próprio da copa das árvores atuando como sobrecarga vertical.</p></li>
+<li><p>A impermeabilização superficial gerada pela serapilheira em decomposição.</p></li>
+</ol></li>
+<li><p>Uma ravina com declividade <span class="math inline">\(S = 12\%\)</span> (<span class="math inline">\(0{,}12\)</span>) será tratada com paliçadas permeáveis de altura útil <span class="math inline">\(h = 0{,}60\text{ m}\)</span>. O espaçamento teórico <span class="math inline">\(E\)</span> entre duas paliçadas consecutivas é,</p>
+<ol type="A">
+<li><p><span class="math inline">\(2{,}00\text{ m}\)</span>.</p></li>
+<li><p><span class="math inline">\(3{,}60\text{ m}\)</span>.</p></li>
+<li><p><span class="math inline">\(5{,}00\text{ m}\)</span>.</p></li>
+<li><p><span class="math inline">\(7{,}20\text{ m}\)</span>.</p></li>
+<li><p><span class="math inline">\(12{,}00\text{ m}\)</span>.</p></li>
+</ol></li>
+<li><p>Considerando uma paliçada com altura útil <span class="math inline">\(h = 0{,}50\text{ m}\)</span>, largura do canal <span class="math inline">\(b = 2{,}40\text{ m}\)</span> e comprimento da cunha retida a montante <span class="math inline">\(L_m = 6{,}00\text{ m}\)</span>, o volume máximo de sedimentos retido por essa estrutura é,</p>
+<ol type="A">
+<li><p><span class="math inline">\(1{,}80\text{ m}^3\)</span>.</p></li>
+<li><p><span class="math inline">\(3{,}60\text{ m}^3\)</span>.</p></li>
+<li><p><span class="math inline">\(5{,}40\text{ m}^3\)</span>.</p></li>
+<li><p><span class="math inline">\(7{,}20\text{ m}^3\)</span>.</p></li>
+<li><p><span class="math inline">\(14{,}40\text{ m}^3\)</span>.</p></li>
+</ol></li>
+<li><p>Sobre as fibras vegetais empregadas em biomantas e geotêxteis biodegradáveis no Brasil, assinale a alternativa correta,</p>
+<ol type="A">
+<li><p>A fibra de coco possui menor teor de lignina que a palha de arroz e degrada-se em menos de 30 dias.</p></li>
+<li><p>O sisal (<em>Agave sisalana</em>) é uma fibra regionalmente estratégica no Semiárido Baiano e protege o solo contra o impacto das gotas até o estabelecimento da vegetação.</p></li>
+<li><p>As biomantas dispensam qualquer contato com o solo, devendo permanecer suspensas a <span class="math inline">\(20\text{ cm}\)</span> da superfície.</p></li>
+<li><p>Geotêxteis biodegradáveis impedem totalmente a infiltração da água pluvial, comportando-se como lonas de polietileno.</p></li>
+<li><p>A aplicação de biomantas é tecnicamente incompatível com hidrossemeadura ou plantio de mudas.</p></li>
+</ol></li>
+<li><p>Em comparação com muros rígidos de concreto armado utilizados na contenção de margens fluviais rurais, uma solução de bioengenharia com fascinas vivas e estacas vivas caracteriza-se por,</p>
+<ol type="A">
+<li><p>Apresentar resistência estrutural decrescente desde o primeiro mês após a implantação.</p></li>
+<li><p>Impedir a troca de água entre o canal fluvial e o lençol freático marginal.</p></li>
+<li><p>Exigir maior consumo de cimento e aço por metro linear de margem protegida.</p></li>
+<li><p>Aumentar progressivamente a estabilidade com o enraizamento, manter a permeabilidade da margem e restaurar o habitat ripário.</p></li>
+<li><p>Eliminar a necessidade de qualquer cuidado com espécies invasoras ou formigas cortadeiras nos primeiros meses.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="questões-de-aplicação" class="level2">
+<h2 class="anchored" data-anchor-id="questões-de-aplicação">Questões de aplicação</h2>
+<section id="foco-de-provas-enade-e-concursos-ambientais" class="level3">
+<h3 class="anchored" data-anchor-id="foco-de-provas-enade-e-concursos-ambientais">Foco de Provas, ENADE e Concursos Ambientais</h3>
+<p>Bancas como CESPE/Cebraspe, FGV e o exame do ENADE valorizam a integração entre processo físico (erosão, cisalhamento, poropressão) e escolha da técnica de recuperação. Ao analisar estudos de caso, verifique se a técnica proposta atua sobre a causa hidrológica e mecânica do processo.</p>
+<ol start="16" type="1">
+<li><p><strong>[Questão Autoral, Estilo ENADE / Geografia]</strong> Após a implantação de um parque eólico em área de chapada semiárida, verificou-se a abertura de ravinas em taludes de corte de estradas de acesso, com carreamento de sedimentos para um riacho intermitente. Como solução, um técnico propôs substituir um projeto de canaletas e muros de concreto por um arranjo de bioengenharia combinando biomantas de sisal nos taludes, retentores de sedimentos no pé das rampas e paliçadas permeáveis escalonadas nas incisões. Considerando os princípios da Engenharia Natural, avalie as asserções,</p>
+<ul>
+<li><p>A biomanta de sisal reduz imediatamente a energia cinética do salpicamento (<em>splash</em>) e mantém a umidade superficial necessária à germinação de sementes nativas.</p></li>
+<li><p>As paliçadas permeáveis dissipam a energia do fluxo concentrado sem gerar empuxo hidrostático excessivo e formam patamares de sedimentos favoráveis à revegetação interna da ravina.</p></li>
+<li><p>A substituição de obras cinzas por bioengenharia elimina completamente a necessidade de drenagem de águas pluviais oriundas da pista compactada da estrada.</p></li>
+</ul>
+<p>É correto o que se afirma em,</p>
+<ol type="A">
+<li><p>I, apenas.</p></li>
+<li><p>III, apenas.</p></li>
+<li><p>I e II, apenas.</p></li>
+<li><p>II e III, apenas.</p></li>
+<li><p>I, II e III.</p></li>
+</ol></li>
+<li><p><strong>[Questão Autoral, Estilo Concurso Analista Ambiental / INEMA-BA]</strong> Em um projeto de recuperação de área degradada (PRAD) em margem fluvial de bacia hidrográfica baiana, deseja-se aumentar a estabilidade do talude marginal contra escorregamentos rasos durante cheias sazonais. À luz da equação <span class="math inline">\(\tau = (c' + c_r) + (\sigma - u)\tan\phi'\)</span>, qual combinação de mecanismos explica corretamente o efeito benéfico da vegetação ripária estabelecida?</p>
+<ol type="A">
+<li><p>As raízes anulam a coesão efetiva <span class="math inline">\(c'\)</span> e elevam a poropressão <span class="math inline">\(u\)</span>, reduzindo o atrito interno <span class="math inline">\(\phi'\)</span>.</p></li>
+<li><p>O reforço radicular acrescenta coesão aparente <span class="math inline">\(c_r\)</span> por resistência à tração das fibras no plano de corte, enquanto a evapotranspiração e a drenagem radicular contribuem para reduzir a poropressão <span class="math inline">\(u\)</span> e elevar a tensão normal efetiva <span class="math inline">\(\sigma'\)</span>.</p></li>
+<li><p>A copa das árvores aumenta o impacto direto da gota de chuva sobre o solo nu, compactando a camada superficial.</p></li>
+<li><p>O peso das árvores sempre reduz o ângulo de atrito <span class="math inline">\(\phi'\)</span> para zero, substituindo o atrito pelo peso da água nos poros.</p></li>
+<li><p>A vegetação impede a infiltração e transforma todo o escoamento subsuperficial em enxurrada laminar acelerada.</p></li>
+</ol></li>
+<li><p><strong>[Questão Autoral, Estilo Concurso Analista Ambiental / IBAMA]</strong> Uma equipe de campo precisa estabilizar um trecho de <span class="math inline">\(60{,}0\text{ m}\)</span> de uma ravina com declividade média de <span class="math inline">\(10\%\)</span> (<span class="math inline">\(S = 0{,}10\text{ m}\cdot\text{m}^{-1}\)</span>) e largura média de <span class="math inline">\(2{,}0\text{ m}\)</span>, utilizando paliçadas permeáveis com altura útil <span class="math inline">\(h = 0{,}60\text{ m}\)</span>. Adotando o critério geométrico <span class="math inline">\(E = h/S\)</span> e <span class="math inline">\(V = \frac{1}{2}\cdot L_m \cdot h \cdot b\)</span> (com <span class="math inline">\(L_m = E\)</span>), a quantidade de paliçadas e o volume total teórico de sedimentos retidos pelo conjunto são, respectivamente,</p>
+<ol type="A">
+<li><p><span class="math inline">\(6\)</span> paliçadas e <span class="math inline">\(18{,}0\text{ m}^3\)</span>.</p></li>
+<li><p><span class="math inline">\(10\)</span> paliçadas e <span class="math inline">\(36{,}0\text{ m}^3\)</span>.</p></li>
+<li><p><span class="math inline">\(10\)</span> paliçadas e <span class="math inline">\(72{,}0\text{ m}^3\)</span>.</p></li>
+<li><p><span class="math inline">\(12\)</span> paliçadas e <span class="math inline">\(36{,}0\text{ m}^3\)</span>.</p></li>
+<li><p><span class="math inline">\(15\)</span> paliçadas e <span class="math inline">\(45{,}0\text{ m}^3\)</span>.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="gabarito-comentado" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="gabarito-comentado">Gabarito comentado</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Clique para abrir o Gabarito Comentado
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="resoluções-completas-exercícios-de-fixação-1-a-15" class="level3">
+<h3 class="anchored" data-anchor-id="resoluções-completas-exercícios-de-fixação-1-a-15">Resoluções Completas, Exercícios de Fixação (1 a 15)</h3>
+<ol type="1">
+<li><p>Na Bioengenharia de Solos, materiais inertes biodegradáveis (biomantas, madeira, fibras) fornecem proteção mecânica e hidráulica imediata logo após a obra, quando as plantas ainda são pequenas. À medida que esses materiais se decompõem, o sistema radicular e a cobertura vegetal crescem e assumem permanentemente a função de ancoragem e controle erosivo.</p></li>
+<li><p>O <strong>reforço por tração radicular (<span class="math inline">\(c_r\)</span>)</strong> resulta da rede densa de raízes finas e médias que cruzam a zona de cisalhamento e trabalham tracionadas como fibras na matriz do solo. A <strong>ancoragem</strong> ocorre quando raízes pivotantes profundas atravessam o solo superficial instável e se fixam em horizontes mais coesos ou fraturas rochosas subjacentes.</p></li>
+<li><p>Três efeitos hidrológicos principais, (1) <strong>interceptação</strong> da chuva pela copa e serapilheira, reduzindo o salpicamento; (2) aumento da <strong>rugosidade superficial</strong>, desacelerando a enxurrada; (3) <strong>evapotranspiração</strong> e abertura de bioporos, drenando o solo e reduzindo a poropressão positiva (<span class="math inline">\(u\)</span>) no interior do talude.</p></li>
+<li><p><strong>Estacas vivas.</strong> Peças lenhosas cravadas isoladamente em malha para atuar como pinos biológicos de drenagem e ancoragem superficial. <strong>Fascinas.</strong> Feixes cilíndricos enterrados em valas em curva de nível que quebram o comprimento de rampa e retêm umidade. <strong>Trançados vivos.</strong> Pequenas cercas entrelaçadas em degraus que retêm sedimentos mobilizados a montante.</p></li>
+<li><p>Três vantagens, (1) permitem infiltração de água e trocas gasosas no solo; (2) incorporam matéria orgânica e favorecem a sucessão vegetal nativa; (3) apresentam custo de implantação e pegada de carbono muito inferiores ao concreto projetado, além de valorizarem cadeias produtivas regionais como a do sisal na Bahia.</p></li>
+<li><p><strong>Desenvolvimento,</strong> <span class="math inline">\(\sigma'\tan\phi' = 20{,}0 \times 0{,}50 = 10{,}0\text{ kPa}\)</span>. Sem vegetação, <span class="math inline">\(\tau_0 = 6{,}0 + 10{,}0 = \mathbf{16{,}0\text{ kPa}}\)</span>. Com reforço radicular, <span class="math inline">\(\tau_1 = (6{,}0 + 5{,}0) + 10{,}0 = \mathbf{21{,}0\text{ kPa}}\)</span>. Ganho percentual, <span class="math inline">\((21{,}0 - 16{,}0)/16{,}0 \times 100\% = 5{,}0/16{,}0 \times 100\% = \mathbf{31{,}25\%}\)</span>.</p></li>
+<li><p><strong>Desenvolvimento,</strong> Espaçamento, <span class="math inline">\(E = h / S = 0{,}50 / 0{,}10 = \mathbf{5{,}00\text{ m}}\)</span>. Volume retido por paliçada (<span class="math inline">\(L_m = E = 5{,}00\text{ m}\)</span>), <span class="math inline">\(V = 0{,}5 \times 5{,}00 \times 0{,}50 \times 2{,}00 = \mathbf{2{,}50\text{ m}^3}\)</span>.</p></li>
+<li><p><strong>Desenvolvimento,</strong> Espaçamento, <span class="math inline">\(E = 0{,}45 / 0{,}05 = \mathbf{9{,}00\text{ m}}\)</span>. Número de paliçadas, <span class="math inline">\(n = 36{,}0 / 9{,}00 = \mathbf{4\text{ paliçadas}}\)</span>. Volume por paliçada, <span class="math inline">\(V_1 = 0{,}5 \times 9{,}00 \times 0{,}45 \times 1{,}80 = 3{,}645\text{ m}^3\)</span>. Volume total, <span class="math inline">\(V_{\text{total}} = 4 \times 3{,}645 = 14{,}58\text{ m}^3\)</span>. Massa retida, <span class="math inline">\(M = 14{,}58 \times 1{,}40 = \mathbf{20{,}412\text{ t}}\)</span> (<span class="math inline">\(\approx 20{,}41\text{ t}\)</span>).</p></li>
+<li><p><strong>Desenvolvimento,</strong> Área com <span class="math inline">\(8\%\)</span> de sobreposição, <span class="math inline">\(A_{\text{ef}} = 2.500 \times 1{,}08 = 2.700\text{ m}^2\)</span>. Rolos necessários, <span class="math inline">\(2.700 / 60 = \mathbf{45\text{ rolos}}\)</span>.</p></li>
+<li><p><strong>Desenvolvimento,</strong> Estacas plantadas, <span class="math inline">\(600 / 0{,}60 = \mathbf{1.000\text{ estacas}}\)</span>. Plantas estabelecidas (<span class="math inline">\(80\%\)</span> de sobrevivência), <span class="math inline">\(1.000 \times 0{,}80 = \mathbf{800\text{ plantas vivas}}\)</span>.</p></li>
+<li><p><strong>Gabarito, (C).</strong> O termo <span class="math inline">\(c_r\)</span> expressa a coesão aparente adicional conferida pela resistência à tração das raízes que cruzam o plano de cisalhamento.</p></li>
+<li><p><strong>Gabarito, (C).</strong> <span class="math inline">\(E = h / S = 0{,}60 / 0{,}12 = \mathbf{5{,}00\text{ m}}\)</span>.</p></li>
+<li><p><strong>Gabarito, (B).</strong> <span class="math inline">\(V = \frac{1}{2} \cdot 6{,}00 \cdot 0{,}50 \cdot 2{,}40 = \mathbf{3{,}60\text{ m}^3}\)</span>.</p></li>
+<li><p><strong>Gabarito, (B).</strong> O sisal é cultura tradicional no Semiárido Baiano, possui resistência adequada para proteção contra o salpicamento e permite a germinação e o desenvolvimento vegetal através de sua trama aberta.</p></li>
+<li><p><strong>Gabarito, (D).</strong> Soluções de bioengenharia aumentam sua resistência ao longo do tempo com o desenvolvimento radicular, preservam a permeabilidade hidráulica e reconstituem a função ecológica da margem.</p></li>
+</ol>
+</section>
+<section id="resoluções-completas-questões-enade-e-concursos-16-a-18" class="level3">
+<h3 class="anchored" data-anchor-id="resoluções-completas-questões-enade-e-concursos-16-a-18">Resoluções Completas, Questões ENADE e Concursos (16 a 18)</h3>
+<ol start="16" type="1">
+<li><p><strong>Gabarito, (C).</strong> As afirmações I e II descrevem corretamente os mecanismos protetores de biomantas e paliçadas permeáveis. A afirmação III é incorreta porque obras de bioengenharia devem ser integradas a dispositivos de drenagem disciplinada da pista (valetas, bacias de contenção ou descidas d’água), mantendo o controle conjunto do escoamento.</p></li>
+<li><p><strong>Gabarito, (B).</strong> A vegetação ripária eleva a resistência ao cisalhamento por dois caminhos simultâneos previstos na equação, aumenta a parcela coesiva via reforço radicular (<span class="math inline">\(c_r\)</span>) e reduz a poropressão (<span class="math inline">\(u\)</span>) via evapotranspiração e melhoria da estrutura drenante, elevando <span class="math inline">\(\sigma' = \sigma - u\)</span>.</p></li>
+<li><p><strong>Gabarito, (B).</strong> Espaçamento, <span class="math inline">\(E = 0{,}60 / 0{,}10 = 6{,}0\text{ m}\)</span>. Número de paliçadas, <span class="math inline">\(n = 60{,}0 / 6{,}0 = \mathbf{10}\)</span>. Volume por paliçada, <span class="math inline">\(V_1 = 0{,}5 \times 6{,}0 \times 0{,}60 \times 2{,}0 = 3{,}6\text{ m}^3\)</span>. Volume total, <span class="math inline">\(10 \times 3{,}6 = \mathbf{36{,}0\text{ m}^3}\)</span>.</p></li>
+</ol>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section id="síntese-conceitual" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="síntese-conceitual">Síntese conceitual</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Síntese Conceitual do Capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Princípio da Bioengenharia (Gray; Sotir, 1996; Durlo; Sutili, 2005).</strong> Integrar materiais inertes biodegradáveis (proteção imediata) e plantas vivas (reforço estrutural crescente e autossustentável). <strong>Equação de Mohr-Coulomb vegetada,</strong> <span class="math inline">\(\tau = (c' + c_r) + \sigma'\tan\phi'\)</span>, somando o reforço por tração radicular (<span class="math inline">\(c_r\)</span>) aos efeitos hidrológicos de interceptação, rugosidade, infiltração e evapotranspiração. <strong>Paliçadas permeáveis.</strong> Dissipam energia sem impermeabilizar o leito; dimensionadas por <span class="math inline">\(E = h/S\)</span> e <span class="math inline">\(V = \frac{1}{2}\cdot L_m \cdot h \cdot b\)</span>. <strong>Coberturas e comparação técnica.</strong> Biomantas de sisal, coco, taboa e juta protegem contra o salpicamento e retêm umidade; frente às obras cinzas rígidas, a bioengenharia apresenta menor custo, maior permeabilidade e integração ecológica direta a PRADs.</p>
+</div>
+</div>
+</section>
+<section id="autoavaliação" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="autoavaliação">Autoavaliação</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Autoavaliação e Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Avalie cada afirmação com <strong>V</strong> (Verdadeiro) ou <strong>F</strong> (Falso) antes de conferir o gabarito abaixo,</p>
+<ol type="1">
+<li><p>( ) Na equação <span class="math inline">\(\tau = (c' + c_r) + \sigma'\tan\phi'\)</span>, o reforço radicular <span class="math inline">\(c_r\)</span> eleva a resistência ao cisalhamento do solo superficial ao atuar sob tração no plano de ruptura.</p></li>
+<li><p>( ) Paliçadas permeáveis devem ser construídas com paredes totalmente estanques e sem frestas, de modo a impedir qualquer passagem de água para jusante.</p></li>
+<li><p>( ) Quanto maior a declividade longitudinal <span class="math inline">\(S\)</span> da ravina para uma mesma altura útil <span class="math inline">\(h\)</span>, menor deve ser o espaçamento <span class="math inline">\(E\)</span> entre paliçadas consecutivas.</p></li>
+<li><p>( ) A fibra de coco decompõe-se lentamente devido ao alto teor de lignina, sendo indicada para taludes que exigem proteção prolongada até a consolidação da vegetação.</p></li>
+</ol>
+<p><strong>Gabarito da verificação da aprendizagem,</strong> 1-<strong>V</strong> | 2-<strong>F</strong> (a permeabilidade é indispensável para aliviar o empuxo hidrostático e reter apenas os sedimentos) | 3-<strong>V</strong> (como <span class="math inline">\(E = h/S\)</span>, maior <span class="math inline">\(S\)</span> resulta em menor <span class="math inline">\(E\)</span>) | 4-<strong>V</strong>.</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/analise-ambiental\/");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Código deslocável","output":"Saída deslocável"};
+  </script>
+<nav class="page-navigation" aria-label="Página">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/mod4-simulado.html" class="pagination-link" aria-label="Simulado e Revisão Integrada, Módulo 4">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Simulado e Revisão Integrada, Módulo 4</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/14-legislacao-ambiental-prad.html" class="pagination-link" aria-label="Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026 (DCHF/UEFS). <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,77 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% =========================================================
+% PAINEL (a) Erro: Círculos Concêntricos Arbitrários
+% =========================================================
+\begin{scope}[shift={(0,0)}]
+  \draw[draw=uefsOrange, fill=bgGray, rounded corners=6pt, line width=1.2pt] (0,0) rectangle (9.6, 8.2);
+  \node[font=\normalsize\bfseries, text=uefsOrange!90!black] at (4.8, 7.6) {(a) Erro: Círculos Concêntricos Arbitrários};
+
+  % Divisores reais ignorados (polígono fantasma ao fundo)
+  \draw[dashed, line width=1.3pt, uefsNavy!30, fill=uefsNavy!4]
+    (1.8, 6.2) -- (6.9, 5.9) -- (7.8, 2.9) -- (4.8, 1.05) -- (1.1, 1.45) -- cycle;
+
+  % Rede de drenagem ao fundo
+  \draw[line width=1.3pt, uefsWater!65] (4.5, 5.6) -- (4.3, 4.1) -- (5.05, 1.15);
+  \draw[line width=1pt, uefsWater!65] (3.1, 4.4) -- (4.35, 3.85);
+  \draw[line width=1pt, uefsWater!65] (5.7, 3.3) -- (4.65, 2.75);
+
+  % Círculos concêntricos arbitrários
+  \draw[dashed, line width=1.6pt, uefsOrange] (4.5, 3.9) circle (1.45cm);
+  \draw[dashed, line width=1.6pt, uefsOrange] (4.5, 3.9) circle (2.35cm);
+
+  % ADA no centro
+  \node[fill=uefsOrange!90!black, text=white, font=\footnotesize\bfseries,
+        minimum width=0.9cm, minimum height=0.65cm, rounded corners=2pt]
+    at (4.5, 3.9) {ADA};
+
+  \node[font=\footnotesize\bfseries, text=uefsOrange!90!black, align=center]
+    at (4.8, 0.55) {Ignora divisores topográficos e drenagem a jusante};
+\end{scope}
+
+% =========================================================
+% PAINEL (b) Delimitação Técnica por Divisores Topográficos
+% =========================================================
+\begin{scope}[shift={(10.2, 0)}]
+  \draw[draw=uefsForest, fill=bgGray, rounded corners=6pt, line width=1.2pt] (0,0) rectangle (9.6, 8.2);
+  \node[font=\normalsize\bfseries, text=uefsForest] at (4.8, 7.6) {(b) Delimitação Técnica por Divisores Topográficos};
+
+  % AII (Bacia regional / municípios) - retângulo externo pontilhado amplo
+  \draw[dotted, line width=1.2pt, uefsNavy, fill=uefsWater!7, rounded corners=4pt]
+    (0.85, 0.95) rectangle (8.75, 6.85);
+
+  % Rótulo da AII em espaço livre no topo esquerdo
+  \node[anchor=west, font=\footnotesize\bfseries, text=uefsNavy]
+    at (1.15, 6.42) {AII (Bacia regional / municípios)};
+
+  % AID Física (Divisores topográficos) - polígono da microbacia
+  \draw[dashed, line width=1.7pt, uefsTeal, fill=uefsWater!13]
+    (2.35, 5.55) -- (5.8, 5.75) -- (7.45, 3.7) -- (6.35, 1.45) -- (2.15, 1.55) -- (1.45, 3.65) -- cycle;
+
+  % Rede de drenagem dentro da bacia
+  \draw[line width=1.8pt, uefsWater!90!black] (4.3, 5.05) -- (4.7, 3.45) -- (5.1, 1.48);
+  \draw[line width=1.2pt, uefsWater!90!black] (2.9, 4.35) -- (4.52, 3.95);
+  \draw[line width=1.2pt, uefsWater!90!black] (6.1, 3.55) -- (4.85, 2.75);
+
+  % ADA (Área Diretamente Afetada)
+  \node[fill=uefsOrange!90!black, text=white, font=\footnotesize\bfseries,
+        minimum width=0.95cm, minimum height=0.65cm, rounded corners=2pt]
+    (ada) at (4.35, 4.55) {ADA};
+
+  % Rótulo AID Física posicionado em espaço totalmente livre à direita/fora da linha tracejada ou dentro sem cruzar bordas
+  \node[anchor=west, align=left, font=\footnotesize\bfseries, text=uefsTeal, fill=uefsWater!7, inner sep=2pt]
+    at (6.05, 5.95) {AID Física\\[-1pt]{\scriptsize(Divisores topográficos)}};
+
+  % Pequena seta indicadora limpa do rótulo para o divisor tracejado
+  \draw[->, >=Stealth, line width=0.9pt, uefsTeal] (6.02, 5.82) -- (5.65, 5.65);
+
+  \node[font=\footnotesize\bfseries, text=uefsForest, align=center]
+    at (4.8, 0.55) {Acompanha o escoamento hídrico até o exutório};
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,95 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% Macro para árvore na encosta
+\newcommand{\arvoreEnc}[2]{%
+  \draw[brown!65!black, line width=2.2pt] (#1,#2) -- (#1,#2+0.38);
+  \fill[uefsForest!85] (#1,#2+0.68) ellipse (0.33cm and 0.39cm);
+  \draw[uefsForest!95!black, line width=0.6pt] (#1,#2+0.68) ellipse (0.33cm and 0.39cm);
+}
+
+% =========================================================
+% PAINEL (a) Vertente 1: Parque Estadual Preservado
+% =========================================================
+\begin{scope}[shift={(0,0)}]
+  \draw[draw=uefsForest, fill=bgGray, rounded corners=6pt, line width=1.2pt] (0,0) rectangle (9.6, 7.6);
+  \node[font=\normalsize\bfseries, text=uefsForest] at (4.8, 7.05) {(a) Vertente 1: Parque Estadual Preservado};
+
+  % Corpo da encosta (topo -> ombro -> vertente 38% -> sopé -> planície)
+  \fill[uefsNavy!13]
+    (0.4, 5.45) -- (2.4, 5.2) -- (6.6, 2.35) -- (9.2, 2.1) -- (9.2, 1.55) -- (0.4, 1.55) -- cycle;
+
+  % Linha de superfície topográfica
+  \draw[line width=1.6pt, uefsNavy] (0.4, 5.45) -- (2.4, 5.2) -- (6.6, 2.35) -- (9.2, 2.1);
+
+  % Vegetação nativa preservada
+  \arvoreEnc{1.1}{5.36}
+  \arvoreEnc{2.25}{5.22}
+  \arvoreEnc{3.4}{4.52}
+  \arvoreEnc{4.55}{3.74}
+  \arvoreEnc{5.65}{3.0}
+
+  % Rótulos no interior amplo do maciço (longe das bordas e da linha de encosta)
+  \node[align=center, font=\footnotesize\bfseries, text=uefsInk] at (2.8, 2.55)
+    {Neossolo Litólico raso\\Declividade = 38\%};
+
+  \node[align=center, font=\footnotesize\bfseries, text=uefsForest] at (7.8, 3.15)
+    {Sem ocupação\\humana na base};
+
+  % Quadro inferior de síntese
+  \node[aaBox=uefsForest, fill=white, text width=8.4cm, minimum height=1.1cm, inner sep=5pt]
+    at (4.8, 0.8) {
+      \footnotesize\textbf{Alta Fragilidade Física (38\%)}\\
+      Perigo Presente $\vert$ Vulnerabilidade Nula ($V = 0$)\\
+      \textbf{\color{uefsForest}Risco Humano: $R = P \times V = 0$}
+    };
+\end{scope}
+
+% =========================================================
+% PAINEL (b) Vertente 2: Encosta Desmatada e Ocupada
+% =========================================================
+\begin{scope}[shift={(10.2, 0)}]
+  \draw[draw=uefsOrange, fill=bgGray, rounded corners=6pt, line width=1.2pt] (0,0) rectangle (9.6, 7.6);
+  \node[font=\normalsize\bfseries, text=uefsOrange!90!black] at (4.8, 7.05) {(b) Vertente 2: Encosta Desmatada e Ocupada};
+
+  % Corpo da encosta
+  \fill[uefsNavy!13]
+    (0.4, 5.45) -- (2.4, 5.2) -- (6.6, 2.35) -- (9.2, 2.1) -- (9.2, 1.55) -- (0.4, 1.55) -- cycle;
+
+  % Linha de superfície topográfica
+  \draw[line width=1.6pt, uefsNavy] (0.4, 5.45) -- (2.4, 5.2) -- (6.6, 2.35) -- (9.2, 2.1);
+
+  % Vetor de escorregamento / erosão em encosta desmatada (paralelo à vertente, deslocado acima)
+  \draw[->, >=Stealth, dashed, line width=2pt, uefsOrange] (3.1, 4.92) -- (6.1, 2.88);
+  % Símbolos de blocos/instabilidade
+  \fill[uefsOrange] (3.55, 4.62) -- (3.85, 4.42) -- (3.85, 4.82) -- cycle;
+  \fill[uefsOrange] (4.75, 3.80) -- (5.05, 3.60) -- (5.05, 4.00) -- cycle;
+  \node[font=\scriptsize\bfseries, text=uefsAlert, align=center] at (5.3, 4.65)
+    {Instabilidade e\\fluxo de detritos};
+
+  % Rótulo no interior amplo do maciço
+  \node[align=center, font=\footnotesize\bfseries, text=uefsInk] at (2.8, 2.55)
+    {Neossolo Litólico raso\\Declividade = 38\%};
+
+  % Duas moradias na base (alinhadas ao sopé y~2.2)
+  \foreach \hx/\hy in {6.85/2.29, 7.95/2.19} {
+    \fill[uefsAlert!30] (\hx, \hy) rectangle (\hx+0.78, \hy+0.55);
+    \draw[uefsOrange!80!black, line width=1pt] (\hx, \hy) rectangle (\hx+0.78, \hy+0.55);
+    \fill[uefsOrange!90!black] (\hx-0.08, \hy+0.55) -- (\hx+0.39, \hy+0.92) -- (\hx+0.86, \hy+0.55) -- cycle;
+  }
+  \node[font=\footnotesize\bfseries, text=uefsOrange!90!black] at (7.8, 3.55) {Moradias na base};
+
+  % Quadro inferior de síntese
+  \node[aaBox=uefsOrange, fill=white, text width=8.4cm, minimum height=1.1cm, inner sep=5pt]
+    at (4.8, 0.8) {
+      \footnotesize\textbf{Alta Fragilidade Física (38\%)}\\
+      Perigo Crítico ($P = 4$) $\vert$ Vulnerabilidade ($V = 4$)\\
+      \textbf{\color{uefsAlert}Risco Crítico: $R = P \times V = 16$}
+    };
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,74 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% =========================================================
+% PAINEL (a) Integração Físico-Biótica e Socioespacial (Venn)
+% =========================================================
+\node[aaTitle] at (-4.6, 4.1) {(a) Integração Físico-Biótica e Socioespacial};
+
+% Círculos amplos e bem espaçados
+\begin{scope}[shift={(-4.6, 0.2)}]
+  % Meio Físico (superior esquerdo)
+  \fill[uefsNavy!18, opacity=0.72] (-1.45, 0.95) circle (2.25cm);
+  \draw[uefsNavy!65, line width=1pt] (-1.45, 0.95) circle (2.25cm);
+
+  % Meio Biótico (superior direito)
+  \fill[uefsForest!18, opacity=0.72] (1.45, 0.95) circle (2.25cm);
+  \draw[uefsForest!75, line width=1pt] (1.45, 0.95) circle (2.25cm);
+
+  % Sociedade & Território (inferior)
+  \fill[uefsGold!22, opacity=0.72] (0, -1.25) circle (2.25cm);
+  \draw[uefsGoldDark!75, line width=1pt] (0, -1.25) circle (2.25cm);
+
+  % Rótulos bem posicionados inteiramente dentro de cada círculo
+  \node[align=center, font=\footnotesize\bfseries, text=uefsNavy, text width=2.8cm]
+    at (-2.15, 1.45) {Meio Físico\\[-1pt]{\normalfont\scriptsize(relevo, solo, clima, água)}};
+
+  \node[align=center, font=\footnotesize\bfseries, text=uefsForest, text width=2.8cm]
+    at (2.15, 1.45) {Meio Biótico\\[-1pt]{\normalfont\scriptsize(vegetação, fauna, biota)}};
+
+  \node[align=center, font=\footnotesize\bfseries, text=uefsGoldDark, text width=3.4cm]
+    at (0, -2.15) {Sociedade \& Território\\[-1pt]{\normalfont\scriptsize(uso da terra, técnica, política, economia)}};
+
+  % Caixa central na interseção tríplice
+  \node[draw=uefsAlert, fill=white, rounded corners=3.5pt, line width=1.2pt,
+        inner sep=5pt, align=center, font=\scriptsize\bfseries, text=uefsAlert,
+        text width=2.3cm]
+    at (0, 0.15) {ANÁLISE\\AMBIENTAL\\INTEGRADA};
+\end{scope}
+
+% =========================================================
+% PAINEL (b) Sistema Tripolar GTP (Bertrand, 2004)
+% =========================================================
+\node[aaTitle] at (5.3, 4.1) {(b) Sistema Tripolar GTP (Bertrand, 2004)};
+
+\begin{scope}[shift={(5.3, 0.2)}]
+  % Nó Geossistema (G)
+  \node[aaBox=uefsTeal, fill=bgTeal, text width=4.0cm, minimum height=2.2cm] (G) at (-2.6, 1.45) {
+    \textbf{\color{uefsTeal}GEOSSISTEMA (G)}\\[3pt]
+    \scriptsize Fonte natural, dinâmica físico-ecológica e tempo da natureza
+  };
+
+  % Nó Território (T)
+  \node[aaBox=uefsGold, fill=bgGold, text width=4.0cm, minimum height=2.2cm] (T) at (2.6, 1.45) {
+    \textbf{\color{uefsGoldDark}TERRITÓRIO (T)}\\[3pt]
+    \scriptsize Apropriação, gestão, recurso econômico e poder institucional
+  };
+
+  % Nó Paisagem (P)
+  \node[aaBox=uefsNavy, fill=bgNavy, text width=4.8cm, minimum height=2.1cm] (P) at (0, -1.95) {
+    \textbf{\color{uefsNavy}PAISAGEM (P)}\\[3pt]
+    \scriptsize Identidade cultural, percepção social, patrimônio e leitura integrada do espaço
+  };
+
+  % Setas duplas limpas com encurtamento para não tocar as bordas
+  \draw[aaDArrow, uefsNavy, shorten >=4pt, shorten <=4pt] (G.east) -- (T.west);
+  \draw[aaDArrow, uefsTeal, shorten >=4pt, shorten <=4pt] ([xshift=0.35cm]G.south) -- ([xshift=-0.85cm]P.north);
+  \draw[aaDArrow, uefsGoldDark, shorten >=4pt, shorten <=4pt] ([xshift=-0.35cm]T.south) -- ([xshift=0.85cm]P.north);
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

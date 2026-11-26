@@ -1,0 +1,70 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}[
+  stepBox/.style={
+    draw=#1,
+    fill=#1!7!white,
+    rounded corners=5pt,
+    line width=1.4pt,
+    text width=4.65cm,
+    minimum height=2.45cm,
+    inner sep=9pt,
+    align=center,
+    font=\footnotesize\sffamily,
+    text=uefsInk
+  }
+]
+
+% Título (sem travessão)
+\node[aaTitle, font=\large\bfseries\sffamily, text=uefsNavy] at (6.4, 2.55)
+  {Roteiro de Construção do Trabalho Prático Final: Diagnóstico Ambiental Aplicado (50\% da Nota)};
+
+% Linha 1 (esquerda -> direita) com espaçamento amplo entre colunas e linhas
+\node[stepBox=uefsNavy] (n1) at (0.0, 0.0) {%
+  {\small\bfseries\color{uefsNavy}1. RECORTE ESPACIAL}\\[4pt]
+  Microbacia, encosta,\\
+  margem ou APP-alvo%
+};
+
+\node[stepBox=uefsTeal] (n2) at (6.4, 0.0) {%
+  {\small\bfseries\color{uefsTeal}2. CARACTERIZAÇÃO}\\[4pt]
+  Relevo, solo, drenagem,\\
+  vegetação e uso da terra%
+};
+
+\node[stepBox=uefsAlert] (n3) at (12.8, 0.0) {%
+  {\small\bfseries\color{uefsAlert}3. DEGRADAÇÃO}\\[4pt]
+  Erosão, assoreamento,\\
+  conflitos e passivos%
+};
+
+% Linha 2 (direita -> esquerda em serpentina)
+\node[stepBox=uefsGoldDark] (n4) at (12.8, -3.9) {%
+  {\small\bfseries\color{uefsGoldDark}4. INDICADORES}\\[4pt]
+  Matriz PEIR / solo e\\
+  fragilidade (Ross)%
+};
+
+\node[stepBox=uefsForest] (n5) at (6.4, -3.9) {%
+  {\small\bfseries\color{uefsForest}5. PROPOSTA TÉCNICA}\\[4pt]
+  Conservação, PRAD e\\
+  bioengenharia de solo%
+};
+
+\node[stepBox=uefsNavy] (n6) at (0.0, -3.9) {%
+  {\small\bfseries\color{uefsNavy}6. PRODUTO FINAL}\\[4pt]
+  Mapas, relatório técnico\\
+  e socialização (Sem. 16)%
+};
+
+% Setas nítidas da serpentina
+\draw[aaArrow, color=uefsNavy, line width=1.8pt, shorten <=4pt, shorten >=4pt] (n1.east) -- (n2.west);
+\draw[aaArrow, color=uefsTeal, line width=1.8pt, shorten <=4pt, shorten >=4pt] (n2.east) -- (n3.west);
+\draw[aaArrow, color=uefsAlert, line width=1.8pt, shorten <=4pt, shorten >=4pt] (n3.south) -- (n4.north);
+\draw[aaArrow, color=uefsGoldDark, line width=1.8pt, shorten <=4pt, shorten >=4pt] (n4.west) -- (n5.east);
+\draw[aaArrow, color=uefsForest, line width=1.8pt, shorten <=4pt, shorten >=4pt] (n5.west) -- (n6.east);
+
+\end{tikzpicture}
+\end{document}

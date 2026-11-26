@@ -1,0 +1,71 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}[
+  panelBox/.style={
+    draw=#1,
+    fill=#1!7!white,
+    rounded corners=6pt,
+    line width=1.5pt,
+    text width=6.6cm,
+    minimum height=5.8cm,
+    inner sep=12pt,
+    align=left,
+    font=\footnotesize\sffamily,
+    text=uefsInk
+  }
+]
+
+% Título principal (sem travessão)
+\node[aaTitle, font=\large\bfseries\sffamily, text=uefsNavy] at (9.1, 3.85)
+  {Como a Vegetação Estabiliza Encostas e Margens (Gray \& Sotir, 1996; Durlo \& Sutili, 2005)};
+
+% Dois painéis bem separados
+\node[panelBox=uefsTeal] (hidro) at (3.8, 0.0) {%
+  \begin{minipage}[t]{6.5cm}
+  \centering{\small\bfseries\color{uefsTeal}EFEITOS HIDROLÓGICOS}\\[10pt]
+  \raggedright
+  \textbf{1. Interceptação pela copa:}\\
+  \hspace*{1em}dissipa energia cinética da chuva (evita \textit{splash}).\\[8pt]
+  \textbf{2. Rugosidade e serapilheira:}\\
+  \hspace*{1em}retarda o escoamento superficial e aumenta\\
+  \hspace*{1em}a taxa de infiltração.\\[8pt]
+  \textbf{3. Evapotranspiração:}\\
+  \hspace*{1em}remove água do solo, reduz poropressão\\
+  \hspace*{1em}positiva e eleva a sucção matricial.
+  \end{minipage}%
+};
+
+\node[panelBox=uefsForest] (mec) at (14.4, 0.0) {%
+  \begin{minipage}[t]{6.5cm}
+  \centering{\small\bfseries\color{uefsForest}EFEITOS MECÂNICOS DAS RAÍZES}\\[10pt]
+  \raggedright
+  \textbf{1. Reforço por tração (coesão radicular $c_r$):}\\
+  \hspace*{1em}raízes finas funcionam como fibras armando\\
+  \hspace*{1em}a matriz do solo contra cisalhamento.\\[8pt]
+  \textbf{2. Ancoragem em camadas profundas:}\\
+  \hspace*{1em}raízes pivotantes atravessam o plano potencial\\
+  \hspace*{1em}de ruptura e fixam o manto superficial.\\[8pt]
+  \textbf{3. Retenção e contenção (arqueamento):}\\
+  \hspace*{1em}troncos e raízes estruturais retêm sedimentos.
+  \end{minipage}%
+};
+
+% Seta dupla ampla entre as caixas e bloco central Sinergia sem tocar bordas
+\draw[aaDArrow, color=uefsGoldDark, line width=2.0pt, shorten <=8pt, shorten >=8pt]
+  (hidro.east) -- (mec.west);
+
+\node[
+  draw=uefsGoldDark,
+  fill=bgGold,
+  rounded corners=4pt,
+  line width=1.1pt,
+  inner xsep=8pt,
+  inner ysep=4pt,
+  font=\small\bfseries\sffamily,
+  text=uefsGoldDark
+] at ($(hidro.east)!0.5!(mec.west) + (0, 0.58)$) {Sinergia};
+
+\end{tikzpicture}
+\end{document}

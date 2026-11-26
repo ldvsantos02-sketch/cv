@@ -1,0 +1,53 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% =========================================================
+% PAINEL SUPERIOR: TEMPO DO CAPITAL
+% =========================================================
+\draw[draw=uefsOrange, fill=uefsOrange!8, rounded corners=6pt, line width=1.2pt]
+  (0, 4.3) rectangle (16.4, 8.1);
+
+\node[font=\normalsize\bfseries, text=uefsOrange!90!black]
+  at (8.2, 7.55) {TEMPO DO CAPITAL: Rápido e Linear (1 a 10 anos)};
+
+% Linha do tempo
+\draw[->, >=Stealth, line width=2.2pt, uefsOrange] (1.1, 6.2) -- (15.3, 6.2);
+
+\foreach \x/\tit/\sub in {
+  2.4/{Ano 1 a 2}/{Supressão e\\implantação},
+  6.2/{Ano 2 a 5}/{Colheita mecanizada\\e fluxo contínuo},
+  10.0/{Ano 5 a 10}/{Retorno financeiro\\imediato},
+  13.8/{Exaustão ou}/{deslocamento}
+} {
+  \fill[uefsOrange] (\x, 6.2) circle (0.24cm);
+  \draw[white, line width=1pt] (\x, 6.2) circle (0.24cm);
+  \node[below=8pt, align=center, font=\footnotesize, text=uefsInk, text width=3.1cm]
+    at (\x, 6.0) {\textbf{\tit}\\\sub};
+}
+
+% =========================================================
+% PAINEL INFERIOR: TEMPO DA NATUREZA
+% =========================================================
+\draw[draw=uefsTeal, fill=bgTeal, rounded corners=6pt, line width=1.2pt]
+  (0, 0) rectangle (16.4, 3.85);
+
+\node[font=\normalsize\bfseries, text=uefsTeal]
+  at (8.2, 3.32) {TEMPO DA NATUREZA: Lento e Cíclico (Décadas a Milênios)};
+
+% Três ciclos curvos limpos com setas direcionais
+\foreach \cx/\cor/\tit/\sub in {
+  2.8/uefsForest/{Regeneração da Caatinga}/{30 a 50 anos},
+  8.2/uefsWater/{Recarga de Aquíferos}/{Ciclos plurianuais},
+  13.6/uefsTeal/{Formação de 1 cm de Solo}/{Séculos a milênios}
+} {
+  \draw[->, >=Stealth, line width=2pt, \cor]
+    (\cx, 1.55) ++(28:2.1cm and 0.95cm) arc (28:332:2.1cm and 0.95cm);
+  \node[align=center, font=\footnotesize, text=uefsInk, text width=3.3cm]
+    at (\cx, 1.55) {\textbf{\tit}\\[2pt]\sub};
+}
+
+\end{tikzpicture}
+\end{document}

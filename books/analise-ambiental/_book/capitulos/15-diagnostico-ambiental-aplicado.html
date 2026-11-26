@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Apostila completa do componente curricular CHF662 (Análise Ambiental), Curso de Geografia da UEFS, organizada em cinco módulos, 15 capítulos em 10 etapas, simulados comentados, formulário e glossário.">
+
+<title>15&nbsp; Manual Prático do Diagnóstico Ambiental Aplicado e Produtos Técnicos - Análise Ambiental (CHF662)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/mod5-simulado.html" rel="next">
+<link href="../capitulos/14-legislacao-ambiental-prad.html" rel="prev">
+<link href="../img/capa_analise_ambiental.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-679673b8a27c868cce7048b2deb5a79d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Pular para o conteúdo principal</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Barra de ferramentas">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/13-bioengenharia-agua-solo.html">Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico</a></li><li class="breadcrumb-item"><a href="../capitulos/15-diagnostico-ambiental-aplicado.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Manual Prático do Diagnóstico Ambiental Aplicado e Produtos Técnicos</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Análise Ambiental (CHF662)</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos02-sketch/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../APOSTILA_ANALISE_AMBIENTAL_CHF662_UEFS.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Apresentação e orientação de estudo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Módulo 1. Fundamentos epistemológicos e conceituais</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-questao-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Questão Ambiental Contemporânea e o Papel da Geografia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-sociedade-natureza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Modernidade, a Geografia e a Relação Sociedade-Natureza</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-geografia-socioambiental-gtp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Abordagens Ambientais no Pensamento Geográfico Moderno</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-conceitos-operacionais-risco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos e Definições Operacionais da Análise Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod1-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Módulo 2. AIA e análise ambiental integrada</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-avaliacao-impacto-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-analise-ambiental-integrada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod2-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-bacias-hidrograficas-morfometria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bacia Hidrográfica como Unidade de Análise Ambiental Integrada</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-morfopedologia-vertentes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Morfopedologia e Processos Interativos Relevo, Solo e Água</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-geossistemas-ecodinamica-ross.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geossistemas, Ecodinâmica e Análise Empírica da Fragilidade Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod3-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado Preparatório para a Avaliação Teórica, Módulos 1 a 3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">Módulo 4. Indicadores, qualidade do solo e degradação</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-indicadores-ambientais-peir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-qualidade-solo-iqs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-degradacao-erosao-usle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagnóstico de Processos de Degradação Ambiental e Erosão Linear</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod4-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 4</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-bioengenharia-agua-solo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-legislacao-ambiental-prad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-diagnostico-ambiental-aplicado.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Manual Prático do Diagnóstico Ambiental Aplicado e Produtos Técnicos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod5-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 5</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">Encerramento, Formulário e Referências</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-avaliacao-geral-final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avaliação Geral Integrada, Simulado Final Completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-formulario-glossario-referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formulário Técnico, Glossário e Referências Oficiais</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul class="collapse">
+  <li><a href="#vocabulário-técnico-e-símbolos-do-capítulo-15" id="toc-vocabulário-técnico-e-símbolos-do-capítulo-15" class="nav-link active" data-scroll-target="#vocabulário-técnico-e-símbolos-do-capítulo-15">Vocabulário Técnico e Símbolos do Capítulo 15</a></li>
+  <li><a href="#etapa-1-escolha-e-delimitação-do-recorte-espacial" id="toc-etapa-1-escolha-e-delimitação-do-recorte-espacial" class="nav-link" data-scroll-target="#etapa-1-escolha-e-delimitação-do-recorte-espacial">Etapa 1, Escolha e Delimitação do Recorte Espacial</a></li>
+  <li><a href="#etapa-2-levantamento-de-bases-cartográficas-e-dados-abertos" id="toc-etapa-2-levantamento-de-bases-cartográficas-e-dados-abertos" class="nav-link" data-scroll-target="#etapa-2-levantamento-de-bases-cartográficas-e-dados-abertos">Etapa 2, Levantamento de Bases Cartográficas e Dados Abertos</a></li>
+  <li><a href="#etapa-3-caracterização-integrada-físico-biótica-e-socioespacial" id="toc-etapa-3-caracterização-integrada-físico-biótica-e-socioespacial" class="nav-link" data-scroll-target="#etapa-3-caracterização-integrada-físico-biótica-e-socioespacial">Etapa 3, Caracterização Integrada Físico-Biótica e Socioespacial</a></li>
+  <li><a href="#etapa-4-identificação-e-mapeamento-de-processos-de-degradação" id="toc-etapa-4-identificação-e-mapeamento-de-processos-de-degradação" class="nav-link" data-scroll-target="#etapa-4-identificação-e-mapeamento-de-processos-de-degradação">Etapa 4, Identificação e Mapeamento de Processos de Degradação</a></li>
+  <li><a href="#etapa-5-montagem-da-matriz-de-indicadores-e-índice-de-priorização" id="toc-etapa-5-montagem-da-matriz-de-indicadores-e-índice-de-priorização" class="nav-link" data-scroll-target="#etapa-5-montagem-da-matriz-de-indicadores-e-índice-de-priorização">Etapa 5, Montagem da Matriz de Indicadores e Índice de Priorização</a></li>
+  <li><a href="#etapa-6-produtos-técnicos-obrigatórios-e-proposta-de-intervenção" id="toc-etapa-6-produtos-técnicos-obrigatórios-e-proposta-de-intervenção" class="nav-link" data-scroll-target="#etapa-6-produtos-técnicos-obrigatórios-e-proposta-de-intervenção">Etapa 6, Produtos Técnicos Obrigatórios e Proposta de Intervenção</a></li>
+  <li><a href="#etapa-7-checklist-de-entrega-e-rubrica-oficial-de-avaliação-50-pontos" id="toc-etapa-7-checklist-de-entrega-e-rubrica-oficial-de-avaliação-50-pontos" class="nav-link" data-scroll-target="#etapa-7-checklist-de-entrega-e-rubrica-oficial-de-avaliação-50-pontos">Etapa 7, Checklist de Entrega e Rubrica Oficial de Avaliação (5,0 Pontos)</a></li>
+  <li><a href="#síntese-aplicada-auditoria-pré-entrega-pela-rubrica-oficial" id="toc-síntese-aplicada-auditoria-pré-entrega-pela-rubrica-oficial" class="nav-link" data-scroll-target="#síntese-aplicada-auditoria-pré-entrega-pela-rubrica-oficial">Síntese Aplicada, Auditoria Pré-Entrega pela Rubrica Oficial</a></li>
+  <li><a href="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio" id="toc-armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="nav-link" data-scroll-target="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</a></li>
+  <li><a href="#exercícios-de-fixação" id="toc-exercícios-de-fixação" class="nav-link" data-scroll-target="#exercícios-de-fixação">Exercícios de fixação</a></li>
+  <li><a href="#questões-de-aplicação" id="toc-questões-de-aplicação" class="nav-link" data-scroll-target="#questões-de-aplicação">Questões de aplicação</a></li>
+  <li><a href="#gabarito-comentado" id="toc-gabarito-comentado" class="nav-link" data-scroll-target="#gabarito-comentado">Gabarito comentado</a></li>
+  <li><a href="#síntese-conceitual" id="toc-síntese-conceitual" class="nav-link" data-scroll-target="#síntese-conceitual">Síntese conceitual</a></li>
+  <li><a href="#autoavaliação" id="toc-autoavaliação" class="nav-link" data-scroll-target="#autoavaliação">Autoavaliação</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main data-book-tables="true" class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/13-bioengenharia-agua-solo.html">Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico</a></li><li class="breadcrumb-item"><a href="../capitulos/15-diagnostico-ambiental-aplicado.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Manual Prático do Diagnóstico Ambiental Aplicado e Produtos Técnicos</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="cap:diagnostico_final_pratico" class="quarto-section-identifier"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Manual Prático do Diagnóstico Ambiental Aplicado e Produtos Técnicos</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>O diagnóstico ambiental aplicado reúne evidências para explicar o funcionamento de uma área e orientar decisões. Mapas e indicadores sustentam a análise quando suas relações causais são explicitadas, permitindo compreender o problema, localizar as intervenções e verificar os resultados esperados.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>O que você vai aprender neste capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A aprendizagem envolve elaborar um diagnóstico com pergunta, recorte, dados, interpretação e proposta coerentes. O estudante deve justificar suas conclusões, reconhecer limitações de escala e resolução, calcular o Índice Composto de Priorização (<span class="math inline">\(IPI\)</span>) e apresentar critérios de acompanhamento para revisar a intervenção.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Revisando o que você precisa saber
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O trabalho articula leitura de paisagem, análise de bacia hidrográfica, fragilidade ambiental, qualidade do solo, indicadores PEIR, bioengenharia e instrumentos legais. A integração exige que mapas e tabelas utilizem unidades territoriais compatíveis e que diferenças de data e método sejam consideradas na interpretação.</p>
+</div>
+</div>
+<section id="vocabulário-técnico-e-símbolos-do-capítulo-15" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulário-técnico-e-símbolos-do-capítulo-15">Vocabulário Técnico e Símbolos do Capítulo 15</h2>
+<p>Para padronizar a comunicação técnica do Trabalho Prático Final, o <strong>Recorte Espacial (<span class="math inline">\(A_{\text{rec}}\)</span>)</strong> designa a unidade territorial delimitada para o diagnóstico, correspondendo preferencialmente a uma microbacia hidrográfica, sub-bacia, vertente completa ou trecho de APP e área degradada. Todos os projetos em QGIS e os mapas finais devem adotar o <strong>SIRGAS 2000</strong> (Sistema de Referência Geocêntrico para as Américas), datum geodésico oficial do Brasil. Na definição da escala cartográfica, <span class="math inline">\(A_{\min}\)</span> indica a <strong>área mínima mapeável</strong> no terreno correspondente a <span class="math inline">\(4\text{ mm}^2\)</span> no mapa impresso, calculada por <span class="math inline">\(A_{\min} = 4 \times 10^{-6} \cdot E^2\text{ m}^2\)</span>, em que <span class="math inline">\(E\)</span> é o denominador da escala <span class="math inline">\(1:E\)</span>.</p>
+<p>Na etapa de síntese quantitativa, a <strong>Matriz de Indicadores</strong> organiza os dados cruzando Pressão, Estado, Impacto e Resposta (PEIR) com atributos de qualidade do solo (<span class="math inline">\(IQS\)</span>) e fragilidade emergente (<span class="math inline">\(FE\)</span>). Desse cruzamento deriva-se o <strong>Índice Composto de Priorização de Intervenção (<span class="math inline">\(IPI\)</span>)</strong>, parâmetro adimensional entre <span class="math inline">\(0\)</span> e <span class="math inline">\(1\)</span> empregado para ranquear setores críticos na alocação de bioengenharia e PRAD, enquanto <span class="math inline">\(CE\)</span> representa o <strong>Custo-Efetividade</strong> de uma intervenção, medido em <span class="math inline">\(\text{t}\cdot\text{ano}^{-1}\)</span> de sedimentos retidos por <span class="math inline">\(\text{R\$ }1.000{,}00\)</span> investidos.</p>
+<p>O Trabalho Prático Final da disciplina CHF662 representa <span class="math inline">\(50\%\)</span> da avaliação semestral (<span class="math inline">\(5{,}0\)</span> pontos) e simula a entrega de um diagnóstico técnico profissional em Análise Ambiental. O fluxo metodológico articula sete etapas encadeadas, partindo da delimitação espacial e do levantamento de bases abertas até a matriz de indicadores, os produtos cartográficos, a proposta de intervenção e a socialização dos resultados (<a href="#fig-fluxo_diagnostico_final" class="quarto-xref">Figura&nbsp;<span>15.1</span></a>).</p>
+<div id="fig-fluxo_diagnostico_final" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fluxo_diagnostico_final-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig15_fluxo_diagnostico_final.png" title="fig:" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fluxo_diagnostico_final-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;15.1: Fluxograma operacional das sete etapas do Diagnóstico Ambiental Aplicado (Trabalho Prático Final da disciplina CHF662, Semana 16), integrando bases abertas, matriz de indicadores, produtos cartográficos e proposta de intervenção.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="etapa-1-escolha-e-delimitação-do-recorte-espacial" class="level2">
+<h2 class="anchored" data-anchor-id="etapa-1-escolha-e-delimitação-do-recorte-espacial">Etapa 1, Escolha e Delimitação do Recorte Espacial</h2>
+<p>A escolha da área de estudo deve equilibrar <strong>relevância socioambiental</strong> e <strong>viabilidade de levantamento</strong> no prazo semestral (IBGE, 2018; Cavalcanti, 2006). Entre as possibilidades de recorte, a <strong>microbacia hidrográfica</strong> constitui a unidade preferencial por integrar divisores de água, rede de drenagem, conectividade hidrossedimentológica e uso da terra, recomendando-se áreas entre <span class="math inline">\(1\text{ km}^2\)</span> e <span class="math inline">\(50\text{ km}^2\)</span>. Quando o foco recai sobre processos erosivos lineares (sulcos, ravinas e voçorocas) ou movimentos de massa em áreas urbanas e rurais, a delimitação pode concentrar-se em uma <strong>encosta ou vertente representativa</strong>. De modo complementar, diagnósticos voltados a passivo florestal (Lei nº 12.651/2012), assoreamento de açudes, antigas cascalheiras ou acessos de empreendimentos energéticos (como observado no campo do Semiárido) ajustam-se bem ao recorte de uma <strong>margem de curso d’água, APP ou área degradada pontual</strong>.</p>
+<p>Qualquer que seja o recorte selecionado, a delimitação deve ser vetorizada em polígono fechado no QGIS (formato GeoPackage <code>.gpkg</code> ou Shapefile <code>.shp</code>), acompanhada de justificativa clara dos critérios naturais (divisores topográficos) ou legais e administrativos (limites de APP ou poligonal de empreendimento) adotados.</p>
+</section>
+<section id="etapa-2-levantamento-de-bases-cartográficas-e-dados-abertos" class="level2">
+<h2 class="anchored" data-anchor-id="etapa-2-levantamento-de-bases-cartográficas-e-dados-abertos">Etapa 2, Levantamento de Bases Cartográficas e Dados Abertos</h2>
+<p>Todo diagnóstico ambiental auditável depende de fontes públicas rastreáveis, organizadas em um banco geográfico padronizado em <strong>SIRGAS 2000</strong>, adotando-se coordenadas geográficas para contextualização regional e projeção UTM (fuso 24S para a maior parte da Bahia) nos cálculos de área e comprimento. As plataformas oficiais e suas aplicações diretas no trabalho final estão sistematizadas na <a href="#tbl-bases_abertas_tpf" class="quarto-xref">Tabela&nbsp;<span>15.1</span></a>.</p>
+<div id="tbl-bases_abertas_tpf" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-bases_abertas_tpf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;15.1: Principais bases cartográficas e dados abertos oficiais aplicados ao Trabalho Prático Final em CHF662.
+</figcaption>
+<div aria-describedby="tbl-bases_abertas_tpf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="book-table-scroll" role="region" aria-label="Tabela 1" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Base / Plataforma</strong></th>
+<th style="text-align: left;"><strong>Dados Extraídos</strong></th>
+<th style="text-align: left;"><strong>Aplicação Direta no Trabalho Final</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>IBGE</strong></td>
+<td style="text-align: left;">Limites municipais, malha censitária, hidrografia e pedologia</td>
+<td style="text-align: left;">Contextualização territorial, caracterização socioespacial e classes de solo.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>SRTM / TOPODATA (INPE)</strong></td>
+<td style="text-align: left;">Modelo Digital de Elevação (<span class="math inline">\(30\text{ m}\)</span>), declividade e curvas de nível</td>
+<td style="text-align: left;">Delimitação automática da microbacia, perfil de vertente, fator <span class="math inline">\(LS\)</span> e mapa clinográfico (Ross).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>MapBiomas</strong></td>
+<td style="text-align: left;">Séries anuais de uso e cobertura da terra (<span class="math inline">\(30\text{ m}\)</span>)</td>
+<td style="text-align: left;">Análise multitemporal (por exemplo, <span class="math inline">\(1985\)</span>-<span class="math inline">\(2024\)</span>), supressão de vegetação nativa e fator <span class="math inline">\(C\)</span> da USLE.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>SICAR / CAR</strong></td>
+<td style="text-align: left;">Perímetros de imóveis rurais, APPs e Reserva Legal declaradas</td>
+<td style="text-align: left;">Verificação de passivo ambiental em APPs marginais e nascentes (Lei nº 12.651/2012).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>INEMA / SEI-BA</strong></td>
+<td style="text-align: left;">Outorgas, licenças ambientais, bacias estaduais e dados climáticos</td>
+<td style="text-align: left;">Identificação de empreendimentos licenciados, conflitos hídricos e erosividade regional (<span class="math inline">\(R\)</span>).</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</figure>
+</div>
+<p>Definidas as bases cartográficas de entrada, a equipe precisa compatibilizar a escala de apresentação dos mapas finais com o tamanho das feições erosivas e legais analisadas no terreno (Exemplo 15.1).</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 15.1 (Básico). Escolha da Escala Cartográfica e Área Mínima Mapeável (<span class="math inline">\(A_{\min}\)</span>)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Uma equipe escolheu uma microbacia de <span class="math inline">\(12{,}5\text{ km}^2\)</span> no Piemonte do Paraguaçu (BA) para o Trabalho Prático Final, onde existem voçorocas com cerca de <span class="math inline">\(0{,}40\text{ ha}\)</span> de área em planta e trechos de APP marginal com <span class="math inline">\(30\text{ m}\)</span> de largura. Os discentes precisam decidir entre produzir os mapas temáticos finais na escala <span class="math inline">\(1:25.000\)</span> ou na escala regional <span class="math inline">\(1:100.000\)</span>.</p>
+<p><strong>Dados disponíveis.</strong> Critério cartográfico padrão de área mínima mapeável no papel igual a <span class="math inline">\(a_{\text{papel}} = 4\text{ mm}^2 = 4 \times 10^{-6}\text{ m}^2\)</span>; Escala 1 com <span class="math inline">\(E_1 = 25.000\)</span>; Escala 2 com <span class="math inline">\(E_2 = 100.000\)</span>; área da feição erosiva alvo de <span class="math inline">\(A_{\text{alvo}} = 0{,}40\text{ ha} = 4.000\text{ m}^2\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular a área mínima mapeável no terreno (<span class="math inline">\(A_{\min}\)</span>) para ambas as escalas e justificar qual escala atende ao diagnóstico da microbacia.</p>
+<p><strong>Fundamento da análise.</strong> Conversão quadrática da área no papel para o terreno pela relação <span class="math inline">\(A_{\min} = a_{\text{papel}} \cdot E^2\)</span>, seguida da conversão de <span class="math inline">\(\text{m}^2\)</span> para hectares (<span class="math inline">\(1\text{ ha} = 10.000\text{ m}^2\)</span>).</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>Etapa 1 (Escala <span class="math inline">\(1:25.000\)</span>)</strong> e na <strong>Etapa 2 (Escala <span class="math inline">\(1:100.000\)</span>)</strong>,</p>
+<p><span class="math display">\[
+A_{\min,1} = 4 \times 10^{-6} \times (25.000)^2 = 2.500\text{ m}^2 = \mathbf{0{,}25\text{ ha}} \qquad A_{\min,2} = 4 \times 10^{-6} \times (100.000)^2 = 40.000\text{ m}^2 = \mathbf{4{,}00\text{ ha}}
+\]</span></p>
+<p>Comparando com a voçoroca alvo (<span class="math inline">\(0{,}40\text{ ha}\)</span>), na escala <span class="math inline">\(1:25.000\)</span> tem-se <span class="math inline">\(0{,}40\text{ ha} &gt; 0{,}25\text{ ha}\)</span> (feição representável em polígono), enquanto em <span class="math inline">\(1:100.000\)</span> tem-se <span class="math inline">\(0{,}40\text{ ha} &lt; 4{,}00\text{ ha}\)</span>, deixando a feição <span class="math inline">\(10\)</span> vezes abaixo do limite legível.</p>
+<p><strong>Interpretação do resultado.</strong> Deve-se adotar a escala <strong><span class="math inline">\(1:25.000\)</span></strong> (ou mais detalhada, como <span class="math inline">\(1:15.000\)</span>), pois <span class="math inline">\(A_{\min} = 0{,}25\text{ ha}\)</span> permite cartografar a voçoroca de <span class="math inline">\(0{,}40\text{ ha}\)</span>, ao passo que <span class="math inline">\(1:100.000\)</span> (<span class="math inline">\(A_{\min} = 4{,}00\text{ ha}\)</span>) ocultaria o processo erosivo.</p>
+<p><strong>Condições de validade.</strong> Além da área mínima, uma faixa de APP de <span class="math inline">\(30\text{ m}\)</span> mede <span class="math inline">\(1{,}2\text{ mm}\)</span> em <span class="math inline">\(1:25.000\)</span> (visível), mas apenas <span class="math inline">\(0{,}3\text{ mm}\)</span> em <span class="math inline">\(1:100.000\)</span> (espessura inferior a uma linha padrão de impressão). A escolha é cartograficamente consistente.</p>
+</div>
+</div>
+<p>Na preparação dos layouts e no cálculo de áreas no QGIS, dois descuidos cartográficos costumam comprometer a validade técnica dos mapas e das tabelas finais.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 1, Produzir Mapas sem Datum, Escala Gráfica ou Grade de Coordenadas
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Exportar layouts do QGIS apenas com o desenho colorido da microbacia, omitindo o sistema de referência (SIRGAS 2000), a barra de escala, a seta Norte ou a fonte dos dados.</p>
+<p><strong>Correção técnica.</strong> Mapa sem elementos cartográficos obrigatórios perde validade técnica e sofre desconto imediato na rubrica de avaliação. Utilize um modelo padronizado no Compositor de Impressão do QGIS com os seis elementos conferidos antes de exportar em PDF ou PNG de alta resolução (<span class="math inline">\(300\text{ dpi}\)</span>).</p>
+</div>
+</div>
+<p>De modo análogo, calcular polígonos e comprimentos de canais sem reprojeção métrica distorce todos os indicadores derivados do SIG.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 2, Calcular Áreas e Comprimentos em Graus Decimais (Coordenadas Geográficas)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Deixar as camadas em SIRGAS 2000 geográfico (EPSG:4674) ao calcular áreas de APPs ou comprimentos de canais na calculadora de campo do QGIS.</p>
+<p><strong>Correção técnica.</strong> Reprojete sempre as camadas de trabalho para o sistema métrico plano <strong>SIRGAS 2000 / UTM</strong> (por exemplo, Fuso 24S, EPSG:31984, na maior parte da Bahia) antes de mensurar hectares, perímetros ou densidades de drenagem.</p>
+</div>
+</div>
+</section>
+<section id="etapa-3-caracterização-integrada-físico-biótica-e-socioespacial" class="level2">
+<h2 class="anchored" data-anchor-id="etapa-3-caracterização-integrada-físico-biótica-e-socioespacial">Etapa 3, Caracterização Integrada Físico-Biótica e Socioespacial</h2>
+<p>Seguindo a abordagem sistêmica de Cavalcanti (2006) e IBGE (2018), o texto diagnóstico articula os compartimentos naturais e sociais explicando suas <strong>interações causais</strong>. No âmbito do <strong>meio físico-biótico</strong>, essa leitura integrada relaciona o regime pluviométrico (especialmente a concentração sazonal das chuvas), os compartimentos do relevo (topo, meia encosta, sopé e planície), as classes de solo (espessura, textura e suscetibilidade erosiva) e a fisionomia vegetal remanescente (Caatinga, Mata Atlântica, Cerrado ou vegetação ripária). Em conexão direta com essa base física, a análise da <strong>dinâmica socioespacial</strong> associa as formas de uso e ocupação da terra (pecuária extensiva, agricultura de sequeiro, expansão urbana, infraestrutura energética ou mineração) à estrutura fundiária, às pressões sobre os recursos hídricos e à percepção e vulnerabilidade das comunidades locais.</p>
+</section>
+<section id="etapa-4-identificação-e-mapeamento-de-processos-de-degradação" class="level2">
+<h2 class="anchored" data-anchor-id="etapa-4-identificação-e-mapeamento-de-processos-de-degradação">Etapa 4, Identificação e Mapeamento de Processos de Degradação</h2>
+<p>Com apoio de imagens de alta resolução (Google, Bing ou CBERS-4A no QGIS) e, quando viável, verificação de campo com registro fotográfico georreferenciado e escala métrica, realiza-se o inventário espacial dos processos ativos na área de estudo. A investigação abrange inicialmente os processos de <strong>erosão hídrica</strong>, identificando áreas com selamento superficial, erosão laminar, sulcos (<span class="math inline">\(&lt;0{,}5\text{ m}\)</span>), ravinas (<span class="math inline">\(&gt;0{,}5\text{ m}\)</span>) e voçorocas (com eventual exfiltração e <em>piping</em>). Em paralelo, mapeiam-se a <strong>degradação física do solo</strong> decorrente da compactação em trilhas, estradas não pavimentadas e áreas de pisoteio intenso, bem como a <strong>degradação ripária e fluvial</strong>, expressa pela supressão de mata ciliar em APPs, pelo solapamento de margens e pelo assoreamento de córregos, barreiros ou açudes. Quando presentes no recorte, incluem-se ainda os <strong>passivos de resíduos ou contaminação</strong>, como disposição irregular de resíduos sólidos, efluentes domésticos ou rejeitos minerários sem contenção.</p>
+</section>
+<section id="etapa-5-montagem-da-matriz-de-indicadores-e-índice-de-priorização" class="level2">
+<h2 class="anchored" data-anchor-id="etapa-5-montagem-da-matriz-de-indicadores-e-índice-de-priorização">Etapa 5, Montagem da Matriz de Indicadores e Índice de Priorização</h2>
+<p>Para conferir rigor analítico e evitar diagnósticos puramente descritivos, o Trabalho Prático Final exige uma <strong>Matriz de Indicadores</strong> que integre o modelo <strong>PEIR</strong> (Capítulo 10), os atributos de <strong>Qualidade do Solo</strong> (Capítulo 11) e a <strong>Fragilidade Emergente de Ross</strong> (Capítulo 9). Quando houver múltiplos setores ou subunidades na área de estudo, aplica-se o Índice Composto de Priorização de Intervenção (<span class="math inline">\(IPI\)</span>) para hierarquizar onde agir primeiro.</p>
+<section id="índice-composto-de-priorização-de-intervenção-ipi" class="level3">
+<h3 class="anchored" data-anchor-id="índice-composto-de-priorização-de-intervenção-ipi">Índice Composto de Priorização de Intervenção (<span class="math inline">\(IPI\)</span>)</h3>
+<p><span class="math display">\[
+IPI = w_F \cdot F_{\text{norm}} + w_S \cdot (1 - IQS) + w_P \cdot P_{\text{norm}} \qquad \text{com} \quad F_{\text{norm}} = \frac{FE - 1}{4}
+\]</span></p>
+<p>Nessa equação normalizada no intervalo <span class="math inline">\([0,\,1]\)</span>, <span class="math inline">\(F_{\text{norm}}\)</span> converte a Fragilidade Emergente de Ross (<span class="math inline">\(FE \in \{1, 2, 3, 4, 5\}\)</span>) para a escala de <span class="math inline">\(0{,}00\)</span> a <span class="math inline">\(1{,}00\)</span>, <span class="math inline">\((1 - IQS)\)</span> expressa o déficit de qualidade do solo a partir do Índice de Qualidade do Solo (<span class="math inline">\(IQS \in [0,\,1]\)</span>), e <span class="math inline">\(P_{\text{norm}} \in [0,\,1]\)</span> quantifica a pressão ou o impacto antrópico normalizado na matriz PEIR. Os pesos técnicos respeitam <span class="math inline">\(w_F + w_S + w_P = 1{,}00\)</span>, com padrão sugerido de <span class="math inline">\(w_F = 0{,}35\)</span>, <span class="math inline">\(w_S = 0{,}35\)</span> e <span class="math inline">\(w_P = 0{,}30\)</span>.</p>
+<p>A arquitetura analítica do <span class="math inline">\(IPI\)</span> sintetiza de forma transparente três dimensões diagnósticas complementares (<a href="#fig-matriz-ipi-priorizacao" class="quarto-xref">Figura&nbsp;<span>15.2</span></a>). Enquanto o componente físico (<span class="math inline">\(35\%\)</span>) capta a suscetibilidade morfopedológica e erosiva herdada dos Módulos 3 e 4, o déficit edáfico (<span class="math inline">\(35\%\)</span>) reflete a perda de funcionalidade do solo por compactação, queda de porosidade e redução de matéria orgânica, e a pressão PEIR (<span class="math inline">\(30\%\)</span>) traduz a intensidade dos vetores antrópicos sobre o recorte. Embora uma síntese visual simplificada possa agrupar o índice em três grandes patamares (<span class="math inline">\(&lt;0{,}35\)</span>, <span class="math inline">\(0{,}35\text{-}0{,}65\)</span> e <span class="math inline">\(\ge 0{,}65\)</span>), a matriz operacional adotada nos cálculos da disciplina desdobra a faixa superior em quatro classes graduais (<a href="#tbl-faixas_ipi" class="quarto-xref">Tabela&nbsp;<span>15.2</span></a>) para distinguir intervenções preventivas de ações emergenciais em voçorocas.</p>
+<div id="fig-matriz-ipi-priorizacao" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagrama com três blocos de entrada F_norm 35%, 1-IQS 35% e P_norm 30% convergindo para a fórmula do IPI e três blocos inferiores de prioridade">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-matriz-ipi-priorizacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap15_matriz_ipi_priorizacao.png" class="img-fluid figure-img" alt="Diagrama com três blocos de entrada F_norm 35%, 1-IQS 35% e P_norm 30% convergindo para a fórmula do IPI e três blocos inferiores de prioridade">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-matriz-ipi-priorizacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;15.2: Arquitetura conceitual do Índice Composto de Priorização de Intervenção (<span class="math inline">\(IPI\)</span>), articulando o componente físico (<span class="math inline">\(F_{\text{norm}}\)</span>), o déficit do solo (<span class="math inline">\(1 - IQS\)</span>) e a pressão PEIR (<span class="math inline">\(P_{\text{norm}}\)</span>) em faixas de decisão.
+</figcaption>
+</figure>
+</div>
+<p>As quatro faixas operacionais empregadas na classificação detalhada dos setores da microbacia constam da <a href="#tbl-faixas_ipi" class="quarto-xref">Tabela&nbsp;<span>15.2</span></a>, orientando desde o monitoramento preventivo em remanescentes conservados até obras integradas de drenagem e bioengenharia nos setores críticos.</p>
+<div id="tbl-faixas_ipi" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-faixas_ipi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;15.2: Faixas operacionais de priorização do <span class="math inline">\(IPI\)</span> e diretrizes de gestão correspondentes.
+</figcaption>
+<div aria-describedby="tbl-faixas_ipi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="book-table-scroll" role="region" aria-label="Tabela 2" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Intervalo de <span class="math inline">\(IPI\)</span></strong></th>
+<th style="text-align: left;"><strong>Classe de Prioridade</strong></th>
+<th style="text-align: left;"><strong>Diretriz de Gestão e Intervenção</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(0{,}00 \le IPI &lt; 0{,}35\)</span></td>
+<td style="text-align: left;"><strong>Baixa</strong></td>
+<td style="text-align: left;">Conservação preventiva e monitoramento periódico.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(0{,}35 \le IPI &lt; 0{,}60\)</span></td>
+<td style="text-align: left;"><strong>Média</strong></td>
+<td style="text-align: left;">Práticas conservacionistas (<span class="math inline">\(C\)</span> e <span class="math inline">\(P\)</span>) e manejo sustentável.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(0{,}60 \le IPI &lt; 0{,}80\)</span></td>
+<td style="text-align: left;"><strong>Alta</strong></td>
+<td style="text-align: left;">Bioengenharia leve (biomantas, estacas vivas) e recomposição de APP.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(0{,}80 \le IPI \le 1{,}00\)</span></td>
+<td style="text-align: left;"><strong>Crítica</strong></td>
+<td style="text-align: left;">Intervenção imediata integrada (PRAD, paliçadas, drenagem e isolamento).</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</figure>
+</div>
+<p>Na organização prática do relatório, os indicadores levantados em SIG, campo e laboratório articulam-se em uma matriz integrada que vincula diretamente cada métrica mensurada à respectiva resposta corretiva de PRAD ou bioengenharia (<a href="#tbl-matriz_integrada_ipi" class="quarto-xref">Tabela&nbsp;<span>15.3</span></a>). O Exemplo 15.2 demonstra o cálculo passo a passo do <span class="math inline">\(IPI\)</span> para três setores contrastantes de uma microbacia.</p>
+<div id="tbl-matriz_integrada_ipi" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-matriz_integrada_ipi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;15.3: Estrutura de referência da Matriz Integrada de Indicadores para o Trabalho Prático Final.
+</figcaption>
+<div aria-describedby="tbl-matriz_integrada_ipi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="book-table-scroll" role="region" aria-label="Tabela 3" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Dimensão</strong></th>
+<th style="text-align: left;"><strong>Indicador Medido</strong></th>
+<th style="text-align: left;"><strong>Fonte / Método</strong></th>
+<th style="text-align: left;"><strong>Valor / Classe</strong></th>
+<th style="text-align: left;"><strong>Papel na Resposta (PRAD)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>PEIR (P)</strong></td>
+<td style="text-align: left;">Déficit de APP marginal</td>
+<td style="text-align: left;">SICAR + MapBiomas</td>
+<td style="text-align: left;"><span class="math inline">\(35\%\)</span> suprimido</td>
+<td style="text-align: left;">Recomposição legal obrigatória (Lei 12.651/12).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>PEIR (E) / Solo</strong></td>
+<td style="text-align: left;">Densidade do solo (<span class="math inline">\(D_s\)</span>) e <span class="math inline">\(IQS\)</span></td>
+<td style="text-align: left;">Anel volumétrico / MDS</td>
+<td style="text-align: left;"><span class="math inline">\(IQS = 0{,}42\)</span> (Baixo)</td>
+<td style="text-align: left;">Descompactação e aporte de matéria orgânica.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Ross (FE)</strong></td>
+<td style="text-align: left;">Fragilidade Emergente</td>
+<td style="text-align: left;">Cruzamento decliv., solo e uso</td>
+<td style="text-align: left;"><span class="math inline">\(FE = 4\)</span> (Forte)</td>
+<td style="text-align: left;">Restrição de uso e cobertura permanente.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>PEIR (I)</strong></td>
+<td style="text-align: left;">Focos erosivos lineares</td>
+<td style="text-align: left;">Campo / Imagem alta res.</td>
+<td style="text-align: left;"><span class="math inline">\(4\text{ ravinas/km}^2\)</span></td>
+<td style="text-align: left;">Paliçadas permeáveis e dissipadores de energia.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 15.2 (Intermediário). Montagem da Matriz Integrada e Cálculo do <span class="math inline">\(IPI\)</span> por Setor
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Ao organizar a Matriz de Indicadores do Trabalho Final, uma equipe dividiu uma microbacia em três setores homogêneos e levantou, por meio de QGIS, campo e análise de solo, os valores de Fragilidade Emergente (<span class="math inline">\(FE\)</span>), Índice de Qualidade do Solo (<span class="math inline">\(IQS\)</span>) e Pressão/Impacto PEIR normalizado (<span class="math inline">\(P_{\text{norm}}\)</span>).</p>
+<p><strong>Dados disponíveis.</strong> <strong>Setor A (Cabeceira com voçoroca),</strong> <span class="math inline">\(FE = 5\)</span>, <span class="math inline">\(IQS = 0{,}36\)</span>, <span class="math inline">\(P_{\text{norm}} = 0{,}90\)</span>. <strong>Setor B (Meia encosta com pastagem),</strong> <span class="math inline">\(FE = 3\)</span>, <span class="math inline">\(IQS = 0{,}60\)</span>, <span class="math inline">\(P_{\text{norm}} = 0{,}50\)</span>. <strong>Setor C (Remanescente de Caatinga/APP),</strong> <span class="math inline">\(FE = 2\)</span>, <span class="math inline">\(IQS = 0{,}88\)</span>, <span class="math inline">\(P_{\text{norm}} = 0{,}10\)</span>. Pesos adotados iguais a <span class="math inline">\(w_F = 0{,}35\)</span>, <span class="math inline">\(w_S = 0{,}35\)</span> e <span class="math inline">\(w_P = 0{,}30\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular <span class="math inline">\(F_{\text{norm}}\)</span>, <span class="math inline">\((1 - IQS)\)</span> e o Índice Composto de Priorização (<span class="math inline">\(IPI\)</span>) para cada setor, classificando a prioridade de intervenção.</p>
+<p><strong>Fundamento da análise.</strong> Normalização de <span class="math inline">\(FE\)</span> por <span class="math inline">\(F_{\text{norm}} = (FE - 1)/4\)</span> e aplicação da soma ponderada <span class="math inline">\(IPI = 0{,}35\,F_{\text{norm}} + 0{,}35\,(1 - IQS) + 0{,}30\,P_{\text{norm}}\)</span>.</p>
+<p><strong>Desenvolvimento.</strong> Para o <strong>Setor A</strong>, <span class="math inline">\(F_{\text{norm}} = (5 - 1)/4 = 1{,}00\)</span> e <span class="math inline">\((1 - IQS) = 1 - 0{,}36 = 0{,}64\)</span>,</p>
+<p><span class="math display">\[
+\begin{aligned}
+IPI_A &amp;= 0{,}35(1{,}00) + 0{,}35(0{,}64) + 0{,}30(0{,}90) \\
+      &amp;= 0{,}350 + 0{,}224 + 0{,}270 = \mathbf{0{,}844}\quad(\text{Prioridade Crítica})
+\end{aligned}
+\]</span></p>
+<p>Para o <strong>Setor B</strong>, <span class="math inline">\(F_{\text{norm}} = (3 - 1)/4 = 0{,}50\)</span> e <span class="math inline">\((1 - IQS) = 1 - 0{,}60 = 0{,}40\)</span>,</p>
+<p><span class="math display">\[
+\begin{aligned}
+IPI_B &amp;= 0{,}35(0{,}50) + 0{,}35(0{,}40) + 0{,}30(0{,}50) \\
+      &amp;= 0{,}175 + 0{,}140 + 0{,}150 = \mathbf{0{,}465}\quad(\text{Prioridade Média})
+\end{aligned}
+\]</span></p>
+<p>Para o <strong>Setor C</strong>, <span class="math inline">\(F_{\text{norm}} = (2 - 1)/4 = 0{,}25\)</span> e <span class="math inline">\((1 - IQS) = 1 - 0{,}88 = 0{,}12\)</span>,</p>
+<p><span class="math display">\[
+\begin{aligned}
+IPI_C &amp;= 0{,}35(0{,}25) + 0{,}35(0{,}12) + 0{,}30(0{,}10) \\
+      &amp;= 0{,}0875 + 0{,}0420 + 0{,}0300 = \mathbf{0{,}1595}\approx \mathbf{0{,}160}\quad(\text{Prioridade Baixa})
+\end{aligned}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> <span class="math inline">\(IPI_A = \mathbf{0{,}844}\)</span> (Crítica, PRAD e bioengenharia imediatos); <span class="math inline">\(IPI_B = \mathbf{0{,}465}\)</span> (Média, manejo conservacionista); <span class="math inline">\(IPI_C = \mathbf{0{,}160}\)</span> (Baixa, manutenção e monitoramento).</p>
+<p><strong>Condições de validade.</strong> Todos os valores permanecem dentro do intervalo teórico <span class="math inline">\([0,\,1]\)</span>, e a ordenação (<span class="math inline">\(A &gt; B &gt; C\)</span>) reflete fielmente o gradiente de degradação observado.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="etapa-6-produtos-técnicos-obrigatórios-e-proposta-de-intervenção" class="level2">
+<h2 class="anchored" data-anchor-id="etapa-6-produtos-técnicos-obrigatórios-e-proposta-de-intervenção">Etapa 6, Produtos Técnicos Obrigatórios e Proposta de Intervenção</h2>
+<p>O trabalho entregue deve conter três produtos técnicos articulados entre si. O primeiro produto consiste no <strong>conjunto de mapas temáticos</strong>, composto por no mínimo três cartas principais, sendo elas o Mapa de Localização e Delimitação do Recorte Espacial, o Mapa de Uso e Cobertura da Terra e APPs, e o Mapa de Fragilidade Ambiental e Pontos de Degradação; todos os layouts devem apresentar os <strong>seis elementos cartográficos obrigatórios</strong> (título informativo, orientação com seta Norte, escala gráfica e numérica, grade de coordenadas com indicação do datum <strong>SIRGAS 2000</strong>, legenda legível e quadro de fontes e autoria).</p>
+<p>O segundo produto corresponde ao <strong>relatório técnico interpretativo</strong>, redigido de forma estruturada com introdução e objetivos, localização e métodos, resultados integrados (apoiados em tabelas, gráficos e matriz de indicadores) e discussão crítica fundamentada na bibliografia da disciplina. Articulando-se diretamente a esse diagnóstico, o terceiro produto reúne a <strong>proposta preliminar de conservação, bioengenharia ou PRAD</strong>, vinculando cada medida aos indicadores críticos diagnosticados (Vital et al., 2020) mediante especificação das técnicas selecionadas (paliçadas, biomantas, plantio em contorno, isolamento de APP e espécies nativas), cronograma físico simplificado e metas mensuráveis de monitoramento pós-implantação, como taxa de sobrevivência <span class="math inline">\(\ge 80\%\)</span> e redução do recuo de borda erosiva.</p>
+<p>Toda recomendação técnica deve indicar qual processo físico será alterado e por qual mecanismo, respeitando o percurso da água entre fontes a montante, caminhos de escoamento e áreas receptoras a jusante. Além disso, cada conclusão precisa manter vínculo verificável com os dados coletados, explicitando o alcance descritivo de evidências fotográficas frente a medições instrumentais (como densidade do solo, infiltração e perfis transversais), justificando os pesos adotados na matriz de prioridade e registrando dados ausentes e eventuais incertezas sobre a decisão. Os Exemplos 15.3 e 15.4 ilustram, respectivamente, a quantificação do passivo em APP para o dimensionamento de mudas e a seleção de intervenções por custo-efetividade (<span class="math inline">\(CE\)</span>).</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 15.3 (Intermediário). Quantificação de Passivo em APP Marginal e Demanda de Mudas
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Na sobreposição entre a hidrografia vetorial, o SICAR e o MapBiomas, uma equipe diagnosticou um trecho de <span class="math inline">\(2.000\text{ m}\)</span> de curso d’água com <span class="math inline">\(12\text{ m}\)</span> de largura regular, no qual a mata ciliar foi parcialmente substituída por pastagem degradada.</p>
+<p><strong>Dados disponíveis.</strong> Comprimento do trecho <span class="math inline">\(L = 2.000\text{ m}\)</span>; largura do rio de <span class="math inline">\(12\text{ m}\)</span> (pela Lei nº 12.651/2012, cursos d’água entre <span class="math inline">\(10\text{ m}\)</span> e <span class="math inline">\(50\text{ m}\)</span> exigem APP mínima de <span class="math inline">\(50\text{ m}\)</span> em cada margem); percentual degradado diagnosticado nas duas margens de <span class="math inline">\(35\%\)</span>; espaçamento adotado no PRAD de <span class="math inline">\(2{,}5\text{ m} \times 2{,}0\text{ m}\)</span> (<span class="math inline">\(5{,}0\text{ m}^2\)</span> por muda, equivalente a <span class="math inline">\(2.000\text{ mudas}\cdot\text{ha}^{-1}\)</span>), prevendo <span class="math inline">\(10\%\)</span> adicionais para replantio.</p>
+<p><strong>Problema a resolver.</strong> Calcular a área total de APP legal no trecho, o passivo ambiental em hectares a ser recomposto e o número total de mudas nativas necessário.</p>
+<p><strong>Fundamento da análise.</strong> Cálculo geométrico da área retangular equivalente das duas faixas marginais, aplicação do percentual de déficit e multiplicação pela densidade de plantio ajustada para replantio.</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>Etapa 1 (APP legal e passivo a recompor a <span class="math inline">\(35\%\)</span>)</strong>,</p>
+<p><span class="math display">\[
+A_{\text{APP}} = 2 \times 50\text{ m} \times 2.000\text{ m} = 200.000\text{ m}^2 = \mathbf{20{,}0\text{ ha}} \qquad A_{\text{passivo}} = 0{,}35 \times 20{,}0 = \mathbf{7{,}0\text{ ha}}
+\]</span></p>
+<p>Na <strong>Etapa 2 (Mudas iniciais e acréscimo de <span class="math inline">\(10\%\)</span> para replantio)</strong>,</p>
+<p><span class="math display">\[
+N_{\text{inicial}} = 7{,}0 \times 2.000 = 14.000\text{ mudas} \qquad\qquad N_{\text{total}} = 14.000 \times 1{,}10 = \mathbf{15.400\text{ mudas}}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> APP total <span class="math inline">\(= \mathbf{20{,}0\text{ ha}}\)</span>; passivo a recompor <span class="math inline">\(= \mathbf{7{,}0\text{ ha}}\)</span>; demanda total do viveiro <span class="math inline">\(= \mathbf{15.400\text{ mudas nativas}}\)</span>.</p>
+<p><strong>Condições de validade.</strong> Para <span class="math inline">\(7{,}0\text{ ha}\)</span>, o número inicial de <span class="math inline">\(14.000\)</span> mudas equivale exatamente a <span class="math inline">\(1\)</span> muda a cada <span class="math inline">\(5\text{ m}^2\)</span> (<span class="math inline">\(70.000 / 5 = 14.000\)</span>), e o acréscimo de <span class="math inline">\(10\%\)</span> (<span class="math inline">\(1.400\)</span> mudas) garante a reposição de eventuais perdas no primeiro ciclo seco.</p>
+</div>
+</div>
+<p>Quando múltiplas alternativas técnicas atendem ao mesmo diagnóstico, a comparação financeira pela retenção anual de sedimentos orienta a alocação eficiente de recursos no relatório final (Exemplo 15.4).</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 15.4 (Avançado). Seleção de Alternativa de Intervenção por Custo-Efetividade (<span class="math inline">\(CE\)</span>)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Para conter o aporte de sedimentos em uma ravina crítica (<span class="math inline">\(IPI = 0{,}84\)</span>) identificada no Trabalho Final, a equipe comparou duas propostas preliminares de intervenção, confrontando o Pacote 1 (paliçadas permeáveis de bambu, biomanta e revegetação com espécies nativas) com o Pacote 2 (enrocamento com gabiões de pedra e canaleta rígida de concreto).</p>
+<p><strong>Dados disponíveis.</strong> <strong>Pacote 1 (Bioengenharia e PRAD).</strong> Custo estimado <span class="math inline">\(= \text{R\$ }18.000,00\)</span>; retenção anual estimada <span class="math inline">\(= 180\text{ t}\cdot\text{ano}^{-1}\)</span> de sedimentos. <strong>Pacote 2 (Obra Rígida Convencional).</strong> Custo estimado <span class="math inline">\(= \text{R\$ }45.000,00\)</span>; retenção anual estimada <span class="math inline">\(= 225\text{ t}\cdot\text{ano}^{-1}\)</span> de sedimentos.</p>
+<p><strong>Problema a resolver.</strong> Calcular o Custo-Efetividade (<span class="math inline">\(CE\)</span>) de cada pacote em <span class="math inline">\(\text{t}\cdot\text{ano}^{-1}\)</span> retidas por <span class="math inline">\(\text{R\$ }1.000,00\)</span> investidos e justificar a recomendação técnica no relatório.</p>
+<p><strong>Fundamento da análise.</strong> Divisão da massa anual de sedimentos retida pelo custo total expresso em milhares de reais.</p>
+<p><strong>Desenvolvimento.</strong> Para o <strong>Pacote 1 (Bioengenharia)</strong> e o <strong>Pacote 2 (Obra Rígida)</strong>,</p>
+<p><span class="math display">\[
+CE_1 = \frac{180\text{ t}\cdot\text{ano}^{-1}}{18{,}0\text{ mil reais}} = \mathbf{10{,}0\text{ t}\cdot\text{ano}^{-1}\text{ por }\text{R\$ }1.000{,}00} \qquad CE_2 = \frac{225\text{ t}\cdot\text{ano}^{-1}}{45{,}0\text{ mil reais}} = \mathbf{5{,}0\text{ t}\cdot\text{ano}^{-1}\text{ por }\text{R\$ }1.000{,}00}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> O Pacote 1 apresenta retenção estimada de <span class="math inline">\(10{,}0\)</span> toneladas por ano a cada <span class="math inline">\(\text{R\$ }1.000{,}00\)</span> investidos, enquanto o Pacote 2 apresenta <span class="math inline">\(5{,}0\)</span> toneladas por ano para o mesmo custo de referência, exibindo o dobro da retenção por unidade de custo. A seleção final considera também compatibilidade técnica, duração e manutenção.</p>
+<p><strong>Condições de validade.</strong> O Pacote 2 retém <span class="math inline">\(25\%\)</span> a mais de sedimentos (<span class="math inline">\(225\)</span> contra <span class="math inline">\(180\text{ t}\cdot\text{ano}^{-1}\)</span>), porém custa <span class="math inline">\(2{,}5\)</span> vezes mais (<span class="math inline">\(\text{R\$ }45.000\)</span> contra <span class="math inline">\(\text{R\$ }18.000\)</span>), indicando vantagem técnica e econômica da bioengenharia em ravinas de pequeno e médio porte.</p>
+</div>
+</div>
+<p>Esse encadeamento entre diagnóstico espacial, matriz quantitativa e prescrição executiva previne propostas genéricas desconectadas das evidências de campo.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 3, Apresentar Diagnóstico Desconectado da Proposta de Intervenção
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente,</strong> Descrever no relatório uma voçoroca ativa com <em>piping</em> e compactação severa, mas propor na conclusão apenas “conscientização ambiental” ou “plantio aleatório de mudas” sem controle de escoamento.</p>
+<p><strong>Correção técnica,</strong> Cada medida da proposta de PRAD ou bioengenharia deve responder diretamente a um indicador crítico da Matriz de Indicadores (<span class="math inline">\(IPI\)</span>), articulando controle hidráulico a montante, estabilização mecânica (paliçadas ou biomantas) e recomposição vegetal adaptada ao bioma.</p>
+</div>
+</div>
+</section>
+<section id="etapa-7-checklist-de-entrega-e-rubrica-oficial-de-avaliação-50-pontos" class="level2">
+<h2 class="anchored" data-anchor-id="etapa-7-checklist-de-entrega-e-rubrica-oficial-de-avaliação-50-pontos">Etapa 7, Checklist de Entrega e Rubrica Oficial de Avaliação (5,0 Pontos)</h2>
+<p>Na Semana 16, o trabalho é entregue e socializado em apresentação oral breve. Utilize a rubrica oficial apresentada na <a href="#tbl-rubrica_tpf" class="quarto-xref">Tabela&nbsp;<span>15.4</span></a> para auditar seu projeto antes da submissão final.</p>
+<div id="tbl-rubrica_tpf" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rubrica_tpf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;15.4: Rubrica oficial de avaliação do Trabalho Prático Final da disciplina CHF662 (Semana 16, <span class="math inline">\(5{,}0\)</span> pontos).
+</figcaption>
+<div aria-describedby="tbl-rubrica_tpf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="book-table-scroll" role="region" aria-label="Tabela 4" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Critério Avaliativo</strong></th>
+<th style="text-align: left;"><strong>Peso (pts)</strong></th>
+<th style="text-align: left;"><strong>Descritor de Desempenho Pleno (100%)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>1. Delimitação e Bases Cartográficas</strong></td>
+<td style="text-align: left;"><span class="math inline">\(1{,}0\)</span></td>
+<td style="text-align: left;">Recorte espacial justificado; bases abertas validadas (IBGE, TOPODATA, MapBiomas, SICAR); todos os mapas em SIRGAS 2000 com os 6 elementos obrigatórios.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2. Caracterização Integrada e Degradação</strong></td>
+<td style="text-align: left;"><span class="math inline">\(1{,}0\)</span></td>
+<td style="text-align: left;">Articulação físico-biótica e socioespacial sem fragmentação; processos erosivos e passivos em APP corretamente classificados e georreferenciados.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>3. Matriz de Indicadores (<span class="math inline">\(IPI\)</span> / PEIR / Solo / Ross)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(1{,}0\)</span></td>
+<td style="text-align: left;">Matriz completa e coerente, sem inversão de categorias PEIR; cálculos de <span class="math inline">\(IQS\)</span>, Ross e <span class="math inline">\(IPI\)</span> auditáveis e interpretados.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>4. Produtos Técnicos e Proposta de PRAD/Bioengenharia</strong></td>
+<td style="text-align: left;"><span class="math inline">\(1{,}2\)</span></td>
+<td style="text-align: left;">Proposta tecnicamente compatível com os processos diagnosticados (Vital et al., 2020), respeitando a Lei nº 12.651/2012 e com metas de monitoramento.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>5. Redação Técnica e Socialização (Semana 16)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(0{,}8\)</span></td>
+<td style="text-align: left;">Clareza, norma culta, citações padronizadas (ABNT) e defesa oral objetiva, respeitando o tempo e respondendo com domínio conceitual.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>TOTAL GERAL</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\mathbf{5{,}0}\)</span></td>
+<td style="text-align: left;"><strong>Correspondente a <span class="math inline">\(50\%\)</span> da média semestral de CHF662.</strong></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</figure>
+</div>
+</section>
+<section id="síntese-aplicada-auditoria-pré-entrega-pela-rubrica-oficial" class="level2">
+<h2 class="anchored" data-anchor-id="síntese-aplicada-auditoria-pré-entrega-pela-rubrica-oficial">Síntese Aplicada, Auditoria Pré-Entrega pela Rubrica Oficial</h2>
+<p>Antes de submeter a versão definitiva do relatório e dos mapas na Semana 16, recomenda-se executar uma auditoria interna com base nos cinco critérios da rubrica, identificando onde ajustes objetivos geram o maior ganho de qualidade técnica (Exemplo 15.5).</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 15.5 (Aplicado). Auditoria Pré-Entrega pela Rubrica Oficial CHF662 (<span class="math inline">\(5{,}0\)</span> Pontos)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Uma semana antes da socialização da Semana 16, um grupo realizou uma simulação de autoavaliação de seu rascunho de Trabalho Prático Final utilizando a Rubrica Oficial de <span class="math inline">\(5{,}0\)</span> pontos da disciplina CHF662.</p>
+<p><strong>Dados disponíveis.</strong> Notas parciais diagnosticadas na pré-auditoria, Critério 1 (Delimitação e bases, máx. <span class="math inline">\(1{,}0\)</span>) igual a <span class="math inline">\(0{,}70\)</span> por ausência de datum SIRGAS 2000 e escala gráfica em um dos mapas; Critério 2 (Caracterização e degradação, máx. <span class="math inline">\(1{,}0\)</span>) igual a <span class="math inline">\(0{,}90\)</span>; Critério 3 (Matriz de Indicadores, máx. <span class="math inline">\(1{,}0\)</span>) igual a <span class="math inline">\(1{,}00\)</span>; Critério 4 (Produtos técnicos e PRAD, máx. <span class="math inline">\(1{,}2\)</span>) igual a <span class="math inline">\(0{,}85\)</span> por ausência de metas mensuráveis de monitoramento no PRAD; e Critério 5 (Redação e socialização, máx. <span class="math inline">\(0{,}8\)</span>) igual a <span class="math inline">\(0{,}75\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular a pontuação atual do rascunho, o percentual atingido sobre os <span class="math inline">\(5{,}0\)</span> pontos e identificar quais duas correções rápidas recuperam o maior ganho de nota antes da entrega.</p>
+<p><strong>Fundamento da análise.</strong> Soma ponderada direta das notas obtidas nos cinco critérios e cálculo do déficit por critério.</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>Etapa 1 (Pontuação atual e percentual sobre <span class="math inline">\(5{,}0\)</span> pontos)</strong>,</p>
+<p><span class="math display">\[
+N_{\text{atual}} = 0{,}70 + 0{,}90 + 1{,}00 + 0{,}85 + 0{,}75 = \mathbf{4{,}20\text{ pontos}} \qquad\qquad \frac{4{,}20}{5{,}00} \times 100\% = \mathbf{84{,}0\%}
+\]</span></p>
+<p>Na <strong>Etapa 2 (Maiores déficits identificados)</strong>, destacam-se o Critério 4 (<span class="math inline">\(1{,}20 - 0{,}85 = 0{,}35\text{ pt}\)</span>) e o Critério 1 (<span class="math inline">\(1{,}00 - 0{,}70 = 0{,}30\text{ pt}\)</span>).</p>
+<p><strong>Interpretação do resultado.</strong> Pontuação atual <span class="math inline">\(= \mathbf{4{,}20\text{ pts}}\)</span> (<span class="math inline">\(84{,}0\%\)</span>). Inserir metas mensuráveis de monitoramento no PRAD (<span class="math inline">\(+0{,}35\text{ pt}\)</span>) e completar o datum SIRGAS 2000 e a escala gráfica no mapa (<span class="math inline">\(+0{,}30\text{ pt}\)</span>) eleva o trabalho para <span class="math inline">\(4{,}85\text{ pts}\)</span> (<span class="math inline">\(97{,}0\%\)</span>).</p>
+<p><strong>Condições de validade.</strong> A soma das perdas totais (<span class="math inline">\(0{,}30 + 0{,}10 + 0{,}00 + 0{,}35 + 0{,}05 = 0{,}80\text{ pt}\)</span>) fecha exatamente com <span class="math inline">\(5{,}00 - 4{,}20 = 0{,}80\text{ pt}\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="level2">
+<h2 class="anchored" data-anchor-id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</h2>
+<p>Mesmo com mapas bem elaborados e cálculos corretos, a inversão causal entre os compartimentos da Matriz de Indicadores invalida a coerência entre diagnóstico e proposta de recuperação.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 4, Confundir Indicadores de Pressão, Estado, Impacto e Resposta na Matriz
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente,</strong> Listar a execução do PRAD como “Impacto” ou classificar a declividade natural do relevo como “Pressão antrópica”.</p>
+<p><strong>Correção técnica,</strong> Lembre a cadeia causal do modelo PEIR. O compartimento <strong>P</strong> reúne o vetor ou atividade humana modificadora; <strong>E</strong> retrata a condição atual do meio; <strong>I</strong> traduz o efeito físico, ecológico ou social mensurável; e <strong>R</strong> expressa a ação corretiva, legal ou de manejo proposta pelo poder público ou empreendedor.</p>
+</div>
+</div>
+<p>Para revisar a articulação entre legislação ambiental, Código Florestal e instrumentos de gestão aplicados ao Trabalho Prático Final, assista às videoaulas selecionadas na página da disciplina, iniciando por <a href="https://www.youtube.com/watch?v=L-WEcC2IlbA">Gestão Ambiental - Legislação e Certificação Ambiental</a>, prosseguindo com <a href="https://www.youtube.com/watch?v=ApidLjWC4Dc">Direito Ambiental: Código Florestal</a> e concluindo com <a href="https://www.youtube.com/watch?v=gC4uHPJDiVA">Legislação Ambiental Brasileira</a>.</p>
+</section>
+<section id="exercícios-de-fixação" class="level2">
+<h2 class="anchored" data-anchor-id="exercícios-de-fixação">Exercícios de fixação</h2>
+<section id="nível-básico-conceitos-bases-abertas-e-fluxo-do-trabalho-final" class="level4">
+<h4 class="anchored" data-anchor-id="nível-básico-conceitos-bases-abertas-e-fluxo-do-trabalho-final">Nível Básico (Conceitos, Bases Abertas e Fluxo do Trabalho Final)</h4>
+<ol type="1">
+<li><p>Explique por que a <strong>microbacia hidrográfica</strong> é considerada a unidade espacial preferencial para o Trabalho Prático Final da disciplina CHF662, citando ao menos duas vantagens analíticas em relação a recortes puramente administrativos.</p></li>
+<li><p>Relacione as cinco plataformas abertas (<strong>IBGE</strong>, <strong>TOPODATA/SRTM</strong>, <strong>MapBiomas</strong>, <strong>SICAR/CAR</strong> e <strong>INEMA/SEI-BA</strong>) ao tipo específico de dado que cada uma fornece para o diagnóstico ambiental.</p></li>
+<li><p>Liste os <strong>seis elementos cartográficos obrigatórios</strong> que devem constar em todos os mapas temáticos do Trabalho Prático Final e explique qual datum oficial deve ser adotado no Brasil.</p></li>
+<li><p>Diferencie <strong>diagnóstico descritivo fragmentado</strong> de <strong>caracterização integrada físico-biótica e socioespacial</strong>, exemplificando com uma relação causal entre uso da terra e processo erosivo.</p></li>
+<li><p>Descreva os três componentes integrados na fórmula do <strong>Índice Composto de Priorização de Intervenção (<span class="math inline">\(IPI\)</span>)</strong> e explique por que um setor com <span class="math inline">\(IPI \ge 0{,}80\)</span> demanda ação imediata.</p></li>
+</ol>
+</section>
+<section id="nível-intermediário-escala-matriz-ipi-passivo-de-app-e-rubrica" class="level4">
+<h4 class="anchored" data-anchor-id="nível-intermediário-escala-matriz-ipi-passivo-de-app-e-rubrica">Nível Intermediário (Escala, Matriz <span class="math inline">\(IPI\)</span>, Passivo de APP e Rubrica)</h4>
+<ol start="6" type="1">
+<li><p>Considerando o critério cartográfico de área mínima legível no papel de <span class="math inline">\(4\text{ mm}^2\)</span>, calcule a área mínima mapeável no terreno (<span class="math inline">\(A_{\min}\)</span>, em <span class="math inline">\(\text{m}^2\)</span> e em <span class="math inline">\(\text{ha}\)</span>) para as escalas <span class="math inline">\(1:15.000\)</span> e <span class="math inline">\(1:50.000\)</span>.</p></li>
+<li><p>Uma vertente analisada no Trabalho Final apresentou Fragilidade Emergente de Ross <span class="math inline">\(FE = 4\)</span>, Índice de Qualidade do Solo <span class="math inline">\(IQS = 0{,}48\)</span> e Pressão/Impacto normalizado <span class="math inline">\(P_{\text{norm}} = 0{,}80\)</span>. Adotando os pesos padrão (<span class="math inline">\(w_F = 0{,}35\)</span>, <span class="math inline">\(w_S = 0{,}35\)</span>, <span class="math inline">\(w_P = 0{,}30\)</span>), calcule o <span class="math inline">\(IPI\)</span> e classifique a prioridade de intervenção.</p></li>
+<li><p>Um córrego com <span class="math inline">\(8\text{ m}\)</span> de largura atravessa <span class="math inline">\(1.500\text{ m}\)</span> de uma microbacia (APP legal de <span class="math inline">\(30\text{ m}\)</span> em cada margem). Verificou-se que <span class="math inline">\(40\%\)</span> da APP da margem esquerda e <span class="math inline">\(20\%\)</span> da APP da margem direita estão degradadas. Calcule a área total a recompor (em <span class="math inline">\(\text{ha}\)</span>) e o número de mudas necessário no espaçamento de <span class="math inline">\(2{,}5\text{ m} \times 2{,}0\text{ m}\)</span> (<span class="math inline">\(2.000\text{ mudas}\cdot\text{ha}^{-1}\)</span>), sem considerar replantio adicional.</p></li>
+<li><p>Para estabilizar uma margem fluvial, o Pacote A (estacas vivas + biomanta) custa <span class="math inline">\(\text{R\$ }12.000,00\)</span> e retém <span class="math inline">\(144\text{ t}\cdot\text{ano}^{-1}\)</span> de sedimentos, enquanto o Pacote B (muro de concreto) custa <span class="math inline">\(\text{R\$ }25.000,00\)</span> e retém <span class="math inline">\(200\text{ t}\cdot\text{ano}^{-1}\)</span>. Calcule o Custo-Efetividade (<span class="math inline">\(CE\)</span>) de ambos em <span class="math inline">\(\text{t}\cdot\text{ano}^{-1}\)</span> por <span class="math inline">\(\text{R\$ }1.000,00\)</span> e indique o mais vantajoso.</p></li>
+<li><p>Na avaliação da Semana 16, um grupo obteve as seguintes notas nos cinco critérios da rubrica oficial, <span class="math inline">\(0{,}90\)</span> (Critério 1), <span class="math inline">\(0{,}80\)</span> (Critério 2), <span class="math inline">\(0{,}80\)</span> (Critério 3), <span class="math inline">\(1{,}00\)</span> (Critério 4) e <span class="math inline">\(0{,}70\)</span> (Critério 5). Calcule a nota final do Trabalho Prático (de <span class="math inline">\(0\)</span> a <span class="math inline">\(5{,}0\)</span>) e o percentual de aproveitamento.</p></li>
+</ol>
+</section>
+<section id="15-diagnostico-ambiental-aplicado-nível-aplicado-questões-objetivas-ae" class="level4">
+<h4 class="anchored" data-anchor-id="15-diagnostico-ambiental-aplicado-nível-aplicado-questões-objetivas-ae">Nível Aplicado (Questões Objetivas A-E)</h4>
+<ol start="11" type="1">
+<li><p>Na elaboração de mapas temáticos em QGIS para o Diagnóstico Ambiental Aplicado no Estado da Bahia, o procedimento correto para calcular áreas de uso da terra e extensão de APPs em hectares e metros é,</p>
+<ol type="A">
+<li><p>Manter as camadas em graus decimais sem projeção plana e multiplicar graus por <span class="math inline">\(100\)</span>.</p></li>
+<li><p>Reprojetar as camadas vetoriais e matriciais para o sistema de coordenadas planas métricas <strong>SIRGAS 2000 / UTM</strong> correspondente ao fuso local.</p></li>
+<li><p>Utilizar apenas o sistema norte-americano NAD27 em milhas quadradas.</p></li>
+<li><p>Desenhar o polígono manualmente sobre uma captura de tela sem escala.</p></li>
+<li><p>Omitir a grade de coordenadas e o datum para simplificar o layout.</p></li>
+</ol></li>
+<li><p>Para mapear o relevo, extrair curvas de nível, delimitar automaticamente uma microbacia e calcular o mapa de declividades da matriz de Ross em um diagnóstico com dados abertos, a fonte prioritária é,</p>
+<ol type="A">
+<li><p>Apenas o censo demográfico decenal do IBGE.</p></li>
+<li><p>Modelos Digitais de Elevação gratuitos como <strong>SRTM</strong> ou <strong>TOPODATA/INPE</strong>.</p></li>
+<li><p>Exclusivamente entrevistas orais sem base altimétrica.</p></li>
+<li><p>Somente boletins de balneabilidade de praias oceânicas.</p></li>
+<li><p>Plantas arquitetônicas internas de edificações urbanas.</p></li>
+</ol></li>
+<li><p>Na etapa de verificação de passivos florestais em propriedades rurais dentro da microbacia de estudo, o cruzamento de dados abertos mais indicado é,</p>
+<ol type="A">
+<li><p>Rede viária federal cruzada com dados de radiação solar.</p></li>
+<li><p>Perímetros do <strong>SICAR/CAR</strong> e hidrografia oficial cruzados com as séries de uso e cobertura da terra do <strong>MapBiomas</strong>.</p></li>
+<li><p>Apenas mapas geológicos na escala <span class="math inline">\(1:5.000.000\)</span>.</p></li>
+<li><p>Exclusivamente dados de arrecadação tributária municipal.</p></li>
+<li><p>Cartas náuticas oceânicas cruzadas com limites de bairros metropolitanos.</p></li>
+</ol></li>
+<li><p>Um setor de uma microbacia recebeu Fragilidade Emergente <span class="math inline">\(FE = 5\)</span>, Índice de Qualidade do Solo <span class="math inline">\(IQS = 0{,}40\)</span> e Pressão/Impacto normalizado <span class="math inline">\(P_{\text{norm}} = 0{,}70\)</span>. Usando os pesos padrão (<span class="math inline">\(w_F = 0{,}35\)</span>, <span class="math inline">\(w_S = 0{,}35\)</span>, <span class="math inline">\(w_P = 0{,}30\)</span>), o valor de <span class="math inline">\(IPI\)</span> e sua classe de prioridade são,</p>
+<ol type="A">
+<li><p><span class="math inline">\(0{,}560\)</span> (Prioridade Média).</p></li>
+<li><p><span class="math inline">\(0{,}665\)</span> (Prioridade Alta).</p></li>
+<li><p><span class="math inline">\(0{,}770\)</span> (Prioridade Alta).</p></li>
+<li><p><span class="math inline">\(0{,}840\)</span> (Prioridade Crítica).</p></li>
+<li><p><span class="math inline">\(0{,}910\)</span> (Prioridade Crítica).</p></li>
+</ol></li>
+<li><p>Sobre a estrutura dos produtos técnicos e a rubrica de avaliação da Semana 16 (CHF662), assinale a alternativa <strong>INCORRETA</strong>,</p>
+<ol type="A">
+<li><p>O Trabalho Prático Final corresponde a <span class="math inline">\(5{,}0\)</span> pontos (<span class="math inline">\(50\%\)</span> da média semestral) e inclui entrega técnica e socialização oral.</p></li>
+<li><p>A Matriz de Indicadores deve articular o modelo PEIR, a qualidade do solo e a fragilidade ambiental de Ross.</p></li>
+<li><p>A proposta preliminar de intervenção (PRAD/bioengenharia) deve conter metas mensuráveis de monitoramento pós-implantação.</p></li>
+<li><p>Os mapas temáticos devem trazer título, Norte, escala, coordenadas/datum, legenda e fonte.</p></li>
+<li><p>A rubrica atribui <span class="math inline">\(100\%\)</span> da nota apenas à quantidade de páginas do relatório, dispensando coerência entre diagnóstico, legislação e proposta técnica.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="questões-de-aplicação" class="level2">
+<h2 class="anchored" data-anchor-id="questões-de-aplicação">Questões de aplicação</h2>
+<section id="da-universidade-para-a-prática-profissional" class="level3">
+<h3 class="anchored" data-anchor-id="da-universidade-para-a-prática-profissional">Da Universidade para a Prática Profissional</h3>
+<p>Em editais de Analista Ambiental (IBAMA, ICMBio, INEMA) e no ENADE de Geografia, exige-se que o candidato saiba encadear base cartográfica, indicador mensurável, enquadramento legal e técnica de recuperação. Esse fluxo completo fundamenta tanto o Trabalho Prático Final quanto a atuação profissional em consultoria e gestão pública.</p>
+<ol start="16" type="1">
+<li><p><strong>[Questão Autoral, Estilo ENADE / Geografia]</strong> Ao coordenar um diagnóstico ambiental aplicado em uma microbacia rural do Semiárido baiano (IBGE, 2018; Cavalcanti, 2006), um geógrafo constatou que os dados altimétricos tinham resolução de <span class="math inline">\(30\text{ m}\)</span> (TOPODATA), o uso da terra provinha do MapBiomas (<span class="math inline">\(30\text{ m}\)</span>) e as feições erosivas críticas (ravinas de <span class="math inline">\(2\text{ m}\)</span> de largura) foram georreferenciadas em campo com GPS e fotografadas com escala métrica. A postura metodológica mais rigorosa ao integrar essas fontes no relatório final é,</p>
+<ol type="A">
+<li><p>Descartar os dados de campo para manter apenas pixels de <span class="math inline">\(30\text{ m}\)</span>, ainda que ocultem ravinas estreitas.</p></li>
+<li><p>Apresentar os mapas de bacia e uso na escala compatível com as bases regionais (<span class="math inline">\(1:25.000\)</span> a <span class="math inline">\(1:50.000\)</span>), explicitando suas limitações de resolução, e representar as ravinas por pontos/linhas georreferenciados em escala de detalhe no diagnóstico local.</p></li>
+<li><p>Redimensionar artificialmente o raster de <span class="math inline">\(30\text{ m}\)</span> para <span class="math inline">\(0{,}10\text{ m}\)</span> e afirmar no relatório que o satélite possui precisão centimétrica.</p></li>
+<li><p>Omitir a escala gráfica e a fonte dos dados para evitar questionamentos metodológicos.</p></li>
+<li><p>Misturar camadas em SIRGAS 2000 geográfico e UTM sem reprojeção, aceitando distorções de área.</p></li>
+</ol></li>
+<li><p><strong>[Questão Autoral, Estilo Concurso Analista Ambiental / PRAD]</strong> Em um diagnóstico integrado para subsidiar um PRAD (Vital et al., 2020), identificaram-se três problemas simultâneos em uma área degradada, (i) solo superficial compactado (<span class="math inline">\(D_s = 1{,}66\text{ g}\cdot\text{cm}^{-3}\)</span>); (ii) escoamento pluvial concentrado descendo de uma estrada vicinal sem drenagem; e (iii) ausência de vegetação em <span class="math inline">\(45\text{ m}\)</span> de APP marginal. Qual sequência de ações respeita a lógica física e legal da recuperação ambiental?</p>
+<ol type="A">
+<li><p>Plantar árvores de grande porte dentro da estrada vicinal sem desviar a enxurrada e deixar o solo compactado.</p></li>
+<li><p>Aplicar apenas herbicida na margem do rio e aguardar a regeneração espontânea sem controle hidráulico.</p></li>
+<li><p>Implantar primeiro o disciplinamento e desvio das águas pluviais da estrada (dissipadores/terraços), realizar escarificação e incorporação de matéria orgânica no solo compactado, instalar contenções leves (paliçadas/biomantas) nos pontos críticos e executar o plantio de espécies nativas na APP com monitoramento periódico.</p></li>
+<li><p>Substituir toda a APP por pavimentação asfáltica para impedir a infiltração da água da chuva.</p></li>
+<li><p>Solicitar dispensa automática do PRAD alegando que estradas vicinais não produzem sedimentos.</p></li>
+</ol></li>
+<li><p><strong>[Questão Autoral, Estilo Concurso Geógrafo / Gestão Territorial]</strong> Um órgão ambiental estadual recebeu dois relatórios de diagnóstico para análise. O Relatório X apresentou apenas descrições gerais do município, sem delimitação de bacia, sem indicadores quantitativos e sem proposta de monitoramento. O Relatório Y delimitou a microbacia em SIRGAS 2000/UTM, integrou matriz PEIR, IQS e Fragilidade de Ross, quantificou o déficit de APP pelo Código Florestal e propôs técnicas de bioengenharia com metas semestrais auditáveis. Sob a ótica da Análise Ambiental (Sánchez, 2013; IBGE, 2018), o Relatório Y distingue-se por assegurar,</p>
+<ol type="A">
+<li><p>Subjetividade estética sem vínculo com parâmetros físicos ou legais.</p></li>
+<li><p>Rastreabilidade metodológica, mensurabilidade de indicadores, conformidade jurídica e viabilidade de fiscalização das respostas propostas.</p></li>
+<li><p>Substituição completa do trabalho de campo por opiniões informais.</p></li>
+<li><p>Isenção de responsabilidade técnica do autor pela ausência de números.</p></li>
+<li><p>Impossibilidade de comparação temporal futura em razão do uso de indicadores numéricos.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="gabarito-comentado" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="gabarito-comentado">Gabarito comentado</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Clique para abrir o Gabarito Comentado
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="resoluções-completas-exercícios-de-fixação-1-a-15" class="level3">
+<h3 class="anchored" data-anchor-id="resoluções-completas-exercícios-de-fixação-1-a-15">Resoluções Completas, Exercícios de Fixação (1 a 15)</h3>
+<ol type="1">
+<li><p>A microbacia possui limites físicos naturais definidos pelos divisores topográficos e integra em um único sistema os fluxos de água, sedimentos, nutrientes e usos da terra. Duas vantagens, (a) permite fechar balanços hídricos e hidrossedimentológicos (erosão na vertente <span class="math inline">\(\rightarrow\)</span> assoreamento no exutório); e (b) evidencia interdependências entre propriedades a montante e a jusante que recortes municipais ou de lotes isolados ocultam.</p></li>
+<li><p><strong>IBGE.</strong> Limites territoriais, malha censitária, hidrografia e pedologia; <strong>TOPODATA/SRTM,</strong> MDE (<span class="math inline">\(30\text{ m}\)</span>), declividade, curvas de nível e delimitação de bacias; <strong>MapBiomas.</strong> Séries históricas anuais de uso e cobertura da terra; <strong>SICAR/CAR.</strong> Limites de imóveis rurais, APPs e Reserva Legal declaradas; <strong>INEMA/SEI-BA.</strong> Outorgas, licenciamento, dados climáticos e informações socioeconômicas estaduais.</p></li>
+<li><p>Os seis elementos obrigatórios são, (1) título informativo; (2) orientação (seta Norte); (3) escala gráfica e numérica; (4) grade de coordenadas com indicação do datum; (5) legenda; e (6) quadro de fontes e autoria. O datum oficial obrigatório no Brasil é o <strong>SIRGAS 2000</strong>.</p></li>
+<li><p>Um diagnóstico descritivo fragmentado lista clima, solo, vegetação e população em seções isoladas sem explicar suas conexões. Já a caracterização integrada indica relações causais, como explicar de que modo a substituição da Caatinga por pastagem extensiva (dinâmica socioespacial) reduz a cobertura vegetal, eleva a compactação superficial e acelera o ravinamento em vertentes de Neossolo (meio físico-biótico).</p></li>
+<li><p>O <span class="math inline">\(IPI\)</span> combina, (1) Fragilidade Emergente de Ross normalizada (<span class="math inline">\(F_{\text{norm}}\)</span>); (2) Déficit de Qualidade do Solo (<span class="math inline">\(1 - IQS\)</span>); e (3) Pressão/Impacto antrópico da matriz PEIR (<span class="math inline">\(P_{\text{norm}}\)</span>). Valores <span class="math inline">\(IPI \ge 0{,}80\)</span> indicam convergência de alta fragilidade físico-ecológica, solo severamente degradado e forte pressão antrópica, exigindo intervenção imediata (PRAD e bioengenharia) para evitar colapso irreversível.</p></li>
+<li><p><strong>Passo a passo,</strong> Para <span class="math inline">\(1:15.000\)</span>, <span class="math inline">\(A_{\min} = 4 \times 10^{-6} \times (15.000)^2 = 4 \times 10^{-6} \times 2{,}25 \times 10^8 = \mathbf{900\text{ m}^2 = 0{,}09\text{ ha}}\)</span>.<br>
+Para <span class="math inline">\(1:50.000\)</span>, <span class="math inline">\(A_{\min} = 4 \times 10^{-6} \times (50.000)^2 = 4 \times 10^{-6} \times 2{,}5 \times 10^9 = \mathbf{10.000\text{ m}^2 = 1{,}00\text{ ha}}\)</span>.</p></li>
+<li><p><strong>Passo a passo,</strong> <span class="math inline">\(F_{\text{norm}} = (4 - 1)/4 = 0{,}75\)</span>; <span class="math inline">\((1 - IQS) = 1 - 0{,}48 = 0{,}52\)</span>.<br>
+<span class="math inline">\(IPI = 0{,}35(0{,}75) + 0{,}35(0{,}52) + 0{,}30(0{,}80) = 0{,}2625 + 0{,}1820 + 0{,}2400 = \mathbf{0{,}6845}\)</span> (<span class="math inline">\(\approx \mathbf{0{,}685}\)</span>).<br>
+Como <span class="math inline">\(0{,}60 \le 0{,}6845 &lt; 0{,}80\)</span>, classifica-se em <strong>Prioridade Alta</strong> (bioengenharia leve e recomposição).</p></li>
+<li><p><strong>Passo a passo,</strong> Cada margem tem área de APP <span class="math inline">\(= 30\text{ m} \times 1.500\text{ m} = 45.000\text{ m}^2 = 4{,}50\text{ ha}\)</span> (total <span class="math inline">\(= 9{,}00\text{ ha}\)</span>).<br>
+Área degradada, margem esquerda <span class="math inline">\(= 0{,}40 \times 4{,}50 = 1{,}80\text{ ha}\)</span>; margem direita <span class="math inline">\(= 0{,}20 \times 4{,}50 = 0{,}90\text{ ha}\)</span>. Total a recompor <span class="math inline">\(= 1{,}80 + 0{,}90 = \mathbf{2{,}70\text{ ha}}\)</span>.<br>
+Mudas necessárias, <span class="math inline">\(2{,}70\text{ ha} \times 2.000\text{ mudas}\cdot\text{ha}^{-1} = \mathbf{5.400\text{ mudas}}\)</span>.</p></li>
+<li><p><strong>Passo a passo,</strong> <span class="math inline">\(CE_A = 144 / 12 = \mathbf{12{,}0\text{ t}\cdot\text{ano}^{-1}\text{ por }\text{R\$ }1.000,00}\)</span>.<br>
+<span class="math inline">\(CE_B = 200 / 25 = \mathbf{8{,}0\text{ t}\cdot\text{ano}^{-1}\text{ por }\text{R\$ }1.000,00}\)</span>.<br>
+O <strong>Pacote A</strong> (bioengenharia) é <span class="math inline">\(50\%\)</span> mais custo-efetivo (<span class="math inline">\(12{,}0\)</span> contra <span class="math inline">\(8{,}0\text{ t}\cdot\text{ano}^{-1}\)</span> por <span class="math inline">\(\text{R\$ }1.000,00\)</span>).</p></li>
+<li><p><strong>Passo a passo,</strong> Nota final <span class="math inline">\(= 0{,}90 + 0{,}80 + 0{,}80 + 1{,}00 + 0{,}70 = \mathbf{4{,}20\text{ pontos}}\)</span> (de <span class="math inline">\(5{,}00\)</span>).<br>
+Aproveitamento <span class="math inline">\(= (4{,}20 / 5{,}00) \times 100\% = \mathbf{84{,}0\%}\)</span>.</p></li>
+<li><p><strong>Gabarito, (B).</strong> Medições métricas de área e comprimento exigem projeção plana métrica (SIRGAS 2000 / UTM) compatível com o fuso da área de estudo.</p></li>
+<li><p><strong>Gabarito, (B).</strong> Modelos Digitais de Elevação abertos (SRTM e TOPODATA/INPE) permitem derivar drenagem, bacias, declividade e curvas de nível.</p></li>
+<li><p><strong>Gabarito, (B).</strong> O cruzamento entre malhas fundiárias/APP (SICAR/CAR e hidrografia) e cobertura da terra (MapBiomas) quantifica déficits legais de vegetação.</p></li>
+<li><p><strong>Gabarito, (C).</strong> <span class="math inline">\(F_{\text{norm}} = (5 - 1)/4 = 1{,}00\)</span>; <span class="math inline">\((1 - IQS) = 1 - 0{,}40 = 0{,}60\)</span>; <span class="math inline">\(IPI = 0{,}35(1{,}00) + 0{,}35(0{,}60) + 0{,}30(0{,}70) = 0{,}350 + 0{,}210 + 0{,}210 = \mathbf{0{,}770}\)</span> (Prioridade Alta, pois <span class="math inline">\(0{,}60 \le 0{,}770 &lt; 0{,}80\)</span>).</p></li>
+<li><p><strong>Gabarito, (E).</strong> Incorreta. A rubrica avalia rigor cartográfico, integração da matriz de indicadores, coerência técnica e legal do PRAD e clareza na socialização, desconsiderando a simples contagem de páginas.</p></li>
+</ol>
+</section>
+<section id="resoluções-completas-questões-enade-e-concursos-16-a-18" class="level3">
+<h3 class="anchored" data-anchor-id="resoluções-completas-questões-enade-e-concursos-16-a-18">Resoluções Completas, Questões ENADE e Concursos (16 a 18)</h3>
+<ol start="16" type="1">
+<li><p><strong>Gabarito, (B).</strong> O rigor cartográfico exige respeitar a resolução nativa dos produtos orbitais (<span class="math inline">\(30\text{ m}\)</span>), explicitar seus limites e complementar o diagnóstico com levantamentos de campo georreferenciados em escala de detalhe.</p></li>
+<li><p><strong>Gabarito, (C).</strong> A recuperação efetiva atua na causa hidráulica primeiro (desvio e dissipação da enxurrada da estrada), corrige a compactação do solo, estabiliza fisicamente os pontos críticos e implanta a revegetação nativa na APP com monitoramento.</p></li>
+<li><p><strong>Gabarito, (B).</strong> Apenas relatórios georreferenciados, apoiados em indicadores mensuráveis e metas auditáveis permitem análise técnica objetiva e fiscalização pelo órgão ambiental.</p></li>
+</ol>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section id="síntese-conceitual" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="síntese-conceitual">Síntese conceitual</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Síntese Conceitual do Capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Fluxo do Trabalho Final (Semana 16, <span class="math inline">\(5{,}0\)</span> pts),</strong> (1) delimitação em microbacia, encosta ou APP; (2) bases abertas em SIRGAS 2000/UTM; (3) caracterização integrada; (4) mapeamento da degradação; (5) Matriz de Indicadores (<span class="math inline">\(IPI = 0{,}35\,F_{\text{norm}} + 0{,}35\,(1-IQS) + 0{,}30\,P_{\text{norm}}\)</span>); (6) mapas + relatório + PRAD/bioengenharia; (7) auditoria pela rubrica e socialização. <strong>Cartografia obrigatória.</strong> Todos os mapas devem exibir título, Norte, escala gráfica/numérica, coordenadas em SIRGAS 2000, legenda e fonte. <strong>Coerência técnica.</strong> Cada medida de bioengenharia ou PRAD deve responder diretamente a um indicador crítico diagnosticado e respeitar a Lei nº 12.651/2012.</p>
+</div>
+</div>
+</section>
+<section id="autoavaliação" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="autoavaliação">Autoavaliação</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Autoavaliação e Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Responda com <strong>V</strong> (Verdadeiro) ou <strong>F</strong> (Falso) e confira abaixo,</p>
+<ol type="1">
+<li><p>( ) O Trabalho Prático Final (Semana 16) corresponde a <span class="math inline">\(50\%\)</span> da nota da disciplina CHF662 e exige integração entre bases cartográficas abertas, Matriz de Indicadores e proposta preliminar de intervenção.</p></li>
+<li><p>( ) Para calcular áreas de APPs em hectares no QGIS, recomenda-se manter o projeto em coordenadas geográficas (graus decimais) sem reprojeção para UTM.</p></li>
+<li><p>( ) No Índice Composto de Priorização (<span class="math inline">\(IPI\)</span>), quanto menor o Índice de Qualidade do Solo (<span class="math inline">\(IQS\)</span>), maior é o déficit edáfico <span class="math inline">\((1 - IQS)\)</span> e maior a prioridade de intervenção.</p></li>
+<li><p>( ) Mapas temáticos entregues sem escala, sem seta Norte e sem indicação de datum atendem integralmente aos critérios cartográficos da rubrica oficial.</p></li>
+</ol>
+<p><strong>Gabarito da verificação da aprendizagem,</strong> 1-<strong>V</strong> | 2-<strong>F</strong> (cálculos métricos exigem projeção plana SIRGAS 2000 / UTM) | 3-<strong>V</strong> | 4-<strong>F</strong> (os 6 elementos cartográficos e o datum SIRGAS 2000 são obrigatórios).</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/analise-ambiental\/");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Código deslocável","output":"Saída deslocável"};
+  </script>
+<nav class="page-navigation" aria-label="Página">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/14-legislacao-ambiental-prad.html" class="pagination-link" aria-label="Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/mod5-simulado.html" class="pagination-link" aria-label="Simulado e Revisão Integrada, Módulo 5">
+        <span class="nav-page-text">Simulado e Revisão Integrada, Módulo 5</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026 (DCHF/UEFS). <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

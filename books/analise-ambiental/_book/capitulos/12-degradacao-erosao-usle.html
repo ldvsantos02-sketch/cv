@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Apostila completa do componente curricular CHF662 (Análise Ambiental), Curso de Geografia da UEFS, organizada em cinco módulos, 15 capítulos em 10 etapas, simulados comentados, formulário e glossário.">
+
+<title>12&nbsp; Diagnóstico de Processos de Degradação Ambiental e Erosão Linear - Análise Ambiental (CHF662)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/mod4-simulado.html" rel="next">
+<link href="../capitulos/11-qualidade-solo-iqs.html" rel="prev">
+<link href="../img/capa_analise_ambiental.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-679673b8a27c868cce7048b2deb5a79d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Pular para o conteúdo principal</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Barra de ferramentas">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/10-indicadores-ambientais-peir.html">Módulo 4. Indicadores, qualidade do solo e degradação</a></li><li class="breadcrumb-item"><a href="../capitulos/12-degradacao-erosao-usle.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagnóstico de Processos de Degradação Ambiental e Erosão Linear</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Análise Ambiental (CHF662)</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos02-sketch/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../APOSTILA_ANALISE_AMBIENTAL_CHF662_UEFS.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Apresentação e orientação de estudo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Módulo 1. Fundamentos epistemológicos e conceituais</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-questao-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Questão Ambiental Contemporânea e o Papel da Geografia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-sociedade-natureza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Modernidade, a Geografia e a Relação Sociedade-Natureza</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-geografia-socioambiental-gtp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Abordagens Ambientais no Pensamento Geográfico Moderno</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-conceitos-operacionais-risco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos e Definições Operacionais da Análise Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod1-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Módulo 2. AIA e análise ambiental integrada</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-avaliacao-impacto-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-analise-ambiental-integrada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod2-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-bacias-hidrograficas-morfometria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bacia Hidrográfica como Unidade de Análise Ambiental Integrada</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-morfopedologia-vertentes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Morfopedologia e Processos Interativos Relevo, Solo e Água</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-geossistemas-ecodinamica-ross.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geossistemas, Ecodinâmica e Análise Empírica da Fragilidade Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod3-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado Preparatório para a Avaliação Teórica, Módulos 1 a 3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">Módulo 4. Indicadores, qualidade do solo e degradação</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-indicadores-ambientais-peir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-qualidade-solo-iqs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-degradacao-erosao-usle.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagnóstico de Processos de Degradação Ambiental e Erosão Linear</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod4-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 4</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-bioengenharia-agua-solo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-legislacao-ambiental-prad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-diagnostico-ambiental-aplicado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Manual Prático do Diagnóstico Ambiental Aplicado e Produtos Técnicos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod5-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 5</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">Encerramento, Formulário e Referências</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-avaliacao-geral-final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avaliação Geral Integrada, Simulado Final Completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-formulario-glossario-referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formulário Técnico, Glossário e Referências Oficiais</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul class="collapse">
+  <li><a href="#vocabulário-técnico-e-símbolos-do-capítulo-12" id="toc-vocabulário-técnico-e-símbolos-do-capítulo-12" class="nav-link active" data-scroll-target="#vocabulário-técnico-e-símbolos-do-capítulo-12">Vocabulário Técnico e Símbolos do Capítulo 12</a></li>
+  <li><a href="#mecânica-e-sequência-evolutiva-da-erosão-hídrica" id="toc-mecânica-e-sequência-evolutiva-da-erosão-hídrica" class="nav-link" data-scroll-target="#mecânica-e-sequência-evolutiva-da-erosão-hídrica">Mecânica e Sequência Evolutiva da Erosão Hídrica</a></li>
+  <li><a href="#instabilidade-de-margens-fluviais-degradação-ripária-e-assoreamento" id="toc-instabilidade-de-margens-fluviais-degradação-ripária-e-assoreamento" class="nav-link" data-scroll-target="#instabilidade-de-margens-fluviais-degradação-ripária-e-assoreamento">Instabilidade de Margens Fluviais, Degradação Ripária e Assoreamento</a></li>
+  <li><a href="#equação-universal-de-perda-de-solo-usle-e-rusle" id="toc-equação-universal-de-perda-de-solo-usle-e-rusle" class="nav-link" data-scroll-target="#equação-universal-de-perda-de-solo-usle-e-rusle">Equação Universal de Perda de Solo (USLE e RUSLE)</a></li>
+  <li><a href="#protocolos-quantitativos-de-diagnóstico-e-monitoramento-em-campo" id="toc-protocolos-quantitativos-de-diagnóstico-e-monitoramento-em-campo" class="nav-link" data-scroll-target="#protocolos-quantitativos-de-diagnóstico-e-monitoramento-em-campo">Protocolos Quantitativos de Diagnóstico e Monitoramento em Campo</a></li>
+  <li><a href="#síntese-aplicada-assoreamento-de-reservatórios-na-escala-de-microbacia" id="toc-síntese-aplicada-assoreamento-de-reservatórios-na-escala-de-microbacia" class="nav-link" data-scroll-target="#síntese-aplicada-assoreamento-de-reservatórios-na-escala-de-microbacia">Síntese Aplicada, Assoreamento de Reservatórios na Escala de Microbacia</a></li>
+  <li><a href="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio" id="toc-armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="nav-link" data-scroll-target="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</a></li>
+  <li><a href="#exercícios-de-fixação" id="toc-exercícios-de-fixação" class="nav-link" data-scroll-target="#exercícios-de-fixação">Exercícios de fixação</a></li>
+  <li><a href="#questões-de-aplicação" id="toc-questões-de-aplicação" class="nav-link" data-scroll-target="#questões-de-aplicação">Questões de aplicação</a></li>
+  <li><a href="#gabarito-comentado" id="toc-gabarito-comentado" class="nav-link" data-scroll-target="#gabarito-comentado">Gabarito comentado</a></li>
+  <li><a href="#síntese-conceitual" id="toc-síntese-conceitual" class="nav-link" data-scroll-target="#síntese-conceitual">Síntese conceitual</a></li>
+  <li><a href="#autoavaliação" id="toc-autoavaliação" class="nav-link" data-scroll-target="#autoavaliação">Autoavaliação</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main data-book-tables="true" class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/10-indicadores-ambientais-peir.html">Módulo 4. Indicadores, qualidade do solo e degradação</a></li><li class="breadcrumb-item"><a href="../capitulos/12-degradacao-erosao-usle.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagnóstico de Processos de Degradação Ambiental e Erosão Linear</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="cap:degradacao_erosao_linear" class="quarto-section-identifier"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagnóstico de Processos de Degradação Ambiental e Erosão Linear</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>A degradação por erosão resulta da interação entre disponibilidade de material, energia do escoamento e caminhos de transporte. Reconhecer a forma erosiva ajuda a selecionar o método de avaliação, enquanto a interpretação do mecanismo exige observar drenagem, materiais e evolução temporal.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>O que você vai aprender neste capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A aprendizagem envolve diferenciar processos erosivos, aplicar estimativas de perda de solo pela USLE e interpretar medições repetidas com pinos de erosão e perfis transversais. O estudante deve reconhecer a escala de validade de cada método e explicar como os resultados se relacionam ao transporte e ao assoreamento de reservatórios.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Revisando o que você precisa saber
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A leitura retoma balanço de massa, densidade do solo, área e volume. Taxa de perda em toneladas por hectare por ano, volume erodido em uma feição e carga sólida transportada no canal representam grandezas distintas e exigem procedimentos próprios.</p>
+</div>
+</div>
+<section id="vocabulário-técnico-e-símbolos-do-capítulo-12" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulário-técnico-e-símbolos-do-capítulo-12">Vocabulário Técnico e Símbolos do Capítulo 12</h2>
+<p><strong><em>Splash</em> (salpicamento),</strong> desagregação de partículas do solo pelo impacto cinético direto das gotas de chuva, gerando crosta de selamento superficial. <strong><em>Piping</em> (erosão em túneis ou tubular),</strong> remoção interna de partículas finas do solo por fluxos subsuperficiais concentrados, criando dutos que colapsam e aceleram o avanço de voçorocas. <strong>USLE (<span class="math inline">\(A = R \cdot K \cdot L \cdot S \cdot C \cdot P\)</span>).</strong> Modelo empírico que estima a perda média anual de solo por erosão laminar e em sulcos (<span class="math inline">\(\text{t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>).</p>
+<p><span class="math inline">\(T\)</span>, limite de tolerância de perda de solo (<span class="math inline">\(\text{t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>), correspondente à taxa máxima de erosão compatível com a renovação pedogenética e a manutenção da funcionalidade do perfil. <span class="math inline">\(h\)</span>, taxa de rebaixamento da superfície do solo (<span class="math inline">\(\text{mm}\cdot\text{ano}^{-1}\)</span>), vinculada à perda de massa pela densidade do solo (<span class="math inline">\(D_s\)</span>). <span class="math inline">\(\Delta \bar{h}\)</span>, variação média de exposição em uma malha de pinos de erosão (<span class="math inline">\(\text{mm}\)</span>); valores positivos indicam erosão (rebaixamento) e negativos indicam deposição (soterramento). <span class="math inline">\(SDR\)</span>, Razão de Aporte de Sedimentos (<em>Sediment Delivery Ratio</em>, adimensional entre <span class="math inline">\(0\)</span> e <span class="math inline">\(1\)</span>), fração do solo erodido nas vertentes que efetivamente alcança o exutório ou reservatório da bacia.</p>
+</section>
+<section id="mecânica-e-sequência-evolutiva-da-erosão-hídrica" class="level2">
+<h2 class="anchored" data-anchor-id="mecânica-e-sequência-evolutiva-da-erosão-hídrica">Mecânica e Sequência Evolutiva da Erosão Hídrica</h2>
+<p>A erosão hídrica acelerada resulta do desequilíbrio entre a <strong>erosividade</strong> (capacidade da chuva e do escoamento de desprender e transportar partículas) e a <strong>resistência do sistema solo e vegetação</strong> (cobertura, agregação, rugosidade e infiltração). Conforme sintetizam Guerra e Cunha (1996), Ross (1994) e Cavalcanti (2006), o processo evolui em estágios progressivos de severidade física e de custo exponencial de recuperação (<a href="#fig-evolucao_erosao_linear" class="quarto-xref">Figura&nbsp;<span>12.1</span></a>).</p>
+<div id="fig-evolucao_erosao_linear" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-evolucao_erosao_linear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig10_evolucao_erosao_linear.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-evolucao_erosao_linear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;12.1: Sequência evolutiva dos processos erosivos hídricos, do impacto da gota (<em>splash</em>) ao colapso por voçorocamento, evidenciando o aumento da severidade física e do custo de recuperação.
+</figcaption>
+</figure>
+</div>
+<p>Cada estágio dessa sequência (<a href="#fig-evolucao_erosao_linear" class="quarto-xref">Figura&nbsp;<span>12.1</span></a>) possui diagnóstico morfológico e mecânico próprio. O processo inicia-se com o <strong>impacto da gota (<em>splash</em>) e o selamento superficial</strong>. Quando o solo perde cobertura vegetal e serapilheira, as gotas de chuva atingem diretamente os agregados superficiais, transferindo energia cinética que os rompe e lança partículas finas de argila e silte em suspensão. Ao retornarem à superfície, essas partículas obstruem os poros de entrada de água, formando uma crosta delgada conhecida como <strong>selamento superficial</strong>, que reduz drasticamente a taxa de infiltração básica.</p>
+<p>Com a infiltração bloqueada pelo selamento ou pela compactação prévia, a água acumula-se acima da superfície e passa a escoar em lâmina difusa sobre a vertente, iniciando a <strong>erosão laminar (entressulcos)</strong>. Esse fluxo em lençol remove silenciosamente a fração mais fértil do horizonte A, carreando matéria orgânica, sementes e nutrientes até que aflorem raízes expostas, cascalhos residuais ou horizontes subsuperficiais mais claros. À medida que a lâmina d’água encontra irregularidades microtopográficas, marcas de pneus ou linhas de plantio morro abaixo, o escoamento concentra-se em filetes de maior velocidade e tensão cisalhante, escavando <strong>sulcos erosivos</strong> com profundidade inferior a <span class="math inline">\(0{,}5\text{ m}\)</span>, ainda corrigíveis por práticas conservacionistas e manejo superficial. Quando o escoamento superficial concentrado persiste sem dissipação de energia, os sulcos aprofundam-se além de <span class="math inline">\(0{,}5\text{ m}\)</span>, evoluindo para <strong>ravinas</strong> que o preparo comum do solo já não consegue eliminar. Na ravina, o agente dominante permanece sendo o escoamento superficial concentrado, que escava o leito e expande o canal de forma remontante, isto é, de jusante para montante, antes de atingir a zona saturada do subsolo.</p>
+<p>O estágio de colapso integrado ocorre nas <strong>voçorocas</strong>, que representam a forma mais avançada e destrutiva da erosão linear. Elas se diferenciam das ravinas principalmente pelo <strong>processo hidrogeomorfológico</strong> atuante, somado às maiores dimensões métricas, pois a incisão aprofunda-se até interceptar o <strong>lençol freático</strong> ou zonas de fluxo subsuperficial saturado. A partir desse limiar, passam a atuar simultaneamente o escoamento superficial, a erosão subsuperficial em túneis (<strong><em>piping</em></strong>) e a exfiltração na base das paredes. A remoção interna de partículas finas pelos dutos subsuperficiais e a elevação da poropressão na base dos taludes provocam <strong>solapamento</strong> e escorregamentos sucessivos das paredes laterais e da cabeceira, mantendo a voçoroca ativa mesmo em períodos sem chuva intensa (<a href="#fig-foto-vocoroca" class="quarto-xref">Figura&nbsp;<span>12.2</span></a>).</p>
+<div id="fig-foto-vocoroca" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-foto-vocoroca-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/foto_vocoroca_severa.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-foto-vocoroca-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;12.2: Voçoroca profunda com exposição de horizontes subsuperficiais e desmoronamento lateral por solapamento. Fonte, Acervo didático CHF662.
+</figcaption>
+</figure>
+</div>
+<p>Em encostas submetidas a pastoreio extensivo e redução drástica da cobertura herbácea, a incisão de cabeceiras erosivas escalonadas promove avanço regressivo acelerado sobre a vertente, fragmentando a superfície produtiva e aumentando a conectividade direta de sedimentos em direção ao fundo de vale (<a href="#fig-foto-ravinas" class="quarto-xref">Figura&nbsp;<span>12.3</span></a>).</p>
+<div id="fig-foto-ravinas" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-foto-ravinas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/foto_pastagem_ravinas.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-foto-ravinas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;12.3: Cabeceiras erosivas escalonadas avançando regressivamente em pastagem degradada. Fonte, Acervo didático CHF662.
+</figcaption>
+</figure>
+</div>
+<p>A distinção mecânica entre fluxo exclusivamente superficial e erosão associada ao lençol freático orienta diretamente a escolha das obras de estabilização em campo, evitando diagnósticos imprecisos.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 1, Chamar Qualquer Canal Erosivo Profundo de Voçoroca
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Classificar qualquer incisão com mais de <span class="math inline">\(1\text{ m}\)</span> de profundidade automaticamente como voçoroca sem investigar a presença de água subsuperficial.</p>
+<p><strong>Correção técnica.</strong> A distinção geomorfológica entre <strong>ravina</strong> e <strong>voçoroca</strong> baseia-se no mecanismo dominante. Ravinas são escavadas exclusivamente por escoamento superficial concentrado, ao passo que voçorocas interceptam o lençol freático ou fluxos subsuperficiais concentrados, apresentando <em>piping</em>, surgências de água e solapamento de taludes. Esse diagnóstico muda o projeto de recuperação, pois voçorocas exigem drenagem subsuperficial associada ao desvio de águas superficiais.</p>
+</div>
+</div>
+</section>
+<section id="instabilidade-de-margens-fluviais-degradação-ripária-e-assoreamento" class="level2">
+<h2 class="anchored" data-anchor-id="instabilidade-de-margens-fluviais-degradação-ripária-e-assoreamento">Instabilidade de Margens Fluviais, Degradação Ripária e Assoreamento</h2>
+<p>Na escala da bacia hidrográfica, a erosão das vertentes articula-se diretamente à dinâmica dos canais fluviais e das Áreas de Preservação Permanente (APPs) marginais. A <strong>degradação ripária e o colapso de margens</strong> iniciam-se quando a supressão da mata ciliar elimina a malha radicular que confere coesão mecânica aos barrancos (tema aprofundado na bioengenharia do Capítulo 13) e expõe o talude marginal ao impacto direto da corrente fluvial. Sem a proteção das raízes e da vegetação de borda, a erosão na base do talude (<em>undercutting</em>) retira a sustentação inferior do barranco, gerando quedas em bloco e alargamento desordenado da calha.</p>
+<p>Todo esse material desprendido alimenta o <strong>assoreamento de canais, açudes e reservatórios</strong> a jusante. Sempre que o aporte de sedimentos oriundo das vertentes e margens excede a capacidade de transporte do curso d’água, ocorre deposição progressiva no leito. No Semiárido Baiano, esse processo reduz rapidamente o volume útil de açudes, barreiros e pequenos barramentos comunitários, agrava a vulnerabilidade hídrica durante as estiagens e eleva a turbidez da água armazenada.</p>
+</section>
+<section id="equação-universal-de-perda-de-solo-usle-e-rusle" class="level2">
+<h2 class="anchored" data-anchor-id="equação-universal-de-perda-de-solo-usle-e-rusle">Equação Universal de Perda de Solo (USLE e RUSLE)</h2>
+<p>Desenvolvida por Wischmeier e Smith (1978) a partir de milhares de parcelas experimentais e amplamente calibrada para condições tropicais e brasileiras, a <strong>Equação Universal de Perda de Solo (USLE)</strong> estima a perda média anual de solo por erosão laminar e em sulcos a partir do produto de seis fatores físicos e de manejo. Posteriormente, sua revisão metodológica deu origem à <strong>RUSLE</strong> (<em>Revised Universal Soil Loss Equation</em>, Renard et al., 1997; consulte também a documentação do <a href="https://www.nrcs.usda.gov/resources/tech-tools/water-erosion-rusle2">USDA sobre a RUSLE2</a>), preservando a estrutura multiplicativa de seis termos e incorporando variação sazonal da erodibilidade (<span class="math inline">\(K\)</span>), subfatores de cobertura vegetal (<span class="math inline">\(C\)</span>) e algoritmos de fator topográfico (<span class="math inline">\(LS\)</span>).</p>
+<p><span class="math display">\[
+A = R \cdot K \cdot L \cdot S \cdot C \cdot P
+\]</span></p>
+<p><span class="math display">\[
+h\,(\text{mm}\cdot\text{ano}^{-1}) = \frac{A\,(\text{t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1})}{10 \cdot D_s} \qquad \Longleftrightarrow \qquad A = 10 \cdot D_s \cdot h
+\]</span></p>
+<p>Nessa formulação, <span class="math inline">\(A\)</span> expressa a perda média anual estimada de solo (<span class="math inline">\(\text{t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>), resultante da interação entre a <strong>erosividade da chuva</strong> (<span class="math inline">\(R\)</span>, em <span class="math inline">\(\text{MJ}\cdot\text{mm}\cdot\text{ha}^{-1}\cdot\text{h}^{-1}\cdot\text{ano}^{-1}\)</span>), a <strong>erodibilidade intrínseca do solo</strong> (<span class="math inline">\(K\)</span>, em <span class="math inline">\(\text{t}\cdot\text{ha}\cdot\text{h}\cdot\text{ha}^{-1}\cdot\text{MJ}^{-1}\cdot\text{mm}^{-1}\)</span>), os fatores topográficos adimensionais de <strong>comprimento de rampa (<span class="math inline">\(L\)</span>)</strong> e <strong>declividade (<span class="math inline">\(S\)</span>)</strong>, o fator de <strong>uso, manejo e cobertura vegetal</strong> (<span class="math inline">\(C\)</span>, variando de <span class="math inline">\(\approx 0{,}001\)</span> em floresta densa a <span class="math inline">\(1{,}00\)</span> em solo descoberto) e o fator de <strong>práticas conservacionistas</strong> (<span class="math inline">\(P\)</span>, de <span class="math inline">\(1{,}00\)</span> morro abaixo a <span class="math inline">\(0{,}20\text{-}0{,}50\)</span> em contorno ou terraceamento). Na conversão geométrica para espessura de rebaixamento (<span class="math inline">\(h\)</span>), <span class="math inline">\(D_s\)</span> indica a densidade do solo (<span class="math inline">\(\text{t}\cdot\text{m}^{-3} = \text{g}\cdot\text{cm}^{-3}\)</span>), pois <span class="math inline">\(1\text{ mm}\)</span> de lâmina em <span class="math inline">\(1\text{ ha}\)</span> (<span class="math inline">\(10.000\text{ m}^2\)</span>) corresponde a <span class="math inline">\(10\text{ m}^3\)</span> ou <span class="math inline">\(10 \cdot D_s\)</span> toneladas.</p>
+<p>Na interpretação dessa equação multiplicativa, o produto <span class="math inline">\(R \cdot K \cdot L \cdot S\)</span> define o <strong>potencial natural de erosão</strong>, correspondente à perda esperada caso o solo permanecesse continuamente descoberto e mobilizado. Frente aos fatores climáticos e geomorfológicos de difícil modificação no curto prazo, os termos <span class="math inline">\(C\)</span> e <span class="math inline">\(P\)</span> concentram a capacidade de intervenção do manejo conservacionista (<a href="#fig-usle-eficiencia-cp" class="quarto-xref">Figura&nbsp;<span>12.4</span></a>). Em uma simulação padronizada para encosta crítica (<span class="math inline">\(R = 6.500\)</span>, <span class="math inline">\(K = 0{,}035\)</span> e <span class="math inline">\(LS = 2{,}2\)</span>, cujo potencial natural atinge <span class="math inline">\(500{,}5\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>), a redução multiplicativa de <span class="math inline">\(C\)</span> e <span class="math inline">\(P\)</span> rebaixa as perdas de <span class="math inline">\(200{,}2\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span> no cultivo morro abaixo para <span class="math inline">\(50{,}1\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span> no cultivo em contorno com terraço, alcançando patamares abaixo do limite sustentável de formação pedológica (<span class="math inline">\(T \approx 10\text{-}12\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>) apenas em pastagem manejada densa (<span class="math inline">\(10{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>) e sob mata nativa com cobertura total (<span class="math inline">\(2{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>).</p>
+<div id="fig-usle-eficiencia-cp" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Gráfico de barras horizontais mostrando redução da perda de solo de 500,5 t/ha.ano em solo exposto até 2,0 t/ha.ano em mata nativa">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-usle-eficiencia-cp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap12_usle_eficiencia_cp.png" class="img-fluid figure-img" alt="Gráfico de barras horizontais mostrando redução da perda de solo de 500,5 t/ha.ano em solo exposto até 2,0 t/ha.ano em mata nativa">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-usle-eficiencia-cp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;12.4: Efeito multiplicativo dos fatores de cobertura (<span class="math inline">\(C\)</span>) e práticas conservacionistas (<span class="math inline">\(P\)</span>) sobre a perda de solo estimada pela USLE em encosta crítica (<span class="math inline">\(R = 6.500\)</span>, <span class="math inline">\(K = 0{,}035\)</span>, <span class="math inline">\(LS = 2{,}2\)</span>) frente à faixa de tolerância (<span class="math inline">\(T \approx 10\text{ a }12\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>).
+</figcaption>
+</figure>
+</div>
+<p>Em condições representativas de vertentes do Semiárido Baiano (<span class="math inline">\(R = 6.000\)</span>, <span class="math inline">\(K = 0{,}03\)</span>, <span class="math inline">\(LS = 1{,}5\)</span> e potencial natural de <span class="math inline">\(270{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>), o contraste entre cenários de cobertura evidencia o mesmo limiar de sustentabilidade frente a <span class="math inline">\(T = 12{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span> (<a href="#fig-usle_sensibilidade" class="quarto-xref">Figura&nbsp;<span>12.5</span></a>). Esse comportamento quantitativo é detalhado passo a passo no Exemplo 12.1.</p>
+<div id="fig-usle_sensibilidade" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-usle_sensibilidade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig11_usle_sensibilidade.png" title="fig:" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-usle_sensibilidade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;12.5: Análise de sensibilidade da Equação Universal de Perda de Solo (<span class="math inline">\(R = 6.000\)</span>, <span class="math inline">\(K = 0{,}03\)</span>, <span class="math inline">\(LS = 1{,}5\)</span>, potencial natural de <span class="math inline">\(270\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>) sob cinco cenários de cobertura e manejo frente ao limite ilustrativo de tolerância (<span class="math inline">\(12\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>).
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 12.1 (Básico). Aplicação da USLE e Comparação de Cenários de Manejo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Uma vertente no Semiárido Baiano apresenta erosividade da chuva <span class="math inline">\(R = 6.000\text{ MJ}\cdot\text{mm}\cdot\text{ha}^{-1}\cdot\text{h}^{-1}\cdot\text{ano}^{-1}\)</span>, erodibilidade do solo <span class="math inline">\(K = 0{,}03\text{ t}\cdot\text{ha}\cdot\text{h}\cdot\text{ha}^{-1}\cdot\text{MJ}^{-1}\cdot\text{mm}^{-1}\)</span> e fator topográfico combinado <span class="math inline">\(LS = 1{,}5\)</span>. O limite ilustrativo de tolerância de perda de solo adotado para o local é <span class="math inline">\(T = 12{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p>
+<p><strong>Dados disponíveis.</strong> Cinco cenários de uso e manejo, solo exposto (<span class="math inline">\(C = 1{,}00\)</span>; <span class="math inline">\(P = 1{,}00\)</span>), cultivo morro abaixo (<span class="math inline">\(C = 0{,}40\)</span>; <span class="math inline">\(P = 1{,}00\)</span>), pastagem degradada (<span class="math inline">\(C = 0{,}15\)</span>; <span class="math inline">\(P = 1{,}00\)</span>), manejo conservacionista em contorno (<span class="math inline">\(C = 0{,}05\)</span>; <span class="math inline">\(P = 0{,}50\)</span>) e Caatinga densa preservada (<span class="math inline">\(C = 0{,}005\)</span>; <span class="math inline">\(P = 1{,}00\)</span>).</p>
+<p><strong>Problema a resolver.</strong> Calcular a perda anual estimada (<span class="math inline">\(A\)</span>) em cada cenário, verificar quais atendem ao limite de tolerância (<span class="math inline">\(A \le 12{,}0\)</span>) e calcular a redução percentual promovida pelo manejo conservacionista em relação ao cultivo morro abaixo.</p>
+<p><strong>Fundamento da análise.</strong> Cálculo prévio do potencial natural de erosão (<span class="math inline">\(PNE = R \cdot K \cdot LS\)</span>) seguido da multiplicação pelos fatores <span class="math inline">\(C\)</span> e <span class="math inline">\(P\)</span> de cada cenário.</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>Etapa 1 (Potencial Natural de Erosão, <span class="math inline">\(PNE\)</span>)</strong>,</p>
+<p><span class="math display">\[
+PNE = R \cdot K \cdot LS = 6.000 \times 0{,}03 \times 1{,}5 = 180 \times 1{,}5 = 270{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}
+\]</span></p>
+<p>As unidades de <span class="math inline">\(\text{MJ}\)</span>, <span class="math inline">\(\text{mm}\)</span>, <span class="math inline">\(\text{h}\)</span> e um fator <span class="math inline">\(\text{ha}\)</span> cancelam-se entre <span class="math inline">\(R\)</span> e <span class="math inline">\(K\)</span>, restando <span class="math inline">\(\text{t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>. Na <strong>Etapa 2 (Perda de solo <span class="math inline">\(A\)</span> nos cinco cenários)</strong>,</p>
+<p><span class="math display">\[
+\begin{aligned}
+A_1\; (\text{solo exposto}) &amp;= 270{,}0 \times 1{,}00 \times 1{,}00 = 270{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1} \quad (&gt; 12\text{, crítico}) \\
+A_2\; (\text{cultivo morro abaixo}) &amp;= 270{,}0 \times 0{,}40 \times 1{,}00 = 108{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1} \quad (&gt; 12\text{, insustentável}) \\
+A_3\; (\text{pastagem degradada}) &amp;= 270{,}0 \times 0{,}15 \times 1{,}00 = 40{,}5\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1} \quad (&gt; 12\text{, acima do limite}) \\
+A_4\; (\text{manejo conservacionista}) &amp;= 270{,}0 \times 0{,}05 \times 0{,}50 = 6{,}75\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1} \quad (\le 12\text{, sustentável}) \\
+A_5\; (\text{Caatinga densa}) &amp;= 270{,}0 \times 0{,}005 \times 1{,}00 = 1{,}35\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1} \quad (\le 12\text{, referência})
+\end{aligned}
+\]</span></p>
+<p>Na <strong>Etapa 3 (Redução do manejo conservacionista <span class="math inline">\(A_4\)</span> frente ao cultivo morro abaixo <span class="math inline">\(A_2\)</span>)</strong>,</p>
+<p><span class="math display">\[
+\text{Redução} = \frac{108{,}0 - 6{,}75}{108{,}0}\times 100\% = \frac{101{,}25}{108{,}0}\times 100\% = 93{,}75\%
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> Perdas de <span class="math inline">\(270{,}0\)</span> (solo exposto), <span class="math inline">\(108{,}0\)</span> (morro abaixo), <span class="math inline">\(40{,}5\)</span> (pastagem degradada), <span class="math inline">\(6{,}75\)</span> (manejo conservacionista) e <span class="math inline">\(1{,}35\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span> (Caatinga). Apenas os cenários 4 e 5 atendem ao limite <span class="math inline">\(T = 12\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>; o manejo conservacionista reduz a erosão em <span class="math inline">\(93{,}75\%\)</span>.</p>
+<p><strong>Condições de validade.</strong> Os valores coincidem com as barras da <a href="#fig-usle_sensibilidade" class="quarto-xref">Figura&nbsp;<span>12.5</span></a> (onde <span class="math inline">\(6{,}75\)</span> e <span class="math inline">\(1{,}35\)</span> aparecem arredondados para uma casa decimal, <span class="math inline">\(6{,}8\)</span> e <span class="math inline">\(1{,}4\)</span>) e indicam que a cobertura do solo (<span class="math inline">\(C\)</span>) exerce peso decisivo no controle erosivo.</p>
+</div>
+</div>
+<p>Tanto a USLE quanto a RUSLE restringem-se à estimativa da perda bruta por erosão laminar e em sulcos nas vertentes, deixando de fora processos lineares profundos ou deposição na base da encosta. Para estimar a fração do sedimento erodido que efetivamente alcança um reservatório ou exutório, associa-se a equação à Razão de Aporte de Sedimentos (<span class="math inline">\(SDR\)</span>). Ignorar esse domínio de validade gera superestimações ou lacunas graves nos diagnósticos de bacias.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 2, Aplicar a USLE para Estimar Erosão em Voçorocas ou Margens Fluviais
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Usar <span class="math inline">\(A = R \cdot K \cdot L \cdot S \cdot C \cdot P\)</span> como se o resultado englobasse toda a produção de sedimentos de uma bacia com voçorocas ativas e desmoronamento de margens.</p>
+<p><strong>Correção técnica.</strong> A USLE foi calibrada exclusivamente para <strong>erosão laminar e em sulcos</strong> nas vertentes. Processos lineares profundos (ravinas e voçorocas) e erosão marginal devem ser quantificados separadamente por perfis transversais, estacas de recuo, levantamento topográfico ou fotogrametria com drone.</p>
+</div>
+</div>
+<p>Para traduzir perdas em toneladas por hectare para uma grandeza diretamente perceptível na morfologia do solo superficial, converte-se <span class="math inline">\(A\)</span> em espessura anual de rebaixamento (<span class="math inline">\(h\)</span>), como mostra o Exemplo 12.2.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 12.2 (Intermediário). Conversão de Perda de Solo (USLE) em Espessura de Rebaixamento Superficial
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Para comunicar a agricultores e gestores o significado físico da perda de solo obtida no cenário de cultivo morro abaixo do Exemplo 12.1 (<span class="math inline">\(A = 108{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>), converta essa taxa em espessura anual de solo removido e estime quanto do horizonte A será perdido em <span class="math inline">\(25\)</span> anos.</p>
+<p><strong>Dados disponíveis.</strong> <span class="math inline">\(A = 108{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>; densidade do solo da camada superficial <span class="math inline">\(D_s = 1{,}35\text{ g}\cdot\text{cm}^{-3} = 1{,}35\text{ t}\cdot\text{m}^{-3}\)</span>; horizonte temporal de análise igual a <span class="math inline">\(25\text{ anos}\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular a taxa anual de rebaixamento <span class="math inline">\(h\)</span> (<span class="math inline">\(\text{mm}\cdot\text{ano}^{-1}\)</span>) e a espessura acumulada removida em <span class="math inline">\(25\)</span> anos (em <span class="math inline">\(\text{cm}\)</span>).</p>
+<p><strong>Fundamento da análise.</strong> Aplicação da relação geométrica <span class="math inline">\(h = A / (10 \cdot D_s)\)</span> e multiplicação pelo horizonte de <span class="math inline">\(25\)</span> anos.</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>Etapa 1 (Massa correspondente a <span class="math inline">\(1\text{ mm}\)</span> de solo em <span class="math inline">\(1\text{ ha}\)</span>)</strong>, <span class="math inline">\(M_{1\text{mm}} = 10 \cdot D_s = 10 \times 1{,}35 = 13{,}5\text{ t}\cdot\text{ha}^{-1}\cdot\text{mm}^{-1}\)</span>. Na <strong>Etapa 2 (Rebaixamento anual)</strong>,</p>
+<p><span class="math display">\[
+h = \frac{108{,}0}{13{,}5} = 8{,}00\text{ mm}\cdot\text{ano}^{-1}
+\]</span></p>
+<p>Na <strong>Etapa 3 (Rebaixamento acumulado em <span class="math inline">\(25\)</span> anos)</strong>,</p>
+<p><span class="math display">\[
+H_{25} = 8{,}00\text{ mm}\cdot\text{ano}^{-1} \times 25\text{ anos} = 200{,}0\text{ mm} = 20{,}0\text{ cm}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> Taxa de rebaixamento de <span class="math inline">\(8{,}00\text{ mm}\cdot\text{ano}^{-1}\)</span>, removendo <span class="math inline">\(20{,}0\text{ cm}\)</span> de solo superficial em <span class="math inline">\(25\)</span> anos.</p>
+<p><strong>Condições de validade.</strong> Em solos rasos do Semiárido Baiano (como Neossolos Litólicos e Luvissolos com horizonte A entre <span class="math inline">\(15\)</span> e <span class="math inline">\(25\text{ cm}\)</span>), perder <span class="math inline">\(20\text{ cm}\)</span> em um quarto de século significa eliminar completamente a camada biologicamente ativa e expor o horizonte B ou a rocha alterada, acelerando a desertificação edáfica.</p>
+</div>
+</div>
+<p>Antes de finalizar qualquer simulação da USLE, convém checar a compatibilidade dimensional entre os parâmetros climáticos e edáficos retirados da literatura.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 3, Misturar Unidades Métricas e Inglesas nos Fatores <span class="math inline">\(R\)</span> e <span class="math inline">\(K\)</span> da USLE
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Multiplicar um fator <span class="math inline">\(R\)</span> no Sistema Internacional (<span class="math inline">\(\text{MJ}\cdot\text{mm}\cdot\text{ha}^{-1}\cdot\text{h}^{-1}\cdot\text{ano}^{-1}\)</span>) por um fator <span class="math inline">\(K\)</span> retirado de tabelas antigas em unidades norte-americanas sem conversão.</p>
+<p><strong>Correção técnica.</strong> Confira sempre a análise dimensional de <span class="math inline">\(R \cdot K\)</span>, pois no Sistema Internacional esse produto deve resultar diretamente em <span class="math inline">\(\text{t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>. Divergências de ordem de grandeza (<span class="math inline">\(10\times\)</span> ou <span class="math inline">\(100\times\)</span>) frequentemente denunciam incompatibilidade de unidades entre <span class="math inline">\(R\)</span> e <span class="math inline">\(K\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="protocolos-quantitativos-de-diagnóstico-e-monitoramento-em-campo" class="level2">
+<h2 class="anchored" data-anchor-id="protocolos-quantitativos-de-diagnóstico-e-monitoramento-em-campo">Protocolos Quantitativos de Diagnóstico e Monitoramento em Campo</h2>
+<p>Modelos como a USLE e a RUSLE fornecem estimativas valiosas para o planejamento, mas o diagnóstico rigoroso de processos ativos em campo exige medições diretas e rastreáveis. Para quantificar a erosão laminar e em sulcos nas vertentes e taludes, emprega-se o <strong>Método dos Pinos de Erosão</strong>, que consiste na cravação vertical de vergalhões metálicos ou pinos rígidos (tipicamente de <span class="math inline">\(30\)</span> a <span class="math inline">\(50\text{ cm}\)</span> de comprimento) dispostos em malha ou transectos, deixando uma altura inicial exposta padronizada (por exemplo, <span class="math inline">\(150\text{ mm}\)</span>) marcada com anilha ou pintura. Após cada evento chuvoso ou ciclo anual, mede-se novamente a altura exposta com paquímetro ou régua milimetrada, de modo que o aumento na altura exposta (<span class="math inline">\(\Delta h &gt; 0\)</span>) registra <strong>rebaixamento erosivo</strong>, ao passo que a diminuição (<span class="math inline">\(\Delta h &lt; 0\)</span>) indica <strong>deposição local de sedimentos</strong>. O Exemplo 12.3 aplica esse protocolo a um talude de corte monitorado durante um ano.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 12.3 (Intermediário). Monitoramento de Talude pelo Método dos Pinos de Erosão
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Cinco pinos de erosão foram instalados ao longo de um perfil de talude exposto próximo à estrada de acesso de um empreendimento, todos com altura inicial exposta padronizada de <span class="math inline">\(150\text{ mm}\)</span>. Após um ciclo hidrológico de <span class="math inline">\(12\)</span> meses, novas leituras foram coletadas com paquímetro.</p>
+<p><strong>Dados disponíveis.</strong> Altura inicial exposta em todos os pinos igual a <span class="math inline">\(h_0 = 150\text{ mm}\)</span>. Leituras após <span class="math inline">\(12\)</span> meses (do topo à base do talude) de <span class="math inline">\(168\text{ mm}\)</span> (Pino 1), <span class="math inline">\(174\text{ mm}\)</span> (Pino 2), <span class="math inline">\(162\text{ mm}\)</span> (Pino 3), <span class="math inline">\(156\text{ mm}\)</span> (Pino 4) e <span class="math inline">\(140\text{ mm}\)</span> no sopé (Pino 5). Densidade do solo local de <span class="math inline">\(D_s = 1{,}40\text{ g}\cdot\text{cm}^{-3}\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular a variação <span class="math inline">\(\Delta h_i\)</span> em cada pino, o balanço líquido médio de rebaixamento (<span class="math inline">\(\Delta \bar{h}\)</span>) e a perda líquida equivalente de solo em <span class="math inline">\(\text{t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p>
+<p><strong>Fundamento da análise.</strong> Cálculo individual <span class="math inline">\(\Delta h_i = h_{1,i} - h_0\)</span> (respeitando sinais positivos para erosão e negativos para deposição), média aritmética e conversão via <span class="math inline">\(A = 10 \cdot D_s \cdot \Delta \bar{h}\)</span>.</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>Etapa 1 (Variação em cada pino)</strong>,</p>
+<p><span class="math display">\[
+\begin{aligned}
+\Delta h_1 &amp;= 168 - 150 = +18\text{ mm} \quad (\text{erosão}) \\
+\Delta h_2 &amp;= 174 - 150 = +24\text{ mm} \quad (\text{erosão máxima no terço médio}) \\
+\Delta h_3 &amp;= 162 - 150 = +12\text{ mm} \quad (\text{erosão}) \\
+\Delta h_4 &amp;= 156 - 150 = +6\text{ mm} \quad (\text{erosão moderada}) \\
+\Delta h_5 &amp;= 140 - 150 = -10\text{ mm} \quad (\text{deposição no sopé})
+\end{aligned}
+\]</span></p>
+<p>Na <strong>Etapa 2 (Balanço líquido médio <span class="math inline">\(\Delta \bar{h}\)</span>)</strong> e na <strong>Etapa 3 (Perda líquida equivalente de solo)</strong>,</p>
+<p><span class="math display">\[
+\Delta \bar{h} = \frac{18 + 24 + 12 + 6 + (-10)}{5} = \frac{50}{5} = +10{,}0\text{ mm}\cdot\text{ano}^{-1} \qquad\qquad A_{\text{pinos}} = 10 \times 1{,}40 \times 10{,}0 = 140{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> Rebaixamento líquido médio de <span class="math inline">\(10{,}0\text{ mm}\cdot\text{ano}^{-1}\)</span>, correspondente a uma perda líquida equivalente de <span class="math inline">\(140{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p>
+<p><strong>Condições de validade.</strong> O sinal negativo no Pino 5 (<span class="math inline">\(-10\text{ mm}\)</span>) é fisicamente esperado em encostas, pois parte do sedimento removido dos segmentos superiores e médios deposita-se no sopé com a redução da declividade. Desconsiderar o sinal negativo superestimaria o balanço líquido da encosta.</p>
+</div>
+</div>
+<p>Quando a feição erosiva já evoluiu para ravinas ou voçorocas ativas, a taxa de expansão horizontal passa a ser acompanhada por <strong>estacas de monitoramento de recuo de cabeceira e bordas</strong>, instaladas externamente a distâncias conhecidas (<span class="math inline">\(2{,}0\)</span> a <span class="math inline">\(5{,}0\text{ m}\)</span> além da escarpa instável) para medir o avanço remontante (<span class="math inline">\(\text{m}\cdot\text{ano}^{-1}\)</span>). Para quantificar o volume de solo efetivamente escavado ao longo do canal, levantam-se <strong>perfis transversais repetidos</strong> em seções fixas com posição, orientação e referência altimétrica preservadas, espaçadas pela distância <span class="math inline">\(L_{\text{seg}}\)</span>. Medindo a largura superior (<span class="math inline">\(B\)</span>), a largura de fundo (<span class="math inline">\(b\)</span>) e a profundidade vertical média (<span class="math inline">\(h_{\text{rav}}\)</span>) a partir de uma trena esticada entre estacas niveladas, estima-se a área trapezoidal <span class="math inline">\(A = \frac{B + b}{2}\cdot h_{\text{rav}}\)</span>, integra-se o volume entre seções (<span class="math inline">\(V = \frac{A_1 + A_2}{2}\cdot L_{\text{seg}}\)</span>) e converte-se em massa (<span class="math inline">\(M = V \cdot D_s\)</span>) com base na densidade representativa do material mobilizado (Exemplo 12.4). Essas medições são complementadas por <strong>fichas padronizadas de avaliação visual</strong> contendo coordenadas, posição na vertente, cobertura vegetal, selamento superficial, surgências de água e registro fotográfico com escala métrica.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 12.4 (Avançado). Cubagem de Solo Mobilizado em Ravina por Perfis Transversais
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Para dimensionar estruturas de contenção em uma ravina ativa com <span class="math inline">\(40{,}0\text{ m}\)</span> de extensão, uma equipe levantou duas seções transversais representativas (Seção 1 a montante e Seção 2 a jusante), ambas aproximadas por geometria trapezoidal.</p>
+<p><strong>Dados disponíveis.</strong> Comprimento do trecho entre seções igual a <span class="math inline">\(L = 40{,}0\text{ m}\)</span>. Seção 1 com largura de topo <span class="math inline">\(B_1 = 3{,}2\text{ m}\)</span>, largura de fundo <span class="math inline">\(b_1 = 1{,}2\text{ m}\)</span> e profundidade <span class="math inline">\(h_1 = 1{,}5\text{ m}\)</span>. Seção 2 com <span class="math inline">\(B_2 = 4{,}0\text{ m}\)</span>, <span class="math inline">\(b_2 = 1{,}6\text{ m}\)</span> e profundidade <span class="math inline">\(h_2 = 2{,}0\text{ m}\)</span>. Densidade média do solo do perfil igual a <span class="math inline">\(D_s = 1{,}45\text{ t}\cdot\text{m}^{-3}\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular a área de cada seção (<span class="math inline">\(A_1\)</span> e <span class="math inline">\(A_2\)</span>), o volume total de solo escavado (<span class="math inline">\(V\)</span>) pelo método da média das áreas e a massa total mobilizada (<span class="math inline">\(M\)</span>).</p>
+<p><strong>Fundamento da análise.</strong> Área do trapézio <span class="math inline">\(A = \frac{B + b}{2}\cdot h\)</span>, volume prismoidal simplificado <span class="math inline">\(V = \frac{A_1 + A_2}{2}\cdot L\)</span> e conversão para massa <span class="math inline">\(M = V \cdot D_s\)</span>.</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>Etapa 1 (Área das seções transversais)</strong>,</p>
+<p><span class="math display">\[
+A_1 = \frac{3{,}2 + 1{,}2}{2}\times 1{,}5 = \frac{4{,}4}{2}\times 1{,}5 = 2{,}2 \times 1{,}5 = 3{,}30\text{ m}^2 \qquad\qquad A_2 = \frac{4{,}0 + 1{,}6}{2}\times 2{,}0 = \frac{5{,}6}{2}\times 2{,}0 = 2{,}8 \times 2{,}0 = 5{,}60\text{ m}^2
+\]</span></p>
+<p>Na <strong>Etapa 2 (Volume total mobilizado no trecho de <span class="math inline">\(40\text{ m}\)</span>)</strong> e na <strong>Etapa 3 (Massa total de solo mobilizada)</strong>,</p>
+<p><span class="math display">\[
+V = \frac{3{,}30 + 5{,}60}{2}\times 40{,}0 = \frac{8{,}90}{2}\times 40{,}0 = 4{,}45 \times 40{,}0 = 178{,}0\text{ m}^3 \qquad\qquad M = 178{,}0\text{ m}^3 \times 1{,}45\text{ t}\cdot\text{m}^{-3} = 258{,}1\text{ t}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> <span class="math inline">\(A_1 = 3{,}30\text{ m}^2\)</span>, <span class="math inline">\(A_2 = 5{,}60\text{ m}^2\)</span>, volume escavado <span class="math inline">\(V = 178{,}0\text{ m}^3\)</span> e massa mobilizada de <span class="math inline">\(258{,}1\text{ toneladas}\)</span> de solo.</p>
+<p><strong>Condições de validade.</strong> O volume de <span class="math inline">\(178\text{ m}^3\)</span> equivale a aproximadamente <span class="math inline">\(15\)</span> a <span class="math inline">\(18\)</span> caminhões basculantes convencionais carregados de solo removidos de uma única ravina de <span class="math inline">\(40\text{ m}\)</span>, grande parte dos quais segue em direção a drenagens e açudes a jusante.</p>
+</div>
+</div>
+</section>
+<section id="síntese-aplicada-assoreamento-de-reservatórios-na-escala-de-microbacia" class="level2">
+<h2 class="anchored" data-anchor-id="síntese-aplicada-assoreamento-de-reservatórios-na-escala-de-microbacia">Síntese Aplicada, Assoreamento de Reservatórios na Escala de Microbacia</h2>
+<p>A perda de solo estimada na vertente pela USLE representa material desprendido sob as condições locais de rampa, mas parte desse sedimento deposita-se antes de alcançar a rede fluvial. A carga sólida efetivamente entregue ao exutório ou a um açude depende da conectividade entre fontes, caminhos de escoamento e faixas ripárias, sendo sintetizada pela Razão de Aporte de Sedimentos (<span class="math inline">\(SDR\)</span>), conforme ilustrado no Exemplo 12.5.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 12.5 (Avançado). Estimativa de Assoreamento de Reservatório por USLE e Razão de Aporte (<span class="math inline">\(SDR\)</span>)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Uma microbacia rural de <span class="math inline">\(250\text{ ha}\)</span> no Semiárido Baiano drena para um açude comunitário com capacidade inicial de armazenamento de <span class="math inline">\(160.000\text{ m}^3\)</span>. Estudos anteriores estimaram perda média de solo pela USLE de <span class="math inline">\(A = 32{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span> na microbacia e Razão de Aporte de Sedimentos <span class="math inline">\(SDR = 0{,}25\)</span> (isto é, <span class="math inline">\(25\%\)</span> do solo erodido nas vertentes atinge o reservatório).</p>
+<p><strong>Dados disponíveis.</strong> Área da microbacia de <span class="math inline">\(250\text{ ha}\)</span>; perda média USLE de <span class="math inline">\(A = 32{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>; <span class="math inline">\(SDR = 0{,}25\)</span>; densidade aparente do sedimento depositado no fundo do açude de <span class="math inline">\(\rho_{\text{sed}} = 1{,}25\text{ t}\cdot\text{m}^{-3}\)</span>; capacidade útil inicial de <span class="math inline">\(V_0 = 160.000\text{ m}^3\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular a produção anual de sedimentos que chega ao açude (<span class="math inline">\(Y\)</span>, em <span class="math inline">\(\text{t}\cdot\text{ano}^{-1}\)</span>), o volume assoreado por ano (<span class="math inline">\(V_{\text{sed}}\)</span>) e o percentual da capacidade inicial perdido em <span class="math inline">\(20\)</span> anos caso não haja conservação na microbacia.</p>
+<p><strong>Fundamento da análise.</strong> Cálculo do aporte de sedimentos <span class="math inline">\(Y = A \cdot \text{Área} \cdot SDR\)</span>, conversão para volume (<span class="math inline">\(V_{\text{sed}} = Y / \rho_{\text{sed}}\)</span>) e projeção linear de <span class="math inline">\(20\)</span> anos frente ao volume inicial.</p>
+<p><strong>Desenvolvimento.</strong> Na <strong>Etapa 1 (Aporte anual de sedimentos <span class="math inline">\(Y\)</span>)</strong> e na <strong>Etapa 2 (Volume anual de assoreamento <span class="math inline">\(V_{\text{sed}}\)</span>)</strong>,</p>
+<p><span class="math display">\[
+Y = 32{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1} \times 250\text{ ha} \times 0{,}25 = 2.000{,}0\text{ t}\cdot\text{ano}^{-1} \qquad\qquad V_{\text{sed}} = \frac{2.000{,}0\text{ t}\cdot\text{ano}^{-1}}{1{,}25\text{ t}\cdot\text{m}^{-3}} = 1.600{,}0\text{ m}^3\cdot\text{ano}^{-1}
+\]</span></p>
+<p>Na <strong>Etapa 3 (Volume assoreado em <span class="math inline">\(20\)</span> anos e perda percentual de capacidade)</strong>,</p>
+<p><span class="math display">\[
+V_{20} = 1.600{,}0 \times 20 = 32.000{,}0\text{ m}^3 \qquad\qquad \text{Perda percentual} = \frac{32.000{,}0}{160.000{,}0}\times 100\% = 20{,}0\%
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> Aporte anual de <span class="math inline">\(2.000{,}0\text{ t}\cdot\text{ano}^{-1}\)</span> (<span class="math inline">\(1.600{,}0\text{ m}^3\cdot\text{ano}^{-1}\)</span>), provocando perda de <span class="math inline">\(20{,}0\%\)</span> da capacidade de armazenamento do açude em <span class="math inline">\(20\)</span> anos.</p>
+<p><strong>Condições de validade.</strong> O resultado indica a conexão indissociável entre manejo de solos nas vertentes e segurança hídrica no Semiárido, pois sem controle erosivo na microbacia (redução de <span class="math inline">\(C\)</span> e <span class="math inline">\(P\)</span> e recomposição ripária), um quinto do volume do reservatório desaparece em duas décadas.</p>
+</div>
+</div>
+</section>
+<section id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="level2">
+<h2 class="anchored" data-anchor-id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</h2>
+<p>Ao processar leituras de campo em transectos de encosta, a interpretação dos sinais de variação altimétrica exige cuidado para que pontos de acumulação local não sejam omitidos do balanço sedimentológico.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 4, Ignorar Pinos com Valores Negativos (Deposição) no Balanço de Vertente
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Descartar ou tomar em módulo as leituras de pinos parcialmente soterrados na base de uma encosta.</p>
+<p><strong>Correção técnica.</strong> Pinos com <span class="math inline">\(\Delta h &lt; 0\)</span> registram redistribuição interna de sedimentos (deposição). Para estimar o balanço líquido da vertente, preserva-se o sinal algébrico na média; para analisar separadamente a zona de perda máxima, reportam-se ambos os valores (erosão bruta nos segmentos de perda e balanço líquido total).</p>
+</div>
+</div>
+<p>Para aprofundar o estudo sobre recuperação de áreas degradadas e conservação do solo em pastagens e cultivos, assista às videoaulas selecionadas na página da disciplina, começando por <a href="https://www.youtube.com/watch?v=wgX4Rko8Yiw">Recuperação de Pastagens Degradadas e Sistema Plantio Direto</a>, que aborda estratégias de renovação e proteção superficial do solo, e prosseguindo com <a href="https://www.youtube.com/watch?v=Tm9A5bJrz3c">Recuperação de Pastagens Degradadas</a>, sobre integração produtiva e recomposição da cobertura vegetal.</p>
+</section>
+<section id="exercícios-de-fixação" class="level2">
+<h2 class="anchored" data-anchor-id="exercícios-de-fixação">Exercícios de fixação</h2>
+<section id="nível-básico-processos-erosivos-morfologia-e-conceitos" class="level4">
+<h4 class="anchored" data-anchor-id="nível-básico-processos-erosivos-morfologia-e-conceitos">Nível Básico (Processos Erosivos, Morfologia e Conceitos)</h4>
+<ol type="1">
+<li><p>Descreva o papel do <strong>impacto da gota de chuva (<em>splash</em>)</strong> na formação do selamento superficial e explique como esse fenômeno acelera o surgimento da erosão laminar.</p></li>
+<li><p>Estabeleça a diferença técnica entre <strong>sulco</strong>, <strong>ravina</strong> e <strong>voçoroca</strong> quanto aos processos hidrológicos atuantes e à reversibilidade por manejo convencional.</p></li>
+<li><p>O que é <strong><em>piping</em></strong> e por que sua identificação em campo é decisiva antes de propor obras de estabilização em uma encosta?</p></li>
+<li><p>Explique o significado físico de cada um dos seis fatores da Equação Universal de Perda de Solo (<span class="math inline">\(A = R \cdot K \cdot L \cdot S \cdot C \cdot P\)</span>) e indique quais dois fatores podem ser diretamente modificados pelo manejo conservacionista.</p></li>
+<li><p>Explique como a degradação de áreas ripárias (matas ciliares) contribui simultaneamente para a instabilidade de margens fluviais e para o assoreamento de reservatórios.</p></li>
+</ol>
+</section>
+<section id="nível-intermediário-cálculos-de-usle-pinos-perfis-e-assoreamento" class="level4">
+<h4 class="anchored" data-anchor-id="nível-intermediário-cálculos-de-usle-pinos-perfis-e-assoreamento">Nível Intermediário (Cálculos de USLE, Pinos, Perfis e Assoreamento)</h4>
+<ol start="6" type="1">
+<li><p>Uma área agrícola apresenta <span class="math inline">\(R = 5.000\text{ MJ}\cdot\text{mm}\cdot\text{ha}^{-1}\cdot\text{h}^{-1}\cdot\text{ano}^{-1}\)</span>, <span class="math inline">\(K = 0{,}025\text{ t}\cdot\text{ha}\cdot\text{h}\cdot\text{ha}^{-1}\cdot\text{MJ}^{-1}\cdot\text{mm}^{-1}\)</span>, <span class="math inline">\(LS = 2{,}0\)</span> e fator de manejo <span class="math inline">\(C = 0{,}20\)</span>. Calcule a perda anual de solo (<span class="math inline">\(A\)</span>) sob plantio morro abaixo (<span class="math inline">\(P = 1{,}00\)</span>) e sob plantio em contorno (<span class="math inline">\(P = 0{,}50\)</span>).</p></li>
+<li><p>Uma vertente submetida a uso intensivo registra perda anual estimada de <span class="math inline">\(A = 70{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span> em um solo com densidade <span class="math inline">\(D_s = 1{,}40\text{ g}\cdot\text{cm}^{-3}\)</span>. Calcule o rebaixamento anual da superfície (<span class="math inline">\(h\)</span>, em <span class="math inline">\(\text{mm}\cdot\text{ano}^{-1}\)</span>) e a espessura acumulada perdida em <span class="math inline">\(20\)</span> anos (em <span class="math inline">\(\text{cm}\)</span>).</p></li>
+<li><p>Quatro pinos de erosão instalados em uma encosta registraram, após um ano, as seguintes variações de altura exposta (<span class="math inline">\(\Delta h\)</span>), <span class="math inline">\(+14\text{ mm}\)</span>, <span class="math inline">\(+18\text{ mm}\)</span>, <span class="math inline">\(+10\text{ mm}\)</span> e <span class="math inline">\(-2\text{ mm}\)</span>. Sabendo que a densidade do solo é <span class="math inline">\(D_s = 1{,}30\text{ g}\cdot\text{cm}^{-3}\)</span>, calcule o rebaixamento líquido médio (<span class="math inline">\(\Delta \bar{h}\)</span>) e a perda líquida equivalente em <span class="math inline">\(\text{t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+<li><p>Uma ravina com <span class="math inline">\(30{,}0\text{ m}\)</span> de extensão teve duas seções transversais trapezoidais medidas, Seção 1 (<span class="math inline">\(B_1 = 2{,}4\text{ m}\)</span>; <span class="math inline">\(b_1 = 0{,}8\text{ m}\)</span>; <span class="math inline">\(h_1 = 1{,}0\text{ m}\)</span>) e Seção 2 (<span class="math inline">\(B_2 = 3{,}6\text{ m}\)</span>; <span class="math inline">\(b_2 = 1{,}2\text{ m}\)</span>; <span class="math inline">\(h_2 = 1{,}5\text{ m}\)</span>). Considerando <span class="math inline">\(D_s = 1{,}50\text{ t}\cdot\text{m}^{-3}\)</span>, calcule o volume total (<span class="math inline">\(V\)</span>) e a massa (<span class="math inline">\(M\)</span>) de solo mobilizado.</p></li>
+<li><p>Uma microbacia de <span class="math inline">\(400\text{ ha}\)</span> apresenta perda média de solo <span class="math inline">\(A = 25{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span> e <span class="math inline">\(SDR = 0{,}20\)</span>, drenando para um açude de <span class="math inline">\(80.000\text{ m}^3\)</span> de capacidade útil inicial. Adotando <span class="math inline">\(\rho_{\text{sed}} = 1{,}25\text{ t}\cdot\text{m}^{-3}\)</span>, calcule o volume anual assoreado e o percentual de capacidade perdido em <span class="math inline">\(10\)</span> anos.</p></li>
+</ol>
+</section>
+<section id="12-degradacao-erosao-usle-nível-aplicado-questões-objetivas-ae" class="level4">
+<h4 class="anchored" data-anchor-id="12-degradacao-erosao-usle-nível-aplicado-questões-objetivas-ae">Nível Aplicado (Questões Objetivas A-E)</h4>
+<ol start="11" type="1">
+<li><p>Na sequência evolutiva da erosão hídrica (Guerra; Cunha, 1996), a transição de uma ravina para uma voçoroca caracteriza-se fundamentalmente por,</p>
+<ol type="A">
+<li><p>Interrupção completa do escoamento superficial durante os eventos de chuva.</p></li>
+<li><p>Interseção da incisão com o lençol freático ou fluxos subsuperficiais concentrados, desencadeando <em>piping</em> e solapamento de taludes.</p></li>
+<li><p>Reversibilidade imediata por uma única operação de aração rasa do solo.</p></li>
+<li><p>Deposição contínua de matéria orgânica que fecha naturalmente o canal em poucos meses.</p></li>
+<li><p>Ausência de recuo remontante na cabeceira da feição erosiva.</p></li>
+</ol></li>
+<li><p>A respeito das limitações metodológicas da Equação Universal de Perda de Solo (USLE), assinale a alternativa correta,</p>
+<ol type="A">
+<li><p>A USLE quantifica diretamente o volume escavado em grandes voçorocas causadas por <em>piping</em>.</p></li>
+<li><p>O fator <span class="math inline">\(K\)</span> representa a energia cinética das chuvas e depende exclusivamente do regime climático regional.</p></li>
+<li><p>A USLE estima a perda média anual por erosão laminar e em sulcos nas vertentes, não computando diretamente erosão em voçorocas, margens fluviais nem deposição ao longo do trajeto sem o uso do <span class="math inline">\(SDR\)</span>.</p></li>
+<li><p>A redução do fator <span class="math inline">\(C\)</span> por meio de cobertura vegetal aumenta proporcionalmente a perda de solo <span class="math inline">\(A\)</span>.</p></li>
+<li><p>O produto <span class="math inline">\(C \cdot P\)</span> representa o potencial natural de erosão de uma bacia independente da ação humana.</p></li>
+</ol></li>
+<li><p>Uma parcela experimental apresenta <span class="math inline">\(R = 4.000\text{ MJ}\cdot\text{mm}\cdot\text{ha}^{-1}\cdot\text{h}^{-1}\cdot\text{ano}^{-1}\)</span>, <span class="math inline">\(K = 0{,}04\text{ t}\cdot\text{ha}\cdot\text{h}\cdot\text{ha}^{-1}\cdot\text{MJ}^{-1}\cdot\text{mm}^{-1}\)</span>, <span class="math inline">\(LS = 1{,}5\)</span>, <span class="math inline">\(C = 0{,}10\)</span> e <span class="math inline">\(P = 0{,}50\)</span>. A perda média anual de solo (<span class="math inline">\(A\)</span>) estimada pela USLE é,</p>
+<ol type="A">
+<li><p><span class="math inline">\(6{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(12{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(24{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(48{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(240{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+</ol></li>
+<li><p>No monitoramento de processos erosivos em campo, o método mais adequado para mensurar a taxa anual de recuo remontante da cabeceira de uma voçoroca ativa é,</p>
+<ol type="A">
+<li><p>Determinação de pH e saturação por bases em laboratório.</p></li>
+<li><p>Instalação de estacas fixas de referência externas à borda instável com medições periódicas de distância até a escarpa.</p></li>
+<li><p>Uso isolado de infiltrômetro de anel dentro do leito alagado do rio principal.</p></li>
+<li><p>Cálculo exclusivo do fator <span class="math inline">\(R\)</span> a partir da precipitação média mensal.</p></li>
+<li><p>Estimativa visual sem marco fixo nem registro de data.</p></li>
+</ol></li>
+<li><p>Em uma parcela monitorada com quatro pinos de erosão durante <span class="math inline">\(12\)</span> meses, as variações de altura exposta foram <span class="math inline">\(+12\text{ mm}\)</span>, <span class="math inline">\(+8\text{ mm}\)</span>, <span class="math inline">\(+16\text{ mm}\)</span> e <span class="math inline">\(+4\text{ mm}\)</span>. Adotando <span class="math inline">\(D_s = 1{,}25\text{ g}\cdot\text{cm}^{-3}\)</span>, a perda de solo equivalente no período é,</p>
+<ol type="A">
+<li><p><span class="math inline">\(10{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(50{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(100{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(125{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(150{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="questões-de-aplicação" class="level2">
+<h2 class="anchored" data-anchor-id="questões-de-aplicação">Questões de aplicação</h2>
+<section id="integração-entre-diagnóstico-módulo-4-e-intervenção-módulo-5" class="level3">
+<h3 class="anchored" data-anchor-id="integração-entre-diagnóstico-módulo-4-e-intervenção-módulo-5">Integração entre Diagnóstico (Módulo 4) e Intervenção (Módulo 5)</h3>
+<p>Em concursos e no ENADE, o diagnóstico da forma erosiva (laminar, sulco, ravina ou voçoroca) aparece quase sempre acoplado à escolha da técnica de controle. Prevenir com cobertura (<span class="math inline">\(C\)</span>) e conservação (<span class="math inline">\(P\)</span>) custa uma fração mínima do investimento necessário para estabilizar uma voçoroca instalada.</p>
+<ol start="16" type="1">
+<li><p><strong>[Questão Autoral, Estilo ENADE / Geografia]</strong> Durante o diagnóstico ambiental de uma microbacia rural no interior baiano, observou-se uma grande incisão linear com <span class="math inline">\(4{,}2\text{ m}\)</span> de profundidade, paredes subverticais com marcas de escorregamento rotacional, dutos subterrâneos drenando água na base do talude mesmo após <span class="math inline">\(20\)</span> dias sem chuva e forte assoreamento de um riacho a jusante. Com base na geomorfologia da erosão linear, conclui-se que a feição corresponde a,</p>
+<ol type="A">
+<li><p>Erosão laminar incipiente, controlável apenas com adubação química superficial.</p></li>
+<li><p>Sulco raso efêmero, gerado exclusivamente por impacto direto da gota (<em>splash</em>).</p></li>
+<li><p>Ravina rasa desconectada do sistema hidrogeológico local.</p></li>
+<li><p>Voçoroca ativa com atuação combinada de fluxo superficial, exfiltração do lençol freático, <em>piping</em> e solapamento de taludes, demandando drenagem superficial e subsuperficial associada à estabilização de taludes.</p></li>
+<li><p>Processo natural de equilíbrio ecodinâmico estável segundo Tricart (1977), sem necessidade de intervenção.</p></li>
+</ol></li>
+<li><p><strong>[Questão Autoral, Estilo Concurso Analista Ambiental]</strong> Um gestor público dispõe de recursos limitados para reduzir o assoreamento de um açude abastecedor no Semiárido. Simulações com a USLE indicaram que duas sub-bacias possuem igual área e igual clima (<span class="math inline">\(R\)</span>), porém a Sub-bacia 1 possui solo exposto (<span class="math inline">\(C = 0{,}80\)</span>; <span class="math inline">\(P = 1{,}00\)</span>) sobre vertentes íngremes (<span class="math inline">\(LS = 2{,}5\)</span>), enquanto a Sub-bacia 2 possui Caatinga conservada (<span class="math inline">\(C = 0{,}01\)</span>; <span class="math inline">\(P = 1{,}00\)</span>) em relevo suave (<span class="math inline">\(LS = 0{,}5\)</span>). Considerando igual erodibilidade <span class="math inline">\(K\)</span>, a razão entre a perda de solo estimada na Sub-bacia 1 e na Sub-bacia 2 (<span class="math inline">\(A_1 / A_2\)</span>) é igual a,</p>
+<ol type="A">
+<li><p><span class="math inline">\(4\)</span> vezes maior.</p></li>
+<li><p><span class="math inline">\(40\)</span> vezes maior.</p></li>
+<li><p><span class="math inline">\(80\)</span> vezes maior.</p></li>
+<li><p><span class="math inline">\(200\)</span> vezes maior.</p></li>
+<li><p><span class="math inline">\(400\)</span> vezes maior.</p></li>
+</ol></li>
+<li><p><strong>[Questão Autoral, Estilo Concurso Geógrafo / Órgão Estadual de Meio Ambiente]</strong> Ao elaborar o diagnóstico de áreas degradadas para um Relatório Ambiental, qual combinação de ferramentas garante simultaneamente avaliação da erosão difusa nas vertentes, monitoramento direto de rebaixamento em taludes e quantificação do volume de solo mobilizado em ravinas?</p>
+<ol type="A">
+<li><p>Apenas entrevista com moradores locais e consulta à precipitação média anual.</p></li>
+<li><p>USLE aplicada às vertentes, malha de pinos de erosão em taludes expostos e levantamento de perfis transversais georreferenciados nas ravinas.</p></li>
+<li><p>Apenas análise química de <span class="math inline">\(V\%\)</span> e pH no fundo do reservatório assoreado.</p></li>
+<li><p>Cálculo isolado do fator <span class="math inline">\(R\)</span> sem considerar uso da terra nem declividade.</p></li>
+<li><p>Medição única da densidade de partículas (<span class="math inline">\(D_p\)</span>) em laboratório.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="gabarito-comentado" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="gabarito-comentado">Gabarito comentado</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Clique para abrir o Gabarito Comentado
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="resoluções-completas-exercícios-de-fixação-1-a-15" class="level3">
+<h3 class="anchored" data-anchor-id="resoluções-completas-exercícios-de-fixação-1-a-15">Resoluções Completas, Exercícios de Fixação (1 a 15)</h3>
+<ol type="1">
+<li><p>O impacto direto das gotas de chuva (<em>splash</em>) sobre solo desprotegido desagrega torrões e libera argila e silte em suspensão. Essas partículas finas entopem os poros da superfície, criando uma crosta de baixa permeabilidade (<strong>selamento superficial</strong>). Com a infiltração drasticamente reduzida, a água acumula-se na superfície e escoa em lâmina difusa, iniciando a erosão laminar.</p></li>
+<li><p><strong>Sulco.</strong> Incisão rasa (<span class="math inline">\(&lt;0{,}5\text{ m}\)</span>) gerada por concentração inicial do escoamento superficial, ainda reversível por manejo e práticas conservacionistas. <strong>Ravina.</strong> Incisão profunda (<span class="math inline">\(&gt;0{,}5\text{ m}\)</span>) permanente, dominada por escoamento superficial concentrado, sem eliminação por preparo comum. <strong>Voçoroca.</strong> Estágio de colapso em que a incisão atinge o lençol freático ou fluxos subsuperficiais, combinando escoamento superficial, <em>piping</em> e solapamento de taludes.</p></li>
+<li><p><strong><em>Piping</em></strong> é a erosão subsuperficial tubular produzida pelo carreamento interno de partículas finas pela água em percolação concentrada. Sua identificação orienta o projeto porque obras restritas à superfície (sem drenagem profunda adequada) falham quando o solo continua sendo escavado internamente, causando desabamento das estruturas.</p></li>
+<li><p><span class="math inline">\(R\)</span>, erosividade da chuva; <span class="math inline">\(K\)</span>, erodibilidade intrínseca do solo; <span class="math inline">\(L\)</span>, comprimento de rampa; <span class="math inline">\(S\)</span>, declividade da vertente; <span class="math inline">\(C\)</span>, uso, manejo e cobertura vegetal; <span class="math inline">\(P\)</span>, práticas conservacionistas de suporte. Os fatores diretamente modificáveis pelo manejo são <strong><span class="math inline">\(C\)</span></strong> (cobertura vegetal, plantio direto, revegetação) e <strong><span class="math inline">\(P\)</span></strong> (plantio em contorno, terraceamento, cordões vegetados).</p></li>
+<li><p>A remoção da vegetação ripária elimina o reforço mecânico das raízes nos barrancos (favorecendo solapamento e queda de margens) e destrói o filtro físico que retinha sedimentos oriundos das vertentes, aumentando a carga sólida transportada até canais e reservatórios (assoreamento).</p></li>
+<li><p><strong>Passo a passo,</strong> <span class="math inline">\(PNE = 5.000 \times 0{,}025 \times 2{,}0 = 250{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span>. Morro abaixo (<span class="math inline">\(C = 0{,}20\)</span>, <span class="math inline">\(P = 1{,}00\)</span>), <span class="math inline">\(A_1 = 250{,}0 \times 0{,}20 \times 1{,}00 = \mathbf{50{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}}\)</span>. Em contorno (<span class="math inline">\(C = 0{,}20\)</span>, <span class="math inline">\(P = 0{,}50\)</span>), <span class="math inline">\(A_2 = 250{,}0 \times 0{,}20 \times 0{,}50 = \mathbf{25{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}}\)</span>.</p></li>
+<li><p><strong>Passo a passo,</strong> <span class="math inline">\(h = \frac{A}{10 \cdot D_s} = \frac{70{,}0}{10 \times 1{,}40} = \frac{70{,}0}{14{,}0} = \mathbf{5{,}00\text{ mm}\cdot\text{ano}^{-1}}\)</span>. Em <span class="math inline">\(20\)</span> anos, <span class="math inline">\(5{,}00 \times 20 = 100{,}0\text{ mm} = \mathbf{10{,}0\text{ cm}}\)</span>.</p></li>
+<li><p><strong>Passo a passo,</strong> <span class="math inline">\(\Delta \bar{h} = \frac{14 + 18 + 10 + (-2)}{4} = \frac{40}{4} = \mathbf{+10{,}0\text{ mm}\cdot\text{ano}^{-1}}\)</span>. Perda equivalente, <span class="math inline">\(A = 10 \times 1{,}30 \times 10{,}0 = \mathbf{130{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}}\)</span>.</p></li>
+<li><p><strong>Passo a passo,</strong> <span class="math inline">\(A_1 = \frac{2{,}4 + 0{,}8}{2}\times 1{,}0 = 1{,}60\text{ m}^2\)</span>. <span class="math inline">\(A_2 = \frac{3{,}6 + 1{,}2}{2}\times 1{,}5 = 3{,}60\text{ m}^2\)</span>. Volume, <span class="math inline">\(V = \frac{1{,}60 + 3{,}60}{2}\times 30{,}0 = 2{,}60 \times 30{,}0 = \mathbf{78{,}0\text{ m}^3}\)</span>. Massa, <span class="math inline">\(M = 78{,}0 \times 1{,}50 = \mathbf{117{,}0\text{ t}}\)</span>.</p></li>
+<li><p><strong>Passo a passo,</strong> Aporte anual, <span class="math inline">\(Y = 400 \times 25{,}0 \times 0{,}20 = 2.000{,}0\text{ t}\cdot\text{ano}^{-1}\)</span>. Volume assoreado anual, <span class="math inline">\(V_{\text{sed}} = 2.000{,}0 / 1{,}25 = \mathbf{1.600{,}0\text{ m}^3\cdot\text{ano}^{-1}}\)</span>. Em <span class="math inline">\(10\)</span> anos, <span class="math inline">\(16.000{,}0\text{ m}^3\)</span>. Perda percentual, <span class="math inline">\((16.000 / 80.000)\times 100\% = \mathbf{20{,}0\%}\)</span>.</p></li>
+<li><p><strong>Gabarito, (B).</strong> O critério geomorfológico central da passagem de ravina para voçoroca é a interseção com o lençol freático ou fluxos subsuperficiais, ativando <em>piping</em> e solapamento dos taludes.</p></li>
+<li><p><strong>Gabarito, (C).</strong> A USLE estima erosão laminar e em sulcos nas vertentes; para aportes em bacias, requer <span class="math inline">\(SDR\)</span>, e processos lineares profundos ou marginais exigem medições específicas.</p></li>
+<li><p><strong>Gabarito, (B).</strong> <span class="math inline">\(A = 4.000 \times 0{,}04 \times 1{,}5 \times 0{,}10 \times 0{,}50 = 160 \times 1{,}5 \times 0{,}05 = 240 \times 0{,}05 = \mathbf{12{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}}\)</span>.</p></li>
+<li><p><strong>Gabarito, (B).</strong> Estacas fixas externas posicionadas fora da zona de ruptura fornecem referência estável para medir com trena o recuo anual da cabeceira da voçoroca.</p></li>
+<li><p><strong>Gabarito, (D).</strong> Média dos pinos, <span class="math inline">\((12 + 8 + 16 + 4)/4 = 40/4 = 10{,}0\text{ mm}\cdot\text{ano}^{-1}\)</span>. Conversão, <span class="math inline">\(A = 10 \times 1{,}25 \times 10{,}0 = \mathbf{125{,}0\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}}\)</span>.</p></li>
+</ol>
+</section>
+<section id="resoluções-completas-questões-enade-e-concursos-16-a-18" class="level3">
+<h3 class="anchored" data-anchor-id="resoluções-completas-questões-enade-e-concursos-16-a-18">Resoluções Completas, Questões ENADE e Concursos (16 a 18)</h3>
+<ol start="16" type="1">
+<li><p><strong>Gabarito, (D).</strong> A presença de água emergindo em dutos na base do talude mesmo após <span class="math inline">\(20\)</span> dias sem chuva indica interceptação do lençol freático e <em>piping</em>, definindo uma <strong>voçoroca ativa</strong>.</p></li>
+<li><p><strong>Gabarito, (E).</strong> Como <span class="math inline">\(R\)</span>, <span class="math inline">\(K\)</span> e <span class="math inline">\(P\)</span> são idênticos, a razão simplifica-se para,</p></li>
+</ol>
+<p><span class="math display">\[
+\frac{A_1}{A_2} = \frac{LS_1 \cdot C_1}{LS_2 \cdot C_2} = \frac{2{,}5 \times 0{,}80}{0{,}5 \times 0{,}01} = \frac{2{,}00}{0{,}005} = \mathbf{400}\text{ vezes maior.}
+\]</span></p>
+<ol start="18" type="1">
+<li><strong>Gabarito, (B).</strong> Apenas a combinação de USLE (erosão laminar e em sulcos), pinos de erosão (rebaixamento direto em taludes) e perfis transversais (cubagem de ravinas) cobre os três processos citados.</li>
+</ol>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section id="síntese-conceitual" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="síntese-conceitual">Síntese conceitual</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Síntese Conceitual do Capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Sequência evolutiva,</strong> <em>splash</em> + selamento <span class="math inline">\(\rightarrow\)</span> erosão laminar <span class="math inline">\(\rightarrow\)</span> sulcos (<span class="math inline">\(&lt;0{,}5\text{ m}\)</span>) <span class="math inline">\(\rightarrow\)</span> ravinas (<span class="math inline">\(&gt;0{,}5\text{ m}\)</span>, fluxo superficial) <span class="math inline">\(\rightarrow\)</span> voçorocas (lençol freático, <em>piping</em> e solapamento). <strong>USLE (<span class="math inline">\(A = R \cdot K \cdot L \cdot S \cdot C \cdot P\)</span>).</strong> Separa o potencial natural (<span class="math inline">\(R\cdot K\cdot LS\)</span>) do efeito protetor do manejo (<span class="math inline">\(C\cdot P\)</span>). Conversão de massa para espessura, <span class="math inline">\(h\,(\text{mm}\cdot\text{ano}^{-1}) = A / (10 \cdot D_s)\)</span>. <strong>Monitoramento em campo.</strong> Pinos de erosão (balanço líquido <span class="math inline">\(\Delta \bar{h}\)</span>), estacas externas (recuo de cabeceira), perfis transversais (<span class="math inline">\(V = \frac{A_1+A_2}{2}\cdot L\)</span>) e aporte a reservatórios (<span class="math inline">\(Y = A \cdot \text{Área} \cdot SDR\)</span>).</p>
+</div>
+</div>
+</section>
+<section id="autoavaliação" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="autoavaliação">Autoavaliação</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Autoavaliação e Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Responda com <strong>V</strong> (Verdadeiro) ou <strong>F</strong> (Falso) e confira abaixo,</p>
+<ol type="1">
+<li><p>( ) O selamento superficial causado pelo impacto direto das gotas de chuva (<em>splash</em>) reduz a taxa de infiltração e intensifica o escoamento superficial.</p></li>
+<li><p>( ) A USLE inclui em seu resultado o volume total de solo escavado por <em>piping</em> em voçorocas profundas.</p></li>
+<li><p>( ) Em uma malha de pinos de erosão, uma leitura final de altura exposta menor que a leitura inicial (<span class="math inline">\(\Delta h &lt; 0\)</span>) indica deposição local de sedimentos.</p></li>
+<li><p>( ) Para uma mesma taxa de perda de solo <span class="math inline">\(A = 140\text{ t}\cdot\text{ha}^{-1}\cdot\text{ano}^{-1}\)</span> e densidade <span class="math inline">\(D_s = 1{,}40\text{ g}\cdot\text{cm}^{-3}\)</span>, a superfície do terreno sofre rebaixamento médio de <span class="math inline">\(10\text{ mm}\cdot\text{ano}^{-1}\)</span>.</p></li>
+</ol>
+<p><strong>Gabarito da verificação da aprendizagem,</strong> 1-<strong>V</strong> | 2-<strong>F</strong> (a USLE modela apenas erosão laminar e em sulcos) | 3-<strong>V</strong> | 4-<strong>V</strong> (<span class="math inline">\(140 / (10 \times 1{,}40) = 10\text{ mm}\cdot\text{ano}^{-1}\)</span>).</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/analise-ambiental\/");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Código deslocável","output":"Saída deslocável"};
+  </script>
+<nav class="page-navigation" aria-label="Página">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/11-qualidade-solo-iqs.html" class="pagination-link" aria-label="Indicadores de Qualidade do Solo e Funcionalidade Edáfica">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/mod4-simulado.html" class="pagination-link" aria-label="Simulado e Revisão Integrada, Módulo 4">
+        <span class="nav-page-text">Simulado e Revisão Integrada, Módulo 4</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026 (DCHF/UEFS). <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

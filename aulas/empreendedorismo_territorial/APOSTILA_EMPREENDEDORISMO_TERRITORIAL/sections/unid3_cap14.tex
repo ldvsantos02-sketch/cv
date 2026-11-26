@@ -18,7 +18,7 @@ Ao concluir este capítulo, você será capaz de:
 Antes de avançar para o \textit{Valuation} de negócios e startups, relembre três pilares dos Capítulos 12 e 13:
 \begin{itemize}[leftmargin=1.4em, itemsep=2pt]
   \item \textbf{Fluxo de Caixa Livre ($FCL$):} representa o caixa gerado pela operação disponível para remunerar todos os provedores de capital (credores e sócios), após investimentos em CAPEX e Capital de Giro.
-  \item \textbf{Desconto Intertemporal:} trazer fluxos futuros a valor presente exige uma taxa de desconto coerente com o risco do fluxo — em projetos isolados usamos a TMA; na avaliação da empresa inteira, usamos o WACC.
+  \item \textbf{Desconto Intertemporal:} trazer fluxos futuros a valor presente exige uma taxa de desconto coerente com o risco do fluxo, adotando a TMA em projetos isolados e o WACC na avaliação da empresa inteira.
   \item \textbf{Escada do Capital (Cap. 10):} rodadas de investimento anjo, semente e Venture Capital exigem saber quanto vale o negócio hoje para definir qual percentual societário o investidor receberá pelo aporte.
 \end{itemize}
 \end{capRevisao}
@@ -27,26 +27,15 @@ Antes de avançar para o \textit{Valuation} de negócios e startups, relembre tr
 
 \subsection{O que significa avaliar (\textit{Valuation})? Preço versus Valor}
 
-\textit{Valuation} é o processo sistemático de estimar o valor justo de um ativo, projeto ou empresa. Como destaca Aswath Damodaran (2010), \textbf{valor} e \textbf{preço} não são sinônimos:
-\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
-  \item \textbf{Valor Intrínseco:} determinado pelos fundamentos do negócio — capacidade de gerar fluxos de caixa futuros, crescimento esperado e risco associado.
-  \item \textbf{Preço:} valor efetivamente pago em uma transação de mercado, influenciado por oferta e demanda, liquidez, poder de barganha e sentimento dos investidores.
-\end{itemize}
-Uma metodologia robusta de \textit{Valuation} ancora a negociação nos fundamentos, evitando que empreendedores territoriais vendam participação societária abaixo do valor intrínseco ou que investidores paguem preços desconectados da geração real de caixa.
+\textit{Valuation} é o processo sistemático de estimar o valor justo de um ativo, projeto ou empresa. Como destaca Aswath Damodaran (2010), \textbf{valor} e \textbf{preço} constituem grandezas distintas. O \textbf{Valor Intrínseco} decorre diretamente dos fundamentos do negócio, ou seja, de sua capacidade de gerar fluxos de caixa futuros, do crescimento esperado e do risco associado à operação. Já o \textbf{Preço} corresponde ao valor efetivamente pago em uma transação de mercado, influenciado por oferta e demanda, liquidez, poder de barganha e sentimento dos investidores. Uma metodologia rigorosa de \textit{Valuation} ancora a negociação nos fundamentos, evitando que empreendedores territoriais cedam participação societária abaixo do valor intrínseco ou que investidores paguem preços desconectados da geração real de caixa.
 
 \begin{boxSimbolo}[Vocabulário Conceitual e Símbolos do Capítulo 14]
-\begin{itemize}[leftmargin=1.3em, itemsep=2pt]
-  \item $E$ e $D$: valor de mercado do Patrimônio Líquido (\textit{Equity}) e da Dívida onerosa (\textit{Debt}).
-  \item $K_e$ e $K_d$: custo do capital próprio (estimado via CAPM: $K_e = R_f + \beta(R_m - R_f)$) e custo da dívida antes dos impostos.
-  \item $T$: alíquota marginal de imposto sobre a renda (IR/CSLL); $(1-T)$ captura o benefício fiscal dos juros.
-  \item $WACC$: Custo Médio Ponderado de Capital (\textit{Weighted Average Cost of Capital}).
-  \item $VT$: Valor Terminal ao final do período explícito $n$; $g$: taxa de crescimento perpétuo ($g < WACC$).
-  \item $EV$: \textit{Enterprise Value} (Valor da Firma/Operação); $Equity$: \textit{Equity Value} (Valor dos Acionistas).
-  \item \textit{Post-money} e \textit{Pre-money}: valor da startup imediatamente após e imediatamente antes do aporte do investidor.
-\end{itemize}
+Na estrutura de capital, $E$ e $D$ representam o valor de mercado do Patrimônio Líquido (\textit{Equity}) e da Dívida onerosa (\textit{Debt}), respectivamente. O custo do capital próprio é dado por $K_e$ (estimado via CAPM pela equação $K_e = R_f + \beta(R_m - R_f)$), enquanto $K_d$ indica o custo da dívida antes dos impostos e $T$ designa a alíquota marginal de imposto sobre a renda (IR/CSLL), de modo que o termo $(1-T)$ captura o benefício fiscal dos juros. A ponderação desses custos resulta no $WACC$, o Custo Médio Ponderado de Capital (\textit{Weighted Average Cost of Capital}).
+
+Na projeção de longo prazo, $VT$ simboliza o Valor Terminal ao final do período explícito $n$, calculado com base na taxa de crescimento perpétuo $g$ ($g < WACC$). A soma dos fluxos descontados define o $EV$ (\textit{Enterprise Value}, ou Valor da Firma/Operação), do qual se deriva o $Equity$ (\textit{Equity Value}, ou Valor dos Acionistas). Em rodadas de investimento de risco, \textit{Post-money} e \textit{Pre-money} designam o valor da startup imediatamente após e imediatamente antes do aporte do investidor.
 \end{boxSimbolo}
 
-\subsection{Fluxo de Caixa Descontado (FCD — Damodaran, 2010)}
+\subsection{Fluxo de Caixa Descontado (FCD: Damodaran, 2010)}
 
 No modelo FCD para a firma (FCFF), o valor operacional do negócio (\textit{Enterprise Value}) corresponde à soma do valor presente dos Fluxos de Caixa Livres projetados no horizonte explícito ($t = 1, \dots, n$) mais o valor presente do \textbf{Valor Terminal ($VT_n$)}, todos descontados pelo \textbf{WACC}.
 
@@ -68,7 +57,7 @@ No modelo FCD para a firma (FCFF), o valor operacional do negócio (\textit{Ente
 \]
 \end{boxFormula}
 
-A passagem do $EV$ para o $Equity$ é intuitiva: o $EV$ mede o valor do motor operacional da empresa para todos os financiadores. Como os credores têm prioridade sobre os sócios, subtrai-se a Dívida Bruta e soma-se o Caixa disponível (ou subtrai-se a Dívida Líquida = $\text{Dívida Bruta} - \text{Caixa}$) para encontrar o valor pertencente exclusivamente aos acionistas.
+A passagem do $EV$ para o $Equity$ é intuitiva, pois o $EV$ mede o valor do motor operacional da empresa para todos os financiadores. Como os credores têm prioridade sobre os sócios, subtrai-se a Dívida Bruta e soma-se o Caixa disponível (ou subtrai-se a Dívida Líquida = $\text{Dívida Bruta} - \text{Caixa}$) para encontrar o valor pertencente exclusivamente aos acionistas. A Figura~\ref{fig:14_valuation} compara essa arquitetura do Fluxo de Caixa Descontado (WACC, perpetuidade de Gordon, $EV$ e $Equity$) com a lógica do Método de Venture Capital aplicada a negócios nascentes.
 
 \begin{figure}[H]
   \centering
@@ -79,19 +68,18 @@ A passagem do $EV$ para o $Equity$ é intuitiva: o $EV$ mede o valor do motor op
 
 \subsection{\textit{The Dark Side of Valuation}, Venture Capital e Opções Reais}
 
-Quando tentamos aplicar o FCD tradicional a startups nascentes, de base tecnológica ou projetos de impacto em estágio pré-operacional, enfrentamos o que Damodaran (2010) denomina \textit{The Dark Side of Valuation}: ausência de histórico contábil, fluxos de caixa negativos nos primeiros anos, alta taxa de mortalidade e incerteza sobre o tamanho futuro do mercado. Nesses casos, dois instrumentos complementam ou substituem o FCD:
+Quando tentamos aplicar o FCD tradicional a startups nascentes, de base tecnológica ou projetos de impacto em estágio pré-operacional, enfrentamos o que Damodaran (2010) denomina \textit{The Dark Side of Valuation}, marcado pela ausência de histórico contábil, fluxos de caixa negativos nos primeiros anos, alta taxa de mortalidade e incerteza sobre o tamanho futuro do mercado. Nesses casos, dois instrumentos complementam ou substituem o FCD na avaliação territorial e tecnológica.
 
 \begin{boxConceito}[Método de Venture Capital e Opções Reais]
-\begin{enumerate}[leftmargin=1.4em, itemsep=3pt]
-  \item \textbf{Método de Venture Capital (VC):} o fundo parte do futuro para o presente. Estima o \textbf{Valor de Saída ($EV_{\text{saída}}$)} em um horizonte $n$ (tipicamente $3$ a $7$ anos) aplicando um múltiplo de mercado (ex.: $EV/EBITDA$ ou $EV/\text{Receita}$) sobre a métrica projetada. Em seguida, desconta esse valor pela \textbf{TIR-alvo do fundo} ($r_{VC}$, alta para compensar o risco do portfólio):
-  \[
-    \text{Post-money} = \frac{\text{Valor de Saída}}{(1 + r_{VC})^n}, \qquad \text{Pre-money} = \text{Post-money} - \text{Aporte}, \qquad \%\text{Participação} = \frac{\text{Aporte}}{\text{Post-money}}
-  \]
-  \item \textbf{Opções Reais:} diferente do VPL estático (que assume decisão rígida ``agora ou nunca''), a teoria de Opções Reais incorpora o valor econômico da \textbf{flexibilidade gerencial}: o direito, mas não a obrigação, de \textbf{adiar} o investimento aguardando redução de incerteza, \textbf{expandir} a planta se a demanda superar o esperado, ou \textbf{abandonar} o projeto vendendo ativos caso o cenário seja adverso. Assim:
-  \[
-    VPL_{\text{expandido}} = VPL_{\text{estático}} + \text{Valor da Opção Real}
-  \]
-\end{enumerate}
+Pelo \textbf{Método de Venture Capital (VC)}, o fundo parte do futuro para o presente ao estimar o \textbf{Valor de Saída ($EV_{\text{saída}}$)} em um horizonte $n$ (tipicamente $3$ a $7$ anos), aplicando um múltiplo de mercado (como $EV/EBITDA$ ou $EV/\text{Receita}$) sobre a métrica projetada. Em seguida, desconta esse valor pela \textbf{TIR-alvo do fundo} ($r_{VC}$, elevada para compensar o risco do portfólio):
+\[
+  \text{Post-money} = \frac{\text{Valor de Saída}}{(1 + r_{VC})^n}, \qquad \text{Pre-money} = \text{Post-money} - \text{Aporte}, \qquad \%\text{Participação} = \frac{\text{Aporte}}{\text{Post-money}}
+\]
+
+Já a abordagem de \textbf{Opções Reais} supera a rigidez do VPL estático (que assume decisão irreversível imediata) ao incorporar o valor econômico da \textbf{flexibilidade gerencial}. Essa flexibilidade confere ao empreendedor o direito, sem a obrigação, de \textbf{adiar} o investimento aguardando redução de incerteza, \textbf{expandir} a planta se a demanda superar o esperado ou \textbf{abandonar} o projeto vendendo ativos caso o cenário seja adverso, resultando em:
+\[
+  VPL_{\text{expandido}} = VPL_{\text{estático}} + \text{Valor da Opção Real}
+\]
 \end{boxConceito}
 
 \etapa{4}{Exemplos Resolvidos Passo a Passo}
@@ -237,7 +225,7 @@ Ao apresentar um \textit{Valuation} para investidores ou bancos de fomento, evit
 \clearpage
 \etapa{8}{Gabarito Integralmente Comentado (Exercícios 1 a 15 + Desafios 1 a 3)}
 
-\begin{boxGabarito}[Resolução Passo a Passo — Exercícios de Fixação (1 a 15)]
+\begin{boxGabarito}[Resolução Passo a Passo: Exercícios de Fixação (1 a 15)]
 \begin{enumerate}[leftmargin=1.5em, itemsep=4pt]
   \item \textbf{Preço vs. Valor:} Valor intrínseco reflete a geração futura de caixa descontada pelo risco; preço é o resultado da negociação de mercado em dado momento, podendo desviar-se do valor por escassez de liquidez, euforia ou assimetria de informação.
   \item \textbf{CAPM:} $K_e = 10\% + 1{,}2 \times 5\% = 10\% + 6\% = \mathbf{16{,}00\%\text{ a.a.}}$.
@@ -262,7 +250,7 @@ Ao apresentar um \textit{Valuation} para investidores ou bancos de fomento, evit
 \end{enumerate}
 \end{boxGabarito}
 
-\begin{boxGabarito}[Diretrizes de Resposta — Desafios Autorais (1 a 3)]
+\begin{boxGabarito}[Diretrizes de Resposta: Desafios Autorais (1 a 3)]
 \begin{enumerate}[leftmargin=1.5em, itemsep=3pt]
   \item \textbf{Desafio 1:} Deve apresentar $WACC$ coerente com a estrutura de financiamento do projeto (ex.: parcela subsidiada FNE/BNDES como $D$ e capital dos sócios como $E$), calcular $VT_n$ com $g < WACC$ e realizar a passagem $EV \to Equity$.
   \item \textbf{Desafio 2:} Deve projetar uma métrica de saída realista ($EBITDA_4 \times \text{múltiplo}$), descontar por $(1{,}30)^4 = 2{,}8561$ para obter o \textit{Post-money} e discutir o equilíbrio entre capital captado e governança dos fundadores.

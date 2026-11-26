@@ -1,0 +1,72 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% =========================================================
+% PAINEL (a) Fluxo Metodológico da AIA (6 Etapas)
+% =========================================================
+\node[aaTitle] at (-4.8, 5.25) {(a) Fluxo Metodológico da Avaliação de Impacto Ambiental};
+
+\begin{scope}[shift={(-4.8, 0)}]
+  \node[aaBox=uefsNavy, fill=bgNavy, text width=8.6cm, minimum height=0.95cm, inner sep=6pt] (s1) at (0, 4.1)
+    {\textbf{1. Triagem e Definição de Escopo (Termo de Referência)}};
+
+  \node[aaBox=uefsTeal, fill=bgTeal, text width=8.6cm, minimum height=0.95cm, inner sep=6pt] (s2) at (0, 2.55)
+    {\textbf{2. Diagnóstico Ambiental (Linha de Base: Físico, Biótico, Socioeconômico)}};
+
+  \node[aaBox=uefsGold, fill=bgGold, text width=8.6cm, minimum height=0.95cm, inner sep=6pt] (s3) at (0, 1.0)
+    {\textbf{3. Identificação, Previsão e Valoração dos Impactos (Matrizes / Redes)}};
+
+  \node[aaBox=uefsNavy, fill=bgNavy, text width=8.6cm, minimum height=0.95cm, inner sep=6pt] (s4) at (0, -0.55)
+    {\textbf{4. Prognóstico (Cenário com Projeto vs. Sem Projeto)}};
+
+  \node[aaBox=uefsForest, fill=bgForest, text width=8.6cm, minimum height=0.95cm, inner sep=6pt] (s5) at (0, -2.1)
+    {\textbf{5. Medidas Mitigadoras, Compensatórias e Planos de Gestão (PBA)}};
+
+  \node[aaBox=uefsAlert, fill=bgAlert, text width=8.6cm, minimum height=0.95cm, inner sep=6pt] (s6) at (0, -3.65)
+    {\textbf{6. Decisão Pública, Monitoramento e Auditoria Pós-Implantação}};
+
+  \draw[aaArrow, uefsMuted, shorten >=2pt, shorten <=2pt] (s1.south) -- (s2.north);
+  \draw[aaArrow, uefsMuted, shorten >=2pt, shorten <=2pt] (s2.south) -- (s3.north);
+  \draw[aaArrow, uefsMuted, shorten >=2pt, shorten <=2pt] (s3.south) -- (s4.north);
+  \draw[aaArrow, uefsMuted, shorten >=2pt, shorten <=2pt] (s4.south) -- (s5.north);
+  \draw[aaArrow, uefsMuted, shorten >=2pt, shorten <=2pt] (s5.south) -- (s6.north);
+\end{scope}
+
+% =========================================================
+% PAINEL (b) Hierarquia de Mitigação (Ordem de Prioridade)
+% =========================================================
+\node[aaTitle] at (5.3, 5.25) {(b) Hierarquia de Mitigação (Ordem de Prioridade)};
+
+\begin{scope}[shift={(5.3, 0)}]
+  % Degraus em pirâmide invertida, com largura suficiente para o texto
+  \node[draw=uefsForest, fill=uefsForest, rounded corners=4pt, text=white,
+        align=center, font=\footnotesize\sffamily, text width=7.2cm, minimum height=1.55cm, inner sep=6pt]
+    (h1) at (0.65, 3.6)
+    {\textbf{1º EVITAR (Prevenção na origem)}\\[2pt]Alternativa locacional ou tecnológica};
+
+  \node[draw=uefsTeal, fill=uefsTeal, rounded corners=4pt, text=white,
+        align=center, font=\footnotesize\sffamily, text width=6.4cm, minimum height=1.55cm, inner sep=6pt]
+    (h2) at (0.65, 1.55)
+    {\textbf{2º MINIMIZAR (Redução de magnitude)}\\[2pt]Controle de erosão, filtros, cronograma};
+
+  \node[draw=uefsGoldDark, fill=uefsGold!90!uefsGoldDark, rounded corners=4pt, text=white,
+        align=center, font=\footnotesize\sffamily, text width=5.6cm, minimum height=1.55cm, inner sep=6pt]
+    (h3) at (0.65, -0.5)
+    {\textbf{3º RECUPERAR / REABILITAR}\\[2pt]PRAD, revegetação, bioengenharia};
+
+  \node[draw=uefsAlert, fill=uefsAlert, rounded corners=4pt, text=white,
+        align=center, font=\footnotesize\sffamily, text width=4.8cm, minimum height=1.55cm, inner sep=6pt]
+    (h4) at (0.65, -2.55)
+    {\textbf{4º COMPENSAR (Impacto residual)}\\[2pt]Unidades de conservação, reposição};
+
+  % Seta lateral limpa de preferência ecológica (totalmente separada dos blocos)
+  \draw[->, >=Stealth, line width=2pt, uefsForest] (-3.75, -2.4) -- (-3.75, 4.1);
+  \node[align=center, font=\scriptsize\bfseries, text=uefsForest, text width=2.2cm]
+    at (-3.75, -3.25) {Preferível\\(menor custo\\ecológico)};
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

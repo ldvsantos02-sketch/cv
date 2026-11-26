@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Apostila completa do componente curricular CHF662 (Análise Ambiental), Curso de Geografia da UEFS, organizada em cinco módulos, 15 capítulos em 10 etapas, simulados comentados, formulário e glossário.">
+
+<title>7&nbsp; Bacia Hidrográfica como Unidade de Análise Ambiental Integrada - Análise Ambiental (CHF662)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/08-morfopedologia-vertentes.html" rel="next">
+<link href="../capitulos/mod2-simulado.html" rel="prev">
+<link href="../img/capa_analise_ambiental.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-679673b8a27c868cce7048b2deb5a79d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Pular para o conteúdo principal</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Barra de ferramentas">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/07-bacias-hidrograficas-morfometria.html">Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade</a></li><li class="breadcrumb-item"><a href="../capitulos/07-bacias-hidrograficas-morfometria.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bacia Hidrográfica como Unidade de Análise Ambiental Integrada</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Análise Ambiental (CHF662)</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos02-sketch/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../APOSTILA_ANALISE_AMBIENTAL_CHF662_UEFS.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Apresentação e orientação de estudo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Módulo 1. Fundamentos epistemológicos e conceituais</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-questao-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Questão Ambiental Contemporânea e o Papel da Geografia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-sociedade-natureza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Modernidade, a Geografia e a Relação Sociedade-Natureza</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-geografia-socioambiental-gtp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Abordagens Ambientais no Pensamento Geográfico Moderno</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-conceitos-operacionais-risco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos e Definições Operacionais da Análise Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod1-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Módulo 2. AIA e análise ambiental integrada</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-avaliacao-impacto-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-analise-ambiental-integrada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod2-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-bacias-hidrograficas-morfometria.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bacia Hidrográfica como Unidade de Análise Ambiental Integrada</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-morfopedologia-vertentes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Morfopedologia e Processos Interativos Relevo, Solo e Água</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-geossistemas-ecodinamica-ross.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geossistemas, Ecodinâmica e Análise Empírica da Fragilidade Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod3-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado Preparatório para a Avaliação Teórica, Módulos 1 a 3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">Módulo 4. Indicadores, qualidade do solo e degradação</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-indicadores-ambientais-peir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-qualidade-solo-iqs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-degradacao-erosao-usle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagnóstico de Processos de Degradação Ambiental e Erosão Linear</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod4-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 4</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-bioengenharia-agua-solo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-legislacao-ambiental-prad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-diagnostico-ambiental-aplicado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Manual Prático do Diagnóstico Ambiental Aplicado e Produtos Técnicos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod5-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 5</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">Encerramento, Formulário e Referências</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-avaliacao-geral-final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avaliação Geral Integrada, Simulado Final Completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-formulario-glossario-referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formulário Técnico, Glossário e Referências Oficiais</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul class="collapse">
+  <li><a href="#conceito-espacial-e-funcional-de-bacia-e-microbacia-hidrográfica" id="toc-conceito-espacial-e-funcional-de-bacia-e-microbacia-hidrográfica" class="nav-link active" data-scroll-target="#conceito-espacial-e-funcional-de-bacia-e-microbacia-hidrográfica">Conceito Espacial e Funcional de Bacia e Microbacia Hidrográfica</a></li>
+  <li><a href="#elementos-estruturais-e-hierarquia-fluvial-de-strahler" id="toc-elementos-estruturais-e-hierarquia-fluvial-de-strahler" class="nav-link" data-scroll-target="#elementos-estruturais-e-hierarquia-fluvial-de-strahler">Elementos Estruturais e Hierarquia Fluvial de Strahler</a></li>
+  <li><a href="#morfometria-de-bacias-hidrográficas" id="toc-morfometria-de-bacias-hidrográficas" class="nav-link" data-scroll-target="#morfometria-de-bacias-hidrográficas">Morfometria de Bacias Hidrográficas</a></li>
+  <li><a href="#áreas-ripárias-conectividade-hidrossedimentológica-e-uso-da-terra" id="toc-áreas-ripárias-conectividade-hidrossedimentológica-e-uso-da-terra" class="nav-link" data-scroll-target="#áreas-ripárias-conectividade-hidrossedimentológica-e-uso-da-terra">Áreas Ripárias, Conectividade Hidrossedimentológica e Uso da Terra</a></li>
+  <li><a href="#síntese-aplicada-em-hidrologia-de-microbacias" id="toc-síntese-aplicada-em-hidrologia-de-microbacias" class="nav-link" data-scroll-target="#síntese-aplicada-em-hidrologia-de-microbacias">Síntese Aplicada em Hidrologia de Microbacias</a></li>
+  <li><a href="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio" id="toc-armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="nav-link" data-scroll-target="#armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</a></li>
+  <li><a href="#exercícios-de-fixação" id="toc-exercícios-de-fixação" class="nav-link" data-scroll-target="#exercícios-de-fixação">Exercícios de fixação</a></li>
+  <li><a href="#questões-de-aplicação" id="toc-questões-de-aplicação" class="nav-link" data-scroll-target="#questões-de-aplicação">Questões de aplicação</a></li>
+  <li><a href="#gabarito-comentado" id="toc-gabarito-comentado" class="nav-link" data-scroll-target="#gabarito-comentado">Gabarito comentado</a></li>
+  <li><a href="#síntese-conceitual" id="toc-síntese-conceitual" class="nav-link" data-scroll-target="#síntese-conceitual">Síntese conceitual</a></li>
+  <li><a href="#autoavaliação" id="toc-autoavaliação" class="nav-link" data-scroll-target="#autoavaliação">Autoavaliação</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main data-book-tables="true" class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/07-bacias-hidrograficas-morfometria.html">Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade</a></li><li class="breadcrumb-item"><a href="../capitulos/07-bacias-hidrograficas-morfometria.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bacia Hidrográfica como Unidade de Análise Ambiental Integrada</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="cap:bacia_hidrografica" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bacia Hidrográfica como Unidade de Análise Ambiental Integrada</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>A bacia hidrográfica conecta áreas produtoras de escoamento e sedimentos a um ponto de saída. Sua morfometria descreve geometria e organização da drenagem, fornecendo elementos para interpretar a resposta do sistema às chuvas. Essa interpretação depende da combinação com solos, cobertura da terra e características dos eventos.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>O que você vai aprender neste capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O capítulo desenvolve a delimitação funcional de bacias e microbacias, a Hierarquia Fluvial de Strahler, o cálculo e a interpretação de índices morfométricos (<span class="math inline">\(D_d\)</span>, <span class="math inline">\(K_c\)</span>, <span class="math inline">\(I_c\)</span>, <span class="math inline">\(H_m\)</span> e <span class="math inline">\(R_r\)</span>), o papel das áreas ripárias e a análise da conectividade hidrossedimentológica diante de mudanças no uso da terra.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Revisando o que você precisa saber
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A leitura utiliza os conceitos de sistema aberto, divisor, exutório, talvegue, área de drenagem, perímetro e escala cartográfica. Comprimento de canal, comprimento axial e extensão da vertente representam medidas distintas, exigindo conferência de unidades (<span class="math inline">\(1\text{ km} = 1.000\text{ m}\)</span>; <span class="math inline">\(1\text{ km}^2 = 100\text{ ha}\)</span>; <span class="math inline">\(1\text{ mm}\)</span> sobre <span class="math inline">\(1\text{ m}^2 = 1\text{ L}\)</span>).</p>
+</div>
+</div>
+<section id="conceito-espacial-e-funcional-de-bacia-e-microbacia-hidrográfica" class="level2">
+<h2 class="anchored" data-anchor-id="conceito-espacial-e-funcional-de-bacia-e-microbacia-hidrográfica">Conceito Espacial e Funcional de Bacia e Microbacia Hidrográfica</h2>
+<p>Na Geografia Física e na Análise Ambiental, a <strong>bacia hidrográfica</strong> constitui uma unidade natural de drenagem delimitada pela topografia e dotada de limites físicos verificáveis em campo. Segundo <strong>Christofoletti (1981)</strong>, trata-se de uma área drenada por um rio ou sistema fluvial que opera como sistema aberto, no qual a água precipitada converge das áreas elevadas (<strong>divisores topográficos</strong> ou interflúvios) para os fundos de vale (<strong>talvegues</strong>) sob ação da gravidade até deixar a unidade por uma única seção de saída, o <strong>exutório</strong> (seção de controle). Como a posição do exutório condiciona área (<span class="math inline">\(A\)</span>), perímetro (<span class="math inline">\(P\)</span>) e comprimento do canal principal (<span class="math inline">\(L_p\)</span>), o registro de suas coordenadas geográficas e a conferência sobre o modelo digital de elevação garantem repetibilidade ao traçado.</p>
+<p><strong>Botelho e Silva (2004)</strong> destacam que a bacia hidrográfica opera como célula integradora da gestão ambiental porque articula as trocas entre atmosfera (chuva e evapotranspiração), litosfera e pedosfera (rochas, solos, infiltração e erosão), biosfera (cobertura vegetal e biota aquática) e antroposfera (cidades, estradas, agropecuária e reservatórios). Nessa perspectiva, <strong>Guerra e Cunha (1996)</strong> mostram que intervenções nas vertentes, como desmatamento, abertura de acessos rurais ou impermeabilização urbana, produzem reflexos diretos nos canais a jusante sob a forma de enxurradas, erosão marginal, assoreamento e queda na qualidade da água.</p>
+<section id="bacia-sub-bacia-e-microbacia-na-gestão-territorial" class="level3">
+<h3 class="anchored" data-anchor-id="bacia-sub-bacia-e-microbacia-na-gestão-territorial">Bacia, Sub-bacia e Microbacia na Gestão Territorial</h3>
+<p>Na prática técnica e na Política Nacional de Recursos Hídricos (Lei nº 9.433/1997), organiza-se o espaço hídrico em três níveis encaixados. Na escala regional, a <strong>bacia hidrográfica</strong> abrange grandes sistemas de drenagem com milhares de quilômetros quadrados, como as bacias do Rio Paraguaçu e do Rio São Francisco, geridos por Comitês de Bacia Hidrográfica. Em escala intermediária, a <strong>sub-bacia</strong> corresponde à área de captação de um tributário principal dentro de uma bacia maior, a exemplo do Rio Jacuípe (afluente do Paraguaçu) ou do Rio Subaé, na região de Feira de Santana (BA). Na escala local e operacional, a <strong>microbacia</strong> reúne unidades de pequena extensão (de poucos hectares a dezenas de quilômetros quadrados, geralmente de 1ª a 3ª ordem de Strahler) com resposta imediata a chuvas convectivas e mudanças de uso da terra, sendo a unidade preferencial para conservação do solo, recuperação de nascentes e bioengenharia.</p>
+<p>Cabe distinguir o <strong>divisor topográfico</strong> (superficial), que acompanha a linha de cumeada e governa a enxurrada, do <strong>divisor freático</strong> (subterrâneo), que acompanha o topo do lençol freático segundo o mergulho de camadas geológicas e fraturas da rocha. Em terrenos cristalinos rasos do Semiárido baiano, ambos os divisores tendem a coincidir de modo aproximado; já em bacias sedimentares ou áreas cársticas (como o Oeste Baiano ou setores da Chapada Diamantina), o fluxo subterrâneo pode cruzar o divisor superficial e alimentar bacias vizinhas.</p>
+</section>
+</section>
+<section id="elementos-estruturais-e-hierarquia-fluvial-de-strahler" class="level2">
+<h2 class="anchored" data-anchor-id="elementos-estruturais-e-hierarquia-fluvial-de-strahler">Elementos Estruturais e Hierarquia Fluvial de Strahler</h2>
+<p>Os cursos d’água organizam-se em redes ramificadas das cabeceiras ao exutório. Para comparar bacias de tamanhos distintos e aferir o grau de dissecação do relevo, emprega-se a <strong>Hierarquia Fluvial de Strahler (1952)</strong>, simplificação operacional da proposta de Horton (1945) difundida por <strong>Christofoletti (1981)</strong>.</p>
+<section id="regras-da-hierarquia-fluvial-de-strahler" class="level3">
+<h3 class="anchored" data-anchor-id="regras-da-hierarquia-fluvial-de-strahler">Regras da Hierarquia Fluvial de Strahler</h3>
+<p>A ordenação de Strahler avança sempre de montante (cabeceiras) para jusante (exutório) segundo três regras fixas. Todo canal sem tributários, desde a nascente até a primeira confluência, recebe classificação de <strong>1ª ordem</strong>. Quando dois canais de mesma ordem se encontram (<span class="math inline">\(n + n \to n + 1\)</span>), a hierarquia eleva-se em uma unidade, de modo que dois canais de 1ª ordem geram um segmento de 2ª ordem (<span class="math inline">\(1 + 1 \to 2\)</span>) e dois de 2ª ordem formam um segmento de 3ª ordem (<span class="math inline">\(2 + 2 \to 3\)</span>). Quando um canal de ordem inferior desemboca em um canal de ordem superior (<span class="math inline">\(n + m \to \max(n, m)\)</span>), o canal receptor conserva a maior ordem (<span class="math inline">\(2 + 1 \to 2\)</span>; <span class="math inline">\(3 + 1 \to 3\)</span>; <span class="math inline">\(3 + 2 \to 3\)</span>). Ao final do traçado, a <strong>ordem da bacia hidrográfica</strong> equivale à ordem do segmento principal no exutório.</p>
+<p>O conjunto integrado de divisores, rede fluvial hierarquizada até a 3ª ordem, faixas ripárias (APPs) e seção de controle no exutório encontra-se representado na <a href="#fig-bacia_strahler" class="quarto-xref">Figura&nbsp;<span>7.1</span></a>.</p>
+<div id="fig-bacia_strahler" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Mapa esquemático de bacia hidrográfica com divisor, rede de canais numerados de 1ª a 3ª ordem, faixa ripária e exutório">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bacia_strahler-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig05_bacia_hidrografica_strahler.png" class="img-fluid figure-img" alt="Mapa esquemático de bacia hidrográfica com divisor, rede de canais numerados de 1ª a 3ª ordem, faixa ripária e exutório">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bacia_strahler-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;7.1: Elementos estruturais de uma bacia hidrográfica (divisor topográfico, áreas ripárias e exutório) e aplicação da Hierarquia Fluvial de Strahler até a 3ª ordem. Fonte: elaboração didática CHF662.
+</figcaption>
+</figure>
+</div>
+<p>Além da ordem numérica, a geometria em planta da rede, denominada <strong>padrão de drenagem</strong>, revela o controle litológico e estrutural do terreno. O padrão <strong>dendrítico (arborescente)</strong> assemelha-se a galhos de árvore e ocorre em rochas de resistência homogênea, como granitos pouco fraturados ou camadas sedimentares horizontais. O padrão <strong>retangular ou em treliça</strong>, com confluências próximas a <span class="math inline">\(90^\circ\)</span>, denuncia forte controle por falhas, fraturas ou dobramentos, sendo comum em setores serranos da Chapada Diamantina. Em encostas íngremes e uniformes desenvolve-se o padrão <strong>paralelo</strong>, com canais alongados, enquanto em morros isolados, domos ou depressões fechadas surge o padrão <strong>radial</strong>, divergente a partir do topo ou convergente para o centro da depressão.</p>
+<p>O Exemplo 7.1 aplica passo a passo as três regras de Strahler a uma microbacia tributária do Rio Jacuípe.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 7.1 (Básico). Hierarquia Fluvial de Strahler em uma Microbacia de Cabeceira
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Durante o mapeamento hidrográfico de uma microbacia afluente do Rio Jacuípe (BA), uma equipe identificou de montante para jusante sete córregos sem tributários (<span class="math inline">\(C_1\)</span> a <span class="math inline">\(C_7\)</span>): <span class="math inline">\(C_1\)</span> e <span class="math inline">\(C_2\)</span> unem-se formando o trecho <span class="math inline">\(T_1\)</span>; <span class="math inline">\(C_3\)</span> e <span class="math inline">\(C_4\)</span> unem-se formando <span class="math inline">\(T_2\)</span>; <span class="math inline">\(C_5\)</span> desemboca em <span class="math inline">\(T_2\)</span>, originando <span class="math inline">\(T_3\)</span>; <span class="math inline">\(T_1\)</span> e <span class="math inline">\(T_3\)</span> encontram-se formando <span class="math inline">\(T_4\)</span>; e <span class="math inline">\(C_6\)</span> e <span class="math inline">\(C_7\)</span> unem-se formando <span class="math inline">\(T_5\)</span>, que desemboca em <span class="math inline">\(T_4\)</span> para gerar o canal principal <span class="math inline">\(T_6\)</span> até o exutório.</p>
+<p><strong>Dados disponíveis.</strong> Sete canais de cabeceira sem tributários (<span class="math inline">\(C_1\)</span> a <span class="math inline">\(C_7\)</span>) e cinco confluências sequenciais até <span class="math inline">\(T_6\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Determinar a ordem de Strahler de cada trecho (<span class="math inline">\(T_1\)</span> a <span class="math inline">\(T_6\)</span>) e a ordem final da microbacia.</p>
+<p><strong>Fundamento da análise.</strong> Aplicação sequencial das regras de Strahler (1952): nascentes <span class="math inline">\(= 1\)</span>; encontro <span class="math inline">\(n + n \to n + 1\)</span>; encontro <span class="math inline">\(n + m \to \max(n, m)\)</span>.</p>
+<p><strong>Desenvolvimento.</strong> Todos os sete canais sem afluentes (<span class="math inline">\(C_1\)</span> a <span class="math inline">\(C_7\)</span>) pertencem à <strong>1ª ordem</strong>. Seguindo de montante para jusante, <span class="math inline">\(T_1\)</span> resulta de <span class="math inline">\(C_1 + C_2\)</span> (<span class="math inline">\(1 + 1 \to \text{2ª ordem}\)</span>) e <span class="math inline">\(T_2\)</span> resulta de <span class="math inline">\(C_3 + C_4\)</span> (<span class="math inline">\(1 + 1 \to \text{2ª ordem}\)</span>). Quando <span class="math inline">\(C_5\)</span> (1ª) encontra <span class="math inline">\(T_2\)</span> (2ª), prevalece a maior ordem em <span class="math inline">\(T_3\)</span> (<span class="math inline">\(2 + 1 \to \text{2ª ordem}\)</span>). Na junção entre <span class="math inline">\(T_1\)</span> (2ª) e <span class="math inline">\(T_3\)</span> (2ª), a ordem sobe para <strong>3ª ordem</strong> em <span class="math inline">\(T_4\)</span> (<span class="math inline">\(2 + 2 \to 3\)</span>). Na confluência seguinte, <span class="math inline">\(T_5\)</span> forma-se por <span class="math inline">\(C_6 + C_7\)</span> (<span class="math inline">\(1 + 1 \to \text{2ª ordem}\)</span>) e desemboca em <span class="math inline">\(T_4\)</span> (3ª), mantendo <span class="math inline">\(T_6\)</span> na <strong>3ª ordem</strong> (<span class="math inline">\(3 + 2 \to 3\)</span>).</p>
+<p><strong>Interpretação do resultado.</strong> <span class="math inline">\(T_1 = 2^{\text{a}}\)</span>, <span class="math inline">\(T_2 = 2^{\text{a}}\)</span>, <span class="math inline">\(T_3 = 2^{\text{a}}\)</span>, <span class="math inline">\(T_4 = 3^{\text{a}}\)</span>, <span class="math inline">\(T_5 = 2^{\text{a}}\)</span> e <span class="math inline">\(T_6 = 3^{\text{a}}\)</span> ordem, caracterizando uma <strong>microbacia de 3ª ordem</strong>.</p>
+<p><strong>Condições de validade.</strong> Para surgir uma bacia de 4ª ordem seriam necessários ao menos dois canais de 3ª ordem confluindo entre si (exigindo no mínimo oito canais de 1ª ordem pareados); com sete canais de cabeceira, a 3ª ordem é o máximo possível.</p>
+</div>
+</div>
+<p>Na aplicação dessa ordenação em mapas, o equívoco mais frequente consiste em somar ordens desiguais na confluência.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 1. Somar Ordens Diferentes na Hierarquia de Strahler (<span class="math inline">\(2 + 1 = 3\)</span>)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Assumir que toda confluência eleva a ordem fluvial, registrando que um canal de 2ª ordem ao receber um tributário de 1ª ordem passa a ser de 3ª ordem.</p>
+<p><strong>Correção técnica.</strong> Na regra de Strahler, a ordem só sobe quando confluem dois segmentos de mesma hierarquia (<span class="math inline">\(1+1 \to 2\)</span>; <span class="math inline">\(2+2 \to 3\)</span>). No encontro de ordens distintas, o trecho a jusante preserva a maior ordem (<span class="math inline">\(2+1 \to 2\)</span>).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="morfometria-de-bacias-hidrográficas" class="level2">
+<h2 class="anchored" data-anchor-id="morfometria-de-bacias-hidrográficas">Morfometria de Bacias Hidrográficas</h2>
+<p>A <strong>análise morfométrica</strong> traduz atributos geométricos, lineares, areais e hipsométricos da bacia em índices numéricos objetivos (Christofoletti, 1981; Villela; Mattos, 1975). Esses parâmetros permitem diagnosticar permeabilidade relativa do substrato, tempo de resposta às chuvas, suscetibilidade a enchentes e energia potencial para erosão.</p>
+<section id="densidade-de-drenagem-d_d" class="level3">
+<h3 class="anchored" data-anchor-id="densidade-de-drenagem-d_d">Densidade de Drenagem (<span class="math inline">\(D_d\)</span>)</h3>
+<p>Proposta por Robert E. Horton (1945), a <strong>Densidade de Drenagem (<span class="math inline">\(D_d\)</span>)</strong> expressa o comprimento médio de canais fluviais por unidade de área da bacia, refletindo o balanço entre permeabilidade de solos e rochas, declividade, cobertura vegetal e regime pluviométrico:</p>
+<p><span class="math display">\[
+D_d = \frac{L_t}{A}
+\]</span></p>
+<p>Nessa equação, <span class="math inline">\(D_d\)</span> é expressa em <span class="math inline">\(\text{km}/\text{km}^2\)</span> (ou <span class="math inline">\(\text{km}^{-1}\)</span>), <span class="math inline">\(L_t\)</span> representa o somatório do comprimento de todos os cursos d’água mapeados (<span class="math inline">\(\text{km}\)</span>) e <span class="math inline">\(A\)</span> indica a área total de drenagem (<span class="math inline">\(\text{km}^2\)</span>). Em uma microbacia de <span class="math inline">\(A = 25{,}0\text{ km}^2\)</span> e <span class="math inline">\(L_t = 45{,}0\text{ km}\)</span>, obtém-se <span class="math inline">\(D_d = 45{,}0 / 25{,}0 = 1{,}80\text{ km}/\text{km}^2\)</span>, valor intermediário compatível com drenagem moderada.</p>
+<p>Valores baixos (<span class="math inline">\(D_d &lt; 0{,}5\text{ km}/\text{km}^2\)</span>) ocorrem em substratos muito permeáveis (como arenitos profundos e Latossolos arenosos) com elevada infiltração, enquanto valores altos (<span class="math inline">\(D_d &gt; 2{,}0\text{ km}/\text{km}^2\)</span>) predominam em rochas cristalinas pouco permeáveis e solos rasos do Semiárido sob chuvas concentradas. Como o comprimento <span class="math inline">\(L_t\)</span> depende da escala cartográfica e do limiar de área de contribuição adotado na extração automática em SIG, comparações entre bacias exigem redes vetorizadas na mesma escala e sob o mesmo critério. O Exemplo 7.2 ilustra esse contraste litológico em escala padronizada.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 7.2 (Básico e Intermediário). Densidade de Drenagem e Contraste Litológico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Em um diagnóstico comparativo na Bahia, analisaram-se duas microbacias rurais de mesma área, mapeadas na escala <span class="math inline">\(1:25.000\)</span>: a <strong>Microbacia A</strong>, sobre embasamento cristalino (gnaisses) com solos rasos no Semiárido, e a <strong>Microbacia B</strong>, sobre bacia sedimentar arenosa com solos profundos e bem drenados.</p>
+<p><strong>Dados disponíveis.</strong> Microbacia A: <span class="math inline">\(A_A = 16{,}0\text{ km}^2\)</span> e <span class="math inline">\(L_{tA} = 41{,}6\text{ km}\)</span>. Microbacia B: <span class="math inline">\(A_B = 16{,}0\text{ km}^2\)</span> e <span class="math inline">\(L_{tB} = 12{,}8\text{ km}\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular a Densidade de Drenagem (<span class="math inline">\(D_d\)</span>) de cada microbacia e explicar a relação entre os resultados, a permeabilidade do terreno e o escoamento superficial.</p>
+<p><strong>Fundamento da análise.</strong> Aplicação da equação de Horton (<span class="math inline">\(D_d = L_t / A\)</span>) e razão comparativa <span class="math inline">\(D_{dA}/D_{dB}\)</span>.</p>
+<p><strong>Desenvolvimento.</strong> Calculando <span class="math inline">\(D_d\)</span> para as duas microbacias e comparando os valores obtidos:</p>
+<p><span class="math display">\[
+\begin{aligned}
+D_{dA} &amp;= \frac{41{,}6\text{ km}}{16{,}0\text{ km}^2} = 2{,}60\text{ km}/\text{km}^2 \\
+D_{dB} &amp;= \frac{12{,}8\text{ km}}{16{,}0\text{ km}^2} = 0{,}80\text{ km}/\text{km}^2 \\
+\frac{D_{dA}}{D_{dB}} &amp;= \frac{2{,}60}{0{,}80} = 3{,}25.
+\end{aligned}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> <span class="math inline">\(D_{dA} = 2{,}60\text{ km}/\text{km}^2\)</span> (drenagem alta) e <span class="math inline">\(D_{dB} = 0{,}80\text{ km}/\text{km}^2\)</span> (drenagem regular a baixa), sendo a densidade da Microbacia A <span class="math inline">\(3{,}25\)</span> vezes superior à da Microbacia B.</p>
+<p><strong>Condições de validade.</strong> Rochas cristalinas e solos rasos limitam a infiltração profunda e exigem uma rede mais densa de canais para escoar a enxurrada, ao passo que arenitos e solos profundos favorecem a recarga subterrânea. Como ambas usaram a escala <span class="math inline">\(1:25.000\)</span>, a comparação é válida.</p>
+</div>
+</div>
+</section>
+<section id="índices-de-forma-coeficiente-de-compacidade-k_c-e-índice-de-circularidade-i_c" class="level3">
+<h3 class="anchored" data-anchor-id="índices-de-forma-coeficiente-de-compacidade-k_c-e-índice-de-circularidade-i_c">Índices de Forma, Coeficiente de Compacidade (<span class="math inline">\(K_c\)</span>) e Índice de Circularidade (<span class="math inline">\(I_c\)</span>)</h3>
+<p>A geometria em planta da bacia controla a simultaneidade de chegada das ondas de cheia ao exutório. Em bacias próximas de um círculo, tributários distribuídos ao redor percorrem distâncias semelhantes até a saída, concentrando os picos de vazão, ao passo que bacias alongadas escalonam os tempos de viagem e atenuam o pico máximo, resposta que também depende da distribuição da chuva e da capacidade dos canais.</p>
+<p>O <strong>Coeficiente de Compacidade (<span class="math inline">\(K_c\)</span>, Índice de Gravelius)</strong> divide o perímetro real da bacia (<span class="math inline">\(P\)</span>) pelo perímetro do círculo de mesma área (<span class="math inline">\(P_c = 2\sqrt{\pi A}\)</span>), usando na prática hidrológica a constante <span class="math inline">\(0{,}28\)</span> (aproximação de <span class="math inline">\(1/(2\sqrt{\pi}) \approx 0{,}2821\)</span>, que produz pequena diferença perto de <span class="math inline">\(1\)</span>). Como nenhuma figura plana tem perímetro menor que o círculo de mesma área, tem-se sempre <span class="math inline">\(K_c \ge 1\)</span>. De modo inverso, o <strong>Índice de Circularidade (<span class="math inline">\(I_c\)</span>, Miller, 1953)</strong> divide a área real (<span class="math inline">\(A\)</span>) pela área do círculo de mesmo perímetro (<span class="math inline">\(A_c = P^2 / (4\pi)\)</span>), variando em <span class="math inline">\(0 &lt; I_c \le 1\)</span> com <span class="math inline">\(I_c \approx 1 / K_c^2\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+K_c &amp;= \frac{P}{2\sqrt{\pi A}} \approx 0{,}28 \cdot \frac{P}{\sqrt{A}}, \qquad K_c \ge 1 \\
+I_c &amp;= \frac{4\pi \cdot A}{P^2} \approx \frac{12{,}57 \cdot A}{P^2}, \qquad 0 &lt; I_c \le 1
+\end{aligned}
+\]</span></p>
+<p>Em ambos os índices adimensionais, emprega-se <span class="math inline">\(A\)</span> em <span class="math inline">\(\text{km}^2\)</span> e <span class="math inline">\(P\)</span> em <span class="math inline">\(\text{km}\)</span> (ou <span class="math inline">\(A\)</span> em <span class="math inline">\(\text{m}^2\)</span> e <span class="math inline">\(P\)</span> em <span class="math inline">\(\text{m}\)</span>). Para a microbacia de <span class="math inline">\(A = 25{,}0\text{ km}^2\)</span> e <span class="math inline">\(P = 24{,}0\text{ km}\)</span>, resultam <span class="math inline">\(K_c = 0{,}28 \cdot (24{,}0 / 5{,}0) = 1{,}34\)</span> e <span class="math inline">\(I_c = (12{,}57 \times 25{,}0) / 576{,}0 \approx 0{,}55\)</span>, indicando contorno ovalado e suscetibilidade moderada a cheias. O Exemplo 7.3 aplica <span class="math inline">\(K_c\)</span> e <span class="math inline">\(I_c\)</span> à priorização de obras de macrodrenagem entre duas sub-bacias de mesma área.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 7.3 (Intermediário). Forma da Bacia (<span class="math inline">\(K_c\)</span> e <span class="math inline">\(I_c\)</span>) e Suscetibilidade a Enchentes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> A prefeitura de um município baiano precisa priorizar obras de macrodrenagem entre duas sub-bacias periurbanas de mesma área (<span class="math inline">\(36{,}0\text{ km}^2\)</span>): a <strong>Bacia X</strong>, mais arredondada, e a <strong>Bacia Y</strong>, estreita e alongada.</p>
+<p><strong>Dados disponíveis.</strong> Bacia X: <span class="math inline">\(A_X = 36{,}0\text{ km}^2\)</span> e <span class="math inline">\(P_X = 24{,}0\text{ km}\)</span>. Bacia Y: <span class="math inline">\(A_Y = 36{,}0\text{ km}^2\)</span> e <span class="math inline">\(P_Y = 36{,}0\text{ km}\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular <span class="math inline">\(K_c\)</span> e <span class="math inline">\(I_c\)</span> de ambas as bacias e indicar qual apresenta maior suscetibilidade natural a picos rápidos de cheia.</p>
+<p><strong>Fundamento da análise.</strong> Cálculo de <span class="math inline">\(K_c = 0{,}28 \cdot (P/\sqrt{A})\)</span> e <span class="math inline">\(I_c = (12{,}57 \cdot A)/P^2\)</span>, com classificação pela <a href="#tbl-morfometria_interpretacao" class="quarto-xref">Tabela&nbsp;<span>7.1</span></a>.</p>
+<p><strong>Desenvolvimento.</strong> Como <span class="math inline">\(\sqrt{36{,}0} = 6{,}0\text{ km}\)</span> em ambas as unidades, calculam-se os índices da Bacia X e da Bacia Y:</p>
+<p><span class="math display">\[
+\begin{aligned}
+K_{cX} &amp;= 0{,}28 \cdot \frac{24{,}0}{6{,}0} = 1{,}12, &amp; I_{cX} &amp;= \frac{12{,}57 \times 36{,}0}{24{,}0^2} \approx 0{,}79 \\
+K_{cY} &amp;= 0{,}28 \cdot \frac{36{,}0}{6{,}0} = 1{,}68, &amp; I_{cY} &amp;= \frac{12{,}57 \times 36{,}0}{36{,}0^2} \approx 0{,}35.
+\end{aligned}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> Bacia X: <span class="math inline">\(K_c = 1{,}12\)</span> e <span class="math inline">\(I_c = 0{,}79\)</span> (contorno tendendo a circular, alta suscetibilidade a enchentes). Bacia Y: <span class="math inline">\(K_c = 1{,}68\)</span> e <span class="math inline">\(I_c = 0{,}35\)</span> (contorno alongado, baixa suscetibilidade a picos concentrados). A Bacia X deve receber prioridade.</p>
+<p><strong>Condições de validade.</strong> Confere-se a consistência <span class="math inline">\(1 / K_{cX}^2 = 1 / 1{,}12^2 \approx 0{,}80 \approx I_{cX}\)</span>, respeitando <span class="math inline">\(K_c \ge 1\)</span> e <span class="math inline">\(I_c \le 1\)</span>.</p>
+</div>
+</div>
+<p>Como <span class="math inline">\(K_c\)</span> e <span class="math inline">\(I_c\)</span> variam em direções opostas à medida que a bacia se alonga, confundir o sentido de leitura de ambos é erro comum em provas.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 2. Confundir o Sentido de Interpretação de <span class="math inline">\(K_c\)</span> e <span class="math inline">\(I_c\)</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Afirmar que “quanto maior o <span class="math inline">\(K_c\)</span>, mais circular é a bacia e maior o risco de enchentes”, confundindo <span class="math inline">\(K_c\)</span> com <span class="math inline">\(I_c\)</span>.</p>
+<p><strong>Correção técnica.</strong> Os dois índices variam em sentidos opostos. Quanto mais circular a bacia, <strong>menor</strong> é <span class="math inline">\(K_c\)</span> (próximo de <span class="math inline">\(1{,}0\)</span>) e <strong>maior</strong> é <span class="math inline">\(I_c\)</span> (próximo de <span class="math inline">\(1{,}0\)</span>). Em bacias alongadas, <span class="math inline">\(K_c\)</span> cresce (<span class="math inline">\(&gt; 1{,}50\)</span>) e <span class="math inline">\(I_c\)</span> diminui (<span class="math inline">\(&lt; 0{,}45\)</span>). Valores com <span class="math inline">\(K_c &lt; 1\)</span> ou <span class="math inline">\(I_c &gt; 1\)</span> indicam erro de medição ou de cálculo.</p>
+</div>
+</div>
+</section>
+<section id="índices-de-relevo-amplitude-altimétrica-h_m-e-relação-de-relevo-r_r" class="level3">
+<h3 class="anchored" data-anchor-id="índices-de-relevo-amplitude-altimétrica-h_m-e-relação-de-relevo-r_r">Índices de Relevo, Amplitude Altimétrica (<span class="math inline">\(H_m\)</span>) e Relação de Relevo (<span class="math inline">\(R_r\)</span>)</h3>
+<p>A energia potencial disponível para acelerar o escoamento e mobilizar sedimentos depende do desnível vertical combinado ao comprimento da bacia. A <strong>Amplitude Altimétrica (<span class="math inline">\(H_m\)</span>)</strong> mede a diferença entre a cota máxima no divisor (<span class="math inline">\(H_{\max}\)</span>, em <span class="math inline">\(\text{m}\)</span>) e a cota mínima no exutório (<span class="math inline">\(H_{\min}\)</span>, em <span class="math inline">\(\text{m}\)</span>), enquanto a <strong>Relação de Relevo (<span class="math inline">\(R_r\)</span>)</strong>, proposta por Stanley Schumm (1956), divide esse desnível pelo comprimento axial (<span class="math inline">\(L\)</span>):</p>
+<p><span class="math display">\[
+\begin{aligned}
+H_m &amp;= H_{\max} - H_{\min} \\
+R_r &amp;= \frac{H_m}{L}
+\end{aligned}
+\]</span></p>
+<p>Expressa-se <span class="math inline">\(R_r\)</span> em <span class="math inline">\(\text{m}/\text{km}\)</span> (quando <span class="math inline">\(L\)</span> está em <span class="math inline">\(\text{km}\)</span>) ou de forma adimensional em <span class="math inline">\(\text{m}/\text{m}\)</span> (convertendo <span class="math inline">\(L\)</span> para metros). Na microbacia de referência com <span class="math inline">\(H_{\max} = 420\text{ m}\)</span>, <span class="math inline">\(H_{\min} = 220\text{ m}\)</span> e <span class="math inline">\(L = 8{,}0\text{ km}\)</span>, tem-se <span class="math inline">\(H_m = 200\text{ m}\)</span> e <span class="math inline">\(R_r = 25{,}0\text{ m}/\text{km}\)</span> (<span class="math inline">\(0{,}025\text{ m}/\text{m}\)</span> ou <span class="math inline">\(2{,}5\%\)</span>). O Exemplo 7.4 compara duas cabeceiras baianas de mesmo comprimento axial e contrastante energia topográfica.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 7.4 (Intermediário). Amplitude Altimétrica (<span class="math inline">\(H_m\)</span>) e Relação de Relevo (<span class="math inline">\(R_r\)</span>) em Cabeceiras Contrastantes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Para avaliar o potencial energético de erosão e transporte de sedimentos, comparam-se duas microbacias de mesmo comprimento axial (<span class="math inline">\(L = 6{,}0\text{ km}\)</span>): uma nas cabeceiras serranas da <strong>Chapada Diamantina</strong> e outra em setor aplainado do <strong>Planalto Sertanejo</strong>.</p>
+<p><strong>Dados disponíveis.</strong> Chapada Diamantina: <span class="math inline">\(H_{\max} = 960\text{ m}\)</span>, <span class="math inline">\(H_{\min} = 480\text{ m}\)</span>, <span class="math inline">\(L = 6{,}0\text{ km}\)</span>. Planalto Sertanejo: <span class="math inline">\(H_{\max} = 360\text{ m}\)</span>, <span class="math inline">\(H_{\min} = 240\text{ m}\)</span>, <span class="math inline">\(L = 6{,}0\text{ km}\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular <span class="math inline">\(H_m\)</span> e <span class="math inline">\(R_r\)</span> (em <span class="math inline">\(\text{m}/\text{km}\)</span> e em <span class="math inline">\(\text{m}/\text{m}\)</span>) para ambas as unidades e interpretar suas implicações geomorfológicas.</p>
+<p><strong>Fundamento da análise.</strong> Aplicação de <span class="math inline">\(H_m = H_{\max} - H_{\min}\)</span> e <span class="math inline">\(R_r = H_m / L\)</span>, convertendo <span class="math inline">\(6{,}0\text{ km} = 6.000\text{ m}\)</span> para a forma adimensional.</p>
+<p><strong>Desenvolvimento.</strong> Calculando amplitude e relação de relevo para a Chapada Diamantina (1) e para o Planalto Sertanejo (2):</p>
+<p><span class="math display">\[
+\begin{aligned}
+H_{m1} &amp;= 960 - 480 = 480\text{ m}, &amp; R_{r1} &amp;= \frac{480}{6{,}0} = 80{,}0\text{ m}/\text{km} \quad \left(\frac{480}{6.000} = 0{,}080\text{ m}/\text{m}\right) \\
+H_{m2} &amp;= 360 - 240 = 120\text{ m}, &amp; R_{r2} &amp;= \frac{120}{6{,}0} = 20{,}0\text{ m}/\text{km} \quad \left(\frac{120}{6.000} = 0{,}020\text{ m}/\text{m}\right).
+\end{aligned}
+\]</span></p>
+<p><strong>Interpretação do resultado.</strong> Chapada Diamantina: <span class="math inline">\(H_m = 480\text{ m}\)</span> e <span class="math inline">\(R_r = 80{,}0\text{ m}/\text{km}\)</span> (<span class="math inline">\(0{,}080\text{ m}/\text{m}\)</span>). Planalto Sertanejo: <span class="math inline">\(H_m = 120\text{ m}\)</span> e <span class="math inline">\(R_r = 20{,}0\text{ m}/\text{km}\)</span> (<span class="math inline">\(0{,}020\text{ m}/\text{m}\)</span>). A microbacia serrana possui energia de relevo <span class="math inline">\(4\)</span> vezes maior.</p>
+<p><strong>Condições de validade.</strong> O mesmo comprimento axial acomoda um desnível quatro vezes superior na Chapada, elevando a velocidade do escoamento, a competência para transportar material grosseiro e a suscetibilidade a ravinas caso haja supressão vegetal.</p>
+</div>
+</div>
+<p>A compatibilidade de unidades no denominador de <span class="math inline">\(R_r\)</span> exige atenção constante para evitar discrepâncias de mil vezes no resultado numérico.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 3. Misturar Metros e Quilômetros no Cálculo da Relação de Relevo (<span class="math inline">\(R_r\)</span>)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Dividir <span class="math inline">\(H_m = 200\text{ m}\)</span> por <span class="math inline">\(L = 8\text{ km}\)</span>, obter <span class="math inline">\(25\)</span> e registrar o valor como “<span class="math inline">\(25\text{ m/m}\)</span>” ou “<span class="math inline">\(25\%\)</span>”.</p>
+<p><strong>Correção técnica.</strong> Ao dividir metros por quilômetros, a unidade obrigatória é <span class="math inline">\(\text{m}/\text{km}\)</span> (<span class="math inline">\(25\text{ m}/\text{km}\)</span>). Para obter <span class="math inline">\(R_r\)</span> adimensional (<span class="math inline">\(\text{m}/\text{m}\)</span>) ou em porcentagem, converta <span class="math inline">\(L\)</span> para metros antes da divisão: <span class="math inline">\(200\text{ m} / 8.000\text{ m} = 0{,}025\text{ m}/\text{m} = 2{,}5\%\)</span>.</p>
+</div>
+</div>
+<p>Para apoiar a leitura comparativa desses parâmetros em diagnósticos ambientais, a <a href="#tbl-morfometria_interpretacao" class="quarto-xref">Tabela&nbsp;<span>7.1</span></a> reúne as faixas de referência usuais, que devem ser sempre interpretadas em conjunto com litologia, solos, cobertura e regime pluviométrico.</p>
+<div id="tbl-morfometria_interpretacao" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-morfometria_interpretacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;7.1: Síntese interpretativa dos principais índices morfométricos de bacias hidrográficas.
+</figcaption>
+<div aria-describedby="tbl-morfometria_interpretacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="book-table-scroll" role="region" aria-label="Tabela 1" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Índice</strong></th>
+<th style="text-align: left;"><strong>Faixa de Valores</strong></th>
+<th style="text-align: left;"><strong>Significado Hidrológico e Ambiental</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Densidade de Drenagem (<span class="math inline">\(D_d\)</span>)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(&lt; 0{,}5\text{ km}/\text{km}^2\)</span></td>
+<td style="text-align: left;">Drenagem pobre; substrato muito permeável e alta infiltração.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Densidade de Drenagem (<span class="math inline">\(D_d\)</span>)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(0{,}5\text{ a } 2{,}0\text{ km}/\text{km}^2\)</span></td>
+<td style="text-align: left;">Drenagem regular a média; equilíbrio intermediário.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Densidade de Drenagem (<span class="math inline">\(D_d\)</span>)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(&gt; 2{,}0\text{ km}/\text{km}^2\)</span></td>
+<td style="text-align: left;">Drenagem alta; substrato pouco permeável e maior dissecação.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Compacidade (<span class="math inline">\(K_c\)</span>)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(1{,}00\text{ a } 1{,}25\)</span></td>
+<td style="text-align: left;">Contorno circular; alta propensão a picos rápidos de cheia.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Compacidade (<span class="math inline">\(K_c\)</span>)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(1{,}25\text{ a } 1{,}50\)</span></td>
+<td style="text-align: left;">Contorno ovalado; propensão moderada a cheias.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Compacidade (<span class="math inline">\(K_c\)</span>)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(&gt; 1{,}50\)</span></td>
+<td style="text-align: left;">Contorno alongado; menor concentração simultânea de picos.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Circularidade (<span class="math inline">\(I_c\)</span>)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(&gt; 0{,}51\)</span></td>
+<td style="text-align: left;">Tendência circular; convergência rápida ao exutório.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Circularidade (<span class="math inline">\(I_c\)</span>)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\le 0{,}51\)</span></td>
+<td style="text-align: left;">Tendência alongada; escoamento distribuído no tempo.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Relação de Relevo (<span class="math inline">\(R_r\)</span>)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(&lt; 15\text{ m}/\text{km}\)</span></td>
+<td style="text-align: left;">Relevo suave; menor velocidade e tendência à deposição.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Relação de Relevo (<span class="math inline">\(R_r\)</span>)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(&gt; 40\text{ m}/\text{km}\)</span></td>
+<td style="text-align: left;">Relevo acidentado; alta energia erosiva e de transporte.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</figure>
+</div>
+</section>
+</section>
+<section id="áreas-ripárias-conectividade-hidrossedimentológica-e-uso-da-terra" class="level2">
+<h2 class="anchored" data-anchor-id="áreas-ripárias-conectividade-hidrossedimentológica-e-uso-da-terra">Áreas Ripárias, Conectividade Hidrossedimentológica e Uso da Terra</h2>
+<p>Os índices morfométricos descrevem a arquitetura física de evolução lenta da bacia, mas a resposta hidrológica real depende criticamente da cobertura vegetal nas vertentes e nas margens fluviais.</p>
+<section id="áreas-ripárias-e-zonas-tampão" class="level3">
+<h3 class="anchored" data-anchor-id="áreas-ripárias-e-zonas-tampão">Áreas Ripárias e Zonas Tampão</h3>
+<p>As <strong>áreas ripárias</strong> (matas ciliares, galerias e várzeas marginais, protegidas como Áreas de Preservação Permanente pelo Código Florestal, Lei nº 12.651/2012) constituem a interface entre a vertente e o canal fluvial. Quando a enxurrada desce a encosta e atravessa uma faixa ripária conservada, a serapilheira e os caules aumentam a rugosidade superficial, dissipam a energia cinética do fluxo e retêm sedimentos e agroquímicos antes que atinjam o rio. Simultaneamente, o entrelaçamento das raízes eleva a resistência ao cisalhamento dos barrancos e contém o solapamento das margens, enquanto o sombreamento regula a temperatura da água e os solos porosos mantêm a recarga que sustenta o fluxo de base nas estiagens.</p>
+<p>Quando a vegetação ciliar é suprimida em uma das margens ou em ambas, perde-se essa zona tampão filtrante e estabilizadora: o solo exposto sofre desagregação rápida e os sedimentos carreados depositam-se no leito fluvial, reduzindo a profundidade da calha e ampliando o assoreamento (<a href="#fig-assoreamento_mata_ciliar" class="quarto-xref">Figura&nbsp;<span>7.2</span></a>).</p>
+<div id="fig-assoreamento_mata_ciliar" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Seção transversal esquemática de vale fluvial mostrando erosão na margem sem mata ciliar e deposição de sedimentos no fundo do rio">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-assoreamento_mata_ciliar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/assoreamento_2.jpg" class="img-fluid figure-img" alt="Seção transversal esquemática de vale fluvial mostrando erosão na margem sem mata ciliar e deposição de sedimentos no fundo do rio">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-assoreamento_mata_ciliar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;7.2: Esquema didático da remoção de mata ciliar, erosão marginal e deposição de sedimentos no leito fluvial (assoreamento). Fonte: acervo didático da disciplina.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="conectividade-hidrossedimentológica" class="level3">
+<h3 class="anchored" data-anchor-id="conectividade-hidrossedimentológica">Conectividade Hidrossedimentológica</h3>
+<p>Na geomorfologia fluvial, denomina-se <strong>conectividade hidrossedimentológica</strong> a eficiência com que água e sedimentos mobilizados nas vertentes alcançam a rede de canais e o exutório (Brierley; Fryirs, 2005). A <strong>conectividade estrutural</strong> diz respeito à continuidade física dos caminhos de fluxo no relevo (declividade, ravinas, estradas rurais mal drenadas ou galerias pluviais), enquanto a <strong>conectividade funcional</strong> expressa a ativação efetiva desses caminhos durante eventos chuvosos, como ocorre em canais efêmeros do Semiárido que permanecem secos na maior parte do ano e conectam-se apenas quando chuvas convectivas superam a infiltração do solo. Faixas ciliares conservadas, terraços em nível e paliçadas operam como <strong>desconectores</strong>, ao passo que estradas morro abaixo atuam como <strong>conectores artificiais</strong>.</p>
+</section>
+<section id="impactos-da-mudança-de-uso-da-terra-impermeabilização-e-desmatamento" class="level3">
+<h3 class="anchored" data-anchor-id="impactos-da-mudança-de-uso-da-terra-impermeabilização-e-desmatamento">Impactos da Mudança de Uso da Terra, Impermeabilização e Desmatamento</h3>
+<p>A conversão de florestas ou Caatinga conservada em pastagens compactadas ou loteamentos urbanos impermeabilizados altera profundamente o balanço hídrico da microbacia. A perda de dossel e a selagem por asfalto, telhados e solos adensados derrubam a interceptação e a infiltração, elevando o <strong>coeficiente de escoamento superficial (<span class="math inline">\(C\)</span>)</strong> de valores típicos entre <span class="math inline">\(0{,}10\)</span> e <span class="math inline">\(0{,}20\)</span> em coberturas florestais para <span class="math inline">\(0{,}65\)</span> a <span class="math inline">\(0{,}90\)</span> em áreas urbanas densas.</p>
+<p>Como resultado, a água escoa mais rápido pela superfície, reduz o <strong>tempo de concentração</strong> e gera hidrogramas com picos de cheia mais elevados e precoces sob a mesma chuva (cenário recorrente em microbacias urbanizadas de Feira de Santana, como nas cabeceiras do Subaé e do Jacuípe), enquanto a redução da infiltração diminui a recarga dos aquíferos e deprime o fluxo de base na estiagem, dinâmica contrastada com a leitura física de <span class="math inline">\(D_d\)</span>, <span class="math inline">\(K_c\)</span> e <span class="math inline">\(I_c\)</span> na <a href="#fig-hidrograma_impermeabilizacao" class="quarto-xref">Figura&nbsp;<span>7.3</span></a>.</p>
+<div id="fig-hidrograma_impermeabilizacao" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Gráfico comparativo de vazão versus tempo mostrando pico alto e rápido na bacia impermeável e pico amortecido na bacia vegetada, ao lado de quadro com interpretação dos índices">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hidrograma_impermeabilizacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap07_hidrograma_impermeabilizacao.png" class="img-fluid figure-img" alt="Gráfico comparativo de vazão versus tempo mostrando pico alto e rápido na bacia impermeável e pico amortecido na bacia vegetada, ao lado de quadro com interpretação dos índices">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hidrograma_impermeabilizacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;7.3: Comparação entre hidrogramas de cheia em bacia vegetada e bacia impermeabilizada sob mesmo evento chuvoso, articulada à interpretação física de <span class="math inline">\(D_d\)</span>, <span class="math inline">\(K_c\)</span>, <span class="math inline">\(I_c\)</span> e da mata ripária. Fonte: elaboração didática CHF662.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="síntese-aplicada-em-hidrologia-de-microbacias" class="level2">
+<h2 class="anchored" data-anchor-id="síntese-aplicada-em-hidrologia-de-microbacias">Síntese Aplicada em Hidrologia de Microbacias</h2>
+<p>A comparação gráfica dos hidrogramas na <a href="#fig-hidrograma_impermeabilizacao" class="quarto-xref">Figura&nbsp;<span>7.3</span></a> traduz-se diretamente em volumes escoados durante uma tormenta. Multiplicar a lâmina precipitada pela área da microbacia e pelo coeficiente de escoamento superficial (<span class="math inline">\(C\)</span>) permite quantificar o incremento de enxurrada gerado pela urbanização sem drenagem sustentável, como desenvolvido no Exemplo 7.5.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 7.5 (Avançado). Impacto Hidrológico da Impermeabilização Urbana em uma Microbacia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> Uma microbacia periurbana de <span class="math inline">\(4{,}0\text{ km}^2\)</span> na borda de expansão de Feira de Santana era originalmente coberta por vegetação nativa e áreas ripárias conservadas, com coeficiente médio de escoamento superficial <span class="math inline">\(C_1 = 0{,}15\)</span>. Após loteamentos pavimentados, canalização de córregos e supressão da mata ciliar, o coeficiente subiu para <span class="math inline">\(C_2 = 0{,}75\)</span>. Considere uma chuva intensa de <span class="math inline">\(P_{\text{chuva}} = 60\text{ mm}\)</span>.</p>
+<p><strong>Dados disponíveis.</strong> <span class="math inline">\(A = 4{,}0\text{ km}^2 = 4.000.000\text{ m}^2\)</span>; <span class="math inline">\(P_{\text{chuva}} = 60\text{ mm} = 0{,}060\text{ m}\)</span>; <span class="math inline">\(C_1 = 0{,}15\)</span>; <span class="math inline">\(C_2 = 0{,}75\)</span>.</p>
+<p><strong>Problema a resolver.</strong> Calcular o volume total precipitado, o volume de escoamento superficial antes e depois da urbanização, a diferença absoluta e relativa e os reflexos sobre a conectividade hidrossedimentológica.</p>
+<p><strong>Fundamento da análise.</strong> Cálculo volumétrico do balanço superficial (<span class="math inline">\(V_{\text{prec}} = P_{\text{chuva}} \cdot A\)</span> e <span class="math inline">\(V_{\text{esc}} = C \cdot V_{\text{prec}}\)</span>), seguido de análise hidrossedimentológica.</p>
+<p><strong>Desenvolvimento.</strong> Convertendo <span class="math inline">\(A = 4.000.000\text{ m}^2\)</span> e <span class="math inline">\(P_{\text{chuva}} = 0{,}060\text{ m}\)</span>, obtêm-se os volumes precipitado, escoados e o incremento relativo:</p>
+<p><span class="math display">\[
+\begin{aligned}
+V_{\text{prec}} &amp;= 0{,}060\text{ m} \times 4.000.000\text{ m}^2 = 240.000\text{ m}^3 \\
+V_{\text{esc},1} &amp;= 0{,}15 \times 240.000\text{ m}^3 = 36.000\text{ m}^3 \\
+V_{\text{esc},2} &amp;= 0{,}75 \times 240.000\text{ m}^3 = 180.000\text{ m}^3 \\
+\Delta V_{\text{esc}} &amp;= 180.000 - 36.000 = 144.000\text{ m}^3 \qquad \left(\frac{180.000}{36.000} = 5\text{ vezes, ou }+400\%\right).
+\end{aligned}
+\]</span></p>
+<p>No cenário conservado, os <span class="math inline">\(204.000\text{ m}^3\)</span> restantes (<span class="math inline">\(85\%\)</span>) permaneciam retidos por interceptação, depressões e infiltração.</p>
+<p><strong>Interpretação do resultado.</strong> O escoamento superficial saltou de <span class="math inline">\(36.000\text{ m}^3\)</span> para <span class="math inline">\(180.000\text{ m}^3\)</span>, um acréscimo de <span class="math inline">\(144.000\text{ m}^3\)</span> (cinco vezes o volume original) para a mesma chuva de <span class="math inline">\(60\text{ mm}\)</span>.</p>
+<p><strong>Condições de validade.</strong> Esse acréscimo equivale a cerca de <span class="math inline">\(58\)</span> piscinas olímpicas (<span class="math inline">\(2.500\text{ m}^3\)</span> cada) lançadas abruptamente no canal em poucas horas. A supressão da mata ciliar e a canalização eliminam os desconectores naturais, amplificam a conectividade artificial e provocam alagamentos a jusante, erosão marginal e queda na recarga subterrânea.</p>
+</div>
+</div>
+</section>
+<section id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio" class="level2">
+<h2 class="anchored" data-anchor-id="armadilha-conceitual-e-materiais-audiovisuais-de-apoio">Armadilha Conceitual e Materiais Audiovisuais de Apoio</h2>
+<p>Mesmo quando os índices morfométricos são calculados corretamente nas fórmulas de Horton, Gravelius e Miller, comparar bacias vetorizadas em escalas cartográficas incompatíveis invalida qualquer conclusão sobre permeabilidade e dissecação.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 4. Comparar Densidade de Drenagem (<span class="math inline">\(D_d\)</span>) Obtida em Escalas Cartográficas Diferentes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Calcular <span class="math inline">\(D_d\)</span> de uma bacia sobre base <span class="math inline">\(1:10.000\)</span> e compará-la com o <span class="math inline">\(D_d\)</span> de outra bacia extraído de carta <span class="math inline">\(1:100.000\)</span>, concluindo que a primeira apresenta substrato muito menos permeável.</p>
+<p><strong>Correção técnica.</strong> Cartas de pequena escala (<span class="math inline">\(1:100.000\)</span>) generalizam a rede hidrográfica e omitem grande parte dos canais de 1ª ordem, subestimando <span class="math inline">\(L_t\)</span> e <span class="math inline">\(D_d\)</span>. Comparações morfométricas válidas exigem vetorização na mesma escala e sob o mesmo critério de extração de canais.</p>
+</div>
+</div>
+<p>Para aprofundar a compreensão da bacia hidrográfica como unidade de gestão e dos processos erosivos em rede de drenagem, assista às videoaulas selecionadas na página da disciplina. O vídeo <a href="https://www.youtube.com/watch?v=odVchJ9pmgY">Gestão de Recursos Hídricos</a> aborda a bacia hidrográfica na análise ambiental integrada e na Lei das Águas, enquanto o vídeo <a href="https://www.youtube.com/watch?v=G6Q0iU_n6xI">Processos Erosivos e Relevo</a> discute a dinâmica de escoamento e morfogênese nas vertentes e canais.</p>
+</section>
+<section id="exercícios-de-fixação" class="level2">
+<h2 class="anchored" data-anchor-id="exercícios-de-fixação">Exercícios de fixação</h2>
+<section id="nível-básico-exercícios-1-a-5" class="level4">
+<h4 class="anchored" data-anchor-id="nível-básico-exercícios-1-a-5">Nível Básico (Exercícios 1 a 5)</h4>
+<ol type="1">
+<li><p>Explique, com base em Botelho e Silva (2004) e Christofoletti (1981), por que a bacia hidrográfica é considerada a unidade espacial mais adequada para a análise e o planejamento ambiental, diferenciando <strong>divisor topográfico</strong>, <strong>talvegue</strong> e <strong>exutório</strong>.</p></li>
+<li><p>Uma microbacia rural apresenta área de drenagem <span class="math inline">\(A = 20{,}0\text{ km}^2\)</span> e comprimento total de canais <span class="math inline">\(L_t = 35{,}0\text{ km}\)</span>. Calcule sua Densidade de Drenagem (<span class="math inline">\(D_d\)</span>) e classifique-a conforme a <a href="#tbl-morfometria_interpretacao" class="quarto-xref">Tabela&nbsp;<span>7.1</span></a>.</p></li>
+<li><p>Calcule o Coeficiente de Compacidade (<span class="math inline">\(K_c\)</span>) de uma sub-bacia com área <span class="math inline">\(A = 49{,}0\text{ km}^2\)</span> e perímetro <span class="math inline">\(P = 35{,}0\text{ km}\)</span>. Indique se sua forma tende à circular, ovalada ou alongada.</p></li>
+<li><p>Uma microbacia possui área <span class="math inline">\(A = 25{,}0\text{ km}^2\)</span> e perímetro <span class="math inline">\(P = 25{,}0\text{ km}\)</span>. Calcule seu Índice de Circularidade (<span class="math inline">\(I_c\)</span>) e avalie sua propensão natural a picos concentrados de enchente.</p></li>
+<li><p>Determine a Amplitude Altimétrica (<span class="math inline">\(H_m\)</span>) e a Relação de Relevo (<span class="math inline">\(R_r\)</span>), em <span class="math inline">\(\text{m}/\text{km}\)</span> e em <span class="math inline">\(\text{m}/\text{m}\)</span>, para uma bacia com <span class="math inline">\(H_{\max} = 640\text{ m}\)</span>, <span class="math inline">\(H_{\min} = 280\text{ m}\)</span> e comprimento axial <span class="math inline">\(L = 9{,}0\text{ km}\)</span>.</p></li>
+</ol>
+</section>
+<section id="nível-intermediário-exercícios-6-a-10" class="level4">
+<h4 class="anchored" data-anchor-id="nível-intermediário-exercícios-6-a-10">Nível Intermediário (Exercícios 6 a 10)</h4>
+<ol start="6" type="1">
+<li><p>Compare duas bacias hidrográficas mapeadas na mesma escala (<span class="math inline">\(1:25.000\)</span>), ambas com área <span class="math inline">\(A = 64{,}0\text{ km}^2\)</span>:</p>
+<ul>
+<li><p><strong>Bacia M1:</strong> <span class="math inline">\(P = 32{,}0\text{ km}\)</span>, <span class="math inline">\(L_t = 160{,}0\text{ km}\)</span>, <span class="math inline">\(H_{\max} = 540\text{ m}\)</span>, <span class="math inline">\(H_{\min} = 220\text{ m}\)</span>, <span class="math inline">\(L = 8{,}0\text{ km}\)</span>.</p></li>
+<li><p><strong>Bacia M2:</strong> <span class="math inline">\(P = 48{,}0\text{ km}\)</span>, <span class="math inline">\(L_t = 51{,}2\text{ km}\)</span>, <span class="math inline">\(H_{\max} = 380\text{ m}\)</span>, <span class="math inline">\(H_{\min} = 220\text{ m}\)</span>, <span class="math inline">\(L = 16{,}0\text{ km}\)</span>.</p></li>
+</ul>
+<p>Calcule <span class="math inline">\(D_d\)</span>, <span class="math inline">\(K_c\)</span>, <span class="math inline">\(I_c\)</span>, <span class="math inline">\(H_m\)</span> e <span class="math inline">\(R_r\)</span> para ambas e justifique qual delas exige maior cuidado contra cheias rápidas e processos erosivos.</p></li>
+<li><p>Em uma rede hidrográfica hipotética, quatro pares de canais de 1ª ordem formam quatro canais de 2ª ordem (<span class="math inline">\(A, B, C, D\)</span>). Os canais <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span> se unem formando o trecho <span class="math inline">\(X\)</span>; o canal <span class="math inline">\(C\)</span> desemboca em <span class="math inline">\(X\)</span> formando o trecho <span class="math inline">\(Y\)</span>; e o canal <span class="math inline">\(D\)</span> desemboca em <span class="math inline">\(Y\)</span> formando o canal final <span class="math inline">\(Z\)</span> no exutório. Determine a ordem de Strahler de <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span> e <span class="math inline">\(Z\)</span> e explique por que a ordem final não chegou a 4ª ordem.</p></li>
+<li><p>Uma microbacia de <span class="math inline">\(5{,}0\text{ km}^2\)</span> sofreu desmatamento e abertura de estradas compactadas, elevando seu coeficiente de escoamento superficial de <span class="math inline">\(C_1 = 0{,}20\)</span> para <span class="math inline">\(C_2 = 0{,}70\)</span>. Para uma chuva de <span class="math inline">\(50\text{ mm}\)</span>, calcule o volume escoado superficialmente (em <span class="math inline">\(\text{m}^3\)</span>) nos dois cenários e o percentual de aumento do escoamento.</p></li>
+<li><p>Explique a diferença entre <strong>conectividade estrutural</strong> e <strong>conectividade funcional</strong> em uma bacia hidrográfica do Semiárido baiano e dê um exemplo de elemento que atua como <em>conector</em> e outro que atua como <em>desconector</em> de sedimentos.</p></li>
+<li><p>Por que a supressão de matas ciliares (áreas ripárias) em microbacias rurais provoca simultaneamente aumento da turbidez da água, assoreamento de reservatórios e instabilidade de margens?</p></li>
+</ol>
+</section>
+<section id="questões-objetivas-exercícios-11-a-15" class="level4">
+<h4 class="anchored" data-anchor-id="questões-objetivas-exercícios-11-a-15">Questões Objetivas (Exercícios 11 a 15)</h4>
+<ol start="11" type="1">
+<li><p>Na Hierarquia Fluvial de Strahler, quando um curso d’água de 3ª ordem recebe um afluente de 2ª ordem e, mais a jusante, conflui com outro curso d’água de 3ª ordem, as ordens dos segmentos imediatamente após a primeira e a segunda confluência serão, respectivamente:</p>
+<ol type="A">
+<li><p>4ª ordem e 5ª ordem.</p></li>
+<li><p>3ª ordem e 4ª ordem.</p></li>
+<li><p>3ª ordem e 3ª ordem.</p></li>
+<li><p>5ª ordem e 6ª ordem.</p></li>
+<li><p>2ª ordem e 4ª ordem.</p></li>
+</ol></li>
+<li><p>Uma bacia hidrográfica apresenta <span class="math inline">\(A = 100{,}0\text{ km}^2\)</span>, <span class="math inline">\(P = 50{,}0\text{ km}\)</span>, <span class="math inline">\(L_t = 220{,}0\text{ km}\)</span>, <span class="math inline">\(H_{\max} = 750\text{ m}\)</span>, <span class="math inline">\(H_{\min} = 250\text{ m}\)</span> e <span class="math inline">\(L = 20{,}0\text{ km}\)</span>. Os valores corretos de <span class="math inline">\(D_d\)</span>, <span class="math inline">\(K_c\)</span> e <span class="math inline">\(R_r\)</span> (em <span class="math inline">\(\text{m}/\text{km}\)</span>) são, respectivamente:</p>
+<ol type="A">
+<li><p><span class="math inline">\(2{,}20\text{ km}/\text{km}^2\)</span>; <span class="math inline">\(1{,}40\)</span>; <span class="math inline">\(25{,}0\text{ m}/\text{km}\)</span>.</p></li>
+<li><p><span class="math inline">\(0{,}45\text{ km}/\text{km}^2\)</span>; <span class="math inline">\(1{,}40\)</span>; <span class="math inline">\(25{,}0\text{ m}/\text{km}\)</span>.</p></li>
+<li><p><span class="math inline">\(2{,}20\text{ km}/\text{km}^2\)</span>; <span class="math inline">\(0{,}71\)</span>; <span class="math inline">\(50{,}0\text{ m}/\text{km}\)</span>.</p></li>
+<li><p><span class="math inline">\(2{,}20\text{ km}/\text{km}^2\)</span>; <span class="math inline">\(1{,}40\)</span>; <span class="math inline">\(0{,}25\text{ m}/\text{km}\)</span>.</p></li>
+<li><p><span class="math inline">\(4{,}40\text{ km}/\text{km}^2\)</span>; <span class="math inline">\(2{,}80\)</span>; <span class="math inline">\(25{,}0\text{ m}/\text{km}\)</span>.</p></li>
+</ol></li>
+<li><p>Sobre o Coeficiente de Compacidade (<span class="math inline">\(K_c\)</span>) e o Índice de Circularidade (<span class="math inline">\(I_c\)</span>), assinale a alternativa tecnicamente correta:</p>
+<ol type="A">
+<li><p>Uma bacia perfeitamente circular apresenta <span class="math inline">\(K_c = 0\)</span> e <span class="math inline">\(I_c = 1\)</span>.</p></li>
+<li><p>Quanto maior o valor de <span class="math inline">\(K_c\)</span>, maior a tendência da bacia à forma circular e maior o risco de cheias súbitas.</p></li>
+<li><p>Valores de <span class="math inline">\(K_c\)</span> próximos de <span class="math inline">\(1{,}0\)</span> e de <span class="math inline">\(I_c\)</span> próximos de <span class="math inline">\(1{,}0\)</span> indicam bacia mais circular e maior suscetibilidade a picos concentrados de enchente.</p></li>
+<li><p>O valor de <span class="math inline">\(I_c\)</span> pode assumir qualquer número real positivo superior a <span class="math inline">\(1{,}0\)</span> em bacias muito alongadas.</p></li>
+<li><p>Os índices <span class="math inline">\(K_c\)</span> e <span class="math inline">\(I_c\)</span> dependem exclusivamente da altitude máxima e da extensão dos rios, independendo do perímetro.</p></li>
+</ol></li>
+<li><p>Em relação às áreas ripárias em bacias hidrográficas, é <strong>INCORRETO</strong> afirmar que:</p>
+<ol type="A">
+<li><p>Atuam como zonas tampão que retêm parte dos sedimentos e nutrientes carreados das vertentes.</p></li>
+<li><p>Contribuem para a estabilização das margens fluviais por meio do sistema radicular da vegetação.</p></li>
+<li><p>Aumentam a rugosidade superficial, reduzindo a velocidade do escoamento que alcança o canal.</p></li>
+<li><p>Sua remoção eleva a conectividade hidrossedimentológica entre encostas agrícolas e o leito fluvial.</p></li>
+<li><p>Sua supressão aumenta a recarga dos aquíferos locais ao eliminar o consumo de água por evapotranspiração.</p></li>
+</ol></li>
+<li><p>A urbanização intensa e sem drenagem sustentável em uma microbacia provoca, no hidrograma de cheia medido no exutório:</p>
+<ol type="A">
+<li><p>Aumento do tempo de concentração e diminuição do pico de vazão.</p></li>
+<li><p>Redução do volume escoado superficialmente e elevação do fluxo de base na estiagem.</p></li>
+<li><p>Redução do tempo de concentração e aumento acentuado da vazão de pico.</p></li>
+<li><p>Manutenção inalterada da curva de cheia, pois a área da bacia permanece constante.</p></li>
+<li><p>Eliminação da conectividade estrutural entre vertentes e canais.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="questões-de-aplicação" class="level2">
+<h2 class="anchored" data-anchor-id="questões-de-aplicação">Questões de aplicação</h2>
+<ol start="16" type="1">
+<li><p><strong>(Questão autoral, estilo ENADE / Licenciatura e Bacharelado em Geografia)</strong> Um órgão estadual de meio ambiente avalia o pedido de supressão vegetal para expansão agropecuária em uma microbacia de cabeceira situada sobre embasamento cristalino no Nordeste brasileiro. O relatório técnico apresentou <span class="math inline">\(D_d = 2{,}85\text{ km}/\text{km}^2\)</span>, <span class="math inline">\(K_c = 1{,}14\)</span> e <span class="math inline">\(R_r = 55\text{ m}/\text{km}\)</span>. Com base na interpretação integrada desses indicadores morfométricos, conclui-se que a microbacia apresenta:</p>
+<ol type="A">
+<li><p>Substrato muito permeável, forma alongada e relevo plano, com baixíssima vulnerabilidade à erosão hídrica.</p></li>
+<li><p>Elevada capacidade de infiltração profunda e lenta resposta hidrológica, dispensando faixas ripárias protetoras.</p></li>
+<li><p>Baixa permeabilidade relativa, forma tendente à circular e elevada energia de relevo, indicando alta propensão natural a enxurradas rápidas e processos erosivos caso a vegetação seja suprimida.</p></li>
+<li><p>Predomínio de deposição sedimentar em planície aluvial ampla, pois <span class="math inline">\(K_c\)</span> próximo de <span class="math inline">\(1{,}0\)</span> impede a concentração do escoamento no exutório.</p></li>
+<li><p>Incompatibilidade matemática nos dados, visto que uma bacia com <span class="math inline">\(D_d &gt; 2{,}0\)</span> não pode apresentar <span class="math inline">\(K_c &gt; 1{,}0\)</span>.</p></li>
+</ol></li>
+<li><p><strong>(Questão autoral, estilo Concurso Analista Ambiental / INEMA-BA)</strong> Em um estudo hidrológico para outorga e prevenção de inundações, uma sub-bacia foi caracterizada por <span class="math inline">\(A = 81{,}0\text{ km}^2\)</span>, <span class="math inline">\(P = 36{,}0\text{ km}\)</span>, <span class="math inline">\(L_t = 202{,}5\text{ km}\)</span>, <span class="math inline">\(H_{\max} = 680\text{ m}\)</span>, <span class="math inline">\(H_{\min} = 230\text{ m}\)</span> e <span class="math inline">\(L = 15{,}0\text{ km}\)</span>. Assinale a alternativa que apresenta corretamente os valores de <span class="math inline">\(D_d\)</span>, <span class="math inline">\(K_c\)</span>, <span class="math inline">\(I_c\)</span> e <span class="math inline">\(R_r\)</span> (em <span class="math inline">\(\text{m}/\text{m}\)</span>) dessa sub-bacia:</p>
+<ol type="A">
+<li><p><span class="math inline">\(D_d = 2{,}50\text{ km}/\text{km}^2\)</span>; <span class="math inline">\(K_c = 1{,}12\)</span>; <span class="math inline">\(I_c = 0{,}79\)</span>; <span class="math inline">\(R_r = 0{,}030\text{ m}/\text{m}\)</span>.</p></li>
+<li><p><span class="math inline">\(D_d = 2{,}50\text{ km}/\text{km}^2\)</span>; <span class="math inline">\(K_c = 1{,}12\)</span>; <span class="math inline">\(I_c = 0{,}79\)</span>; <span class="math inline">\(R_r = 30{,}0\text{ m}/\text{m}\)</span>.</p></li>
+<li><p><span class="math inline">\(D_d = 0{,}40\text{ km}/\text{km}^2\)</span>; <span class="math inline">\(K_c = 1{,}12\)</span>; <span class="math inline">\(I_c = 0{,}79\)</span>; <span class="math inline">\(R_r = 0{,}030\text{ m}/\text{m}\)</span>.</p></li>
+<li><p><span class="math inline">\(D_d = 2{,}50\text{ km}/\text{km}^2\)</span>; <span class="math inline">\(K_c = 1{,}40\)</span>; <span class="math inline">\(I_c = 0{,}50\)</span>; <span class="math inline">\(R_r = 0{,}030\text{ m}/\text{m}\)</span>.</p></li>
+<li><p><span class="math inline">\(D_d = 2{,}50\text{ km}/\text{km}^2\)</span>; <span class="math inline">\(K_c = 0{,}89\)</span>; <span class="math inline">\(I_c = 1{,}26\)</span>; <span class="math inline">\(R_r = 0{,}030\text{ m}/\text{m}\)</span>.</p></li>
+</ol></li>
+<li><p><strong>(Questão autoral, estilo Concurso IBAMA / Gestão de Bacias Hidrográficas)</strong> Sobre o conceito de conectividade hidrossedimentológica aplicado à gestão de bacias hidrográficas, analise as afirmativas abaixo:</p>
+<ol type="I">
+<li><p>Estradas vicinais não pavimentadas construídas no sentido da declividade atuam como conectores estruturais, canalizando o escoamento das vertentes diretamente para os cursos d’água.</p></li>
+<li><p>A recomposição de matas ciliares e a implantação de barreiras de retenção de sedimentos reduzem a conectividade entre áreas degradadas e o canal principal.</p></li>
+<li><p>Em climas semiáridos, canais efêmeros podem exibir alta conectividade estrutural em mapa, mas conectividade funcional intermitente, ativada apenas em eventos pluviométricos que superam a capacidade de infiltração.</p></li>
+</ol>
+<p>Está correto o que se afirma em:</p>
+<ol type="A">
+<li><p>I, apenas.</p></li>
+<li><p>II, apenas.</p></li>
+<li><p>I e II, apenas.</p></li>
+<li><p>II e III, apenas.</p></li>
+<li><p>I, II e III.</p></li>
+</ol></li>
+</ol>
+<section id="conexão-com-a-avaliação-teórica-e-com-o-trabalho-prático-final" class="level3">
+<h3 class="anchored" data-anchor-id="conexão-com-a-avaliação-teórica-e-com-o-trabalho-prático-final">Conexão com a Avaliação Teórica e com o Trabalho Prático Final</h3>
+<p>Na <strong>Prova Teórica da Semana 10</strong>, os índices morfométricos exigem calcular (<span class="math inline">\(D_d\)</span>, <span class="math inline">\(K_c\)</span>, <span class="math inline">\(I_c\)</span> e <span class="math inline">\(R_r\)</span>) e interpretar o comportamento físico de cada valor. No <strong>Trabalho Prático Final</strong>, extrair esses cinco índices em SIG (QGIS) para a microbacia escolhida, documentando a escala e o critério de extração da rede, confere precisão técnica à caracterização da área de estudo.</p>
+</section>
+</section>
+<section id="gabarito-comentado" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="gabarito-comentado">Gabarito comentado</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Clique para abrir o Gabarito Comentado
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<section id="resoluções-e-justificativas-capítulo-7" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="resoluções-e-justificativas-capítulo-7">Resoluções e Justificativas, Capítulo 7</h3>
+<ol type="1">
+<li><p><strong>Conceito e elementos.</strong> A bacia hidrográfica é uma unidade espacial natural e sistêmica na qual todos os fluxos de água, sedimentos e poluentes das vertentes convergem para um único exutório, permitindo relacionar diretamente o uso da terra ao estado dos recursos hídricos (Botelho; Silva, 2004; Christofoletti, 1981). O <em>divisor topográfico</em> corresponde à linha de pontos mais altos que separa bacias adjacentes; o <em>talvegue</em> une os pontos mais baixos ao longo do vale onde se aloja o canal; e o <em>exutório</em> marca o ponto de menor cota do contorno por onde sai toda a drenagem superficial.</p></li>
+<li><p><strong>Cálculo de <span class="math inline">\(D_d\)</span>.</strong> <span class="math inline">\(D_d = L_t / A = 35{,}0 / 20{,}0 = \mathbf{1{,}75\text{ km}/\text{km}^2}\)</span>, indicando drenagem regular a média (<span class="math inline">\(0{,}5\)</span> a <span class="math inline">\(2{,}0\text{ km}/\text{km}^2\)</span>).</p></li>
+<li><p><strong>Cálculo de <span class="math inline">\(K_c\)</span>.</strong> Como <span class="math inline">\(\sqrt{49{,}0} = 7{,}0\text{ km}\)</span>, tem-se <span class="math inline">\(K_c = 0{,}28 \cdot (35{,}0 / 7{,}0) = 0{,}28 \cdot 5{,}0 = \mathbf{1{,}40}\)</span>, indicando forma ovalada (<span class="math inline">\(1{,}25\)</span> a <span class="math inline">\(1{,}50\)</span>) e suscetibilidade moderada a cheias.</p></li>
+<li><p><strong>Cálculo de <span class="math inline">\(I_c\)</span>.</strong> <span class="math inline">\(I_c = \frac{12{,}57 \cdot 25{,}0}{(25{,}0)^2} = \frac{12{,}57}{25{,}0} = \mathbf{0{,}5028 \approx 0{,}50}\)</span>. Situado no limiar de <span class="math inline">\(0{,}51\)</span>, indica forma intermediária com propensão moderada a cheias concentradas.</p></li>
+<li><p><strong>Cálculo de <span class="math inline">\(H_m\)</span> e <span class="math inline">\(R_r\)</span>.</strong> <span class="math inline">\(H_m = 640 - 280 = \mathbf{360\text{ m}}\)</span>. Em <span class="math inline">\(\text{m}/\text{km}\)</span>, <span class="math inline">\(R_r = 360 / 9{,}0 = \mathbf{40{,}0\text{ m}/\text{km}}\)</span>. Convertendo <span class="math inline">\(L = 9.000\text{ m}\)</span>, obtém-se <span class="math inline">\(R_r = 360 / 9.000 = \mathbf{0{,}040\text{ m}/\text{m}}\)</span> (<span class="math inline">\(4{,}0\%\)</span>).</p></li>
+<li><p><strong>Comparação M1 vs.&nbsp;M2.</strong> Como <span class="math inline">\(\sqrt{64{,}0} = 8{,}0\text{ km}\)</span>, obtém-se para <strong>M1</strong> <span class="math inline">\(D_d = \mathbf{2{,}50\text{ km}/\text{km}^2}\)</span>, <span class="math inline">\(K_c = \mathbf{1{,}12}\)</span>, <span class="math inline">\(I_c = \mathbf{0{,}79}\)</span>, <span class="math inline">\(H_m = \mathbf{320\text{ m}}\)</span> e <span class="math inline">\(R_r = \mathbf{40{,}0\text{ m}/\text{km}}\)</span> (<span class="math inline">\(0{,}040\text{ m}/\text{m}\)</span>); e para <strong>M2</strong> <span class="math inline">\(D_d = \mathbf{0{,}80\text{ km}/\text{km}^2}\)</span>, <span class="math inline">\(K_c = \mathbf{1{,}68}\)</span>, <span class="math inline">\(I_c = \mathbf{0{,}35}\)</span>, <span class="math inline">\(H_m = \mathbf{160\text{ m}}\)</span> e <span class="math inline">\(R_r = \mathbf{10{,}0\text{ m}/\text{km}}\)</span> (<span class="math inline">\(0{,}010\text{ m}/\text{m}\)</span>). A <strong>Bacia M1</strong> exige maior cuidado contra cheias rápidas e erosão por combinar alta densidade de drenagem (<span class="math inline">\(2{,}50\)</span>), contorno tendente ao circular (<span class="math inline">\(K_c = 1{,}12\)</span>; <span class="math inline">\(I_c = 0{,}79\)</span>) e energia de relevo quatro vezes superior (<span class="math inline">\(40{,}0\)</span> contra <span class="math inline">\(10{,}0\text{ m}/\text{km}\)</span>).</p></li>
+<li><p><strong>Hierarquia de Strahler.</strong> <span class="math inline">\(A\)</span> (2ª) <span class="math inline">\(+ B\)</span> (2ª) <span class="math inline">\(\to X\)</span> (<strong>3ª ordem</strong>); <span class="math inline">\(X\)</span> (3ª) <span class="math inline">\(+ C\)</span> (2ª) <span class="math inline">\(\to Y\)</span> (<strong>3ª ordem</strong>); e <span class="math inline">\(Y\)</span> (3ª) <span class="math inline">\(+ D\)</span> (2ª) <span class="math inline">\(\to Z\)</span> (<strong>3ª ordem</strong>). A bacia permaneceu na 3ª ordem porque <span class="math inline">\(C\)</span> e <span class="math inline">\(D\)</span> desembocaram separadamente no canal de 3ª ordem; para surgir uma 4ª ordem, <span class="math inline">\(C\)</span> e <span class="math inline">\(D\)</span> precisariam ter confluído entre si formando um segundo canal de 3ª ordem antes de encontrar <span class="math inline">\(X\)</span>.</p></li>
+<li><p><strong>Balanço do escoamento.</strong> Com <span class="math inline">\(A = 5.000.000\text{ m}^2\)</span> e <span class="math inline">\(P_{\text{chuva}} = 0{,}050\text{ m}\)</span>, o volume precipitado é <span class="math inline">\(V_{\text{prec}} = 250.000\text{ m}^3\)</span>. Antes (<span class="math inline">\(C_1 = 0{,}20\)</span>), <span class="math inline">\(V_1 = \mathbf{50.000\text{ m}^3}\)</span>; depois (<span class="math inline">\(C_2 = 0{,}70\)</span>), <span class="math inline">\(V_2 = \mathbf{175.000\text{ m}^3}\)</span>, gerando aumento absoluto de <span class="math inline">\(125.000\text{ m}^3\)</span> e elevação de <span class="math inline">\(\mathbf{+250\%}\)</span> (<span class="math inline">\(3{,}5\)</span> vezes o volume inicial).</p></li>
+<li><p><strong>Conectividade.</strong> A <em>estrutural</em> refere-se à continuidade física dos caminhos de fluxo no terreno (declividade, ravinas e drenagem), enquanto a <em>funcional</em> depende da ativação desses fluxos pela chuva. Como exemplo de <em>conector</em>, cita-se uma estrada rural sem caixas secas ligada diretamente ao córrego; como exemplo de <em>desconector</em>, uma faixa de mata ciliar conservada ou paliçada permeável retentora de sedimentos.</p></li>
+<li><p><strong>Remoção de áreas ripárias.</strong> Sem a cobertura vegetal marginal, o solo das vertentes não é filtrado antes de alcançar o rio (elevando turbidez e sedimentos em suspensão), o excesso de carga sólida deposita-se no leito e em reservatórios (assoreamento) e a perda das raízes reduz a coesão dos barrancos, acelerando o desmoronamento e solapamento das margens.</p></li>
+<li><p><strong>Gabarito (B).</strong> Primeiro encontro: <span class="math inline">\(3 + 2 \to 3^{\text{a}}\)</span> ordem (mantém a maior). Segundo encontro: <span class="math inline">\(3 + 3 \to 4^{\text{a}}\)</span> ordem (ordens iguais somam <span class="math inline">\(+1\)</span>).</p></li>
+<li><p><strong>Gabarito (A).</strong> <span class="math inline">\(D_d = 220{,}0 / 100{,}0 = 2{,}20\text{ km}/\text{km}^2\)</span>; <span class="math inline">\(K_c = 0{,}28 \cdot (50{,}0 / \sqrt{100{,}0}) = 1{,}40\)</span>; <span class="math inline">\(H_m = 750 - 250 = 500\text{ m} \Rightarrow R_r = 500 / 20{,}0 = 25{,}0\text{ m}/\text{km}\)</span>.</p></li>
+<li><p><strong>Gabarito (C).</strong> O círculo perfeito tem <span class="math inline">\(K_c = 1{,}0\)</span> e <span class="math inline">\(I_c = 1{,}0\)</span>; bacias próximas desses valores concentram o escoamento mais rapidamente no exutório. (A) erra ao colocar <span class="math inline">\(K_c = 0\)</span>; (B) inverte o significado de <span class="math inline">\(K_c\)</span>; (D) viola o limite <span class="math inline">\(I_c \le 1\)</span>; (E) ignora o papel central do perímetro <span class="math inline">\(P\)</span>.</p></li>
+<li><p><strong>Gabarito (E).</strong> A afirmação (E) é incorreta porque a supressão de áreas ripárias promove compactação, selamento superficial e aceleração do escoamento, reduzindo a infiltração e a recarga dos aquíferos locais, o que prejudica a vazão de estiagem.</p></li>
+<li><p><strong>Gabarito (C).</strong> A impermeabilização acelera o escoamento superficial (menor tempo de concentração) e amplia o volume que chega rapidamente ao canal (maior vazão de pico).</p></li>
+<li><p><strong>Gabarito (C).</strong> <span class="math inline">\(D_d = 2{,}85\text{ km}/\text{km}^2\)</span> é alto (substrato pouco permeável/cristalino), <span class="math inline">\(K_c = 1{,}14\)</span> indica forma tendente à circular (alta propensão a cheias rápidas) e <span class="math inline">\(R_r = 55\text{ m}/\text{km}\)</span> revela elevada energia de relevo e potencial erosivo.</p></li>
+<li><p><strong>Gabarito (A).</strong> Contas passo a passo: <span class="math inline">\(D_d = 202{,}5 / 81{,}0 = 2{,}50\text{ km}/\text{km}^2\)</span>; <span class="math inline">\(\sqrt{81{,}0} = 9{,}0 \Rightarrow K_c = 0{,}28 \cdot (36{,}0 / 9{,}0) = 1{,}12\)</span>; <span class="math inline">\(I_c = 12{,}57 \cdot 81{,}0 / 36{,}0^2 \approx 0{,}79\)</span>; <span class="math inline">\(H_m = 680 - 230 = 450\text{ m}\)</span> e <span class="math inline">\(L = 15.000\text{ m} \Rightarrow R_r = 450 / 15.000 = 0{,}030\text{ m}/\text{m}\)</span>. Note que (B) erra a unidade de <span class="math inline">\(R_r\)</span> (<span class="math inline">\(30{,}0\)</span> seria em <span class="math inline">\(\text{m}/\text{km}\)</span>, usando metros apenas no numerador).</p></li>
+<li><p><strong>Gabarito (E).</strong> Todas as três proposições descrevem corretamente a dinâmica da conectividade estrutural e funcional em bacias hidrográficas, inclusive no contexto intermitente do Semiárido.</p></li>
+</ol>
+</section>
+</div>
+</div>
+</section>
+<section id="síntese-conceitual" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="síntese-conceitual">Síntese conceitual</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Síntese Conceitual do Capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A <strong>bacia hidrográfica</strong> opera como sistema aberto delimitado por divisores topográficos que drena água e sedimentos até um único exutório. Na <strong>Hierarquia Fluvial de Strahler</strong>, <span class="math inline">\(n + n \to n + 1\)</span> e <span class="math inline">\(n + m \to \max(n, m)\)</span>, sendo a ordem da bacia igual à do canal principal no exutório. O formulário morfométrico principal reúne:</p>
+<p><span class="math display">\[
+\begin{aligned}
+D_d &amp;= \frac{L_t}{A} \quad (\text{km}/\text{km}^2), &amp; K_c &amp;= 0{,}28 \cdot \frac{P}{\sqrt{A}} \ge 1, &amp; I_c &amp;= \frac{12{,}57 \cdot A}{P^2} \le 1 \\
+H_m &amp;= H_{\max} - H_{\min} \quad (\text{m}), &amp; R_r &amp;= \frac{H_m}{L} \quad (\text{m}/\text{km ou m}/\text{m}) &amp; &amp;
+\end{aligned}
+\]</span></p>
+<p>Áreas ripárias atuam como desconectores de sedimentos e estabilizadores de margens, ao passo que desmatamento e impermeabilização elevam o coeficiente de escoamento (<span class="math inline">\(C\)</span>), encurtam o tempo de concentração e amplificam cheias e processos erosivos.</p>
+</div>
+</div>
+</section>
+<section id="autoavaliação" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="autoavaliação">Autoavaliação</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Autoavaliação e Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Responda rapidamente (Verdadeiro [<strong>V</strong>] ou Falso [<strong>F</strong>]) sem consultar o texto e confira ao final:</p>
+<ol type="1">
+<li><p>( ) Na Hierarquia de Strahler, o encontro de um canal de 3ª ordem com um canal de 1ª ordem produz um segmento de 4ª ordem.</p></li>
+<li><p>( ) Entre duas bacias de mesma área, aquela com menor valor de <span class="math inline">\(K_c\)</span> (mais próximo de <span class="math inline">\(1{,}0\)</span>) e maior valor de <span class="math inline">\(I_c\)</span> possui contorno mais circular e maior suscetibilidade a picos concentrados de cheia.</p></li>
+<li><p>( ) Em uma bacia com <span class="math inline">\(H_{\max} = 500\text{ m}\)</span>, <span class="math inline">\(H_{\min} = 200\text{ m}\)</span> e <span class="math inline">\(L = 10\text{ km}\)</span>, a Relação de Relevo equivale a <span class="math inline">\(30\text{ m}/\text{km}\)</span> ou <span class="math inline">\(0{,}030\text{ m}/\text{m}\)</span>.</p></li>
+<li><p>( ) A impermeabilização urbana aumenta o escoamento superficial e reduz o tempo de concentração das cheias, mesmo quando o total precipitado não se altera.</p></li>
+</ol>
+<p><strong>Gabarito da verificação da aprendizagem.</strong> 1. <strong>F</strong> (mantém 3ª ordem, pois <span class="math inline">\(3 \neq 1\)</span>); 2. <strong>V</strong>; 3. <strong>V</strong> (<span class="math inline">\(300\text{ m}/10\text{ km} = 30\text{ m}/\text{km} = 300/10.000 = 0{,}030\text{ m}/\text{m}\)</span>); 4. <strong>V</strong>.</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/analise-ambiental\/");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Código deslocável","output":"Saída deslocável"};
+  </script>
+<nav class="page-navigation" aria-label="Página">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/mod2-simulado.html" class="pagination-link" aria-label="Simulado e Revisão Integrada, Módulo 2">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Simulado e Revisão Integrada, Módulo 2</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/08-morfopedologia-vertentes.html" class="pagination-link" aria-label="Morfopedologia e Processos Interativos Relevo, Solo e Água">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Morfopedologia e Processos Interativos Relevo, Solo e Água</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026 (DCHF/UEFS). <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Apostila completa do componente curricular CHF662 (Análise Ambiental), Curso de Geografia da UEFS, organizada em cinco módulos, 15 capítulos em 10 etapas, simulados comentados, formulário e glossário.">
+
+<title>10&nbsp; Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano - Análise Ambiental (CHF662)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/11-qualidade-solo-iqs.html" rel="next">
+<link href="../capitulos/mod3-simulado.html" rel="prev">
+<link href="../img/capa_analise_ambiental.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-679673b8a27c868cce7048b2deb5a79d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Pular para o conteúdo principal</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Barra de ferramentas">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/10-indicadores-ambientais-peir.html">Módulo 4. Indicadores, qualidade do solo e degradação</a></li><li class="breadcrumb-item"><a href="../capitulos/10-indicadores-ambientais-peir.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Análise Ambiental (CHF662)</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos02-sketch/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../APOSTILA_ANALISE_AMBIENTAL_CHF662_UEFS.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Apresentação e orientação de estudo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Módulo 1. Fundamentos epistemológicos e conceituais</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-questao-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Questão Ambiental Contemporânea e o Papel da Geografia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-sociedade-natureza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Modernidade, a Geografia e a Relação Sociedade-Natureza</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-geografia-socioambiental-gtp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Abordagens Ambientais no Pensamento Geográfico Moderno</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-conceitos-operacionais-risco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos e Definições Operacionais da Análise Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod1-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Módulo 2. AIA e análise ambiental integrada</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-avaliacao-impacto-ambiental.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Avaliação de Impacto Ambiental (AIA) e Planejamento Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-analise-ambiental-integrada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fundamentos da Análise Ambiental Integrada, Escalas e Ordenamento Territorial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod2-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Módulo 3. Bacias, morfopedologia, geossistemas e fragilidade</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-bacias-hidrograficas-morfometria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bacia Hidrográfica como Unidade de Análise Ambiental Integrada</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-morfopedologia-vertentes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Morfopedologia e Processos Interativos Relevo, Solo e Água</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-geossistemas-ecodinamica-ross.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geossistemas, Ecodinâmica e Análise Empírica da Fragilidade Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod3-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado Preparatório para a Avaliação Teórica, Módulos 1 a 3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">Módulo 4. Indicadores, qualidade do solo e degradação</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-indicadores-ambientais-peir.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-qualidade-solo-iqs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-degradacao-erosao-usle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Diagnóstico de Processos de Degradação Ambiental e Erosão Linear</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod4-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 4</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">Módulo 5. Bioengenharia, legislação, PRAD e diagnóstico</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-bioengenharia-agua-solo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Bioengenharia de Água e Solo Aplicada à Recuperação Ambiental</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-legislacao-ambiental-prad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Legislação Ambiental, APPs, Licenciamento, PRAD e Instrumentos de Gestão</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-diagnostico-ambiental-aplicado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Manual Prático do Diagnóstico Ambiental Aplicado e Produtos Técnicos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/mod5-simulado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulado e Revisão Integrada, Módulo 5</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">Encerramento, Formulário e Referências</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-avaliacao-geral-final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avaliação Geral Integrada, Simulado Final Completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-formulario-glossario-referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formulário Técnico, Glossário e Referências Oficiais</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul class="collapse">
+  <li><a href="#dados-indicadores-índices-e-a-pirâmide-da-informação-ambiental" id="toc-dados-indicadores-índices-e-a-pirâmide-da-informação-ambiental" class="nav-link active" data-scroll-target="#dados-indicadores-índices-e-a-pirâmide-da-informação-ambiental">Dados, indicadores, índices e a Pirâmide da Informação Ambiental</a></li>
+  <li><a href="#conceito-funções-e-critérios-de-seleção-de-indicadores-ambientais" id="toc-conceito-funções-e-critérios-de-seleção-de-indicadores-ambientais" class="nav-link" data-scroll-target="#conceito-funções-e-critérios-de-seleção-de-indicadores-ambientais">Conceito, Funções e Critérios de Seleção de Indicadores Ambientais</a></li>
+  <li><a href="#modelos-per-e-peir-arquitetura-causal-e-construção-de-matrizes" id="toc-modelos-per-e-peir-arquitetura-causal-e-construção-de-matrizes" class="nav-link" data-scroll-target="#modelos-per-e-peir-arquitetura-causal-e-construção-de-matrizes">Modelos PER e PEIR, Arquitetura Causal e Construção de Matrizes</a></li>
+  <li><a href="#métricas-de-campo-ficha-do-indicador-e-interpretação-das-unidades" id="toc-métricas-de-campo-ficha-do-indicador-e-interpretação-das-unidades" class="nav-link" data-scroll-target="#métricas-de-campo-ficha-do-indicador-e-interpretação-das-unidades">Métricas de campo, ficha do indicador e interpretação das unidades</a></li>
+  <li><a href="#estudo-de-caso-integrado-viagem-de-campo-no-semiárido-baiano" id="toc-estudo-de-caso-integrado-viagem-de-campo-no-semiárido-baiano" class="nav-link" data-scroll-target="#estudo-de-caso-integrado-viagem-de-campo-no-semiárido-baiano">Estudo de Caso Integrado, Viagem de Campo no Semiárido Baiano</a></li>
+  <li><a href="#materiais-audiovisuais-de-apoio" id="toc-materiais-audiovisuais-de-apoio" class="nav-link" data-scroll-target="#materiais-audiovisuais-de-apoio">Materiais Audiovisuais de Apoio</a></li>
+  <li><a href="#exercícios-de-fixação" id="toc-exercícios-de-fixação" class="nav-link" data-scroll-target="#exercícios-de-fixação">Exercícios de fixação</a></li>
+  <li><a href="#questões-de-aplicação" id="toc-questões-de-aplicação" class="nav-link" data-scroll-target="#questões-de-aplicação">Questões de aplicação</a></li>
+  <li><a href="#gabarito-comentado" id="toc-gabarito-comentado" class="nav-link" data-scroll-target="#gabarito-comentado">Gabarito comentado</a></li>
+  <li><a href="#síntese-conceitual" id="toc-síntese-conceitual" class="nav-link" data-scroll-target="#síntese-conceitual">Síntese conceitual</a></li>
+  <li><a href="#autoavaliação" id="toc-autoavaliação" class="nav-link" data-scroll-target="#autoavaliação">Autoavaliação</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main data-book-tables="true" class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/10-indicadores-ambientais-peir.html">Módulo 4. Indicadores, qualidade do solo e degradação</a></li><li class="breadcrumb-item"><a href="../capitulos/10-indicadores-ambientais-peir.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="cap:indicadores_peir_semiarido" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indicadores Ambientais, Monitoramento e Análise de Campo no Semiárido Baiano</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Indicadores ambientais conectam uma pergunta de gestão a observações que podem ser repetidas ao longo do tempo. A seleção começa pelo processo físico ou socioambiental que se pretende acompanhar e pela decisão prática que o resultado irá orientar. Um número ganha significado técnico apenas quando sua unidade de medida, área de referência, período de coleta e método de obtenção estão documentados.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>O que você vai aprender neste capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O capítulo desenvolve a passagem do dado bruto ao índice ambiental, os critérios de seleção de indicadores e a construção de matrizes segundo os modelos PER e PEIR. Ao longo do texto, figuras explicativas, fotografias de campo e exemplos resolvidos acompanham cada conceito, aplicados ao eixo energético do Semiárido Baiano.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Revisando o que você precisa saber
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A leitura retoma a distinção entre atividade geradora, alteração do ambiente e consequência ecológica ou social, além dos conceitos de bacia hidrográfica e área de influência. Uma estrada de acesso pode atravessar diferentes unidades de drenagem, enquanto efeitos sobre a fauna dependem também das rotas de deslocamento e dos horários de atividade das espécies.</p>
+</div>
+</div>
+<section id="dados-indicadores-índices-e-a-pirâmide-da-informação-ambiental" class="level2">
+<h2 class="anchored" data-anchor-id="dados-indicadores-índices-e-a-pirâmide-da-informação-ambiental">Dados, indicadores, índices e a Pirâmide da Informação Ambiental</h2>
+<p>Na prática de campo, o técnico coleta inicialmente <strong>dados brutos</strong>, que são observações ou contagens isoladas sem tratamento comparativo, como registrar <span class="math inline">\(12\)</span> focos erosivos em uma estrada ou medir <span class="math inline">\(18{,}0\text{ ha}\)</span> de vegetação removida em uma imagem de satélite. Embora indispensáveis como registro primário, dados isolados raramente respondem a uma pergunta de gestão porque dependem do tamanho da área ou da extensão percorrida. Encontrar <span class="math inline">\(12\)</span> focos em <span class="math inline">\(2\text{ km}\)</span> de estrada revela uma degradação muito mais severa do que encontrar os mesmos <span class="math inline">\(12\)</span> focos distribuídos ao longo de <span class="math inline">\(40\text{ km}\)</span>.</p>
+<p>O <strong>indicador ambiental</strong> resolve essa limitação ao relacionar o dado bruto a uma base espacial, temporal ou populacional definida. Quando dividimos o número de focos pelo comprimento vistoriado, obtemos a densidade de focos por quilômetro (<span class="math inline">\(\text{focos}\cdot\text{km}^{-1}\)</span>); quando dividimos a área suprimida pela área total do empreendimento, obtemos a taxa percentual de supressão (<span class="math inline">\(T_{\text{sup}}\)</span>). Essa relativização permite comparar glebas de tamanhos diferentes e acompanhar a evolução de uma mesma área antes e depois de uma obra.</p>
+<p>No degrau superior da informação situam-se os <strong>índices ambientais</strong>, que agregam vários indicadores normalizados em um único número sintético por meio de média simples ou ponderada, como ocorre no Índice de Qualidade do Solo ou no Índice de Qualidade da Água. Essa síntese facilita a comunicação rápida com gestores e conselhos de bacia, mas exige transparência: a pontuação final precisa vir acompanhada dos valores individuais que a compõem, pois duas áreas podem atingir o mesmo índice apresentando limitações ambientais distintas (<a href="#fig-piramide-informacao" class="quarto-xref">Figura&nbsp;<span>10.1</span></a>).</p>
+<div id="fig-piramide-informacao" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Pirâmide em três níveis mostrando Dados Brutos na base, Indicadores Ambientais no meio e Índices Compostos no topo">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-piramide-informacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap10_piramide_informacao.png" class="img-fluid figure-img" alt="Pirâmide em três níveis mostrando Dados Brutos na base, Indicadores Ambientais no meio e Índices Compostos no topo">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-piramide-informacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.1: Pirâmide da informação ambiental, ilustrando a passagem do dado bruto coletado em campo ao indicador relativizado e ao índice composto de decisão.
+</figcaption>
+</figure>
+</div>
+<p>Nesta leitura, <span class="math inline">\(A_{\text{sup}}\)</span> representa a área suprimida em hectares e <span class="math inline">\(T_{\text{sup}}\)</span> sua proporção percentual. A densidade viária <span class="math inline">\(D_v\)</span> relaciona o comprimento dos acessos à área analisada, expressa em quilômetros por quilômetro quadrado. A mortalidade estimada <span class="math inline">\(M_{\text{est}}\)</span> incorpora as probabilidades de detecção e persistência das carcaças, representadas por <span class="math inline">\(e\)</span> e <span class="math inline">\(p\)</span>.</p>
+</section>
+<section id="conceito-funções-e-critérios-de-seleção-de-indicadores-ambientais" class="level2">
+<h2 class="anchored" data-anchor-id="conceito-funções-e-critérios-de-seleção-de-indicadores-ambientais">Conceito, Funções e Critérios de Seleção de Indicadores Ambientais</h2>
+<p>Um relatório técnico repleto de tabelas desconexas pouco auxilia a tomada de decisão se as variáveis medidas não responderem a perguntas ambientais claras. Segundo a Organização para a Cooperação e Desenvolvimento Econômico (OECD, 2003), um indicador é um parâmetro, ou valor derivado de parâmetros, que descreve o estado de um fenômeno ou de uma área com significado que ultrapassa o valor isolado da grandeza medida. No Brasil, o IBGE (2018) e Fidalgo (2003) destacam que os indicadores sintetizam processos complexos em grandezas comparáveis, preservam a rastreabilidade documental da fonte e do método de coleta, e comunicam de forma direta a relação entre a medida observada e a intervenção necessária.</p>
+<p>Para evitar a escolha arbitrária de variáveis caras ou pouco informativas, OECD (2003), Fidalgo (2003) e IBGE (2018) consolidam quatro critérios de seleção que todo indicador deve satisfazer antes de integrar um programa de monitoramento (<a href="#fig-criterios-ocde" class="quarto-xref">Figura&nbsp;<span>10.2</span></a>). A <strong>relevância política e técnica</strong> garante vínculo direto com um problema concreto ou exigência legal; a <strong>solidez analítica</strong> assegura base científica e protocolo repetível por diferentes técnicos; a <strong>mensurabilidade</strong> verifica se o levantamento cabe no orçamento e mantém regularidade temporal; e a <strong>sensibilidade</strong> avalia se o indicador acusa degradação precoce e responde às ações corretivas em prazo útil.</p>
+<div id="fig-criterios-ocde" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Quadro visual em quatro blocos com Relevância Política e Técnica, Solidez Analítica, Mensurabilidade e Sensibilidade">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-criterios-ocde-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap10_criterios_ocde.png" class="img-fluid figure-img" alt="Quadro visual em quatro blocos com Relevância Política e Técnica, Solidez Analítica, Mensurabilidade e Sensibilidade">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-criterios-ocde-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.2: Os quatro critérios de seleção de indicadores ambientais (OECD, 2003; Fidalgo, 2003; IBGE, 2018) e suas perguntas de auditoria em campo.
+</figcaption>
+</figure>
+</div>
+<p>Para observar como esses quatro critérios operam na prática, o Exemplo 10.1 analisa a triagem de quatro propostas para monitorar um parque eólico na Caatinga e executa o cálculo completo das variáveis aprovadas antes e depois de obras de recuperação.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 10.1 (Básico/Intermediário). Triagem de Indicadores e Cálculo de Monitoramento
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação e orçamento.</strong> Uma equipe técnica da UEFS dispõe de R$ 8.000 por campanha para monitorar exposição do solo e erosão em cortes, plataformas e acessos de um complexo eólico em Canudos (BA). Foram propostos quatro candidatos (valores didáticos): <strong>I</strong>, percentual de solo exposto em poligonal fixa com conferência em campo (custo conjunto de R$ 5.000/campanha); <strong>II</strong>, percepção genérica de beleza da paisagem sem questionário nem amostra definidos; <strong>III</strong>, densidade de focos erosivos ativos por <span class="math inline">\(\text{km}\)</span> em trechos fixos com ficha padrão (incluída nos R$ 5.000); e <strong>IV</strong>, sequenciamento genômico semanal do solo em 80 pontos (R$ 80.000/rodada, sem vínculo com decisão sobre erosão).</p>
+<p><strong>Triagem pelos critérios da OCDE.</strong> Os candidatos <strong>I e III</strong> atendem aos quatro critérios e são selecionados porque medem diretamente proteção superficial e erosão linear com protocolo repetível e custo compatível. O candidato <strong>II</strong> falha em solidez analítica e mensurabilidade replicável, exigindo reformulação metodológica com questionário validado. O candidato <strong>IV</strong> falha em mensurabilidade operacional e financeira para a pergunta proposta.</p>
+<p><strong>Cálculo antes e depois da intervenção.</strong> Na campanha inicial, a poligonal mede <span class="math inline">\(12{,}0\text{ ha}\)</span> com <span class="math inline">\(3{,}6\text{ ha}\)</span> de solo exposto, e a vistoria de <span class="math inline">\(6{,}0\text{ km}\)</span> registrou <span class="math inline">\(18\)</span> focos ativos:</p>
+<p><span class="math display">\[
+T_{\mathrm{exp},1} = \frac{3{,}6\text{ ha}}{12{,}0\text{ ha}} \times 100 = 30{,}0\% \qquad\qquad D_{\mathrm{eros},1} = \frac{18\text{ focos}}{6{,}0\text{ km}} = 3{,}0\text{ focos}\cdot\text{km}^{-1}
+\]</span></p>
+<p>Após drenagem e revegetação, a segunda campanha encontrou <span class="math inline">\(2{,}4\text{ ha}\)</span> de solo exposto na mesma poligonal de <span class="math inline">\(12{,}0\text{ ha}\)</span> e <span class="math inline">\(9\)</span> focos ativos nos mesmos <span class="math inline">\(6{,}0\text{ km}\)</span>:</p>
+<p><span class="math display">\[
+T_{\mathrm{exp},2} = \frac{2{,}4}{12{,}0} \times 100 = 20{,}0\% \qquad\qquad D_{\mathrm{eros},2} = \frac{9}{6{,}0} = 1{,}5\text{ focos}\cdot\text{km}^{-1}
+\]</span></p>
+<p><strong>Leitura dos resultados.</strong> A exposição caiu de <span class="math inline">\(30{,}0\%\)</span> para <span class="math inline">\(20{,}0\%\)</span> (redução de <span class="math inline">\(10{,}0\)</span> pontos percentuais e redução relativa de <span class="math inline">\(\frac{30{,}0 - 20{,}0}{30{,}0} \times 100 \approx 33{,}3\%\)</span>), enquanto a densidade de focos caiu <span class="math inline">\(50{,}0\%\)</span>. A interpretação final considera ainda o volume de chuvas entre campanhas e eventuais alterações de profundidade nos focos remanescentes.</p>
+</div>
+</div>
+<p>Para consolidar o raciocínio de seleção e cálculo de variação desenvolvido no Exemplo 10.1, resolva a atividade autônoma a seguir antes de avançar para os modelos causais.</p>
+<section id="atividade-10.1a-seleção-e-cálculo-para-resolução-autônoma" class="level3">
+<h3 class="anchored" data-anchor-id="atividade-10.1a-seleção-e-cálculo-para-resolução-autônoma">Atividade 10.1A, Seleção e cálculo para resolução autônoma</h3>
+<p>Uma equipe precisa acompanhar a recuperação de acessos de outro empreendimento no Semiárido, dispondo de R$ 6.000 por campanha e medições antes e depois das intervenções (valores didáticos). As quatro propostas avaliadas são: <strong>A</strong>, percentual de solo exposto em poligonal fixa com imagens comparáveis e conferência em campo (R$ 4.500/campanha); <strong>B</strong>, satisfação dos moradores com acessos e drenagem mediante questionário padronizado e amostra justificada; <strong>C</strong>, densidade de focos erosivos ativos por quilômetro em trechos fixos georreferenciados; e <strong>D</strong>, análise química diária completa em 100 pontos (R$ 48.000/rodada).</p>
+<div class="book-table-scroll" role="region" aria-label="Tabela 1" tabindex="0"><table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Dado observado</th>
+<th style="text-align: right;">Campanha inicial</th>
+<th style="text-align: right;">Campanha posterior</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Área total da poligonal acompanhada</td>
+<td style="text-align: right;">9,0 ha</td>
+<td style="text-align: right;">9,0 ha</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Área classificada como solo exposto</td>
+<td style="text-align: right;">1,80 ha</td>
+<td style="text-align: right;">1,08 ha</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Comprimento efetivamente vistoriado</td>
+<td style="text-align: right;">4,8 km</td>
+<td style="text-align: right;">4,8 km</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Focos erosivos ativos</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">7</td>
+</tr>
+</tbody>
+</table></div>
+<p>Classifique os quatro candidatos segundo os critérios da OCDE e justifique as decisões. Calcule a taxa de solo exposto e a densidade de focos em cada campanha (fórmula, substituição e unidades), determinando a mudança em pontos percentuais e a redução relativa de cada indicador. Redija uma interpretação técnica relacionando os valores à chuva entre campanhas, à manutenção e à necessidade de medir também dimensões das feições remanescentes. A atividade deve ser entregue com desenvolvimento próprio e sem gabarito nesta apostila.</p>
+</section>
+</section>
+<section id="modelos-per-e-peir-arquitetura-causal-e-construção-de-matrizes" class="level2">
+<h2 class="anchored" data-anchor-id="modelos-per-e-peir-arquitetura-causal-e-construção-de-matrizes">Modelos PER e PEIR, Arquitetura Causal e Construção de Matrizes</h2>
+<p>Um conjunto de indicadores ganha força interpretativa quando organizado em uma cadeia lógica que separa causa, alteração do meio, dano e solução. O modelo <strong>PER (Pressão, Estado e Resposta)</strong>, estruturado por Anthony Friend e David Rapport e difundido pela OCDE (OECD, 2003), parte de uma lógica de retroalimentação: atividades humanas exercem <em>pressões</em> sobre o ambiente, modificando o <em>estado</em> dos recursos naturais, ao que a sociedade reage com <em>respostas</em> técnicas ou políticas para conter as pressões ou recuperar o meio.</p>
+<p>Posteriormente, o Programa das Nações Unidas para o Meio Ambiente (PNUMA/UNEP) aprimorou essa estrutura para o modelo <strong>PEIR (Pressão, Estado, Impacto e Resposta)</strong>, amplamente adotado pelo IBGE e por órgãos estaduais brasileiros. A inclusão do compartimento <strong>Impacto (I)</strong> separa com clareza a alteração mensurada no meio físico (<em>Estado</em>, como solo exposto ou rebaixamento de nível d’água) de suas consequências sobre ecossistemas e comunidades (<em>Impacto</em>, como formação de ravinas, perda de pesca artesanal ou colisão de avifauna), facilitando a ligação direta com a Avaliação de Impacto Ambiental (Capítulo 5). Em estudos regionais de maior escala, o modelo <strong>DPSIR</strong> acrescenta ainda o bloco <strong>Força Motriz (D)</strong> antes da Pressão para explicitar vetores estruturais como metas nacionais de transição energética ou expansão agropecuária (<a href="#fig-modelo_peir_semiarido" class="quarto-xref">Figura&nbsp;<span>10.3</span></a>).</p>
+<div id="fig-modelo_peir_semiarido" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-modelo_peir_semiarido-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig08_modelo_peir_semiarido.png" title="fig:" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-modelo_peir_semiarido-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.3: Arquitetura cíclica do modelo PEIR aplicada à inserção eólica e energética no Semiárido Baiano, integrando vetores de pressão, alterações de estado biofísico, impactos socioambientais e respostas de gestão e bioengenharia.
+</figcaption>
+</figure>
+</div>
+<p>A leitura da <a href="#fig-modelo_peir_semiarido" class="quarto-xref">Figura&nbsp;<span>10.3</span></a> mostra que o modelo PEIR opera como um <strong>ciclo contínuo de retroalimentação</strong>. A <strong>Pressão (P)</strong> reúne ações humanas que perturbam o ambiente (abertura de acessos, terraplenagem, operação de barramentos). O <strong>Estado (E)</strong> retrata a condição observável dos compartimentos (percentual de solo exposto, densidade do solo, nível do reservatório). O <strong>Impacto (I)</strong> expressa os efeitos resultantes sobre funções ecológicas e grupos sociais (erosão linear, perda de habitat, conflito hídrico). A <strong>Resposta (R)</strong> agrupa medidas de controle, drenagem, PRAD e regulação, que devem ser acompanhadas tanto por indicadores de execução (metros de canaleta construídos) quanto por indicadores de resultado (redução efetiva de focos erosivos).</p>
+<p>O Exemplo 10.3 mostra como estruturar uma matriz PEIR comparando complexos eólicos e hidrelétricas ao longo do Submédio São Francisco.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 10.3 (Intermediário). Construção de Matriz PEIR para o Eixo Energético do Submédio São Francisco
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação analisada.</strong> A partir das observações entre Sobradinho, Casa Nova, Juazeiro, Rodelas e Paulo Afonso, estruture uma matriz PEIR integrando complexos eólicos em bordas de chapada e regularização hidrelétrica de vazões no Rio São Francisco.</p>
+<div class="book-table-scroll" role="region" aria-label="Tabela 2" tabindex="0"><table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Vetor</strong></th>
+<th style="text-align: left;"><strong>Pressão (P)</strong></th>
+<th style="text-align: left;"><strong>Estado (E)</strong></th>
+<th style="text-align: left;"><strong>Impacto (I)</strong></th>
+<th style="text-align: left;"><strong>Resposta (R)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Eólicas na Caatinga</strong></td>
+<td style="text-align: left;">Abertura de acessos e platôs (<span class="math inline">\(\text{ha}\)</span> suprimidos; <span class="math inline">\(D_v\)</span> em <span class="math inline">\(\text{km}\cdot\text{km}^{-2}\)</span>).</td>
+<td style="text-align: left;">Solo exposto (<span class="math inline">\(\%\)</span>), compactação (<span class="math inline">\(D_s\)</span>) e fragmentação vegetal.</td>
+<td style="text-align: left;">Erosão na base de torres (focos/km) e colisão de avifauna (aves/torre/ano).</td>
+<td style="text-align: left;">Drenagem pluvial, PRAD/bioengenharia e zonas de exclusão para rotas de aves.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Hidrelétricas (São Francisco)</strong></td>
+<td style="text-align: left;">Operação de reservatórios com redução de vazão defluente (<span class="math inline">\(\text{m}^3\cdot\text{s}^{-1}\)</span>).</td>
+<td style="text-align: left;">Alteração do pulso hidrológico, redução de lâmina d’água e bancos arenosos.</td>
+<td style="text-align: left;">Perda de agricultura de vazante, conflitos com irrigação e degradação ripária.</td>
+<td style="text-align: left;">Alocação negociada no CBHSF, vazão ecológica mínima e recomposição de APPs.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Interpretação.</strong> Cada coluna separa causas (P), condições biofísicas (E), danos ecológicos ou sociais (I) e instrumentos de gestão (R), garantindo que medidas corretivas e efeitos observados permaneçam em compartimentos distintos.</p>
+</div>
+</div>
+<p>Ao montar uma matriz PEIR pela primeira vez, é comum confundir a atividade geradora com o dano ou registrar uma medida corretiva na coluna de estado ambiental, erro detalhado abaixo.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 1, Confundir Dado Bruto, Pressão e Impacto na Matriz PEIR
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Listar “abertura de <span class="math inline">\(18\text{ km}\)</span> de estradas” na coluna de Impacto (I) ou registrar “execução de PRAD” na coluna de Estado (E).</p>
+<p><strong>Correção técnica.</strong> A abertura de estradas é a ação humana geradora de perturbação, logo pertence à <strong>Pressão (P)</strong>. A execução do PRAD é uma intervenção corretiva da sociedade, portanto é <strong>Resposta (R)</strong>. O <strong>Estado (E)</strong> retrata a condição biofísica resultante (percentual de solo exposto), enquanto o <strong>Impacto (I)</strong> expressa o dano ou consequência (ravinamento em taludes, perda de biodiversidade e assoreamento).</p>
+</div>
+</div>
+</section>
+<section id="métricas-de-campo-ficha-do-indicador-e-interpretação-das-unidades" class="level2">
+<h2 class="anchored" data-anchor-id="métricas-de-campo-ficha-do-indicador-e-interpretação-das-unidades">Métricas de campo, ficha do indicador e interpretação das unidades</h2>
+<p>Para transformar observações de campo em indicadores auditáveis na matriz PEIR, cada métrica exige uma <strong>ficha técnica padronizada</strong> que registre fonte dos dados, unidade de medida, período ou frequência de coleta, método de levantamento e área de referência. Sem esses metadados, não é possível auditar resultados nem comparar campanhas ao longo do tempo ou entre setores distintos. Além disso, um trecho sem vistoria constitui informação ausente, jamais valor zero, pois lançar zero onde não houve inspeção reduz artificialmente a média calculada e oculta focos críticos de degradação.</p>
+<p>Em estudos ambientais, calcular corretamente indicadores exige também atenção às unidades de entrada. A <strong>taxa de supressão (<span class="math inline">\(T_{\mathrm{sup}}\)</span>)</strong> relaciona a área removida (<span class="math inline">\(A_{\mathrm{sup}}\)</span>) à área total da poligonal (<span class="math inline">\(A_{\mathrm{pol}}\)</span>), ambas na mesma unidade (em geral hectares, lembrando que <span class="math inline">\(1\text{ ha} = 10.000\text{ m}^2\)</span>), multiplicando a razão por <span class="math inline">\(100\)</span> para obter porcentagem. Já a <strong>densidade viária (<span class="math inline">\(D_v\)</span>)</strong> divide a extensão total de acessos (<span class="math inline">\(L_{\mathrm{acessos}}\)</span>, em <span class="math inline">\(\text{km}\)</span>) pela área da poligonal em quilômetros quadrados (<span class="math inline">\(A_{\mathrm{ref}}\)</span>, lembrando que <span class="math inline">\(1\ \mathrm{km^2}=100\ \mathrm{ha}\)</span>), fornecendo o resultado em <span class="math inline">\(\mathrm{km\,km^{-2}}\)</span>:</p>
+<p><span class="math display">\[
+T_{\mathrm{sup}} = \frac{A_{\mathrm{sup}}}{A_{\mathrm{pol}}} \times 100 \qquad\qquad D_v = \frac{L_{\mathrm{acessos}}}{A_{\mathrm{ref}}}
+\]</span></p>
+<p>O Exemplo 10.2 aplica essas duas expressões a um parque eólico no Semiárido Baiano e revela por que um percentual baixo de supressão pode ocultar alta densidade de estradas.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 10.2 (Intermediário). Cálculo de Supressão Vegetal e Densidade Viária em Parque Eólico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação e dados.</strong> No EIA de um parque eólico em chapada no eixo Canudos-Sento Sé (<span class="math inline">\(A_{\text{pol}} = 1.600\text{ ha}\)</span>), há <span class="math inline">\(25\)</span> aerogeradores com platô de <span class="math inline">\(0{,}45\text{ ha}\)</span> cada, <span class="math inline">\(18{,}0\text{ km}\)</span> de estradas internas com <span class="math inline">\(10\text{ m}\)</span> de largura média e <span class="math inline">\(2{,}75\text{ ha}\)</span> de subestação e canteiro.</p>
+<p><strong>Cálculo passo a passo.</strong> Área dos platôs: <span class="math inline">\(A_{\text{platôs}} = 25 \times 0{,}45 = 11{,}25\text{ ha}\)</span>. Área dos acessos (convertendo <span class="math inline">\(18{,}0\text{ km} = 18.000\text{ m}\)</span>):</p>
+<p><span class="math display">\[
+A_{\text{acessos}} = \frac{18.000\text{ m} \times 10\text{ m}}{10.000\text{ m}^2\cdot\text{ha}^{-1}} = 18{,}00\text{ ha}
+\]</span></p>
+<p>Somando os componentes, <span class="math inline">\(A_{\text{sup}} = 11{,}25 + 18{,}00 + 2{,}75 = 32{,}00\text{ ha}\)</span>, o que resulta em <span class="math inline">\(T_{\mathrm{sup}} = \frac{32{,}00}{1.600} \times 100\% = \mathbf{2{,}00\%}\)</span>. Convertendo a área para <span class="math inline">\(\text{km}^2\)</span> (<span class="math inline">\(1.600 / 100 = 16{,}0\text{ km}^2\)</span>), obtemos <span class="math inline">\(D_v = \frac{18{,}0\text{ km}}{16{,}0\text{ km}^2} = \mathbf{1{,}125\text{ km}\cdot\text{km}^{-2}}\)</span>.</p>
+<p><strong>Interpretação.</strong> Embora <span class="math inline">\(T_{\text{sup}} = 2{,}00\%\)</span> pareça reduzido, <span class="math inline">\(56{,}25\%\)</span> da área suprimida (<span class="math inline">\(18{,}0\text{ ha}\)</span>) distribui-se em corredores lineares com densidade superior a <span class="math inline">\(1\text{ km}\cdot\text{km}^{-2}\)</span>, ampliando o efeito de borda e concentrando enxurradas.</p>
+</div>
+</div>
+<p>A leitura isolada da taxa de supressão sem o apoio de métricas lineares gera um dos erros mais frequentes na análise de empreendimentos extensivos na Caatinga.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 2, Subestimar a Fragmentação ao Olhar Apenas o Percentual Total de Supressão
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Concluir que uma taxa de supressão de <span class="math inline">\(2\%\)</span> em um parque eólico é ecologicamente irrelevante.</p>
+<p><strong>Correção técnica.</strong> Um pequeno percentual distribuído em malha viária extensa e linhas de transmissão cria centenas de metros de borda exposta, interrompe o deslocamento de fauna terrestre e concentra o escoamento superficial das chuvas convectivas do Semiárido. Por isso, deve-se sempre complementar <span class="math inline">\(T_{\text{sup}}\)</span> com métricas espaciais como a densidade viária (<span class="math inline">\(D_v\)</span>).</p>
+</div>
+</div>
+<p>No monitoramento de colisões de avifauna, contar apenas as carcaças visíveis subestima a mortalidade real porque os observadores deixam de localizar parte das carcaças na vegetação (<span class="math inline">\(e &lt; 1\)</span>) e animais necrófagos removem outras antes da vistoria (<span class="math inline">\(p &lt; 1\)</span>). A correção amostral divide a contagem bruta <span class="math inline">\(N_{\mathrm{obs}}\)</span> pelo produto <span class="math inline">\(e \cdot p\)</span>. De modo complementar, para acompanhar a evolução temporal de qualquer indicador (<span class="math inline">\(X_i\)</span> inicial e <span class="math inline">\(X_f\)</span> final, com <span class="math inline">\(X_i \ne 0\)</span>), calcula-se a variação relativa <span class="math inline">\(\Delta_{\%}\)</span>, distinguindo-a sempre da diferença absoluta em <strong>pontos percentuais</strong>:</p>
+<p><span class="math display">\[
+M_{\mathrm{est}} = \frac{N_{\mathrm{obs}}}{e\,p} \qquad\qquad \Delta_{\%} = \frac{X_f-X_i}{X_i} \times 100
+\]</span></p>
+<p>Além das fórmulas, todo programa sério exige uma <strong>ficha do indicador</strong> documentando unidade, fonte, período e critério de campo. Um trecho sem vistoria constitui <strong>informação ausente</strong>, jamais valor zero, pois lançar zero onde ninguém inspecionou rebaixa artificialmente a média calculada e oculta setores degradados. Da mesma forma, sem padronizar esforço amostral e corrigir o viés de detecção, relatórios de fauna mascaram violações ambientais graves, como ilustra a <a href="#fig-mortalidade-eficacia" class="quarto-xref">Figura&nbsp;<span>10.4</span></a> (Painel A) e o cálculo do Exemplo 10.4.</p>
+<div id="fig-mortalidade-eficacia" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Dois gráficos em painel: A compara barras de mortalidade bruta 0,45 e corrigida 1,00 contra limiar 0,80; B mostra redução de 75% nos focos erosivos e aumento da cobertura vegetal de 15% para 69%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mortalidade-eficacia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fig_cap10_mortalidade_eficacia.png" class="img-fluid figure-img" alt="Dois gráficos em painel: A compara barras de mortalidade bruta 0,45 e corrigida 1,00 contra limiar 0,80; B mostra redução de 75% nos focos erosivos e aumento da cobertura vegetal de 15% para 69%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mortalidade-eficacia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.4: Comparação visual entre taxa bruta e corrigida na estimativa de mortalidade de avifauna frente ao limiar de alerta (A) e resposta quantitativa dos indicadores de recuperação após execução de PRAD (B).
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 10.4 (Avançado). Indicador Corrigido de Mortalidade de Avifauna em Parque Eólico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação e dados.</strong> Em <span class="math inline">\(12\)</span> meses de vistorias sob <span class="math inline">\(40\)</span> aerogeradores na Caatinga baiana, registraram-se <span class="math inline">\(18\)</span> carcaças de aves. Ensaios de campo indicaram eficiência de busca <span class="math inline">\(e = 0{,}60\)</span> e persistência de carcaças <span class="math inline">\(p = 0{,}75\)</span>. O limiar de alerta no licenciamento é <span class="math inline">\(0{,}80\text{ ave}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}\)</span>.</p>
+<p><strong>Cálculo passo a passo.</strong> A taxa bruta sem correção seria <span class="math inline">\(T_{\text{bruta}} = 18 / 40 = 0{,}45\text{ ave}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}\)</span>. Como o produto de detecção é <span class="math inline">\(e \cdot p = 0{,}60 \times 0{,}75 = 0{,}45\)</span> (apenas <span class="math inline">\(45\%\)</span> das colisões reais são registradas), a mortalidade estimada corrigida e a taxa por torre são:</p>
+<p><span class="math display">\[
+M_{\text{est}} = \frac{18}{0{,}45} = 40{,}0\text{ aves}\cdot\text{ano}^{-1} \qquad\qquad T_{\text{corr}} = \frac{40{,}0}{40} = 1{,}00\text{ ave}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}
+\]</span></p>
+<p><strong>Interpretação.</strong> Conforme observado no Painel A da <a href="#fig-mortalidade-eficacia" class="quarto-xref">Figura&nbsp;<span>10.4</span></a>, a taxa corrigida (<span class="math inline">\(1{,}00\)</span>) supera o limiar de alerta (<span class="math inline">\(0{,}80\)</span>) em <span class="math inline">\(25\%\)</span>, exigindo medidas mitigadoras imediatas que permaneceriam invisíveis na contagem bruta (<span class="math inline">\(0{,}45\)</span>).</p>
+</div>
+</div>
+<p>A omissão do esforço amostral e da eficiência de busca invalida comparações entre campanhas sucessivas ou entre empreendimentos vizinhos.</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 3, Comparar Contagens Brutas de Fauna ou Erosão sem Padronização Amostral
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Relatar apenas o número absoluto de carcaças de aves ou focos erosivos sem considerar esforço amostral, número de torres, extensão vistoriada ou eficiência de detecção.</p>
+<p><strong>Correção técnica.</strong> Sem relativização (por torre/ano ou por <span class="math inline">\(\text{km}\)</span> de estrada) e sem correção de viés de detecção (<span class="math inline">\(e \cdot p\)</span> no monitoramento faunístico), os números perdem comparabilidade entre campanhas, comprometendo a solidez analítica exigida pela OCDE (2003).</p>
+</div>
+</div>
+</section>
+<section id="estudo-de-caso-integrado-viagem-de-campo-no-semiárido-baiano" class="level2">
+<h2 class="anchored" data-anchor-id="estudo-de-caso-integrado-viagem-de-campo-no-semiárido-baiano">Estudo de Caso Integrado, Viagem de Campo no Semiárido Baiano</h2>
+<p>A atividade de campo prevista na Semana 11 do Plano CHF662 percorre a região de <strong>Canudos</strong> e o eixo energético do <strong>Rio São Francisco</strong>, com referência a <strong>Paulo Afonso, Rodelas, Sobradinho, Casa Nova, Sento Sé e Juazeiro</strong>. A leitura desse território articula a Caatinga, as formas de relevo, os usos múltiplos da água e as infraestruturas de geração e transmissão, exigindo que cada parada distinga o que foi observado diretamente, o que consta em documentos técnicos e o que permanece como hipótese de análise.</p>
+<section id="fatores-locacionais-e-leitura-das-infraestruturas-em-campo" class="level3">
+<h3 class="anchored" data-anchor-id="fatores-locacionais-e-leitura-das-infraestruturas-em-campo">Fatores Locacionais e Leitura das Infraestruturas em Campo</h3>
+<p>A concentração de parques eólicos em Canudos, Casa Nova, Sento Sé e entorno de Sobradinho resulta da convergência entre o <strong>regime de ventos alísios de sudeste e leste</strong> (velocidades médias frequentemente entre <span class="math inline">\(7{,}5\)</span> e <span class="math inline">\(9{,}5\text{ m}\cdot\text{s}^{-1}\)</span> a <span class="math inline">\(100\text{ m}\)</span> no <a href="https://www.ba.gov.br/secti/20/atlas-eolico-da-bahia">Atlas Eólico da Bahia</a>, com pico no segundo semestre seco e complementaridade sazonal à geração hidrelétrica), o <strong>relevo de chapadas e serras residuais</strong> que acelera o escoamento atmosférico por efeito topográfico, a <strong>proximidade de linhas de transmissão do SIN</strong> estruturadas historicamente a partir de Paulo Afonso e Sobradinho, e a <strong>estrutura fundiária</strong> marcada por grandes imóveis e áreas de fundo de pasto.</p>
+<p>Os acessos e as plataformas dos aerogeradores conectam a implantação elétrica à dinâmica da vertente (<a href="#fig-canudos-acessos" class="quarto-xref">Figura&nbsp;<span>10.5</span></a>). A superfície exposta recebe o impacto direto das gotas de chuva, enquanto valetas e bueiros modificam a direção e a concentração do escoamento superficial, exigindo localizar saídas de drenagem e proteção de taludes durante a vistoria.</p>
+<div id="fig-canudos-acessos" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Vista aérea de aerogeradores interligados por acessos de solo exposto em área de Caatinga">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-canudos-acessos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/canudos_aerogeradores_acessos.jpg" class="img-fluid figure-img" alt="Vista aérea de aerogeradores interligados por acessos de solo exposto em área de Caatinga">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-canudos-acessos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.5: Aerogeradores, plataformas e acessos em área de Caatinga. Fonte acervo didático disponibilizado pelo docente, identificado como Canudos.
+</figcaption>
+</figure>
+</div>
+<p>Quando a implantação linear atravessa divisores e unidades de drenagem, a continuidade dos corredores de solo exposto aproxima o escoamento concentrado dos canais intermitentes e amplia a fragmentação de habitats (<a href="#fig-canudos-linear" class="quarto-xref">Figura&nbsp;<span>10.6</span></a>).</p>
+<div id="fig-canudos-linear" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Aerogeradores alinhados ao longo de uma estrada sobre superfície de solo exposto">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-canudos-linear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/canudos_arranjo_linear.jpg" class="img-fluid figure-img" alt="Aerogeradores alinhados ao longo de uma estrada sobre superfície de solo exposto">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-canudos-linear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.6: Arranjo linear de aerogeradores e acessos. Fonte acervo didático disponibilizado pelo docente, identificado como Canudos. Enquadramento original preservado.
+</figcaption>
+</figure>
+</div>
+<p>No eixo fluvial do Submédio São Francisco, o armazenamento hidrelétrico em Sobradinho modifica o regime de cheias e vazantes e conecta a geração elétrica ao abastecimento urbano, à irrigação e à pesca artesanal (<a href="#fig-sobradinho-usina" class="quarto-xref">Figura&nbsp;<span>10.7</span></a>).</p>
+<div id="fig-sobradinho-usina" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Vista da estrutura da Usina Hidrelétrica de Sobradinho">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sobradinho-usina-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/sobradinho_usina_glauco_umbelino.jpg" class="img-fluid figure-img" alt="Vista da estrutura da Usina Hidrelétrica de Sobradinho">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sobradinho-usina-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.7: Usina Hidrelétrica de Sobradinho, Bahia. Fotografia de Glauco Umbelino, reproduzida sem alteração. Fonte <a href="https://commons.wikimedia.org/wiki/File:Usina_Hidreletrica_de_Sobradinho-BA.jpg">Wikimedia Commons</a>, licença <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
+</figcaption>
+</figure>
+</div>
+<p>Arranjos fotovoltaicos flutuantes acrescentam novas interfaces entre módulos, flutuadores, amarrações e espelho d’água (<a href="#fig-fpv-detalhe" class="quarto-xref">Figura&nbsp;<span>10.8</span></a>). Variação de nível, vento e ondas modificam as solicitações mecânicas sobre a estrutura, demandando também avaliar sombreamento, circulação da água e faixas de manutenção.</p>
+<div id="fig-fpv-detalhe" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Módulos fotovoltaicos sobre flutuadores junto à superfície de um reservatório">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fpv-detalhe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fotovoltaica_flutuante_detalhe.jpg" class="img-fluid figure-img" alt="Módulos fotovoltaicos sobre flutuadores junto à superfície de um reservatório">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fpv-detalhe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.8: Detalhe de módulos fotovoltaicos instalados em estrutura flutuante. Fonte acervo didático disponibilizado pelo docente. Instalação sem identificação documental no material consultado.
+</figcaption>
+</figure>
+</div>
+<p>A configuração completa do arranjo deve ser examinada junto ao espaço ocupado no reservatório e às áreas de navegação (<a href="#fig-fpv-arranjo" class="quarto-xref">Figura&nbsp;<span>10.9</span></a>), mantendo explícita a escala hidrodinâmica analisada.</p>
+<div id="fig-fpv-arranjo" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Conjunto de módulos solares flutuantes formando uma plataforma sobre a água">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fpv-arranjo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/fotovoltaica_flutuante_arranjo.jpeg" class="img-fluid figure-img" alt="Conjunto de módulos solares flutuantes formando uma plataforma sobre a água">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fpv-arranjo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.9: Arranjo fotovoltaico flutuante em um corpo de água. Fonte acervo didático disponibilizado pelo docente. Instalação sem identificação documental no material consultado.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="evidência-publicada-e-seleção-de-sítios-em-xingó" class="level3">
+<h3 class="anchored" data-anchor-id="evidência-publicada-e-seleção-de-sítios-em-xingó">Evidência publicada e seleção de sítios em Xingó</h3>
+<p>As pistas de vento e os focos erosivos foram examinados por Holanda e colaboradores (2020) na <em>Revista Brasileira de Geografia Física</em> (<a href="#fig-xingo-publicado-2020" class="quarto-xref">Figura&nbsp;<span>10.10</span></a>), relacionando a geometria do reservatório no segmento II da UHE Xingó (Baixo São Francisco) à localização dos focos erosivos nas margens.</p>
+<div id="fig-xingo-publicado-2020" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Mapa publicado de Xingó com três pistas de vento no segmento II e focos erosivos identificados por códigos FE">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-xingo-publicado-2020-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/artigo_publicado_xingo_fetch_2020.jpeg" class="img-fluid figure-img" alt="Mapa publicado de Xingó com três pistas de vento no segmento II e focos erosivos identificados por códigos FE">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-xingo-publicado-2020-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.10: Mapa de pistas de vento do segmento II do Lago da UHE Xingó, período de 2012 a 2017. Reprodução da Figura 7 de Holanda e colaboradores (2020), extraída do PDF editorial sem alteração dos valores ou do enquadramento. Fonte <a href="https://doi.org/10.26848/rbgf.v13.2.p887-902">artigo publicado</a>, licença <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+</figcaption>
+</figure>
+</div>
+<p>O estudo de Santos, Holanda e Wanderley sobre ondas e fotovoltaica flutuante em Xingó conecta geometria do reservatório, pistas de vento (<em>fetch</em>, distância de atuação do vento sobre a água) e altura significativa de onda (<span class="math inline">\(H_s\)</span>) para selecionar áreas menos expostas (<a href="#fig-xingo-fetch" class="quarto-xref">Figura&nbsp;<span>10.11</span></a>).</p>
+<div id="fig-xingo-fetch" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Mapa de Xingó com pistas de vento, orientação de sudeste e comprimentos de fetch em diferentes setores">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-xingo-fetch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/artigo_xingo_fetch.jpg" class="img-fluid figure-img" alt="Mapa de Xingó com pistas de vento, orientação de sudeste e comprimentos de fetch em diferentes setores">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-xingo-fetch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.11: Pistas de vento consideradas no estudo de Xingó. Fonte Santos, Holanda e Wanderley, manuscrito sobre seleção de sítios para fotovoltaica flutuante, figura do acervo fornecido pelo autor. O conjunto de dados do estudo informa licença CC BY 4.0.
+</figcaption>
+</figure>
+</div>
+<p>Cruzando exposição às ondas com batimetria e restrições de uso, obtém-se o zoneamento de aptidão para implantação flutuante (<a href="#fig-xingo-zoneamento" class="quarto-xref">Figura&nbsp;<span>10.12</span></a>), evidenciando como o uso em outro reservatório como Sobradinho exige recalcular todas as variáveis locais.</p>
+<div id="fig-xingo-zoneamento" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Mapa de zoneamento de Xingó com classes de exposição e sítios R1 a R5">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-xingo-zoneamento-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/artigo_xingo_zoneamento.jpg" class="img-fluid figure-img" alt="Mapa de zoneamento de Xingó com classes de exposição e sítios R1 a R5">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-xingo-zoneamento-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.12: Zoneamento de aptidão para fotovoltaica flutuante no estudo de Xingó, com setores de baixa exposição, classes intermediárias e exclusão. Fonte Santos, Holanda e Wanderley, manuscrito e acervo de figuras fornecidos pelo autor.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="convivência-com-a-caatinga-roteiro-de-campo-e-avaliação-de-respostas" class="level3">
+<h3 class="anchored" data-anchor-id="convivência-com-a-caatinga-roteiro-de-campo-e-avaliação-de-respostas">Convivência com a Caatinga, Roteiro de Campo e Avaliação de Respostas</h3>
+<p>Embora a geração eólica emita poucos gases de efeito estufa durante a operação, a fase de implantação impõe impactos territoriais relevantes, entre eles a supressão linear da Caatinga para platôs e estradas largas de transporte de pás (<span class="math inline">\(60\)</span> a <span class="math inline">\(80\text{ m}\)</span>), a erosão na base das torres sobre solos rasos sob chuvas convectivas e os conflitos por usos múltiplos da água diante da regularização de vazões no Submédio São Francisco.</p>
+<p>No componente faunístico, a instalação de aerogeradores e linhas de transmissão ao longo de rotas de deslocamento cria risco de colisão e efeito barreira para a arara-azul-de-lear (<em>Anodorhynchus leari</em>), espécie endêmica que transita diariamente entre os paredões areníticos do Raso da Catarina e os agrupamentos de licurizeiros (<em>Syagrus coronata</em>) no território de Canudos (<a href="#fig-arara-azul-lear" class="quarto-xref">Figura&nbsp;<span>10.13</span></a>). O mapeamento telemétrico e a manutenção de corredores livres de obstáculos tornam-se medidas indispensáveis no licenciamento regional.</p>
+<div id="fig-arara-azul-lear" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Duas araras-azuis-de-lear em voo diante de paredão arenítico no Raso da Catarina">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-arara-azul-lear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/anodorhynchus_lear.jpg" class="img-fluid figure-img" alt="Duas araras-azuis-de-lear em voo diante de paredão arenítico no Raso da Catarina">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-arara-azul-lear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.13: Exemplares de arara-azul-de-lear (<em>Anodorhynchus leari</em>) em voo junto aos paredões areníticos do Raso da Catarina, Canudos (BA), área crítica para dormitórios e corredores de forrageamento na Caatinga. Fonte: acervo didático da disciplina.
+</figcaption>
+</figure>
+</div>
+<p>Durante o roteiro prático em campo, a equipe discente registra evidências georreferenciadas integrando quatro eixos: relevo e substrato (posição das torres, solos rasos e declividade), processos erosivos e drenagem (selamento, sulcos e saídas pluviais), cobertura da Caatinga e fauna (fisionomia vegetal, licurizeiros e efeito de borda) e dinâmica hídrica e socioambiental (nível dos reservatórios, irrigação e comunidades de fundo de pasto).</p>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Erro 4, Assumir que Energia Eólica Equivale a Impacto Ambiental Nulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Equívoco frequente.</strong> Afirmar em diagnósticos que parques eólicos na Caatinga não causam degradação por serem fontes renováveis de baixa emissão de carbono.</p>
+<p><strong>Correção técnica.</strong> Toda fonte energética possui pegada territorial. No Semiárido Baiano, a implantação eólica envolve terraplenagem pesada, supressão linear da Caatinga, erosão em solos rasos de chapadas, riscos à avifauna (como a arara-azul-de-lear em Canudos) e conflitos fundiários e sonoros que exigem licenciamento rigoroso e monitoramento contínuo.</p>
+</div>
+</div>
+<p>Para fechar o ciclo PEIR, toda resposta de gestão precisa separar indicadores de <strong>execução</strong> (metros de drenagem construídos) de indicadores de <strong>resultado</strong> (redução efetiva de focos erosivos e ganho de cobertura vegetal), como ilustrado no Painel B da <a href="#fig-mortalidade-eficacia" class="quarto-xref">Figura&nbsp;<span>10.4</span></a> e detalhado no Exemplo 10.5.</p>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Exemplo 10.5 (Avançado). Avaliação Quantitativa de Eficácia de Resposta Mitigadora no Ciclo PEIR
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Situação e metas.</strong> Após vistoria apontar erosão em acessos de um complexo eólico, o empreendedor implantou canaletas revestidas, dissipadores em pedra rachão, paliçadas permeáveis e semeadura de espécies nativas. Antes das obras, havia <span class="math inline">\(36\)</span> focos ativos em <span class="math inline">\(12\text{ km}\)</span> de estradas e cobertura vegetal média de <span class="math inline">\(15\%\)</span>. Doze meses depois, registraram-se <span class="math inline">\(9\)</span> focos ativos e cobertura de <span class="math inline">\(69\%\)</span>. A meta contratual do PRAD exigia redução mínima de <span class="math inline">\(70\%\)</span> nos focos e ganho mínimo de <span class="math inline">\(50\)</span> pontos percentuais na cobertura.</p>
+<p><strong>Cálculo passo a passo.</strong> A densidade caiu de <span class="math inline">\(D_{f,0} = \frac{36}{12} = 3{,}00\)</span> para <span class="math inline">\(D_{f,1} = \frac{9}{12} = 0{,}75\text{ foco}\cdot\text{km}^{-1}\)</span>, gerando redução de <span class="math inline">\(\Delta F_{\%} = \frac{9 - 36}{36} \times 100\% = -75{,}0\%\)</span>. Na cobertura vegetal, o ganho absoluto foi <span class="math inline">\(\Delta C_{\text{pp}} = 69\% - 15\% = +54\text{ p.p.}\)</span> e o ganho relativo atingiu <span class="math inline">\(\Delta C_{\text{rel}} = \frac{69 - 15}{15} \times 100\% = +360{,}0\%\)</span>.</p>
+<p><strong>Interpretação.</strong> Conforme mostrado no Painel B da <a href="#fig-mortalidade-eficacia" class="quarto-xref">Figura&nbsp;<span>10.4</span></a>, ambas as metas do PRAD foram cumpridas (<span class="math inline">\(75{,}0\% \ge 70\%\)</span> e <span class="math inline">\(54\text{ p.p.} \ge 50\text{ p.p.}\)</span>). Distinguir <em>pontos percentuais</em> de <em>variação relativa</em> evita ambiguidades em auditorias, enquanto os <span class="math inline">\(9\)</span> focos remanescentes orientam manutenção pontual.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="materiais-audiovisuais-de-apoio" class="level2">
+<h2 class="anchored" data-anchor-id="materiais-audiovisuais-de-apoio">Materiais Audiovisuais de Apoio</h2>
+<p>Para ampliar a compreensão sobre indicadores simples, índices compostos e comunicação em relatórios ambientais, assista aos vídeos selecionados na disciplina: o vídeo <a href="https://www.youtube.com/watch?v=xk-Y_YivFpU">Indicadores e relatórios de sustentabilidade</a> discute a construção e o uso de indicadores no monitoramento territorial, e o vídeo <a href="https://www.youtube.com/watch?v=J2HRZjnC03w">Você sabe o que é o Índice de Qualidade da Água (IQA)?</a> apresenta de forma acessível a lógica de agregação e interpretação de índices compostos.</p>
+</section>
+<section id="exercícios-de-fixação" class="level2">
+<h2 class="anchored" data-anchor-id="exercícios-de-fixação">Exercícios de fixação</h2>
+<section id="nível-básico-conceitos-critérios-e-modelo-peir" class="level4">
+<h4 class="anchored" data-anchor-id="nível-básico-conceitos-critérios-e-modelo-peir">Nível Básico (Conceitos, Critérios e Modelo PEIR)</h4>
+<ol type="1">
+<li><p>Explique, com um exemplo concreto ligado ao Semiárido Baiano, a diferença entre <strong>dado bruto</strong>, <strong>indicador ambiental</strong> e <strong>índice ambiental</strong>.</p></li>
+<li><p>Cite os quatro critérios principais de seleção de indicadores ambientais propostos por OECD (2003), Fidalgo (2003) e IBGE (2018), explicando o risco técnico de ignorar o critério da <em>mensurabilidade</em>.</p></li>
+<li><p>Qual é a principal diferença conceitual entre o modelo <strong>PER</strong> (OCDE) e o modelo <strong>PEIR</strong> (PNUMA/GEO)? Por que essa distinção favorece a articulação com a Avaliação de Impacto Ambiental?</p></li>
+<li><p>Classifique cada item abaixo como <strong>Pressão (P)</strong>, <strong>Estado (E)</strong>, <strong>Impacto (I)</strong> ou <strong>Resposta (R)</strong> em um parque eólico na Caatinga, (a) abertura de <span class="math inline">\(14\text{ km}\)</span> de estradas de acesso; (b) ravina ativa de <span class="math inline">\(1{,}8\text{ m}\)</span> de profundidade na saída de bueiro; (c) percentual de solo exposto de <span class="math inline">\(42\%\)</span> no talude; (d) instalação de dissipadores de energia e revegetação com espécies nativas.</p></li>
+<li><p>Liste três fatores locacionais geográficos que explicam a intensa concentração de parques eólicos na região de Canudos e no eixo do Submédio São Francisco (Casa Nova, Sento Sé e entorno de Sobradinho).</p></li>
+</ol>
+</section>
+<section id="nível-intermediário-cálculos-de-monitoramento-e-interpretação-regional" class="level4">
+<h4 class="anchored" data-anchor-id="nível-intermediário-cálculos-de-monitoramento-e-interpretação-regional">Nível Intermediário (Cálculos de Monitoramento e Interpretação Regional)</h4>
+<ol start="6" type="1">
+<li><p>Um projeto eólico em uma poligonal de <span class="math inline">\(1.200\text{ ha}\)</span> na Bahia prevê <span class="math inline">\(30\)</span> aerogeradores com platôs de <span class="math inline">\(0{,}40\text{ ha}\)</span> cada, <span class="math inline">\(12\text{ km}\)</span> de acessos internos com <span class="math inline">\(8\text{ m}\)</span> de largura média e <span class="math inline">\(2{,}4\text{ ha}\)</span> destinados à subestação. Calcule a área total suprimida (<span class="math inline">\(A_{\text{sup}}\)</span>) e a taxa percentual de supressão (<span class="math inline">\(T_{\text{sup}}\)</span>).</p></li>
+<li><p>Em um período de estiagem prolongada no Submédio São Francisco, a vazão defluente média da Usina Hidrelétrica de Sobradinho foi reduzida de <span class="math inline">\(1.300\text{ m}^3\cdot\text{s}^{-1}\)</span> para <span class="math inline">\(800\text{ m}^3\cdot\text{s}^{-1}\)</span>. Calcule a variação percentual dessa vazão e cite dois impactos socioambientais diretos dessa redução ao longo do eixo Juazeiro-Rodelas-Paulo Afonso.</p></li>
+<li><p>No monitoramento anual de avifauna de um complexo eólico com <span class="math inline">\(50\)</span> torres, registraram-se <span class="math inline">\(24\)</span> carcaças de aves. Ensaios de campo indicaram eficiência de busca <span class="math inline">\(e = 0{,}80\)</span> e persistência de carcaças <span class="math inline">\(p = 0{,}60\)</span>. Calcule a mortalidade total estimada (<span class="math inline">\(M_{\text{est}}\)</span>) e a taxa corrigida de mortalidade em aves por torre por ano.</p></li>
+<li><p>Uma poligonal de empreendimento energético abrange <span class="math inline">\(1.500\text{ ha}\)</span> e contém <span class="math inline">\(27\text{ km}\)</span> de estradas internas não pavimentadas. Determine a densidade viária interna (<span class="math inline">\(D_v\)</span>) em <span class="math inline">\(\text{km}\cdot\text{km}^{-2}\)</span> e discuta como esse indicador se relaciona com a erosão linear na Caatinga.</p></li>
+<li><p>Após obras de drenagem superficial e bioengenharia nos taludes de um parque eólico, o número de focos erosivos ativos reduziu-se de <span class="math inline">\(28\)</span> para <span class="math inline">\(7\)</span> em um ano. Calcule a redução percentual obtida e classifique esse indicador dentro do modelo PEIR.</p></li>
+</ol>
+</section>
+<section id="10-indicadores-ambientais-peir-nível-aplicado-questões-objetivas-ae" class="level4">
+<h4 class="anchored" data-anchor-id="10-indicadores-ambientais-peir-nível-aplicado-questões-objetivas-ae">Nível Aplicado (Questões Objetivas A-E)</h4>
+<ol start="11" type="1">
+<li><p>Sobre os critérios de seleção de indicadores ambientais (OECD, 2003; IBGE, 2018), assinale a alternativa correta,</p>
+<ol type="A">
+<li><p>Um indicador de alta qualidade deve dispensar qualquer protocolo padronizado, permitindo interpretações subjetivas de cada analista.</p></li>
+<li><p>A sensibilidade indica a capacidade do indicador de detectar mudanças ambientais precoces e responder às medidas de manejo em prazo útil.</p></li>
+<li><p>Indicadores compostos (índices) sempre substituem integralmente os indicadores individuais, tornando desnecessário reportar as variáveis de origem.</p></li>
+<li><p>A relevância técnica exige que o indicador utilize equipamentos laboratoriais de alto custo, independentemente da viabilidade de monitoramento contínuo.</p></li>
+<li><p>A mensurabilidade refere-se exclusivamente à possibilidade de converter variáveis qualitativas em médias aritméticas sem base amostral.</p></li>
+</ol></li>
+<li><p>Na matriz PEIR aplicada ao eixo energético do Submédio São Francisco, a “implantação de um programa de monitoramento telemétrico da arara-azul-de-lear e readequação do traçado de linhas de transmissão” corresponde ao componente,</p>
+<ol type="A">
+<li><p>Pressão (P), pois altera o cronograma financeiro do empreendimento.</p></li>
+<li><p>Estado (E), pois descreve a abundância natural da espécie na Caatinga.</p></li>
+<li><p>Impacto (I), pois representa o dano causado pelas torres ao habitat.</p></li>
+<li><p>Resposta (R), pois consiste em ação técnica e de gestão destinada a prevenir ou mitigar impactos sobre a fauna.</p></li>
+<li><p>Fator abiótico de base, externo ao ciclo PEIR.</p></li>
+</ol></li>
+<li><p>Um parque eólico localizado em área de <span class="math inline">\(2.000\text{ ha}\)</span> suprimiu <span class="math inline">\(0{,}50\text{ ha}\)</span> por platô em <span class="math inline">\(20\)</span> torres e abriu <span class="math inline">\(15\text{ km}\)</span> de acessos com <span class="math inline">\(10\text{ m}\)</span> de largura. Sem outras áreas suprimidas, a taxa percentual de supressão (<span class="math inline">\(T_{\text{sup}}\)</span>) da poligonal é igual a,</p>
+<ol type="A">
+<li><p><span class="math inline">\(0{,}50\%\)</span>.</p></li>
+<li><p><span class="math inline">\(0{,}75\%\)</span>.</p></li>
+<li><p><span class="math inline">\(1{,}25\%\)</span>.</p></li>
+<li><p><span class="math inline">\(2{,}50\%\)</span>.</p></li>
+<li><p><span class="math inline">\(5{,}00\%\)</span>.</p></li>
+</ol></li>
+<li><p>Em relação aos processos físicos observados em parques eólicos implantados em chapadas e serras residuais do Semiárido Baiano, é correto afirmar que,</p>
+<ol type="A">
+<li><p>A baixa pluviosidade anual do Semiárido impede completamente a ocorrência de erosão hídrica linear na base das torres.</p></li>
+<li><p>O terraplenamento de platôs e o escoamento concentrado em estradas compactadas sobre solos rasos potencializam sulcos, ravinas e assoreamento de drenagens intermitentes.</p></li>
+<li><p>A substituição da Caatinga por solo exposto em taludes de corte reduz a energia cinética do escoamento superficial.</p></li>
+<li><p>A instalação de aerogeradores elimina a necessidade de medidas de drenagem pluvial e PRAD por se tratar de energia renovável.</p></li>
+<li><p>Os ventos alísios de sudeste são os únicos responsáveis pelo transporte de sedimentos grosseiros nos bueiros das estradas de acesso.</p></li>
+</ol></li>
+<li><p>Em um programa de monitoramento de colisão de avifauna com <span class="math inline">\(25\)</span> torres eólicas durante um ano, foram encontradas <span class="math inline">\(15\)</span> carcaças. Sabendo que a eficiência de busca foi <span class="math inline">\(e = 0{,}50\)</span> e a persistência de carcaças foi <span class="math inline">\(p = 0{,}60\)</span>, a taxa anual corrigida de mortalidade por torre é,</p>
+<ol type="A">
+<li><p><span class="math inline">\(0{,}60\text{ ave}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(1{,}20\text{ aves}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(1{,}50\text{ aves}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(2{,}00\text{ aves}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+<li><p><span class="math inline">\(2{,}50\text{ aves}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}\)</span>.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="questões-de-aplicação" class="level2">
+<h2 class="anchored" data-anchor-id="questões-de-aplicação">Questões de aplicação</h2>
+<section id="foco-de-provas-enade-e-concursos-ibama-inema" class="level3">
+<h3 class="anchored" data-anchor-id="foco-de-provas-enade-e-concursos-ibama-inema">Foco de Provas, ENADE e Concursos (IBAMA / INEMA)</h3>
+<p>Exames de Geografia e concursos para Analista Ambiental frequentemente combinam leitura crítica de matrizes PEIR com dilemas concretos da transição energética no Nordeste brasileiro. Evite respostas binárias (“energia limpa = sem impacto” ou “toda obra é inviável”) e demonstre domínio da diferenciação entre Pressão, Estado, Impacto e Resposta com métricas verificáveis.</p>
+<ol start="16" type="1">
+<li><p><strong>[Questão Autoral, Estilo ENADE / Geografia]</strong> A expansão da energia eólica no Semiárido Baiano, especialmente em municípios como Canudos, Sento Sé e Casa Nova, tem ampliado a participação de fontes renováveis na matriz elétrica nacional. Contudo, levantamentos de campo apontam conflitos socioambientais envolvendo fragmentação da Caatinga, erosão em estradas de acesso, ruído próximo a comunidades rurais e risco de colisão para espécies ameaçadas como a arara-azul-de-lear (<em>Anodorhynchus leari</em>). À luz da Análise Ambiental integrada, avalie as afirmações a seguir,</p>
+<blockquote class="blockquote">
+<p><strong>I.</strong> A viabilidade climática da energia eólica não dispensa o planejamento locacional em escala regional para evitar corredores ecológicos críticos e áreas de uso comunal.<br>
+<strong>II.</strong> O modelo PEIR permite distinguir claramente a abertura de acessos (Pressão), a exposição do solo (Estado), o ravinamento em taludes (Impacto) e as obras de drenagem e PRAD (Resposta).<br>
+<strong>III.</strong> Como a área diretamente ocupada pelas fundações das torres representa pequena fração do terreno, a fragmentação gerada pela malha viária não altera a conectividade da Caatinga.</p>
+</blockquote>
+<p>É correto o que se afirma em,</p>
+<ol type="A">
+<li><p>I, apenas.</p></li>
+<li><p>III, apenas.</p></li>
+<li><p>I e II, apenas.</p></li>
+<li><p>II e III, apenas.</p></li>
+<li><p>I, II e III.</p></li>
+</ol></li>
+<li><p><strong>[Questão Autoral, Estilo Concurso Analista Ambiental / INEMA-BA]</strong> No Submédio São Francisco (trecho Sobradinho-Juazeiro-Rodelas-Paulo Afonso), a gestão ambiental enfrenta pressões simultâneas decorrentes da regularização de vazões hidrelétricas, da captação para perímetros irrigados e da expansão de infraestrutura energética. Para compor um painel estadual de monitoramento baseado no modelo PEIR, um técnico deve escolher o conjunto mais coerente de indicadores. Assinale a alternativa em que os quatro elementos correspondem, respectivamente, a <strong>Pressão, Estado, Impacto e Resposta</strong>,</p>
+<ol type="A">
+<li><p>Assoreamento de bancos de areia; vazão defluente reduzida; plano de bacia; perda de área de vazante.</p></li>
+<li><p>Volume captado para irrigação e operação de barramentos; nível fluviométrico e percentual de vegetação ripária; conflito por usos múltiplos da água e redução da pesca artesanal; alocação negociada de água no comitê de bacia e recomposição de APPs.</p></li>
+<li><p>Recomposição de APPs; conflito por uso da água; operação de barramentos; nível fluviométrico.</p></li>
+<li><p>Nível fluviométrico; volume captado para irrigação; recomposição de APPs; redução da pesca artesanal.</p></li>
+<li><p>Conflito por uso da água; plano de bacia; volume captado; percentual de vegetação ripária.</p></li>
+</ol></li>
+<li><p><strong>[Questão Autoral, Estilo Concurso Analista Ambiental / IBAMA]</strong> Um órgão licenciador exigiu que um empreendimento eólico substituísse indicadores genéricos de seu Programa de Monitoramento por variáveis aderentes aos critérios da OCDE (2003). Qual proposta abaixo atende simultaneamente aos critérios de <strong>relevância técnica, solidez analítica, mensurabilidade e sensibilidade</strong> para monitorar processos erosivos em estradas de acesso?</p>
+<ol type="A">
+<li><p>Registro fotográfico esporádico sem coordenadas geográficas e sem escala métrica, realizado apenas quando houver reclamação de moradores.</p></li>
+<li><p>Quantificação semestral da densidade de sulcos e ravinas ativos por quilômetro de acesso (<span class="math inline">\(\text{focos}\cdot\text{km}^{-1}\)</span>) e da profundidade média das incisões em seções fixas georreferenciadas, acompanhada do percentual de cobertura vegetal nos taludes.</p></li>
+<li><p>Entrevista informal anual com motoristas do parque sobre se a estrada “parece boa ou ruim” após as chuvas.</p></li>
+<li><p>Análise mineralógica por difração de raios X realizada semanalmente em todos os bueiros do empreendimento.</p></li>
+<li><p>Contabilização apenas da geração elétrica anual em megawatts-hora (MWh), por ser o dado de maior precisão disponível na subestação.</p></li>
+</ol></li>
+</ol>
+</section>
+</section>
+<section id="gabarito-comentado" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="gabarito-comentado">Gabarito comentado</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Clique para abrir o Gabarito Comentado
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="resoluções-completas-exercícios-de-fixação-1-a-15" class="level3">
+<h3 class="anchored" data-anchor-id="resoluções-completas-exercícios-de-fixação-1-a-15">Resoluções Completas, Exercícios de Fixação (1 a 15)</h3>
+<ol type="1">
+<li><p><strong>Dado bruto</strong> é a medição isolada sem tratamento interpretativo (por exemplo, <span class="math inline">\(12\text{ focos}\)</span> erosivos contados em uma estrada). <strong>Indicador</strong> é a variável relativizada e ligada a um objetivo de gestão (por exemplo, <span class="math inline">\(1{,}5\text{ focos erosivos}\cdot\text{km}^{-1}\)</span> de acesso, comparado a uma meta de controle). <strong>Índice</strong> é a agregação matemática de múltiplos indicadores normalizados em um número sintético único (por exemplo, Índice de Qualidade do Solo combinando matéria orgânica, porosidade, infiltração e densidade).</p></li>
+<li><p>Os quatro critérios são <strong>relevância política/técnica</strong>, <strong>solidez analítica</strong>, <strong>mensurabilidade</strong> e <strong>sensibilidade</strong>. Ignorar a mensurabilidade resulta em planos de monitoramento inexequíveis na prática (custos proibitivos, ausência de dados históricos ou incapacidade de repetição temporal), gerando relatórios incompletos ou descontinuados.</p></li>
+<li><p>O modelo <strong>PER</strong> reúne alterações físicas do meio e suas consequências sob o guarda-chuva amplo de <em>Estado</em>, ao passo que o <strong>PEIR</strong> desdobra o compartimento <strong>Impacto (I)</strong> de modo explícito. Essa separação facilita a AIA porque conecta diretamente a alteração biofísica mensurada (Estado) ao dano ecológico ou socioeconômico que exige mitigação ou compensação (Impacto).</p></li>
+<li><ol type="a">
+<li><strong>Pressão (P)</strong>, ação antrópica geradora de perturbação; (b) <strong>Impacto (I)</strong>, dano erosivo linear resultante; (c) <strong>Estado (E)</strong>, condição atual da superfície do talude; (d) <strong>Resposta (R)</strong>, intervenção técnica corretiva.</li>
+</ol></li>
+<li><p>Três fatores principais: regime de ventos alísios de sudeste/leste constantes e intensos, complementares à sazonalidade hídrica; relevo de chapadas, patamares elevados e serras residuais que amplificam a velocidade do vento acima da rugosidade da Depressão Sertaneja; e proximidade da infraestrutura de transmissão de alta tensão do Sistema Interligado Nacional estruturada historicamente a partir das hidrelétricas de Paulo Afonso e Sobradinho.</p></li>
+<li><p><strong>Passo a passo,</strong> Platôs, <span class="math inline">\(30 \times 0{,}40\text{ ha} = 12{,}00\text{ ha}\)</span>. Acessos, <span class="math inline">\(12.000\text{ m} \times 8\text{ m} = 96.000\text{ m}^2 = 9{,}60\text{ ha}\)</span>. Subestação, <span class="math inline">\(2{,}40\text{ ha}\)</span>. Área total suprimida, <span class="math inline">\(A_{\text{sup}} = 12{,}00 + 9{,}60 + 2{,}40 = \mathbf{24{,}00\text{ ha}}\)</span>. Taxa de supressão, <span class="math inline">\(T_{\text{sup}} = (24{,}00 / 1.200) \times 100\% = \mathbf{2{,}00\%}\)</span>.</p></li>
+<li><p><strong>Passo a passo,</strong> <span class="math inline">\(\Delta_{\%} = \frac{800 - 1.300}{1.300} \times 100\% = \frac{-500}{1.300} \times 100\% \approx \mathbf{-38{,}46\%}\)</span> (redução de <span class="math inline">\(38{,}46\%\)</span>). Impactos diretos, restrição à agricultura de vazante e pesca artesanal, exposição de bancos arenosos com maior dificuldade de captação ribeirinha e acirramento de conflitos entre geração elétrica, perímetros irrigados e abastecimento humano.</p></li>
+<li><p><strong>Passo a passo,</strong> Fator de detecção combinado, <span class="math inline">\(e \cdot p = 0{,}80 \times 0{,}60 = 0{,}48\)</span>. Mortalidade total estimada, <span class="math inline">\(M_{\text{est}} = 24 / 0{,}48 = \mathbf{50{,}0\text{ aves}\cdot\text{ano}^{-1}}\)</span>. Taxa corrigida por torre, <span class="math inline">\(50{,}0 / 50 = \mathbf{1{,}00\text{ ave}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}}\)</span>.</p></li>
+<li><p><strong>Passo a passo,</strong> Convertemos <span class="math inline">\(1.500\text{ ha}\)</span> para quilômetros quadrados, <span class="math inline">\(A_{\text{km}^2} = 1.500 / 100 = 15{,}0\text{ km}^2\)</span>. Densidade viária, <span class="math inline">\(D_v = 27 / 15{,}0 = \mathbf{1{,}80\text{ km}\cdot\text{km}^{-2}}\)</span>. Uma malha densa de estradas compactadas intercepta o escoamento superficial natural, reduz a infiltração e concentra enxurradas nas saídas de drenagem, desencadeando sulcos e ravinas nos solos rasos da Caatinga.</p></li>
+<li><p><strong>Passo a passo,</strong> <span class="math inline">\(\Delta F_{\%} = \frac{7 - 28}{28} \times 100\% = \frac{-21}{28} \times 100\% = \mathbf{-75{,}0\%}\)</span> (redução de <span class="math inline">\(75{,}0\%\)</span>). O indicador de focos erosivos ativos expressa um <strong>Impacto (I)</strong>, enquanto sua redução monitorada após as obras permite aferir a eficácia da <strong>Resposta (R)</strong> aplicada.</p></li>
+<li><p><strong>Gabarito, (B).</strong> Sensibilidade e responsividade designam exatamente a capacidade de detectar alterações precoces e responder às medidas de manejo. (A) contradiz solidez analítica; (C) é falsa porque índices não substituem o reporte das variáveis de base; (D) confunde rigor com custo proibitivo; (E) distorce mensurabilidade.</p></li>
+<li><p><strong>Gabarito, (D).</strong> Programas de monitoramento faunístico e readequação de traçado são ações de gestão voltadas a prevenir ou mitigar danos, caracterizando <strong>Resposta (R)</strong>.</p></li>
+<li><p><strong>Gabarito, (C).</strong> Platôs, <span class="math inline">\(20 \times 0{,}50 = 10{,}0\text{ ha}\)</span>. Acessos, <span class="math inline">\(15.000\text{ m} \times 10\text{ m} = 150.000\text{ m}^2 = 15{,}0\text{ ha}\)</span>. Total, <span class="math inline">\(25{,}0\text{ ha}\)</span>. Taxa, <span class="math inline">\((25{,}0 / 2.000) \times 100\% = \mathbf{1{,}25\%}\)</span>.</p></li>
+<li><p><strong>Gabarito, (B).</strong> Mesmo com menor total pluviométrico anual, o Semiárido apresenta chuvas convectivas concentradas de alta erosividade; combinadas a solos rasos, terraplenagem e compactação de estradas, elas geram erosão linear intensa e assoreamento.</p></li>
+<li><p><strong>Gabarito, (D).</strong> Produto <span class="math inline">\(e \cdot p = 0{,}50 \times 0{,}60 = 0{,}30\)</span>. Mortalidade total estimada, <span class="math inline">\(M_{\text{est}} = 15 / 0{,}30 = 50\)</span> aves/ano. Dividindo por <span class="math inline">\(25\)</span> torres, <span class="math inline">\(50 / 25 = \mathbf{2{,}00\text{ aves}\cdot\text{torre}^{-1}\cdot\text{ano}^{-1}}\)</span>.</p></li>
+</ol>
+</section>
+<section id="resoluções-completas-questões-enade-e-concursos-16-a-18" class="level3">
+<h3 class="anchored" data-anchor-id="resoluções-completas-questões-enade-e-concursos-16-a-18">Resoluções Completas, Questões ENADE e Concursos (16 a 18)</h3>
+<ol start="16" type="1">
+<li><p><strong>Gabarito, (C).</strong> As afirmações I e II são tecnicamente corretas e articulam o planejamento locacional ao ciclo PEIR. A afirmação III está incorreta porque estruturas lineares (estradas e linhas de transmissão) fragmentam a Caatinga e ampliam o efeito de borda mesmo quando a área suprimida percentual parece pequena.</p></li>
+<li><p><strong>Gabarito, (B).</strong> Apenas (B) respeita a sequência causal exata, captação/operação de barramentos (<strong>P</strong>) <span class="math inline">\(\rightarrow\)</span> nível fluviométrico e vegetação ripária (<strong>E</strong>) <span class="math inline">\(\rightarrow\)</span> conflitos hídricos e queda na pesca (<strong>I</strong>) <span class="math inline">\(\rightarrow\)</span> alocação negociada no CBHSF e recomposição de APPs (<strong>R</strong>).</p></li>
+<li><p><strong>Gabarito, (B).</strong> A densidade semestral de incisões por km, profundidade em seções fixas georreferenciadas e cobertura vegetal de taludes cumpre todos os quatro critérios da OCDE, relevância direta à erosão, protocolo padronizado, viabilidade operacional e alta sensibilidade a medidas de drenagem e revegetação.</p></li>
+</ol>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section id="síntese-conceitual" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="síntese-conceitual">Síntese conceitual</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Síntese Conceitual do Capítulo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Indicador vs.&nbsp;Dado vs.&nbsp;Índice.</strong> Dados brutos alimentam indicadores (variáveis relativizadas com significado de gestão), que podem ser agregados em índices compostos sem descartar a leitura individual. <strong>Critérios de seleção (OECD, 2003; Fidalgo, 2003; IBGE, 2018).</strong> Relevância política/técnica, solidez analítica, mensurabilidade e sensibilidade. <strong>Ciclo PEIR,</strong> Pressão (vetores antrópicos) <span class="math inline">\(\rightarrow\)</span> Estado (condição biofísica) <span class="math inline">\(\rightarrow\)</span> Impacto (consequências ecológicas e sociais) <span class="math inline">\(\rightarrow\)</span> Resposta (mitigação, PRAD, ordenamento) <span class="math inline">\(\rightarrow\)</span> retroalimentação sobre P e E. <strong>Campo no Semiárido Baiano (Canudos e Submédio São Francisco).</strong> A inserção eólica e hidrelétrica exige monitoramento conjunto de supressão e fragmentação da Caatinga (<span class="math inline">\(T_{\text{sup}}\)</span> e <span class="math inline">\(D_v\)</span>), erosão na base de torres e acessos, mortalidade corrigida de avifauna (<span class="math inline">\(M_{\text{est}} = N_{\text{obs}}/(e\cdot p)\)</span>) e governança de vazões no Rio São Francisco.</p>
+</div>
+</div>
+</section>
+<section id="autoavaliação" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="autoavaliação">Autoavaliação</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Autoavaliação e Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Avalie cada afirmação com <strong>V</strong> (Verdadeiro) ou <strong>F</strong> (Falso) antes de conferir o gabarito abaixo,</p>
+<ol type="1">
+<li><p>( ) No modelo PEIR, a abertura de estradas de acesso e a terraplenagem de platôs eólicos são classificadas como <em>Pressão</em>, enquanto a formação de ravinas nos taludes configura um <em>Impacto</em>.</p></li>
+<li><p>( ) Na avaliação de mortalidade de avifauna em parques eólicos, o número bruto de carcaças encontradas é suficiente, pois a eficiência de busca e a ação de necrófagos não afetam a estimativa real.</p></li>
+<li><p>( ) A complementaridade entre o regime de ventos alísios no segundo semestre e a sazonalidade hídrica do Rio São Francisco é um dos fatores locacionais estratégicos da expansão eólica no Semiárido Baiano.</p></li>
+<li><p>( ) Uma baixa taxa percentual de supressão vegetal (<span class="math inline">\(2\%\)</span>) garante, por si só, ausência de fragmentação de habitats e de concentração de escoamento superficial na Caatinga.</p></li>
+</ol>
+<p><strong>Gabarito da verificação da aprendizagem,</strong> 1-<strong>V</strong> | 2-<strong>F</strong> (sem corrigir <span class="math inline">\(e \cdot p\)</span>, a mortalidade real é subestimada) | 3-<strong>V</strong> | 4-<strong>F</strong> (acessos lineares geram fragmentação e concentração de enxurrada mesmo com baixo percentual de área).</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/analise-ambiental\/");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Código deslocável","output":"Saída deslocável"};
+  </script>
+<nav class="page-navigation" aria-label="Página">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/mod3-simulado.html" class="pagination-link" aria-label="Simulado Preparatório para a Avaliação Teórica, Módulos 1 a 3">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Simulado Preparatório para a Avaliação Teórica, Módulos 1 a 3</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/11-qualidade-solo-iqs.html" class="pagination-link" aria-label="Indicadores de Qualidade do Solo e Funcionalidade Edáfica">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores de Qualidade do Solo e Funcionalidade Edáfica</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026 (DCHF/UEFS). <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos02-sketch/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

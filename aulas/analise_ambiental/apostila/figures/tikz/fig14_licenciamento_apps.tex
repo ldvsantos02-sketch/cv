@@ -1,0 +1,90 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}[
+  licBox/.style={
+    draw=#1,
+    fill=#1!7!white,
+    rounded corners=5pt,
+    line width=1.3pt,
+    text width=6.1cm,
+    minimum height=1.85cm,
+    inner sep=8pt,
+    align=center,
+    font=\footnotesize\sffamily,
+    text=uefsInk
+  }
+]
+
+% ================= PAINEL (a): FLUXOGRAMA VERTICAL =================
+\node[aaTitle, font=\normalsize\bfseries\sffamily, text=uefsNavy] (titleA) at (3.3, 6.95)
+  {(a) Licenciamento Ambiental Trifásico\\(Res. CONAMA 237/1997)};
+
+\node[licBox=uefsNavy] (lp) at (3.3, 5.15) {%
+  {\small\bfseries\color{uefsNavy}LP (Licença Prévia)}\\[3pt]
+  Aprova localização e viabilidade ambiental\\
+  (etapa do EIA/RIMA e audiências)%
+};
+
+\node[licBox=uefsGoldDark] (li) at (3.3, 2.35) {%
+  {\small\bfseries\color{uefsGoldDark}LI (Licença de Instalação)}\\[3pt]
+  Autoriza o início das obras conforme\\
+  planos de controle e PBA%
+};
+
+\node[licBox=uefsForest] (lo) at (3.3, -0.45) {%
+  {\small\bfseries\color{uefsForest}LO (Licença de Operação)}\\[3pt]
+  Autoriza funcionamento após verificar\\
+  cumprimento das condicionantes%
+};
+
+% Setas verticais nítidas e bem visíveis entre as caixas
+\draw[aaArrow, color=uefsNavy, line width=1.7pt, shorten <=3pt, shorten >=3pt] (lp.south) -- (li.north);
+\draw[aaArrow, color=uefsGoldDark, line width=1.7pt, shorten <=3pt, shorten >=3pt] (li.south) -- (lo.north);
+
+% ================= PAINEL (b): BARRAS HORIZONTAIS PGFPLOTS =================
+\begin{axis}[
+  at={(10.0cm, -1.35cm)},
+  anchor=south west,
+  width=9.6cm,
+  height=8.4cm,
+  xbar,
+  bar shift=0pt,
+  bar width=0.68cm,
+  xmin=0,
+  xmax=760,
+  ymin=0.35,
+  ymax=5.65,
+  ytick={1,2,3,4,5},
+  yticklabels={< 10 m, 10 a 50 m, 50 a 200 m, 200 a 600 m, > 600 m},
+  xtick={0,100,200,300,400,500,600},
+  xlabel={Largura mínima da APP a partir da calha regular (m)},
+  ylabel={Largura do curso d'água},
+  xlabel style={font=\footnotesize\sffamily, text=uefsInk},
+  ylabel style={font=\footnotesize\sffamily, text=uefsInk},
+  title={(b) APPs Marginais: Código Florestal (Lei nº 12.651/2012)},
+  title style={font=\normalsize\bfseries\sffamily, text=uefsNavy, yshift=4pt},
+  axis lines*=left,
+  axis line style={color=lineGray, line width=0.9pt},
+  tick style={color=uefsMuted},
+  xticklabel style={font=\footnotesize\sffamily, text=uefsInk},
+  yticklabel style={font=\footnotesize\sffamily, text=uefsInk},
+  clip=false
+]
+
+\addplot[xbar, bar shift=0pt, fill=uefsTeal, draw=none] coordinates {(30, 1) (50, 2)};
+\addplot[xbar, bar shift=0pt, fill=uefsForest, draw=none] coordinates {(100, 3) (200, 4)};
+\addplot[xbar, bar shift=0pt, fill=uefsNavy, draw=none] coordinates {(500, 5)};
+
+% Rótulos das faixas marginais
+\node[right=4pt, font=\footnotesize\bfseries\sffamily, text=uefsInk] at (axis cs:30,  1) {30 m (cada margem)};
+\node[right=4pt, font=\footnotesize\bfseries\sffamily, text=uefsInk] at (axis cs:50,  2) {50 m (cada margem)};
+\node[right=4pt, font=\footnotesize\bfseries\sffamily, text=uefsInk] at (axis cs:100, 3) {100 m (cada margem)};
+\node[right=4pt, font=\footnotesize\bfseries\sffamily, text=uefsInk] at (axis cs:200, 4) {200 m (cada margem)};
+\node[right=4pt, font=\footnotesize\bfseries\sffamily, text=uefsInk] at (axis cs:500, 5) {500 m (cada margem)};
+
+\end{axis}
+
+\end{tikzpicture}
+\end{document}

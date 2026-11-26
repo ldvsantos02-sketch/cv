@@ -32,21 +32,14 @@ Um real recebido hoje vale mais do que um real a ser recebido daqui a um ano por
 A \textbf{Taxa Mínima de Atratividade (TMA)} é a taxa de retorno mínima que o investidor ou empreendedor exige para aceitar o projeto, equivalente ao rendimento da melhor alternativa disponível de risco comparável (custo de oportunidade do capital).
 
 \begin{boxSimbolo}[Vocabulário Conceitual e Símbolos do Capítulo 13]
-\begin{itemize}[leftmargin=1.3em, itemsep=2pt]
-  \item $FC_t$ ou $FCL_t$: Fluxo de Caixa Livre no período $t$ ($t = 0, 1, \dots, n$).
-  \item $TMA$: Taxa Mínima de Atratividade (taxa de desconto em decimal, ex.: $0{,}12$ para $12\%$ a.a.).
-  \item $VPL$: Valor Presente Líquido (em \reais{}); $IL$: Índice de Lucratividade.
-  \item $TIR$: Taxa Interna de Retorno (taxa que anula o VPL).
-  \item $MTIR$: Taxa Interna de Retorno Modificada, com taxa de financiamento $k_f$ e taxa de reinvestimento $k_r$.
-  \item $VAUE$: Valor Anual Uniforme Equivalente; $FRC(i,n)$: Fator de Recuperação de Capital.
-  \item $PBS$ e $PBD$: Payback Simples e Payback Descontado (em anos ou períodos).
-  \item $LAIR$: Lucro Antes do Imposto de Renda; $Depr$: Depreciação contábil; $\Delta CG$: Variação de Capital de Giro.
-\end{itemize}
+Na modelagem intertemporal, $FC_t$ ou $FCL_t$ indica o Fluxo de Caixa Livre no período $t$ ($t = 0, 1, \dots, n$), descontado pela Taxa Mínima de Atratividade ($TMA$, expressa em decimal, como $0{,}12$ para $12\%$ a.a.). A criação absoluta de riqueza em moeda presente é medida pelo Valor Presente Líquido ($VPL$, em \reais{}), complementado pelo Índice de Lucratividade ($IL$).
+
+Entre os indicadores de taxa e prazo, $TIR$ designa a Taxa Interna de Retorno que anula o VPL, enquanto $MTIR$ representa a Taxa Interna de Retorno Modificada, calculada com taxa de financiamento $k_f$ e taxa de reinvestimento $k_r$. Por meio do Fator de Recuperação de Capital $FRC(i,n)$, o Valor Anual Uniforme Equivalente ($VAUE$) permite comparar alternativas de durações distintas. O tempo de recuperação do capital é aferido pelo Payback Simples ($PBS$) e pelo Payback Descontado ($PBD$, em anos ou períodos), ao passo que a apuração do fluxo parte do Lucro Antes do Imposto de Renda ($LAIR$), da Depreciação contábil ($Depr$) e da Variação de Capital de Giro ($\Delta CG$).
 \end{boxSimbolo}
 
 \subsection{Construção do Fluxo de Caixa Livre (FCL)}
 
-A análise de investimentos utiliza \textbf{caixa efetivo}, nunca apenas lucro contábil. Como a depreciação reduz o lucro tributável sem representar saída de dinheiro do caixa, ela é subtraída para calcular o imposto de renda e somada de volta após o imposto:
+A análise de investimentos utiliza \textbf{caixa efetivo}, nunca apenas lucro contábil. Como a depreciação reduz o lucro tributável sem representar saída de dinheiro do caixa, ela é subtraída para calcular o imposto de renda e somada de volta após o imposto.
 
 \begin{boxFormula}[Estrutura Padrão do Fluxo de Caixa Livre ($FCL_t$)]
 \begin{align*}
@@ -72,7 +65,7 @@ No Ano $0$, geralmente $\text{FCL}_0 = -\text{CAPEX}_0 - \text{CG}_0$. Ao final 
 \[
   \sum_{t=0}^{n} \frac{FCL_t}{(1 + TIR)^t} = 0
 \]
-\textit{Critério de decisão:} para projetos convencionais (um sinal negativo em $t=0$ seguido de positivos), aceitar se $TIR > TMA$. \textbf{Problemas críticos da TIR:} (i) em fluxos não convencionais (com múltiplas inversões de sinal, como descomissionamento ambiental no último ano), a equação polinomial gera \textbf{múltiplas TIRs} ou nenhuma raiz real (Regra dos Sinais de Descartes); (ii) a TIR pressupõe implicitamente que os fluxos intermediários positivos são reinvestidos à própria $TIR$, o que é irrealista quando a $TIR$ é muito superior à taxa de mercado.
+\textit{Critério de decisão:} para projetos convencionais (um sinal negativo em $t=0$ seguido de positivos), aceitar se $TIR > TMA$. Dois problemas críticos limitam esse indicador. Em fluxos não convencionais, com múltiplas inversões de sinal (como descomissionamento ambiental no último ano), a equação polinomial gera \textbf{múltiplas TIRs} ou nenhuma raiz real (Regra dos Sinais de Descartes); além disso, a TIR pressupõe implicitamente que os fluxos intermediários positivos são reinvestidos à própria $TIR$, o que é irrealista quando a $TIR$ é muito superior à taxa de mercado.
 
 \vspace{5pt}
 \textbf{3. Taxa Interna de Retorno Modificada (MTIR):} corrige o pressuposto irrealista de reinvestimento da TIR descontando os fluxos negativos à taxa de financiamento ($k_f$) até $t=0$ e capitalizando os fluxos positivos à taxa de reinvestimento ($k_r$, geralmente a $TMA$) até $t=n$:
@@ -95,6 +88,8 @@ No Ano $0$, geralmente $\text{FCL}_0 = -\text{CAPEX}_0 - \text{CG}_0$. Ao final 
 \]
 \end{boxFormula}
 
+A Figura~\ref{fig:13_perfil} ilustra o comportamento do Valor Presente Líquido em função da taxa de desconto, evidenciando o ponto em que a curva cruza o eixo horizontal (a própria TIR) e permitindo comparar projetos mutuamente excludentes sob diferentes custos de oportunidade.
+
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.88\textwidth]{figures/fig13_perfil_vpl_tir.pdf}
@@ -104,11 +99,7 @@ No Ano $0$, geralmente $\text{FCL}_0 = -\text{CAPEX}_0 - \text{CG}_0$. Ao final 
 
 \subsection{Análise de sensibilidade e cenários}
 
-Como projeções financeiras contêm incerteza, avalia-se a robustez do VPL por dois caminhos complementares:
-\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
-  \item \textbf{Análise de Sensibilidade (univariada):} varia-se uma única premissa por vez (ex.: preço $-10\%$, OPEX $+15\%$, ou $TMA$ de $8\%$ a $16\%$) para identificar qual variável mais ameaça o VPL.
-  \item \textbf{Análise de Cenários (multivariada):} definem-se estados consistentes (\textit{Pessimista}, \textit{Base} e \textit{Otimista}) com probabilidades atribuídas $p_s$ ($\sum p_s = 1$), calculando-se o VPL esperado: $\mathbb{E}[VPL] = \sum_s p_s \cdot VPL_s$.
-\end{itemize}
+Como projeções financeiras contêm incerteza quanto a preços, custos e demanda territorial, avalia-se a robustez do VPL por dois caminhos complementares. Na \textbf{Análise de Sensibilidade (univariada)}, você varia uma única premissa por vez, mantendo as demais constantes (por exemplo, preço em $-10\%$, OPEX em $+15\%$ ou $TMA$ oscilando de $8\%$ a $16\%$), para identificar qual variável exerce maior impacto sobre a viabilidade do projeto. Já na \textbf{Análise de Cenários (multivariada)}, definem-se estados macroeconômicos e territoriais consistentes (\textit{Pessimista}, \textit{Base} e \textit{Otimista}) com probabilidades atribuídas $p_s$ ($\sum p_s = 1$), calculando-se o VPL esperado pela média ponderada $\mathbb{E}[VPL] = \sum_s p_s \cdot VPL_s$.
 
 \etapa{4}{Exemplos Resolvidos Passo a Passo}
 
@@ -278,7 +269,7 @@ Na modelagem financeira de projetos de base territorial, nunca utilize $TMA = 0\
 \clearpage
 \etapa{8}{Gabarito Integralmente Comentado (Exercícios 1 a 15 + Desafios 1 a 3)}
 
-\begin{boxGabarito}[Resolução Passo a Passo — Exercícios de Fixação (1 a 15)]
+\begin{boxGabarito}[Resolução Passo a Passo: Exercícios de Fixação (1 a 15)]
 \begin{enumerate}[leftmargin=1.5em, itemsep=4pt]
   \item \textbf{Juros compostos:} $VF = 50.000 \times (1{,}12)^3 = 50.000 \times 1{,}404928 = \mathbf{\reais{70.246{,}40}}$.
   \item \textbf{FCL Ano 1:} $LAIR = 400.000 - 220.000 - 60.000 = \reais{120.000}$. $IR(25\%) = \reais{30.000}$. Lucro Líquido $= \reais{90.000}$. $FCO = 90.000 + 60.000 = \reais{150.000}$. $FCL_1 = 150.000 - 20.000 = \mathbf{\reais{130.000}}$.
@@ -307,7 +298,7 @@ Na modelagem financeira de projetos de base territorial, nunca utilize $TMA = 0\
 \end{enumerate}
 \end{boxGabarito}
 
-\begin{boxGabarito}[Diretrizes de Resposta — Desafios Autorais (1 a 3)]
+\begin{boxGabarito}[Diretrizes de Resposta: Desafios Autorais (1 a 3)]
 \begin{enumerate}[leftmargin=1.5em, itemsep=3pt]
   \item \textbf{Desafio 1:} O grupo deve explicitar a tabela completa Receita $\to$ OPEX $\to$ Depreciação $\to$ LAIR $\to$ IR $\to$ FCO $\to$ $\Delta CG$ $\to$ FCL, vinculando a TMA à Selic ou ao custo de captação do FNE/BNDES acrescido de prêmio de risco.
   \item \textbf{Desafio 2:} Deve recalcular o FCL após o choque de $-20\%$ na variável crítica e comparar o novo VPL com o cenário base, identificando o ponto de virada (break-even financeiro).

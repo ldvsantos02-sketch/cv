@@ -1,0 +1,103 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% =========================================================
+% PAINEL (a) Cadeia Causal na Análise de Impactos (Sánchez, 2013)
+% =========================================================
+\node[aaTitle] at (0, 3.25) {(a) Cadeia Causal na Análise de Impactos (Sánchez, 2013)};
+
+\node[aaBox=uefsNavy, fill=bgNavy, text width=3.35cm, minimum height=2.75cm, inner sep=7pt] (ativ) at (-4.1, 1.05) {
+  \textbf{\color{uefsNavy}ATIVIDADE}\\[-1pt]
+  \textbf{\color{uefsNavy}HUMANA}\\[1pt]
+  \textbf{(Causa)}\\[4pt]
+  \scriptsize Ex.: abertura de estrada em encosta
+};
+
+\node[aaBox=uefsGold, fill=bgGold, text width=3.35cm, minimum height=2.75cm, inner sep=7pt] (asp) at (0, 1.05) {
+  \textbf{\color{uefsGoldDark}ASPECTO}\\[-1pt]
+  \textbf{\color{uefsGoldDark}AMBIENTAL}\\[1pt]
+  \textbf{(Mecanismo)}\\[4pt]
+  \scriptsize Ex.: exposição do solo à chuva
+};
+
+\node[aaBox=uefsAlert, fill=bgAlert, text width=3.35cm, minimum height=2.75cm, inner sep=7pt] (imp) at (4.1, 1.05) {
+  \textbf{\color{uefsAlert}IMPACTO}\\[-1pt]
+  \textbf{\color{uefsAlert}AMBIENTAL}\\[1pt]
+  \textbf{(Efeito)}\\[4pt]
+  \scriptsize Ex.: erosão linear e assoreamento
+};
+
+\draw[aaArrow, uefsNavy, shorten >=3pt, shorten <=3pt] (ativ.east) -- (asp.west);
+\draw[aaArrow, uefsAlert, shorten >=3pt, shorten <=3pt] (asp.east) -- (imp.west);
+
+% Quadro inferior amplo contendo a distinção de Sánchez (2013)
+\node[aaBox=uefsTeal, fill=bgTeal, text width=11.4cm, minimum height=1.65cm, inner sep=9pt] (dist) at (0, -1.75) {
+  \footnotesize\textbf{\color{uefsNavy}Distinção essencial (Sánchez, 2013):} o \textbf{ASPECTO} é o elemento da atividade que interage com o ambiente; o \textbf{IMPACTO} é a alteração resultante na qualidade ambiental (pode ser adverso ou benéfico).
+};
+
+% =========================================================
+% PAINEL (b) Matriz Conceitual de Risco (R = P x V)
+% =========================================================
+\node[aaTitle] at (12.2, 3.25) {(b) Matriz Conceitual de Risco ($R = P \times V$)};
+
+\begin{scope}[shift={(9.3, -2.3)}]
+  % Cores graduais por nível de risco
+  \definecolor{rBaixo1}{HTML}{D8F3DC}
+  \definecolor{rBaixo2}{HTML}{B7E4C7}
+  \definecolor{rBaixo3}{HTML}{FFF3B0}
+  \definecolor{rMedio}{HTML}{FFE066}
+  \definecolor{rAlto}{HTML}{FDAE61}
+  \definecolor{rCrit1}{HTML}{F46D43}
+  \definecolor{rCrit2}{HTML}{D73027}
+
+  % Tamanho de cada célula: 1.45 x 1.2
+  \def\cw{1.45}
+  \def\ch{1.2}
+
+  % Linha P=1 (y=0)
+  \filldraw[fill=rBaixo1, draw=white, line width=1.2pt] (0*\cw, 0*\ch) rectangle (1*\cw, 1*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=uefsInk] {1\\(Baixo)};
+  \filldraw[fill=rBaixo2, draw=white, line width=1.2pt] (1*\cw, 0*\ch) rectangle (2*\cw, 1*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=uefsInk] {2\\(Baixo)};
+  \filldraw[fill=rBaixo3, draw=white, line width=1.2pt] (2*\cw, 0*\ch) rectangle (3*\cw, 1*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=uefsInk] {3\\(Baixo)};
+  \filldraw[fill=rMedio,  draw=white, line width=1.2pt] (3*\cw, 0*\ch) rectangle (4*\cw, 1*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=uefsInk] {4\\(Médio)};
+
+  % Linha P=2 (y=1)
+  \filldraw[fill=rBaixo2, draw=white, line width=1.2pt] (0*\cw, 1*\ch) rectangle (1*\cw, 2*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=uefsInk] {2\\(Baixo)};
+  \filldraw[fill=rMedio,  draw=white, line width=1.2pt] (1*\cw, 1*\ch) rectangle (2*\cw, 2*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=uefsInk] {4\\(Médio)};
+  \filldraw[fill=rAlto!65!rMedio, draw=white, line width=1.2pt] (2*\cw, 1*\ch) rectangle (3*\cw, 2*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=uefsInk] {6\\(Médio)};
+  \filldraw[fill=rAlto,   draw=white, line width=1.2pt] (3*\cw, 1*\ch) rectangle (4*\cw, 2*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=uefsInk] {8\\(Alto)};
+
+  % Linha P=3 (y=2)
+  \filldraw[fill=rBaixo3, draw=white, line width=1.2pt] (0*\cw, 2*\ch) rectangle (1*\cw, 3*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=uefsInk] {3\\(Baixo)};
+  \filldraw[fill=rAlto!65!rMedio, draw=white, line width=1.2pt] (1*\cw, 2*\ch) rectangle (2*\cw, 3*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=uefsInk] {6\\(Médio)};
+  \filldraw[fill=rCrit1!75!white, draw=white, line width=1.2pt] (2*\cw, 2*\ch) rectangle (3*\cw, 3*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=uefsInk] {9\\(Alto)};
+  \filldraw[fill=rCrit1,  draw=white, line width=1.2pt] (3*\cw, 2*\ch) rectangle (4*\cw, 3*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=white] {12\\(Crítico)};
+
+  % Linha P=4 (y=3)
+  \filldraw[fill=rMedio,  draw=white, line width=1.2pt] (0*\cw, 3*\ch) rectangle (1*\cw, 4*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=uefsInk] {4\\(Médio)};
+  \filldraw[fill=rAlto,   draw=white, line width=1.2pt] (1*\cw, 3*\ch) rectangle (2*\cw, 4*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=uefsInk] {8\\(Alto)};
+  \filldraw[fill=rCrit1,  draw=white, line width=1.2pt] (2*\cw, 3*\ch) rectangle (3*\cw, 4*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=white] {12\\(Crítico)};
+  \filldraw[fill=rCrit2,  draw=white, line width=1.2pt] (3*\cw, 3*\ch) rectangle (4*\cw, 4*\ch) node[midway, align=center, font=\scriptsize\bfseries, text=white] {16\\(Crítico)};
+
+  % Borda externa da matriz
+  \draw[lineGray, line width=1pt] (0,0) rectangle (4*\cw, 4*\ch);
+
+  % Ticks e Rótulos do Eixo X (Vulnerabilidade V)
+  \foreach \i/\lbl in {0.5/{1\\Baixa}, 1.5/{2\\Média}, 2.5/{3\\Alta}, 3.5/{4\\Muito alta}} {
+    \draw[uefsInk, line width=0.8pt] (\i*\cw, 0) -- (\i*\cw, -0.1);
+    \node[below=3pt, align=center, font=\scriptsize, text=uefsInk] at (\i*\cw, -0.08) {\lbl};
+  }
+  \node[below=26pt, font=\footnotesize\bfseries, text=uefsInk] at (2*\cw, -0.05) {Vulnerabilidade ($V$)};
+
+  % Ticks e Rótulos do Eixo Y (Perigo / Ameaça P)
+  \foreach \j/\lbl in {0.5/{1 Baixo}, 1.5/{2 Médio}, 2.5/{3 Alto}, 3.5/{4 Crítico}} {
+    \draw[uefsInk, line width=0.8pt] (0, \j*\ch) -- (-0.1, \j*\ch);
+    \node[left=3pt, align=right, font=\scriptsize, text=uefsInk] at (-0.08, \j*\ch) {\lbl};
+  }
+  \node[rotate=90, anchor=center, font=\footnotesize\bfseries, text=uefsInk] at (-1.58, 2*\ch) {Perigo / Ameaça ($P$)};
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

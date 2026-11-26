@@ -1,0 +1,87 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}[
+  stageBox/.style={
+    draw=#1,
+    fill=#1!8!white,
+    rounded corners=5pt,
+    line width=1.4pt,
+    text width=3.15cm,
+    minimum height=3.85cm,
+    inner sep=7pt,
+    align=center,
+    font=\footnotesize\sffamily,
+    text=uefsInk
+  },
+  stageDark/.style={
+    draw=uefsAlert!55!black,
+    fill=uefsAlert!75!black,
+    rounded corners=5pt,
+    line width=1.4pt,
+    text width=3.15cm,
+    minimum height=3.85cm,
+    inner sep=7pt,
+    align=center,
+    font=\footnotesize\sffamily,
+    text=white
+  }
+]
+
+% Título principal (sem travessão e sem ponto de exclamação)
+\node[aaTitle, font=\large\bfseries\sffamily, text=uefsNavy] (title) at (9.0, 3.05)
+  {Sequência Evolutiva da Erosão Hídrica: Do Impacto da Gota à Voçoroca};
+
+% 5 estágios com espaçamento amplo para setas nítidas
+\node[stageBox=uefsTeal] (s1) at (0.0, 0.0) {%
+  {\small\bfseries\color{uefsTeal}1. SPLASH}\\[1pt]
+  {\footnotesize\bfseries\color{uefsTeal}(Salpicamento)}\\[6pt]
+  {\color{uefsTeal!45!white}\rule{2.6cm}{0.6pt}}\\[7pt]
+  Impacto da gota desagrega torrões e gera selamento%
+};
+
+\node[stageBox=uefsGoldDark] (s2) at (4.5, 0.0) {%
+  {\small\bfseries\color{uefsGoldDark}2. EROSÃO}\\[1pt]
+  {\footnotesize\bfseries\color{uefsGoldDark}LAMINAR}\\[6pt]
+  {\color{uefsGoldDark!45!white}\rule{2.6cm}{0.6pt}}\\[7pt]
+  Escoamento em lâmina remove camada fértil%
+};
+
+\node[stageBox=uefsOrange] (s3) at (9.0, 0.0) {%
+  {\small\bfseries\color{uefsOrange}3. SULCOS}\\[1pt]
+  {\footnotesize\bfseries\color{uefsOrange}(< 0,5 m)}\\[6pt]
+  {\color{uefsOrange!45!white}\rule{2.6cm}{0.6pt}}\\[7pt]
+  Fluxo concentra-se em pequenos canais (ainda reversíveis)%
+};
+
+\node[stageBox=uefsAlert] (s4) at (13.5, 0.0) {%
+  {\small\bfseries\color{uefsAlert}4. RAVINAS}\\[1pt]
+  {\footnotesize\bfseries\color{uefsAlert}(> 0,5 m)}\\[6pt]
+  {\color{uefsAlert!45!white}\rule{2.6cm}{0.6pt}}\\[7pt]
+  Incisão profunda por escoamento superficial%
+};
+
+\node[stageDark] (s5) at (18.0, 0.0) {%
+  {\small\bfseries\color{white}5. VOÇOROCA}\\[1pt]
+  {\footnotesize\bfseries\color{white}(Colapso)}\\[6pt]
+  {\color{white!55!uefsAlert}\rule{2.6cm}{0.6pt}}\\[7pt]
+  Atinge o lençol freático (piping) e solapa taludes%
+};
+
+% Setas bem visíveis entre os estágios
+\draw[aaArrow, color=uefsNavy, line width=1.8pt, shorten <=3pt, shorten >=3pt] (s1.east) -- (s2.west);
+\draw[aaArrow, color=uefsNavy, line width=1.8pt, shorten <=3pt, shorten >=3pt] (s2.east) -- (s3.west);
+\draw[aaArrow, color=uefsNavy, line width=1.8pt, shorten <=3pt, shorten >=3pt] (s3.east) -- (s4.west);
+\draw[aaArrow, color=uefsNavy, line width=1.8pt, shorten <=3pt, shorten >=3pt] (s4.east) -- (s5.west);
+
+% Barra inferior progressiva
+\draw[->, >=Stealth, line width=3.2pt, color=uefsAlert]
+  ([yshift=-0.85cm]s1.south west) -- ([yshift=-0.85cm]s5.south east);
+
+\node[font=\small\bfseries\sffamily, text=uefsAlert, align=center]
+  at (9.0, -3.35)
+  {Aumento exponencial da severidade, perda de solo e custo de recuperação (prevenir custa menos)};
+
+\end{tikzpicture}
+\end{document}

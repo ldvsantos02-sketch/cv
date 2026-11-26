@@ -1,0 +1,69 @@
+\documentclass[tikz,border=6pt]{standalone}
+\input{aa_tikz_style.tex}
+
+\begin{document}
+\begin{tikzpicture}
+
+% Título
+\node[aaTitle] at (7.75, 7.35)
+  {Modelo PEIR (OCDE / PNUMA) Aplicado à Inserção Eólica e Energética no Semiárido Baiano};
+
+% Estilo local para caixas PEIR largas (sem estouro de borda)
+\tikzset{
+  peirBox/.style={
+    draw=#1,
+    rounded corners=5pt,
+    line width=1.4pt,
+    text width=6.35cm,
+    minimum height=2.55cm,
+    inner sep=9pt,
+    align=left,
+    font=\footnotesize\sffamily,
+    text=uefsInk
+  }
+}
+
+% PRESSÃO (P) - Superior Esquerdo
+\node[peirBox=uefsGold, fill=bgGold] (P) at (3.6, 5.25) {%
+  {\small\bfseries\color{uefsGoldDark}PRESSÃO (P)}\\[5pt]
+  \textbullet\enspace Abertura de acessos e platôs de torres\\
+  \textbullet\enspace Supressão de Caatinga e trânsito pesado\\
+  \textbullet\enspace Alteração de vazões no São Francisco
+};
+
+% ESTADO (E) - Superior Direito
+\node[peirBox=uefsNavy, fill=bgNavy] (E) at (11.9, 5.25) {%
+  {\small\bfseries\color{uefsNavy}ESTADO (E)}\\[5pt]
+  \textbullet\enspace Taxa de solo exposto e compactação\\
+  \textbullet\enspace Fragmentação de habitats na Caatinga\\
+  \textbullet\enspace Densidade de drenagem e cobertura vegetal
+};
+
+% IMPACTO (I) - Inferior Direito
+\node[peirBox=uefsAlert, fill=bgAlert] (I) at (11.9, 1.55) {%
+  {\small\bfseries\color{uefsAlert}IMPACTO (I)}\\[5pt]
+  \textbullet\enspace Erosão linear na base de torres e acessos\\
+  \textbullet\enspace Interferência com avifauna local (colisão)\\
+  \textbullet\enspace Assoreamento e conflitos socioambientais
+};
+
+% RESPOSTA (R) - Inferior Esquerdo
+\node[peirBox=uefsForest, fill=bgForest] (R) at (3.6, 1.55) {%
+  {\small\bfseries\color{uefsForest}RESPOSTA (R)}\\[5pt]
+  \textbullet\enspace PRAD, drenagem e bioengenharia de solos\\
+  \textbullet\enspace Monitoramento de fauna e ruído\\
+  \textbullet\enspace Ordenamento territorial e compensação
+};
+
+% Setas ortogonais do ciclo PEIR
+\draw[aaArrow, color=uefsNavy, line width=1.8pt]
+  ([xshift=4pt]P.east) -- ([xshift=-4pt]E.west);
+\draw[aaArrow, color=uefsAlert, line width=1.8pt]
+  ([yshift=-4pt]E.south) -- ([yshift=4pt]I.north);
+\draw[aaArrow, color=uefsForest, line width=1.8pt]
+  ([xshift=-4pt]I.west) -- ([xshift=4pt]R.east);
+\draw[aaArrow, color=uefsGoldDark, line width=1.8pt]
+  ([yshift=4pt]R.north) -- ([yshift=-4pt]P.south);
+
+\end{tikzpicture}
+\end{document}

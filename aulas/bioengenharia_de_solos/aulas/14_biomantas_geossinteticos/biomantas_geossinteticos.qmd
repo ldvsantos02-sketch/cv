@@ -12,11 +12,12 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text}
+## <span class="pitch-tag">Abertura</span> Visão Geral da Aula {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Roteiro da aula]{.pitch-card-index}
+[Tópicos estruturantes]{.pitch-heading}
 
 - [1]{.circle} O que são biomantas?
 - [2]{.circle} Biomanta × Geotêxtil sintético
@@ -28,112 +29,113 @@ execute:
 - [8]{.circle} Síntese e atividade
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Objetivo central]{.pitch-card-index}
+[Proteção temporária e sucessão vegetal]{.pitch-heading}
 
 Compreender os princípios de funcionamento das **biomantas** (*erosion control blankets*) como técnica de **proteção de superfície** contra a erosão laminar, diferenciar biomantas de **geotêxteis sintéticos**, dominar os critérios de **seleção**, **dimensionamento** e **instalação** para garantir a **sucessão vegetal** sob a manta.
 :::
-:::
-:::
 
-# [1. O QUE SÃO BIOMANTAS?]{.section-header}
-
-## Definição e conceito {.smaller-text}
-
-::: {.columns}
-::: {.column width="55%"}
-
-### Conceito
-
-**Biomantas** (*erosion control blankets* - ECBs) são tramas **biodegradáveis** fabricadas a partir de fibras naturais que são estendidas sobre a superfície do solo para:
-
-- **Proteger** contra o impacto direto das gotas de chuva (*splash erosion*)
-- **Reduzir** a velocidade do escoamento superficial
-- **Reter** umidade e sementes no solo
-- **Criar** microclima favorável à germinação
-- **Degradar-se** progressivamente, incorporando matéria orgânica ao solo
-
-::: {.highlight-box}
-💡 A biomanta é uma **proteção temporária** que cumpre sua função até que a **vegetação se estabeleça** e assuma o papel de cobertura permanente do solo.
-:::
-:::
-
-::: {.column width="45%"}
-
-### Mecanismo de proteção
-
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Chuva<br>(energia cinética)"] -->|"Sem biomanta"| B["Impacto direto<br>no solo"]
-    B --> C["Desagregação<br>de partículas"]
-    C --> D["Erosão laminar"]
-    A -->|"Com biomanta"| E["Energia<br>dissipada"]
-    E --> F["Solo protegido"]
-    F --> G["Germinação sob<br>a manta"]
-    G --> H["Vegetação<br>permanente"]
-    style A fill:#4FC3F7,color:#000
-    style B fill:#27368C,color:#fff
-    style D fill:#27368C,color:#fff
-    style E fill:#2E7D32,color:#fff
-    style H fill:#2E7D32,color:#fff
-```
-:::
-:::
-
-## Galeria: Geotêxteis e biomantas em campo {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-![Geotêxtil instalado em canal de drenagem - Michigan, EUA (USDA NRCS, Public Domain)](img/fig01_geotextile_chute.jpg){width="100%"}
-
-:::{.smaller-text}
-Foto: Fred Gasper / USDA NRCS - Public Domain
-:::
-:::
-
-::: {.column width="50%"}
-
-![Detalhe de gramíneas crescendo através de geotêxtil - Michigan, EUA (USDA NRCS, Public Domain)](img/fig02_grass_geotextile.jpg){width="100%"}
-
-:::{.smaller-text}
-Foto: Fred Gasper / USDA NRCS - Public Domain
+::: {.pitch-pill-row}
+[ECBs · ABNT NBR 16.757:2020]{.pitch-pill}
+[Coco · Sisal · Juta · Palha]{.pitch-pill .pitch-pill--gold}
+[Biodegradação e MO]{.pitch-pill}
 :::
 :::
 :::
 
-## Histórico e importância {.smaller-text}
+# 1 · O que são biomantas? {.section-header rotulo="Conceito"}
 
-::: {.columns}
-::: {.column width="55%"}
+## <span class="pitch-tag">Conceito</span> Definição e mecanismo de proteção superficial {.smaller-text .academic-slide .lesson-slide}
 
-### Evolução das biomantas
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Erosion Control Blankets (ECBs)]{.pitch-card-index}
+[Tramas biodegradáveis de fibras naturais]{.pitch-heading}
 
-- **1950s-1960s**: Primeiros geotêxteis sintéticos (polipropileno, poliéster)
-- **1970s**: Surgimento das biomantas de juta na Índia e Bangladesh
-- **1980s**: Introdução de fibra de coco como alternativa mais durável
-- **1990s**: Padronização (ASTM, ECTC) e expansão global
-- **2000s em diante**: Biomantas reforçadas com sementes (*pre-seeded blankets*) e formulações regionalizadas
+- **Protegem** contra impacto direto das gotas de chuva (*splash erosion*)
+- **Reduzem** a velocidade do escoamento superficial
+- **Retêm** umidade e sementes, criando microclima favorável
+- **Degradam-se** progressivamente, incorporando matéria orgânica
+:::
 
-### Por que usar biomantas?
+::: {.pitch-band}
+A biomanta é uma **proteção temporária** que cumpre sua função física até que a **vegetação se estabeleça** como cobertura permanente.
+:::
+:::
 
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--alert}
+[Sem biomanta]{.pitch-card-index}
+[Solo exposto]{.pitch-heading}
+
+Chuva (energia cinética) $\rightarrow$ impacto direto no solo $\rightarrow$ desagregação de partículas $\rightarrow$ **erosão laminar**.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[Com biomanta]{.pitch-card-index}
+[Solo protegido]{.pitch-heading}
+
+Energia dissipada na trama $\rightarrow$ solo protegido $\rightarrow$ germinação sob a manta $\rightarrow$ **vegetação permanente**.
+:::
+:::
+:::
+
+## <span class="pitch-tag">Conceito</span> Galeria: geotêxteis e biomantas em campo {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
+
+![Geotêxtil instalado em canal de drenagem em Michigan, EUA](img/fig01_geotextile_chute.jpg)
+
+[Canal de drenagem revestido (Michigan, EUA)]{.pitch-caption}
+[Foto: Fred Gasper / USDA NRCS · Public Domain]{.pitch-caption-sub}
+:::
+
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
+
+![Detalhe de gramíneas crescendo através de geotêxtil em Michigan, EUA](img/fig02_grass_geotextile.jpg)
+
+[Emergência de gramíneas através da malha]{.pitch-caption}
+[Foto: Fred Gasper / USDA NRCS · Public Domain]{.pitch-caption-sub}
+:::
+:::
+
+## <span class="pitch-tag">Conceito</span> Evolução histórica, ganhos e marco brasileiro {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1950s–1960s:** primeiros geotêxteis sintéticos (polipropileno, poliéster).
+:::
+
+::: {.pitch-milestone-item}
+**1970s–1980s:** biomantas de juta (Índia/Bangladesh) e introdução da fibra de coco de maior durabilidade.
+:::
+
+::: {.pitch-milestone-item}
+**1990s–2000s+:** padronização ASTM/ECTC e biomantas pré-semeadas (*pre-seeded blankets*) regionalizadas.
+:::
+:::
+
+::: {.pitch-table-box}
 | Critério | Sem proteção | Com biomanta |
-|----------|-------------|--------------|
-| Perda de solo | 20-80 t ha⁻¹ ano⁻¹ | 2-8 t ha⁻¹ ano⁻¹ |
-| Germinação | 30-50% | 70-90% |
-| Retenção de umidade | Baixa | Alta |
+|---|---|---|
+| Perda de solo | 20–80 t ha⁻¹ ano⁻¹ | 2–8 t ha⁻¹ ano⁻¹ |
+| Germinação / Umidade | 30–50% · Baixa | 70–90% · Alta |
 | Temp. do solo | Extrema | Moderada |
-
+:::
 :::
 
-::: {.column width="45%"}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Normatização no Brasil]{.pitch-card-index}
+[ABNT NBR 16.757:2020]{.pitch-heading}
 
-### Contexto brasileiro
-
-::: {.highlight-box}
-🇧🇷 No Brasil, biomantas são reguladas pela norma **ABNT NBR 16.757:2020** (Geossintéticos - Biomanta para controle de erosão) e amplamente exigidas em:
+Regula biomantas para controle de erosão, exigidas em:
 
 - Licenciamento de rodovias (DNIT)
 - Recuperação de mineração (IBAMA/ANM)
@@ -141,363 +143,309 @@ Foto: Fred Gasper / USDA NRCS - Public Domain
 - Obras de drenagem urbana
 :::
 
-> A redução de perda de solo pode chegar a **90-95%** com biomantas de fibra de coco bem instaladas (Lekha, 2004).
+::: {.pitch-band .pitch-band--teal}
+A redução de perda de solo pode atingir **90–95%** com biomantas de fibra de coco bem instaladas (Lekha, 2004).
+:::
+:::
+:::
+
+# 2 · Biomanta × Geotêxtil sintético {.section-header rotulo="Comparação"}
+
+## <span class="pitch-tag pitch-tag--teal">Comparação</span> Arquitetura e critérios de seleção técnica {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--wide}
+
+![Arquitetura em camadas da biomanta e matriz de decisão técnica segundo declividade e tensão cisalhante](img/bs_14_biomantas_criterios.png)
+
+[Biomantas biodegradáveis vs. geossintéticos permanentes]{.pitch-caption}
+[Critérios hidráulicos e geotécnicos segundo declividade, tensão cisalhante (τ₀), velocidade (V) e vida útil]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band}
+A seleção entre biomanta leve (palha), biomanta reforçada (coco) e TRM sintético permanente depende diretamente da declividade e da tensão cisalhante atuante ($\tau_0$).
+:::
+
+## <span class="pitch-tag pitch-tag--teal">Comparação</span> Biomanta (ECB) versus Geotêxtil sintético {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Biomanta biodegradável (ECB)]{.pitch-card-index}
+[Função temporária · R\$ 5–25 m⁻²]{.pitch-heading}
+
+- **Material:** fibras naturais (coco, palha, juta, sisal)
+- **Vida útil:** 6 meses a 5 anos · incorpora MO ao solo
+- **Permeabilidade:** alta (infiltração e trocas gasosas)
+- **Impacto ambiental:** baixo (material renovável)
+:::
+
+::: {.pitch-card}
+[Geotêxtil sintético]{.pitch-card-index}
+[Função permanente · R\$ 8–40 m⁻²]{.pitch-heading}
+
+- **Material:** polipropileno, poliéster ou nylon (não biodegradável)
+- **Vida útil:** 20–50+ anos · filtração, separação e reforço estrutural
+- **Subtipos:** tecido (com vegetação associada) ou não tecido (sem vegetação)
 :::
 :::
 
-# [2. BIOMANTA × GEOTÊXTIL SINTÉTICO]{.section-header}
-
-## Diferenças fundamentais {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Biomanta (ECB)
-
-- **Material**: fibras naturais (coco, palha, juta, sisal)
-- **Vida útil**: 6 meses a 5 anos (depende da fibra)
-- **Biodegradação**: sim - incorpora matéria orgânica ao solo
-- **Função**: temporária - proteção até revegetação
-- **Permeabilidade**: alta - permite infiltração e trocas gasosas
-- **Impacto ambiental**: baixo - material renovável
-- **Custo**: R$ 5-25 m⁻²
-
-### Geotêxtil sintético
-
-- **Material**: polipropileno, poliéster, nylon
-- **Vida útil**: 20-50+ anos
-- **Biodegradação**: não - persiste no ambiente
-- **Função**: permanente - filtração, separação, reforço
-- **Permeabilidade**: variável (tecido / não tecido)
-- **Impacto ambiental**: alto - derivado de petróleo
-- **Custo**: R$ 8-40 m⁻²
-
-:::
-
-::: {.column width="50%"}
-
-### Quando usar cada um?
-
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["Necessidade de<br>proteção do solo"] --> B{"Função<br>permanente?"}
-    B -->|"Não - revegetação<br>será implantada"| C["BIOMANTA<br>biodegradável"]
-    B -->|"Sim - função<br>estrutural"| D{"Há vegetação<br>no projeto?"}
-    D -->|"Sim"| E["Geotêxtil<br>tecido + vegetação"]
-    D -->|"Não"| F["Geotêxtil<br>não tecido"]
-    C --> G["Fibra: coco, palha<br>juta, sisal"]
-    style C fill:#2E7D32,color:#fff
-    style E fill:#2135A6,color:#fff
-    style F fill:#586BA6,color:#000
-```
-
-### Comparativo funcional
-
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Propriedade | Biomanta | Geotêxtil |
-|-------------|----------|-----------|
+|---|---|---|
 | Proteção erosiva | ★★★★★ | ★★★☆☆ |
 | Retenção umidade | ★★★★★ | ★★☆☆☆ |
 | Resistência mecânica | ★★☆☆☆ | ★★★★★ |
 | Sustentabilidade | ★★★★★ | ★★☆☆☆ |
 | Custo-benefício | ★★★★☆ | ★★★☆☆ |
+:::
 
+::: {.pitch-band .pitch-band--navy}
+**Árvore de decisão:** função temporária com revegetação $\rightarrow$ **Biomanta** (coco, palha, juta, sisal). Função estrutural permanente $\rightarrow$ **Geotêxtil** (tecido se houver vegetação; não tecido se não houver).
+:::
+:::
+:::
+
+# 3 · Tipos de biomantas e materiais {.section-header rotulo="Materiais"}
+
+## <span class="pitch-tag pitch-tag--gold">Materiais</span> Classificação por fibra vegetal {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--forest}
+[Coco (*Cocos nucifera*)]{.pitch-card-index}
+[2–5 anos · 100–200 kN m⁻¹]{.pitch-heading}
+
+Excelente retenção hídrica e resistência microbiológica; ideal para taludes íngremes e margens fluviais.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Sisal (*Agave sisalana*)]{.pitch-card-index}
+[2–4 anos · 120–180 kN m⁻¹]{.pitch-heading}
+
+Boa retenção hídrica, fibra nacional (Nordeste brasileiro); taludes moderados a íngremes.
+:::
+
+::: {.pitch-card}
+[Juta (*Corchorus spp.*)]{.pitch-card-index}
+[1–2 anos · 80–150 kN m⁻¹]{.pitch-heading}
+
+Boa retenção e trabalhabilidade; indicada para uso geral e canais.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Palha de arroz / trigo]{.pitch-card-index}
+[3–12 meses · 20–50 kN m⁻¹]{.pitch-heading}
+
+Retenção moderada, baixo custo e alta disponibilidade; áreas planas e taludes suaves.
 :::
 :::
 
-# [3. TIPOS DE BIOMANTAS E MATERIAIS]{.section-header}
-
-## Classificação por material {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Fibra de coco (*Cocos nucifera*)
-
-- **Durabilidade**: 2-5 anos
-- **Resistência à tração**: 100-200 kN m⁻¹
-- **Retenção hídrica**: excelente
-- **Aplicação**: taludes íngremes, margens de rios
-- **Vantagem**: alta resistência à degradação microbiológica
-
-### Palha de arroz / trigo
-
-- **Durabilidade**: 3-12 meses
-- **Resistência à tração**: 20-50 kN m⁻¹
-- **Retenção hídrica**: moderada
-- **Aplicação**: áreas planas, taludes suaves
-- **Vantagem**: baixo custo, disponibilidade
-
-### Juta (*Corchorus spp.*)
-
-- **Durabilidade**: 1-2 anos
-- **Resistência à tração**: 80-150 kN m⁻¹
-- **Retenção hídrica**: boa
-- **Aplicação**: uso geral, canais
-- **Vantagem**: boa trabalhabilidade
-
-:::
-
-::: {.column width="50%"}
-
-### Sisal (*Agave sisalana*)
-
-- **Durabilidade**: 2-4 anos
-- **Resistência à tração**: 120-180 kN m⁻¹
-- **Retenção hídrica**: boa
-- **Aplicação**: taludes moderados a íngremes
-- **Vantagem**: fibra nacional (Nordeste brasileiro)
-
-### Comparativo de fibras
-
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Fibra | Durabilidade | Resistência | Custo |
-|-------|-------------|-------------|-------|
+|---|---|---|---|
 | Coco | ★★★★★ | ★★★★☆ | ★★★☆☆ |
 | Palha | ★★☆☆☆ | ★★☆☆☆ | ★★★★★ |
 | Juta | ★★★☆☆ | ★★★☆☆ | ★★★★☆ |
 | Sisal | ★★★★☆ | ★★★★☆ | ★★★☆☆ |
+:::
 
-::: {.highlight-box}
-🌿 No **Nordeste do Brasil**, as fibras de **coco** e **sisal** são as mais indicadas pela disponibilidade local, reduzindo custos logísticos e estimulando a economia regional.
+::: {.pitch-band .pitch-band--teal}
+No **Nordeste do Brasil**, **coco** e **sisal** são prioritários pela oferta regional, menor frete e fortalecimento da cadeia produtiva local.
 :::
 :::
 :::
 
-## Estrutura construtiva {.smaller-text}
+## <span class="pitch-tag pitch-tag--gold">Materiais</span> Estrutura construtiva e biomantas pré-semeadas {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Arquitetura sanduíche]{.pitch-card-index}
+[Componentes e fixação]{.pitch-heading}
 
-### Componentes de uma biomanta
+- **Rede superior:** malha de contenção das fibras
+- **Núcleo de fibras:** coco, palha, juta ou sisal
+- **Rede inferior:** malha de suporte em contato com o solo
+- **Grampos metálicos em "U":** ancoragem direta ao terreno
+:::
 
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["Rede superior<br>(malha de contenção)"] --> D["BIOMANTA<br>completa"]
-    B["Núcleo de fibras<br>(coco, palha, juta)"] --> D
-    C["Rede inferior<br>(malha de suporte)"] --> D
-    D --> E["Grampos metálicos<br>(fixação ao solo)"]
-    style A fill:#2135A6,color:#fff
-    style B fill:#8B4513,color:#fff
-    style C fill:#2135A6,color:#fff
-    style D fill:#2E7D32,color:#fff
-    style E fill:#586BA6,color:#000
-```
-
-### Configurações disponíveis
-
+::: {.pitch-table-box}
 | Tipo | Redes | Fibra | Gramatura |
-|------|-------|-------|-----------|
-| Simples | 1 rede PP | Palha | 300-400 g m⁻² |
-| Dupla | 2 redes PP | Coco | 400-700 g m⁻² |
-| Reforçada | 2 redes + fio aço | Coco+palha | 700-1.000 g m⁻² |
-
+|---|---|---|---|
+| Simples | 1 rede PP | Palha | 300–400 g m⁻² |
+| Dupla | 2 redes PP | Coco | 400–700 g m⁻² |
+| Reforçada | 2 redes + fio aço | Coco+palha | 700–1.000 g m⁻² |
+:::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Biomantas com sementes (*pre-seeded*)]{.pitch-card-index}
+[Sementes incorporadas entre camadas]{.pitch-heading}
 
-### Biomantas com sementes (pre-seeded)
+**Vantagens:** elimina etapa de semeadura, garante distribuição uniforme e proteção imediata.
 
-Algumas biomantas são fabricadas com **sementes incorporadas** entre as camadas de fibra:
+**Limitações:** custo superior, seleção de espécies restrita ao fabricante e prazo de validade das sementes.
+:::
 
-**Vantagens:**
-
-- Elimina etapa de semeadura
-- Distribuição uniforme das sementes
-- Proteção imediata das sementes
-
-**Desvantagens:**
-
-- Custo superior
-- Seleção de espécies limitada ao fabricante
-- Validade das sementes incorporadas
-
-::: {.highlight-box}
-🔬 Pesquisas recentes testam biomantas com **sementes de espécies nativas do Cerrado e Caatinga**, ampliando as possibilidades de restauração ecológica com materiais pré-semeados (Oliveira et al., 2021).
+::: {.pitch-band}
+Pesquisas testam biomantas com **sementes nativas do Cerrado e Caatinga**, ampliando a restauração ecológica pré-semeada (Oliveira et al., 2021).
 :::
 :::
 :::
 
-# [4. PROPRIEDADES MECÂNICAS E NORMAS]{.section-header}
+# 4 · Propriedades mecânicas e normas {.section-header rotulo="Normas"}
 
-## Ensaios e especificações {.smaller-text}
+## <span class="pitch-tag">Normas</span> Ensaios laboratoriais e referências normativas {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Ensaios laboratoriais obrigatórios
-
-| Ensaio | Norma | Parâmetro |
-|--------|-------|-----------|
-| Resistência à tração | ASTM D6818 | kN m⁻¹ |
-| Alongamento na ruptura | ASTM D6818 | % |
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Ensaio laboratorial | Norma | Parâmetro |
+|---|---|---|
+| Resistência à tração / Alongamento | ASTM D6818 | kN m⁻¹ / % |
 | Gramatura | ASTM D6475 | g m⁻² |
-| Espessura | ASTM D6525 | mm |
-| Abertura de malha | ASTM D6567 | mm |
-| Degradação UV | ASTM D4355 | % retenção |
-| Biodegradação | ISO 17556 | % massa |
-
-### Valores típicos para biomanta de coco
-
-| Propriedade | Valor |
-|-------------|-------|
-| Gramatura | 400-700 g m⁻² |
-| Espessura | 8-15 mm |
-| Resistência à tração (MD) | 5-15 kN m⁻¹ |
-| Alongamento | 15-40% |
-| Abertura de malha | 10-20 mm |
-
+| Espessura / Abertura de malha | ASTM D6525 / D6567 | mm |
+| Degradação UV / Biodegradação | ASTM D4355 / ISO 17556 | % retenção / % massa |
 :::
 
-::: {.column width="50%"}
+::: {.pitch-table-box}
+| Propriedade típica (Coco) | Faixa |
+|---|---|
+| Gramatura / Espessura | 400–700 g m⁻² · 8–15 mm |
+| Tração (MD) / Alongamento | 5–15 kN m⁻¹ · 15–40% |
+| Abertura de malha | 10–20 mm |
+:::
+:::
 
-### Normas brasileiras e internacionais
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Arcabouço normativo]{.pitch-card-index}
+[Normas brasileiras e internacionais]{.pitch-heading}
 
-**Brasil:**
+- **Brasil:** ABNT **NBR 16.757:2020** (Biomanta), ABNT **NBR 12.553** (Terminologia), **DNIT 071/2006 - ES**.
+- **Internacionais:** **ASTM D6459** (desempenho de RECPs), **ECTC** e **EN 13252** (drenagem).
+:::
 
-- **ABNT NBR 16.757:2020** - Geossintéticos - Biomanta
-- **ABNT NBR 12.553** - Geotêxteis - Terminologia
-- **DNIT 071/2006 - ES** - Revegetação de Taludes
-
-**Internacionais:**
-
-- **ASTM D6459** - Standard test method for determination of rolled erosion control product (RECP) performance
-- **ECTC (Erosion Control Technology Council)** - Classificação de RECPs
-- **EN 13252** - Geossintéticos para drenagem
-
-::: {.highlight-box}
-📋 A classificação **ECTC** divide as biomantas em categorias **Type A** (curta duração, ≤ 12 meses) a **Type D** (longa duração, > 36 meses), conforme a aplicação e a declividade.
+::: {.pitch-band .pitch-band--teal}
+A classificação **ECTC** divide as biomantas de **Type A** (curta duração, $\le 12$ meses) a **Type D** (longa duração, $> 36$ meses).
 :::
 :::
 :::
 
-# [5. PROJETO E DIMENSIONAMENTO]{.section-header}
+# 5 · Projeto e dimensionamento {.section-header rotulo="Dimensionamento"}
 
-## Critérios de seleção da biomanta {.smaller-text}
+## <span class="pitch-tag pitch-tag--gold">Dimensionamento</span> Critérios de seleção por declividade e cálculo de área {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-55}
+::: {.pitch-flow-4}
+::: {.pitch-card .pitch-card--forest}
+[< 1V:3H (< 18°)]{.pitch-card-index}
+[Talude suave]{.pitch-heading}
 
-### Fluxograma de seleção
-
-```{mermaid}
-%%| fig-width: 5.5
-graph TD
-    A["Dados do<br>projeto"] --> B{"Declividade<br>do talude"}
-    B -->|"< 1V:3H<br>(< 18°)"| C["Biomanta de palha<br>ou juta leve<br>(300-400 g/m²)"]
-    B -->|"1V:3H a 1V:2H<br>(18°-27°)"| D["Biomanta de coco<br>simples<br>(400-500 g/m²)"]
-    B -->|"1V:2H a 1V:1H<br>(27°-45°)"| E["Biomanta de coco<br>dupla rede<br>(500-700 g/m²)"]
-    B -->|"> 1V:1H<br>(> 45°)"| F["Biomanta reforçada<br>+ grampeamento<br>(700-1000 g/m²)"]
-    style C fill:#2E7D32,color:#fff
-    style D fill:#586BA6,color:#000
-    style E fill:#2135A6,color:#fff
-    style F fill:#27368C,color:#fff
-```
-
+Biomanta de **palha ou juta leve** (300–400 g m⁻²).
 :::
 
-::: {.column width="45%"}
+::: {.pitch-card}
+[1V:3H–1V:2H (18°–27°)]{.pitch-card-index}
+[Moderado]{.pitch-heading}
 
-### Fatores de projeto
+Biomanta de **coco simples** (400–500 g m⁻²).
+:::
 
-| Fator | Influência na seleção |
-|-------|-----------------------|
-| Declividade | Gramatura e tipo de rede |
-| Tipo de solo | Abertura de malha |
-| Pluviometria | Durabilidade requerida |
-| Velocidade do fluxo | Resistência ao arraste |
-| Espécies vegetais | Abertura para germinação |
-| Acesso ao local | Peso/dimensão dos rolos |
+::: {.pitch-card .pitch-card--gold}
+[1V:2H–1V:1H (27°–45°)]{.pitch-card-index}
+[Íngreme]{.pitch-heading}
 
-### Cálculo de quantidade
+Biomanta de **coco dupla rede** (500–700 g m⁻²).
+:::
+
+::: {.pitch-card .pitch-card--alert}
+[> 1V:1H (> 45°)]{.pitch-card-index}
+[Escarpado]{.pitch-heading}
+
+Biomanta **reforçada + grampeamento** (700–1.000 g m⁻²).
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Fator de projeto | Influência na especificação |
+|---|---|
+| Declividade / Velocidade | Gramatura, rede e resistência ao arraste |
+| Solo / Espécies | Abertura de malha para germinação |
+| Pluviometria / Acesso | Durabilidade exigida e peso dos rolos |
+:::
+
+::: {.pitch-formula}
+**Quantidade total de biomanta ($Q_{biom}$):**
 
 $$Q_{biom} = A_{talude} \times (1 + f_s)$$
 
-Onde:
-
-- $Q_{biom}$ = quantidade de biomanta (m²)
-- $A_{talude}$ = área do talude (m²)
-- $f_s$ = fator de sobreposição (0,10 - 0,20)
-
+Onde $A_{talude}$ = área do talude (m²) e $f_s$ = fator de sobreposição ($0,10\text{–}0,20$).
+:::
 :::
 :::
 
-# [6. INSTALAÇÃO EM CAMPO]{.section-header}
+# 6 · Instalação em campo {.section-header rotulo="Instalação"}
 
-## Procedimento de instalação {.smaller-text}
+## <span class="pitch-tag pitch-tag--teal">Instalação</span> Procedimento construtivo e controle pós-instalação {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-media-card .pitch-media-card--wide}
 
-### Passo a passo
+![Fluxo executivo em cinco etapas para instalação de biomantas e controle de contato manta-solo](img/bs_14b_instalacao_biomanta.png)
 
-1. **Preparo da superfície**
-   - Remoção de pedras soltas e detritos
-   - Escarificação superficial (2-3 cm)
-   - Semeadura e/ou adubação
-
-2. **Ancoragem superior** (trincheira)
-   - Trincheira de 15-20 cm de profundidade
-   - Enterrar 30 cm da borda superior da manta
-   - Compactar e selar a trincheira
-
-3. **Desenrolar a biomanta**
-   - De **cima para baixo** no talude
-   - Manter boa aderência ao solo (sem bolsas de ar)
-   - Sobreposição lateral: **mínimo 10 cm**
-   - Sobreposição longitudinal: **mínimo 15 cm**
-
-4. **Grampeamento**
-   - Grampos em "U" de aço (15-20 cm)
-   - Espaçamento: 1-2 grampos m⁻²
-   - Reforçar nas bordas e sobreposições
-
-5. **Ancoragem inferior** (trincheira de pé)
-
+[Procedimento construtivo e controle pós-instalação]{.pitch-caption}
+[Regularização, semeadura, valeta de ancoragem (0,3 m), desenrolamento montante-jusante e grampeamento em quincôncio]{.pitch-caption-sub}
 :::
 
-::: {.column width="45%"}
+::: {.pitch-band .pitch-band--navy}
+**Ponto crítico de controle:** contato contínuo da manta com o solo — qualquer vão suspenso ("efeito tenda") induz erosão em túnel sob a biomanta.
+:::
 
-### Esquema de instalação
+## <span class="pitch-tag pitch-tag--teal">Instalação</span> Detalhamento executivo e erros comuns em obra {.smaller-text .academic-slide .lesson-slide}
 
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Trincheira superior<br>15-20 cm profundidade"] --> B["Enterrar borda<br>30 cm da manta"]
-    B --> C["Desenrolar de<br>cima para baixo"]
-    C --> D["Aderência ao solo<br>sem bolsas de ar"]
-    D --> E["Grampeamento<br>1-2 grampos/m²"]
-    E --> F["Trincheira inferior<br>ancoragem de pé"]
-    style A fill:#2135A6,color:#fff
-    style C fill:#2E7D32,color:#fff
-    style E fill:#586BA6,color:#000
-    style F fill:#8B4513,color:#fff
-```
+::: {.pitch-grid-55}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**01 · Preparo da superfície:** remover pedras/detritos, escarificar 2–3 cm e aplicar sementes/adubação.
+:::
 
-### Erros comuns de instalação
+::: {.pitch-milestone-item}
+**02 · Ancoragem superior:** abrir trincheira de 15–20 cm, enterrar 30 cm da borda superior e compactar.
+:::
 
-| Erro | Consequência |
-|------|-------------|
+::: {.pitch-milestone-item}
+**03 · Desenrolamento (cima $\rightarrow$ baixo):** garantir aderência sem bolsas de ar, sobreposição lateral $\ge 10\text{ cm}$ e longitudinal $\ge 15\text{ cm}$.
+:::
+
+::: {.pitch-milestone-item}
+**04–05 · Grampeamento e pé:** grampos em "U" de aço (15–20 cm) a **1–2 grampos m⁻²** (reforçar bordas) e ancoragem na trincheira de pé.
+:::
+:::
+
+::: {.pitch-table-box}
+| Erro de instalação | Consequência erosiva |
+|---|---|
 | Manta solta (bolsas de ar) | Erosão por baixo da manta |
 | Sem trincheira superior | Água penetra sob a manta |
 | Sobreposição insuficiente | Exposição do solo nas juntas |
-| Poucos grampos | Manta se desloca com chuva |
-| Manta esticada demais | Rompe com contração/dilatação |
-
+| Poucos grampos | Deslocamento com chuva |
+| Manta esticada demais | Rompe por contração/dilatação |
 :::
 :::
 
-# [7. MONITORAMENTO E BIODEGRADAÇÃO]{.section-header}
+# 7 · Monitoramento e biodegradação {.section-header rotulo="Monitoramento"}
 
-## Acompanhamento pós-instalação {.smaller-text}
+## <span class="pitch-tag">Monitoramento</span> Acompanhamento, transição e ações corretivas {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Cronograma de monitoramento
-
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Período | Verificação | Meta |
-|---------|-------------|------|
+|---|---|---|
 | 7 dias | Aderência e grampeamento | Sem deslocamento |
 | 15 dias | Germinação sob a manta | > 40% visível |
 | 30 dias | Cobertura vegetal | > 50% |
@@ -505,169 +453,135 @@ graph TD
 | 90 dias | Início da biodegradação | Manta afrouxando |
 | 180 dias | Biodegradação avançada | Vegetação dominante |
 | 365 dias | Biodegradação completa* | Solo 100% vegetado |
-
-*Para biomantas de palha/juta. Coco pode levar 2-5 anos.
-
-### Curva de transição
-
-```{mermaid}
-%%| fig-width: 4.5
-graph LR
-    A["Dia 0<br>100% manta<br>0% vegetação"] --> B["Dia 90<br>70% manta<br>60% vegetação"]
-    B --> C["Dia 180<br>40% manta<br>85% vegetação"]
-    C --> D["Dia 365<br>0% manta<br>100% vegetação"]
-    style A fill:#8B4513,color:#fff
-    style B fill:#586BA6,color:#000
-    style C fill:#2E7D32,color:#fff
-    style D fill:#2E7D32,color:#fff
-```
-
 :::
 
-::: {.column width="50%"}
+::: {.pitch-band .pitch-band--teal}
+**Curva de transição (palha/juta; coco leva 2–5 anos):** Dia 0 (100% manta / 0% veg.) $\rightarrow$ Dia 90 (70% / 60%) $\rightarrow$ Dia 180 (40% / 85%) $\rightarrow$ Dia 365 (0% / 100%).
+:::
+:::
 
-### Indicadores de sucesso
-
-- ✅ Manta aderida ao solo (sem levantamento)
-- ✅ Germinação visível através da malha
-- ✅ Cobertura vegetal > 80% em 90 dias
-- ✅ Sem sinais de erosão sob a manta
-- ✅ Biodegradação progressiva e uniforme
-- ✅ Solo enriquecido com matéria orgânica
-
-### Problemas e ações corretivas
-
-| Problema | Ação |
-|----------|------|
-| Manta levantada | Re-grampear + compactar |
-| Erosão sob a manta | Corrigir drenagem montante |
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Problema observado | Ação corretiva |
+|---|---|
+| Manta levantada | Regrampear + compactar |
+| Erosão sob a manta | Corrigir drenagem a montante |
 | Germinação irregular | Semeadura complementar |
 | Degradação prematura | Substituir trecho afetado |
 | Fauna escavadora | Tela metálica complementar |
+:::
 
-::: {.highlight-box}
-♻️ Ao final do ciclo, a biomanta se decompõe e **enriquece o solo com matéria orgânica**, contribuindo para a formação da camada de húmus e a ciclagem de nutrientes.
+::: {.pitch-band}
+**Sucesso:** cobertura **> 80% em 90 dias**, sem erosão sub-manta; ao decompor-se, a manta incorpora **matéria orgânica** e húmus ao solo.
 :::
 :::
 :::
 
-# [8. SÍNTESE E ATIVIDADE]{.section-header}
+## <span class="pitch-tag">Integração</span> Monitorar proteção e recuperação do substrato {.smaller-text .academic-slide .lesson-slide}
 
-## Resumo dos conceitos-chave {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Pontos fundamentais
-
-::: {.info-box}
-1. **Biomantas** são tramas biodegradáveis de fibras naturais para proteção temporária do solo
-2. Diferem dos **geotêxteis sintéticos** por serem biodegradáveis e focadas em revegetação
-3. **Fibra de coco** é a mais durável; **palha** é a mais acessível
-4. A seleção depende de **declividade**, **tipo de solo** e **durabilidade requerida**
-5. A instalação deve ser **de cima para baixo**, com trincheiras e grampeamento adequado
-6. A **biodegradação** é uma vantagem: a manta ganha matéria orgânica ao solo
+::: {.pitch-table-box}
+| Função | Indicador | Como comparar |
+|---|---|---|
+| Proteção superficial | Cobertura, solo exposto e sulcos | Parcelas ou pontos fixos após chuvas |
+| Retenção de material | Sedimento exportado e depositado | Área, período e chuva documentados |
+| Condição física | Infiltração, agregação, densidade e RP | Mesmo método, profundidade e condição hídrica |
+| Recuperação biológica | CBM, respiração, $qCO_2$ e enzimas | Protocolo e época comparáveis |
 :::
 
+::: {.pitch-band .pitch-band--navy}
+**Retomada da Aula 03 e da antiga Aula 12.1 de Análise Ambiental:** separe eficiência física da manta, estabelecimento vegetal e recuperação biológica, incluindo parcela controle ou referência sempre que possível.
 :::
 
-::: {.column width="50%"}
+# 8 · Síntese e atividade {.section-header rotulo="Síntese"}
 
-### Fluxo conceitual
+## <span class="pitch-tag">Síntese</span> Pontos fundamentais e fluxo conceitual {.smaller-text .academic-slide .lesson-slide}
 
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["Fibras naturais<br>Coco/Palha/Juta/Sisal"] --> B["Biomanta<br>300-1000 g/m²"]
-    B --> C["Instalação<br>Trincheira + Grampos"]
-    C --> D["Proteção do solo<br>contra impacto"]
-    D --> E["Germinação<br>sob a manta"]
-    E --> F["Vegetação<br>estabelecida"]
-    B --> G["Biodegradação<br>progressiva"]
-    G --> H["Matéria orgânica<br>incorporada"]
-    F --> I["Solo estabilizado<br>e restaurado"]
-    H --> I
-    style A fill:#8B4513,color:#fff
-    style B fill:#2E7D32,color:#fff
-    style D fill:#2135A6,color:#fff
-    style F fill:#586BA6,color:#000
-    style I fill:#2E7D32,color:#fff
-```
-:::
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Resumo técnico]{.pitch-card-index}
+[Seis conclusões centrais]{.pitch-heading}
+
+1. **Biomantas** são tramas biodegradáveis de fibras naturais para proteção temporária
+2. Diferem dos **geotêxteis sintéticos** por degradarem-se e favorecerem a revegetação
+3. **Fibra de coco** é a mais durável; **palha** é a de menor custo
+4. A escolha depende de **declividade**, **solo** e **durabilidade requerida**
+5. Instalação **de cima para baixo** com trincheiras e grampos evita erosão sub-manta
+6. A **biodegradação** agrega matéria orgânica ao solo restaurado
 :::
 
-## Atividade prática - Especificação técnica {.smaller-text}
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[01 · Fibras]{.pitch-card-index}
+[Matéria-prima]{.pitch-heading}
 
-::: {.columns}
-::: {.column width="55%"}
-
-### Exercício em grupo
-
-**Cenário:** Uma encosta urbana com 200 m² de área exposta, declividade de 30°, solo argiloso compactado (pH 5,5) e precipitação média de 800 mm ano⁻¹ necessita de proteção urgente contra erosão laminar.
-
-**Elaborem a especificação técnica:**
-
-1. Qual **tipo de biomanta** recomendam (fibra, gramatura, nº de redes)?
-2. Qual a **quantidade total** de biomanta (incluindo sobreposição)?
-3. Quantos **grampos** serão necessários?
-4. Desenhem o **esquema de instalação** (trincheiras, direção, sobreposições)
-5. Qual a **mistura de sementes** para semeadura prévia?
-6. Elaborem um **cronograma de monitoramento** para 1 ano
-7. Qual o **custo estimado** (biomanta + grampos + mão de obra)?
-
+Coco, palha, juta ou sisal em mantas de 300–1.000 g m⁻².
 :::
 
-::: {.column width="45%"}
+::: {.pitch-card .pitch-card--teal}
+[02 · Instalação]{.pitch-card-index}
+[Ancoragem]{.pitch-heading}
 
-### Critérios de avaliação
+Trincheiras de crista/pé + grampos em "U" mantendo contato pleno.
+:::
 
-| Critério | Peso |
-|----------|------|
+::: {.pitch-card .pitch-card--forest}
+[03 · Sucessão]{.pitch-card-index}
+[Cobertura viva]{.pitch-heading}
+
+Proteção contra impacto permite germinação e enraizamento.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[04 · Solo]{.pitch-card-index}
+[Restauração]{.pitch-heading}
+
+Biodegradação incorpora MO e consolida o solo estabilizado.
+:::
+:::
+:::
+
+## <span class="pitch-tag pitch-tag--teal">Atividade</span> Especificação técnica de biomanta em encosta urbana {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Estudo dirigido · 30 min projeto + 10 min apresentação]{.pitch-card-index}
+[Encosta urbana · 200 m² · 30° · argiloso pH 5,5 · 800 mm ano⁻¹]{.pitch-heading}
+
+Elaborem a especificação técnica completa para proteção urgente contra erosão laminar:
+
+1. **Tipo de biomanta** (fibra, gramatura, nº de redes) e **mistura de sementes**
+2. **Quantidade total** de biomanta (incluindo sobreposição) e **número de grampos**
+3. **Esquema de instalação** (trincheiras, direção, sobreposições)
+4. **Cronograma de monitoramento** para 1 ano
+5. **Custo estimado** (biomanta + grampos + mão de obra)
+:::
+
+::: {.pitch-table-box}
+| Critério de avaliação | Peso |
+|---|---|
 | Seleção da biomanta | 20% |
 | Cálculo de quantidades | 20% |
 | Esquema de instalação | 20% |
 | Seleção de espécies | 15% |
 | Cronograma de monitoramento | 15% |
 | Estimativa de custo | 10% |
-
-::: {.highlight-box}
-⏱️ **Tempo**: 30 minutos para projeto + 10 minutos para apresentação por grupo.
-:::
-
 :::
 :::
 
+## <span class="pitch-tag">Referências</span> Referências bibliográficas {.smaller-text .academic-slide .lesson-slide}
 
-# Integração · Indicadores do solo e desempenho da biomanta
+::: {.pitch-card}
+[Normas e literatura técnica]{.pitch-card-index}
+[Base bibliográfica da aula]{.pitch-heading}
 
-
-## Monitorar proteção e recuperação do substrato {.smaller-text}
-
-**Retomada da Aula 03 e dos recortes da antiga Aula 12.1 de Análise Ambiental.**
-
-| Função | Indicador | Como comparar |
-|---|---|---|
-| Proteção superficial | Cobertura, solo exposto e sulcos | Parcelas ou pontos fixos após chuvas |
-| Retenção de material | Sedimento exportado e depositado | Área, período e chuva documentados |
-| Condição física | Infiltração, agregação, densidade e RP | Mesmo método, profundidade e condição hídrica |
-| Recuperação biológica | CBM, respiração, qCO₂ e enzimas | Protocolo e época comparáveis |
-
-Separe eficiência física da manta, estabelecimento vegetal e recuperação biológica. Inclua referência ou controle quando possível.
-
-
-## Referências {.smaller-text}
-
-::: {.smaller-text}
-
-- ABNT (2020). NBR 16.757:2020 - Geossintéticos - Biomanta para controle de erosão superficial. Associação Brasileira de Normas Técnicas.
-- ECTC (2014). Erosion Control Technology Council - Standard Specification for RECPs.
-- Hälbich, F. B. (2014). Erosion control using hydromulch and biomantas. *Eng. Sanit. Ambien.*, 19(2), 155-163.
-- Lekha, K. R. (2004). Field instrumentation and monitoring of soil erosion in coir geotextile stabilised slopes. *Geotextiles and Geomembranes*, 22(5), 399-413.
-- Oliveira, R. A. et al. (2021). Biomantas com sementes nativas para restauração ecológica. *Rev. Bras. Eng. Agrícola Amb.*, 25(8), 567-574.
-- Rickson, R. J. (2006). Controlling sediment at source: an evaluation of erosion control geotextiles. *Earth Surface Processes Landforms*, 31(5), 550-560.
-- Subaida, E. A., Chandrakaran, S., & Sankar, N. (2008). Experimental investigation on tensile strength behavior of coir geotextiles. *Geomechanics and Geoengineering*, 3(1), 55-61.
-- Vishnudas, S. et al. (2006). The protective and water-harvesting effect of biomantas installed on steep slopes. *Land Degrad. Dev.*, 17(1), 55-64.
-
+- ABNT (2020). *NBR 16.757:2020 - Geossintéticos - Biomanta para controle de erosão superficial*. Associação Brasileira de Normas Técnicas.
+- ECTC (2014). *Erosion Control Technology Council - Standard Specification for RECPs*.
+- Hälbich, F. B. (2014). Erosion control using hydromulch and biomantas. *Eng. Sanit. Ambien.*, 19(2), 155–163.
+- Lekha, K. R. (2004). Field instrumentation and monitoring of soil erosion in coir geotextile stabilised slopes. *Geotextiles and Geomembranes*, 22(5), 399–413.
+- Oliveira, R. A. et al. (2021). Biomantas com sementes nativas para restauração ecológica. *Rev. Bras. Eng. Agrícola Amb.*, 25(8), 567–574.
+- Rickson, R. J. (2006). Controlling sediment at source: an evaluation of erosion control geotextiles. *Earth Surface Processes Landforms*, 31(5), 550–560.
+- Subaida, E. A., Chandrakaran, S., & Sankar, N. (2008). Experimental investigation on tensile strength behavior of coir geotextiles. *Geomechanics and Geoengineering*, 3(1), 55–61.
+- Vishnudas, S. et al. (2006). The protective and water-harvesting effect of biomantas installed on steep slopes. *Land Degrad. Dev.*, 17(1), 55–64.
 :::
 
 ## {.obrigado-fit-text .center}

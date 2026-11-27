@@ -1,0 +1,117 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% ============================================================
+% TÍTULO GERAL
+% ============================================================
+\node[bsTitle, anchor=west] at (0, 8.35)
+  {Hidráulica de Encostas e Dimensionamento do Espaçamento entre Cordões};
+\node[bsSub, anchor=west] at (0, 7.90)
+  {Segmentação do comprimento de rampa, terraçamento progressivo e critérios de projeto};
+
+% ============================================================
+% PAINEL ESQUERDO: ESQUEMA HIDRÁULICO NA ENCOSTA
+% ============================================================
+\begin{scope}[shift={(0,0)}]
+  \draw[bsWater!60, rounded corners=6pt, line width=1.1pt, fill=white]
+    (0,-0.55) rectangle (10.10, 7.45);
+  \node[bsBadge=bsWater, rounded corners=5pt, anchor=north west] at (0.30, 7.20) {HIDRÁULICA DE ENCOSTA};
+
+  % Terreno original e patamares de sedimentação
+  \fill[bsEarth!16]
+    (0.45, 0.70) -- (0.45, 5.55) -- (8.85, 1.75) -- (8.85, 0.70) -- cycle;
+
+  % Cunhas de terraço progressivo (sedimentos depositados a montante de cada cordão)
+  \fill[bsGold!40] (1.15, 5.23) -- (3.35, 4.24) -- (3.35, 4.78) -- cycle;
+  \fill[bsGold!40] (3.45, 4.19) -- (6.15, 2.97) -- (6.15, 3.55) -- cycle;
+
+  % Perfil original da encosta
+  \draw[bsEarth!75!black, dashed, line width=1.0pt] (0.45, 5.55) -- (8.85, 1.75);
+  % Superfície escalonada (terraço progressivo)
+  \draw[bsGoldDark, line width=1.3pt] (0.45, 5.55) -- (1.15, 5.23) -- (3.35, 4.78);
+  \draw[bsGoldDark, line width=1.3pt] (3.45, 4.19) -- (6.15, 3.55);
+  \draw[bsEarth, line width=1.2pt] (6.25, 2.92) -- (8.85, 1.75);
+
+  % Cordão 1 (superior)
+  \foreach \dx/\h in {-0.12/0.72, -0.04/0.86, 0.04/0.92, 0.12/0.82, 0.20/0.68}{
+    \draw[bsForest, line width=1.4pt, line cap=round] (3.40+\dx, 4.22) -- (3.40+\dx*1.4, 4.22+\h);
+  }
+  \draw[bsEarth!80!black, line width=0.8pt] (3.40, 4.20) -- (3.25, 3.52);
+  \draw[bsEarth!80!black, line width=0.8pt] (3.46, 4.20) -- (3.58, 3.48);
+
+  % Cordão 2 (inferior)
+  \foreach \dx/\h in {-0.12/0.72, -0.04/0.86, 0.04/0.92, 0.12/0.82, 0.20/0.68}{
+    \draw[bsForest, line width=1.4pt, line cap=round] (6.20+\dx, 2.95) -- (6.20+\dx*1.4, 2.95+\h);
+  }
+  \draw[bsEarth!80!black, line width=0.8pt] (6.20, 2.93) -- (6.05, 2.25);
+  \draw[bsEarth!80!black, line width=0.8pt] (6.26, 2.93) -- (6.38, 2.22);
+
+  % Setas de escoamento superficial desacelerado e drenagem limpa (bem separadas dos rótulos)
+  \draw[bsArrow, bsWater, line width=1.6pt] (0.75, 5.95) -- (2.95, 5.15);
+  \node[font=\tiny\bfseries\sffamily, text=bsWater, anchor=south west] at (0.70, 6.02)
+    {Desaceleração do escoamento};
+
+  \draw[bsArrow, bsWater!75!black, line width=1.15pt, dashed] (3.85, 4.52) -- (5.75, 3.92);
+  \draw[bsArrow, bsWater!75!black, line width=1.15pt, dashed] (6.70, 3.22) -- (8.65, 2.34);
+  \node[font=\tiny\bfseries\sffamily, text=bsWater!85!black, align=center, anchor=south] at (7.85, 2.95)
+    {Drenagem limpa\\a jusante};
+
+  % Rótulos das cunhas e cordões sem colisões
+  \node[font=\tiny\bfseries\sffamily, text=bsGoldDark, align=center, anchor=north east] (lTer) at (2.85, 4.05)
+    {Terraço\\Progressivo};
+  \draw[bsArrow, bsGoldDark, line width=0.75pt] (lTer.north) -- (2.55, 4.78);
+
+  \node[font=\tiny\bfseries\sffamily, text=bsGoldDark, align=center, anchor=north] (lCun) at (4.90, 3.25)
+    {Cunha de sedimentos};
+  \draw[bsArrow, bsGoldDark, line width=0.75pt] (lCun.north) -- (5.05, 3.68);
+
+  \node[font=\tiny\bfseries\sffamily, text=bsForest, align=left, anchor=west] at (3.75, 5.18)
+    {Cordão Vegetativo};
+
+  % Cotas EV (Espaçamento Vertical) e EH (Espaçamento Horizontal)
+  \draw[bsNavy, dotted, line width=0.8pt] (3.40, 4.22) -- (6.50, 4.22);
+  \draw[bsNavy, dotted, line width=0.8pt] (6.20, 2.95) -- (6.50, 2.95);
+  \draw[bsDArrow, bsNavy, line width=1.05pt] (6.45, 2.95) -- (6.45, 4.22)
+    node[midway, right=2pt, font=\scriptsize\bfseries\sffamily, text=bsNavy] {$EV$};
+
+  \draw[bsNavy!55, dotted, line width=0.8pt] (3.40, 4.22) -- (3.40, 1.15);
+  \draw[bsNavy!55, dotted, line width=0.8pt] (6.20, 2.95) -- (6.20, 1.15);
+  \draw[bsDArrow, bsNavy, line width=1.05pt] (3.40, 1.15) -- (6.20, 1.15)
+    node[midway, below=3pt, font=\scriptsize\bfseries\sffamily, text=bsNavy] {$EH$ (Espaçamento Horizontal)};
+
+  % Direção de implantação de baixo para cima (mais à direita, livre do rótulo de drenagem)
+  \draw[bsArrow, bsForest, line width=1.35pt] (9.35, 1.85) -- (9.35, 5.45)
+    node[midway, sloped, above=3pt, font=\tiny\bfseries\sffamily, text=bsForest] {Implantação: baixo $\rightarrow$ cima};
+\end{scope}
+
+% ============================================================
+% PAINEL DIREITO: REGRAS DE DIMENSIONAMENTO (bsNavy)
+% ============================================================
+\begin{scope}[shift={(10.50,0)}]
+  \draw[bsNavy, rounded corners=6pt, line width=1.2pt, fill=bgNavy]
+    (0,-0.55) rectangle (5.65, 7.45);
+  \node[bsBadge=bsNavy, rounded corners=5pt, anchor=north west] at (0.30, 7.20) {CRITÉRIOS DE PROJETO};
+
+  \node[bsBox=bsNavy, anchor=north west, text width=4.75cm, align=left] (r1) at (0.30, 6.58)
+    {\textbf{\color{bsNavy}1. Variáveis Condicionantes}\\
+     $\bullet$ Declividade do terreno ($S\%$)\\
+     $\bullet$ Erodibilidade do solo ($K$)\\
+     $\bullet$ Erosividade da chuva ($R$)};
+
+  \node[bsBox=bsWater, anchor=north west, text width=4.75cm, align=left] (r2) at ($(r1.south west)+(0,-0.45)$)
+    {\textbf{\color{bsWater}2. Cálculo do Espaçamento}\\
+     Determinação do Espaçamento Vertical ($EV$) e Horizontal ($EH = EV / \tan\theta$), limitando a energia do escoamento entre faixas.};
+
+  \node[bsBox=bsForest, anchor=north west, text width=4.75cm, align=left] (r3) at ($(r2.south west)+(0,-0.45)$)
+    {\textbf{\color{bsForest}3. Ordem de Execução}\\
+     Implantação \textbf{de baixo para cima} rigorosamente em \textbf{curvas de nível}, garantindo ancoragem antes do aporte a montante.};
+
+  \draw[bsArrow, bsNavy] (r1.south) -- (r2.north);
+  \draw[bsArrow, bsNavy] (r2.south) -- (r3.north);
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,118 @@
+\documentclass[border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+  \hyphenpenalty=10000\exhyphenpenalty=10000
+
+  % Título
+  \node[bsTitle] at (0, 4.85)
+    {Repertório de Técnicas Fluviais de Dissipação de Energia e Estabilização};
+  \node[bsSub] at (0, 4.40)
+    {Seleção combinada conforme posição no perfil marginal e magnitude da tensão cisalhante ($\tau_0$)};
+
+  % ============================================================
+  % CARD 1: ESPIGÕES VIVOS / DEFLETORES (Superior Esquerdo)
+  % ============================================================
+  \node[bsTint=bsNavy, minimum width=7.55cm, minimum height=3.45cm, anchor=north east] (c1) at (-0.30, 3.75) {};
+  \node[bsBadge=bsNavy] at (c1.north) {1. ESPIGÕES VIVOS / DEFLETORES};
+
+  % Mini esquema em planta
+  \begin{scope}[shift={(-7.50, 1.30)}]
+    \fill[bsWater!16!white] (0, 0) rectangle (2.55, 1.50);
+    \fill[bsEarth!20!white] (0, 1.50) rectangle (2.55, 1.80);
+    \draw[bsEarth, line width=1.2pt] (0, 1.50) -- (2.55, 1.50);
+    \draw[bsForest, line width=2.2pt] (0.55, 1.50) -- (0.95, 0.92);
+    \draw[bsForest, line width=2.2pt] (1.40, 1.50) -- (1.80, 0.92);
+    \draw[->, >=Stealth, bsWater, line width=1.2pt] (0.20, 1.15) .. controls (0.9, 0.72) and (1.75, 0.58) .. (2.40, 0.58);
+    \node[font=\tiny\bfseries, text=bsNavy] at (1.28, 0.22) {Fluxo desviado};
+  \end{scope}
+
+  \node[text width=4.15cm, align=left, font=\scriptsize\sffamily, text=bsInk, anchor=west] at (-4.70, 2.00) {
+    \textbf{\color{bsNavy}Função hidráulica:}\\
+    Redireciona o fluxo principal para longe do talude erodido e cria zonas de remanso.\\[4pt]
+    \textbf{\color{bsNavy}Aplicação:}\\
+    Curvas côncavas com erosão lateral ativa e necessidade de induzir deposição.
+  };
+
+  % ============================================================
+  % CARD 2: ENROCAMENTO & ROLOS DE FIBRA (Superior Direito)
+  % ============================================================
+  \node[bsTint=bsEarth, minimum width=7.55cm, minimum height=3.45cm, anchor=north west] (c2) at (0.30, 3.75) {};
+  \node[bsBadge=bsEarth] at (c2.north) {2. ENROCAMENTO \& ROLOS DE FIBRA};
+
+  % Mini esquema em seção
+  \begin{scope}[shift={(0.65, 1.30)}]
+    \fill[bsWater!16!white] (0, 0) rectangle (2.55, 0.85);
+    \fill[bsEarth!18!white] (0, 0) -- (0.72, 0) -- (1.60, 1.50) -- (2.55, 1.50) -- (2.55, 0) -- cycle;
+    \draw[bsEarth, line width=1.2pt] (0.72, 0) -- (1.60, 1.50) -- (2.55, 1.50);
+    \fill[bsMuted!60!white, draw=bsInk] (0.72, 0.14) circle (0.16);
+    \fill[bsMuted!50!white, draw=bsInk] (0.98, 0.16) circle (0.14);
+    \fill[bsMuted!65!white, draw=bsInk] (0.85, 0.36) circle (0.15);
+    \fill[bsGold!65!white, draw=bsGoldDark, line width=1pt] (1.12, 0.62) circle (0.16);
+    \draw[->, >=Stealth, bsAlert, line width=1pt] (0.18, 0.35) -- (0.55, 0.35);
+    \node[font=\tiny\bfseries, text=bsAlert] at (0.35, 0.58) {$\tau_0$};
+  \end{scope}
+
+  \node[text width=4.15cm, align=left, font=\scriptsize\sffamily, text=bsInk, anchor=west] at (3.45, 2.00) {
+    \textbf{\color{bsEarth}Função hidráulica:}\\
+    Proteção direta do pé do talude contra tensão cisalhante ($\tau_0$) e solapamento.\\[4pt]
+    \textbf{\color{bsEarth}Aplicação:}\\
+    Base submersa associada a rolos de fibra de coco no nível médio d'água.
+  };
+
+  % ============================================================
+  % CARD 3: FEIXES & ESTACAS RIBEIRINHAS (Inferior Esquerdo)
+  % ============================================================
+  \node[bsTint=bsForest, minimum width=7.55cm, minimum height=3.45cm, anchor=north east] (c3) at (-0.30, -0.25) {};
+  \node[bsBadge=bsForest] at (c3.north) {3. FEIXES \& ESTACAS RIBEIRINHAS};
+
+  % Mini esquema em seção
+  \begin{scope}[shift={(-7.50, -2.70)}]
+    \fill[bsWater!16!white] (0, 0) rectangle (2.55, 0.55);
+    \fill[bsEarth!18!white] (0, 0) -- (0.60, 0) -- (1.80, 1.50) -- (2.55, 1.50) -- (2.55, 0) -- cycle;
+    \draw[bsEarth, line width=1.2pt] (0.60, 0) -- (1.80, 1.50) -- (2.55, 1.50);
+    \foreach \px/\py in {0.95/0.44, 1.35/0.94} {
+      \draw[bsEarth!80!black, line width=1.8pt] (\px+0.32, \py-0.26) -- (\px-0.12, \py+0.18);
+      \fill[bsForest!55!white, draw=bsForest, line width=0.9pt] (\px, \py) circle (0.13);
+      \draw[bsForest, line width=1pt] (\px-0.12, \py+0.18) -- (\px-0.24, \py+0.34);
+      \draw[bsForest, line width=1pt] (\px-0.12, \py+0.18) -- (\px-0.02, \py+0.36);
+    }
+    \node[font=\tiny\bfseries, text=bsForest, fill=white, rounded corners=2pt, inner sep=1.5pt] at (1.72, 0.22) {Brotação e raízes};
+  \end{scope}
+
+  \node[text width=4.15cm, align=left, font=\scriptsize\sffamily, text=bsInk, anchor=west] at (-4.70, -2.00) {
+    \textbf{\color{bsForest}Função mecânica:}\\
+    Ancoragem biológica da face, drenagem interna e quebra do escoamento em degraus.\\[4pt]
+    \textbf{\color{bsForest}Aplicação:}\\
+    Terço médio da margem com estacas vivas de rápido enraizamento.
+  };
+
+  % ============================================================
+  % CARD 4: ESTEIRA VIVA DE RAMAGEM (Inferior Direito)
+  % ============================================================
+  \node[bsTint=bsTeal, minimum width=7.55cm, minimum height=3.45cm, anchor=north west] (c4) at (0.30, -0.25) {};
+  \node[bsBadge=bsTeal] at (c4.north) {4. ESTEIRA VIVA DE RAMAGEM};
+
+  % Mini esquema em seção
+  \begin{scope}[shift={(0.65, -2.70)}]
+    \fill[bsWater!16!white] (0, 0) rectangle (2.55, 0.55);
+    \fill[bsEarth!18!white] (0, 0) -- (0.60, 0) -- (1.85, 1.50) -- (2.55, 1.50) -- (2.55, 0) -- cycle;
+    \draw[bsEarth, line width=1.2pt] (0.60, 0) -- (1.85, 1.50) -- (2.55, 1.50);
+    \draw[bsTeal, line width=3.2pt, opacity=0.75] (0.72, 0.16) -- (1.82, 1.48);
+    \draw[bsForest, line width=1pt] (0.85, 0.30) -- (0.72, 0.55);
+    \draw[bsForest, line width=1pt] (1.20, 0.72) -- (1.05, 0.98);
+    \draw[bsForest, line width=1pt] (1.55, 1.15) -- (1.40, 1.40);
+    \fill[bsGold!70!white, draw=bsGoldDark] (0.72, 0.16) circle (0.13);
+    \node[font=\tiny\bfseries, text=bsTeal, fill=white, rounded corners=2pt, inner sep=1.5pt] at (1.75, 0.22) {Rugosidade $n \uparrow$};
+  \end{scope}
+
+  \node[text width=4.15cm, align=left, font=\scriptsize\sffamily, text=bsInk, anchor=west] at (3.45, -2.00) {
+    \textbf{\color{bsTeal}Função hidráulica:}\\
+    Cobertura densa que eleva a rugosidade ($n$) marginal e reduz a velocidade junto ao solo.\\[4pt]
+    \textbf{\color{bsTeal}Aplicação:}\\
+    Taludes contínuos sujeitos a extravasamento frequente e erosão laminar.
+  };
+
+\end{tikzpicture}
+\end{document}

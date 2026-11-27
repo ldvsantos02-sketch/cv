@@ -12,11 +12,12 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text}
+## [Abertura]{.pitch-tag} Visão Geral da Aula {.smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Roteiro da aula]{.pitch-card-index}
+[Tópicos estruturantes]{.pitch-heading}
 
 - [1]{.circle} O que são bacias de captação?
 - [2]{.circle} Princípios hidráulicos e funcionamento
@@ -28,405 +29,313 @@ execute:
 - [8]{.circle} Síntese e atividade
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--teal}
+[Objetivo da aula]{.pitch-card-index}
+[Drenagem e conservação em estradas rurais]{.pitch-heading}
 
-Compreender o conceito de **bacias de captação** (*detention ponds*) como prática mecânica de conservação do solo e da água em estradas rurais, dominar os procedimentos de **dimensionamento**, critérios construtivos e protocolos de **monitoramento** para garantir a eficiência e longevidade do sistema.
+Compreender o conceito de **bacias de captação** (*detention ponds*) como prática mecânica de conservação do solo e da água em estradas rurais, dominar os procedimentos de **dimensionamento**, critérios construtivos e protocolos de **monitoramento** para garantir eficiência e longevidade do sistema.
+:::
+
+::: {.pitch-pill-row}
+[Barraginhas]{.pitch-pill}
+[Recarga Hídrica]{.pitch-pill .pitch-pill--gold}
+[VIB e IDF]{.pitch-pill}
+[SIG e Priorização]{.pitch-pill}
 :::
 :::
 :::
 
-# [1. O QUE SÃO BACIAS DE CAPTAÇÃO?]{.section-header}
+# 1 · O que são bacias de captação? {.section-header rotulo="Conceito"}
 
-## Definição e contexto {.smaller-text}
+## [Conceito]{.pitch-tag .pitch-tag--teal} Definição e Contexto {.smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Estruturas mecânicas marginais]{.pitch-card-index}
+[Objetivos das barraginhas]{.pitch-heading}
 
-### Conceito
-
-As **bacias de captação** (também chamadas de *barraginhas*, bacias de retenção ou bacias de acumulação) são **estruturas mecânicas** escavadas nas margens de estradas rurais para:
+As **bacias de captação** (*barraginhas*, bacias de retenção ou acumulação) são estruturas escavadas nas margens de estradas rurais para:
 
 - **Captar** o escoamento superficial direto
 - **Armazenar** a água da enxurrada
 - **Promover a infiltração** da água no solo
 - **Reter sedimentos** carreados pelo escoamento
+:::
 
-::: {.highlight-box}
-São uma das principais **construções rurais** voltadas à adequação do sistema de drenagem de **estradas vicinais** (não pavimentadas), combinando proteção da infraestrutura viária com recarga do lençol freático e redução do aporte de sedimentos a corpos hídricos.
+::: {.pitch-band .pitch-band--navy}
+Principal construção rural para adequação da drenagem de **estradas vicinais**, unindo proteção viária, recarga do lençol freático e proteção de corpos hídricos.
 :::
 :::
 
-::: {.column width="45%"}
-![Bacia de captação (barraginha) implantada em margem de estrada rural](img/barraginha_1.jpeg){fig-align="center" width="100%"}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
+
+![Bacia de captação (barraginha) implantada em margem de estrada rural](img/barraginha_1.jpeg)
+
+[Bacia de captação em margem de estrada rural]{.pitch-caption}
+[Captação lateral do escoamento superficial antes da incisão erosiva]{.pitch-caption-sub}
 :::
 :::
 
----
+## [Conservação]{.pitch-tag} Bacias no Contexto da Conservação {.smaller-text .lesson-slide}
 
-## Bacias de captação no contexto da conservação {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Por que conservação mecânica?
-
-As **práticas mecânicas** de conservação do solo utilizam estruturas construídas para controlar o escoamento superficial:
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 
 | Aspecto | Práticas Vegetativas | Práticas Mecânicas |
 |---------|---------------------|-------------------|
 | Princípio | Cobertura e raízes | Estrutura física |
 | Tempo de resposta | Médio/longo | Imediato |
-| Custo inicial | Baixo | Moderado a alto |
-| Manutenção | Baixa | Periódica |
+| Custo e manutenção | Baixo / baixa | Moderado-alto / periódica |
 | Eficiência imediata | Parcial | Alta |
-| Exemplos | Cordões de vegetação, cobertura morta | Terraços, bacias, canais |
+| Exemplos | Cordões, cobertura morta | Terraços, bacias, canais |
 
-: {.striped .hover}
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Funções das bacias de captação**
+::: {.pitch-card .pitch-card--teal}
+[Eficiência comprovada]{.pitch-card-index}
+[Fiener, Auerswald & Weigand (2005)]{.pitch-heading}
 
-- Reter e infiltrar a água escoada pelas estradas
-- Promover a recarga do lençol freático
-- Evitar que volume e velocidade causem erosão a jusante
-- Reduzir o aporte de sedimentos a nascentes, rios e lagos
-- Criar reservas de água em áreas rurais
-:::
-
-::: {.highlight-box}
-**Eficiência comprovada:** segundo Fiener, Auerswald e Weigand (2005), as bacias são capazes de **reter entre 50 e 80% dos sedimentos** e, quando combinadas com medidas conservacionistas de solo, reduzem os custos de manutenção e os danos às lavouras próximas.
-:::
-
-![Barraginha em área rural - visão geral da estrutura implantada](img/barraginha_5.jpeg){fig-align="center" width="80%"}
+Retêm **50 a 80% dos sedimentos**; evitam erosão a jusante, promovem recarga freática e reduzem custos de manutenção de estradas e danos às lavouras.
 :::
 :::
 
----
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
 
-## Paliçadas × Bacias de captação {.smaller-text}
+![Barraginha em área rural — visão geral da estrutura implantada](img/barraginha_5.jpeg)
 
-::: {.columns}
-::: {.column width="50%"}
+[Visão geral de barraginha implantada]{.pitch-caption}
+[Reserva hídrica e contenção de sedimentos em área rural]{.pitch-caption-sub}
+:::
+:::
 
-### Comparação das técnicas
+## [Comparativo]{.pitch-tag .pitch-tag--gold} Paliçadas × Bacias de Captação {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-table-box}
 
 | Critério | Paliçadas | Bacias de Captação |
 |----------|-----------|-------------------|
-| **Tipo** | Barreira permeável | Reservatório escavado |
-| **Local** | Dentro de ravinas | Margens de estradas |
+| **Tipo e local** | Barreira permeável em ravinas | Reservatório escavado nas estradas |
 | **Função principal** | Reduzir velocidade e reter sedimentos | Armazenar e infiltrar água |
-| **Material** | Bambu, madeira (biológico) | Solo escavado (mecânico) |
-| **Custo** | Baixo | Moderado a alto |
-| **Maquinário** | Não necessário | Retroescavadeira |
-| **Manutenção** | Substituição de peças | Dragagem de sedimentos |
-| **Vida útil** | 3-5 anos (transição para barreira viva) | Indefinida (com manutenção) |
-
-: {.striped .hover}
+| **Material e máquina** | Bambu/madeira · manual | Solo escavado · retroescavadeira |
+| **Custo e manutenção** | Baixo · reposição de peças | Moderado-alto · dragagem |
+| **Vida útil** | $3\text{--}5\text{ anos}$ (barreira viva) | Indefinida (com manutenção) |
 
 :::
 
-::: {.column width="50%"}
+::: {.pitch-card .pitch-card--forest}
+[Complementaridade na paisagem]{.pitch-card-index}
+[Quando usar cada técnica?]{.pitch-heading}
 
-::: {.info-box}
-**Quando usar cada técnica?**
-
-- **Paliçadas →** erosão linear já instalada (ravinas, voçorocas)
-- **Bacias de captação →** proteção preventiva de estradas rurais e controle do escoamento antes que forme ravinas
-- **Combinação →** bacias a montante captam o excesso; paliçadas a jusante controlam feições já existentes
-:::
-
-### Complementaridade
-
-```{mermaid}
-%%| fig-width: 5
-flowchart LR
-    A[Precipitação] --> B[Escoamento na estrada]
-    B --> C[Bacias de Captação]
-    C --> D[Infiltração + Retenção]
-    B --> E[Excesso não captado]
-    E --> F[Ravinas existentes]
-    F --> G[Paliçadas]
-    G --> H[Estabilização]
-```
+- **Paliçadas:** erosão linear já instalada (ravinas e voçorocas).
+- **Bacias de captação:** proteção preventiva de estradas rurais antes da formação de ravinas.
+- **Combinação:** bacias a montante captam o escoamento da estrada (infiltração + retenção); o excesso não captado em ravinas existentes é controlado a jusante por **paliçadas** até a estabilização.
 :::
 :::
 
-# [2. PRINCÍPIOS HIDRÁULICOS]{.section-header}
+## [Integração]{.pitch-tag .pitch-tag--teal} Barraginhas vs. Paliçadas: Controle Integrado {.smaller-text .lesson-slide}
 
-## O problema das estradas rurais {.smaller-text}
+::: {.pitch-media-card .pitch-media-card--wide}
 
-::: {.columns}
-::: {.column width="50%"}
+![Barraginhas (bacias de captação) vs. paliçadas: controle integrado de estradas rurais](img/bs_11_bacias_palicadas_comparacao.png)
 
-### Estradas rurais e degradação ambiental
-
-As **estradas rurais não pavimentadas** representam a maior parte da malha viária do Brasil rural. Quando o meio natural é alterado para a construção de uma estrada, iniciam-se:
-
-- **Processos erosivos** acelerados
-- **Modificações nos padrões naturais** de drenagem
-- **Concentração e aceleração** do escoamento superficial
-- **Transporte de sedimentos** para áreas a jusante
-
-::: {.info-box}
-As estradas rurais, até pouco tempo, eram um componente **pouco lembrado** nas questões ambientais, mas atualmente há grande preocupação com sua contribuição para o aumento da **degradação ambiental** (Cunha et al., 2013).
+[Barraginhas vs. Paliçadas: ação integrada fora do talvegue e dentro do canal erosivo]{.pitch-caption}
+[Fluxo operacional: diagnóstico da estrada → escavação e bordo dissipador → decantação e infiltração → proteção vegetal e manutenção]{.pitch-caption-sub}
 :::
 
-::: {.highlight-box}
-**Princípio fundamental:** na implantação de sistemas de drenagem em estradas não pavimentadas, a estrada deve ser considerada como **elemento integrante do ambiente rural**, tendo em vista a interferência mútua entre ela e as áreas marginais (Pruski et al., 2006).
+# 2 · Princípios hidráulicos {.section-header rotulo="Hidráulica"}
+
+## [Diagnóstico Viário]{.pitch-tag .pitch-tag--alert} O Problema das Estradas Rurais {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Estradas não pavimentadas]{.pitch-card-index}
+[Impacto na drenagem]{.pitch-heading}
+
+Alteram padrões naturais de drenagem, concentrando e acelerando o escoamento e o transporte de sedimentos (Cunha et al., 2013).
+
+A estrada deve integrar-se ao ambiente rural pela interferência mútua com as áreas marginais (Pruski et al., 2006).
+:::
+
+::: {.pitch-band .pitch-band--teal}
+Coletar a água nas laterais e conduzir para **bacias de retenção** protege a via e cria reservas hídricas (Carvalho, 2017; Casarin & Oliveira, 2009).
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-table-box}
 
-### Consequências da falta de drenagem
-
-| Problema | Consequência |
+| Problema sem drenagem | Consequência direta |
 |----------|-------------|
 | **Sulcos e ravinas** | Destruição do leito da estrada |
-| **Atoleiros** | Intransitabilidade em período chuvoso |
-| **Assoreamento** | Contaminação de nascentes e rios |
+| **Atoleiros** | Intransitabilidade no período chuvoso |
+| **Assoreamento** | Degradação de nascentes e rios |
 | **Perda de solo fértil** | Redução da produtividade agrícola |
 | **Custo de reconstrução** | Gasto público elevado e recorrente |
 | **Isolamento** | Comunidades sem acesso a serviços |
 
-: {.striped .hover}
+:::
+:::
 
-### A solução: barraginhas
+## [Ciclo Erosivo]{.pitch-tag .pitch-tag--gold} O Processo Erosivo em Estradas Rurais {.smaller-text .lesson-slide}
 
-A **água escoada pela estrada** deve ser coletada nas suas laterais e encaminhada, de modo controlado, para escoadouros naturais, artificiais, **bacias de retenção** ou outro sistema de retenção no terreno marginal (Carvalho, 2017).
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Sequência e balanço sedimentar]{.pitch-card-index}
+[Bertoni & Lombardi Neto (2010); Santos (2015)]{.pitch-heading}
 
-::: {.info-box}
-As barraginhas são a **construção rural mais difundida** para adequação do sistema de drenagem em estradas vicinais, contribuindo para o **controle dos processos erosivos**, **redução do assoreamento** de nascentes, rios e lagos, e **criação de reservas de água** (Casarin & Oliveira, 2009).
+1. **Desagregação** (impacto da gota) → 2. **Transporte** (enxurrada) → 3. **Deposição**.
+
+A estrada atua como **superfície impermeável linear** que canaliza vazões acima das condições naturais.
+
+- Cap. transporte $>$ sedimentos → **erosão**
+- Sedimentos $>$ cap. transporte → **deposição**
+:::
+
+::: {.pitch-band .pitch-band--navy}
+Sem bacias, o fluxo concentrado causa erosão a jusante e assoreamento de rios e nascentes.
+:::
+:::
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[1 · Chuva]{.pitch-card-index}
+[Desagregação]{.pitch-heading}
+
+Impacto das gotas desagrega partículas e gera escoamento superficial.
+:::
+
+::: {.pitch-card .pitch-card--alert}
+[2 · Estrada rural]{.pitch-card-index}
+[Concentração]{.pitch-heading}
+
+Fluxo concentra-se nos canais laterais (vs. difuso natural) e transporta sedimentos.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[3 · Bacia]{.pitch-card-index}
+[Interceptação]{.pitch-heading}
+
+Retenção física de sedimentos e infiltração da água armazenada.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[4 · Destino]{.pitch-card-index}
+[Recarga hídrica]{.pitch-heading}
+
+Recarga do lençol freático (vs. assoreamento a jusante sem bacia).
 :::
 :::
 :::
 
----
+## [Infiltração e EUPS]{.pitch-tag .pitch-tag--gold} Infiltração e Escoamento {.smaller-text .lesson-slide}
 
-## O processo erosivo em estradas rurais {.smaller-text}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Capacidade de infiltração]{.pitch-card-index}
+[Arnau-Rosalén et al. (2008)]{.pitch-heading}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Sequência de eventos
-
-A **erosão hídrica** envolve três eventos sequenciais (Bertoni & Lombardi Neto, 2010):
-
-1. **Desagregação** - impacto da gota de chuva no solo
-2. **Transporte** - escoamento superficial arrasta partículas
-3. **Deposição** - sedimentação quando a energia diminui
-
-::: {.highlight-box}
-A construção de estradas **altera os padrões naturais de drenagem**, concentrando o escoamento e acelerando os processos erosivos. A estrada rural funciona como uma **superfície impermeável linear** que coleta e canaliza toda a água da chuva, gerando vazões muito superiores às condições naturais. As bacias de captação interceptam esse ciclo antes que o dano se propague.
+Fator mais importante no controle do escoamento; depende de **porosidade, umidade antecedente, textura/estrutura, cobertura vegetal, atividade biológica e declividade**.
 :::
 
-### Balanço sedimentar
-
-Se a **capacidade de transporte** > **sedimentos disponíveis** → erosão dos canais
-
-Se os **sedimentos disponíveis** > **capacidade de transporte** → deposição
-
-(Santos, 2015)
-:::
-
-::: {.column width="50%"}
-
-### Diagrama do ciclo erosivo em estradas
-
-```{mermaid}
-%%| fig-width: 5.5
-flowchart TD
-    A[Precipitação] --> B[Impacto das gotas no solo]
-    B --> C[Desagregação de partículas]
-    A --> D[Escoamento superficial]
-    D --> E{Estrada rural?}
-    E -->|Sim| F[Concentração do fluxo<br>nos canais laterais]
-    E -->|Não| G[Escoamento difuso]
-    F --> H[Transporte de sedimentos]
-    H --> I[Bacia de Captação]
-    I --> J[Retenção de sedimentos]
-    I --> K[Infiltração da água]
-    J --> L[Recarga do lençol freático]
-    K --> L
-    H --> M[Sem bacia → Erosão a jusante]
-    M --> N[Assoreamento de rios/nascentes]
-    
-    style I fill:#2135A6,color:#fff
-    style J fill:#586BA6,color:#2135A6
-    style K fill:#586BA6,color:#2135A6
-    style L fill:#2E7D32,color:#fff
-    style M fill:#27368C,color:#fff
-    style N fill:#27368C,color:#fff
-```
+::: {.pitch-band .pitch-band--teal}
+Ao armazenar temporariamente a água, a bacia **aumenta o tempo de contato água–solo**, favorecendo infiltração mesmo em baixa permeabilidade.
 :::
 :::
 
----
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Equação Universal de Perda de Solo (EUPS):**
 
-## Infiltração e escoamento {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Capacidade de infiltração
-
-A **infiltração** é o processo pelo qual a água penetra no solo, sendo o fator mais importante no controle do escoamento superficial (Arnau-Rosalén et al., 2008).
-
-Fatores que influenciam a infiltração:
-
-- **Porosidade** do solo
-- **Umidade antecedente**
-- **Textura e estrutura** do solo
-- **Cobertura vegetal**
-- **Atividade biológica**
-- **Declividade** do terreno
-
-::: {.info-box}
-**Princípio da bacia de captação:** ao armazenar a água temporariamente, **aumenta o tempo de contato** água-solo, favorecendo a infiltração mesmo em solos com baixa permeabilidade.
-:::
-:::
-
-::: {.column width="50%"}
-
-### Equação Universal de Perda de Solo (EUPS)
-
-::: {.box}
 $$A = R \cdot K \cdot L \cdot S \cdot C \cdot P$$
 
-Onde:
-
-- $A$ = perda de solo (t/ha·ano)
-- $R$ = erosividade da chuva (MJ·mm/ha·h·ano)
-- $K$ = erodibilidade do solo (t·h/MJ·mm)
-- $L$ = fator comprimento da rampa (adimensional)
-- $S$ = fator declividade (adimensional)
-- $C$ = fator cobertura vegetal (adimensional)
-- $P$ = fator práticas conservacionistas (adimensional)
+- $A$: perda de solo ($\text{t/ha}\cdot\text{ano}$); $R$: erosividade; $K$: erodibilidade
+- $L$: comprimento de rampa; $S$: declividade; $C$: cobertura; $P$: práticas conservacionistas
 :::
 
-::: {.highlight-box}
-As bacias de captação **reduzem o fator P** da EUPS ao interceptar o escoamento e impedir que a enxurrada percorra longas distâncias, diminuindo simultaneamente o efeito do **fator L** (comprimento da rampa).
+::: {.pitch-band .pitch-band--navy}
+As bacias **reduzem o fator $P$** e interceptam a enxurrada antes de percorrer longas distâncias, diminuindo o efeito do **fator $L$**.
 :::
 :::
 :::
 
----
+## [VIB]{.pitch-tag .pitch-tag--teal} Velocidade de Infiltração Básica (VIB) {.smaller-text .lesson-slide}
 
-## Velocidade de Infiltração Básica (VIB) {.smaller-text}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Infiltrômetro de anel concêntrico]{.pitch-card-index}
+[Bernardo et al. (2008)]{.pitch-heading}
 
-::: {.columns}
-::: {.column width="55%"}
+Anéis de $\varnothing\,20$ e $40\text{ cm}$ ($15\text{ cm}$ de altura): cravar, preencher com água e registrar a descida no anel interno ($1, 2, 3, 5, 10, 15, 20, 30\dots\text{ min}$) até estabilizar (**VIB**).
+:::
 
-### Medição com infiltrômetro de anel
+::: {.pitch-table-box}
 
-A **VIB** é a taxa constante de infiltração após a saturação superficial do solo (Bernardo et al., 2008):
-
-**Equipamento:** dois anéis concêntricos (∅ 20 e 40 cm, 15 cm de altura)
-
-**Procedimento:**
-
-1. Cravar os anéis concentricamente no solo
-2. Preencher ambos com água
-3. Medir a descida da lâmina d'água no anel interno
-4. Registrar em intervalos (1, 2, 3, 5, 10, 15, 20, 30... min)
-5. Determinar a taxa quando estabilizada = **VIB**
-
-### Classificação da VIB
-
-| Classificação | VIB (mm/h) |
+| Classificação | VIB ($\text{mm/h}$) |
 |:------------:|:----------:|
-| Muito alta | > 30 |
-| Alta | 15 - 30 |
-| Média | 5 - 15 |
-| Baixa | 1 - 5 |
-| Muito baixa | < 1 |
+| Muito alta | $> 30$ |
+| Alta | $15\text{--}30$ |
+| Média | $5\text{--}15$ |
+| Baixa | $1\text{--}5$ |
+| Muito baixa | $< 1$ |
 
-: {.striped .hover}
+:::
 :::
 
-::: {.column width="45%"}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--teal}
+[Relação com o dimensionamento]{.pitch-card-index}
+[Esvaziamento e volume]{.pitch-heading}
 
-::: {.info-box}
-**Para que medir a VIB?**
-
-- Determinar se o solo da área é capaz de **absorver a água armazenada** na bacia
-- Solos com VIB baixa → bacias precisam de **maior volume**
-- Solos com VIB alta → bacias esvaziam mais rápido → menor risco de transbordamento
+- Define o **tempo de esvaziamento**, o **volume útil** e a **frequência de dragagem**.
+- Solos com VIB baixa exigem **maior volume** de armazenamento.
 :::
 
-### Relação com o dimensionamento
+::: {.pitch-card .pitch-card--alert}
+[Plintossolos (Campus Rural UFS)]{.pitch-card-index}
+[Impedância hidráulica]{.pitch-heading}
 
-A VIB influencia diretamente:
-
-- O **tempo de esvaziamento** da bacia
-- O **volume necessário** para armazenamento
-- A **frequência de manutenção** (dragagem)
-
-::: {.highlight-box}
-Em **Plintossolos** (como no Campus Rural da UFS), a presença de horizonte com impedância hidráulica resulta em VIB **baixa**, exigindo bacias com maior capacidade de armazenamento.
+Horizonte restritivo resulta em **VIB baixa**, exigindo bacias com maior capacidade de armazenamento.
 :::
 :::
 :::
 
-# [3. MATERIAIS E DIMENSIONAMENTO]{.section-header}
+# 3 · Materiais e dimensionamento {.section-header rotulo="Dimensionamento"}
 
-## Método construtivo {.smaller-text}
+## [Construção]{.pitch-tag} Método Construtivo e Geometria {.smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Implantação (Griebeler, 2002)]{.pitch-card-index}
+[Escavação e maquinário]{.pitch-heading}
 
-### Técnica de implantação
+1. Escavação marginal (**retroescavadeira** / pá carregadeira)
+2. Conformação, nivelamento (**nível óptico / GNSS**) e compactação dos taludes
+3. Conexão com os canais laterais da estrada
 
-Segundo Griebeler (2002), a técnica consiste em:
+*Diferente das paliçadas:* requer maquinário pesado, elevando custo inicial, mas com eficiência imediata.
+:::
 
-1. **Escavação** do solo nas áreas marginais às estradas
-2. **Conformação** do reservatório para captar e armazenar água
-3. **Compactação** dos taludes internos
-4. **Conexão** com os canais laterais da estrada
+::: {.pitch-card .pitch-card--teal}
+[Componentes da bacia]{.pitch-card-index}
+[Formas: trapezoidal, semicircular ou retangular]{.pitch-heading}
 
-### Equipamentos necessários
-
-| Equipamento | Função |
-|------------|--------|
-| **Retroescavadeira** | Escavação principal |
-| **Pá carregadeira** | Movimentação de terra |
-| **Nível óptico / GNSS** | Nivelamento e locação |
-| **Compactador manual** | Acabamento dos taludes |
-
-: {.striped .hover}
-
-::: {.highlight-box}
-**Diferença das paliçadas:** a construção de bacias exige **maquinário pesado**, o que eleva o custo inicial mas garante eficiência imediata e maior capacidade.
+**Entrada** (canal lateral) · **Corpo** (volume útil) · **Vertedouro de emergência** · **Talude interno** ($\le 1:1\text{ V:H}$) · **Berma**.
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-card .pitch-card--gold}
+[Seção transversal trapezoidal]{.pitch-card-index}
+[Esquema geométrico]{.pitch-heading}
 
-### Geometria típica
-
-As bacias podem ser:
-
-- **Trapezoidais** (mais comum)
-- **Semicirculares** (barraginhas)
-- **Retangulares** (simplificação)
-
-::: {.info-box}
-**Componentes da bacia:**
-
-- **Entrada:** conexão com o canal lateral da estrada
-- **Corpo:** reservatório escavado (volume útil)
-- **Vertedouro de emergência:** saída para eventos extremos
-- **Talude interno:** inclinação ≤ 1:1 (V:H)
-- **Berma:** plataforma superior de proteção
-:::
-
-### Formato trapezoidal (seção transversal)
-
-```
+```text
       ←───── Berma ─────→
      ╱                     ╲
     ╱   ←── Talude ──→      ╲
@@ -435,241 +344,166 @@ As bacias podem ser:
   ════════════════════════════════
          (fundo da bacia)
 ```
+
+Taludes estáveis e berma protegida evitam solapamento da borda e colapso em eventos de cheia.
 :::
 :::
 
----
+## [Cálculo IDF]{.pitch-tag .pitch-tag--gold} Dimensionamento das Bacias {.smaller-text .lesson-slide}
 
-## Dimensionamento das bacias {.smaller-text}
+::: {.pitch-grid-55}
+::: {.pitch-formula}
+**Equação IDF e volume de projeto** (Pruski et al., 1997; Pires & Souza, 2006):
 
-::: {.columns}
-::: {.column width="55%"}
+$$i = \frac{K \cdot T_r^{a}}{(t + b)^{c}} \qquad V_{\mathrm{bacia}} = C \cdot i \cdot A_{\mathrm{drenagem}} \cdot t$$
 
-### Critérios de dimensionamento
-
-O dimensionamento é feito com base em (Pruski et al., 1997; Pires & Souza, 2006):
-
-**1. Precipitação máxima** - modelos de chuvas intensas (IDF)
-
-$$i = \frac{K \cdot T_r^{a}}{(t + b)^{c}}$$
-
-Onde:
-
-- $i$ = intensidade da chuva (mm/h)
-- $T_r$ = tempo de retorno (anos)
-- $t$ = duração da chuva (min)
-- $K, a, b, c$ = parâmetros regionais
-
-**2. Área de drenagem** - área que contribui com escoamento
-
-**3. Declividade** - influencia a velocidade e o volume
-
-**4. Coeficiente de escoamento (C)** - fração da chuva que escoa
-
-### Volume da bacia
-
-$$V_{bacia} = C \cdot i \cdot A_{drenagem} \cdot t$$
-
-::: {.highlight-box}
-Normalmente considera-se **um único evento de chuva intensa** com tempo de retorno de 10 anos (Pruski et al., 1997).
-:::
+- $i$: intensidade ($\text{mm/h}$); $T_r$: retorno (usual **$10\text{ anos}$**); $t$: duração ($\text{min}$); $K,a,b,c$: parâmetros regionais
+- Considera um único evento intenso, área de drenagem, declividade e coeficiente de escoamento ($C$).
 :::
 
-::: {.column width="45%"}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 
-### Exemplo de parâmetros
-
-Para a região de São Cristóvão-SE:
-
-| Parâmetro | Valor |
+| Parâmetro (São Cristóvão-SE) | Valor típico |
 |-----------|:-----:|
-| Precipitação média anual | ~1.092 mm |
-| Estação chuvosa | abril - setembro |
-| $T_r$ adotado | 10 anos |
-| Duração da chuva de projeto | 30 min |
-| Coeficiente de escoamento (C) | 0,4 - 0,7 |
+| Precipitação média anual (abr–set chuvoso) | $\sim 1.092\text{ mm}$ |
+| $T_r$ e duração de projeto | $10\text{ anos}$ / $30\text{ min}$ |
+| Coeficiente de escoamento ($C$) | $0{,}4\text{--}0{,}7$ |
 
-: {.striped .hover}
+:::
 
-::: {.info-box}
-**Fatores que aumentam C:**
+::: {.pitch-card}
+[O que governa $C$?]{.pitch-card-index}
+[Fatores contrastantes]{.pitch-heading}
 
-- Solo compactado (estrada)
-- Baixa cobertura vegetal
-- Declividade elevada
-- Umidade antecedente alta
-
-**Fatores que diminuem C:**
-
-- Boa cobertura vegetal
-- Solo permeável
-- Relevo plano
-- Solo seco
+- **Aumentam $C$:** solo compactado da estrada, baixa cobertura, declive alto, umidade antecedente alta.
+- **Diminuem $C$:** boa cobertura, solo permeável, relevo plano, solo seco.
 :::
 :::
 :::
 
----
+## [Espaçamento]{.pitch-tag .pitch-tag--gold} Espaçamento entre Bacias {.smaller-text .lesson-slide}
 
-## Espaçamento entre bacias {.smaller-text}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Critérios de espaçamento
-
-O espaçamento entre bacias ao longo da estrada depende de:
-
-- **Volume de cada bacia**
-- **Declividade do trecho da estrada**
-- **Largura da plataforma** e tipo de revestimento
-- **Área de contribuição** do trecho (incluindo encostas laterais)
-- **Tipo de solo** (infiltração)
-- **Intensidade do tráfego** (compactação da superfície)
-
-### Tabela de referência
-
-| Declividade (%) | Espaçamento sugerido (m) |
+| Declividade ($\%$) | Espaçamento sugerido ($\text{m}$) |
 |:---------------:|:------------------------:|
-| 0 - 3 | 80 - 120 |
-| 3 - 8 | 50 - 80 |
-| 8 - 12 | 30 - 50 |
-| 12 - 20 | 20 - 30 |
-| > 20 | 15 - 20 |
+| $0\text{--}3$ | $80\text{--}120$ |
+| $3\text{--}8$ | $50\text{--}80$ |
+| $8\text{--}12$ | $30\text{--}50$ |
+| $12\text{--}20$ | $20\text{--}30$ |
+| $> 20$ | $15\text{--}20$ |
 
-: {.striped .hover}
+:::
 
-::: {.highlight-box}
-Quanto **maior a declividade**, **menor o espaçamento** entre bacias, pois o escoamento é mais rápido e concentrado.
+::: {.pitch-card}
+[Critérios locais]{.pitch-card-index}
+[Variáveis de campo]{.pitch-heading}
+
+Volume da bacia, declividade, largura e revestimento da plataforma, área das encostas laterais, solo e intensidade de tráfego. **Maior declividade → menor espaçamento.**
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 
-### Dimensões típicas
-
-| Parâmetro | Faixa usual |
+| Dimensão típica | Faixa usual |
 |-----------|:-----------:|
-| **Comprimento** | 3 - 8 m |
-| **Largura** | 2 - 4 m |
-| **Profundidade** | 1 - 2 m |
-| **Volume** | 5 - 30 m³ |
-| **Inclinação do talude** | 1:1 a 1:1,5 |
+| Comprimento / largura | $3\text{--}8\text{ m}$ / $2\text{--}4\text{ m}$ |
+| Profundidade / volume | $1\text{--}2\text{ m}$ / $5\text{--}30\text{ m}^3$ |
+| Inclinação do talude | $1:1$ a $1:1{,}5$ |
 
-: {.striped .hover}
-
-::: {.info-box}
-**Regra prática de Griebeler (2002):**
-
-A bacia deve ser capaz de armazenar **todo o volume de escoamento** gerado pelo evento de chuva de projeto no trecho de estrada correspondente, considerando que a infiltração durante o evento é desprezível (hipótese conservadora).
 :::
 
-### Relação espaçamento × volume
+::: {.pitch-formula}
+**Regra conservadora de Griebeler (2002):** armazenar todo o volume escoado desprezando a infiltração durante o evento:
 
-$$V_{trecho} = C \cdot P_{max} \cdot A_{trecho}$$
-
-Onde $A_{trecho} = L_{estrada} \times l_{faixa}$ (comprimento entre bacias × largura de contribuição).
+$$V_{\mathrm{trecho}} = C \cdot P_{\max} \cdot (L_{\mathrm{estrada}} \times l_{\mathrm{faixa}})$$
+:::
 :::
 :::
 
-# [4. ETAPAS DE INSTALAÇÃO]{.section-header}
+# 4 · Etapas de instalação {.section-header rotulo="Instalação"}
 
-## Passo a passo da implantação {.smaller-text}
+## [Visão Geral]{.pitch-tag .pitch-tag--forest} Passo a Passo da Implantação {.smaller-text .lesson-slide}
 
-![Bacias de captação (barraginhas) em diferentes estágios de implantação e operação](img/barraginha_2.jpg){fig-align="center" width="90%"}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--wide}
 
----
+![Bacias de captação (barraginhas) em diferentes estágios de implantação e operação](img/barraginha_2.jpg)
 
-## Etapa 1. Planejamento e levantamento {.smaller-text}
+[Bacias de captação em diferentes estágios de implantação e operação]{.pitch-caption}
+[Adequação sequencial das margens de estrada vicinal para captação do escoamento]{.pitch-caption-sub}
+:::
 
-::: {.columns}
-::: {.column width="50%"}
+## [Etapa 1]{.pitch-tag} Etapa 1 · Planejamento e Levantamento {.smaller-text .lesson-slide}
 
-### Levantamento de campo
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Levantamento de campo]{.pitch-card-index}
+[Fluxo geoespacial]{.pitch-heading}
 
-1. **Aerofotogrametria** com drone (ex.: DJI Phantom 4 PRO) + receptor GNSS-RTK
-2. **Georreferenciamento** de pontos de apoio (mínimo 3 GCPs)
-3. **Geração do MDT** (Modelo Digital de Terreno) no Agisoft Metashape
-4. **Mapa de declividade** no QGIS (5 classes: 0-3, 3-8, 8-20, 20-45, >45%)
-5. **Identificação dos trechos críticos** da estrada
-6. **Classificação dos solos** por trincheira ou tradagem
+1. Aerofotogrametria (drone) + GNSS-RTK ($\ge 3$ GCPs)
+2. MDT no Agisoft Metashape e mapa de declividade no QGIS ($0\text{--}3, 3\text{--}8, 8\text{--}20, 20\text{--}45, >45\%$)
+3. Trechos críticos e classificação do solo (tradagem/trincheira) para VIB, fator $K$, estabilidade e impedância
+:::
 
-### Dados necessários
+::: {.pitch-table-box}
 
 | Dado | Fonte |
 |------|-------|
 | Precipitação máxima | Estação meteorológica / INPE-SIMA |
-| Declividade | MDT (drone + GNSS) |
-| Tipo de solo | Tradagem / trincheira |
-| VIB | Infiltrômetro de anel |
+| Declividade / contribuição | MDT (drone + GNSS) / SIG (QGIS) |
+| Solo e VIB | Tradagem / infiltrômetro de anel |
 | Cobertura vegetal | NDVI (imagens Planet/drone) |
-| Área de contribuição | SIG (QGIS) |
 
-: {.striped .hover}
+:::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 
-### Descrição do solo
-
-::: {.info-box}
-A caracterização do solo é **fundamental** para:
-
-- Determinar a capacidade de infiltração (VIB)
-- Estimar a erodibilidade (fator K da EUPS)
-- Avaliar a estabilidade dos taludes da bacia
-- Definir impedância hidráulica (camadas restritivas)
-:::
-
-### Obtenção de imagens
-
-| Parâmetro | Valor |
+| Parâmetro de voo (Almeida et al., 2020) | Valor |
 |-----------|-------|
-| Plataforma | DJI Phantom 4 PRO |
-| Altura de voo | 120 m |
-| Sobreposição frontal | 75% |
-| Sobreposição lateral | 70% |
-| Resolução do solo (GSD) | 3,2 cm |
+| Plataforma / Altura de voo | DJI Phantom 4 PRO / $120\text{ m}$ |
+| Sobreposição frontal / lateral | $75\%$ / $70\%$ |
+| Resolução (GSD) | $3{,}2\text{ cm}$ |
 | GCPs | 41 (31 controle + 10 verificação) |
-| RMSE (H / V) | 0,04 / 0,11 m |
+| RMSE (H / V) | $0{,}04$ / $0{,}11\text{ m}$ |
 
-: {.striped .hover}
-
-(Almeida *et al.*, 2020)
-:::
 :::
 
----
-
-## Etapa 2. Locação e demarcação {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Procedimentos
-
-1. **Definir o espaçamento** entre bacias com base na declividade
-2. **Marcar os pontos de implantação** com estacas
-3. **Verificar a cota** de fundo em relação ao canal da estrada
-4. **Garantir que a entrada** da bacia coincida com o ponto de descarga do canal lateral
-5. **Demarcar o perímetro** da escavação com cal ou estacas
-
-### Critérios de locação
-
-::: {.info-box}
-- A bacia deve estar **abaixo** do nível do canal lateral
-- Evitar áreas com **afloramento rochoso** ou lençol freático superficial
-- Manter distância mínima de **2 m** da borda da estrada
-- Garantir **acesso para maquinário** de manutenção (dragagem)
-- Considerar o **uso do terreno marginal** (evitar áreas cultivadas)
+::: {.pitch-band .pitch-band--teal}
+A integração drone + GNSS + ensaios de solo permite locar bacias exatamente nos pontos de concentração de enxurrada.
+:::
 :::
 :::
 
-::: {.column width="50%"}
+## [Etapa 2]{.pitch-tag .pitch-tag--gold} Etapa 2 · Locação e Demarcação {.smaller-text .lesson-slide}
 
-### Diagrama de implantação (vista superior)
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Procedimentos e critérios]{.pitch-card-index}
+[Locação em campo]{.pitch-heading}
 
-```
+1. Definir espaçamento e marcar com estacas ou cal.
+2. Garantir fundo **abaixo** do canal lateral e coincidir entrada com a descarga.
+3. Evitar afloramento rochoso, lençol superficial e áreas cultivadas; manter **$\ge 2\text{ m}$ da borda da estrada** e acesso para dragagem.
+:::
+
+::: {.pitch-band .pitch-band--navy}
+A estrada e suas áreas marginais formam um sistema único de drenagem (Pruski et al., 2006).
+:::
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Diagrama de implantação (vista superior)]{.pitch-card-index}
+[Conexão aos canais laterais]{.pitch-heading}
+
+```text
     ════════════════════════════════════════
     ║          ESTRADA RURAL             ║
     ════════════════════════════════════════
@@ -684,417 +518,313 @@ A caracterização do solo é **fundamental** para:
     
     ←── Espaçamento (E) ──→
 ```
-
-::: {.highlight-box}
-**A estrada deve ser considerada como elemento integrante do ambiente rural**, tendo em vista a interferência mútua entre ela e as áreas marginais (Pruski et al., 2006).
-:::
 :::
 :::
 
----
+## [Etapa 3]{.pitch-tag .pitch-tag--forest} Etapa 3 · Escavação e Conformação {.smaller-text .lesson-slide}
 
-## Etapa 3. Escavação e conformação {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Sequência de construção
-
-1. **Escavar** com retroescavadeira na geometria projetada
-   - Profundidade: conforme dimensionamento (1-2 m)
-   - Inclinação dos taludes: 1:1 a 1:1,5
-
-2. **Depositar o solo escavado** na borda a jusante
-   - Forma um pequeno **dique** adicional
-   - Aumenta a capacidade efetiva
-
-3. **Conformar o fundo** da bacia
-   - Relativamente plano para maximizar infiltração
-   - Leve inclinação para concentrar sedimentos
-
-4. **Construir o vertedouro de emergência**
-   - Saída controlada para eventos extremos
-   - Evita transbordamento e colapso dos taludes
-
-5. **Conectar a entrada** ao canal lateral da estrada
-   - Transição suave para evitar erosão no ponto de entrada
-
+::: {.pitch-grid-55}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1. Escavação:** retroescavadeira com $1\text{--}2\text{ m}$ de profundidade e taludes $1:1$ a $1:1{,}5$.
 :::
 
-::: {.column width="50%"}
-
-### Sequência construtiva
-
-```{mermaid}
-%%| fig-width: 5.5
-flowchart TD
-    A[Escavação com<br>retroescavadeira] --> B[Deposição do solo<br>na borda jusante]
-    B --> C[Conformação do<br>fundo da bacia]
-    C --> D[Construção do<br>vertedouro de emergência]
-    D --> E[Conexão com canal<br>lateral da estrada]
-    E --> F[Compactação dos<br>taludes internos]
-    F --> G[Instalação de pinos<br>de monitoramento]
-    
-    style A fill:#2135A6,color:#fff
-    style B fill:#2135A6,color:#fff
-    style C fill:#2135A6,color:#fff
-    style D fill:#586BA6,color:#2135A6
-    style E fill:#586BA6,color:#2135A6
-    style F fill:#586BA6,color:#2135A6
-    style G fill:#27368C,color:#fff
-```
-
-::: {.highlight-box}
-**Cuidado com o descarte!** O solo escavado deve ser disposto de forma a **não obstruir** o fluxo natural de drenagem nem causar impacto em áreas adjacentes.
+::: {.pitch-milestone-item}
+**2. Dique a jusante:** depositar solo escavado na borda a jusante (sem obstruir drenagem natural) para ampliar capacidade.
 :::
 
-![Barraginha após escavação e conformação](img/barraginha_2..jpeg){fig-align="center" width="80%"}
+::: {.pitch-milestone-item}
+**3. Fundo e vertedouro:** conformar fundo plano/levemente inclinado e construir **vertedouro de emergência**.
+:::
+
+::: {.pitch-milestone-item}
+**4. Conexão, compactação e pinos:** transição suave com canal lateral, compactar taludes internos e instalar pinos de monitoramento.
 :::
 :::
 
----
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
 
-## Registro fotográfico da implantação {.smaller-text}
+![Barraginha após escavação e conformação](img/barraginha_2..jpeg)
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Escavação e montagem em campo
-
-![Escavação de bacia de captação com retroescavadeira - conformação do reservatório nas margens da estrada rural](img/escavacao_bacia.jpeg){fig-align="center" width="100%"}
-
-![Etapa complementar de escavação - ajuste da geometria e profundidade da bacia](img/escavacao_bacia%20(2).jpeg){fig-align="center" width="100%"}
-:::
-
-::: {.column width="50%"}
-
-![Montagem e acabamento da bacia de captação - compactação dos taludes e conexão com o canal lateral](img/montagem_bacia.jpeg){fig-align="center" width="100%"}
-
-::: {.highlight-box}
-**Sequência construtiva real:** as fotografias documentam as etapas de escavação com retroescavadeira, conformação do reservatório e acabamento dos taludes internos, conforme o protocolo de Griebeler (2002).
-:::
+[Barraginha após escavação e conformação]{.pitch-caption}
+[Reservatório escavado com taludes conformados e dique lateral]{.pitch-caption-sub}
 :::
 :::
 
-# [5. MONITORAMENTO E EFICIÊNCIA]{.section-header}
+## [Registro]{.pitch-tag .pitch-tag--forest} Registro Fotográfico da Implantação {.smaller-text .lesson-slide}
 
-## Método dos pinos {.smaller-text}
+::: {.pitch-cards}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
 
-::: {.columns}
-::: {.column width="50%"}
+![Escavação de bacia de captação com retroescavadeira](img/escavacao_bacia.jpeg)
 
-### Monitoramento da sedimentação
+[Escavação inicial]{.pitch-caption}
+[Conformação nas margens da estrada]{.pitch-caption-sub}
+:::
 
-O **método dos pinos** (Morgan, 2005) é a técnica padrão para medir deposição e erosão ao redor das bacias:
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
 
-- Pinos de ferro: 30 cm de comprimento, cravados a 10 cm
-- **20 cm expostos** (altura de referência)
-- Medição com régua graduada (precisão 1 mm)
-- Leituras **mensais** (Costa et al., 2011)
+![Etapa complementar de escavação - ajuste da geometria e profundidade da bacia](img/escavacao_bacia%20(2).jpeg)
 
-### Pontos de monitoramento
+[Ajuste de geometria]{.pitch-caption}
+[Definição de profundidade útil]{.pitch-caption-sub}
+:::
 
-| Posição | Quantidade | Função |
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
+
+![Montagem e acabamento da bacia de captação](img/montagem_bacia.jpeg)
+
+[Acabamento e conexão]{.pitch-caption}
+[Taludes e canal lateral (Griebeler, 2002)]{.pitch-caption-sub}
+:::
+:::
+
+::: {.pitch-band .pitch-band--teal}
+**Sequência construtiva real:** escavação mecanizada, ajuste geométrico e acabamento dos taludes integrados ao sistema de drenagem viária.
+:::
+
+# 5 · Monitoramento e eficiência {.section-header rotulo="Monitoramento"}
+
+## [Pinos e Stolf]{.pitch-tag} Método dos Pinos e Penetrômetro {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Monitoramento (Morgan, 2005; Costa et al., 2011)]{.pitch-card-index}
+[Leitura mensal ($1\text{ mm}$)]{.pitch-heading}
+
+Pinos de ferro de $30\text{ cm}$ cravados a $10\text{ cm}$ ($20\text{ cm}$ expostos). Altura exposta *diminui* → **deposição**; *aumenta* → **erosão**.
+:::
+
+::: {.pitch-table-box}
+
+| Posição dos pinos | Repetições | Função |
 |---------|:----------:|--------|
-| **Interior** da bacia | 3 repetições | Medir **assoreamento** |
-| **Face externa** adjacente | 1 repetição | Medir **erosão lateral** |
-| **Área nativa preservada** | 3 repetições | **Referência** (controle) |
+| Interior da bacia | 3 | Medir **assoreamento** |
+| Face externa adjacente | 1 | Medir **erosão lateral** |
+| Área nativa preservada | 3 | **Referência** (controle) |
 
-: {.striped .hover}
-
-::: {.info-box}
-**Leitura:** se a altura exposta *diminui* → **deposição** (assoreamento). Se *aumenta* → **erosão** localizada.
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Resistência à penetração (Stolf):**
 
-### Dados complementares
-
-Além dos pinos, o monitoramento inclui:
-
-- **Dados pluviométricos** - estação meteorológica local (INPE/SIMA)
-- **Levantamentos com drone** - fotogrametria periódica
-- **Ensaio de resistência à penetração** - penetrômetro de impacto Stolf
-- **Observação visual** - integridade dos taludes
-- **Registro fotográfico** - comparação temporal
-
-### Resistência à penetração
-
-::: {.box}
 $$R = 0{,}1 \times [5{,}6 + 6{,}89 \times (10 \times NI / P)]$$
 
-Onde:
-
-- $R$ = resistência à penetração (MPa)
-- $NI$ = número de impactos
-- $P$ = penetração (cm)
+$R$ em $\text{MPa}$; $NI$: número de impactos; $P$: penetração ($\text{cm}$). Ensaios em 3 repetições internas vs. 3 em área preservada.
 :::
 
-Ensaios com 3 repetições **internas** e 3 em **área preservada**, para comparação.
+::: {.pitch-card .pitch-card--teal}
+[Dados complementares]{.pitch-card-index}
+[Rede de observação]{.pitch-heading}
+
+Pluviometria (INPE/SIMA), levantamentos com drone, observação visual dos taludes e registro fotográfico temporal.
 :::
-:::
-
----
-
-## Análise de carga de fundo {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Objetivo
-
-Investigar a **deposição de sedimentos** no fundo das bacias, caracterizando o material retido quanto à granulometria e composição.
-
-### Procedimento de coleta
-
-1. Coletar amostras com **amostrador Van Veen** na linha do talvegue
-2. Acondicionar em sacos plásticos
-3. Secar em laboratório à temperatura ambiente
-4. Peneirar em agitador mecânico (jogo de peneiras):
-
-| Abertura (mm) | Fração |
-|:-------------:|--------|
-| 19 | Cascalho |
-| 2 | Areia grossa |
-| 1 | Areia média |
-| 0,6 | Areia média-fina |
-| 0,212 | Areia fina |
-| 0,053 | Areia muito fina / silte |
-
-: {.striped .hover}
-:::
-
-::: {.column width="50%"}
-
-### Classificação granulométrica
-
-- Classificação conforme **NBR 6502/95** (Rochas e solos)
-- Proporção relativa de **areia, silte e argila** pelo **método do densímetro de Bouyoucos** (1927)
-
-::: {.info-box}
-**Por que analisar a carga de fundo?**
-
-- Entender o processo de **assoreamento** da bacia
-- Estimar a **taxa de perda de capacidade** ao longo do tempo
-- Avaliar a **qualidade da água** retida
-- Identificar a **origem dos sedimentos** (solo da estrada vs. áreas marginais)
-:::
-
-### Umidade gravimétrica do solo
-
-::: {.box}
-$$U = \frac{M_a}{M_s}$$
-
-Onde:
-
-- $U$ = umidade gravimétrica (g/g)
-- $M_a$ = massa de água (g)
-- $M_s$ = massa de solo seco em estufa (g)
-:::
-
-Amostras indeformadas em anéis volumétricos nas profundidades: **0-10, 10-20 e 20-30 cm**.
 :::
 :::
 
----
+## [Sedimentos]{.pitch-tag .pitch-tag--gold} Análise de Carga de Fundo {.smaller-text .lesson-slide}
 
-## Eficiência das bacias {.smaller-text}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Coleta e peneiramento]{.pitch-card-index}
+[Amostrador Van Veen no talvegue]{.pitch-heading}
 
-::: {.columns}
-::: {.column width="50%"}
+Coleta com amostrador Van Veen → secagem ao ar → agitador mecânico (**NBR 6502/95**) + densímetro de **Bouyoucos (1927)** para areia, silte e argila.
+:::
 
-### Resultados reportados na literatura
+::: {.pitch-table-box}
+
+| Abertura ($\text{mm}$) | Fração retida | Abertura ($\text{mm}$) | Fração retida |
+|:---:|---|:---:|---|
+| 19 | Cascalho | 0,6 | Areia média-fina |
+| 2 | Areia grossa | 0,212 | Areia fina |
+| 1 | Areia média | 0,053 | Areia muito fina / silte |
+
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--teal}
+[Por que analisar?]{.pitch-card-index}
+[Diagnóstico hidrossedimentológico]{.pitch-heading}
+
+Quantifica assoreamento, taxa de perda de volume útil, qualidade da água e origem dos sedimentos (estrada vs. áreas marginais).
+:::
+
+::: {.pitch-formula}
+**Umidade gravimétrica** (anéis indeformados $0\text{--}10$, $10\text{--}20$, $20\text{--}30\text{ cm}$):
+
+$$U = \frac{M_a}{M_s}\quad (\text{g/g})$$
+:::
+:::
+:::
+
+## [Eficiência]{.pitch-tag .pitch-tag--forest} Eficiência das Bacias {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 
 | Indicador | Valor | Fonte |
 |-----------|:-----:|-------|
-| Retenção de sedimentos | **50 - 80%** | Fiener et al. (2005) |
+| Retenção de sedimentos | **50 – 80%** | Fiener et al. (2005) |
 | Redução do escoamento | Significativa | Fiener et al. (2005) |
-| Prevenção de erosão a jusante | Alta | Casarin & Oliveira (2009) |
-| Recarga do lençol freático | Positiva | Griebeler (2002) |
+| Prevenção erosão jusante | Alta | Casarin & Oliveira (2009) |
+| Recarga freática | Positiva | Griebeler (2002) |
 
-: {.striped .hover}
+:::
 
-::: {.highlight-box}
-As bacias são **mais eficientes** quando combinadas com outras práticas conservacionistas (vegetativas e edáficas), reduzindo custos de manutenção e ampliando a proteção.
+::: {.pitch-band .pitch-band--navy}
+**Relação não linear:** eventos extremos podem gerar *bypass* (transbordamento) ou remobilização de depósitos. A combinação com práticas vegetativas e edáficas reduz custos.
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-card .pitch-card--forest}
+[Checklist de monitoramento]{.pitch-card-index}
+[8 indicadores de desempenho]{.pitch-heading}
 
-### Indicadores de monitoramento
-
-::: {.info-box}
-**Checklist de monitoramento:**
-
-- [ ] Taxa de assoreamento (cm/mês)
-- [ ] Volume útil residual (m³)
-- [ ] Granulometria do material retido
-- [ ] VIB no fundo da bacia (variação temporal)
+- [ ] Taxa de assoreamento ($\text{cm/mês}$) e volume útil residual ($\text{m}^3$)
+- [ ] Granulometria do material retido e VIB no fundo da bacia
 - [ ] Resistência à penetração (interior vs. referência)
 - [ ] Precipitação acumulada × sedimentação
-- [ ] Integridade dos taludes
-- [ ] Funcionamento do vertedouro
-:::
-
-### Relação chuva × sedimentação
-
-Assim como observado para as paliçadas, a relação **não é linear**: eventos extremos podem causar bypass (transbordamento) ou remobilização de sedimentos já depositados.
+- [ ] Integridade dos taludes e funcionamento do vertedouro
 :::
 :::
 
----
+## [Em Operação]{.pitch-tag .pitch-tag--teal} Bacias em Operação — Registros de Campo {.smaller-text .lesson-slide}
 
-## Bacias em operação - registros de campo {.smaller-text}
+::: {.pitch-cards}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
 
-::: {.columns}
-::: {.column width="33%"}
+![Bacia de captação com acúmulo de água após evento de chuva](img/bacia_cheia_agua.jpeg)
 
-![Bacia de captação com acúmulo de água após evento de chuva - retenção e infiltração em progresso](img/bacia_cheia_agua.jpeg){fig-align="center" width="100%"}
+[Retenção pós-chuva]{.pitch-caption}
+[Acúmulo e infiltração em progresso]{.pitch-caption-sub}
 :::
 
-::: {.column width="33%"}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
 
-![Bacia com água armazenada - demonstrando a capacidade de retenção do reservatório escavado](img/bacia_com_agua.jpeg){fig-align="center" width="100%"}
+![Bacia com água armazenada](img/bacia_com_agua.jpeg)
+
+[Armazenamento em reservatório]{.pitch-caption}
+[Volume retido em margem de via]{.pitch-caption-sub}
 :::
 
-::: {.column width="33%"}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
 
-![Bacia cheia após precipitação intensa - o nível d'água indica o volume de escoamento captado](img/bacia_cheia_2.jpeg){fig-align="center" width="100%"}
-:::
-:::
+![Bacia cheia após precipitação intensa](img/bacia_cheia_2.jpeg)
 
-::: {.highlight-box}
-**Evidência de funcionamento:** as imagens mostram bacias em diferentes estágios de captação, comprovando a eficiência na retenção do escoamento superficial. O tempo de permanência da água na bacia favorece a **infiltração** e a **deposição gravitacional de sedimentos**.
-:::
-
-# [6. MANUTENÇÃO E LONGEVIDADE]{.section-header}
-
-## Protocolo de manutenção {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Ciclo de manutenção
-
-As bacias de captação exigem **manutenção periódica** para manter a capacidade de armazenamento:
-
-1. **Inspeção visual** - verificar taludes, entrada e vertedouro
-2. **Medição do nível de sedimentos** - pinos ou régua
-3. **Dragagem** - retirada do material depositado quando atingir 50-70% da capacidade
-4. **Reparo de taludes** - erosão lateral, desmoronamentos
-5. **Desobstrução da entrada** - manter conexão com o canal
-6. **Verificação do vertedouro** - garantir funcionamento em eventos extremos
-
-::: {.highlight-box}
-**O elevado custo de manutenção (dragagem)** é o principal ponto fraco das bacias de captação. A necessidade de dragar os sedimentos retidos para manter a capacidade é **constante** (Casarin & Oliveira, 2009).
+[Precipitação intensa]{.pitch-caption}
+[Lâmina armazenada dentro da borda livre]{.pitch-caption-sub}
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-band .pitch-band--teal}
+**Evidência de funcionamento:** o maior tempo de residência da água favorece tanto a **infiltração** quanto a **deposição gravitacional** dos sedimentos.
+:::
 
-### Frequência recomendada
+# 6 · Manutenção e longevidade {.section-header rotulo="Manutenção"}
+
+## [Manutenção]{.pitch-tag .pitch-tag--alert} Protocolo de Manutenção {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Ciclo operacional]{.pitch-card-index}
+[6 ações essenciais]{.pitch-heading}
+
+1. Inspeção visual (taludes, entrada e vertedouro)
+2. Medição do assoreamento (pinos ou régua)
+3. **Dragagem** ao atingir **$50\text{--}70\%$** da capacidade
+4. Reparo de taludes, desobstrução da entrada e checagem do vertedouro
+:::
+
+::: {.pitch-band .pitch-band--navy}
+**Principal ponto fraco:** o elevado custo de **dragagem periódica** dos sedimentos retidos (Casarin & Oliveira, 2009).
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 
 | Atividade | Frequência |
 |-----------|:----------:|
-| Inspeção visual | Mensal |
-| Leitura dos pinos | Mensal |
-| Dragagem leve | Semestral |
-| Dragagem completa | Anual (ou quando necessário) |
+| Inspeção visual / leitura dos pinos | Mensal |
+| Dragagem leve / drone | Semestral |
+| Dragagem completa | Anual (ou conforme demanda) |
 | Reparo de taludes | Conforme necessidade |
-| Levantamento com drone | Semestral |
 
-: {.striped .hover}
+:::
 
-### Destinação do material dragado
+::: {.pitch-card .pitch-card--forest}
+[Destinação do material dragado]{.pitch-card-index}
+[Reaproveitamento]{.pitch-heading}
 
-::: {.info-box}
-O sedimento retirado da bacia pode ser:
-
-- **Reaproveitado** como solo para nivelamento de áreas degradadas
-- **Espalhado** no terreno marginal (se não contaminado)
-- **Utilizado** como substrato para recuperação de áreas
-- **Analisado** para monitoramento da qualidade (nutrientes, contaminantes)
+Nivelamento de áreas degradadas, espalhamento marginal (se não contaminado), substrato para recuperação e monitoramento analítico.
 :::
 :::
 :::
 
----
+## [Custos]{.pitch-tag .pitch-tag--forest} Estratégias para Reduzir Custos {.smaller-text .lesson-slide}
 
-## Estratégias para reduzir custos {.smaller-text}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Integração com práticas conservacionistas
-
-Segundo Fiener, Auerswald e Weigand (2005), **combinar bacias com medidas conservacionistas** reduz significativamente os custos de manutenção:
-
-| Prática combinada | Efeito na bacia |
+| Prática combinada | Efeito na bacia (Fiener et al., 2005) |
 |-------------------|----------------|
-| **Cobertura vegetal** nas margens | Reduz aporte de sedimentos |
-| **Cordões de vegetação** | Filtram sedimentos antes da entrada |
-| **Terraços** a montante | Reduzem volume de escoamento |
-| **Caixas secas** intermediárias | Distribuem retenção |
-| **Paliçadas** em ravinas próximas | Controlam feições existentes |
+| Cobertura vegetal / cordões | Filtram sedimentos antes da entrada |
+| Terraços a montante | Reduzem volume de escoamento |
+| Caixas secas / paliçadas | Distribuem retenção e contêm ravinas |
 
-: {.striped .hover}
+:::
 
-::: {.highlight-box}
-A combinação com práticas vegetativas **reduz de 50 a 80%** o aporte de sedimentos à bacia, aumentando proporcionalmente a vida útil entre dragagens.
+::: {.pitch-band .pitch-band--teal}
+A combinação com práticas vegetativas **reduz em $50\text{--}80\%$** o aporte sólido à bacia, multiplicando o intervalo entre dragagens.
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Análise de custo-benefício]{.pitch-card-index}
+[Valores referenciais]{.pitch-heading}
 
-### Análise de custo-benefício
-
-::: {.info-box}
-**Custos típicos:**
-
-- **Implantação:** R$ 500 - 2.000/bacia (retroescavadeira + topografia)
-- **Dragagem:** R$ 200 - 800/bacia (por evento)
-- **Manutenção rotineira:** R$ 100 - 300/ano/bacia
-
-**Benefícios:**
-
-- Proteção de estradas (reduz custo de reconstrução)
-- Recarga hídrica (valor para irrigação)
-- Redução de assoreamento de rios e nascentes
-- Prevenção de erosão em áreas agrícolas
+- **Implantação:** R\$ $500\text{--}2.000$/bacia · **Dragagem:** R\$ $200\text{--}800$/evento · **Rotina:** R\$ $100\text{--}300$/ano
+- **Benefícios:** proteção viária, recarga hídrica, menos assoreamento fluvial e proteção agrícola.
 :::
 
-### Vida útil
+::: {.pitch-table-box}
 
-| Cenário | Vida útil estimada |
+| Cenário de manejo | Vida útil estimada |
 |---------|:-----------------:|
-| Sem manutenção | 1 - 3 anos |
-| Manutenção anual | 5 - 10 anos |
-| Manutenção + práticas combinadas | 10 - 20+ anos |
+| Sem manutenção | $1\text{--}3\text{ anos}$ |
+| Manutenção anual | $5\text{--}10\text{ anos}$ |
+| Manutenção + práticas combinadas | $10\text{--}20+\text{ anos}$ |
 
-: {.striped .hover}
 :::
 :::
+:::
 
-# [7. ESTUDO DE CASO]{.section-header}
+# 7 · Estudo de caso {.section-header rotulo="Estudo de caso"}
 
-## Localização e solo {.smaller-text}
+## [Campus Rural]{.pitch-tag .pitch-tag--teal} Localização e Solo — Campus Rural (UFS) {.smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Área experimental (181 ha)]{.pitch-card-index}
+[São Cristóvão, SE ($10^\circ55'\text{S}$;\; $37^\circ11'\text{O}$)]{.pitch-heading}
 
-### Área experimental
+Clima tropical (*As'*), estação chuvosa abr–set ($\sim 1.092\text{ mm/ano}$), relevo plano a ondulado (Silva, 2021).
+:::
 
-- **Local:** Estação Experimental Campus Rural (UFS), São Cristóvão, SE
-- **Coordenadas:** 10°55'S; 37°11'O
-- **Área total:** 181 hectares
-- **Relevo:** Plano a ondulado
-- **Clima:** Tropical (As', Köppen-Geiger), estação chuvosa abr-set
-- **Precipitação:** ~1.092 mm/ano
+::: {.pitch-table-box}
 
-### Classes de solo identificadas
-
-| Ordem | Área (%) | Relevo predominante |
+| Ordem de solo | Área ($\%$) | Relevo predominante |
 |-------|:--------:|:-------------------:|
 | Neossolo Flúvico | 27,3 | Plano |
 | Argissolo Vermelho Amarelo | 25,9 | Suave ondulado |
@@ -1102,266 +832,215 @@ A combinação com práticas vegetativas **reduz de 50 a 80%** o aporte de sedim
 | Plintossolo Háplico | 11,1 | Fortemente ondulado |
 | Gleissolo Háplico | 6,4 | Plano (várzea) |
 
-: {.striped .hover}
-
-(Silva, 2021)
+:::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--alert}
+[Plintossolo: classe mais crítica]{.pitch-card-index}
+[Nascimento (2021)]{.pitch-heading}
 
-### Implicações para as bacias
-
-::: {.info-box}
-**Plintossolo - por que é o mais crítico?**
-
-- Horizonte Bt com **impedância hidráulica**: dificulta drenagem interna
-- Favorece escoamento por **excesso de saturação**
-- Alta erodibilidade dos horizontes superficiais
-- Coincide com as áreas de **maior declividade e menor cobertura vegetal**
-- **Mais suscetível à erosão** (Nascimento, 2021)
+Horizonte Bt com **impedância hidráulica** (escoamento por excesso de saturação) coincide com maior declividade e menor cobertura vegetal.
 :::
 
-### Distribuição da declividade
+::: {.pitch-table-box}
 
-| Relevo | Declividade (%) | Área (%) |
+| Relevo | Declividade ($\%$) | Área ($\%$) |
 |--------|:--------------:|:--------:|
-| Plano | 0 - 3 | 20 |
-| Suave ondulado | 3 - 8 | 22 |
-| Ondulado | 8 - 20 | **45** |
-| Fortemente ondulado | 20 - 45 | 11 |
-| Montanhoso | > 45 | 2 |
+| Plano / Suave ondulado | $0\text{--}3$ / $3\text{--}8$ | $20$ / $22$ |
+| **Ondulado** | $8\text{--}20$ | **45** |
+| Fortemente ondulado / Montanhoso | $20\text{--}45$ / $>45$ | $11$ / $2$ |
 
-: {.striped .hover}
-:::
-:::
-
----
-
-## Mapas temáticos da área {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Mapa de declividade
-
-![Mapa de declividade do Campus Rural - UFS (Silva, 2021)](img/fig03_mapa_declividade.jpg){fig-align="center" width="90%"}
-
-::: {.highlight-box}
-As áreas com relevo **ondulado a fortemente ondulado** (56% da área) concentram os maiores riscos de erosão e são prioritárias para a implantação de bacias.
-:::
-:::
-
-::: {.column width="50%"}
-
-### Mapa pedológico
-
-![Mapa pedológico do Campus Rural - UFS (Silva, 2021)](img/fig04_mapa_pedologico.jpg){fig-align="center" width="90%"}
-
-::: {.info-box}
-A correlação entre declividade e ordem de solo confirma: **Plintossolos nas áreas mais declivosas** representam a maior vulnerabilidade à erosão na área experimental.
 :::
 :::
 :::
 
----
+## [Mapas]{.pitch-tag .pitch-tag--teal} Mapas Temáticos da Área {.smaller-text .lesson-slide}
 
-## Uso do solo e NDVI {.smaller-text}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-media-card .pitch-media-card--compact}
 
-::: {.columns}
-::: {.column width="50%"}
+![Mapa de declividade do Campus Rural - UFS (Silva, 2021)](img/fig03_mapa_declividade.jpg)
 
-### Mapa de uso e ocupação do solo
+[Mapa de declividade (Silva, 2021)]{.pitch-caption}
+:::
 
-![Mapa de uso e ocupação do solo do Campus Rural (Silva, 2021)](img/fig05_mapa_uso_solo.png){fig-align="center" width="90%"}
+::: {.pitch-band .pitch-band--navy}
+Relevo **ondulado a fortemente ondulado** ($56\%$ da área) concentra maior risco erosivo e prioridade para bacias.
+:::
+:::
 
-| Classe | Área (%) |
+::: {.pitch-stack-2}
+::: {.pitch-media-card .pitch-media-card--compact}
+
+![Mapa pedológico do Campus Rural - UFS (Silva, 2021)](img/fig04_mapa_pedologico.jpg)
+
+[Mapa pedológico (Silva, 2021)]{.pitch-caption}
+:::
+
+::: {.pitch-band .pitch-band--teal}
+**Plintossolos nas áreas mais declivosas** representam a maior vulnerabilidade à erosão na área experimental.
+:::
+:::
+:::
+
+## [Uso e NDVI]{.pitch-tag .pitch-tag--forest} Uso do Solo e NDVI {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-media-card .pitch-media-card--compact}
+
+![Mapa de uso e ocupação do solo do Campus Rural (Silva, 2021)](img/fig05_mapa_uso_solo.png)
+
+[Uso e ocupação do solo (Silva, 2021)]{.pitch-caption}
+:::
+
+::: {.pitch-table-box}
+
+| Classe de uso | Área ($\%$) |
 |--------|:--------:|
-| Área florestal | 47 |
-| Pouca cobertura vegetal | 36 |
-| Agricultura | 8 |
-| Solo exposto | 7 |
-| Outros | 2 |
+| Florestal / Pouca cobertura | $47$ / $36$ |
+| Agricultura / Solo exposto / Outros | $8$ / $7$ / $2$ |
 
-: {.striped .hover}
+:::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
 
-### NDVI - Índice de Vegetação
+![Barraginha em operação - retenção de água e sedimentos](img/barraginha_4.jpeg)
 
-![Barraginha em operação - retenção de água e sedimentos](img/barraginha_4.jpeg){fig-align="center" width="90%"}
+[Barraginha em operação]{.pitch-caption}
+:::
 
-::: {.box}
+::: {.pitch-formula}
 $$NDVI = \frac{NIR - R}{NIR + R}$$
 
-Variação na área: **0,14** (solo exposto) a **0,75** (vegetação arbórea)
-:::
-
-::: {.highlight-box}
-As áreas com **menor cobertura vegetal** (NDVI baixo) coincidem com **maior declividade** e **solo exposto** - **prioridade** para implantação de bacias de captação.
+Variação na área: **$0{,}14$** (solo exposto) a **$0{,}75$** (vegetação arbórea). Áreas com baixo NDVI + alta declividade são prioritárias.
 :::
 :::
 :::
 
----
+## [Aerofotogrametria]{.pitch-tag} Vista Aérea do Sistema de Bacias {.smaller-text .lesson-slide}
 
-## Vista aérea do sistema de bacias {.smaller-text}
+::: {.pitch-grid-50}
+::: {.pitch-media-card .pitch-media-card--photo}
 
-::: {.columns}
-::: {.column width="50%"}
+![Vista aérea do conjunto de bacias de captação implantadas](img/vista_aerea_bacias.jpeg)
 
-![Vista aérea do conjunto de bacias de captação implantadas - distribuição ao longo da malha viária rural](img/vista_aerea_bacias.jpeg){fig-align="center" width="100%"}
+[Conjunto de bacias ao longo da malha viária]{.pitch-caption}
 :::
 
-::: {.column width="50%"}
+::: {.pitch-media-card .pitch-media-card--photo}
 
-![Vista aérea complementar - bacias dispostas conforme o espaçamento de projeto e a declividade do terreno](img/vista_area_bacias_2.jpeg){fig-align="center" width="100%"}
+![Vista aérea complementar - bacias dispostas conforme o espaçamento de projeto](img/vista_area_bacias_2.jpeg)
+
+[Disposição conforme espaçamento e declividade]{.pitch-caption}
 :::
 :::
 
-::: {.info-box}
-**Monitoramento por drone:** as imagens aéreas permitem avaliar a distribuição espacial das bacias, verificar o estado de conservação dos taludes e identificar trechos que necessitam de manutenção ou implantação de novas unidades.
+::: {.pitch-band .pitch-band--teal}
+**Monitoramento por drone:** avalia a distribuição espacial das bacias, integridade dos taludes e trechos que demandam manutenção ou novas unidades.
 :::
 
----
+## [Priorização SIG]{.pitch-tag .pitch-tag--gold} Demandas Identificadas no Campus Rural {.smaller-text .lesson-slide}
 
-## Demandas identificadas no Campus Rural {.smaller-text}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--alert}
+[Critérios de priorização]{.pitch-card-index}
+[Sobreposição de mapas no QGIS]{.pitch-heading}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Trechos prioritários
-
-A sobreposição dos mapas temáticos permite identificar os trechos de estrada com **maior necessidade** de bacias:
-
-::: {.info-box}
-**Critérios de priorização:**
-
-1. Declividade > 8% no trecho
-2. Solo tipo Plintossolo ou Argissolo + Plintossolo
-3. NDVI < 0,3 (pouca cobertura vegetal)
-4. Presença de sinais de erosão (sulcos, ravinas)
+1. Declividade $> 8\%$ no trecho
+2. Solo tipo **Plintossolo** ou **Argissolo + Plintossolo**
+3. $NDVI < 0{,}3$ (pouca cobertura vegetal)
+4. Sinais de erosão (sulcos, ravinas)
 5. Proximidade de nascentes ou corpos d'água
 :::
 
-### Integração SIG
-
-A utilização do QGIS permite **cruzar camadas** (declividade × solo × cobertura × drenagem) para gerar um **mapa de prioridade** para implantação das bacias.
-:::
-
-::: {.column width="50%"}
-
-### Quadro-síntese do estudo de caso
-
-```{mermaid}
-%%| fig-width: 5.5
-flowchart TD
-    A[Levantamento com drone<br>+ imagens Planet] --> B[MDT + Ortomosaico]
-    B --> C[Mapa de Declividade]
-    B --> D[Mapa de Uso do Solo]
-    B --> E[NDVI]
-    C --> F[Mapa Pedológico]
-    C --> G[Cruzamento SIG]
-    D --> G
-    E --> G
-    F --> G
-    G --> H[Mapa de Prioridade<br>para Bacias]
-    H --> I[Dimensionamento]
-    I --> J[Implantação]
-    J --> K[Monitoramento]
-    
-    style H fill:#27368C,color:#fff
-    style I fill:#2135A6,color:#fff
-    style J fill:#2135A6,color:#fff
-    style K fill:#586BA6,color:#2135A6
-```
+::: {.pitch-band .pitch-band--navy}
+O cruzamento no QGIS ($\text{declividade} \times \text{solo} \times \text{cobertura} \times \text{drenagem}$) gera o **mapa de prioridade** de locação.
 :::
 :::
 
-# [8. SÍNTESE E ATIVIDADE]{.section-header}
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[1 · Aquisição]{.pitch-card-index}
+[Sensores]{.pitch-heading}
 
-## Resumo dos pontos-chave {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### O que aprendemos?
-
-- [1]{.circle} Bacias de captação são estruturas mecânicas escavadas para armazenar e infiltrar água de escoamento
-
-- [2]{.circle} Protegem estradas rurais, recarregam o lençol freático e retêm 50-80% dos sedimentos
-
-- [3]{.circle} O dimensionamento depende de precipitação máxima (IDF), área de drenagem e declividade
-
-- [4]{.circle} A construção requer maquinário (retroescavadeira) e levantamento topográfico
-
-- [5]{.circle} O monitoramento usa pinos de erosão, granulometria e ensaios de infiltração
-
-- [6]{.circle} A manutenção principal é a dragagem periódica (ponto fraco = custo)
-
-- [7]{.circle} A combinação com práticas vegetativas reduz custos e aumenta eficiência
-
-- [8]{.circle} O SIG integra mapas temáticos para priorizar os trechos de implantação
+Levantamento com drone + imagens Planet → **MDT + Ortomosaico**.
 :::
 
-::: {.column width="50%"}
+::: {.pitch-card .pitch-card--teal}
+[2 · Camadas]{.pitch-card-index}
+[Temáticos]{.pitch-heading}
 
-### Aplicação prática
+Mapas de **Declividade**, **Uso do Solo**, **NDVI** e **Pedológico**.
+:::
 
-::: {.info-box}
-**Checklist de implantação:**
+::: {.pitch-card .pitch-card--gold}
+[3 · Síntese SIG]{.pitch-card-index}
+[Priorização]{.pitch-heading}
 
-- [ ] Levantamento aerofotogramétrico da área
-- [ ] Geração de MDT e mapa de declividade
-- [ ] Classificação do solo e mapa pedológico
-- [ ] Mapa de uso e cobertura vegetal (NDVI)
-- [ ] Determinação da VIB (infiltrômetro de anel)
-- [ ] Cálculo da chuva de projeto (IDF, Tr = 10 anos)
-- [ ] Dimensionamento das bacias (volume, espaçamento)
-- [ ] Locação e demarcação em campo
-- [ ] Escavação e conformação com retroescavadeira
-- [ ] Instalação de pinos de monitoramento
-- [ ] Cronograma de manutenção (inspeção mensal, dragagem semestral)
-- [ ] Integração com práticas conservacionistas complementares
+**Cruzamento SIG** das 4 camadas → **Mapa de Prioridade** para bacias.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[4 · Engenharia]{.pitch-card-index}
+[Execução]{.pitch-heading}
+
+**Dimensionamento** → **Implantação** em campo → **Monitoramento**.
 :::
 :::
 :::
 
----
+# 8 · Síntese e atividade {.section-header rotulo="Síntese"}
 
-## Atividade proposta {.smaller-text}
+## [Síntese]{.pitch-tag .pitch-tag--forest} Resumo dos Pontos-Chave {.smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[O que aprendemos?]{.pitch-card-index}
+[8 pontos fundamentais]{.pitch-heading}
 
-### Exercício em grupo
+- [1]{.circle} Estradas concentram fluxo; bacias armazenam e infiltram
+- [2]{.circle} Protegem estradas, recarregam lençol e retêm $50\text{--}80\%$ dos sedimentos
+- [3]{.circle} Dimensionamento via IDF ($T_r = 10\text{ anos}$), área e declividade
+- [4]{.circle} Construção mecanizada (retroescavadeira) com base topográfica
+- [5]{.circle} Monitoramento por pinos, granulometria, Stolf e VIB
+- [6]{.circle} Dragagem periódica é o principal custo operacional
+- [7]{.circle} Práticas vegetativas reduzem custos e ampliam eficiência
+- [8]{.circle} SIG integra mapas temáticos para priorizar trechos
+:::
 
-::: {.box}
-**Cenário:** Vocês são contratados para projetar um sistema de bacias de captação para proteção de uma estrada rural no Campus Rural da UFS, com as seguintes características:
+::: {.pitch-card .pitch-card--teal}
+[Checklist de implantação]{.pitch-card-index}
+[12 verificações de projeto]{.pitch-heading}
 
-- Trecho de estrada com 500 m de comprimento
-- Declividade média de 8%
-- Solo: Argissolo + Plintossolo (VIB = 5 mm/h)
-- Precipitação máxima de projeto: 60 mm/h (Tr = 10 anos, t = 30 min)
-- Largura da faixa de contribuição: 15 m
-- Coeficiente de escoamento: C = 0,55
-
-**Entregar:**
-
-1. Cálculo do volume de escoamento por trecho
-2. Dimensionamento das bacias (volume, profundidade, comprimento)
-3. Número e espaçamento das bacias
-4. Croqui de implantação (planta baixa)
-5. Protocolo de monitoramento
-6. Cronograma de manutenção
+- [ ] Drone/MDT, declividade, pedologia, uso/NDVI e VIB
+- [ ] Chuva de projeto (IDF, $T_r = 10\text{ anos}$), volume e espaçamento
+- [ ] Locação, escavação com retroescavadeira e pinos de controle
+- [ ] Inspeção mensal, dragagem semestral e práticas combinadas
 :::
 :::
 
-::: {.column width="50%"}
+## [Atividade]{.pitch-tag .pitch-tag--gold} Atividade Proposta {.smaller-text .lesson-slide}
 
-### Critérios de avaliação
+::: {.pitch-grid-55}
+::: {.pitch-card .pitch-card--gold}
+[Exercício em grupo · Campus Rural UFS]{.pitch-card-index}
+[Dimensionamento de bacias em estrada rural]{.pitch-heading}
 
-| Critério | Peso |
+**Cenário:** trecho de $500\text{ m}$, declividade $8\%$, Argissolo + Plintossolo ($\text{VIB} = 5\text{ mm/h}$), chuva de projeto $60\text{ mm/h}$ ($T_r = 10\text{ anos}$, $t = 30\text{ min}$), faixa de contribuição $15\text{ m}$, $C = 0{,}55$.
+
+**Entregar:** (1) volume por trecho; (2) dimensões da bacia; (3) número e espaçamento; (4) croqui/planta baixa; (5) protocolo de monitoramento; (6) cronograma de manutenção.
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+
+| Critério de avaliação | Peso |
 |----------|:----:|
 | Dimensionamento técnico | 30% |
 | Viabilidade construtiva | 20% |
@@ -1369,23 +1048,18 @@ flowchart TD
 | Plano de manutenção | 15% |
 | Apresentação e clareza | 15% |
 
-: {.striped .hover}
+:::
 
-### Referências sugeridas
+::: {.pitch-card}
+[Referências sugeridas]{.pitch-card-index}
+[Bibliografia]{.pitch-heading}
 
-- Pruski et al. (1997) - Dimensionamento de terraços
-- Griebeler (2002) - Redes de drenagem e bacias
-- Pires & Souza (2006) - Práticas mecânicas de conservação
-- Casarin & Oliveira (2009) - Bacias em estradas rurais
-- Fiener, Auerswald & Weigand (2005) - Eficiência de bacias
-- Carvalho (2017) - Umidade e vida útil de bacias
-- Bertoni & Lombardi Neto (2010) - Conservação do solo
+Pruski et al. (1997) · Griebeler (2002) · Pires & Souza (2006) · Casarin & Oliveira (2009) · Fiener et al. (2005) · Carvalho (2017) · Bertoni & Lombardi Neto (2010).
+:::
 :::
 :::
 
----
-
-## {.center background-color="#2135A6" background-image="../../../assets/fundo.png" background-size="auto 100%" background-position="left center"}
+## {.center background-color="#1f4268" background-image="../../../assets/fundo.png" background-size="auto 100%" background-position="left center"}
 
 ::: {style="text-align: center;"}
 

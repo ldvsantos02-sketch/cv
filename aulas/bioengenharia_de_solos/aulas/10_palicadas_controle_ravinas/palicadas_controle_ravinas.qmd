@@ -12,11 +12,12 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text}
+## [Abertura]{.pitch-tag} Visão Geral da Aula {.smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Roteiro da aula]{.pitch-card-index}
+[Tópicos estruturantes]{.pitch-heading}
 
 - [1]{.circle} O que são paliçadas?
 - [2]{.circle} Princípios hidráulicos e funcionamento
@@ -28,868 +29,780 @@ execute:
 - [8]{.circle} Síntese e atividade
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Objetivo da aula]{.pitch-card-index}
+[Controle de erosão linear]{.pitch-heading}
 
 Compreender o conceito de **paliçadas** (*check dams*) como técnica de bioengenharia para controle de erosão linear, dominar os procedimentos de **instalação**, critérios de **dimensionamento** e protocolos de **manutenção** para garantir a longevidade operacional do sistema.
 :::
+
+::: {.pitch-pill-row}
+[Barreiras Permeáveis]{.pitch-pill}
+[Bambusa vulgaris]{.pitch-pill .pitch-pill--gold}
+[Método dos Pinos]{.pitch-pill}
+[Barreira Viva]{.pitch-pill}
 :::
 :::
+:::
 
-# [1. O QUE SÃO PALIÇADAS?]{.section-header}
+# 1 · O que são paliçadas? {.section-header rotulo="Conceito"}
 
-## Definição e contexto {.smaller-text}
+## [Conceito]{.pitch-tag .pitch-tag--forest} Definição e Contexto {.smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Barreiras permeáveis (*check dams*)]{.pitch-card-index}
+[Objetivos no canal erosivo]{.pitch-heading}
 
-### Conceito
-
-As **paliçadas** (*check dams*) são **barreiras permeáveis** instaladas transversalmente ao fluxo de água em canais erosivos (ravinas e voçorocas), com o objetivo de:
+As **paliçadas** são barreiras permeáveis instaladas transversalmente ao fluxo de água em canais erosivos (ravinas e voçorocas) para:
 
 - **Reduzir a velocidade** do escoamento concentrado
 - **Reter sedimentos** a montante da estrutura
 - **Estabilizar o perfil longitudinal** do canal
 - **Dissipar a energia cinética** da enxurrada
+:::
 
-::: {.highlight-box}
-São uma técnica de **bioengenharia de solos** que combina resistência mecânica imediata com potencial de estabelecimento vegetal ao longo do tempo.
+::: {.pitch-band .pitch-band--teal}
+Técnica de **bioengenharia de solos** que combina resistência mecânica imediata com potencial de estabelecimento vegetal ao longo do tempo.
 :::
 :::
 
-::: {.column width="45%"}
-![Área de ocorrência de ravinas (São Cristóvão, SE)](img/fig01_area_estudo.jpg){fig-align="center" width="100%"}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
+
+![Área de ocorrência de ravinas (São Cristóvão, SE)](img/fig01_area_estudo.jpg)
+
+[Área de ocorrência de ravinas (São Cristóvão, SE)]{.pitch-caption}
+[Erosão linear instalada em vertente de pastagem degradada]{.pitch-caption-sub}
 :::
 :::
 
----
+## [Comparativo]{.pitch-tag} Paliçadas no Contexto da Bioengenharia {.smaller-text .lesson-slide}
 
-## Paliçadas no contexto da bioengenharia {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Por que bioengenharia?
-
-A **bioengenharia de solos** utiliza materiais vivos ou naturais para resolver problemas de engenharia, combinando:
+::: {.pitch-grid-55}
+::: {.pitch-table-box}
 
 | Aspecto | Engenharia Convencional | Bioengenharia |
 |---------|------------------------|---------------|
-| Material | Concreto, gabião | Bambu, madeira, plantas |
-| Custo | Alto | Baixo a moderado |
-| Impacto ambiental | Elevado | Reduzido |
-| Durabilidade | Longa (décadas) | Média (3-5 anos) |
-| Manutenção | Baixa | Periódica |
-| Integração ecológica | Pouca | Alta |
+| **Material** | Concreto, gabião | Bambu, madeira, plantas |
+| **Custo** | Alto | Baixo a moderado |
+| **Impacto ambiental** | Elevado | Reduzido |
+| **Durabilidade** | Longa (décadas) | Média ($3\text{--}5\text{ anos}$) |
+| **Manutenção** | Baixa | Periódica |
+| **Integração ecológica** | Pouca | Alta |
 
-: {.striped .hover}
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Vantagens das paliçadas**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Vantagens operacionais]{.pitch-card-index}
+[Por que usar paliçadas?]{.pitch-heading}
 
-- Materiais disponíveis localmente
-- Mão de obra não especializada
-- Baixo custo de implantação
-- Podem se transformar em **barreiras vivas**
-- Compatíveis com outras práticas conservacionistas
+- Materiais disponíveis localmente e mão de obra não especializada
+- Baixo custo de implantação e compatibilidade conservacionista
+- Podem evoluir para **barreiras vivas** auto-sustentadas
 :::
 
-::: {.highlight-box}
-**Aplicações típicas:** ravinas em pastagens degradadas, taludes de estradas, áreas de mineração, recuperação de áreas degradadas (RAD).
+::: {.pitch-card .pitch-card--gold}
+[Aplicações típicas]{.pitch-card-index}
+[Áreas-alvo]{.pitch-heading}
+
+Ravinas em pastagens degradadas, taludes de estradas, áreas de mineração e recuperação de áreas degradadas (RAD).
 :::
 :::
 :::
 
-# [2. PRINCÍPIOS HIDRÁULICOS]{.section-header}
+# 2 · Princípios hidráulicos {.section-header rotulo="Hidráulica"}
 
-## Como as paliçadas funcionam? {.smaller-text}
+## [Mecanismo]{.pitch-tag .pitch-tag--teal} Como as Paliçadas Funcionam? {.smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Mecanismo hidráulico
-
-As paliçadas atuam por três mecanismos simultâneos:
-
-**1. Redução da declividade efetiva**
-
-- Formam **degraus sedimentares** a montante
-- Diminuem a tensão cisalhante no leito ($\tau = \gamma \cdot R_h \cdot S$)
-- Previnem a incisão vertical
-
-**2. Dissipação de energia**
-
-- A permeabilidade permite passagem de água
-- Evita pressão hidrostática excessiva
-- Reduz a velocidade do fluxo
-
-**3. Retenção de sedimentos**
-
-- Partículas grosseiras ficam retidas
-- Formação de cunha deposicional a montante
-- Nivelamento progressivo do canal
+::: {.pitch-grid-55}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1. Redução da declividade efetiva:** formam degraus sedimentares a montante, diminuem $\tau$ no leito e previnem a incisão vertical.
 :::
 
-::: {.column width="50%"}
-::: {.box}
-**Equação da tensão cisalhante**
+::: {.pitch-milestone-item}
+**2. Dissipação de energia:** a permeabilidade permite passagem filtrada da água, evita pressão hidrostática excessiva e reduz a velocidade.
+:::
+
+::: {.pitch-milestone-item}
+**3. Retenção de sedimentos:** partículas grosseiras ficam retidas, formando cunha deposicional a montante e nivelando o canal.
+:::
+:::
+
+::: {.pitch-formula}
+**Equação da tensão cisalhante no leito:**
 
 $$\tau = \gamma \cdot R_h \cdot S$$
 
-Onde:
+- $\tau$: tensão cisalhante ($\text{N/m}^2$); $\gamma$: peso específico da água ($\text{N/m}^3$)
+- $R_h$: raio hidráulico ($\text{m}$); $S$: declividade do canal ($\text{m/m}$)
 
-- $\tau$ = tensão cisalhante (N/m²)
-- $\gamma$ = peso específico da água (N/m³)
-- $R_h$ = raio hidráulico (m)
-- $S$ = declividade do canal (m/m)
-
-Ao reduzir **S**, as paliçadas diminuem diretamente $\tau$ e, portanto, a **capacidade de transporte** de sedimentos.
-:::
+Ao reduzir **$S$**, as paliçadas diminuem diretamente $\tau$ e a **capacidade de transporte** de sedimentos.
 :::
 :::
 
----
+## [Sistema em Série]{.pitch-tag .pitch-tag--gold} Arranjo em Série: Efeito Cascata {.smaller-text .lesson-slide}
 
-## Arranjo em série: efeito cascata {.smaller-text}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Por que em série?]{.pitch-card-index}
+[Dissipação progressiva]{.pitch-heading}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Por que usar paliçadas em série?
-
-Barreiras físicas **isoladas** não apresentam resistência suficiente para barrar a enxurrada em solos com:
+Barreiras físicas **isoladas** não suportam a enxurrada em solos com:
 
 - Drenagem interna lenta (ex.: Plintossolos)
 - Forte declividade (relevo ondulado)
 - Pastagem degradada (baixa cobertura vegetal)
 
-O **arranjo sequencial** dissipa a energia progressivamente, reduzindo a carga erosiva recebida por cada barreira subsequente.
+O **arranjo sequencial** reduz progressivamente a carga erosiva recebida por cada barreira subsequente.
+:::
 
-::: {.highlight-box}
+::: {.pitch-band .pitch-band--navy}
 **Princípio-chave:** a base de cada paliçada deve ficar **em nível com o topo da paliçada seguinte** (a jusante), permitindo o acúmulo de sedimentos no desnível formado.
 :::
 :::
 
-::: {.column width="50%"}
-![Ocorrência de ravinas na área estudada, segmentos superior, intermediário e inferior](img/fig03_ravinas_area.png){fig-align="center" width="100%"}
+::: {.pitch-media-card .pitch-media-card--tall}
+
+![Ocorrência de ravinas na área estudada, segmentos superior, intermediário e inferior](img/fig03_ravinas_area.png)
+
+[Segmentação da ravina: superior, intermediário e inferior]{.pitch-caption}
+[Posicionamento em série ao longo do perfil longitudinal]{.pitch-caption-sub}
 :::
 :::
 
----
+## [Conectividade]{.pitch-tag .pitch-tag--teal} Conectividade Hidrossedimentológica {.smaller-text .lesson-slide}
 
-## Conectividade hidrossedimentológica {.smaller-text}
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Interrupção da conectividade]{.pitch-card-index}
+[Mecanismos de controle]{.pitch-heading}
 
-::: {.columns}
-::: {.column width="55%"}
-
-### O papel das paliçadas na conectividade
-
-A **conectividade hidrossedimentológica** descreve o grau de ligação entre as áreas fontes de sedimento e os pontos de deposição na bacia hidrográfica.
-
-As paliçadas **reduzem** essa conectividade ao:
+As paliçadas reduzem a ligação entre fontes de sedimento e áreas de deposição ao:
 
 - **Interceptar** o fluxo concentrado no canal
 - **Fragmentar** o percurso do sedimento
 - **Aumentar** o tempo de residência hidráulica
 - **Criar zonas de remanso** a montante de cada estrutura
 
-::: {.info-box}
-A pastagem degradada → compactação → redução da infiltração → escoamento superficial → incisão de ravinas → **paliçadas interrompem o ciclo**.
+*Ciclo interrompido:* pastagem degradada → compactação → baixa infiltração → escoamento → ravina → **paliçadas**.
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[1 · Chuva]{.pitch-card-index}
+[Escoamento]{.pitch-heading}
+
+Precipitação gera escoamento superficial.
+:::
+
+::: {.pitch-card .pitch-card--alert}
+[2 · Condição]{.pitch-card-index}
+[Solo restritivo]{.pitch-heading}
+
+Impermeável: fluxo concentrado e incisão (vs. infiltração).
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[3 · Intervenção]{.pitch-card-index}
+[Paliçadas em série]{.pitch-heading}
+
+Reduzem velocidade, retêm sedimentos e estabilizam perfil.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[4 · Resposta]{.pitch-card-index}
+[Recuperação]{.pitch-heading}
+
+Deposição a montante e recuperação do canal.
 :::
 :::
 
-::: {.column width="45%"}
-
-### Diagrama conceitual
-
-```{mermaid}
-%%| fig-width: 5
-flowchart TD
-    A[Precipitação] --> B[Escoamento Superficial]
-    B --> C{Solo Impermeável?}
-    C -->|Sim| D[Fluxo Concentrado]
-    C -->|Não| E[Infiltração]
-    D --> F[Incisão de Ravina]
-    F --> G[Paliçadas em Série]
-    G --> H[Redução de Velocidade]
-    G --> I[Retenção de Sedimentos]
-    G --> J[Estabilização do Perfil]
-    H --> K[Deposição a Montante]
-    I --> K
-    J --> L[Recuperação do Canal]
-    K --> L
-```
+::: {.pitch-band .pitch-band--teal}
+Sem barreiras, a incisão conecta a vertente diretamente à rede de drenagem; em série, as paliçadas fragmentam o transporte sólido.
+:::
 :::
 :::
 
-# [3. MATERIAIS E DIMENSIONAMENTO]{.section-header}
+## [Esquema Integrado]{.pitch-tag .pitch-tag--teal} Conectividade e Execução em Ravinas {.smaller-text .lesson-slide}
 
-## Materiais utilizados {.smaller-text}
+::: {.pitch-media-card .pitch-media-card--wide}
 
-::: {.columns}
-::: {.column width="50%"}
+![Conectividade hidrossedimentológica e construção de paliçadas em ravinas](img/bs_10_conectividade_palicadas.png)
 
-### Bambu (*Bambusa vulgaris*)
+[Conectividade hidrossedimentológica e sequência construtiva em 4 etapas]{.pitch-caption}
+[Integração entre fluxo de vertente, controle no talvegue e estabilização biológica pós-retenção]{.pitch-caption-sub}
+:::
 
-Espécie mais utilizada na construção de paliçadas no Nordeste brasileiro:
+# 3 · Materiais e dimensionamento {.section-header rotulo="Materiais"}
 
-| Característica | Detalhe |
+## [Materiais]{.pitch-tag .pitch-tag--forest} Materiais Utilizados {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+
+| Bambu (*Bambusa vulgaris*) | Característica técnica |
 |---------------|---------|
 | **Disponibilidade** | Abundante em áreas rurais |
-| **Resistência** | Mecânica alta (quando novo) |
-| **Custo** | Muito baixo (coleta local) |
-| **Crescimento** | Rápido (pode brotar in situ) |
-| **Durabilidade** | 3-5 anos sem tratamento |
-| **Trabalho** | Fácil de cortar e amarrar |
+| **Resistência e custo** | Mecânica alta (novo); coleta local |
+| **Crescimento e durabilidade** | Rápido (brota *in situ*); $3\text{--}5\text{ anos}$ sem tratamento |
+| **Trabalhabilidade** | Fácil de cortar e amarrar |
 
-: {.striped .hover}
+:::
 
-::: {.highlight-box}
-**Dupla função:** o bambu enterrado pode **brotar**, criando uma barreira viva que substitui a estrutura mecânica à medida que esta se degrada.
+::: {.pitch-card .pitch-card--forest}
+[Dupla função e seleção]{.pitch-card-index}
+[Critérios de material]{.pitch-heading}
+
+O bambu enterrado pode **brotar**, formando **barreira viva**. Materiais complementares: arame recozido, sacos de ráfia (face a montante), pinos de ferro ($30\text{ cm} \times \varnothing\,8\text{ mm}$) e estacas de madeira.
+
+*Critérios:* disponibilidade, resistência, brotamento, manuseio e permeabilidade.
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
 
-### Outros materiais complementares
+![Sacos de ráfia posicionados na face a montante da paliçada](img/saco_rafia_1.jpeg)
 
-- **Arame recozido**, fixação das toras horizontais às verticais
-- **Sacos de ráfia**, preenchidos com solo local ou vazios na face a montante
-- **Pinos de ferro**, para monitoramento da sedimentação (30 cm × ∅ 8 mm)
-- **Estacas de madeira**, suporte vertical alternativo
-
-![Sacos de ráfia posicionados na face a montante da paliçada](img/saco_rafia_1.jpeg){fig-align="center" width="85%"}
-
-### Critérios de seleção do material
-
-::: {.info-box}
-1. **Disponibilidade local**, reduz custo e logística
-2. **Resistência mecânica**, suportar enxurradas
-3. **Potencial biológico**, capacidade de brotar/enraizar
-4. **Facilidade de manuseio**, não exigir maquinário
-5. **Permeabilidade**, permitir passagem de água
-:::
+[Sacos de ráfia na face a montante]{.pitch-caption}
+[Retenção adicional de sedimentos finos sem vedação total]{.pitch-caption-sub}
 :::
 :::
 
----
+## [Dimensionamento]{.pitch-tag .pitch-tag--gold} Dimensionamento das Paliçadas {.smaller-text .lesson-slide}
 
-## Dimensionamento das paliçadas {.smaller-text}
+::: {.pitch-grid-55}
+::: {.pitch-formula}
+**Largura, enterrio e espaçamento ($D$):**
 
-::: {.columns}
-::: {.column width="55%"}
+$$L_{\mathrm{pal}} = L_{\mathrm{ravina}} + 2 \times 0{,}15\text{ m} \qquad h_{\mathrm{enterrio}} \ge 0{,}30\text{ m}$$
+$$D = \frac{h_{\mathrm{pal}}}{\tan(\alpha)}$$
 
-### Critérios de dimensionamento
-
-O dimensionamento depende dos **dados morfométricos** da ravina:
-
-**Largura da paliçada:**
-
-$$L_{pal} = L_{ravina} + 2 \times 0{,}15 \text{ m}$$
-
-Onde os 15 cm extras em cada lado garantem a **ancoragem nos taludes**.
-
-**Profundidade de enterrio (toras verticais):**
-
-$$h_{enterrio} = 0{,}30 \text{ m (mínimo)}$$
-
-**Espaçamento entre paliçadas:**
-
-$$D = \frac{h_{pal}}{\tan(\alpha)}$$
-
-Onde $h_{pal}$ é a altura útil da paliçada e $\alpha$ é a declividade do canal.
-
-::: {.highlight-box}
-**Regra prática:** a base da paliçada a montante deve ficar em nível com o topo da paliçada a jusante.
-:::
+- $15\text{ cm}$ extras de cada lado garantem ancoragem nos taludes.
+- $h_{\mathrm{pal}}$: altura útil; $\alpha$: declividade do canal.
+- **Regra prática:** base da paliçada a montante em nível com o topo da paliçada a jusante.
 :::
 
-::: {.column width="45%"}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 
-### Exemplo de estudo de caso
-
-| Segmento | Altura útil (cm) | Largura (m) |
+| Segmento (estudo de caso) | Altura útil ($\text{cm}$) | Largura ($\text{m}$) |
 |----------|:-----------------:|:-----------:|
-| Superior (SUP) | 50 | Variável |
-| Intermediário (MED) | 76 | Variável |
-| Inferior (INF) | 36 | Variável |
+| **Superior (SUP)** | 50 | Variável |
+| **Intermediário (MED)** | 76 | Variável |
+| **Inferior (INF)** | 36 | Variável |
 
-: {.striped .hover}
+:::
 
-::: {.info-box}
-**Coleta de dados necessários:**
+::: {.pitch-card}
+[Dados necessários]{.pitch-card-index}
+[Levantamento morfométrico]{.pitch-heading}
 
-- Levantamento planialtimétrico (drone + GNSS-RTK)
-- Medição de largura e profundidade dos segmentos
-- Avaliação da declividade longitudinal
-- Classificação do solo (trincheira)
+Planialtimetria (drone + GNSS-RTK), largura e profundidade dos segmentos, declividade longitudinal e classificação do solo em trincheira.
 :::
 :::
 :::
 
-# [4. ETAPAS DE INSTALAÇÃO]{.section-header}
+# 4 · Etapas de instalação {.section-header rotulo="Instalação"}
 
-## Passo a passo da construção {.smaller-text}
+## [Construção]{.pitch-tag .pitch-tag--forest} Passo a Passo da Construção {.smaller-text .lesson-slide}
 
-![Etapas de construção das paliçadas. (a) Coleta de toras de bambu; (b) Corte das toras; (c) Coleta dos dados morfométricos; (d) Início da construção; (e) Amarrio das toras; (f) Paliçadas prontas.](img/fig04_etapas_construcao.png){fig-align="center" width="90%"}
+::: {.pitch-grid-60}
+::: {.pitch-media-card .pitch-media-card--tall}
 
-![Paliçada de menor porte instalada em segmento da ravina](img/pali%C3%A7ada_menor.jpeg){fig-align="center" width="70%"}
+![Etapas de construção das paliçadas. (a) Coleta de toras de bambu; (b) Corte das toras; (c) Coleta dos dados morfométricos; (d) Início da construção; (e) Amarrio das toras; (f) Paliçadas prontas.](img/fig04_etapas_construcao.png)
 
----
+[Etapas de construção das paliçadas]{.pitch-caption}
+[(a) Coleta; (b) Corte; (c) Morfometria; (d) Início; (e) Amarrio; (f) Paliçadas prontas]{.pitch-caption-sub}
+:::
 
-## Etapa 1. Planejamento e levantamento {.smaller-text}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
 
-::: {.columns}
-::: {.column width="50%"}
+![Paliçada de menor porte instalada em segmento da ravina](img/pali%C3%A7ada_menor.jpeg)
 
-### Levantamento de campo
+[Paliçada de menor porte instalada]{.pitch-caption}
+[Estrutura adaptada à seção transversal do segmento]{.pitch-caption-sub}
+:::
+:::
 
-1. **Aerofotogrametria** com drone (ex.: DJI Air 2S) + receptor GNSS-RTK
-2. **Georreferenciamento** de pontos de apoio (mínimo 3 GCPs)
-3. **Identificação e classificação** das feições erosivas (ravinas vs. voçorocas vs. sulcos)
-4. **Segmentação** da ravina em trechos: superior, intermediário e inferior
-5. **Coleta de dados morfométricos:** largura, profundidade, comprimento de cada segmento
+## [Etapa 1]{.pitch-tag} Etapa 1 · Planejamento e Levantamento {.smaller-text .lesson-slide}
 
-### Classificação das feições
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Levantamento e segmentação]{.pitch-card-index}
+[5 passos iniciais]{.pitch-heading}
+
+1. **Aerofotogrametria** (drone ex.: DJI Air 2S) + GNSS-RTK ($\ge 3$ GCPs).
+2. **Classificação e segmentação** da ravina (SUP, MED e INF) e medição morfométrica.
+:::
+
+::: {.pitch-table-box}
 
 | Critério | Sulcos | Ravinas | Voçorocas |
 |----------|--------|---------|-----------|
-| Profundidade | < 30 cm | 30 cm - vários m | > vários m |
-| Lençol freático | Não | Não | Sim |
-| Máquina transpõe? | Sim | Não | Não |
-| Evolução | Efêmero | Regressiva | Regressiva + lateral |
+| **Profundidade** | $< 30\text{ cm}$ | $30\text{ cm}\text{--}\text{vários m}$ | $>$ vários m |
+| **Lençol freático** | Não | Não | Sim |
+| **Máquina transpõe?** | Sim | Não | Não |
+| **Evolução** | Efêmero | Regressiva | Regressiva + lateral |
 
-: {.striped .hover}
-:::
-
-::: {.column width="50%"}
-
-### Descrição do solo
-
-::: {.info-box}
-A caracterização do solo é **fundamental** para entender:
-
-- Capacidade de retenção de água
-- Suscetibilidade à erosão
-- Impedância hidráulica (camadas restritivas)
-- Potencial de estabilização
-:::
-
-![Perfil do Plintossolo Argilúvico distrófico (trincheira de 1,5 m)](img/fig02_perfil_solo.png){fig-align="center" width="55%"}
 :::
 :::
 
----
+::: {.pitch-stack-2}
+::: {.pitch-media-card .pitch-media-card--compact}
 
-## Etapa 2. Coleta e preparo do bambu {.smaller-text}
+![Perfil do Plintossolo Argilúvico distrófico (trincheira de 1,5 m)](img/fig02_perfil_solo.png)
 
-::: {.columns}
-::: {.column width="50%"}
+[Plintossolo Argilúvico distrófico ($1{,}5\text{ m}$)]{.pitch-caption}
+:::
 
-### Procedimentos
-
-1. **Seleção de toras** de *Bambusa vulgaris* na área experimental
-2. **Corte** no comprimento adequado:
-   - Toras horizontais: largura da ravina + 30 cm
-   - Toras verticais: altura útil + 30 cm (enterrio)
-3. **Perfuração dos entrenós** da tora basal:
-   - Preenchimento com água
-   - Vedação dos furos
-   - Objetivo: induzir **brotamento e enraizamento**
-4. **Enterrio prévio** da tora basal por **2 meses** para desenvolvimento de brotos
-
-::: {.highlight-box}
-**Importante:** a tora basal cumpre **dupla função** (propagação da espécie e barreira contra enxurradas).
+::: {.pitch-band .pitch-band--teal}
+A descrição do solo revela retenção hídrica, erodibilidade, impedância hidráulica e potencial de estabilização.
+:::
 :::
 :::
 
-::: {.column width="50%"}
+## [Etapa 2]{.pitch-tag .pitch-tag--gold} Etapa 2 · Coleta e Preparo do Bambu {.smaller-text .lesson-slide}
 
-### Cuidados no preparo
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Procedimentos de preparo]{.pitch-card-index}
+[Indução de brotamento]{.pitch-heading}
 
-::: {.info-box}
-**Dicas práticas:**
-
-- Coletar bambu com diâmetro uniforme (8-12 cm)
-- Evitar toras com rachaduras ou danos por insetos
-- Cortar em período seco para maior durabilidade
-- Manter entrenós intactos (exceto tora basal)
-- Armazenar na vertical até instalação
+1. **Seleção de toras** de *Bambusa vulgaris* ($\varnothing\,8\text{--}12\text{ cm}$, corte seco, sem rachaduras/insetos).
+2. **Corte:** horizontais = largura $+ 30\text{ cm}$; verticais = altura útil $+ 30\text{ cm}$ (enterrio).
+3. **Tora basal:** perfurar entrenós, preencher com água, vedar e **enterrar por 2 meses** antes para enraizamento/brotamento.
 :::
 
-### Quantificação de material
+::: {.pitch-band .pitch-band--navy}
+**Dupla função da tora basal:** propagação vegetativa da espécie e barreira mecânica imediata contra enxurradas.
+:::
+:::
 
-Para **4 paliçadas** em uma ravina de ~30 m:
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Armazenamento]{.pitch-card-index}
+[Boas práticas]{.pitch-heading}
 
-| Material | Quantidade estimada |
+Manter entrenós intactos (exceto tora basal) e armazenar toras na vertical até a instalação em campo.
+:::
+
+::: {.pitch-table-box}
+
+| Material (4 paliçadas / ~30 m) | Quantidade estimada |
 |----------|:------------------:|
-| Toras de bambu | 20-30 unidades |
-| Arame recozido | 10-15 m |
-| Sacos de ráfia | 8-12 unidades |
-| Pinos de ferro (monitoramento) | 10-15 unidades |
+| **Toras de bambu** | $20\text{--}30$ unidades |
+| **Arame recozido** | $10\text{--}15\text{ m}$ |
+| **Sacos de ráfia** | $8\text{--}12$ unidades |
+| **Pinos de ferro (monitoramento)** | $10\text{--}15$ unidades |
 
-: {.striped .hover}
-:::
-:::
-
----
-
-## Etapa 3. Construção e fixação {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Sequência de montagem
-
-1. **Enterrar toras verticais** a 30 cm de profundidade
-   - Distribuir ao longo da seção transversal
-   - Espaçamento: 20-30 cm entre toras verticais
-
-2. **Instalar tora basal** (já brotada)
-   - Posicionar na base da paliçada
-   - Contato direto com o leito da ravina
-
-3. **Empilhar toras horizontais**
-   - Da base para o topo
-   - Fixar com arame recozido às toras verticais
-
-4. **Instalar sacos de ráfia** na face a montante
-   - Preenchidos com solo local ou vazios
-   - Aumentam a eficiência na retenção de sedimentos finos
-
-![Detalhe dos sacos de ráfia instalados na paliçada](img/saco_rafia_2.jpeg){fig-align="center" width="80%"}
-
-5. **Verificar nivelamento** com a paliçada a jusante
-
-:::
-
-::: {.column width="50%"}
-
-### Detalhes construtivos
-
-```{mermaid}
-%%| fig-width: 5.5
-flowchart TD
-    A[Enterrar toras verticais<br>Prof. = 30 cm] --> B[Posicionar tora basal<br>já brotada]
-    B --> C[Empilhar toras horizontais<br>amarrar com arame recozido]
-    C --> D[Instalar sacos de ráfia<br>face a montante]
-    D --> E[Verificar nivelamento<br>com paliçada a jusante]
-    E --> F[Instalar pinos de<br>monitoramento]
-    
-    style A fill:#2135A6,color:#fff
-    style B fill:#2135A6,color:#fff
-    style C fill:#2135A6,color:#fff
-    style D fill:#586BA6,color:#2135A6
-    style E fill:#586BA6,color:#2135A6
-    style F fill:#27368C,color:#fff
-```
-
-::: {.highlight-box}
-**Regra de ancoragem:** adicionar 15 cm extras em cada lado da ravina (nos taludes) para garantir estabilidade lateral.
 :::
 :::
 :::
 
-# [5. MONITORAMENTO E EFICIÊNCIA]{.section-header}
+## [Etapa 3]{.pitch-tag .pitch-tag--forest} Etapa 3 · Construção e Fixação {.smaller-text .lesson-slide}
 
-## Método dos pinos {.smaller-text}
+::: {.pitch-grid-55}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1. Toras verticais:** enterrar a $30\text{ cm}$ de profundidade com espaçamento de $20\text{--}30\text{ cm}$ na seção.
+:::
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-milestone-item}
+**2. Tora basal brotada:** posicionar em contato direto com o leito da ravina.
+:::
 
-### Monitoramento da sedimentação
+::: {.pitch-milestone-item}
+**3. Toras horizontais:** empilhar da base ao topo e amarrar com arame recozido às estacas verticais.
+:::
 
-O **método dos pinos** é a técnica padrão para medir deposição e erosão:
+::: {.pitch-milestone-item}
+**4. Sacos de ráfia:** instalar na face a montante (com solo ou vazios) para reter finos.
+:::
 
-- Pinos de ferro: 30 cm comprimento, cravados a 10 cm
-- **20 cm expostos** (altura de referência)
-- Medição com régua graduada (precisão 1 mm)
-- Leituras **mensais** durante todo o período
+::: {.pitch-milestone-item}
+**5. Nivelamento e pinos:** conferir nível com a paliçada a jusante e cravar pinos de monitoramento.
+:::
+:::
 
-### Pontos de medição
+::: {.pitch-stack-2}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
 
-| Posição | Função |
+![Detalhe dos sacos de ráfia instalados na paliçada](img/saco_rafia_2.jpeg)
+
+[Sacos de ráfia na face a montante]{.pitch-caption}
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Regra de ancoragem]{.pitch-card-index}
+[Estabilidade lateral]{.pitch-heading}
+
+Adicionar **$15\text{ cm}$ extras em cada lado** da ravina (embutidos nos taludes) para evitar erosão lateral (*piping*).
+:::
+:::
+:::
+
+# 5 · Monitoramento e eficiência {.section-header rotulo="Monitoramento"}
+
+## [Método dos Pinos]{.pitch-tag} Método dos Pinos {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Protocolo de medição]{.pitch-card-index}
+[Precisão milimétrica mensal]{.pitch-heading}
+
+- Pinos de ferro de $30\text{ cm}$, cravados a $10\text{ cm}$ (**$20\text{ cm}$ expostos** como referência).
+- Leituras **mensais** com régua graduada (precisão $1\text{ mm}$).
+- Se altura exposta *diminui* → **deposição**; se *aumenta* → **erosão** localizada.
+:::
+
+::: {.pitch-table-box}
+
+| Posição do pino | Função |
 |---------|--------|
 | **A montante** de cada paliçada | Estimar **deposição** |
 | **Cabeceira** da ravina | Medir **erosão regressiva** |
 
-: {.striped .hover}
-
-::: {.info-box}
-**Cálculo:** se a altura exposta *diminui*, houve **deposição**. Se *aumenta*, houve **erosão** localizada.
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-media-card .pitch-media-card--compact}
 
-### Dados complementares
+![Série de precipitação (2005-2025) e acumulado móvel de 30 dias](img/fig05_serie_precipitacao.png)
 
-Além dos pinos, o monitoramento inclui:
-
-- **Dados pluviométricos**, estação meteorológica local
-- **Levantamentos periódicos com drone**, fotogrametria
-- **Observação visual**, integridade estrutural
-- **Registro fotográfico**, comparação temporal
-
-![Série de precipitação (2005-2025) e acumulado móvel de 30 dias](img/fig05_serie_precipitacao.png){fig-align="center" width="100%"}
-:::
+[Série de precipitação (2005–2025)]{.pitch-caption}
 :::
 
----
+::: {.pitch-card .pitch-card--teal}
+[Dados complementares]{.pitch-card-index}
+[Monitoramento integrado]{.pitch-heading}
 
-## Resultados de eficiência {.smaller-text}
+Estação pluviométrica local, fotogrametria periódica com drone, inspeção visual da estrutura e registro fotográfico temporal.
+:::
+:::
+:::
 
-::: {.columns}
-::: {.column width="50%"}
+## [Resultados]{.pitch-tag .pitch-tag--forest} Resultados de Eficiência {.smaller-text .lesson-slide}
 
-### Retenção de sedimentos observada
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Retenção em 2 anos (2023–2025)]{.pitch-card-index}
+[Desempenho observado]{.pitch-heading}
 
-Resultados do monitoramento de 2 anos (2023-2025):
-
-- **Retenção vertical acumulada** de até **76 cm** nos segmentos intermediários
+- **Retenção vertical acumulada** de até **$76\text{ cm}$** nos segmentos intermediários
 - **Estabilização geométrica** da feição erosiva
-- Capacidade residual **> 98%** em todos os segmentos
+- Capacidade residual **$> 98\%$** em todos os segmentos
+:::
 
-### Distribuição por segmento
+::: {.pitch-table-box}
 
-| Segmento | Contribuição (%) | Eficiência (cm/mm) |
+| Segmento | Contribuição ($\%$) | Eficiência ($\text{cm/mm}$) |
 |----------|:-----------------:|:------------------:|
 | Superior (SUP) | 37,7% | $1{,}12 \times 10^{-4}$ |
 | Intermediário (MED) | 22,6% | $1{,}45 \times 10^{-4}$ |
 | Inferior (INF) | 39,7% | $1{,}97 \times 10^{-4}$ |
 
-: {.striped .hover}
-
-::: {.highlight-box}
-O desempenho **equilibrado** entre segmentos demonstra que o arranjo em série promove amortecimento distribuído da energia.
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-media-card .pitch-media-card--compact}
 
-### Dinâmica deposicional
+![Sedimentação acumulada e resposta a eventos extremos](img/fig06_sedimentacao_acumulada.png)
 
-![Sedimentação acumulada e resposta a eventos extremos](img/fig06_sedimentacao_acumulada.png){fig-align="center" width="100%"}
+[Dinâmica deposicional e eventos extremos]{.pitch-caption}
+:::
 
-::: {.info-box}
-**Achado importante:** apenas **4 episódios** de deposição acima do percentil 95 responderam por **40,6% da carga sólida total** retida, e a estabilização é dominada por **eventos extremos**.
+::: {.pitch-band .pitch-band--navy}
+**Achado-chave:** apenas **4 episódios** acima do percentil 95 responderam por **$40{,}6\%$ da carga sólida total** retida; o amortecimento em série distribuiu o trabalho entre segmentos.
 :::
 :::
 :::
 
----
+## [Chuva × Deposição]{.pitch-tag .pitch-tag--gold} Interação Chuva × Deposição {.smaller-text .lesson-slide}
 
-## Interação chuva × deposição {.smaller-text}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Comportamento não-linear
-
-A relação entre chuva e deposição **não é linear**:
-
-| Classe | Faixa (mm/mês) | Sedimentação média (cm) |
+| Classe de chuva | Faixa ($\text{mm/mês}$) | Sedimentação média ($\text{cm}$) |
 |--------|:--------------:|:-----------------------:|
-| Moderado | 70-151 | 0,0181 |
-| Alto | 151-306 | 0,0669 |
-| Muito Alto | 306-356 | 0,0053 |
+| Moderado | 70–151 | 0,0181 |
+| Alto | 151–306 | 0,0669 |
+| Muito Alto | 306–356 | 0,0053 |
 | Extremo | > 356 | 0,0535 |
 
-: {.striped .hover}
+:::
 
-::: {.info-box}
-Eventos **muito intensos** podem ter eficiência menor! A energia do fluxo **supera a capacidade de decantação** das paliçadas, mantendo partículas finas em suspensão (*bypass*) ou remobilizando depósitos por turbulência (*scouring*).
+::: {.pitch-card .pitch-card--alert}
+[Comportamento não linear]{.pitch-card-index}
+[*Bypass* e *scouring*]{.pitch-heading}
+
+Em eventos muito intensos, a energia do fluxo supera a capacidade de decantação, mantendo finos em suspensão (*bypass*) ou remobilizando depósitos (*scouring*).
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-media-card .pitch-media-card--compact}
 
-![Enquadramento IDF e leitura temporal da precipitação](img/fig07_idf_serie_temporal.png){fig-align="center" width="100%"}
+![Enquadramento IDF e leitura temporal da precipitação](img/fig07_idf_serie_temporal.png)
 
-### Condições antecedentes
-
-Chuvas moderadas prévias podem:
-
-- **Saturar o solo** → reduzir coesão dos agregados
-- Criar **efeito preparatório** (*priming effect*)
-- Tornar o sistema vulnerável a taxas de erosão **desproporcionais** em eventos subsequentes
-:::
+[Enquadramento IDF e série temporal]{.pitch-caption}
 :::
 
-# [6. MANUTENÇÃO E LONGEVIDADE]{.section-header}
+::: {.pitch-card}
+[Condições antecedentes]{.pitch-card-index}
+[*Priming effect*]{.pitch-heading}
 
-## Protocolo de manutenção {.smaller-text}
+Chuvas moderadas prévias saturam o solo, reduzem a coesão dos agregados e preparam taxas de erosão desproporcionais nos eventos seguintes.
+:::
+:::
+:::
 
-::: {.columns}
-::: {.column width="50%"}
+# 6 · Manutenção e longevidade {.section-header rotulo="Manutenção"}
 
-### Ciclo de manutenção: 8 meses
+## [Manutenção]{.pitch-tag .pitch-tag--alert} Protocolo de Manutenção {.smaller-text .lesson-slide}
 
-A integridade estrutural é mantida por intervenções periódicas:
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Ciclo de manutenção: 8 meses]{.pitch-card-index}
+[Rotina periódica]{.pitch-heading}
 
-1. **Inspeção visual**, verificar integridade das toras e amarrações
+1. **Inspeção visual** de toras e amarrações
 2. **Substituição de arames** recozidos danificados
 3. **Renovação dos sacos de ráfia** na face frontal
 4. **Verificação do brotamento** do bambu
 5. **Avaliação da capacidade residual** (leitura dos pinos)
+:::
 
-::: {.highlight-box}
-**Atenção especial ao segmento inferior!** Sua menor altura útil (36 cm) e maior eficiência de retenção fazem com que sature primeiro (~0,8 ano sob cenário P95).
+::: {.pitch-band .pitch-band--navy}
+**Atenção ao segmento inferior (INF):** menor altura útil ($36\text{ cm}$) e maior eficiência fazem com que sature primeiro ($\sim 0{,}8\text{ ano}$ em P95).
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 
-### Modos de falha
-
-| Modo | Causa | Tempo estimado |
+| Modo de falha | Causa principal | Tempo estimado |
 |------|-------|:--------------:|
-| **Assoreamento** | Saturação da capacidade | 0,8-4,8 anos |
-| **Degradação do bambu** | Biodegradação | 4-5 anos |
-| **Colapso estrutural** | Perda de resistência | > 3 anos |
+| **Assoreamento** | Saturação da capacidade | $0{,}8\text{--}4{,}8\text{ anos}$ |
+| **Degradação do bambu** | Biodegradação | $4\text{--}5\text{ anos}$ |
+| **Colapso estrutural** | Perda de resistência | $> 3\text{ anos}$ |
 | **Bypass** | Fluxo supera a barreira | Eventos extremos |
 
-: {.striped .hover}
+:::
 
-::: {.info-box}
-**Modo de falha primário:** em regime de eventos extremos, o principal risco é o **transbordamento por assoreamento**, que ocorre **antes** da falha estrutural do bambu.
+::: {.pitch-card .pitch-card--alert}
+[Modo de falha primário]{.pitch-card-index}
+[Transbordamento precoce]{.pitch-heading}
+
+Sob eventos extremos, o **transbordamento por assoreamento** ocorre **antes** da falha estrutural do bambu.
 :::
 :::
 :::
 
----
+## [Transição]{.pitch-tag .pitch-tag--forest} Transição: Barreira Mecânica → Barreira Viva {.smaller-text .lesson-slide}
 
-## Transição: barreira mecânica → barreira viva {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### O conceito de barreira viva
-
-A grande vantagem da bioengenharia é a **transição funcional**:
-
-1. **Fase mecânica (0-3 anos):**
-   - Bambu fornece resistência estrutural
-   - Retenção de sedimentos por barreira física
-   - Início do brotamento e enraizamento
-
-2. **Fase de transição (3-4 anos):**
-   - Fator de vegetação cruza a curva de degradação
-   - Rizomas começam a ancorar o solo
-   - Colmos de bambu aumentam a densidade
-
-3. **Fase biotécnica (> 4 anos):**
-   - Estabilidade governada por **ancoragem de rizomas**
-   - Dissipação hidráulica pela **densidade de colmos**
-   - Funcionalidade persiste além da vida útil do material original
+::: {.pitch-grid-50}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1. Fase mecânica (0–3 anos):** bambu fornece resistência estrutural, retenção física de sedimentos e início do brotamento/enraizamento.
 :::
 
-::: {.column width="50%"}
+::: {.pitch-milestone-item}
+**2. Fase de transição (3–4 anos):** fator de vegetação cruza a curva de degradação; rizomas ancoram o solo e colmos aumentam a densidade.
+:::
 
-![Estabelecimento da barreira viva e interação entre degradação e vegetação](img/fig09_barreira_viva.png){fig-align="center" width="100%"}
+::: {.pitch-milestone-item}
+**3. Fase biotécnica (> 4 anos):** estabilidade governada por **ancoragem de rizomas** e dissipação hidráulica pelos **colmos**, além da vida útil do material original.
+:::
+:::
 
-::: {.highlight-box}
-**Ponto de cruzamento (~3 anos):** o sistema transita de barreira puramente mecânica para **estabilização biotécnica**, onde enraizamento e cobertura vegetal assumem a função de contenção.
+::: {.pitch-stack-2}
+::: {.pitch-media-card .pitch-media-card--compact}
+
+![Estabelecimento da barreira viva e interação entre degradação e vegetação](img/fig09_barreira_viva.png)
+
+[Degradação mecânica vs. estabilização biológica]{.pitch-caption}
+:::
+
+::: {.pitch-band .pitch-band--teal}
+**Ponto de cruzamento (~3 anos):** o sistema transita de barreira puramente mecânica para **estabilização biotécnica** permanente.
 :::
 :::
 :::
 
----
+## [Longevidade]{.pitch-tag .pitch-tag--gold} Cenários de Longevidade {.smaller-text .lesson-slide}
 
-## Cenários de longevidade {.smaller-text}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 
-::: {.columns}
-::: {.column width="55%"}
-
-### Projeções por cenário de precipitação
-
-| Segmento | Cenário Médio | P90 (168 mm) | P95 (182 mm) |
+| Segmento | Cenário Médio | P90 ($168\text{ mm}$) | P95 ($182\text{ mm}$) |
 |----------|:------------:|:------------:|:-------------:|
-| SUP (50 cm) | **4,8 anos** | 2,4 anos | 2,2 anos |
-| MED (76 cm) | **2,2 anos** | 1,1 anos | 1,0 ano |
-| INF (36 cm) | **1,7 anos** | 0,8 anos | 0,8 anos |
+| **SUP (50 cm)** | **4,8 anos** | 2,4 anos | 2,2 anos |
+| **MED (76 cm)** | **2,2 anos** | 1,1 anos | 1,0 ano |
+| **INF (36 cm)** | **1,7 anos** | 0,8 anos | 0,8 anos |
 
-: {.striped .hover}
+:::
 
-::: {.info-box}
-**Conclusão operacional:** o segmento inferior é o **limitante crítico** do sistema. Sob cenário P95, a saturação pode ocorrer em menos de 1 ano.
+::: {.pitch-card .pitch-card--alert}
+[Conclusão operacional]{.pitch-card-index}
+[Limitante crítico]{.pitch-heading}
 
-Portanto, a **manutenção preventiva** (desassoreamento) deve priorizar o segmento inferior.
+O segmento inferior (**INF**) satura em menos de 1 ano sob P95. A **manutenção preventiva** (desassoreamento) deve priorizar esse segmento.
 :::
 :::
 
-::: {.column width="45%"}
+::: {.pitch-media-card .pitch-media-card--tall}
 
-![Simulação da capacidade máxima nos cenários Médio, P90 e P95](img/fig10_simulacao_anos.png){fig-align="center" width="100%"}
+![Simulação da capacidade máxima nos cenários Médio, P90 e P95](img/fig10_simulacao_anos.png)
+
+[Simulação de saturação (Médio, P90 e P95)]{.pitch-caption}
+[Projeção do tempo até preenchimento completo da capacidade útil]{.pitch-caption-sub}
 :::
 :::
 
-# [7. ESTUDO DE CASO]{.section-header}
+# 7 · Estudo de caso {.section-header rotulo="Estudo de caso"}
 
-## Localização e solo {.smaller-text}
+## [Caso UFS]{.pitch-tag .pitch-tag--teal} Localização e Solo — Campus Rural (UFS) {.smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Área experimental (São Cristóvão, SE)]{.pitch-card-index}
+[$10^\circ55'28{,}8''\text{ S}$;\; $37^\circ11'58{,}9''\text{ O}$]{.pitch-heading}
 
-### Área experimental
+- **Relevo e clima:** ondulado a muito ondulado; tropical úmido (*As*, Köppen-Geiger)
+- **Precipitação e solo:** $\sim 1.092\text{ mm/ano}$ ($2005\text{--}2025$); **Plintossolo Argilúvico distrófico**
+:::
 
-- **Local:** Estação Experimental Campus Rural (UFS), São Cristóvão, SE
-- **Coordenadas:** 10°55'28,8" S; 37°11'58,9" O
-- **Relevo:** Ondulado a muito ondulado
-- **Clima:** Tropical úmido (As, Köppen-Geiger)
-- **Precipitação:** ~1.092 mm/ano (série 2005-2025)
-- **Solo:** Plintossolo Argilúvico distrófico
+::: {.pitch-table-box}
 
-### Atributos do solo
-
-| Atributo | Ap (0-10) | AB (10-25) | Bt (40-150+) |
+| Atributo | Ap (0–10) | AB (10–25) | Bt (40–150+) |
 |----------|:---------:|:----------:|:------------:|
-| pH | 5,2 | 4,5 | 4,6 |
-| Argila (%) | 33,4 | 47,4 | 51,4 |
-| Al (cmol~c~/dm³) | 0,56 | 2,9 | 5,9 |
-| Textura | Fr. Arg. Aren. | Argilosa | Argilosa |
+| **pH** | 5,2 | 4,5 | 4,6 |
+| **Argila (%)** | 33,4 | 47,4 | 51,4 |
+| **Al ($\text{cmol}_c/\text{dm}^3$)** | 0,56 | 2,9 | 5,9 |
+| **Textura** | Fr. Arg. Aren. | Argilosa | Argilosa |
 
-: {.striped .hover}
-:::
-
-::: {.column width="50%"}
-
-### Implicações para erosão
-
-::: {.info-box}
-**Plintossolo, por que é tão vulnerável?**
-
-- Horizonte Bt com **impedância hidráulica**: dificulta drenagem interna
-- Favorece escoamento por **excesso de saturação**
-- Alta erodibilidade dos horizontes superficiais
-- Baixa coesão efetiva (Ap e AB)
-- Alta concentração de alumínio → solo ácido e degradado
-:::
-
-![Perfil do Plintossolo Argilúvico distrófico](img/fig02_perfil_solo.png){fig-align="center" width="50%"}
 :::
 :::
 
----
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--alert}
+[Vulnerabilidade do Plintossolo]{.pitch-card-index}
+[Impedância hidráulica]{.pitch-heading}
 
-## Resultados espaciais {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Simulação espacial
-
-A simulação espacial transpôs a leitura temporal para o recorte da ravina, preservando a ordem de grandeza observada:
-
-- **P90 (168 mm/mês):** picos de 2,75 cm (SUP) a 4,56 cm (MED)
-- **P95 (182 mm/mês):** picos de 2,98 cm (SUP) a 4,93 cm (MED)
-
-A deposição se concentra onde o **gradiente hidráulico é abruptamente reduzido** pela estrutura.
-
-::: {.highlight-box}
-**Volume máximo armazenável:** ~2,73 m³ no conjunto das 4 paliçadas (0,56-0,86 m³ por estrutura).
-:::
+Horizonte Bt com **impedância hidráulica** dificulta drenagem interna e gera escoamento por **excesso de saturação**, aliado à baixa coesão efetiva (Ap/AB) e acidez alumínica.
 :::
 
-::: {.column width="50%"}
+::: {.pitch-media-card .pitch-media-card--compact}
 
-![Simulação espacial para limiares P90 e P95](img/fig11_simulacao_espacial.png){fig-align="center" width="100%"}
-:::
-:::
+![Perfil do Plintossolo Argilúvico distrófico](img/fig02_perfil_solo.png)
 
----
-
-## Evolução temporal da capacidade {.smaller-text}
-
-![Simulação da evolução temporal do preenchimento sedimentar: (a) 25%, (b) 50%, (c) 75% e (d) 100% da capacidade máxima](img/fig08_evolucao_capacidade.png){fig-align="center" width="85%"}
-
-::: {.info-box}
-As cores representam os segmentos: **SUP** (coral, 50 cm), **MED** (turquesa, 76 cm), **INF** (verde, 36 cm). A simulação assume taxas de deposição constantes sem compactação ou remobilização.
-:::
-
-# [8. SÍNTESE E ATIVIDADE]{.section-header}
-
-## Resumo dos pontos-chave {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### O que aprendemos?
-
-- [1]{.circle} Paliçadas são barreiras permeáveis de bioengenharia para controle de erosão linear
-
-- [2]{.circle} Funcionam por redução de declividade, dissipação de energia e retenção de sedimentos
-
-- [3]{.circle} O bambu (*B. vulgaris*) é ideal: baixo custo, disponível localmente, pode brotar
-
-- [4]{.circle} O dimensionamento depende da morfometria da ravina
-
-- [5]{.circle} O monitoramento pelo método dos pinos é essencial
-
-- [6]{.circle} A dinâmica deposicional é dominada por eventos extremos (não linear)
-
-- [7]{.circle} A manutenção periódica (ciclo de 8 meses) é obrigatória
-
-- [8]{.circle} A transição para barreira viva garante longevidade além do material
-:::
-
-::: {.column width="50%"}
-
-### Aplicação prática
-
-::: {.info-box}
-**Checklist de implantação:**
-
-- [ ] Levantamento planialtimétrico da área
-- [ ] Classificação do solo e feições erosivas
-- [ ] Segmentação da ravina
-- [ ] Coleta e preparo do bambu
-- [ ] Dimensionamento (altura, largura, espaçamento)
-- [ ] Construção das paliçadas em série
-- [ ] Instalação de sacos de ráfia
-- [ ] Implantação dos pinos de monitoramento
-- [ ] Cronograma de manutenção (8 meses)
-- [ ] Registro fotográfico e pluviométrico
+[Perfil do Plintossolo Argilúvico distrófico]{.pitch-caption}
 :::
 :::
 :::
 
----
+## [Espacialização]{.pitch-tag .pitch-tag--teal} Resultados Espaciais {.smaller-text .lesson-slide}
 
-## Atividade proposta {.smaller-text}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Simulação espacial]{.pitch-card-index}
+[Limiares extremos]{.pitch-heading}
 
-::: {.columns}
-::: {.column width="50%"}
+- **P90 ($168\text{ mm/mês}$):** picos de $2{,}75\text{ cm}$ (SUP) a $4{,}56\text{ cm}$ (MED)
+- **P95 ($182\text{ mm/mês}$):** picos de $2{,}98\text{ cm}$ (SUP) a $4{,}93\text{ cm}$ (MED)
 
-### Exercício em grupo
+A deposição concentra-se onde o **gradiente hidráulico é abruptamente reduzido** pela estrutura.
+:::
 
-::: {.box}
-**Cenário:** Vocês são contratados para projetar um sistema de paliçadas para controle de uma ravina em pastagem degradada, com as seguintes características:
-
-- Ravina com 25 m de comprimento
-- 3 segmentos distintos
-- Declividade média de 10%
-- Solo argiloso com baixa infiltração
-- Precipitação média anual: 1.200 mm
-
-**Entregar:**
-
-1. Croqui com posicionamento das paliçadas
-2. Dimensionamento (altura, largura, espaçamento)
-3. Quantificação de material
-4. Cronograma de instalação e manutenção
-5. Protocolo de monitoramento
+::: {.pitch-band .pitch-band--navy}
+**Volume máximo armazenável:** $\sim 2{,}73\text{ m}^3$ no conjunto das 4 paliçadas ($0{,}56\text{--}0{,}86\text{ m}^3$ por estrutura).
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-media-card .pitch-media-card--tall}
 
-### Critérios de avaliação
+![Simulação espacial para limiares P90 e P95](img/fig11_simulacao_espacial.png)
 
-| Critério | Peso |
+[Simulação espacial de deposição (P90 e P95)]{.pitch-caption}
+[Distribuição longitudinal ao longo dos segmentos da ravina]{.pitch-caption-sub}
+:::
+:::
+
+## [Preenchimento]{.pitch-tag} Evolução Temporal da Capacidade {.smaller-text .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--wide}
+
+![Simulação da evolução temporal do preenchimento sedimentar: (a) 25%, (b) 50%, (c) 75% e (d) 100% da capacidade máxima](img/fig08_evolucao_capacidade.png)
+
+[Evolução temporal do preenchimento sedimentar: (a) 25%, (b) 50%, (c) 75% e (d) 100%]{.pitch-caption}
+[Segmentos: **SUP** (coral, $50\text{ cm}$), **MED** (turquesa, $76\text{ cm}$) e **INF** (verde, $36\text{ cm}$), assumindo taxas constantes sem compactação ou remobilização]{.pitch-caption-sub}
+:::
+
+# 8 · Síntese e atividade {.section-header rotulo="Síntese"}
+
+## [Síntese]{.pitch-tag .pitch-tag--forest} Resumo dos Pontos-Chave {.smaller-text .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[O que aprendemos?]{.pitch-card-index}
+[8 fundamentos]{.pitch-heading}
+
+- [1]{.circle} Barreiras permeáveis para controle de erosão linear
+- [2]{.circle} Reduzem declividade, dissipam energia e retêm sedimentos
+- [3]{.circle} Bambu (*B. vulgaris*) é acessível e pode brotar
+- [4]{.circle} Dimensionamento depende da morfometria da ravina
+- [5]{.circle} Monitoramento pelo método dos pinos é essencial
+- [6]{.circle} Deposição dominada por eventos extremos (não linear)
+- [7]{.circle} Manutenção periódica (ciclo de 8 meses) obrigatória
+- [8]{.circle} Transição para barreira viva amplia a longevidade
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[Checklist de implantação]{.pitch-card-index}
+[Aplicação prática]{.pitch-heading}
+
+- [ ] Levantamento planialtimétrico e classificação solo/feições
+- [ ] Segmentação da ravina e dimensionamento ($h$, $L$, $D$)
+- [ ] Coleta, preparo e enterrio prévio da tora basal de bambu
+- [ ] Construção em série + sacos de ráfia + pinos de controle
+- [ ] Cronograma de manutenção (8 meses) + registro pluviométrico
+:::
+:::
+
+## [Atividade]{.pitch-tag .pitch-tag--gold} Atividade Proposta {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-card .pitch-card--gold}
+[Exercício em grupo]{.pitch-card-index}
+[Projeto de paliçadas em ravina]{.pitch-heading}
+
+**Cenário:** ravina de $25\text{ m}$, 3 segmentos distintos, declividade média de $10\%$, solo argiloso de baixa infiltração, chuva média de $1.200\text{ mm/ano}$.
+
+**Entregar:** (1) croqui de posicionamento; (2) dimensionamento (altura, largura, espaçamento); (3) quantificação de material; (4) cronograma de instalação/manutenção; (5) protocolo de monitoramento.
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+
+| Critério de avaliação | Peso |
 |----------|:----:|
 | Dimensionamento técnico | 30% |
 | Viabilidade construtiva | 20% |
@@ -897,20 +810,18 @@ As cores representam os segmentos: **SUP** (coral, 50 cm), **MED** (turquesa, 76
 | Plano de manutenção | 15% |
 | Apresentação e clareza | 15% |
 
-: {.striped .hover}
-
-### Referências sugeridas
-
-- Guerra, Bezerra & Jorge (2023), Bioengenharia de solos
-- Morgan (2005), Soil Erosion and Conservation
-- Emater (2006), Manual de paliçadas
-- Piton et al. (2017), Check dams hydraulics
-:::
 :::
 
----
+::: {.pitch-card}
+[Referências sugeridas]{.pitch-card-index}
+[Bibliografia de apoio]{.pitch-heading}
 
-## {.center background-color="#2135A6" background-image="../../../assets/fundo.png" background-size="auto 100%" background-position="left center"}
+- Guerra, Bezerra & Jorge (2023) · Morgan (2005) · Emater (2006) · Piton et al. (2017)
+:::
+:::
+:::
+
+## {.center background-color="#1f4268" background-image="../../../assets/fundo.png" background-size="auto 100%" background-position="left center"}
 
 ::: {style="text-align: center;"}
 

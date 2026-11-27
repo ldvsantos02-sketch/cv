@@ -12,439 +12,402 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text}
+## [Abertura]{.pitch-tag} Visão Geral da Aula {#visao-geral .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Roteiro da aula]{.pitch-card-index}
+[Tópicos estruturantes]{.pitch-heading}
 
 - [1]{.circle} Bioengenharia fluvial: conceitos
 - [2]{.circle} Dinâmica fluvial e erosão de margens
 - [3]{.circle} Defletores de troncos
-- [4]{.circle} Leitos de ramos (brushlayering)
+- [4]{.circle} Leitos de ramos (*brushlayering*)
 - [5]{.circle} Restauração de zonas úmidas e manguezais
 - [6]{.circle} Restauração de matas ciliares
 - [7]{.circle} Modelagem hidráulica aplicada
 - [8]{.circle} Síntese e atividade
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--teal}
+[Objetivo da aula]{.pitch-card-index}
+[Soluções Baseadas na Natureza em rios]{.pitch-heading}
 
-Compreender as técnicas avançadas de **bioengenharia fluvial** para **proteção de margens**, **controle de erosão** em cursos d'água e **restauração de matas ciliares**, incluindo **defletores de troncos**, **leitos de ramos** (*brushlayering*), restauração de **zonas úmidas/manguezais** e noções de **modelagem hidráulica** (HEC-RAS / Iber) aplicada ao dimensionamento.
+Compreender as técnicas avançadas de **bioengenharia fluvial** para **proteção de margens**, **controle de erosão** em cursos d'água e **restauração de matas ciliares**, integrando **defletores de troncos**, **leitos de ramos** (*brushlayering*), restauração de **zonas úmidas/manguezais** e **modelagem hidráulica** (HEC-RAS / Iber).
+:::
+
+::: {.pitch-pill-row}
+[Lei 12.651/2012 (APP)]{.pitch-pill}
+[HEC-RAS · Iber · Shields]{.pitch-pill .pitch-pill--gold}
+[SbN / NbS]{.pitch-pill}
 :::
 :::
 :::
 
-# [1. BIOENGENHARIA FLUVIAL: CONCEITOS]{.section-header}
+# 1 · Bioengenharia Fluvial: Conceitos {.section-header rotulo="Conceitos"}
 
-## Definição e escopo {.smaller-text}
+## [Conceitos]{.pitch-tag .pitch-tag--teal} Definição, Escopo e Abordagem Integrada {#definicao-escopo .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Engenharia com o rio]{.pitch-card-index}
+[O que é bioengenharia fluvial?]{.pitch-heading}
 
-### O que é bioengenharia fluvial?
+Conjunto de técnicas que utiliza **materiais vivos** (plantas, ramos, estacas) e **materiais inertes naturais** (pedras, troncos, fibras) para:
 
-A **bioengenharia fluvial** (*fluvial soil bioengineering*) é o conjunto de técnicas que utiliza **materiais vivos** (plantas, ramos, estacas) e **materiais inertes naturais** (pedras, troncos, fibras) para:
+- **Proteger margens** contra erosão e **controlar** a dinâmica do canal
+- **Restaurar habitats** aquáticos e ripários e **melhorar** a qualidade da água
+- **Recuperar** matas ciliares (**APP**)
+:::
 
-- **Proteger margens** contra erosão
-- **Restaurar habitats** aquáticos e ripários
-- **Controlar** a dinâmica do canal
-- **Melhorar** a qualidade da água
-- **Recuperar** matas ciliares (APP)
-
-::: {.highlight-box}
-💡 Diferente da engenharia hidráulica convencional (concreto, enrocamento), a bioengenharia fluvial busca **trabalhar com o rio**, não contra ele - respeitando os processos naturais de erosão e deposição.
+::: {.pitch-band .pitch-band--teal}
+Diferente da engenharia hidráulica convencional (concreto, enrocamento isolado), busca **trabalhar com o rio**, respeitando processos naturais de erosão e deposição. Reconhecida pela **IUCN** e **Comissão Europeia** como estratégia prioritária de **Soluções Baseadas na Natureza (NbS)**.
 :::
 :::
 
-::: {.column width="45%"}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1. Diagnóstico do rio:** leitura integrada de processos, ecologia e hidráulica.
+:::
 
-### Abordagem integrada
+::: {.pitch-milestone-item}
+**2. Processos erosivos → Proteção de margem:** enrocamento, gabião vivo, *brushlayering*.
+:::
 
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Diagnóstico<br>do rio"] --> B["Processos<br>erosivos"]
-    A --> C["Ecologia<br>ripária"]
-    A --> D["Hidráulica<br>do canal"]
-    B --> E["Técnicas de<br>proteção de margem"]
-    C --> F["Restauração<br>de mata ciliar"]
-    D --> G["Manejo do<br>fluxo"]
-    E --> H["BIOENGENHARIA<br>FLUVIAL"]
-    F --> H
-    G --> H
-    style A fill:#2135A6,color:#fff
-    style E fill:#8B4513,color:#fff
-    style F fill:#2E7D32,color:#fff
-    style H fill:#586BA6,color:#000
-```
+::: {.pitch-milestone-item}
+**3. Ecologia ripária → Mata ciliar:** recomposição de APP e conectividade.
+:::
 
-> A bioengenharia fluvial é uma das áreas mais ativas das **Soluções Baseadas na Natureza** (NbS), reconhecida pela IUCN e pela Comissão Europeia como estratégia prioritária para adaptação às mudanças climáticas.
+::: {.pitch-milestone-item}
+**4. Hidráulica do canal → Manejo do fluxo:** defletores e dissipadores → **Bioengenharia Fluvial**.
+:::
 :::
 :::
 
+## [Diagnóstico e Repertório]{.pitch-tag .pitch-tag--gold} Diagnóstico de Margem e Zonas do Canal {#diagnostico-repertorio .smaller-text .lesson-slide}
 
-## Diagnóstico de uma margem antes da intervenção {.smaller-text}
-
-| Dimensão | Informação necessária |
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Dimensão do diagnóstico | Informação necessária |
 |---|---|
 | Dinâmica fluvial | Cheias, mobilidade do canal, barras e transporte |
 | Margem | Altura, material, estratificação, trincas e raízes |
 | Pé do talude | Solapamento, profundidade e condições de fundação |
 | Água no solo | Saturação, drenagem e rebaixamento do nível do rio |
 | Ocupação | Pessoas, acessos, infraestrutura e usos a proteger |
-
-A seleção de vegetação, defletores e estruturas depende desses dados. Conter uma margem pode deslocar o esforço erosivo; verificar os efeitos no trecho.
-
-## Repertório de técnicas fluviais {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Classificação por zona do rio
-
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    subgraph Zona["Zonas do canal"]
-        A["Zona submersa<br>(leito)"]
-        B["Zona anfibia<br>(margem inferior)"]
-        C["Zona ripária<br>(margem superior)"]
-        D["Zona terrestre<br>(planície de inundação)"]
-    end
-    A --> A1["Defletores de troncos<br>Soleiras de fundo"]
-    B --> B1["Enrocamento vegetado<br>Gabião vivo"]
-    C --> C1["Brushlayering<br>Fascinas vivas"]
-    D --> D1["Mata ciliar<br>Hidrossemeadura"]
-    style A fill:#2135A6,color:#fff
-    style B fill:#4FC3F7,color:#000
-    style C fill:#2E7D32,color:#fff
-    style D fill:#586BA6,color:#000
-```
-
 :::
 
-::: {.column width="50%"}
+::: {.pitch-band}
+Conter uma margem pode **deslocar o esforço erosivo**; verifique sempre os efeitos hidráulicos no trecho a montante e a jusante.
+:::
+:::
 
-### Técnicas por objetivo
-
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Objetivo | Técnica | Aula |
 |----------|---------|------|
-| Cobertura rápida | Hidrossemeadura | Aula 13 |
-| Proteção de superfície | Biomanta | Aula 14 |
+| Cobertura / Superfície | Hidrossemeadura / Biomanta | Aulas 13–14 |
 | Estabilização de base | Enrocamento vegetado | Aula 15 |
 | Controle de escoamento | Cordões vegetativos | Aula 16 |
-| Contenção estrutural | Gabião vivo | Aula 17 |
-| Contenção de encosta | Parede Krainer | Aula 18 |
-| **Proteção de margens** | **Defletores, brushlayering** | **Esta aula** |
-| **Restauração ciliar** | **Plantio de APP** | **Esta aula** |
+| Contenção estrutural | Gabião vivo / Parede Krainer | Aulas 17–18 |
+| **Proteção de margens & APP** | **Defletores, brushlayering, mata ciliar** | **Esta aula** |
+:::
 
-::: {.highlight-box}
-🔗 Esta aula integra todas as técnicas anteriores no contexto **fluvial**, mostrando como combiná-las em um projeto de restauração de rio.
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[Leito]{.pitch-card-index}
+[Submersa]{.pitch-heading}
+
+Defletores de troncos e soleiras de fundo.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Base]{.pitch-card-index}
+[Anfíbia]{.pitch-heading}
+
+Enrocamento vegetado e gabião vivo.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[Talude]{.pitch-card-index}
+[Ripária]{.pitch-heading}
+
+*Brushlayering* e fascinas vivas.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Planície]{.pitch-card-index}
+[Terrestre]{.pitch-heading}
+
+Mata ciliar e hidrossemeadura.
 :::
 :::
 :::
-
-# [2. DINÂMICA FLUVIAL E EROSÃO DE MARGENS]{.section-header}
-
-## Processos erosivos em rios {.smaller-text}
-
-::: {.columns}
-::: {.column width="55%"}
-
-### Tipos de erosão em margens
-
-**1. Erosão hidráulica (fluvial):**
-
-- Arraste de partículas pela corrente
-- Mais intensa na curva externa (côncava)
-- Depende de: velocidade, turbulência, material da margem
-
-**2. Erosão por solapamento (undercutting):**
-
-- Água escava a base da margem
-- Cria reentrância (nicho de erosão)
-- Margem colapsa por gravidade
-
-**3. Erosão por ondas (wave attack):**
-
-- Ondas de embarcações ou vento
-- Impacto na margem desprotegida
-- Comum em reservatórios e rios navegáveis
-
-**4. Erosão por saturação + flutuações:**
-
-- Elevação/rebaixamento rápido do nível
-- Pressão neutra positiva na margem
-- Colapso por ruptura planar ou rotacional
-
 :::
 
-::: {.column width="45%"}
+# 2 · Dinâmica Fluvial e Erosão de Margens {.section-header rotulo="Dinâmica Fluvial"}
 
-### Dinâmica de meandro
+## [Hidrogeomorfologia]{.pitch-tag .pitch-tag--teal} Dinâmica em Curvas Meândricas e Zonas de Atuação {#fluvial-processos-tikz .smaller-text .lesson-slide}
 
-```{mermaid}
-%%| fig-width: 4.5
-graph LR
-    A["Margem côncava<br>(curva externa)<br>EROSÃO"] --> B["Fluxo<br>helicoidal"]
-    B --> C["Margem convexa<br>(curva interna)<br>DEPOSIÇÃO"]
-    A -->|"Velocidade alta<br>Cisalhamento"| D["Solapamento<br>+ colapso"]
-    C -->|"Velocidade baixa<br>Sedimentação"| E["Barra de<br>ponto"]
-    style A fill:#27368C,color:#fff
-    style C fill:#2E7D32,color:#fff
-    style D fill:#27368C,color:#fff
-    style E fill:#586BA6,color:#000
-```
+::: {.pitch-media-card .pitch-media-card--wide}
 
-### Tensão de cisalhamento crítica
+![Dinâmica fluvial em curvas meândricas e escalonamento vertical das técnicas na margem.](img/bs_19_bioengenharia_fluvial_processos.png)
+
+[Dinâmica Fluvial em Curvas Meândricas e Zoneamento de Bioengenharia]{.pitch-caption}
+[Assimetria hidráulica entre margem côncava (solapamento) e convexa (deposição) e estratificação vertical por cota]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band .pitch-band--navy}
+A **curva externa (côncava)** concentra o núcleo de alta velocidade e o fosso de solapamento, recebendo $\sim 1{,}5\text{–}2{,}0\times$ a tensão cisalhante média do trecho reto.
+:::
+
+## [Erosão Marginal]{.pitch-tag .pitch-tag--alert} Processos Erosivos, Meandros e Tensão Crítica {#processos-erosivos .smaller-text .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--alert}
+[1 · Erosão hidráulica]{.pitch-card-index}
+[Arraste fluvial]{.pitch-heading}
+
+Arraste de partículas pela corrente, mais intenso na curva externa; depende de velocidade, turbulência e material da margem.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[2 · Solapamento]{.pitch-card-index}
+[Undercutting]{.pitch-heading}
+
+Água escava a base da margem criando nicho de erosão; a parte superior colapsa por gravidade.
+:::
+
+::: {.pitch-card}
+[3 · Ataque por ondas]{.pitch-card-index}
+[Wave attack]{.pitch-heading}
+
+Ondas geradas por embarcações ou vento impactam margens desprotegidas de rios navegáveis e reservatórios.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[4 · Saturação + flutuações]{.pitch-card-index}
+[Ruptura pós-cheia]{.pitch-heading}
+
+Elevação e rebaixamento rápido do nível geram pressão neutra positiva e ruptura planar ou rotacional.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Tensão de cisalhamento no leito:**
 
 $$\tau_0 = \gamma_w \cdot R \cdot S$$
 
-Onde:
+- $\tau_0$ = tensão de cisalhamento no leito ($\text{Pa}$)
+- $\gamma_w$ = peso específico da água ($9.810 \text{ N m}^{-3}$)
+- $R$ = raio hidráulico ($\text{m}$); $S$ = declividade do canal ($\text{m m}^{-1}$)
+:::
 
-- $\tau_0$ = tensão de cisalhamento no leito (Pa)
-- $\gamma_w$ = peso específico da água (9.810 N m⁻³)
-- $R$ = raio hidráulico (m)
-- $S$ = declividade do canal (m m⁻¹)
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**Margem côncava (externa):** alta velocidade e cisalhamento → **solapamento + colapso**.
+:::
 
-::: {.highlight-box}
-🌊 A **curva externa** recebe ~1,5-2,0× a tensão de cisalhamento média do trecho reto, sendo o ponto prioritário para intervenção.
+::: {.pitch-milestone-item}
+**Fluxo helicoidal:** transfere sedimentos da margem externa para a interna.
+:::
+
+::: {.pitch-milestone-item}
+**Margem convexa (interna):** baixa velocidade e sedimentação → formação de **barra de ponto**.
 :::
 :::
 :::
+:::
 
-# [3. DEFLETORES DE TRONCOS]{.section-header}
+# 3 · Defletores de Troncos {.section-header rotulo="Defletores"}
 
-## Conceito e funcionamento {.smaller-text}
+## [Repertório Técnico]{.pitch-tag .pitch-tag--teal} Técnicas Fluviais de Dissipação e Estabilização {#tecnicas-dissipacao-tikz .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-media-card .pitch-media-card--wide}
 
-### O que são defletores de troncos?
+![Repertório de técnicas fluviais de dissipação de energia e estabilização conforme posição e tensão cisalhante.](img/bs_19b_tecnicas_fluviais_dissipacao.png)
 
-**Defletores de troncos** (*log deflectors*, *log vanes* ou *woody debris structures*) são estruturas de troncos instalados na margem de rios para:
+[Repertório de Técnicas Fluviais: Espigões, Enrocamento, Feixes e Esteira Viva]{.pitch-caption}
+[Seleção combinada conforme posição no perfil marginal e magnitude da tensão cisalhante ($\tau_0$)]{.pitch-caption-sub}
+:::
 
-- **Redirecionar** o fluxo para o centro do canal
-- **Proteger** margens erosionadas (curvas externas)
-- **Criar** zonas de baixa velocidade para deposição
-- **Gerar** habitat (pools, remansos) para fauna aquática
+::: {.pitch-band .pitch-band--teal}
+Cada técnica atua em uma faixa específica da margem: defletores desviam o talvegue, enrocamento protege o pé, feixes ancoram o terço médio e esteiras elevam a rugosidade ($n$).
+:::
 
-### Tipos de defletores
+## [Defletores]{.pitch-tag} Conceito, Tipos e Efeito Hidráulico {#defletores-conceito .smaller-text .lesson-slide}
 
-| Tipo | Configuração | Uso |
-|------|-------------|-----|
-| Vane (V) | Tronco inclinado 20-30° rio adentro | Proteção margem côncava |
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Log deflectors / Log vanes]{.pitch-card-index}
+[Função hidráulica e ecológica]{.pitch-heading}
+
+Estruturas de troncos instaladas na margem para **redirecionar** o fluxo ao centro do canal, **proteger** curvas externas erosionadas, **criar** zonas de remanso para deposição e **gerar** habitats aquáticos (*pools*).
+:::
+
+::: {.pitch-table-box}
+| Tipo | Configuração | Uso principal |
+|------|--------------|---------------|
+| Vane (V) | Tronco inclinado 20°–30° rio adentro | Proteção margem côncava |
 | Deflector simples | Tronco perpendicular à margem | Estreitamento do canal |
-| Deflector duplo | Par de troncos opostos | Criação de pool |
-| Log jam | Acúmulo estruturado | Habitat complexo |
-
+| Deflector duplo | Par de troncos opostos | Criação de *pool* |
+| *Log jam* | Acúmulo estruturado | Habitat complexo |
+:::
 :::
 
-::: {.column width="45%"}
-
-### Efeito hidráulico
-
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Fluxo principal<br>(alta velocidade)"] --> B["Defletor<br>(tronco)"]
-    B -->|"Redireciona"| C["Centro do<br>canal"]
-    B -->|"Cria zona de<br>baixa velocidade"| D["Remanso<br>(deposição)"]
-    D --> E["Sedimento se<br>deposita"]
-    E --> F["Margem protegida<br>e revegetada"]
-    style A fill:#4FC3F7,color:#000
-    style B fill:#8B4513,color:#fff
-    style C fill:#2135A6,color:#fff
-    style D fill:#2E7D32,color:#fff
-    style F fill:#2E7D32,color:#fff
-```
-
-### Dimensionamento
-
-| Parâmetro | Valor |
-|-----------|-------|
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Parâmetro de dimensionamento | Valor |
+|------------------------------|-------|
 | Comprimento | 1/4 a 1/3 da largura do canal |
-| Diâmetro do tronco | 25-50 cm |
-| Ângulo com margem | 20°-40° (apontando para montante) |
+| Diâmetro do tronco | 25–50 cm |
+| Ângulo com margem | 20°–40° (apontando p/ montante) |
 | Penetração na margem | ≥ 1/3 do comprimento total |
-| Ancoragem | Enterrar na margem + estacas + cabos |
+| Ancoragem | Enterrar + estacas + cabos |
+:::
 
-::: {.highlight-box}
-⚠️ O defletor **nunca deve bloquear > 1/3** da seção do canal para evitar obstrução do fluxo e elevação perigosa do nível de água.
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**Fluxo principal → Defletor:** redireciona a corrente para o **centro do canal** e cria **remanso** na margem.
+:::
+
+::: {.pitch-milestone-item}
+**Regra de segurança:** nunca bloquear **> 1/3** da seção do canal para evitar sobre-elevação perigosa do nível d'água.
 :::
 :::
 :::
+:::
 
-## Projeto e ancoragem {.smaller-text}
+## [Ancoragem]{.pitch-tag .pitch-tag--gold} Força de Arrasto, Ancoragem e Instalação {#defletores-ancoragem .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Forças atuantes no defletor
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Força de arrasto atuante no defletor:**
 
 $$F_D = \frac{1}{2} C_D \rho A V^2$$
 
-Onde:
+Onde $F_D$ = força de arrasto ($\text{N}$), $C_D = 1{,}0\text{–}1{,}5$ (troncos), $\rho = 1.000 \text{ kg m}^{-3}$, $A$ = área projetada ($\text{m}^2$) e $V$ = velocidade do fluxo ($\text{m s}^{-1}$).
+:::
 
-- $F_D$ = força de arrasto (N)
-- $C_D$ = coeficiente de arrasto (1,0-1,5 para troncos)
-- $\rho$ = densidade da água (1.000 kg m⁻³)
-- $A$ = área projetada do tronco (m²)
-- $V$ = velocidade do fluxo (m s⁻¹)
-
-### Sistemas de ancoragem
-
-| Método | Resistência | Custo |
-|--------|------------|-------|
+::: {.pitch-table-box}
+| Método de ancoragem | Resistência | Custo |
+|---------------------|-------------|-------|
 | Enterramento na margem | Alta | Baixo |
-| Estacas metálicas (deadman) | Muito alta | Médio |
+| Estacas metálicas (*deadman*) | Muito alta | Médio |
 | Cabos de aço + âncora | Muito alta | Alto |
 | Parafusos em rocha | Máxima | Alto |
 | Peso (pedras sobre o tronco) | Moderada | Baixo |
-
+:::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1–2 · Seleção e escavação:** escolher tora adequada e escavar margem (**1/3** enterrado).
+:::
 
-### Esquema de instalação
+::: {.pitch-milestone-item}
+**3–4 · Posicionamento e ancoragem:** ângulo de **20°–30°** para montante + fixação com estacas e cabos.
+:::
 
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["1. Seleção do<br>tronco adequado"] --> B["2. Escavação na<br>margem (1/3 enterrado)"]
-    B --> C["3. Posicionamento<br>ângulo 20-30°"]
-    C --> D["4. Ancoragem<br>(estacas + cabos)"]
-    D --> E["5. Preenchimento<br>com pedras na base"]
-    E --> F["6. Plantio de<br>estacas vivas ao redor"]
-    style A fill:#8B4513,color:#fff
-    style C fill:#2135A6,color:#fff
-    style D fill:#586BA6,color:#000
-    style F fill:#2E7D32,color:#fff
-```
+::: {.pitch-milestone-item}
+**5–6 · Lastro e vegetação:** preenchimento com pedras na base + plantio de estacas vivas ao redor.
+:::
+:::
 
-::: {.highlight-box}
-🪵 Os defletores de troncos **imitam** os processos naturais de deposição de madeira morta nos rios (large woody debris - LWD), que criam habitats complexos essenciais para a biodiversidade aquática.
+::: {.pitch-band .pitch-band--teal}
+Defletores imitam depósitos naturais de madeira em rios (*large woody debris* – **LWD**), criando micro-habitats essenciais para ictiofauna e macroinvertebrados.
 :::
 :::
 :::
 
-# [4. LEITOS DE RAMOS (BRUSHLAYERING)]{.section-header}
+# 4 · Leitos de Ramos (Brushlayering) {.section-header rotulo="Brushlayering"}
 
-## Conceito e aplicação {.smaller-text}
+## [Brushlayering]{.pitch-tag .pitch-tag--forest} Conceito, Comparação e Dimensionamento {#brushlayering-conceito .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Branch layering]{.pitch-card-index}
+[Camadas horizontais em terraços]{.pitch-heading}
 
-### O que é brushlayering?
+Camadas horizontais de **ramos vivos** inseridas em **terraços escavados** na margem ou talude:
 
-O **leito de ramos** (*brushlayering*, *branch layering*) consiste em camadas horizontais de **ramos vivos** inseridas em **terraços escavados** na margem do rio ou talude adjacente:
+- Ramos **perpendiculares** à face do talude
+- **20–30% do comprimento** projetado para fora (brotação e cobertura)
+- **70–80%** enterrado no solo compactado (enraizamento profundo)
+:::
 
-- Ramos colocados **perpendicularmente** à face do talude
-- **20-30% do comprimento** projetado para fora
-- **70-80%** enterrado no solo compactado
-- Os ramos **enraízam** e **brotam**, criando cobertura densa
-
-### Diferença de fascinas/cordões
-
-| Característica | Brushlayering | Cordões/fascinas |
-|---------------|---------------|------------------|
+::: {.pitch-table-box}
+| Característica | *Brushlayering* | Cordões / fascinas |
+|---------------|-----------------|-------------------|
 | Disposição | Ramos individuais em camadas | Feixes amarrados |
-| Profundidade | Profunda (50-100 cm) | Superficial (10-30 cm) |
+| Profundidade | Profunda (50–100 cm) | Superficial (10–30 cm) |
 | Estabilização | Profunda (reforço do solo) | Superficial (retenção) |
 | Aplicação | Margens, aterros, taludes | Encostas, ravinas |
-
+:::
 :::
 
-::: {.column width="45%"}
+::: {.pitch-stack-2}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**Sequência:** Terraço escavado (degrau horizontal) → Ramos vivos horizontais → Solo compactado sobre os ramos → Repetir no próximo terraço.
+:::
+:::
 
-### Esquema construtivo
+::: {.pitch-table-box}
+| Parâmetro de projeto | Valor |
+|----------------------|-------|
+| Espaçamento vertical | 0,5–1,5 m |
+| Comprimento / Diâmetro | 1,0–2,0 m · Ø 1–5 cm |
+| Densidade | 15–25 ramos m⁻¹ |
+| Profundidade do terraço | 30–60 cm |
+:::
 
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Terraço escavado<br>(degrau horizontal)"] --> B["Ramos vivos<br>dispostos na horizontal"]
-    B --> C["Solo compactado<br>sobre os ramos"]
-    C --> D["Próximo terraço<br>(repetir)"]
-    B -->|"20-30%<br>projetado"| E["Brotação e<br>cobertura"]
-    B -->|"70-80%<br>enterrado"| F["Enraizamento<br>profundo"]
-    style A fill:#2135A6,color:#fff
-    style B fill:#2E7D32,color:#fff
-    style C fill:#8B4513,color:#fff
-    style E fill:#586BA6,color:#000
-    style F fill:#2E7D32,color:#fff
-```
-
-### Dimensionamento
-
-| Parâmetro | Valor |
-|-----------|-------|
-| Espaçamento vertical | 0,5-1,5 m |
-| Comprimento dos ramos | 1,0-2,0 m |
-| Densidade | 15-25 ramos m⁻¹ |
-| Diâmetro dos ramos | 1-5 cm |
-| Profundidade do terraço | 30-60 cm |
-
-::: {.highlight-box}
-🌿 O brushlayering é **excelente para aterros e margens de reservatórios**: os ramos criam uma rede de raízes que estabiliza o solo em profundidade, resistindo à saturação e flutuação do nível d'água.
+::: {.pitch-band}
+Excelente para **aterros e margens de reservatórios**: a rede densa de raízes resiste à saturação e à flutuação do nível d'água.
 :::
 :::
 :::
 
-# [5. RESTAURAÇÃO DE ZONAS ÚMIDAS E MANGUEZAIS]{.section-header}
+# 5 · Restauração de Zonas Úmidas e Manguezais {.section-header rotulo="Manguezais"}
 
-## Técnicas de dissipação de energia {.smaller-text}
+## [Dissipação de Ondas]{.pitch-tag .pitch-tag--teal} Cercas de Dissipação e Espécies Costeiras {#zonas-umidas-manguezais .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Wave breakers]{.pitch-card-index}
+[Cercas de dissipação de energia]{.pitch-heading}
 
-### Cercas de dissipação (wave breakers)
+Cercas de bambu ou madeira em manguezais e zonas úmidas atuam como "berçário" temporário para: **dissipar** ondas, **reter** sedimentos, **permitir** colonização de propágulos e **proteger** mudas jovens.
+:::
 
-Para restauração de **manguezais** e **zonas úmidas costeiras**, utiliza-se cercas de bambu ou madeira para:
-
-- **Dissipar** a energia das ondas
-- **Permitir** que sedimento se deposite
-- **Criar** condições para **colonização** de propágulos (sementes de mangue)
-- **Proteger** mudas jovens até o estabelecimento
-
-### Tipos de cercas
-
-| Tipo | Material | Durabilidade |
-|------|----------|-------------|
-| Cerca de bambu | *Bambusa* spp. | 2-5 anos |
-| Cerca de madeira | Estacas de mangue/eucalipto | 5-10 anos |
-| Cercas de galhos | Material local | 1-3 anos |
-| Cercas de geotêxtil | Fibra de coco + estacas | 3-8 anos |
-
-::: {.highlight-box}
-🌊 A estratégia é **reduzir a hidrodinâmica** o suficiente para que o manguezal se regenere naturalmente. As cercas são **estruturas temporárias** que funcionam como "berçário" para o ecossistema.
+::: {.pitch-table-box}
+| Tipo de cerca | Material | Durabilidade |
+|---------------|----------|--------------|
+| Cerca de bambu | *Bambusa* spp. | 2–5 anos |
+| Cerca de madeira | Estacas de mangue/eucalipto | 5–10 anos |
+| Cercas de galhos | Material local | 1–3 anos |
+| Cercas de geotêxtil | Fibra de coco + estacas | 3–8 anos |
 :::
 :::
 
-::: {.column width="45%"}
+::: {.pitch-stack-2}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**Fluxo funcional:** Ondas (alta energia) → Cerca de bambu (dissipação) → Zona protegida → Deposição de sedimento → Substrato formado → Plantio/colonização → **Manguezal restaurado**.
+:::
+:::
 
-### Esquema funcional
-
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Ondas / Correntes<br>(alta energia)"] --> B["Cerca de bambu<br>(dissipação)"]
-    B --> C["Energia reduzida<br>(zona protegida)"]
-    C --> D["Sedimento se<br>deposita"]
-    D --> E["Substrato formado<br>para mangue"]
-    E --> F["Plantio de mudas<br>ou colonização natural"]
-    F --> G["Manguezal<br>restaurado"]
-    style A fill:#4FC3F7,color:#000
-    style B fill:#586BA6,color:#000
-    style C fill:#2135A6,color:#fff
-    style E fill:#8B4513,color:#fff
-    style G fill:#2E7D32,color:#fff
-```
-
-### Espécies para restauração
-
+::: {.pitch-table-box}
 | Ecossistema | Espécie | Função |
 |-------------|---------|--------|
 | Manguezal | *Rhizophora mangle* | Sustentação |
@@ -453,277 +416,260 @@ graph TD
 | Zona úmida | *Typha domingensis* | Filtragem |
 | Zona úmida | *Schoenoplectus* spp. | Estabilização |
 | Zona úmida | *Cyperus* spp. | Cobertura |
+:::
+:::
+:::
 
+# 6 · Restauração de Matas Ciliares {.section-header rotulo="Matas Ciliares"}
+
+## [APP e Restauração]{.pitch-tag .pitch-tag--forest} Estratégias, Integração e Código Florestal {#restauracao-app .smaller-text .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-cards}
+::: {.pitch-card .pitch-card--forest}
+[1 · Plantio total]{.pitch-card-index}
+[Área degradada]{.pitch-heading}
+
+Alta diversidade (**40–80 espécies**), espaçamento **3 × 2 m** ($1.667 \text{ mudas ha}^{-1}$), grupos de preenchimento/diversidade e manejo de daninhas por 2–3 anos.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[2 · Enriquecimento]{.pitch-card-index}
+[Com regeneração]{.pitch-heading}
+
+Plantio de espécies sub-representadas em bordas e clareiras (**200–600 mudas ha⁻¹**).
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[3 · Condução]{.pitch-card-index}
+[Regeneração natural]{.pitch-heading}
+
+Isolamento de fatores de degradação, nucleação (poleiros, transposição de solo) e controle de invasoras; menor custo.
 :::
 :::
 
-# [6. RESTAURAÇÃO DE MATAS CILIARES]{.section-header}
-
-## Estratégias de restauração de APP {.smaller-text}
-
-::: {.columns}
-::: {.column width="55%"}
-
-### Modelos de restauração
-
-**1. Plantio total (área degradada):**
-
-- Mudas de alta diversidade (40-80 espécies)
-- Espaçamento: 3 × 2 m (1.667 mudas ha⁻¹)
-- Grupos de preenchimento + diversidade
-- Manejo de daninhas por 2-3 anos
-
-**2. Enriquecimento (área com regeneração):**
-
-- Plantio de espécies sub-representadas
-- Enriquecimento de bordas e clareiras
-- 200-600 mudas ha⁻¹
-
-**3. Condução de regeneração natural:**
-
-- Isolamento de fatores de degradação
-- Nucleação (poleiros, transposição de solo)
-- Controle de invasoras
-- Custo mais baixo
-
-:::
-
-::: {.column width="45%"}
-
-### Integração com bioengenharia
-
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Zona 1: Leito<br>Defletores de troncos"] --> E["RIO RESTAURADO"]
-    B["Zona 2: Margem inferior<br>Enrocamento vegetado<br>Gabião vivo"] --> E
-    C["Zona 3: Margem superior<br>Brushlayering<br>Fascinas vivas"] --> E
-    D["Zona 4: APP<br>Plantio de mata ciliar<br>Hidrossemeadura"] --> E
-    style A fill:#2135A6,color:#fff
-    style B fill:#4FC3F7,color:#000
-    style C fill:#2E7D32,color:#fff
-    style D fill:#586BA6,color:#000
-    style E fill:#2E7D32,color:#fff
-```
-
-::: {.highlight-box}
-🌳 A restauração de matas ciliares **deve ser integrada** às técnicas de bioengenharia: estabilizar a margem **primeiro** (enrocamento, gabião, brushlayering), depois plantar a mata ciliar na faixa de APP. Sem estabilização, as mudas são levadas pelas cheias.
-:::
-
-### Código Florestal (Lei 12.651/2012)
-
-| Largura do rio | Faixa mínima de APP |
-|---------------|---------------------|
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Largura do rio (Lei 12.651/2012) | Faixa mínima de APP |
+|----------------------------------|---------------------|
 | < 10 m | 30 m |
-| 10-50 m | 50 m |
-| 50-200 m | 100 m |
-| 200-600 m | 200 m |
+| 10–50 m | 50 m |
+| 50–200 m | 100 m |
+| 200–600 m | 200 m |
 | > 600 m | 500 m |
-
-:::
 :::
 
-# [7. MODELAGEM HIDRÁULICA APLICADA]{.section-header}
-
-## Ferramentas computacionais {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### HEC-RAS (USACE)
-
-**Hydraulic Engineering Center - River Analysis System**
-
-- Software gratuito do U.S. Army Corps of Engineers
-- Modelagem 1D e 2D de rios e canais
-- Usos em bioengenharia:
-  - Cálculo de velocidades e tensões na margem
-  - Simulação de cheias (tempo de recorrência)
-  - Avaliação do efeito dos defletores
-  - Mancha de inundação para APP
-
-### Iber (Universidade da Coruña)
-
-- Software gratuito e open source
-- Modelagem 2D de rios e estuários
-- Interface gráfica amigável
-- Usos em bioengenharia:
-  - Mapeamento de velocidades na margem
-  - Simulação de sedimentos
-  - Avaliação de cenários com/sem intervenção
-
-:::
-
-::: {.column width="50%"}
-
-### Fluxo de trabalho com modelagem
-
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["1. Levantamento<br>topobatimétrico"] --> B["2. Dados hidrológicos<br>(vazões, TR)"]
-    B --> C["3. Construção do<br>modelo (HEC-RAS/Iber)"]
-    C --> D["4. Calibração<br>(nível observado)"]
-    D --> E["5. Cenário atual<br>(sem intervenção)"]
-    E --> F["6. Cenário projetado<br>(com bioengenharia)"]
-    F --> G["7. Comparação<br>velocidades/tensões"]
-    G --> H["8. Dimensionamento<br>das técnicas"]
-    style A fill:#2135A6,color:#fff
-    style C fill:#586BA6,color:#000
-    style F fill:#2E7D32,color:#fff
-    style H fill:#27368C,color:#fff
-```
-
-::: {.highlight-box}
-💻 A modelagem permite **quantificar** o efeito das intervenções antes da execução: qual a redução de velocidade com defletores? A cheia de 10 anos ultrapassa os gabiões? As raízes suportam a tensão de cisalhamento? Essas respostas justificam o projeto.
+::: {.pitch-band .pitch-band--navy}
+**Ordem crítica:** estabilizar a margem **primeiro** (Zona 1 defletores → Zona 2 enrocamento/gabião → Zona 3 *brushlayering*/fascinas) e depois plantar a **Zona 4 (APP)**; sem estabilização prévia, as cheias arrancam as mudas.
 :::
 :::
 :::
 
-## Parâmetros de modelagem para bioengenharia {.smaller-text}
+# 7 · Modelagem Hidráulica Aplicada {.section-header rotulo="Modelagem"}
 
-::: {.columns}
-::: {.column width="50%"}
+## [Fluxo Integrado]{.pitch-tag .pitch-tag--teal} Modelagem Hidráulica (HEC-RAS) e APPs Fluviais {#modelagem-app-tikz .smaller-text .lesson-slide}
 
-### Coeficiente de Manning (n)
+::: {.pitch-media-card .pitch-media-card--wide}
 
-O coeficiente de rugosidade de Manning é o principal parâmetro para representar técnicas de bioengenharia no modelo:
+![Integração entre modelagem hidráulica HEC-RAS, seleção de bioengenharia e recomposição de APPs fluviais.](img/bs_19c_restauracao_app_modelagem.png)
 
+[Fluxo Integrado de Modelagem Hidráulica e Restauração de APPs Fluviais]{.pitch-caption}
+[Da topobatimétrica e hidrogramas ($Q_{10}, Q_{50}, Q_{100}$) à verificação de $\tau_0 > \tau_{adm}$ e retroalimentação pós-cheia do $n$ de Manning]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band .pitch-band--teal}
+Um modelo hidráulico bem calibrado reduz em **20–40%** os custos de obra ao evitar superdimensionamento e focar os trechos críticos.
+:::
+
+## [Ferramentas]{.pitch-tag} HEC-RAS, Iber e Fluxo de Trabalho {#ferramentas-modelagem .smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[USACE (gratuito)]{.pitch-card-index}
+[HEC-RAS (1D e 2D)]{.pitch-heading}
+
+- Velocidades e tensões cisalhantes na margem
+- Simulação de cheias por tempo de recorrência ($TR$)
+- Efeito hidráulico de defletores e mancha de inundação para APP
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Universidade da Coruña (open source)]{.pitch-card-index}
+[Iber (2D rios e estuários)]{.pitch-heading}
+
+- Mapeamento bidimensional de velocidades na margem
+- Simulação de transporte de sedimentos
+- Comparação direta de cenários com e sem intervenção
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1–4 · Base e calibração:** topobatimetria + dados hidrológicos ($Q$, $TR$) → construção do modelo → calibração com nível observado.
+:::
+
+::: {.pitch-milestone-item}
+**5–8 · Cenários e projeto:** cenário atual vs. projetado (com bioengenharia) → comparação de velocidades/tensões → dimensionamento final.
+:::
+:::
+
+::: {.pitch-band}
+A modelagem quantifica redução de velocidade com defletores, cota de galgamento dos gabiões na cheia decenal e segurança frente a $\tau_0$.
+:::
+:::
+:::
+
+## [Parâmetros]{.pitch-tag .pitch-tag--gold} Rugosidade de Manning, Shields e Saídas do Modelo {#parametros-modelagem .smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Superfície | $n$ (Manning) |
-|-----------|---------------|
+|------------|---------------|
 | Concreto liso | 0,013 |
-| Enrocamento | 0,035-0,050 |
-| **Gabião vivo** | **0,030-0,040** |
-| **Brushlayering** | **0,040-0,060** |
-| Vegetação arbustiva | 0,050-0,080 |
-| **Mata ciliar densa** | **0,080-0,120** |
-| Canal natural com detrito | 0,050-0,080 |
+| Enrocamento | 0,035–0,050 |
+| **Gabião vivo** | **0,030–0,040** |
+| **Brushlayering** | **0,040–0,060** |
+| Vegetação arbustiva | 0,050–0,080 |
+| **Mata ciliar densa** | **0,080–0,120** |
+| Canal natural com detrito | 0,050–0,080 |
+:::
 
-### Curvas de estabilidade (Shields)
+::: {.pitch-formula}
+**Parâmetro de Shields (mobilização de partículas):**
 
 $$\tau^* = \frac{\tau_0}{(\gamma_s - \gamma_w) \cdot d}$$
-
-Para definir a tensão crítica de mobilização do sedimento de fundo e do material das margens.
-
+:::
 :::
 
-::: {.column width="50%"}
-
-### O que extrair do modelo
-
-| Resultado do modelo | Aplicação |
-|---------------------|-----------|
+::: {.pitch-table-box}
+| Resultado do modelo | Aplicação direta em projeto |
+|---------------------|-----------------------------|
 | Velocidade na margem | Dimensionar enrocamento (Isbash) |
 | Tensão de cisalhamento | Verificar estabilidade da margem |
-| Profundidade de fluxo | Projetar gabião (cota de topo) |
+| Profundidade de fluxo | Definir cota de topo do gabião |
 | Mancha de inundação | Delimitar APP / zona ripária |
-| Regime de fluxo | Subcrítico/supercrítico → tipo de técnica |
-| Sedimento | Deficit/superávit → manter/restaurar geomorfologia |
-
-::: {.highlight-box}
-📊 Um modelo bem calibrado pode **economizar 20-40%** nos custos de projeto ao evitar superdimensionamento e identificar os trechos que realmente precisam de intervenção.
-:::
+| Regime de fluxo | Subcrítico / supercrítico → seleção técnica |
+| Sedimento | Deficit / superávit → geomorfologia |
 :::
 :::
 
-# [8. SÍNTESE E ATIVIDADE]{.section-header}
+# 8 · Síntese e Atividade {.section-header rotulo="Síntese"}
 
-## Resumo dos conceitos-chave {.smaller-text}
+## [Síntese]{.pitch-tag .pitch-tag--forest} Fluxo Integrado e Pontos Fundamentais {#resumo-conceitos .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[1 · Diagnóstico]{.pitch-card-index}
+[Leitura do rio]{.pitch-heading}
 
-### Pontos fundamentais
-
-::: {.info-box}
-1. **Bioengenharia fluvial** trabalha COM o rio, usando materiais vivos e naturais
-2. **Defletores de troncos** redirecionam o fluxo e protegem margens erosionadas
-3. **Brushlayering** estabiliza margens e aterros com ramos vivos em camadas profundas
-4. **Cercas de dissipação** facilitam a restauração de manguezais e zonas úmidas
-5. A **restauração de mata ciliar** deve ser integrada à estabilização prévia da margem
-6. A **modelagem hidráulica** (HEC-RAS/Iber) permite dimensionar e justificar as intervenções
+Levantamento de dinâmica fluvial, margem, pé do talude e saturação.
 :::
 
+::: {.pitch-card .pitch-card--teal}
+[2 · Modelagem]{.pitch-card-index}
+[HEC-RAS / Iber]{.pitch-heading}
+
+Identificação dos trechos críticos de $\tau_0$ e velocidade marginal.
 :::
 
-::: {.column width="50%"}
+::: {.pitch-card .pitch-card--forest}
+[3 · Intervenção]{.pitch-card-index}
+[Leito · Margem · APP]{.pitch-heading}
 
-### Fluxo conceitual integrado
+Defletores no leito + enrocamento/gabião/*brushlayering* + mata ciliar na APP.
+:::
 
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["Diagnóstico<br>do rio"] --> B["Modelagem<br>HEC-RAS/Iber"]
-    B --> C["Identificação<br>trechos críticos"]
-    C --> D["Leito: Defletores"]
-    C --> E["Margem: Brushlayering<br>Enrocamento, Gabião"]
-    C --> F["APP: Mata ciliar<br>Hidrossemeadura"]
-    D --> G["Rio restaurado:<br>Estrutura + Ecologia"]
-    E --> G
-    F --> G
-    style A fill:#2135A6,color:#fff
-    style B fill:#586BA6,color:#000
-    style D fill:#8B4513,color:#fff
-    style E fill:#2E7D32,color:#fff
-    style G fill:#2E7D32,color:#fff
-```
+::: {.pitch-card .pitch-card--gold}
+[4 · Resultado]{.pitch-card-index}
+[Rio restaurado]{.pitch-heading}
+
+Estabilidade física integrada à recomposição ecológica do corredor ripário.
 :::
 :::
 
-## Atividade prática - Projeto de restauração fluvial {.smaller-text}
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Conceitos essenciais (1–3)]{.pitch-card-index}
+[Hidráulica e estruturas]{.pitch-heading}
 
-::: {.columns}
-::: {.column width="55%"}
+1. **Bioengenharia fluvial** trabalha COM o rio usando materiais vivos e naturais
+2. **Defletores de troncos** redirecionam o fluxo e protegem margens côncavas
+3. **Brushlayering** estabiliza margens e aterros com ramos em camadas profundas
+:::
 
-### Exercício em grupo
+::: {.pitch-card .pitch-card--forest}
+[Conceitos essenciais (4–6)]{.pitch-card-index}
+[Ecologia e modelagem]{.pitch-heading}
 
-**Cenário:** Um trecho de 100 m do Rio Subaé (BA) apresenta: margem esquerda (curva externa) com erosão ativa e desbarrancamento de 2 m; margem direita (curva interna) com barra de sedimento; largura do canal: 15 m; velocidade na cheia (TR=10 anos): 2,5 m s⁻¹; solo da margem: argiloso.
+4. **Cercas de dissipação** viabilizam a restauração de manguezais e zonas úmidas
+5. **Restauração de mata ciliar** exige estabilização prévia da margem
+6. **Modelagem hidráulica** (HEC-RAS/Iber) dimensiona e justifica as intervenções
+:::
+:::
+
+## [Atividade]{.pitch-tag .pitch-tag--gold} Atividade Prática: Restauração no Rio Subaé {#atividade-pratica .smaller-text .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Exercício em grupo · 40 min + 10 min]{.pitch-card-index}
+[Cenário: Rio Subaé (BA) — 100 m]{.pitch-heading}
+
+Margem esquerda (curva externa) com erosão ativa e desbarrancamento de **2 m**; margem direita (curva interna) com barra de sedimento; largura **15 m**; velocidade na cheia ($TR = 10$ anos): **2,5 m s⁻¹**; solo **argiloso**.
 
 **Projetem a restauração integrada:**
 
-1. Qual(is) **técnica(s) de proteção** para a margem esquerda?
-2. Dimensione **defletores de troncos** (comprimento, ângulo, ancoragem)
-3. Projete **brushlayering** na porção superior da margem
-4. Planeje a **restauração da mata ciliar** (espécies, espaçamento, faixa APP)
-5. Qual **coeficiente de Manning** usariam no modelo?
-6. Estime a **redução de velocidade** na margem com as intervenções
-7. Elabore **cronograma** de execução e monitoramento (2 anos)
-
+1. **Técnica(s) de proteção** para a margem esquerda
+2. **Defletores de troncos** (comprimento, ângulo, ancoragem)
+3. **Brushlayering** na porção superior da margem
+4. **Restauração da mata ciliar** (espécies, espaçamento, faixa APP)
+5. **Coeficiente de Manning** adotado no modelo
+6. **Redução de velocidade** estimada na margem
+7. **Cronograma** de execução e monitoramento (2 anos)
 :::
 
-::: {.column width="45%"}
-
-### Critérios de avaliação
-
-| Critério | Peso |
-|----------|------|
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Critério de avaliação | Peso |
+|-----------------------|------|
 | Seleção de técnicas | 20% |
 | Dimensionamento dos defletores | 20% |
-| Projeto de brushlayering | 15% |
+| Projeto de *brushlayering* | 15% |
 | Plano de restauração ciliar | 20% |
 | Integração das técnicas | 15% |
 | Cronograma | 10% |
-
-::: {.highlight-box}
-⏱️ **Tempo**: 40 minutos para projeto + 10 minutos para apresentação por grupo.
 :::
 
+::: {.pitch-band .pitch-band--navy}
+**Tempo:** 40 minutos para elaboração em grupo + 10 minutos para apresentação técnica por grupo.
+:::
 :::
 :::
 
-## Referências {.smaller-text}
+## [Referências]{.pitch-tag} Referências Bibliográficas {#referencias .smaller-text .lesson-slide}
 
-::: {.smaller-text}
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Hidráulica fluvial e modelagem]{.pitch-card-index}
+[Dinâmica de canais e HEC-RAS]{.pitch-heading}
 
 - Abbe, T. B. & Montgomery, D. R. (2003). Patterns and processes of wood debris accumulation in rivers. *Geomorphology*, 51(1-3), 81-107.
-- Evette, A. et al. (2009). History of Bioengineering Techniques for Erosion Control in Rivers. *Env. Management*, 43(6), 972-984.
 - HEC (2022). *HEC-RAS 6.3 - Hydraulic Reference Manual*. U.S. Army Corps of Engineers.
+- Shields Jr, F. D. et al. (2003). Use of acoustic doppler current profilers to describe velocity distributions at the reach scale. *JAWRA*, 39(6), 1397-1408.
+- Van Rijn, L. C. (1993). *Principles of Sediment Transport in Rivers, Estuaries and Coastal Seas*. Aqua Publications.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[Bioengenharia fluvial e restauração ciliar]{.pitch-card-index}
+[Literatura de referência]{.pitch-heading}
+
+- Evette, A. et al. (2009). History of Bioengineering Techniques for Erosion Control in Rivers. *Env. Management*, 43(6), 972-984.
 - Li, M. H. & Eddleman, K. E. (2002). Biotechnical engineering as an alternative. *Landscape Urban Planning*, 60(4), 225-242.
 - Rodrigues, R. R. et al. (2009). On the restoration of high diversity forests. *Forest Ecol. Management*, 261(10), 1578-1585.
 - Schiechtl, H. M. & Stern, R. (1996). *Ground Bioengineering Techniques*. Blackwell Science.
-- Shields Jr, F. D. et al. (2003). Use of acoustic doppler current profilers to describe velocity distributions at the reach scale. *JAWRA*, 39(6), 1397-1408.
-- Van Rijn, L. C. (1993). *Principles of Sediment Transport in Rivers, Estuaries and Coastal Seas*. Aqua Publications.
-
+:::
 :::
 
 ## {.obrigado-fit-text .center}

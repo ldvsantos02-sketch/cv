@@ -1,0 +1,58 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{bs_tikz_style}
+\tikzset{
+  pill/.style={bsBadge=#1, minimum height=0pt, minimum width=0pt, text width=}
+}
+
+\begin{document}
+\begin{tikzpicture}[node distance=0.65cm]
+
+% 5 cartões sequenciais equilibrados
+\node[bsTint=bsNavy, text width=3.05cm, minimum height=2.75cm] (p1) at (0, 0) {%
+  \tikz\node[pill=bsNavy]{ETAPA 1};\\[6pt]
+  \textbf{Regularização \&\\Remoção de Torrões}\\[4pt]
+  {\scriptsize Nivelamento da superfície\\para eliminar vazios\\e evitar efeito tenda}
+};
+
+\node[bsTint=bsTeal, text width=3.05cm, minimum height=2.75cm, right=of p1] (p2) {%
+  \tikz\node[pill=bsTeal]{ETAPA 2};\\[6pt]
+  \textbf{Semeadura \&\\Adubação de Base}\\[4pt]
+  {\scriptsize Distribuição uniforme de\\sementes e corretivos\\antes da cobertura}
+};
+
+\node[bsTint=bsEarth, text width=3.05cm, minimum height=2.75cm, right=of p2] (p3) {%
+  \tikz\node[pill=bsEarth]{ETAPA 3};\\[6pt]
+  \textbf{Valeta de Ancoragem\\na Crista ($0{,}3\text{ m}$)}\\[4pt]
+  {\scriptsize Enterramento e apiloamento\\da borda superior contra\\escoamento sub-manta}
+};
+
+\node[bsTint=bsGold, text width=3.05cm, minimum height=2.75cm, right=of p3] (p4) {%
+  \tikz\node[pill=bsGoldDark]{ETAPA 4};\\[6pt]
+  \textbf{Desenrolamento\\Montante $\rightarrow$ Jusante}\\[4pt]
+  {\scriptsize Aplicação no sentido do\\fluxo com sobreposição\\mínima de $10\text{ cm}$}
+};
+
+\node[bsTint=bsForest, text width=3.05cm, minimum height=2.75cm, right=of p4] (p5) {%
+  \tikz\node[pill=bsForest]{ETAPA 5};\\[6pt]
+  \textbf{Grampeamento em\\Quincôncio \& Inspeção}\\[4pt]
+  {\scriptsize Fixação escalonada em U\\e vistoria pós-chuva para\\reparo de sulcos/bordas}
+};
+
+\draw[bsArrow, bsNavy] (p1) -- (p2);
+\draw[bsArrow, bsTeal] (p2) -- (p3);
+\draw[bsArrow, bsEarth] (p3) -- (p4);
+\draw[bsArrow, bsGoldDark] (p4) -- (p5);
+
+% Título e subtítulo ancorados acima da faixa
+\node[bsSub, above=0.45cm of p3] (sub)
+  {Sequência executiva para contato íntimo manta–solo, ancoragem hidráulica e verificação em campo};
+\node[bsTitle, above=0.14cm of sub] (title)
+  {Procedimento Construtivo e Controle Pós-Instalação de Biomantas};
+
+% Barra de síntese inferior bem separada
+\node[fill=bgNavy, draw=bsNavy!40, rounded corners=4pt, inner xsep=10pt, inner ysep=5pt,
+      font=\scriptsize\sffamily, text=bsInk, below=0.55cm of p3]
+  {\textbf{Ponto crítico de controle:} contato contínuo da manta com o solo — qualquer vão suspenso favorece erosão em túnel sob a biomanta.};
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,66 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% ============================================================
+% TÍTULO GERAL
+% ============================================================
+\node[bsTitle, anchor=west] at (0, 5.30)
+  {Parâmetros de Projeto e Sequência Construtiva do Enrocamento Vegetado};
+\node[bsSub, anchor=west] at (0, 4.85)
+  {Fluxo de dimensionamento hidráulico, estabilidade do filtro e implantação biológica};
+
+% ============================================================
+% 5 ETAPAS HORIZONTAIS
+% ============================================================
+\node[bsTint=bsWater, text width=3.10cm, minimum height=3.50cm, anchor=north west] (s1) at (0, 4.30) {};
+\node[bsBadge=bsWater, rounded corners=5pt, anchor=north] (b1) at ($(s1.north)+(0,-0.22)$) {ETAPA 1};
+\node[font=\footnotesize\bfseries\sffamily, text=bsNavyDark, align=center, text width=2.95cm, anchor=north] (t1)
+  at ($(b1.south)+(0,-0.16)$) {Hidráulica\\de Projeto};
+\node[font=\scriptsize\sffamily, text=bsInk, align=center, text width=2.90cm, anchor=north]
+  at ($(t1.south)+(0,-0.16)$) {Definir vazão ($Q_{\text{máx}}$),\\velocidade ($V$) e tensão\\cisalhante ($\tau_0$).};
+
+\node[bsTint=bsNavy, text width=3.10cm, minimum height=3.50cm, anchor=north west] (s2) at (3.85, 4.30) {};
+\node[bsBadge=bsNavy, rounded corners=5pt, anchor=north] (b2) at ($(s2.north)+(0,-0.22)$) {ETAPA 2};
+\node[font=\footnotesize\bfseries\sffamily, text=bsNavyDark, align=center, text width=2.95cm, anchor=north] (t2)
+  at ($(b2.south)+(0,-0.16)$) {Diâmetro\\Característico};
+\node[font=\scriptsize\sffamily, text=bsInk, align=center, text width=2.90cm, anchor=north]
+  at ($(t2.south)+(0,-0.16)$) {Dimensionar $D_{50}$ pelo\\critério de Shields ou\\equação de Isbash.};
+
+\node[bsTint=bsGold, text width=3.10cm, minimum height=3.50cm, anchor=north west] (s3) at (7.70, 4.30) {};
+\node[bsBadge=bsGold, rounded corners=5pt, anchor=north] (b3) at ($(s3.north)+(0,-0.22)$) {ETAPA 3};
+\node[font=\footnotesize\bfseries\sffamily, text=bsNavyDark, align=center, text width=2.95cm, anchor=north] (t3)
+  at ($(b3.south)+(0,-0.16)$) {Filtro Geotêxtil\\/ Granular};
+\node[font=\scriptsize\sffamily, text=bsInk, align=center, text width=2.90cm, anchor=north]
+  at ($(t3.south)+(0,-0.16)$) {Interpor camada filtrante\\para evitar sufosão e\\perda de finos do talude.};
+
+\node[bsTint=bsEarth, text width=3.10cm, minimum height=3.50cm, anchor=north west] (s4) at (11.55, 4.30) {};
+\node[bsBadge=bsEarth, rounded corners=5pt, anchor=north] (b4) at ($(s4.north)+(0,-0.22)$) {ETAPA 4};
+\node[font=\footnotesize\bfseries\sffamily, text=bsNavyDark, align=center, text width=2.95cm, anchor=north] (t4)
+  at ($(b4.south)+(0,-0.16)$) {Lançamento \&\\Preenchimento};
+\node[font=\scriptsize\sffamily, text=bsInk, align=center, text width=2.90cm, anchor=north]
+  at ($(t4.south)+(0,-0.16)$) {Acomodar blocos com\\imbricamento e preencher\\vazios com solo fértil.};
+
+\node[bsTint=bsForest, text width=3.10cm, minimum height=3.50cm, anchor=north west] (s5) at (15.40, 4.30) {};
+\node[bsBadge=bsForest, rounded corners=5pt, anchor=north] (b5) at ($(s5.north)+(0,-0.22)$) {ETAPA 5};
+\node[font=\footnotesize\bfseries\sffamily, text=bsNavyDark, align=center, text width=2.95cm, anchor=north] (t5)
+  at ($(b5.south)+(0,-0.16)$) {Estacas Vivas \&\\Monitoramento};
+\node[font=\scriptsize\sffamily, text=bsInk, align=center, text width=2.90cm, anchor=north]
+  at ($(t5.south)+(0,-0.16)$) {Cravar estacas até o solo\\úmido e monitorar a\\estabilidade pós-cheias.};
+
+% Setas entre etapas
+\draw[bsArrow, bsNavy] (s1.east) -- (s2.west);
+\draw[bsArrow, bsNavy] (s2.east) -- (s3.west);
+\draw[bsArrow, bsNavy] (s3.east) -- (s4.west);
+\draw[bsArrow, bsNavy] (s4.east) -- (s5.west);
+
+% Barra de síntese inferior
+\node[draw=bsNavy!30, fill=bgNavy, rounded corners=5pt, line width=0.9pt,
+      text width=18.50cm, inner xsep=10pt, inner ysep=6pt, anchor=north west,
+      font=\scriptsize\sffamily, text=bsInk] at (0, 0.45)
+  {\textbf{\color{bsNavy}Critério-chave:} A resistência inicial depende integralmente do intertravamento mineral ($D_{50}$ e cota de pé); com o desenvolvimento radicular, as raízes consolidam os vazios e elevam a rugosidade hidráulica de margem.};
+
+\end{tikzpicture}
+\end{document}

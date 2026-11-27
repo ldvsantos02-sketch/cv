@@ -1,0 +1,71 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{bs_tikz_style}
+\tikzset{
+  pill/.style={bsBadge=#1, rounded corners=4pt, minimum height=0pt, minimum width=0pt, text width=}
+}
+
+\begin{document}
+\begin{tikzpicture}
+
+% Título
+\node[bsTitle] (title) at (7.65, 5.75)
+  {Hidrossemeadura: Formulação do \textit{Slurry} e Etapas de Aplicação em Taludes};
+\node[bsSub] (sub) at (7.65, 5.25)
+  {Integração de veículo hidráulico, sementes, cobertura protetora e adesivo para revegetação de encostas};
+
+% ================= BLOCO ESQUERDO: COMPOSIÇÃO DO SLURRY =================
+\draw[draw=bsTeal, fill=bgTeal!55, rounded corners=6pt, line width=1.25pt]
+  (-0.35, -0.95) rectangle (5.75, 4.70);
+\node[bsBadge=bsTeal, rounded corners=4pt] at (2.70, 4.35) {COMPOSIÇÃO DO \textit{SLURRY}};
+
+\node[bsBox=bsWater, text width=5.35cm, align=left, inner sep=6pt] (c1) at (2.70, 3.52)
+  {\textbf{Água (veículo)} — {\scriptsize suspensão e hidratação}};
+\node[bsBox=bsForest, text width=5.35cm, align=left, inner sep=6pt] (c2) at (2.70, 2.62)
+  {\textbf{Sementes} — {\scriptsize gramíneas + leguminosas}};
+\node[bsBox=bsEarth, text width=5.35cm, align=left, inner sep=6pt] (c3) at (2.70, 1.72)
+  {\textbf{Mulch} — {\scriptsize fibra de celulose ou madeira}};
+\node[bsBox=bsGoldDark, text width=5.35cm, align=left, inner sep=6pt] (c4) at (2.70, 0.82)
+  {\textbf{Fertilizantes e corretivos} — {\scriptsize arranque e pH}};
+\node[bsBox=bsNavy, text width=5.35cm, align=left, inner sep=6pt] (c5) at (2.70, -0.08)
+  {\textbf{Fixador / \textit{Tackifier}} — {\scriptsize adesão ao talude}};
+
+% Seta principal ligando receita às etapas
+\draw[bsArrow, bsTeal, line width=1.8pt] (5.85, 1.85) -- (6.55, 1.85);
+
+% ================= BLOCO DIREITO: FLUXO EM 4 ETAPAS =================
+\draw[draw=bsNavy!40, fill=bgNavy!25, rounded corners=6pt, line width=0.95pt, dashed]
+  (6.65, -0.95) rectangle (15.65, 4.70);
+\node[bsBadge=bsNavy, rounded corners=4pt] at (11.15, 4.35) {ETAPAS DE APLICAÇÃO EM CAMPO};
+
+\node[bsTint=bsNavy, text width=3.55cm, minimum height=1.75cm] (e1) at (8.85, 2.92) {%
+  \tikz\node[pill=bsNavy]{ETAPA 1};\\[4pt]
+  \textbf{Mistura em Tanque\\Agitador}\\[2pt]
+  {\scriptsize Homogeneização contínua\\sem decantação}
+};
+
+\node[bsTint=bsTeal, text width=3.55cm, minimum height=1.75cm] (e2) at (13.45, 2.92) {%
+  \tikz\node[pill=bsTeal]{ETAPA 2};\\[4pt]
+  \textbf{Jateamento sob\\Pressão}\\[2pt]
+  {\scriptsize Mangueira ou canhão em\\passadas cruzadas}
+};
+
+\node[bsTint=bsGold, text width=3.55cm, minimum height=1.75cm] (e3) at (8.85, 0.22) {%
+  \tikz\node[pill=bsGoldDark]{ETAPA 3};\\[4pt]
+  \textbf{Cobertura Adesiva \&\\Microclima Úmido}\\[2pt]
+  {\scriptsize Filme protetor contínuo\\contra impacto de gotas}
+};
+
+\node[bsTint=bsForest, text width=3.55cm, minimum height=1.75cm] (e4) at (13.45, 0.22) {%
+  \tikz\node[pill=bsForest]{ETAPA 4};\\[4pt]
+  \textbf{Germinação Rápida\\\& Ancoragem}\\[2pt]
+  {\scriptsize Cobertura vegetal precoce\\e contenção laminar}
+};
+
+% Setas entre as 4 etapas (1 -> 2 -> 3 -> 4) passando pelo corredor central y = 1.57
+\draw[bsArrow, bsNavy] (e1.east) -- (e2.west);
+\draw[bsArrow, bsTeal, rounded corners=5pt]
+  (e2.south) -- (13.45, 1.57) -- (8.85, 1.57) -- (e3.north);
+\draw[bsArrow, bsGoldDark] (e3.east) -- (e4.west);
+
+\end{tikzpicture}
+\end{document}

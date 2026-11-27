@@ -1,0 +1,111 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% ============================================================
+% TÍTULO GERAL
+% ============================================================
+\node[bsTitle, anchor=west] at (0, 8.65)
+  {Parede Krainer Vegetada: Geometria da Grelha e Verificação como Muro de Gravidade};
+\node[bsSub, anchor=west] at (0, 8.20)
+  {Estrutura em fogueira de toras com solo compactado, ramos vivos alternados e critérios de estabilidade};
+
+% ============================================================
+% PAINEL ESQUERDO: SEÇÃO TRANSVERSAL DA PAREDE KRAINER
+% ============================================================
+\begin{scope}[shift={(0,0)}]
+  \draw[bsNavy!30, rounded corners=6pt, line width=1.0pt, fill=white]
+    (0,-0.75) rectangle (9.65, 7.70);
+  \node[bsBadge=bsEarth, rounded corners=5pt, anchor=north west] at (0.30, 7.45) {GEOMETRIA DA GRELHA};
+
+  % Solo natural atrás e base escavada abaixo do solapamento
+  \fill[bsEarth!18]
+    (0.45, 0.75) -- (0.45, 5.95) -- (2.95, 5.95) -- (3.55, 1.35) -- (8.85, 1.35) -- (8.85, 0.75) -- cycle;
+
+  % Linha de referência vertical para mostrar inclinação de 10-15% para dentro
+  \draw[bsMuted, dotted, line width=0.9pt] (5.95, 1.35) -- (5.95, 6.20);
+
+  % Solo compactado interno da grelha (inclinado para dentro ~12%)
+  \fill[bsGold!28]
+    (3.55, 1.35) -- (5.95, 1.35) -- (5.35, 5.45) -- (2.95, 5.45) -- cycle;
+
+  % Toras transversais e longitudinais em 5 níveis
+  \foreach \i in {0,1,2,3,4}{
+    \pgfmathsetmacro{\y}{1.45 + \i*0.92}
+    \pgfmathsetmacro{\xL}{3.55 - \i*0.13}
+    \pgfmathsetmacro{\xR}{5.95 - \i*0.13}
+
+    \filldraw[fill=bsEarth!55, draw=bsEarth!90!black, line width=0.8pt]
+      (\xL-0.06, \y+0.12) -- (\xR+0.06, \y+0.12) -- (\xR+0.04, \y+0.32) -- (\xL-0.08, \y+0.32) -- cycle;
+    \filldraw[fill=bsGoldDark!75, draw=bsEarth!90!black, line width=0.85pt]
+      (\xL+0.10, \y) circle (0.14);
+    \filldraw[fill=bsGoldDark!75, draw=bsEarth!90!black, line width=0.85pt]
+      (\xR-0.10, \y) circle (0.14);
+  }
+
+  % Camadas alternadas de ramos vivos atravessando o muro e brotando na face
+  \foreach \y/\xF in {2.02/5.88, 2.94/5.75, 3.86/5.62, 4.78/5.49}{
+    \draw[bsEarth!85!black, line width=2.1pt, line cap=round] (\xF-3.10, \y+0.25) -- (\xF+0.32, \y-0.05);
+    \draw[bsForest, line width=1.5pt, line cap=round] (\xF+0.15, \y) -- (\xF+0.78, \y+0.36);
+    \draw[bsForest, line width=1.35pt, line cap=round] (\xF+0.22, \y-0.03) -- (\xF+0.86, \y+0.10);
+    \fill[bsForest!85!white] (\xF+0.78, \y+0.36) ellipse (0.18 and 0.09);
+    \fill[bsForest!75!white] (\xF+0.86, \y+0.10) ellipse (0.17 and 0.08);
+  }
+
+  % Cota de solapamento na base
+  \draw[bsAlert, dashed, line width=0.95pt] (3.30, 1.82) -- (7.65, 1.82);
+  \node[font=\tiny\bfseries\sffamily, text=bsAlert, anchor=south east] at (8.80, 1.86) {Cota de solapamento};
+  \draw[bsEarth, line width=1.1pt] (5.95, 1.82) -- (8.85, 1.82);
+
+  % Indicação de inclinação 10-15% (acima do topo, sem cruzamentos)
+  \draw[bsDArrow, bsNavy, line width=0.95pt] (5.42, 5.78) -- (5.95, 5.78);
+  \node[font=\scriptsize\bfseries\sffamily, text=bsNavy, anchor=south] at (5.68, 5.84) {10–15\%};
+
+  % Rótulos e setas (totalmente desimpedidos)
+  \node[font=\scriptsize\bfseries\sffamily, text=bsEarth!90!black, align=left, anchor=west] at (0.55, 6.32)
+    {Solo natural\\e enraizamento};
+
+  \node[font=\scriptsize\bfseries\sffamily, text=bsGoldDark, align=left, anchor=west] (lToras) at (6.50, 6.25)
+    {Toras de madeira\\tratada / nativa};
+  \draw[bsArrow, bsGoldDark, line width=0.95pt] (lToras.south west) -- (5.58, 5.20);
+
+  \node[font=\scriptsize\bfseries\sffamily, text=bsForest, align=left, anchor=west] (lCam) at (6.55, 4.15)
+    {Camadas alternadas\\de solo e ramos vivos};
+  \draw[bsArrow, bsForest, line width=0.95pt] (lCam.west) -- (6.30, 4.02);
+
+  \node[font=\scriptsize\bfseries\sffamily, text=bsNavyDark, anchor=north] at (4.75, 0.56)
+    {Base engastada (muro de gravidade)};
+\end{scope}
+
+% ============================================================
+% PAINEL DIREITO: VERIFICAÇÕES GEOTÉCNICAS CLÁSSICAS
+% ============================================================
+\begin{scope}[shift={(10.05,0)}]
+  \draw[bsAlert, rounded corners=6pt, line width=1.2pt, fill=bgAlert]
+    (0,-0.75) rectangle (5.85, 7.70);
+  \node[bsBadge=bsAlert, rounded corners=5pt, anchor=north west] at (0.30, 7.45) {ESTABILIDADE GLOBAL};
+
+  \node[font=\small\bfseries\sffamily, text=bsNavyDark, anchor=north west, text width=5.15cm]
+    at (0.30, 6.86) {Verificações Geotécnicas\\Clássicas};
+
+  \node[bsBox=bsNavy, anchor=north west, text width=4.95cm, align=left] (v1) at (0.30, 5.85)
+    {\textbf{\color{bsNavy}1. Tombamento}\\
+     $FS_{\text{tombamento}} \ge 1{,}5$ em relação ao pé frontal da grelha.};
+
+  \node[bsBox=bsNavy, anchor=north west, text width=4.95cm, align=left] (v2) at ($(v1.south west)+(0,-0.22)$)
+    {\textbf{\color{bsNavy}2. Deslizamento na Base}\\
+     $FS_{\text{deslizamento}} \ge 1{,}5$ sob ação do empuxo ativo do maciço.};
+
+  \node[bsBox=bsAlert, anchor=north west, text width=4.95cm, align=left] (v3) at ($(v2.south west)+(0,-0.22)$)
+    {\textbf{\color{bsAlert}3. Tensão Admissível na Base}\\
+     Verificar capacidade de suporte da fundação: $\sigma_{\text{máx}} \le \sigma_{\text{adm}}$.};
+
+  \node[bsBox=bsForest, anchor=north west, text width=4.95cm, align=left] (v4) at ($(v3.south west)+(0,-0.22)$)
+    {\textbf{\color{bsForest}4. Drenagem Interna}\\
+     Face vazada alivia poropressões e evita acúmulo hidrostático.};
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

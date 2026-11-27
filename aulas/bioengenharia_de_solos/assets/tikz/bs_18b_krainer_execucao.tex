@@ -1,0 +1,66 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% ============================================================
+% TÍTULO GERAL
+% ============================================================
+\node[bsTitle, anchor=west] at (0, 5.45)
+  {Sequência Construtiva da Parede Krainer em Campo};
+\node[bsSub, anchor=west] at (0, 5.00)
+  {Etapas executivas da fundação em trincheira até a consolidação vegetal da crista};
+
+% ============================================================
+% 5 CARDS DE FASE HORIZONTAIS
+% ============================================================
+\node[bsTint=bsAlert, text width=3.10cm, minimum height=3.65cm, anchor=north west] (p1) at (0, 4.45) {};
+\node[bsBadge=bsAlert, rounded corners=5pt, anchor=north] (b1) at ($(p1.north)+(0,-0.22)$) {FASE 1};
+\node[font=\footnotesize\bfseries\sffamily, text=bsNavyDark, align=center, text width=2.95cm, anchor=north] (t1)
+  at ($(b1.south)+(0,-0.16)$) {Escavação da Base\\Abaixo do\\Solapamento};
+\node[font=\scriptsize\sffamily, text=bsInk, align=center, text width=2.90cm, anchor=north]
+  at ($(t1.south)+(0,-0.16)$) {Abrir trincheira abaixo\\da cota de solapamento,\\nivelando o apoio.};
+
+\node[bsTint=bsEarth, text width=3.10cm, minimum height=3.65cm, anchor=north west] (p2) at (3.85, 4.45) {};
+\node[bsBadge=bsEarth, rounded corners=5pt, anchor=north] (b2) at ($(p2.north)+(0,-0.22)$) {FASE 2};
+\node[font=\footnotesize\bfseries\sffamily, text=bsNavyDark, align=center, text width=2.95cm, anchor=north] (t2)
+  at ($(b2.south)+(0,-0.16)$) {Primeira Camada de\\Toras \& Conectores};
+\node[font=\scriptsize\sffamily, text=bsInk, align=center, text width=2.90cm, anchor=north]
+  at ($(t2.south)+(0,-0.16)$) {Posicionar longarinas e\\travessas com pinos ou\\parafusos na grelha inicial.};
+
+\node[bsTint=bsGold, text width=3.10cm, minimum height=3.65cm, anchor=north west] (p3) at (7.70, 4.45) {};
+\node[bsBadge=bsGold, rounded corners=5pt, anchor=north] (b3) at ($(p3.north)+(0,-0.22)$) {FASE 3};
+\node[font=\footnotesize\bfseries\sffamily, text=bsNavyDark, align=center, text width=2.95cm, anchor=north] (t3)
+  at ($(b3.south)+(0,-0.16)$) {Camada de Solo\\Compactado + Ramos Vivos};
+\node[font=\scriptsize\sffamily, text=bsInk, align=center, text width=2.90cm, anchor=north]
+  at ($(t3.south)+(0,-0.16)$) {Preencher e compactar\\solo fértil e dispor ramos\\vivos até o solo natural.};
+
+\node[bsTint=bsNavy, text width=3.10cm, minimum height=3.65cm, anchor=north west] (p4) at (11.55, 4.45) {};
+\node[bsBadge=bsNavy, rounded corners=5pt, anchor=north] (b4) at ($(p4.north)+(0,-0.22)$) {FASE 4};
+\node[font=\footnotesize\bfseries\sffamily, text=bsNavyDark, align=center, text width=2.95cm, anchor=north] (t4)
+  at ($(b4.south)+(0,-0.16)$) {Elevação Escalada\\(Inclinação para Dentro)};
+\node[font=\scriptsize\sffamily, text=bsInk, align=center, text width=2.90cm, anchor=north]
+  at ($(t4.south)+(0,-0.16)$) {Repetir camadas mantendo\\inclinação de 10–15\%\\contra o talude.};
+
+\node[bsTint=bsForest, text width=3.10cm, minimum height=3.65cm, anchor=north west] (p5) at (15.40, 4.45) {};
+\node[bsBadge=bsForest, rounded corners=5pt, anchor=north] (b5) at ($(p5.north)+(0,-0.22)$) {FASE 5};
+\node[font=\footnotesize\bfseries\sffamily, text=bsNavyDark, align=center, text width=2.95cm, anchor=north] (t5)
+  at ($(b5.south)+(0,-0.16)$) {Drenagem de Crista\\\& Acabamento\\Vegetal};
+\node[font=\scriptsize\sffamily, text=bsInk, align=center, text width=2.90cm, anchor=north]
+  at ($(t5.south)+(0,-0.16)$) {Executar canaleta de\\crista, recobrir o topo e\\plantar mudas nativas.};
+
+% Setas entre fases
+\draw[bsArrow, bsNavy] (p1.east) -- (p2.west);
+\draw[bsArrow, bsNavy] (p2.east) -- (p3.west);
+\draw[bsArrow, bsNavy] (p3.east) -- (p4.west);
+\draw[bsArrow, bsNavy] (p4.east) -- (p5.west);
+
+% Nota de controle de qualidade
+\node[draw=bsForest!35, fill=bgForest, rounded corners=5pt, line width=0.9pt,
+      text width=18.50cm, inner xsep=10pt, inner ysep=6pt, anchor=north west,
+      font=\scriptsize\sffamily, text=bsInk] at (0, 0.45)
+  {\textbf{\color{bsForest}Boas práticas de campo:} Manter a extremidade basal dos ramos vivos sempre em contato com o solo úmido do maciço e proteger o topo contra enxurradas concentradas durante o primeiro ciclo chuvoso.};
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,75 @@
+\documentclass[border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+
+  % Parâmetros de escala do Gantt
+  % Coluna de rótulos: x = -7.7 a 0.0
+  % Meses M1..M12: cada mês = 0.92 cm -> x = 0.0 a 11.04
+  \def\colw{0.92}
+  \def\rowh{0.78}
+
+  % Título
+  \node[bsTitle] at (1.67, 5.85)
+    {Cronograma Típico de Implantação Integrada de Bioengenharia (Meses 1 a 12)};
+  \node[bsSub] at (1.67, 5.40)
+    {Sequenciamento construtivo: obras hidráulicas e contenções na estiagem, revegetação no período úmido};
+
+  % Fundo do cabeçalho dos meses
+  \fill[bsNavy] (0, 4.25) rectangle (11.04, 4.85);
+  \fill[bsNavyDark] (-7.7, 4.25) rectangle (0, 4.85);
+  \node[font=\scriptsize\bfseries, text=white] at (-3.85, 4.55) {FASE / FRENTE DE SERVIÇO};
+
+  \foreach \m in {1,...,12} {
+    \pgfmathsetmacro{\xc}{(\m - 0.5)*\colw}
+    \node[font=\scriptsize\bfseries, text=white] at (\xc, 4.55) {M\m};
+  }
+
+  % Fundo alternado das 6 linhas + grade vertical
+  \foreach \r in {1,...,6} {
+    \pgfmathsetmacro{\ytop}{4.25 - (\r - 1)*\rowh}
+    \pgfmathsetmacro{\ybot}{4.25 - \r*\rowh}
+    \ifodd\r
+      \fill[bgNavy!55!white] (-7.7, \ybot) rectangle (11.04, \ytop);
+    \else
+      \fill[white] (-7.7, \ybot) rectangle (11.04, \ytop);
+    \fi
+    \draw[bsMuted!25!white, line width=0.5pt] (-7.7, \ybot) -- (11.04, \ybot);
+  }
+
+  \foreach \m in {0,...,12} {
+    \pgfmathsetmacro{\xg}{\m*\colw}
+    \draw[bsMuted!28!white, line width=0.5pt] (\xg, -0.43) -- (\xg, 4.25);
+  }
+
+  % Borda externa da tabela
+  \draw[bsNavy!60!white, line width=1pt] (-7.7, -0.43) rectangle (11.04, 4.85);
+  \draw[bsNavy!60!white, line width=0.9pt] (0, -0.43) -- (0, 4.85);
+
+  % Helper macro para linha de Gantt
+  \newcommand{\ganttrow}[6]{
+    \pgfmathsetmacro{\ymid}{4.25 - (#1 - 0.5)*\rowh}
+    \pgfmathsetmacro{\xstart}{(#3 - 1)*\colw + 0.06}
+    \pgfmathsetmacro{\xend}{#4*\colw - 0.06}
+    \node[anchor=west, font=\scriptsize\bfseries, text=bsInk] at (-7.50, \ymid) {#2};
+    \fill[#5, rounded corners=3.5pt] (\xstart, \ymid - 0.21) rectangle (\xend, \ymid + 0.21);
+    \node[font=\tiny\bfseries, text=white] at ({(\xstart+\xend)/2}, \ymid) {#6};
+  }
+
+  \ganttrow{1}{1. Levantamento, Topografia \& Projeto}{1}{2}{bsNavy}{M1--M2}
+  \ganttrow{2}{2. Drenagem de Crista \& Canaleta Verde}{2}{4}{bsWater}{M2--M4}
+  \ganttrow{3}{3. Estruturas de Base (Krainer / Enrocamento)}{3}{5}{bsEarth}{M3--M5}
+  \ganttrow{4}{4. Obras de Vertente (Paliçadas / Fascinas / Biomantas)}{4}{6}{bsTeal}{M4--M6}
+  \ganttrow{5}{5. Semeadura, Estacas Vivas \& Plantio Ciliar}{5}{8}{bsForest}{M5--M8}
+  \ganttrow{6}{6. Manutenção \& Monitoramento Pós-Chuva}{7}{12}{bsGold}{M7--M12}
+
+  % Faixas sazonais na base (largura com folga para o texto)
+  \fill[bgGold, draw=bsGold, rounded corners=3pt, line width=0.8pt] (0.04, -1.15) rectangle (4.54, -0.58);
+  \node[font=\scriptsize\bfseries, text=bsGoldDark, align=center] at (2.29, -0.865) {Estação Seca:\\[-1pt]Obras \& Contenções};
+
+  \fill[bgForest, draw=bsForest, rounded corners=3pt, line width=0.8pt] (4.66, -1.15) rectangle (11.00, -0.58);
+  \node[font=\scriptsize\bfseries, text=bsForest, align=center] at (7.83, -0.865) {Estação Chuvosa:\\[-1pt]Estabelecimento Vegetal \& Monitoramento};
+
+\end{tikzpicture}
+\end{document}

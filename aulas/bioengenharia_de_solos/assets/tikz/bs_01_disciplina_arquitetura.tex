@@ -1,0 +1,72 @@
+\documentclass[border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[node distance=0.6cm]
+
+  % Título e subtítulo
+  \node[bsTitle] (title) at (0, 3.85)
+    {Arquitetura da Bioengenharia de Solos Tropicais e Conservação de Águas};
+  \node[bsSub] (sub) at (0, 3.35)
+    {Integração entre pedologia, hidrologia, geotecnia e soluções baseadas na natureza};
+
+  % Pilar 1: Solo Tropical & Pedologia
+  \node[bsTint=bsEarth, text width=4.6cm, minimum height=3.15cm, anchor=north] (p1) at (-5.3, 2.55) {
+    \vspace{0.35cm}
+    \textbf{\color{bsEarth}Solo Tropical \& Pedologia}\\[5pt]
+    \scriptsize
+    \textbullet\ Latossolos, Argissolos e Cambissolos\\[2pt]
+    \textbullet\ Intemperismo químico intenso e\\
+    \hspace{0.25cm}agregação por óxidos (Fe/Al)\\[2pt]
+    \textbullet\ Física do solo: textura, porosidade,\\
+    \hspace{0.25cm}infiltração e erodibilidade ($K$)
+  };
+  \node[bsBadge=bsEarth] at (p1.north) {1. BASE PEDOLÓGICA};
+
+  % Pilar 2: Hidrologia & Mecânica
+  \node[bsTint=bsWater, text width=4.6cm, minimum height=3.15cm, anchor=north] (p2) at (0, 2.55) {
+    \vspace{0.35cm}
+    \textbf{\color{bsWater}Hidrologia \& Mecânica}\\[5pt]
+    \scriptsize
+    \textbullet\ Balanço hídrico e escoamento\\
+    \hspace{0.25cm}superficial (Manning, $n$ e $V$)\\[2pt]
+    \textbullet\ Critério de Mohr-Coulomb e\\
+    \hspace{0.25cm}tensão cisalhante ($\tau_0$)\\[2pt]
+    \textbullet\ Reforço pela coesão radicular ($\Delta c_r$)
+  };
+  \node[bsBadge=bsWater] at (p2.north) {2. PROCESSOS FÍSICOS};
+
+  % Pilar 3: Intervenções Integradas
+  \node[bsTint=bsForest, text width=4.6cm, minimum height=3.15cm, anchor=north] (p3) at (5.3, 2.55) {
+    \vspace{0.35cm}
+    \textbf{\color{bsForest}Intervenções Integradas}\\[5pt]
+    \scriptsize
+    \textbullet\ Controle de escoamento: terraços\\
+    \hspace{0.25cm}e canaletas vegetadas (bioswales)\\[2pt]
+    \textbullet\ Estabilização de encostas e ravinas:\\
+    \hspace{0.25cm}paliçadas, fascinas e biomantas\\[2pt]
+    \textbullet\ Contenção viva: gabião vivo e Krainer
+  };
+  \node[bsBadge=bsForest] at (p3.north) {3. ENGENHARIA ECOLÓGICA};
+
+  % Convergência
+  \coordinate (c1) at (-5.3, -1.15);
+  \coordinate (c2) at (0, -1.15);
+  \coordinate (c3) at (5.3, -1.15);
+  \coordinate (hub) at (0, -1.55);
+
+  \draw[bsArrow, bsEarth] (p1.south) -- (c1) -| ($(hub) + (-2.0, 0)$);
+  \draw[bsArrow, bsWater] (p2.south) -- (hub);
+  \draw[bsArrow, bsForest] (p3.south) -- (c3) -| ($(hub) + (2.0, 0)$);
+
+  % Síntese unificada
+  \node[bsTint=bsNavy, text width=15.0cm, minimum height=1.35cm, anchor=north, fill=bgNavy] (synth) at (0, -1.6) {
+    \vspace{0.18cm}
+    \textbf{\color{bsNavy}\small Síntese Aplicada: Projeto Integrador de Controle Erosivo e Conservação Hídrica}\\[4pt]
+    \scriptsize
+    Diagnóstico multicritério do sítio \quad$\cdot$\quad Dimensionamento hidráulico-geotécnico \quad$\cdot$\quad Restauração funcional e infraestrutura verde (SbN)
+  };
+  \node[bsBadge=bsNavy] at (synth.north) {CONVERGÊNCIA DA DISCIPLINA};
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass[border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+  \hyphenpenalty=10000\exhyphenpenalty=10000
+
+  % Título
+  \node[bsTitle] at (0, 3.25)
+    {Integração Modelagem Hidráulica (HEC-RAS) e Restauração de APPs Fluviais};
+  \node[bsSub] at (0, 2.80)
+    {Fluxo de trabalho baseado em tensão cisalhante admissível para dimensionamento de margens};
+
+  % Estágio 1
+  \node[bsTint=bsNavy, text width=3.45cm, minimum height=3.25cm, anchor=north] (s1) at (-6.0, 2.15) {
+    \vspace{0.32cm}
+    \textbf{\color{bsNavy}Topobatimetria\\\& Hidrologia}\\[5pt]
+    \scriptsize
+    \textbullet\ MDT de alta resolução e seções do canal\\[2pt]
+    \textbullet\ Hidrogramas de projeto:\\
+    \hspace{0.2cm}$Q_{10},\; Q_{50},\; Q_{100}$\\[2pt]
+    \textbullet\ Rugosidade inicial ($n$)
+  };
+  \node[bsBadge=bsNavy] at (s1.north) {ETAPA 1};
+
+  % Estágio 2
+  \node[bsTint=bsWater, text width=3.45cm, minimum height=3.25cm, anchor=north] (s2) at (-2.0, 2.15) {
+    \vspace{0.32cm}
+    \textbf{\color{bsWater}Simulação 1D/2D\\(HEC-RAS)}\\[5pt]
+    \scriptsize
+    \textbullet\ Perfis de linha d'água e planície de inundação\\[2pt]
+    \textbullet\ Mapas de velocidade ($V$) por trecho\\[2pt]
+    \textbullet\ Tensão cisalhante ($\tau_0$)
+  };
+  \node[bsBadge=bsWater] at (s2.north) {ETAPA 2};
+
+  % Estágio 3
+  \node[bsTint=bsAlert, text width=3.45cm, minimum height=3.25cm, anchor=north] (s3) at (2.0, 2.15) {
+    \vspace{0.32cm}
+    \textbf{\color{bsAlert}Seleção de\\Bioengenharia}\\[5pt]
+    \scriptsize
+    \textbullet\ Critério de estabilidade:\\
+    \hspace{0.2cm}$\tau_0 > \tau_{\text{adm}}$\\[2pt]
+    \textbullet\ Definição de enrocamento, gabião vivo ou feixes\\[2pt]
+    \textbullet\ Fator de segurança marginal
+  };
+  \node[bsBadge=bsAlert] at (s3.north) {ETAPA 3};
+
+  % Estágio 4
+  \node[bsTint=bsForest, text width=3.45cm, minimum height=3.25cm, anchor=north] (s4) at (6.0, 2.15) {
+    \vspace{0.32cm}
+    \textbf{\color{bsForest}APP \&\\Monitoramento}\\[5pt]
+    \scriptsize
+    \textbullet\ Recomposição ciliar por zona de inundação\\[2pt]
+    \textbullet\ Inspeção pós-cheia e batimetria de controle\\[2pt]
+    \textbullet\ Calibração de rugosidade
+  };
+  \node[bsBadge=bsForest] at (s4.north) {ETAPA 4};
+
+  % Setas diretas
+  \draw[bsArrow, bsNavy]  (s1.east) -- (s2.west);
+  \draw[bsArrow, bsWater] (s2.east) -- (s3.west);
+  \draw[bsArrow, bsAlert] (s3.east) -- (s4.west);
+
+  % Loop de retroalimentação inferior (com folga generosa abaixo das caixas)
+  \draw[bsArrow, bsTeal, dashed, rounded corners=6pt]
+    (s4.south) -- (6.0, -1.80) -- (-2.0, -1.80) -- (s2.south);
+  \node[fill=bgTeal, draw=bsTeal, rounded corners=4pt, inner xsep=8pt, inner ysep=4pt, font=\scriptsize\bfseries, text=bsTeal]
+    at (2.0, -1.80) {Retroalimentação pós-cheia: atualização de $n$ de Manning com o crescimento da mata ciliar};
+
+\end{tikzpicture}
+\end{document}

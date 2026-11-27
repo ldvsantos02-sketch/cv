@@ -1,0 +1,79 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+
+% Título
+\node[bsTitle] (title) at (7.3, 6.45)
+  {Monitoramento de Pegamento: Índice de Velocidade de Germinação (IVG) e Análise Radicular};
+\node[bsSub] (sub) at (7.3, 5.95)
+  {Avaliação precoce de emergência em campo e quantificação morfométrica do sistema radicular};
+
+% ================= PAINEL ESQUERDO: PROTOCOLO IVG =================
+\begin{scope}[shift={(0,0)}]
+  \draw[draw=bsNavy, fill=bgNavy!55, rounded corners=6pt, line width=1.2pt]
+    (-0.4, -2.05) rectangle (6.9, 5.35);
+  \node[bsBadge=bsNavy, rounded corners=4pt] at (3.25, 5.00) {PROTOCOLO IVG (VIGOR PRECOCE)};
+
+  % Fórmula destacada
+  \node[fill=white, draw=bsNavy, rounded corners=5pt, line width=1pt,
+        text width=6.1cm, inner sep=6pt, align=center, font=\small\sffamily, text=bsInk]
+    (eq) at (3.25, 3.65) {%
+      $\displaystyle \mathrm{IVG} = \sum_{i=1}^{k} \frac{G_i}{N_i}$\\[4pt]
+      {\scriptsize $G_i$: n\textsuperscript{o} de plântulas/brotações no dia $i$ \quad|\quad $N_i$: dias após o plantio}
+    };
+
+  % Etapas do protocolo
+  \node[bsBox=bsTeal, text width=2.75cm, minimum height=1.40cm] (iv1) at (1.50, 1.38) {%
+    \textbf{1. Contagem Diária}\\[3pt]
+    {\scriptsize Registro de brotações\\e emergência em\\parcelas e estacas}
+  };
+  \node[bsBox=bsNavy, text width=2.75cm, minimum height=1.40cm] (iv2) at (5.00, 1.38) {%
+    \textbf{2. Vigor Precoce}\\[3pt]
+    {\scriptsize Comparação de\\velocidade de pegamento\\(estacas e sementes)}
+  };
+  \draw[bsArrow, bsNavy] (iv1) -- (iv2);
+
+  % Mini gráfico ilustrativo de IVG com ampla folga vertical
+  \begin{scope}[shift={(0.85, -1.65)}]
+    \draw[->, bsMuted, line width=0.8pt] (0, 0) -- (5.0, 0) node[right, font=\scriptsize\sffamily, text=bsMuted] {Dias};
+    \draw[->, bsMuted, line width=0.8pt] (0, 0) -- (0, 1.05) node[above=1pt, font=\scriptsize\sffamily, text=bsMuted] {Emerg. (\%)};
+    \draw[bsForest, line width=1.4pt] (0, 0) .. controls (1.1, 0.10) and (1.8, 0.85) .. (4.7, 0.92);
+    \draw[bsGoldDark, dashed, line width=1.2pt] (0, 0) .. controls (2.1, 0.05) and (3.1, 0.38) .. (4.7, 0.56);
+    \node[font=\scriptsize\bfseries\sffamily, text=bsForest] at (3.45, 1.08) {IVG alto (rápido)};
+    \node[font=\scriptsize\sffamily, text=bsGoldDark] at (3.75, 0.24) {IVG baixo};
+  \end{scope}
+\end{scope}
+
+% ================= PAINEL DIREITO: ANÁLISE RADICULAR =================
+\begin{scope}[shift={(7.7,0)}]
+  \draw[draw=bsForest, fill=bgForest!55, rounded corners=6pt, line width=1.2pt]
+    (-0.4, -2.05) rectangle (6.9, 5.35);
+  \node[bsBadge=bsForest, rounded corners=4pt] at (3.25, 5.00) {ANÁLISE RADICULAR POR IMAGEM};
+
+  \node[bsBox=bsEarth, text width=6.0cm, minimum height=1.05cm, align=left, inner sep=7pt] (r1) at (3.25, 3.85) {%
+    \textbf{1. Lavagem cuidadosa do monolito}\\[1pt]
+    {\scriptsize Peneiramento sob jato suave para preservar raízes finas sem ruptura}
+  };
+
+  \node[bsBox=bsTeal, text width=6.0cm, minimum height=1.05cm, align=left, inner sep=7pt] (r2) at (3.25, 2.08) {%
+    \textbf{2. Escaneamento / fotografia com escala métrica}\\[1pt]
+    {\scriptsize Fundo contrastante de alta resolução e régua de calibração espacial}
+  };
+
+  \node[bsBox=bsForest, text width=6.0cm, minimum height=1.05cm, align=left, inner sep=7pt] (r3) at (3.25, 0.30) {%
+    \textbf{3. Processamento digital de parâmetros}\\[1pt]
+    {\scriptsize Comprimento radicular, densidade, \textit{RAR} e distribuição por diâmetro}
+  };
+
+  \draw[bsArrow, bsEarth] (r1.south) -- (r2.north);
+  \draw[bsArrow, bsTeal] (r2.south) -- (r3.north);
+
+  \node[fill=white, draw=bsForest, rounded corners=4pt, text width=6.1cm, inner sep=5pt,
+        font=\scriptsize\bfseries\sffamily, text=bsForest, align=center] at (3.25, -1.25)
+    {Saída de projeto: estimativa da coesão adicional das raízes ($\Delta c_r$)};
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

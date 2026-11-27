@@ -1,0 +1,117 @@
+\documentclass[border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+  \hyphenpenalty=10000\exhyphenpenalty=10000
+
+  % Título
+  \node[bsTitle] at (2.9, 5.75)
+    {Canaletas Vegetadas (Bioswales): Tipologia e Mecanismo de Filtração e Infiltração};
+  \node[bsSub] at (2.9, 5.28)
+    {Seção transversal típica com taludes suaves e contraste hidrológico frente à drenagem convencional};
+
+  % ============================================================
+  % PAINEL ESQUERDO: SEÇÃO TRANSVERSAL DO BIOSWALE
+  % ============================================================
+  \node[bsBox=bsWater!60!white, minimum width=9.5cm, minimum height=7.15cm, anchor=north west] (leftp) at (-4.35, 4.70) {};
+  \node[bsBadge=bsWater] at (leftp.north) {SEÇÃO TRANSVERSAL DE CANALETA VEGETADA};
+
+  \begin{scope}[shift={(-3.8, -0.75)}]
+    % Solo natural ao fundo
+    \fill[bsEarth!16!white]
+      (0, 0.15) -- (8.4, 0.15) -- (8.4, 3.10) -- (6.3, 3.10)
+      .. controls (5.4, 2.25) and (5.0, 2.25) .. (4.2, 2.25)
+      .. controls (3.4, 2.25) and (3.0, 2.25) .. (2.1, 3.10)
+      -- (0, 3.10) -- cycle;
+
+    % Substrato poroso drenante (meio filtrante)
+    \fill[bsGold!28!white]
+      (2.4, 2.60) .. controls (3.2, 2.25) and (5.2, 2.25) .. (6.0, 2.60)
+      -- (6.0, 1.38) -- (2.4, 1.38) -- cycle;
+    \draw[bsGoldDark, dashed, line width=0.8pt] (2.4, 1.38) -- (6.0, 1.38);
+
+    % Camada de brita + geotêxtil
+    \fill[bsMuted!25!white] (2.4, 0.70) rectangle (6.0, 1.38);
+    \draw[bsInk, dotted, line width=1pt] (2.4, 1.38) -- (2.4, 0.70) -- (6.0, 0.70) -- (6.0, 1.38);
+
+    % Dreno subsuperficial perfurado
+    \fill[white, draw=bsNavy, line width=1.4pt] (4.2, 1.03) circle (0.24);
+    \fill[bsWater!35!white] (4.0, 0.95) arc (200:340:0.21) -- cycle;
+    \draw[bsNavy, dashed, line width=0.8pt] (4.2, 1.03) circle (0.16);
+
+    % Lâmina d'água temporária
+    \fill[bsWater!25!white]
+      (2.45, 2.68) -- (5.95, 2.68)
+      .. controls (5.2, 2.25) and (3.2, 2.25) .. (2.45, 2.68) -- cycle;
+    \draw[bsWater, line width=1.1pt] (2.45, 2.68) -- (5.95, 2.68);
+
+    % Perfil da superfície côncava
+    \draw[bsEarth, line width=1.6pt]
+      (0.1, 3.10) -- (2.1, 3.10)
+      .. controls (3.0, 2.25) and (3.4, 2.25) .. (4.2, 2.25)
+      .. controls (5.0, 2.25) and (5.4, 2.25) .. (6.3, 3.10) -- (8.3, 3.10);
+
+    % Gramíneas e raízes (Manning n elevado)
+    \foreach \x/\y in {2.5/2.72, 2.9/2.46, 3.3/2.32, 3.7/2.26, 4.1/2.25, 4.5/2.26, 4.9/2.32, 5.3/2.46, 5.7/2.72} {
+      \draw[bsForest, line width=1.1pt] (\x, \y) -- (\x-0.06, \y+0.34);
+      \draw[bsForest, line width=1.1pt] (\x, \y) -- (\x+0.07, \y+0.38);
+      \draw[bsEarth!80!black, line width=0.6pt] (\x, \y) -- (\x-0.05, \y-0.34);
+      \draw[bsEarth!80!black, line width=0.6pt] (\x, \y) -- (\x+0.06, \y-0.37);
+    }
+
+    % Setas de processos
+    \draw[->, >=Stealth, bsWater, line width=1.15pt] (3.25, 2.20) -- (3.25, 1.54);
+    \draw[->, >=Stealth, bsWater, line width=1.15pt] (5.15, 2.20) -- (5.15, 1.54);
+    \draw[->, >=Stealth, bsTeal, line width=1.1pt] (4.2, 2.05) -- (4.2, 1.36);
+
+    % Rótulos técnicos bem separados
+    \node[font=\scriptsize\bfseries, text=bsInk, align=center, fill=white, rounded corners=2pt, inner sep=2pt]
+      at (1.15, 3.85) {Talude suave\\(3H:1V--4H:1V)};
+    \draw[->, >=Stealth, bsInk, line width=0.8pt] (1.65, 3.55) -- (2.35, 2.85);
+
+    \node[font=\scriptsize\bfseries, text=bsForest, align=center]
+      at (4.95, 3.85) {Vegetação ($\uparrow n$ de Manning)\\e sedimentação superficial};
+    \draw[->, >=Stealth, bsForest, line width=0.8pt] (4.65, 3.50) -- (4.35, 3.05);
+
+    \node[font=\scriptsize\bfseries, text=bsWater, align=left]
+      at (1.15, 1.85) {Infiltração\\e biofiltração};
+    \draw[->, >=Stealth, bsWater, line width=0.9pt] (2.00, 1.85) -- (3.12, 1.85);
+
+    \node[font=\scriptsize\bfseries, text=bsGoldDark, align=left]
+      at (7.28, 1.92) {Substrato poroso\\(areia + composto)};
+    \draw[->, >=Stealth, bsGoldDark, line width=0.9pt] (6.15, 1.92) -- (5.75, 1.92);
+
+    \node[font=\scriptsize\bfseries, text=bsNavy, align=left]
+      at (7.28, 1.00) {Dreno perfurado\\+ brita + geotêxtil};
+    \draw[->, >=Stealth, bsNavy, line width=0.9pt] (6.15, 1.00) -- (4.55, 1.00);
+
+    \node[font=\scriptsize\itshape, text=bsMuted] at (1.1, 0.48) {Solo natural};
+  \end{scope}
+
+  % ============================================================
+  % PAINEL DIREITO: CONCRETO VS. CANALETA VERDE (SbN)
+  % ============================================================
+  \node[bsTint=bsAlert, text width=5.15cm, minimum height=3.25cm, anchor=north west] (comp1) at (5.45, 4.70) {
+    \vspace{0.25cm}
+    \textbf{\color{bsAlert}Canaleta de Concreto (Cinza)}\\[4pt]
+    \scriptsize
+    \textbullet\ Baixa rugosidade ($n \approx 0{,}013$) e alta velocidade ($V \uparrow$)\\[2pt]
+    \textbullet\ Escoamento 100\% superficial, sem recarga do lençol\\[2pt]
+    \textbullet\ Concentra e antecipa picos de cheia a jusante\\[2pt]
+    \textbullet\ Transfere sedimentos e poluentes difusos
+  };
+  \node[bsBadge=bsAlert] at (comp1.north) {DRENAGEM CONVENCIONAL};
+
+  \node[bsTint=bsTeal, text width=5.15cm, minimum height=3.25cm, anchor=north west] (comp2) at (5.45, 0.80) {
+    \vspace{0.25cm}
+    \textbf{\color{bsTeal}Canaleta Verde / SbN}\\[4pt]
+    \scriptsize
+    \textbullet\ Alta rugosidade ($n \approx 0{,}04\text{--}0{,}15$) e dissipação de energia\\[2pt]
+    \textbullet\ Amortecimento de vazão de pico e aumento do tempo de concentração\\[2pt]
+    \textbullet\ Infiltração, retenção de carga difusa e recarga hídrica
+  };
+  \node[bsBadge=bsTeal] at (comp2.north) {BIOENGENHARIA / SbN};
+
+\end{tikzpicture}
+\end{document}

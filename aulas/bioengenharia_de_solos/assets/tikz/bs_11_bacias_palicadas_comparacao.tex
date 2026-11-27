@@ -1,0 +1,77 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{bs_tikz_style}
+\tikzset{
+  pill/.style={bsBadge=#1, rounded corners=4pt, minimum height=0pt, minimum width=0pt, text width=}
+}
+
+\begin{document}
+\begin{tikzpicture}
+
+% Painel esquerdo: Bacias de Captação / Barraginhas (bsWater)
+\node[bsTint=bsWater, text width=6.15cm, minimum height=3.15cm, align=left, inner sep=10pt] (left) at (2.95, 2.35) {%
+  \centering
+  \tikz\node[pill=bsWater]{BACIAS DE CAPTAÇÃO / BARRAGINHAS};\\[8pt]
+  \raggedright
+  {\small\textbf{Posição na paisagem:} Terço médio e saídas laterais de estradas rurais}\\[5pt]
+  {\small\textbf{Função hidráulica:} Armazenamento temporário de enxurrada e recarga do lençol freático}\\[5pt]
+  {\small\textbf{Implantação:} Escavadas fora do talvegue profundo, com bordo dissipador de entrada}
+};
+
+% Painel direito: Paliçadas em Ravinas (bsEarth)
+\node[bsTint=bsEarth, text width=6.15cm, minimum height=3.15cm, align=left, inner sep=10pt] (right) at (11.55, 2.35) {%
+  \centering
+  \tikz\node[pill=bsEarth]{PALIÇADAS EM RAVINAS};\\[8pt]
+  \raggedright
+  {\small\textbf{Posição na paisagem:} Dentro do canal erosivo ativo (ravina ou voçoroca)}\\[5pt]
+  {\small\textbf{Função hidráulica:} Filtração do fluxo e formação de cunha de sedimentos}\\[5pt]
+  {\small\textbf{Implantação:} Estruturas transversais em série para quebra de gradiente longitudinal}
+};
+
+% Seta bidirecional de integração com amplo espaço
+\draw[bsDArrow, bsGoldDark] (left.east) -- (right.west);
+\node[fill=bgGold, draw=bsGoldDark, rounded corners=4pt, inner xsep=6pt, inner ysep=3pt,
+      font=\scriptsize\bfseries\sffamily, text=bsGoldDark, align=center]
+  at (7.25, 2.35) {AÇÃO\\INTEGRADA};
+
+% Divisor da faixa operacional com folga vertical clara
+\draw[dashed, bsMuted!55, line width=0.9pt] (-0.50, -0.15) -- (15.00, -0.15);
+\node[fill=white, inner xsep=10pt, font=\scriptsize\bfseries\sffamily, text=bsNavy]
+  at (7.25, -0.15) {FLUXO OPERACIONAL EM ESTRADAS RURAIS};
+
+% Faixa inferior: 4 estágios
+\node[bsBox=bsNavy, text width=3.20cm, minimum height=2.25cm] (f1) at (1.25, -1.85) {%
+  \tikz\node[pill=bsNavy]{1};\\[5pt]
+  \textbf{Diagnóstico de Estrada\\\& Ponto de Saída}\\[3pt]
+  {\scriptsize Mapeamento de bigodes\\e saídas de drenagem}
+};
+
+\node[bsBox=bsWater, text width=3.20cm, minimum height=2.25cm] (f2) at (5.25, -1.85) {%
+  \tikz\node[pill=bsWater]{2};\\[5pt]
+  \textbf{Escavação e\\Bordo Dissipador}\\[3pt]
+  {\scriptsize Bacia semicircular e\\sangradouro protegido}
+};
+
+\node[bsBox=bsTeal, text width=3.20cm, minimum height=2.25cm] (f3) at (9.25, -1.85) {%
+  \tikz\node[pill=bsTeal]{3};\\[5pt]
+  \textbf{Decantação \&\\Infiltração}\\[3pt]
+  {\scriptsize Retenção de finos e\\redução do pico de cheia}
+};
+
+\node[bsBox=bsForest, text width=3.20cm, minimum height=2.25cm] (f4) at (13.25, -1.85) {%
+  \tikz\node[pill=bsForest]{4};\\[5pt]
+  \textbf{Proteção da Borda e\\Manutenção Pós-Chuva}\\[3pt]
+  {\scriptsize Gramíneas na crista e\\desassoreamento periódico}
+};
+
+\draw[bsArrow, bsNavy] (f1) -- (f2);
+\draw[bsArrow, bsWater] (f2) -- (f3);
+\draw[bsArrow, bsTeal] (f3) -- (f4);
+
+% Título e subtítulo com folga acima dos painéis
+\node[bsSub, anchor=south] (sub) at (7.25, 4.65)
+  {Atuação complementar fora do talvegue (captação e recarga) e dentro do canal erosivo (filtração e retenção)};
+\node[bsTitle, above=0.14cm of sub] (title)
+  {Barraginhas (Bacias de Captação) vs. Paliçadas: Controle Integrado de Estradas Rurais};
+
+\end{tikzpicture}
+\end{document}

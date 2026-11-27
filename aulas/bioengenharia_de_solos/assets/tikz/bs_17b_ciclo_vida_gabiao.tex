@@ -1,0 +1,99 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% ============================================================
+% TÍTULO GERAL
+% ============================================================
+\node[bsTitle, anchor=west] at (0, 7.80)
+  {Transferência Gradual de Resistência no Ciclo de Vida do Gabião Vivo};
+\node[bsSub, anchor=west] at (0, 7.35)
+  {Substituição progressiva da contenção metálica pela matriz radicular autossustentável};
+
+% ============================================================
+% GRÁFICO PGFPLOTS
+% ============================================================
+\begin{axis}[
+  at={(0.2cm,0.2cm)},
+  width=15.0cm,
+  height=6.7cm,
+  xmin=0, xmax=15,
+  ymin=0, ymax=108,
+  xtick={0,3,6,9,12,15},
+  xticklabels={0, 3, 6, 9, 12, 15+},
+  ytick={0,25,50,75,100},
+  yticklabels={0\%, 25\%, 50\%, 75\%, 100\%},
+  xlabel={Tempo após implantação (Anos)},
+  ylabel={Contribuição à Estabilidade (\%)},
+  xlabel style={font=\footnotesize\bfseries\sffamily, text=bsInk},
+  ylabel style={font=\footnotesize\bfseries\sffamily, text=bsInk},
+  tick label style={font=\scriptsize\sffamily, text=bsMuted},
+  axis lines=left,
+  axis line style={bsInk, line width=0.9pt},
+  ymajorgrids=true,
+  grid style={dotted, bsMuted!45},
+  clip=false,
+  legend style={
+    at={(0.98, 0.36)},
+    anchor=south east,
+    draw=bsNavy!30,
+    fill=white,
+    rounded corners=4pt,
+    font=\scriptsize\sffamily,
+    inner sep=5pt,
+    cells={anchor=west}
+  }
+]
+
+  % Faixas verticais das 3 fases
+  \fill[bgNavy] (axis cs:0,0) rectangle (axis cs:3,100);
+  \fill[bgGold] (axis cs:3,0) rectangle (axis cs:9,100);
+  \fill[bgForest] (axis cs:9,0) rectangle (axis cs:15,100);
+
+  \draw[bsMuted!60, dashed, line width=0.8pt] (axis cs:3,0) -- (axis cs:3,102);
+  \draw[bsMuted!60, dashed, line width=0.8pt] (axis cs:9,0) -- (axis cs:9,102);
+
+  % Marcadores de fase no topo (com cantos limpos e tamanho ajustado às faixas)
+  \node[bsBadge=bsNavy, rounded corners=5pt, font=\tiny\bfseries\sffamily, inner xsep=6pt, anchor=south]
+    at (axis cs:1.5, 102) {Fase 1 · Contenção Mecânica};
+  \node[bsBadge=bsGold, rounded corners=5pt, font=\tiny\bfseries\sffamily, inner xsep=7pt, anchor=south]
+    at (axis cs:6.0, 102) {Fase 2 · Transição Híbrida};
+  \node[bsBadge=bsForest, rounded corners=5pt, font=\tiny\bfseries\sffamily, inner xsep=7pt, anchor=south]
+    at (axis cs:12.0, 102) {Fase 3 · Estabilidade Viva};
+
+  % Curva 1: Resistência Estrutural da Gaiola / Aço (tracejada)
+  \addplot[
+    color=bsNavy,
+    dashed,
+    line width=1.8pt,
+    smooth
+  ] coordinates {
+    (0, 88) (1.5, 87) (3, 84) (5, 72) (6.2, 60) (7.5, 48) (9, 38) (12, 28) (15, 24)
+  };
+  \addlegendentry{Resistência Estrutural da Gaiola / Aço}
+
+  % Curva 2: Resistência Biológica da Matriz Solo-Raiz (sólida verde)
+  \addplot[
+    color=bsForest,
+    line width=2.2pt,
+    smooth
+  ] coordinates {
+    (0, 4) (1.5, 12) (3, 28) (5, 50) (6.2, 60) (7.5, 73) (9, 84) (12, 92) (15, 95)
+  };
+  \addlegendentry{Resistência Biológica da Matriz Solo–Raiz}
+
+  % Ponto de interseção e callout em área livre abaixo da interseção
+  \filldraw[fill=bsGold, draw=bsNavyDark, line width=1.1pt] (axis cs:6.2, 60) circle (3.5pt);
+  \node[
+    draw=bsGoldDark, fill=white, rounded corners=4pt, line width=1.0pt,
+    font=\scriptsize\bfseries\sffamily, text=bsNavyDark, align=center,
+    inner sep=5pt, anchor=north
+  ] (callout) at (axis cs:6.0, 26) {Ponto de Autossustentabilidade\\Biológica};
+  \draw[bsArrow, bsGoldDark, line width=1.1pt] (callout.north) -- (axis cs:6.18, 57.5);
+
+\end{axis}
+
+\end{tikzpicture}
+\end{document}

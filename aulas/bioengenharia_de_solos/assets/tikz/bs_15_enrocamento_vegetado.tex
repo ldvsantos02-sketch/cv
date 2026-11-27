@@ -1,0 +1,133 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% ============================================================
+% TÍTULO GERAL
+% ============================================================
+\node[bsTitle, anchor=west] (title) at (0, 7.95)
+  {Seção Esquemática e Aplicações do Enrocamento Vegetado};
+\node[bsSub, anchor=west] at (0, 7.50)
+  {Integração entre proteção hidráulica por blocos de rocha e bioengenharia radicular};
+
+% ============================================================
+% PAINEL ESQUERDO: SEÇÃO TRANSVERSAL ESQUEMÁTICA
+% ============================================================
+\begin{scope}[shift={(0,0)}]
+  \draw[bsNavy!25, rounded corners=6pt, line width=0.9pt, fill=white]
+    (0,-0.40) rectangle (9.65, 7.05);
+  \node[bsBadge=bsNavy, rounded corners=5pt, anchor=north west] at (0.30, 6.80) {SEÇÃO TRANSVERSAL};
+
+  % Camada de solo do talude
+  \fill[bsEarth!18]
+    (0.40, 0.55) -- (0.40, 5.45) -- (2.10, 5.45) -- (4.30, 2.45) -- (4.30, 1.35) -- (9.25, 1.35) -- (9.25, 0.55) -- cycle;
+
+  % Água do rio (N.A. Máximo e N.A. Mínimo)
+  \fill[bsWater!18]
+    (4.65, 1.65) -- (9.25, 1.65) -- (9.25, 3.85) -- (3.32, 3.85) -- cycle;
+  \fill[bsWater!30]
+    (4.65, 1.65) -- (9.25, 1.65) -- (9.25, 2.75) -- (4.12, 2.75) -- cycle;
+
+  % Linha N.A. Máximo
+  \draw[bsWater, dashed, line width=1.1pt] (3.32, 3.85) -- (9.25, 3.85);
+  \node[font=\scriptsize\bfseries\sffamily, text=bsWater, anchor=south east] at (9.15, 3.88) {N.A. Máximo (Cheia)};
+
+  % Linha N.A. Mínimo
+  \draw[bsWater!85!black, line width=1.15pt] (4.12, 2.75) -- (9.25, 2.75);
+  \node[font=\scriptsize\bfseries\sffamily, text=bsWater!85!black, anchor=south east] at (9.15, 2.78) {N.A. Mínimo (Estiagem)};
+
+  % Contorno do solo e trincheira de solapamento
+  \draw[bsEarth, line width=1.2pt]
+    (0.40, 5.45) -- (2.10, 5.45) -- (4.30, 2.45) -- (4.30, 1.35) -- (5.55, 1.35) -- (5.92, 1.72) -- (9.25, 1.72);
+
+  % Cota do leito / solapamento (rótulo acima da linha do leito, sem cruzar o texto)
+  \draw[bsAlert, dashed, line width=0.95pt] (3.95, 1.72) -- (9.25, 1.72);
+  \node[font=\tiny\bfseries\sffamily, text=bsAlert, fill=bsWater!22, inner xsep=3pt, inner ysep=1.5pt, rounded corners=2pt, anchor=south east]
+    at (9.15, 1.79) {Cota de solapamento};
+
+  % Filtro geotêxtil / granular sobre o talude
+  \draw[bsNavy, line width=2.4pt, dash pattern=on 5pt off 2.5pt]
+    (2.12, 5.40) -- (4.26, 2.47) -- (4.26, 1.39) -- (5.50, 1.39);
+
+  % Blocos angulosos (enrocamento D50) ao longo do talude e na trincheira de pé
+  \foreach \x/\y/\s in {
+    2.45/5.08/0.34, 2.82/4.66/0.36, 3.15/4.22/0.35, 3.48/3.76/0.38,
+    3.82/3.28/0.37, 4.12/2.82/0.36, 4.45/2.40/0.38, 4.65/1.94/0.40,
+    5.05/1.76/0.39, 5.45/1.70/0.36, 4.55/1.55/0.34, 4.95/1.51/0.32,
+    2.80/5.15/0.32, 3.18/4.73/0.34, 3.55/4.28/0.33, 3.92/3.80/0.35,
+    4.25/3.32/0.34, 4.55/2.86/0.35, 4.92/2.30/0.35
+  }{
+    \begin{scope}[shift={(\x,\y)}, scale=\s]
+      \filldraw[fill=bsNavy!22, draw=bsNavyDark, line width=0.85pt, rounded corners=1.2pt]
+        (-0.85,-0.45) -- (-0.35,-0.75) -- (0.55,-0.65) -- (0.90,-0.05) -- (0.45,0.68) -- (-0.45,0.72) -- (-0.90,0.15) -- cycle;
+    \end{scope}
+  }
+
+  % Estacas vivas inseridas nos vazios do enrocamento até o solo úmido + brotação
+  \foreach \xA/\yA/\xB/\yB in {
+    3.65/4.62/2.30/3.88,
+    4.32/3.70/2.95/2.98,
+    4.92/2.82/3.62/2.18
+  }{
+    \draw[bsEarth!85!black, line width=2.2pt, line cap=round] (\xB,\yB) -- (\xA,\yA);
+    \draw[bsEarth!70!black, line width=0.7pt] (\xB,\yB) -- ++(-0.32,-0.12);
+    \draw[bsEarth!70!black, line width=0.7pt] (\xB,\yB) -- ++(-0.22,-0.26);
+    \draw[bsForest, line width=1.6pt, line cap=round] (\xA,\yA) -- ++(0.38,0.48);
+    \draw[bsForest, line width=1.4pt, line cap=round] (\xA,\yA) -- ++(0.55,0.22);
+    \fill[bsForest!80!white] ($(\xA,\yA)+(0.36,0.46)$) ellipse (0.20 and 0.10);
+    \fill[bsForest!70!white] ($(\xA,\yA)+(0.54,0.22)$) ellipse (0.18 and 0.09);
+    \fill[bsForest] ($(\xA,\yA)+(0.22,0.34)$) ellipse (0.14 and 0.08);
+  }
+
+  % Rótulos e linhas de chamada
+  \node[font=\scriptsize\bfseries\sffamily, text=bsEarth!90!black, align=left, anchor=west] at (0.55, 2.45)
+    {Solo natural\\do talude};
+
+  \node[font=\scriptsize\bfseries\sffamily, text=bsNavy, align=left, anchor=west] (lblFiltro) at (0.55, 4.55)
+    {Filtro geotêxtil\\/ granular};
+  \draw[bsArrow, bsNavy, line width=0.95pt] (lblFiltro.east) -- (2.55, 4.65);
+
+  \node[font=\scriptsize\bfseries\sffamily, text=bsNavyDark, align=left, anchor=west] (lblPedra) at (5.35, 5.75)
+    {Blocos angulosos ($D_{50}$)\\com vazios preenchidos};
+  \draw[bsArrow, bsNavyDark, line width=0.95pt] (lblPedra.west) -- (3.35, 4.95);
+
+  \node[font=\scriptsize\bfseries\sffamily, text=bsForest, align=left, anchor=west] (lblEstaca) at (5.35, 4.78)
+    {Estacas vivas inseridas\\até o solo úmido};
+  \draw[bsArrow, bsForest, line width=0.95pt] (lblEstaca.west) -- (4.65, 4.08);
+
+  \node[font=\scriptsize\bfseries\sffamily, text=bsNavy, align=center, anchor=north] (lblPe) at (6.95, 1.25)
+    {Trincheira de pé abaixo\\do solapamento};
+  \draw[bsArrow, bsNavy, line width=0.95pt] (lblPe.west) -- (5.38, 1.48);
+
+  \node[font=\scriptsize\bfseries\sffamily, text=bsForest, anchor=south] at (1.25, 5.52) {Crista do talude};
+\end{scope}
+
+% ============================================================
+% PAINEL DIREITO: APLICAÇÕES E FUNÇÕES (bsTeal)
+% ============================================================
+\begin{scope}[shift={(10.05,0)}]
+  \draw[bsTeal, rounded corners=6pt, line width=1.2pt, fill=bgTeal]
+    (0,-0.40) rectangle (5.65, 7.05);
+
+  \node[bsBadge=bsTeal, rounded corners=5pt, anchor=north west] at (0.30, 6.80) {APLICAÇÕES DE CAMPO};
+
+  \node[font=\small\bfseries\sffamily, text=bsNavyDark, anchor=north west, align=left, text width=5.0cm]
+    at (0.30, 6.22) {Onde empregar o Enrocamento Vegetado};
+
+  \node[bsBox=bsTeal, anchor=north west, text width=4.75cm, align=left] (app1) at (0.30, 5.40)
+    {\textbf{\color{bsTeal}1. Margens de alta velocidade}\\
+     Proteção de margens fluviais sujeitas a elevadas tensões cisalhantes ($\tau_0$) e cheias rápidas.};
+
+  \node[bsBox=bsTeal, anchor=north west, text width=4.75cm, align=left] (app2) at ($(app1.south west)+(0,-0.22)$)
+    {\textbf{\color{bsTeal}2. Estabilização de pé de talude}\\
+     Contenção basal contra erosão fluvial e solapamento progressivo da saia do talude.};
+
+  \node[bsBox=bsTeal, anchor=north west, text width=4.75cm, align=left] (app3) at ($(app2.south west)+(0,-0.22)$)
+    {\textbf{\color{bsTeal}3. Saída dissipadora}\\
+     Dissipação de energia hidráulica na descarga de canaletas, vertedouros e bueiros.};
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

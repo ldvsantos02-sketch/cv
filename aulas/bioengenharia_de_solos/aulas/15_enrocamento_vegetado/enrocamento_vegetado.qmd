@@ -12,11 +12,12 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text}
+## <span class="pitch-tag">Abertura</span> Visão Geral da Aula {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Roteiro da aula]{.pitch-card-index}
+[Tópicos estruturantes]{.pitch-heading}
 
 - [1]{.circle} O que é enrocamento vegetado?
 - [2]{.circle} Enrocamento convencional × vegetado
@@ -28,576 +29,501 @@ execute:
 - [8]{.circle} Síntese e atividade
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Objetivo central]{.pitch-card-index}
+[Proteção pétrea aliada ao reforço vivo]{.pitch-heading}
 
-Compreender os princípios do **enrocamento vegetado** (*vegetated riprap*) como técnica de **bioengenharia** que combina a estabilidade estrutural das **pedras** com a capacidade de enraizamento de **estacas vivas**, aprend er a **dimensionar**, **construir** e **monitorar** o sistema para proteção de margens fluviais e bases de taludes.
+Compreender os princípios do **enrocamento vegetado** (*vegetated riprap*) como técnica de **bioengenharia** que combina a estabilidade estrutural das **pedras** com o enraizamento de **estacas vivas**, aprender a **dimensionar**, **construir** e **monitorar** o sistema para proteção de margens fluviais e bases de taludes.
+:::
+
+::: {.pitch-pill-row}
+[Equação de Isbash ($D_{50}$)]{.pitch-pill}
+[Filtro de Terzaghi]{.pitch-pill .pitch-pill--gold}
+[Estacas vivas · APP]{.pitch-pill}
 :::
 :::
 :::
 
-# [1. O QUE É ENROCAMENTO VEGETADO?]{.section-header}
+# 1 · O que é enrocamento vegetado? {.section-header rotulo="Conceito"}
 
-## Definição e contexto {.smaller-text}
+## <span class="pitch-tag">Conceito</span> Definição, componentes e evolução temporal {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Vegetated riprap / Live riprap]{.pitch-card-index}
+[Sistema híbrido pedra–solo–raiz]{.pitch-heading}
 
-### Conceito
+- **Pedras** (enrocamento) para resistência mecânica imediata
+- **Solo fértil** nos interstícios para suporte de vida
+- **Estacas vivas** (*live stakes*) com propagação vegetativa
+- **Raízes** que assumem progressivamente parte da função estrutural
+:::
 
-O **enrocamento vegetado** (*vegetated riprap* ou *live riprap*) é uma técnica de bioengenharia que combina:
-
-- **Pedras** (enrocamento convencional) para resistência mecânica imediata
-- **Solo** nos interstícios para suporte de vida
-- **Estacas vivas** (*live stakes*) de espécies com propagação vegetativa
-- **Raízes** que substituem progressivamente a função estrutural das pedras
-
-::: {.highlight-box}
-💡 O enrocamento vegetado transforma uma **estrutura inerte** em um **ecossistema vivo**: com o tempo, as raízes entrelaçam as pedras, criando um sistema de proteção que **se autorreforça**.
+::: {.pitch-band .pitch-band--teal}
+Transforma uma **estrutura inerte** em um **ecossistema vivo**: as raízes entrelaçam os blocos e geram **resiliência ecológica** após cheias e secas.
 :::
 :::
 
-::: {.column width="45%"}
-
-### Evolução temporal
-
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Ano 0<br>Pedras + Estacas"] --> B["Ano 1<br>Enraizamento<br>inicial"]
-    B --> C["Ano 2-3<br>Raízes entrelaçam<br>pedras"]
-    C --> D["Ano 5+<br>Sistema vivo<br>autossustentável"]
-    A -->|"Resistência<br>mecânica"| E["100% pedras"]
-    D -->|"Resistência<br>mecânica"| F["50% pedras<br>50% raízes"]
-    style A fill:#8B4513,color:#fff
-    style B fill:#586BA6,color:#000
-    style C fill:#2E7D32,color:#fff
-    style D fill:#2E7D32,color:#fff
-```
-
-> Com o amadurecimento, o sistema atinge **resiliência ecológica**: capacidade de se recuperar de perturbações (cheias, secas) sem intervenção humana.
-:::
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**Ano 0 · 100% pedras:** blocos lançados com estacas cravadas garantem estabilidade imediata ao fluxo.
 :::
 
-## Galeria: Enrocamento e riprap em campo {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-![Proteção de margem com riprap - Rio Ohio, Cairo, EUA, 1935 (USACE, Public Domain)](img/fig01_riprap_ohio_river.jpg){width="100%"}
-
-:::{.smaller-text}
-Fonte: USACE Memphis District - Public Domain
-:::
+::: {.pitch-milestone-item}
+**Ano 1 · Enraizamento inicial:** brotação aérea e emissão de raízes nos interstícios preenchidos com solo.
 :::
 
-::: {.column width="50%"}
+::: {.pitch-milestone-item}
+**Anos 2–3 · Entrelaçamento:** raízes amarram as pedras entre si e ancoram o filtro ao talude natural.
+:::
 
-::: {.info-box}
-**Inspeção do enrocamento vegetado**
-
-- Conferir estabilidade dos blocos e proteção do pé.
-- Verificar filtro, vazios e possível perda de material.
-- Observar erosão nas extremidades e no trecho a jusante.
-- Registrar estabelecimento da vegetação e manutenção.
+::: {.pitch-milestone-item}
+**Ano 5+ · 50% pedras + 50% raízes:** sistema vivo autossustentável com rugosidade hidráulica natural.
 :::
 :::
 :::
 
-## Aplicações principais {.smaller-text}
+## <span class="pitch-tag">Conceito</span> Seção esquemática e aplicações de campo {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-media-card .pitch-media-card--wide}
 
-### Onde usar enrocamento vegetado
+![Seção transversal esquemática e aplicações de campo do enrocamento vegetado](img/bs_15_enrocamento_vegetado.png)
 
-| Local | Função principal |
-|-------|------------------|
-| Margens de rios | Proteção contra erosão fluvial |
-| Base de taludes | Estabilização do pé (toe protection) |
-| Saídas de bueiros | Dissipação de energia |
-| Canais de drenagem | Revestimento permeável |
-| Reservatórios | Proteção contra ondas |
+[Seção transversal e aplicações do enrocamento vegetado]{.pitch-caption}
+[Blocos (D₅₀), filtro geotêxtil/granular, trincheira de pé abaixo do solapamento e estacas vivas até o solo úmido]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band}
+A combinação de trincheira de pé (*toe*) abaixo da cota de solapamento e estacas vivas cravadas até o solo úmido protege o talude nos regimes de estiagem e cheia máxima.
+:::
+
+## <span class="pitch-tag">Conceito</span> Registro de campo e locais de aplicação {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
+
+![Proteção de margem com riprap no Rio Ohio, Cairo, EUA, em 1935](img/fig01_riprap_ohio_river.jpg)
+
+[Enrocamento em margem fluvial — Rio Ohio, 1935]{.pitch-caption}
+[Fonte: USACE Memphis District · Public Domain]{.pitch-caption-sub}
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Local de aplicação | Função principal |
+|---|---|
+| Margens de rios / Reservatórios | Proteção fluvial e contra ondas |
+| Base de taludes (*toe*) | Contenção basal anti-solapamento |
+| Saídas de bueiros e canais | Dissipação de energia e revestimento |
 | Trechos costeiros | Proteção litorânea |
-
-### Vantagens sobre enrocamento simples
-
-- ✅ **Autorreparação**: raízes crescem e preenchem falhas
-- ✅ **Habitat**: abrigo para fauna aquática e terrestre
-- ✅ **Filtragem**: raízes retêm sedimentos e poluentes
-- ✅ **Estética**: paisagem naturalizada
-- ✅ **Durabilidade crescente**: raízes reforçam ao longo do tempo
-
 :::
 
-::: {.column width="50%"}
+::: {.pitch-card .pitch-card--forest}
+[Inspeção e conformidade em APP]{.pitch-card-index}
+[Checklist de campo]{.pitch-heading}
 
-### Comparativo
-
-```{mermaid}
-%%| fig-width: 5
-graph LR
-    subgraph Convencional["Enrocamento Convencional"]
-        A1["Pedras"] --> A2["Inerte"]
-        A2 --> A3["Manutenção<br>periódica"]
-    end
-    subgraph Vegetado["Enrocamento Vegetado"]
-        B1["Pedras + Estacas"] --> B2["Vivo"]
-        B2 --> B3["Autorreparação<br>crescente"]
-    end
-    style A1 fill:#8B4513,color:#fff
-    style A2 fill:#27368C,color:#fff
-    style B1 fill:#2E7D32,color:#fff
-    style B2 fill:#2E7D32,color:#fff
-    style B3 fill:#2135A6,color:#fff
-```
-
-::: {.highlight-box}
-🌿 O enrocamento vegetado é especialmente indicado em **Áreas de Preservação Permanente (APP)**, onde a legislação exige a restauração da vegetação ciliar (Lei 12.651/2012 - Código Florestal).
+Conferir estabilidade dos blocos e do pé, filtro/vazios, erosão nas extremidades e estabelecimento ciliar (**Lei 12.651/2012 — Código Florestal**).
 :::
 :::
 :::
 
-# [2. ENROCAMENTO CONVENCIONAL × VEGETADO]{.section-header}
+# 2 · Enrocamento convencional × vegetado {.section-header rotulo="Comparação"}
 
-## Comparação técnica {.smaller-text}
+## <span class="pitch-tag pitch-tag--teal">Comparação</span> Confronto técnico, ecológico e critérios de decisão {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Enrocamento convencional]{.pitch-card-index}
+[Estrutura inerte · manutenção periódica]{.pitch-heading}
 
-### Enrocamento convencional
-
-- Pedras dispostas em camada única ou múltipla
-- Juntas preenchidas com brita ou argamassa
-- Função: **resistência mecânica** ao fluxo
-- Sem componente biológico
-- Durabilidade: 30-50+ anos (se bem dimensionado)
-- Custo elevado de transporte e instalação
-
-### Enrocamento vegetado (live riprap)
-
-- Pedras dispostas com **interstícios abertos**
-- Vãos preenchidos com **solo fértil**
-- **Estacas vivas** inseridas nos interstícios
-- Função: **resistência mecânica + ecológica**
-- Durabilidade: **crescente** (raízes reforçam)
-- Custo 20-40% menor que convencional
-
+Camada de pedras com juntas preenchidas por brita ou argamassa; resistência mecânica imediata (30–50+ anos), sem componente biológico e com alto custo de transporte.
 :::
 
-::: {.column width="50%"}
+::: {.pitch-card .pitch-card--forest}
+[Enrocamento vegetado (*live riprap*)]{.pitch-card-index}
+[Sistema vivo · 20–40% menor custo]{.pitch-heading}
 
-### Critérios de decisão
+Interstícios preenchidos com **solo fértil** e **estacas vivas**; proporciona autorreparação, habitat aquático/terrestre, filtragem de sedimentos e durabilidade crescente.
+:::
+:::
 
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Critério | Convencional | Vegetado |
-|----------|-------------|----------|
-| Velocidade de fluxo > 4 m/s | ★★★★★ | ★★★☆☆ |
+|---|---|---|
+| Fluxo $V > 4\text{ m s}^{-1}$ | ★★★★★ | ★★★☆☆ |
 | APP (exigência legal) | ★★☆☆☆ | ★★★★★ |
-| Habitat para fauna | ★☆☆☆☆ | ★★★★★ |
-| Custo inicial | ★★☆☆☆ | ★★★★☆ |
-| Manutenção a longo prazo | ★★★☆☆ | ★★★★★ |
-| Integração paisagística | ★☆☆☆☆ | ★★★★★ |
+| Habitat / Paisagem | ★☆☆☆☆ | ★★★★★ |
+| Custo inicial / Manutenção LP | ★★☆☆☆ / ★★★☆☆ | ★★★★☆ / ★★★★★ |
 | Resistência imediata | ★★★★★ | ★★★★☆ |
+:::
 
-::: {.highlight-box}
-⚠️ Em fluxos com **velocidade > 4 m s⁻¹** ou **alturas de onda > 1 m**, o enrocamento convencional é preferível até que as raízes se estabeleçam. Uma solução mista (convencional na base + vegetado acima) pode ser a melhor opção.
+::: {.pitch-band .pitch-band--teal}
+Em fluxos **$> 4\text{ m s}^{-1}$** ou ondas **$> 1\text{ m}$**, adote **solução mista**: convencional na base submersa e vegetado acima da cota média.
 :::
 :::
 :::
 
-# [3. GRADOLOGIA DE PEDRAS E FILTROS]{.section-header}
+# 3 · Gradologia de pedras e filtros {.section-header rotulo="Gradologia"}
 
-## Dimensionamento das pedras {.smaller-text}
+## <span class="pitch-tag pitch-tag--gold">Gradologia</span> Equação de Isbash, classes de pedra e filtro de Terzaghi {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
-
-### Fórmula de Isbash (velocidade crítica)
-
-O diâmetro mínimo das pedras ($D_{50}$) é calculado pela velocidade do fluxo:
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Diâmetro característico $D_{50}$ (Isbash, 1936):**
 
 $$D_{50} = \frac{V^2}{2g \cdot C^2 \cdot (\gamma_s / \gamma_w - 1)}$$
 
-Onde:
-
-- $V$ = velocidade do fluxo (m s⁻¹)
-- $g$ = aceleração gravitacional (9,81 m s⁻²)
-- $C$ = coeficiente de Isbash (0,86 para fundo; 1,20 para talude)
-- $\gamma_s$ = peso específico da pedra (≈ 2.650 kg m⁻³)
-- $\gamma_w$ = peso específico da água (1.000 kg m⁻³)
-
-### Classes de pedra (gradologia)
-
-| Classe | $D_{50}$ (cm) | Massa média (kg) | Velocidade máxima |
-|--------|---------------|-------------------|-------------------|
-| Rachão leve | 10-15 | 2-5 | 1,0-1,5 m/s |
-| Rachão médio | 15-25 | 5-20 | 1,5-2,5 m/s |
-| Rachão pesado | 25-40 | 20-80 | 2,5-3,5 m/s |
-| Pedra de mão | 40-60 | 80-300 | 3,5-5,0 m/s |
-
+Onde $V$ = velocidade (m s⁻¹), $g = 9,81\text{ m s}^{-2}$, $C$ = coef. de Isbash ($0,86$ fundo; $1,20$ talude), $\gamma_s \approx 2.650\text{ kg m}^{-3}$ e $\gamma_w = 1.000\text{ kg m}^{-3}$.
 :::
 
-::: {.column width="45%"}
+::: {.pitch-table-box}
+| Classe | $D_{50}$ (cm) | Massa média (kg) | $V_{adm}$ máxima |
+|---|---|---|---|
+| Rachão leve | 10–15 | 2–5 | 1,0–1,5 m/s |
+| Rachão médio | 15–25 | 5–20 | 1,5–2,5 m/s |
+| Rachão pesado | 25–40 | 20–80 | 2,5–3,5 m/s |
+| Pedra de mão | 40–60 | 80–300 | 3,5–5,0 m/s |
+:::
+:::
 
-### Camada filtrante
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Transição granulométrica]{.pitch-card-index}
+[Camada filtrante anti-sufosão]{.pitch-heading}
 
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Pedras grandes<br>(camada externa)"] --> B["Pedras médias<br>(transição)"]
-    B --> C["Brita / seixo<br>(filtro granular)"]
-    C --> D["Geotêxtil<br>(filtro sintético)"]
-    D --> E["Solo natural<br>da margem"]
-    style A fill:#8B4513,color:#fff
-    style B fill:#586BA6,color:#000
-    style C fill:#2135A6,color:#fff
-    style D fill:#27368C,color:#fff
-    style E fill:#2E7D32,color:#fff
-```
+Pedras grandes (externa) $\rightarrow$ Pedras médias (transição) $\rightarrow$ Brita/seixo (filtro granular) $\rightarrow$ Geotêxtil (filtro sintético) $\rightarrow$ Solo natural da margem.
+:::
 
-### Regra de filtro (Terzaghi)
+::: {.pitch-formula}
+**Regras de filtro de Terzaghi:**
 
-$$\frac{D_{15(filtro)}}{D_{85(solo)}} < 5$$
+$$\frac{D_{15(\text{filtro})}}{D_{85(\text{solo})}} < 5 \qquad \text{e} \qquad \frac{D_{15(\text{filtro})}}{D_{15(\text{solo})}} > 4$$
+:::
 
-$$\frac{D_{15(filtro)}}{D_{15(solo)}} > 4$$
-
-::: {.highlight-box}
-🪨 No enrocamento vegetado, os interstícios **não são preenchidos com argamassa**, mas sim com **solo fértil** que serve de substrato para as estacas vivas.
+::: {.pitch-band}
+Os interstícios **não levam argamassa**, mas sim **solo fértil** para enraizamento das estacas vivas.
 :::
 :::
 :::
 
-# [4. ESPÉCIES PARA ESTACAS VIVAS]{.section-header}
+# 4 · Espécies para estacas vivas {.section-header rotulo="Espécies"}
 
-## Seleção de espécies {.smaller-text}
+## <span class="pitch-tag pitch-tag--forest">Espécies</span> Seleção botânica, preparo e taxa de enraizamento {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Critérios de seleção
-
-As espécies devem apresentar:
-
-- **Propagação vegetativa**: capacidade de enraizar por estaquia
-- **Tolerância à submersão**: resistir a cheias periódicas
-- **Crescimento rápido**: cobertura em 1-2 estações
-- **Sistema radicular** profundo e denso
-- **Adaptação regional**: nativas ou naturalizadas
-
-### Espécies recomendadas (Brasil)
-
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Espécie | Nome popular | Habitat |
-|---------|-------------|---------|
+|---|---|---|
 | *Salix humboldtiana* | Salgueiro | Margens fluviais |
 | *Sebastiania commersoniana* | Branquilho | Mata ciliar |
 | *Calliandra brevipes* | Esponjinha | Cerrado úmido |
-| *Inga marginata* | Ingá-feijão | Mata atlântica |
+| *Inga marginata* | Ingá-feijão | Mata Atlântica |
 | *Schinus terebinthifolia* | Aroeira-pimenteira | Generalista |
 | *Erythrina crista-galli* | Corticeira | Banhados |
 | *Phyllanthus sellowianus* | Sarandi | Margens |
-
 :::
 
-::: {.column width="50%"}
-
-### Preparação das estacas
-
-**Especificações:**
-
-- **Diâmetro**: 2-8 cm
-- **Comprimento**: 50-100 cm
-- **Corte basal**: diagonal (↗) para facilitar cravação
-- **Corte apical**: reto para evitar acúmulo de água
-- **Coleta**: ramos saudáveis da estação de crescimento
-- **Armazenamento**: máx. 48 h em local úmido e sombreado
-
-### Taxa de enraizamento esperada
-
-```{mermaid}
-%%| fig-width: 4.5
-graph LR
-    A["Mês 1<br>10-30%"] --> B["Mês 3<br>40-60%"]
-    B --> C["Mês 6<br>70-85%"]
-    C --> D["Ano 1<br>80-95%"]
-    style A fill:#27368C,color:#fff
-    style B fill:#586BA6,color:#000
-    style C fill:#2E7D32,color:#fff
-    style D fill:#2E7D32,color:#fff
-```
-
-::: {.highlight-box}
-🌱 A taxa de enraizamento depende da **época de coleta** (inverno/dormência é ideal), do **diâmetro** (3-5 cm é o ótimo) e da **umidade do solo** nos interstícios.
-:::
+::: {.pitch-band .pitch-band--teal}
+Critérios: **propagação vegetativa**, tolerância à submersão periódica, crescimento rápido e raízes densas.
 :::
 :::
 
-# [5. PROJETO E DIMENSIONAMENTO]{.section-header}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Padrão das estacas]{.pitch-card-index}
+[Especificações biométricas]{.pitch-heading}
 
-## Parâmetros de projeto {.smaller-text}
+- **Diâmetro:** 2–8 cm (ótimo: 3–5 cm) · **Comprimento:** 50–100 cm
+- **Cortes:** diagonal na base (cravação) e reto no ápice
+- **Coleta e guarda:** ramos em dormência; máx. **48 h** em local úmido e sombreado
+:::
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[Mês 1]{.pitch-card-index}
+[10–30%]{.pitch-heading}
 
-### Geometria do enrocamento
+Início da brotação.
+:::
 
-| Parâmetro | Valor recomendado |
-|-----------|-------------------|
-| Espessura mínima | 1,5 × $D_{50}$ ou 30 cm (o maior) |
+::: {.pitch-card .pitch-card--teal}
+[Mês 3]{.pitch-card-index}
+[40–60%]{.pitch-heading}
+
+Emissão radicular.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[Mês 6]{.pitch-card-index}
+[70–85%]{.pitch-heading}
+
+Ancoragem nos vazios.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Ano 1]{.pitch-card-index}
+[80–95%]{.pitch-heading}
+
+Sistema consolidado.
+:::
+:::
+:::
+:::
+
+# 5 · Projeto e dimensionamento {.section-header rotulo="Projeto"}
+
+## <span class="pitch-tag pitch-tag--gold">Projeto</span> Fluxo de dimensionamento e sequência construtiva {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--wide}
+
+![Fluxo em cinco etapas do dimensionamento hidráulico à implantação biológica do enrocamento vegetado](img/bs_15b_dimensionamento_enrocamento.png)
+
+[Parâmetros de projeto e sequência construtiva]{.pitch-caption}
+[Da hidráulica de projeto (Qmáx, V, τ₀) e D₅₀ ao filtro, imbricamento de blocos, estacas vivas e monitoramento]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band .pitch-band--navy}
+**Critério-chave:** a resistência inicial depende integralmente do intertravamento mineral ($D_{50}$ e cota de pé); com o avanço radicular, as raízes consolidam os vazios.
+:::
+
+## <span class="pitch-tag pitch-tag--gold">Projeto</span> Geometria da seção, quantitativos e função de cada camada {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Parâmetro geométrico | Valor recomendado |
+|---|---|
+| Espessura mínima | $1,5 \times D_{50}$ ou 30 cm (o maior) |
 | Inclinação do talude | 1V:1,5H a 1V:3H |
-| Fundação (toe) | Enterrar ≥ 60 cm abaixo do leito |
-| Coroamento | Acima do nível de cheia (TR = 10 anos) |
-| Extensão lateral | ≥ 1 m além do nível de cheia |
-
-### Densidade de estacas
-
-$$d_{estacas} = \frac{N}{A_{enroc}}$$
-
-Recomendação: **2-4 estacas m⁻²** distribuídas uniformemente nos interstícios.
-
-### Volume de pedras
-
-$$V_{pedras} = A_{face} \times e_{camada} \times (1 - n)$$
-
-Onde $n$ = porosidade do enrocamento (0,35 - 0,45)
-
+| Fundação (*toe*) | Enterrar $\ge 60\text{ cm}$ abaixo do leito |
+| Coroamento / Extensão | Acima da cheia ($TR = 10$ anos) · $\ge 1\text{ m}$ |
 :::
 
-::: {.column width="45%"}
+::: {.pitch-formula}
+**Densidade de estacas ($2\text{–}4\text{ estacas m}^{-2}$) e volume de pedras:**
 
-### Seção transversal típica
+$$d_{estacas} = \frac{N}{A_{enroc}} \qquad\qquad V_{pedras} = A_{face} \times e_{camada} \times (1 - n)$$
 
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    subgraph Seção["Seção Transversal"]
-        A["Coroamento<br>acima N.A. cheia"]
-        B["Corpo do enrocamento<br>Pedras + Solo + Estacas"]
-        C["Filtro granular<br>ou geotêxtil"]
-        D["Fundação (toe)<br>enterrada ≥ 60 cm"]
-    end
-    A --> B
-    B --> C
-    C --> D
-    style A fill:#2135A6,color:#fff
-    style B fill:#8B4513,color:#fff
-    style C fill:#586BA6,color:#000
-    style D fill:#27368C,color:#fff
-```
+Onde $n$ = porosidade do enrocamento ($0,35\text{–}0,45$).
+:::
+:::
 
-::: {.highlight-box}
-📐 A fundação (*toe*) é o ponto mais crítico: se as pedras da base forem carreadas, todo o enrocamento pode colapsar. Enterrar profundamente e usar pedras maiores na base.
+::: {.pitch-stack-2}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**Coroamento:** acima do N.A. de cheia ($TR = 10$ anos) para impedir galgamento erosivo.
+:::
+
+::: {.pitch-milestone-item}
+**Corpo do enrocamento:** blocos intertravados + solo fértil + estacas vivas.
+:::
+
+::: {.pitch-milestone-item}
+**Filtro:** camada granular ou geotêxtil contra carreamento de finos.
+:::
+
+::: {.pitch-milestone-item}
+**Fundação (*toe*):** enterrada $\ge 60\text{ cm}$ com blocos maiores na base — ponto crítico anti-colapso.
+:::
 :::
 :::
 :::
 
-# [6. CONSTRUÇÃO E IMPLANTAÇÃO]{.section-header}
+# 6 · Construção e implantação {.section-header rotulo="Construção"}
 
-## Procedimento construtivo {.smaller-text}
+## <span class="pitch-tag pitch-tag--teal">Construção</span> Etapas em obra, cravação de estacas e época de plantio {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
-
-### Etapas de construção
-
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["1. Preparo do leito<br>Escavação toe + perfilamento"] --> B["2. Instalação do filtro<br>Geotêxtil ou granular"]
-    B --> C["3. Colocação das pedras<br>Da base para o topo"]
-    C --> D["4. Preenchimento<br>Solo fértil nos interstícios"]
-    D --> E["5. Cravação das estacas<br>2-4 estacas/m²"]
-    E --> F["6. Cobertura com mulch<br>Proteção dos interstícios"]
-    F --> G["7. Irrigação inicial<br>Se necessário"]
-    style A fill:#2135A6,color:#fff
-    style C fill:#8B4513,color:#fff
-    style E fill:#2E7D32,color:#fff
-    style G fill:#4FC3F7,color:#000
-```
-
-### Cuidados na construção
-
-- Colocar pedras **da base para o topo**, sem lançar de altura
-- Garantir **travamento** entre pedras (sem instabilidade)
-- Solo nos interstícios deve ser **fértil** (adicionar composto se necessário)
-- Estacas cravadas **⅔ no solo, ⅓ exposta**
-- Plantio preferencialmente na **estação chuvosa**
-
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1–2 · Leito e filtro:** escavar o *toe*, perfilar o talude e assentar geotêxtil ou filtro granular.
 :::
 
-::: {.column width="45%"}
+::: {.pitch-milestone-item}
+**3–4 · Pedras e solo:** dispor blocos da **base para o topo** (travados, sem lançar do alto) e preencher vazios com solo fértil.
+:::
 
-### Detalhe da inserção de estacas
+::: {.pitch-milestone-item}
+**5–7 · Estacas, mulch e rega:** abrir furo-guia, cravar **2–4 estacas m⁻²** (**2/3 no solo, 1/3 exposta**), compactar ao redor, aplicar *mulch* e irrigar se necessário.
+:::
+:::
 
-| Passo | Descrição |
-|-------|-----------|
-| 1 | Preencher interstício com solo úmido |
-| 2 | Abrir furo-guia com haste metálica |
-| 3 | Inserir estaca com corte diagonal para baixo |
-| 4 | Compactar solo ao redor da estaca |
-| 5 | Aplicar mulch superficial |
+::: {.pitch-band}
+Coletar estacas na **dormência** (reservas de carboidratos), mas plantar no início da **estação úmida**.
+:::
+:::
 
-### Época de plantio
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Passo | Inserção da estaca nos interstícios |
+|---|---|
+| 1–2 | Preencher vazio com solo úmido e abrir furo-guia metálico |
+| 3–5 | Inserir corte diagonal para baixo, compactar e aplicar *mulch* |
+:::
 
-| Região | Melhor época |
-|--------|-------------|
-| Nordeste semiárido | Início das chuvas (mar-abr) |
-| Sudeste | Outubro-dezembro |
-| Sul | Setembro-novembro |
-| Amazônia | Transição seca→chuvosa |
-
-::: {.highlight-box}
-🗓️ A coleta de estacas deve ser feita no **período de dormência** (inverno) para maximizar as reservas de carboidratos, mas o plantio deve coincidir com a **estação úmida**.
+::: {.pitch-table-box}
+| Região do Brasil | Melhor época de plantio |
+|---|---|
+| Nordeste semiárido | Início das chuvas (mar–abr) |
+| Sudeste / Sul | Out–dez / Set–nov |
+| Amazônia | Transição seca $\rightarrow$ chuvosa |
 :::
 :::
 :::
 
-# [7. MONITORAMENTO E SUCESSÃO ECOLÓGICA]{.section-header}
+# 7 · Monitoramento e sucessão ecológica {.section-header rotulo="Monitoramento"}
 
-## Acompanhamento do sistema {.smaller-text}
+## <span class="pitch-tag">Monitoramento</span> Cronograma, metas e fases da sucessão ecológica {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Cronograma de monitoramento
-
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Período | Indicador | Meta |
-|---------|-----------|------|
+|---|---|---|
 | 15 dias | Brotação das estacas | > 50% |
-| 30 dias | Irrigação (se seco) | Solo úmido |
 | 60 dias | Enraizamento inicial | Raízes visíveis |
-| 6 meses | Cobertura vegetal | > 40% |
-| 1 ano | Sistema estabelecido | > 70% cobertura |
-| 2 anos | Entrelaçamento raiz-pedra | Consolidação |
+| 6 meses / 1 ano | Cobertura vegetal | > 40% / > 70% |
+| 2 anos | Entrelaçamento raiz–pedra | Consolidação |
 | 5 anos | Ecossistema autônomo | Autossustentável |
-
-### Indicadores de sucesso
-
-- ✅ > 80% das estacas com brotação
-- ✅ Raízes penetrando > 30 cm no solo
-- ✅ Sem deslocamento de pedras em cheias
-- ✅ Colonização por espécies espontâneas
-- ✅ Presença de fauna associada (aves, insetos)
-
 :::
 
-::: {.column width="50%"}
-
-### Fases da sucessão ecológica
-
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["Fase 1: Pioneira<br>(0-2 anos)<br>Estacas + gramíneas"] --> B["Fase 2: Herbácea<br>(2-5 anos)<br>Arbustos + herbáceas"]
-    B --> C["Fase 3: Arbustiva<br>(5-10 anos)<br>Arbustos + árvores jovens"]
-    C --> D["Fase 4: Arbórea<br>(10+ anos)<br>Mata ciliar<br>em regeneração"]
-    style A fill:#586BA6,color:#000
-    style B fill:#2E7D32,color:#fff
-    style C fill:#2135A6,color:#fff
-    style D fill:#2E7D32,color:#fff
-```
-
-::: {.highlight-box}
-🌳 O objetivo final do enrocamento vegetado é iniciar a **sucessão ecológica**: as estacas vivas são espécies **pioneiras** que preparam o terreno para a colonização por espécies **climácicas** da mata ciliar.
-:::
+::: {.pitch-band .pitch-band--teal}
+**Sucesso:** > 80% de estacas brotadas, raízes > 30 cm no solo, blocos imóveis em cheias e retorno de fauna associada.
 :::
 :::
 
-# [8. SÍNTESE E ATIVIDADE]{.section-header}
+::: {.pitch-stack-2}
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Fase 1 · 0–2 anos]{.pitch-card-index}
+[Pioneira]{.pitch-heading}
 
-## Resumo dos conceitos-chave {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Pontos fundamentais
-
-::: {.info-box}
-1. **Enrocamento vegetado** combina pedras (resistência mecânica) com estacas vivas (componente biológico)
-2. Os **interstícios** são preenchidos com solo fértil, não com argamassa
-3. O **dimensionamento** das pedras segue a fórmula de Isbash (velocidade do fluxo)
-4. **Espécies com propagação vegetativa** e tolerância à submersão são essenciais
-5. A **época de plantio** deve coincidir com a estação chuvosa
-6. O sistema **ganha resiliência** ao longo do tempo com a sucessão ecológica
+Estacas vivas + gramíneas estabilizadoras.
 :::
 
+::: {.pitch-card .pitch-card--teal}
+[Fase 2 · 2–5 anos]{.pitch-card-index}
+[Herbácea]{.pitch-heading}
+
+Arbustos e herbáceas espontâneas.
 :::
 
-::: {.column width="50%"}
+::: {.pitch-card .pitch-card--forest}
+[Fase 3 · 5–10 anos]{.pitch-card-index}
+[Arbustiva]{.pitch-heading}
 
-### Fluxo conceitual
+Arbustos densos e árvores jovens.
+:::
 
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["Pedras<br>dimensionadas"] --> E["Enrocamento<br>vegetado"]
-    B["Filtro<br>granular/geotêxtil"] --> E
-    C["Solo fértil<br>nos interstícios"] --> E
-    D["Estacas vivas<br>espécies pioneiras"] --> E
-    E --> F["Proteção<br>mecânica imediata"]
-    E --> G["Enraizamento<br>progressivo"]
-    G --> H["Sucessão<br>ecológica"]
-    H --> I["Ecossistema<br>autossustentável"]
-    style A fill:#8B4513,color:#fff
-    style D fill:#2E7D32,color:#fff
-    style E fill:#2135A6,color:#fff
-    style I fill:#2E7D32,color:#fff
-```
+::: {.pitch-card .pitch-card--gold}
+[Fase 4 · 10+ anos]{.pitch-card-index}
+[Arbórea]{.pitch-heading}
+
+Mata ciliar em regeneração plena.
 :::
 :::
 
-## Atividade prática - Projeto de enrocamento vegetado {.smaller-text}
-
-::: {.columns}
-::: {.column width="55%"}
-
-### Exercício em grupo
-
-**Cenário:** Uma margem do Rio Jacuípe (BA) com 80 m de extensão e 3 m de altura apresenta erosão severa. A velocidade do fluxo na cheia (TR = 10 anos) é de 2,8 m s⁻¹. O solo da margem é areno-argiloso. A área está em APP.
-
-**Projetem o enrocamento vegetado:**
-
-1. Calcule o **$D_{50}$** das pedras pela fórmula de Isbash
-2. Qual a **classe de pedra** recomendada?
-3. Defina a **espessura** e a **geometria da seção transversal**
-4. Escolha **3 espécies** para estacas vivas e justifique
-5. Calcule a **quantidade de estacas** (estacas m⁻²)
-6. Qual a **época ideal** de instalação?
-7. Elabore um **cronograma de monitoramento** para 2 anos
-
+::: {.pitch-band}
+As estacas vivas atuam como **pioneiras**, criando microclima e estrutura para espécies **climácicas** da mata ciliar.
+:::
+:::
 :::
 
-::: {.column width="45%"}
+# 8 · Síntese e atividade {.section-header rotulo="Síntese"}
 
-### Critérios de avaliação
+## <span class="pitch-tag">Síntese</span> Pontos fundamentais e fluxo conceitual {.smaller-text .academic-slide .lesson-slide}
 
-| Critério | Peso |
-|----------|------|
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Resumo técnico]{.pitch-card-index}
+[Seis pilares do enrocamento vegetado]{.pitch-heading}
+
+1. Combina **pedras** (resistência imediata) e **estacas vivas** (reforço biológico)
+2. Interstícios preenchidos com **solo fértil**, nunca com argamassa
+3. **$D_{50}$** dimensionado pela equação de **Isbash** conforme velocidade do fluxo
+4. Seleção de espécies com **propagação vegetativa** e tolerância à submersão
+5. Plantio alinhado ao início da **estação chuvosa**
+6. Sistema ganha **resiliência crescente** via sucessão ecológica
+:::
+
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[01 · Insumos]{.pitch-card-index}
+[Estrutura base]{.pitch-heading}
+
+Pedras ($D_{50}$), filtro, solo fértil e estacas pioneiras.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[02 · Obra]{.pitch-card-index}
+[Enrocamento vivo]{.pitch-heading}
+
+Imbricamento da base ao topo + cravação nos vazios.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[03 · Transição]{.pitch-card-index}
+[Proteção dupla]{.pitch-heading}
+
+Resistência mecânica imediata + enraizamento progressivo.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[04 · Clímax]{.pitch-card-index}
+[Autossustentável]{.pitch-heading}
+
+Sucessão ecológica consolidando a margem ciliar.
+:::
+:::
+:::
+
+## <span class="pitch-tag pitch-tag--teal">Atividade</span> Projeto de enrocamento no Rio Jacuípe (BA) {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Estudo dirigido · 30 min projeto + 10 min apresentação]{.pitch-card-index}
+[Margem em APP · 80 m × 3 m · $V = 2,8\text{ m s}^{-1}$ ($TR = 10$ anos)]{.pitch-heading}
+
+Solo areno-argiloso com erosão severa. Projetem o enrocamento vegetado:
+
+1. Calcule o **$D_{50}$** pela fórmula de Isbash e defina a **classe de pedra**
+2. Defina **espessura** e **geometria da seção transversal**
+3. Escolha **3 espécies** para estacas vivas e justifique
+4. Calcule a **quantidade de estacas** (estacas m⁻²) e defina a **época ideal**
+5. Elabore um **cronograma de monitoramento** para 2 anos
+:::
+
+::: {.pitch-table-box}
+| Critério de avaliação | Peso |
+|---|---|
 | Dimensionamento das pedras | 25% |
 | Geometria da seção | 15% |
 | Seleção de espécies | 20% |
 | Procedimento construtivo | 20% |
 | Cronograma de monitoramento | 20% |
-
-::: {.highlight-box}
-⏱️ **Tempo**: 30 minutos para projeto + 10 minutos para apresentação por grupo.
-:::
-
 :::
 :::
 
-## Referências {.smaller-text}
+## <span class="pitch-tag">Referências</span> Referências bibliográficas {.smaller-text .academic-slide .lesson-slide}
 
-::: {.smaller-text}
+::: {.pitch-card}
+[Normas e literatura de engenharia]{.pitch-card-index}
+[Base bibliográfica da aula]{.pitch-heading}
 
-- ABNT (2016). NBR 9842:2016 - Enrocamento - Projeto e execução.
-- DNER (1996). Manual de Proteção e Retaludamento de Encostas. Departamento Nacional de Estradas de Rodagem.
+- ABNT (2016). *NBR 9842:2016 - Enrocamento - Projeto e execução*.
+- DNER (1996). *Manual de Proteção e Retaludamento de Encostas*. Departamento Nacional de Estradas de Rodagem.
 - Fischenich, C. (2001). Stability thresholds for stream restoration materials. *EMRRP Technical Notes, ERDC TN-EMRRP-SR-29*.
 - Gray, D. H. & Sotir, R. B. (1996). *Biotechnical and Soil Bioengineering Slope Stabilization*. John Wiley & Sons.
-- Isbash, S. V. (1936). Construction of dams by depositing rock in running water. *2nd Congress on Large Dams, Washington*, 5, 123-136.
-- Li, M. H. & Eddleman, K. E. (2002). Biotechnical engineering as an alternative to traditional engineering methods. *Landscape Urban Planning*, 60(4), 225-242.
+- Isbash, S. V. (1936). Construction of dams by depositing rock in running water. *2nd Congress on Large Dams, Washington*, 5, 123–136.
+- Li, M. H. & Eddleman, K. E. (2002). Biotechnical engineering as an alternative to traditional engineering methods. *Landscape Urban Planning*, 60(4), 225–242.
 - Schiechtl, H. M. & Stern, R. (1996). *Ground Bioengineering Techniques for Slope Protection and Erosion Control*. Blackwell Science.
-
 :::
 
 ## {.obrigado-fit-text .center}

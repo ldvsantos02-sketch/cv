@@ -12,86 +12,155 @@ execute:
   echo: false
 ---
 
-## Aula 04 · Processos erosivos e hidrologia de projeto {.smaller-text}
+## [Abertura]{.pitch-tag} Aula 04 · Processos erosivos e hidrologia de projeto {.smaller-text .lesson-slide}
 
-**Objetivo:** relacionar destacamento, transporte e deposição às medidas de conservação e aos cálculos de perda de solo, vazão de pico e volume.
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Objetivo da aula]{.pitch-card-index}
+[Da mecânica erosiva ao cálculo]{.pitch-heading}
 
-**Três resultados diferentes:** perda média anual de solo, vazão máxima de um evento e volume escoado. Cada um exige um modelo e unidades próprios.
-
-
-
-# 1 · Mecânica da erosão e conectividade
-
-
-
-## Do impacto da gota à deposição {.smaller-text}
-
-1. O impacto da chuva pode desagregar partículas na superfície desprotegida.
-2. O escoamento transporta parte do material disponível.
-3. A concentração de água aumenta a capacidade de incisão.
-4. A redução de energia ou a presença de barreiras favorece a deposição.
-
-**Diagnóstico:** diferencie erosão entre sulcos, em sulcos, ravinas, voçorocas, erosão interna e movimentos de massa. As medidas e os modelos não são equivalentes para todos esses processos.
-
-
-
-## Ler a propriedade como sistema conectado {.smaller-text}
-
-:::: {.columns}
-::: {.column width="50%"}
-
-![Elementos de manejo e conexão entre vertente e drenagem](img/slide07_img12.png){fig-align="center" width="90%"}
-
+Relacionar destacamento, transporte e deposição às medidas de conservação e aos cálculos de perda de solo, vazão de pico e volume.
 :::
-::: {.column width="50%"}
 
-No croqui, identifique:
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Três resultados diferentes]{.pitch-card-index}
+[Modelos e unidades próprios]{.pitch-heading}
+
+Perda média anual de solo, vazão máxima de um evento e volume escoado. Cada um exige um modelo e unidades próprios.
+:::
+
+::: {.pitch-pill-row}
+[RUSLE · t ha⁻¹ ano⁻¹]{.pitch-pill}
+[Racional · m³ s⁻¹]{.pitch-pill .pitch-pill--gold}
+[NRCS-CN · m³]{.pitch-pill}
+:::
+:::
+:::
+
+# 1 · Mecânica da erosão e conectividade {.section-header rotulo="Mecânica"}
+
+## [Mecânica]{.pitch-tag} Do impacto da gota à deposição {.smaller-text .lesson-slide}
+
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[01 · Impacto]{.pitch-card-index}
+[Desagregação]{.pitch-heading}
+
+O impacto da chuva pode desagregar partículas na superfície desprotegida.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[02 · Transporte]{.pitch-card-index}
+[Escoamento]{.pitch-heading}
+
+O escoamento transporta parte do material disponível.
+:::
+
+::: {.pitch-card .pitch-card--alert}
+[03 · Concentração]{.pitch-card-index}
+[Incisão]{.pitch-heading}
+
+A concentração de água aumenta a capacidade de incisão.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[04 · Deposição]{.pitch-card-index}
+[Retenção]{.pitch-heading}
+
+A redução de energia ou a presença de barreiras favorece a deposição.
+:::
+:::
+
+::: {.pitch-band .pitch-band--navy}
+**Diagnóstico:** diferencie erosão entre sulcos, em sulcos, ravinas, voçorocas, erosão interna e movimentos de massa. As medidas e os modelos não são equivalentes para todos esses processos.
+:::
+
+## [Conectividade]{.pitch-tag .pitch-tag--teal} Ler a propriedade como sistema conectado {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-media-card}
+
+![Elementos de manejo e conexão entre vertente e drenagem](img/slide07_img12.png)
+
+[Elementos de manejo e conexão entre vertente e drenagem]{.pitch-caption}
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[No croqui, identifique:]{.pitch-card-index}
+[Fluxo de água e sedimentos]{.pitch-heading}
 
 - Áreas que produzem enxurrada e sedimentos.
 - Caminhos que concentram ou dispersam o fluxo.
 - Pontos de armazenamento e deposição.
 - Receptores: lavouras, estradas, cursos d'água e reservatórios.
-
-A intervenção deve ter uma saída estável para a água; reter sedimentos não significa eliminar a vazão.
-
 :::
-::::
 
+::: {.pitch-band .pitch-band--teal}
+A intervenção deve ter uma saída estável para a água; reter sedimentos não significa eliminar a vazão.
+:::
+:::
+:::
 
+## [Hidráulica]{.pitch-tag .pitch-tag--gold} Tensão aplicada e resistência à erosão {.smaller-text .lesson-slide}
 
-## Tensão aplicada e resistência à erosão {.smaller-text}
-
+::: {.pitch-band}
 Para um trecho aproximadamente uniforme, a tensão média de contorno pode ser estimada por:
+:::
 
-$$\tau_0=\rho gR_hS_f$$
+::: {.pitch-formula}
+$$\tau_0=\rho g R_h S_f$$
+:::
 
-- $
-ho$: massa específica da água (kg m⁻³); $g$: gravidade (m s⁻²).
+::: {.pitch-card}
+[Grandezas e critério de estabilidade]{.pitch-card-index}
+[Tensão cisalhante de escoamento]{.pitch-heading}
+
+- $\rho$: massa específica da água (kg m⁻³); $g$: gravidade (m s⁻²).
 - $R_h$: raio hidráulico (m); $S_f$: declividade da linha de energia (m m⁻¹).
 - $\tau_0$ resulta em Pa; compare com a tensão admissível do sistema solo–revestimento.
+:::
 
+## [Erosão eólica]{.pitch-tag .pitch-tag--forest} Erosão eólica e controle por quebra-ventos {.smaller-text .lesson-slide}
 
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Mecanismos de transporte pelo vento]{.pitch-card-index}
+[Crítico em solos arenosos, secos e descobertos]{.pitch-heading}
 
-## Erosão eólica e controle por quebra-ventos {.smaller-text}
+1. **Rolamento superficial (*creep*):** partículas grossas ($0{,}5\text{--}2{,}0\text{ mm}$) arrastadas sobre a superfície;
+2. **Saltação:** partículas médias ($0{,}1\text{--}0{,}5\text{ mm}$) em saltos balísticos — principal fonte de abrasão e desagregação secundária;
+3. **Suspensão:** silte e argila ($< 0{,}1\text{ mm}$) transportados a longas distâncias (perda de fertilidade e coloides).
+:::
 
-- **Mecanismos de transporte pelo vento** (crítico em solos arenosos, secos e descobertos do Semiárido e cerrados):
-  1. **Rolamento superficial (*creep*):** partículas grossas ($0{,}5\text{--}2{,}0\text{ mm}$) arrastadas sobre a superfície;
-  2. **Saltação:** partículas médias ($0{,}1\text{--}0{,}5\text{ mm}$) em saltos balísticos — principal fonte de abrasão e desagregação secundária;
-  3. **Suspensão:** silte e argila ($< 0{,}1\text{ mm}$) transportados a longas distâncias (perda de fertilidade e coloides).
-- **Equação da Erosão Eólica (WEQ):** $E = f(I, K, C, L, V)$ *(erodibilidade do solo, rugosidade, fator climático, comprimento desprotegido e cobertura vegetal).*
-- **Controle agronômico e biotécnico:** manutenção de palhada/restos culturais em pé, rugosidade por preparo em nível e **quebra-ventos vegetados** (faixas arbóreo-arbustivas com porosidade óptica de $40\text{--}50\%$, protegendo até **$15\text{ a }20\times$ a altura ($H$)** a sotavento).
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Equação da Erosão Eólica (WEQ):** $E = f(I, K, C, L, V)$ *(erodibilidade do solo, rugosidade, fator climático, comprimento desprotegido e cobertura vegetal).*
+:::
 
+::: {.pitch-card .pitch-card--forest}
+[Controle agronômico e biotécnico]{.pitch-card-index}
+[Manejo e quebra-ventos]{.pitch-heading}
+
+Manutenção de palhada/restos culturais em pé, rugosidade por preparo em nível e **quebra-ventos vegetados** (faixas arbóreo-arbustivas com porosidade óptica de $40\text{--}50\%$, protegendo até **$15\text{ a }20\times$ a altura ($H$)** a sotavento).
+:::
+:::
+:::
+
+::: {.pitch-band .pitch-band--navy}
 A média não representa máximos locais em curvas, entradas e quedas. Não confunda esse critério de erosão hidráulica com a resistência ao cisalhamento em kPa da mecânica dos solos.
+:::
 
+# 2 · Predição e limites da RUSLE {.section-header rotulo="RUSLE"}
 
+## [RUSLE]{.pitch-tag .pitch-tag--gold} O que a RUSLE estima {.smaller-text .lesson-slide}
 
-# 2 · Predição e limites da RUSLE
+::: {.pitch-formula}
+$$A=R\,K\,LS\,C\,P$$
+:::
 
-
-
-## O que a RUSLE estima {.smaller-text}
-
-$$A=R,K,LS,C,P$$
+::: {.pitch-table-box}
 
 | Fator | Interpretação |
 |---|---|
@@ -102,13 +171,19 @@ $$A=R,K,LS,C,P$$
 | $C$ | Cobertura e manejo |
 | $P$ | Práticas de suporte |
 
+:::
+
+::: {.pitch-band .pitch-band--navy}
 A RUSLE representa erosão entre sulcos e em sulcos. Não fornece diretamente erosão de voçorocas, ruptura de taludes ou sedimento exportado pela bacia.
+:::
 
+## [RUSLE]{.pitch-tag .pitch-tag--gold} Exemplo de cenário antes e depois {.smaller-text .lesson-slide}
 
-
-## Exemplo de cenário antes e depois {.smaller-text}
-
+::: {.pitch-band}
 **Valores didáticos, sem representar uma área medida:**
+:::
+
+::: {.pitch-table-box}
 
 | Parâmetro | Situação inicial | Cenário conservacionista |
 |---|---:|---:|
@@ -119,43 +194,77 @@ A RUSLE representa erosão entre sulcos e em sulcos. Não fornece diretamente er
 | $P$ | 1,0 | 0,6 |
 | $A$ (t ha⁻¹ ano⁻¹) | 54,00 | 6,48 |
 
-Redução estimada: **88%**. A escolha de C e P exige referência adequada ao manejo; verifique também a perda tolerável e os processos fora do alcance do modelo.
+:::
 
+::: {.pitch-band .pitch-band--teal}
+Redução estimada: **88%**. A escolha de $C$ e $P$ exige referência adequada ao manejo; verifique também a perda tolerável e os processos fora do alcance do modelo.
+:::
 
+## [Planejamento]{.pitch-tag} Da perda estimada ao planejamento {.smaller-text .lesson-slide}
 
-## Da perda estimada ao planejamento {.smaller-text}
+::: {.pitch-card}
+[Cuidados na aplicação da RUSLE]{.pitch-card-index}
+[Critérios de interpretação]{.pitch-heading}
 
 - Use dados locais ou parâmetros cuja origem e aplicação estejam documentadas.
-- Não atribua a redução de K a uma prática sem demonstrar a mudança correspondente.
-- Evite contar duas vezes o mesmo efeito ao ajustar LS e P.
+- Não atribua a redução de $K$ a uma prática sem demonstrar a mudança correspondente.
+- Evite contar duas vezes o mesmo efeito ao ajustar $LS$ e $P$.
 - A tolerância de perda depende de profundidade, formação e funções do solo; não é um único valor por ordem do SiBCS.
 - Avalie capacidade de uso ou aptidão das terras antes de intensificar o manejo.
+:::
 
+::: {.pitch-band .pitch-band--navy}
 **Uma área inadequada ao uso proposto não se torna adequada apenas com um valor baixo de A.**
+:::
 
+# 3 · Chuva, vazão e volume {.section-header rotulo="Hidrologia"}
 
+## [Hidrologia]{.pitch-tag .pitch-tag--teal} Duração da chuva e tempo de concentração {.smaller-text .lesson-slide}
 
-# 3 · Chuva, vazão e volume
-
-
-
-## Duração da chuva e tempo de concentração {.smaller-text}
-
+::: {.pitch-band}
 O tempo de concentração $t_c$ expressa o tempo característico para a contribuição de toda a área à seção de interesse.
+:::
 
+::: {.pitch-formula}
 Uma forma da equação empírica de Kirpich é:
 
-$$t_c=0{,}0195,L^{0{,}77}S^{-0{,}385}$$
+$$t_c=0{,}0195\,L^{0{,}77}S^{-0{,}385}$$
+:::
+
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Unidades e validade]{.pitch-card-index}
+[Equação de Kirpich]{.pitch-heading}
 
 Com $t_c$ em minutos, comprimento $L$ em metros e declividade $S$ em m m⁻¹. Verifique se o tipo e a escala da bacia são compatíveis com a equação.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Relação IDF local]{.pitch-card-index}
+[Intensidade de projeto]{.pitch-heading}
 
 Use uma relação **IDF local** para obter a intensidade para a duração e o período de retorno adotados. Precipitação média anual não fornece a intensidade de projeto.
+:::
+:::
 
+## [Hidrologia]{.pitch-tag .pitch-tag--gold} Método Racional: vazão de pico {.smaller-text .lesson-slide}
 
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+$$Q_p=\frac{C\,i\,A_b}{360}$$
+:::
 
-## Método Racional: vazão de pico {.smaller-text}
+::: {.pitch-card .pitch-card--gold}
+[Exemplo]{.pitch-card-index}
+[Cálculo direto]{.pitch-heading}
 
-$$Q_p=\frac{C,i,A_b}{360}$$
+$C=0{,}58$; $i=190$ mm h⁻¹; $A_b=8$ ha $\rightarrow$ $Q_p=2{,}449$ m³ s⁻¹.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 
 | Símbolo | Unidade nesta forma |
 |---|---|
@@ -164,27 +273,43 @@ $$Q_p=\frac{C,i,A_b}{360}$$
 | $i$ | mm h⁻¹ |
 | $A_b$ | ha |
 
-**Exemplo:** $C=0{,}58$; $i=190$ mm h⁻¹; $A_b=8$ ha → $Q_p=2{,}449$ m³ s⁻¹.
+:::
 
+::: {.pitch-band}
 O método pressupõe chuva de projeto compatível com $t_c$ e contribuição espacial adequada. Verifique armazenamento, heterogeneidade e necessidade de propagação do hidrograma.
+:::
+:::
+:::
 
+## [Hidrologia]{.pitch-tag .pitch-tag--teal} CN: lâmina e volume de um evento {.smaller-text .lesson-slide}
 
-
-## CN: lâmina e volume de um evento {.smaller-text}
-
+::: {.pitch-formula}
 Na formulação clássica do método NRCS-CN:
 
-$$S_r=\frac{25400}{CN}-254,qquad I_a=0{,}2S_r$$
+$$S_r=\frac{25400}{CN}-254,\qquad I_a=0{,}2S_r$$
 
 $$P_e=\begin{cases}0,&P\le I_a\\ \dfrac{(P-I_a)^2}{P-I_a+S_r},&P>I_a\end{cases}$$
+:::
 
-$P$, $P_e$, $I_a$ e $S_r$ em mm. $V_e=10P_eA_b$ dá volume em m³ para área em ha.
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--teal}
+[Volume escoado]{.pitch-card-index}
+[Conversão de unidades]{.pitch-heading}
+
+$P$, $P_e$, $I_a$ e $S_r$ em mm. $V_e=10 P_e A_b$ dá volume em m³ para área em ha.
+:::
+
+::: {.pitch-card}
+[Condições de contorno]{.pitch-card-index}
+[Premissas do método]{.pitch-heading}
 
 Informe grupo hidrológico, cobertura, condição antecedente e hipótese de abstração inicial. A razão 0,2 é uma convenção da formulação clássica; outras calibrações exigem parâmetros consistentes.
+:::
+:::
 
+## [Hidrologia]{.pitch-tag} Vazão não substitui volume {.smaller-text .lesson-slide}
 
-
-## Vazão não substitui volume {.smaller-text}
+::: {.pitch-table-box}
 
 | Estrutura ou análise | Grandeza principal | Complemento necessário |
 |---|---|---|
@@ -193,70 +318,79 @@ Informe grupo hidrológico, cobertura, condição antecedente e hipótese de abs
 | Terraço em nível | Armazenamento e infiltração | Segurança contra transbordamento |
 | Terraço em gradiente | Vazão ao longo do canal | Descarga em saída protegida |
 
+:::
+
+::: {.pitch-band .pitch-band--navy}
 Somar picos individuais de áreas com tempos de chegada diferentes não representa, em geral, o pico real a jusante.
-
-
-
-# 4 · Manejo e evidências de campo
-
-
-
-## Orientação do preparo e concentração da água {.smaller-text}
-
-:::: {.columns}
-::: {.column width="50%"}
-
-![Solo exposto sob preparo mecanizado](img/slide14_img20.png){fig-align="center" width="90%"}
-
 :::
-::: {.column width="50%"}
 
-![Orientação das linhas em relação ao declive](img/slide14_img21.png){fig-align="center" width="90%"}
+# 4 · Manejo e evidências de campo {.section-header rotulo="Manejo"}
 
+## [Manejo]{.pitch-tag .pitch-tag--forest} Orientação do preparo e concentração da água {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-media-card .pitch-media-card--photo}
+
+![Solo exposto sob preparo mecanizado](img/slide14_img20.png)
+
+[Solo exposto sob preparo mecanizado]{.pitch-caption}
 :::
-::::
 
+::: {.pitch-media-card .pitch-media-card--photo}
 
+![Orientação das linhas em relação ao declive](img/slide14_img21.png)
 
-## Identificar a conexão até a feição erosiva {.smaller-text}
-
-:::: {.columns}
-::: {.column width="50%"}
-
-![Condição superficial após preparo do solo](img/slide15_img24.png){fig-align="center" width="90%"}
-
+[Orientação das linhas em relação ao declive]{.pitch-caption}
 :::
-::: {.column width="50%"}
-
-![Feições de erosão e deposição para discussão](img/slide15_img25.png){fig-align="center" width="90%"}
-
 :::
-::::
 
+## [Manejo]{.pitch-tag .pitch-tag--alert} Identificar a conexão até a feição erosiva {.smaller-text .lesson-slide}
 
+::: {.pitch-grid-50}
+::: {.pitch-media-card .pitch-media-card--photo}
 
-## Compactação: construir e testar a hipótese {.smaller-text}
+![Condição superficial após preparo do solo](img/slide15_img24.png)
 
-:::: {.columns}
-::: {.column width="50%"}
-
-![Solo e fluxo de água na presença de camadas contrastantes](img/slide08_img13.png){fig-align="center" width="90%"}
-
+[Condição superficial após preparo do solo]{.pitch-caption}
 :::
-::: {.column width="50%"}
 
-Hipótese: tráfego ou manejo alteram a estrutura; parte da macroporosidade e da infiltração pode diminuir; a enxurrada pode aumentar.
+::: {.pitch-media-card .pitch-media-card--photo}
+
+![Feições de erosão e deposição para discussão](img/slide15_img25.png)
+
+[Feições de erosão e deposição para discussão]{.pitch-caption}
+:::
+:::
+
+## [Manejo]{.pitch-tag} Compactação: construir e testar a hipótese {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-media-card .pitch-media-card--photo}
+
+![Solo e fluxo de água na presença de camadas contrastantes](img/slide08_img13.png)
+
+[Solo e fluxo de água na presença de camadas contrastantes]{.pitch-caption}
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Hipótese hidromecânica]{.pitch-card-index}
+[Cadeia de efeitos]{.pitch-heading}
+
+Tráfego ou manejo alteram a estrutura; parte da macroporosidade e da infiltração pode diminuir; a enxurrada pode aumentar.
 
 **Teste com:** perfil de raízes, densidade, RP com umidade registrada, infiltração e observação durante chuva.
-
-Não atribua automaticamente liquefação ou erosão a um valor de RP. Diferencie compactação por manejo de adensamento natural.
-
 :::
-::::
 
+::: {.pitch-band .pitch-band--navy}
+Não atribua automaticamente liquefação ou erosão a um valor de RP. Diferencie compactação por manejo de adensamento natural.
+:::
+:::
+:::
 
+## [Planejamento]{.pitch-tag .pitch-tag--forest} Planejamento conservacionista por função {.smaller-text .lesson-slide}
 
-## Planejamento conservacionista por função {.smaller-text}
+::: {.pitch-table-box}
 
 | Função | Medidas possíveis | Verificação |
 |---|---|---|
@@ -266,23 +400,45 @@ Não atribua automaticamente liquefação ou erosão a um valor de RP. Diferenci
 | Recuperar estrutura | Manejo de tráfego e rotação; intervenção localizada quando indicada | Resposta física e radicular |
 | Conter feições ativas | Técnicas combinadas e controle de montante | Evolução da geometria e estabilidade |
 
+:::
 
+## [Aplicação]{.pitch-tag .pitch-tag--gold} Atividade · Três cálculos, três decisões {.smaller-text .lesson-slide}
 
-## Atividade · Três cálculos, três decisões {.smaller-text}
-
-Para os cenários apresentados:
+::: {.pitch-card .pitch-card--gold}
+[Exercício integrador]{.pitch-card-index}
+[Para os cenários apresentados:]{.pitch-heading}
 
 1. Reproduza a perda estimada pela RUSLE e a redução percentual.
 2. Confira a vazão pelo Método Racional, mantendo as unidades.
 3. Calcule a lâmina e o volume para $P=60$ mm, $CN=80$ e área de 8 ha.
 4. Explique por que esses resultados não dimensionam sozinhos uma obra.
+:::
 
+::: {.pitch-band .pitch-band--teal}
 **Resultados de conferência do item 3:** $S_r=63{,}5$ mm; $P_e\approx20{,}19$ mm; $V_e\approx1.615$ m³. A transformação dessa lâmina em hidrograma exige outra etapa.
+:::
 
+## [Referências]{.pitch-tag} Leituras e fontes técnicas {.smaller-text .lesson-slide}
 
+::: {.pitch-cards}
+::: {.pitch-card}
+[Erosão hídrica]{.pitch-card-index}
+[USDA-ARS]{.pitch-heading}
 
-## Leituras e fontes técnicas {.smaller-text}
+[Fundamentos e alcance da RUSLE2](https://www.ars.usda.gov/ARSUserFiles/60600505/rusle/rusle2_science_doc.pdf)
+:::
 
-- [USDA-ARS · Fundamentos e alcance da RUSLE2](https://www.ars.usda.gov/ARSUserFiles/60600505/rusle/rusle2_science_doc.pdf)
-- [USDA-NRCS · Estimating Runoff (EFH, capítulo 2)](https://directives.nrcs.usda.gov/sites/default/files2/1712930818/31754.pdf)
-- [Embrapa (2017). Manual de métodos de análise de solo, 3ª edição](https://www.embrapa.br/web/solos/busca-de-publicacoes/-/publicacao/1085209/manual-de-metodos-de-analise-de-solo)
+::: {.pitch-card .pitch-card--teal}
+[Escoamento superficial]{.pitch-card-index}
+[USDA-NRCS]{.pitch-heading}
+
+[Estimating Runoff (EFH, capítulo 2)](https://directives.nrcs.usda.gov/sites/default/files2/1712930818/31754.pdf)
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[Métodos de análise]{.pitch-card-index}
+[Embrapa (2017)]{.pitch-heading}
+
+[Manual de métodos de análise de solo, 3ª edição](https://www.embrapa.br/web/solos/busca-de-publicacoes/-/publicacao/1085209/manual-de-metodos-de-analise-de-solo)
+:::
+:::

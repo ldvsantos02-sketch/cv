@@ -1,0 +1,128 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% ============================================================
+% TÍTULO GERAL
+% ============================================================
+\node[bsTitle, anchor=west] at (0, 9.05)
+  {Cordões Vegetativos Vivos vs. Fascinas Enterradas: Tipologias e Funções};
+\node[bsSub, anchor=west] at (0, 8.60)
+  {Comparação morfológica, mecanismo de atuação hidráulica e resposta geotécnica na encosta};
+
+% ============================================================
+% CARD ESQUERDO: CORDÕES VEGETATIVOS EM CONTORNO (bsForest)
+% ============================================================
+\begin{scope}[shift={(0,0)}]
+  \draw[bsForest, rounded corners=6pt, line width=1.2pt, fill=bgForest!65!white]
+    (0,-0.75) rectangle (7.65, 8.15);
+  \node[bsBadge=bsForest, rounded corners=5pt, anchor=north west] at (0.30, 7.90) {TIPOLOGIA 1 · SUPERFICIAL};
+  \node[font=\small\bfseries\sffamily, text=bsForest!90!black, anchor=north west]
+    at (0.30, 7.32) {Cordões Vegetativos em Contorno};
+
+  % Mini-croqui vetorial
+  \draw[bsForest!40, fill=white, rounded corners=4pt, line width=0.8pt]
+    (0.30, 3.25) rectangle (7.35, 6.82);
+
+  % Perfil do terreno inclinado + cunha de sedimentos
+  \fill[bsEarth!18] (0.55, 3.45) -- (0.55, 5.78) -- (7.05, 3.85) -- (7.05, 3.45) -- cycle;
+  % Cunha de sedimento retida a montante do cordão
+  \fill[bsGold!38] (1.65, 5.45) -- (3.65, 4.86) -- (3.65, 5.30) -- cycle;
+  \draw[bsEarth, line width=1.2pt] (0.55, 5.78) -- (7.05, 3.85);
+  \draw[bsGoldDark, line width=1.0pt, dashed] (1.65, 5.45) -- (3.65, 5.30);
+
+  % Touceira densa de gramínea (Vetiver)
+  \foreach \dx/\h in {-0.20/0.82, -0.10/0.98, 0.00/1.08, 0.10/0.96, 0.20/0.80, 0.28/0.72}{
+    \draw[bsForest, line width=1.45pt, line cap=round] (3.75+\dx, 4.83) .. controls (3.75+\dx*1.4, 4.83+\h*0.55) .. (3.75+\dx*1.9, 4.83+\h);
+  }
+  % Sistema radicular profundo e denso
+  \foreach \rx/\ry in {-0.18/-0.95, -0.06/-1.18, 0.05/-1.22, 0.18/-1.02, 0.28/-0.82}{
+    \draw[bsEarth!80!black, line width=0.85pt] (3.78, 4.81) .. controls (3.78+\rx*0.4, 4.28) .. (3.78+\rx, 4.81+\ry);
+  }
+
+  % Fluxo de escoamento superficial e filtragem
+  \draw[bsArrow, bsWater, line width=1.35pt] (0.85, 6.02) -- (2.90, 5.42);
+  \node[font=\tiny\bfseries\sffamily, text=bsWater, anchor=south west] at (0.75, 6.05) {Escoamento + sedimentos};
+
+  \draw[bsArrow, bsWater!75!black, line width=1.05pt, dashed] (4.20, 4.86) -- (6.30, 4.24);
+  \node[font=\tiny\bfseries\sffamily, text=bsWater!85!black, anchor=south west] at (4.95, 4.65) {Água filtrada};
+
+  % Rótulos internos do croqui (posicionados com folga limpa)
+  \node[font=\tiny\bfseries\sffamily, text=bsGoldDark, anchor=north east] (lTer) at (3.00, 4.55) {Terraço progressivo vivo};
+  \draw[bsArrow, bsGoldDark, line width=0.75pt] (lTer.north) -- (2.75, 5.20);
+
+  \node[font=\tiny\bfseries\sffamily, text=bsForest, align=left, anchor=west] (lVet) at (4.35, 6.00) {Gramínea entouceirada\\(ex.: Vetiver)};
+  \draw[bsArrow, bsForest, line width=0.8pt] (lVet.west) -- (4.00, 5.70);
+
+  \node[font=\tiny\bfseries\sffamily, text=bsEarth!85!black, anchor=west] at (4.28, 3.80) {Raízes densas};
+
+  % Pontos-chave abaixo do croqui (cabe folgado dentro do card até y=0.25)
+  \node[bsBox=bsForest, anchor=north west, text width=6.55cm, align=left]
+    at (0.30, 3.00) {
+      \textbf{\color{bsForest}$\bullet$ Composição:} Gramíneas entouceiradas (ex.: \textit{Vetiver}) plantadas adensadamente em linha de nível.\\[4pt]
+      \textbf{\color{bsForest}$\bullet$ Mecanismo:} Filtra sedimentos na superfície, reduz a velocidade do escoamento e forma terraço progressivo vivo.\\[4pt]
+      \textbf{\color{bsForest}$\bullet$ Uso típico:} Encostas agrícolas, taludes suaves e proteção contra erosão laminar.
+    };
+\end{scope}
+
+% ============================================================
+% CARD DIREITO: FASCINAS / CORDÕES DE RAMOS VIVOS (bsEarth)
+% ============================================================
+\begin{scope}[shift={(8.10,0)}]
+  \draw[bsEarth, rounded corners=6pt, line width=1.2pt, fill=bgGold!75!white]
+    (0,-0.75) rectangle (7.65, 8.15);
+  \node[bsBadge=bsEarth, rounded corners=5pt, anchor=north west] at (0.30, 7.90) {TIPOLOGIA 2 · ENTERRADA};
+  \node[font=\small\bfseries\sffamily, text=bsEarth!90!black, anchor=north west]
+    at (0.30, 7.32) {Fascinas / Cordões de Ramos Vivos};
+
+  % Mini-croqui vetorial
+  \draw[bsEarth!40, fill=white, rounded corners=4pt, line width=0.8pt]
+    (0.30, 3.25) rectangle (7.35, 6.82);
+
+  % Perfil do terreno com sulco de nível escavado e reaterrado
+  \fill[bsEarth!18] (0.55, 3.45) -- (0.55, 5.78) -- (2.95, 5.07) -- (3.05, 4.38) -- (4.25, 4.38) -- (4.35, 4.65) -- (7.05, 3.85) -- (7.05, 3.45) -- cycle;
+  \fill[bsEarth!32] (2.95, 5.07) -- (3.05, 4.38) -- (4.25, 4.38) -- (4.35, 4.65) -- cycle;
+  \draw[bsEarth, line width=1.2pt] (0.55, 5.78) -- (2.95, 5.07) -- (4.35, 4.65) -- (7.05, 3.85);
+  \draw[bsEarth!80!black, dashed, line width=0.9pt] (2.95, 5.07) -- (3.05, 4.38) -- (4.25, 4.38) -- (4.35, 4.65);
+
+  % Feixe cilíndrico de ramos vivos (seção transversal)
+  \filldraw[fill=bsEarth!45, draw=bsEarth!90!black, line width=1.1pt] (3.68, 4.63) circle (0.32);
+  \foreach \cx/\cy in {-0.14/0.10, 0.02/0.16, 0.15/0.06, -0.08/-0.08, 0.10/-0.12, -0.18/-0.04, 0.00/0.02}{
+    \filldraw[fill=bsForest!55!bsEarth, draw=bsEarth!90!black, line width=0.5pt] (3.68+\cx, 4.63+\cy) circle (0.075);
+  }
+  % Estaca de madeira fixadora
+  \filldraw[fill=bsGoldDark!85!black, draw=bsInk, line width=0.7pt]
+    (3.38, 3.92) -- (3.48, 3.92) -- (3.70, 5.25) -- (3.60, 5.25) -- cycle;
+
+  % Brotação aérea e enraizamento da fascina
+  \draw[bsForest, line width=1.5pt, line cap=round] (3.82, 4.86) -- (4.25, 5.72);
+  \draw[bsForest, line width=1.4pt, line cap=round] (3.90, 4.78) -- (4.55, 5.48);
+  \fill[bsForest!80!white] (4.25, 5.72) ellipse (0.18 and 0.09);
+  \fill[bsForest!75!white] (4.55, 5.48) ellipse (0.17 and 0.08);
+  \draw[bsEarth!80!black, line width=0.8pt] (3.60, 4.32) -- (3.35, 3.72);
+  \draw[bsEarth!80!black, line width=0.8pt] (3.82, 4.34) -- (4.08, 3.75);
+
+  % Drenagem subsuperficial pelo feixe (sem colisão)
+  \node[font=\tiny\bfseries\sffamily, text=bsWater, anchor=south west] (lInf) at (0.85, 5.95) {Infiltração / drenagem};
+  \draw[bsArrow, bsWater, line width=1.05pt] (1.65, 5.92) -- (2.75, 5.22);
+  \draw[bsArrow, bsWater, line width=1.15pt] (2.40, 4.82) -- (3.30, 4.63);
+
+  % Rótulos internos do croqui (todos dentro da caixa!)
+  \node[font=\tiny\bfseries\sffamily, text=bsForest, anchor=west] at (4.55, 5.88) {Brotação dos ramos};
+  \node[font=\tiny\bfseries\sffamily, text=bsEarth!90!black, align=left, anchor=west] (lFeixe) at (4.55, 4.95) {Feixe amarrado\\em sulco de nível};
+  \draw[bsArrow, bsEarth!90!black, line width=0.8pt] (lFeixe.west) -- (4.04, 4.65);
+  \node[font=\tiny\bfseries\sffamily, text=bsGoldDark, anchor=north west] at (4.22, 3.92) {Estaca de ancoragem};
+
+  % Pontos-chave abaixo do croqui
+  \node[bsBox=bsEarth, anchor=north west, text width=6.55cm, align=left]
+    at (0.30, 3.00) {
+      \textbf{\color{bsEarth}$\bullet$ Composição:} Feixes cilíndricos de ramos vivos amarrados e enterrados em sulcos de nível com estacas.\\[4pt]
+      \textbf{\color{bsEarth}$\bullet$ Mecanismo:} Estacas e ramos vivos brotam rapidamente, garantindo contenção mecânica imediata + drenagem subsuperficial.\\[4pt]
+      \textbf{\color{bsEarth}$\bullet$ Uso típico:} Taludes úmidos, cicatrização de sulcos e redução do comprimento de rampa.
+    };
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

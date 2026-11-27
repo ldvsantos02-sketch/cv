@@ -1,0 +1,77 @@
+\documentclass[border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+  \hyphenpenalty=10000\exhyphenpenalty=10000
+
+  % Título
+  \node[bsTitle] at (1.5, 5.50)
+    {Árvore de Decisão para Seleção de Técnicas no Projeto Integrador};
+  \node[bsSub] at (1.5, 5.02)
+    {Do diagnóstico de sítio ao pacote tecnológico compatível com o processo erosivo dominante};
+
+  % Raiz esquerda
+  \node[bsTint=bsNavy, text width=3.65cm, minimum height=2.65cm] (root) at (-5.65, 0.85) {
+    \vspace{0.25cm}
+    \textbf{\color{bsNavy}Diagnóstico do Sítio}\\[5pt]
+    \scriptsize
+    \textbullet\ Declividade ($S$) e comprimento\\
+    \textbullet\ Textura e coesão do solo\\
+    \textbullet\ Vazão de projeto ($Q$)\\
+    \textbullet\ Mecanismo de falha dominante
+  };
+  \node[bsBadge=bsNavy] at (root.north) {PONTO DE PARTIDA};
+
+  % 4 Regimes Diagnósticos (Coluna Central, espaçamento vertical generoso)
+  \node[bsTint=bsGold, text width=4.25cm, minimum height=1.35cm] (d1) at (-0.15, 3.65) {
+    \textbf{\color{bsGoldDark}1. Erosão Laminar / Sulco Raso}\\
+    \scriptsize Escoamento difuso em solo exposto
+  };
+  \node[bsTint=bsAlert, text width=4.25cm, minimum height=1.35cm] (d2) at (-0.15, 1.80) {
+    \textbf{\color{bsAlert}2. Ravina / Voçoroca Ativa}\\
+    \scriptsize Incisão concentrada e avanço remontante
+  };
+  \node[bsTint=bsEarth, text width=4.25cm, minimum height=1.35cm] (d3) at (-0.15, -0.05) {
+    \textbf{\color{bsEarth}3. Talude Íngreme / Aterro Instável}\\
+    \scriptsize Risco de ruptura por poropressão/peso
+  };
+  \node[bsTint=bsWater, text width=4.25cm, minimum height=1.35cm] (d4) at (-0.15, -1.90) {
+    \textbf{\color{bsWater}4. Margem Fluvial em Solapamento}\\
+    \scriptsize Tensão cisalhante $\tau_0 > \tau_{\text{adm}}$ na base
+  };
+
+  % 4 Pacotes de Solução (Coluna Direita)
+  \node[bsBox=bsGold, text width=5.65cm, minimum height=1.35cm] (s1) at (6.05, 3.65) {
+    \textbf{\color{bsGoldDark}Hidrossemeadura + Biomantas + Cordões}\\
+    \scriptsize Cobertura imediata contra impacto da gota e redução de velocidade superficial
+  };
+  \node[bsBox=bsAlert, text width=5.65cm, minimum height=1.35cm] (s2) at (6.05, 1.80) {
+    \textbf{\color{bsAlert}Drenagem Montante + Barraginhas + Paliçadas em Série}\\
+    \scriptsize Desvio do fluxo, dissipação em degraus e retenção de sedimentos
+  };
+  \node[bsBox=bsEarth, text width=5.65cm, minimum height=1.35cm] (s3) at (6.05, -0.05) {
+    \textbf{\color{bsEarth}Dreno Espinha-de-Peixe + Fascinas + Parede Krainer}\\
+    \scriptsize Rebaixamento de poropressão e contenção mista com enraizamento
+  };
+  \node[bsBox=bsWater, text width=5.65cm, minimum height=1.35cm] (s4) at (6.05, -1.90) {
+    \textbf{\color{bsWater}Enrocamento Vegetado + Gabião Vivo + Mata Ciliar}\\
+    \scriptsize Proteção basal rígida-flexível e restauração da faixa ciliar
+  };
+
+  % Conectores tronco -> regimes
+  \coordinate (split) at (-3.15, 0.85);
+  \draw[bsNavy, line width=1.35pt] (root.east) -- (split);
+  \draw[bsArrow, bsGoldDark] (split) |- (d1.west);
+  \draw[bsArrow, bsAlert]    (split) |- (d2.west);
+  \draw[bsArrow, bsEarth]    (split) |- (d3.west);
+  \draw[bsArrow, bsWater]    (split) |- (d4.west);
+
+  % Conectores regimes -> soluções
+  \draw[bsArrow, bsGoldDark] (d1.east) -- (s1.west);
+  \draw[bsArrow, bsAlert]    (d2.east) -- (s2.west);
+  \draw[bsArrow, bsEarth]    (d3.east) -- (s3.west);
+  \draw[bsArrow, bsWater]    (d4.east) -- (s4.west);
+
+\end{tikzpicture}
+\end{document}

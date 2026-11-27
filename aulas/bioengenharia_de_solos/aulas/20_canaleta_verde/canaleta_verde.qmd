@@ -12,11 +12,12 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text}
+## [Abertura]{.pitch-tag} Visão Geral da Aula {#visao-geral .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Roteiro da aula]{.pitch-card-index}
+[Tópicos estruturantes]{.pitch-heading}
 
 - [1]{.circle} O que é uma canaleta verde?
 - [2]{.circle} Princípios hidráulicos e sedimentológicos
@@ -28,59 +29,62 @@ execute:
 - [8]{.circle} Síntese e atividade
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Objetivo da aula]{.pitch-card-index}
+[Infraestrutura verde de drenagem]{.pitch-heading}
 
-Compreender o conceito de **canaleta verde** (*vegetated swale / bioswale*) como sistema de drenagem vegetada para **condução controlada de escoamento superficial**, dominar o **dimensionamento hidráulico** pela equação de Manning, os critérios de **implantação** e os protocolos de **monitoramento** para garantir a eficiência na dissipação de energia e infiltração.
+Compreender o conceito de **canaleta verde** (*vegetated swale / bioswale*) como sistema de drenagem vegetada para **condução controlada de escoamento superficial**, dominar o **dimensionamento hidráulico** pela equação de Manning, os critérios de **implantação** e os protocolos de **monitoramento**.
+:::
+
+::: {.pitch-pill-row}
+[Manning · Froude · Stokes]{.pitch-pill}
+[SuDS · Vetiver · Biomanta]{.pitch-pill .pitch-pill--gold}
+[Infiltração & Filtração]{.pitch-pill}
 :::
 :::
 :::
 
-# [1. O QUE É UMA CANALETA VERDE?]{.section-header}
+# 1 · O que é uma Canaleta Verde? {.section-header rotulo="Conceito"}
 
-## Definição e contexto {.smaller-text}
+## [Definição]{.pitch-tag .pitch-tag--forest} Conceito e Funções da Canaleta Verde {#definicao-contexto .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Infraestrutura verde]{.pitch-card-index}
+[Bioswale / Grassed Waterway]{.pitch-heading}
 
-### Conceito
+Canal de drenagem raso e largo com leito e taludes revestidos com **vegetação viva** e, na fase inicial, **biomanta antierosiva**. Atua simultaneamente na:
 
-A **canaleta verde** (*vegetated swale*, *bioswale* ou *grassed waterway*) é um **canal de drenagem raso e largo**, escavado no terreno ou conformado sobre a superfície, cujo leito e taludes são **integralmente revestidos com vegetação viva** (gramíneas, leguminosas, ou combinações) e, frequentemente, protegidos por **biomanta antierosiva** na fase de estabelecimento.
+- **Condução** pluvial com velocidade controlada e **dissipação de energia**
+- **Infiltração** no perfil do solo e **filtração** de sedimentos e poluentes
+- **Estabilização do solo** pelo sistema radicular
+:::
 
-Trata-se de uma infraestrutura verde (*green infrastructure*) que desempenha simultaneamente as funções de:
-
-- **Condução** do escoamento pluvial com velocidade controlada
-- **Dissipação de energia** pela rugosidade hidráulica da vegetação
-- **Infiltração** da água no perfil do solo ao longo do percurso
-- **Filtração** de sedimentos e poluentes difusos por deposição gravitacional e adsorção radicular
-- **Estabilização do solo** pelo sistema radicular das plantas
-
-::: {.highlight-box}
-A canaleta verde é uma técnica de **bioengenharia de solos** que substitui os canais revestidos de concreto convencionais, utilizando a vegetação como elemento estrutural de proteção contra erosão e como promotora da recarga hídrica subterrânea.
+::: {.pitch-band .pitch-band--teal}
+Substitui canais rígidos de concreto convencionais, usando a vegetação como elemento estrutural antierosivo e promotor da recarga hídrica subterrânea.
 :::
 :::
 
-::: {.column width="45%"}
-![Canaleta verde revestida com vegetação densa e biomanta antierosiva](Canaleta-Verde.jpg){fig-align="center" width="100%"}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
+
+![Canaleta verde revestida com vegetação densa e biomanta antierosiva](Canaleta-Verde.jpg)
+
+[Canaleta Verde Implantada em Talude]{.pitch-caption}
+[Revestimento contínuo combinando biomanta antierosiva e cobertura herbácea densa]{.pitch-caption-sub}
 :::
 :::
 
----
+## [Comparação]{.pitch-tag .pitch-tag--gold} Canaleta Verde vs. Canal Convencional {#canaleta-vs-convencional .smaller-text .lesson-slide}
 
-## Canaleta verde vs. canal convencional {.smaller-text}
-
-::: {.columns}
-::: {.column width="58%"}
-
-### Comparação funcional {style="font-size: 0.85em;"}
-
-::: {style="font-size: 0.65em;"}
+::: {.pitch-grid-60}
+::: {.pitch-table-box}
 | Aspecto | Canal Convencional | Canaleta Verde |
 |---------|-------------------|----------------|
 | Revestimento | Concreto, gabião, pedra | Vegetação viva + biomanta |
 | Infiltração | Nula (impermeável) | Alta (permeável) |
-| Rugosidade ($n$) | 0,012-0,015 | 0,030-0,150 |
+| Rugosidade ($n$) | 0,012–0,015 | 0,030–0,150 |
 | Velocidade de fluxo | Alta (rápida) | Baixa (controlada) |
 | Custo de implantação | Alto | Baixo a moderado |
 | Manutenção | Baixa | Periódica (poda, replantio) |
@@ -88,957 +92,712 @@ A canaleta verde é uma técnica de **bioengenharia de solos** que substitui os 
 | Vida útil | > 30 anos | Permanente (com manejo) |
 | Qualidade da água | Sem melhoria | Filtra sedimentos e poluentes |
 | Recarga de aquífero | Não contribui | Contribui significativamente |
-
-: {.striped .hover}
 :::
 
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Indicações principais]{.pitch-card-index}
+[Onde empregar]{.pitch-heading}
+
+- Saída de terraços em gradiente (canal escoadouro)
+- Drenagem de taludes rodoviários/ferroviários e áreas mineradas
+- Descarga pluvial, áreas agrícolas e sistemas **SuDS** urbanos
 :::
 
-::: {.column width="42%"}
-
-### Quando utilizar a canaleta verde? {style="font-size: 0.85em;"}
-
-::: {.info-box style="font-size: 0.6em;"}
-**Indicações principais**
-
-- Saída de terraços em gradiente (canal escoadouro vegetado)
-- Drenagem de taludes rodoviários e ferroviários
-- Descarga de sistemas de captação de águas pluviais
-- Controle de escoamento em áreas mineradas
-- Drenagem de áreas agrícolas e pastagens
-- Sistemas de drenagem sustentável (SuDS) urbanos
-:::
-
-::: {.highlight-box style="font-size: 0.6em;"}
-A rugosidade da vegetação ($n = 0{,}030$ a $0{,}150$) é até **10 vezes maior** que a do concreto ($n = 0{,}012$), o que reduz a velocidade do fluxo e a tensão cisalhante no leito, protegendo o solo contra incisão.
+::: {.pitch-band}
+A rugosidade vegetal ($n = 0{,}030\text{–}0{,}150$) é até **10× maior** que a do concreto ($n = 0{,}012$), reduzindo velocidade e tensão cisalhante.
 :::
 :::
 :::
 
----
+## [Tipologia]{.pitch-tag} Geometrias e Funções das Canaletas Vegetadas {#tipologia-canaletas .smaller-text .lesson-slide}
 
-## Tipologia das canaletas vegetadas {.smaller-text}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-cards}
+::: {.pitch-card}
+[1 · Trapezoidal]{.pitch-card-index}
+[Mais comum]{.pitch-heading}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Classificação por geometria
-
-**Seção trapezoidal** é a mais utilizada em bioengenharia, por oferecer estabilidade geotécnica dos taludes e facilidade de mecanização. Já a **seção parabólica** aproxima a forma dos canais naturais e é recomendada para ambientes com restrição paisagística. A **seção triangular** (valeta em V) aplica-se apenas a taludes rodoviários com pequenas vazões.
-
-```{mermaid}
-%%| fig-width: 5
-flowchart TD
-    A["Canaleta Verde"] --> B["Trapezoidal"]
-    A --> C["Parabólica"]
-    A --> D["Triangular (V)"]
-    B --> E["Maior capacidade<br>Taludes estáveis<br>Mais comum"]
-    C --> F["Forma natural<br>Paisagismo<br>Auto-conformação"]
-    D --> G["Pequenas vazões<br>Rodovias<br>Menor seção"]
-    style A fill:#2E7D32,color:#fff
-    style B fill:#2135A6,color:#fff
-    style C fill:#2135A6,color:#fff
-    style D fill:#2135A6,color:#fff
-```
-
+Maior capacidade hidráulica, taludes geotécnicos estáveis e fácil mecanização.
 :::
 
-::: {.column width="50%"}
+::: {.pitch-card .pitch-card--forest}
+[2 · Parabólica]{.pitch-card-index}
+[Forma natural]{.pitch-heading}
 
-### Classificação por função principal
+Aproxima canais naturais, favorece paisagismo e autoconformação.
+:::
 
-| Tipo | Função dominante | Aplicação |
-|------|-----------------|-----------|
+::: {.pitch-card .pitch-card--gold}
+[3 · Triangular (V)]{.pitch-card-index}
+[Pequenas vazões]{.pitch-heading}
+
+Valeta rodoviária de menor seção para áreas com escoamento reduzido.
+:::
+:::
+
+::: {.pitch-table-box}
+| Tipo funcional | Função dominante | Aplicação |
+|----------------|------------------|-----------|
 | **Canal escoadouro** | Condução de vazão de terraços | Áreas agrícolas |
-| **Biovaleta (bioswale)** | Infiltração + filtração | Áreas urbanas / SuDS |
+| **Biovaleta (*bioswale*)** | Infiltração + filtração | Áreas urbanas / SuDS |
 | **Faixa de filtração** | Remoção de poluentes | Margens de rodovias |
 | **Canaleta de meia-cana** | Proteção de base de talude | Cortes rodoviários |
-
-: {.striped .hover}
-
-![Canaleta de meia-cana na base de talude com biomanta](Canaleta-Meia-Cana-int-qkqqg2klw77617ff7dxcoz15smuq1b0451rnm6zp8o.png){fig-align="center" width="90%"}
 :::
 :::
 
-# [2. PRINCÍPIOS HIDRÁULICOS E SEDIMENTOLÓGICOS]{.section-header}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
 
-## Hidráulica do escoamento vegetado {.smaller-text}
+![Canaleta de meia-cana na base de talude com biomanta](Canaleta-Meia-Cana-int-qkqqg2klw77617ff7dxcoz15smuq1b0451rnm6zp8o.png)
 
-::: {.columns}
-::: {.column width="50%"}
+[Canaleta de Meia-Cana em Base de Talude]{.pitch-caption}
+[Proteção longitudinal associada a biomanta para coleta de enxurrada na base do corte]{.pitch-caption-sub}
+:::
+:::
 
-### Regime de escoamento
+# 2 · Princípios Hidráulicos e Sedimentológicos {.section-header rotulo="Hidráulica"}
 
-O escoamento em canaletas verdes opera predominantemente em **regime subcrítico** (Número de Froude $Fr < 1$), o que é desejável para evitar incisão erosiva. A vegetação densa aumenta a **resistência ao fluxo**, mantendo velocidades abaixo do limiar de erosão do solo.
+## [Hidráulica]{.pitch-tag .pitch-tag--teal} Regime Subcrítico, Tensão Cisalhante e $V_{max}$ {#hidraulica-escoamento .smaller-text .lesson-slide}
 
-**Número de Froude**
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Número de Froude** (desejável $Fr < 1$ — regime subcrítico):
 
 $$Fr = \frac{V}{\sqrt{g \cdot y_m}}$$
 
-Onde $V$ é a velocidade média do fluxo (m/s), $g$ é a aceleração gravitacional (9,81 m/s²) e $y_m$ é a profundidade média do escoamento (m). Quando $Fr < 1$, o regime é subcrítico e a superfície livre é controlável.
+Onde $V$ = velocidade média ($\text{m/s}$), $g = 9{,}81 \text{ m/s}^2$ e $y_m$ = profundidade média ($\text{m}$).
 
-### Tensão cisalhante no leito
+**Tensão cisalhante no leito:**
 
 $$\tau_0 = \gamma \cdot R_h \cdot S$$
 
-Onde $\gamma$ é o peso específico da água (9.810 N/m³), $R_h$ é o raio hidráulico (m) e $S$ é a declividade longitudinal (m/m). A vegetação reduz $\tau_0$ ao diminuir $R_h$ (preenchimento parcial da seção pela massa vegetal) e ao dissipar energia pela rugosidade.
-
+Onde $\gamma = 9.810 \text{ N/m}^3$, $R_h$ = raio hidráulico ($\text{m}$) e $S$ = declividade ($\text{m/m}$).
 :::
 
-::: {.column width="50%"}
+::: {.pitch-band .pitch-band--alert}
+$V_{max}$ é o **parâmetro mais restritivo**: se $V > V_{max}$, ampliar a seção, reduzir $S$ ou instalar dissipadores (cordões vegetativos, enrocamento).
+:::
+:::
 
-### Velocidades máximas admissíveis
-
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Tipo de revestimento | $V_{max}$ (m/s) | $\tau_{max}$ (N/m²) |
-|---------------------|:---------------:|:-------------------:|
+|----------------------|:---------------:|:-------------------:|
 | Grama baixa (< 5 cm) | 1,2 | 28 |
-| Grama média (5-15 cm) | 1,5 | 47 |
+| Grama média (5–15 cm) | 1,5 | 47 |
 | Grama densa (> 15 cm) | 1,8 | 96 |
-| Capim-vetiver | 3,0-5,0 | 300-600 |
-| Solo exposto (sem proteção) | 0,3-0,6 | 3-5 |
+| **Capim-vetiver** | **3,0–5,0** | **300–600** |
+| Solo exposto | 0,3–0,6 | 3–5 |
 | Biomanta + grama jovem | 1,0 | 20 |
-
-: {.striped .hover}
-
-::: {.info-box}
-O **capim-vetiver** (*Chrysopogon zizanioides*) é excepcional para canaletas verdes em regiões tropicais, suportando velocidades de até 5 m/s graças ao seu sistema radicular fasciculado que penetra até 3 m de profundidade (Truong, Loch & Cook, 2008).
 :::
 
-::: {.highlight-box}
-A velocidade máxima admissível no canal vegetado ($V_{max}$) é o **parâmetro de projeto mais restritivo**. Se $V > V_{max}$, deve-se aumentar a seção transversal, reduzir a declividade ou instalar dissipadores de energia (cordões vegetativos, enrocamento pontual).
+::: {.pitch-card .pitch-card--forest}
+[Espécie de referência tropical]{.pitch-card-index}
+[Capim-vetiver (*Chrysopogon zizanioides*)]{.pitch-heading}
+
+Suporta até **5 m/s** graças ao sistema radicular fasciculado que alcança **3 m** de profundidade (Truong, Loch & Cook, 2008).
 :::
 :::
 :::
 
----
+## [Biofiltração]{.pitch-tag .pitch-tag--teal} Mecanismo de Filtração e Infiltração (Seção Típica) {#canaleta-filtracao-tikz .smaller-text .lesson-slide}
 
-## Mecanismo de filtração e infiltração {.smaller-text}
+::: {.pitch-media-card .pitch-media-card--wide}
 
-::: {.columns}
-::: {.column width="50%"}
+![Seção transversal típica de canaleta vegetada e contraste hidrológico frente à canaleta de concreto.](img/bs_20_canaleta_verde_filtracao.png)
 
-### Processos de remoção de sedimentos
+[Canaletas Vegetadas (Bioswales): Seção Transversal, Biofiltração e Contraste Hidrológico]{.pitch-caption}
+[Taludes suaves (3H:1V–4H:1V), substrato poroso, dreno perfurado e amortecimento da vazão de pico vs. concreto cinza]{.pitch-caption-sub}
+:::
 
-A canaleta verde opera como um **biofiltro linear**, onde múltiplos processos atuam simultaneamente para remover sedimentos e poluentes do escoamento:
+::: {.pitch-band .pitch-band--navy}
+A eficiência de remoção cresce com o **comprimento do canal** (tempo de residência), a **densidade vegetal** e a **permeabilidade do solo de fundação**.
+:::
 
-**1. Sedimentação gravitacional** ocorre pela redução de velocidade dentro do canal vegetado, permitindo que partículas com diâmetro $d > 62{,}5$ $\mu$m (areia e silte grosso) decantem por ação da gravidade segundo a lei de Stokes
+## [Sedimentologia]{.pitch-tag} Lei de Stokes e Eficiência de Remoção {#mecanismo-filtracao .smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**1. Sedimentação gravitacional (Lei de Stokes, $d > 62{,}5 \ \mu\text{m}$):**
 
 $$v_s = \frac{(\rho_s - \rho_w) \cdot g \cdot d^2}{18 \cdot \mu}$$
 
-onde $v_s$ é a velocidade de sedimentação (m/s), $\rho_s$ e $\rho_w$ são as densidades do sedimento e da água (kg/m³), $d$ é o diâmetro da partícula (m) e $\mu$ é a viscosidade dinâmica da água (Pa·s).
-
-**2. Filtração mecânica** pela massa vegetal, em que colmos, folhas e raízes superficiais interceptam partículas em suspensão, funcionando como um filtro poroso tridimensional.
-
-**3. Infiltração no perfil do solo** ao longo do comprimento do canal, promovendo recarga do lençol freático e amortecimento do hidrograma de cheia a jusante.
-
+Onde $v_s$ = velocidade de sedimentação ($\text{m/s}$), $\rho_s,\rho_w$ = densidades ($\text{kg/m}^3$), $d$ = diâmetro ($\text{m}$) e $\mu$ = viscosidade dinâmica ($\text{Pa}\cdot\text{s}$).
 :::
 
-::: {.column width="50%"}
+::: {.pitch-card .pitch-card--forest}
+[Biofiltro linear]{.pitch-card-index}
+[Filtração mecânica e infiltração]{.pitch-heading}
 
-### Eficiência típica de remoção
+- **2. Filtração mecânica:** colmos, folhas e raízes interceptam sólidos em suspensão.
+- **3. Infiltração no solo:** promove recarga do lençol freático e amortecimento do hidrograma a jusante.
+:::
+:::
 
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Parâmetro | Eficiência (%) | Mecanismo dominante |
-|-----------|:--------------:|-------------------|
-| Sedimentos totais (SST) | 60-90 | Sedimentação + filtração |
-| Fósforo particulado | 40-70 | Sedimentação + adsorção |
-| Nitrogênio total | 20-50 | Infiltração + absorção |
-| Óleos e graxas | 50-80 | Filtração + biodegradação |
-| Metais pesados | 30-60 | Adsorção + complexação |
+|-----------|:--------------:|---------------------|
+| Sedimentos totais (SST) | 60–90 | Sedimentação + filtração |
+| Fósforo particulado | 40–70 | Sedimentação + adsorção |
+| Nitrogênio total | 20–50 | Infiltração + absorção |
+| Óleos e graxas | 50–80 | Filtração + biodegradação |
+| Metais pesados | 30–60 | Adsorção + complexação |
+:::
 
-: {.striped .hover}
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[Entrada]{.pitch-card-index}
+[Escoamento]{.pitch-heading}
 
-### Diagrama conceitual
+Fluxo com carga difusa.
+:::
 
-```{mermaid}
-%%| fig-width: 5
-flowchart LR
-    A["Escoamento<br>com sedimentos"] --> B["Entrada<br>da canaleta"]
-    B --> C["Zona de<br>sedimentação"]
-    C --> D["Zona de<br>filtração vegetal"]
-    D --> E["Zona de<br>infiltração"]
-    E --> F["Saída<br>com água limpa"]
-    C --> G["Depósito de<br>sedimentos grosseiros"]
-    D --> H["Retenção de<br>finos + nutrientes"]
-    E --> I["Recarga do<br>lençol freático"]
-    style B fill:#2135A6,color:#fff
-    style C fill:#586BA6,color:#2135A6
-    style D fill:#2E7D32,color:#fff
-    style E fill:#8B4513,color:#fff
-    style F fill:#4FC3F7,color:#000
-```
+::: {.pitch-card .pitch-card--gold}
+[Sedimentação]{.pitch-card-index}
+[Grosseiros]{.pitch-heading}
 
-::: {.highlight-box}
-A eficiência de remoção aumenta com o **comprimento do canal** (maior tempo de residência), a **densidade da vegetação** (maior área de interceptação) e a **permeabilidade do solo de fundação** (maior taxa de infiltração).
+Decantação de areia/silte.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[Filtração]{.pitch-card-index}
+[Finos + N/P]{.pitch-heading}
+
+Retenção na massa vegetal.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Infiltração]{.pitch-card-index}
+[Água limpa]{.pitch-heading}
+
+Recarga e saída controlada.
 :::
 :::
 :::
+:::
 
-# [3. SEÇÕES TRANSVERSAIS E MATERIAIS]{.section-header}
+# 3 · Seções Transversais e Materiais {.section-header rotulo="Seções e Materiais"}
 
-## Geometria da seção trapezoidal {.smaller-text}
+## [Geometria]{.pitch-tag} Parâmetros da Seção Trapezoidal {#geometria-trapezoidal .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Área ($A$), Perímetro Molhado ($P$), Raio Hidráulico ($R_h$) e Largura ($T$):**
 
-### Parâmetros geométricos
+$$A = \left(\frac{B + b}{2}\right) \cdot h = (b + Z \cdot h) \cdot h \qquad P = b + 2h\sqrt{1 + Z^2}$$
 
-A seção trapezoidal é definida pelos seguintes parâmetros:
+$$R_h = \frac{A}{P} \qquad T = b + 2 \cdot Z \cdot h \qquad h_{total} = h_{projeto} + h_{borda\,livre}$$
+:::
 
-**Área da seção transversal (A)**
-
-$$A = \left(\frac{B + b}{2}\right) \cdot h = (b + Z \cdot h) \cdot h$$
-
-**Perímetro molhado (P)**
-
-$$P = b + 2h\sqrt{1 + Z^2}$$
-
-**Raio hidráulico ($R_h$)**
-
-$$R_h = \frac{A}{P}$$
-
-**Largura superficial (T)**
-
-$$T = b + 2 \cdot Z \cdot h$$
-
-Onde $b$ é a base menor (m), $B$ é a base maior (m), $h$ é a profundidade do escoamento (m), $Z$ é a inclinação do talude ($Z = Y/h$, onde $Y$ é o afastamento horizontal) e $R_h$ é o raio hidráulico (m).
-
-::: {.highlight-box}
-Para canaletas verdes, recomenda-se $Z \geq 3$ (talude 3H:1V ou mais suave), permitindo **mecanização da poda**, **acesso para manutenção** e **estabilidade geotécnica** sem revestimento estrutural.
+::: {.pitch-band .pitch-band--teal}
+Adotar $Z \geq 3$ (**3H:1V ou mais suave**) para viabilizar poda mecanizada, acesso de manutenção e estabilidade geotécnica; acrescentar **10–15 cm** de borda livre (*freeboard*).
 :::
 :::
 
-::: {.column width="45%"}
-
-### Dimensões típicas de projeto
-
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Parâmetro | Faixa recomendada |
 |-----------|:-----------------:|
-| Base menor ($b$) | 0,30 - 2,00 m |
-| Profundidade máxima ($h$) | 0,15 - 0,60 m |
+| Base menor ($b$) | 0,30 – 2,00 m |
+| Profundidade máxima ($h$) | 0,15 – 0,60 m |
 | Talude ($Z$) | 3:1 a 6:1 |
-| Borda livre | 0,10 - 0,15 m |
-| Declividade longitudinal ($S$) | 0,5% - 5,0% |
-| Comprimento máximo | 60 - 200 m |
-
-: {.striped .hover}
-
-::: {.info-box}
-**Borda livre (*freeboard*):** adicionar no mínimo 10-15 cm acima da lâmina d'água de projeto para acomodar variações no escoamento e evitar transbordamento.
-
-$$h_{total} = h_{projeto} + h_{borda\,livre}$$
+| Borda livre (*freeboard*) | 0,10 – 0,15 m |
+| Declividade longitudinal ($S$) | 0,5% – 5,0% |
+| Comprimento máximo | 60 – 200 m |
 :::
 
-### Esquema da seção
+::: {.pitch-card}
+[Esquema da seção]{.pitch-card-index}
+[Relações geométricas ($Z = Y/h$)]{.pitch-heading}
 
-```
-      ┌─── T (largura superficial) ───┐
-        │                            │
-     ╱──┼────────── B ───────────────┼─╲   ← borda livre
-    ╱   │                            │  ╲
-   ╱    │   ←── b (base menor) ──→   │   ╲  h
-  ╱     │                            │    ╲
- ╱──────┼────────────────────────────┼────-╲
-         Z:1              Z:1
-```
-
+Base menor $b$ no fundo, taludes laterais inclinados em $Z:1$ até a lâmina $h$, borda livre de $0{,}10\text{–}0{,}15$ m acima de $B$ e largura superficial $T$ no coroamento.
+:::
 :::
 :::
 
----
+## [Revestimento]{.pitch-tag .pitch-tag--forest} Espécies Vegetais e Biomanta Antierosiva {#materiais-vegetacao .smaller-text .lesson-slide}
 
-## Materiais e vegetação de revestimento {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Espécies recomendadas para revestimento
-
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Espécie | Nome popular | Características |
-|---------|-------------|-----------------|
+|---------|--------------|-----------------|
 | *Chrysopogon zizanioides* | Capim-vetiver | Raiz profunda (3 m), $V_{max}$ até 5 m/s |
-| *Paspalum notatum* | Grama-batatais | Rizomatosa, rustica, cobertura densa |
+| *Paspalum notatum* | Grama-batatais | Rizomatosa, rústica, cobertura densa |
 | *Cynodon dactylon* | Grama-bermuda | Crescimento rápido, tolera tráfego |
 | *Axonopus compressus* | Grama São Carlos | Adaptada a solos úmidos e sombreados |
 | *Brachiaria decumbens* | Braquiária | Alta agressividade, rápido recobrimento |
 | *Arachis pintoi* | Amendoim-forrageiro | Leguminosa, fixa N₂, cobertura rasteira |
+:::
 
-: {.striped .hover}
-
-::: {.highlight-box}
-A escolha da espécie depende do **regime hidráulico de projeto** (velocidade e tensão cisalhante esperadas), da **disponibilidade regional** de sementes ou mudas e da **manutenção disponível** (frequência de poda).
+::: {.pitch-table-box}
+| Biomanta (0–6 meses) | Material | Durabilidade |
+|----------------------|----------|:------------:|
+| BM1 (leve) / BM2 (média) | Palha+juta / Fibra coco+PP | 6–12 / 12–24 meses |
+| BM3 (pesada) / Permanente | Coco dupla / PP+PET sintética | 24–36 meses / > 5 anos |
 :::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
 
-### Biomanta antierosiva na fase de estabelecimento
+![Canaleta verde com biomanta e hidrossemeadura](04-Canaleta-Verde-Hidrossemeadura-1-01.png)
 
-Na fase de estabelecimento (0-6 meses), a vegetação jovem **não confere proteção suficiente** ao solo. A instalação de **biomanta antierosiva** é essencial para proteger o canal durante esta fase.
-
-| Tipo de biomanta | Material | Durabilidade |
-|-----------------|----------|:------------:|
-| BM1 (leve) | Palha + malha de juta | 6-12 meses |
-| BM2 (média) | Fibra de coco + PP | 12-24 meses |
-| BM3 (pesada) | Fibra de coco dupla | 24-36 meses |
-| Permanente | PP/PET + fibra sintética | > 5 anos |
-
-: {.striped .hover}
-
-::: {.info-box}
-**Protocolo de instalação da biomanta:** desenrolar no sentido do fluxo (topo → base), fixar com grampos em U (espaçamento 0,5-1,0 m), sobrepor 15 cm nas emendas laterais e 20 cm nas emendas longitudinais. Grampos devem ser cravados no mínimo a 15 cm de profundidade.
+[Biomanta + Hidrossemeadura em Canaleta]{.pitch-caption}
+[Desenrolar topo → base; sobrepor 15 cm (lateral) e 20 cm (longitudinal); grampos U a cada 0,5–1,0 m (prof. ≥ 15 cm)]{.pitch-caption-sub}
 :::
 
-![Canaleta verde com biomanta e hidrossemeadura](04-Canaleta-Verde-Hidrossemeadura-1-01.png){fig-align="center" width="90%"}
+::: {.pitch-band}
+Escolha da espécie depende do regime hidráulico ($V_{max}$, $\tau_{max}$), disponibilidade regional e frequência de poda.
+:::
 :::
 :::
 
-# [4. DIMENSIONAMENTO HIDRÁULICO (MANNING)]{.section-header}
+# 4 · Dimensionamento Hidráulico (Manning) {.section-header rotulo="Manning"}
 
-## Equação de Manning {.smaller-text}
+## [Equação de Manning]{.pitch-tag .pitch-tag--gold} Formulação e Coeficientes de Rugosidade {#equacao-manning .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Vazão ($Q$) e velocidade média ($V$) em regime uniforme:**
 
-### Formulação
+$$Q = \frac{1}{n} \cdot A \cdot R_h^{2/3} \cdot S^{1/2} \qquad V = \frac{R_h^{2/3} \cdot S^{1/2}}{n}$$
 
-A vazão em regime permanente e uniforme é estimada pela **equação de Manning**:
+Onde $Q$ ($\text{m}^3/\text{s}$), $n$ = rugosidade de Manning, $A$ ($\text{m}^2$), $R_h$ ($\text{m}$) e $S$ ($\text{m/m}$).
+:::
 
-$$Q = \frac{1}{n} \cdot A \cdot R_h^{2/3} \cdot S^{1/2}$$
+::: {.pitch-card}
+[Comportamento de $n$]{.pitch-card-index}
+[Efeito da submersão (*bending effect*)]{.pitch-heading}
 
-Onde:
-
-- $Q$ = vazão de projeto (m³/s)
-- $n$ = coeficiente de rugosidade de Manning (adimensional)
-- $A$ = área da seção transversal (m²)
-- $R_h$ = raio hidráulico (m)
-- $S$ = declividade longitudinal do canal (m/m)
-
-A **velocidade média** correspondente é:
-
-$$V = \frac{R_h^{2/3} \cdot S^{1/2}}{n}$$
-
-::: {.highlight-box}
-O parâmetro $n$ é a variável mais importante no projeto de canaletas verdes. Para vegetação densa e alta, utilizar $n = 0{,}040$ - $0{,}150$. A rugosidade **diminui** com o aumento da profundidade do fluxo (vegetação submersa se dobra, oferecendo menor resistência).
+Quando a lâmina d'água ultrapassa a altura da vegetação, os colmos dobram reduzindo $n$. Para projeto simplificado, adota-se $n$ da **vegetação estabelecida** (conservador); métodos avançados incluem Kouwen & Unny (1973) e Temple (1987).
 :::
 :::
 
-::: {.column width="50%"}
-
-### Coeficientes de Manning para canais vegetados
-
-| Condição de revestimento | $n$ (mínimo) | $n$ (normal) | $n$ (máximo) |
-|--------------------------|:------------:|:------------:|:------------:|
+::: {.pitch-table-box}
+| Condição de revestimento | $n$ (mín.) | $n$ (normal) | $n$ (máx.) |
+|--------------------------|:----------:|:------------:|:----------:|
 | Grama curta, ceifada (< 5 cm) | 0,025 | 0,030 | 0,035 |
-| Grama média (5-15 cm) | 0,030 | 0,040 | 0,050 |
+| Grama média (5–15 cm) | 0,030 | 0,040 | 0,050 |
 | Grama densa alta (> 15 cm) | 0,040 | 0,060 | 0,100 |
 | Capim-vetiver (estande jovem) | 0,035 | 0,050 | 0,070 |
 | Capim-vetiver (estande maduro) | 0,060 | 0,100 | 0,150 |
 | Biomanta + grama em formação | 0,030 | 0,045 | 0,060 |
 | Solo exposto (sem proteção) | 0,016 | 0,020 | 0,025 |
+:::
+:::
 
-: {.striped .hover}
+## [Exemplo Numérico]{.pitch-tag .pitch-tag--gold} Dimensionamento: Passos 1 a 3 {#exemplo-dimensionamento-1 .smaller-text .lesson-slide}
 
-::: {.info-box}
-**Variação de $n$ com a submersão:** quando a lâmina d'água ultrapassa a altura da vegetação, os colmos se dobram (*bending effect*), reduzindo $n$. Para projeto simplificado, adota-se $n$ para a **condição de vegetação estabelecida** (conservador). Para projetos avançados, utilizar abordagens como a de Kouwen & Unny (1973) ou Temple (1987), que correlacionam $n$ com a rigidez vegetal e a profundidade do fluxo.
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Dados do problema]{.pitch-card-index}
+[Descarga de 6 terraços em gradiente (4,5 ha)]{.pitch-heading}
+
+- Enxurrada: $C = 0{,}55$ · Chuva ($TR = 10$ anos): $I = 180 \text{ mm/h}$
+- Área: $A_{bacia} = 4{,}5 \text{ ha}$ · Declividade: $S = 3\% = 0{,}03 \text{ m/m}$
+- Grama densa: $n = 0{,}060$ · $V_{max} = 1{,}5 \text{ m/s}$ · Talude: $Z = 3$
+:::
+
+::: {.pitch-formula}
+**1° Passo — Vazão de projeto (Método Racional):**
+
+$$Q = \frac{C \cdot I \cdot A}{360} = \frac{0{,}55 \times 180 \times 4{,}5}{360} = 1{,}24 \text{ m}^3/\text{s}$$
+:::
+:::
+
+::: {.pitch-formula}
+**2° Passo — Área mínima da seção:**
+
+$$A_{min} = \frac{Q}{V_{max}} = \frac{1{,}24}{1{,}5} = 0{,}83 \text{ m}^2$$
+
+**3° Passo — Dimensões iniciais (adotando $h = 0{,}40 \text{ m}$):**
+
+$$0{,}83 = (b + 3 \times 0{,}40) \times 0{,}40 \implies b = \frac{0{,}83}{0{,}40} - 1{,}20 = 0{,}88 \text{ m} \rightarrow b = 0{,}90 \text{ m}$$
+
+$$A = (0{,}90 + 1{,}20) \times 0{,}40 = 0{,}84 \text{ m}^2 \qquad B = 0{,}90 + 2{,}40 = 3{,}30 \text{ m}$$
+:::
+:::
+
+## [Verificação]{.pitch-tag .pitch-tag--gold} Raio Hidráulico, Ajuste e Regime de Froude {#exemplo-dimensionamento-2 .smaller-text .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-formula}
+**4° e 5° Passos ($h = 0{,}40 \text{ m}$):** $P = 0{,}90 + 2(0{,}40)\sqrt{10} = 3{,}43 \text{ m}$ · $R_h = \frac{0{,}84}{3{,}43} = 0{,}245 \text{ m}$
+
+$$V = \frac{(0{,}245)^{2/3} \cdot (0{,}03)^{1/2}}{0{,}060} = \frac{0{,}391 \times 0{,}1732}{0{,}060} = 1{,}13 \text{ m/s} < 1{,}5 \text{ m/s ✓}$$
+
+**6° Passo — Vazão:** $Q_{calc} = 1{,}13 \times 0{,}84 = 0{,}95 \text{ m}^3/\text{s} < 1{,}24 \text{ m}^3/\text{s}$ ❌ (aumentar para $h = 0{,}50 \text{ m}$!)
+
+**Ajuste ($h = 0{,}50 \text{ m}$):** $A = 1{,}20 \text{ m}^2$ · $P = 4{,}06 \text{ m}$ · $R_h = 0{,}296 \text{ m}$
+
+$$V = \frac{(0{,}296)^{2/3} \times 0{,}1732}{0{,}060} = 1{,}29 \text{ m/s} \qquad Q_{calc} = 1{,}29 \times 1{,}20 = 1{,}55 \text{ m}^3/\text{s} > 1{,}24 \text{ m}^3/\text{s ✓}$$
+
+**Froude:** $D_m = \frac{1{,}20}{3{,}90} = 0{,}308 \text{ m} \implies Fr = \frac{1{,}29}{\sqrt{9{,}81 \times 0{,}308}} = 0{,}74 < 1{,}0$ (**Subcrítico** ✓)
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Parâmetro final adotado | Valor |
+|-------------------------|:-----:|
+| Base menor ($b$) / Base maior ($B$) | 0,90 m / 3,90 m |
+| Profundidade útil ($h$) + borda livre (0,15 m) | 0,50 m ($h_t = 0{,}65$ m) |
+| Talude ($Z$) / Área ($A$) / $R_h$ | 3:1 / 1,20 m² / 0,296 m |
+| Velocidade ($V$) / Vazão ($Q_{calc}$) | 1,29 m/s / 1,55 m³/s |
+| Número de Froude ($Fr$) | 0,74 (Subcrítico) |
+:::
+
+::: {.pitch-band .pitch-band--teal}
+Folga hidráulica $Q_{calc}/Q_{projeto} = 1{,}25$ (**+25% de segurança** para variações de $n$ e declividade).
 :::
 :::
 :::
 
----
+# 5 · Projeto e Implantação em Campo {.section-header rotulo="Implantação"}
 
-## Exemplo de dimensionamento {.smaller-text}
+## [Execução]{.pitch-tag .pitch-tag--forest} Sequência Executiva em Campo (Etapas 1 a 7) {#etapas-implantacao .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
-
-### Dados do problema
-
-::: {.box}
-**Cenário:** Projetar uma canaleta verde trapezoidal para receber a descarga de 6 terraços em gradiente numa área agrícola de 4,5 ha.
-
-**Dados disponíveis:**
-
-- Coeficiente de enxurrada: $C = 0{,}55$
-- Intensidade de chuva (TR = 10 anos): $I = 180$ mm/h
-- Área de contribuição total: $A_{bacia} = 4{,}5$ ha
-- Declividade do canal: $S = 3\% = 0{,}03$ m/m
-- Revestimento: grama densa ($n = 0{,}060$)
-- Velocidade máxima admissível: $V_{max} = 1{,}5$ m/s
-- Talude adotado: $Z = 3$ (3H:1V)
+::: {.pitch-grid-55}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1. Levantamento planialtimétrico:** drone (GNSS-RTK) ou estação total; perfil longitudinal e seções a cada 10–20 m.
 :::
 
-### 1° Passo - Vazão de projeto (Método Racional)
-
-$$Q = \frac{C \cdot I \cdot A}{360}$$
-
-$$Q = \frac{0{,}55 \times 180 \times 4{,}5}{360} = 1{,}24 \text{ m³/s}$$
-
+::: {.pitch-milestone-item}
+**2–3. Locação, escavação e perfilamento:** nível laser/mangueira, compactação leve (**90% Proctor Normal**) e talude mínimo **3H:1V** liso.
 :::
 
-::: {.column width="45%"}
+::: {.pitch-milestone-item}
+**4–5. Biomanta e hidrossemeadura:** coco (BM2/BM3), grampos U (0,5–1,0 m), sobreposição 20/15 cm + sementes (**30–50 g/m²**), fertilizante, mulch e ligante.
+:::
 
-### 2° Passo - Área mínima da seção
-
-A partir da restrição de velocidade:
-
-$$A_{min} = \frac{Q}{V_{max}} = \frac{1{,}24}{1{,}5} = 0{,}83 \text{ m²}$$
-
-### 3° Passo - Dimensões da seção
-
-Adotando $h = 0{,}40$ m e resolvendo para $b$:
-
-$$A = (b + Z \cdot h) \cdot h$$
-
-$$0{,}83 = (b + 3 \times 0{,}40) \times 0{,}40$$
-
-$$b = \frac{0{,}83}{0{,}40} - 1{,}20 = 0{,}88 \text{ m}$$
-
-Adotar $b = 0{,}90$ m.
-
-### Verificação da área efetiva
-
-$$A = (0{,}90 + 1{,}20) \times 0{,}40 = 0{,}84 \text{ m²}$$
-
-$$B = b + 2 \cdot Z \cdot h = 0{,}90 + 2{,}40 = 3{,}30 \text{ m}$$
-
+::: {.pitch-milestone-item}
+**6–7. Irrigação e inspeção:** irrigação inicial (15–30 dias se seco) + inspeção pós-primeira chuva significativa.
 :::
 :::
 
----
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
 
-## Exemplo de dimensionamento (continuação) {.smaller-text}
+![Escavação e conformação inicial da canaleta em campo antes do revestimento com biomanta.](Canaleta-Verde-05-qpvjia0m33dh1wysk974trtfncubb26jfbuury8tk0.jpg)
 
-::: {.columns}
-::: {.column width="55%"}
-
-### 4° Passo - Raio hidráulico
-
-**Perímetro molhado:**
-
-$$P = b + 2h\sqrt{1 + Z^2} = 0{,}90 + 2(0{,}40)\sqrt{1 + 9}$$
-
-$$P = 0{,}90 + 0{,}80 \times 3{,}162 = 3{,}43 \text{ m}$$
-
-**Raio hidráulico:**
-
-$$R_h = \frac{A}{P} = \frac{0{,}84}{3{,}43} = 0{,}245 \text{ m}$$
-
-### 5° Passo - Velocidade real (Manning)
-
-$$V = \frac{R_h^{2/3} \cdot S^{1/2}}{n} = \frac{(0{,}245)^{2/3} \cdot (0{,}03)^{1/2}}{0{,}060}$$
-
-Calculando:
-
-- $(0{,}245)^{2/3} = 0{,}391$
-- $(0{,}03)^{1/2} = 0{,}1732$
-
-$$V = \frac{0{,}391 \times 0{,}1732}{0{,}060} = 1{,}13 \text{ m/s}$$
-
-::: {.highlight-box}
-Como $V = 1{,}13$ m/s $< V_{max} = 1{,}5$ m/s ✓
-
-A velocidade está dentro do limite admissível para grama densa. A seção está segura.
+[Conformação da Seção Escavada em Campo]{.pitch-caption}
+[Preparo geométrico do leito e taludes previamente à regularização e instalação da biomanta]{.pitch-caption-sub}
+:::
 :::
 
+## [Dissipação e Transições]{.pitch-tag .pitch-tag--gold} Dissipadores Internos e Transição Entrada/Saída {#detalhes-construtivos .smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Tipo de dissipador | Declividade | Espaçamento |
+|--------------------|:-----------:|:-----------:|
+| Cordão de vetiver | 3–5% | 5–10 m |
+| Enrocamento pontual | 5–8% | 3–5 m |
+| Degrau revestido | > 8% | 2–3 m |
+| Paliçada interna (bambu) | > 5% | 3–8 m |
 :::
 
-::: {.column width="45%"}
+::: {.pitch-card .pitch-card--forest}
+[Micro-barragens permeáveis]{.pitch-card-index}
+[Cordões transversais de vetiver]{.pitch-heading}
 
-### 6° Passo - Verificação da vazão transportada
-
-$$Q_{calc} = V \times A = 1{,}13 \times 0{,}84 = 0{,}95 \text{ m³/s}$$
-
-::: {.info-box}
-**Atenção:** $Q_{calc} = 0{,}95$ m³/s $< Q_{projeto} = 1{,}24$ m³/s ❌
-
-A seção não é suficiente! Necessário aumentar as dimensões.
+Em $S > 3\%$, cordões transversais reduzem a velocidade combinando resistência dos colmos e ancoragem radicular, sem impedir a passagem da água.
+:::
 :::
 
-### Ajuste: aumentar profundidade para $h = 0{,}50$ m
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Transição entrada / saída]{.pitch-card-index}
+[Proteção das extremidades]{.pitch-heading}
 
-$$A = (0{,}90 + 3 \times 0{,}50) \times 0{,}50 = (0{,}90 + 1{,}50) \times 0{,}50 = 1{,}20 \text{ m²}$$
+- **Entrada:** trecho curto (1–2 m) em enrocamento ou concreto ciclópico para dissipar energia de chegada.
+- **Saída:** bacia de amortecimento, enrocamento ou talude revestido contra erosão remontante.
+:::
 
-$$P = 0{,}90 + 2(0{,}50)\sqrt{10} = 0{,}90 + 3{,}162 = 4{,}06 \text{ m}$$
+::: {.pitch-formula}
+**Espaçamento entre cordões internos:**
 
-$$R_h = 1{,}20 / 4{,}06 = 0{,}296 \text{ m}$$
+$$L_{cord} = \frac{h_{cord}}{\tan(\alpha)} \xrightarrow{\alpha = 3\%, \; h_{cord} = 0{,}30 \text{ m}} L_{cord} = \frac{0{,}30}{0{,}03} = 10{,}0 \text{ m}$$
 
-$$V = \frac{(0{,}296)^{2/3} \times 0{,}1732}{0{,}060} = \frac{0{,}446 \times 0{,}1732}{0{,}060} = 1{,}29 \text{ m/s}$$
-
-$$Q_{calc} = 1{,}29 \times 1{,}20 = 1{,}55 \text{ m³/s} > 1{,}24 \text{ m³/s ✓}$$
-
-::: {.highlight-box}
-**Seção final adotada:** $b = 0{,}90$ m, $h = 0{,}50$ m, $Z = 3$, $B = 3{,}90$ m. Com borda livre de 0,15 m, a profundidade escavada total é $h_t = 0{,}65$ m.
+A base do cordão a montante fica em nível com o topo do cordão a jusante.
 :::
 :::
 :::
 
----
+# 6 · Combinação com Hidrossemeadura e Biomanta {.section-header rotulo="Sistema Integrado"}
 
-## Número de Froude e verificação do regime {.smaller-text}
+## [Cronograma de Proteção]{.pitch-tag .pitch-tag--forest} Transição Funcional: Biomanta → Vegetação {#gantt-bioengenharia-tikz .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-media-card .pitch-media-card--wide}
 
-### Verificação do regime de escoamento
+![Cronograma típico de implantação integrada de bioengenharia e transição funcional entre estação seca e chuvosa.](img/bs_20b_gantt_bioengenharia.png)
 
-Para a seção final ($h = 0{,}50$ m, $V = 1{,}29$ m/s):
+[Cronograma Integrado de Bioengenharia (Meses 1 a 12)]{.pitch-caption}
+[Obras hidráulicas e contenções concentradas na estiagem (M1–M6); estabelecimento vegetal, biomanta e monitoramento no período úmido (M5–M12)]{.pitch-caption-sub}
+:::
 
-**Profundidade hidráulica média ($D_m$)**
+::: {.pitch-band .pitch-band--teal}
+**Ponto de cruzamento (6–12 meses):** a cobertura vegetal ultrapassa **80%**, assumindo a proteção enquanto a biomanta (6–36 meses) se biodegrada naturalmente.
+:::
 
-$$D_m = \frac{A}{T} = \frac{1{,}20}{3{,}90} = 0{,}308 \text{ m}$$
+## [Tripé e Hidrossemeadura]{.pitch-tag} Sistema Integrado e Mistura de Sementes {#composicao-hidrossemeadura .smaller-text .lesson-slide}
 
-**Número de Froude**
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-cards}
+::: {.pitch-card .pitch-card--gold}
+[1 · Biomanta]{.pitch-card-index}
+[0–6 meses]{.pitch-heading}
 
-$$Fr = \frac{V}{\sqrt{g \cdot D_m}} = \frac{1{,}29}{\sqrt{9{,}81 \times 0{,}308}}$$
+Reduz $\tau_{efetivo} = \tau_0 - \tau_{biomanta}$, absorve *splash* e retém umidade.
+:::
 
-$$Fr = \frac{1{,}29}{1{,}738} = 0{,}74$$
+::: {.pitch-card .pitch-card--teal}
+[2 · Hidrossemeadura]{.pitch-card-index}
+[70–90% germinação]{.pitch-heading}
 
-::: {.highlight-box}
-$Fr = 0{,}74 < 1{,}0$ → **Regime subcrítico** ✓
+Tanque **1.000–8.000 L**, **200–400 kPa**, rendimento até **2.000 m²/h**.
+:::
 
-O escoamento é subcrítico, condição desejável para canaletas verdes, que garante controle do fluxo e favorece a deposição de sedimentos.
+::: {.pitch-card .pitch-card--forest}
+[3 · Vegetação]{.pitch-card-index}
+[Permanente]{.pitch-heading}
+
+Eleva coesão ($c' = c'_{solo} + \Delta c'_{raiz}$) e rugosidade hidráulica.
 :::
 :::
 
-::: {.column width="50%"}
-
-### Quadro-resumo do dimensionamento
-
-| Parâmetro | Valor |
-|-----------|:-----:|
-| Vazão de projeto ($Q$) | 1,24 m³/s |
-| Base menor ($b$) | 0,90 m |
-| Profundidade do escoamento ($h$) | 0,50 m |
-| Borda livre | 0,15 m |
-| Profundidade total escavada | 0,65 m |
-| Talude ($Z$) | 3:1 |
-| Base maior ($B$) | 3,90 m |
-| Área da seção ($A$) | 1,20 m² |
-| Perímetro molhado ($P$) | 4,06 m |
-| Raio hidráulico ($R_h$) | 0,296 m |
-| Velocidade ($V$) | 1,29 m/s |
-| Vazão transportada ($Q_{calc}$) | 1,55 m³/s |
-| Número de Froude ($Fr$) | 0,74 |
-| Regime de escoamento | Subcrítico |
-
-: {.striped .hover}
-
-::: {.info-box}
-A folga hidráulica ($Q_{calc}/Q_{projeto} = 1{,}25$) garante um fator de segurança de 25% acima da vazão de projeto, adequado para incertezas no coeficiente de rugosidade e variações locais da declividade.
-:::
+::: {.pitch-table-box}
+| Componente da mistura (por m²) | Dose | Função |
+|--------------------------------|:----:|--------|
+| *Brachiaria decumbens* / *Paspalum notatum* | 8–10 g / 5–8 g | Cobertura rápida e densa |
+| *Arachis pintoi* / *C. zizanioides* (mudas 15–20 cm) | 3–5 g / 2–3 g | Fixação N₂ / ancoragem |
+| NPK (10-10-10) / Calcário dolomítico | 30–50 g / 50–100 g | Nutrição e correção de pH |
+| Mulch celulose / Ligante (*tackifier*) | 100–200 g / 5–10 g | Umidade e aderência |
 :::
 :::
 
-# [5. PROJETO E IMPLANTAÇÃO EM CAMPO]{.section-header}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
 
-## Etapas de implantação {.smaller-text}
+![Canaleta verde após hidrossemeadura sobre biomanta](Canaleta-Verde-02-qpvji2hwkf36h19ps5y49tpqw9vdlhcoqamyxqjyxs.jpg)
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Sequência executiva
-
-O processo de implantação segue uma sequência rigorosa para garantir a funcionalidade hidráulica e a estabilidade do revestimento vegetal:
-
-**Etapa 1 - Levantamento planialtimétrico** da área de implantação com drone (GNSS-RTK) ou estação total, gerando perfil longitudinal e seções transversais a cada 10-20 m.
-
-**Etapa 2 - Locação e escavação** do canal conforme dimensionamento (retroescavadeira ou miniescavadeira). Controlar cota de fundo com nível de mangueira ou nível laser. Compactar levemente o leito (90% Proctor Normal) para evitar recalques.
-
-**Etapa 3 - Regularização e perfilamento** dos taludes com talude mínimo de 3H:1V. Remover torrões e pedras soltas. A superfície deve estar lisa para receber a biomanta.
-
-**Etapa 4 - Instalação da biomanta** antierosiva de coco (BM2 ou BM3, conforme tensão cisalhante de projeto) com grampos em U a cada 0,50-1,00 m, sobreposições longitudinais de 20 cm e laterais de 15 cm.
-
-:::
-
-::: {.column width="50%"}
-
-**Etapa 5 - Hidrossemeadura** com mistura de sementes de gramíneas e leguminosas, fertilizante, mulch vegetal e ligante adesivo, aplicada diretamente sobre a biomanta. Taxa de aplicação típica de 30-50 g/m² de sementes.
-
-**Etapa 6 - Irrigação inicial** (se necessário) nos primeiros 15-30 dias para garantir germinação, especialmente em períodos secos.
-
-**Etapa 7 - Inspeção pós-implantação** após o primeiro evento de chuva significativo, verificar integridade da biomanta, germinação e estabilidade dos taludes.
-
-```{mermaid}
-%%| fig-width: 5.5
-flowchart TD
-    A["1. Levantamento<br>planialtimétrico"] --> B["2. Locação e<br>escavação"]
-    B --> C["3. Regularização<br>dos taludes"]
-    C --> D["4. Instalação<br>da biomanta"]
-    D --> E["5. Hidrossemeadura"]
-    E --> F["6. Irrigação<br>inicial"]
-    F --> G["7. Inspeção pós-<br>primeiro evento"]
-
-    style A fill:#2135A6,color:#fff
-    style B fill:#2135A6,color:#fff
-    style C fill:#2135A6,color:#fff
-    style D fill:#2E7D32,color:#fff
-    style E fill:#2E7D32,color:#fff
-    style F fill:#586BA6,color:#2135A6
-    style G fill:#27368C,color:#fff
-```
+[Canaleta Verde Após Hidrossemeadura]{.pitch-caption}
+[Aplicação pressurizada sobre biomanta garante contato semente–substrato e cobertura uniforme]{.pitch-caption-sub}
 :::
 :::
 
----
+# 7 · Monitoramento e Manutenção {.section-header rotulo="Monitoramento"}
 
-## Detalhes construtivos especiais {.smaller-text}
+## [Monitoramento]{.pitch-tag .pitch-tag--teal} Protocolo Hidráulico, Vegetacional e Geomorfológico {#protocolo-monitoramento .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-grid-50}
+::: {.pitch-cards}
+::: {.pitch-card}
+[Hidráulico]{.pitch-card-index}
+[$\Delta Q$]{.pitch-heading}
 
-### Dissipadores de energia internos
+Vazão entrada/saída (calha Parshall ou vertedouro) avalia infiltração efetiva ($\Delta Q = Q_{ent} - Q_{saí}$).
+:::
 
-Em canaletas com declividade superior a 3%, recomenda-se a instalação de **dissipadores de energia** ao longo do canal para evitar aceleração excessiva do fluxo:
+::: {.pitch-card .pitch-card--forest}
+[Vegetacional]{.pitch-card-index}
+[Quadrante 1 m²]{.pitch-heading}
 
-| Tipo de dissipador | Declividade recomendada | Espaçamento |
-|-------------------|:----------------------:|:-----------:|
-| Cordão de vetiver | 3-5% | 5-10 m |
-| Enrocamento pontual | 5-8% | 3-5 m |
-| Degrau revestido | > 8% | 2-3 m |
-| Paliçada interna (bambu) | > 5% | 3-8 m |
+Cobertura (%), altura e diversidade funcional (mensal até 6 meses; depois trimestral).
+:::
 
-: {.striped .hover}
+::: {.pitch-card .pitch-card--gold}
+[Geomorfológico]{.pitch-card-index}
+[Pinos + Drone]{.pitch-heading}
 
-::: {.info-box}
-Os **cordões de vetiver** (*Chrysopogon zizanioides*) plantados transversalmente ao fluxo a intervalos regulares funcionam como micro-barragens permeáveis que reduzem a velocidade sem impedir a passagem da água, combinando **dissipação mecânica** (resistência dos colmos) com **estabilização biotécnica** (ancoragem radicular).
+Pinos de ferro (30 cm, cravados 10 cm a cada 5 m) e MDT diferencial por fotogrametria.
 :::
 :::
 
-::: {.column width="50%"}
-
-### Transição entrada/saída
-
-A **entrada** da canaleta verde deve possuir uma zona de transição (enrocamento ou concreto ciclópico num trecho curto de 1-2 m) para dissipar a energia cinética do fluxo de chegada e evitar incisão no início do canal vegetado.
-
-A **saída** deve ser protegida por um **dissipador de energia** (bacia de amortecimento, enrocamento, ou talude revestido) para evitar erosão remontante no ponto de descarga.
-
-### Espaçamento de cordões internos
-
-O espaçamento entre cordões de vetiver pode ser estimado pela relação geométrica:
-
-$$L_{cord} = \frac{h_{cord}}{\tan(\alpha)}$$
-
-Onde $h_{cord}$ é a altura do cordão de vetiver (0,20-0,40 m) e $\alpha$ é a declividade do canal. Para $\alpha = 3\%$ e $h_{cord} = 0{,}30$ m:
-
-$$L_{cord} = \frac{0{,}30}{0{,}03} = 10{,}0 \text{ m}$$
-
-::: {.highlight-box}
-O princípio é o mesmo das paliçadas em ravinas, a base do cordão a montante deve ficar em nível com o topo do cordão a jusante, assegurando deposição uniforme entre as barreiras.
-:::
-:::
-:::
-
-# [6. COMBINAÇÃO COM HIDROSSEMEADURA E BIOMANTA]{.section-header}
-
-## Sistema integrado de bioengenharia {.smaller-text}
-
-::: {.columns}
-::: {.column width="55%"}
-
-### O tripé da canaleta verde
-
-A canaleta verde atinge máxima eficiência quando combinada em um sistema integrado com **biomanta antierosiva** e **hidrossemeadura**, formando um tripé de proteção:
-
-**Biomanta** fornece proteção mecânica imediata ao solo exposto durante a fase de estabelecimento vegetal. Reduz a tensão cisalhante efetiva no leito ($\tau_{efetivo} = \tau_0 - \tau_{biomanta}$), absorvendo impacto de gotas de chuva (*splash erosion*) e retendo umidade para germinação.
-
-**Hidrossemeadura** permite a aplicação mecanizada e uniforme de uma mistura de sementes, fertilizante, mulch e ligante sobre a biomanta. A pulverização pressurizada garante contato íntimo semente-substrato e distribuição homogênea, com taxas de germinação de 70-90% em condições ótimas.
-
-**Vegetação estabelecida** assume progressivamente a proteção do canal, substituindo a biomanta biodegradável que se degrada em 6-36 meses. O sistema radicular penetra no solo, aumentando a coesão efetiva ($c' = c'_{solo} + \Delta c'_{raiz}$), e a parte aérea mantém a rugosidade hidráulica elevada.
-
-:::
-
-::: {.column width="45%"}
-
-### Cronograma de transição funcional
-
-```{mermaid}
-%%| fig-width: 5
-gantt
-    title Fases de proteção da canaleta verde
-    dateFormat YYYY-MM
-    axisFormat %b/%Y
-    section Biomanta
-        Proteção mecânica plena   :active, b1, 2026-01, 12M
-        Degradação progressiva    :b2, after b1, 12M
-    section Hidrossemeadura
-        Aplicação + germinação    :h1, 2026-01, 2M
-        Crescimento vegetativo    :h2, after h1, 4M
-    section Vegetação
-        Cobertura parcial (< 80%) :v1, 2026-03, 6M
-        Cobertura plena (> 80%)   :crit, v2, after v1, 18M
-    section Proteção total
-        Biomanta + vegetal jovem  :p1, 2026-01, 6M
-        Vegetal maduro autossuficiente :crit, p2, after p1, 18M
-```
-
-::: {.info-box}
-**Ponto de cruzamento:** entre 6 e 12 meses, a cobertura vegetal atinge 80%, momento em que a proteção do canal passa a ser **dominada pela vegetação viva** e a biomanta pode iniciar sua degradação natural sem comprometer a integridade do sistema.
-:::
-:::
-:::
-
----
-
-## Composição da mistura de hidrossemeadura {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Mistura-tipo para canaletas verdes (clima tropical)
-
-| Componente | Quantidade (por m²) | Função |
-|-----------|:-------------------:|--------|
-| *Brachiaria decumbens* | 8-10 g | Cobertura rápida, rusticidade |
-| *Paspalum notatum* | 5-8 g | Cobertura densa, persistência |
-| *Arachis pintoi* | 3-5 g | Fixação de N₂, cobertura rasteira |
-| *Chrysopogon zizanioides* | 2-3 g (ou mudas) | Ancoragem profunda, dissipação |
-| Fertilizante NPK (10-10-10) | 30-50 g | Nutrição inicial |
-| Calcário dolomítico | 50-100 g | Correção de pH |
-| Mulch de celulose | 100-200 g | Retenção de umidade |
-| Ligante adesivo (tackifier) | 5-10 g | Fixação ao substrato |
-
-: {.striped .hover}
-
-::: {.highlight-box}
-O **capim-vetiver** é preferencialmente implantado por **mudas** (estolões), espaçadas a cada 15-20 cm nos cordões transversais, pois sua taxa de germinação por semente é baixa em condições de campo.
-:::
-:::
-
-::: {.column width="50%"}
-
-### Hidrossemeadura: princípios operacionais
-
-A aplicação é realizada com **hidrossemeador** (tanque de 1.000-8.000 L montado em caminhão ou reboque), que mistura água + sementes + fertilizante + mulch + ligante e projeta a mistura a pressão (200-400 kPa) sobre a superfície da biomanta.
-
-**Vantagens** da hidrossemeadura em canaletas:
-
-- Aplicação uniforme em taludes inclinados
-- Contato semente-substrato otimizado
-- Velocidade de cobertura (até 2.000 m²/h)
-- Mistura nutricional completa em uma operação
-- Aderência à biomanta pelo ligante adesivo
-
-![Canaleta verde após hidrossemeadura sobre biomanta](Canaleta-Verde-02-qpvji2hwkf36h19ps5y49tpqw9vdlhcoqamyxqjyxs.jpg){fig-align="center" width="90%"}
-:::
-:::
-
-# [7. MONITORAMENTO E MANUTENÇÃO]{.section-header}
-
-## Protocolo de monitoramento {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Parâmetros de monitoramento
-
-O monitoramento da canaleta verde deve ser realizado em três dimensões: **hidráulica**, **vegetacional** e **geomorfológica**.
-
-**Monitoramento hidráulico** consiste na medição de vazão na entrada e na saída do canal (calha Parshall, vertedouro triangular ou método volumétrico) para avaliar a **taxa de infiltração efetiva** ao longo do percurso. A diferença $\Delta Q = Q_{entrada} - Q_{saída}$ representa o volume infiltrado e o retido por deposição.
-
-**Monitoramento vegetacional** envolve a estimativa periódica (mensal nos primeiros 6 meses, trimestral após) da **cobertura vegetal (%)** por quadrante (1 m²), da **altura da vegetação** e da **diversidade funcional** (gramíneas vs. leguminosas vs. invasoras).
-
-**Monitoramento geomorfológico** utiliza o **método dos pinos** (pinos de ferro de 30 cm cravados a 10 cm, espaçados a cada 5 m) para quantificar erosão residual ou deposição no leito e taludes, além de levantamentos fotogramétricos periódicos com drone (MDT diferencial).
-
-:::
-
-::: {.column width="50%"}
-
-### Indicadores de desempenho
-
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Indicador | Meta | Frequência |
 |-----------|:----:|:----------:|
-| Cobertura vegetal | > 80% em 6 meses | Mensal/trimestral |
-| Velocidade de fluxo | < $V_{max}$ adotada | Eventos de chuva |
+| Cobertura vegetal | > 80% em 6 meses | Mensal / trimestral |
+| Velocidade de fluxo | $< V_{max}$ adotada | Eventos de chuva |
 | Erosão no leito (pinos) | < 1 cm/ano | Mensal |
-| Integridade da biomanta | Sem rasgos ou deslocamentos | Após chuvas |
-| Sedimentos retidos | Medição por pinos/batimetria | Semestral |
+| Integridade da biomanta | Sem rasgos/deslocamentos | Após chuvas |
+| Sedimentos retidos | Pinos / batimetria | Semestral |
 | Taxa de infiltração | > 50% do escoamento | Semestral |
-
-: {.striped .hover}
-
-::: {.info-box}
-**Critério de sucesso:** a canaleta verde é considerada **operacionalmente eficiente** quando atinge cobertura vegetal > 80%, mantém velocidade de fluxo abaixo do limite admissível e apresenta erosão líquida no leito inferior a 1 cm por ano.
 :::
 
-::: {.highlight-box}
-Após o estabelecimento pleno da vegetação (12-24 meses), a frequência de monitoramento pode ser **reduzida** para semestral, focando em manutenção preventiva (poda, replantio de falhas, limpeza de sedimentos na entrada).
+::: {.pitch-band .pitch-band--teal}
+Após estabelecimento pleno (**12–24 meses**), o monitoramento passa a **semestral**, focado em manutenção preventiva.
 :::
 :::
 :::
 
----
+## [Manutenção]{.pitch-tag .pitch-tag--alert} Manutenção Periódica e Modos de Falha {#manutencao-periodica .smaller-text .lesson-slide}
 
-## Manutenção periódica {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Cronograma de manutenção
-
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Atividade | Frequência | Período |
 |-----------|:----------:|:-------:|
-| Poda da vegetação (manter 10-20 cm) | Trimestral | Ano todo |
-| Replantio de falhas (< 80% cobertura) | Conforme necessidade | Estação chuvosa |
-| Limpeza de sedimentos na entrada | Semestral | Pós-chuvas |
+| Poda (manter 10–20 cm) / Controle invasoras | Trimestral | Ano todo |
+| Replantio (< 80%) / Reparo erosão | Sob demanda | Estação chuvosa / pós-evento |
+| Limpeza de sedimentos / Fertilização | Semestral / Anual | Pós-chuvas / início chuvas |
 | Inspeção da biomanta | Mensal (1º ano) | Estação chuvosa |
-| Fertilização de manutenção | Anual | Início das chuvas |
-| Controle de invasoras | Trimestral | Ano todo |
-| Reparo de erosão localizada | Conforme necessidade | Pós-eventos |
+:::
 
-: {.striped .hover}
-
-::: {.highlight-box}
-A **poda regular** é essencial: a vegetação excessivamente alta (> 30 cm) pode tombar e formar uma **manta de material morto** (*thatch*) que reduz a infiltração e cria caminhos preferenciais de fluxo. Manter entre 10 e 20 cm é o equilíbrio ótimo entre rugosidade hidráulica e permeabilidade do leito.
+::: {.pitch-band}
+Manter poda entre **10–20 cm**: vegetação > 30 cm tomba e forma *thatch* morto que reduz infiltração e cria caminhos preferenciais.
 :::
 :::
 
-::: {.column width="50%"}
-
-### Modos de falha e ações corretivas
-
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Modo de falha | Causa provável | Ação corretiva |
-|--------------|----------------|----------------|
-| Incisão no leito | $V > V_{max}$, vegetação insuficiente | Instalar dissipadores, replantar |
-| Erosão lateral (taludes) | Talude íngreme, falta de cobertura | Reperfilar para $Z \geq 3$, biomanta |
-| Bypass (transbordamento) | Seção subdimensionada, obstrução | Desobstruir, ampliar seção |
-| Assoreamento excessivo | Fonte de sedimento a montante | Controlar nascente, limpar |
-| Mortalidade vegetal | Seca, herbicida, sombreamento | Replantio, irrigação emergencial |
-| Piping (erosão interna) | Solo dispersivo, compactação deficiente | Recompactar, drenar, colocar filtro |
+|---------------|----------------|----------------|
+| Incisão no leito | $V > V_{max}$, falha vegetal | Dissipadores, replantio |
+| Erosão lateral | Talude íngreme | Reperfilar ($Z \geq 3$), biomanta |
+| *Bypass* | Seção pequena / obstrução | Desobstruir, ampliar seção |
+| Assoreamento | Fonte de sedimento a montante | Controlar nascente, limpar |
+| Mortalidade vegetal | Seca, herbicida, sombra | Replantio, irrigação |
+| *Piping* | Solo dispersivo, má compactação | Recompactar (95%), drenar, filtro |
+:::
 
-: {.striped .hover}
-
-::: {.info-box}
-Em solos com **alta dispersibilidade** (presença de sódio trocável, como Neossolos ou Planossolos com horizonte B solódico), o risco de **piping** (erosão interna por tubulação) é elevado. Nesses casos, instalar uma **camada de filtro geotêxtil** sob a biomanta e garantir compactação adequada (95% Proctor Normal) do leito e taludes.
+::: {.pitch-band .pitch-band--alert}
+Em solos dispersivos (Neossolos/Planossolos com horizonte B solódico), usar **filtro geotêxtil** sob a biomanta e compactação a **95% Proctor Normal**.
 :::
 :::
 :::
 
-# [8. SÍNTESE E ATIVIDADE]{.section-header}
+# 8 · Síntese e Atividade {.section-header rotulo="Síntese"}
 
-## Resumo dos pontos-chave {.smaller-text}
+## [Síntese]{.pitch-tag .pitch-tag--forest} Fluxo de Projeto e Pontos-Chave {#resumo-pontos-chave .smaller-text .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[1 · Hidrologia]{.pitch-card-index}
+[Topografia + Racional]{.pitch-heading}
 
-### O que aprendemos?
-
-- [1]{.circle} A canaleta verde é um canal vegetado raso e largo que substitui canais de concreto, promovendo condução controlada, infiltração e filtração de sedimentos
-
-- [2]{.circle} O dimensionamento segue a equação de Manning, com o coeficiente de rugosidade $n$ como variável-chave (0,030-0,150 para vegetação)
-
-- [3]{.circle} A velocidade máxima admissível ($V_{max}$) é o parâmetro de projeto mais restritivo e depende do tipo de revestimento vegetal
-
-- [4]{.circle} O sistema integrado biomanta + hidrossemeadura + vegetação permanente garante proteção desde a implantação até a maturidade
-
-- [5]{.circle} O capim-vetiver (*C. zizanioides*) é a espécie referência em regiões tropicais, suportando velocidades de até 5 m/s
-
-- [6]{.circle} O monitoramento hidráulico, vegetacional e geomorfológico é essencial para verificar a eficiência e detectar falhas precocemente
-
-- [7]{.circle} A manutenção periódica (poda, replantio, limpeza) garante a longevidade do sistema vegetado
+Levantamento topográfico e cálculo da vazão de projeto ($Q$).
 :::
 
-::: {.column width="50%"}
+::: {.pitch-card .pitch-card--gold}
+[2 · Manning]{.pitch-card-index}
+[Iteração $V \leq V_{max}$]{.pitch-heading}
 
-### Fluxograma de projeto completo
+Se $V > V_{max}$, ampliar seção ou inserir dissipadores internos.
+:::
 
-```{mermaid}
-%%| fig-width: 5
-flowchart TD
-    A["Levantamento<br>topográfico"] --> B["Cálculo da vazão<br>(Método Racional)"]
-    B --> C["Dimensionamento<br>(Manning)"]
-    C --> D{"V ≤ V_max?"}
-    D -->|Sim| E["Definir seção<br>e borda livre"]
-    D -->|Não| F["Aumentar seção<br>ou dissipadores"]
-    F --> C
-    E --> G["Verificar Fr < 1<br>(subcrítico)"]
-    G --> H["Especificar biomanta<br>e hidrossemeadura"]
-    H --> I["Escavar e<br>revestir"]
-    I --> J["Implantar e<br>monitorar"]
+::: {.pitch-card .pitch-card--teal}
+[3 · Segurança]{.pitch-card-index}
+[Borda livre + $Fr < 1$]{.pitch-heading}
 
-    style A fill:#2135A6,color:#fff
-    style C fill:#2135A6,color:#fff
-    style D fill:#586BA6,color:#2135A6
-    style E fill:#2E7D32,color:#fff
-    style G fill:#2135A6,color:#fff
-    style J fill:#27368C,color:#fff
-```
+Definir borda livre (10–15 cm) e confirmar regime subcrítico.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[4 · Campo]{.pitch-card-index}
+[Biomanta + Monitorar]{.pitch-heading}
+
+Especificar biomanta/hidrossemeadura, escavar, revestir e monitorar.
 :::
 :::
 
----
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[O que aprendemos (1–4)]{.pitch-card-index}
+[Hidráulica e dimensionamento]{.pitch-heading}
 
-## Atividade proposta {.smaller-text}
+1. Substitui concreto, promovendo condução, infiltração e biofiltração
+2. Dimensionamento via Manning ($n = 0{,}030\text{–}0{,}150$)
+3. $V_{max}$ é a restrição principal do projeto
+4. Tripé biomanta + hidrossemeadura + vegetação garante proteção contínua
+:::
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-card .pitch-card--forest}
+[O que aprendemos (5–7)]{.pitch-card-index}
+[Espécies e gestão]{.pitch-heading}
 
-### Exercício em grupo
-
-::: {.box}
-**Cenário:** Uma empresa de mineração contratou vocês para projetar uma canaleta verde para conduzir o escoamento pluvial ao longo da base de um talude de corte com as seguintes características:
-
-- Comprimento do talude: 120 m
-- Área de contribuição: 2,8 ha
-- Coeficiente de enxurrada: $C = 0{,}65$
-- Intensidade de chuva (TR = 25 anos): $I = 210$ mm/h
-- Declividade da canaleta: $S = 2{,}5\%$
-- Solo de fundação: Latossolo Vermelho-Amarelo
-- Revestimento previsto: *Chrysopogon zizanioides* (vetiver)
-
-**Entregar:**
-
-1. Vazão de projeto (Método Racional)
-2. Dimensionamento da seção trapezoidal ($b$, $h$, $Z$, $B$)
-3. Verificação de velocidade e regime (Manning + Froude)
-4. Especificação da biomanta e mistura de hidrossemeadura
-5. Protocolo de monitoramento (parâmetros e frequência)
-6. Cronograma de manutenção para 2 anos
+5. Capim-vetiver (*C. zizanioides*) resiste até **5 m/s** em clima tropical
+6. Monitoramento hidráulico, vegetacional e geomorfológico detecta falhas cedo
+7. Manutenção periódica (poda, replantio, limpeza) garante longevidade
 :::
 :::
 
-::: {.column width="50%"}
+## [Atividade]{.pitch-tag .pitch-tag--gold} Atividade Proposta: Canaleta em Talude de Mineração {#atividade-proposta .smaller-text .lesson-slide}
 
-### Critérios de avaliação
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Exercício em grupo]{.pitch-card-index}
+[Cenário: base de talude de corte]{.pitch-heading}
 
-| Critério | Peso |
-|----------|:----:|
+Talude de **120 m**, área de contribuição **2,8 ha**, $C = 0{,}65$, chuva ($TR = 25$ anos) $I = 210 \text{ mm/h}$, $S = 2{,}5\%$, **Latossolo Vermelho-Amarelo**, revestimento com *Chrysopogon zizanioides* (vetiver).
+
+**Entregar:** **1.** Vazão ($Q$) · **2.** Seção trapezoidal ($b, h, Z, B$) · **3.** Verificação Manning + Froude · **4.** Biomanta e mistura de hidrossemeadura · **5.** Protocolo de monitoramento · **6.** Cronograma de manutenção (2 anos).
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Critério de avaliação | Peso |
+|-----------------------|:----:|
 | Dimensionamento hidráulico correto | 30% |
 | Verificação de velocidade e regime | 20% |
-| Especificação de materiais (biomanta + hidrossemeadura) | 20% |
+| Especificação (biomanta + hidrossemeadura) | 20% |
 | Protocolo de monitoramento | 15% |
 | Apresentação e coerência técnica | 15% |
+:::
 
-: {.striped .hover}
+::: {.pitch-formula}
+**Formulário resumido:**
 
-### Referências sugeridas
-
-- Truong, Loch & Cook (2008), *Vetiver System Applications*
-- Morgan (2005), *Soil Erosion and Conservation*
-- USDA-NRCS (2007), *Grassed Waterway Design*
-- Menezes & Sampaio (2021), Bioengenharia de Solos no Nordeste
-- Florineth (2004), *Pflanzen statt Beton*
-- Temple (1987), *Closure of "Stability Design of Grass-Lined Open Channels"*
-- Kouwen & Unny (1973), *Flexible roughness in open channels*
-- GreenBrasil Bioengenharia - greenbrasil.eco.br
-
-### Formulário resumido
-
-$$Q = \frac{C \cdot I \cdot A}{360} \quad\quad V = \frac{R_h^{2/3} \cdot S^{1/2}}{n} \quad\quad Fr = \frac{V}{\sqrt{g \cdot D_m}}$$
+$$Q = \frac{C \cdot I \cdot A}{360} \qquad V = \frac{R_h^{2/3} \cdot S^{1/2}}{n} \qquad Fr = \frac{V}{\sqrt{g \cdot D_m}}$$
+:::
 :::
 :::
 
----
+## [Referências]{.pitch-tag} Referências Sugeridas {#referencias .smaller-text .lesson-slide}
 
-## {.center background-color="#2135A6" background-image="../../../assets/fundo.png" background-size="auto 100%" background-position="left center"}
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Hidráulica de canais vegetados]{.pitch-card-index}
+[Manuais e artigos clássicos]{.pitch-heading}
 
-::: {style="text-align: center;"}
+- Kouwen, N. & Unny, T. E. (1973). *Flexible roughness in open channels*.
+- Temple, D. M. (1987). *Closure of "Stability Design of Grass-Lined Open Channels"*.
+- Truong, P., Loch, R. & Cook, D. (2008). *Vetiver System Applications*.
+- USDA-NRCS (2007). *Grassed Waterway Design*.
+:::
 
-[Obrigado!]{.obrigado-fit-text style="color: white;"}
+::: {.pitch-card .pitch-card--forest}
+[Conservação de solos e bioengenharia]{.pitch-card-index}
+[Literatura técnica]{.pitch-heading}
+
+- Florineth, F. (2004). *Pflanzen statt Beton*.
+- GreenBrasil Bioengenharia — greenbrasil.eco.br.
+- Menezes & Sampaio (2021). Bioengenharia de Solos no Nordeste.
+- Morgan, R. P. C. (2005). *Soil Erosion and Conservation*.
+:::
+:::
+
+## {.obrigado-fit-text .center}
+
+::: {.columns}
+::: {.column style="text-align: center;"}
+
+[Obrigado!]{.obrigado-fit-text}
 
 **Prof. Luiz Diego Vidal Santos**
 
-Universidade Estadual de Feira de Santana (UEFS)
+📧 luiz.diego@uefs.br
 
-[ldvsantos@uefs.br]{style="color: var(--uefs-amarelo); font-size: 1.2em;"}
+🌐 [ldvsantos.github.io/cv](https://ldvsantos.github.io/cv)
 
+:::
 :::

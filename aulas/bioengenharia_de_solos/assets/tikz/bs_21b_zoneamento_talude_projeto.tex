@@ -1,0 +1,110 @@
+\documentclass[border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}
+  \hyphenpenalty=10000\exhyphenpenalty=10000
+
+  % Título (bem acima dos cards superiores)
+  \node[bsTitle] at (7.15, 8.60)
+    {Zoneamento Integrado de Intervenções do Projeto Final na Vertente};
+  \node[bsSub] at (7.15, 8.10)
+    {Articulação topográfica da crista ao canal fluvial para controle contínuo de água e sedimentos};
+
+  % ============================================================
+  % PERFIL DA VERTENTE E CURSO D'ÁGUA
+  % ============================================================
+  \fill[bsEarth!14!white]
+    (0.0, 0.0) -- (0.0, 4.95) -- (2.2, 4.95) -- (3.0, 4.55)
+    .. controls (4.6, 4.0) and (6.2, 3.25) .. (7.8, 2.55)
+    .. controls (9.2, 1.95) and (10.3, 1.45) .. (11.5, 1.15)
+    -- (12.2, 0.55) -- (13.3, 0.55) -- (14.2, 0.95)
+    -- (14.2, 0.0) -- cycle;
+
+  % Água no canal fluvial (direita)
+  \fill[bsWater!28!white]
+    (11.85, 0.90) -- (14.05, 0.90) -- (13.3, 0.55) -- (12.2, 0.55) -- cycle;
+  \draw[bsWater, line width=1.1pt] (11.85, 0.90) -- (14.05, 0.90);
+  \node[font=\tiny\bfseries, text=bsWater] at (12.95, 0.72) {Canal Fluvial};
+
+  % Linha do terreno
+  \draw[bsEarth, line width=1.7pt]
+    (0.0, 4.95) -- (2.2, 4.95) -- (3.0, 4.55)
+    .. controls (4.6, 4.0) and (6.2, 3.25) .. (7.8, 2.55)
+    .. controls (9.2, 1.95) and (10.3, 1.45) .. (11.5, 1.15)
+    -- (12.2, 0.55) -- (13.3, 0.55) -- (14.2, 0.95);
+
+  % Faixas verticais sutis de zoneamento no terreno
+  \draw[bsMuted!40!white, dashed, line width=0.7pt] (3.4, 0.2) -- (3.4, 5.1);
+  \draw[bsMuted!40!white, dashed, line width=0.7pt] (7.2, 0.2) -- (7.2, 5.1);
+  \draw[bsMuted!40!white, dashed, line width=0.7pt] (10.6, 0.2) -- (10.6, 5.1);
+
+  % ============================================================
+  % SÍMBOLOS CONSTRUTIVOS SOBRE O PERFIL
+  % ============================================================
+  % Zona 1 (Crista): Canaleta Verde / Terraço
+  \fill[bsWater!25!white] (1.6, 4.95) .. controls (1.9, 4.72) and (2.1, 4.72) .. (2.4, 4.95) -- cycle;
+  \draw[bsWater, line width=1.3pt] (1.55, 4.95) .. controls (1.9, 4.70) and (2.1, 4.70) .. (2.45, 4.95);
+  \draw[bsForest, line width=1.2pt] (1.7, 4.95) -- (1.65, 5.18);
+  \draw[bsForest, line width=1.2pt] (2.3, 4.95) -- (2.35, 5.18);
+
+  % Zona 2 (Meia-encosta): Biomanta + Fascinas + Dreno Verde
+  \draw[bsForest, line width=2.6pt, opacity=0.7] (3.8, 4.25) -- (6.7, 3.05);
+  \fill[bsForest, draw=bsForest!70!black] (4.4, 4.02) circle (0.11);
+  \fill[bsForest, draw=bsForest!70!black] (5.5, 3.55) circle (0.11);
+  \draw[bsWater, dashed, line width=1pt] (4.8, 3.75) -- (6.9, 2.72);
+
+  % Zona 3 (Talvegue / Ravina): Paliçadas em série + bacia
+  \draw[bsGoldDark, line width=2.2pt] (7.75, 2.58) -- (7.75, 2.92);
+  \draw[bsGoldDark, line width=2.2pt] (8.85, 2.10) -- (8.85, 2.45);
+  \draw[bsGoldDark, line width=2.2pt] (9.95, 1.65) -- (9.95, 2.00);
+  \fill[bsGold!40!white] (7.75, 2.58) -- (8.4, 2.30) -- (7.75, 2.78) -- cycle;
+  \fill[bsGold!40!white] (8.85, 2.10) -- (9.5, 1.82) -- (8.85, 2.30) -- cycle;
+
+  % Zona 4 (Base / Pé & Margem Fluvial): Parede Krainer / Gabião / Enrocamento
+  \fill[bsEarth!55!white, draw=bsEarth, line width=1pt] (11.15, 1.15) rectangle (11.85, 1.60);
+  \draw[bsForest, line width=1.2pt] (11.35, 1.60) -- (11.20, 1.92);
+  \draw[bsForest, line width=1.2pt] (11.65, 1.60) -- (11.80, 1.95);
+  \fill[bsMuted!60!white, draw=bsInk] (11.95, 0.88) circle (0.13);
+  \fill[bsMuted!55!white, draw=bsInk] (12.15, 0.72) circle (0.12);
+
+  % Seta de fluxo controlado ao longo da vertente
+  \draw[->, >=Stealth, bsWater, dashed, line width=1.1pt] (0.5, 5.22) -- (1.45, 5.08);
+
+  % ============================================================
+  % CARDS DE ZONEAMENTO (COM FOLGA DO SUBTÍTULO E ENTRE SI)
+  % ============================================================
+  \node[bsTint=bsWater, text width=3.15cm, minimum height=1.65cm] (z1) at (1.55, 6.45) {
+    \vspace{0.18cm}
+    \textbf{\color{bsWater}\scriptsize Zona 1 $\cdot$ Crista / Topo}\\[3pt]
+    \scriptsize Terraços \& Canaleta Verde (desvio do escoamento)
+  };
+  \node[bsBadge=bsWater, font=\tiny\bfseries] at (z1.north) {CAPTAÇÃO MONTANTE};
+  \draw[bsWater, line width=1pt, ->] (z1.south) -- (1.95, 5.15);
+
+  \node[bsTint=bsForest, text width=3.35cm, minimum height=1.65cm] (z2) at (5.35, 6.45) {
+    \vspace{0.18cm}
+    \textbf{\color{bsForest}\scriptsize Zona 2 $\cdot$ Meia-Encosta}\\[3pt]
+    \scriptsize Biomantas, Hidrossemeadura, Fascinas \& Dreno Verde
+  };
+  \node[bsBadge=bsForest, font=\tiny\bfseries] at (z2.north) {COBERTURA \& DRENAGEM};
+  \draw[bsForest, line width=1pt, ->] (z2.south) -- (5.35, 3.85);
+
+  \node[bsTint=bsGold, text width=3.25cm, minimum height=1.65cm] (z3) at (9.10, 5.30) {
+    \vspace{0.18cm}
+    \textbf{\color{bsGoldDark}\scriptsize Zona 3 $\cdot$ Talvegue / Ravina}\\[3pt]
+    \scriptsize Paliçadas Permeáveis em Série \& Bacias de Captação
+  };
+  \node[bsBadge=bsGold, font=\tiny\bfseries] at (z3.north) {DISSIPAÇÃO EM DEGRAUS};
+  \draw[bsGoldDark, line width=1pt, ->] (z3.south) -- (9.00, 2.60);
+
+  \node[bsTint=bsEarth, text width=3.30cm, minimum height=1.65cm] (z4) at (12.55, 3.85) {
+    \vspace{0.18cm}
+    \textbf{\color{bsEarth}\scriptsize Zona 4 $\cdot$ Base \& Margem}\\[3pt]
+    \scriptsize Parede Krainer, Gabião Vivo ou Enrocamento Vegetado
+  };
+  \node[bsBadge=bsEarth, font=\tiny\bfseries] at (z4.north) {CONTENÇÃO DE PÉ};
+  \draw[bsEarth, line width=1pt, ->] (z4.south) -- (11.70, 2.05);
+
+\end{tikzpicture}
+\end{document}

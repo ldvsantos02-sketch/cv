@@ -12,81 +12,108 @@ execute:
   echo: false
 ---
 
-## Aula 03 · Diagnóstico físico, mecânico e biológico {.smaller-text}
+## [Abertura]{.pitch-tag} Aula 03 · Diagnóstico físico, mecânico e biológico {.smaller-text .lesson-slide}
 
-**Questão de projeto:** o material deve favorecer o enraizamento, suportar uma estrutura ou cumprir ambas as funções em zonas diferentes?
+::: {.pitch-grid-55}
+::: {.pitch-card .pitch-card--gold}
+[Questão de projeto]{.pitch-card-index}
+[Função por zona do maciço]{.pitch-heading}
 
-Nesta aula: descrição do perfil, densidade e porosidade, agregação, infiltração, indicadores biológicos, consistência, compactação e resistência ao cisalhamento.
+O material deve favorecer o enraizamento, suportar uma estrutura ou cumprir ambas as funções em zonas diferentes?
+:::
 
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Escopo da aula]{.pitch-card-index}
+[Eixos analíticos]{.pitch-heading}
 
+Descrição do perfil, densidade e porosidade, agregação, infiltração, indicadores biológicos, consistência, compactação e resistência ao cisalhamento.
+:::
 
-# 1 · Perfil e amostragem
+::: {.pitch-pill-row}
+[Física do solo]{.pitch-pill}
+[Qualidade biológica]{.pitch-pill .pitch-pill--gold}
+[Mohr-Coulomb]{.pitch-pill}
+:::
+:::
+:::
 
+# 1 · Perfil e amostragem {.section-header rotulo="Perfil"}
 
+## [Perfil]{.pitch-tag} Descrever antes de coletar {.smaller-text .lesson-slide}
 
-## Descrever antes de coletar {.smaller-text}
-
-:::: {.columns}
-::: {.column width="50%"}
-
-Registre:
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Levantamento morfológico]{.pitch-card-index}
+[Registre:]{.pitch-heading}
 
 - Posição no relevo, uso atual e histórico de manejo.
 - Espessura, textura, estrutura, raízes e transição dos horizontes.
 - Camadas adensadas, fraturas, mosqueados e surgências.
 - Profundidade e variação do nível d'água.
+:::
 
+::: {.pitch-band}
 Separe pontos por condição de solo e posição na encosta. Uma amostra composta de toda a área pode ocultar uma camada crítica.
-
 :::
-::: {.column width="50%"}
-
-![Descrição do perfil em campo](img/caracterizacao_solo.jpg){fig-align="center" width="90%"}
-
 :::
-::::
 
+::: {.pitch-media-card}
 
+![Descrição do perfil em campo](img/caracterizacao_solo.jpg)
 
-## Horizontes e contrastes do perfil {.smaller-text}
-
-:::: {.columns}
-::: {.column width="50%"}
-
-![Representação dos horizontes do perfil](img/horizontes_esquema.jpg){fig-align="center" width="90%"}
-
+[Descrição do perfil em campo]{.pitch-caption}
 :::
-::: {.column width="50%"}
-
-![Espessura e transição entre horizontes](img/espessura_transicao.png){fig-align="center" width="90%"}
-
 :::
-::::
 
+## [Perfil]{.pitch-tag} Horizontes e contrastes do perfil {.smaller-text .lesson-slide}
 
+::: {.pitch-grid-50}
+::: {.pitch-media-card}
 
-## Textura, estrutura e cor: indícios complementares {.smaller-text}
+![Representação dos horizontes do perfil](img/horizontes_esquema.jpg)
 
-:::: {.columns}
-::: {.column width="50%"}
+[Representação dos horizontes do perfil]{.pitch-caption}
+:::
+
+::: {.pitch-media-card}
+
+![Espessura e transição entre horizontes](img/espessura_transicao.png)
+
+[Espessura e transição entre horizontes]{.pitch-caption}
+:::
+:::
+
+## [Perfil]{.pitch-tag} Textura, estrutura e cor: indícios complementares {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Atributos diagnósticos]{.pitch-card-index}
+[Interpretação integrada]{.pitch-heading}
 
 - **Textura:** proporção de areia, silte e argila; confirme em laboratório quando necessário.
 - **Estrutura:** forma, tamanho e organização dos agregados e poros.
 - **Cor:** pode indicar matéria orgânica, pigmentos minerais ou condições de oxirredução.
+:::
 
+::: {.pitch-band .pitch-band--navy}
 Cor e classe pedológica não fornecem, isoladamente, resistência ou condutividade hidráulica.
-
 :::
-::: {.column width="50%"}
-
-![Estruturas do solo para descrição morfológica](img/avaliacao_estrutura.jpg){fig-align="center" width="90%"}
-
 :::
-::::
 
+::: {.pitch-media-card}
 
+![Estruturas do solo para descrição morfológica](img/avaliacao_estrutura.jpg)
 
-## Plano mínimo de amostragem {.smaller-text}
+[Estruturas do solo para descrição morfológica]{.pitch-caption}
+:::
+:::
+
+## [Amostragem]{.pitch-tag .pitch-tag--gold} Plano mínimo de amostragem {.smaller-text .lesson-slide}
+
+::: {.pitch-table-box}
 
 | Determinação | Tipo de amostra ou registro | Controle de comparabilidade |
 |---|---|---|
@@ -96,43 +123,73 @@ Cor e classe pedológica não fornecem, isoladamente, resistência ou condutivid
 | Penetrometria | Perfil de leituras em campo | Umidade, equipamento e repetições |
 | Biologia | Amostra conservada conforme protocolo | Época, transporte e armazenamento |
 
+:::
+
+::: {.pitch-band}
 Registre réplicas, coordenadas, profundidade e condições hídricas.
+:::
 
+# 2 · Densidade, poros e água {.section-header rotulo="Física"}
 
+## [Física]{.pitch-tag .pitch-tag--gold} Relações de massa e volume {.smaller-text .lesson-slide}
 
-# 2 · Densidade, poros e água
+::: {.pitch-formula}
+$$D_s=\frac{M_s}{V_t}\qquad D_p=\frac{M_s}{V_s}\qquad P_t=1-\frac{D_s}{D_p}$$
+:::
 
-
-
-## Relações de massa e volume {.smaller-text}
-
-$$D_s=\frac{M_s}{V_t}qquad D_p=\frac{M_s}{V_s}qquad P_t=1-\frac{D_s}{D_p}$$
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Definições e unidades]{.pitch-card-index}
+[Relações fundamentais]{.pitch-heading}
 
 - $M_s$: massa seca; $V_t$: volume total; $V_s$: volume dos sólidos.
 - Com massa em g e volume em cm³, as densidades resultam em g cm⁻³.
 - $P_t$ é uma fração volumétrica; multiplique por 100 para expressar em porcentagem.
 - Meça ou justifique $D_p$: 2,65 g cm⁻³ é uma aproximação frequente para alguns solos minerais.
+:::
 
-**Exemplo didático:** $M_s=140$ g, $V_t=100$ cm³ e $D_p=2{,}65$ g cm⁻³ → $D_s=1{,}40$ g cm⁻³ e $P_t=0{,}472$ m³ m⁻³.
+::: {.pitch-card .pitch-card--gold}
+[Conferência numérica]{.pitch-card-index}
+[Exemplo didático]{.pitch-heading}
 
+$M_s=140$ g, $V_t=100$ cm³ e $D_p=2{,}65$ g cm⁻³ $\rightarrow$ $D_s=1{,}40$ g cm⁻³ e $P_t=0{,}472$ m³ m⁻³.
+:::
+:::
 
+## [Física]{.pitch-tag .pitch-tag--teal} Macro e microporosidade: separação operacional {.smaller-text .lesson-slide}
 
-## Macro e microporosidade: separação operacional {.smaller-text}
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Procedimento laboratorial]{.pitch-card-index}
+[Etapas de determinação]{.pitch-heading}
 
 1. Sature a amostra indeformada conforme o método.
 2. Equilibre-a em tensão definida, por exemplo 6 kPa.
 3. Determine a água retida e expresse-a como fração do volume total.
 4. Calcule a macroporosidade pela diferença em relação à porosidade total.
+:::
 
+::: {.pitch-stack-2}
+::: {.pitch-formula}
 $$P_{\mathrm{macro}}=P_t-P_{\mathrm{micro}}$$
+:::
 
-**Exemplo:** $P_t=0{,}472$ e $P_{\mathrm{micro}}=0{,}340$ → $P_{\mathrm{macro}}=0{,}132$ m³ m⁻³.
+::: {.pitch-card .pitch-card--gold}
+[Exemplo]{.pitch-card-index}
+[Partição porosa]{.pitch-heading}
 
+$P_t=0{,}472$ e $P_{\mathrm{micro}}=0{,}340$ $\rightarrow$ $P_{\mathrm{macro}}=0{,}132$ m³ m⁻³.
+:::
+
+::: {.pitch-band}
 Informe a tensão usada: o limite entre classes de poros depende do protocolo. A fração de ar no campo depende também da umidade naquele momento.
+:::
+:::
+:::
 
+## [Hidráulica]{.pitch-tag .pitch-tag--teal} Infiltração, VIB e condutividade {.smaller-text .lesson-slide}
 
-
-## Infiltração, VIB e condutividade {.smaller-text}
+::: {.pitch-table-box}
 
 | Grandeza | O que representa | Aplicação |
 |---|---|---|
@@ -141,56 +198,90 @@ Informe a tensão usada: o limite entre classes de poros depende do protocolo. A
 | VIB | Taxa aproximadamente estável no ensaio | Avaliação operacional do manejo |
 | $K_s$ | Condutividade hidráulica em condição saturada | Modelagem do fluxo no perfil |
 
+:::
+
+::: {.pitch-band .pitch-band--navy}
 VIB e $K_s$ não são intercambiáveis em qualquer ensaio. Informe método, geometria, carga hidráulica, umidade inicial e variabilidade espacial.
+:::
 
+## [Hidráulica]{.pitch-tag .pitch-tag--teal} Dinâmica da água no solo e modelos de infiltração {.smaller-text .lesson-slide}
 
-
-## Dinâmica da água no solo e modelos de infiltração {.smaller-text}
+::: {.pitch-grid-50}
+::: {.pitch-card .pitch-card--teal}
+[Estado energético e retenção]{.pitch-card-index}
+[Potencial e água disponível]{.pitch-heading}
 
 - **Potencial total da água ($\Psi_t$):** $\Psi_t = \Psi_m + \Psi_g + \Psi_o + \Psi_p$ (em solos não saturados predomina o potencial mátrico $\Psi_m$ e o gravitacional $\Psi_g$).
 - **Água disponível e drenagem:** delimitada entre a **Capacidade de Campo (CC)** ($\approx -10\text{ a }-33\text{ kPa}$) e o **Ponto de Murcha Permanente (PMP)** ($\approx -1.500\text{ kPa}$); acima da CC ocorre drenagem rápida pelos macroporos.
-- **Modelagem da infiltração (anéis concêntricos / simulador de chuvas):**
-  - **Horton:** $f(t) = f_c + (f_0 - f_c)e^{-kt}$ *(capacidade inicial $f_0$ decaindo até a taxa básica $f_c = \text{VIB}$).*
-  - **Kostiakov:** $F(t) = a \cdot t^b \implies f(t) = a \cdot b \cdot t^{b-1}$ *(ajuste empírico de campo para lâmina acumulada).*
+:::
 
-> **Conexão conservacionista:** quando a intensidade de chuva supera a taxa de infiltração ($i > f(t)$), ocorre o empoçamento ($t_p$) e inicia-se o escoamento superficial hortoniano.
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Modelagem da infiltração (anéis concêntricos / simulador de chuvas):**
 
+- **Horton:** $f(t) = f_c + (f_0 - f_c)e^{-kt}$ *(capacidade inicial $f_0$ decaindo até a taxa básica $f_c = \text{VIB}$).*
+- **Kostiakov:** $F(t) = a \cdot t^b \implies f(t) = a \cdot b \cdot t^{b-1}$ *(ajuste empírico de campo para lâmina acumulada).*
+:::
 
+::: {.pitch-band .pitch-band--navy}
+**Conexão conservacionista:** quando a intensidade de chuva supera a taxa de infiltração ($i > f(t)$), ocorre o empoçamento ($t_p$) e inicia-se o escoamento superficial hortoniano.
+:::
+:::
+:::
 
-## Resistência à penetração: interpretar com a umidade {.smaller-text}
+## [Física]{.pitch-tag} Resistência à penetração: interpretar com a umidade {.smaller-text .lesson-slide}
+
+::: {.pitch-card}
+[Protocolo e referência operacional]{.pitch-card-index}
+[Leitura em campo]{.pitch-heading}
 
 - Penetrômetros de impacto, como Stolf, e de inserção contínua têm procedimentos e calibrações próprios.
 - Registre cone, velocidade ou impactos, profundidade, repetições e teor de água.
 - Valores próximos de **2 MPa** são usados como referência em muitos estudos de restrição radicular, mas a resposta depende da espécie, da textura e da continuidade de bioporos.
 - Compare camadas e tratamentos em condições hídricas comparáveis.
+:::
 
+::: {.pitch-band .pitch-band--navy}
 **Decisão:** combinar RP, raízes observadas, densidade e fluxo de água. Uma leitura isolada não determina automaticamente subsolagem.
+:::
 
+# 3 · Agregação e qualidade biológica {.section-header rotulo="Qualidade"}
 
+## [Qualidade]{.pitch-tag .pitch-tag--gold} Estabilidade de agregados em água {.smaller-text .lesson-slide}
 
-# 3 · Agregação e qualidade biológica
-
-
-
-## Estabilidade de agregados em água {.smaller-text}
-
+::: {.pitch-band}
 O tamisamento úmido em equipamento do tipo Yoder compara a resistência dos agregados à desagregação sob um procedimento padronizado.
+:::
 
-$$DMP=\sum_i x_iw_iqquad DMG=expleft(\sum_i w_iln x_i
-ight)$$
+::: {.pitch-formula}
+$$DMP=\sum_i x_i w_i \qquad DMG=\exp\left(\sum_i w_i \ln x_i\right)$$
+:::
+
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Parâmetros e método]{.pitch-card-index}
+[Padronização laboratorial]{.pitch-heading}
 
 $x_i$: diâmetro médio da classe, em mm; $w_i$: fração de massa da classe; $\sum w_i=1$.
 
 Informe umedecimento prévio, tempo, oscilação, peneiras e correção de areia, quando prevista no método.
+:::
 
-**Exemplo:** classes com $x_i=(0{,}25;,1;,3)$ mm e $w_i=(0{,}2;,0{,}3;,0{,}5)$ → $DMP=1{,}85$ mm e $DMG\approx1{,}31$ mm.
+::: {.pitch-card .pitch-card--gold}
+[Aplicação numérica]{.pitch-card-index}
+[Exemplo]{.pitch-heading}
 
+Classes com $x_i=(0{,}25;\,1;\,3)$ mm e $w_i=(0{,}2;\,0{,}3;\,0{,}5)$ $\rightarrow$ $DMP=1{,}85$ mm e $DMG\approx1{,}31$ mm.
+:::
+:::
 
+## [Física]{.pitch-tag} Textura e dispersão não são a mesma medida {.smaller-text .lesson-slide}
 
-## Textura e dispersão não são a mesma medida {.smaller-text}
-
-:::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Frações granulométricas e ADA]{.pitch-card-index}
+[Dispersão total vs. natural]{.pitch-heading}
 
 A granulometria com dispersão adequada estima as frações:
 
@@ -199,37 +290,53 @@ A granulometria com dispersão adequada estima as frações:
 - Argila: menor que 0,002 mm.
 
 O ensaio sem dispersante permite avaliar argila dispersa em água (ADA).
+:::
 
-$$GF=100\left(1-\frac{ADA}{\text{argila total}}
-ight)$$
+::: {.pitch-formula}
+$$GF=100\left(1-\frac{ADA}{\text{argila total}}\right)$$
+:::
 
+::: {.pitch-band}
 Use unidades iguais. Baixo GF é um indício a investigar junto à química, à água e à estabilidade do material.
-
 :::
-::: {.column width="50%"}
-
-![Triângulo para interpretação das classes texturais](img/triangulo_classes.jpg){fig-align="center" width="90%"}
-
 :::
-::::
 
+::: {.pitch-media-card}
 
+![Triângulo para interpretação das classes texturais](img/triangulo_classes.jpg)
 
-## Biomassa microbiana e respiração {.smaller-text}
+[Triângulo para interpretação das classes texturais]{.pitch-caption}
+:::
+:::
+
+## [Qualidade]{.pitch-tag .pitch-tag--forest} Biomassa microbiana e respiração {.smaller-text .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-card .pitch-card--forest}
+[Indicadores microbianos]{.pitch-card-index}
+[Componentes de metabolismo]{.pitch-heading}
 
 - **CBM:** carbono da biomassa microbiana, determinado por método especificado.
 - **Respiração basal:** produção de CO₂-C em condições controladas de incubação.
 - **Quociente metabólico:** razão entre respiração e CBM, com unidades compatíveis.
+:::
 
+::: {.pitch-stack-2}
+::: {.pitch-formula}
 $$qCO_2=\frac{R_{\mathrm{basal}}}{CBM}$$
+:::
 
+::: {.pitch-band}
 Se $R_{\mathrm{basal}}$ estiver em µg CO₂-C g⁻¹ h⁻¹ e CBM em µg C g⁻¹, a razão tem unidade h⁻¹.
 
 Compare solo, época, umidade e temperatura de incubação. Uma mudança no $qCO_2$ sozinha não comprova recuperação ou degradação.
+:::
+:::
+:::
 
+## [Qualidade]{.pitch-tag .pitch-tag--forest} Enzimas e indicadores químicos {.smaller-text .lesson-slide}
 
-
-## Enzimas e indicadores químicos {.smaller-text}
+::: {.pitch-table-box}
 
 | Grupo | Exemplos | Interpretação para a intervenção |
 |---|---|---|
@@ -238,63 +345,107 @@ Compare solo, época, umidade e temperatura de incubação. Uma mudança no $qCO
 | Carbono | Carbono orgânico e matéria orgânica | Estoques e organização do habitat |
 | Sais e sódio | CE, PST e composição da água | Risco para plantas, estrutura e infiltração |
 
+:::
+
+::: {.pitch-band .pitch-band--teal}
 A BioAS/Embrapa usa referências regionais, texturais e de manejo para interpretar atividades enzimáticas. Não transfira uma faixa de interpretação sem verificar sua aplicação.
+:::
 
+## [Qualidade]{.pitch-tag} Construir um Índice de Qualidade do Solo {.smaller-text .lesson-slide}
 
+::: {.pitch-formula}
+$$IQS=\sum_{i=1}^{n}p_i\,s_i,\qquad \sum_i p_i=1$$
+:::
 
-## Construir um Índice de Qualidade do Solo {.smaller-text}
-
-$$IQS=\sum_{i=1}^{n}p_i,s_i,qquad \sum_i p_i=1$$
+::: {.pitch-card}
+[Etapas metodológicas]{.pitch-card-index}
+[Protocolo de composição]{.pitch-heading}
 
 1. Defina a função avaliada: enraizamento, infiltração ou recuperação do habitat.
 2. Selecione indicadores sem contar repetidamente a mesma informação.
 3. Declare referência, curva de normalização $s_i$ e peso $p_i$.
 4. Mantenha os mesmos métodos ao comparar campanhas.
 5. Apresente o IQS junto aos valores originais e à incerteza.
+:::
 
+::: {.pitch-band .pitch-band--navy}
 Um índice alto pode ocultar um impedimento crítico. Examine cada indicador antes da decisão.
+:::
 
+# 4 · Consistência, compactação e resistência {.section-header rotulo="Mecânica"}
 
+## [Mecânica]{.pitch-tag} Limites de Atterberg e umidade de trabalho {.smaller-text .lesson-slide}
 
-# 4 · Consistência, compactação e resistência
-
-
-
-## Limites de Atterberg e umidade de trabalho {.smaller-text}
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Estados de consistência]{.pitch-card-index}
+[Limites operacionais]{.pitch-heading}
 
 - **Limite de liquidez (LL):** transição operacional entre estados líquido e plástico.
 - **Limite de plasticidade (LP):** transição operacional entre estados plástico e semissólido.
 - **Índice de plasticidade:** $IP=LL-LP$, com os dois limites na mesma unidade.
+:::
 
+::: {.pitch-card .pitch-card--gold}
+[Aplicação agronômica]{.pitch-card-index}
+[Tráfego e preparo]{.pitch-heading}
+
+Avaliar consistência e risco de deformação pelo tráfego; trabalhar em condição adequada ao solo e ao equipamento.
+:::
+:::
+
+::: {.pitch-band}
 Os limites descrevem o material ensaiado segundo um método. Eles não substituem a curva de compactação ou a verificação de campo.
+:::
 
-**Aplicação agronômica:** avaliar consistência e risco de deformação pelo tráfego; trabalhar em condição adequada ao solo e ao equipamento.
+## [Mecânica]{.pitch-tag .pitch-tag--gold} Proctor: energia, umidade e densidade seca {.smaller-text .lesson-slide}
 
-
-
-## Proctor: energia, umidade e densidade seca {.smaller-text}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Curva de compactação]{.pitch-card-index}
+[Parâmetros de controle]{.pitch-heading}
 
 - O ensaio relaciona teor de água e densidade seca para uma energia de compactação definida.
 - O pico fornece $w_{\mathrm{ót}}$ e $D_{s,max}$ daquele material e daquela energia.
-- O grau de compactação compara a densidade seca de campo à referência:
+- O grau de compactação compara a densidade seca de campo à referência.
+:::
 
-$$GC=100\frac{D_{s,\mathrm{campo}}}{D_{s,max}}$$
-
-**Exemplo:** 1,53/1,70 × 100 = 90%.
-
+::: {.pitch-band}
 O GC exigido e a tolerância de umidade pertencem à especificação do projeto. A umidade ótima de Proctor não é obrigatoriamente uma umidade entre LP e LL.
+:::
+:::
 
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+$$GC=100\frac{D_{s,\mathrm{campo}}}{D_{s,max}}$$
+:::
 
+::: {.pitch-card .pitch-card--gold}
+[Exemplo]{.pitch-card-index}
+[Verificação de campo]{.pitch-heading}
 
-## Separar função estrutural e zona de raízes {.smaller-text}
+$1{,}53 / 1{,}70 \times 100 = 90\%$.
+:::
+:::
+:::
 
-![Curva de compactação ilustrativa e distinção entre critérios estruturais e agronômicos](img/bs_indicadores_fisicos_compactacao.png){fig-align="center" width="96%"}
+## [Mecânica]{.pitch-tag} Separar função estrutural e zona de raízes {.smaller-text .lesson-slide}
 
+::: {.pitch-media-card .pitch-media-card--wide}
 
+![Curva de compactação ilustrativa e distinção entre critérios estruturais e agronômicos](img/bs_indicadores_fisicos_compactacao.png)
 
-## Mohr-Coulomb em tensões efetivas {.smaller-text}
+[Curva de compactação ilustrativa e distinção entre critérios estruturais e agronômicos]{.pitch-caption}
+:::
 
-$$\tau_f=c'+(\sigma_n-u)\\tan\phi'$$
+## [Mecânica]{.pitch-tag .pitch-tag--gold} Mohr-Coulomb em tensões efetivas {.smaller-text .lesson-slide}
+
+::: {.pitch-formula}
+$$\tau_f=c'+(\sigma_n-u)\tan\phi'$$
+:::
+
+::: {.pitch-table-box}
 
 | Símbolo | Significado | Unidade |
 |---|---|---|
@@ -304,30 +455,39 @@ $$\tau_f=c'+(\sigma_n-u)\\tan\phi'$$
 | $u$ | Poropressão | kPa |
 | $\phi'$ | Ângulo de atrito efetivo | graus |
 
+:::
+
+::: {.pitch-band .pitch-band--navy}
 Especifique ensaio e condição de drenagem. O modelo acima não representa toda a contribuição da sucção em solos não saturados.
+:::
 
+## [Mecânica]{.pitch-tag .pitch-tag--forest} Raízes no modelo mecânico {.smaller-text .lesson-slide}
 
+::: {.pitch-band}
+Uma representação simplificada acrescenta uma contribuição radicular à coesão efetiva:
+:::
 
-## Raízes no modelo mecânico {.smaller-text}
+::: {.pitch-formula}
+$$\tau_f=c'+\Delta c_r+(\sigma_n-u)\tan\phi'$$
+:::
 
-Uma representação simplificada acrescenta uma contribuição radicular:
-
-$$\tau_f=c'+\Delta c_r+(\sigma_n-u)\\tan\phi'$$
-
-**Exemplo didático:** $c'=5$ kPa; $\sigma_n=50$ kPa; $u=20$ kPa; $\phi'=30^circ$.
+::: {.pitch-card .pitch-card--forest}
+[Exemplo didático]{.pitch-card-index}
+[Cálculo com $c'=5$ kPa; $\sigma_n=50$ kPa; $u=20$ kPa; $\phi'=30^\circ$]{.pitch-heading}
 
 - Sem contribuição radicular: $\tau_f=22{,}32$ kPa.
 - Com $\Delta c_r=3$ kPa: $\tau_f=25{,}32$ kPa.
+:::
 
+::: {.pitch-band}
 O acréscimo precisa corresponder às raízes que cruzam a zona mobilizada. A Aula 09 trata dos ensaios e das limitações desse modelo.
+:::
 
+# 5 · Classificação e decisão de projeto {.section-header rotulo="Decisão"}
 
+## [Decisão]{.pitch-tag} SiBCS: usar a classificação para orientar perguntas {.smaller-text .lesson-slide}
 
-# 5 · Classificação e decisão de projeto
-
-
-
-## SiBCS: usar a classificação para orientar perguntas {.smaller-text}
+::: {.pitch-table-box}
 
 | Grupo ou atributo | Questão a verificar no local |
 |---|---|
@@ -338,11 +498,17 @@ O acréscimo precisa corresponder às raízes que cruzam a zona mobilizada. A Au
 | Gleissolos e Organossolos | Hidromorfismo, compressibilidade e função de área úmida |
 | Plintossolos, Espodossolos e Chernossolos | Cimentações, estrutura e atributos diagnósticos |
 
+:::
+
+::: {.pitch-band .pitch-band--navy}
 As 13 ordens do SiBCS não constituem classes de resistência geotécnica. Nenhuma ordem, isoladamente, autoriza um corte íngreme ou determina uma técnica.
+:::
 
+## [Aplicação]{.pitch-tag .pitch-tag--gold} Atividade · Diagnóstico antes da intervenção {.smaller-text .lesson-slide}
 
-
-## Atividade · Diagnóstico antes da intervenção {.smaller-text}
+::: {.pitch-card .pitch-card--gold}
+[Estudo de caso]{.pitch-card-index}
+[Cenário de diagnóstico]{.pitch-heading}
 
 Uma encosta apresenta baixa cobertura, raízes horizontais a 20 cm e empoçamento após chuva.
 
@@ -350,23 +516,58 @@ Uma encosta apresenta baixa cobertura, raízes horizontais a 20 cm e empoçament
 2. Escolha cinco indicadores e descreva sua coleta.
 3. Defina uma referência e um calendário de monitoramento.
 4. Explique como separar uma zona estrutural compactada de uma faixa destinada às raízes.
+:::
 
+::: {.pitch-band .pitch-band--navy}
 **Entrega:** ficha de campo, quadro de métodos e decisão justificada. Use os resultados individuais junto ao IQS.
+:::
 
+## [Referências]{.pitch-tag} Leituras e fontes técnicas {.smaller-text .lesson-slide}
 
+::: {.pitch-cards}
+::: {.pitch-card}
+[Métodos de análise]{.pitch-card-index}
+[Embrapa (2017)]{.pitch-heading}
 
-## Leituras e fontes técnicas {.smaller-text}
+[Manual de métodos de análise de solo, 3ª edição](https://www.embrapa.br/web/solos/busca-de-publicacoes/-/publicacao/1085209/manual-de-metodos-de-analise-de-solo)
+:::
 
-- [Embrapa (2017). Manual de métodos de análise de solo, 3ª edição](https://www.embrapa.br/web/solos/busca-de-publicacoes/-/publicacao/1085209/manual-de-metodos-de-analise-de-solo)
-- [Embrapa · Bioanálise e interpretação regional da saúde do solo](https://saudedosolo.embrapa.gov.br/ciencia)
-- [USDA-NRCS (2007). NEH 654, suplemento 14I: Streambank Soil Bioengineering](https://directives.nrcs.usda.gov/sites/default/files2/1720623369/Technical%20Supplement%2014%20I%20-%20Streambank%20Soil%20Bioengineering.pdf)
+::: {.pitch-card .pitch-card--forest}
+[Saúde do solo]{.pitch-card-index}
+[Embrapa · BioAS]{.pitch-heading}
 
+[Bioanálise e interpretação regional da saúde do solo](https://saudedosolo.embrapa.gov.br/ciencia)
+:::
 
+::: {.pitch-card .pitch-card--teal}
+[Manual técnico]{.pitch-card-index}
+[USDA-NRCS (2007)]{.pitch-heading}
 
-## Origem e continuidade dos conteúdos {.smaller-text}
+[NEH 654, suplemento 14I: Streambank Soil Bioengineering](https://directives.nrcs.usda.gov/sites/default/files2/1720623369/Technical%20Supplement%2014%20I%20-%20Streambank%20Soil%20Bioengineering.pdf)
+:::
+:::
+
+## [Roteiro]{.pitch-tag} Origem e continuidade dos conteúdos {.smaller-text .lesson-slide}
+
+::: {.pitch-cards}
+::: {.pitch-card}
+[Base disciplinar]{.pitch-card-index}
+[Origem dos indicadores]{.pitch-heading}
 
 Os indicadores físicos, químicos e biológicos retomam os recortes da antiga Aula 12.1 de Análise Ambiental, preservada em material complementar.
+:::
 
-**Nesta disciplina:** o diagnóstico é aplicado ao projeto de água e solo, articulando os resultados laboratoriais às condições de campo.
+::: {.pitch-card .pitch-card--teal}
+[Integração]{.pitch-card-index}
+[Nesta disciplina]{.pitch-heading}
 
-**Próximos usos:** erosão e hidrologia (Aula 04), canais (07–08), biomecânica radicular (09), biomantas (14) e projeto integrador (21).
+O diagnóstico é aplicado ao projeto de água e solo, articulando os resultados laboratoriais às condições de campo.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Sequência]{.pitch-card-index}
+[Próximos usos]{.pitch-heading}
+
+Erosão e hidrologia (Aula 04), canais (07–08), biomecânica radicular (09), biomantas (14) e projeto integrador (21).
+:::
+:::

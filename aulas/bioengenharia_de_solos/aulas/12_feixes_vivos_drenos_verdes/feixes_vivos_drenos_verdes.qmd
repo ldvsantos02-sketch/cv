@@ -12,11 +12,12 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text}
+## <span class="pitch-tag">Abertura</span> Visão Geral da Aula {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Roteiro da aula]{.pitch-card-index}
+[Tópicos estruturantes]{.pitch-heading}
 
 - [1]{.circle} Premissas da bioengenharia vegetativa
 - [2]{.circle} Técnicas de estabilização com vegetação
@@ -28,607 +29,627 @@ execute:
 - [8]{.circle} Síntese e atividade
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Objetivo central]{.pitch-card-index}
+[Estabilização e drenagem viva]{.pitch-heading}
 
 Compreender as **técnicas de bioengenharia vegetativa** para estabilização de margens e encostas, incluindo estacas vivas, feixes vivos (*live fascines*), empacotamento de ramos, geogrelhas vegetadas, muros de suporte vivo e esteiras de ramagem, além de dominar o conceito e a confecção dos **drenos verdes** como sistema integrado de drenagem e revegetação.
 :::
+
+::: {.pitch-pill-row}
+[Estacas e feixes vivos]{.pitch-pill}
+[Drenos verdes · Taboa e bananeira]{.pitch-pill .pitch-pill--gold}
+[Sistema espinha de peixe]{.pitch-pill}
 :::
-:::
-
-# [1. PREMISSAS DA BIOENGENHARIA VEGETATIVA]{.section-header}
-
-## Contexto e motivação {.smaller-text}
-
-::: {.columns}
-::: {.column width="55%"}
-
-### O problema da erosão marginal
-
-As margens dos rios podem ser consideradas estáveis se não houver mudanças perceptíveis na sua localização ao longo de 20 a 50 anos (Lyn & Newton, 2015). A erosão marginal advém do processo de adaptação do rio ao vale em que se situa ou às novas condições de escoamento impostas por atividades antrópicas.
-
-### Métodos convencionais e suas limitações
-
-Os métodos tradicionais de contenção (riprap, gabião, concreto, retificação) frequentemente transferem problemas erosivos para outras áreas e afetam a integridade ecológica dos cursos d'água (Li & Eddleman, 2002).
-
-::: {.highlight-box}
-🔄 As técnicas de **bioengenharia** surgiram como alternativas **ambientalmente sensíveis** às abordagens convencionais, enfatizando o uso de elementos vegetativos para estabilização de margens (Lyn & Newton, 2015).
 :::
 :::
 
-::: {.column width="45%"}
+# 1 · Premissas da bioengenharia vegetativa {.section-header rotulo="Premissas"}
 
-### Comparação de abordagens
+## <span class="pitch-tag">Premissas</span> Contexto e motivação da estabilização marginal {.smaller-text .academic-slide .lesson-slide}
 
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Diagnóstico fluvial]{.pitch-card-index}
+[O problema da erosão marginal]{.pitch-heading}
+
+As margens dos rios podem ser consideradas estáveis se não houver mudanças perceptíveis na sua localização ao longo de **20 a 50 anos** (Lyn & Newton, 2015). A erosão marginal advém da adaptação do rio ao vale em que se situa ou às novas condições de escoamento impostas por atividades antrópicas.
+:::
+
+::: {.pitch-card .pitch-card--alert}
+[Métodos convencionais]{.pitch-card-index}
+[Limitações estruturais e ecológicas]{.pitch-heading}
+
+Os métodos tradicionais de contenção (riprap, gabião, concreto, retificação) frequentemente transferem problemas erosivos para outras áreas e afetam a integridade ecológica dos cursos d'água (Li & Eddleman, 2002; Biedenharn et al., 1997).
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Abordagem | Custo | Impacto ambiental | Habitat |
-|-----------|-------|--------------------|---------|
+|---|---|---|---|
 | Enrocamento | Alto | Elevado | Não |
 | Concreto | Muito alto | Elevado | Não |
 | Retificação | Alto | Severo | Destrói |
 | **Bioengenharia** | **Baixo** | **Mínimo** | **Cria** |
-
-> O enrocamento e a retificação destroem o equilíbrio físico dos cursos d'água, causando impactos ecológicos (Li & Eddleman, 2002; Biedenharn et al., 1997).
-
-:::
 :::
 
-## Premissas e zonas ribeirinhas {.smaller-text}
+::: {.pitch-band .pitch-band--teal}
+As técnicas de **bioengenharia** surgiram como alternativas **ambientalmente sensíveis** às abordagens convencionais, enfatizando elementos vegetativos para estabilização de margens (Lyn & Newton, 2015).
+:::
+:::
+:::
 
-::: {.columns}
-::: {.column width="55%"}
+## <span class="pitch-tag">Premissas</span> Fatores de sucesso e zonas ribeirinhas {.smaller-text .academic-slide .lesson-slide}
 
-### Fatores de sucesso (USDA, 2007)
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[USDA (2007)]{.pitch-card-index}
+[Condicionantes do estabelecimento]{.pitch-heading}
 
-O sucesso das técnicas depende do **estabelecimento inicial** e do **desenvolvimento a longo prazo** da vegetação ripária, condicionados por:
+O sucesso das técnicas depende do **estabelecimento inicial** e do **desenvolvimento a longo prazo** da vegetação ripária:
 
 - Espécies selecionadas e métodos de aquisição
 - Técnicas de instalação e época do ano
 - Tipo de solo, compactação e nutrientes
 - Hidrologia, clima e localização no curso d'água
 - Carga de sedimentos e acessibilidade à água
-
-### Abordagem zonal
-
-A vegetação deve ser posicionada considerando a **elevação** e as relações com o nível d'água. Na **zona submersa**, a bioengenharia requer combinação com elementos estruturais.
-
 :::
 
-::: {.column width="45%"}
-
-### Zonas de plantação ribeirinha
-
-```{mermaid}
-%%| fig-width: 5
-graph TB
-    A["Zona de Terras Altas<br>Árvores de grande porte"] --> B["Zona Ribeirinha<br>Arbustos e árvores médias"]
-    B --> C["Zona de Banco<br>Gramíneas e arbustos"]
-    C --> D["Zona de Nível de Cheia<br>Gramíneas tolerantes"]
-    D --> E["Zona Submersa<br>Bioengenharia + Estrutural"]
-    style A fill:#2E7D32,color:#fff
-    style B fill:#4CAF50,color:#fff
-    style C fill:#8BC34A,color:#000
-    style D fill:#4FC3F7,color:#000
-    style E fill:#2135A6,color:#fff
-```
-
-::: {.highlight-box}
-📍 A abordagem zonal determina **onde** cada espécie deve ser plantada em relação à linha d'água durante diferentes períodos de vazão (USDA, 2007).
-:::
-
+::: {.pitch-band}
+**Abordagem zonal:** a vegetação deve ser posicionada conforme a **elevação** e as relações com o nível d'água durante diferentes vazões. Na **zona submersa**, a bioengenharia requer combinação com elementos estruturais (USDA, 2007).
 :::
 :::
 
-# [2. TÉCNICAS DE ESTABILIZAÇÃO COM VEGETAÇÃO]{.section-header}
-
-## 2.1 Estacas vivas (*live stakes*) {.smaller-text}
-
-::: {.columns}
-::: {.column width="55%"}
-
-### Conceito
-
-Inserção e compactação de **estacas vegetativas** no solo, que irão se enraizar e crescer, criando uma camada de raízes que estabiliza o solo (USDA, 1996; FISRWG, 1998).
-
-### Mecanismo de ação
-
-- O sistema radicular **reforça** e **liga** as partículas do solo
-- As raízes **extraem o excesso de umidade**, reduzindo a poropressão
-- A parte aérea **intercepta** precipitação e reduz impacto de gotas
-
-### Indicações
-
-- Reparo de **pequenos deslizamentos** frequentemente molhados
-- **Fixação** de tecidos de controle de erosão
-- **Conexão** entre outras técnicas de bioengenharia
-- Tempo de construção **limitado** e baixo orçamento
-
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**01 · Zona de Terras Altas:** árvores de grande porte acima da cota máxima de inundação.
 :::
 
-::: {.column width="45%"}
+::: {.pitch-milestone-item}
+**02 · Zona Ribeirinha:** arbustos e árvores médias na transição da margem superior.
+:::
 
-![Detalhes construtivos de estacas vivas (Adaptado de USDA, 1996)](img/ref_estacas_vivas_detalhe.jpeg){width="90%"}
+::: {.pitch-milestone-item}
+**03 · Zona de Banco:** gramíneas e arbustos resistentes ao fluxo periódico.
+:::
 
-### Especificações
+::: {.pitch-milestone-item}
+**04 · Zona de Nível de Cheia:** gramíneas tolerantes a submersões temporárias e arraste.
+:::
 
-| Parâmetro | Valor |
-|-----------|-------|
-| Comprimento | 60-90 cm |
-| Diâmetro | 2-5 cm |
+::: {.pitch-milestone-item}
+**05 · Zona Submersa:** combinação obrigatória de bioengenharia e suporte estrutural.
+:::
+:::
+:::
+
+# 2 · Técnicas de estabilização com vegetação {.section-header rotulo="Técnicas"}
+
+## <span class="pitch-tag pitch-tag--forest">Técnicas · 2.1</span> Estacas vivas (*live stakes*) {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Conceito e mecanismo]{.pitch-card-index}
+[Reforço radicular direto (USDA, 1996; FISRWG, 1998)]{.pitch-heading}
+
+Inserção e compactação de **estacas vegetativas** no solo, que enraízam e criam uma camada de raízes estabilizadora:
+
+- Sistema radicular **reforça** e **liga** as partículas do solo
+- Raízes **extraem excesso de umidade**, reduzindo a poropressão
+- Parte aérea **intercepta** a precipitação e reduz impacto das gotas
+- Indicada para reparar **pequenos deslizamentos** úmidos, fixar geotêxteis e conectar técnicas com baixo orçamento
+:::
+
+::: {.pitch-table-box}
+| Parâmetro | Especificação |
+|---|---|
+| Comprimento / Diâmetro | 60–90 cm · Ø 2–5 cm |
 | Profundidade de inserção | 2/3 do comprimento |
-| Espaçamento | 0,6-1,2 m |
-| Corte basal | Em ângulo |
-| Corte apical | Reto |
-
+| Espaçamento | 0,6–1,2 m |
+| Cortes (basal / apical) | Em ângulo na base · Reto no ápice |
 :::
 :::
 
-## 2.2 Feixes vivos (*live fascines*) {.smaller-text}
+::: {.pitch-media-card .pitch-media-card--tall}
 
-::: {.columns}
-::: {.column width="55%"}
+![Detalhes construtivos de estacas vivas em margem](img/ref_estacas_vivas_detalhe.jpeg)
 
-### Conceito
+[Detalhes construtivos de estacas vivas]{.pitch-caption}
+[Adaptado de USDA (1996)]{.pitch-caption-sub}
+:::
+:::
 
-Longos feixes de recortes de ramos, amarrados em **estruturas cilíndricas** com diâmetro de 15 a 20 cm, colocados em **trincheiras de contorno** nas margens para reduzir a erosão e o deslizamento superficial (USDA, 1996).
+## <span class="pitch-tag pitch-tag--forest">Técnicas · 2.2</span> Feixes vivos (*live fascines*) {.smaller-text .academic-slide .lesson-slide}
 
-### Mecanismo de ação
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Conceito e ação]{.pitch-card-index}
+[Barragens de contorno em trincheiras (USDA, 1996)]{.pitch-heading}
 
-- Criam pequenas **barragens de contorno**, reduzindo o comprimento do declive em uma série de declives menores
-- **Aprisionam e retêm** o solo na margem
-- Quando instalados em trincheiras inclinadas, **facilitam a drenagem** em taludes úmidos
-- Melhoram as condições de **colonização da vegetação nativa**, criando um microclima propício ao crescimento
+Longos feixes de ramos amarrados em **estruturas cilíndricas** (15–20 cm de diâmetro), instalados em **trincheiras de contorno**:
 
-### Especificações
+- Criam pequenas **barragens de contorno**, segmentando o comprimento do declive
+- **Aprisionam e retêm** o solo na margem e facilitam a drenagem em taludes úmidos
+- Favorecem a **colonização de vegetação nativa** pelo microclima criado
+:::
 
+::: {.pitch-table-box}
 | Parâmetro | Valor |
-|-----------|-------|
-| Diâmetro do feixe | 15-20 cm |
-| Comprimento dos ramos | 1,6-3,2 m |
+|---|---|
+| Diâmetro do feixe | 15–20 cm |
+| Comprimento dos ramos | 1,6–3,2 m |
 | Estacas de fixação | 75 cm |
-
-:::
-
-::: {.column width="45%"}
-
-![Feixes vivos instalados em trincheira de contorno (Adaptado de USDA, 1996)](img/ref_feixes_vivos.jpeg){width="90%"}
-
-![Detalhe de feixes vivos em trincheira (Acervo da disciplina)](img/ref_feixes_trincheira.jpeg){width="90%"}
-
 :::
 :::
 
-## 2.3 Empacotamento de ramos (*branch packing*) {.smaller-text}
+::: {.pitch-cards-2}
+::: {.pitch-media-card .pitch-media-card--compact}
 
-::: {.columns}
-::: {.column width="55%"}
+![Feixes vivos instalados em trincheira de contorno](img/ref_feixes_vivos.jpeg)
 
-### Conceito
+[Instalação em trincheira]{.pitch-caption}
+[Adaptado de USDA (1996)]{.pitch-caption-sub}
+:::
 
-Camadas alternadas de **ramos vivos** e de **solo compactado**, dispostas entre estacas verticais e perpendiculares à face da inclinação (Gray & Sotir, 1996).
+::: {.pitch-media-card .pitch-media-card--compact}
 
-### Mecanismo de ação
+![Detalhe de feixes vivos em trincheira](img/ref_feixes_trincheira.jpeg)
 
-- Produz uma **barreira de filtro** onde os sedimentos ficam presos
-- As raízes se espalham pelo aterro, formando uma **massa unificada**
-- Previne a erosão das margens por preenchimento gradual das depressões
+[Detalhe construtivo em campo]{.pitch-caption}
+[Acervo da disciplina]{.pitch-caption-sub}
+:::
+:::
+:::
 
-### Procedimento
+## <span class="pitch-tag pitch-tag--forest">Técnicas · 2.3</span> Empacotamento de ramos (*branch packing*) {.smaller-text .academic-slide .lesson-slide}
 
-1. Camada inicial de ramos vivos na parte inferior, em **configuração cruzada**
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Gray & Sotir (1996)]{.pitch-card-index}
+[Camadas alternadas de ramos e solo]{.pitch-heading}
+
+Camadas alternadas de **ramos vivos** e **solo compactado**, dispostas entre estacas verticais perpendiculares à face da inclinação. Produz **barreira de filtro** que retém sedimentos e forma uma **massa unificada** de raízes e aterro.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Sequência executiva]{.pitch-card-index}
+[Procedimento em 4 etapas]{.pitch-heading}
+
+1. Camada inicial de ramos vivos na base em **configuração cruzada**
 2. Pontas de crescimento orientadas para a **face da inclinação**
 3. Extremidades basais tocando o **solo não perturbado**
 4. Camadas alternadas de solo compactado entre os ramos
-
-::: {.highlight-box}
-💰 Método **eficaz e econômico**, indicado para reparar pequenos deslizamentos e cavidades localizadas nas margens (USDA, 1996).
 :::
 
-:::
-
-::: {.column width="45%"}
-
-![Empacotamento de ramos - camadas alternadas de ramos e solo (Adaptado de USDA, 1996)](img/ref_empacotamento.jpeg){width="90%"}
-
+::: {.pitch-band}
+Método **eficaz e econômico**, indicado para reparar pequenos deslizamentos e cavidades localizadas nas margens (USDA, 1996).
 :::
 :::
 
-## 2.4 Geogrelha vegetada {.smaller-text}
+::: {.pitch-media-card .pitch-media-card--tall}
 
-::: {.columns}
-::: {.column width="55%"}
+![Empacotamento de ramos com camadas alternadas de ramos e solo](img/ref_empacotamento.jpeg)
 
-### Conceito
+[Empacotamento de ramos (*branch packing*)]{.pitch-caption}
+[Adaptado de USDA (1996)]{.pitch-caption-sub}
+:::
+:::
 
-Técnica semelhante ao empacotamento de ramos, porém com **materiais geotêxteis** (naturais ou sintéticos) envolvidos em torno de cada elevação de solo entre as camadas de ramos vivos (Gray & Sotir, 1996).
+## <span class="pitch-tag pitch-tag--forest">Técnicas · 2.4</span> Geogrelha vegetada {.smaller-text .academic-slide .lesson-slide}
 
-### Diferencial
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--teal}
+[Gray & Sotir (1996)]{.pitch-card-index}
+[Reforço geossintético + biológico]{.pitch-heading}
 
-- O geotêxtil confere **estabilidade imediata** enquanto a vegetação se estabelece
-- Combina a **resistência mecânica** do geossintético com o **reforço biológico** das raízes
-- Permite construção em **taludes mais íngremes**
+Técnica semelhante ao empacotamento de ramos, porém com **materiais geotêxteis** (naturais ou sintéticos) envolvidos em torno de cada camada de solo entre ramos vivos:
 
-### Aplicações
+- Geotêxtil confere **estabilidade imediata** durante o estabelecimento vegetal
+- Combina **resistência mecânica** do geossintético com **reforço radicular**
+- Viabiliza construção em **taludes mais íngremes**
+:::
 
-| Condição | Viabilidade |
-|----------|------------|
+::: {.pitch-table-box}
+| Condição do terreno | Viabilidade |
+|---|---|
 | Taludes íngremes (> 45°) | Excelente |
 | Solos de baixa coesão | Excelente |
 | Áreas com espaço restrito | Boa |
 | Margens fluviais profundas | Boa com suporte estrutural |
-
-:::
-
-::: {.column width="45%"}
-
-![Geogrelha vegetada - envolvimento com geotêxtil (Adaptado de USDA, 1996)](img/ref_geogrelha_vegetada.jpeg){width="90%"}
-
 :::
 :::
 
-## 2.5 Muro de suporte vivo (*live crib wall*) {.smaller-text}
+::: {.pitch-media-card .pitch-media-card--tall}
 
-::: {.columns}
-::: {.column width="55%"}
+![Geogrelha vegetada com envolvimento geotêxtil](img/ref_geogrelha_vegetada.jpeg)
 
-### Conceito
+[Geogrelha vegetada em camadas]{.pitch-caption}
+[Adaptado de USDA (1996)]{.pitch-caption-sub}
+:::
+:::
 
-Arranjo de encaixe, em **forma de caixa**, de troncos de madeira, preenchido com material de aterro e camadas de ramos vivos que penetram no interior e se estendem até a encosta (FISRWG, 1998).
+## <span class="pitch-tag pitch-tag--forest">Técnicas · 2.5</span> Muro de suporte vivo (*live crib wall*) {.smaller-text .academic-slide .lesson-slide}
 
-### Mecanismo de ação
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[FISRWG (1998)]{.pitch-card-index}
+[Estrutura em caixa com ramos vivos]{.pitch-heading}
 
-- Uma vez que as estacas vivas enraízam, a **vegetação assume gradualmente** as funções estruturais dos troncos
-- A estrutura de madeira fornece **suporte imediato** enquanto a vegetação se desenvolve
-- Mantém a aparência de **margem natural** e fornece excelente habitat
+Arranjo de encaixe em **forma de caixa** de troncos de madeira, preenchido com aterro e camadas de ramos vivos que penetram no interior e se estendem até a encosta:
 
-### Indicações
+- Quando as estacas enraízam, a **vegetação assume gradualmente** as funções estruturais dos troncos
+- A madeira dá **suporte imediato** mantendo aparência natural e habitat
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[Indicações de campo]{.pitch-card-index}
+[Onde empregar]{.pitch-heading}
 
 - **Curvas externas** de cursos d'água com correntes fortes
 - Base da margem onde uma **parede baixa** é necessária
-- Espaço **limitado** requerendo estrutura mais vertical
-- Pode ser instalada **acima e abaixo** do nível da água
-
-:::
-
-::: {.column width="45%"}
-
-![Muro de suporte vivo (live crib wall) - estrutura em caixa de troncos (Adaptado de USDA, 1996)](img/ref_muro_suporte.jpeg){width="90%"}
-
+- Espaço **limitado** exigindo perfil mais vertical, **acima e abaixo** do N.A.
 :::
 :::
 
-## 2.6 Esteira de ramagem (*brushmattress*) {.smaller-text}
+::: {.pitch-media-card .pitch-media-card--tall}
 
-::: {.columns}
-::: {.column width="55%"}
+![Muro de suporte vivo em caixa de troncos](img/ref_muro_suporte.jpeg)
 
-### Conceito
-
-Combinação de **estacas vivas, feixes vivos e recortes de ramos** instalados para cobrir e estabilizar margens inteiras, do nível de cheia até o topo da inclinação (FISRWG, 1998; USDA, 1996).
-
-### Mecanismo de ação
-
-- Forma uma **cobertura protetora imediata** sobre a margem
-- **Captura sedimentos** durante condições de inundação
-- Repõe rapidamente a **vegetação e o habitat ribeirinho**
-- Melhora as condições de **colonização nativa**
-
-### Procedimento
-
-1. Escavação de trincheira no contorno da base (nível de cheia)
-2. Instalação de estacas vivas e feixe na trincheira
-3. Ramos de **1,8-2,7 m** e **~2,5 cm** de diâmetro, flexíveis
-4. Disposição em camada de 1-2 ramos verticalmente na inclinação
-5. Fixação com **arame esticado diagonalmente** entre estacas
-
-:::
-
-::: {.column width="45%"}
-
-![Esteira de ramagem (brushmattress) - cobertura completa de margem (Adaptado de USDA, 1996)](img/ref_esteira_ramagem.jpeg){width="90%"}
-
+[Muro de suporte vivo (*live crib wall*)]{.pitch-caption}
+[Adaptado de USDA (1996)]{.pitch-caption-sub}
 :::
 :::
 
-## Resumo comparativo das técnicas {.smaller-text}
+## <span class="pitch-tag pitch-tag--forest">Técnicas · 2.6</span> Esteira de ramagem (*brushmattress*) {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[FISRWG (1998) · USDA (1996)]{.pitch-card-index}
+[Cobertura integral da margem]{.pitch-heading}
 
-### Quando usar cada técnica
+Combinação de **estacas vivas, feixes vivos e recortes de ramos** para cobrir margens do nível de cheia até o topo:
 
+- Forma **cobertura protetora imediata** e **captura sedimentos** em cheias
+- Repõe rapidamente a vegetação, o habitat ribeirinho e a colonização nativa
+:::
+
+::: {.pitch-card}
+[Execução em 5 passos]{.pitch-card-index}
+[Procedimento construtivo]{.pitch-heading}
+
+1. Escavar trincheira no contorno da base (nível de cheia)
+2. Instalar estacas vivas e feixe na trincheira
+3. Selecionar ramos flexíveis de **1,8–2,7 m** e **~2,5 cm** de diâmetro
+4. Dispor camada de 1–2 ramos verticalmente na inclinação
+5. Fixar com **arame esticado diagonalmente** entre estacas
+:::
+:::
+
+::: {.pitch-media-card .pitch-media-card--tall}
+
+![Esteira de ramagem cobrindo a margem do nível de cheia ao topo](img/ref_esteira_ramagem.jpeg)
+
+[Esteira de ramagem (*brushmattress*)]{.pitch-caption}
+[Adaptado de USDA (1996)]{.pitch-caption-sub}
+:::
+:::
+
+## <span class="pitch-tag pitch-tag--forest">Técnicas</span> Resumo comparativo e integração de sistemas {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-table-box}
 | Técnica | Melhor aplicação | Complexidade |
-|---------|------------------|-------------|
+|---|---|---|
 | Estacas vivas | Pequenos deslizamentos, conexão entre técnicas | Baixa |
 | Feixes vivos | Trincheiras de contorno, taludes úmidos | Média |
-| Empacotamento | Cavidades e deslizamentos localizados | Média |
-| Geogrelha vegetada | Taludes íngremes, solos fracos | Alta |
-| Muro de suporte | Curvas externas, correntes fortes | Alta |
+| Empacotamento de ramos | Cavidades e deslizamentos localizados | Média |
+| Geogrelha vegetada | Taludes íngremes (> 45°), solos fracos | Alta |
+| Muro de suporte vivo | Curvas externas, correntes fortes, base | Alta |
 | Esteira de ramagem | Cobertura total de margens | Média-Alta |
-
 :::
 
-::: {.column width="45%"}
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[01 · Paliçadas]{.pitch-card-index}
+[Barreiras em ravinas]{.pitch-heading}
 
-### Integração com técnicas anteriores
-
-```{mermaid}
-%%| fig-width: 5
-graph LR
-    A["🪵 Paliçadas<br>Barreiras em ravinas"] -->|"Reduz<br>velocidade"| D["Controle<br>integrado"]
-    B["🕳️ Barraginhas<br>Captação/infiltração"] -->|"Retém<br>água"| D
-    C["🌱 Feixes vivos<br>Drenagem + raízes"] -->|"Drena +<br>enraíza"| D
-    E["🏗️ Muro suporte<br>Contenção estrutural"] -->|"Estabiliza<br>base"| D
-    style A fill:#586BA6,color:#000
-    style B fill:#2135A6,color:#fff
-    style C fill:#2E7D32,color:#fff
-    style E fill:#8B4513,color:#fff
-    style D fill:#27368C,color:#fff
-```
-
-::: {.highlight-box}
-🌿 A combinação de técnicas é a regra: cada uma atua em uma **zona específica** da margem ou encosta, e a vegetação progressivamente **assume funções estruturais**.
+Reduzem a velocidade do escoamento concentrado.
 :::
 
-:::
-:::
+::: {.pitch-card .pitch-card--teal}
+[02 · Barraginhas]{.pitch-card-index}
+[Captação e infiltração]{.pitch-heading}
 
-# [3. DRENOS VERDES: CONCEITO E CONFECÇÃO]{.section-header}
-
-## Definição de drenos verdes {.smaller-text}
-
-::: {.columns}
-::: {.column width="55%"}
-
-### Conceito
-
-**Drenos verdes** (*green drains*) são dispositivos tubulares fabricados com **fibras naturais** (taboa, bananeira) que funcionam simultaneamente como sistema de **drenagem** superficial e substrato de **retenção de umidade** para os feixes vivos.
-
-::: {.highlight-box}
-💡 A **combinação** de drenos verdes + feixes vivos cria um sistema duplo: **drenagem** + **revegetação**, integrando engenharia geotécnica e restauração ecológica.
+Retêm água excedente e sedimentos a montante.
 :::
 
-### Fibras utilizadas
+::: {.pitch-card .pitch-card--forest}
+[03 · Feixes vivos]{.pitch-card-index}
+[Drenagem + raízes]{.pitch-heading}
 
-**Taboa (*Typha dominguensis*):** macrófita aquática abundante no Nordeste, alta retenção hídrica, estrutura porosa e biodegradável.
-
-**Bananeira (*Musa paradisiaca*):** pseudocaule rico em fibras longas, boa drenagem, excelente custo-benefício.
-
+Drenam a encosta úmida e enraízam no solo.
 :::
 
-::: {.column width="45%"}
-![Dreno verde confeccionado com fibras naturais de taboa](img/fig04_dreno_verde_a.jpeg){width="90%"}
+::: {.pitch-card .pitch-card--gold}
+[04 · Muro suporte]{.pitch-card-index}
+[Contenção estrutural]{.pitch-heading}
 
-![Dreno verde - detalhe da estrutura interna](img/fig05_dreno_verde_b.jpeg){width="90%"}
+Estabiliza a base e consolida o **controle integrado**.
 :::
 :::
 
-## Formulações e propriedades {.smaller-text}
+# 3 · Drenos verdes: conceito e confecção {.section-header rotulo="Drenos Verdes"}
 
-::: {.columns}
-::: {.column width="50%"}
+## <span class="pitch-tag pitch-tag--teal">Drenos Verdes</span> Definição, fibras naturais e dupla função {.smaller-text .academic-slide .lesson-slide}
 
-### Formulações dos drenos verdes
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--teal}
+[Conceito integrado]{.pitch-card-index}
+[Drenagem + substrato vivo]{.pitch-heading}
 
-Foram desenvolvidas **três frações** para cada espécie:
+**Drenos verdes** (*green drains*) são dispositivos tubulares de **fibras naturais** que atuam simultaneamente como sistema de **drenagem superficial** e substrato de **retenção de umidade** para os feixes vivos, unindo engenharia geotécnica e restauração ecológica.
+:::
 
-**Taboa (*Typha dominguensis*):**
+::: {.pitch-card .pitch-card--forest}
+[Matérias-primas regionais]{.pitch-card-index}
+[Fibras lignocelulósicas]{.pitch-heading}
 
-| Fração | Composição |
-|--------|------------|
+- **Taboa (*Typha dominguensis*):** macrófita aquática abundante no Nordeste, alta retenção hídrica, estrutura porosa e biodegradável.
+- **Bananeira (*Musa paradisiaca*):** pseudocaule rico em fibras longas, boa drenagem e excelente custo-benefício.
+:::
+:::
+
+::: {.pitch-cards-2}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
+
+![Dreno verde confeccionado com fibras naturais de taboa](img/fig04_dreno_verde_a.jpeg)
+
+[Dreno verde de fibras naturais]{.pitch-caption}
+[Estrutura tubular drenante]{.pitch-caption-sub}
+:::
+
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
+
+![Detalhe da estrutura interna do dreno verde](img/fig05_dreno_verde_b.jpeg)
+
+[Detalhe da parede fibrosa]{.pitch-caption}
+[Porosidade e retenção hídrica]{.pitch-caption-sub}
+:::
+:::
+:::
+
+## <span class="pitch-tag pitch-tag--teal">Drenos Verdes</span> Formulações e propriedades físicas {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Fração | Taboa (*Typha dominguensis*) |
+|---|---|
 | G1 | 24% limbo + 44% fibras folha + 20% resina + 6% solvente + 30% espessante |
 | G2 | 24% limbo + 20% fibras bainha + 20% resina + 6% solvente + 30% espessante |
 | G3 | G2 com água em vez de D'limoneno |
+:::
 
-**Bananeira (*Musa paradisiaca*):**
-
-| Fração | Composição |
-|--------|------------|
+::: {.pitch-table-box}
+| Fração | Bananeira (*Musa paradisiaca*) |
+|---|---|
 | G1 | 24% limbo + 44% fibras folha + 20% resina + 6% solvente + 30% espessante |
 | G2 | 24% limbo + 20% fibras pseudocaule + 20% resina + 6% solvente + 30% espessante |
 | G3 | G2 com água em vez de D'limoneno |
-
-:::
-
-::: {.column width="50%"}
-
-### Componentes e especificações
-
-- **Resina natural**: bi-componente derivada de poliol vegetal de **mamona** - promove coesão entre fibras
-- **Solvente**: D'limoneno (95%) - origem natural
-- **Espessante**: confere consistência estrutural
-
-| Parâmetro | Valor |
-|-----------|-------|
-| Espessura da parede | 5 mm |
-| Diâmetro total | 20 cm |
-| Densidade aproximada | 0,062 g/cm³ |
-
-> Similar a materiais geotécnicos como lã de rocha e lã de vidro.
-
 :::
 :::
 
-## Etapas de fabricação {.smaller-text}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Aglomerante e aditivos]{.pitch-card-index}
+[Composição química]{.pitch-heading}
 
-::: {.columns}
-::: {.column width="55%"}
-
-### Passo a passo
-
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["1. Coleta e secagem<br>das fibras naturais"] --> B["2. Tratamento com<br>resina + espessante"]
-    B --> C["3. Mistura na encoladeira<br>(5 minutos)"]
-    C --> D["4. Moldagem em<br>formas de dreno"]
-    D --> E["5. Prensagem a frio<br>forma tipo U (24h)"]
-    E --> F["6. Cura da resina<br>sem aplicação de calor"]
-    F --> G["7. Dreno verde<br>pronto"]
-    style A fill:#586BA6,color:#000
-    style D fill:#2135A6,color:#fff
-    style E fill:#27368C,color:#fff
-    style G fill:#2E7D32,color:#fff
-```
-
-**Detalhes importantes:**
-
-1. Material seco até ~12% de umidade
-2. Mistura homogênea na encoladeira por 5 min
-3. Prensagem hidráulica a frio - **sem calor**
-4. Cura de 24 horas na forma tipo "U"
-
+- **Resina natural:** bi-componente derivada de poliol vegetal de **mamona** (coesão entre fibras)
+- **Solvente:** D'limoneno (95%) de origem natural
+- **Espessante:** confere consistência estrutural à matriz
 :::
 
-::: {.column width="45%"}
-![Forma para prensagem hidráulica do dreno verde](img/fig06_forma_prensagem.png){width="90%"}
-
-![Esquema de montagem para prensagem](img/fig07_esquema_montagem.png){width="90%"}
+::: {.pitch-table-box}
+| Parâmetro físico | Valor |
+|---|---|
+| Espessura da parede ($\varepsilon$) | 5 mm |
+| Diâmetro total ($\varnothing$) | 20 cm |
+| Densidade aproximada | 0,062 g/cm³ (similar a lã de rocha/vidro) |
+:::
 :::
 :::
 
-## Estrutura e funções do dreno verde {.smaller-text}
+## <span class="pitch-tag pitch-tag--teal">Drenos Verdes</span> Etapas de fabricação e prensagem a frio {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Seção transversal
-
-```{mermaid}
-%%| fig-width: 5
-graph LR
-    subgraph Dreno["Dreno Verde - Seção Transversal"]
-        direction TB
-        A["Parede externa<br>Fibras naturais<br>ε = 5 mm"]
-        B["Furos de infiltração<br>Distribuídos<br>ao longo da parede"]
-        C["Núcleo interno<br>Feixes vivos +<br>substrato úmido"]
-        D["Ø total = 20 cm"]
-    end
-    style A fill:#8B4513,color:#fff
-    style B fill:#4FC3F7,color:#000
-    style C fill:#2E7D32,color:#fff
-    style D fill:#586BA6,color:#000
-```
-
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**01–02 · Preparo das fibras:** coleta e secagem até ~12% de umidade, seguidas de tratamento com resina de mamona e espessante.
 :::
 
-::: {.column width="50%"}
+::: {.pitch-milestone-item}
+**03–04 · Mistura e moldagem:** homogeneização em encoladeira por 5 min e disposição nas formas de dreno.
+:::
 
-### Dupla função
+::: {.pitch-milestone-item}
+**05–06 · Prensagem e cura a frio:** prensagem hidráulica em forma tipo **"U"** sem calor e cura de **24 horas**.
+:::
 
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["Água superficial<br>excedente"] -->|"Infiltra pelos<br>furos"| B["Interior do<br>dreno verde"]
-    B -->|"Conduz para"| C["Dreno polo<br>principal"]
-    B -->|"Retém umidade<br>para"| D["Feixes vivos"]
-    D -->|"Enraízam e"| E["Estabilizam<br>o solo"]
-    C -->|"Evacuação<br>controlada"| F["Base da<br>encosta"]
-    style A fill:#4FC3F7,color:#000
-    style B fill:#8B4513,color:#fff
-    style D fill:#2E7D32,color:#fff
-    style E fill:#586BA6,color:#000
-```
-
+::: {.pitch-milestone-item}
+**07 · Produto acabado:** dreno verde poroso ($\varnothing = 20\text{ cm}$, $\varepsilon = 5\text{ mm}$) pronto para campo.
+:::
 :::
 :::
 
-# [4. SISTEMA ESPINHA DE PEIXE]{.section-header}
+::: {.pitch-cards-2}
+::: {.pitch-media-card .pitch-media-card--compact}
 
-## Disposição em espinha de peixe {.smaller-text}
+![Forma para prensagem hidráulica do dreno verde](img/fig06_forma_prensagem.png)
 
-::: {.columns}
-::: {.column width="55%"}
+[Forma tipo "U" para prensagem]{.pitch-caption}
+[Prensagem hidráulica a frio]{.pitch-caption-sub}
+:::
 
-### Arranjo de campo
+::: {.pitch-media-card .pitch-media-card--compact}
 
-O sistema de drenagem verde é instalado em um padrão de **"espinha de peixe"** (*fishbone pattern*):
+![Esquema de montagem para prensagem do dreno](img/fig07_esquema_montagem.png)
 
-1. **Drenos de polo** (principais)
-   - Instalados ao longo da **ravina**
-   - Feixes maiores de ramos vivos
-   - Coletam e redirecionam o fluxo de água
+[Esquema de montagem]{.pitch-caption}
+[Cura de 24 h sem calor]{.pitch-caption-sub}
+:::
+:::
+:::
 
-2. **Fascinas laterais** (secundárias)
-   - Conectadas **obliquamente** aos drenos de polo
-   - Feixes menores de ramos
-   - Desviam água para o dreno principal
+## <span class="pitch-tag pitch-tag--teal">Drenos Verdes</span> Seção transversal e dupla função hidráulico-biológica {.smaller-text .academic-slide .lesson-slide}
 
-### Benefícios do arranjo
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Arquitetura tubular ($\varnothing = 20\text{ cm}$)]{.pitch-card-index}
+[Seção transversal do dreno verde]{.pitch-heading}
+
+- **Parede externa ($\varepsilon = 5\text{ mm}$):** compósito de fibras naturais prensadas (taboa ou bananeira).
+- **Furos de infiltração:** distribuídos ao longo da parede para captar água subsuperficial e superficial.
+- **Núcleo interno:** abrigo de **feixes vivos** envolvidos em **substrato úmido**, protegido contra dessecação.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Mecanismo acoplado]{.pitch-card-index}
+[Dupla função em operação]{.pitch-heading}
+
+1. **Água superficial excedente** infiltra pelos furos para o interior do dreno verde.
+2. Parte do fluxo é **conduzida para o dreno polo principal** até a evacuação controlada na base da encosta.
+3. A matriz fibrosa **retém umidade para os feixes vivos**, que enraízam e **estabilizam o solo**.
+:::
+:::
+
+::: {.pitch-band .pitch-band--navy}
+**Síntese mecânica:** enquanto a parede porosa alivia a poropressão por drenagem rápida, o interior úmido garante sobrevivência e brotação precoce das estacas vivas.
+:::
+
+# 4 · Sistema espinha de peixe {.section-header rotulo="Espinha de Peixe"}
+
+## <span class="pitch-tag pitch-tag--gold">Espinha de Peixe</span> Estrutura funcional e planta em espinha-de-peixe {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--wide}
+
+![Seção transversal de feixe vivo em vala e planta da disposição em espinha de peixe](img/bs_12_feixes_dreno_verde.png)
+
+[Estrutura funcional e disposição em espinha-de-peixe]{.pitch-caption}
+[Drenagem subsuperficial em vala (0,4–0,6 m) combinada a captação simétrica até o exutório estabilizado]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band}
+O padrão **espinha de peixe** (*fishbone pattern*) integra drenos secundários oblíquos ("costelas") ao dreno principal ("coluna vertebral"), reduzindo a poropressão e conduzindo o fluxo sem erosão.
+:::
+
+## <span class="pitch-tag pitch-tag--gold">Espinha de Peixe</span> Arranjo de campo e registro em ravina {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Componentes do traçado]{.pitch-card-index}
+[Drenos de polo e fascinas laterais]{.pitch-heading}
+
+1. **Drenos de polo (principais):** instalados ao longo do eixo da **ravina** com feixes maiores para coletar e redirecionar o fluxo.
+2. **Fascinas laterais (secundárias):** conectadas **obliquamente** aos drenos de polo para desviar água e promover infiltração.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[Benefícios hidráulico-geotécnicos]{.pitch-card-index}
+[Resposta integrada no terreno]{.pitch-heading}
 
 - Redução da **velocidade do fluxo superficial**
-- Favorecimento da **infiltração** no solo
-- Enraizamento dos feixes ao longo de todo o sistema
-- Melhoria da **coesão do terreno**
-
-:::
-
-::: {.column width="45%"}
-![Ravina e sulcos para implementação](img/fig08_ravina_campo.png){width="90%"}
-
-![Esquema de disposição espinha de peixe](img/fig09_espinha_peixe.png){width="90%"}
+- Favorecimento da **infiltração** e recarga local
+- Enraizamento dos feixes e aumento da **coesão do terreno**
 :::
 :::
 
-## Esquema funcional e dimensionamento {.smaller-text}
+::: {.pitch-cards-2}
+::: {.pitch-media-card .pitch-media-card--compact}
 
-::: {.columns}
-::: {.column width="55%"}
+![Ravina e sulcos preparados para implementação](img/fig08_ravina_campo.png)
 
-### Fluxo hídrico no sistema
-
-```{mermaid}
-%%| fig-width: 5.5
-graph TD
-    A["Precipitação"] --> B["Escoamento<br>superficial"]
-    B --> C["Fascinas laterais<br>(oblíquas)"]
-    C -->|"Desvia para"| D["Dreno de polo<br>(principal)"]
-    D --> E["Base da<br>encosta"]
-    C -->|"Infiltra no"| F["Solo"]
-    B -->|"Interceptado por"| G["Feixes vivos"]
-    G -->|"Raízes<br>estabilizam"| H["Solo reforçado"]
-    F --> H
-    style A fill:#4FC3F7,color:#000
-    style C fill:#2E7D32,color:#fff
-    style D fill:#2135A6,color:#fff
-    style G fill:#586BA6,color:#000
-    style H fill:#8B4513,color:#fff
-```
-
+[Ravina e sulcos em campo]{.pitch-caption}
+[Preparo dos canais de assentamento]{.pitch-caption-sub}
 :::
 
-::: {.column width="45%"}
+::: {.pitch-media-card .pitch-media-card--compact}
 
-### Dimensionamento
+![Esquema de disposição em espinha de peixe](img/fig09_espinha_peixe.png)
 
-As fascinas laterais devem ser inseridas em **ângulo de 30°-45°** em relação ao dreno de polo:
+[Arranjo espinha de peixe]{.pitch-caption}
+[Convergência oblíqua para o dreno polo]{.pitch-caption-sub}
+:::
+:::
+:::
 
+## <span class="pitch-tag pitch-tag--gold">Espinha de Peixe</span> Fluxo hídrico e dimensionamento geométrico {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[01 · Precipitação]{.pitch-card-index}
+[Escoamento superficial]{.pitch-heading}
+
+Água da chuva gera enxurrada na encosta exposta.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[02 · Fascinas laterais]{.pitch-card-index}
+[Desvio oblíquo]{.pitch-heading}
+
+Interceptam o fluxo, favorecem infiltração no solo e desviam para o dreno de polo.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[03 · Dreno de polo]{.pitch-card-index}
+[Evacuação controlada]{.pitch-heading}
+
+Conduz a vazão reunida em segurança até a base da encosta.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[04 · Feixes vivos]{.pitch-card-index}
+[Solo reforçado]{.pitch-heading}
+
+Raízes se desenvolvem ao longo da rede, consolidando a encosta.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Declividade | Espaçamento recomendado |
-|-------------|------------------------|
-| 15°-25° | 2,0 - 3,0 m |
-| 25°-35° | 1,5 - 2,0 m |
-| 35°-45° | 1,0 - 1,5 m |
-
-::: {.highlight-box}
-🐟 O padrão **espinha de peixe** é inspirado na anatomia natural: as "costelas" (fascinas) drenam para a "coluna vertebral" (dreno polo), distribuindo a captação ao longo de toda a encosta.
+|---|---|
+| 15°–25° | 2,0 – 3,0 m |
+| 25°–35° | 1,5 – 2,0 m |
+| 35°–45° | 1,0 – 1,5 m |
 :::
 
+::: {.pitch-band .pitch-band--teal}
+**Ângulo de inserção:** as fascinas laterais devem conectar-se ao dreno de polo em **ângulo de 30°–45°**, evitando retorno de fluxo ou solapamento na junção.
 :::
 :::
+:::
 
-# [5. ESPÉCIES VEGETAIS PARA ESTACAS VIVAS]{.section-header}
+# 5 · Espécies vegetais para estacas vivas {.section-header rotulo="Espécies"}
 
-## Seleção de espécies {.smaller-text}
+## <span class="pitch-tag pitch-tag--forest">Espécies</span> Seleção e preparo de estacas para tabuleiros costeiros {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
-
-### Espécies recomendadas
-
-As espécies são selecionadas por sua capacidade de **propagação por estaquia** e adaptação aos tabuleiros costeiros:
-
-| Espécie | Nome popular | Uso |
-|---------|-------------|-----|
+::: {.pitch-grid-55}
+::: {.pitch-table-box}
+| Espécie | Nome popular | Uso principal |
+|---|---|---|
 | *Schinus terebinthifolius* | Aroeira | Estabilização |
 | *Spondias mombin* | Cajá | Cobertura |
 | *Inga marginata* | Ingá | Fixação de N₂ |
@@ -636,164 +657,141 @@ As espécies são selecionadas por sua capacidade de **propagação por estaquia
 | *Lonchocarpus sericeus* | Falso-ingá | Fixação de N₂ |
 | *Mimosa caesalpiniaefolia* | Sabiá | Cobertura rápida |
 | *Genipa americana* | Genipapo | Revegetação |
-
 :::
 
-::: {.column width="45%"}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Critérios de matrizes]{.pitch-card-index}
+[Seleção fitotécnica]{.pitch-heading}
 
-### Critérios de seleção
+- **Vigor:** árvores-matrizes saudáveis (3 matrizes/espécie)
+- **Fitossanidade:** ausência de pragas e doenças
+- **Propagação por estaquia** comprovada e **adaptação** ao semiárido/tabuleiros
+:::
 
-- **Vigor**: árvores-matrizes saudáveis
-- **Fitossanidade**: ausência de pragas/doenças
-- **Propagação por estaquia**: capacidade comprovada
-- **Adaptação local**: resistência ao clima semiárido
+::: {.pitch-card .pitch-card--gold}
+[Preparo das estacas]{.pitch-card-index}
+[Padrão biométrico]{.pitch-heading}
 
-### Preparação das estacas
-
-1. Seleção de **3 árvores vigorosas** por espécie
-2. Retirada da **porção basal** da planta
-3. Estacas de **15-20 cm** de comprimento
-4. Diâmetro de **0,5-1,5 cm**
-5. Corte **reto no ápice** e **em ângulo na base**
-6. Acondicionamento em **água** até o plantio
-
+Retirada da **porção basal**, **15–20 cm** de comprimento, **Ø 0,5–1,5 cm**, corte **reto no ápice** e **em ângulo na base**, acondicionadas em **água** até o plantio.
+:::
 :::
 :::
 
-## Galeria de espécies - Grupo 1 {.smaller-text}
+## <span class="pitch-tag pitch-tag--forest">Espécies</span> Galeria de espécies recomendadas — Grupo 1 {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="33%"}
+::: {.pitch-cards}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
 
-![*Schinus terebinthifolius* (Aroeira) - estabilização de taludes e margens](img/sp_schinus_terebinthifolius.jpg){width="100%"}
+![Schinus terebinthifolius (Aroeira) usada na estabilização de taludes e margens](img/sp_schinus_terebinthifolius.jpg)
 
-:::{.smaller-text}
-Foto: J.C. Fonseca Mata - CC BY-SA 4.0
+[*Schinus terebinthifolius* (Aroeira)]{.pitch-caption}
+[Estabilização de taludes e margens · Foto: J.C. Fonseca Mata (CC BY-SA 4.0)]{.pitch-caption-sub}
 :::
 
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
+
+![Spondias mombin (Cajá) para cobertura vegetal e sombreamento](img/sp_spondias_mombin.jpg)
+
+[*Spondias mombin* (Cajá)]{.pitch-caption}
+[Cobertura vegetal e sombreamento · Foto: Marco Schmidt (CC BY-SA 2.5)]{.pitch-caption-sub}
 :::
 
-::: {.column width="33%"}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
 
-![*Spondias mombin* (Cajá) - cobertura vegetal e sombreamento](img/sp_spondias_mombin.jpg){width="100%"}
+![Inga marginata (Ingá) para fixação biológica de N2 e cobertura](img/sp_inga_marginata.jpg)
 
-:::{.smaller-text}
-Foto: Marco Schmidt - CC BY-SA 2.5
-:::
-
-:::
-
-::: {.column width="33%"}
-
-![*Inga marginata* (Ingá) - fixação biológica de N₂ e cobertura](img/sp_inga_marginata.jpg){width="100%"}
-
-:::{.smaller-text}
-Foto: Paulo Schwirkowski - CC BY 3.0
-:::
-
+[*Inga marginata* (Ingá)]{.pitch-caption}
+[Fixação biológica de N₂ e cobertura · Foto: Paulo Schwirkowski (CC BY 3.0)]{.pitch-caption-sub}
 :::
 :::
 
-## Galeria de espécies - Grupo 2 {.smaller-text}
+## <span class="pitch-tag pitch-tag--forest">Espécies</span> Galeria de espécies recomendadas — Grupo 2 {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="25%"}
+::: {.pitch-flow-4}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
 
-![*Tapirira guianensis* (Pau-pombo)](img/sp_tapirira_guianensis.jpg){width="100%"}
+![Tapirira guianensis (Pau-pombo)](img/sp_tapirira_guianensis.jpg)
 
-:::{.smaller-text}
-Foto: João Medeiros - CC BY 2.0
+[*Tapirira guianensis* (Pau-pombo)]{.pitch-caption}
+[Recomposição · Foto: João Medeiros (CC BY 2.0)]{.pitch-caption-sub}
 :::
 
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
+
+![Lonchocarpus sericeus (Falso-ingá)](img/sp_lonchocarpus_sericeus.jpg)
+
+[*Lonchocarpus sericeus* (Falso-ingá)]{.pitch-caption}
+[Fixação de N₂ · Foto: Alex Popovkin (CC BY 2.0)]{.pitch-caption-sub}
 :::
 
-::: {.column width="25%"}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
 
-![*Lonchocarpus sericeus* (Falso-ingá)](img/sp_lonchocarpus_sericeus.jpg){width="100%"}
+![Mimosa caesalpiniaefolia (Sabiá)](img/sp_mimosa_caesalpiniaefolia.jpg)
 
-:::{.smaller-text}
-Foto: Alex Popovkin - CC BY 2.0
+[*Mimosa caesalpiniaefolia* (Sabiá)]{.pitch-caption}
+[Cobertura rápida · Foto: mauroguanandi (CC BY 2.0)]{.pitch-caption-sub}
 :::
 
-:::
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
 
-::: {.column width="25%"}
+![Genipa americana (Genipapo)](img/sp_genipa_americana.jpg)
 
-![*Mimosa caesalpiniaefolia* (Sabiá)](img/sp_mimosa_caesalpiniaefolia.jpg){width="100%"}
-
-:::{.smaller-text}
-Foto: mauroguanandi - CC BY 2.0
-:::
-
-:::
-
-::: {.column width="25%"}
-
-![*Genipa americana* (Genipapo)](img/sp_genipa_americana.jpg){width="100%"}
-
-:::{.smaller-text}
-Foto: Alex Popovkin - CC BY 2.0
-:::
-
+[*Genipa americana* (Genipapo)]{.pitch-caption}
+[Revegetação · Foto: Alex Popovkin (CC BY 2.0)]{.pitch-caption-sub}
 :::
 :::
 
-## Preparação e plantio {.smaller-text}
+## <span class="pitch-tag pitch-tag--forest">Espécies</span> Processo de estaquia e fatores de sucesso {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Processo de estaquia
-
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["Seleção das<br>árvores-matrizes"] --> B["Coleta de<br>estacas basais"]
-    B --> C["Preparo: 15-20 cm<br>Ø 0,5-1,5 cm"]
-    C --> D["Corte: reto no ápice<br>ângulo na base"]
-    D --> E["Acondicionamento<br>em água"]
-    E --> F["Inserção nos<br>drenos verdes"]
-    F --> G["Monitoramento do<br>enraizamento"]
-    style A fill:#2E7D32,color:#fff
-    style C fill:#586BA6,color:#000
-    style F fill:#2135A6,color:#fff
-    style G fill:#27368C,color:#fff
-```
-
+::: {.pitch-grid-50}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**01–02 · Matrizes e coleta:** seleção de árvores-matrizes vigorosas e coleta de estacas basais.
 :::
 
-::: {.column width="50%"}
+::: {.pitch-milestone-item}
+**03–04 · Preparo e corte:** padronização em **15–20 cm** ($\varnothing$ **0,5–1,5 cm**), corte reto no ápice e em ângulo na base.
+:::
 
-### Fatores de sucesso
+::: {.pitch-milestone-item}
+**05–06 · Hidratação e plantio:** acondicionamento em água e inserção direta nos drenos verdes.
+:::
 
-| Fator | Recomendação |
-|-------|-------------|
+::: {.pitch-milestone-item}
+**07 · Acompanhamento:** monitoramento contínuo da brotação e do enraizamento.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Fator | Recomendação técnica |
+|---|---|
 | Época de coleta | Período de dormência |
 | Número de gemas | Mínimo 3 por estaca |
-| Hidratação | Permanente até plantio |
-| Substrato | Fibras naturais no dreno |
+| Hidratação | Permanente até o plantio |
+| Substrato | Fibras naturais no dreno verde |
 | Estimulante | Extrato de feijão ou tiririca |
-
-::: {.highlight-box}
-🌿 O uso de **estimulantes naturais** (extrato de feijão ou tiririca) pode aumentar significativamente a taxa de enraizamento, substituindo reguladores de crescimento industriais de alto custo (Araújo Filho et al., 2019).
 :::
 
+::: {.pitch-band .pitch-band--teal}
+O uso de **estimulantes naturais** (extrato de feijão ou tiririca) eleva a taxa de enraizamento e substitui reguladores industriais onerosos (Araújo Filho et al., 2019).
 :::
 :::
+:::
 
-# [6. MONITORAMENTO E BIOENSAIOS]{.section-header}
+# 6 · Monitoramento e bioensaios {.section-header rotulo="Monitoramento"}
 
-## Protocolo de monitoramento {.smaller-text}
+## <span class="pitch-tag">Monitoramento</span> Protocolo dos dois bioensaios experimentais {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[1º Bioensaio · 40 dias]{.pitch-card-index}
+[Germinação e crescimento em bandeja]{.pitch-heading}
 
-### 1º Bioensaio - Germinação e crescimento (40 dias)
-
-**Parâmetros avaliados:**
-
-| Sigla | Parâmetro |
-|-------|-----------|
+| Sigla | Parâmetro avaliado |
+|---|---|
 | IGS | Início da germinação das sementes |
 | G% | Porcentagem de germinação |
 | IVG | Índice de velocidade de germinação |
@@ -801,385 +799,469 @@ graph TD
 | MSPAB | Massa seca parte aérea (bandeja) |
 | CRB | Comprimento radicular (bandeja) |
 | MSRB | Massa seca radicular (bandeja) |
-| VRB | Volume radicular (bandeja) |
-| DRB | Diâmetro radicular (bandeja) |
-
+| VRB / DRB | Volume e diâmetro radicular (bandeja) |
+:::
 :::
 
-::: {.column width="50%"}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--teal}
+[2º Bioensaio · Vaso]{.pitch-card-index}
+[Produção em substrato]{.pitch-heading}
 
-### 2º Bioensaio - Produção em substrato
-
-**Parâmetros avaliados:**
-
-| Sigla | Parâmetro |
-|-------|-----------|
+| Sigla | Parâmetro avaliado |
+|---|---|
 | AV | Altura em vaso |
 | NFV | Número de folhas em vaso |
 | CRV | Comprimento radicular (vaso) |
 | MSPAV | Massa seca parte aérea (vaso) |
-| VRV | Volume radicular (vaso) |
-| DRV | Diâmetro radicular (vaso) |
+| VRV / DRV | Volume e diâmetro radicular (vaso) |
 | PFr | Precocidade da floração |
 | NFl | Número de flores |
 | DEN | Dependência de estimulante natural |
-
 :::
 :::
+:::
 
-## Índice de velocidade de germinação {.smaller-text}
+## <span class="pitch-tag">Monitoramento</span> Índice de Velocidade de Germinação (IVG) e delineamento {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-
-### Fórmula do IVG
-
-O **Índice de Velocidade de Germinação** (Maguire, 1962) mede a rapidez com que as sementes germinam:
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Índice de Velocidade de Germinação (Maguire, 1962):**
 
 $$IVG = \frac{N_1}{D_1} + \frac{N_2}{D_2} + \cdots + \frac{N_n}{D_n}$$
 
-Onde:
-
-- $N_i$ = número de brotações no dia $i$
-- $D_i$ = dias após a semeadura
-
-::: {.highlight-box}
-📊 **IVG alto** → germinação rápida e uniforme → maior sucesso no estabelecimento dos feixes vivos.
+Onde $N_i$ = número de brotações no dia $i$ e $D_i$ = dias após a semeadura.
 :::
 
-:::
-
-::: {.column width="50%"}
-
-### Delineamento experimental
-
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["Delineamento<br>Inteiramente Casualizado"] --> B["Tratamento CO<br>Controle"]
-    A --> C["Tratamento ENF<br>Estimulante de feijão"]
-    A --> D["Tratamento ENT<br>Estimulante de tiririca"]
-    B --> E["8 repetições"]
-    C --> F["8 repetições"]
-    D --> G["8 repetições"]
-    E --> H["Avaliação<br>do 1º ao 40º dia"]
-    F --> H
-    G --> H
-    style A fill:#2135A6,color:#fff
-    style B fill:#586BA6,color:#000
-    style C fill:#2E7D32,color:#fff
-    style D fill:#27368C,color:#fff
-```
-
+::: {.pitch-band .pitch-band--teal}
+**IVG alto** indica germinação rápida e uniforme, aumentando a probabilidade de sucesso no estabelecimento dos feixes vivos antes de eventos erosivos.
 :::
 :::
 
-## Análise radicular por imagem {.smaller-text}
+::: {.pitch-stack-2}
+::: {.pitch-cards}
+::: {.pitch-card}
+[Tratamento CO]{.pitch-card-index}
+[Controle]{.pitch-heading}
 
-::: {.columns}
-::: {.column width="55%"}
+Sem estimulante · **8 repetições**.
+:::
 
-### Sistema SAFIRA
+::: {.pitch-card .pitch-card--forest}
+[Tratamento ENF]{.pitch-card-index}
+[Extrato feijão]{.pitch-heading}
 
-O **Sistema de Análise de Fibras e Raízes** (SAFIRA) é utilizado para avaliar a morfologia radicular por processamento digital de imagens:
+Estimulante natural · **8 repetições**.
+:::
 
-**Parâmetros extraídos:**
+::: {.pitch-card .pitch-card--gold}
+[Tratamento ENT]{.pitch-card-index}
+[Extrato tiririca]{.pitch-heading}
 
-- **Volume radicular** (cm³)
-- **Diâmetro ponderado** (mm)
-- **Comprimento total** das raízes
-- **Distribuição** de diâmetros
+Estimulante natural · **8 repetições**.
+:::
+:::
 
-### Procedimento
+::: {.pitch-band}
+**Delineamento Inteiramente Casualizado (DIC):** 3 tratamentos × 8 repetições, com avaliação diária do **1º ao 40º dia**.
+:::
+:::
+:::
 
-1. Raízes lavadas e separadas
-2. Digitalização em **placa digitalizadora**
-3. Processamento pelo software SAFIRA
-4. Cálculo da **densidade radicular**:
+## <span class="pitch-tag">Monitoramento</span> Protocolo de IVG e análise morfométrica radicular {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-media-card .pitch-media-card--wide}
+
+![Protocolo de monitoramento de pegamento pelo IVG e análise radicular por imagem](img/bs_12b_raiz_germinacao_ivg.png)
+
+[Monitoramento de pegamento (IVG) e análise radicular por imagem]{.pitch-caption}
+[Contagem diária de vigor precoce articulada à quantificação digital de raízes para estimativa de Δcr]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band .pitch-band--navy}
+A integração entre vigor precoce ($IVG$) e morfometria radicular ($RAR$, comprimento e densidade) permite estimar o incremento de coesão $\Delta c_r$ fornecido pelas raízes ao talude.
+:::
+
+## <span class="pitch-tag">Monitoramento</span> Análise radicular por imagem no sistema SAFIRA {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Jorge & Rodrigues (2008)]{.pitch-card-index}
+[Sistema SAFIRA (sucessor do SIARCS®)]{.pitch-heading}
+
+1. Raízes lavadas e separadas com preservação de raízes finas
+2. Digitalização em **placa digitalizadora** de alta resolução
+3. Extração de **volume radicular** (cm³), **diâmetro ponderado** (mm), **comprimento total** e **distribuição de diâmetros**
+:::
+
+::: {.pitch-formula}
+**Densidade radicular ($\rho_r$):**
 
 $$\rho_r = \frac{m_r}{V_r}$$
 
-Onde: $m_r$ = massa radicular (g), $V_r$ = volume radicular (cm³)
-
-:::
-
-::: {.column width="45%"}
-
-### Importância da análise
-
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Raízes<br>desenvolvidas"] --> B["Maior volume<br>radicular"]
-    A --> C["Maior diâmetro<br>radicular"]
-    B --> D["Maior reforço<br>do solo"]
-    C --> D
-    D --> E["Estabilização<br>efetiva da encosta"]
-    style A fill:#2E7D32,color:#fff
-    style D fill:#586BA6,color:#000
-    style E fill:#2135A6,color:#fff
-```
-
-::: {.highlight-box}
-🔬 O SAFIRA é o sucessor do SIARCS® - oferece ferramentas morfológicas mais completas para análise de raízes e fibras (Jorge & Rodrigues, 2008).
-:::
-
+Onde $m_r$ = massa radicular (g) e $V_r$ = volume radicular (cm³).
 :::
 :::
 
-# [7. ESTUDO DE CASO: CAMPUS RURAL (UFS-SE)]{.section-header}
+::: {.pitch-stack-2}
+::: {.pitch-cards-2}
+::: {.pitch-card .pitch-card--forest}
+[Atributo 1]{.pitch-card-index}
+[Volume radicular]{.pitch-heading}
 
-## Área experimental {.smaller-text}
+Raízes desenvolvidas ampliam a matriz de ancoragem em profundidade.
+:::
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-card .pitch-card--teal}
+[Atributo 2]{.pitch-card-index}
+[Diâmetro radicular]{.pitch-heading}
 
-### Contexto
+Distribuição de classes finas e estruturais eleva o reforço mecânico.
+:::
+:::
 
-O experimento será conduzido no **Campus Rural da UFS** (Universidade Federal de Sergipe), em uma área de **antiga disposição irregular de resíduos sólidos** (lixão desativado).
+::: {.pitch-band .pitch-band--navy}
+**Cadeia mecânica:** maior volume radicular + maior distribuição de diâmetros $\rightarrow$ **maior reforço do solo** $\rightarrow$ **estabilização efetiva da encosta**.
+:::
+:::
+:::
 
-### Preparação da área
+# 7 · Estudo de caso: Campus Rural (UFS-SE) {.section-header rotulo="Estudo de Caso"}
 
-1. **Remoção superficial** dos resíduos mais recentes e volumosos
+## <span class="pitch-tag pitch-tag--gold">Estudo de Caso</span> Área experimental no Campus Rural da UFS {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Contexto e preparo]{.pitch-card-index}
+[Antiga área de disposição de resíduos]{.pitch-heading}
+
+Experimento conduzido no **Campus Rural da UFS** (Sergipe), em antigo lixão desativado:
+
+1. **Remoção superficial** dos resíduos recentes e volumosos
 2. **Redistribuição controlada** dos excedentes
-3. **Compactação leve** do solo
-4. Uniformização do terreno para instalação dos drenos
+3. **Compactação leve** e uniformização do terreno
+:::
 
-### Objetivos específicos
+::: {.pitch-card .pitch-card--teal}
+[Objetivos do experimento]{.pitch-card-index}
+[Avaliação em escala real]{.pitch-heading}
 
 - Avaliar eficácia dos drenos verdes na **drenagem superficial**
 - Monitorar **enraizamento** dos feixes vivos
-- Quantificar a **retenção de umidade** e matéria orgânica
-- Verificar **estabilidade** da encosta ao longo do tempo
-
-:::
-
-::: {.column width="45%"}
-
-![Lixão irregular desativado - antes](img/fig01_lixao_antes.png){width="85%"}
-
-![Limpeza da área experimental](img/fig02_limpeza_area.png){width="85%"}
+- Quantificar **retenção de umidade**, matéria orgânica e estabilidade da encosta
 :::
 :::
 
-## Preparação e instalação {.smaller-text}
+::: {.pitch-cards-2}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
 
-::: {.columns}
-::: {.column width="50%"}
+![Lixão irregular desativado antes da intervenção](img/fig01_lixao_antes.png)
 
-![Redistribuição controlada do terreno](img/fig03_redistribuicao.png){width="85%"}
-
-### Etapas de campo
-
-1. Limpeza e remoção de resíduos
-2. Terraplenagem e compactação
-3. Instalação dos drenos de polo
-4. Conexão das fascinas laterais
-5. Inserção dos feixes vivos
-6. Monitoramento periódico
-
+[Área degradada (antes)]{.pitch-caption}
+[Disposição irregular de resíduos]{.pitch-caption-sub}
 :::
 
-::: {.column width="50%"}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
 
-### Registro fotográfico de campo
+![Limpeza da área experimental no Campus Rural](img/fig02_limpeza_area.png)
 
-::: {layout-ncol=2}
-
-![Campo - preparação](img/campo_01.jpg){width="90%"}
-
-![Campo - instalação](img/campo_02.jpg){width="90%"}
-
-![Campo - detalhe dreno](img/campo_03.jpg){width="90%"}
-
-![Campo - visão geral](img/campo_04.jpg){width="90%"}
-
+[Limpeza da área experimental]{.pitch-caption}
+[Remoção de resíduos superficiais]{.pitch-caption-sub}
 :::
 :::
 :::
 
-## Diagramas técnicos {.smaller-text}
+## <span class="pitch-tag pitch-tag--gold">Estudo de Caso</span> Preparação do terreno e etapas de campo {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-grid-50}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--tall}
 
-### Projeto do sistema
+![Redistribuição controlada e regularização do terreno](img/fig03_redistribuicao.png)
 
-::: {layout-ncol=2}
-
-![Diagrama do dreno verde](img/prancheta_01_diagrama.png){width="95%"}
-
-![Diagrama de montagem](img/prancheta_02_diagrama.png){width="95%"}
-
+[Redistribuição controlada do terreno]{.pitch-caption}
+[Conformação geotécnica prévia à abertura das valas]{.pitch-caption-sub}
 :::
 
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**01 · Limpeza:** remoção e triagem dos resíduos superficiais.
 :::
 
-::: {.column width="50%"}
-
-::: {layout-ncol=2}
-
-![Detalhamento construtivo](img/prancheta_04_diagrama.png){width="95%"}
-
-![Vista do sistema completo](img/prancheta_05_diagrama.png){width="95%"}
-
+::: {.pitch-milestone-item}
+**02 · Terraplenagem:** regularização e compactação leve do talude.
 :::
 
+::: {.pitch-milestone-item}
+**03 · Drenos de polo:** escavação e assentamento dos drenos principais.
+:::
+
+::: {.pitch-milestone-item}
+**04 · Fascinas laterais:** conexão oblíqua em padrão espinha de peixe.
+:::
+
+::: {.pitch-milestone-item}
+**05–06 · Feixes e monitoramento:** inserção das estacas vivas e avaliações periódicas.
+:::
+:::
+:::
+
+## <span class="pitch-tag pitch-tag--gold">Estudo de Caso</span> Registro fotográfico de implantação em campo {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-flow-4}
+::: {.pitch-media-card .pitch-media-card--photo}
+
+![Preparação das valas em campo](img/campo_01.jpg)
+
+[Campo · Preparação]{.pitch-caption}
+[Abertura e nivelamento]{.pitch-caption-sub}
+:::
+
+::: {.pitch-media-card .pitch-media-card--photo}
+
+![Instalação dos drenos verdes no talude](img/campo_02.jpg)
+
+[Campo · Instalação]{.pitch-caption}
+[Posicionamento em vala]{.pitch-caption-sub}
+:::
+
+::: {.pitch-media-card .pitch-media-card--photo}
+
+![Detalhe de montagem do dreno verde](img/campo_03.jpg)
+
+[Campo · Detalhe dreno]{.pitch-caption}
+[Conexão hidráulica]{.pitch-caption-sub}
+:::
+
+::: {.pitch-media-card .pitch-media-card--photo}
+
+![Visão geral da encosta implantada](img/campo_04.jpg)
+
+[Campo · Visão geral]{.pitch-caption}
+[Rede em espinha de peixe]{.pitch-caption-sub}
 :::
 :::
 
-## Monitoramento de campo {.smaller-text}
+::: {.pitch-band}
+A sequência construtiva em campo confirma a exequibilidade manual dos drenos verdes e a adaptação topográfica das fascinas oblíquas ao relevo da ravina.
+:::
 
-::: {.columns}
-::: {.column width="55%"}
+## <span class="pitch-tag pitch-tag--gold">Estudo de Caso</span> Pranchas e diagramas técnicos do projeto {.smaller-text .academic-slide .lesson-slide}
 
-### Cronograma de avaliações
+::: {.pitch-flow-4}
+::: {.pitch-media-card}
 
-| Período | Atividade |
-|---------|-----------|
-| Dia 0 | Instalação dos drenos e feixes |
-| Dias 1-15 | Monitoramento diário de germinação |
-| Dias 15-40 | Avaliação semanal (1º bioensaio) |
+![Diagrama técnico do dreno verde](img/prancheta_01_diagrama.png)
+
+[Prancha 01 · Dreno verde]{.pitch-caption}
+[Geometria da peça tubular]{.pitch-caption-sub}
+:::
+
+::: {.pitch-media-card}
+
+![Diagrama de montagem dos componentes](img/prancheta_02_diagrama.png)
+
+[Prancha 02 · Montagem]{.pitch-caption}
+[Acoplamento dreno e feixe]{.pitch-caption-sub}
+:::
+
+::: {.pitch-media-card}
+
+![Detalhamento construtivo das junções](img/prancheta_04_diagrama.png)
+
+[Prancha 04 · Detalhamento]{.pitch-caption}
+[Junção lateral e ancoragem]{.pitch-caption-sub}
+:::
+
+::: {.pitch-media-card}
+
+![Vista do sistema completo em encosta](img/prancheta_05_diagrama.png)
+
+[Prancha 05 · Sistema completo]{.pitch-caption}
+[Arranjo geral integrado]{.pitch-caption-sub}
+:::
+:::
+
+::: {.pitch-band .pitch-band--teal}
+As pranchas técnicas padronizam cortes, conexões e orientação dos feixes para replicação do protocolo em projetos de recuperação de áreas degradadas (PRAD).
+:::
+
+## <span class="pitch-tag pitch-tag--gold">Estudo de Caso</span> Cronograma de monitoramento e indicadores de campo {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-table-box}
+| Período | Atividade de avaliação |
+|---|---|
+| Dia 0 | Instalação dos drenos verdes e feixes vivos |
+| Dias 1–15 | Monitoramento diário de germinação e brotação |
+| Dias 15–40 | Avaliação semanal (1º bioensaio) |
 | Dia 40 | Transplante para vasos (2º bioensaio) |
-| Dias 40-120 | Monitoramento quinzenal |
-| Dia 120 | Avaliação final |
-
-### Indicadores de sucesso
-
-- ✅ Taxa de germinação > 70%
-- ✅ Enraizamento > 80% das estacas
-- ✅ Redução do escoamento superficial
-- ✅ Aumento da infiltração
-- ✅ Estabilidade visível da encosta
-
+| Dias 40–120 | Monitoramento quinzenal em campo |
+| Dia 120 | Avaliação final integrada |
 :::
 
-::: {.column width="45%"}
+::: {.pitch-card .pitch-card--forest}
+[Metas de desempenho]{.pitch-card-index}
+[Indicadores de sucesso]{.pitch-heading}
 
-### Registro de acompanhamento
-
-::: {layout-ncol=2}
-
-![Registro de campo](img/whatsapp_01.jpg){width="90%"}
-
-![Acompanhamento do sistema](img/whatsapp_02.jpg){width="90%"}
-
-![Evolução dos feixes](img/whatsapp_03.jpg){width="90%"}
-
-![Detalhe de enraizamento](img/whatsapp_04.jpg){width="90%"}
-
-:::
+- Taxa de germinação **> 70%**
+- Enraizamento **> 80%** das estacas
+- Redução expressiva do **escoamento superficial**
+- Aumento da **infiltração** e retenção de umidade
+- **Estabilidade visível** da encosta ao fim de 120 dias
 :::
 :::
 
-# [8. SÍNTESE E ATIVIDADE]{.section-header}
+## <span class="pitch-tag pitch-tag--gold">Estudo de Caso</span> Registro de acompanhamento evolutivo em campo {.smaller-text .academic-slide .lesson-slide}
 
-## Resumo dos conceitos-chave {.smaller-text}
+::: {.pitch-flow-4}
+::: {.pitch-media-card .pitch-media-card--photo}
 
-::: {.columns}
-::: {.column width="50%"}
+![Registro inicial de acompanhamento em campo](img/whatsapp_01.jpg)
 
-### Pontos fundamentais
+[Registro 01 · Implantação]{.pitch-caption}
+[Estado inicial pós-montagem]{.pitch-caption-sub}
+:::
 
-::: {.info-box}
+::: {.pitch-media-card .pitch-media-card--photo}
+
+![Acompanhamento do sistema após chuvas](img/whatsapp_02.jpg)
+
+[Registro 02 · Acompanhamento]{.pitch-caption}
+[Resposta ao escoamento]{.pitch-caption-sub}
+:::
+
+::: {.pitch-media-card .pitch-media-card--photo}
+
+![Evolução da brotação dos feixes vivos](img/whatsapp_03.jpg)
+
+[Registro 03 · Brotação]{.pitch-caption}
+[Emergência nos drenos]{.pitch-caption-sub}
+:::
+
+::: {.pitch-media-card .pitch-media-card--photo}
+
+![Detalhe de enraizamento e consolidação](img/whatsapp_04.jpg)
+
+[Registro 04 · Enraizamento]{.pitch-caption}
+[Integração raiz–substrato]{.pitch-caption-sub}
+:::
+:::
+
+::: {.pitch-band}
+O registro fotográfico temporal documenta a transição da estrutura drenante inerte para uma rede viva com brotação e retenção de sedimentos in situ.
+:::
+
+# 8 · Síntese e atividade {.section-header rotulo="Síntese"}
+
+## <span class="pitch-tag">Síntese</span> Pontos fundamentais e fluxo conceitual integrado {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Síntese da aula]{.pitch-card-index}
+[Seis pilares técnicos]{.pitch-heading}
+
 1. **Seis técnicas de bioengenharia** vegetativa para estabilização de margens e encostas
-2. **Drenos verdes** integram drenagem + substrato para revegetação
-3. O sistema **espinha de peixe** otimiza a captação e condução da água
-4. **Fibras de taboa e bananeira** oferecem substrato econômico e sustentável
-5. **7 espécies** nativas com propagação por estaquia comprovada
-6. **Bioensaios** permitem avaliar a eficácia do enraizamento
+2. **Drenos verdes** ($\varnothing = 20\text{ cm}$, $\varepsilon = 5\text{ mm}$) integram drenagem e substrato
+3. O sistema **espinha de peixe** otimiza captação e condução hidráulica
+4. **Fibras de taboa e bananeira** oferecem matriz econômica e biodegradável
+5. **7 espécies nativas** com propagação por estaquia comprovada (15–20 cm)
+6. **Bioensaios e SAFIRA** quantificam vigor precoce e morfologia radicular
 :::
 
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[01 · Estruturas]{.pitch-card-index}
+[Base física]{.pitch-heading}
+
+Estacas, feixes, muros vivos, esteiras e drenos verdes.
 :::
 
-::: {.column width="50%"}
+::: {.pitch-card .pitch-card--forest}
+[02 · Espécies]{.pitch-card-index}
+[Componente vivo]{.pitch-heading}
 
-### Fluxo conceitual completo
+7 espécies nativas em feixes de estacas (15–20 cm).
+:::
 
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["Técnicas de<br>bioengenharia"] --> B["Estacas, feixes,<br>muros, esteiras"]
-    A --> C["Drenos verdes<br>Ø 20cm, ε 5mm"]
-    D["Espécies nativas<br>7 espécies"] --> E["Feixes vivos<br>Estacas 15-20cm"]
-    B --> F["Sistema espinha<br>de peixe"]
-    C --> F
-    E --> F
-    F --> G["Estabilização<br>de encostas"]
-    F --> H["Restauração<br>ecológica"]
-    style A fill:#2135A6,color:#fff
-    style B fill:#8B4513,color:#fff
-    style C fill:#2E7D32,color:#fff
-    style D fill:#586BA6,color:#000
-    style G fill:#27368C,color:#fff
-    style H fill:#2E7D32,color:#fff
-```
+::: {.pitch-card .pitch-card--gold}
+[03 · Arranjo]{.pitch-card-index}
+[Espinha de peixe]{.pitch-heading}
 
+Conexão hidráulica de drenos e fascinas oblíquas.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[04 · Resultado]{.pitch-card-index}
+[Duplo efeito]{.pitch-heading}
+
+Estabilização da encosta e restauração ecológica.
+:::
 :::
 :::
 
-## Atividade prática - Projeto de sistema {.smaller-text}
+## <span class="pitch-tag pitch-tag--teal">Atividade</span> Projeto em grupo — sistema de drenos verdes {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Estudo dirigido · 30 min projeto + 10 min apresentação]{.pitch-card-index}
+[Cenário: aterro desativado (30 m · 25° · solo argiloso)]{.pitch-heading}
 
-### Exercício em grupo
-
-**Cenário:** Uma encosta de aterro sanitário desativado com 30 m de comprimento, declividade de 25° e solo argiloso apresenta sinais de erosão em sulcos.
-
-**Projetem um sistema de drenos verdes com feixes vivos:**
+Encosta com erosão em sulcos. Projetem um sistema de drenos verdes com feixes vivos respondendo:
 
 1. Quantos **drenos de polo** serão necessários?
 2. Qual o **espaçamento** entre as fascinas laterais?
 3. Qual o **ângulo** de inserção das fascinas?
-4. Quais **3 espécies** vocês escolheriam e por quê?
+4. Quais **3 espécies** escolheriam e por quê?
 5. Qual **formulação** de dreno (G1, G2, G3) é mais adequada?
-6. Elabore um **cronograma de monitoramento** para 120 dias
-
+6. Qual o **cronograma de monitoramento** para 120 dias?
 :::
 
-::: {.column width="45%"}
-
-### Critérios de avaliação
-
-| Critério | Peso |
-|----------|------|
+::: {.pitch-table-box}
+| Critério de avaliação | Peso |
+|---|---|
 | Coerência do dimensionamento | 25% |
 | Justificativa das espécies | 20% |
 | Escolha da formulação | 15% |
 | Cronograma de monitoramento | 20% |
 | Apresentação e clareza | 20% |
-
-::: {.highlight-box}
-⏱️ **Tempo**: 30 minutos para projeto + 10 minutos para apresentação por grupo.
-:::
-
 :::
 :::
 
-## Referências {.smaller-text}
+## <span class="pitch-tag">Referências</span> Referências bibliográficas {.smaller-text .academic-slide .lesson-slide}
 
-::: {.smaller-text}
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Engenharia e bioengenharia]{.pitch-card-index}
+[Manuais e fundamentos]{.pitch-heading}
 
-- Akil, H. M. et al. (2011). Kenaf fiber reinforced composites: A review. *Materials & Design*, 32(8-9), 4107-4121.
-- Alqaisi, R., Le, T. M., & Khabbaz, H. (2020). Applications of Recycled Sustainable Materials in Soil Stabilization. Springer.
-- Araújo Filho, R. N. et al. (2019). Effect of indolebutyric acid on rooting and budding of cuttings. *JEAP*, 297-303.
-- Biedenharn, D.S., Elliott, C.M., & Watson, C.C. (1997). The WES Stream Investigation and Streambank Stabilization Handbook. USACE.
-- Chokshi, S. et al. (2022). Chemical Composition and Mechanical Properties of Natural Fibers. *J. Natural Fibers*, 19(10), 3942-3953.
-- Das, P. P. et al. (2021). Influence of Moisture Uptake on Mechanical Properties of NF-Reinforced Composites. CRC Press.
-- Evette, A. et al. (2009). History of Bioengineering Techniques for Erosion Control in Rivers. *Env. Management*, 43(6), 972-984.
-- FISRWG (1998). Stream Corridor Restoration: Principles, Processes, Practices. USDA-NRCS.
-- Gray, D.H. & Sotir, R.B. (1996). Biotechnical and Soil Bioengineering Slope Stabilization. Wiley.
-- Jorge, L. A. C. & Rodrigues, A. F. O. (2008). SAFIRA: Sistema de Análise de Fibras e Raízes. Embrapa.
+- Biedenharn, D.S., Elliott, C.M., & Watson, C.C. (1997). *The WES Stream Investigation and Streambank Stabilization Handbook*. USACE.
+- Evette, A. et al. (2009). History of Bioengineering Techniques for Erosion Control in Rivers. *Env. Management*, 43(6), 972–984.
+- FISRWG (1998). *Stream Corridor Restoration: Principles, Processes, Practices*. USDA-NRCS.
+- Gray, D.H. & Sotir, R.B. (1996). *Biotechnical and Soil Bioengineering Slope Stabilization*. Wiley.
+- Li, M.H. & Eddleman, K.E. (2002). Biotechnical Engineering as an Alternative. *Landscape Urban Plan.*, 60(4), 225–242.
+- Lyn, D.A. & Newton, J.F. (2015). *Approaches to the Design of Biotechnical Streambank Stabilization*. Purdue Univ.
+- Morokong, T. & Blignaut, J.N. (2019). Benefits and costs of soil erosion control. *Land Use Policy*, 83, 512–522.
+- Rey, F. et al. (2019). Soil and water bioengineering. *Science Total Env.*, 648, 1210–1218.
+- USDA-NRCS (1996). *Streambank and Shoreline Protection*. Ch. 16, EFH Part 650.
+- USDA-NRCS (2007). *Streambank Soil Bioengineering*. Technical Supplements, NEH Part 654.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Fibras, estaquia e análise radicular]{.pitch-card-index}
+[Pesquisa aplicada]{.pitch-heading}
+
+- Akil, H.M. et al. (2011). Kenaf fiber reinforced composites: A review. *Materials & Design*, 32(8–9), 4107–4121.
+- Alqaisi, R., Le, T.M., & Khabbaz, H. (2020). *Applications of Recycled Sustainable Materials in Soil Stabilization*. Springer.
+- Araújo Filho, R.N. et al. (2019). Effect of indolebutyric acid on rooting and budding of cuttings. *JEAP*, 297–303.
+- Chokshi, S. et al. (2022). Chemical Composition and Mechanical Properties of Natural Fibers. *J. Natural Fibers*, 19(10), 3942–3953.
+- Das, P.P. et al. (2021). *Influence of Moisture Uptake on Mechanical Properties of NF-Reinforced Composites*. CRC Press.
+- Jorge, L.A.C. & Rodrigues, A.F.O. (2008). *SAFIRA: Sistema de Análise de Fibras e Raízes*. Embrapa.
 - Lenz, L. et al. (2019). Bioengenharia de solos como alternativa sustentável. *XXIII SBRH*.
-- Li, M.H. & Eddleman, K.E. (2002). Biotechnical Engineering as an Alternative. *Landscape Urban Plan.*, 60(4), 225-242.
-- Lyn, D.A. & Newton, J.F. (2015). Approaches to the Design of Biotechnical Streambank Stabilization. Purdue Univ.
-- Morokong, T. & Blignaut, J. N. (2019). Benefits and costs of soil erosion control. *Land Use Policy*, 83, 512-522.
-- Rey, F. et al. (2019). Soil and water bioengineering. *Science Total Env.*, 648, 1210-1218.
 - Santos, L.D.V. et al. (2020). Prospecção tecnológica sobre PD&I em Recursos Hídricos. *Rev. Ibero-Am. Ciências Ambientais*.
-- USDA-NRCS (1996). Streambank and Shoreline Protection. Chapter 16, EFH Part 650.
-- USDA-NRCS (2007). Streambank Soil Bioengineering. Technical Supplements, NEH Part 654.
-
+:::
 :::
 
 ## {.obrigado-fit-text .center}

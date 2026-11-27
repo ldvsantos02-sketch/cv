@@ -12,11 +12,12 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text}
+## <span class="pitch-tag">Abertura</span> Visão Geral da Aula {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-### Tópicos
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Roteiro da aula]{.pitch-card-index}
+[Tópicos estruturantes]{.pitch-heading}
 
 - [1]{.circle} O que são cordões vegetativos?
 - [2]{.circle} Fascinas mortas × fascinas vivas
@@ -28,618 +29,476 @@ execute:
 - [8]{.circle} Síntese e atividade
 :::
 
-::: {.column width="50%"}
-::: {.info-box}
-**Objetivo da Aula**
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Objetivo central]{.pitch-card-index}
+[Micro-barragens vivas em curvas de nível]{.pitch-heading}
 
 Compreender os princípios dos **cordões vegetativos** (*wattle fences / contour fascines*) e das **fascinas de contenção** como técnicas de bioengenharia para **controlar o escoamento superficial**, **reter sedimentos** e promover a **estabilização progressiva de encostas** por meio do enraizamento das fascinas vivas.
 :::
+
+::: {.pitch-pill-row}
+[Curvas de nível · Ev / Eh]{.pitch-pill}
+[Chézy e v_crit]{.pitch-pill .pitch-pill--gold}
+[Micro-terraços naturais]{.pitch-pill}
 :::
 :::
+:::
 
-# [1. O QUE SÃO CORDÕES VEGETATIVOS?]{.section-header}
+# 1 · O que são cordões vegetativos? {.section-header rotulo="Conceito"}
 
-## Definição e conceito {.smaller-text}
+## <span class="pitch-tag">Conceito</span> Definição, princípio hidráulico e inspeção em campo {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--forest}
+[Cordonas / Wattle fences / Contour fascines]{.pitch-card-index}
+[Micro-barragens em nível na encosta]{.pitch-heading}
 
-### Conceito
-
-**Cordões vegetativos** (*cordonas*, *wattle fences* ou *contour fascines*) são pequenos degraus ou barreiras construídos com **feixes de ramos** ou **solo ensacado**, dispostos em **curvas de nível** ao longo de um talude para:
+Degraus ou barreiras com **feixes de ramos** ou **solo ensacado** em **curvas de nível** para:
 
 - **Reduzir** a velocidade do escoamento superficial
-- **Reter** sedimentos transportados pela água
-- **Criar** patamares de deposição que favorecem a revegetação
-- **Enraizar** (quando feitos com ramos vivos) e estabilizar o solo
+- **Reter** **0,5–2,0 m³ de sedimento por metro linear** (Florineth, 2004)
+- **Criar** patamares de deposição que formam **terraços naturais**
+- **Enraizar** (quando com ramos vivos), estabilizando o solo
+:::
 
-::: {.highlight-box}
-💡 Os cordões funcionam como uma série de **micro-barragens em nível**: cada cordão intercepta o fluxo, reduz a energia e deposita sedimentos, formando gradualmente **terraços naturais**.
+::: {.pitch-band .pitch-band--teal}
+**Cascata na encosta:** Chuva $\rightarrow$ Escoamento $\rightarrow$ **Cordão 1 (topo)** reduz velocidade e eleva infiltração $\rightarrow$ **Cordão 2 (meio)** retém sedimentos $\rightarrow$ **Cordão 3 (base)** entrega fluxo controlado.
 :::
 :::
 
-::: {.column width="45%"}
-
-### Princípio de funcionamento
-
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Chuva"] --> B["Escoamento<br>superficial"]
-    B --> C["Cordão 1<br>(topo)"]
-    C -->|"Velocidade<br>reduzida"| D["Cordão 2<br>(meio)"]
-    D -->|"Sedimentos<br>retidos"| E["Cordão 3<br>(base)"]
-    C -->|"Infiltração<br>aumentada"| F["Solo"]
-    E --> G["Fluxo controlado<br>na base"]
-    style A fill:#4FC3F7,color:#000
-    style C fill:#2E7D32,color:#fff
-    style D fill:#2E7D32,color:#fff
-    style E fill:#2E7D32,color:#fff
-    style F fill:#8B4513,color:#fff
-```
-
-> Cada cordão pode reter até **0,5-2,0 m³ de sedimento** por metro linear, dependendo da altura e do espaçamento (Florineth, 2004).
-:::
-:::
-
-
-## Cordões e fascinas: o que verificar em campo {.smaller-text}
-
-| Aspecto | Evidência de funcionamento | Possível falha |
+::: {.pitch-table-box}
+| Aspecto de campo | Evidência de funcionamento | Possível falha |
 |---|---|---|
-| Implantação | Continuidade e posição conforme o projeto | Descontinuidades e concentração lateral |
+| Implantação | Continuidade e nível conforme projeto | Descontinuidade e desvio lateral |
 | Fixação | Estacas e ancoragens estáveis | Arrancamento ou deslizamento |
-| Contato com o terreno | Fluxo distribuído e retenção localizada | Passagem de água por baixo |
-| Material vegetal | Espécie adequada e brotação, quando prevista | Mortalidade e degradação antes do estabelecimento |
-| Manutenção | Inspeção após eventos e correção de falhas | Obstrução e erosão junto às extremidades |
-
-Cordões vegetativos, fascinas e entrançados apresentam geometrias e funções distintas. Descrever a técnica efetivamente implantada.
-
-## Cordões de contorno em campo {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-![Cordão de contorno implantado em encosta experimental - interceptação do escoamento superficial e retenção de sedimentos](img/cordao_contorno.jpeg){fig-align="center" width="100%"}
-:::
-
-::: {.column width="50%"}
-
-![Cordão de contorno em estágio avançado - formação de micro-terraço por acúmulo de sedimento a montante](img/cordao_contorno_2.jpeg){fig-align="center" width="100%"}
+| Contato terreno | Fluxo distribuído e retenção local | Passagem de água por baixo |
+| Material vegetal | Espécie adequada e brotação | Mortalidade / degradação precoce |
+| Manutenção | Inspeção pós-chuva e reparo | Obstrução e erosão nas pontas |
 :::
 :::
 
-::: {.highlight-box}
-📷 **Registro de campo:** os cordões de contorno documentados acima ilustram a aplicação prática da técnica em encostas do Semiárido, evidenciando a interceptação do escoamento e o início da formação de micro-terraços naturais.
+## <span class="pitch-tag">Conceito</span> Cordões de contorno em campo (Semiárido) {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-cards-2}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
+
+![Cordão de contorno implantado em encosta experimental no Semiárido](img/cordao_contorno.jpeg)
+
+[Interceptação inicial do escoamento superficial]{.pitch-caption}
+[Cordão de contorno recém-implantado em encosta experimental]{.pitch-caption-sub}
 :::
 
-## Tipos e variações {.smaller-text}
+::: {.pitch-media-card .pitch-media-card--photo .pitch-media-card--compact}
 
-::: {.columns}
-::: {.column width="50%"}
+![Cordão de contorno em estágio avançado formando micro-terraço por acúmulo de sedimento](img/cordao_contorno_2.jpeg)
 
-### Classificação
-
-| Tipo | Material | Mecanismo |
-|------|----------|-----------|
-| Cordão de ramos mortos | Galhos secos | Barreira física |
-| Cordão de ramos vivos | Estacas vivas | Barreira + enraizamento |
-| Cordão de sacos | Sacos de terra/areia | Barreira por peso |
-| Entrançado vivo | Ramos vivos trançados em estacas | Barreira + cobertura |
-
-### Quando usar cada tipo
-
-- **Ramos mortos**: áreas sem acesso a espécies com propagação vegetativa
-- **Ramos vivos**: encostas com possibilidade de enraizamento (preferível!)
-- **Sacos de terra**: emergências / solos muito íngremes
-- **Entrançado vivo**: taludes com insolação e umidade adequadas
-
-:::
-
-::: {.column width="50%"}
-
-### Comparação com técnicas anteriores
-
-```{mermaid}
-%%| fig-width: 5
-graph LR
-    A["🪵 Paliçadas<br>Barreiras verticais<br>em ravinas"] -->|"Função<br>similar"| D["Controle de<br>escoamento"]
-    B["🌿 Cordões<br>Degraus em nível<br>em encostas"] -->|"Complementa"| D
-    C["🕳️ Barraginhas<br>Captação pontual<br>em estradas"] -->|"Diferente<br>escala"| D
-    style A fill:#586BA6,color:#000
-    style B fill:#2E7D32,color:#fff
-    style C fill:#2135A6,color:#fff
-```
-
-::: {.highlight-box}
-🔄 **Paliçadas** são barreiras em ravinas (erosão concentrada); **cordões** são distribuídos em toda a encosta (erosão laminar/sulcos). São **complementares**: paliçadas na ravina + cordões na encosta adjacente.
-:::
+[Formação de micro-terraço a montante]{.pitch-caption}
+[Estágio avançado com acúmulo visível de sedimentos retidos]{.pitch-caption-sub}
 :::
 :::
 
-# [2. FASCINAS MORTAS × FASCINAS VIVAS]{.section-header}
-
-## Comparação detalhada {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Fascinas mortas (*dead fascines*)
-
-- Feixes de ramos **secos** ou tratados
-- Função: apenas **barreira mecânica**
-- Durabilidade: 2-5 anos (depende da espécie e clima)
-- Sem capacidade de enraizamento
-- Necessitam **substituição** periódica
-- Uso: barreiras temporárias, estruturas de sacrifício
-
-### Fascinas vivas (*live fascines*)
-
-- Feixes de ramos **vivos** com capacidade vegetativa
-- Função: **barreira + enraizamento + revegetação**
-- Durabilidade: **crescente** (plantas se desenvolvem)
-- Enraizamento progressivo estabiliza o solo
-- **Autorreparação** e expansão vegetativa
-- Uso: solução definitiva de bioengenharia
-
+::: {.pitch-band}
+Os cordões de contorno documentados acima demonstram a transição da contenção física inicial para a formação progressiva de micro-terraços naturais em encostas do Semiárido.
 :::
 
-::: {.column width="50%"}
+## <span class="pitch-tag">Conceito</span> Tipologias morfológicas: cordões superficiais vs. fascinas enterradas {.smaller-text .academic-slide .lesson-slide}
 
-### Evolução temporal comparativa
+::: {.pitch-media-card .pitch-media-card--wide}
 
+![Comparação entre cordões vegetativos superficiais em contorno e fascinas enterradas de ramos vivos](img/bs_16_cordoes_fascinas_tipos.png)
+
+[Cordões vegetativos vivos vs. fascinas enterradas]{.pitch-caption}
+[Comparação morfológica, mecanismo de atuação hidráulica e resposta geotécnica na encosta]{.pitch-caption-sub}
+:::
+
+::: {.pitch-band .pitch-band--teal}
+**Cordões superficiais** (ex.: vetiver) filtram sedimentos na rampa, enquanto **fascinas enterradas** promovem contenção mecânica imediata + drenagem subsuperficial em taludes úmidos.
+:::
+
+## <span class="pitch-tag">Conceito</span> Classificação de materiais e integração territorial {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Tipo | Material | Mecanismo e indicação |
+|---|---|---|
+| Ramos mortos | Galhos secos | Barreira física (sem estaquia disponível) |
+| Ramos vivos | Estacas vivas | Barreira + enraizamento (preferível!) |
+| Sacos de terra/areia | Sacos cheios | Barreira por peso (emergência / íngreme) |
+| Entrançado vivo | Ramos trançados | Barreira + cobertura (boa insolação/umidade) |
+:::
+
+::: {.pitch-band}
+Cordões vegetativos, fascinas e entrançados têm geometrias distintas; descreva em projeto e campo a técnica efetivamente implantada.
+:::
+:::
+
+::: {.pitch-cards}
+::: {.pitch-card}
+[Paliçadas]{.pitch-card-index}
+[Em ravinas]{.pitch-heading}
+
+Barreiras verticais para erosão linear concentrada.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[Cordões]{.pitch-card-index}
+[Em encostas]{.pitch-heading}
+
+Degraus em nível contra erosão laminar e sulcos.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[Barraginhas]{.pitch-card-index}
+[Em estradas]{.pitch-heading}
+
+Captação pontual de enxurrada e recarga hídrica.
+:::
+:::
+:::
+
+# 2 · Fascinas mortas × fascinas vivas {.section-header rotulo="Fascinas"}
+
+## <span class="pitch-tag pitch-tag--forest">Fascinas</span> Comparação funcional e evolução temporal {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-card .pitch-card--gold}
+[Fascinas mortas (*dead fascines*)]{.pitch-card-index}
+[Barreira temporária · 2–5 anos]{.pitch-heading}
+
+Ramos secos ou tratados, apenas **barreira mecânica** sem enraizamento; exige substituição periódica (estrutura de sacrifício).
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[Fascinas vivas (*live fascines*)]{.pitch-card-index}
+[Solução definitiva · autorreparação]{.pitch-heading}
+
+Ramos vivos com capacidade vegetativa: **barreira + enraizamento + revegetação**, com durabilidade crescente que elimina manutenção a longo prazo.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Período | Fascina morta | Fascina viva |
-|---------|--------------|--------------|
+|---|---|---|
 | Dia 0 | 100% funcional | 100% funcional |
 | Ano 1 | 90% funcional | 100% + brotação |
-| Ano 2 | 70% funcional | 120% (raízes) |
-| Ano 3 | 50% funcional | 150% (cobertura) |
-| Ano 5 | **Substituir** | **Ecossistema** |
+| Ano 2–3 | 70% $\rightarrow$ 50% funcional | 120% (raízes) $\rightarrow$ 150% (cobertura) |
+| Ano 5 | **Substituir** | **Ecossistema estabilizado** |
+:::
 
-### Vantagem da fascina viva
-
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Fascina viva<br>instalada"] --> B["Brotação<br>(2-4 semanas)"]
-    B --> C["Enraizamento<br>(2-6 meses)"]
-    C --> D["Cobertura vegetal<br>(6-12 meses)"]
-    D --> E["Cordão vivo<br>permanente"]
-    E --> F["Micro-terraço<br>estabilizado"]
-    style A fill:#8B4513,color:#fff
-    style B fill:#586BA6,color:#000
-    style D fill:#2E7D32,color:#fff
-    style F fill:#2E7D32,color:#fff
-```
-
-::: {.highlight-box}
-🌿 **Sempre que possível**, use fascinas vivas. O custo adicional de obtenção de ramos vivos é compensado pela **eliminação de manutenção** a longo prazo.
+::: {.pitch-band .pitch-band--teal}
+**Trajetória da fascina viva:** Instalação $\rightarrow$ Brotação (2–4 sem.) $\rightarrow$ Enraizamento (2–6 meses) $\rightarrow$ Cobertura (6–12 meses) $\rightarrow$ **Micro-terraço estabilizado**.
 :::
 :::
 :::
 
-# [3. MECANISMO DE DISSIPAÇÃO DE ENERGIA]{.section-header}
+# 3 · Mecanismo de dissipação de energia {.section-header rotulo="Hidráulica"}
 
-## Hidráulica do escoamento em encostas {.smaller-text}
+## <span class="pitch-tag pitch-tag--teal">Hidráulica</span> Escoamento livre vs. interceptado e velocidades críticas {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Escoamento livre (Chézy) e redução por cordões:**
 
-### Sem cordões (escoamento livre)
+$$v = C \sqrt{R \cdot S} \qquad\qquad v_{\max} = v_0 \times \left(\frac{L_{\text{cordão}}}{L_{\text{total}}}\right)^{0,5}$$
 
-A velocidade do escoamento em um talude sem proteção aumenta progressivamente:
+Onde $v$ = velocidade (m s⁻¹), $C$ = coef. de rugosidade de Chézy, $R$ = raio hidráulico (m), $S$ = declividade (m m⁻¹) e $L_{\text{cordão}}$ = espaçamento entre cordões.
+:::
 
-$$v = C \sqrt{R \cdot S}$$
-
-Onde (fórmula de Chézy):
-
-- $v$ = velocidade do escoamento (m s⁻¹)
-- $C$ = coeficiente de Chézy (rugosidade)
-- $R$ = raio hidráulico (m)
-- $S$ = declividade do talude (m m⁻¹)
-
-### Com cordões (escoamento interceptado)
-
-Os cordões **aumentam a rugosidade** ($C$ diminui) e **reduzem o comprimento de rampa** ($L$ se torna o espaçamento entre cordões):
-
-$$v_{max} = v_0 \times \left(\frac{L_{cordão}}{L_{total}}\right)^{0.5}$$
-
-::: {.highlight-box}
-📉 Cada cordão **reinicia** o acúmulo de velocidade, mantendo $v$ abaixo da velocidade crítica de erosão do solo.
+::: {.pitch-band .pitch-band--navy}
+**Reset hidráulico:** Escoamento acelera com $L$ $\rightarrow$ Cordão 1 intercepta (**$v \approx 0$**) $\rightarrow$ Reinicia trecho seguinte $\rightarrow$ Cordão 2 intercepta $\rightarrow$ **$v$ sempre $< v_{crit}$**.
 :::
 :::
 
-::: {.column width="45%"}
-
-### Velocidades críticas de erosão
-
-| Tipo de solo | $v_{crit}$ (m s⁻¹) |
-|-------------|---------------------|
-| Areia fina | 0,3 - 0,5 |
-| Areia grossa | 0,5 - 0,8 |
-| Silte | 0,6 - 1,0 |
-| Argila mole | 0,8 - 1,2 |
-| Argila compactada | 1,2 - 1,8 |
-
-### Efeito dos cordões no tempo
-
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Escoamento<br>inicia no topo"] --> B["Velocidade<br>cresce com L"]
-    B --> C["Cordão 1<br>intercepta"]
-    C --> D["Velocidade<br>resetada ≈ 0"]
-    D --> E["Cresce novamente<br>(novo trecho)"]
-    E --> F["Cordão 2<br>intercepta"]
-    F --> G["Velocidade<br>sempre < v_crit"]
-    style C fill:#2E7D32,color:#fff
-    style F fill:#2E7D32,color:#fff
-    style G fill:#2135A6,color:#fff
-```
+::: {.pitch-table-box}
+| Tipo de solo | $v_{crit}$ de erosão (m s⁻¹) |
+|---|---|
+| Areia fina | 0,3 – 0,5 |
+| Areia grossa | 0,5 – 0,8 |
+| Silte | 0,6 – 1,0 |
+| Argila mole | 0,8 – 1,2 |
+| Argila compactada | 1,2 – 1,8 |
 :::
 :::
 
-# [4. DIMENSIONAMENTO E ESPAÇAMENTO]{.section-header}
+# 4 · Dimensionamento e espaçamento {.section-header rotulo="Dimensionamento"}
 
-## Cálculo do espaçamento entre cordões {.smaller-text}
+## <span class="pitch-tag pitch-tag--gold">Dimensionamento</span> Hidráulica de encostas e espaçamento entre cordões {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-media-card .pitch-media-card--wide}
 
-### Espaçamento vertical ($E_v$)
+![Segmentação do comprimento de rampa, terraçamento progressivo e espaçamentos vertical e horizontal](img/bs_16b_hidraulica_espacamento_cordoes.png)
 
-O espaçamento vertical (desnível entre cordões) depende da declividade e do tipo de solo:
-
-| Declividade (°) | $E_v$ solo resistente | $E_v$ solo frágil |
-|-----------------|----------------------|-------------------|
-| 15-20° | 1,5-2,0 m | 1,0-1,5 m |
-| 20-30° | 1,0-1,5 m | 0,8-1,0 m |
-| 30-40° | 0,8-1,0 m | 0,5-0,8 m |
-| 40-50° | 0,5-0,8 m | 0,3-0,5 m |
-
-### Espaçamento horizontal ($E_h$)
-
-$$E_h = \frac{E_v}{\tan(\alpha)}$$
-
-Onde $\alpha$ = ângulo de declividade do talude.
-
-### Dimensões do cordão
-
-| Parâmetro | Valor |
-|-----------|-------|
-| Diâmetro do feixe | 20-40 cm |
-| Altura exposta acima do solo | 15-30 cm |
-| Profundidade de enterramento | 10-20 cm |
-| Comprimento dos ramos | 100-200 cm |
-
+[Hidráulica de encostas e dimensionamento do espaçamento]{.pitch-caption}
+[Definição de EV e EH = EV/tan(θ), formação de cunha de sedimentos e ordem executiva de baixo para cima]{.pitch-caption-sub}
 :::
 
-::: {.column width="45%"}
+::: {.pitch-band}
+A implantação executada **de baixo para cima** em curvas de nível garante ancoragem da base antes do aporte de escoamento e sedimentos a montante.
+:::
 
-### Esquema de disposição
+## <span class="pitch-tag pitch-tag--gold">Dimensionamento</span> Cálculo de Ev, Eh, geometria e exemplo numérico {.smaller-text .academic-slide .lesson-slide}
 
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    A["Topo da encosta"] --> B["Cordão 1<br>Ev = variável"]
-    B --> C["Cordão 2"]
-    C --> D["Cordão 3"]
-    D --> E["Cordão 4"]
-    E --> F["Base da encosta"]
-    B -.->|"Espaçamento<br>vertical Ev"| C
-    style A fill:#2135A6,color:#fff
-    style B fill:#2E7D32,color:#fff
-    style C fill:#2E7D32,color:#fff
-    style D fill:#2E7D32,color:#fff
-    style E fill:#2E7D32,color:#fff
-    style F fill:#8B4513,color:#fff
-```
+::: {.pitch-grid-55}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Declividade ($\alpha$) | $E_v$ solo resistente | $E_v$ solo frágil |
+|---|---|---|
+| 15°–20° | 1,5–2,0 m | 1,0–1,5 m |
+| 20°–30° | 1,0–1,5 m | 0,8–1,0 m |
+| 30°–40° | 0,8–1,0 m | 0,5–0,8 m |
+| 40°–50° | 0,5–0,8 m | 0,3–0,5 m |
+:::
 
-### Exemplo de cálculo
+::: {.pitch-table-box}
+| Parâmetro do cordão | Dimensão |
+|---|---|
+| Diâmetro do feixe / Comprimento ramos | 20–40 cm · 100–200 cm |
+| Altura exposta / Prof. enterramento | 15–30 cm · 10–20 cm |
+:::
+:::
 
-**Dados:** Talude com 30° e solo argiloso frágil.
+::: {.pitch-stack-2}
+::: {.pitch-formula}
+**Espaçamento horizontal ($E_h$) e exemplo (30°, solo frágil, $H = 10\text{ m}$):**
 
-- $E_v$ = 0,8 m (tabela)
-- $E_h = 0,8 / \tan(30°) = 0,8 / 0,577 = 1,39$ m
+$$E_h = \frac{E_v}{\tan(\alpha)} = \frac{0,8}{\tan(30°)} = \frac{0,8}{0,577} = 1,39\text{ m}$$
 
-Para talude de 10 m de altura:
+$$N_{\text{cordões}} = \frac{10}{0,8} = 12,5 \approx 13 \text{ cordões}$$
+:::
 
-$$N_{cordões} = \frac{10}{0,8} = 12,5 \approx 13 \text{ cordões}$$
-
-::: {.highlight-box}
-📐 Em encostas com perfil irregular, ajuste o espaçamento seguindo as **curvas de nível reais**, não linhas retas.
+::: {.pitch-band}
+Em perfis irregulares, siga as **curvas de nível reais** no terreno (do topo até a base com $E_v$ variável), nunca alinhamentos retos.
 :::
 :::
 :::
 
-# [5. MATERIAIS E CONFECÇÃO]{.section-header}
+# 5 · Materiais e confecção {.section-header rotulo="Materiais"}
 
-## Preparo dos cordões {.smaller-text}
+## <span class="pitch-tag pitch-tag--forest">Materiais</span> Confecção de fascinas vivas, sacos e espécies do Nordeste {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="55%"}
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1–2 · Coleta e amarração:** ramos vivos ($\varnothing$ 1–4 cm, comp. 1–2 m) amarrados em feixes de **$\varnothing$ 20–40 cm** com arame ou sisal.
+:::
 
-### Confecção de fascinas vivas
+::: {.pitch-milestone-item}
+**3–4 · Uniformização:** alternar pontas e bases e inserir estacas maiores no núcleo como "espinhas".
+:::
 
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["1. Coleta de ramos vivos<br>Diâmetro 1-4 cm, comprimento 1-2 m"] --> B["2. Amarração em feixes<br>Ø 20-40 cm com arame/sisal"]
-    B --> C["3. Alternância de pontas<br>e bases para uniformidade"]
-    C --> D["4. Inserção de estacas<br>maiores como 'espinhas'"]
-    D --> E["5. Amarração final a cada<br>30-50 cm de intervalo"]
-    E --> F["Fascina pronta<br>para instalação"]
-    style A fill:#2E7D32,color:#fff
-    style B fill:#586BA6,color:#000
-    style D fill:#2135A6,color:#fff
-    style F fill:#8B4513,color:#fff
-```
+::: {.pitch-milestone-item}
+**5 · Amarração final:** atar a cada **30–50 cm** de intervalo até obter a fascina pronta.
+:::
+:::
 
-### Espécies recomendadas (Nordeste)
-
-| Espécie | Propagação | Crescimento |
-|---------|-----------|-------------|
+::: {.pitch-table-box}
+| Espécie (Nordeste) | Propagação | Crescimento |
+|---|---|---|
 | *Gliricidia sepium* | Estaca | Rápido |
 | *Moringa oleifera* | Estaca | Muito rápido |
 | *Erythrina velutina* | Estaca | Rápido |
 | *Spondias tuberosa* | Estaca | Moderado |
 | *Jatropha curcas* | Estaca | Rápido |
-
+:::
 :::
 
-::: {.column width="45%"}
+::: {.pitch-stack-2}
+::: {.pitch-card}
+[Cordões de sacos de terra]{.pitch-card-index}
+[Alternativa emergencial]{.pitch-heading}
 
-### Confecção de cordões de sacos
+Sacos de ráfia/juta (60 × 40 cm) cheios a 2/3 com terra local, costurados/dobrados, dispostos em nível e escorados a jusante com estacas (sobreposição dupla se necessário).
+:::
 
-**Materiais:**
-
-- Sacos de ráfia ou juta (60 × 40 cm)
-- Terra local compactada
-- Estacas de fixação (madeira ou aço)
-
-**Procedimento:**
-
-1. Encher sacos com 2/3 de terra
-2. Costurar ou dobrar a abertura
-3. Dispor em linha na curva de nível
-4. Escorar com estacas no lado de jusante
-5. Sobrepor em duas camadas (se necessário)
-
-### Lista de materiais por metro linear
-
-| Material | Quantidade |
-|----------|-----------|
-| Ramos vivos (Ø 1-4 cm) | 15-25 unidades |
+::: {.pitch-table-box}
+| Material por metro linear | Quantidade |
+|---|---|
+| Ramos vivos ($\varnothing$ 1–4 cm) | 15–25 unidades |
 | Arame galvanizado nº 12 | 2 m |
-| Estacas guia (Ø 5-8 cm) | 2 unidades m⁻¹ |
-| OU sacos de terra | 5-8 por metro |
-
-:::
-:::
-
-# [6. IMPLANTAÇÃO EM CAMPO]{.section-header}
-
-## Procedimento de instalação {.smaller-text}
-
-::: {.columns}
-::: {.column width="55%"}
-
-### Passo a passo
-
-1. **Levantamento topográfico**
-   - Marcar curvas de nível com nível óptico ou de mangueira
-   - Definir espaçamentos conforme projeto
-
-2. **Escavação das trincheiras**
-   - Profundidade: 10-20 cm
-   - Largura: igual ao diâmetro do cordão
-   - Inclinação: 0% (em nível) ou leve (1-2%) para drenagem lateral
-
-3. **Cravação das estacas-guia**
-   - Espaçamento: 1-1,5 m
-   - Cravar ⅔ no solo
-   - Lado de jusante do cordão
-
-4. **Posicionamento do cordão**
-   - Encaixar na trincheira
-   - Amarrar nas estacas-guia
-   - Compactar terra ao redor
-
-5. **Reaterro e mulch**
-   - Cobrir a base com terra
-   - Aplicar mulch nas áreas entre cordões
-
-:::
-
-::: {.column width="45%"}
-
-### Seção transversal de instalação
-
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    subgraph Instalacao["Seção Transversal"]
-        A["Estaca-guia<br>(⅔ enterrada)"]
-        B["Fascina viva<br>(Ø 20-40 cm)"]
-        C["Trincheira<br>(10-20 cm prof.)"]
-        D["Reaterro<br>compactado"]
-    end
-    style A fill:#8B4513,color:#fff
-    style B fill:#2E7D32,color:#fff
-    style C fill:#586BA6,color:#000
-    style D fill:#2135A6,color:#fff
-```
-
-### Erros comuns
-
-| Erro | Consequência |
-|------|-------------|
-| Cordão fora de nível | Concentração de fluxo |
-| Trincheira rasa | Cordão se desloca |
-| Sem estacas-guia | Cordão rola encosta abaixo |
-| Ramos secos | Sem enraizamento |
-| Espaçamento excessivo | Erosão entre cordões |
-
-::: {.highlight-box}
-⚠️ O erro mais grave é instalar cordões **fora de nível**: isso concentra o fluxo em um ponto e pode causar erosão maior que a original.
+| Estacas-guia ($\varnothing$ 5–8 cm) | 2 unidades m⁻¹ |
+| OU sacos de terra | 5–8 por metro |
 :::
 :::
 :::
 
-# [7. MONITORAMENTO E EFICIÊNCIA]{.section-header}
+# 6 · Implantação em campo {.section-header rotulo="Implantação"}
 
-## Avaliação de desempenho {.smaller-text}
+## <span class="pitch-tag pitch-tag--teal">Implantação</span> Passo a passo construtivo, seção e erros comuns {.smaller-text .academic-slide .lesson-slide}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.pitch-grid-55}
+::: {.pitch-milestones}
+::: {.pitch-milestone-item}
+**1 · Topografia:** marcar curvas de nível com nível óptico ou de mangueira no espaçamento $E_v$ / $E_h$ de projeto.
+:::
 
-### Indicadores quantitativos
+::: {.pitch-milestone-item}
+**2 · Trincheiras:** escavar com **10–20 cm** de profundidade, largura igual ao cordão, em nível (0%) ou 1–2% lateral.
+:::
 
+::: {.pitch-milestone-item}
+**3 · Estacas-guia:** cravar **2/3 no solo** a cada **1–1,5 m** no lado de jusante do cordão.
+:::
+
+::: {.pitch-milestone-item}
+**4–5 · Assentamento e reaterro:** encaixar a fascina ($\varnothing$ 20–40 cm), amarrar às estacas, compactar reaterro e aplicar *mulch* entre faixas.
+:::
+:::
+
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
+| Erro de execução | Consequência |
+|---|---|
+| Cordão fora de nível | Concentração de fluxo e ravina |
+| Trincheira rasa / sem estacas | Deslocamento ou rolamento |
+| Ramos secos / $E_v$ excessivo | Falha de brotação / erosão |
+:::
+
+::: {.pitch-band .pitch-band--alert}
+**Erro mais grave:** instalar cordões **fora de nível** concentra a enxurrada em um único ponto e agrava a erosão original.
+:::
+:::
+:::
+
+# 7 · Monitoramento e eficiência {.section-header rotulo="Monitoramento"}
+
+## <span class="pitch-tag">Monitoramento</span> Indicadores, cronograma e formação de micro-terraços {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-50}
+::: {.pitch-stack-2}
+::: {.pitch-table-box}
 | Indicador | Método | Meta |
-|-----------|--------|------|
-| Retenção de sedimento | Medição a montante/jusante | > 70% |
-| Velocidade do fluxo | Flutuador ou ADV | Redução > 50% |
-| Taxa de erosão | Pinos de erosão | < 5 t ha⁻¹ ano⁻¹ |
-| Brotação das fascinas | Contagem visual | > 60% em 30 dias |
-| Cobertura vegetal | Quadrante 1 m² | > 50% em 6 meses |
-
-### Cronograma
-
-| Período | Atividade |
-|---------|-----------|
-| 15 dias | Verificar integridade dos cordões |
-| 30 dias | Avaliar brotação e enraizamento |
-| 60 dias | Medir sedimento retido |
-| 6 meses | Avaliar cobertura vegetal |
-| 1 ano | Verificar formação de terraço |
-| 2 anos | Avaliar autossustentabilidade |
-
+|---|---|---|
+| Retenção de sedimento | Montante / jusante | > 70% |
+| Velocidade / Erosão | Flutuador ou ADV / Pinos | Redução > 50% · < 5 t ha⁻¹ ano⁻¹ |
+| Brotação / Cobertura | Visual / Quadrante 1 m² | > 60% (30 d) · > 50% (6 m) |
 :::
 
-::: {.column width="50%"}
-
-### Formação de micro-terraços
-
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["Ano 0<br>Cordão instalado<br>em trincheira"] --> B["Ano 1<br>Sedimento acumula<br>a montante"]
-    B --> C["Ano 2<br>Terraço se forma<br>cordão enraíza"]
-    C --> D["Ano 3+<br>Terraço consolidado<br>vegetação densa"]
-    style A fill:#8B4513,color:#fff
-    style B fill:#586BA6,color:#000
-    style C fill:#2E7D32,color:#fff
-    style D fill:#2E7D32,color:#fff
-```
-
-::: {.highlight-box}
-🏔️ Os cordões vegetativos promovem a formação de **micro-terraços naturais**: o acúmulo de sedimento a montante do cordão cria uma superfície mais suave e estável, favorecendo a colonização vegetal espontânea.
-:::
-
-### Eficiência documentada
-
-> Em estudos na Europa Central, cordões de salgueiro reduziram a **perda de solo em 75-90%** e a **velocidade do escoamento em 60-80%** em taludes de 25-35° (Florineth, 2004; Schiechtl & Stern, 1996).
+::: {.pitch-table-box}
+| Período | Atividade de acompanhamento |
+|---|---|
+| 15 – 30 dias | Integridade física, brotação e enraizamento |
+| 60 dias – 6 meses | Sedimento retido e cobertura vegetal |
+| 1 – 2 anos | Formação de terraço e autossustentabilidade |
 :::
 :::
 
-# [8. SÍNTESE E ATIVIDADE]{.section-header}
+::: {.pitch-stack-2}
+::: {.pitch-cards-2}
+::: {.pitch-card}
+[Ano 0–1]{.pitch-card-index}
+[Retenção inicial]{.pitch-heading}
 
-## Resumo dos conceitos-chave {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-
-### Pontos fundamentais
-
-::: {.info-box}
-1. **Cordões vegetativos** são barreiras em curvas de nível que interceptam o escoamento superficial
-2. **Fascinas vivas** são preferíveis às mortas: enraízam e se autossustentam
-3. O **mecanismo** é reduzir a velocidade e reter sedimentos, formando micro-terraços
-4. O **espaçamento** depende da declividade e do tipo de solo
-5. A **instalação em nível** é o critério mais importante
-6. Com o tempo, os cordões formam **terraços naturais** vegetados
+Cordão em trincheira intercepta fluxo e acumula sedimento a montante.
 :::
 
-:::
+::: {.pitch-card .pitch-card--forest}
+[Ano 2–3+]{.pitch-card-index}
+[Micro-terraço]{.pitch-heading}
 
-::: {.column width="50%"}
-
-### Fluxo conceitual
-
-```{mermaid}
-%%| fig-width: 5
-graph TD
-    A["Ramos vivos<br>Espécies regionais"] --> B["Fascinas<br>Ø 20-40 cm"]
-    B --> C["Instalação em<br>curvas de nível"]
-    C --> D["Interceptação<br>do escoamento"]
-    D --> E["Retenção de<br>sedimentos"]
-    D --> F["Infiltração<br>aumentada"]
-    E --> G["Formação de<br>micro-terraços"]
-    F --> G
-    B --> H["Enraizamento<br>progressivo"]
-    H --> G
-    G --> I["Encosta<br>estabilizada"]
-    style A fill:#2E7D32,color:#fff
-    style B fill:#8B4513,color:#fff
-    style C fill:#2135A6,color:#fff
-    style G fill:#586BA6,color:#000
-    style I fill:#2E7D32,color:#fff
-```
+Cordão enraizado consolida terraço natural e vegetação densa.
 :::
 :::
 
-## Atividade prática - Projeto de cordões vegetativos {.smaller-text}
-
-::: {.columns}
-::: {.column width="55%"}
-
-### Exercício em grupo
-
-**Cenário:** Uma encosta de pastagem degradada com 150 m de comprimento, declividade média de 25° e solo siltoso apresenta erosão laminar severa e formação de sulcos incipientes. A precipitação anual é de 700 mm (concentrada em 4 meses).
-
-**Projetem o sistema de cordões vegetativos:**
-
-1. Calcule o **espaçamento** vertical e horizontal entre cordões
-2. Quantos **cordões** serão necessários?
-3. Escolha o **tipo de cordão** (fascina viva, morta ou sacos) e justifique
-4. Selecione **3 espécies** para as fascinas vivas
-5. Quantos **metros lineares** de fascina e estacas-guia serão necessários?
-6. Descreva o **procedimento de instalação** passo a passo
-7. Elabore o **cronograma de monitoramento** para 2 anos
-
+::: {.pitch-band .pitch-band--teal}
+Estudos na Europa Central mostram redução de **75–90% na perda de solo** e **60–80% na velocidade do escoamento** em taludes de 25°–35° (Florineth, 2004; Schiechtl & Stern, 1996).
+:::
+:::
 :::
 
-::: {.column width="45%"}
+# 8 · Síntese e atividade {.section-header rotulo="Síntese"}
 
-### Critérios de avaliação
+## <span class="pitch-tag">Síntese</span> Pontos fundamentais e fluxo conceitual {.smaller-text .academic-slide .lesson-slide}
 
-| Critério | Peso |
-|----------|------|
+::: {.pitch-grid-50}
+::: {.pitch-card}
+[Resumo técnico]{.pitch-card-index}
+[Seis pilares dos cordões vegetativos]{.pitch-heading}
+
+1. **Cordões vegetativos** são barreiras em curvas de nível que interceptam o escoamento
+2. **Fascinas vivas** superam as mortas por enraizarem e dispensarem substituição
+3. **Mecanismo hidráulico:** reiniciam o comprimento de rampa ($v < v_{crit}$) e retêm sedimentos
+4. **Espaçamento ($E_v$, $E_h$)** varia conforme declividade e fragilidade do solo
+5. **Instalação em nível** (com reaterro e estacas a jusante) é critério decisivo
+6. Evolução progressiva gera **terraços naturais vegetados**
+:::
+
+::: {.pitch-flow-4}
+::: {.pitch-card}
+[01 · Confecção]{.pitch-card-index}
+[Fascinas]{.pitch-heading}
+
+Ramos vivos regionais em feixes de $\varnothing$ 20–40 cm.
+:::
+
+::: {.pitch-card .pitch-card--teal}
+[02 · Locação]{.pitch-card-index}
+[Em nível]{.pitch-heading}
+
+Implantação em curvas de nível e interceptação do fluxo.
+:::
+
+::: {.pitch-card .pitch-card--forest}
+[03 · Processos]{.pitch-card-index}
+[Tripla ação]{.pitch-heading}
+
+Retenção de sedimentos, maior infiltração e enraizamento.
+:::
+
+::: {.pitch-card .pitch-card--gold}
+[04 · Resultado]{.pitch-card-index}
+[Estabilidade]{.pitch-heading}
+
+Formação de micro-terraços e encosta estabilizada.
+:::
+:::
+:::
+
+## <span class="pitch-tag pitch-tag--teal">Atividade</span> Projeto de cordões em pastagem degradada {.smaller-text .academic-slide .lesson-slide}
+
+::: {.pitch-grid-55}
+::: {.pitch-card}
+[Estudo dirigido · 30 min projeto + 10 min apresentação]{.pitch-card-index}
+[Encosta · 150 m · 25° · solo siltoso · 700 mm/ano (4 meses)]{.pitch-heading}
+
+Erosão laminar severa e sulcos incipientes. Projetem o sistema:
+
+1. Calculem **$E_v$**, **$E_h$** e o **número de cordões** necessários
+2. Escolham o **tipo de cordão** (viva, morta ou sacos) e **3 espécies** para fascinas vivas
+3. Quantifiquem os **metros lineares** de fascina e **estacas-guia**
+4. Descrevam o **procedimento de instalação** e o **cronograma de monitoramento** (2 anos)
+:::
+
+::: {.pitch-table-box}
+| Critério de avaliação | Peso |
+|---|---|
 | Dimensionamento (espaçamento) | 25% |
-| Seleção de materiais/espécies | 20% |
+| Seleção de materiais / espécies | 20% |
 | Procedimento de instalação | 20% |
 | Quantitativo de materiais | 15% |
 | Cronograma de monitoramento | 20% |
-
-::: {.highlight-box}
-⏱️ **Tempo**: 30 minutos para projeto + 10 minutos para apresentação por grupo.
-:::
-
 :::
 :::
 
-## Referências {.smaller-text}
+## <span class="pitch-tag">Referências</span> Referências bibliográficas {.smaller-text .academic-slide .lesson-slide}
 
-::: {.smaller-text}
+::: {.pitch-card}
+[Manuais e artigos científicos]{.pitch-card-index}
+[Base bibliográfica da aula]{.pitch-heading}
 
 - Florineth, F. (2004). *Pflanzen statt Beton - Handbuch zur Ingenieurbiologie und Vegetationstechnik*. Patzer Verlag.
 - Gray, D. H. & Sotir, R. B. (1996). *Biotechnical and Soil Bioengineering Slope Stabilization*. John Wiley & Sons.
 - Norris, J. E. et al. (2008). *Slope Stability and Erosion Control: Ecotechnological Solutions*. Springer.
-- Petrone, A. & Preti, F. (2010). Soil bioengineering for risk mitigation and environmental restoration in a humid tropical area. *Hydrology Earth System Sciences*, 14(2), 239-250.
+- Petrone, A. & Preti, F. (2010). Soil bioengineering for risk mitigation and environmental restoration in a humid tropical area. *Hydrology Earth System Sciences*, 14(2), 239–250.
 - Schiechtl, H. M. & Stern, R. (1996). *Ground Bioengineering Techniques for Slope Protection and Erosion Control*. Blackwell Science.
-- Stokes, A. et al. (2014). Ecological mitigation of hillslope instability: ten key issues facing researchers. *Plant Soil*, 377, 1-23.
+- Stokes, A. et al. (2014). Ecological mitigation of hillslope instability: ten key issues facing researchers. *Plant Soil*, 377, 1–23.
 - Zeh, H. (2007). *Soil Bioengineering Construction Type Manual*. European Federation for Soil Bioengineering (EFIB). vdf Hochschulverlag.
-
 :::
 
 ## {.obrigado-fit-text .center}

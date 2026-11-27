@@ -1,0 +1,109 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{bs_tikz_style}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% ============================================================
+% TÍTULO GERAL
+% ============================================================
+\node[bsTitle, anchor=west] at (0, 8.05)
+  {Gabião Vivo: Arquitetura Híbrida Pedra–Tela–Ramos Vivos};
+\node[bsSub, anchor=west] at (0, 7.60)
+  {Composição estrutural da gaiola drenante e inserção de estacas vivas para consolidação radicular};
+
+% ============================================================
+% PAINEL ESQUERDO: SEÇÃO DO GABIÃO VIVO
+% ============================================================
+\begin{scope}[shift={(0,0)}]
+  \draw[bsNavy!30, rounded corners=6pt, line width=1.0pt, fill=white]
+    (0,-0.55) rectangle (9.65, 7.10);
+  \node[bsBadge=bsNavy, rounded corners=5pt, anchor=north west] at (0.30, 6.85) {ARQUITETURA SECCIONAL};
+
+  % Solo retido / reaterro úmido atrás do gabião
+  \fill[bsEarth!20]
+    (0.45, 0.85) -- (0.45, 5.55) -- (3.15, 5.55) -- (3.15, 1.15) -- (7.75, 1.15) -- (7.75, 0.85) -- cycle;
+  % Base / fundação drenante
+  \fill[bsNavy!15] (2.95, 0.85) rectangle (6.25, 1.25);
+  \draw[bsNavyDark, line width=1.0pt] (2.95, 0.85) rectangle (6.25, 1.25);
+
+  % Nível d'água frontal
+  \fill[bsWater!20] (5.55, 1.15) rectangle (9.25, 2.05);
+  \draw[bsWater, line width=1.0pt] (5.55, 2.05) -- (9.25, 2.05);
+  \node[font=\tiny\bfseries\sffamily, text=bsWater, anchor=south east] at (9.15, 2.08) {N.A. do canal};
+
+  % Geotêxtil filtrante no tardoz do gabião
+  \draw[bsNavy, line width=2.4pt, dash pattern=on 5pt off 2.5pt]
+    (3.15, 5.45) -- (3.15, 1.25);
+
+  % Gaiolas empilhadas (3 níveis escalonados)
+  \foreach \xR/\yB/\yT in {5.65/1.25/2.45, 5.35/2.45/3.65, 5.05/3.65/4.85}{
+    \fill[bsEarth!12] (3.25, \yB) rectangle (\xR, \yT);
+    \foreach \rx in {3.50, 3.92, 4.34, 4.76}{
+      \ifdim \rx pt < \xR pt
+        \filldraw[fill=bsNavy!20, draw=bsNavyDark!75, line width=0.6pt]
+          (\rx, \yB+0.32) ellipse (0.20 and 0.14);
+        \filldraw[fill=bsNavy!26, draw=bsNavyDark!75, line width=0.6pt]
+          (\rx+0.12, \yB+0.86) ellipse (0.19 and 0.15);
+      \fi
+    }
+    \draw[bsNavy!55, step=0.30, line width=0.4pt] (3.25, \yB) grid (\xR, \yT);
+    \draw[bsNavyDark, line width=1.25pt] (3.25, \yB) rectangle (\xR, \yT);
+  }
+
+  % Ramos vivos horizontais inseridos do solo úmido até a face frontal + brotação
+  \foreach \y/\xF in {2.45/5.65, 3.65/5.35, 4.85/5.05}{
+    \draw[bsEarth!85!black, line width=2.3pt, line cap=round] (1.65, \y+0.18) -- (\xF+0.35, \y-0.02);
+    \draw[bsEarth!70!black, line width=0.75pt] (1.65, \y+0.18) -- (1.25, \y+0.34);
+    \draw[bsEarth!70!black, line width=0.75pt] (1.65, \y+0.18) -- (1.20, \y-0.02);
+    \draw[bsEarth!70!black, line width=0.75pt] (2.25, \y+0.15) -- (1.95, \y-0.10);
+    \draw[bsForest, line width=1.6pt, line cap=round] (\xF+0.20, \y) -- (\xF+0.78, \y+0.38);
+    \draw[bsForest, line width=1.4pt, line cap=round] (\xF+0.25, \y-0.02) -- (\xF+0.88, \y+0.12);
+    \fill[bsForest!85!white] (\xF+0.78, \y+0.38) ellipse (0.20 and 0.10);
+    \fill[bsForest!75!white] (\xF+0.88, \y+0.12) ellipse (0.18 and 0.09);
+    \fill[bsForest] (\xF+0.56, \y+0.24) ellipse (0.15 and 0.08);
+  }
+
+  % Rótulos claros e setas
+  \node[font=\scriptsize\bfseries\sffamily, text=bsEarth!90!black, align=left, anchor=west] at (0.55, 5.95)
+    {Solo úmido / reaterro\\com enraizamento profundo};
+
+  \node[font=\scriptsize\bfseries\sffamily, text=bsNavy, align=left, anchor=west] (lGeo) at (0.55, 1.65)
+    {Geotêxtil\\filtrante};
+  \draw[bsArrow, bsNavy, line width=0.95pt] (lGeo.east) -- (3.12, 1.85);
+
+  \node[font=\scriptsize\bfseries\sffamily, text=bsNavyDark, align=left, anchor=west] (lGai) at (5.85, 5.75)
+    {Gaiola metálica +\\pedra de mão angular};
+  \draw[bsArrow, bsNavyDark, line width=0.95pt] (lGai.west) -- (4.85, 4.55);
+
+  \node[font=\scriptsize\bfseries\sffamily, text=bsForest, align=left, anchor=west] (lRam) at (6.25, 4.15)
+    {Ramos vivos horizontais\\brotando na face frontal};
+  \draw[bsArrow, bsForest, line width=0.95pt] (lRam.west) -- (5.85, 3.85);
+
+  \node[font=\scriptsize\bfseries\sffamily, text=bsNavyDark, anchor=north] at (4.60, 0.72)
+    {Base de fundação drenante};
+\end{scope}
+
+% ============================================================
+% PAINEL DIREITO: COMPARAÇÃO GABIÃO CONVENCIONAL vs. VIVO
+% ============================================================
+\begin{scope}[shift={(10.05,0)}]
+  \draw[bsGold, rounded corners=6pt, line width=1.2pt, fill=bgGold]
+    (0,-0.55) rectangle (5.75, 7.10);
+  \node[bsBadge=bsGold, rounded corners=5pt, anchor=north west] at (0.30, 6.85) {ANÁLISE COMPARATIVA};
+
+  \node[bsBox=bsMuted, anchor=north west, text width=4.85cm, align=left] (c1) at (0.30, 6.20)
+    {\textbf{\color{bsNavyDark}Gabião Convencional (Mineral)}\\[4pt]
+     $\bullet$ Estrutura rígida / estritamente mineral\\[2pt]
+     $\bullet$ Dependência contínua da integridade da malha de aço\\[2pt]
+     $\bullet$ Baixa integração paisagística e ecológica imediata};
+
+  \node[bsBox=bsForest, anchor=north west, text width=4.85cm, align=left] (c2) at ($(c1.south west)+(0,-0.32)$)
+    {\textbf{\color{bsForest}Gabião Vivo (Híbrido)}\\[4pt]
+     $\bullet$ Estrutura drenante com matriz solo–pedra–raiz\\[2pt]
+     $\bullet$ Enraizamento profundo consolida o talude atrás da gaiola\\[2pt]
+     $\bullet$ Integração ecológica superior para recuperação de APP};
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

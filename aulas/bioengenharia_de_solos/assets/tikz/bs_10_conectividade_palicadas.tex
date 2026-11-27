@@ -1,0 +1,80 @@
+\documentclass[tikz,border=10pt]{standalone}
+\input{bs_tikz_style}
+\tikzset{
+  pill/.style={bsBadge=#1, minimum height=0pt, minimum width=0pt, text width=}
+}
+
+\begin{document}
+\begin{tikzpicture}
+
+% Faixa superior: Conectividade hidrossedimentológica (4 blocos alinhados)
+\node[bsTint=bsNavy, text width=3.45cm, minimum height=2.20cm] (t1) at (0, 2.8) {%
+  \tikz\node[pill=bsNavy]{ORIGEM};\\[5pt]
+  \textbf{Escoamento de Vertente\\\& Estradas}\\[3pt]
+  {\scriptsize Enxurrada concentrada e\\aporte de sedimentos}
+};
+
+\node[bsTint=bsGold, text width=3.45cm, minimum height=2.20cm] (t2) at (4.65, 2.8) {%
+  \tikz\node[pill=bsGoldDark]{INCISÃO};\\[5pt]
+  \textbf{Cabeceira / Sulcos}\\[3pt]
+  {\scriptsize Concentração de energia\\e aprofundamento do canal}
+};
+
+\node[bsTint=bsTeal, text width=3.45cm, minimum height=2.20cm] (t3) at (9.30, 2.8) {%
+  \tikz\node[pill=bsTeal]{CONTROLE FÍSICO};\\[5pt]
+  \textbf{Série de Paliçadas\\Permeáveis}\\[3pt]
+  {\scriptsize Quebra de energia e\\filtração escalonada}
+};
+
+\node[bsTint=bsForest, text width=3.45cm, minimum height=2.20cm] (t4) at (13.95, 2.8) {%
+  \tikz\node[pill=bsForest]{RESULTADO};\\[5pt]
+  \textbf{Retenção de Sedimentos\\\& Menos Assoreamento}\\[3pt]
+  {\scriptsize Cunha deposicional estável\\e proteção a jusante}
+};
+
+\draw[bsArrow, bsNavy] (t1) -- (t2);
+\draw[bsArrow, bsGoldDark] (t2) -- (t3);
+\draw[bsArrow, bsTeal] (t3) -- (t4);
+
+% Divisor conceitual bem espaçado
+\draw[dashed, bsMuted!55, line width=0.9pt] (-2.05, 1.05) -- (16.00, 1.05);
+\node[fill=white, inner xsep=10pt, font=\scriptsize\bfseries\sffamily, text=bsNavy]
+  at (6.975, 1.05) {EXECUÇÃO EM CAMPO — SEQUÊNCIA CONSTRUTIVA EM 4 ETAPAS};
+
+% Faixa inferior: 4 etapas construtivas
+\node[bsBox=bsNavy, text width=3.45cm, minimum height=2.35cm] (b1) at (0, -0.75) {%
+  \tikz\node[pill=bsNavy]{PASSO 1};\\[5pt]
+  \textbf{Locação em Série}\\[4pt]
+  {\scriptsize Espaçamento definido pelo\\declive e altura útil ($H$);\\crista alinhada à base superior}
+};
+
+\node[bsBox=bsEarth, text width=3.45cm, minimum height=2.35cm] (b2) at (4.65, -0.75) {%
+  \tikz\node[pill=bsEarth]{PASSO 2};\\[5pt]
+  \textbf{Engastamento Lateral\\e Basal}\\[3pt]
+  {\scriptsize Embutimento nas paredes e\\no leito para evitar \textit{piping}\\lateral e solapamento}
+};
+
+\node[bsBox=bsTeal, text width=3.45cm, minimum height=2.35cm] (b3) at (9.30, -0.75) {%
+  \tikz\node[pill=bsTeal]{PASSO 3};\\[5pt]
+  \textbf{Montagem e Amarrilhos}\\[4pt]
+  {\scriptsize Estacas + sacaria de ráfia\\ou bambu-madeira com\\tela filtrante e amarrilhos}
+};
+
+\node[bsBox=bsForest, text width=3.45cm, minimum height=2.35cm] (b4) at (13.95, -0.75) {%
+  \tikz\node[pill=bsForest]{PASSO 4};\\[5pt]
+  \textbf{Plantio Pós-Retenção}\\[4pt]
+  {\scriptsize Implantação de Vetiver e\\gramíneas sobre a cunha de\\sedimentos acumulada}
+};
+
+\draw[bsArrow, bsNavy] (b1) -- (b2);
+\draw[bsArrow, bsEarth] (b2) -- (b3);
+\draw[bsArrow, bsTeal] (b3) -- (b4);
+
+% Título e subtítulo ancorados acima da faixa superior
+\node[bsSub] (sub) at (6.975, 4.55)
+  {Integração entre fluxo de vertente, controle no talvegue e estabilização biológica pós-retenção};
+\node[bsTitle, above=0.14cm of sub] (title)
+  {Conectividade Hidrossedimentológica e Construção de Paliçadas em Ravinas};
+
+\end{tikzpicture}
+\end{document}
